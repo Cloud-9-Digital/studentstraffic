@@ -1,0 +1,2094 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "Bachelor of Technology in Computer Science and Engineering",
+        "BEng Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in computer science and engineering, usually four years after an upper-secondary qualification with mathematics. Typical curricula run from programming, data structures, operating systems, databases and computer networks to algorithms, software engineering and electives in artificial intelligence, machine learning, cloud and security, with project and internship components.",
+      "metaTitle": "B.E./B.Tech CSE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech CSE degrees for international applicants: duration, teaching language, intake months, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-electronics-communication-engineering",
+      "name": "B.E./B.Tech in Electronics and Communication Engineering",
+      "shortName": "B.E./B.Tech ECE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electronics-communication-engineering",
+      "aliases": [
+        "Bachelor of Electronics and Communication Engineering",
+        "BEng Electronic and Communications Engineering",
+        "Electronics and Telecommunications Engineering"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in electronics and communication engineering, usually four years after upper-secondary physics, chemistry and mathematics. Curricula typically span circuit and network theory, analog and digital electronics, signals and systems, digital signal processing, communication systems and embedded or VLSI design, with laboratory and project work.",
+      "metaTitle": "B.E./B.Tech ECE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech ECE degrees for international applicants: duration, teaching language, intakes, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-electrical-electronics-engineering",
+      "name": "B.E./B.Tech in Electrical and Electronics Engineering",
+      "shortName": "B.E./B.Tech EEE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electrical-electronics-engineering",
+      "aliases": [
+        "Bachelor of Electrical and Electronic Engineering",
+        "BEng Electrical and Electronic Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "This catalogue category covers four-year undergraduate degrees in electrical and electronics engineering taken after an upper-secondary qualification with physics and mathematics. Programmes typically cover circuit theory, electrical machines, power systems, power electronics, control systems and embedded electronics, with laboratory work and electives in renewable energy or electric mobility.",
+      "metaTitle": "B.E./B.Tech EEE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech EEE degrees for international applicants: programme length, teaching language, intake months, tuition and admission routes."
+    },
+    {
+      "slug": "be-btech-mechanical-engineering",
+      "name": "B.E./B.Tech in Mechanical Engineering",
+      "shortName": "B.E./B.Tech Mechanical",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "mechanical-engineering",
+      "aliases": [
+        "Bachelor of Mechanical Engineering",
+        "BEng Mechanical Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "A four-year undergraduate engineering degree covering engineering mechanics, thermodynamics, fluid mechanics, heat transfer, machine design, manufacturing processes and control systems. Teaching is built around workshop practice, thermal and materials laboratories, computer-aided design and a final-year project. Graduates move into manufacturing, automotive, energy, thermal and design roles, or continue to a master's specialisation such as thermal engineering or machine design.",
+      "metaTitle": "B.E./B.Tech Mechanical: Course, Fees and Admission",
+      "metaDescription": "What a four-year B.E./B.Tech Mechanical degree covers, its entry requirements, how admission is decided and what tuition and duration to plan for."
+    },
+    {
+      "slug": "be-btech-information-technology",
+      "name": "B.E./B.Tech in Information Technology",
+      "shortName": "B.E./B.Tech IT",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "information-technology",
+      "aliases": [
+        "Bachelor of Engineering in Information Technology",
+        "Computer Science major"
+      ],
+      "displayOrder": 180,
+      "durationYears": 4,
+      "summary": "An approved Engineering catalogue category for four-year undergraduate information technology degrees, including university programmes that publish Computer Science as a major within an Information Technology award. The exact university title and major structure remain visible on each offering.",
+      "metaTitle": "B.E./B.Tech IT Programmes",
+      "metaDescription": "Compare B.E./B.Tech IT programmes, official titles, fees, duration and admissions routes for international students."
+    },
+    {
+      "slug": "be-btech-data-science",
+      "name": "B.E./B.Tech in Data Science",
+      "shortName": "B.E./B.Tech Data Science",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "data-science",
+      "aliases": [
+        "Bachelor of Data Science",
+        "BSc Data Science"
+      ],
+      "displayOrder": 33,
+      "durationYears": 4,
+      "summary": "Compare undergraduate Data Science degrees abroad by statistics, machine learning, data engineering, applied projects, tuition and admissions. Each university offering keeps its official award title, artificial-intelligence specialisation depth and entry requirements visible before applying.",
+      "metaTitle": "B.E./B.Tech Data Science Abroad | Fees",
+      "metaDescription": "Compare B.E./B.Tech Data Science programmes abroad by curriculum, tuition fees, admissions and practical training."
+    },
+    {
+      "slug": "be-btech-artificial-intelligence-machine-learning",
+      "name": "B.E./B.Tech in Artificial Intelligence and Machine Learning",
+      "shortName": "B.E./B.Tech AI & ML",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "artificial-intelligence-machine-learning",
+      "aliases": [
+        "Bachelor of Engineering in Artificial Intelligence",
+        "Bachelor of Science in Artificial Intelligence",
+        "Artificial Intelligence and Machine Learning"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "Artificial intelligence and machine learning bachelor's programmes combine core computing and mathematics with statistical learning, data handling and applied model building. Award titles, specialisation depth, admission thresholds and fees differ significantly by university, so the programme record rather than the category should drive a shortlist decision.",
+      "metaTitle": "B.E./B.Tech AI & ML Degree Programmes Abroad",
+      "metaDescription": "Compare B.E./B.Tech AI & ML programmes by curriculum focus, entry thresholds, teaching language, intake, fee state and application route for international applicants."
+    },
+    {
+      "slug": "me-mtech-computer-science-engineering",
+      "name": "M.E./M.Tech in Computer Science and Engineering",
+      "shortName": "M.E./M.Tech CSE",
+      "stream": "engineering",
+      "level": "masters",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Master of Technology in Computer Science and Engineering",
+        "Master of Engineering in Computer Science",
+        "M.Tech Computer Engineering",
+        "M.Tech Artificial Intelligence"
+      ],
+      "durationYears": 2,
+      "displayOrder": 500,
+      "summary": "M.E./M.Tech in Computer Science and Engineering programmes develop advanced subject knowledge and practical skills through structured postgraduate study, projects and assessment. Compare the exact award, accepted qualifying degree, selection requirements, duration, practical training, campus and complete fees before applying.",
+      "metaTitle": "M.E./M.Tech CSE: Compare Entry and Fees",
+      "metaDescription": "Compare M.E./M.Tech CSE programmes by qualifying degree, selection, duration, practical study, campus and complete fees."
+    },
+    {
+      "slug": "me-mtech-electronics-communication-engineering",
+      "name": "M.E./M.Tech in Electronics and Communication Engineering",
+      "shortName": "M.E./M.Tech ECE",
+      "stream": "engineering",
+      "level": "masters",
+      "discipline": "electronics-communication-engineering",
+      "aliases": [
+        "Master of Electronics and Communication Engineering",
+        "MSc Communications Engineering"
+      ],
+      "durationYears": 2,
+      "displayOrder": 500,
+      "summary": "M.E./M.Tech in Electronics and Communication Engineering programmes develop advanced subject knowledge and practical skills through structured postgraduate study, projects and assessment. Compare the exact award, accepted qualifying degree, selection requirements, duration, practical training, campus and complete fees before applying.",
+      "metaTitle": "M.E./M.Tech ECE: Compare Entry and Fees",
+      "metaDescription": "Compare M.E./M.Tech ECE programmes by qualifying degree, selection, duration, practical study, campus and complete fees."
+    },
+    {
+      "slug": "mba",
+      "name": "Master of Business Administration",
+      "shortName": "MBA",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "business-administration",
+      "aliases": [
+        "General MBA",
+        "Full-time MBA",
+        "International MBA"
+      ],
+      "durationYears": 2,
+      "displayOrder": 500,
+      "summary": "Master of Business Administration programmes develop advanced subject knowledge and practical skills through structured postgraduate study, projects and assessment. Compare the exact award, accepted qualifying degree, selection requirements, duration, practical training, campus and complete fees before applying.",
+      "metaTitle": "MBA: Compare Entry and Fees",
+      "metaDescription": "Compare MBA programmes by qualifying degree, selection, duration, practical study, campus and complete fees."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "panimalar-engineering-college",
+      "name": "Panimalar Engineering College",
+      "city": "Chennai",
+      "type": "Private",
+      "establishedYear": 2000,
+      "officialWebsite": "https://www.panimalar.ac.in/",
+      "mediaAttribution": {
+        "logo": {
+          "sourceUrl": "https://www.panimalar.ac.in/assets/images/pec-logo.png",
+          "rights": "Official institutional brand/marketing asset used to identify and illustrate the college in its factual profile; no ownership or licence transfer claimed.",
+          "checkedAt": "2026-10-24",
+          "altText": "Panimalar Engineering College emblem"
+        },
+        "cover": {
+          "sourceUrl": "https://www.panimalar.ac.in/assets/images/CampusLife/panimalar-campus-life.jpg",
+          "rights": "Official institutional brand/marketing asset used to identify and illustrate the college in its factual profile; no ownership or licence transfer claimed.",
+          "checkedAt": "2026-10-24",
+          "altText": "Students working in a computer laboratory at Panimalar Engineering College"
+        }
+      },
+      "summary": "Panimalar Engineering College is a private autonomous college at Poonamallee, Chennai, affiliated to Anna University. Its regular portfolio includes four-year undergraduate engineering degrees and two-year M.E. and MBA programmes. Entry qualifications, selection and fees depend on the exact award and admission category.",
+      "campusLifestyle": "The Poonamallee campus provides separate student hostels, computer laboratories and departmental learning facilities. Hostel residents have access to furnished rooms, Wi-Fi, fitness facilities and medical support. The college’s IDEA Lab supports hands-on design and prototyping activities.",
+      "cityProfile": "The main college is on Bangalore Trunk Road at Varadharajapuram, Poonamallee, Chennai 600123, in Thiruvallur district. The 2026 TNEA college directory identifies Chennai Central as the nearest railway station, about 20 km away. Students should plan travel around the main Poonamallee teaching campus.",
+      "practicalExposure": "The undergraduate regulations organize study over eight semesters and include laboratory and project components. The IDEA Lab supports practical design, electronics and prototyping activity, with facilities for developing and testing student ideas. These resources complement branch-specific coursework; access to a laboratory or placement activity does not guarantee an internship or employment offer.",
+      "hostelOverview": "Separate permanent boys’ and girls’ hostels are listed in the 2026 TNEA directory. For each, annual mess, room and electricity charges are listed as ₹50,000, ₹50,000 and ₹35,000 respectively: ₹1,35,000 combined. Confirm the applicable room, current payable charges and refund conditions before booking.",
+      "dietarySupport": "The 2026 TNEA directory records both vegetarian and non-vegetarian mess provision for boys’ and girls’ hostels. Students with allergies or other dietary needs should confirm suitable meals before committing to accommodation.",
+      "safetyOverview": "The college publishes an anti-ragging contact through the TNEA directory. Its hostel facilities include medical support and a doctor on call. Students should obtain campus emergency and hostel contact details during joining.",
+      "studentSupport": "Departmental learning facilities and the IDEA Lab support academic and practical work. Hostel residents have access to Wi-Fi and fitness facilities. Students Traffic can help applicants review branch prerequisites and prepare their application records.",
+      "whyChoose": [
+        "Choose among computing, electronics, electrical and mechanical undergraduate engineering branches.",
+        "Study through Anna University affiliation with the college’s autonomous curriculum and examinations.",
+        "Use laboratory coursework and practical design facilities alongside the four-year degree."
+      ],
+      "thingsToConsider": [
+        "The August intake reference is the 2025-26 online first-year induction, not a future application deadline.",
+        "Tuition needs a written quotation for the relevant admission category before financial planning.",
+        "TNEA eligibility includes schooling, nativity and category rules beyond minimum subject marks."
+      ],
+      "bestFitFor": [
+        "School-leavers seeking a four-year B.E. or B.Tech. after Mathematics, Physics and Chemistry.",
+        "Applicants who meet the relevant Tamil Nadu counselling or college admission-category requirements.",
+        "Students prepared to study at the main Poonamallee campus and plan hostel or daily travel costs."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "UGC: Autonomous college, 2021-22 to 2030-31",
+        "Anna University: affiliated college, counselling code 1210"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC autonomous-college register",
+          "url": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list"
+        },
+        {
+          "label": "Anna University Thiruvallur affiliated-college directory",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Thiruvallur.php"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "Ten current regular taught routes:seven published undergraduate routes preserved and three postgraduate routes with exact academic qualifications; unknown PGintakes omitted. Research/historical/CityCampus discoveries retain separate holds.",
+        "sectionStates": {
+          "eligibility": "published",
+          "admissions": "published",
+          "fees": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Review my Panimalar branch eligibility",
+            "capture": [
+              "intended branch",
+              "qualifying subjects and marks",
+              "schooling and admission category"
+            ]
+          }
+        ]
+      },
+      "researchSources": [
+        {
+          "label": "Current undergraduate and postgraduate portfolio",
+          "url": "https://www.panimalar.ac.in/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "2025-26 regular degree curriculum",
+          "url": "https://coe.panimalar.ac.in/Curriculam_Syllabus_Regulation_2023_Batch_2025-2026.php",
+          "kind": "official-program",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "Undergraduate regulations: duration and English instruction",
+          "url": "https://coe.panimalar.ac.in/files/PEC-Regulation%202023-B.E%20%26%20B.Tech%20NNN.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "College entry requirements",
+          "url": "https://www.panimalar.ac.in/admission-information.php",
+          "kind": "official-program",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "Tuition disclosure without numerical rates",
+          "url": "https://www.panimalar.ac.in/assets/pdf/MANDATORY-DISCLOSURE.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "TNEA 2026 eligibility and counselling",
+          "url": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "TNEA 2026 college and hostel information, code1210",
+          "url": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "UGC autonomous-college register",
+          "url": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list",
+          "kind": "recognition",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "Anna University affiliated-college directory",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Thiruvallur.php",
+          "kind": "recognition",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "College-authored 2025-26 first-year online induction timetable, document mirror",
+          "url": "https://www.scribd.com/document/929515140/Design-Thinking",
+          "kind": "other",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "Official college August2025 first-year induction activity corroboration",
+          "url": "https://www.linkedin.com/posts/panimalar-engineering-college_alumnitalkseries-panimalarengineeringcollege-activity-7363361798449745920-VOwP",
+          "kind": "other",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "Hostel facilities",
+          "url": "https://www.panimalar.ac.in/hostel.php",
+          "kind": "official-university",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "IDEA Lab facilities",
+          "url": "https://www.panimalar.ac.in/idea-lab.php",
+          "kind": "official-university",
+          "checkedAt": "2026-10-24"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Panimalar a university?",
+          "answer": "Panimalar Engineering College is an autonomous college affiliated to Anna University. The UGC autonomous-college register lists autonomy for 2021-22 to 2030-31."
+        },
+        {
+          "question": "Where is the main campus?",
+          "answer": "The main college is at Bangalore Trunk Road, Varadharajapuram, Poonamallee, Chennai 600123. Use counselling code 1210 to identify this institution."
+        },
+        {
+          "question": "How long are B.E. and B.Tech. degrees?",
+          "answer": "The regular undergraduate regulations specify four years over eight semesters. Lateral entry has a different entry stage and requires separate eligibility checks."
+        },
+        {
+          "question": "What is the teaching language?",
+          "answer": "English is the medium for undergraduate courses except courses related to Tamil, which follow their own language requirement."
+        },
+        {
+          "question": "What subjects and marks are needed for undergraduate entry?",
+          "answer": "Applicants need Mathematics, Physics and Chemistry at higher-secondary level. The college lists 45% in the prescribed subjects for General-category applicants and 40% for the listed Tamil Nadu reserved categories."
+        },
+        {
+          "question": "How does government-quota admission work?",
+          "answer": "TNEA counselling uses qualifying-examination marks and its rules on schooling, nativity, category and documentation. Minimum subject marks alone do not establish eligibility for every applicant."
+        },
+        {
+          "question": "Is August a confirmed future intake?",
+          "answer": "The verified August reference is the 18–29 August 2025 online first-year induction timetable for 2025-26. It establishes that historical cohort’s induction; applicants must obtain later-cycle joining dates separately."
+        },
+        {
+          "question": "What is the tuition fee?",
+          "answer": "The public mandatory disclosure refers to Tamil Nadu government norms without stating a numerical tuition rate. Obtain a written quotation for the programme and admission category, including compulsory charges."
+        },
+        {
+          "question": "Are hostels available and what do they cost?",
+          "answer": "The 2026 TNEA directory lists permanent boys’ and girls’ hostels. Annual mess ₹50,000, room ₹50,000 and electricity ₹35,000 total ₹1,35,000 for each; confirm the current payable amount before booking."
+        },
+        {
+          "question": "Are vegetarian meals available?",
+          "answer": "The TNEA directory lists both vegetarian and non-vegetarian mess provision for both hostels. Confirm any allergy or special-diet needs directly before joining."
+        },
+        {
+          "question": "Can international students use this application route?",
+          "answer": "This profile establishes the regular domestic entry route. Foreign-national, NRI and other international category access needs separate written confirmation before applying."
+        },
+        {
+          "question": "Does practical training guarantee a job?",
+          "answer": "Laboratory and project components support practical learning. Placement support and campus facilities do not guarantee an internship, salary or job offer."
+        },
+        {
+          "question": "What are the postgraduate entry routes?",
+          "answer": "The college lists M.E. Computer Science and Engineering for B.E./B.Tech. CSE or IT graduates, M.E. Communication Systems for B.E. ECE graduates, and MBA for a recognised bachelor’s degree. Its current disclosure states 50% in main and allied subjects for the general quota. Confirm the accepted selection route, equivalence and any other category conditions."
+        }
+      ],
+      "programmes": [
+        {
+          "slug": "panimalar-computer-science-engineering",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "B.E. Computer Science and Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-24",
+            "notes": "The mandatory disclosure states tuition follows Tamil Nadu government norms but gives no numerical tuition rate. A current programme- and admission-category-specific tuition quotation was not located. Request tuition, compulsory college charges and accommodation as separate amounts."
+          },
+          "officialProgramUrl": "https://coe.panimalar.ac.in/Curriculam_Syllabus_Regulation_2023_Batch_2025-2026.php",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the academic and admission-category requirements"
+            ],
+            "restrictions": [
+              "TNEA schooling, nativity and reservation rules apply to the government counselling route.",
+              "International and NRI access has not been verified for this programme."
+            ],
+            "notes": "The verified route is regular domestic entry; do not assume foreign-national admission from general institutional marketing.",
+            "verifiedAt": "2026-10-24",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.E. Computer Science and Engineering is a four-year regular undergraduate degree at the main Poonamallee campus, with English instruction except the prescribed Tamil-related courses.",
+            "eligibility": {
+              "intro": "Higher-secondary subject marks and the relevant counselling or admission-category requirements must both be met.",
+              "items": [
+                "Pass higher secondary or equivalent with Mathematics, Physics and Chemistry.",
+                "At least 45% in the prescribed subject combination for General category; 40% for BC/BCM, MBC/DNC and SC/SCA/ST categories listed by the college.",
+                "Government-quota applicants must also meet TNEA schooling, nativity, category and documentation rules."
+              ]
+            },
+            "applicationSteps": [
+              "For a government-quota seat, complete the relevant TNEA registration and document-verification process and use college code 1210 when entering choices.",
+              "Check branch availability and the applicable college admission-category instructions before accepting an allotment or offer.",
+              "Obtain written tuition, compulsory-charge and joining instructions; submit the required original records during admission."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Higher-secondary marksheet with Mathematics, Physics and Chemistry",
+                "Class X marksheet and transfer certificate"
+              ],
+              "application": [
+                "TNEA application and allotment records where applicable",
+                "Nativity and community certificates where required by the admission category"
+              ]
+            },
+            "deadlinesNote": "Historical baseline: the 2025-26 first-year online induction timetable dates branch sessions to 18–29 August 2025. This is induction evidence, not an application deadline or a confirmed later-cycle start date."
+          },
+          "medium": "English",
+          "mediumNote": "Undergraduate regulation4.14 specifies English for all courses except courses related to Tamil.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-24",
+          "feeNotes": "The mandatory disclosure states tuition follows Tamil Nadu government norms but gives no numerical tuition rate. A current programme- and admission-category-specific tuition quotation was not located. Request tuition, compulsory college charges and accommodation as separate amounts.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year regular undergraduate programme",
+              "language": "English",
+              "details": "Eight-semester study; courses related to Tamil follow their prescribed language requirement."
+            }
+          ]
+        },
+        {
+          "slug": "panimalar-electronics-communication-engineering",
+          "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+          "officialTitle": "B.E. Electronics and Communication Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-24",
+            "notes": "The mandatory disclosure states tuition follows Tamil Nadu government norms but gives no numerical tuition rate. A current programme- and admission-category-specific tuition quotation was not located. Request tuition, compulsory college charges and accommodation as separate amounts."
+          },
+          "officialProgramUrl": "https://coe.panimalar.ac.in/Curriculam_Syllabus_Regulation_2023_Batch_2025-2026.php",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the academic and admission-category requirements"
+            ],
+            "restrictions": [
+              "TNEA schooling, nativity and reservation rules apply to the government counselling route.",
+              "International and NRI access has not been verified for this programme."
+            ],
+            "notes": "The verified route is regular domestic entry; do not assume foreign-national admission from general institutional marketing.",
+            "verifiedAt": "2026-10-24",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.E. Electronics and Communication Engineering is a four-year regular undergraduate degree at the main Poonamallee campus, with English instruction except the prescribed Tamil-related courses.",
+            "eligibility": {
+              "intro": "Higher-secondary subject marks and the relevant counselling or admission-category requirements must both be met.",
+              "items": [
+                "Pass higher secondary or equivalent with Mathematics, Physics and Chemistry.",
+                "At least 45% in the prescribed subject combination for General category; 40% for BC/BCM, MBC/DNC and SC/SCA/ST categories listed by the college.",
+                "Government-quota applicants must also meet TNEA schooling, nativity, category and documentation rules."
+              ]
+            },
+            "applicationSteps": [
+              "For a government-quota seat, complete the relevant TNEA registration and document-verification process and use college code 1210 when entering choices.",
+              "Check branch availability and the applicable college admission-category instructions before accepting an allotment or offer.",
+              "Obtain written tuition, compulsory-charge and joining instructions; submit the required original records during admission."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Higher-secondary marksheet with Mathematics, Physics and Chemistry",
+                "Class X marksheet and transfer certificate"
+              ],
+              "application": [
+                "TNEA application and allotment records where applicable",
+                "Nativity and community certificates where required by the admission category"
+              ]
+            },
+            "deadlinesNote": "Historical baseline: the 2025-26 first-year online induction timetable dates branch sessions to 18–29 August 2025. This is induction evidence, not an application deadline or a confirmed later-cycle start date."
+          },
+          "medium": "English",
+          "mediumNote": "Undergraduate regulation4.14 specifies English for all courses except courses related to Tamil.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-24",
+          "feeNotes": "The mandatory disclosure states tuition follows Tamil Nadu government norms but gives no numerical tuition rate. A current programme- and admission-category-specific tuition quotation was not located. Request tuition, compulsory college charges and accommodation as separate amounts.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year regular undergraduate programme",
+              "language": "English",
+              "details": "Eight-semester study; courses related to Tamil follow their prescribed language requirement."
+            }
+          ]
+        },
+        {
+          "slug": "panimalar-electrical-electronics-engineering",
+          "canonicalCourseSlug": "be-btech-electrical-electronics-engineering",
+          "officialTitle": "B.E. Electrical and Electronics Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-24",
+            "notes": "The mandatory disclosure states tuition follows Tamil Nadu government norms but gives no numerical tuition rate. A current programme- and admission-category-specific tuition quotation was not located. Request tuition, compulsory college charges and accommodation as separate amounts."
+          },
+          "officialProgramUrl": "https://coe.panimalar.ac.in/Curriculam_Syllabus_Regulation_2023_Batch_2025-2026.php",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the academic and admission-category requirements"
+            ],
+            "restrictions": [
+              "TNEA schooling, nativity and reservation rules apply to the government counselling route.",
+              "International and NRI access has not been verified for this programme."
+            ],
+            "notes": "The verified route is regular domestic entry; do not assume foreign-national admission from general institutional marketing.",
+            "verifiedAt": "2026-10-24",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.E. Electrical and Electronics Engineering is a four-year regular undergraduate degree at the main Poonamallee campus, with English instruction except the prescribed Tamil-related courses.",
+            "eligibility": {
+              "intro": "Higher-secondary subject marks and the relevant counselling or admission-category requirements must both be met.",
+              "items": [
+                "Pass higher secondary or equivalent with Mathematics, Physics and Chemistry.",
+                "At least 45% in the prescribed subject combination for General category; 40% for BC/BCM, MBC/DNC and SC/SCA/ST categories listed by the college.",
+                "Government-quota applicants must also meet TNEA schooling, nativity, category and documentation rules."
+              ]
+            },
+            "applicationSteps": [
+              "For a government-quota seat, complete the relevant TNEA registration and document-verification process and use college code 1210 when entering choices.",
+              "Check branch availability and the applicable college admission-category instructions before accepting an allotment or offer.",
+              "Obtain written tuition, compulsory-charge and joining instructions; submit the required original records during admission."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Higher-secondary marksheet with Mathematics, Physics and Chemistry",
+                "Class X marksheet and transfer certificate"
+              ],
+              "application": [
+                "TNEA application and allotment records where applicable",
+                "Nativity and community certificates where required by the admission category"
+              ]
+            },
+            "deadlinesNote": "Historical baseline: the 2025-26 first-year online induction timetable dates branch sessions to 18–29 August 2025. This is induction evidence, not an application deadline or a confirmed later-cycle start date."
+          },
+          "medium": "English",
+          "mediumNote": "Undergraduate regulation4.14 specifies English for all courses except courses related to Tamil.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-24",
+          "feeNotes": "The mandatory disclosure states tuition follows Tamil Nadu government norms but gives no numerical tuition rate. A current programme- and admission-category-specific tuition quotation was not located. Request tuition, compulsory college charges and accommodation as separate amounts.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year regular undergraduate programme",
+              "language": "English",
+              "details": "Eight-semester study; courses related to Tamil follow their prescribed language requirement."
+            }
+          ]
+        },
+        {
+          "slug": "panimalar-mechanical-engineering",
+          "canonicalCourseSlug": "be-btech-mechanical-engineering",
+          "officialTitle": "B.E. Mechanical Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-24",
+            "notes": "The mandatory disclosure states tuition follows Tamil Nadu government norms but gives no numerical tuition rate. A current programme- and admission-category-specific tuition quotation was not located. Request tuition, compulsory college charges and accommodation as separate amounts."
+          },
+          "officialProgramUrl": "https://coe.panimalar.ac.in/Curriculam_Syllabus_Regulation_2023_Batch_2025-2026.php",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the academic and admission-category requirements"
+            ],
+            "restrictions": [
+              "TNEA schooling, nativity and reservation rules apply to the government counselling route.",
+              "International and NRI access has not been verified for this programme."
+            ],
+            "notes": "The verified route is regular domestic entry; do not assume foreign-national admission from general institutional marketing.",
+            "verifiedAt": "2026-10-24",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.E. Mechanical Engineering is a four-year regular undergraduate degree at the main Poonamallee campus, with English instruction except the prescribed Tamil-related courses.",
+            "eligibility": {
+              "intro": "Higher-secondary subject marks and the relevant counselling or admission-category requirements must both be met.",
+              "items": [
+                "Pass higher secondary or equivalent with Mathematics, Physics and Chemistry.",
+                "At least 45% in the prescribed subject combination for General category; 40% for BC/BCM, MBC/DNC and SC/SCA/ST categories listed by the college.",
+                "Government-quota applicants must also meet TNEA schooling, nativity, category and documentation rules."
+              ]
+            },
+            "applicationSteps": [
+              "For a government-quota seat, complete the relevant TNEA registration and document-verification process and use college code 1210 when entering choices.",
+              "Check branch availability and the applicable college admission-category instructions before accepting an allotment or offer.",
+              "Obtain written tuition, compulsory-charge and joining instructions; submit the required original records during admission."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Higher-secondary marksheet with Mathematics, Physics and Chemistry",
+                "Class X marksheet and transfer certificate"
+              ],
+              "application": [
+                "TNEA application and allotment records where applicable",
+                "Nativity and community certificates where required by the admission category"
+              ]
+            },
+            "deadlinesNote": "Historical baseline: the 2025-26 first-year online induction timetable dates branch sessions to 18–29 August 2025. This is induction evidence, not an application deadline or a confirmed later-cycle start date."
+          },
+          "medium": "English",
+          "mediumNote": "Undergraduate regulation4.14 specifies English for all courses except courses related to Tamil.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-24",
+          "feeNotes": "The mandatory disclosure states tuition follows Tamil Nadu government norms but gives no numerical tuition rate. A current programme- and admission-category-specific tuition quotation was not located. Request tuition, compulsory college charges and accommodation as separate amounts.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year regular undergraduate programme",
+              "language": "English",
+              "details": "Eight-semester study; courses related to Tamil follow their prescribed language requirement."
+            }
+          ]
+        },
+        {
+          "slug": "panimalar-information-technology",
+          "canonicalCourseSlug": "be-btech-information-technology",
+          "officialTitle": "B.Tech. Information Technology",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-24",
+            "notes": "The mandatory disclosure states tuition follows Tamil Nadu government norms but gives no numerical tuition rate. A current programme- and admission-category-specific tuition quotation was not located. Request tuition, compulsory college charges and accommodation as separate amounts."
+          },
+          "officialProgramUrl": "https://coe.panimalar.ac.in/Curriculam_Syllabus_Regulation_2023_Batch_2025-2026.php",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the academic and admission-category requirements"
+            ],
+            "restrictions": [
+              "TNEA schooling, nativity and reservation rules apply to the government counselling route.",
+              "International and NRI access has not been verified for this programme."
+            ],
+            "notes": "The verified route is regular domestic entry; do not assume foreign-national admission from general institutional marketing.",
+            "verifiedAt": "2026-10-24",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Tech. Information Technology is a four-year regular undergraduate degree at the main Poonamallee campus, with English instruction except the prescribed Tamil-related courses.",
+            "eligibility": {
+              "intro": "Higher-secondary subject marks and the relevant counselling or admission-category requirements must both be met.",
+              "items": [
+                "Pass higher secondary or equivalent with Mathematics, Physics and Chemistry.",
+                "At least 45% in the prescribed subject combination for General category; 40% for BC/BCM, MBC/DNC and SC/SCA/ST categories listed by the college.",
+                "Government-quota applicants must also meet TNEA schooling, nativity, category and documentation rules."
+              ]
+            },
+            "applicationSteps": [
+              "For a government-quota seat, complete the relevant TNEA registration and document-verification process and use college code 1210 when entering choices.",
+              "Check branch availability and the applicable college admission-category instructions before accepting an allotment or offer.",
+              "Obtain written tuition, compulsory-charge and joining instructions; submit the required original records during admission."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Higher-secondary marksheet with Mathematics, Physics and Chemistry",
+                "Class X marksheet and transfer certificate"
+              ],
+              "application": [
+                "TNEA application and allotment records where applicable",
+                "Nativity and community certificates where required by the admission category"
+              ]
+            },
+            "deadlinesNote": "Historical baseline: the 2025-26 first-year online induction timetable dates branch sessions to 18–29 August 2025. This is induction evidence, not an application deadline or a confirmed later-cycle start date."
+          },
+          "medium": "English",
+          "mediumNote": "Undergraduate regulation4.14 specifies English for all courses except courses related to Tamil.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-24",
+          "feeNotes": "The mandatory disclosure states tuition follows Tamil Nadu government norms but gives no numerical tuition rate. A current programme- and admission-category-specific tuition quotation was not located. Request tuition, compulsory college charges and accommodation as separate amounts.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year regular undergraduate programme",
+              "language": "English",
+              "details": "Eight-semester study; courses related to Tamil follow their prescribed language requirement."
+            }
+          ]
+        },
+        {
+          "slug": "panimalar-data-science",
+          "canonicalCourseSlug": "be-btech-data-science",
+          "officialTitle": "B.Tech. Artificial Intelligence and Data Science",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-24",
+            "notes": "The mandatory disclosure states tuition follows Tamil Nadu government norms but gives no numerical tuition rate. A current programme- and admission-category-specific tuition quotation was not located. Request tuition, compulsory college charges and accommodation as separate amounts."
+          },
+          "officialProgramUrl": "https://coe.panimalar.ac.in/Curriculam_Syllabus_Regulation_2023_Batch_2025-2026.php",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the academic and admission-category requirements"
+            ],
+            "restrictions": [
+              "TNEA schooling, nativity and reservation rules apply to the government counselling route.",
+              "International and NRI access has not been verified for this programme."
+            ],
+            "notes": "The verified route is regular domestic entry; do not assume foreign-national admission from general institutional marketing.",
+            "verifiedAt": "2026-10-24",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Tech. Artificial Intelligence and Data Science is a four-year regular undergraduate degree at the main Poonamallee campus, with English instruction except the prescribed Tamil-related courses.",
+            "eligibility": {
+              "intro": "Higher-secondary subject marks and the relevant counselling or admission-category requirements must both be met.",
+              "items": [
+                "Pass higher secondary or equivalent with Mathematics, Physics and Chemistry.",
+                "At least 45% in the prescribed subject combination for General category; 40% for BC/BCM, MBC/DNC and SC/SCA/ST categories listed by the college.",
+                "Government-quota applicants must also meet TNEA schooling, nativity, category and documentation rules."
+              ]
+            },
+            "applicationSteps": [
+              "For a government-quota seat, complete the relevant TNEA registration and document-verification process and use college code 1210 when entering choices.",
+              "Check branch availability and the applicable college admission-category instructions before accepting an allotment or offer.",
+              "Obtain written tuition, compulsory-charge and joining instructions; submit the required original records during admission."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Higher-secondary marksheet with Mathematics, Physics and Chemistry",
+                "Class X marksheet and transfer certificate"
+              ],
+              "application": [
+                "TNEA application and allotment records where applicable",
+                "Nativity and community certificates where required by the admission category"
+              ]
+            },
+            "deadlinesNote": "Historical baseline: the 2025-26 first-year online induction timetable dates branch sessions to 18–29 August 2025. This is induction evidence, not an application deadline or a confirmed later-cycle start date."
+          },
+          "medium": "English",
+          "mediumNote": "Undergraduate regulation4.14 specifies English for all courses except courses related to Tamil.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-24",
+          "feeNotes": "The mandatory disclosure states tuition follows Tamil Nadu government norms but gives no numerical tuition rate. A current programme- and admission-category-specific tuition quotation was not located. Request tuition, compulsory college charges and accommodation as separate amounts.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year regular undergraduate programme",
+              "language": "English",
+              "details": "Eight-semester study; courses related to Tamil follow their prescribed language requirement."
+            }
+          ]
+        },
+        {
+          "slug": "panimalar-artificial-intelligence-machine-learning",
+          "canonicalCourseSlug": "be-btech-artificial-intelligence-machine-learning",
+          "officialTitle": "B.Tech. Artificial Intelligence and Machine Learning",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-24",
+            "notes": "The mandatory disclosure states tuition follows Tamil Nadu government norms but gives no numerical tuition rate. A current programme- and admission-category-specific tuition quotation was not located. Request tuition, compulsory college charges and accommodation as separate amounts."
+          },
+          "officialProgramUrl": "https://coe.panimalar.ac.in/Curriculam_Syllabus_Regulation_2023_Batch_2025-2026.php",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the academic and admission-category requirements"
+            ],
+            "restrictions": [
+              "TNEA schooling, nativity and reservation rules apply to the government counselling route.",
+              "International and NRI access has not been verified for this programme."
+            ],
+            "notes": "The verified route is regular domestic entry; do not assume foreign-national admission from general institutional marketing.",
+            "verifiedAt": "2026-10-24",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Tech. Artificial Intelligence and Machine Learning is a four-year regular undergraduate degree at the main Poonamallee campus, with English instruction except the prescribed Tamil-related courses.",
+            "eligibility": {
+              "intro": "Higher-secondary subject marks and the relevant counselling or admission-category requirements must both be met.",
+              "items": [
+                "Pass higher secondary or equivalent with Mathematics, Physics and Chemistry.",
+                "At least 45% in the prescribed subject combination for General category; 40% for BC/BCM, MBC/DNC and SC/SCA/ST categories listed by the college.",
+                "Government-quota applicants must also meet TNEA schooling, nativity, category and documentation rules."
+              ]
+            },
+            "applicationSteps": [
+              "For a government-quota seat, complete the relevant TNEA registration and document-verification process and use college code 1210 when entering choices.",
+              "Check branch availability and the applicable college admission-category instructions before accepting an allotment or offer.",
+              "Obtain written tuition, compulsory-charge and joining instructions; submit the required original records during admission."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Higher-secondary marksheet with Mathematics, Physics and Chemistry",
+                "Class X marksheet and transfer certificate"
+              ],
+              "application": [
+                "TNEA application and allotment records where applicable",
+                "Nativity and community certificates where required by the admission category"
+              ]
+            },
+            "deadlinesNote": "Historical baseline: the 2025-26 first-year online induction timetable dates branch sessions to 18–29 August 2025. This is induction evidence, not an application deadline or a confirmed later-cycle start date."
+          },
+          "medium": "English",
+          "mediumNote": "Undergraduate regulation4.14 specifies English for all courses except courses related to Tamil.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-24",
+          "feeNotes": "The mandatory disclosure states tuition follows Tamil Nadu government norms but gives no numerical tuition rate. A current programme- and admission-category-specific tuition quotation was not located. Request tuition, compulsory college charges and accommodation as separate amounts.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year regular undergraduate programme",
+              "language": "English",
+              "details": "Eight-semester study; courses related to Tamil follow their prescribed language requirement."
+            }
+          ]
+        },
+        {
+          "slug": "panimalar-me-cse",
+          "canonicalCourseSlug": "me-mtech-computer-science-engineering",
+          "officialTitle": "M.E. Computer Science and Engineering",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.panimalar.ac.in/admission-information.php",
+          "medium": "English",
+          "mediumNote": "The college’s posted 2023 common postgraduate regulations expressly prescribe English for all programme courses.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "verifiedAt": "2026-10-25",
+            "notes": "Request a current programme- and admission-category-specific tuition quotation. The own disclosure cites Tamil Nadu government norms without numerical tuition; secondary historical references differ in category and component basis."
+          },
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Current category-specific tuition remains on request; conflicting historical secondary references are not represented as a current price. Careers360 reports INR 100000 for the full two-year general-category course as tuition only; the source does not give a separate complete-fee total. This indicative reference is not a guaranteed current tariff; confirm your quota, compulsory charges and payable amount.",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants using the verified regular domestic postgraduate admission route"
+            ],
+            "restrictions": [
+              "This entry covers the main Poonamallee college, code1210; separately branded CityCampus and trust medical/nursing institutions are not included.",
+              "A complete current foreign/NRI/OCI route is not established for this degree."
+            ],
+            "notes": "The institution assesses the exact qualifying degree, applicable selection/counselling route and admission category; a qualifying degree alone does not guarantee admission.",
+            "sourceUrl": "https://www.panimalar.ac.in/admission-information.php",
+            "verifiedAt": "2026-10-25"
+          },
+          "admissionsContent": {
+            "overview": "M.E. Computer Science and Engineering is a two-year, four-semester full-time postgraduate programme at Panimalar Engineering College, Poonamallee, Chennai. The current college admission page and common PG regulations identify this exact award; select the postgraduate degree separately from the undergraduate course.",
+            "eligibility": {
+              "intro": "The following is the college’s explicitly verified general-category qualifying-degree route. Other categories or equivalence routes require current university assessment.",
+              "items": [
+                "A recognised B.E./B.Tech. in Computer Science and Engineering or Information Technology, as specified by the college’s exact M.E.CSE admission row.",
+                "The own mandatory disclosure updated 2 March 2026 states 50% in main and allied subjects for this programme’s general-quota qualification.",
+                "Satisfy the applicable annually prescribed Anna University/TANCA-equivalence and selection requirements. Confirm the accepted entrance/counselling route for the admission cycle; no test waiver is implied.",
+                "Full-time PG students cannot attend another full-time programme or take employment during programme working hours under the college regulations."
+              ]
+            },
+            "applicationSteps": [
+              "Contact the official college postgraduate admission route and select this exact main-campus award for the applicable cycle.",
+              "Submit the qualifying degree and marks, complete the applicable entrance/counselling or institutional selection process, and obtain equivalence clearance where required.",
+              "Follow the provisional offer for original-document verification, current category-specific fees and reporting instructions before enrolment."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying-degree certificate/provisional evidence and complete undergraduate mark records.",
+                "Qualifying-discipline and university-equivalence evidence where required."
+              ],
+              "application": [
+                "Application and identity/date-of-birth records requested by the college.",
+                "Applicable category and notified entrance/counselling/allotment records; obtain the current college checklist."
+              ]
+            },
+            "deadlinesNote": "An exact forthcoming first-entry month is not established for this postgraduate route. Follow the current programme admission and reporting notice; the historical undergraduate induction does not establish a PG start.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 100000,
+              "status": "indicative",
+              "period": "full_course",
+              "componentBasis": "Careers360 named course table: complete-course general-category tuition; MBA also gives the same total-fee figure. Additional institutional charges may apply. Exact category and current payable tariff need confirmation.",
+              "audience": "domestic",
+              "category": "General category; regular two-year course",
+              "academicYear": "2026 page; tariff cycle not specified",
+              "sourceUrl": "https://www.careers360.com/colleges/panimalar-engineering-college-chennai/fees",
+              "sourceLabel": "Careers360 named Panimalar Engineering College Chennai fee table",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "teachingPhases": [
+            {
+              "phase": "Full-time four-semester postgraduate programme",
+              "language": "English",
+              "details": "The posted 2023 regulations cover all three named postgraduate awards. They prescribe programme-specific project and training work; confirm the exact departmental schedule before enrolling."
+            }
+          ]
+        },
+        {
+          "slug": "panimalar-me-communication-systems",
+          "canonicalCourseSlug": "me-mtech-electronics-communication-engineering",
+          "officialTitle": "M.E. Communication Systems",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.panimalar.ac.in/admission-information.php",
+          "medium": "English",
+          "mediumNote": "The college’s posted 2023 common postgraduate regulations expressly prescribe English for all programme courses.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "verifiedAt": "2026-10-25",
+            "notes": "Request a current programme- and admission-category-specific tuition quotation. The own disclosure cites Tamil Nadu government norms without numerical tuition; secondary historical references differ in category and component basis."
+          },
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Current category-specific tuition remains on request; conflicting historical secondary references are not represented as a current price. Careers360 reports INR 100000 for the full two-year general-category course as tuition only; the source does not give a separate complete-fee total. This indicative reference is not a guaranteed current tariff; confirm your quota, compulsory charges and payable amount.",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants using the verified regular domestic postgraduate admission route"
+            ],
+            "restrictions": [
+              "This entry covers the main Poonamallee college, code1210; separately branded CityCampus and trust medical/nursing institutions are not included.",
+              "A complete current foreign/NRI/OCI route is not established for this degree."
+            ],
+            "notes": "The institution assesses the exact qualifying degree, applicable selection/counselling route and admission category; a qualifying degree alone does not guarantee admission.",
+            "sourceUrl": "https://www.panimalar.ac.in/admission-information.php",
+            "verifiedAt": "2026-10-25"
+          },
+          "admissionsContent": {
+            "overview": "M.E. Communication Systems is a two-year, four-semester full-time postgraduate programme at Panimalar Engineering College, Poonamallee, Chennai. The current college admission page and common PG regulations identify this exact award; select the postgraduate degree separately from the undergraduate course.",
+            "eligibility": {
+              "intro": "The following is the college’s explicitly verified general-category qualifying-degree route. Other categories or equivalence routes require current university assessment.",
+              "items": [
+                "A recognised B.E. in Electronics and Communication Engineering; the college’s exact Communication Systems admission row specifies B.E.ECE only.",
+                "The own mandatory disclosure updated 2 March 2026 states 50% in main and allied subjects for this programme’s general-quota qualification.",
+                "Satisfy the applicable annually prescribed Anna University/TANCA-equivalence and selection requirements. Confirm the accepted entrance/counselling route for the admission cycle; no test waiver is implied.",
+                "Full-time PG students cannot attend another full-time programme or take employment during programme working hours under the college regulations."
+              ]
+            },
+            "applicationSteps": [
+              "Contact the official college postgraduate admission route and select this exact main-campus award for the applicable cycle.",
+              "Submit the qualifying degree and marks, complete the applicable entrance/counselling or institutional selection process, and obtain equivalence clearance where required.",
+              "Follow the provisional offer for original-document verification, current category-specific fees and reporting instructions before enrolment."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying-degree certificate/provisional evidence and complete undergraduate mark records.",
+                "Qualifying-discipline and university-equivalence evidence where required."
+              ],
+              "application": [
+                "Application and identity/date-of-birth records requested by the college.",
+                "Applicable category and notified entrance/counselling/allotment records; obtain the current college checklist."
+              ]
+            },
+            "deadlinesNote": "An exact forthcoming first-entry month is not established for this postgraduate route. Follow the current programme admission and reporting notice; the historical undergraduate induction does not establish a PG start.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 100000,
+              "status": "indicative",
+              "period": "full_course",
+              "componentBasis": "Careers360 named course table: complete-course general-category tuition; MBA also gives the same total-fee figure. Additional institutional charges may apply. Exact category and current payable tariff need confirmation.",
+              "audience": "domestic",
+              "category": "General category; regular two-year course",
+              "academicYear": "2026 page; tariff cycle not specified",
+              "sourceUrl": "https://www.careers360.com/colleges/panimalar-engineering-college-chennai/fees",
+              "sourceLabel": "Careers360 named Panimalar Engineering College Chennai fee table",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "teachingPhases": [
+            {
+              "phase": "Full-time four-semester postgraduate programme",
+              "language": "English",
+              "details": "The posted 2023 regulations cover all three named postgraduate awards. They prescribe programme-specific project and training work; confirm the exact departmental schedule before enrolling."
+            }
+          ]
+        },
+        {
+          "slug": "panimalar-mba",
+          "canonicalCourseSlug": "mba",
+          "officialTitle": "Master of Business Administration",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.panimalar.ac.in/admission-information.php",
+          "medium": "English",
+          "mediumNote": "The college’s posted 2023 common postgraduate regulations expressly prescribe English for all programme courses.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "verifiedAt": "2026-10-25",
+            "notes": "Request a current programme- and admission-category-specific tuition quotation. The own disclosure cites Tamil Nadu government norms without numerical tuition; secondary historical references differ in category and component basis."
+          },
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Current category-specific tuition remains on request; conflicting historical secondary references are not represented as a current price. Careers360 reports INR 70000 for the full two-year general-category course as the reported complete-course total, also repeated in the tuition column. This indicative reference is not a guaranteed current tariff; confirm your quota, compulsory charges and payable amount.",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants using the verified regular domestic postgraduate admission route"
+            ],
+            "restrictions": [
+              "This entry covers the main Poonamallee college, code1210; separately branded CityCampus and trust medical/nursing institutions are not included.",
+              "A complete current foreign/NRI/OCI route is not established for this degree."
+            ],
+            "notes": "The institution assesses the exact qualifying degree, applicable selection/counselling route and admission category; a qualifying degree alone does not guarantee admission.",
+            "sourceUrl": "https://www.panimalar.ac.in/admission-information.php",
+            "verifiedAt": "2026-10-25"
+          },
+          "admissionsContent": {
+            "overview": "Master of Business Administration is a two-year, four-semester full-time postgraduate programme at Panimalar Engineering College, Poonamallee, Chennai. The current college admission page and common PG regulations identify this exact award; select the postgraduate degree separately from the undergraduate course.",
+            "eligibility": {
+              "intro": "The following is the college’s explicitly verified general-category qualifying-degree route. Other categories or equivalence routes require current university assessment.",
+              "items": [
+                "A recognised bachelor’s degree accepted for MBA admission. The college’s admission page explicitly accepts a qualified bachelor’s degree from a recognised university.",
+                "The own mandatory disclosure updated 2 March 2026 states 50% in main and allied subjects for this programme’s general-quota qualification.",
+                "Satisfy the applicable annually prescribed Anna University/TANCA-equivalence and selection requirements. Confirm the accepted entrance/counselling route for the admission cycle; no test waiver is implied.",
+                "Full-time PG students cannot attend another full-time programme or take employment during programme working hours under the college regulations."
+              ]
+            },
+            "applicationSteps": [
+              "Contact the official college postgraduate admission route and select this exact main-campus award for the applicable cycle.",
+              "Submit the qualifying degree and marks, complete the applicable entrance/counselling or institutional selection process, and obtain equivalence clearance where required.",
+              "Follow the provisional offer for original-document verification, current category-specific fees and reporting instructions before enrolment."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying-degree certificate/provisional evidence and complete undergraduate mark records.",
+                "Qualifying-discipline and university-equivalence evidence where required."
+              ],
+              "application": [
+                "Application and identity/date-of-birth records requested by the college.",
+                "Applicable category and notified entrance/counselling/allotment records; obtain the current college checklist."
+              ]
+            },
+            "deadlinesNote": "An exact forthcoming first-entry month is not established for this postgraduate route. Follow the current programme admission and reporting notice; the historical undergraduate induction does not establish a PG start.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 70000,
+              "status": "indicative",
+              "period": "full_course",
+              "componentBasis": "Careers360 named course table: complete-course general-category tuition; MBA also gives the same total-fee figure. Additional institutional charges may apply. Exact category and current payable tariff need confirmation.",
+              "audience": "domestic",
+              "category": "General category; regular two-year course",
+              "academicYear": "2026 page; tariff cycle not specified",
+              "sourceUrl": "https://www.careers360.com/colleges/panimalar-engineering-college-chennai/fees",
+              "sourceLabel": "Careers360 named Panimalar Engineering College Chennai fee table",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "teachingPhases": [
+            {
+              "phase": "Full-time four-semester postgraduate programme",
+              "language": "English",
+              "details": "The posted 2023 regulations cover all three named postgraduate awards. They prescribe programme-specific project and training work; confirm the exact departmental schedule before enrolling."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "eligibility",
+      "claimText": "Mathematics, Physics and Chemistry;45%General and40%listed reserved categories;TNEA route adds nativity and schooling requirements.",
+      "status": "verified",
+      "sourceLabel": "Official undergraduate entry requirements",
+      "sourceUrl": "https://www.panimalar.ac.in/admission-information.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-computer-science-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "admissions",
+      "claimText": "Government counselling through TNEA with qualifying marks,document verification,choice filling and allotment;college code1210.",
+      "status": "verified",
+      "sourceLabel": "TNEA2026 information brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-computer-science-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "intake",
+      "claimText": "2025-26 I YEAR STUDENT INDUCTION PROGRAMME Online Mode timetable dates branch sessions18–29August2025,covering CSE,ECE,EEE,Mechanical,IT,AI&DS and AI&ML.",
+      "status": "verified",
+      "sourceLabel": "College-authored2025-26 induction timetable, mirrored document",
+      "sourceUrl": "https://www.scribd.com/document/929515140/Design-Thinking",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-computer-science-engineering",
+      "internalNotes": "Explicitly first-year online induction, not merely continuing-student activity. Official college LinkedIn corroborates branch alumni talks on 19/20 August 2025; a participant comment calls it an induction programme: https://www.linkedin.com/posts/panimalar-engineering-college_alumnitalkseries-panimalarengineeringcollege-activity-7363361798449745920-VOwP . Historical cycle is prominent in public deadlinesNote; no later-cycle or physical start inferred."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "medium",
+      "claimText": "Regulation4.14:English for all undergraduate courses except courses related to Tamil;four-year eight-semester regular degree.",
+      "status": "verified",
+      "sourceLabel": "Official BE/BTech2023 regulations",
+      "sourceUrl": "https://coe.panimalar.ac.in/files/PEC-Regulation%202023-B.E%20%26%20B.Tech%20NNN.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-computer-science-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "fee",
+      "claimText": "The mandatory disclosure states tuition follows Tamil Nadu government norms but gives no numerical tuition rate. A current programme- and admission-category-specific tuition quotation was not located. Request tuition, compulsory college charges and accommodation as separate amounts.",
+      "status": "verified",
+      "sourceLabel": "Official mandatory disclosure, tuition section",
+      "sourceUrl": "https://www.panimalar.ac.in/assets/pdf/MANDATORY-DISCLOSURE.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-computer-science-engineering",
+      "internalNotes": "Targeted search of main admissions,mandatory disclosure,current curriculum,TNEA2026 brochure and college directory found no programme/category numerical tuition quotation. No inferred government rate or aggregator price used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "eligibility",
+      "claimText": "Mathematics, Physics and Chemistry;45%General and40%listed reserved categories;TNEA route adds nativity and schooling requirements.",
+      "status": "verified",
+      "sourceLabel": "Official undergraduate entry requirements",
+      "sourceUrl": "https://www.panimalar.ac.in/admission-information.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-electronics-communication-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "admissions",
+      "claimText": "Government counselling through TNEA with qualifying marks,document verification,choice filling and allotment;college code1210.",
+      "status": "verified",
+      "sourceLabel": "TNEA2026 information brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-electronics-communication-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "intake",
+      "claimText": "2025-26 I YEAR STUDENT INDUCTION PROGRAMME Online Mode timetable dates branch sessions18–29August2025,covering CSE,ECE,EEE,Mechanical,IT,AI&DS and AI&ML.",
+      "status": "verified",
+      "sourceLabel": "College-authored2025-26 induction timetable, mirrored document",
+      "sourceUrl": "https://www.scribd.com/document/929515140/Design-Thinking",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-electronics-communication-engineering",
+      "internalNotes": "Explicitly first-year online induction, not merely continuing-student activity. Official college LinkedIn corroborates branch alumni talks on 19/20 August 2025; a participant comment calls it an induction programme: https://www.linkedin.com/posts/panimalar-engineering-college_alumnitalkseries-panimalarengineeringcollege-activity-7363361798449745920-VOwP . Historical cycle is prominent in public deadlinesNote; no later-cycle or physical start inferred."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "medium",
+      "claimText": "Regulation4.14:English for all undergraduate courses except courses related to Tamil;four-year eight-semester regular degree.",
+      "status": "verified",
+      "sourceLabel": "Official BE/BTech2023 regulations",
+      "sourceUrl": "https://coe.panimalar.ac.in/files/PEC-Regulation%202023-B.E%20%26%20B.Tech%20NNN.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-electronics-communication-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "fee",
+      "claimText": "The mandatory disclosure states tuition follows Tamil Nadu government norms but gives no numerical tuition rate. A current programme- and admission-category-specific tuition quotation was not located. Request tuition, compulsory college charges and accommodation as separate amounts.",
+      "status": "verified",
+      "sourceLabel": "Official mandatory disclosure, tuition section",
+      "sourceUrl": "https://www.panimalar.ac.in/assets/pdf/MANDATORY-DISCLOSURE.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-electronics-communication-engineering",
+      "internalNotes": "Targeted search of main admissions,mandatory disclosure,current curriculum,TNEA2026 brochure and college directory found no programme/category numerical tuition quotation. No inferred government rate or aggregator price used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "eligibility",
+      "claimText": "Mathematics, Physics and Chemistry;45%General and40%listed reserved categories;TNEA route adds nativity and schooling requirements.",
+      "status": "verified",
+      "sourceLabel": "Official undergraduate entry requirements",
+      "sourceUrl": "https://www.panimalar.ac.in/admission-information.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-electrical-electronics-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "admissions",
+      "claimText": "Government counselling through TNEA with qualifying marks,document verification,choice filling and allotment;college code1210.",
+      "status": "verified",
+      "sourceLabel": "TNEA2026 information brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-electrical-electronics-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "intake",
+      "claimText": "2025-26 I YEAR STUDENT INDUCTION PROGRAMME Online Mode timetable dates branch sessions18–29August2025,covering CSE,ECE,EEE,Mechanical,IT,AI&DS and AI&ML.",
+      "status": "verified",
+      "sourceLabel": "College-authored2025-26 induction timetable, mirrored document",
+      "sourceUrl": "https://www.scribd.com/document/929515140/Design-Thinking",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-electrical-electronics-engineering",
+      "internalNotes": "Explicitly first-year online induction, not merely continuing-student activity. Official college LinkedIn corroborates branch alumni talks on 19/20 August 2025; a participant comment calls it an induction programme: https://www.linkedin.com/posts/panimalar-engineering-college_alumnitalkseries-panimalarengineeringcollege-activity-7363361798449745920-VOwP . Historical cycle is prominent in public deadlinesNote; no later-cycle or physical start inferred."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "medium",
+      "claimText": "Regulation4.14:English for all undergraduate courses except courses related to Tamil;four-year eight-semester regular degree.",
+      "status": "verified",
+      "sourceLabel": "Official BE/BTech2023 regulations",
+      "sourceUrl": "https://coe.panimalar.ac.in/files/PEC-Regulation%202023-B.E%20%26%20B.Tech%20NNN.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-electrical-electronics-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "fee",
+      "claimText": "The mandatory disclosure states tuition follows Tamil Nadu government norms but gives no numerical tuition rate. A current programme- and admission-category-specific tuition quotation was not located. Request tuition, compulsory college charges and accommodation as separate amounts.",
+      "status": "verified",
+      "sourceLabel": "Official mandatory disclosure, tuition section",
+      "sourceUrl": "https://www.panimalar.ac.in/assets/pdf/MANDATORY-DISCLOSURE.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-electrical-electronics-engineering",
+      "internalNotes": "Targeted search of main admissions,mandatory disclosure,current curriculum,TNEA2026 brochure and college directory found no programme/category numerical tuition quotation. No inferred government rate or aggregator price used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "eligibility",
+      "claimText": "Mathematics, Physics and Chemistry;45%General and40%listed reserved categories;TNEA route adds nativity and schooling requirements.",
+      "status": "verified",
+      "sourceLabel": "Official undergraduate entry requirements",
+      "sourceUrl": "https://www.panimalar.ac.in/admission-information.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "admissions",
+      "claimText": "Government counselling through TNEA with qualifying marks,document verification,choice filling and allotment;college code1210.",
+      "status": "verified",
+      "sourceLabel": "TNEA2026 information brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "intake",
+      "claimText": "2025-26 I YEAR STUDENT INDUCTION PROGRAMME Online Mode timetable dates branch sessions18–29August2025,covering CSE,ECE,EEE,Mechanical,IT,AI&DS and AI&ML.",
+      "status": "verified",
+      "sourceLabel": "College-authored2025-26 induction timetable, mirrored document",
+      "sourceUrl": "https://www.scribd.com/document/929515140/Design-Thinking",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-mechanical-engineering",
+      "internalNotes": "Explicitly first-year online induction, not merely continuing-student activity. Official college LinkedIn corroborates branch alumni talks on 19/20 August 2025; a participant comment calls it an induction programme: https://www.linkedin.com/posts/panimalar-engineering-college_alumnitalkseries-panimalarengineeringcollege-activity-7363361798449745920-VOwP . Historical cycle is prominent in public deadlinesNote; no later-cycle or physical start inferred."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "medium",
+      "claimText": "Regulation4.14:English for all undergraduate courses except courses related to Tamil;four-year eight-semester regular degree.",
+      "status": "verified",
+      "sourceLabel": "Official BE/BTech2023 regulations",
+      "sourceUrl": "https://coe.panimalar.ac.in/files/PEC-Regulation%202023-B.E%20%26%20B.Tech%20NNN.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "fee",
+      "claimText": "The mandatory disclosure states tuition follows Tamil Nadu government norms but gives no numerical tuition rate. A current programme- and admission-category-specific tuition quotation was not located. Request tuition, compulsory college charges and accommodation as separate amounts.",
+      "status": "verified",
+      "sourceLabel": "Official mandatory disclosure, tuition section",
+      "sourceUrl": "https://www.panimalar.ac.in/assets/pdf/MANDATORY-DISCLOSURE.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-mechanical-engineering",
+      "internalNotes": "Targeted search of main admissions,mandatory disclosure,current curriculum,TNEA2026 brochure and college directory found no programme/category numerical tuition quotation. No inferred government rate or aggregator price used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "eligibility",
+      "claimText": "Mathematics, Physics and Chemistry;45%General and40%listed reserved categories;TNEA route adds nativity and schooling requirements.",
+      "status": "verified",
+      "sourceLabel": "Official undergraduate entry requirements",
+      "sourceUrl": "https://www.panimalar.ac.in/admission-information.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-information-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "admissions",
+      "claimText": "Government counselling through TNEA with qualifying marks,document verification,choice filling and allotment;college code1210.",
+      "status": "verified",
+      "sourceLabel": "TNEA2026 information brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-information-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "intake",
+      "claimText": "2025-26 I YEAR STUDENT INDUCTION PROGRAMME Online Mode timetable dates branch sessions18–29August2025,covering CSE,ECE,EEE,Mechanical,IT,AI&DS and AI&ML.",
+      "status": "verified",
+      "sourceLabel": "College-authored2025-26 induction timetable, mirrored document",
+      "sourceUrl": "https://www.scribd.com/document/929515140/Design-Thinking",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-information-technology",
+      "internalNotes": "Explicitly first-year online induction, not merely continuing-student activity. Official college LinkedIn corroborates branch alumni talks on 19/20 August 2025; a participant comment calls it an induction programme: https://www.linkedin.com/posts/panimalar-engineering-college_alumnitalkseries-panimalarengineeringcollege-activity-7363361798449745920-VOwP . Historical cycle is prominent in public deadlinesNote; no later-cycle or physical start inferred."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "medium",
+      "claimText": "Regulation4.14:English for all undergraduate courses except courses related to Tamil;four-year eight-semester regular degree.",
+      "status": "verified",
+      "sourceLabel": "Official BE/BTech2023 regulations",
+      "sourceUrl": "https://coe.panimalar.ac.in/files/PEC-Regulation%202023-B.E%20%26%20B.Tech%20NNN.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-information-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "fee",
+      "claimText": "The mandatory disclosure states tuition follows Tamil Nadu government norms but gives no numerical tuition rate. A current programme- and admission-category-specific tuition quotation was not located. Request tuition, compulsory college charges and accommodation as separate amounts.",
+      "status": "verified",
+      "sourceLabel": "Official mandatory disclosure, tuition section",
+      "sourceUrl": "https://www.panimalar.ac.in/assets/pdf/MANDATORY-DISCLOSURE.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-information-technology",
+      "internalNotes": "Targeted search of main admissions,mandatory disclosure,current curriculum,TNEA2026 brochure and college directory found no programme/category numerical tuition quotation. No inferred government rate or aggregator price used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "eligibility",
+      "claimText": "Mathematics, Physics and Chemistry;45%General and40%listed reserved categories;TNEA route adds nativity and schooling requirements.",
+      "status": "verified",
+      "sourceLabel": "Official undergraduate entry requirements",
+      "sourceUrl": "https://www.panimalar.ac.in/admission-information.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "admissions",
+      "claimText": "Government counselling through TNEA with qualifying marks,document verification,choice filling and allotment;college code1210.",
+      "status": "verified",
+      "sourceLabel": "TNEA2026 information brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "intake",
+      "claimText": "2025-26 I YEAR STUDENT INDUCTION PROGRAMME Online Mode timetable dates branch sessions18–29August2025,covering CSE,ECE,EEE,Mechanical,IT,AI&DS and AI&ML.",
+      "status": "verified",
+      "sourceLabel": "College-authored2025-26 induction timetable, mirrored document",
+      "sourceUrl": "https://www.scribd.com/document/929515140/Design-Thinking",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-data-science",
+      "internalNotes": "Explicitly first-year online induction, not merely continuing-student activity. Official college LinkedIn corroborates branch alumni talks on 19/20 August 2025; a participant comment calls it an induction programme: https://www.linkedin.com/posts/panimalar-engineering-college_alumnitalkseries-panimalarengineeringcollege-activity-7363361798449745920-VOwP . Historical cycle is prominent in public deadlinesNote; no later-cycle or physical start inferred."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "medium",
+      "claimText": "Regulation4.14:English for all undergraduate courses except courses related to Tamil;four-year eight-semester regular degree.",
+      "status": "verified",
+      "sourceLabel": "Official BE/BTech2023 regulations",
+      "sourceUrl": "https://coe.panimalar.ac.in/files/PEC-Regulation%202023-B.E%20%26%20B.Tech%20NNN.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "fee",
+      "claimText": "The mandatory disclosure states tuition follows Tamil Nadu government norms but gives no numerical tuition rate. A current programme- and admission-category-specific tuition quotation was not located. Request tuition, compulsory college charges and accommodation as separate amounts.",
+      "status": "verified",
+      "sourceLabel": "Official mandatory disclosure, tuition section",
+      "sourceUrl": "https://www.panimalar.ac.in/assets/pdf/MANDATORY-DISCLOSURE.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-data-science",
+      "internalNotes": "Targeted search of main admissions,mandatory disclosure,current curriculum,TNEA2026 brochure and college directory found no programme/category numerical tuition quotation. No inferred government rate or aggregator price used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "eligibility",
+      "claimText": "Mathematics, Physics and Chemistry;45%General and40%listed reserved categories;TNEA route adds nativity and schooling requirements.",
+      "status": "verified",
+      "sourceLabel": "Official undergraduate entry requirements",
+      "sourceUrl": "https://www.panimalar.ac.in/admission-information.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-artificial-intelligence-machine-learning"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "admissions",
+      "claimText": "Government counselling through TNEA with qualifying marks,document verification,choice filling and allotment;college code1210.",
+      "status": "verified",
+      "sourceLabel": "TNEA2026 information brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-artificial-intelligence-machine-learning"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "intake",
+      "claimText": "2025-26 I YEAR STUDENT INDUCTION PROGRAMME Online Mode timetable dates branch sessions18–29August2025,covering CSE,ECE,EEE,Mechanical,IT,AI&DS and AI&ML.",
+      "status": "verified",
+      "sourceLabel": "College-authored2025-26 induction timetable, mirrored document",
+      "sourceUrl": "https://www.scribd.com/document/929515140/Design-Thinking",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-artificial-intelligence-machine-learning",
+      "internalNotes": "Explicitly first-year online induction, not merely continuing-student activity. Official college LinkedIn corroborates branch alumni talks on 19/20 August 2025; a participant comment calls it an induction programme: https://www.linkedin.com/posts/panimalar-engineering-college_alumnitalkseries-panimalarengineeringcollege-activity-7363361798449745920-VOwP . Historical cycle is prominent in public deadlinesNote; no later-cycle or physical start inferred."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "medium",
+      "claimText": "Regulation4.14:English for all undergraduate courses except courses related to Tamil;four-year eight-semester regular degree.",
+      "status": "verified",
+      "sourceLabel": "Official BE/BTech2023 regulations",
+      "sourceUrl": "https://coe.panimalar.ac.in/files/PEC-Regulation%202023-B.E%20%26%20B.Tech%20NNN.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-artificial-intelligence-machine-learning"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "fee",
+      "claimText": "The mandatory disclosure states tuition follows Tamil Nadu government norms but gives no numerical tuition rate. A current programme- and admission-category-specific tuition quotation was not located. Request tuition, compulsory college charges and accommodation as separate amounts.",
+      "status": "verified",
+      "sourceLabel": "Official mandatory disclosure, tuition section",
+      "sourceUrl": "https://www.panimalar.ac.in/assets/pdf/MANDATORY-DISCLOSURE.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "panimalar-artificial-intelligence-machine-learning",
+      "internalNotes": "Targeted search of main admissions,mandatory disclosure,current curriculum,TNEA2026 brochure and college directory found no programme/category numerical tuition quotation. No inferred government rate or aggregator price used."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "recognition",
+      "claimText": "UGC register lists Panimalar Engineering College autonomous from2021-22 through2030-31;Anna University affiliated college code1210.",
+      "status": "verified",
+      "sourceLabel": "UGC autonomous-college register",
+      "sourceUrl": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "recognition",
+      "claimText": "Anna University Thiruvallur directory lists Panimalar Engineering College with counselling code1210 and examination code2114.",
+      "status": "verified",
+      "sourceLabel": "Anna University affiliated-college directory",
+      "sourceUrl": "https://www.annauniv.edu/cai/District%20wise/district/Thiruvallur.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "studentLiving",
+      "claimText": "TNEA2026 printedpage36:boys/girls permanent hostels;both veg/nonveg;annual mess50000 room50000 electricity35000,total135000each.",
+      "status": "verified",
+      "sourceLabel": "TNEA2026 college directory",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "practicalExposure",
+      "claimText": "Official IDEA Lab describes electronics,design and prototyping facilities;UG regulations include laboratory/project components.",
+      "status": "verified",
+      "sourceLabel": "Official IDEA Lab",
+      "sourceUrl": "https://www.panimalar.ac.in/idea-lab.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "programmeScope",
+      "claimText": "Official current main site and2025-26 curriculum list7undergraduate engineering branches and3postgraduate degrees.",
+      "status": "verified",
+      "sourceLabel": "Official2025-26 curriculum",
+      "sourceUrl": "https://coe.panimalar.ac.in/Curriculam_Syllabus_Regulation_2023_Batch_2025-2026.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-me-cse",
+      "publicField": "eligibility",
+      "claimText": "A recognised B.E./B.Tech. in Computer Science and Engineering or Information Technology, as specified by the college’s exact M.E.CSE admission row.",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://www.panimalar.ac.in/admission-information.php",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-me-cse",
+      "publicField": "eligibility",
+      "claimText": "Own mandatory disclosure updated2March2026, exact PGprogramme row, states 50% main/allied subject marks for general quota. Other reservation relaxations are not invented from this row.",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://www.panimalar.ac.in/assets/pdf/MANDATORY-DISCLOSURE.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-me-cse",
+      "publicField": "admissions",
+      "claimText": "Current own admission page explicitly gives this exact PG award and qualifying discipline; full own PGregulations prescribe annual Anna/TANCA-equivalence and programme-specific admission. Confirm current accepted test/counselling before applying.",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://www.panimalar.ac.in/admission-information.php",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-me-cse",
+      "publicField": "duration",
+      "claimText": "Own current admission page states2years/foursemesters; common PGregulations §5 establishes4semester minimum for ME/MBA.",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://coe.panimalar.ac.in/files/PEC-Regulation%202023%20-%20M.E%20%26%20M.Tech%20N.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-me-cse",
+      "publicField": "medium",
+      "claimText": "Own2023common PGregulations expressly cover MEComputerScience, MECommunicationSystems andMBA, and §4.9 prescribesEnglish for all programme courses.",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://coe.panimalar.ac.in/files/PEC-Regulation%202023%20-%20M.E%20%26%20M.Tech%20N.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-me-cse",
+      "publicField": "intake",
+      "claimText": "No exact forthcoming first-entry month established for this PGdegree. Intake arrays omitted, with no transfer from historical UGonlineinduction.",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://www.panimalar.ac.in/admission-information.php",
+      "sourceGrade": "A",
+      "status": "omit",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-me-cse",
+      "publicField": "fee",
+      "claimText": "Own current mandatory disclosure cites Tamil Nadu government tuition norms but no numerical programme/category tuition. Full secondary references differ in year/category/accreditation and component basis; current annual tuition on_request.",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://www.panimalar.ac.in/assets/pdf/MANDATORY-DISCLOSURE.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-me-cse",
+      "publicField": "audienceEligibility",
+      "claimText": "{\"availability\": \"restricted\", \"eligibleAudiences\": [\"Applicants using the verified regular domestic postgraduate admission route\"], \"restrictions\": [\"This entry covers the main Poonamallee college, code1210; separately branded CityCampus and trust medical/nursing institutions are not included.\", \"A complete current foreign/NRI/OCI route is not established for this degree.\"], \"notes\": \"The institution assesses the exact qualifying degree, applicable selection/counselling route and admission category; a qualifying degree alone does not guarantee admission.\", \"sourceUrl\": \"https://www.panimalar.ac.in/admission-information.php\", \"verifiedAt\": \"2026-10-25\"}",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://www.panimalar.ac.in/admission-information.php",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-me-cse",
+      "publicField": "recognition",
+      "claimText": "Own disclosure updated2March2026 records lastAICTEapproval10April2025 for2025–26 and lists this exact PGdegree. Current own admission table and2023PGregulations establish continued academic offering. No2026–27EOA or currentNBAstatus claim.",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://www.panimalar.ac.in/assets/pdf/MANDATORY-DISCLOSURE.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-me-communication-systems",
+      "publicField": "eligibility",
+      "claimText": "A recognised B.E. in Electronics and Communication Engineering; the college’s exact Communication Systems admission row specifies B.E.ECE only.",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://www.panimalar.ac.in/admission-information.php",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-me-communication-systems",
+      "publicField": "eligibility",
+      "claimText": "Own mandatory disclosure updated2March2026, exact PGprogramme row, states 50% main/allied subject marks for general quota. Other reservation relaxations are not invented from this row.",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://www.panimalar.ac.in/assets/pdf/MANDATORY-DISCLOSURE.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-me-communication-systems",
+      "publicField": "admissions",
+      "claimText": "Current own admission page explicitly gives this exact PG award and qualifying discipline; full own PGregulations prescribe annual Anna/TANCA-equivalence and programme-specific admission. Confirm current accepted test/counselling before applying.",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://www.panimalar.ac.in/admission-information.php",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-me-communication-systems",
+      "publicField": "duration",
+      "claimText": "Own current admission page states2years/foursemesters; common PGregulations §5 establishes4semester minimum for ME/MBA.",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://coe.panimalar.ac.in/files/PEC-Regulation%202023%20-%20M.E%20%26%20M.Tech%20N.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-me-communication-systems",
+      "publicField": "medium",
+      "claimText": "Own2023common PGregulations expressly cover MEComputerScience, MECommunicationSystems andMBA, and §4.9 prescribesEnglish for all programme courses.",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://coe.panimalar.ac.in/files/PEC-Regulation%202023%20-%20M.E%20%26%20M.Tech%20N.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-me-communication-systems",
+      "publicField": "intake",
+      "claimText": "No exact forthcoming first-entry month established for this PGdegree. Intake arrays omitted, with no transfer from historical UGonlineinduction.",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://www.panimalar.ac.in/admission-information.php",
+      "sourceGrade": "A",
+      "status": "omit",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-me-communication-systems",
+      "publicField": "fee",
+      "claimText": "Own current mandatory disclosure cites Tamil Nadu government tuition norms but no numerical programme/category tuition. Full secondary references differ in year/category/accreditation and component basis; current annual tuition on_request.",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://www.panimalar.ac.in/assets/pdf/MANDATORY-DISCLOSURE.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-me-communication-systems",
+      "publicField": "audienceEligibility",
+      "claimText": "{\"availability\": \"restricted\", \"eligibleAudiences\": [\"Applicants using the verified regular domestic postgraduate admission route\"], \"restrictions\": [\"This entry covers the main Poonamallee college, code1210; separately branded CityCampus and trust medical/nursing institutions are not included.\", \"A complete current foreign/NRI/OCI route is not established for this degree.\"], \"notes\": \"The institution assesses the exact qualifying degree, applicable selection/counselling route and admission category; a qualifying degree alone does not guarantee admission.\", \"sourceUrl\": \"https://www.panimalar.ac.in/admission-information.php\", \"verifiedAt\": \"2026-10-25\"}",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://www.panimalar.ac.in/admission-information.php",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-me-communication-systems",
+      "publicField": "recognition",
+      "claimText": "Own disclosure updated2March2026 records lastAICTEapproval10April2025 for2025–26 and lists this exact PGdegree. Current own admission table and2023PGregulations establish continued academic offering. No2026–27EOA or currentNBAstatus claim.",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://www.panimalar.ac.in/assets/pdf/MANDATORY-DISCLOSURE.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-mba",
+      "publicField": "eligibility",
+      "claimText": "A recognised bachelor’s degree accepted for MBA admission. The college’s admission page explicitly accepts a qualified bachelor’s degree from a recognised university.",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://www.panimalar.ac.in/admission-information.php",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-mba",
+      "publicField": "eligibility",
+      "claimText": "Own mandatory disclosure updated2March2026, exact PGprogramme row, states 50% main/allied subject marks for general quota. Other reservation relaxations are not invented from this row.",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://www.panimalar.ac.in/assets/pdf/MANDATORY-DISCLOSURE.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-mba",
+      "publicField": "admissions",
+      "claimText": "Current own admission page explicitly gives this exact PG award and qualifying discipline; full own PGregulations prescribe annual Anna/TANCA-equivalence and programme-specific admission. Confirm current accepted test/counselling before applying.",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://www.panimalar.ac.in/admission-information.php",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-mba",
+      "publicField": "duration",
+      "claimText": "Own current admission page states2years/foursemesters; common PGregulations §5 establishes4semester minimum for ME/MBA.",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://coe.panimalar.ac.in/files/PEC-Regulation%202023%20-%20M.E%20%26%20M.Tech%20N.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-mba",
+      "publicField": "medium",
+      "claimText": "Own2023common PGregulations expressly cover MEComputerScience, MECommunicationSystems andMBA, and §4.9 prescribesEnglish for all programme courses.",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://coe.panimalar.ac.in/files/PEC-Regulation%202023%20-%20M.E%20%26%20M.Tech%20N.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-mba",
+      "publicField": "intake",
+      "claimText": "No exact forthcoming first-entry month established for this PGdegree. Intake arrays omitted, with no transfer from historical UGonlineinduction.",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://www.panimalar.ac.in/admission-information.php",
+      "sourceGrade": "A",
+      "status": "omit",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-mba",
+      "publicField": "fee",
+      "claimText": "Own current mandatory disclosure cites Tamil Nadu government tuition norms but no numerical programme/category tuition. Full secondary references differ in year/category/accreditation and component basis; current annual tuition on_request.",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://www.panimalar.ac.in/assets/pdf/MANDATORY-DISCLOSURE.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-mba",
+      "publicField": "audienceEligibility",
+      "claimText": "{\"availability\": \"restricted\", \"eligibleAudiences\": [\"Applicants using the verified regular domestic postgraduate admission route\"], \"restrictions\": [\"This entry covers the main Poonamallee college, code1210; separately branded CityCampus and trust medical/nursing institutions are not included.\", \"A complete current foreign/NRI/OCI route is not established for this degree.\"], \"notes\": \"The institution assesses the exact qualifying degree, applicable selection/counselling route and admission category; a qualifying degree alone does not guarantee admission.\", \"sourceUrl\": \"https://www.panimalar.ac.in/admission-information.php\", \"verifiedAt\": \"2026-10-25\"}",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://www.panimalar.ac.in/admission-information.php",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-mba",
+      "publicField": "recognition",
+      "claimText": "Own disclosure updated2March2026 records lastAICTEapproval10April2025 for2025–26 and lists this exact PGdegree. Current own admission table and2023PGregulations establish continued academic offering. No2026–27EOA or currentNBAstatus claim.",
+      "sourceLabel": "Panimalar own current admission table, disclosure or PGregulations",
+      "sourceUrl": "https://www.panimalar.ac.in/assets/pdf/MANDATORY-DISCLOSURE.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "panimalar-engineering-college",
+      "publicField": "faq",
+      "claimText": "Current own admission table lists ME CSE for BE/BTech CSE/IT, ME Communication Systems for BE ECE only and MBA for a recognised bachelor degree; the new postgraduate FAQ preserves these exact routes.",
+      "sourceLabel": "Current own named postgraduate admission table",
+      "sourceUrl": "https://www.panimalar.ac.in/admission-information.php",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-me-cse",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Careers360 names this exact Panimalar Engineering College Chennai degree and reports INR 100000 for the complete two-year general-category course: tuition only; the source does not give a separate complete-fee total. Indicative secondary reference; source update11May2026 does not establish a current fee-cycle guarantee.",
+      "sourceUrl": "https://www.careers360.com/colleges/panimalar-engineering-college-chennai/fees",
+      "sourceLabel": "Careers360 named Panimalar Engineering College Chennai fee table",
+      "sourceGrade": "B",
+      "status": "indicative",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "internalNotes": "Previously retained Shiksha explicit2023 conditional NBA tariff and Collegedunia explicit2025–26 quota/category totals differ. Do not treat as independently confirmed current tariff or invent a range across incompatible tuition/combined-charge/category bases. Current full Careers360 table supports this exact named general-category indicative reference. No annualisation, foreign price or fabricated cross-basis range."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-me-communication-systems",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Careers360 names this exact Panimalar Engineering College Chennai degree and reports INR 100000 for the complete two-year general-category course: tuition only; the source does not give a separate complete-fee total. Indicative secondary reference; source update11May2026 does not establish a current fee-cycle guarantee.",
+      "sourceUrl": "https://www.careers360.com/colleges/panimalar-engineering-college-chennai/fees",
+      "sourceLabel": "Careers360 named Panimalar Engineering College Chennai fee table",
+      "sourceGrade": "B",
+      "status": "indicative",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "internalNotes": "Previously retained Shiksha explicit2023 conditional NBA tariff and Collegedunia explicit2025–26 quota/category totals differ. Do not treat as independently confirmed current tariff or invent a range across incompatible tuition/combined-charge/category bases. Current full Careers360 table supports this exact named general-category indicative reference. No annualisation, foreign price or fabricated cross-basis range."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-mba",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Careers360 names this exact Panimalar Engineering College Chennai degree and reports INR 70000 for the complete two-year general-category course: the reported complete-course total, also repeated in the tuition column. Indicative secondary reference; source update11May2026 does not establish a current fee-cycle guarantee.",
+      "sourceUrl": "https://www.careers360.com/colleges/panimalar-engineering-college-chennai/fees",
+      "sourceLabel": "Careers360 named Panimalar Engineering College Chennai fee table",
+      "sourceGrade": "B",
+      "status": "indicative",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "internalNotes": "Previously retained Shiksha explicit2023 conditional NBA tariff and Collegedunia explicit2025–26 quota/category totals differ. Do not treat as independently confirmed current tariff or invent a range across incompatible tuition/combined-charge/category bases. Current full Careers360 table supports this exact named general-category indicative reference. No annualisation, foreign price or fabricated cross-basis range."
+    }
+  ]
+}

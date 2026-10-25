@@ -1,0 +1,9 @@
+{
+  "previousMigration": "0322-india-panimalar-regular-postgraduate-forward",
+  "programmeCount": 10,
+  "onlyThreePGQuoteAndFeeNotesChanged": true,
+  "allAcademicAnnualFeeAudienceFieldsPreserved": true,
+  "hostedURLPresenceAndValuesPreserved": true,
+  "nonemptyMediaAttributionDeepEqual": true,
+  "newIndicativeQuotes": 3
+}

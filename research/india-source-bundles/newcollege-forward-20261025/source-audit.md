@@ -1,0 +1,11 @@
+# The New College Chennai — bounded forward draft, 25 October 2026
+
+No reservation during Group32 freeze. Existing published35/checkpoint0237 retained in locked ledger under forward owner codex-newcollege-forward-20261025. Draft40 preserves every original35 programme object and nonempty media attribution exactly. No shared taxonomy changes.
+
+Five prior medium-only holds are supported by retained full own2026 prospectus (https://thenewcollege.edu.in/prospectus26-27.pdf), physical pages10–11, full PDF and OCR in research/india-source-bundles/the-new-college-chennai/. BCom Professional Accounting: HSC/equivalent with Commerce, Accountancy and Business Mathematics; BSc CS with AI and CS with Data Science: HSC/equivalent with Mathematics; BSc Criminology and Criminal Justice Science: HSC/equivalent; MA Sociology: any degree accepted by University of Madras. Exact current UG group three years and PG group two years. Criminology full title corroborated by retained current department and2024 scheme; no old BA-to-BSc language transfer. No unstated minimum marks or waiver invented. Language unknown and intake unknown/omit evidence; no optional hunt.
+
+Previous policy source https://thenewcollege.edu.in/pdf/CollegeReservationAdmissionPolicy.pdf establishes UG men-only and programme-specific female PG access. New entries verify male domestic route; do not assert women ineligible or automatic overseas qualification acceptance. Application/document facts remain current prospectus and applicable policy. No fee hunt: new five tuition on_request; no generic course, older unrelated table or other award fee transferred. All previous prices preserved.
+
+Remaining27 discovered rows retain genuine gaps: BBA/BCA professional scope; Visual Communication/Cybersecurity explicitly pending university approval; absent current Defence/Electronic Media; add-on awards and separate research conditions. Complete67-row LF inventory retained. Existing official crest and genuine college facade source/rights attribution deep-equal0237; assets[] means no upload. No DB/publishing/commits.
+
+Group32 closed; root authorized one canonical reservation.0329-india-new-college-academic-hold-rescue actual numbered reader PASS1 and locked ledger validated40. Accepted nonempty attribution preserved, no URL changes/uploads. No additional reservations.

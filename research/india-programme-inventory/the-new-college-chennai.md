@@ -11,3 +11,8 @@ All 35 supported routes have isolated tuition components from the latest publish
 Holds remain explicit in CSV: new or ambiguous language (Professional Accounting, AI, Data Science, BSc Criminology, MA Sociology); BBA/BCA current professional-approval scope; conditional Visual Communication/Cybersecurity university approval; two directory-only awards absent current detailed prospectus; three MLT add-ons with unresolved exact award/entry/duration/scope; 18 research rows outside verified current lawful admission scope. Held programmes are not described as unapproved.
 
 Recognition uses UGC's own autonomy list (2023–24 to 2032–33) and University of Madras's aided affiliated list, without unsupported NAAC/NIRF badges. Mandatory official crest and campus originals are retained and checksum-linked in the reviewed media manifest; worker and root visually inspected both. No DB, upload or publication actions were performed by this worker.
+
+
+25 October2026 bounded forward checkpoint: draft40 exact current regular awards; original35 deep-equal0237 and five prior medium-only holds rescued with unknown medium/intake omitted. Complete67 LF rows retained, remaining27 genuine approval/current-availability/research/add-on gaps held. New five prices unknown; existing tuition/fee fields preserved. Draft/source-audit at research/india-source-bundles/newcollege-forward-20261025/. No executable reservation during Group32 freeze.
+
+Promoted after Group32 closure:0329-india-new-college-academic-hold-rescue, actual numbered reader PASS1, ledger validated40.

@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-25",
+  "newProgrammes": 8,
+  "preservedProgrammes": 35,
+  "totalProgrammes": 43,
+  "families": 36,
+  "evidence": 375,
+  "exactQualificationSource": "research/india-source-bundles/psg-college-of-technology/browser-reviewed-selection2026.json",
+  "qualificationProvenance": "Earlier current-day official2026 pages rendered; visibleSelectionProcess tabs clicked/read with full named qualification/selection excerpt preserved. Current2026landing rechecked. No sourceyear2027invented.",
+  "feeSource": "https://www.collegebatch.com/55-psg-college-of-technology-fees-structure-courses-coimbatore",
+  "feeBasis": "Full exactcourse/campus table opened freshthroughwebparser, explicitly peryear, notYear1. Seven newindicative native academic_year quotes; source tariffcycle notstated. Components/category unknown, no annualtuition/recurrence guarantee.",
+  "courseCrosswalk": "Aggregator calls fiveyear named science routes BSc+MSc; current officialcollege identifies same named fiveyear routes as integratedMSc. No separately admitting exit or changedfinalaward inferred.",
+  "holds": [
+    "ComputationalFinanceexplicitaffiliationpending",
+    "IntegratedMBAexactcurrentaffiliationverificationpending",
+    "Legacyorcurriculum-onlycourses",
+    "SeparatePSGcolleges/foreignpartnerawards"
+  ],
+  "actualValidation": "Canonical 0333 reader and npm scoped content:validate PASS; 43 programmes, 36 families, 375 evidence, 0 expired; no database connection.",
+  "media": "Missing{}metadata restoredexactacceptedofficialsources, hostedURLkeysabsent/inheritedDBcolumnsnotreadback; no upload.",
+  "feeAudience": "All seven new aggregator quotes omit audience because table category/audience is unlabelled; domestic programme admission scope remains separate."
+}

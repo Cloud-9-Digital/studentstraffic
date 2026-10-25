@@ -70,3 +70,18 @@ Reviewed manifest: `research/media-enrichment/loyola-chennai-20261025-reviewed-u
 No database query, database mutation, upload, publication or commit by worker. Numbered bundle is prepared only after root window-complete permission. Scoped validation is offline; root handles controlled grouped content/media publication.
 
 Root vocational crosswalk25October2026: primary historical https://www.loyolacollege.edu/iqac/report/AQAR2016_17.pdf page36 and current https://www.loyolacollege.edu/DDUKaushalKendraProject/home establish the four-course set; dated2021SSR states English for both entries at both levels. UGvocationalroutes keep LoVAT; MVoc keeps PGentrance/interview. Currentprospectus8.15am–1.15pm timing exception retained forVoc/Honours, without assuming afternoon hours fromShiftIIlabel.
+
+
+## Superseding eight-offering academic rescue —25October2026
+
+Full draft `research/india-source-bundles/loyola-rescue-20261025/draft-payload.json`:53regular offerings/53native quotes,8new. All45 published0255 programmeobjects/quotes and both knownhostedCloudinaryURLs deep-equal preserved. ActualtemporaryfullreaderPASS0warnings. Lockedforwardowner `codex-tn-loyola-rescue-20261025` keeps published45/pointer0255 untilcompletecanonicalpromotion.
+
+The8current2026–27 exact awards are3UG(BComAF,BComCA,BMM)and5PG(Zoology,InternationalRelations,DataScience,Biotechnology,CounsellingPsychology). Currententrysubject/prior-degreelists, requiredBComscreening/BMMmediaLoVAT/PGentrance-interview and womenallPG+BMM/outside7UGlistforbothBComroutes retained exactly.3yearUG/2yearPG semesterstructure, noinvented4yearorFrenchcampusstage. Newmediumempty/omit; oldknownFrench/Tamil/English unchanged. Same-cycleALLIUG24June2026/IPG29June2026 calendar reusedhistorically, nooptionaldate/languagehunt. AcademicCounsellingPsychdegree notindependentregulatedclinicalpracticeentitlement.
+
+Retainedfeeimagesprinted32–33 viewedagain:8exactnativeconfirmedfirst-semesterfee rangesbydomesticboard/universityqualificationcategories. Noannualisation orisolatedtuition/fullcoursetotal. BMMentrytitleMultimedia&AnimationmapsuniquelytoBMMAnimationsamecurrentprospectusfee-row. Exactfigures in source-provenance.json. Hostel,subscription/certification andlatersemestercharges separate. Original45pricesuntouched.
+
+Media0255had{}attributiondespitevalidknownhostedURLs; completeofficialsource/rights restoredfromacceptedmanifest `research/media-enrichment/loyola-chennai-20261025-reviewed-upload-manifest.json`: admissionslogo3PNGcompletecrest, ownchurchPNGtree-linedavenue/church. ExacthostedURLs preserved, noassetreplacement/upload. LIACFrance/LIVE/history/professional/research scopesnotexpanded. No newtaxonomy/DB.
+
+## Frozen complete forward
+
+0332-india-loyola-academic-hold-rescue: 53 programmes; canonical numbered reader passes with zero warnings. Ledger validated53; parent publication pending. Existing45 programmes deep-equal0255-india-loyola-college-chennai-native-reported-fees. Existing hosted media URLs unchanged; missing source/rights metadata restored from accepted manifest; no new upload required.

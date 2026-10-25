@@ -32,3 +32,18 @@ The inventory has **69 discovery rows: 36 UG, 20 PG and 13 research rows**. This
 Reviewed crest original512×512 (same design as current institutional header, native original behind icon renditions) and official library gallery1600×540 Shri Subodhini Library Block photograph. The photo is visibly dated10January2022; it is a historical campus illustration, not a present-condition guarantee. Exact source URLs, checksums and local originals are in the reviewed media manifest. No external attribution-dependent licence, synthetic art or stock photo.
 
 Worker performs offline validation only; parent integrates and publishes in a controlled group. No database connection, provider upload or commit by this worker.
+
+
+## Superseding bounded three-award academic rescue —25October2026
+
+Offline draft `research/india-source-bundles/dg-rescue-20261025/draft-payload.json`:35programmes,3new,11existing indicative nativequotes preserved. All32 published programmeobjects/quotes and populatedofficiallogo/librarycover source-rights deep-equal0257. ActualtemporaryfullreaderPASS0warnings. Lockedowner `codex-tn-dg-rescue-20261025` retains published32/pointer0257 until rootcollectionpermission. Noreservation/DB/upload. GuruNanak's separateactiveforwardowner was detected and notoverwritten.
+
+Exactcurrent2026–27 centralcriteriaEU37 requiresCommerce,Accountancy,ComputerScienceorComputerApplications; EU40 requiresSciencewithMaths. NamedBComCAcurrent2026–27brochure/2023–26sixsemesterscheme andCSAI2025–26I–VIscheme support3years. AidedMComcurrentlinked2025–26syllabus explicitly BComGeneral/anyspecialisationorUoMrecognisedequivalent,2academicyears4semesters andfourthsemesterdissertation. Sourcecyclesretained; currentdetailed2026–27awardcontinuationindependent. No gradepercentageinvented. MComAidedrule notsilentlyextended toseparateselffinancingPGroute.
+
+Newmedium/intakeemptywithomit, no optionaldate/languagehunts ordefaultEnglish inference. DomesticownArumbakkamroute, no foreigneligibilityclaim. Currentofficialfee-page pendingupdate; exactnewsubject+shift/fundingquote absentretainedboundedfee audit, so no genericaggregate/duplicateshiftfee. Threequoteonlygapsdonotholddegrees. Existing11nativequotes andalloldfeeobjects unchanged.
+
+DataScience/ProfessionalAccounting actualqualificationconflicts, BBA/BCA/MBA/MCA currentapplicableapprovalscope, proposedCriminology/currentdirectory-onlydegreeentry andseparateresearch remainheld; otherPGprior-degreeconditionsneedexactsourceapplicability, notgenericreopeningdates. Fullypopulatedacceptedofficialcrest/libraryrights remain; no imageURLreplacement/upload.
+
+## Frozen complete forward
+
+0330-india-dg-vaishnav-academic-hold-rescue: 35 programmes; canonical numbered reader passes with zero warnings. Ledger validated35; parent publication pending. Existing32 programmes deep-equal0257-india-dg-vaishnav-native-reported-fees. Existing reviewed media unchanged; no new upload required.

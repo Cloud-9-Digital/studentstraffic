@@ -1,0 +1,129 @@
+{
+  "checkedAt": "2026-10-25",
+  "scope": "Bounded three successfully read full institutional course/fee sources; no executable reservation or pending0329 mutation",
+  "candidates": [
+    {
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-me-cse",
+      "officialTitle": "M.E. Computer Science and Engineering",
+      "candidate": {
+        "currency": "INR",
+        "minAmount": 100000,
+        "status": "indicative",
+        "period": "full_course",
+        "componentBasis": "Careers360 named course table: complete-course general-category tuition; MBA also gives the same total-fee figure. Additional institutional charges may apply. Exact category and current payable tariff need confirmation.",
+        "audience": "domestic",
+        "category": "General category; regular two-year course",
+        "academicYear": "2026 page; tariff cycle not specified",
+        "sourceUrl": "https://www.careers360.com/colleges/panimalar-engineering-college-chennai/fees",
+        "sourceLabel": "Careers360 named Panimalar Engineering College Chennai fee table",
+        "verifiedAt": "2026-10-25"
+      },
+      "sourceGrade": "B",
+      "evidenceStatus": "indicative",
+      "sourceUpdatedAt": "2026-05-11",
+      "sourceNativeAmount": "1.00 L",
+      "comparison": "Previously retained Shiksha explicit2023 conditional NBA tariff and Collegedunia explicit2025\u201326 quota/category totals differ. Do not treat as independently confirmed current tariff or invent a range across incompatible tuition/combined-charge/category bases. Current full Careers360 table supports this exact named general-category indicative reference."
+    },
+    {
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-me-communication-systems",
+      "officialTitle": "M.E. Communication Systems",
+      "candidate": {
+        "currency": "INR",
+        "minAmount": 100000,
+        "status": "indicative",
+        "period": "full_course",
+        "componentBasis": "Careers360 named course table: complete-course general-category tuition; MBA also gives the same total-fee figure. Additional institutional charges may apply. Exact category and current payable tariff need confirmation.",
+        "audience": "domestic",
+        "category": "General category; regular two-year course",
+        "academicYear": "2026 page; tariff cycle not specified",
+        "sourceUrl": "https://www.careers360.com/colleges/panimalar-engineering-college-chennai/fees",
+        "sourceLabel": "Careers360 named Panimalar Engineering College Chennai fee table",
+        "verifiedAt": "2026-10-25"
+      },
+      "sourceGrade": "B",
+      "evidenceStatus": "indicative",
+      "sourceUpdatedAt": "2026-05-11",
+      "sourceNativeAmount": "1.00 L",
+      "comparison": "Previously retained Shiksha explicit2023 conditional NBA tariff and Collegedunia explicit2025\u201326 quota/category totals differ. Do not treat as independently confirmed current tariff or invent a range across incompatible tuition/combined-charge/category bases. Current full Careers360 table supports this exact named general-category indicative reference."
+    },
+    {
+      "universitySlug": "panimalar-engineering-college",
+      "programmeSlug": "panimalar-mba",
+      "officialTitle": "Master of Business Administration",
+      "candidate": {
+        "currency": "INR",
+        "minAmount": 70000,
+        "status": "indicative",
+        "period": "full_course",
+        "componentBasis": "Careers360 named course table: complete-course general-category tuition; MBA also gives the same total-fee figure. Additional institutional charges may apply. Exact category and current payable tariff need confirmation.",
+        "audience": "domestic",
+        "category": "General category; regular two-year course",
+        "academicYear": "2026 page; tariff cycle not specified",
+        "sourceUrl": "https://www.careers360.com/colleges/panimalar-engineering-college-chennai/fees",
+        "sourceLabel": "Careers360 named Panimalar Engineering College Chennai fee table",
+        "verifiedAt": "2026-10-25"
+      },
+      "sourceGrade": "B",
+      "evidenceStatus": "indicative",
+      "sourceUpdatedAt": "2026-05-11",
+      "sourceNativeAmount": "70.00 K",
+      "comparison": "Previously retained Shiksha explicit2023 conditional NBA tariff and Collegedunia explicit2025\u201326 quota/category totals differ. Do not treat as independently confirmed current tariff or invent a range across incompatible tuition/combined-charge/category bases. Current full Careers360 table supports this exact named general-category indicative reference."
+    }
+  ],
+  "unmatched": [
+    {
+      "universitySlug": "the-new-college-chennai",
+      "programmeSlug": "b-com-professional-accounting-shift-ii-the-new-college-chennai",
+      "officialTitle": "B.Com. Professional Accounting \u2014 Self-financed (Shift II)",
+      "decision": "Unknown: full Careers360 current course listing page2 has no displayed exact amount; old BA Criminology title cannot be substituted for BSc; no new AI/Sociology fee inferred."
+    },
+    {
+      "universitySlug": "the-new-college-chennai",
+      "programmeSlug": "b-sc-computer-science-with-artificial-intelligence-shift-ii-the-new-college-chennai",
+      "officialTitle": "B.Sc. Computer Science with Artificial Intelligence \u2014 Self-financed (Shift II)",
+      "decision": "Unknown: full Careers360 current course listing page2 has no displayed exact amount; old BA Criminology title cannot be substituted for BSc; no new AI/Sociology fee inferred."
+    },
+    {
+      "universitySlug": "the-new-college-chennai",
+      "programmeSlug": "b-sc-computer-science-with-data-science-shift-ii-the-new-college-chennai",
+      "officialTitle": "B.Sc. Computer Science with Data Science \u2014 Self-financed (Shift II)",
+      "decision": "Unknown: full Careers360 current course listing page2 has no displayed exact amount; old BA Criminology title cannot be substituted for BSc; no new AI/Sociology fee inferred."
+    },
+    {
+      "universitySlug": "the-new-college-chennai",
+      "programmeSlug": "b-sc-criminology-and-criminal-justice-science-shift-ii-the-new-college-chennai",
+      "officialTitle": "B.Sc. Criminology and Criminal Justice Science \u2014 Self-financed (Shift II)",
+      "decision": "Unknown: full Careers360 current course listing page2 has no displayed exact amount; old BA Criminology title cannot be substituted for BSc; no new AI/Sociology fee inferred."
+    },
+    {
+      "universitySlug": "the-new-college-chennai",
+      "programmeSlug": "m-a-sociology-shift-ii-the-new-college-chennai",
+      "officialTitle": "M.A. Sociology \u2014 Self-financed (Shift II)",
+      "decision": "Unknown: full Careers360 current course listing page2 has no displayed exact amount; old BA Criminology title cannot be substituted for BSc; no new AI/Sociology fee inferred."
+    },
+    {
+      "universitySlug": "dg-vaishnav-college",
+      "programmeSlug": "b-com-computer-applications-shift-ii-dg-vaishnav-college",
+      "officialTitle": "B.Com. Computer Applications \u2014 Shift II (self-financed)",
+      "decision": "Unknown: full Careers360 current institutional course listing has no displayed exact applicable amount for this route. No generic BCom/BSc price or different stream transferred."
+    },
+    {
+      "universitySlug": "dg-vaishnav-college",
+      "programmeSlug": "b-sc-computer-science-with-ai-shift-ii-dg-vaishnav-college",
+      "officialTitle": "B.Sc. Computer Science with Artificial Intelligence \u2014 Shift II (self-financed)",
+      "decision": "Unknown: full Careers360 current institutional course listing has no displayed exact applicable amount for this route. No generic BCom/BSc price or different stream transferred."
+    },
+    {
+      "universitySlug": "dg-vaishnav-college",
+      "programmeSlug": "m-com-shift-i-dg-vaishnav-college",
+      "officialTitle": "Master of Commerce \u2014 Shift I (aided)",
+      "decision": "Unknown: full Careers360 current institutional course listing has no displayed exact applicable amount for this route. No generic BCom/BSc price or different stream transferred."
+    }
+  ],
+  "sourceAccessLimits": [
+    "Direct Careers360 NewCollege/DG /fees paths404; regular public /courses sources successfully fetched/read instead.",
+    "One search call with two institution-specific queries located the full ordinary course listings. Three successfully retrieved full source URLs only; no further page navigation or deep hunt."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "previousMigration": "0237-india-new-college-current-audience-clarification",
+  "old35ProgrammesDeepEqual": true,
+  "mediaAttributionDeepEqualAndNonempty": true,
+  "totalProgrammes": 40,
+  "newRoutes": 5,
+  "noNumberedReservation": false,
+  "migrationId": "0329-india-new-college-academic-hold-rescue",
+  "actualNumberedReader": "PASS1"
+}
