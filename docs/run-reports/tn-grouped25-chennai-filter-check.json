@@ -1,0 +1,29 @@
+{
+  "url": "https://www.studentstraffic.com/api/mobile/v1/universities?country=india&city=Chennai&q=University%20of%20Madras",
+  "status": 200,
+  "totalItems": 1,
+  "sample": [
+    {
+      "slug": "university-of-madras",
+      "name": "University of Madras",
+      "country": "India",
+      "countrySlug": "india",
+      "city": "Chennai",
+      "type": "Public",
+      "logoUrl": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792750656/studentstraffic/universities/university-of-madras/logo.png",
+      "coverImageUrl": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792922785/studentstraffic/universities/university-of-madras/cover.jpg",
+      "featured": false,
+      "course": "B.Sc. General Sciences",
+      "courseSlug": "bsc-general-sciences",
+      "offeringSlug": "unom-bsc-blended-science",
+      "tuitionUsd": 0,
+      "feeLabel": "Fee on request",
+      "officialFeeCurrency": "INR",
+      "officialAnnualTuitionAmount": "20000",
+      "programCount": 80
+    }
+  ],
+  "matches": 1,
+  "pass": true,
+  "feeDisplayIssue": "Finder raw SQL bigint alias returns text, causing fallback label despite INR 20000; runtime decoder and cache-key correction prepared for group26."
+}

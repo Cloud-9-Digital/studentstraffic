@@ -1,0 +1,82 @@
+[
+  {
+    "url": "https://www.studentstraffic.com/unom-ma-public-administration",
+    "kind": "programme",
+    "slug": "unom-ma-public-administration",
+    "status": 200,
+    "h1": "MPA at University of Madras",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/unom-m-a-lifelong-learning",
+    "kind": "programme",
+    "slug": "unom-m-a-lifelong-learning",
+    "status": 200,
+    "h1": "Master&#x27;s Adult Education at University of Madras",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/unom-m-a-yoga-theory-and-practice-self-supportive",
+    "kind": "programme",
+    "slug": "unom-m-a-yoga-theory-and-practice-self-supportive",
+    "status": 200,
+    "h1": "Master&#x27;s Yoga Studies at University of Madras",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/sathyabama-msc-marine-biology",
+    "kind": "programme",
+    "slug": "sathyabama-msc-marine-biology",
+    "status": 200,
+    "h1": "M.Sc. Biological Sciences at Sathyabama Institute of Science and Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/unom-m-a-defence-and-strategic-studies-regular-and-self-supportive",
+    "kind": "programme",
+    "slug": "unom-m-a-defence-and-strategic-studies-regular-and-self-supportive",
+    "status": 200,
+    "h1": "Master&#x27;s Defence Studies at University of Madras",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/sathyabama-institute-of-science-and-technology",
+    "kind": "university",
+    "slug": "sathyabama-institute-of-science-and-technology",
+    "status": 200,
+    "h1": "Sathyabama Institute of Science and Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/simats-mot-mental-health",
+    "kind": "programme",
+    "slug": "simats-mot-mental-health",
+    "status": 200,
+    "h1": "Master&#x27;s Occupational Therapy at Saveetha Institute of Medical and Technical Sciences",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/sathyabama-chennai-m-sc-bioinformatics-and-data-science",
+    "kind": "programme",
+    "slug": "sathyabama-chennai-m-sc-bioinformatics-and-data-science",
+    "status": 200,
+    "h1": "M.Sc. Bioinformatics at Sathyabama Institute of Science and Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/university-of-madras",
+    "kind": "university",
+    "slug": "university-of-madras",
+    "status": 200,
+    "h1": "University of Madras",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/saveetha-institute-of-medical-and-technical-sciences",
+    "kind": "university",
+    "slug": "saveetha-institute-of-medical-and-technical-sciences",
+    "status": 200,
+    "h1": "Saveetha Institute of Medical and Technical Sciences",
+    "pass": true
+  }
+]

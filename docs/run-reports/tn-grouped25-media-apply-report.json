@@ -1,0 +1,21 @@
+{
+  "appliedAt": "2026-10-25T10:06:26.889Z",
+  "uploads": {
+    "attempted": 2,
+    "succeeded": 2,
+    "failed": 0
+  },
+  "database": {
+    "updated": 1,
+    "notFoundInDb": []
+  },
+  "updatedUniversities": [
+    {
+      "universitySlug": "university-of-madras",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    }
+  ],
+  "uploadFailures": []
+}

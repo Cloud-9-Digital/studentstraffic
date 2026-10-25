@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "university-of-madras",
+    "status": 200,
+    "expectedCount": 80,
+    "expectedName": "University of Madras",
+    "actualName": "University of Madras",
+    "actualCount": 80,
+    "offerings": 80,
+    "recognitionCount": 2,
+    "expectedQuoteLabels": 80,
+    "actualQuoteLabels": 80,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "sathyabama-institute-of-science-and-technology",
+    "status": 200,
+    "expectedCount": 23,
+    "expectedName": "Sathyabama Institute of Science and Technology",
+    "actualName": "Sathyabama Institute of Science and Technology",
+    "actualCount": 23,
+    "offerings": 23,
+    "recognitionCount": 2,
+    "expectedQuoteLabels": 13,
+    "actualQuoteLabels": 13,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "saveetha-institute-of-medical-and-technical-sciences",
+    "status": 200,
+    "expectedCount": 26,
+    "expectedName": "Saveetha Institute of Medical and Technical Sciences",
+    "actualName": "Saveetha Institute of Medical and Technical Sciences",
+    "actualCount": 26,
+    "offerings": 26,
+    "recognitionCount": 2,
+    "expectedQuoteLabels": 25,
+    "actualQuoteLabels": 25,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  }
+]
