@@ -333,6 +333,8 @@ search-result image or publish an asset with unclear usage rights. A missing cov
 with the reason recorded; a missing cover must never block or delay otherwise-valid content by being
 silently deferred to a later pass.
 
+Forward payloads must also carry populated `mediaAttribution.logo` and `.cover` with the accepted original source URL and rights basis. Comparing an empty object to an empty historical baseline is not evidence that provenance is preserved: the reader defaults an omitted object to `{}`, which the publisher can write over existing metadata while leaving hosted image columns intact. Reconstruct missing attribution from the approved original media manifest and verify it independently. Preserve existing image URL fields or their omission; source-only restoration does not require a new upload. Correct already-applied files with a new full forward, never by editing their contents.
+
 Student-living media is optional and section-specific. When rights-safe assets exist, provide at most
 one image each for campus environment, accommodation, daily living and safety/support through
 `mediaAttribution.studentLife`. Do not reuse one image across all four sections merely to fill space.

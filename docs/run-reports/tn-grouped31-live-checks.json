@@ -1,0 +1,146 @@
+[
+  {
+    "url": "https://www.studentstraffic.com/karunya-forward-b-sc-forensic-science",
+    "kind": "programme",
+    "slug": "karunya-forward-b-sc-forensic-science",
+    "status": 200,
+    "h1": "B.Sc. Forensic Science at Karunya Institute of Technology and Sciences",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/karunya-btech-aerospace-engineering",
+    "kind": "programme",
+    "slug": "karunya-btech-aerospace-engineering",
+    "status": 200,
+    "h1": "B.E./B.Tech Aerospace at Karunya Institute of Technology and Sciences",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/m-o-p-vaishnav-college-for-women",
+    "kind": "university",
+    "slug": "m-o-p-vaishnav-college-for-women",
+    "status": 200,
+    "h1": "M.O.P. Vaishnav College for Women",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/mop-b-com-accounting-and-finance",
+    "kind": "programme",
+    "slug": "mop-b-com-accounting-and-finance",
+    "status": 200,
+    "h1": "B.Com at M.O.P. Vaishnav College for Women",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/karunya-institute-of-technology-and-sciences",
+    "kind": "university",
+    "slug": "karunya-institute-of-technology-and-sciences",
+    "status": 200,
+    "h1": "Karunya Institute of Technology and Sciences",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/mop-m-com-general",
+    "kind": "programme",
+    "slug": "mop-m-com-general",
+    "status": 200,
+    "h1": "M.Com at M.O.P. Vaishnav College for Women",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/panimalar-computer-science-engineering",
+    "kind": "programme",
+    "slug": "panimalar-computer-science-engineering",
+    "status": 200,
+    "h1": "B.E./B.Tech CSE at Panimalar Engineering College",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/tamil-nadu-veterinary-and-animal-sciences-university",
+    "kind": "university",
+    "slug": "tamil-nadu-veterinary-and-animal-sciences-university",
+    "status": 200,
+    "h1": "Tamil Nadu Veterinary and Animal Sciences University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/panimalar-engineering-college",
+    "kind": "university",
+    "slug": "panimalar-engineering-college",
+    "status": 200,
+    "h1": "Panimalar Engineering College",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/tanuvas-bvsc-ah-chennai",
+    "kind": "programme",
+    "slug": "tanuvas-bvsc-ah-chennai",
+    "status": 200,
+    "h1": "BVSc at Tamil Nadu Veterinary and Animal Sciences University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/mcc-b-a-history-aided",
+    "kind": "programme",
+    "slug": "mcc-b-a-history-aided",
+    "status": 200,
+    "h1": "B.A. History at Madras Christian College",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/tanuvas-cfdt-dairy-technology",
+    "kind": "programme",
+    "slug": "tanuvas-cfdt-dairy-technology",
+    "status": 200,
+    "h1": "B.E./B.Tech Dairy Technology at Tamil Nadu Veterinary and Animal Sciences University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/tanuvas-msc-dairy-science",
+    "kind": "programme",
+    "slug": "tanuvas-msc-dairy-science",
+    "status": 200,
+    "h1": "M.Sc. Dairy Science at Tamil Nadu Veterinary and Animal Sciences University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/madras-christian-college",
+    "kind": "university",
+    "slug": "madras-christian-college",
+    "status": 200,
+    "h1": "Madras Christian College",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/mcc-m-c-a-self-financed",
+    "kind": "programme",
+    "slug": "mcc-m-c-a-self-financed",
+    "status": 200,
+    "h1": "MCA at Madras Christian College",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/karpagam-academy-of-higher-education",
+    "kind": "university",
+    "slug": "karpagam-academy-of-higher-education",
+    "status": 200,
+    "h1": "Karpagam Academy of Higher Education",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/kahe-forward-b-com-honours",
+    "kind": "programme",
+    "slug": "kahe-forward-b-com-honours",
+    "status": 200,
+    "h1": "B.Com at Karpagam Academy of Higher Education",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/kahe-be-biomedical",
+    "kind": "programme",
+    "slug": "kahe-be-biomedical",
+    "status": 200,
+    "h1": "B.E./B.Tech Biomedical at Karpagam Academy of Higher Education",
+    "pass": true
+  }
+]
