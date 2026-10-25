@@ -1,0 +1,823 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "bsc-environmental-science",
+      "name": "B.Sc. in Environmental Science",
+      "shortName": "B.Sc. Environmental Science",
+      "stream": "environment-sustainability",
+      "level": "bachelors",
+      "discipline": "environmental-science",
+      "aliases": [
+        "Bachelor of Environmental Science",
+        "BSc Environmental Sciences"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "Environmental science examines ecosystems, environmental chemistry, natural resources and human impacts. Bachelor programmes may combine foundational science with environmental monitoring, laboratory or field methods and analysis of environmental change. Curriculum and practical scope vary by institution. Compare programme content, prior qualifications, language, duration and practical arrangements before applying.",
+      "metaTitle": "B.Sc. Environmental Science: Courses and Entry",
+      "metaDescription": "Compare B.Sc. Environmental Science programmes by academic content, entry requirements, teaching language, duration, practical study and verified fees."
+    },
+    {
+      "slug": "integrated-msc-renal-dialysis-technology",
+      "name": "Integrated M.Sc. in Renal Dialysis Technology",
+      "shortName": "Integrated M.Sc. Renal Dialysis Technology",
+      "stream": "public-health-allied-health",
+      "level": "integrated-masters",
+      "discipline": "renal-dialysis-technology",
+      "aliases": [
+        "Five-year Integrated MSc Renal Dialysis Technology"
+      ],
+      "displayOrder": 260,
+      "durationYears": 5,
+      "summary": "Integrated renal-dialysis technology study combines foundational sciences with renal physiology, dialysis methods, equipment and supervised clinical learning. Entry subjects, intermediate exits, training scope and any registration requirements vary by institution and jurisdiction.",
+      "metaTitle": "Integrated M.Sc. in Renal Dialysis Technology Programmes",
+      "metaDescription": "Compare Integrated M.Sc. in Renal Dialysis Technology programmes by school-entry requirements, duration, supervised training and fees."
+    },
+    {
+      "slug": "integrated-msc-cardiac-technology",
+      "name": "Integrated M.Sc. in Cardiac Technology",
+      "shortName": "Integrated M.Sc. Cardiac Technology",
+      "stream": "public-health-allied-health",
+      "level": "integrated-masters",
+      "discipline": "cardiac-technology",
+      "aliases": [
+        "Five-year Integrated MSc Cardiac Technology"
+      ],
+      "displayOrder": 260,
+      "durationYears": 5,
+      "summary": "Integrated cardiac technology study combines foundational sciences with cardiovascular systems, diagnostic techniques, equipment and supervised learning in cardiac-care settings. Entry subjects, intermediate exits, clinical scope and any registration requirements vary by institution and jurisdiction.",
+      "metaTitle": "Integrated M.Sc. in Cardiac Technology Programmes",
+      "metaDescription": "Compare Integrated M.Sc. in Cardiac Technology programmes by school-entry requirements, duration, supervised training and fees."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "karpaga-vinayaga-educational-lore-for-learning",
+      "name": "Karpaga Vinayaga Educational Lore for Learning",
+      "city": "Maduranthagam",
+      "type": "Private",
+      "establishedYear": 2026,
+      "officialWebsite": "https://kvell.in/",
+      "mediaAttribution": {
+        "logo": {
+          "sourceUrl": "https://kvell.in/wp-content/uploads/2026/07/kvell-logo.png",
+          "rights": "Official university identifying asset; no open licence claimed.",
+          "checkedAt": "2026-10-25"
+        },
+        "cover": {
+          "sourceUrl": "https://kvell.in/wp-content/uploads/2026/08/IMAGE-3-1.jpg",
+          "rights": "Official university campus photograph; no open licence claimed.",
+          "checkedAt": "2026-10-25",
+          "altText": "Regupathy Saroja Auditorium at KVELL campus"
+        }
+      },
+      "summary": "Karpaga Vinayaga Educational Lore for Learning, known as KVELL, is a private deemed-to-be university listed by the UGC with establishment year2026. Its campus is on GST Road at Chinnakolambakkam, Maduranthagam, in Chengalpattu district. The College of Emerging Sciences offers undergraduate and integrated study alongside the wider institutional group; these listings cover three currently evidenced programmes.",
+      "campusLifestyle": "The College of Emerging Sciences operates within the university’s GST Road campus. Applicants should confirm their departmental timetable, practical-learning locations and current access to shared academic and student facilities.",
+      "cityProfile": "Maduranthagam is in Chengalpattu district, TamilNadu. KVELL gives its address as GST Road, Chinnakolambakkam, PadalamPO, MaduranthagamTaluk603308. Check travel and accommodation against that campus address rather than assuming a central Chennai teaching location.",
+      "practicalExposure": "The environmental programme describes field and applied sustainability learning. The integrated technology routes describe supervised hospital and diagnostic learning connected with the university’s clinical infrastructure. Confirm current rotations, placements, assessment and supervision; degree enrolment does not guarantee independent clinical practice rights.",
+      "hostelOverview": "Ask the university for current accommodation availability, room arrangements and a written hostel and meal quote. Programme tuition should not be assumed to include residence.",
+      "dietarySupport": "The official fee page lists a separate day-scholar noon-meal charge. Confirm current meal arrangements and specific dietary requirements before admission.",
+      "safetyOverview": "Obtain current campus emergency contacts, residence access rules and clinical-placement supervision arrangements from the university before joining.",
+      "studentSupport": "Use the official admissions team for school-subject eligibility assessment, documentary verification and programme selection. Confirm intermediate exit procedures and the exact requirements for continuing into later years.",
+      "whyChoose": [
+        "Compare environmental honours study with two school-entry integrated technology routes.",
+        "The three routes have current named programme pages with duration and qualification information.",
+        "Published intermediate exit paths allow applicants to discuss different study lengths with the university."
+      ],
+      "thingsToConsider": [
+        "Eight other Emerging Sciences programmes are currently labelled subject to UGC approval and are not included here.",
+        "Tuition figures have an unspecified billing period; obtain a complete written fee breakdown.",
+        "Integrated degree study and intermediate exits do not automatically establish professional licensing or international permission."
+      ],
+      "bestFitFor": [
+        "School leavers comparing environmental sustainability study.",
+        "Applicants evaluating five-year integrated cardiac or renal-dialysis technology study.",
+        "Applicants who will verify current qualification acceptance, clinical arrangements and all costs before paying."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "UGC-listed deemed-to-be university under Section3"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC own deemed-university register — KVELL",
+          "url": "https://deemed.ugc.ac.in/Home/ListOfDeemedToBeUniversity"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Where is KVELL located?",
+          "answer": "Its listed campus address is GST Road, Chinnakolambakkam, PadalamPO, MaduranthagamTaluk, Chengalpattu district, TamilNadu603308."
+        },
+        {
+          "question": "What is its university status?",
+          "answer": "The UGC own register lists Karpaga Vinayaga Educational Lore for Learning as a deemed-to-be university with establishment year2026."
+        },
+        {
+          "question": "Which programmes are included?",
+          "answer": "The four-year environmental honours programme and five-year integrated renal-dialysis and cardiac-technology programmes are included."
+        },
+        {
+          "question": "What qualification is needed?",
+          "answer": "The honours programme requires Class12 under KVELL criteria. Integrated routes specify school-leaving science subjects and university assessment; read the exact programme entry conditions."
+        },
+        {
+          "question": "Are intermediate exits available?",
+          "answer": "The honours route describes a three-year BSc exit. The integrated routes describe BSc after three years and BScHons after four years, subject to university procedures."
+        },
+        {
+          "question": "What do the displayed fees cover?",
+          "answer": "The quotes are the published tuition line only. Billing period and additional compulsory/optional charges need written confirmation."
+        },
+        {
+          "question": "Are all advertised programmes currently included?",
+          "answer": "Other advertised programmes require their own current qualification and approval verification. The three listed routes form the verified scope here."
+        },
+        {
+          "question": "Is professional registration guaranteed?",
+          "answer": "No. Applicants must separately verify any professional registration, licensing or practice requirements relevant to the intended role and destination."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "UGC own deemed-university register",
+          "url": "https://deemed.ugc.ac.in/Home/ListOfDeemedToBeUniversity",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25",
+          "note": "Exact row72, DOE2026; main currentUI ID1447 separately retained."
+        },
+        {
+          "label": "Official Emerging Sciences programme and fee table",
+          "url": "https://kvell.in/emerging-sciences/",
+          "kind": "official-fee",
+          "checkedAt": "2026-10-25",
+          "note": "Three unstarred exact programmes; eight other rows approval-conditional. Price periods unspecified."
+        },
+        {
+          "label": "Official current university admission notice",
+          "url": "https://kvell.in/wp-content/uploads/2026/08/advt-admission-notice.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25",
+          "note": "Names own university constituent institutions and current named degree scope; retained fulloriginal."
+        },
+        {
+          "label": "B.Sc. (Hons.) in Sustainable Development and Environment Management entry page",
+          "url": "https://kvell.in/b-sc-hons-sustainable-development-and-environment-management/",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25",
+          "note": "Exact programme duration, school entry and exit options."
+        },
+        {
+          "label": "Integrated M.Sc. in Renal Dialysis Technology entry page",
+          "url": "https://kvell.in/integrated-m-sc-renal-dialysis-technology-in-chennai-kvell/",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25",
+          "note": "Exact programme duration, school entry and exit options."
+        },
+        {
+          "label": "Integrated M.Sc. in Cardiac Technology entry page",
+          "url": "https://kvell.in/integrated-m-sc-in-cardiac-technology/",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25",
+          "note": "Exact programme duration, school entry and exit options."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "Three current unstarred Emerging Sciences routes only; other current group awards and approval-conditional programmes separately inventoried.",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my programme eligibility",
+            "capture": [
+              "school qualification",
+              "subjects",
+              "chosen degree"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Plan my study budget",
+            "capture": [
+              "chosen degree",
+              "applicant category"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my application",
+            "capture": [
+              "qualification records",
+              "chosen degree"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "kvell-bsc-hons-sustainable-development-environment-management",
+          "canonicalCourseSlug": "bsc-environmental-science",
+          "officialTitle": "B.Sc. (Hons.) in Sustainable Development and Environment Management",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Published programme tuition is quoted separately below. Its charging period is not stated; obtain a written itemised quote before payment. Other admission, library, sports, verification, deposit, meal and transport charges are separate."
+          },
+          "officialProgramUrl": "https://kvell.in/b-sc-hons-sustainable-development-and-environment-management/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants satisfying the exact school-leaving subjects and university eligibility assessment."
+            ],
+            "restrictions": [
+              "Overseas qualification equivalence, applicant permissions and category-specific charges are not independently established."
+            ],
+            "notes": "An academic degree listing does not promise professional registration, licensing or independent clinical practice rights.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://kvell.in/b-sc-hons-sustainable-development-and-environment-management/"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc. (Hons.) in Sustainable Development and Environment Management is a 4-year regular full-time route at KVELL College of Emerging Sciences, Chinnakolambakkam, Maduranthagam. Read the programme structure and named intermediate exits before applying.",
+            "eligibility": {
+              "intro": "Meet the exact published entry qualification and complete university verification. No unpublished percentage or relaxation is invented.",
+              "items": [
+                "Complete Class12, subject to KVELL admission criteria and qualification verification."
+              ]
+            },
+            "applicationSteps": [
+              "Use the official College of Emerging Sciences application channel and select the exact award.",
+              "Submit school-leaving records, obtain university eligibility assessment and follow the notified merit/selection instructions.",
+              "Produce original documents, confirm the full itemised fee and reporting requirements, and complete admission through official channels."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class10 and Class12 qualification certificates and mark sheets showing the required school-leaving subjects."
+              ],
+              "application": [
+                "Application record and original academic certificates for verification; identity, transfer, migration or category records where required by KVELL."
+              ]
+            },
+            "deadlinesNote": "The current page advertises2026–27 admissions. Its published application window was13–31August2026, with merit list3September and admit cards4September; those dates are historical and do not establish a present application opening or first-entry month.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 50000,
+              "status": "confirmed",
+              "period": "other",
+              "componentBasis": "Current2026 admissions-page Tuition Fee line for the exact programme. Billing period is not stated; degree-length grouping does not establish annual or full-course billing. No annualisation, total or budget-filter value inferred. Other compulsory and optional charges listed separately.",
+              "audience": "domestic",
+              "category": "Published College of Emerging Sciences programme tuition; final applicant-category assessment required",
+              "academicYear": "2026–27",
+              "sourceUrl": "https://kvell.in/emerging-sciences/",
+              "sourceLabel": "Official current Emerging Sciences tuition table with2026 admission schedule",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "medium": "",
+          "mediumNote": null,
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Published programme tuition is quoted separately below. Its charging period is not stated; obtain a written itemised quote before payment. Other admission, library, sports, verification, deposit, meal and transport charges are separate.",
+          "teachingPhases": [
+            {
+              "phase": "4-year full-time route",
+              "language": "",
+              "details": "Environmental science, sustainability frameworks, climate policy, environmental impact assessment and resource management are applied to development challenges. The university describes an optional three-year B.Sc. exit within the four-year honours route."
+            }
+          ]
+        },
+        {
+          "slug": "kvell-integrated-msc-renal-dialysis-technology",
+          "canonicalCourseSlug": "integrated-msc-renal-dialysis-technology",
+          "officialTitle": "Integrated M.Sc. in Renal Dialysis Technology",
+          "durationYears": 5,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Published programme tuition is quoted separately below. Its charging period is not stated; obtain a written itemised quote before payment. Other admission, library, sports, verification, deposit, meal and transport charges are separate."
+          },
+          "officialProgramUrl": "https://kvell.in/integrated-m-sc-renal-dialysis-technology-in-chennai-kvell/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants satisfying the exact school-leaving subjects and university eligibility assessment."
+            ],
+            "restrictions": [
+              "Overseas qualification equivalence, applicant permissions and category-specific charges are not independently established."
+            ],
+            "notes": "An academic degree listing does not promise professional registration, licensing or independent clinical practice rights.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://kvell.in/integrated-m-sc-renal-dialysis-technology-in-chennai-kvell/"
+          },
+          "admissionsContent": {
+            "overview": "Integrated M.Sc. in Renal Dialysis Technology is a 5-year regular full-time route at KVELL College of Emerging Sciences, Chinnakolambakkam, Maduranthagam. Read the programme structure and named intermediate exits before applying.",
+            "eligibility": {
+              "intro": "Meet the exact published entry qualification and complete university verification. No unpublished percentage or relaxation is invented.",
+              "items": [
+                "Complete10+2/HigherSecondary with Physics, Chemistry and Biology/Mathematics from a recognised board.",
+                "The published groups are BioMaths, PureScience, BioComputerScience or vocational Nursing. The university must assess the exact subject combination and qualification equivalence."
+              ]
+            },
+            "applicationSteps": [
+              "Use the official College of Emerging Sciences application channel and select the exact award.",
+              "Submit school-leaving records, obtain university eligibility assessment and follow the notified merit/selection instructions.",
+              "Produce original documents, confirm the full itemised fee and reporting requirements, and complete admission through official channels."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class10 and Class12 qualification certificates and mark sheets showing the required school-leaving subjects."
+              ],
+              "application": [
+                "Application record and original academic certificates for verification; identity, transfer, migration or category records where required by KVELL."
+              ]
+            },
+            "deadlinesNote": "The current page advertises2026–27 admissions. Its published application window was13–31August2026, with merit list3September and admit cards4September; those dates are historical and do not establish a present application opening or first-entry month.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 75000,
+              "status": "confirmed",
+              "period": "other",
+              "componentBasis": "Current2026 admissions-page Tuition Fee line for the exact programme. Billing period is not stated; degree-length grouping does not establish annual or full-course billing. No annualisation, total or budget-filter value inferred. Other compulsory and optional charges listed separately.",
+              "audience": "domestic",
+              "category": "Published College of Emerging Sciences programme tuition; final applicant-category assessment required",
+              "academicYear": "2026–27",
+              "sourceUrl": "https://kvell.in/emerging-sciences/",
+              "sourceLabel": "Official current Emerging Sciences tuition table with2026 admission schedule",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "medium": "",
+          "mediumNote": null,
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Published programme tuition is quoted separately below. Its charging period is not stated; obtain a written itemised quote before payment. Other admission, library, sports, verification, deposit, meal and transport charges are separate.",
+          "teachingPhases": [
+            {
+              "phase": "5-year full-time route",
+              "language": "",
+              "details": "Renal sciences, dialysis procedures and equipment are studied alongside clinical learning in nephrology departments and dialysis units, with the exact supervised training arrangements determined by the university. The five-year integrated route describes B.Sc. after three years and B.Sc. (Hons.) after four years as exit options."
+            }
+          ]
+        },
+        {
+          "slug": "kvell-integrated-msc-cardiac-technology",
+          "canonicalCourseSlug": "integrated-msc-cardiac-technology",
+          "officialTitle": "Integrated M.Sc. in Cardiac Technology",
+          "durationYears": 5,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Published programme tuition is quoted separately below. Its charging period is not stated; obtain a written itemised quote before payment. Other admission, library, sports, verification, deposit, meal and transport charges are separate."
+          },
+          "officialProgramUrl": "https://kvell.in/integrated-m-sc-in-cardiac-technology/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants satisfying the exact school-leaving subjects and university eligibility assessment."
+            ],
+            "restrictions": [
+              "Overseas qualification equivalence, applicant permissions and category-specific charges are not independently established."
+            ],
+            "notes": "An academic degree listing does not promise professional registration, licensing or independent clinical practice rights.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://kvell.in/integrated-m-sc-in-cardiac-technology/"
+          },
+          "admissionsContent": {
+            "overview": "Integrated M.Sc. in Cardiac Technology is a 5-year regular full-time route at KVELL College of Emerging Sciences, Chinnakolambakkam, Maduranthagam. Read the programme structure and named intermediate exits before applying.",
+            "eligibility": {
+              "intro": "Meet the exact published entry qualification and complete university verification. No unpublished percentage or relaxation is invented.",
+              "items": [
+                "Complete10+2/HigherSecondary with Physics, Chemistry and Biology/Mathematics from a recognised board.",
+                "The published groups are BioMaths, PureScience, BioComputerScience or vocational Nursing. The university must assess the exact subject combination and qualification equivalence."
+              ]
+            },
+            "applicationSteps": [
+              "Use the official College of Emerging Sciences application channel and select the exact award.",
+              "Submit school-leaving records, obtain university eligibility assessment and follow the notified merit/selection instructions.",
+              "Produce original documents, confirm the full itemised fee and reporting requirements, and complete admission through official channels."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class10 and Class12 qualification certificates and mark sheets showing the required school-leaving subjects."
+              ],
+              "application": [
+                "Application record and original academic certificates for verification; identity, transfer, migration or category records where required by KVELL."
+              ]
+            },
+            "deadlinesNote": "The current page advertises2026–27 admissions. Its published application window was13–31August2026, with merit list3September and admit cards4September; those dates are historical and do not establish a present application opening or first-entry month.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 75000,
+              "status": "confirmed",
+              "period": "other",
+              "componentBasis": "Current2026 admissions-page Tuition Fee line for the exact programme. Billing period is not stated; degree-length grouping does not establish annual or full-course billing. No annualisation, total or budget-filter value inferred. Other compulsory and optional charges listed separately.",
+              "audience": "domestic",
+              "category": "Published College of Emerging Sciences programme tuition; final applicant-category assessment required",
+              "academicYear": "2026–27",
+              "sourceUrl": "https://kvell.in/emerging-sciences/",
+              "sourceLabel": "Official current Emerging Sciences tuition table with2026 admission schedule",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "medium": "",
+          "mediumNote": null,
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Published programme tuition is quoted separately below. Its charging period is not stated; obtain a written itemised quote before payment. Other admission, library, sports, verification, deposit, meal and transport charges are separate.",
+          "teachingPhases": [
+            {
+              "phase": "5-year full-time route",
+              "language": "",
+              "details": "Cardiac technology study combines theory with supervised exposure to cardiac-care settings, diagnostic laboratories and relevant hospital departments; confirm the current clinical rotation and internship requirements. The five-year integrated route describes B.Sc. after three years and B.Sc. (Hons.) after four years as exit options."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "programme",
+      "claimText": "B.Sc. (Hons.) in Sustainable Development and Environment Management; exact current unstarred programme in Emerging Sciences; 4 years, full-time.",
+      "status": "verified",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/b-sc-hons-sustainable-development-and-environment-management/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "kvell-bsc-hons-sustainable-development-environment-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "duration",
+      "claimText": "4 years. The university describes an optional three-year B.Sc. exit within the four-year honours route.",
+      "status": "verified",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/b-sc-hons-sustainable-development-and-environment-management/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "kvell-bsc-hons-sustainable-development-environment-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "eligibility",
+      "claimText": "Complete Class12, subject to KVELL admission criteria and qualification verification.",
+      "status": "verified",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/b-sc-hons-sustainable-development-and-environment-management/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "kvell-bsc-hons-sustainable-development-environment-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "admissions",
+      "claimText": "Current2026–27 official application channel, academic eligibility assessment and document verification; historical admission schedule not treated as future opening.",
+      "status": "verified",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/b-sc-hons-sustainable-development-and-environment-management/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "kvell-bsc-hons-sustainable-development-environment-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "fee",
+      "claimText": "Exact published tuition line INR50000; billing period unknown, annual tuition remains on_request. Additional charges separate.",
+      "status": "verified",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/emerging-sciences/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "kvell-bsc-hons-sustainable-development-environment-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Exact current unstarred B.Sc. (Hons.) in Sustainable Development and Environment Management tuition INR50000; period unspecified, recorded other. No annual/full-course inference or combined-charge inflation.",
+      "status": "verified",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/emerging-sciences/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "kvell-bsc-hons-sustainable-development-environment-management",
+      "internalNotes": "Current main site, not development mirror. Eight other starred programmes explicitly subject to UGC approval are held. Amount is tuition component only; period not established."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "medium",
+      "claimText": "Teaching/examination language not established; blank medium and controlled language arrays.",
+      "status": "omit",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/b-sc-hons-sustainable-development-and-environment-management/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "kvell-bsc-hons-sustainable-development-environment-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "intake",
+      "claimText": "Exact first-entry month not independently established; application/merit dates not substituted, both intake arrays empty.",
+      "status": "omit",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/b-sc-hons-sustainable-development-and-environment-management/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "kvell-bsc-hons-sustainable-development-environment-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "programme",
+      "claimText": "Integrated M.Sc. in Renal Dialysis Technology; exact current unstarred programme in Emerging Sciences; 5 years, full-time.",
+      "status": "verified",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/integrated-m-sc-renal-dialysis-technology-in-chennai-kvell/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "kvell-integrated-msc-renal-dialysis-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "duration",
+      "claimText": "5 years. The five-year integrated route describes B.Sc. after three years and B.Sc. (Hons.) after four years as exit options.",
+      "status": "verified",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/integrated-m-sc-renal-dialysis-technology-in-chennai-kvell/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "kvell-integrated-msc-renal-dialysis-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "eligibility",
+      "claimText": "Complete10+2/HigherSecondary with Physics, Chemistry and Biology/Mathematics from a recognised board. The published groups are BioMaths, PureScience, BioComputerScience or vocational Nursing. The university must assess the exact subject combination and qualification equivalence.",
+      "status": "verified",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/integrated-m-sc-renal-dialysis-technology-in-chennai-kvell/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "kvell-integrated-msc-renal-dialysis-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "admissions",
+      "claimText": "Current2026–27 official application channel, academic eligibility assessment and document verification; historical admission schedule not treated as future opening.",
+      "status": "verified",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/integrated-m-sc-renal-dialysis-technology-in-chennai-kvell/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "kvell-integrated-msc-renal-dialysis-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "fee",
+      "claimText": "Exact published tuition line INR75000; billing period unknown, annual tuition remains on_request. Additional charges separate.",
+      "status": "verified",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/emerging-sciences/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "kvell-integrated-msc-renal-dialysis-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Exact current unstarred Integrated M.Sc. in Renal Dialysis Technology tuition INR75000; period unspecified, recorded other. No annual/full-course inference or combined-charge inflation.",
+      "status": "verified",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/emerging-sciences/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "kvell-integrated-msc-renal-dialysis-technology",
+      "internalNotes": "Current main site, not development mirror. Eight other starred programmes explicitly subject to UGC approval are held. Amount is tuition component only; period not established."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "medium",
+      "claimText": "Teaching/examination language not established; blank medium and controlled language arrays.",
+      "status": "omit",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/integrated-m-sc-renal-dialysis-technology-in-chennai-kvell/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "kvell-integrated-msc-renal-dialysis-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "intake",
+      "claimText": "Exact first-entry month not independently established; application/merit dates not substituted, both intake arrays empty.",
+      "status": "omit",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/integrated-m-sc-renal-dialysis-technology-in-chennai-kvell/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "kvell-integrated-msc-renal-dialysis-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "programme",
+      "claimText": "Integrated M.Sc. in Cardiac Technology; exact current unstarred programme in Emerging Sciences; 5 years, full-time.",
+      "status": "verified",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/integrated-m-sc-in-cardiac-technology/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "kvell-integrated-msc-cardiac-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "duration",
+      "claimText": "5 years. The five-year integrated route describes B.Sc. after three years and B.Sc. (Hons.) after four years as exit options.",
+      "status": "verified",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/integrated-m-sc-in-cardiac-technology/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "kvell-integrated-msc-cardiac-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "eligibility",
+      "claimText": "Complete10+2/HigherSecondary with Physics, Chemistry and Biology/Mathematics from a recognised board. The published groups are BioMaths, PureScience, BioComputerScience or vocational Nursing. The university must assess the exact subject combination and qualification equivalence.",
+      "status": "verified",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/integrated-m-sc-in-cardiac-technology/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "kvell-integrated-msc-cardiac-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "admissions",
+      "claimText": "Current2026–27 official application channel, academic eligibility assessment and document verification; historical admission schedule not treated as future opening.",
+      "status": "verified",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/integrated-m-sc-in-cardiac-technology/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "kvell-integrated-msc-cardiac-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "fee",
+      "claimText": "Exact published tuition line INR75000; billing period unknown, annual tuition remains on_request. Additional charges separate.",
+      "status": "verified",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/emerging-sciences/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "kvell-integrated-msc-cardiac-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Exact current unstarred Integrated M.Sc. in Cardiac Technology tuition INR75000; period unspecified, recorded other. No annual/full-course inference or combined-charge inflation.",
+      "status": "verified",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/emerging-sciences/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "kvell-integrated-msc-cardiac-technology",
+      "internalNotes": "Current main site, not development mirror. Eight other starred programmes explicitly subject to UGC approval are held. Amount is tuition component only; period not established."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "medium",
+      "claimText": "Teaching/examination language not established; blank medium and controlled language arrays.",
+      "status": "omit",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/integrated-m-sc-in-cardiac-technology/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "kvell-integrated-msc-cardiac-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "intake",
+      "claimText": "Exact first-entry month not independently established; application/merit dates not substituted, both intake arrays empty.",
+      "status": "omit",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/integrated-m-sc-in-cardiac-technology/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "kvell-integrated-msc-cardiac-technology"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "recognition",
+      "claimText": "UGC own deemed-university register row72: Karpaga Vinayaga Educational Lore for Learning, GST Road ChinnaKolambakkam MaduranthagamTamilNadu, DOE2026, official kids.edu.in. Main public UI register also ID1447 Section-III.",
+      "status": "verified",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://deemed.ugc.ac.in/Home/ListOfDeemedToBeUniversity",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "identity",
+      "claimText": "Current official university site and official UGC-linked dental disclosure identify KVELL separately from Karpagam Academy and similarly named institutions. Exact own Emerging Sciences teaching scope at GST Road ChinnakolambakkamMaduranthagam.",
+      "status": "verified",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "media",
+      "claimText": "Complete official university crest and wordmark, no crop or invented badge.",
+      "status": "verified",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/wp-content/uploads/2026/07/kvell-logo.png",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "publicField": "media",
+      "claimText": "Genuine official named RegupathySarojaAuditorium campus photograph; clock sculpture and entrance visible.",
+      "status": "verified",
+      "sourceLabel": "Current KVELL official programme/fee page or UGC own university register",
+      "sourceUrl": "https://kvell.in/wp-content/uploads/2026/08/IMAGE-3-1.jpg",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    }
+  ]
+}

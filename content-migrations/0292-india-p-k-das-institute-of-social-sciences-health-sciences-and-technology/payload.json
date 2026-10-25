@@ -1,0 +1,549 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "bachelor-performing-arts",
+      "name": "Bachelor's in Performing Arts",
+      "shortName": "Bachelor's Performing Arts",
+      "stream": "design-creative-arts",
+      "level": "bachelors",
+      "discipline": "performing-arts",
+      "aliases": [
+        "BA Performing Arts",
+        "BA Performing Arts (Hons)",
+        "Bachelor of Performing Arts"
+      ],
+      "displayOrder": 312,
+      "durationYears": 4,
+      "summary": "Bachelor's in Performing Arts programmes combine performance practice with the study of music, dance, theatre, aesthetics and production. Students may develop rehearsal, collaboration, interpretation and critical-analysis skills. The balance of disciplines, assessment and honours pathways differs by institution.",
+      "metaTitle": "Bachelor's Performing Arts Programmes | Students Traffic",
+      "metaDescription": "Compare Bachelor's Performing Arts programmes by curriculum, prior qualifications, award structure, teaching arrangements and fees."
+    },
+    {
+      "slug": "bachelor-indology",
+      "name": "Bachelor's in Indology",
+      "shortName": "Bachelor's Indology",
+      "stream": "arts-humanities",
+      "level": "bachelors",
+      "discipline": "indology",
+      "aliases": [
+        "BSc Indology",
+        "BSc Indology (Hons)",
+        "Bachelor of Science in Indology"
+      ],
+      "displayOrder": 313,
+      "durationYears": 4,
+      "summary": "Bachelor's in Indology programmes examine Indian civilisation through languages, texts, history, philosophy, art and cultural heritage. Study may combine textual interpretation, field documentation and critical research methods. Exact language requirements, disciplinary balance and honours structure depend on the institution.",
+      "metaTitle": "Bachelor's Indology Programmes | Students Traffic",
+      "metaDescription": "Compare Bachelor's Indology programmes by curriculum, prior qualifications, award structure, teaching arrangements and fees."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "p-k-das-institute-of-social-sciences-health-sciences-and-technology",
+      "name": "P K Das Institute of Social Sciences, Health Sciences and Technology",
+      "city": "Coimbatore",
+      "type": "Private",
+      "establishedYear": 2026,
+      "officialWebsite": "https://pkdasuniversity.ac.in/",
+      "mediaAttribution": {},
+      "summary": "P K Das Institute of Social Sciences, Health Sciences and Technology is a Coimbatore institution declared a deemed-to-be university under the distinct greenfield category in May 2026. Its own schools cover social sciences, health sciences and technology. The Social Sciences school lists four-year honours degrees in Performing Arts and Indology.",
+      "campusLifestyle": "The university’s Social Sciences school brings together creative practice and the study of Indian civilisation and heritage. Performing Arts includes music, dance and theatre, while Indology combines texts, languages, history, philosophy and culture. The university’s current site records its first-batch welcome and governing-council activity. Obtain the academic timetable and actual learning spaces for the selected programme before enrolment.",
+      "cityProfile": "The university website gives its academic contact at Nehru Gardens, Thirumalayampalayam, Coimbatore 641105, and a separate corporate office at Nehru College Campus, Palakkad Main Road, Kuniamuthur, Coimbatore 641008. The UGC register and Ministry declaration use the Kuniamuthur address. Confirm where teaching, practical activity and examinations for the exact programme take place.",
+      "practicalExposure": "The Performing Arts page describes training in music, dance and theatre, with performances and exposure to classical, folk and contemporary forms. The Indology page includes ancient texts and languages, fieldwork, heritage-site documentation and scholarly writing. Confirm the current syllabus, supervised activities and assessment arrangements; these descriptions do not establish a guaranteed placement or professional appointment.",
+      "hostelOverview": "Request the university’s current accommodation information, eligibility, allocation and charges before arranging a move. Confirm whether the offer includes a residential place, where that accommodation is located and what facilities are available. University admission and a group-institution facility list should not be treated as a guaranteed hostel allocation.",
+      "dietarySupport": "Ask about current dining arrangements at the actual teaching and accommodation locations. Confirm meal charges and dietary or accessibility needs directly before payment. A programme fee quotation should identify whether accommodation and meals are separate.",
+      "safetyOverview": "Use the university’s own application route and published contacts to confirm the exact programme, campus and beneficiary details before paying. Keep the written offer, academic conditions and official payment receipts. Obtain the current campus-support and emergency contacts when arranging attendance.",
+      "studentSupport": "The university provides a current application portal, admissions contacts and named school information. Applicants should obtain the required qualification-document checklist, entrance-assessment instructions, academic timetable and complete written fee quotation for the selected award. Equivalent or overseas qualifications need university assessment.",
+      "whyChoose": [
+        "Two distinct honours routes combine academic study with performance practice or cultural and textual inquiry.",
+        "Named current course pages state four-year duration and specific school-entry conditions.",
+        "The institution’s own university identity is separate from other Nehru Group colleges."
+      ],
+      "thingsToConsider": [
+        "Both listed degrees require 70% in a recognised 10+2 qualification and an entrance examination score.",
+        "Confirm the exact current fee quotation, teaching location and assessment arrangements before payment.",
+        "Other Nehru Group colleges and their approvals are not automatically part of this university."
+      ],
+      "bestFitFor": [
+        "School-leavers meeting the stated academic and entrance-assessment conditions.",
+        "Applicants interested in music, dance and theatre or in Indian texts, civilisation and heritage.",
+        "Students seeking a four-year honours award with subject-specific academic and practical work."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "UGC deemed-to-be university register: Section 3"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC current deemed-university register, institution ID1446",
+          "url": "https://www.ugc.gov.in/universitydetails/Getuniversity_details?unitypeID=4"
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "UGC current own university register ID1446",
+          "url": "https://www.ugc.gov.in/universitydetails/Getuniversity_details?unitypeID=4",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Ministry26May2026 distinct greenfield declaration",
+          "url": "https://www.dohe-education.gov.in/static/uploads/2026/06/7d087b2298fc974b771ddff6968aea5b.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Current official Social Sciences school and honours titles",
+          "url": "https://pkdasuniversity.ac.in/school-of-social-sciences",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Current official Performing Arts award and qualification",
+          "url": "https://pkdasuniversity.ac.in/programs/ba-performing-arts-hons",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Current official Indology award and qualification",
+          "url": "https://pkdasuniversity.ac.in/programs/bsc-indology-hons",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Current university campus and separate corporate office",
+          "url": "https://pkdasuniversity.ac.in/campus",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Current official university application",
+          "url": "https://applynow.pkdasuniversity.net/application-form",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "admissionsContent": {
+        "scope": "Own university School of Social Sciences degrees in Coimbatore. Other Nehru Group institutions, Kerala colleges and independently affiliated programmes are separate."
+      },
+      "faq": [
+        {
+          "question": "Is this the same institution as PK Das Medical College in Kerala?",
+          "answer": "No. This profile covers P K Das Institute of Social Sciences, Health Sciences and Technology, the Coimbatore deemed-to-be university declared in May 2026. The Ministry order explicitly says other institutions of the sponsoring trust are not part of the university without Ministry approval."
+        },
+        {
+          "question": "Which programmes are listed here?",
+          "answer": "The School of Social Sciences lists BA Performing Arts (Hons) and BSc Indology (Hons). The current named programme pages give each a four-year duration. These honours degrees should not be substituted with a three-year award from a separate college or an older listing."
+        },
+        {
+          "question": "What does Performing Arts involve?",
+          "answer": "The university describes music, dance and theatre practice alongside study of performance traditions and stagecraft. It lists classical, folk and contemporary forms, performances and practitioner mentorship. Obtain the current curriculum and assessment plan for the balance of subjects."
+        },
+        {
+          "question": "What is studied in Indology?",
+          "answer": "The course page describes Indian civilisation, ancient texts, languages, literature, philosophy, art and culture. Its highlights include heritage-site documentation, fieldwork, critical thinking and scholarly writing. Confirm specific language and fieldwork requirements with the school."
+        },
+        {
+          "question": "What are the admission requirements?",
+          "answer": "Both current course pages require completion of 10+2 or equivalent from a recognised board with 70%, together with an entrance examination score. Performing Arts also asks for passion and aptitude in the subject; Indology identifies an interest in history, culture, philosophy and heritage."
+        },
+        {
+          "question": "Which entrance examination is required?",
+          "answer": "The named pages list an entrance examination score but do not identify the examination, qualifying score or assessment schedule. Obtain the university’s current instructions for the selected programme before applying or paying."
+        },
+        {
+          "question": "How much do the degrees cost?",
+          "answer": "Request the current four-year award’s complete written fee quotation, including tuition, compulsory charges and refund terms. A fee attached to a differently timed or differently named course should not be assumed to apply to these honours degrees."
+        },
+        {
+          "question": "Where is the university located?",
+          "answer": "The university site lists Nehru Gardens, Thirumalayampalayam, as its academic contact and Nehru College Campus, Kuniamuthur, as its corporate office in Coimbatore. Confirm the exact teaching, activity and examination locations on the offer."
+        },
+        {
+          "question": "What language will be used for teaching?",
+          "answer": "Confirm the instruction and examination languages directly with the university for the selected programme, including any specific ancient-language study in Indology."
+        },
+        {
+          "question": "Can international applicants apply?",
+          "answer": "The current named course pages give school-entry conditions but do not establish an unrestricted foreign-qualification route. Applicants with overseas qualifications should obtain a written eligibility and equivalence assessment and confirm fees, attendance and any immigration requirements separately."
+        }
+      ],
+      "programmes": [
+        {
+          "slug": "pkdas-ba-performing-arts-hons",
+          "canonicalCourseSlug": "bachelor-performing-arts",
+          "officialTitle": "BA Performing Arts (Hons)",
+          "durationYears": 4,
+          "officialProgramUrl": "https://pkdasuniversity.ac.in/programs/ba-performing-arts-hons",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Obtain the current complete fee quotation for this exact four-year honours award and applicant category, including compulsory charges and written refund terms."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants meeting the published recognised school-qualification and entrance-assessment conditions"
+            ],
+            "restrictions": [
+              "Foreign or equivalent qualifications require separate university eligibility assessment.",
+              "Confirm the exact honours award and teaching location on the written offer."
+            ],
+            "notes": "Own Coimbatore university route, distinct Kerala and other affiliated Nehru Group colleges.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://pkdasuniversity.ac.in/programs/ba-performing-arts-hons"
+          },
+          "admissionsContent": {
+            "overview": "BA Performing Arts (Hons) is a four-year honours route listed by the current School of Social Sciences. Music, dance, theatre, performance history and stagecraft are combined through practical and theoretical study.",
+            "eligibility": {
+              "intro": "The named current university programme page gives these requirements.",
+              "items": [
+                "Completion of 10+2 or equivalent from a recognised board with 70%.",
+                "Passion and aptitude for Performing Arts.",
+                "Entrance examination score; obtain the university’s current examination and qualifying-score instructions."
+              ]
+            },
+            "applicationSteps": [
+              "Select the exact current honours programme in the university’s official application route.",
+              "Provide the academic details requested and obtain the current qualification-document and entrance-assessment instructions.",
+              "Complete the university’s eligibility and selection process, and obtain written campus, fee and academic terms before payment."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Obtain the current checklist of recognised 10+2 or equivalent qualification records and entrance-score documentation."
+              ],
+              "application": [
+                "Provide the details and records requested in the official course application."
+              ]
+            },
+            "deadlinesNote": "The university’s current site advertises Admissions 2026–27. Confirm live availability and assessment deadlines directly. An exact first-teaching month is not established for this listing."
+          },
+          "teachingPhases": [
+            {
+              "phase": "Four-year honours academic programme",
+              "language": "",
+              "details": "Music, dance, theatre, performance history and stagecraft are combined through practical and theoretical study. Confirm the current timetable, practical work and assessments with the school."
+            }
+          ],
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Obtain the current complete fee quotation for this exact four-year honours award and applicant category, including compulsory charges and written refund terms."
+        },
+        {
+          "slug": "pkdas-bsc-indology-hons",
+          "canonicalCourseSlug": "bachelor-indology",
+          "officialTitle": "B.Sc. Indology (Hons)",
+          "durationYears": 4,
+          "officialProgramUrl": "https://pkdasuniversity.ac.in/programs/bsc-indology-hons",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Obtain the current complete fee quotation for this exact four-year honours award and applicant category, including compulsory charges and written refund terms."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants meeting the published recognised school-qualification and entrance-assessment conditions"
+            ],
+            "restrictions": [
+              "Foreign or equivalent qualifications require separate university eligibility assessment.",
+              "Confirm the exact honours award and teaching location on the written offer."
+            ],
+            "notes": "Own Coimbatore university route, distinct Kerala and other affiliated Nehru Group colleges.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://pkdasuniversity.ac.in/programs/bsc-indology-hons"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc. Indology (Hons) is a four-year honours route listed by the current School of Social Sciences. Indian civilisation, languages, literature, philosophy, art and cultural heritage are studied through an interdisciplinary curriculum.",
+            "eligibility": {
+              "intro": "The named current university programme page gives these requirements.",
+              "items": [
+                "Completion of 10+2 or equivalent from a recognised board with 70%.",
+                "Interest in History, Culture, Philosophy and Heritage Studies.",
+                "Entrance examination score; obtain the university’s current examination and qualifying-score instructions."
+              ]
+            },
+            "applicationSteps": [
+              "Select the exact current honours programme in the university’s official application route.",
+              "Provide the academic details requested and obtain the current qualification-document and entrance-assessment instructions.",
+              "Complete the university’s eligibility and selection process, and obtain written campus, fee and academic terms before payment."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Obtain the current checklist of recognised 10+2 or equivalent qualification records and entrance-score documentation."
+              ],
+              "application": [
+                "Provide the details and records requested in the official course application."
+              ]
+            },
+            "deadlinesNote": "The university’s current site advertises Admissions 2026–27. Confirm live availability and assessment deadlines directly. An exact first-teaching month is not established for this listing."
+          },
+          "teachingPhases": [
+            {
+              "phase": "Four-year honours academic programme",
+              "language": "",
+              "details": "Indian civilisation, languages, literature, philosophy, art and cultural heritage are studied through an interdisciplinary curriculum. Confirm the current timetable, practical work and assessments with the school."
+            }
+          ],
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Obtain the current complete fee quotation for this exact four-year honours award and applicant category, including compulsory charges and written refund terms."
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "universitySlug": "p-k-das-institute-of-social-sciences-health-sciences-and-technology",
+      "publicField": "officialTitle",
+      "claimText": "BA Performing Arts (Hons) exacthonourslabelinSocialSciencesschoolandnamedcurrentdegreepage.",
+      "status": "verified",
+      "sourceLabel": "PK Das University current official source",
+      "sourceUrl": "https://pkdasuniversity.ac.in/school-of-social-sciences",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "pkdas-ba-performing-arts-hons",
+      "internalNotes": "CurrentdirectHTTPS200namedprimarypagesandownschoolcrosswalk. Primary4years takesprecedenceoversecondary3years; thisdoesnotvalidateoldfee. UGC1446netURL normalredirect canonicalac.in, currentHTTPS200."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "p-k-das-institute-of-social-sciences-health-sciences-and-technology",
+      "publicField": "duration",
+      "claimText": "Currentnameddegreepage explicitlyDuration4years, notaggregator3yearsubstitution.",
+      "status": "verified",
+      "sourceLabel": "PK Das University current official source",
+      "sourceUrl": "https://pkdasuniversity.ac.in/programs/ba-performing-arts-hons",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "pkdas-ba-performing-arts-hons",
+      "internalNotes": "CurrentdirectHTTPS200namedprimarypagesandownschoolcrosswalk. Primary4years takesprecedenceoversecondary3years; thisdoesnotvalidateoldfee. UGC1446netURL normalredirect canonicalac.in, currentHTTPS200."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "p-k-das-institute-of-social-sciences-health-sciences-and-technology",
+      "publicField": "eligibility",
+      "claimText": "Recognised10+2/equivalent70%, subjectinterest/aptitude andEntranceExaminationScore; noinventedtestname/score.",
+      "status": "verified",
+      "sourceLabel": "PK Das University current official source",
+      "sourceUrl": "https://pkdasuniversity.ac.in/programs/ba-performing-arts-hons",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "pkdas-ba-performing-arts-hons",
+      "internalNotes": "CurrentdirectHTTPS200namedprimarypagesandownschoolcrosswalk. Primary4years takesprecedenceoversecondary3years; thisdoesnotvalidateoldfee. UGC1446netURL normalredirect canonicalac.in, currentHTTPS200."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "p-k-das-institute-of-social-sciences-health-sciences-and-technology",
+      "publicField": "admissions",
+      "claimText": "Officialcurrentapplicationlinkedfromownsite; confirm liveavailability/instructions, notunconditionaloffer.",
+      "status": "verified",
+      "sourceLabel": "PK Das University current official source",
+      "sourceUrl": "https://applynow.pkdasuniversity.net/application-form",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "pkdas-ba-performing-arts-hons",
+      "internalNotes": "CurrentdirectHTTPS200namedprimarypagesandownschoolcrosswalk. Primary4years takesprecedenceoversecondary3years; thisdoesnotvalidateoldfee. UGC1446netURL normalredirect canonicalac.in, currentHTTPS200."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "p-k-das-institute-of-social-sciences-health-sciences-and-technology",
+      "publicField": "medium",
+      "claimText": "Currentexactinstructionlanguage notestablished; blank/omitted withoutcountryorwebpagelanguageinference.",
+      "status": "omit",
+      "sourceLabel": "PK Das University current official source",
+      "sourceUrl": "https://pkdasuniversity.ac.in/programs/ba-performing-arts-hons",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "pkdas-ba-performing-arts-hons",
+      "internalNotes": "CurrentdirectHTTPS200namedprimarypagesandownschoolcrosswalk. Primary4years takesprecedenceoversecondary3years; thisdoesnotvalidateoldfee. UGC1446netURL normalredirect canonicalac.in, currentHTTPS200."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "p-k-das-institute-of-social-sciences-health-sciences-and-technology",
+      "publicField": "intake",
+      "claimText": "Exactfirstteachingmonthunconfirmed, arraysomitted; noorientationdatehunt.",
+      "status": "omit",
+      "sourceLabel": "PK Das University current official source",
+      "sourceUrl": "https://pkdasuniversity.ac.in/programs/ba-performing-arts-hons",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "pkdas-ba-performing-arts-hons",
+      "internalNotes": "CurrentdirectHTTPS200namedprimarypagesandownschoolcrosswalk. Primary4years takesprecedenceoversecondary3years; thisdoesnotvalidateoldfee. UGC1446netURL normalredirect canonicalac.in, currentHTTPS200."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "p-k-das-institute-of-social-sciences-health-sciences-and-technology",
+      "publicField": "fee",
+      "claimText": "Noexactcurrentfouryearawardtariffconfirmed. Collegedunia3yearBAfee/durationdiscrepancy heldquoteonly, primaryfouryearawardretained.",
+      "status": "verified",
+      "sourceLabel": "PK Das University current official source",
+      "sourceUrl": "https://pkdasuniversity.ac.in/programs/ba-performing-arts-hons",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "pkdas-ba-performing-arts-hons",
+      "internalNotes": "CurrentdirectHTTPS200namedprimarypagesandownschoolcrosswalk. Primary4years takesprecedenceoversecondary3years; thisdoesnotvalidateoldfee. UGC1446netURL normalredirect canonicalac.in, currentHTTPS200."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "p-k-das-institute-of-social-sciences-health-sciences-and-technology",
+      "publicField": "officialTitle",
+      "claimText": "B.Sc. Indology (Hons) exacthonourslabelinSocialSciencesschoolandnamedcurrentdegreepage.",
+      "status": "verified",
+      "sourceLabel": "PK Das University current official source",
+      "sourceUrl": "https://pkdasuniversity.ac.in/school-of-social-sciences",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "pkdas-bsc-indology-hons",
+      "internalNotes": "CurrentdirectHTTPS200namedprimarypagesandownschoolcrosswalk. Primary4years takesprecedenceoversecondary3years; thisdoesnotvalidateoldfee. UGC1446netURL normalredirect canonicalac.in, currentHTTPS200."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "p-k-das-institute-of-social-sciences-health-sciences-and-technology",
+      "publicField": "duration",
+      "claimText": "Currentnameddegreepage explicitlyDuration4years, notaggregator3yearsubstitution.",
+      "status": "verified",
+      "sourceLabel": "PK Das University current official source",
+      "sourceUrl": "https://pkdasuniversity.ac.in/programs/bsc-indology-hons",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "pkdas-bsc-indology-hons",
+      "internalNotes": "CurrentdirectHTTPS200namedprimarypagesandownschoolcrosswalk. Primary4years takesprecedenceoversecondary3years; thisdoesnotvalidateoldfee. UGC1446netURL normalredirect canonicalac.in, currentHTTPS200."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "p-k-das-institute-of-social-sciences-health-sciences-and-technology",
+      "publicField": "eligibility",
+      "claimText": "Recognised10+2/equivalent70%, subjectinterest/aptitude andEntranceExaminationScore; noinventedtestname/score.",
+      "status": "verified",
+      "sourceLabel": "PK Das University current official source",
+      "sourceUrl": "https://pkdasuniversity.ac.in/programs/bsc-indology-hons",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "pkdas-bsc-indology-hons",
+      "internalNotes": "CurrentdirectHTTPS200namedprimarypagesandownschoolcrosswalk. Primary4years takesprecedenceoversecondary3years; thisdoesnotvalidateoldfee. UGC1446netURL normalredirect canonicalac.in, currentHTTPS200."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "p-k-das-institute-of-social-sciences-health-sciences-and-technology",
+      "publicField": "admissions",
+      "claimText": "Officialcurrentapplicationlinkedfromownsite; confirm liveavailability/instructions, notunconditionaloffer.",
+      "status": "verified",
+      "sourceLabel": "PK Das University current official source",
+      "sourceUrl": "https://applynow.pkdasuniversity.net/application-form",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "pkdas-bsc-indology-hons",
+      "internalNotes": "CurrentdirectHTTPS200namedprimarypagesandownschoolcrosswalk. Primary4years takesprecedenceoversecondary3years; thisdoesnotvalidateoldfee. UGC1446netURL normalredirect canonicalac.in, currentHTTPS200."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "p-k-das-institute-of-social-sciences-health-sciences-and-technology",
+      "publicField": "medium",
+      "claimText": "Currentexactinstructionlanguage notestablished; blank/omitted withoutcountryorwebpagelanguageinference.",
+      "status": "omit",
+      "sourceLabel": "PK Das University current official source",
+      "sourceUrl": "https://pkdasuniversity.ac.in/programs/bsc-indology-hons",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "pkdas-bsc-indology-hons",
+      "internalNotes": "CurrentdirectHTTPS200namedprimarypagesandownschoolcrosswalk. Primary4years takesprecedenceoversecondary3years; thisdoesnotvalidateoldfee. UGC1446netURL normalredirect canonicalac.in, currentHTTPS200."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "p-k-das-institute-of-social-sciences-health-sciences-and-technology",
+      "publicField": "intake",
+      "claimText": "Exactfirstteachingmonthunconfirmed, arraysomitted; noorientationdatehunt.",
+      "status": "omit",
+      "sourceLabel": "PK Das University current official source",
+      "sourceUrl": "https://pkdasuniversity.ac.in/programs/bsc-indology-hons",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "pkdas-bsc-indology-hons",
+      "internalNotes": "CurrentdirectHTTPS200namedprimarypagesandownschoolcrosswalk. Primary4years takesprecedenceoversecondary3years; thisdoesnotvalidateoldfee. UGC1446netURL normalredirect canonicalac.in, currentHTTPS200."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "p-k-das-institute-of-social-sciences-health-sciences-and-technology",
+      "publicField": "fee",
+      "claimText": "Noexactcurrentfouryearawardtariffconfirmed. Collegedunia3yearBAfee/durationdiscrepancy heldquoteonly, primaryfouryearawardretained.",
+      "status": "verified",
+      "sourceLabel": "PK Das University current official source",
+      "sourceUrl": "https://pkdasuniversity.ac.in/programs/bsc-indology-hons",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "pkdas-bsc-indology-hons",
+      "internalNotes": "CurrentdirectHTTPS200namedprimarypagesandownschoolcrosswalk. Primary4years takesprecedenceoversecondary3years; thisdoesnotvalidateoldfee. UGC1446netURL normalredirect canonicalac.in, currentHTTPS200."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "p-k-das-institute-of-social-sciences-health-sciences-and-technology",
+      "publicField": "identity",
+      "claimText": "UGCcurrentID1446exactnameKuniamuthurCoimbatoreTamilNadu641008 andnetdomain. Netnonwww normalredirects toac.in owncurrentinstitution; directac.inverifiedHTTPS200.",
+      "status": "verified",
+      "sourceLabel": "UGC own current public register",
+      "sourceUrl": "https://www.ugc.gov.in/universitydetails/Getuniversity_details?unitypeID=4",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "p-k-das-institute-of-social-sciences-health-sciences-and-technology",
+      "publicField": "recognition",
+      "claimText": "UGCcurrentSectionIIIdeemedregisterexactID1446; Ministry26May2026underSection3distinctgreenfield. NootherNehru collegesautomaticallyincluded.",
+      "status": "verified",
+      "sourceLabel": "UGC own current public register",
+      "sourceUrl": "https://www.ugc.gov.in/universitydetails/Getuniversity_details?unitypeID=4",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "p-k-das-institute-of-social-sciences-health-sciences-and-technology",
+      "publicField": "recognition",
+      "claimText": "26May2026Ministry9-3/2025-U.3(A)greenfielddeclaration; clauseiiiothertrustinstitutionsnotpartwithoutMinistryapproval; noNAAC/NBAgroupinheritance.",
+      "status": "verified",
+      "sourceLabel": "Ministry of Education declaration",
+      "sourceUrl": "https://www.dohe-education.gov.in/static/uploads/2026/06/7d087b2298fc974b771ddff6968aea5b.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "p-k-das-institute-of-social-sciences-health-sciences-and-technology",
+      "publicField": "campus",
+      "claimText": "CurrentownacademiccontactThirumalayampalayam641105 versuscorporateofficeKuniamuthur641008 distinct; noKerala location.",
+      "status": "verified",
+      "sourceLabel": "PK Das University current official source",
+      "sourceUrl": "https://pkdasuniversity.ac.in/campus",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    }
+  ]
+}

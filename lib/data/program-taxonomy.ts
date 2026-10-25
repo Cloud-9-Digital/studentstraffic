@@ -329,6 +329,8 @@ const globalProgrammeFamilies = defineProgrammes([
   {"slug": "integrated-msc-physics", "name": "Integrated M.Sc. in Physics", "shortName": "Integrated M.Sc. Physics", "stream": "natural-sciences", "level": "integrated-masters", "discipline": "physics", "aliases": ["Integrated Master of Science in Physics"]},
   {"slug": "integrated-msc-environmental-science", "name": "Integrated M.Sc. in Environmental Science", "shortName": "Integrated M.Sc. Environmental Science", "stream": "environment-sustainability", "level": "integrated-masters", "discipline": "environmental-science", "aliases": ["Integrated Master of Science in Environmental Science"]},
   {"slug": "integrated-msc-marine-science", "name": "Integrated M.Sc. in Marine Science", "shortName": "Integrated M.Sc. Marine Science", "stream": "natural-sciences", "level": "integrated-masters", "discipline": "marine-science", "aliases": ["Integrated Master of Science in Marine Science"]},
+  {"slug": "integrated-msc-renal-dialysis-technology", "name": "Integrated M.Sc. in Renal Dialysis Technology", "shortName": "Integrated M.Sc. Renal Dialysis Technology", "stream": "public-health-allied-health", "level": "integrated-masters", "discipline": "renal-dialysis-technology", "aliases": ["Five-year Integrated MSc Renal Dialysis Technology"]},
+  {"slug": "integrated-msc-cardiac-technology", "name": "Integrated M.Sc. in Cardiac Technology", "shortName": "Integrated M.Sc. Cardiac Technology", "stream": "public-health-allied-health", "level": "integrated-masters", "discipline": "cardiac-technology", "aliases": ["Five-year Integrated MSc Cardiac Technology"]},
   {"slug": "integrated-mcom", "name": "Integrated Master of Commerce", "shortName": "Integrated M.Com.", "stream": "economics-commerce", "level": "integrated-masters", "discipline": "commerce", "aliases": ["Five-year Integrated MCom", "Integrated M.Com."]},
   {"slug": "master-criminology", "name": "Master's in Criminology", "shortName": "Master's Criminology", "stream": "social-sciences", "level": "masters", "discipline": "criminology", "aliases": ["MSc Criminology and Criminal Justice Sciences", "Master of Criminology"]},
   {"slug": "master-archaeology", "name": "Master's in Archaeology", "shortName": "Master's Archaeology", "stream": "arts-humanities", "level": "masters", "discipline": "archaeology", "aliases": ["MA Archaeology", "Master of Arts in Archaeology"]},
@@ -344,6 +346,9 @@ const globalProgrammeFamilies = defineProgrammes([
 
   { slug: "msc-epidemiology", name: "M.Sc. in Epidemiology", shortName: "M.Sc. Epidemiology", stream: "public-health-allied-health", level: "masters", discipline: "epidemiology", aliases: ["Master of Science in Epidemiology", "MSc Epidemiology"] },
   { slug: "pg-diploma-journalism", name: "Postgraduate Diploma in Journalism", shortName: "PG Diploma Journalism", stream: "media-communication", level: "postgraduate-diploma", discipline: "journalism", aliases: ["Post Graduate Diploma in Journalism", "PG Diploma in Medical Journalism", "PG Diploma in Public Health Journalism"] },
+
+  {"slug": "bachelor-performing-arts", "name": "Bachelor's in Performing Arts", "shortName": "Bachelor's Performing Arts", "stream": "design-creative-arts", "level": "bachelors", "discipline": "performing-arts", "aliases": ["BA Performing Arts", "BA Performing Arts (Hons)", "Bachelor of Performing Arts"]},
+  {"slug": "bachelor-indology", "name": "Bachelor's in Indology", "shortName": "Bachelor's Indology", "stream": "arts-humanities", "level": "bachelors", "discipline": "indology", "aliases": ["BSc Indology", "BSc Indology (Hons)", "Bachelor of Science in Indology"]},
 
 ]);
 

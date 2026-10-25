@@ -1,0 +1,117 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "dhanalakshmi-srinivasan-institute-of-research-and-technology",
+      "universityName": "Dhanalakshmi Srinivasan Institute of Research and Technology",
+      "sourceBatch": "codex-dsirt-perambalur-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://dsirt.edu.in/assets/img/logo.png",
+          "sourceType": "official-university-website",
+          "rightsBasis": "Institution-published original retained for university identification and genuine own-site campus context. No open licence or ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/dhanalakshmi-srinivasan-institute-of-research-and-technology/logo-20261025",
+          "altText": "Complete DSIRT institutional seal and legal university wordmark",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/dsirt-perambalur-20261025/logo.png",
+          "sha256": "5a8e4495d65a4fe2ded1d2422919cdfdb2c1f83a4bc74092148b965f65135eb4",
+          "width": 945,
+          "height": 168,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Full native official-site original without crop, upscale or artificial reconstruction.",
+          "visualReview": "Full local original viewed. Complete founder seal and legal wordmark; authentic campus aerial from current own homepage. No capture date or association of every school with the pictured building inferred."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://dsirt.edu.in/assets/img/hero/b2.webp",
+          "sourceType": "official-university-website",
+          "rightsBasis": "Institution-published original retained for university identification and genuine own-site campus context. No open licence or ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/dhanalakshmi-srinivasan-institute-of-research-and-technology/cover-20261025",
+          "altText": "Campus aerial photograph published on DSIRT\u2019s official homepage",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/dsirt-perambalur-20261025/cover-home.webp",
+          "sha256": "5d2b83a055891bb0bed7f69cadceb4e983c09962bb2d970d97c5c6f267cbcead",
+          "width": 1920,
+          "height": 800,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Full native official-site original without crop, upscale or artificial reconstruction.",
+          "visualReview": "Full local original viewed. Complete founder seal and legal wordmark; authentic campus aerial from current own homepage. No capture date or association of every school with the pictured building inferred."
+        }
+      ],
+      "migrationId": "0290-india-dhanalakshmi-srinivasan-institute-of-research-and-technology"
+    },
+    {
+      "universitySlug": "p-k-das-institute-of-social-sciences-health-sciences-and-technology",
+      "universityName": "P K Das Institute of Social Sciences, Health Sciences and Technology",
+      "sourceBatch": "codex-tn-pkdas-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://pkdasuniversity.ac.in/assets/images/home/logo.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Official university identity and institutional event photograph used for factual identification and illustration; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/p-k-das-institute-of-social-sciences-health-sciences-and-technology/logo-20261025",
+          "altText": "PK Das deemed-to-be university complete official logo and wordmark",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/pkdas-20261025/logo.png",
+          "sha256": "18b1b2884227c9d09019bf81fd04f4e4a6788ca2df0673f621732b4396c2c018",
+          "notes": "NormalHTTPS200completeoriginal, fullviewed, no crop/upscale/generation. Councilparticipantcaptionmatchesofficialhomeeventasset; no class orcompletedbuildingclaim. Architecturalrenderinggalleryalternativesrejected.",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://pkdasuniversity.ac.in/uploads/2026/08/First-Governing-Council-Meeting.jpeg",
+          "sourceType": "official-university",
+          "rightsBasis": "Official university identity and institutional event photograph used for factual identification and illustration; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/p-k-das-institute-of-social-sciences-health-sciences-and-technology/cover-20261025",
+          "altText": "Participants at PK Das University\u2019s first governing council meeting",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/pkdas-20261025/cover-meeting.jpeg",
+          "sha256": "aaa5b43918a3b0d507e175d4090dfe5b150f6fe3f04625b0aca06a0f58b1b0a6",
+          "notes": "NormalHTTPS200completeoriginal, fullviewed, no crop/upscale/generation. Councilparticipantcaptionmatchesofficialhomeeventasset; no class orcompletedbuildingclaim. Architecturalrenderinggalleryalternativesrejected.",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0292-india-p-k-das-institute-of-social-sciences-health-sciences-and-technology"
+    },
+    {
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "universityName": "Karpaga Vinayaga Educational Lore for Learning",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://kvell.in/wp-content/uploads/2026/07/kvell-logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://kvell.in/",
+          "rightsBasis": "Official university identifying asset/campus photograph; no open licence claimed.",
+          "verificationMethod": "Complete official university crest and full wordmark visually inspected; no crop/enlargement.",
+          "localPath": "research/india-source-bundles/karpaga-vinayaga-educational-lore-20261025/logo.png",
+          "sha256": "7f02dc26f639611dad58c6bed25a284331d8df01b5cad0e7e4db4e2301729ddd",
+          "width": 961,
+          "height": 286,
+          "altText": "Karpaga Vinayaga Educational Lore for Learning crest and wordmark",
+          "proposedPublicId": "studentstraffic/universities/karpaga-vinayaga-educational-lore-for-learning/logo",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://kvell.in/wp-content/uploads/2026/08/IMAGE-3-1.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://kvell.in/",
+          "rightsBasis": "Official university identifying asset/campus photograph; no open licence claimed.",
+          "verificationMethod": "Genuine named auditorium building on official current homepage, clock sculpture, steps and landscaping visible; full native photograph inspected.",
+          "localPath": "research/india-source-bundles/karpaga-vinayaga-educational-lore-20261025/campus.jpg",
+          "sha256": "d9db22ab0cbde55ad620c864bd3f4d6558420bcbeb049a87ad526e611660d6bd",
+          "width": 900,
+          "height": 824,
+          "altText": "Regupathy Saroja Auditorium at KVELL campus",
+          "proposedPublicId": "studentstraffic/universities/karpaga-vinayaga-educational-lore-for-learning/cover",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0293-india-karpaga-vinayaga-educational-lore-for-learning"
+    }
+  ]
+}

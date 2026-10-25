@@ -1,0 +1,11 @@
+# P K Das Institute of Social Sciences, Health Sciences and Technology
+
+Owner codex-tn-pkdas-20261025. UGC currentpublicdeemed GETtype4 ID1446 exactname/addressTamilNaduCoimbatore641008/netdomain. Ministry26May2026No9-3/2025-U.3(A) direct200completePDF greenfielddeclaration; clauseiii excludesotherNehru trustcollegeswithoutMinistryapproval. Canonicalnetnonwww normallyredirectstoac.in; directHTTPSac.in200 genuinecurrentwebsite. wwwnetcertificatemismatchnotbypassed. CorporateofficeKuniamuthur versusacademiccontactNehruGardensThirumalayampalayam separated. KeralaPKDasmedical/liberalarts andNehruaffiliates excluded.
+
+Two supported four-yearhonours: BA PerformingArts(Hons), BScIndology(Hons), each70%recognised10+2+EntranceExaminationScore plusnamedsubjectinterest/aptitude. Currentownschoolhonourslabel/namedpagesduration/qualification exact. Allmediumunknownblank/omit, intakesempty/omit. No datehunt. Two neutralfamilies approvedbyroot; draftonlyuntilsharedfreezeopens. Executable 0292-india-p-k-das-institute-of-social-sciences-health-sciences-and-technology; scoped reader validated two programmes with no warnings. Frozen for root publication.
+
+Seven currentownawardsinventoried plusfourolderlabelsourcecrosswalkrows, not11independentdegrees. Fiveprofessionalroutes held forapplicability/currentapprovalscope afterboundedlookup, notabsence/unapprovedassertion. Noapprovalfromothergroupcollegesinherited. CurrenthealthBachelorawardsdifferoldgroup/aggregatorBScnames.
+
+Fees: noowncurrenttariffpublishedinaccessednamedpages. CollegeduniaexactinstitutionBA240000total/3years conflictscurrent4years; BSc360000total/3yearsoldawardlabels conflictcurrent4yearBachelorhealth. Engineering600000total4yr recordedcandidateonly heldprofessionalscope. Shikshacurrent4yrdoesnotgiveprices. Unknownpriceonly, notacademicdegreehold. Noannualisation/applicationfees. CurrentBrochurebuttonopensleadwidget notpublicPDF.
+
+Mediafulloriginalofficiallogo, genuinefirstgoverningcouncilparticipantphoto reviewed. Campus-exterior/front-view galleryassets visiblyarchitecturalrenderings rejected asrealphotocover; nofakecompletedcampus. Rootreviewpending.

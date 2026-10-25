@@ -388,3 +388,10 @@ The stable `msc-hospital-administration` family similarly uses Master's in Hospi
 
 
 M.Sc. Epidemiology (`msc-epidemiology`) is a public-health master's family for population disease patterns, study design and epidemiological analysis. Postgraduate Diploma in Journalism (`pg-diploma-journalism`) is a distinct diploma-level media family, including named medical/public-health journalism specialisations; it is not a master's degree or a qualification to practise medicine. Exact institutional award titles and prerequisites remain on offerings.
+
+### Integrated clinical technology master's families — 25 October 2026
+
+`integrated-msc-renal-dialysis-technology` and `integrated-msc-cardiac-technology` are neutral HSC-entry integrated master's families in allied health. They remain distinct from bachelor's and graduate-entry master's awards. Publish exact entry, duration and applicable scope for each offering; named intermediate exit paths do not become separately admitting degree records. These categories do not assert professional registration, licensing or independent clinical practice rights.
+
+
+`bachelor-performing-arts` is a bachelor's-level creative-arts family for music, dance, theatre, performance study and production; retain the exact BA/BPA and honours wording on the offering, and do not replace it with BFA or music-only awards. `bachelor-indology` is an arts-and-humanities family for interdisciplinary Indian civilisation, languages, textual study, history, philosophy and cultural heritage. Its neutral parent accommodates the exact institutional BSc award without classifying that curriculum as a laboratory natural science. Programme duration and entry criteria remain institution-specific.

@@ -31,3 +31,12 @@ Two regulator/government facts: UGC autonomous-college register entry 1306 ident
 Manifest: `research/media-enrichment/presidency-chennai-20261025-reviewed-upload-manifest.json`. Official header brand mark 1487×271 includes full crest and bilingual college wordmark, with no external accreditation logos or promotional overlay; native height 271, not favicon. Official campus photograph 794×547 shows the red Gothic building/clock tower. Both inspected sequentially with source/file association preserved. No image cropping or synthetic emblem generation.
 
 Government disability PDFs initially failed local issuer-chain verification. The same known government URLs were retrieved with certificate verification disabled and cross-checked against independently indexed official excerpts. No authentication/restricted content was bypassed. Public form was read only. No DB, upload, publication or commit action by worker.
+
+
+## Authorised full UG forward —25October2026
+
+Owner codex-presidency-forward-20261025. Full49current UG routes now supported:47general additions from the expressly applicable common DCE2026–27government Arts and Science admission policy, with original2restricted hearing-impaired records exactly preserved.The inventory remains108rows,49UG+21PG+19research+18legacyMPhil+1legacyMCA. The old47UG qualification hold above is superseded by the verified current state subject-group matrix; no individual QMC college condition was borrowed.
+
+Current native combined college fee quotes cover48of49UG records (BComHI category remains unquoted); billingyear/period unlabelled, statusindicative, no annualisation or tuition-zero assumption. Seven language-degree medium fields remain unknown, all47new intake arrays empty.21PG holds remain solely exact qualifying degree/marks where applicable, not unknown language/intake.
+
+See research/india-source-bundles/presidency-forward-20261025/source-audit.md, fullDCEPDF, visual age-rule review and crosswalk. Bundle0295passes actualscopedreader; samepublicslug and existingmedia retained withoutuploads.
