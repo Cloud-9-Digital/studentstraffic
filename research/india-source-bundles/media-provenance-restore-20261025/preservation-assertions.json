@@ -1,0 +1,28 @@
+[
+  {
+    "key": "tanuvas",
+    "universitySlug": "tamil-nadu-veterinary-and-animal-sciences-university",
+    "applied": "0312-india-tanuvas-regular-portfolio-forward",
+    "programmes": 13,
+    "programmeObjectsEqual": true,
+    "universityChangedFields": [
+      "mediaAttribution"
+    ],
+    "imageUrlsEqual": true,
+    "originalMediaManifest": "tanuvas-20261025-reviewed-upload-manifest.json",
+    "sourcePayloadSHA256": "4a1144359727713c4da2481a6de4030522aa977ccd0ee0d5682300f6aed72923"
+  },
+  {
+    "key": "mcc",
+    "universitySlug": "madras-christian-college",
+    "applied": "0314-india-mcc-current-regular-portfolio-forward",
+    "programmes": 54,
+    "programmeObjectsEqual": true,
+    "universityChangedFields": [
+      "mediaAttribution"
+    ],
+    "imageUrlsEqual": true,
+    "originalMediaManifest": "mcc-tambaram-20261025-reviewed-upload-manifest.json",
+    "sourcePayloadSHA256": "6f33f7758608fae41fa41672644f538dccf2c259cfdb8c1c0d804a704fb8222c"
+  }
+]

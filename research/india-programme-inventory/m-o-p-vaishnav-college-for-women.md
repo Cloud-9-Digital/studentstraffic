@@ -26,3 +26,18 @@ Media: research/media-enrichment/india-mop-vaishnav-20261025.json officiallogo66
 ## Complete0229handoff
 
 Complete13UG/9families/138evidence payload0229-mop-vaishnav-college-for-women. Current sources retained; exact historical2014named medium adds11separateprogramme evidence rows beside2022faculty corroboration, with explicityears. BA Economics andBScPsychology use uniquely matched2022award/faculty table rows. Mandatorymedia manifest associated0229; fullsourceoriginals reviewedworker, rootreviewrequested beforeapply. All24otherdiscoveryrows held precisely. NoDB/upload/commit.
+
+
+## Superseding seven-PG academic rescue —25October2026
+
+Complete draft `research/india-source-bundles/mop-rescue-20261025/draft-payload.json` contains20 programmes:13 published0229 undergraduate objects deep-equal plus7 current non-MBA academic PG. Actual temporary full reader passes zero warnings. All7 have named own brochure2year/four-semester duration, current own exact subject prerequisites and shift scope. Current-linked2025Food/HRM documents retain actual years; othercurrentbrochures2026. MComminimum50/test/interview; HRMcurrentpage60/GDPI is a narrow supported route alongside broader dated brochure, not a universal exclusion claim. PublicPolicycurrentpage55% controls malformed brochure55%CGPA wording. Fullscience/BVocFoodlist and ITcore/alliedMaths subjects remain visible. CounsellingPsychology is academic, no independentregulatedclinicalpractice entitlement implied.
+
+NewPG medium and intake omitted with explicit evidence; no country-default English or historicalUGinduction inherited. Domestic women’s route at own Nungambakkam college, foreign/equivalence assessed separately. Existing reviewed officiallogo/cover unchanged; originalemptyattribution restored from appliedmanifest.
+
+Six credibleB indicative exact named complete-course general-category fee reports: MCom27000, MAHRM27000, MACommunication27000, MScIT32000, MScFoodTechnologyManagement30000, MAPublicPolicy17000–27000conflictingrange. NativeINR, no tuition or annualisation. Careers360 actualupdated28May2026 though headingsdynamically2027; sourceyeartruthful. Allprices indicative, not currentinstitutioninvoice. Psychologyquote held only. Direct own5June2023 onepage TUITIONschedule is fullydownloaded/rendered; periodunspecified, notsilentlycurrent/annual. Its figures coincidewithhalfsomecurrentsecondaryfullcourse reports, so no independentcurrentprimaryfeeconfirmation claimed. Audit source-provenance.json retains exactbasis/years/conflicts.
+
+No expandedUG/diploma/doctoral/professional scope added in this bounded pass. Sharedtaxonomy unchanged. Currentprofessionalapplicability/BBA/BCA/MBA and previouslyexplicitconditionalaffiliation/newaward cases remain separate holds; optionalmedium/intakeare no longer holdreasons.
+
+## Frozen complete forward
+
+0321-india-mop-vaishnav-postgraduate-academic-rescue: 20 programmes; canonical numbered reader passes with zero warnings. Ledger validated20; parent publication pending. Existing13 programmes deep-equal0229. Existing reviewed media unchanged; no new upload required.

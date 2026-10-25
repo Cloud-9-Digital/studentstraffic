@@ -1,0 +1,18 @@
+{
+  "baseline": "0317-india-karpagam-academic-portfolio-rescue",
+  "forward": "0325-india-karpagam-eligibility-media-correction",
+  "programmeCount": 33,
+  "changedEligibilityItemArrays": 16,
+  "allOtherProgrammeFieldsAndFeesIdentical": true,
+  "payloadImageURLKeyPresenceAndValuesUnchanged": true,
+  "attributionCorrection": "Prior payload attribution was {}; restored exact accepted original official logo/cover metadata. Not a claim that empty metadata was complete.",
+  "newEvidence": "Two GradeA officialmedia source rows; previous318evidence unchanged.",
+  "allowedChangesOnly": [
+    "16eligibility.items arrays",
+    "university.mediaAttribution restored",
+    "two media evidence rows"
+  ],
+  "allOtherJSONDeepEqual": true,
+  "scopedValidation": "Canonical0325PASS0expired noDB",
+  "payloadSha256": "6fc3a670355b75492b7c78c986afdf52d84f3d192ee93fb0e359c97503c5dea6"
+}

@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-10-25",
+  "programmeCount": 21,
+  "newCount": 5,
+  "preserved16Exact": true,
+  "feeQuoteCountNew": 5,
+  "annualisation": false,
+  "sourceAccess": "Complete retained primary original PDFs, fresh full centralUG/PG and nameddepartment webparser pages retained. Not dependent on search snippets. Failed2021CSE PDF lookup is an excluded lead, not a source for these additions.",
+  "retainedPrimarySources": [
+    {
+      "path": "research/india-source-bundles/karunya-institute-of-technology-and-sciences/brochure-dept-division-of-biomedical-engineering.pdf",
+      "bytes": 550144,
+      "sha256": "81db1bae780f8f1e2ad59bfa10f269a57420b88fb6c003c553fce11939cb3bb3"
+    },
+    {
+      "path": "research/india-source-bundles/karunya-institute-of-technology-and-sciences/brochure-dept-division-of-food-processing-technology.pdf",
+      "bytes": 3496052,
+      "sha256": "46e00878d831c1a13e0f150525bcc672f188dcf730d4935afb809442960a0683"
+    },
+    {
+      "path": "research/india-source-bundles/karunya-institute-of-technology-and-sciences/fee-6.pdf",
+      "bytes": 199455,
+      "sha256": "a34b4d6a69167f36088526b751c5dda7884563f9b59f5ae7561b077a6e1a78a9"
+    },
+    {
+      "path": "research/india-source-bundles/karunya-institute-of-technology-and-sciences/fee-11.pdf",
+      "bytes": 199371,
+      "sha256": "2a98f104ca19955b0c8acf8daa2ef45e2d61c3d92c18777114b8e1f95e0cefd0"
+    },
+    {
+      "path": "research/india-source-bundles/karunya-institute-of-technology-and-sciences/fee-14.pdf",
+      "bytes": 200545,
+      "sha256": "efeedaed07d539ab32a205e90aafecb0f398c40f66d9654fd3d7a039cd53bbc1"
+    }
+  ],
+  "visualReviews": [
+    "BMEbrochurepage2 exactBME/BMIE/EIE/ICE/EEE/ECE/CSE/IT/MedicalElectronics/Mechatronics/RoboticsAutomation andBPT/MBBS, no numericminimum stated.",
+    "Foodbrochurepages3\u20134 datedAdmissions2026, exactMTechFoodProcessing/Engineering award andBE/BTech/AMIE namedbranches/equivalent50%.",
+    "Fee6newfullrender: exactBCom/BScForensic3yr2027\u20132030, INR69900/semester+5000admission/exams extra.",
+    "Fee11fullimage: AllMTech2027\u20132029 INR65750/semester+10000admission/exams extra.",
+    "Fee14newfullrender: MScForensic2027\u20132029 INR72400/semester+5000admission/exams extra."
+  ],
+  "policyResolution": "Current2027centralOtherUGBSc/BCom+2/HSC/equivalent60%takesprecedence overundateddepartmentForensic50%; exactnamedPCB/Mathsubjectcondition retained. CurrentPGmerit admission+named2026departmentprerequisites.",
+  "actualValidation": "0320 actualcanonicalscoped revalidationPASS0expired after coherenteligibility cleanup and exactacceptedmediaattribution restore;21programmes/326evidence, noDB.",
+  "mediaCorrection": "Baseline0227/previous0320 payloadattribution was{}; restored accepted original officialsources/rights/coveralt. HostedURLkeysabsent before/after, noDBreadback/upload. All21programmeobjects unchanged bymediarepair;16original0227objects remainexact."
+}

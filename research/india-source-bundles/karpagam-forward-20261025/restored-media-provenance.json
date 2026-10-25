@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-10-25",
+  "originalAcceptedManifest": "/Users/bharat/Documents/studentstraffic/research/media-enrichment/karpagam-20261025-reviewed-upload-manifest.json",
+  "sourceAttributionRestored": {
+    "logo": {
+      "sourceUrl": "https://kahedu.edu.in/n/wp-content/uploads/2023/01/LOGO-with-different-colors-03.png",
+      "rights": "Authentic institutional brand asset or campus photograph published by the university on its own public site; no ownership transfer claimed. Left emblem/wordmark crop excludes the separate right-hand accreditation wording; original source retained.",
+      "checkedAt": "2026-10-25"
+    },
+    "cover": {
+      "sourceUrl": "https://kahedu.edu.in/n/wp-content/uploads/2019/11/Campus1-811x497.png",
+      "rights": "Authentic institutional brand asset or campus photograph published by the university on its own public site; no ownership transfer claimed.",
+      "checkedAt": "2026-10-25",
+      "altText": "KAHE academic building and landscaped lawn at Eachanari in Coimbatore"
+    }
+  },
+  "originalPayloadAttributionWasEmpty": true,
+  "programmeObjectsUnchangedByMetadataRepair": true,
+  "payloadImageURLKeys": "Absent before and after; no fabricated hosted URL inserted.",
+  "databaseImageColumns": "Not queried. Existing hosted image columns are inherited unchanged because the publisher update omits absent logoUrl/coverImageUrl keys. This is pipeline preservation, not a DB readback.",
+  "noUpload": true,
+  "evidenceAdded": 2
+}

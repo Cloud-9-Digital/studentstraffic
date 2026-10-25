@@ -13,3 +13,7 @@ College entry page says45%General/40%listed reserved categories in Maths/Physics
 
 ## Media
 Official full-size brand asset emblem cropped from1023x316 wordmark; official1000x575 computer-lab/student cover visually inspected. Dark auditorium candidate rejected. See reviewed upload manifest. Parent handles media application and DB publication.
+
+## Bounded forward — 25 October 2026
+
+20 discovery rows retained, ten current regular routes supported: original seven unchanged plus three PG. Own current explicit degree table resolves CSE B.E./B.Tech.CSE/IT, Communication B.E.ECE only, MBA recognised bachelor; own2March2026disclosure general50% and exact continuing PGnames; own2023 common PGregulations English/two years/fulltime. UnknownPGintakes omitted, no UG induction transfer. Conflicting historical secondary fee/category references retained internally and prices unknown perparentdirection. Research/historical/CityCampus rows remain held. See research/india-source-bundles/panimalar-forward-20261025/source-audit.md. Owner codex-panimalar-forward-20261025; noDB/upload/commit.
