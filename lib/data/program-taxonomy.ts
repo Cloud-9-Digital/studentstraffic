@@ -73,6 +73,8 @@ function defineProgrammes<const T extends readonly CanonicalProgramme[]>(program
 
 const globalProgrammeFamilies = defineProgrammes([
   {"slug": "md-physiology", "name": "MD in Physiology", "shortName": "MD Physiology", "stream": "medicine", "level": "residency", "discipline": "physiology", "aliases": ["Doctor of Medicine in Physiology", "Medical Physiology Residency"]},
+  { slug: "md-sports-medicine", name: "MD in Sports Medicine", shortName: "MD Sports Medicine", stream: "medicine", level: "residency", discipline: "sports-medicine", aliases: ["Doctor of Medicine in Sports Medicine", "Sports Medicine Residency"] },
+  { slug: "md-forensic-medicine", name: "MD in Forensic Medicine and Toxicology", shortName: "MD Forensic Medicine", stream: "medicine", level: "residency", discipline: "forensic-medicine", aliases: ["Doctor of Medicine in Forensic Medicine", "MD Forensic Medicine and Toxicology", "Forensic Medicine Residency"] },
   {"slug": "be-btech-fire-safety-engineering", "name": "B.E./B.Tech in Fire and Safety Engineering", "shortName": "B.E./B.Tech Fire & Safety", "stream": "engineering", "level": "bachelors", "discipline": "fire-safety-engineering", "aliases": ["Bachelor of Fire and Safety Engineering", "B.Tech Fire Technology and Safety Engineering"]} ,
   {"slug": "be-btech-nanotechnology", "name": "B.E./B.Tech in Nanotechnology", "shortName": "B.E./B.Tech Nanotechnology", "stream": "engineering", "level": "bachelors", "discipline": "nanotechnology", "aliases": ["Bachelor of Nanotechnology", "B.Tech Nanotechnology"]} ,
   {"slug": "integrated-ma-history", "name": "Integrated M.A. in History", "shortName": "Integrated M.A. History", "stream": "arts-humanities", "level": "integrated-masters", "discipline": "history", "aliases": ["Integrated Master of Arts in History", "Five-year MA History"]},
@@ -337,6 +339,7 @@ const globalProgrammeFamilies = defineProgrammes([
   { slug: "msc-geospatial-science", name: "M.Sc. in Geospatial Science", shortName: "M.Sc. Geospatial Science", stream: "natural-sciences", level: "masters", discipline: "geospatial-science", aliases: ["MSc Geospatial Science", "Master of Science in Geoinformatics", "MSc Remote Sensing and Geoinformation Technology"] },
 
   { slug: "bachelor-public-administration", name: "Bachelor's in Public Administration", shortName: "Bachelor's Public Administration", stream: "public-policy-international-relations", level: "bachelors", discipline: "public-administration", aliases: ["BA Public Administration", "Bachelor of Arts in Public Administration"] },
+  { slug: "master-engineering-education", name: "Master's in Engineering Education", shortName: "Master's Engineering Education", stream: "education", level: "masters", discipline: "engineering-education", aliases: ["MTech Engineering Education", "Master of Technology in Engineering Education"] },
 
 ]);
 

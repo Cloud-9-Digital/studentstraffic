@@ -1,0 +1,11 @@
+# St Joseph University, Tamil Nadu
+
+Owner codex-tn-sju-tindivanam-20261025. Draft17nameddegrees,8exactTindivanam indicative Annual coursefeequotes. 107source-discoveryrows including directory/page overlaps, not 107independent verified awards. Executable 0282-india-st-joseph-university-villupuram; scoped reader validated,17programmes/8quotes, no warnings. Root publication/media review pending.
+
+UGCcurrentpublicregister row1371 gives2(f),Keezhathanur/Tindivanam,sju.ac.in. Exactprimaryendpoint andtype3 discoveredin own currentUGCpageJS, ordinaryGET200; filteredpublicrow+originalresponsehash retained. Nagaland875andBengaluru1185are differentinstitutions. University own10April2026proforma gives15March2024establishment; foundation1984isnotuniversityyear. RegisteredofficeKanyakumari; mainUGCuniversityaddressTindivanam. Footer3addresses explicitly AdministrativeOfficeAddress, not3provedteachingcampuses. Clinical/othercampus routes separatelyheld.
+
+Root accepted currentnamed3yearbaseawardoverAISHEsecondary4yeargenericmirror, honours pathwayunconfirmed. OwnProfessionalAccounting/VisualCommunication/combinedHotelTourismAviation exact4yearpages retained4, no3year substitution. Current ordinance5 printedp21 explicitlyallcoursesEnglishinstruction/exam. Unknownintakeomitted, noorientationdatehunt.
+
+Only exactTindivanam named publicCollegeDekho embeddedJSONfees used; Annualreportedcoursefees indicative, not isolatedtuition. ChennaiPalanchur150000fullcoursequotes andgenericfamily ranges/ProfessionalAccounting3year alternatives excluded. Fee-candidates.json retains51sourcecourse rows.
+
+Fullofficial1024x256logo and1200x801libraryphoto downloadedHTTPS200, visuallyreviewed, exacthashes, no crop/upscale. Mandatorymanifest preparedbeforepromotion.

@@ -1,0 +1,5 @@
+# NITTTR Chennai
+
+28 named award/mode discovery rows: eight current regular PG packaged, eight working-professional and12doctoral routes held for exact mode-specific criteria/duration crosswalk. Generic online/exit certificate headings do not establish separate named current degrees. UGC current own record1298; current AICTE2026–27 letter names all eight regular awards and records international/NRI approvalNo. Foreign-government nomination in generalPGregulations is conditional and does not establish ordinary international entry.
+
+Current official page publishes94810as total fee for80-credit PG programme, with per-credit course/examination charges and separate deposits/facilitation schedule; no isolatedannual tuition inferred, no guarantee all living/exit/extra-study charges included. Page tariff cycle unlabelled. Retain actual native quote with limitations; older2023AnnaUniversityMEfeePDF not substituted. English unverified/omitted; no intake-month claim from a closed cohort calendar. Full wordmark and original campus aerial visually checked; overview infographic rejected as campuscover.

@@ -1,0 +1,9 @@
+# Tamil Nadu Open University — ODL
+
+Owner codex-tn-tnou-20261025.25supporteddegrees/25officialnativeprogramme-charge ranges. 152source-discoveryrows with historicaltableoverlaps and47separatenondegreeshort/vocationaloffers, not 152independent currentdegrees. Executable 0285-india-tamil-nadu-open-university; scoped reader validated,25programmes/25quotes, no warnings. Root publication/media review pending.
+
+CurrentownAY2026table primaryPDF normalHTTPS200, scanned2pages rendered/OCR andpage1visuallyread; fullCY2026prospectus5pages also retained. CurrentDEB table2026–27July exact29TNOUrows, all25nontechnicalacademicdegree titles matched. BBA/BCA/MBAtechnicalapprovalscopeheld, BEdRCIscopeheld. No genericEnglish/country inference; namedTamil/Englishoptions exact. Intakeblank becauseDEBsessionisnotfirstteachingdate. PortalAY2026–27closed explicit, noopenpromise.
+
+Feeperiodother: source tabledoesnotisolateannualtuition/billingperiod, hardprintedbooksversussoftcopies andlanguage optionsprovideexactrange. All25confirmednativeGradeAquotes, noannualisation/fullcoursetotal. OldAcademicProgrammes.php fee/eligibility/mode rows separatelyrecorded nottreatedaslatestdatedtable. GeographycurrentanyBachelor vsolderrelevantdegree; BComcurrentTamilEnglish vsolderEnglish; dated2026primarytakesprecedence. MScPhysicsclearpriorroutesused; duplicatedMathMain/standaloneAppliedfragmentheldratherthanbroadenentry.
+
+Regionalcentres/requiredassessmentvenues distinctresidentialcampus; nooverseasvisa or residencyright inferred. Mediafullofficialcrest andgenuineofficegathering photoviewed, candidateprovenance/hashes retained.

@@ -367,3 +367,13 @@ HSC-entry integrated master's awards use distinct `integrated-msc-biological-sci
 ### Medical physiology residency (25 October 2026)
 
 `md-physiology` represents the medical MD residency in Physiology, with medicine stream and residency level. It requires a medical-degree entry route and is distinct from academic M.Sc. Physiology or biological-sciences master's awards. MAHER’s exact NMC-listed MD Physiology and three-year academic medical M.Sc. pathways retain separate degree types and qualifying routes.
+
+### Sports medicine residency
+
+`md-sports-medicine` represents the medical MD/residency in Sports Medicine, with medical-degree entry and medicine stream. It is distinct from sports science, exercise physiology and physiotherapy awards. Programme-specific recognition, qualifying medical degree, selection, internship and registration conditions remain offering-level evidence.
+
+### Forensic medicine residency
+
+`md-forensic-medicine` represents the medical MD/residency in Forensic Medicine and Toxicology, requiring a qualifying medical degree. It is distinct from B.Sc./M.Sc. Forensic Science: medico-legal medical practice, forensic pathology and toxicology must not be mapped to an academic laboratory-science award. Exact professional approval and medical registration remain programme-specific.
+
+`master-engineering-education` is a neutral master's family for technical-teacher education, engineering pedagogy, curriculum and educational assessment. Preserve the exact M.Tech or other award in each offering. It is distinct from M.Ed, general teacher licences and engineering-subject specialisations; it conveys no automatic teaching appointment or regulated licence.

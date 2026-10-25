@@ -1,0 +1,2095 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mba-business-analytics",
+      "name": "MBA in Business Analytics",
+      "shortName": "MBA Business Analytics",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "business-analytics",
+      "aliases": [
+        "Master of Business Administration in Business Analytics"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "Business-analytics MBA programmes combine management study with analytical methods used in business decisions. Curricula may include statistics, data analysis, information systems and applied projects, alongside core management subjects. Compare quantitative preparation, entry assessment, software and project requirements, language, duration and complete costs.",
+      "metaTitle": "MBA Business Analytics: Entry, Study and Fees",
+      "metaDescription": "Compare MBA Business Analytics programmes by entry qualifications, teaching language, duration, campus, curriculum and complete study costs."
+    },
+    {
+      "slug": "me-mtech-computer-science-engineering",
+      "name": "M.E./M.Tech in Computer Science and Engineering",
+      "shortName": "M.E./M.Tech CSE",
+      "stream": "engineering",
+      "level": "masters",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Master of Technology in Computer Science and Engineering",
+        "Master of Engineering in Computer Science",
+        "M.Tech Computer Engineering",
+        "M.Tech Artificial Intelligence"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "The M.E./M.Tech in Computer Science and Engineering is a postgraduate engineering degree for graduates in computer science, information technology or a related branch. Coursework covers advanced algorithms, distributed and parallel systems, machine learning, computer networks, security and software systems, and many programmes offer specialisations such as artificial intelligence, data science or cyber security. The second year is usually a research dissertation or industry project. Programmes normally last two years, while integrated five-year versions admit students after secondary school.",
+      "metaTitle": "M.E./M.Tech CSE Programmes for International Students",
+      "metaDescription": "Compare M.E./M.Tech CSE programmes open to international students: specialisations, eligibility, dissertation, duration, tuition and intakes."
+    },
+    {
+      "slug": "me-mtech-electrical-engineering",
+      "name": "M.E./M.Tech in Electrical Engineering",
+      "shortName": "M.E./M.Tech Electrical",
+      "stream": "engineering",
+      "level": "masters",
+      "discipline": "electrical-engineering",
+      "aliases": [
+        "MSc Electrical Engineering",
+        "Master of Electrical Engineering"
+      ],
+      "displayOrder": 132,
+      "durationYears": 2,
+      "summary": "Compare postgraduate Electrical Engineering programmes abroad by power, electronics, systems, laboratories, projects, tuition, language and admissions. Exact institutional award titles and study modes are retained.",
+      "metaTitle": "M.E./M.Tech Electrical Engineering Abroad",
+      "metaDescription": "Compare M.E./M.Tech Electrical Engineering programmes by study mode, tuition and admissions."
+    },
+    {
+      "slug": "me-mtech-electronics-communication-engineering",
+      "name": "M.E./M.Tech in Electronics and Communication Engineering",
+      "shortName": "M.E./M.Tech ECE",
+      "stream": "engineering",
+      "level": "masters",
+      "discipline": "electronics-communication-engineering",
+      "aliases": [
+        "Master of Electronics and Communication Engineering",
+        "MSc Communications Engineering"
+      ],
+      "displayOrder": 46,
+      "durationYears": 2,
+      "summary": "Compare postgraduate electronics and communication engineering programmes by communication networks, signal processing, electronics, systems design, laboratories, projects, duration, tuition and admissions. The canonical category covers clearly communication-engineering-led awards while preserving each university's official programme title and technical emphasis.",
+      "metaTitle": "M.E./M.Tech ECE Electronics & Communication",
+      "metaDescription": "Compare M.E./M.Tech ECE programmes abroad by curriculum, tuition, admissions and university."
+    },
+    {
+      "slug": "me-mtech-civil-engineering",
+      "name": "M.E./M.Tech in Civil Engineering",
+      "shortName": "M.E./M.Tech Civil",
+      "stream": "engineering",
+      "level": "masters",
+      "discipline": "civil-engineering",
+      "aliases": [
+        "Master of Civil Engineering",
+        "MSc Civil Engineering"
+      ],
+      "displayOrder": 21,
+      "durationYears": 2,
+      "summary": "A master's-level civil engineering category for advanced study in structures, construction, infrastructure, transport and related built-environment systems. The official university title remains the source of truth, while this canonical category supports comparable catalogue discovery across institutions.",
+      "metaTitle": "M.E./M.Tech Civil Engineering abroad",
+      "metaDescription": "Explore M.E./M.Tech Civil Engineering programmes abroad with verified official titles, duration, tuition, language and admissions information."
+    },
+    {
+      "slug": "me-mtech-mechatronics-engineering",
+      "name": "M.E./M.Tech in Mechatronics Engineering",
+      "shortName": "M.E./M.Tech Mechatronics",
+      "stream": "engineering",
+      "level": "masters",
+      "discipline": "mechatronics-engineering",
+      "aliases": [
+        "Master of Mechatronics Engineering",
+        "MSc Mechatronics"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "The M.E./M.Tech in Mechatronics Engineering is a postgraduate degree in mechatronics engineering. It usually lasts two years and combines advanced coursework in the discipline with laboratory or studio work and a dissertation or project. Compare each university's official award title, entry requirements, tuition and intake before applying, because specialisations and admission routes vary by institution.",
+      "metaTitle": "M.E./M.Tech Mechatronics Programmes | Fees & Admissions",
+      "metaDescription": "Compare M.E./M.Tech Mechatronics programmes by university, eligibility, admission route, duration and tuition fees for domestic and international applicants."
+    },
+    {
+      "durationYears": 2,
+      "displayOrder": 420,
+      "slug": "master-engineering-education",
+      "name": "Master's in Engineering Education",
+      "shortName": "Master's Engineering Education",
+      "stream": "education",
+      "level": "masters",
+      "discipline": "engineering-education",
+      "aliases": [
+        "MTech Engineering Education",
+        "Master of Technology in Engineering Education"
+      ],
+      "summary": "Engineering Education combines technical subject knowledge with pedagogy, curriculum design, educational assessment and research on learning in engineering settings. Entry qualifications and the exact postgraduate award vary by institution; the qualification does not itself guarantee a teaching appointment.",
+      "metaTitle": "Master's in Engineering Education | Students Traffic",
+      "metaDescription": "Explore Master's in Engineering Education, entry requirements, technical-teaching curricula and verified university options with Students Traffic."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "name": "National Institute of Technical Teachers Training and Research, Chennai",
+      "city": "Chennai",
+      "type": "Public",
+      "establishedYear": 1964,
+      "officialWebsite": "https://www.nitttrc.ac.in/",
+      "mediaAttribution": {},
+      "summary": "NITTTR Chennai is a Ministry of Education institution at Taramani, established in 1964 and listed by UGC as a deemed university. Its taught postgraduate study combines engineering or business specialisation with a modular academic structure. Regular and working-professional routes have separate study arrangements.",
+      "campusLifestyle": "The Taramani campus supports postgraduate study, technical-teacher development and research. The Resource Centre provides print collections, electronic resources and research-support tools; current member access conditions apply.",
+      "cityProfile": "NITTTR is located at Taramani in Chennai, Tamil Nadu, postal code600113. Plan travel and accommodation around the Chennai teaching campus. Other NITTTR institutions at Bhopal, Chandigarh and Kolkata, and the listed extension centres in other cities, are distinct locations; their fees and admission rules should not be substituted.",
+      "practicalExposure": "The postgraduate regulations use an80-credit modular structure combining professional or elective courses, mandatory learning, practical work and project or dissertation components. Programme brochures describe subject-specific curricula. Review the exact curriculum, credit registration and assessment requirements for the selected degree; a project or internship component does not guarantee an employer placement or a teaching appointment.",
+      "hostelOverview": "The institute publishes guest-house and residence galleries, including Bharathidasan, Tiruppur Kumaran, Velu Nachiyar and DrRathakrishnan International Hall of Residence. Confirm whether regular PG students can receive a room, current availability, charges and written allotment terms; a published residence photograph does not establish a room guarantee.",
+      "dietarySupport": "Confirm current meal availability, mess charges and dietary or allergy requirements with the residence before booking. A programme fee quotation does not establish included meals.",
+      "safetyOverview": "The institute lists anti-ragging, grievance and internal-complaints support routes. Obtain the current campus and residence contacts at enrolment and confirm access and travel arrangements for your timetable.",
+      "studentSupport": "The Resource Centre provides research tools and member access to subscribed electronic resources. The academic admission portal sets out application, entrance assessment and document-verification steps; obtain the current programme checklist.",
+      "whyChoose": [
+        "A UGC-listed public deemed university with a technical-education focus.",
+        "Named postgraduate degrees supported by current programme brochures and regulations.",
+        "A modular credit structure with subject study and project components."
+      ],
+      "thingsToConsider": [
+        "Current AICTE international-student and NRI approval columns are markedNo for these regular programmes.",
+        "The public fee total is a programme quote; annual tuition and living costs are not inferred.",
+        "Faculty preference, qualification assessment and the regular versus working-professional route matter."
+      ],
+      "bestFitFor": [
+        "Applicants meeting the named prior-degree requirements for the selected technical specialism.",
+        "Graduates seeking regular two-year postgraduate study at Taramani.",
+        "Applicants comparing modular study and technical-teacher development alongside a subject specialism."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "UGC Section3 \u2014 deemed-to-be university"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC current deemed-university public register, record1298",
+          "url": "https://www.ugc.gov.in/universitydetails/Getuniversity_details?unitypeID=4"
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Current taught programme directory",
+          "url": "https://www.nitttrc.ac.in/nitttr_updated/pgcourse.php",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "PG regulations and qualifying degrees",
+          "url": "https://www.nitttrc.ac.in/admissions/PG%20REGULATIONS%20NITTTRC.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Current public programme fee schedule",
+          "url": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+          "kind": "official-fee",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "UGC public deemed-university register",
+          "url": "https://www.ugc.gov.in/universitydetails/Getuniversity_details?unitypeID=4",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "AICTE2026\u201327 regulator-authored approval letter",
+          "url": "https://www.nitttrc.ac.in/uploads/EoA%202026-2027.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Institution history",
+          "url": "https://www.nitttrc.ac.in/nitttr_updated/about.php",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Residence gallery",
+          "url": "https://www.nitttrc.ac.in/nitttr_updated/guest_house.php",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Resource Centre",
+          "url": "https://www.nitttrc.ac.in/nitttr_updated/rescen.php",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "admissionsContent": {
+        "scope": "Regular two-year taught postgraduate routes at Taramani. Working-professional, online and doctoral routes require their own assessment."
+      },
+      "faq": [
+        {
+          "question": "Is this the Chennai NITTTR?",
+          "answer": "Yes. This profile covers NITTTR at Taramani, Chennai. Other NITTTR institutions and extension-centre locations have separate campus and admission arrangements."
+        },
+        {
+          "question": "How long is regular postgraduate study?",
+          "answer": "The current programme directory identifies two-year postgraduate study. The regular route must be distinguished from flexible working-professional, online and doctoral arrangements."
+        },
+        {
+          "question": "What qualification is needed?",
+          "answer": "Each engineering specialism has a named prior-degree list in the PG regulations. Business Analytics accepts a recognised bachelor degree of at least three years. The institute assesses equivalence and selection; a course title alone does not establish eligibility."
+        },
+        {
+          "question": "How is the academic structure organised?",
+          "answer": "The postgraduate regulations describe a modular80-credit structure with subject courses, assessments and a project or dissertation component. Obtain the current programme curriculum and credit-registration plan."
+        },
+        {
+          "question": "What does the programme fee cover?",
+          "answer": "The current schedule publishes a total fee for an80-credit PG programme and separately explains per-credit and examination rates, one-time fees, refundable deposits and annual facilitation charges. Confirm a personalised written schedule, extra study costs and accommodation before payment."
+        },
+        {
+          "question": "Can overseas or NRI applicants assume admission is available?",
+          "answer": "No. The2026\u201327AICTE approval letter recordsNo in international and NRI approval columns for these regular degrees. General regulations mention a conditional foreign-government nomination procedure; that does not establish an ordinary international application route."
+        },
+        {
+          "question": "Is a room guaranteed?",
+          "answer": "No room allocation is established by the published guest-house and residence galleries. Confirm eligibility, availability, charges and the exact residence before arranging accommodation."
+        },
+        {
+          "question": "Is the teaching language established?",
+          "answer": "A programme-wide instruction and assessment language has not been confirmed in this source set. Request the exact language arrangements; no English assumption is made from the country or website."
+        },
+        {
+          "question": "Is the application portal always open?",
+          "answer": "No. Admission notices and portal schedules are cohort-specific. Confirm the current application window, available regular seats and selection arrangements before submitting details or a payment."
+        }
+      ],
+      "programmes": [
+        {
+          "slug": "nitttr-chennai-ai-ml",
+          "canonicalCourseSlug": "me-mtech-computer-science-engineering",
+          "officialTitle": "M.Tech. in Artificial Intelligence and Machine Learning",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.nitttrc.ac.in/admissions/AI&ML.pdf",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Current official80-credit PG programme total quote. The tariff cycle is unlabelled; obtain a written payment schedule. Extra credits, examinations, exit/readmission charges, accommodation and living costs may differ; no isolated annual tuition or currency conversion inferred."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants satisfying the programme qualification and institute selection rules"
+            ],
+            "restrictions": [
+              "Current2026\u201327AICTE international and NRI approval columns areNo.",
+              "Foreign-government nomination is conditional; ordinary international admission is not established."
+            ],
+            "notes": "Regular Taramani taught programme; faculty preference and programme assessment apply.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://www.nitttrc.ac.in/uploads/EoA%202026-2027.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.Tech. in Artificial Intelligence and Machine Learning is a regular two-year taught postgraduate route at NITTTR Chennai, Taramani. Select the regular mode and obtain the exact programme curriculum and credit-registration plan.",
+            "eligibility": {
+              "intro": "The PG regulations specify the qualifying degree for this programme. Faculty preference does not waive the published degree requirements.",
+              "items": [
+                "B.E./B.Tech. in Computer and Communication, Computer Science, Electronics and Communication, Information Technology or Software Engineering.",
+                "The PG regulations also list a four-year BS in any engineering branch, M.Sc. in any discipline, MCA or M.Statistics."
+              ]
+            },
+            "applicationSteps": [
+              "Check the current official admission window and select the exact regular programme.",
+              "Complete the prescribed application, provide qualifying records and follow the institute selection instructions.",
+              "Complete eligibility and document verification, then obtain the itemised fee schedule and written admission terms."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying degree and academic records required for programme eligibility verification."
+              ],
+              "application": [
+                "Documents and category evidence requested in the current official application checklist."
+              ]
+            },
+            "deadlinesNote": "No future cohort intake month is inferred from an earlier admission notice. Confirm the current window and seat availability.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 94810,
+              "status": "confirmed",
+              "period": "full_course",
+              "componentBasis": "Exact official line: total fee for PG programme80credits. Adjacent per-credit/examination rates and one-time/deposit/facilitation schedules remain separately published. Scope must be confirmed; not an all-inclusive living-cost or annual-tuition claim.",
+              "audience": "domestic",
+              "category": "Published standard regular PG80-credit programme quote; no concession assigned automatically",
+              "academicYear": "Current page; cycle not stated",
+              "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+              "sourceLabel": "NITTTR own PG fee schedule",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Current official80-credit PG programme total quote. The tariff cycle is unlabelled; obtain a written payment schedule. Extra credits, examinations, exit/readmission charges, accommodation and living costs may differ; no isolated annual tuition or currency conversion inferred.",
+          "teachingPhases": [
+            {
+              "phase": "Regular postgraduate study",
+              "language": "",
+              "details": "Two-year regular taught degree with modular credit registration and a project or dissertation component."
+            }
+          ]
+        },
+        {
+          "slug": "nitttr-chennai-ar-vr",
+          "canonicalCourseSlug": "me-mtech-computer-science-engineering",
+          "officialTitle": "M.Tech. in Augmented and Virtual Reality",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.nitttrc.ac.in/admissions/AR%20&VR.pdf",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Current official80-credit PG programme total quote. The tariff cycle is unlabelled; obtain a written payment schedule. Extra credits, examinations, exit/readmission charges, accommodation and living costs may differ; no isolated annual tuition or currency conversion inferred."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants satisfying the programme qualification and institute selection rules"
+            ],
+            "restrictions": [
+              "Current2026\u201327AICTE international and NRI approval columns areNo.",
+              "Foreign-government nomination is conditional; ordinary international admission is not established."
+            ],
+            "notes": "Regular Taramani taught programme; faculty preference and programme assessment apply.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://www.nitttrc.ac.in/uploads/EoA%202026-2027.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.Tech. in Augmented and Virtual Reality is a regular two-year taught postgraduate route at NITTTR Chennai, Taramani. Select the regular mode and obtain the exact programme curriculum and credit-registration plan.",
+            "eligibility": {
+              "intro": "The PG regulations specify the qualifying degree for this programme. Faculty preference does not waive the published degree requirements.",
+              "items": [
+                "B.E./B.Tech. in any engineering branch; or M.Sc. in Computer Applications, Mathematics, Statistics, Visual Communication or a related field; or MCA."
+              ]
+            },
+            "applicationSteps": [
+              "Check the current official admission window and select the exact regular programme.",
+              "Complete the prescribed application, provide qualifying records and follow the institute selection instructions.",
+              "Complete eligibility and document verification, then obtain the itemised fee schedule and written admission terms."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying degree and academic records required for programme eligibility verification."
+              ],
+              "application": [
+                "Documents and category evidence requested in the current official application checklist."
+              ]
+            },
+            "deadlinesNote": "No future cohort intake month is inferred from an earlier admission notice. Confirm the current window and seat availability.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 94810,
+              "status": "confirmed",
+              "period": "full_course",
+              "componentBasis": "Exact official line: total fee for PG programme80credits. Adjacent per-credit/examination rates and one-time/deposit/facilitation schedules remain separately published. Scope must be confirmed; not an all-inclusive living-cost or annual-tuition claim.",
+              "audience": "domestic",
+              "category": "Published standard regular PG80-credit programme quote; no concession assigned automatically",
+              "academicYear": "Current page; cycle not stated",
+              "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+              "sourceLabel": "NITTTR own PG fee schedule",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Current official80-credit PG programme total quote. The tariff cycle is unlabelled; obtain a written payment schedule. Extra credits, examinations, exit/readmission charges, accommodation and living costs may differ; no isolated annual tuition or currency conversion inferred.",
+          "teachingPhases": [
+            {
+              "phase": "Regular postgraduate study",
+              "language": "",
+              "details": "Two-year regular taught degree with modular credit registration and a project or dissertation component."
+            }
+          ]
+        },
+        {
+          "slug": "nitttr-chennai-education",
+          "canonicalCourseSlug": "master-engineering-education",
+          "officialTitle": "M.Tech. in Engineering Education",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.nitttrc.ac.in/admissions/EDUCATION.pdf",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Current official80-credit PG programme total quote. The tariff cycle is unlabelled; obtain a written payment schedule. Extra credits, examinations, exit/readmission charges, accommodation and living costs may differ; no isolated annual tuition or currency conversion inferred."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants satisfying the programme qualification and institute selection rules"
+            ],
+            "restrictions": [
+              "Current2026\u201327AICTE international and NRI approval columns areNo.",
+              "Foreign-government nomination is conditional; ordinary international admission is not established."
+            ],
+            "notes": "Regular Taramani taught programme; faculty preference and programme assessment apply.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://www.nitttrc.ac.in/uploads/EoA%202026-2027.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.Tech. in Engineering Education is a regular two-year taught postgraduate route at NITTTR Chennai, Taramani. Select the regular mode and obtain the exact programme curriculum and credit-registration plan.",
+            "eligibility": {
+              "intro": "The PG regulations specify the qualifying degree for this programme. Faculty preference does not waive the published degree requirements.",
+              "items": [
+                "B.E./B.Tech. in any engineering branch. The regulations additionally name faculty members of STEM Education; applicants relying on that category need an institute qualification assessment."
+              ]
+            },
+            "applicationSteps": [
+              "Check the current official admission window and select the exact regular programme.",
+              "Complete the prescribed application, provide qualifying records and follow the institute selection instructions.",
+              "Complete eligibility and document verification, then obtain the itemised fee schedule and written admission terms."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying degree and academic records required for programme eligibility verification."
+              ],
+              "application": [
+                "Documents and category evidence requested in the current official application checklist."
+              ]
+            },
+            "deadlinesNote": "No future cohort intake month is inferred from an earlier admission notice. Confirm the current window and seat availability.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 94810,
+              "status": "confirmed",
+              "period": "full_course",
+              "componentBasis": "Exact official line: total fee for PG programme80credits. Adjacent per-credit/examination rates and one-time/deposit/facilitation schedules remain separately published. Scope must be confirmed; not an all-inclusive living-cost or annual-tuition claim.",
+              "audience": "domestic",
+              "category": "Published standard regular PG80-credit programme quote; no concession assigned automatically",
+              "academicYear": "Current page; cycle not stated",
+              "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+              "sourceLabel": "NITTTR own PG fee schedule",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Current official80-credit PG programme total quote. The tariff cycle is unlabelled; obtain a written payment schedule. Extra credits, examinations, exit/readmission charges, accommodation and living costs may differ; no isolated annual tuition or currency conversion inferred.",
+          "teachingPhases": [
+            {
+              "phase": "Regular postgraduate study",
+              "language": "",
+              "details": "Two-year regular taught degree with modular credit registration and a project or dissertation component."
+            }
+          ]
+        },
+        {
+          "slug": "nitttr-chennai-civil",
+          "canonicalCourseSlug": "me-mtech-civil-engineering",
+          "officialTitle": "M.Tech. in Infrastructure Engineering and Management",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.nitttrc.ac.in/admissions/CIVIL.pdf",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Current official80-credit PG programme total quote. The tariff cycle is unlabelled; obtain a written payment schedule. Extra credits, examinations, exit/readmission charges, accommodation and living costs may differ; no isolated annual tuition or currency conversion inferred."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants satisfying the programme qualification and institute selection rules"
+            ],
+            "restrictions": [
+              "Current2026\u201327AICTE international and NRI approval columns areNo.",
+              "Foreign-government nomination is conditional; ordinary international admission is not established."
+            ],
+            "notes": "Regular Taramani taught programme; faculty preference and programme assessment apply.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://www.nitttrc.ac.in/uploads/EoA%202026-2027.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.Tech. in Infrastructure Engineering and Management is a regular two-year taught postgraduate route at NITTTR Chennai, Taramani. Select the regular mode and obtain the exact programme curriculum and credit-registration plan.",
+            "eligibility": {
+              "intro": "The PG regulations specify the qualifying degree for this programme. Faculty preference does not waive the published degree requirements.",
+              "items": [
+                "B.E./B.Tech. in Civil Engineering."
+              ]
+            },
+            "applicationSteps": [
+              "Check the current official admission window and select the exact regular programme.",
+              "Complete the prescribed application, provide qualifying records and follow the institute selection instructions.",
+              "Complete eligibility and document verification, then obtain the itemised fee schedule and written admission terms."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying degree and academic records required for programme eligibility verification."
+              ],
+              "application": [
+                "Documents and category evidence requested in the current official application checklist."
+              ]
+            },
+            "deadlinesNote": "No future cohort intake month is inferred from an earlier admission notice. Confirm the current window and seat availability.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 94810,
+              "status": "confirmed",
+              "period": "full_course",
+              "componentBasis": "Exact official line: total fee for PG programme80credits. Adjacent per-credit/examination rates and one-time/deposit/facilitation schedules remain separately published. Scope must be confirmed; not an all-inclusive living-cost or annual-tuition claim.",
+              "audience": "domestic",
+              "category": "Published standard regular PG80-credit programme quote; no concession assigned automatically",
+              "academicYear": "Current page; cycle not stated",
+              "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+              "sourceLabel": "NITTTR own PG fee schedule",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Current official80-credit PG programme total quote. The tariff cycle is unlabelled; obtain a written payment schedule. Extra credits, examinations, exit/readmission charges, accommodation and living costs may differ; no isolated annual tuition or currency conversion inferred.",
+          "teachingPhases": [
+            {
+              "phase": "Regular postgraduate study",
+              "language": "",
+              "details": "Two-year regular taught degree with modular credit registration and a project or dissertation component."
+            }
+          ]
+        },
+        {
+          "slug": "nitttr-chennai-mechatronics",
+          "canonicalCourseSlug": "me-mtech-mechatronics-engineering",
+          "officialTitle": "M.Tech. in Mechatronics",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.nitttrc.ac.in/admissions/MECHATRONICS.pdf",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Current official80-credit PG programme total quote. The tariff cycle is unlabelled; obtain a written payment schedule. Extra credits, examinations, exit/readmission charges, accommodation and living costs may differ; no isolated annual tuition or currency conversion inferred."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants satisfying the programme qualification and institute selection rules"
+            ],
+            "restrictions": [
+              "Current2026\u201327AICTE international and NRI approval columns areNo.",
+              "Foreign-government nomination is conditional; ordinary international admission is not established."
+            ],
+            "notes": "Regular Taramani taught programme; faculty preference and programme assessment apply.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://www.nitttrc.ac.in/uploads/EoA%202026-2027.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.Tech. in Mechatronics is a regular two-year taught postgraduate route at NITTTR Chennai, Taramani. Select the regular mode and obtain the exact programme curriculum and credit-registration plan.",
+            "eligibility": {
+              "intro": "The PG regulations specify the qualifying degree for this programme. Faculty preference does not waive the published degree requirements.",
+              "items": [
+                "B.E./B.Tech. in Automobile, Electronics and Communication, Electrical and Electronics, Manufacturing, Mechanical, Mechatronics or Production Engineering."
+              ]
+            },
+            "applicationSteps": [
+              "Check the current official admission window and select the exact regular programme.",
+              "Complete the prescribed application, provide qualifying records and follow the institute selection instructions.",
+              "Complete eligibility and document verification, then obtain the itemised fee schedule and written admission terms."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying degree and academic records required for programme eligibility verification."
+              ],
+              "application": [
+                "Documents and category evidence requested in the current official application checklist."
+              ]
+            },
+            "deadlinesNote": "No future cohort intake month is inferred from an earlier admission notice. Confirm the current window and seat availability.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 94810,
+              "status": "confirmed",
+              "period": "full_course",
+              "componentBasis": "Exact official line: total fee for PG programme80credits. Adjacent per-credit/examination rates and one-time/deposit/facilitation schedules remain separately published. Scope must be confirmed; not an all-inclusive living-cost or annual-tuition claim.",
+              "audience": "domestic",
+              "category": "Published standard regular PG80-credit programme quote; no concession assigned automatically",
+              "academicYear": "Current page; cycle not stated",
+              "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+              "sourceLabel": "NITTTR own PG fee schedule",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Current official80-credit PG programme total quote. The tariff cycle is unlabelled; obtain a written payment schedule. Extra credits, examinations, exit/readmission charges, accommodation and living costs may differ; no isolated annual tuition or currency conversion inferred.",
+          "teachingPhases": [
+            {
+              "phase": "Regular postgraduate study",
+              "language": "",
+              "details": "Two-year regular taught degree with modular credit registration and a project or dissertation component."
+            }
+          ]
+        },
+        {
+          "slug": "nitttr-chennai-power-electronics",
+          "canonicalCourseSlug": "me-mtech-electrical-engineering",
+          "officialTitle": "M.Tech. in Power Electronics and Drives",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.nitttrc.ac.in/admissions/POWER%20ELECTRONICS.pdf",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Current official80-credit PG programme total quote. The tariff cycle is unlabelled; obtain a written payment schedule. Extra credits, examinations, exit/readmission charges, accommodation and living costs may differ; no isolated annual tuition or currency conversion inferred."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants satisfying the programme qualification and institute selection rules"
+            ],
+            "restrictions": [
+              "Current2026\u201327AICTE international and NRI approval columns areNo.",
+              "Foreign-government nomination is conditional; ordinary international admission is not established."
+            ],
+            "notes": "Regular Taramani taught programme; faculty preference and programme assessment apply.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://www.nitttrc.ac.in/uploads/EoA%202026-2027.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.Tech. in Power Electronics and Drives is a regular two-year taught postgraduate route at NITTTR Chennai, Taramani. Select the regular mode and obtain the exact programme curriculum and credit-registration plan.",
+            "eligibility": {
+              "intro": "The PG regulations specify the qualifying degree for this programme. Faculty preference does not waive the published degree requirements.",
+              "items": [
+                "B.E./B.Tech. in Electrical, Electronics, Electronics and Communication, Electrical and Electronics or Instrumentation Engineering."
+              ]
+            },
+            "applicationSteps": [
+              "Check the current official admission window and select the exact regular programme.",
+              "Complete the prescribed application, provide qualifying records and follow the institute selection instructions.",
+              "Complete eligibility and document verification, then obtain the itemised fee schedule and written admission terms."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying degree and academic records required for programme eligibility verification."
+              ],
+              "application": [
+                "Documents and category evidence requested in the current official application checklist."
+              ]
+            },
+            "deadlinesNote": "No future cohort intake month is inferred from an earlier admission notice. Confirm the current window and seat availability.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 94810,
+              "status": "confirmed",
+              "period": "full_course",
+              "componentBasis": "Exact official line: total fee for PG programme80credits. Adjacent per-credit/examination rates and one-time/deposit/facilitation schedules remain separately published. Scope must be confirmed; not an all-inclusive living-cost or annual-tuition claim.",
+              "audience": "domestic",
+              "category": "Published standard regular PG80-credit programme quote; no concession assigned automatically",
+              "academicYear": "Current page; cycle not stated",
+              "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+              "sourceLabel": "NITTTR own PG fee schedule",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Current official80-credit PG programme total quote. The tariff cycle is unlabelled; obtain a written payment schedule. Extra credits, examinations, exit/readmission charges, accommodation and living costs may differ; no isolated annual tuition or currency conversion inferred.",
+          "teachingPhases": [
+            {
+              "phase": "Regular postgraduate study",
+              "language": "",
+              "details": "Two-year regular taught degree with modular credit registration and a project or dissertation component."
+            }
+          ]
+        },
+        {
+          "slug": "nitttr-chennai-vlsi",
+          "canonicalCourseSlug": "me-mtech-electronics-communication-engineering",
+          "officialTitle": "M.Tech. in VLSI Design and Embedded Systems",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.nitttrc.ac.in/admissions/VLSI.pdf",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Current official80-credit PG programme total quote. The tariff cycle is unlabelled; obtain a written payment schedule. Extra credits, examinations, exit/readmission charges, accommodation and living costs may differ; no isolated annual tuition or currency conversion inferred."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants satisfying the programme qualification and institute selection rules"
+            ],
+            "restrictions": [
+              "Current2026\u201327AICTE international and NRI approval columns areNo.",
+              "Foreign-government nomination is conditional; ordinary international admission is not established."
+            ],
+            "notes": "Regular Taramani taught programme; faculty preference and programme assessment apply.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://www.nitttrc.ac.in/uploads/EoA%202026-2027.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.Tech. in VLSI Design and Embedded Systems is a regular two-year taught postgraduate route at NITTTR Chennai, Taramani. Select the regular mode and obtain the exact programme curriculum and credit-registration plan.",
+            "eligibility": {
+              "intro": "The PG regulations specify the qualifying degree for this programme. Faculty preference does not waive the published degree requirements.",
+              "items": [
+                "B.E./B.Tech. in Electrical, Electrical and Electronics, Electronics, Electronics and Communication or Instrumentation Engineering."
+              ]
+            },
+            "applicationSteps": [
+              "Check the current official admission window and select the exact regular programme.",
+              "Complete the prescribed application, provide qualifying records and follow the institute selection instructions.",
+              "Complete eligibility and document verification, then obtain the itemised fee schedule and written admission terms."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying degree and academic records required for programme eligibility verification."
+              ],
+              "application": [
+                "Documents and category evidence requested in the current official application checklist."
+              ]
+            },
+            "deadlinesNote": "No future cohort intake month is inferred from an earlier admission notice. Confirm the current window and seat availability.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 94810,
+              "status": "confirmed",
+              "period": "full_course",
+              "componentBasis": "Exact official line: total fee for PG programme80credits. Adjacent per-credit/examination rates and one-time/deposit/facilitation schedules remain separately published. Scope must be confirmed; not an all-inclusive living-cost or annual-tuition claim.",
+              "audience": "domestic",
+              "category": "Published standard regular PG80-credit programme quote; no concession assigned automatically",
+              "academicYear": "Current page; cycle not stated",
+              "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+              "sourceLabel": "NITTTR own PG fee schedule",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Current official80-credit PG programme total quote. The tariff cycle is unlabelled; obtain a written payment schedule. Extra credits, examinations, exit/readmission charges, accommodation and living costs may differ; no isolated annual tuition or currency conversion inferred.",
+          "teachingPhases": [
+            {
+              "phase": "Regular postgraduate study",
+              "language": "",
+              "details": "Two-year regular taught degree with modular credit registration and a project or dissertation component."
+            }
+          ]
+        },
+        {
+          "slug": "nitttr-chennai-mba",
+          "canonicalCourseSlug": "mba-business-analytics",
+          "officialTitle": "M.B.A. in Business Analytics",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.nitttrc.ac.in/admissions/MBA.pdf",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Current official80-credit PG programme total quote. The tariff cycle is unlabelled; obtain a written payment schedule. Extra credits, examinations, exit/readmission charges, accommodation and living costs may differ; no isolated annual tuition or currency conversion inferred."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants satisfying the programme qualification and institute selection rules"
+            ],
+            "restrictions": [
+              "Current2026\u201327AICTE international and NRI approval columns areNo.",
+              "Foreign-government nomination is conditional; ordinary international admission is not established."
+            ],
+            "notes": "Regular Taramani taught programme; faculty preference and programme assessment apply.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://www.nitttrc.ac.in/uploads/EoA%202026-2027.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.B.A. in Business Analytics is a regular two-year taught postgraduate route at NITTTR Chennai, Taramani. Select the regular mode and obtain the exact programme curriculum and credit-registration plan.",
+            "eligibility": {
+              "intro": "The PG regulations specify the qualifying degree for this programme. Faculty preference does not waive the published degree requirements.",
+              "items": [
+                "A bachelor's degree of at least three years from a recognised university."
+              ]
+            },
+            "applicationSteps": [
+              "Check the current official admission window and select the exact regular programme.",
+              "Complete the prescribed application, provide qualifying records and follow the institute selection instructions.",
+              "Complete eligibility and document verification, then obtain the itemised fee schedule and written admission terms."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying degree and academic records required for programme eligibility verification."
+              ],
+              "application": [
+                "Documents and category evidence requested in the current official application checklist."
+              ]
+            },
+            "deadlinesNote": "No future cohort intake month is inferred from an earlier admission notice. Confirm the current window and seat availability.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 94810,
+              "status": "confirmed",
+              "period": "full_course",
+              "componentBasis": "Exact official line: total fee for PG programme80credits. Adjacent per-credit/examination rates and one-time/deposit/facilitation schedules remain separately published. Scope must be confirmed; not an all-inclusive living-cost or annual-tuition claim.",
+              "audience": "domestic",
+              "category": "Published standard regular PG80-credit programme quote; no concession assigned automatically",
+              "academicYear": "Current page; cycle not stated",
+              "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+              "sourceLabel": "NITTTR own PG fee schedule",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Current official80-credit PG programme total quote. The tariff cycle is unlabelled; obtain a written payment schedule. Extra credits, examinations, exit/readmission charges, accommodation and living costs may differ; no isolated annual tuition or currency conversion inferred.",
+          "teachingPhases": [
+            {
+              "phase": "Regular postgraduate study",
+              "language": "",
+              "details": "Two-year regular taught degree with modular credit registration and a project or dissertation component."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "recognition",
+      "claimText": "UGC own current deemed-university public record1298 names NITTTR at Taramani, Chennai, underSectionIII.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.ugc.gov.in/universitydetails/Getuniversity_details?unitypeID=4",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "summary",
+      "claimText": "NITTTR Chennai is a Ministry of Education institution at Taramani, established in 1964 and listed by UGC as a deemed university. Its taught postgraduate study combines engineering or business specialisation with a modular academic structure. Regular and working-professional routes have separate study arrangements.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/about.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "campusLifestyle",
+      "claimText": "The Taramani campus supports postgraduate study, technical-teacher development and research. The Resource Centre provides print collections, electronic resources and research-support tools; current member access conditions apply.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/rescen.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "cityProfile",
+      "claimText": "NITTTR is located at Taramani in Chennai, Tamil Nadu, postal code600113. Plan travel and accommodation around the Chennai teaching campus. Other NITTTR institutions at Bhopal, Chandigarh and Kolkata, and the listed extension centres in other cities, are distinct locations; their fees and admission rules should not be substituted.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.ugc.gov.in/universitydetails/Getuniversity_details?unitypeID=4",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "practicalExposure",
+      "claimText": "The postgraduate regulations use an80-credit modular structure combining professional or elective courses, mandatory learning, practical work and project or dissertation components. Programme brochures describe subject-specific curricula. Review the exact curriculum, credit registration and assessment requirements for the selected degree; a project or internship component does not guarantee an employer placement or a teaching appointment.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/admissions/PG%20REGULATIONS%20NITTTRC.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "hostelOverview",
+      "claimText": "The institute publishes guest-house and residence galleries, including Bharathidasan, Tiruppur Kumaran, Velu Nachiyar and DrRathakrishnan International Hall of Residence. Confirm whether regular PG students can receive a room, current availability, charges and written allotment terms; a published residence photograph does not establish a room guarantee.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/guest_house.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "dietarySupport",
+      "claimText": "Confirm current meal availability, mess charges and dietary or allergy requirements with the residence before booking. A programme fee quotation does not establish included meals.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "safetyOverview",
+      "claimText": "The institute lists anti-ragging, grievance and internal-complaints support routes. Obtain the current campus and residence contacts at enrolment and confirm access and travel arrangements for your timetable.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/pgcourse.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "studentSupport",
+      "claimText": "The Resource Centre provides research tools and member access to subscribed electronic resources. The academic admission portal sets out application, entrance assessment and document-verification steps; obtain the current programme checklist.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/rescen.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "officialTitle",
+      "claimText": "M.Tech. in Artificial Intelligence and Machine Learning is currently listed with its own curriculum brochure.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/admissions/AI&ML.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-ai-ml"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "duration",
+      "claimText": "Regular taught postgraduate study is two academic years.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/pgcourse.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-ai-ml"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "eligibility",
+      "claimText": "Qualifying degree: B.E./B.Tech. in Computer and Communication, Computer Science, Electronics and Communication, Information Technology or Software Engineering. The PG regulations also list a four-year BS in any engineering branch, M.Sc. in any discipline, MCA or M.Statistics.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/admissions/PG%20REGULATIONS%20NITTTRC.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-ai-ml"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "admissions",
+      "claimText": "Regular programme application, selection and document verification use the official admission process.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-ai-ml"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "audienceEligibility",
+      "claimText": "Current AICTE2026\u201327 letter names this regular programme; international and NRI approvalNo.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/uploads/EoA%202026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-ai-ml"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "recognition",
+      "claimText": "AICTE regulator-authored2026\u201327EOA lists the named regular programme at NITTTRChennai.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/uploads/EoA%202026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-ai-ml"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "fee",
+      "claimText": "The current official80-credit PG total fee quote isINR94810; cycleunlabelled and scope caveats retained.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-ai-ml"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Current official quoted total fee for80-credit PG programme isINR94810, cycleunlabelled with scope caveats.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-ai-ml"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "medium",
+      "claimText": "Teaching language not established; blank controlled language fields and no English default.",
+      "status": "omit",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/admissions/PG%20REGULATIONS%20NITTTRC.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-ai-ml"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "intake",
+      "claimText": "Future first-entry intake month not established; no cohort date inferred.",
+      "status": "omit",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-ai-ml"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "officialTitle",
+      "claimText": "M.Tech. in Augmented and Virtual Reality is currently listed with its own curriculum brochure.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/admissions/AR%20&VR.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-ar-vr"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "duration",
+      "claimText": "Regular taught postgraduate study is two academic years.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/pgcourse.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-ar-vr"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "eligibility",
+      "claimText": "Qualifying degree: B.E./B.Tech. in any engineering branch; or M.Sc. in Computer Applications, Mathematics, Statistics, Visual Communication or a related field; or MCA.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/admissions/PG%20REGULATIONS%20NITTTRC.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-ar-vr"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "admissions",
+      "claimText": "Regular programme application, selection and document verification use the official admission process.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-ar-vr"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "audienceEligibility",
+      "claimText": "Current AICTE2026\u201327 letter names this regular programme; international and NRI approvalNo.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/uploads/EoA%202026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-ar-vr"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "recognition",
+      "claimText": "AICTE regulator-authored2026\u201327EOA lists the named regular programme at NITTTRChennai.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/uploads/EoA%202026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-ar-vr"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "fee",
+      "claimText": "The current official80-credit PG total fee quote isINR94810; cycleunlabelled and scope caveats retained.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-ar-vr"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Current official quoted total fee for80-credit PG programme isINR94810, cycleunlabelled with scope caveats.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-ar-vr"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "medium",
+      "claimText": "Teaching language not established; blank controlled language fields and no English default.",
+      "status": "omit",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/admissions/PG%20REGULATIONS%20NITTTRC.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-ar-vr"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "intake",
+      "claimText": "Future first-entry intake month not established; no cohort date inferred.",
+      "status": "omit",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-ar-vr"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "officialTitle",
+      "claimText": "M.Tech. in Engineering Education is currently listed with its own curriculum brochure.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/admissions/EDUCATION.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-education"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "duration",
+      "claimText": "Regular taught postgraduate study is two academic years.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/pgcourse.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-education"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "eligibility",
+      "claimText": "Qualifying degree: B.E./B.Tech. in any engineering branch. The regulations additionally name faculty members of STEM Education; applicants relying on that category need an institute qualification assessment.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/admissions/PG%20REGULATIONS%20NITTTRC.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-education"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "admissions",
+      "claimText": "Regular programme application, selection and document verification use the official admission process.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-education"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "audienceEligibility",
+      "claimText": "Current AICTE2026\u201327 letter names this regular programme; international and NRI approvalNo.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/uploads/EoA%202026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-education"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "recognition",
+      "claimText": "AICTE regulator-authored2026\u201327EOA lists the named regular programme at NITTTRChennai.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/uploads/EoA%202026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-education"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "fee",
+      "claimText": "The current official80-credit PG total fee quote isINR94810; cycleunlabelled and scope caveats retained.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-education"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Current official quoted total fee for80-credit PG programme isINR94810, cycleunlabelled with scope caveats.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-education"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "medium",
+      "claimText": "Teaching language not established; blank controlled language fields and no English default.",
+      "status": "omit",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/admissions/PG%20REGULATIONS%20NITTTRC.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-education"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "intake",
+      "claimText": "Future first-entry intake month not established; no cohort date inferred.",
+      "status": "omit",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-education"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "officialTitle",
+      "claimText": "M.Tech. in Infrastructure Engineering and Management is currently listed with its own curriculum brochure.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/admissions/CIVIL.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-civil"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "duration",
+      "claimText": "Regular taught postgraduate study is two academic years.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/pgcourse.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-civil"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "eligibility",
+      "claimText": "Qualifying degree: B.E./B.Tech. in Civil Engineering.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/admissions/PG%20REGULATIONS%20NITTTRC.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-civil"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "admissions",
+      "claimText": "Regular programme application, selection and document verification use the official admission process.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-civil"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "audienceEligibility",
+      "claimText": "Current AICTE2026\u201327 letter names this regular programme; international and NRI approvalNo.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/uploads/EoA%202026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-civil"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "recognition",
+      "claimText": "AICTE regulator-authored2026\u201327EOA lists the named regular programme at NITTTRChennai.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/uploads/EoA%202026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-civil"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "fee",
+      "claimText": "The current official80-credit PG total fee quote isINR94810; cycleunlabelled and scope caveats retained.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-civil"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Current official quoted total fee for80-credit PG programme isINR94810, cycleunlabelled with scope caveats.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-civil"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "medium",
+      "claimText": "Teaching language not established; blank controlled language fields and no English default.",
+      "status": "omit",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/admissions/PG%20REGULATIONS%20NITTTRC.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-civil"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "intake",
+      "claimText": "Future first-entry intake month not established; no cohort date inferred.",
+      "status": "omit",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-civil"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "officialTitle",
+      "claimText": "M.Tech. in Mechatronics is currently listed with its own curriculum brochure.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/admissions/MECHATRONICS.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-mechatronics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "duration",
+      "claimText": "Regular taught postgraduate study is two academic years.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/pgcourse.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-mechatronics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "eligibility",
+      "claimText": "Qualifying degree: B.E./B.Tech. in Automobile, Electronics and Communication, Electrical and Electronics, Manufacturing, Mechanical, Mechatronics or Production Engineering.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/admissions/PG%20REGULATIONS%20NITTTRC.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-mechatronics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "admissions",
+      "claimText": "Regular programme application, selection and document verification use the official admission process.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-mechatronics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "audienceEligibility",
+      "claimText": "Current AICTE2026\u201327 letter names this regular programme; international and NRI approvalNo.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/uploads/EoA%202026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-mechatronics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "recognition",
+      "claimText": "AICTE regulator-authored2026\u201327EOA lists the named regular programme at NITTTRChennai.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/uploads/EoA%202026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-mechatronics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "fee",
+      "claimText": "The current official80-credit PG total fee quote isINR94810; cycleunlabelled and scope caveats retained.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-mechatronics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Current official quoted total fee for80-credit PG programme isINR94810, cycleunlabelled with scope caveats.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-mechatronics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "medium",
+      "claimText": "Teaching language not established; blank controlled language fields and no English default.",
+      "status": "omit",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/admissions/PG%20REGULATIONS%20NITTTRC.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-mechatronics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "intake",
+      "claimText": "Future first-entry intake month not established; no cohort date inferred.",
+      "status": "omit",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-mechatronics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "officialTitle",
+      "claimText": "M.Tech. in Power Electronics and Drives is currently listed with its own curriculum brochure.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/admissions/POWER%20ELECTRONICS.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-power-electronics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "duration",
+      "claimText": "Regular taught postgraduate study is two academic years.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/pgcourse.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-power-electronics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "eligibility",
+      "claimText": "Qualifying degree: B.E./B.Tech. in Electrical, Electronics, Electronics and Communication, Electrical and Electronics or Instrumentation Engineering.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/admissions/PG%20REGULATIONS%20NITTTRC.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-power-electronics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "admissions",
+      "claimText": "Regular programme application, selection and document verification use the official admission process.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-power-electronics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "audienceEligibility",
+      "claimText": "Current AICTE2026\u201327 letter names this regular programme; international and NRI approvalNo.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/uploads/EoA%202026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-power-electronics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "recognition",
+      "claimText": "AICTE regulator-authored2026\u201327EOA lists the named regular programme at NITTTRChennai.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/uploads/EoA%202026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-power-electronics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "fee",
+      "claimText": "The current official80-credit PG total fee quote isINR94810; cycleunlabelled and scope caveats retained.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-power-electronics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Current official quoted total fee for80-credit PG programme isINR94810, cycleunlabelled with scope caveats.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-power-electronics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "medium",
+      "claimText": "Teaching language not established; blank controlled language fields and no English default.",
+      "status": "omit",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/admissions/PG%20REGULATIONS%20NITTTRC.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-power-electronics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "intake",
+      "claimText": "Future first-entry intake month not established; no cohort date inferred.",
+      "status": "omit",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-power-electronics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "officialTitle",
+      "claimText": "M.Tech. in VLSI Design and Embedded Systems is currently listed with its own curriculum brochure.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/admissions/VLSI.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-vlsi"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "duration",
+      "claimText": "Regular taught postgraduate study is two academic years.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/pgcourse.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-vlsi"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "eligibility",
+      "claimText": "Qualifying degree: B.E./B.Tech. in Electrical, Electrical and Electronics, Electronics, Electronics and Communication or Instrumentation Engineering.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/admissions/PG%20REGULATIONS%20NITTTRC.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-vlsi"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "admissions",
+      "claimText": "Regular programme application, selection and document verification use the official admission process.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-vlsi"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "audienceEligibility",
+      "claimText": "Current AICTE2026\u201327 letter names this regular programme; international and NRI approvalNo.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/uploads/EoA%202026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-vlsi"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "recognition",
+      "claimText": "AICTE regulator-authored2026\u201327EOA lists the named regular programme at NITTTRChennai.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/uploads/EoA%202026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-vlsi"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "fee",
+      "claimText": "The current official80-credit PG total fee quote isINR94810; cycleunlabelled and scope caveats retained.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-vlsi"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Current official quoted total fee for80-credit PG programme isINR94810, cycleunlabelled with scope caveats.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-vlsi"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "medium",
+      "claimText": "Teaching language not established; blank controlled language fields and no English default.",
+      "status": "omit",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/admissions/PG%20REGULATIONS%20NITTTRC.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-vlsi"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "intake",
+      "claimText": "Future first-entry intake month not established; no cohort date inferred.",
+      "status": "omit",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-vlsi"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "officialTitle",
+      "claimText": "M.B.A. in Business Analytics is currently listed with its own curriculum brochure.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/admissions/MBA.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-mba"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "duration",
+      "claimText": "Regular taught postgraduate study is two academic years.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/pgcourse.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-mba"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "eligibility",
+      "claimText": "Qualifying degree: A bachelor's degree of at least three years from a recognised university.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/admissions/PG%20REGULATIONS%20NITTTRC.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-mba"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "admissions",
+      "claimText": "Regular programme application, selection and document verification use the official admission process.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-mba"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "audienceEligibility",
+      "claimText": "Current AICTE2026\u201327 letter names this regular programme; international and NRI approvalNo.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/uploads/EoA%202026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-mba"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "recognition",
+      "claimText": "AICTE regulator-authored2026\u201327EOA lists the named regular programme at NITTTRChennai.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/uploads/EoA%202026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-mba"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "fee",
+      "claimText": "The current official80-credit PG total fee quote isINR94810; cycleunlabelled and scope caveats retained.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-mba"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Current official quoted total fee for80-credit PG programme isINR94810, cycleunlabelled with scope caveats.",
+      "status": "verified",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-mba"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "medium",
+      "claimText": "Teaching language not established; blank controlled language fields and no English default.",
+      "status": "omit",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/admissions/PG%20REGULATIONS%20NITTTRC.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-mba"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "publicField": "intake",
+      "claimText": "Future first-entry intake month not established; no cohort date inferred.",
+      "status": "omit",
+      "sourceLabel": "NITTTR official document or regulator public record",
+      "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/study-at-nitttr.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Full source originals and own UGC filtered row/hash retained. AICTE letter is regulator-authored computer-generated2026\u201327EOA retained unaltered on official institution site; first fivepages current, historical letters follow. No country-derived language.",
+      "programmeSlug": "nitttr-chennai-mba"
+    }
+  ]
+}

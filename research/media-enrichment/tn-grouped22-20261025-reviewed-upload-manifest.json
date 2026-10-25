@@ -1,0 +1,145 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "st-joseph-university-villupuram",
+      "universityName": "St Joseph University",
+      "sourceBatch": "codex-tn-sju-tindivanam-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://sju.ac.in/wp-content/uploads/2024/07/SJU-NEW-LOGO-HEADER.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Official university brand and academic-life photography used for factual institution identification and illustration; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/st-joseph-university-villupuram/logo-20261025",
+          "altText": "St Joseph University complete official emblem and wordmark",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/sju-tindivanam-20261025/logo.png",
+          "sha256": "703a3592d27cb0169f6c09431a08cbf6f14b96763916f4bb818523156ed84f91",
+          "notes": "Full ordinaryHTTPS200 original, visuallychecked. No crop/generation/upscale; library caption does not claim an exterior or unverified precise building/campus.",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://sju.ac.in/wp-content/uploads/2025/03/DSC_0275.webp",
+          "sourceType": "official-university",
+          "rightsBasis": "Official university brand and academic-life photography used for factual institution identification and illustration; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/st-joseph-university-villupuram/cover-20261025",
+          "altText": "Students studying in the library reading area shown on St Joseph University\u2019s official website",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/sju-tindivanam-20261025/cover-home.webp",
+          "sha256": "a615c257b9708141c7cc1aa1921277b78074d6bd6e84c682f43f47f2df768fed",
+          "notes": "Full ordinaryHTTPS200 original, visuallychecked. No crop/generation/upscale; library caption does not claim an exterior or unverified precise building/campus.",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0282-india-st-joseph-university-villupuram"
+    },
+    {
+      "universitySlug": "chettinad-academy-of-research-and-education",
+      "universityName": "Chettinad Academy of Research and Education",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://care.edu.in/wp-content/uploads/2019/07/logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://care.edu.in/",
+          "rightsBasis": "Official university-owned identifying asset; no open licence claimed.",
+          "verificationMethod": "Complete native blueCsymbol and university wordmark,visuallyinspected.Noaccreditationbadges appended,no editing or enlargement.",
+          "localPath": "research/india-source-bundles/chettinad-academy-20261025/logo.png",
+          "sha256": "2b6dbda442fff70a529d7219ab6112e0c9eb19c1c73a62e27155b1d5b34440ea",
+          "width": 172,
+          "height": 73,
+          "altText": "Chettinad Academy of Research and Education wordmark",
+          "proposedPublicId": "studentstraffic/universities/chettinad-academy-of-research-and-education/logo",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://care.edu.in/wp-content/uploads/2020/07/building-about-care.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://care.edu.in/",
+          "rightsBasis": "Official university-owned identifying asset; no open licence claimed.",
+          "verificationMethod": "Genuine official current-homepage campus photograph: named administration block,Chettinadwordmark,blueglassfacade,courtyard and landscaping.Native original visually inspected,no render/stock/composite substituted.",
+          "localPath": "research/india-source-bundles/chettinad-academy-20261025/campus.jpg",
+          "sha256": "98942a3f21d27033abfdaff16688b3112e7ab2ed61f7634ed6ddb52d876733d8",
+          "width": 507,
+          "height": 253,
+          "altText": "Chettinad Academy administration building at Kelambakkam",
+          "proposedPublicId": "studentstraffic/universities/chettinad-academy-of-research-and-education/cover",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0283-india-chettinad-academy-of-research-and-education"
+    },
+    {
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "universityName": "National Institute of Technical Teachers Training and Research, Chennai",
+      "sourceBatch": "codex-root-nitttr-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.nitttrc.ac.in/nitttr/assets/img/new-logo.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Institution-published original for factual profile identification; no open licence or ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/national-institute-of-technical-teachers-training-and-research-chennai/logo-20261025",
+          "altText": "NITTTR Chennai complete official emblem and wordmark",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/nitttr-chennai-20261025/logo.png",
+          "sha256": "6f7df8546f96a6ebb7fe3247debf940f18691c61f0c9c13b3b4d28dd2efa9549",
+          "uploadFromReviewedLocalOriginal": true,
+          "notes": "Root visually inspected full original without cropping or enlargement; campus aerial retains original institutional text. Overview infographic excluded."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/assets/img/portfolio/templeoflearn.jpeg",
+          "sourceType": "official-university",
+          "rightsBasis": "Institution-published original for factual profile identification; no open licence or ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/national-institute-of-technical-teachers-training-and-research-chennai/cover-20261025",
+          "altText": "Official aerial photograph of the NITTTR Chennai campus at Taramani",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/nitttr-chennai-20261025/campus-temple.jpeg",
+          "sha256": "223d05ac31c5270ff55a0d837c8429598296461e3bd20688f404e439b6b672bd",
+          "uploadFromReviewedLocalOriginal": true,
+          "notes": "Root visually inspected full original without cropping or enlargement; campus aerial retains original institutional text. Overview infographic excluded."
+        }
+      ],
+      "migrationId": "0284-india-nitttr-chennai"
+    },
+    {
+      "universitySlug": "tamil-nadu-open-university",
+      "universityName": "Tamil Nadu Open University",
+      "sourceBatch": "codex-tn-tnou-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.tnou.ac.in/images/logo.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Official university brand and institutional photograph used for factual identification and illustration; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-open-university/logo-20261025",
+          "altText": "Tamil Nadu Open University complete official crest and motto",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/tnou-20261025/logo.png",
+          "sha256": "d0baf66a1947df8e01bd8728a5314fedafb4c8cc45644e7a66e130cea8a1d312",
+          "notes": "OrdinaryverifiedHTTPS200original fromcurrenthome, fullvisuallychecked. Completecrest/noaccreditationbadge substitution; officegatheringcaptionnotstudentclass/exteriorclaim. No crop/generation/upscale.",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.tnou.ac.in/images/slider/20260917_110311.jpg",
+          "sourceType": "official-university",
+          "rightsBasis": "Official university brand and institutional photograph used for factual identification and illustration; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-open-university/cover-20261025",
+          "altText": "Participants gathered at Tamil Nadu Open University in an official university photograph",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/tnou-20261025/cover-slider1.jpg",
+          "sha256": "feaa3a00bc361fda439f12d472b256aa8194e46d656e1436b2038f6acdcf7b9b",
+          "notes": "OrdinaryverifiedHTTPS200original fromcurrenthome, fullvisuallychecked. Completecrest/noaccreditationbadge substitution; officegatheringcaptionnotstudentclass/exteriorclaim. No crop/generation/upscale.",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0285-india-tamil-nadu-open-university"
+    }
+  ]
+}
