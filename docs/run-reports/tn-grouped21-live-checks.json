@@ -1,0 +1,66 @@
+[
+  {
+    "url": "https://www.studentstraffic.com/vel-tech-btech-aeronautical-engineering",
+    "kind": "programme",
+    "slug": "vel-tech-btech-aeronautical-engineering",
+    "status": 200,
+    "h1": "B.E./B.Tech Aerospace at Vel Tech Rangarajan Dr Sagunthala R&amp;D Institute of Science and Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/dsu-samayapuram-b-sc-artificial-intelligence-data-science",
+    "kind": "programme",
+    "slug": "dsu-samayapuram-b-sc-artificial-intelligence-data-science",
+    "status": 200,
+    "h1": "B.Sc. Computer Science at Dhanalakshmi Srinivasan University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/nmv-b-sc-agriculture",
+    "kind": "programme",
+    "slug": "nmv-b-sc-agriculture",
+    "status": 200,
+    "h1": "B.Sc. Agriculture at NMV University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/dhanalakshmi-srinivasan-university",
+    "kind": "university",
+    "slug": "dhanalakshmi-srinivasan-university",
+    "status": 200,
+    "h1": "Dhanalakshmi Srinivasan University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/nmv-university",
+    "kind": "university",
+    "slug": "nmv-university",
+    "status": 200,
+    "h1": "NMV University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/vel-tech-rangarajan-dr-sagunthala-rd-institute-of-science-and-technology",
+    "kind": "university",
+    "slug": "vel-tech-rangarajan-dr-sagunthala-rd-institute-of-science-and-technology",
+    "status": 200,
+    "h1": "Vel Tech Rangarajan Dr Sagunthala R&amp;D Institute of Science and Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/meenakshi-academy-of-higher-education-and-research",
+    "kind": "university",
+    "slug": "meenakshi-academy-of-higher-education-and-research",
+    "status": 200,
+    "h1": "Meenakshi Academy of Higher Education and Research",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/maher-b-com-general",
+    "kind": "programme",
+    "slug": "maher-b-com-general",
+    "status": 200,
+    "h1": "B.Com at Meenakshi Academy of Higher Education and Research",
+    "pass": true
+  }
+]

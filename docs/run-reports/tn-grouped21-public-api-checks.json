@@ -1,0 +1,58 @@
+[
+  {
+    "slug": "vel-tech-rangarajan-dr-sagunthala-rd-institute-of-science-and-technology",
+    "status": 200,
+    "expectedCount": 34,
+    "actualCount": 34,
+    "offerings": 34,
+    "recognitionCount": 2,
+    "expectedQuoteLabels": 34,
+    "actualQuoteLabels": 34,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "dhanalakshmi-srinivasan-university",
+    "status": 200,
+    "expectedCount": 15,
+    "actualCount": 15,
+    "offerings": 15,
+    "recognitionCount": 1,
+    "expectedQuoteLabels": 13,
+    "actualQuoteLabels": 13,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "nmv-university",
+    "status": 200,
+    "expectedCount": 3,
+    "actualCount": 3,
+    "offerings": 3,
+    "recognitionCount": 1,
+    "expectedQuoteLabels": 3,
+    "actualQuoteLabels": 3,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "meenakshi-academy-of-higher-education-and-research",
+    "status": 200,
+    "expectedCount": 62,
+    "actualCount": 62,
+    "offerings": 62,
+    "recognitionCount": 2,
+    "expectedQuoteLabels": 36,
+    "actualQuoteLabels": 36,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  }
+]
