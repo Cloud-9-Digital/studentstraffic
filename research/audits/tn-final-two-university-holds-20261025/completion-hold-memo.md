@@ -1,0 +1,11 @@
+# Final two Tamil Nadu university holds —25October2026
+
+Both remain **held** after one bounded review of retained primary evidence. No programme was reserved or published, and no legal conclusion is made.
+
+**Dhanalakshmi Srinivasan Institute of Science and Research:** its Siruvachur identity is supported by the retained DoHE notification dated24August2026, naming the medical, dental and nursing institutions. The precise programme-awarding transition remains unresolved. I independently parsed the retained2026–27 NMC records: Thuraiyur Road’s university field names DSISR, while the same record’s affiliation remark names the distinct DSIRT; Siruvachur’s medical record names MGR Medical University. These fields cannot safely be merged. One current read of the full DSISR homepage still shows three linked existing colleges and four explicitly proposed schools, without a new programme-specific awarding or admissions instrument. This is not a finding that any approval is invalid or that the university lacks degree powers.
+
+**Sri Venkateswaraa University:** retained statutory and UGC sources establish the exact university identity. Its Ordinances name Ettayapuram as Main Campus and Redhills as City Campus; retained UGC conditions and the id1357 record have not been reconciled with the exact current teaching/awarding scope at Redhills. The same-day retained record’s off-campus columns contain“--”; this does not independently prove that no approval exists. The single attempted live refresh of that UGC record was inaccessible, so it is not presented as a fresh live verification. Current professional approvals at Redhills are acknowledged. Exact programme prerequisites also remain unavailable in the retained placeholder eligibility controls. No conclusion about legality or professional approval validity is drawn.
+
+Resolution needs a precise primary campus/awarding crosswalk and programme-specific admissions evidence, rather than another generic institution search. Existing62-row DSISR and52-row Sri Venkateswaraa inventories and holds remain untouched. Paths, hashes and exact representative NMC fields are in assertions.json.
+
+No ledger mutation, new payload, numbering, database connection, media upload, commit, callback or email. Discovery is stopped as requested.

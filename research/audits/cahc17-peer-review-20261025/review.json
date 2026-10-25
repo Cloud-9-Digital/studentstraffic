@@ -1,0 +1,31 @@
+{
+  "reviewer": "sathyabama_resume",
+  "checkedAt": "2026-10-25",
+  "result": "PASS no material content blocker",
+  "payload": "content-migrations/0349-india-c-abdul-hakeem-college-melvisharam/payload.json",
+  "payloadSha256": "2267d249153a64a94b26b16b5eca04cafe91ce4aca325255d9069d801420a3fe",
+  "programmes": 17,
+  "checks": [
+    "Full current retained own programmes HTML:7aidedUG+7unaidedUG; BBA/BCAheld leaves12UG and5aidedPG. Unique offerings preserved, sameBComA/Bsections not duplicate awards.",
+    "Viewed complete dayprospectus-1.png: currently linked2020\u201321 item10 expressly no-coeducation. Public audience explicitly men/domestic, dated scope and no later women/overseas inference.",
+    "Own full UG2020 exact\u00a73 three-year/six-semester and \u00a78 English exceptmodernlanguages; BAEnglish omission retained. Own full PG2018\u00a72 University/Collegeconditions,\u00a73 two-year/four-semester,\u00a78 English.",
+    "Five exact TVU2023 annex4/8/10/12/19 qualifications crosschecked retained full shared text, including Physics irrelevant not used, MCom2BComcorepapercondition retained. Own autonomy/UniversityCollegecondition scope documented.",
+    "Viewed full native fee26-1.png andfee26-4.png:2026\u201327 aidedfirstyearIterm totals exact645/1145/1970/2420/1345 andPG1130/1380/2780/1380/3080; unaidedChem14000,CS24000,BAEnglish10000,BComCA17000,BComA/B15000\u201317000. No annualisation or false isolatedtuition, no asteriskNILinference.",
+    "Full UGC register exact1685arts/science distinguished1686engineering; actualsharedHTMLhash/provenance retained, no currentMadras affiliation borrowed.",
+    "Independently viewed complete official410x512crest and868x1160cover-clean.jpeg tree/path photograph. Rejectedcover.jpg marketingbanner is not manifestasset. Both assetchecksums match reviewedmanifest.",
+    "Actualcanonicalcontent:validate0349 PASS1,0expiredwarnings, explicitly offline/noDB."
+  ],
+  "media": [
+    {
+      "kind": "logo",
+      "path": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/cahc-melvisharam-20261025/logo.jpg",
+      "checksumMatches": true
+    },
+    {
+      "kind": "cover",
+      "path": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/cahc-melvisharam-20261025/cover-clean.jpeg",
+      "checksumMatches": true
+    }
+  ],
+  "constraints": "Read-only existing sources only; no new hunts or source/payload edits, no DB/upload/build/commit."
+}

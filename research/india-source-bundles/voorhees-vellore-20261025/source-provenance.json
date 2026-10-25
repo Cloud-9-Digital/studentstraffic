@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-25",
+  "affiliation": {
+    "sourceUrl": "https://www.voorheescollege.edu.in/frontend/assets/images/pdf/calendar-2024-2025.pdf",
+    "source": {
+      "path": "research/india-source-bundles/voorhees-vellore-20261025/calendar2024.pdf",
+      "bytes": 12788272,
+      "sha256": "921d8a70bceecff65bce924f7c87104c8975abfb5da00d26a113cf100208356e"
+    },
+    "actualPage": 2,
+    "visualCapture": "research/india-source-bundles/voorhees-vellore-20261025/calendar-check-002.png",
+    "clause": "Affiliated to Thiruvalluvar University",
+    "sourceYear": "2024\u201325",
+    "crosswalk": "Current own2026 admission pages and exact current aided/self-financing degree list; legacy UGC Madras column not asserted current"
+  },
+  "crest": {
+    "sourceUrl": "https://www.voorheescollege.edu.in/storage/media/1c600487-ab66-4832-a174-0c4fb6018c9f.pdf",
+    "source": {
+      "path": "research/india-source-bundles/voorhees-vellore-20261025/ug-shift1-eligibility.pdf",
+      "bytes": 145862,
+      "sha256": "3dd21b8a427b17840f65206aa88e06ec8b16fa31cb6b198356fd846ad3f917c4"
+    },
+    "asset": {
+      "path": "research/india-source-bundles/voorhees-vellore-20261025/ug-embedded-000.jpg",
+      "bytes": 7798,
+      "sha256": "e0cff5f9861900d2d55fdbe28487f5aa5ef0b1f56225d100425e8f01bf7b6f4d"
+    },
+    "method": "pdfimages -f1 -l1 -j, unchanged JPEG object11;175x176 full collegecrest and motto. Other embeddedCSIseal not used. Source URL is PDF, no directimage HTTP claim.",
+    "rootVisualApproved": true
+  },
+  "cover": {
+    "sourceUrl": "https://www.voorheescollege.edu.in/storage/file-manager/sliders/slider1.jpg",
+    "source": {
+      "path": "research/india-source-bundles/voorhees-vellore-20261025/cover.jpg",
+      "bytes": 523552,
+      "sha256": "f3250ca207aa7a4146c11dd11e460a25327db49d2e4398aa9e0c895847daf925"
+    },
+    "rootVisualApproved": true,
+    "caption": "Alumni reunion stage and gathering at Voorhees College, Vellore"
+  },
+  "reader": {
+    "command": "npx tsx research-drafts/india/validate-voorhees.ts",
+    "programmes": 32,
+    "migrations": 1,
+    "warnings": [],
+    "scope": "Temporaryfixture outside executable content-migrations; no reservation/DB/upload/build/commit"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "voorhees-college-vellore",
+      "universityName": "Voorhees College, Vellore",
+      "sourceBatch": "codex-tn-voorhees-vellore-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.voorheescollege.edu.in/storage/media/1c600487-ab66-4832-a174-0c4fb6018c9f.pdf",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.voorheescollege.edu.in/admissions/ug",
+          "rightsBasis": "Official college crest embedded unchanged in its current-linked undergraduate eligibility document and genuine college alumni-event photograph from its own homepage. Used for institutional identification and campus context; no open licence, transfer of ownership or capture-date claim.",
+          "altText": "Voorhees College complete crest and motto",
+          "visualCheck": "Unchanged JPEG object11 extracted via pdfimages from full own current-linked ShiftI eligibility PDF; sourceUrl is PDF, not a direct image HTTP response. Full175x176 original visually checked; no cropping/upscaling.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Unchanged JPEG object11 extracted via pdfimages from full own current-linked ShiftI eligibility PDF; sourceUrl is PDF, not a direct image HTTP response. Full175x176 original visually checked; no cropping/upscaling.",
+          "proposedPublicId": "studentstraffic/universities/voorhees-college-vellore/logo-20261025",
+          "localPath": "research/india-source-bundles/voorhees-vellore-20261025/ug-embedded-000.jpg",
+          "sha256": "e0cff5f9861900d2d55fdbe28487f5aa5ef0b1f56225d100425e8f01bf7b6f4d",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.voorheescollege.edu.in/storage/file-manager/sliders/slider1.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.voorheescollege.edu.in/",
+          "rightsBasis": "Official college crest embedded unchanged in its current-linked undergraduate eligibility document and genuine college alumni-event photograph from its own homepage. Used for institutional identification and campus context; no open licence, transfer of ownership or capture-date claim.",
+          "altText": "Alumni reunion stage and gathering at Voorhees College, Vellore",
+          "visualCheck": "Ordinary direct HTTPS200 and own homepage slider association; complete1400x450 original visually checked. No capture-date, exterior or high-resolution claim.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary direct HTTPS200 and own homepage slider association; complete1400x450 original visually checked. No capture-date, exterior or high-resolution claim.",
+          "proposedPublicId": "studentstraffic/universities/voorhees-college-vellore/cover-20261025",
+          "localPath": "research/india-source-bundles/voorhees-vellore-20261025/cover.jpg",
+          "sha256": "f3250ca207aa7a4146c11dd11e460a25327db49d2e4398aa9e0c895847daf925",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0350-india-voorhees-college-vellore"
+    }
+  ]
+}

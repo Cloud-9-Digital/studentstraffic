@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "the-american-college-madurai",
+      "universityName": "The American College, Madurai",
+      "sourceBatch": "codex-tn-american-college-madurai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://portal.americancollege.edu.in/api/public/images1.jpeg",
+          "sourceType": "official-university",
+          "sourcePage": "https://americancollege.edu.in/",
+          "rightsBasis": "Official college-published complete identifying crest and genuine main-campus photograph used for factual institutional identification and illustration; no open licence, ownership transfer or capture-date claim.",
+          "altText": "The American College complete crest and motto",
+          "visualCheck": "Full unchanged native original independently viewed and approved by root25October2026. OwncurrentrenderedhomepageDOMsourceassociation; no crop/syntheticimage/upscale/capturedateclaim.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "OrdinarypublicdirectHTTPS200, ownhomepage renderedDOM association, fulloriginalvisualreview.",
+          "proposedPublicId": "studentstraffic/universities/the-american-college-madurai/logo-20261025",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/american-college-madurai-20261025/crest.jpeg",
+          "sha256": "7fd3ad4fcf76240e80dc373e1839447d26f866bf08983149a7866fcb1beacdbd",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://portal.americancollege.edu.in/files_list/tac/fm/slider/IMG_3762-scaled-min.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://americancollege.edu.in/",
+          "rightsBasis": "Official college-published complete identifying crest and genuine main-campus photograph used for factual institutional identification and illustration; no open licence, ownership transfer or capture-date claim.",
+          "altText": "Tree-lined red-brick building at The American College main campus in Madurai",
+          "visualCheck": "Full unchanged native original independently viewed and approved by root25October2026. OwncurrentrenderedhomepageDOMsourceassociation; no crop/syntheticimage/upscale/capturedateclaim.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "OrdinarypublicdirectHTTPS200, ownhomepage renderedDOM association, fulloriginalvisualreview.",
+          "proposedPublicId": "studentstraffic/universities/the-american-college-madurai/cover-20261025",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/american-college-madurai-20261025/cover.jpg",
+          "sha256": "5bbf2100de0e667e48bd4d74f34fa504a93843100565bf264879237f2a6ea0ef",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0354-india-the-american-college-madurai"
+    }
+  ]
+}

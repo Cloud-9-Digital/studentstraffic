@@ -1,0 +1,27 @@
+[
+  {
+    "file": "ug2026.pdf",
+    "bytes": 9829665,
+    "sha256": "5417fd76c9d61ad8ec4947b1d619453521c1ee061a4b0f3c09bc944d18db0f82"
+  },
+  {
+    "file": "pg2026.pdf",
+    "bytes": 8598697,
+    "sha256": "e795e6271904498f7820aa8f496a910df079467f491b6d8eb105be9bef925fbc"
+  },
+  {
+    "file": "nirf2026.pdf",
+    "bytes": 69568,
+    "sha256": "7d4d8a7ce5edec17786ee9907fa52c7ab90924311c21cecb7de3a6483cf1d5d2"
+  },
+  {
+    "file": "handbook2026.pdf",
+    "bytes": 1020724,
+    "sha256": "973dc54d13216083cef9ee4c8fead2163a782c4fd2af138ccfd578f868faf97d"
+  },
+  {
+    "file": "fees-full-webparser.txt",
+    "bytes": 22150,
+    "sha256": "a4a3849b7e4972b03ba19fae6357140342383081ac2e78af9331b3ae816a6114"
+  }
+]

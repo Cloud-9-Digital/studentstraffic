@@ -1,0 +1,20 @@
+{
+  "reviewer": "sathyabama_resume",
+  "checkedAt": "2026-10-25",
+  "result": "PASS",
+  "payload": "content-migrations/0353-india-thiagarajar-college-madurai/payload.json",
+  "sha256": "2dce372d33e457691607c8219b05b62168d743083535bf01c501e0ab14b3b989",
+  "programmes": 43,
+  "quotes": 18,
+  "zeroQuotes": 10,
+  "checks": [
+    "Visuallyread current own2026\u201327 fullprospectus cover andtablesPDF12\u201315; exactcurrent31UG/16PG taughtdirectory less4professionalholds gives28UG/15PG43unique. Chemistryancillaryvariants consolidated.",
+    "Explicit3year6semesterUG includesBComHonours;2year4semesterPGtable nameddegreecells overrideobviouscopied+2columnheading. All43exactdegreequalifications matched, no genericPGguess.",
+    "Full2025\u201326handbookprinted23visuallyread: TuitionRs/semester AllUGNIL,PGArts250,PGScience375;10zeroquotesnarrowedonlyverifiedaidedUG,8positiveonlyaidedPG. All18GradeAofficial indicativepriorcycle, notannual/currentfreecourse orSFwaiver. Separatelab/depositcharges preserved.",
+    "Rootauthorizedprecisioncorrection PG MScBiotechnology nowexistingexactmsc-biotechnology with correspondinggenericmetadata; allotheracademicfacts unchanged. Builder/selectedinventory mapping preserved.",
+    "Full own357x336crest and originalembedded1080x720library-studyJPEG visuallyread againstcomplete2026prospectuscover; exactmanifesthashesmatch. No synthetic/upscaling/capturedateclaim.",
+    "FullindependentUGCregisterrow14207 distinctfromengineering/preceptors/schoolmanagement; actualretainedfullregulatorsource/hashmatched.",
+    "ActualtemporaryreaderPASS43/18quotes/0warnings; canonicalnumbered0353validatePASS1/0warnings offline/noDB."
+  ],
+  "constraints": "Existing sources only; no new hunts/DB/upload/build/commit. Focusedtaxonomy correction approved by root beforefreeze."
+}

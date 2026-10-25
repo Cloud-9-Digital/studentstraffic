@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-10-25",
+  "reader": "Full readContentMigrations temporary fixture; actual parsed payload and evidence gates",
+  "result": "PASS",
+  "programmes": 43,
+  "families": 22,
+  "evidence": 281,
+  "expired": 0,
+  "reportedQuotes": 18,
+  "nativeIndicativeSemesterZeroQuotes": 10,
+  "primaryAnnualUnknown": 43,
+  "mediaSha256Checks": 2,
+  "numberedReservation": false,
+  "dbAccess": false
+}

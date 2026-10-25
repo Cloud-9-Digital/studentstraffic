@@ -1,0 +1,346 @@
+
+> studentstraffic@0.1.0 content:validate
+> tsx scripts/migrate-content.ts --validate
+
+Skipping reserved content migration 0016-turkey-english-medicine: payload is not present yet.
+Skipping reserved content migration 0055-american-university-of-antigua-medicine: payload is not present yet.
+Skipping reserved content migration 0062-kosovo-university-of-prishtina-medicine: payload is not present yet.
+Skipping reserved content migration 0066-ghana-university-of-cape-coast-graduate-entry-mbchb: payload is not present yet.
+Skipping reserved content migration 0070-kenya-university-of-nairobi-mbchb: payload is not present yet.
+Skipping reserved content migration 0071-university-of-lagos-medicine: payload is not present yet.
+Skipping reserved content migration 0072-south-africa-university-of-cape-town-mbchb: payload is not present yet.
+Skipping reserved content migration 0074-russia-sechenov-university-general-medicine: payload is not present yet.
+Skipping reserved content migration 0075-russia-sechenov-general-medicine: payload is not present yet.
+Skipping reserved content migration 0076-russia-pirogov-university-general-medicine: payload is not present yet.
+Skipping reserved content migration 0077-russia-kazan-federal-university-general-medicine: payload is not present yet.
+Skipping reserved content migration 0078-greece-university-of-crete-international-medicine: payload is not present yet.
+Skipping reserved content migration 0082-bulgaria-medical-university-varna-medicine: payload is not present yet.
+Skipping reserved content migration 0087-slovakia-upjs-kosice-general-medicine: payload is not present yet.
+Skipping reserved content migration 0157-vals-institute-of-science-and-advanced-technologies: payload is not present yet.
+Skipping reserved content migration 0179-vel-tech-rangarajan-dr-sagunthala-rd-institute: payload is not present yet.
+Skipping reserved content migration 0185-india-vel-tech-rangarajan-dr-sagunthala-rd-institute: payload is not present yet.
+Warning: 0001-semmelweis-general-medicine evidence for 'identity' (semmelweis-university) has an expired review-by date (2026-09-18).
+Warning: 0001-semmelweis-general-medicine evidence for 'fee' (semmelweis-university-general-medicine) has an expired review-by date (2026-09-18).
+Warning: 0001-semmelweis-general-medicine evidence for 'eligibility' (semmelweis-university-general-medicine) has an expired review-by date (2026-09-18).
+Warning: 0001-semmelweis-general-medicine evidence for 'admissions' (semmelweis-university-general-medicine) has an expired review-by date (2026-09-18).
+Warning: 0001-semmelweis-general-medicine evidence for 'intake' (semmelweis-university-general-medicine) has an expired review-by date (2026-09-18).
+Warning: 0002-umd-computer-science evidence for 'international-support' (university-of-maryland-college-park) has an expired review-by date (2026-09-18).
+Warning: 0002-umd-computer-science evidence for 'eligibility' (umd-bs-computer-science) has an expired review-by date (2026-09-18).
+Warning: 0002-umd-computer-science evidence for 'english-proficiency' (umd-bs-computer-science) has an expired review-by date (2026-09-18).
+Warning: 0002-umd-computer-science evidence for 'admissions' (umd-bs-computer-science) has an expired review-by date (2026-09-18).
+Warning: 0002-umd-computer-science evidence for 'intake' (umd-bs-computer-science) has an expired review-by date (2026-09-18).
+Warning: 0002-umd-computer-science evidence for 'fee' (umd-bs-computer-science) has an expired review-by date (2026-09-18).
+Warning: 0002-umd-computer-science evidence for 'transfer-route' (umd-bs-computer-science) has an expired review-by date (2026-09-18).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'fee' (dai-nam-university-faculty-of-medicine-mbbs) has an expired review-by date (2026-10-18).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'eligibility' (dai-nam-university-faculty-of-medicine-mbbs) has an expired review-by date (2026-10-18).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'admissions' (dai-nam-university-faculty-of-medicine-mbbs) has an expired review-by date (2026-10-18).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'intake' (dai-nam-university-faculty-of-medicine-mbbs) has an expired review-by date (2026-10-18).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'fee' (dong-a-university-college-of-medicine-mbbs) has an expired review-by date (2026-10-18).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'eligibility' (dong-a-university-college-of-medicine-mbbs) has an expired review-by date (2026-10-18).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'admissions' (dong-a-university-college-of-medicine-mbbs) has an expired review-by date (2026-10-18).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'intake' (dong-a-university-college-of-medicine-mbbs) has an expired review-by date (2026-10-18).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'fee' (buon-ma-thuot-medical-university-mbbs) has an expired review-by date (2026-09-30).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'eligibility' (buon-ma-thuot-medical-university-mbbs) has an expired review-by date (2026-09-30).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'admissions' (buon-ma-thuot-medical-university-mbbs) has an expired review-by date (2026-09-30).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'intake' (buon-ma-thuot-medical-university-mbbs) has an expired review-by date (2026-09-30).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'fee' (can-tho-university-medicine-pharmacy-mbbs) has an expired review-by date (2026-10-18).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'eligibility' (can-tho-university-medicine-pharmacy-mbbs) has an expired review-by date (2026-10-18).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'admissions' (can-tho-university-medicine-pharmacy-mbbs) has an expired review-by date (2026-10-18).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'intake' (can-tho-university-medicine-pharmacy-mbbs) has an expired review-by date (2026-10-18).
+Warning: 0004-philippines-nursing-batch evidence for 'eligibility' (angeles-university-foundation-bsc-nursing) has an expired review-by date (2026-10-23).
+Warning: 0004-philippines-nursing-batch evidence for 'admissions' (angeles-university-foundation-bsc-nursing) has an expired review-by date (2026-10-23).
+Warning: 0004-philippines-nursing-batch evidence for 'intake' (angeles-university-foundation-bsc-nursing) has an expired review-by date (2026-09-23).
+Warning: 0004-philippines-nursing-batch evidence for 'fee' (angeles-university-foundation-bsc-nursing) has an expired review-by date (2026-10-23).
+Warning: 0005-uzbekistan-tuit-2026 evidence for 'eligibility' (tuit-software-engineering-bachelors) has an expired review-by date (2026-10-23).
+Warning: 0005-uzbekistan-tuit-2026 evidence for 'admissions' (tuit-software-engineering-bachelors) has an expired review-by date (2026-10-23).
+Warning: 0005-uzbekistan-tuit-2026 evidence for 'intake' (tuit-software-engineering-bachelors) has an expired review-by date (2026-10-23).
+Warning: 0005-uzbekistan-tuit-2026 evidence for 'fee' (tuit-software-engineering-bachelors) has an expired review-by date (2026-10-23).
+Warning: 0005-uzbekistan-tuit-2026 evidence for 'instruction_language' (tuit-software-engineering-bachelors) has an expired review-by date (2026-10-23).
+Warning: 0006-germany-italy-university-batch evidence for 'eligibility' (university-of-bonn-msc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0006-germany-italy-university-batch evidence for 'admissions' (university-of-bonn-msc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0006-germany-italy-university-batch evidence for 'intake' (university-of-bonn-msc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0006-germany-italy-university-batch evidence for 'fee' (university-of-bonn-msc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0006-germany-italy-university-batch evidence for 'eligibility' (tu-dresden-msc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0006-germany-italy-university-batch evidence for 'admissions' (tu-dresden-msc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0006-germany-italy-university-batch evidence for 'intake' (tu-dresden-msc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0006-germany-italy-university-batch evidence for 'fee' (tu-dresden-msc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0006-germany-italy-university-batch evidence for 'eligibility' (university-of-naples-federico-ii-medicine-surgery-english) has an expired review-by date (2026-10-23).
+Warning: 0006-germany-italy-university-batch evidence for 'admissions' (university-of-naples-federico-ii-medicine-surgery-english) has an expired review-by date (2026-10-23).
+Warning: 0006-germany-italy-university-batch evidence for 'intake' (university-of-naples-federico-ii-medicine-surgery-english) has an expired review-by date (2026-10-23).
+Warning: 0006-germany-italy-university-batch evidence for 'fee' (university-of-naples-federico-ii-medicine-surgery-english) has an expired review-by date (2026-10-23).
+Warning: 0007-uk-lsbu-computer-science evidence for 'admissions' (lsbu-bsc-computer-science) has an expired review-by date (2026-10-25).
+Warning: 0007-uk-lsbu-computer-science evidence for 'intake' (lsbu-bsc-computer-science) has an expired review-by date (2026-10-25).
+Warning: 0007-uk-lsbu-computer-science evidence for 'fee' (lsbu-bsc-computer-science) has an expired review-by date (2026-10-25).
+Warning: 0008-bangladesh-dcimc-mbbs evidence for 'eligibility' (dhaka-central-international-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0008-bangladesh-dcimc-mbbs evidence for 'eligibility' (dhaka-central-international-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0008-bangladesh-dcimc-mbbs evidence for 'admissions' (dhaka-central-international-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0008-bangladesh-dcimc-mbbs evidence for 'intake' (dhaka-central-international-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0008-bangladesh-dcimc-mbbs evidence for 'fee' (dhaka-central-international-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0009-uk-gcu-computer-science evidence for 'admissions' (gcu-msc-computer-science-glasgow) has an expired review-by date (2026-10-25).
+Warning: 0009-uk-gcu-computer-science evidence for 'intake' (gcu-msc-computer-science-glasgow) has an expired review-by date (2026-10-25).
+Warning: 0009-uk-gcu-computer-science evidence for 'fee' (gcu-msc-computer-science-glasgow) has an expired review-by date (2026-10-25).
+Warning: 0010-uk-anglia-ruskin-university evidence for 'eligibility' (anglia-ruskin-university-mbchb-medicine) has an expired review-by date (2026-10-23).
+Warning: 0010-uk-anglia-ruskin-university evidence for 'admissions' (anglia-ruskin-university-mbchb-medicine) has an expired review-by date (2026-10-23).
+Warning: 0010-uk-anglia-ruskin-university evidence for 'intake' (anglia-ruskin-university-mbchb-medicine) has an expired review-by date (2026-10-23).
+Warning: 0010-uk-anglia-ruskin-university evidence for 'fee' (anglia-ruskin-university-mbchb-medicine) has an expired review-by date (2026-10-23).
+Warning: 0011-uk-robert-gordon-university-2026 evidence for 'eligibility' (rgu-bsc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0011-uk-robert-gordon-university-2026 evidence for 'admissions' (rgu-bsc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0011-uk-robert-gordon-university-2026 evidence for 'intake' (rgu-bsc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0011-uk-robert-gordon-university-2026 evidence for 'fee' (rgu-bsc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0011-uk-robert-gordon-university-2026 evidence for 'instruction_language' (rgu-bsc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0012-bangladesh-bmc-mbbs evidence for 'eligibility' (bangladesh-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0012-bangladesh-bmc-mbbs evidence for 'admissions' (bangladesh-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0012-bangladesh-bmc-mbbs evidence for 'intake' (bangladesh-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0012-bangladesh-bmc-mbbs evidence for 'fee' (bangladesh-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0013-armenia-yerevan-haybusak-mbbs evidence for 'recognition' (yerevan-haybusak-university) has an expired review-by date (2026-10-23).
+Warning: 0013-armenia-yerevan-haybusak-mbbs evidence for 'eligibility' (yerevan-haybusak-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0013-armenia-yerevan-haybusak-mbbs evidence for 'eligibility' (yerevan-haybusak-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0013-armenia-yerevan-haybusak-mbbs evidence for 'admissions' (yerevan-haybusak-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0013-armenia-yerevan-haybusak-mbbs evidence for 'intake' (yerevan-haybusak-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0013-armenia-yerevan-haybusak-mbbs evidence for 'fee' (yerevan-haybusak-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0014-armenia-ysmu-mbbs evidence for 'eligibility' (yerevan-state-medical-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0014-armenia-ysmu-mbbs evidence for 'admissions' (yerevan-state-medical-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0014-armenia-ysmu-mbbs evidence for 'intake' (yerevan-state-medical-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0014-armenia-ysmu-mbbs evidence for 'fee' (yerevan-state-medical-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0015-georgia-medical-universities evidence for 'fee' (university-of-georgia-tbilisi-medicine) has an expired review-by date (2026-10-25).
+Warning: 0015-georgia-medical-universities evidence for 'fee' (caucasus-international-university-medicine) has an expired review-by date (2026-10-25).
+Warning: 0017-kazakhstan-al-farabi-mbbs evidence for 'eligibility' (al-farabi-kazakh-national-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0017-kazakhstan-al-farabi-mbbs evidence for 'eligibility' (al-farabi-kazakh-national-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0017-kazakhstan-al-farabi-mbbs evidence for 'admissions' (al-farabi-kazakh-national-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0017-kazakhstan-al-farabi-mbbs evidence for 'intake' (al-farabi-kazakh-national-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0017-kazakhstan-al-farabi-mbbs evidence for 'fee' (al-farabi-kazakh-national-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0018-bosnia-sarajevo-mbbs evidence for 'eligibility' (university-of-sarajevo-faculty-of-medicine-md) has an expired review-by date (2026-10-23).
+Warning: 0018-bosnia-sarajevo-mbbs evidence for 'admissions' (university-of-sarajevo-faculty-of-medicine-md) has an expired review-by date (2026-10-23).
+Warning: 0018-bosnia-sarajevo-mbbs evidence for 'intake' (university-of-sarajevo-faculty-of-medicine-md) has an expired review-by date (2026-10-23).
+Warning: 0018-bosnia-sarajevo-mbbs evidence for 'fee' (university-of-sarajevo-faculty-of-medicine-md) has an expired review-by date (2026-10-23).
+Warning: 0019-north-macedonia-goce-delcev-mbbs evidence for 'eligibility' (goce-delcev-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0019-north-macedonia-goce-delcev-mbbs evidence for 'admissions' (goce-delcev-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0019-north-macedonia-goce-delcev-mbbs evidence for 'intake' (goce-delcev-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0019-north-macedonia-goce-delcev-mbbs evidence for 'fee' (goce-delcev-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0020-north-macedonia-ukim-skopje-mbbs evidence for 'eligibility' (ss-cyril-and-methodius-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0020-north-macedonia-ukim-skopje-mbbs evidence for 'admissions' (ss-cyril-and-methodius-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0020-north-macedonia-ukim-skopje-mbbs evidence for 'intake' (ss-cyril-and-methodius-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0020-north-macedonia-ukim-skopje-mbbs evidence for 'fee' (ss-cyril-and-methodius-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0021-poland-jagiellonian-mbbs evidence for 'eligibility' (jagiellonian-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0021-poland-jagiellonian-mbbs evidence for 'admissions' (jagiellonian-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0021-poland-jagiellonian-mbbs evidence for 'intake' (jagiellonian-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0021-poland-jagiellonian-mbbs evidence for 'fee' (jagiellonian-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0022-poland-warsaw-mbbs evidence for 'eligibility' (medical-university-of-warsaw-medicine) has an expired review-by date (2026-10-23).
+Warning: 0022-poland-warsaw-mbbs evidence for 'admissions' (medical-university-of-warsaw-medicine) has an expired review-by date (2026-10-23).
+Warning: 0022-poland-warsaw-mbbs evidence for 'intake' (medical-university-of-warsaw-medicine) has an expired review-by date (2026-10-23).
+Warning: 0022-poland-warsaw-mbbs evidence for 'fee' (medical-university-of-warsaw-medicine) has an expired review-by date (2026-10-23).
+Warning: 0023-poland-gdansk-mbbs evidence for 'eligibility' (medical-university-of-gdansk-medicine) has an expired review-by date (2026-10-23).
+Warning: 0023-poland-gdansk-mbbs evidence for 'admissions' (medical-university-of-gdansk-medicine) has an expired review-by date (2026-10-23).
+Warning: 0023-poland-gdansk-mbbs evidence for 'intake' (medical-university-of-gdansk-medicine) has an expired review-by date (2026-10-23).
+Warning: 0023-poland-gdansk-mbbs evidence for 'fee' (medical-university-of-gdansk-medicine) has an expired review-by date (2026-10-23).
+Warning: 0024-poland-poznan-mbbs evidence for 'eligibility' (poznan-university-of-medical-sciences-medicine) has an expired review-by date (2026-10-23).
+Warning: 0024-poland-poznan-mbbs evidence for 'admissions' (poznan-university-of-medical-sciences-medicine) has an expired review-by date (2026-10-23).
+Warning: 0024-poland-poznan-mbbs evidence for 'intake' (poznan-university-of-medical-sciences-medicine) has an expired review-by date (2026-10-23).
+Warning: 0024-poland-poznan-mbbs evidence for 'fee' (poznan-university-of-medical-sciences-medicine) has an expired review-by date (2026-10-23).
+Warning: 0025-serbia-nis-mbbs evidence for 'eligibility' (university-of-nis-faculty-of-medicine-medicine) has an expired review-by date (2026-10-23).
+Warning: 0025-serbia-nis-mbbs evidence for 'admissions' (university-of-nis-faculty-of-medicine-medicine) has an expired review-by date (2026-10-23).
+Warning: 0025-serbia-nis-mbbs evidence for 'intake' (university-of-nis-faculty-of-medicine-medicine) has an expired review-by date (2026-10-23).
+Warning: 0025-serbia-nis-mbbs evidence for 'fee' (university-of-nis-faculty-of-medicine-medicine) has an expired review-by date (2026-10-23).
+Warning: 0026-serbia-novi-sad-mbbs evidence for 'eligibility' (university-of-novi-sad-faculty-of-medicine-medicine) has an expired review-by date (2026-10-23).
+Warning: 0026-serbia-novi-sad-mbbs evidence for 'admissions' (university-of-novi-sad-faculty-of-medicine-medicine) has an expired review-by date (2026-10-23).
+Warning: 0026-serbia-novi-sad-mbbs evidence for 'intake' (university-of-novi-sad-faculty-of-medicine-medicine) has an expired review-by date (2026-10-23).
+Warning: 0026-serbia-novi-sad-mbbs evidence for 'fee' (university-of-novi-sad-faculty-of-medicine-medicine) has an expired review-by date (2026-10-23).
+Warning: 0027-serbia-kragujevac-mbbs evidence for 'eligibility' (university-of-kragujevac-faculty-of-medical-sciences-medicine) has an expired review-by date (2026-10-23).
+Warning: 0027-serbia-kragujevac-mbbs evidence for 'admissions' (university-of-kragujevac-faculty-of-medical-sciences-medicine) has an expired review-by date (2026-10-23).
+Warning: 0027-serbia-kragujevac-mbbs evidence for 'intake' (university-of-kragujevac-faculty-of-medical-sciences-medicine) has an expired review-by date (2026-10-23).
+Warning: 0027-serbia-kragujevac-mbbs evidence for 'fee' (university-of-kragujevac-faculty-of-medical-sciences-medicine) has an expired review-by date (2026-10-23).
+Warning: 0028-ireland-rcsi-mbbs evidence for 'eligibility' (rcsi-university-of-medicine-and-health-sciences-direct-entry-medicine) has an expired review-by date (2026-10-23).
+Warning: 0028-ireland-rcsi-mbbs evidence for 'admissions' (rcsi-university-of-medicine-and-health-sciences-direct-entry-medicine) has an expired review-by date (2026-10-23).
+Warning: 0028-ireland-rcsi-mbbs evidence for 'intake' (rcsi-university-of-medicine-and-health-sciences-direct-entry-medicine) has an expired review-by date (2026-10-23).
+Warning: 0028-ireland-rcsi-mbbs evidence for 'fee' (rcsi-university-of-medicine-and-health-sciences-direct-entry-medicine) has an expired review-by date (2026-10-23).
+Warning: 0029-bahrain-rcsi-mbbs evidence for 'eligibility' (rcsi-medical-university-of-bahrain-undergraduate-medicine) has an expired review-by date (2026-10-23).
+Warning: 0029-bahrain-rcsi-mbbs evidence for 'admissions' (rcsi-medical-university-of-bahrain-undergraduate-medicine) has an expired review-by date (2026-10-23).
+Warning: 0029-bahrain-rcsi-mbbs evidence for 'intake' (rcsi-medical-university-of-bahrain-undergraduate-medicine) has an expired review-by date (2026-10-23).
+Warning: 0029-bahrain-rcsi-mbbs evidence for 'fee' (rcsi-medical-university-of-bahrain-undergraduate-medicine) has an expired review-by date (2026-10-23).
+Warning: 0030-mauritius-ssr-mbbs evidence for 'eligibility' (ssr-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0030-mauritius-ssr-mbbs evidence for 'admissions' (ssr-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0030-mauritius-ssr-mbbs evidence for 'intake' (ssr-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0030-mauritius-ssr-mbbs evidence for 'fee' (ssr-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0031-moldova-testemitanu-mbbs evidence for 'eligibility' (nicolae-testemitanu-state-university-of-medicine-and-pharmacy-medicine) has an expired review-by date (2026-10-23).
+Warning: 0031-moldova-testemitanu-mbbs evidence for 'admissions' (nicolae-testemitanu-state-university-of-medicine-and-pharmacy-medicine) has an expired review-by date (2026-10-23).
+Warning: 0031-moldova-testemitanu-mbbs evidence for 'intake' (nicolae-testemitanu-state-university-of-medicine-and-pharmacy-medicine) has an expired review-by date (2026-10-23).
+Warning: 0031-moldova-testemitanu-mbbs evidence for 'fee' (nicolae-testemitanu-state-university-of-medicine-and-pharmacy-medicine) has an expired review-by date (2026-10-23).
+Warning: 0032-slovakia-comenius-mbbs evidence for 'eligibility' (comenius-university-bratislava-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0032-slovakia-comenius-mbbs evidence for 'admissions' (comenius-university-bratislava-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0032-slovakia-comenius-mbbs evidence for 'intake' (comenius-university-bratislava-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0032-slovakia-comenius-mbbs evidence for 'fee' (comenius-university-bratislava-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0033-slovakia-slovak-medical-university-mbbs evidence for 'eligibility' (slovak-medical-university-bratislava-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0033-slovakia-slovak-medical-university-mbbs evidence for 'admissions' (slovak-medical-university-bratislava-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0033-slovakia-slovak-medical-university-mbbs evidence for 'intake' (slovak-medical-university-bratislava-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0033-slovakia-slovak-medical-university-mbbs evidence for 'fee' (slovak-medical-university-bratislava-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0034-latvia-university-of-latvia-mbbs evidence for 'eligibility' (university-of-latvia-medicine) has an expired review-by date (2026-10-23).
+Warning: 0034-latvia-university-of-latvia-mbbs evidence for 'admissions' (university-of-latvia-medicine) has an expired review-by date (2026-10-23).
+Warning: 0034-latvia-university-of-latvia-mbbs evidence for 'intake' (university-of-latvia-medicine) has an expired review-by date (2026-10-23).
+Warning: 0034-latvia-university-of-latvia-mbbs evidence for 'fee' (university-of-latvia-medicine) has an expired review-by date (2026-10-23).
+Warning: 0035-latvia-riga-stradins-mbbs evidence for 'eligibility' (riga-stradins-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0035-latvia-riga-stradins-mbbs evidence for 'admissions' (riga-stradins-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0035-latvia-riga-stradins-mbbs evidence for 'intake' (riga-stradins-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0035-latvia-riga-stradins-mbbs evidence for 'fee' (riga-stradins-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0036-czechia-palacky-olomouc-mbbs evidence for 'eligibility' (palacky-university-olomouc-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0036-czechia-palacky-olomouc-mbbs evidence for 'admissions' (palacky-university-olomouc-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0036-czechia-palacky-olomouc-mbbs evidence for 'intake' (palacky-university-olomouc-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0036-czechia-palacky-olomouc-mbbs evidence for 'fee' (palacky-university-olomouc-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0037-czechia-ostrava-mbbs evidence for 'eligibility' (university-of-ostrava-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0037-czechia-ostrava-mbbs evidence for 'admissions' (university-of-ostrava-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0037-czechia-ostrava-mbbs evidence for 'intake' (university-of-ostrava-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0037-czechia-ostrava-mbbs evidence for 'fee' (university-of-ostrava-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0038-cyprus-european-university-mbbs evidence for 'eligibility' (european-university-cyprus-doctor-of-medicine) has an expired review-by date (2026-10-23).
+Warning: 0038-cyprus-european-university-mbbs evidence for 'admissions' (european-university-cyprus-doctor-of-medicine) has an expired review-by date (2026-10-23).
+Warning: 0038-cyprus-european-university-mbbs evidence for 'intake' (european-university-cyprus-doctor-of-medicine) has an expired review-by date (2026-10-23).
+Warning: 0038-cyprus-european-university-mbbs evidence for 'fee' (european-university-cyprus-doctor-of-medicine) has an expired review-by date (2026-10-23).
+Warning: 0039-cyprus-nicosia-mbbs evidence for 'eligibility' (university-of-nicosia-6-year-md) has an expired review-by date (2026-10-23).
+Warning: 0039-cyprus-nicosia-mbbs evidence for 'admissions' (university-of-nicosia-6-year-md) has an expired review-by date (2026-10-23).
+Warning: 0039-cyprus-nicosia-mbbs evidence for 'intake' (university-of-nicosia-6-year-md) has an expired review-by date (2026-10-23).
+Warning: 0039-cyprus-nicosia-mbbs evidence for 'fee' (university-of-nicosia-6-year-md) has an expired review-by date (2026-10-23).
+Warning: 0040-fiji-university-of-fiji-mbbs evidence for 'eligibility' (university-of-fiji-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0040-fiji-university-of-fiji-mbbs evidence for 'admissions' (university-of-fiji-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0040-fiji-university-of-fiji-mbbs evidence for 'intake' (university-of-fiji-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0040-fiji-university-of-fiji-mbbs evidence for 'fee' (university-of-fiji-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0041-ghana-knust-mbchb evidence for 'eligibility' (knust-bsc-human-biology-medicine-mbchb) has an expired review-by date (2026-10-23).
+Warning: 0041-ghana-knust-mbchb evidence for 'admissions' (knust-bsc-human-biology-medicine-mbchb) has an expired review-by date (2026-10-23).
+Warning: 0041-ghana-knust-mbchb evidence for 'intake' (knust-bsc-human-biology-medicine-mbchb) has an expired review-by date (2026-10-23).
+Warning: 0041-ghana-knust-mbchb evidence for 'fee' (knust-bsc-human-biology-medicine-mbchb) has an expired review-by date (2026-10-23).
+Warning: 0042-zambia-university-of-zambia-mbchb evidence for 'eligibility' (university-of-zambia-mbchb) has an expired review-by date (2026-10-23).
+Warning: 0042-zambia-university-of-zambia-mbchb evidence for 'admissions' (university-of-zambia-mbchb) has an expired review-by date (2026-10-23).
+Warning: 0042-zambia-university-of-zambia-mbchb evidence for 'intake' (university-of-zambia-mbchb) has an expired review-by date (2026-10-23).
+Warning: 0042-zambia-university-of-zambia-mbchb evidence for 'fee' (university-of-zambia-mbchb) has an expired review-by date (2026-10-23).
+Warning: 0043-zambia-texila-american-university-mbchb evidence for 'eligibility' (texila-american-university-zambia-mbchb) has an expired review-by date (2026-10-23).
+Warning: 0043-zambia-texila-american-university-mbchb evidence for 'admissions' (texila-american-university-zambia-mbchb) has an expired review-by date (2026-10-23).
+Warning: 0043-zambia-texila-american-university-mbchb evidence for 'intake' (texila-american-university-zambia-mbchb) has an expired review-by date (2026-10-23).
+Warning: 0043-zambia-texila-american-university-mbchb evidence for 'fee' (texila-american-university-zambia-mbchb) has an expired review-by date (2026-10-23).
+Warning: 0044-romania-iuliu-hatieganu-mbbs evidence for 'eligibility' (iuliu-hatieganu-university-of-medicine-and-pharmacy-medicine) has an expired review-by date (2026-10-25).
+Warning: 0044-romania-iuliu-hatieganu-mbbs evidence for 'admissions' (iuliu-hatieganu-university-of-medicine-and-pharmacy-medicine) has an expired review-by date (2026-10-25).
+Warning: 0044-romania-iuliu-hatieganu-mbbs evidence for 'intake' (iuliu-hatieganu-university-of-medicine-and-pharmacy-medicine) has an expired review-by date (2026-10-25).
+Warning: 0044-romania-iuliu-hatieganu-mbbs evidence for 'fee' (iuliu-hatieganu-university-of-medicine-and-pharmacy-medicine) has an expired review-by date (2026-10-25).
+Warning: 0044-romania-iuliu-hatieganu-mbbs evidence for 'student living' (iuliu-hatieganu-university-of-medicine-and-pharmacy) has an expired review-by date (2026-10-25).
+Warning: 0045-romania-carol-davila-mbbs evidence for 'eligibility' (carol-davila-university-of-medicine-and-pharmacy-general-medicine) has an expired review-by date (2026-10-25).
+Warning: 0045-romania-carol-davila-mbbs evidence for 'admissions' (carol-davila-university-of-medicine-and-pharmacy-general-medicine) has an expired review-by date (2026-09-11).
+Warning: 0045-romania-carol-davila-mbbs evidence for 'fee' (carol-davila-university-of-medicine-and-pharmacy-general-medicine) has an expired review-by date (2026-10-25).
+Warning: 0045-romania-carol-davila-mbbs evidence for 'student living' (carol-davila-university-of-medicine-and-pharmacy) has an expired review-by date (2026-10-25).
+Warning: 0046-uae-gulf-medical-university-md evidence for 'eligibility' (gulf-medical-university-md) has an expired review-by date (2026-10-25).
+Warning: 0046-uae-gulf-medical-university-md evidence for 'admissions' (gulf-medical-university-md) has an expired review-by date (2026-10-25).
+Warning: 0046-uae-gulf-medical-university-md evidence for 'intake' (gulf-medical-university-md) has an expired review-by date (2026-10-25).
+Warning: 0046-uae-gulf-medical-university-md evidence for 'fee' (gulf-medical-university-md) has an expired review-by date (2026-10-25).
+Warning: 0046-uae-gulf-medical-university-md evidence for 'student living' (gulf-medical-university) has an expired review-by date (2026-10-25).
+Warning: 0047-tanzania-muhimbili-md evidence for 'eligibility' (muhimbili-university-of-health-and-allied-sciences-md) has an expired review-by date (2026-10-25).
+Warning: 0047-tanzania-muhimbili-md evidence for 'admissions' (muhimbili-university-of-health-and-allied-sciences-md) has an expired review-by date (2026-10-25).
+Warning: 0047-tanzania-muhimbili-md evidence for 'intake' (muhimbili-university-of-health-and-allied-sciences-md) has an expired review-by date (2026-10-25).
+Warning: 0047-tanzania-muhimbili-md evidence for 'fee' (muhimbili-university-of-health-and-allied-sciences-md) has an expired review-by date (2026-10-25).
+Warning: 0048-tanzania-kcmc-university-md evidence for 'eligibility' (kcmc-university-md) has an expired review-by date (2026-10-25).
+Warning: 0048-tanzania-kcmc-university-md evidence for 'admissions' (kcmc-university-md) has an expired review-by date (2026-10-25).
+Warning: 0048-tanzania-kcmc-university-md evidence for 'intake' (kcmc-university-md) has an expired review-by date (2026-10-25).
+Warning: 0048-tanzania-kcmc-university-md evidence for 'fee' (kcmc-university-md) has an expired review-by date (2026-10-25).
+Warning: 0048-tanzania-kcmc-university-md evidence for 'student living' (kcmc-university) has an expired review-by date (2026-10-25).
+Warning: 0049-portugal-catolica-medical-school evidence for 'eligibility' (catolica-medical-school-integrated-master-medicine) has an expired review-by date (2026-10-25).
+Warning: 0049-portugal-catolica-medical-school evidence for 'admissions' (catolica-medical-school-integrated-master-medicine) has an expired review-by date (2026-10-25).
+Warning: 0049-portugal-catolica-medical-school evidence for 'intake' (catolica-medical-school-integrated-master-medicine) has an expired review-by date (2026-10-25).
+Warning: 0049-portugal-catolica-medical-school evidence for 'fee' (catolica-medical-school-integrated-master-medicine) has an expired review-by date (2026-10-25).
+Warning: 0049-portugal-catolica-medical-school evidence for 'student living' (catolica-medical-school) has an expired review-by date (2026-10-25).
+Warning: 0050-croatia-university-of-split-mbbs evidence for 'eligibility' (university-of-split-school-of-medicine-medical-studies-in-english) has an expired review-by date (2026-10-25).
+Warning: 0050-croatia-university-of-split-mbbs evidence for 'admissions' (university-of-split-school-of-medicine-medical-studies-in-english) has an expired review-by date (2026-10-25).
+Warning: 0050-croatia-university-of-split-mbbs evidence for 'intake' (university-of-split-school-of-medicine-medical-studies-in-english) has an expired review-by date (2026-10-25).
+Warning: 0050-croatia-university-of-split-mbbs evidence for 'fee' (university-of-split-school-of-medicine-medical-studies-in-english) has an expired review-by date (2026-10-25).
+Warning: 0050-croatia-university-of-split-mbbs evidence for 'student living' (university-of-split-school-of-medicine) has an expired review-by date (2026-10-25).
+Warning: 0052-uganda-mbarara-university-mbchb evidence for 'eligibility' (mbarara-university-of-science-and-technology-mbchb) has an expired review-by date (2026-10-25).
+Warning: 0052-uganda-mbarara-university-mbchb evidence for 'admissions' (mbarara-university-of-science-and-technology-mbchb) has an expired review-by date (2026-10-25).
+Warning: 0052-uganda-mbarara-university-mbchb evidence for 'intake' (mbarara-university-of-science-and-technology-mbchb) has an expired review-by date (2026-10-25).
+Warning: 0052-uganda-mbarara-university-mbchb evidence for 'fee' (mbarara-university-of-science-and-technology-mbchb) has an expired review-by date (2026-10-25).
+Warning: 0052-uganda-mbarara-university-mbchb evidence for 'student living' (mbarara-university-of-science-and-technology-faculty-of-medicine) has an expired review-by date (2026-10-25).
+Warning: 0053-university-of-mostar-medicine evidence for 'eligibility' (university-of-mostar-faculty-of-medicine-md) has an expired review-by date (2026-10-15).
+Warning: 0053-university-of-mostar-medicine evidence for 'admissions' (university-of-mostar-faculty-of-medicine-md) has an expired review-by date (2026-10-15).
+Warning: 0053-university-of-mostar-medicine evidence for 'intake' (university-of-mostar-faculty-of-medicine-md) has an expired review-by date (2026-10-15).
+Warning: 0053-university-of-mostar-medicine evidence for 'fee' (university-of-mostar-faculty-of-medicine-md) has an expired review-by date (2026-10-15).
+Warning: 0054-uganda-makerere-university-mbchb evidence for 'eligibility' (makerere-university-college-of-health-sciences-mbchb) has an expired review-by date (2026-10-25).
+Warning: 0054-uganda-makerere-university-mbchb evidence for 'admissions' (makerere-university-college-of-health-sciences-mbchb) has an expired review-by date (2026-10-25).
+Warning: 0054-uganda-makerere-university-mbchb evidence for 'intake' (makerere-university-college-of-health-sciences-mbchb) has an expired review-by date (2026-10-25).
+Warning: 0054-uganda-makerere-university-mbchb evidence for 'fee' (makerere-university-college-of-health-sciences-mbchb) has an expired review-by date (2026-10-25).
+Warning: 0054-uganda-makerere-university-mbchb evidence for 'student living' (makerere-university-college-of-health-sciences) has an expired review-by date (2026-10-25).
+Warning: 0056-estonia-university-of-tartu-medicine evidence for 'eligibility' (university-of-tartu-medicine) has an expired review-by date (2026-10-25).
+Warning: 0056-estonia-university-of-tartu-medicine evidence for 'admissions' (university-of-tartu-medicine) has an expired review-by date (2026-10-25).
+Warning: 0056-estonia-university-of-tartu-medicine evidence for 'intake' (university-of-tartu-medicine) has an expired review-by date (2026-10-25).
+Warning: 0056-estonia-university-of-tartu-medicine evidence for 'fee' (university-of-tartu-medicine) has an expired review-by date (2026-10-25).
+Warning: 0056-estonia-university-of-tartu-medicine evidence for 'student living' (university-of-tartu-faculty-of-medicine) has an expired review-by date (2026-10-25).
+Warning: 0058-universidad-catolica-del-uruguay-medicine evidence for 'eligibility' (universidad-catolica-del-uruguay-doctor-medicine) has an expired review-by date (2026-10-25).
+Warning: 0058-universidad-catolica-del-uruguay-medicine evidence for 'admissions' (universidad-catolica-del-uruguay-doctor-medicine) has an expired review-by date (2026-10-25).
+Warning: 0058-universidad-catolica-del-uruguay-medicine evidence for 'intake' (universidad-catolica-del-uruguay-doctor-medicine) has an expired review-by date (2026-10-25).
+Warning: 0058-universidad-catolica-del-uruguay-medicine evidence for 'fee' (universidad-catolica-del-uruguay-doctor-medicine) has an expired review-by date (2026-10-25).
+Warning: 0060-portugal-university-of-lisbon-medicine evidence for 'fee' (university-of-lisbon-faculty-of-medicine-medicine) has an expired review-by date (2026-10-25).
+Warning: 0060-portugal-university-of-lisbon-medicine evidence for 'admissions' (university-of-lisbon-faculty-of-medicine-medicine) has an expired review-by date (2026-10-25).
+Warning: 0060-portugal-university-of-lisbon-medicine evidence for 'intake' (university-of-lisbon-faculty-of-medicine-medicine) has an expired review-by date (2026-10-25).
+Warning: 0060-portugal-university-of-lisbon-medicine evidence for 'eligibility' (university-of-lisbon-faculty-of-medicine-medicine) has an expired review-by date (2026-10-25).
+Warning: 0060-portugal-university-of-lisbon-medicine evidence for 'student living' (university-of-lisbon-faculty-of-medicine) has an expired review-by date (2026-10-25).
+Warning: 0061-university-of-porto-medicine evidence for 'eligibility' (university-of-porto-faculty-of-medicine-integrated-master-medicine) has an expired review-by date (2026-10-25).
+Warning: 0061-university-of-porto-medicine evidence for 'admissions' (university-of-porto-faculty-of-medicine-integrated-master-medicine) has an expired review-by date (2026-10-25).
+Warning: 0061-university-of-porto-medicine evidence for 'intake' (university-of-porto-faculty-of-medicine-integrated-master-medicine) has an expired review-by date (2026-10-25).
+Warning: 0061-university-of-porto-medicine evidence for 'fee' (university-of-porto-faculty-of-medicine-integrated-master-medicine) has an expired review-by date (2026-10-25).
+Warning: 0064-uwi-st-augustine-mbbs evidence for 'eligibility' (uwi-st-augustine-bachelor-medicine-bachelor-surgery) has an expired review-by date (2026-10-25).
+Warning: 0064-uwi-st-augustine-mbbs evidence for 'admissions' (uwi-st-augustine-bachelor-medicine-bachelor-surgery) has an expired review-by date (2026-10-25).
+Warning: 0064-uwi-st-augustine-mbbs evidence for 'intake' (uwi-st-augustine-bachelor-medicine-bachelor-surgery) has an expired review-by date (2026-10-25).
+Warning: 0064-uwi-st-augustine-mbbs evidence for 'fee' (uwi-st-augustine-bachelor-medicine-bachelor-surgery) has an expired review-by date (2026-10-25).
+Warning: 0065-botswana-university-of-botswana-mbbs evidence for 'eligibility' (university-of-botswana-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0065-botswana-university-of-botswana-mbbs evidence for 'admissions' (university-of-botswana-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0065-botswana-university-of-botswana-mbbs evidence for 'intake' (university-of-botswana-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0065-botswana-university-of-botswana-mbbs evidence for 'fee' (university-of-botswana-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0065-botswana-university-of-botswana-mbbs evidence for 'student living' (university-of-botswana) has an expired review-by date (2026-10-25).
+Warning: 0068-rwanda-asome-auca-md evidence for 'eligibility' (asome-auca-school-of-medicine-md) has an expired review-by date (2026-10-25).
+Warning: 0068-rwanda-asome-auca-md evidence for 'admissions' (asome-auca-school-of-medicine-md) has an expired review-by date (2026-10-25).
+Warning: 0068-rwanda-asome-auca-md evidence for 'intake' (asome-auca-school-of-medicine-md) has an expired review-by date (2026-10-25).
+Warning: 0068-rwanda-asome-auca-md evidence for 'fee' (asome-auca-school-of-medicine-md) has an expired review-by date (2026-10-25).
+Warning: 0069-rwanda-university-of-rwanda-mbchb evidence for 'eligibility' (university-of-rwanda-cmhs-mbchb) has an expired review-by date (2026-10-25).
+Warning: 0069-rwanda-university-of-rwanda-mbchb evidence for 'admissions' (university-of-rwanda-cmhs-mbchb) has an expired review-by date (2026-10-25).
+Warning: 0069-rwanda-university-of-rwanda-mbchb evidence for 'intake' (university-of-rwanda-cmhs-mbchb) has an expired review-by date (2026-10-25).
+Warning: 0069-rwanda-university-of-rwanda-mbchb evidence for 'fee' (university-of-rwanda-cmhs-mbchb) has an expired review-by date (2026-10-25).
+Warning: 0069-rwanda-university-of-rwanda-mbchb evidence for 'student living' (university-of-rwanda-college-of-medicine-and-health-sciences) has an expired review-by date (2026-10-25).
+Warning: 0073-university-of-pretoria-mbchb evidence for 'eligibility' (university-of-pretoria-bachelor-medicine-surgery) has an expired review-by date (2026-10-25).
+Warning: 0073-university-of-pretoria-mbchb evidence for 'admissions' (university-of-pretoria-bachelor-medicine-surgery) has an expired review-by date (2026-10-25).
+Warning: 0073-university-of-pretoria-mbchb evidence for 'intake' (university-of-pretoria-bachelor-medicine-surgery) has an expired review-by date (2026-10-25).
+Warning: 0073-university-of-pretoria-mbchb evidence for 'fee' (university-of-pretoria-bachelor-medicine-surgery) has an expired review-by date (2026-10-25).
+Warning: 0079-guyana-texila-american-university-md evidence for 'recognition' (texila-american-university-guyana) has an expired review-by date (2026-10-25).
+Warning: 0079-guyana-texila-american-university-md evidence for 'eligibility' (texila-american-university-guyana-bsmd) has an expired review-by date (2026-10-25).
+Warning: 0079-guyana-texila-american-university-md evidence for 'admissions' (texila-american-university-guyana-bsmd) has an expired review-by date (2026-10-25).
+Warning: 0079-guyana-texila-american-university-md evidence for 'intake' (texila-american-university-guyana-bsmd) has an expired review-by date (2026-10-25).
+Warning: 0079-guyana-texila-american-university-md evidence for 'fee' (texila-american-university-guyana-bsmd) has an expired review-by date (2026-10-25).
+Warning: 0079-guyana-texila-american-university-md evidence for 'student living' (texila-american-university-guyana) has an expired review-by date (2026-10-25).
+Warning: 0080-guyana-university-of-guyana-mbbs evidence for 'eligibility' (university-of-guyana-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0080-guyana-university-of-guyana-mbbs evidence for 'admissions' (university-of-guyana-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0080-guyana-university-of-guyana-mbbs evidence for 'intake' (university-of-guyana-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0080-guyana-university-of-guyana-mbbs evidence for 'fee' (university-of-guyana-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0080-guyana-university-of-guyana-mbbs evidence for 'student living' (university-of-guyana) has an expired review-by date (2026-10-25).
+Warning: 0081-shandong-university-mbbs evidence for 'eligibility' (shandong-university-clinical-medicine-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0081-shandong-university-mbbs evidence for 'admissions' (shandong-university-clinical-medicine-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0081-shandong-university-mbbs evidence for 'intake' (shandong-university-clinical-medicine-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0081-shandong-university-mbbs evidence for 'fee' (shandong-university-clinical-medicine-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0083-jamaica-uwi-mona-mbbs evidence for 'eligibility' (uwi-mona-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0083-jamaica-uwi-mona-mbbs evidence for 'admissions' (uwi-mona-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0083-jamaica-uwi-mona-mbbs evidence for 'intake' (uwi-mona-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0083-jamaica-uwi-mona-mbbs evidence for 'fee' (uwi-mona-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0083-jamaica-uwi-mona-mbbs evidence for 'student living' (university-of-the-west-indies-mona-faculty-of-medical-sciences) has an expired review-by date (2026-10-25).
+Warning: 0084-malawi-kuhes-mbbs evidence for 'eligibility' (kuhes-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0084-malawi-kuhes-mbbs evidence for 'admissions' (kuhes-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0084-malawi-kuhes-mbbs evidence for 'intake' (kuhes-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0084-malawi-kuhes-mbbs evidence for 'fee' (kuhes-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0084-malawi-kuhes-mbbs evidence for 'student living' (kamuzu-university-of-health-sciences-school-of-medicine-and-oral-health) has an expired review-by date (2026-10-25).
+Warning: 0085-medical-university-pleven-medicine evidence for 'eligibility' (medical-university-pleven-medicine-english) has an expired review-by date (2026-10-25).
+Warning: 0085-medical-university-pleven-medicine evidence for 'admissions' (medical-university-pleven-medicine-english) has an expired review-by date (2026-10-25).
+Warning: 0085-medical-university-pleven-medicine evidence for 'intake' (medical-university-pleven-medicine-english) has an expired review-by date (2026-10-25).
+Warning: 0085-medical-university-pleven-medicine evidence for 'fee' (medical-university-pleven-medicine-english) has an expired review-by date (2026-10-25).
+Warning: 0085-medical-university-pleven-medicine evidence for 'eligibility' (medical-university-pleven-medicine-english) has an expired review-by date (2026-10-25).
+Warning: 0086-azerbaijan-medical-university-md evidence for 'eligibility' (azerbaijan-medical-university-general-medicine) has an expired review-by date (2026-10-25).
+Warning: 0086-azerbaijan-medical-university-md evidence for 'admissions' (azerbaijan-medical-university-general-medicine) has an expired review-by date (2026-10-25).
+Warning: 0086-azerbaijan-medical-university-md evidence for 'intake' (azerbaijan-medical-university-general-medicine) has an expired review-by date (2026-10-25).
+Warning: 0086-azerbaijan-medical-university-md evidence for 'fee' (azerbaijan-medical-university-general-medicine) has an expired review-by date (2026-10-25).
+Warning: 0086-azerbaijan-medical-university-md evidence for 'student living' (azerbaijan-medical-university) has an expired review-by date (2026-10-25).
+Warning: 0088-belarus-bsmu-md evidence for 'eligibility' (bsmu-6-year-md) has an expired review-by date (2026-10-25).
+Warning: 0088-belarus-bsmu-md evidence for 'admissions' (bsmu-6-year-md) has an expired review-by date (2026-10-25).
+Warning: 0088-belarus-bsmu-md evidence for 'intake' (bsmu-6-year-md) has an expired review-by date (2026-10-25).
+Warning: 0088-belarus-bsmu-md evidence for 'fee' (bsmu-6-year-md) has an expired review-by date (2026-10-25).
+Warning: 0088-belarus-bsmu-md evidence for 'student living' (belarusian-state-medical-university) has an expired review-by date (2026-10-25).
+Warning: 0098-romania-carol-davila-session-ii-correction evidence for 'eligibility' (carol-davila-university-of-medicine-and-pharmacy-general-medicine) has an expired review-by date (2026-10-25).
+Warning: 0098-romania-carol-davila-session-ii-correction evidence for 'fee' (carol-davila-university-of-medicine-and-pharmacy-general-medicine) has an expired review-by date (2026-10-25).
+Warning: 0098-romania-carol-davila-session-ii-correction evidence for 'student living' (carol-davila-university-of-medicine-and-pharmacy) has an expired review-by date (2026-10-25).
+Validated 313 content migration(s) without connecting to the database (324 expired review-by warning(s)).

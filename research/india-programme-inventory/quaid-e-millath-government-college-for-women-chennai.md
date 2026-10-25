@@ -13,3 +13,8 @@ Mandatorygenuine media:complete119x90officialcrest from ownheader and700x200 lib
 ## Frozen executable handoff
 
 0341-india-quaid-e-millath-government-college-for-women-chennai:25UGroutes,25nativequotes. Canonicalnumberedreader0warnings; lockedledger validated25. Rootreviewedmedia pendingparentupload/publication. NoDB.
+
+
+## Applied postgraduate expansion —25 October2026
+
+0352 is applied and publicly verified:36 programmes total. All25 original0341UG programme objects, fees and media attribution are preserved. Eleven PG routes were added under exact own current portfolios and applicable full Madras common/revised2025 eligibility and duration regulations; the current MCA approval, two-year route, qualifying marks/Mathematics and government TANCET counselling scope are retained. All11 added routes have the exact signed2026–27 first-year native fee quote, without annualisation. MSc Plant Biology and Plant Biotechnology alone remains held because an exact admission qualification was not established. This supersedes the earlier draft-only PG/MCA hold checkpoint above. Full source review and independent assertions: research/audits/qmgcw36-pg-forward-peer-review-20261025/. Publication and media pools closed; existing crest/library hosted assets were preserved without repeat uploads.

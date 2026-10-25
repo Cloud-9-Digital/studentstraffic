@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "auxilium-college-vellore",
+      "universityName": "Auxilium College, Vellore",
+      "sourceBatch": "codex-tn-auxilium-vellore-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.auxiliumcollege.edu.in/Admin_Dashboard/Admin_Uploads/AUX2765-auxlogo.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.auxiliumcollege.edu.in/",
+          "rightsBasis": "Official college identifying crest used for factual institutional identification; no open licence or ownership transfer claimed.",
+          "altText": "Auxilium College Vellore complete institutional crest",
+          "visualCheck": "Full native1412x1476 original viewed by worker and root; complete identifying crest or genuine aerial college buildings/auditorium/green grounds. No editing, upscaling or capture-date claim.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/auxilium-vellore-20261025/crest.png",
+          "sha256": "d72929db4309f3fc1528e77970de65d064bfab722969443c3c705d502d02bd96",
+          "width": 1412,
+          "height": 1476,
+          "verificationMethod": "Ordinary public HTTP GET with conventional browser User-Agent; complete source/hash and full original pixel review. No challenge/cookie bypass or provider actions.",
+          "proposedPublicId": "studentstraffic/universities/auxilium-college-vellore/logo-20261025"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.auxiliumcollege.edu.in/Auxm_Content/Update%20img/welcome.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.auxiliumcollege.edu.in/",
+          "rightsBasis": "Official college public campus photograph used for institutional illustration; no open licence or ownership transfer claimed.",
+          "altText": "Auxilium College Vellore campus and auditorium as illustrated on its official website",
+          "visualCheck": "Full native5472x3078 original viewed by worker and root; complete identifying crest or genuine aerial college buildings/auditorium/green grounds. No editing, upscaling or capture-date claim.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/auxilium-vellore-20261025/welcome.jpg",
+          "sha256": "f4c652b2c89a0ab69b51bd8b34af53e26549baf2fbf3648ff7f6190359f492e9",
+          "width": 5472,
+          "height": 3078,
+          "verificationMethod": "Ordinary public HTTP GET with conventional browser User-Agent; complete source/hash and full original pixel review. No challenge/cookie bypass or provider actions.",
+          "proposedPublicId": "studentstraffic/universities/auxilium-college-vellore/cover-20261025"
+        }
+      ]
+    }
+  ]
+}

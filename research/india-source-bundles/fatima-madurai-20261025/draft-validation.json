@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-10-25",
+  "reader": "Full readContentMigrations temporary fixture via validate-fatima-draft.ts; parsed complete payload/evidence gates",
+  "result": "PASS",
+  "programmes": 38,
+  "families": 30,
+  "evidence": 243,
+  "expired": 0,
+  "reportedQuotes": 10,
+  "quoteStatus": "indicative",
+  "quotePeriod": "full_course",
+  "primaryAnnualUnknown": 38,
+  "inventoryRows": 53,
+  "mediaSha256Checks": 2,
+  "numberedReservation": false,
+  "ledgerStatus": "researching",
+  "dbAccess": false,
+  "payloadSha256": "bd1261995b5c6eefa9dd7d0b1e6cc2ef4d3513afd67faf731d9899104955f26c"
+}

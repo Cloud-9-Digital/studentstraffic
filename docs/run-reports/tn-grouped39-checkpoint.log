@@ -1,0 +1,75 @@
+Skipping reserved content migration 0016-turkey-english-medicine: payload is not present yet.
+Skipping reserved content migration 0055-american-university-of-antigua-medicine: payload is not present yet.
+Skipping reserved content migration 0062-kosovo-university-of-prishtina-medicine: payload is not present yet.
+Skipping reserved content migration 0066-ghana-university-of-cape-coast-graduate-entry-mbchb: payload is not present yet.
+Skipping reserved content migration 0070-kenya-university-of-nairobi-mbchb: payload is not present yet.
+Skipping reserved content migration 0071-university-of-lagos-medicine: payload is not present yet.
+Skipping reserved content migration 0072-south-africa-university-of-cape-town-mbchb: payload is not present yet.
+Skipping reserved content migration 0074-russia-sechenov-university-general-medicine: payload is not present yet.
+Skipping reserved content migration 0075-russia-sechenov-general-medicine: payload is not present yet.
+Skipping reserved content migration 0076-russia-pirogov-university-general-medicine: payload is not present yet.
+Skipping reserved content migration 0077-russia-kazan-federal-university-general-medicine: payload is not present yet.
+Skipping reserved content migration 0078-greece-university-of-crete-international-medicine: payload is not present yet.
+Skipping reserved content migration 0082-bulgaria-medical-university-varna-medicine: payload is not present yet.
+Skipping reserved content migration 0087-slovakia-upjs-kosice-general-medicine: payload is not present yet.
+Skipping reserved content migration 0157-vals-institute-of-science-and-advanced-technologies: payload is not present yet.
+Skipping reserved content migration 0179-vel-tech-rangarajan-dr-sagunthala-rd-institute: payload is not present yet.
+Skipping reserved content migration 0185-india-vel-tech-rangarajan-dr-sagunthala-rd-institute: payload is not present yet.
+[
+  {
+    "id": "0349-india-c-abdul-hakeem-college-melvisharam",
+    "checksum": "8570555c4acc2466be89ec0794672245cf52db0d6d861cdffbfaede176ca0705",
+    "slugs": [
+      "c-abdul-hakeem-college-melvisharam"
+    ],
+    "programmes": 17
+  },
+  {
+    "id": "0350-india-voorhees-college-vellore",
+    "checksum": "e286ff9b52b031600e13d1630f7e3dba729683f23896bf853e3a6fe325adcba0",
+    "slugs": [
+      "voorhees-college-vellore"
+    ],
+    "programmes": 32
+  },
+  {
+    "id": "0351-india-auxilium-college-vellore",
+    "checksum": "f6cc47225bc14c2d34a6172adb54828ef04df2eb346dfa4788853c78a553f01c",
+    "slugs": [
+      "auxilium-college-vellore"
+    ],
+    "programmes": 28
+  },
+  {
+    "id": "0352-india-quaid-e-millath-postgraduate-forward",
+    "checksum": "a333a3d9c4e9869a2ecc1deb32dbd39e2a05bff22eecaaff4c4de0159381437e",
+    "slugs": [
+      "quaid-e-millath-government-college-for-women-chennai"
+    ],
+    "programmes": 36
+  },
+  {
+    "id": "0353-india-thiagarajar-college-madurai",
+    "checksum": "e4f50189cd552113a23130b1711c0101c41cb3cc2addd53a35830bbdb12408f7",
+    "slugs": [
+      "thiagarajar-college-madurai"
+    ],
+    "programmes": 43
+  },
+  {
+    "id": "0354-india-the-american-college-madurai",
+    "checksum": "4ed1c86ef31b74448f7348760c303e564c5bb9dc0a7de0803cbde16ae8771755",
+    "slugs": [
+      "the-american-college-madurai"
+    ],
+    "programmes": 61
+  },
+  {
+    "id": "0355-india-fatima-college-madurai",
+    "checksum": "72e97bd8d9af403a38c0bcbf1e75371b84bab00c8210c5b44ea7d8097b64ffe6",
+    "slugs": [
+      "fatima-college-madurai"
+    ],
+    "programmes": 38
+  }
+]

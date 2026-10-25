@@ -1,0 +1,57 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "fatima-college-madurai",
+      "universityName": "Fatima College, Madurai",
+      "sourceBatch": "codex-tn-fatima-madurai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://fatimacollegemdu.org/ufiles/Admission/2026-2027/UG-Prospectus.pdf",
+          "sourceType": "official-university",
+          "sourcePage": "https://fatimacollegemdu.org/",
+          "rightsBasis": "Official college identifying crest used for factual institutional identification; no open licence or ownership transfer claimed.",
+          "altText": "Fatima College Madurai complete institutional crest",
+          "visualCheck": "Full native244x245 original viewed by worker and root, approved unchanged. No editing/upscaling or capture-date claim.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/fatima-madurai-20261025/ug-cover-original-003.jpg",
+          "sha256": "6f4c3b858e748ea7cd8f9b0f175090440bccbec44577b59beabf7f3ee86e02d6",
+          "width": 244,
+          "height": 245,
+          "verificationMethod": "Complete official PDF HTTP200 retrieval, original embedded JPEG extraction and full original visual inspection.",
+          "proposedPublicId": "studentstraffic/universities/fatima-college-madurai/logo-20261025",
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Unchanged native embedded JPEG from UG prospectus PDFpage1 image3; pdfimages -j extraction, no crop/resampling.",
+          "originalDocumentLocalPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/fatima-madurai-20261025/ug2026.pdf",
+          "originalDocumentSha256": "5417fd76c9d61ad8ec4947b1d619453521c1ee061a4b0f3c09bc944d18db0f82"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://fatimacollegemdu.org/ufiles/Admission/2026-2027/UG-Prospectus.pdf",
+          "sourceType": "official-university",
+          "sourcePage": "https://fatimacollegemdu.org/",
+          "rightsBasis": "Official college prospectus building photograph used for institutional illustration; no open licence or ownership transfer claimed.",
+          "altText": "Fatima College building as illustrated in its official2026–27 prospectus",
+          "visualCheck": "Full native1500x1054 original viewed by worker and root, approved unchanged. No editing/upscaling or capture-date claim.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/fatima-madurai-20261025/ug-cover-original-007.jpg",
+          "sha256": "05359e2f5484df69afc575b5bb5bf549d18e8a9e5bcee2951bbe0c9a228ee772",
+          "width": 1500,
+          "height": 1054,
+          "verificationMethod": "Complete official PDF HTTP200 retrieval, original embedded JPEG extraction and full original visual inspection.",
+          "proposedPublicId": "studentstraffic/universities/fatima-college-madurai/cover-20261025",
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Unchanged native embedded JPEG from UG prospectus PDFpage1 image7; pdfimages -j extraction, no crop/resampling.",
+          "originalDocumentLocalPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/fatima-madurai-20261025/ug2026.pdf",
+          "originalDocumentSha256": "5417fd76c9d61ad8ec4947b1d619453521c1ee061a4b0f3c09bc944d18db0f82"
+        }
+      ],
+      "migrationId": "0355-india-fatima-college-madurai"
+    }
+  ]
+}

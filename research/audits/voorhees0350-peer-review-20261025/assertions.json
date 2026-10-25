@@ -1,0 +1,25 @@
+{
+  "result": "PASS \u2014 no material blocker found",
+  "checkedAt": "2026-10-25",
+  "payloadPath": "/Users/bharat/Documents/studentstraffic/content-migrations/0350-india-voorhees-college-vellore/payload.json",
+  "payloadSha256": "c8282e6dfa94336b27fea8144be6e36f9132c069c59a0f976dadc41688fa6c38",
+  "programmeCount": 32,
+  "undergraduateRoutes": 19,
+  "postgraduateRoutes": 13,
+  "uniqueSlugs": 32,
+  "actualNumberedReader": "PASS1",
+  "assertions": [
+    "Actual own current-linked ShiftI aided/ShiftIIself-financed UG eligibility PDFs independentlyread:3years/sixsemesters, exact subject prerequisites andgroupdefinitions; Commerce+Accountancy, ChemistryA1/A2/B, PhysicsMathA1/A2, Biology/ZoologyA2/B, ComputerSciencebroadernamedHSCsubjectlist retained. BBA/BCAactualapprovalholds not imported.",
+    "Own2024\u201325calendar actualpage2 TVU affiliation and current2026collegeadmission context support applicability; legacyUGCMadrascolumnnotdeclaredcurrent. FullTVU2023approvedaffiliatesPGdefinitions2years/foursemesters andexact13annexnamedroutes independentlycrosschecked.",
+    "MAEnglish55condition remainsPartIIalternative only; MComBScMath/CS/BCA/ISMtwoBComcorepapersretained; PhysicsMathallied andBotanydegreevariantsretained. MSWprofessionalprior-degreealternatives preserved; no inventedgeneralmarkthreshold or guaranteedeligibility.",
+    "Exactdegreelevels/genericparents coherent; UGDefenceandStrategicStudies underbachelorfamily, PGunderdegreeappropriatefamily; BSW/MSWdistinctawards, no classsectionextraawards. Current19UG+13PG sourceprogramme/fundingroutes match.",
+    "UnknownUGmediumandlanguageMAmediumappropriatelyomitted; normativePGnonlanguageEnglishcorrect; allunknownfirstentrymonths omitted. No currentguarantee fromcalendaror examdates.",
+    "All32feesremainon_requestafterunresolvedaided/self-financingattribution. RetainedsecondaryBA52212/BSc53292managementfullcoursecandidates not transferred indiscriminately acrossfundingroutes; no fabricatedannualisation.",
+    "Full175x176unchangedPDFembeddedcollegecrest independentlyviewed,distinctCSIseal notused. Full1400x450actualAlumniReunion2024stage/eventphoto independentlyviewed, accurateeventcaptioninstead ofexteriorclaim; exactsource/rights/provenance present."
+  ],
+  "materialRisks": [],
+  "optionalClarityNotes": [
+    "MathandPhysicsonlyallowA1/A2butcurrentlyrepeatGroupBfootnotedefinition. Allowedgroupsareexplicitso no alteredentryclaim; removingunusedGroupBbulletwouldavoidapplicantconfusion. No edits by peerreviewer."
+  ],
+  "scope": "Existingretainedfilesonly; no sourcehunts, DB, uploads, reservations or siblingfilemutations"
+}

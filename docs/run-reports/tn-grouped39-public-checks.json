@@ -1,0 +1,251 @@
+[
+  {
+    "id": "0349-india-c-abdul-hakeem-college-melvisharam",
+    "slug": "c-abdul-hakeem-college-melvisharam",
+    "status": 200,
+    "expectedCount": 17,
+    "actualCount": 17,
+    "quotes": 17,
+    "zeroQuotes": 0,
+    "failures": [],
+    "pages": [
+      {
+        "path": "/university/c-abdul-hakeem-college-melvisharam",
+        "status": 200,
+        "h1": true
+      },
+      {
+        "path": "/cahc-ba-history-aided",
+        "status": 200,
+        "h1": true
+      }
+    ],
+    "media": [
+      {
+        "url": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792944939/studentstraffic/universities/c-abdul-hakeem-college-melvisharam/logo-20261025.jpg",
+        "status": 200,
+        "type": "image/jpeg"
+      },
+      {
+        "url": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792944941/studentstraffic/universities/c-abdul-hakeem-college-melvisharam/cover-20261025.jpg",
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    "pass": true
+  },
+  {
+    "id": "0350-india-voorhees-college-vellore",
+    "slug": "voorhees-college-vellore",
+    "status": 200,
+    "expectedCount": 32,
+    "actualCount": 32,
+    "quotes": 0,
+    "zeroQuotes": 0,
+    "failures": [],
+    "pages": [
+      {
+        "path": "/university/voorhees-college-vellore",
+        "status": 200,
+        "h1": true
+      },
+      {
+        "path": "/voorhees-b-a-tamil-shift-1",
+        "status": 200,
+        "h1": true
+      }
+    ],
+    "media": [
+      {
+        "url": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792944942/studentstraffic/universities/voorhees-college-vellore/logo-20261025.jpg",
+        "status": 200,
+        "type": "image/jpeg"
+      },
+      {
+        "url": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792944943/studentstraffic/universities/voorhees-college-vellore/cover-20261025.jpg",
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    "pass": true
+  },
+  {
+    "id": "0351-india-auxilium-college-vellore",
+    "slug": "auxilium-college-vellore",
+    "status": 200,
+    "expectedCount": 28,
+    "actualCount": 28,
+    "quotes": 27,
+    "zeroQuotes": 0,
+    "failures": [],
+    "pages": [
+      {
+        "path": "/university/auxilium-college-vellore",
+        "status": 200,
+        "h1": true
+      },
+      {
+        "path": "/auxilium-aided-history",
+        "status": 200,
+        "h1": true
+      }
+    ],
+    "media": [
+      {
+        "url": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792944945/studentstraffic/universities/auxilium-college-vellore/logo-20261025.png",
+        "status": 200,
+        "type": "image/png"
+      },
+      {
+        "url": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792944948/studentstraffic/universities/auxilium-college-vellore/cover-20261025.jpg",
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    "pass": true
+  },
+  {
+    "id": "0352-india-quaid-e-millath-postgraduate-forward",
+    "slug": "quaid-e-millath-government-college-for-women-chennai",
+    "status": 200,
+    "expectedCount": 36,
+    "actualCount": 36,
+    "quotes": 36,
+    "zeroQuotes": 0,
+    "failures": [],
+    "pages": [
+      {
+        "path": "/university/quaid-e-millath-government-college-for-women-chennai",
+        "status": 200,
+        "h1": true
+      },
+      {
+        "path": "/qmgcw-b-a-tamil-literature-shift-i",
+        "status": 200,
+        "h1": true
+      }
+    ],
+    "media": [
+      {
+        "url": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792932427/studentstraffic/universities/quaid-e-millath-government-college-for-women-chennai/logo-20261025.png",
+        "status": 200,
+        "type": "image/png"
+      },
+      {
+        "url": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792932430/studentstraffic/universities/quaid-e-millath-government-college-for-women-chennai/cover-20261025.jpg",
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    "pass": true
+  },
+  {
+    "id": "0353-india-thiagarajar-college-madurai",
+    "slug": "thiagarajar-college-madurai",
+    "status": 200,
+    "expectedCount": 43,
+    "actualCount": 43,
+    "quotes": 18,
+    "zeroQuotes": 10,
+    "failures": [],
+    "pages": [
+      {
+        "path": "/university/thiagarajar-college-madurai",
+        "status": 200,
+        "h1": true
+      },
+      {
+        "path": "/thiagarajar-arts-aided-tamil",
+        "status": 200,
+        "h1": true,
+        "zeroCheck": {
+          "amountRendered": true,
+          "noStructuredOffer": true
+        }
+      }
+    ],
+    "media": [
+      {
+        "url": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792944949/studentstraffic/universities/thiagarajar-college-madurai/logo-20261025.jpg",
+        "status": 200,
+        "type": "image/jpeg"
+      },
+      {
+        "url": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792944951/studentstraffic/universities/thiagarajar-college-madurai/cover-20261025.jpg",
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    "pass": true
+  },
+  {
+    "id": "0354-india-the-american-college-madurai",
+    "slug": "the-american-college-madurai",
+    "status": 200,
+    "expectedCount": 61,
+    "actualCount": 61,
+    "quotes": 59,
+    "zeroQuotes": 0,
+    "failures": [],
+    "pages": [
+      {
+        "path": "/university/the-american-college-madurai",
+        "status": 200,
+        "h1": true
+      },
+      {
+        "path": "/american-b-a-tamil-language-and-literature-aided-main",
+        "status": 200,
+        "h1": true
+      }
+    ],
+    "media": [
+      {
+        "url": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792944952/studentstraffic/universities/the-american-college-madurai/logo-20261025.jpg",
+        "status": 200,
+        "type": "image/jpeg"
+      },
+      {
+        "url": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792944953/studentstraffic/universities/the-american-college-madurai/cover-20261025.jpg",
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    "pass": true
+  },
+  {
+    "id": "0355-india-fatima-college-madurai",
+    "slug": "fatima-college-madurai",
+    "status": 200,
+    "expectedCount": 38,
+    "actualCount": 38,
+    "quotes": 10,
+    "zeroQuotes": 0,
+    "failures": [],
+    "pages": [
+      {
+        "path": "/university/fatima-college-madurai",
+        "status": 200,
+        "h1": true
+      },
+      {
+        "path": "/fatima-aided-history",
+        "status": 200,
+        "h1": true
+      }
+    ],
+    "media": [
+      {
+        "url": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792944954/studentstraffic/universities/fatima-college-madurai/logo-20261025.jpg",
+        "status": 200,
+        "type": "image/jpeg"
+      },
+      {
+        "url": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792944955/studentstraffic/universities/fatima-college-madurai/cover-20261025.jpg",
+        "status": 200,
+        "type": "image/jpeg"
+      }
+    ],
+    "pass": true
+  }
+]

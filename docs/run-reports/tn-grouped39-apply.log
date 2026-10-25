@@ -1,0 +1,1951 @@
+
+> studentstraffic@0.1.0 content:migrate
+> tsx scripts/migrate-content.ts --apply
+
+Skipping reserved content migration 0016-turkey-english-medicine: payload is not present yet.
+Skipping reserved content migration 0055-american-university-of-antigua-medicine: payload is not present yet.
+Skipping reserved content migration 0062-kosovo-university-of-prishtina-medicine: payload is not present yet.
+Skipping reserved content migration 0066-ghana-university-of-cape-coast-graduate-entry-mbchb: payload is not present yet.
+Skipping reserved content migration 0070-kenya-university-of-nairobi-mbchb: payload is not present yet.
+Skipping reserved content migration 0071-university-of-lagos-medicine: payload is not present yet.
+Skipping reserved content migration 0072-south-africa-university-of-cape-town-mbchb: payload is not present yet.
+Skipping reserved content migration 0074-russia-sechenov-university-general-medicine: payload is not present yet.
+Skipping reserved content migration 0075-russia-sechenov-general-medicine: payload is not present yet.
+Skipping reserved content migration 0076-russia-pirogov-university-general-medicine: payload is not present yet.
+Skipping reserved content migration 0077-russia-kazan-federal-university-general-medicine: payload is not present yet.
+Skipping reserved content migration 0078-greece-university-of-crete-international-medicine: payload is not present yet.
+Skipping reserved content migration 0082-bulgaria-medical-university-varna-medicine: payload is not present yet.
+Skipping reserved content migration 0087-slovakia-upjs-kosice-general-medicine: payload is not present yet.
+Skipping reserved content migration 0157-vals-institute-of-science-and-advanced-technologies: payload is not present yet.
+Skipping reserved content migration 0179-vel-tech-rangarajan-dr-sagunthala-rd-institute: payload is not present yet.
+Skipping reserved content migration 0185-india-vel-tech-rangarajan-dr-sagunthala-rd-institute: payload is not present yet.
+Warning: 0001-semmelweis-general-medicine evidence for 'identity' (semmelweis-university) has an expired review-by date (2026-09-18).
+Warning: 0001-semmelweis-general-medicine evidence for 'fee' (semmelweis-university-general-medicine) has an expired review-by date (2026-09-18).
+Warning: 0001-semmelweis-general-medicine evidence for 'eligibility' (semmelweis-university-general-medicine) has an expired review-by date (2026-09-18).
+Warning: 0001-semmelweis-general-medicine evidence for 'admissions' (semmelweis-university-general-medicine) has an expired review-by date (2026-09-18).
+Warning: 0001-semmelweis-general-medicine evidence for 'intake' (semmelweis-university-general-medicine) has an expired review-by date (2026-09-18).
+Warning: 0002-umd-computer-science evidence for 'international-support' (university-of-maryland-college-park) has an expired review-by date (2026-09-18).
+Warning: 0002-umd-computer-science evidence for 'eligibility' (umd-bs-computer-science) has an expired review-by date (2026-09-18).
+Warning: 0002-umd-computer-science evidence for 'english-proficiency' (umd-bs-computer-science) has an expired review-by date (2026-09-18).
+Warning: 0002-umd-computer-science evidence for 'admissions' (umd-bs-computer-science) has an expired review-by date (2026-09-18).
+Warning: 0002-umd-computer-science evidence for 'intake' (umd-bs-computer-science) has an expired review-by date (2026-09-18).
+Warning: 0002-umd-computer-science evidence for 'fee' (umd-bs-computer-science) has an expired review-by date (2026-09-18).
+Warning: 0002-umd-computer-science evidence for 'transfer-route' (umd-bs-computer-science) has an expired review-by date (2026-09-18).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'fee' (dai-nam-university-faculty-of-medicine-mbbs) has an expired review-by date (2026-10-18).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'eligibility' (dai-nam-university-faculty-of-medicine-mbbs) has an expired review-by date (2026-10-18).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'admissions' (dai-nam-university-faculty-of-medicine-mbbs) has an expired review-by date (2026-10-18).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'intake' (dai-nam-university-faculty-of-medicine-mbbs) has an expired review-by date (2026-10-18).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'fee' (dong-a-university-college-of-medicine-mbbs) has an expired review-by date (2026-10-18).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'eligibility' (dong-a-university-college-of-medicine-mbbs) has an expired review-by date (2026-10-18).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'admissions' (dong-a-university-college-of-medicine-mbbs) has an expired review-by date (2026-10-18).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'intake' (dong-a-university-college-of-medicine-mbbs) has an expired review-by date (2026-10-18).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'fee' (buon-ma-thuot-medical-university-mbbs) has an expired review-by date (2026-09-30).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'eligibility' (buon-ma-thuot-medical-university-mbbs) has an expired review-by date (2026-09-30).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'admissions' (buon-ma-thuot-medical-university-mbbs) has an expired review-by date (2026-09-30).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'intake' (buon-ma-thuot-medical-university-mbbs) has an expired review-by date (2026-09-30).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'fee' (can-tho-university-medicine-pharmacy-mbbs) has an expired review-by date (2026-10-18).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'eligibility' (can-tho-university-medicine-pharmacy-mbbs) has an expired review-by date (2026-10-18).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'admissions' (can-tho-university-medicine-pharmacy-mbbs) has an expired review-by date (2026-10-18).
+Warning: 0003-vietnam-medicine-gold-standard evidence for 'intake' (can-tho-university-medicine-pharmacy-mbbs) has an expired review-by date (2026-10-18).
+Warning: 0004-philippines-nursing-batch evidence for 'eligibility' (angeles-university-foundation-bsc-nursing) has an expired review-by date (2026-10-23).
+Warning: 0004-philippines-nursing-batch evidence for 'admissions' (angeles-university-foundation-bsc-nursing) has an expired review-by date (2026-10-23).
+Warning: 0004-philippines-nursing-batch evidence for 'intake' (angeles-university-foundation-bsc-nursing) has an expired review-by date (2026-09-23).
+Warning: 0004-philippines-nursing-batch evidence for 'fee' (angeles-university-foundation-bsc-nursing) has an expired review-by date (2026-10-23).
+Warning: 0005-uzbekistan-tuit-2026 evidence for 'eligibility' (tuit-software-engineering-bachelors) has an expired review-by date (2026-10-23).
+Warning: 0005-uzbekistan-tuit-2026 evidence for 'admissions' (tuit-software-engineering-bachelors) has an expired review-by date (2026-10-23).
+Warning: 0005-uzbekistan-tuit-2026 evidence for 'intake' (tuit-software-engineering-bachelors) has an expired review-by date (2026-10-23).
+Warning: 0005-uzbekistan-tuit-2026 evidence for 'fee' (tuit-software-engineering-bachelors) has an expired review-by date (2026-10-23).
+Warning: 0005-uzbekistan-tuit-2026 evidence for 'instruction_language' (tuit-software-engineering-bachelors) has an expired review-by date (2026-10-23).
+Warning: 0006-germany-italy-university-batch evidence for 'eligibility' (university-of-bonn-msc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0006-germany-italy-university-batch evidence for 'admissions' (university-of-bonn-msc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0006-germany-italy-university-batch evidence for 'intake' (university-of-bonn-msc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0006-germany-italy-university-batch evidence for 'fee' (university-of-bonn-msc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0006-germany-italy-university-batch evidence for 'eligibility' (tu-dresden-msc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0006-germany-italy-university-batch evidence for 'admissions' (tu-dresden-msc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0006-germany-italy-university-batch evidence for 'intake' (tu-dresden-msc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0006-germany-italy-university-batch evidence for 'fee' (tu-dresden-msc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0006-germany-italy-university-batch evidence for 'eligibility' (university-of-naples-federico-ii-medicine-surgery-english) has an expired review-by date (2026-10-23).
+Warning: 0006-germany-italy-university-batch evidence for 'admissions' (university-of-naples-federico-ii-medicine-surgery-english) has an expired review-by date (2026-10-23).
+Warning: 0006-germany-italy-university-batch evidence for 'intake' (university-of-naples-federico-ii-medicine-surgery-english) has an expired review-by date (2026-10-23).
+Warning: 0006-germany-italy-university-batch evidence for 'fee' (university-of-naples-federico-ii-medicine-surgery-english) has an expired review-by date (2026-10-23).
+Warning: 0007-uk-lsbu-computer-science evidence for 'admissions' (lsbu-bsc-computer-science) has an expired review-by date (2026-10-25).
+Warning: 0007-uk-lsbu-computer-science evidence for 'intake' (lsbu-bsc-computer-science) has an expired review-by date (2026-10-25).
+Warning: 0007-uk-lsbu-computer-science evidence for 'fee' (lsbu-bsc-computer-science) has an expired review-by date (2026-10-25).
+Warning: 0008-bangladesh-dcimc-mbbs evidence for 'eligibility' (dhaka-central-international-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0008-bangladesh-dcimc-mbbs evidence for 'eligibility' (dhaka-central-international-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0008-bangladesh-dcimc-mbbs evidence for 'admissions' (dhaka-central-international-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0008-bangladesh-dcimc-mbbs evidence for 'intake' (dhaka-central-international-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0008-bangladesh-dcimc-mbbs evidence for 'fee' (dhaka-central-international-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0009-uk-gcu-computer-science evidence for 'admissions' (gcu-msc-computer-science-glasgow) has an expired review-by date (2026-10-25).
+Warning: 0009-uk-gcu-computer-science evidence for 'intake' (gcu-msc-computer-science-glasgow) has an expired review-by date (2026-10-25).
+Warning: 0009-uk-gcu-computer-science evidence for 'fee' (gcu-msc-computer-science-glasgow) has an expired review-by date (2026-10-25).
+Warning: 0010-uk-anglia-ruskin-university evidence for 'eligibility' (anglia-ruskin-university-mbchb-medicine) has an expired review-by date (2026-10-23).
+Warning: 0010-uk-anglia-ruskin-university evidence for 'admissions' (anglia-ruskin-university-mbchb-medicine) has an expired review-by date (2026-10-23).
+Warning: 0010-uk-anglia-ruskin-university evidence for 'intake' (anglia-ruskin-university-mbchb-medicine) has an expired review-by date (2026-10-23).
+Warning: 0010-uk-anglia-ruskin-university evidence for 'fee' (anglia-ruskin-university-mbchb-medicine) has an expired review-by date (2026-10-23).
+Warning: 0011-uk-robert-gordon-university-2026 evidence for 'eligibility' (rgu-bsc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0011-uk-robert-gordon-university-2026 evidence for 'admissions' (rgu-bsc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0011-uk-robert-gordon-university-2026 evidence for 'intake' (rgu-bsc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0011-uk-robert-gordon-university-2026 evidence for 'fee' (rgu-bsc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0011-uk-robert-gordon-university-2026 evidence for 'instruction_language' (rgu-bsc-computer-science) has an expired review-by date (2026-10-23).
+Warning: 0012-bangladesh-bmc-mbbs evidence for 'eligibility' (bangladesh-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0012-bangladesh-bmc-mbbs evidence for 'admissions' (bangladesh-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0012-bangladesh-bmc-mbbs evidence for 'intake' (bangladesh-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0012-bangladesh-bmc-mbbs evidence for 'fee' (bangladesh-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0013-armenia-yerevan-haybusak-mbbs evidence for 'recognition' (yerevan-haybusak-university) has an expired review-by date (2026-10-23).
+Warning: 0013-armenia-yerevan-haybusak-mbbs evidence for 'eligibility' (yerevan-haybusak-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0013-armenia-yerevan-haybusak-mbbs evidence for 'eligibility' (yerevan-haybusak-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0013-armenia-yerevan-haybusak-mbbs evidence for 'admissions' (yerevan-haybusak-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0013-armenia-yerevan-haybusak-mbbs evidence for 'intake' (yerevan-haybusak-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0013-armenia-yerevan-haybusak-mbbs evidence for 'fee' (yerevan-haybusak-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0014-armenia-ysmu-mbbs evidence for 'eligibility' (yerevan-state-medical-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0014-armenia-ysmu-mbbs evidence for 'admissions' (yerevan-state-medical-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0014-armenia-ysmu-mbbs evidence for 'intake' (yerevan-state-medical-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0014-armenia-ysmu-mbbs evidence for 'fee' (yerevan-state-medical-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0015-georgia-medical-universities evidence for 'fee' (university-of-georgia-tbilisi-medicine) has an expired review-by date (2026-10-25).
+Warning: 0015-georgia-medical-universities evidence for 'fee' (caucasus-international-university-medicine) has an expired review-by date (2026-10-25).
+Warning: 0017-kazakhstan-al-farabi-mbbs evidence for 'eligibility' (al-farabi-kazakh-national-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0017-kazakhstan-al-farabi-mbbs evidence for 'eligibility' (al-farabi-kazakh-national-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0017-kazakhstan-al-farabi-mbbs evidence for 'admissions' (al-farabi-kazakh-national-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0017-kazakhstan-al-farabi-mbbs evidence for 'intake' (al-farabi-kazakh-national-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0017-kazakhstan-al-farabi-mbbs evidence for 'fee' (al-farabi-kazakh-national-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0018-bosnia-sarajevo-mbbs evidence for 'eligibility' (university-of-sarajevo-faculty-of-medicine-md) has an expired review-by date (2026-10-23).
+Warning: 0018-bosnia-sarajevo-mbbs evidence for 'admissions' (university-of-sarajevo-faculty-of-medicine-md) has an expired review-by date (2026-10-23).
+Warning: 0018-bosnia-sarajevo-mbbs evidence for 'intake' (university-of-sarajevo-faculty-of-medicine-md) has an expired review-by date (2026-10-23).
+Warning: 0018-bosnia-sarajevo-mbbs evidence for 'fee' (university-of-sarajevo-faculty-of-medicine-md) has an expired review-by date (2026-10-23).
+Warning: 0019-north-macedonia-goce-delcev-mbbs evidence for 'eligibility' (goce-delcev-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0019-north-macedonia-goce-delcev-mbbs evidence for 'admissions' (goce-delcev-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0019-north-macedonia-goce-delcev-mbbs evidence for 'intake' (goce-delcev-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0019-north-macedonia-goce-delcev-mbbs evidence for 'fee' (goce-delcev-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0020-north-macedonia-ukim-skopje-mbbs evidence for 'eligibility' (ss-cyril-and-methodius-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0020-north-macedonia-ukim-skopje-mbbs evidence for 'admissions' (ss-cyril-and-methodius-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0020-north-macedonia-ukim-skopje-mbbs evidence for 'intake' (ss-cyril-and-methodius-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0020-north-macedonia-ukim-skopje-mbbs evidence for 'fee' (ss-cyril-and-methodius-university-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0021-poland-jagiellonian-mbbs evidence for 'eligibility' (jagiellonian-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0021-poland-jagiellonian-mbbs evidence for 'admissions' (jagiellonian-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0021-poland-jagiellonian-mbbs evidence for 'intake' (jagiellonian-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0021-poland-jagiellonian-mbbs evidence for 'fee' (jagiellonian-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0022-poland-warsaw-mbbs evidence for 'eligibility' (medical-university-of-warsaw-medicine) has an expired review-by date (2026-10-23).
+Warning: 0022-poland-warsaw-mbbs evidence for 'admissions' (medical-university-of-warsaw-medicine) has an expired review-by date (2026-10-23).
+Warning: 0022-poland-warsaw-mbbs evidence for 'intake' (medical-university-of-warsaw-medicine) has an expired review-by date (2026-10-23).
+Warning: 0022-poland-warsaw-mbbs evidence for 'fee' (medical-university-of-warsaw-medicine) has an expired review-by date (2026-10-23).
+Warning: 0023-poland-gdansk-mbbs evidence for 'eligibility' (medical-university-of-gdansk-medicine) has an expired review-by date (2026-10-23).
+Warning: 0023-poland-gdansk-mbbs evidence for 'admissions' (medical-university-of-gdansk-medicine) has an expired review-by date (2026-10-23).
+Warning: 0023-poland-gdansk-mbbs evidence for 'intake' (medical-university-of-gdansk-medicine) has an expired review-by date (2026-10-23).
+Warning: 0023-poland-gdansk-mbbs evidence for 'fee' (medical-university-of-gdansk-medicine) has an expired review-by date (2026-10-23).
+Warning: 0024-poland-poznan-mbbs evidence for 'eligibility' (poznan-university-of-medical-sciences-medicine) has an expired review-by date (2026-10-23).
+Warning: 0024-poland-poznan-mbbs evidence for 'admissions' (poznan-university-of-medical-sciences-medicine) has an expired review-by date (2026-10-23).
+Warning: 0024-poland-poznan-mbbs evidence for 'intake' (poznan-university-of-medical-sciences-medicine) has an expired review-by date (2026-10-23).
+Warning: 0024-poland-poznan-mbbs evidence for 'fee' (poznan-university-of-medical-sciences-medicine) has an expired review-by date (2026-10-23).
+Warning: 0025-serbia-nis-mbbs evidence for 'eligibility' (university-of-nis-faculty-of-medicine-medicine) has an expired review-by date (2026-10-23).
+Warning: 0025-serbia-nis-mbbs evidence for 'admissions' (university-of-nis-faculty-of-medicine-medicine) has an expired review-by date (2026-10-23).
+Warning: 0025-serbia-nis-mbbs evidence for 'intake' (university-of-nis-faculty-of-medicine-medicine) has an expired review-by date (2026-10-23).
+Warning: 0025-serbia-nis-mbbs evidence for 'fee' (university-of-nis-faculty-of-medicine-medicine) has an expired review-by date (2026-10-23).
+Warning: 0026-serbia-novi-sad-mbbs evidence for 'eligibility' (university-of-novi-sad-faculty-of-medicine-medicine) has an expired review-by date (2026-10-23).
+Warning: 0026-serbia-novi-sad-mbbs evidence for 'admissions' (university-of-novi-sad-faculty-of-medicine-medicine) has an expired review-by date (2026-10-23).
+Warning: 0026-serbia-novi-sad-mbbs evidence for 'intake' (university-of-novi-sad-faculty-of-medicine-medicine) has an expired review-by date (2026-10-23).
+Warning: 0026-serbia-novi-sad-mbbs evidence for 'fee' (university-of-novi-sad-faculty-of-medicine-medicine) has an expired review-by date (2026-10-23).
+Warning: 0027-serbia-kragujevac-mbbs evidence for 'eligibility' (university-of-kragujevac-faculty-of-medical-sciences-medicine) has an expired review-by date (2026-10-23).
+Warning: 0027-serbia-kragujevac-mbbs evidence for 'admissions' (university-of-kragujevac-faculty-of-medical-sciences-medicine) has an expired review-by date (2026-10-23).
+Warning: 0027-serbia-kragujevac-mbbs evidence for 'intake' (university-of-kragujevac-faculty-of-medical-sciences-medicine) has an expired review-by date (2026-10-23).
+Warning: 0027-serbia-kragujevac-mbbs evidence for 'fee' (university-of-kragujevac-faculty-of-medical-sciences-medicine) has an expired review-by date (2026-10-23).
+Warning: 0028-ireland-rcsi-mbbs evidence for 'eligibility' (rcsi-university-of-medicine-and-health-sciences-direct-entry-medicine) has an expired review-by date (2026-10-23).
+Warning: 0028-ireland-rcsi-mbbs evidence for 'admissions' (rcsi-university-of-medicine-and-health-sciences-direct-entry-medicine) has an expired review-by date (2026-10-23).
+Warning: 0028-ireland-rcsi-mbbs evidence for 'intake' (rcsi-university-of-medicine-and-health-sciences-direct-entry-medicine) has an expired review-by date (2026-10-23).
+Warning: 0028-ireland-rcsi-mbbs evidence for 'fee' (rcsi-university-of-medicine-and-health-sciences-direct-entry-medicine) has an expired review-by date (2026-10-23).
+Warning: 0029-bahrain-rcsi-mbbs evidence for 'eligibility' (rcsi-medical-university-of-bahrain-undergraduate-medicine) has an expired review-by date (2026-10-23).
+Warning: 0029-bahrain-rcsi-mbbs evidence for 'admissions' (rcsi-medical-university-of-bahrain-undergraduate-medicine) has an expired review-by date (2026-10-23).
+Warning: 0029-bahrain-rcsi-mbbs evidence for 'intake' (rcsi-medical-university-of-bahrain-undergraduate-medicine) has an expired review-by date (2026-10-23).
+Warning: 0029-bahrain-rcsi-mbbs evidence for 'fee' (rcsi-medical-university-of-bahrain-undergraduate-medicine) has an expired review-by date (2026-10-23).
+Warning: 0030-mauritius-ssr-mbbs evidence for 'eligibility' (ssr-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0030-mauritius-ssr-mbbs evidence for 'admissions' (ssr-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0030-mauritius-ssr-mbbs evidence for 'intake' (ssr-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0030-mauritius-ssr-mbbs evidence for 'fee' (ssr-medical-college-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0031-moldova-testemitanu-mbbs evidence for 'eligibility' (nicolae-testemitanu-state-university-of-medicine-and-pharmacy-medicine) has an expired review-by date (2026-10-23).
+Warning: 0031-moldova-testemitanu-mbbs evidence for 'admissions' (nicolae-testemitanu-state-university-of-medicine-and-pharmacy-medicine) has an expired review-by date (2026-10-23).
+Warning: 0031-moldova-testemitanu-mbbs evidence for 'intake' (nicolae-testemitanu-state-university-of-medicine-and-pharmacy-medicine) has an expired review-by date (2026-10-23).
+Warning: 0031-moldova-testemitanu-mbbs evidence for 'fee' (nicolae-testemitanu-state-university-of-medicine-and-pharmacy-medicine) has an expired review-by date (2026-10-23).
+Warning: 0032-slovakia-comenius-mbbs evidence for 'eligibility' (comenius-university-bratislava-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0032-slovakia-comenius-mbbs evidence for 'admissions' (comenius-university-bratislava-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0032-slovakia-comenius-mbbs evidence for 'intake' (comenius-university-bratislava-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0032-slovakia-comenius-mbbs evidence for 'fee' (comenius-university-bratislava-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0033-slovakia-slovak-medical-university-mbbs evidence for 'eligibility' (slovak-medical-university-bratislava-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0033-slovakia-slovak-medical-university-mbbs evidence for 'admissions' (slovak-medical-university-bratislava-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0033-slovakia-slovak-medical-university-mbbs evidence for 'intake' (slovak-medical-university-bratislava-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0033-slovakia-slovak-medical-university-mbbs evidence for 'fee' (slovak-medical-university-bratislava-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0034-latvia-university-of-latvia-mbbs evidence for 'eligibility' (university-of-latvia-medicine) has an expired review-by date (2026-10-23).
+Warning: 0034-latvia-university-of-latvia-mbbs evidence for 'admissions' (university-of-latvia-medicine) has an expired review-by date (2026-10-23).
+Warning: 0034-latvia-university-of-latvia-mbbs evidence for 'intake' (university-of-latvia-medicine) has an expired review-by date (2026-10-23).
+Warning: 0034-latvia-university-of-latvia-mbbs evidence for 'fee' (university-of-latvia-medicine) has an expired review-by date (2026-10-23).
+Warning: 0035-latvia-riga-stradins-mbbs evidence for 'eligibility' (riga-stradins-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0035-latvia-riga-stradins-mbbs evidence for 'admissions' (riga-stradins-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0035-latvia-riga-stradins-mbbs evidence for 'intake' (riga-stradins-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0035-latvia-riga-stradins-mbbs evidence for 'fee' (riga-stradins-university-medicine) has an expired review-by date (2026-10-23).
+Warning: 0036-czechia-palacky-olomouc-mbbs evidence for 'eligibility' (palacky-university-olomouc-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0036-czechia-palacky-olomouc-mbbs evidence for 'admissions' (palacky-university-olomouc-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0036-czechia-palacky-olomouc-mbbs evidence for 'intake' (palacky-university-olomouc-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0036-czechia-palacky-olomouc-mbbs evidence for 'fee' (palacky-university-olomouc-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0037-czechia-ostrava-mbbs evidence for 'eligibility' (university-of-ostrava-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0037-czechia-ostrava-mbbs evidence for 'admissions' (university-of-ostrava-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0037-czechia-ostrava-mbbs evidence for 'intake' (university-of-ostrava-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0037-czechia-ostrava-mbbs evidence for 'fee' (university-of-ostrava-general-medicine) has an expired review-by date (2026-10-23).
+Warning: 0038-cyprus-european-university-mbbs evidence for 'eligibility' (european-university-cyprus-doctor-of-medicine) has an expired review-by date (2026-10-23).
+Warning: 0038-cyprus-european-university-mbbs evidence for 'admissions' (european-university-cyprus-doctor-of-medicine) has an expired review-by date (2026-10-23).
+Warning: 0038-cyprus-european-university-mbbs evidence for 'intake' (european-university-cyprus-doctor-of-medicine) has an expired review-by date (2026-10-23).
+Warning: 0038-cyprus-european-university-mbbs evidence for 'fee' (european-university-cyprus-doctor-of-medicine) has an expired review-by date (2026-10-23).
+Warning: 0039-cyprus-nicosia-mbbs evidence for 'eligibility' (university-of-nicosia-6-year-md) has an expired review-by date (2026-10-23).
+Warning: 0039-cyprus-nicosia-mbbs evidence for 'admissions' (university-of-nicosia-6-year-md) has an expired review-by date (2026-10-23).
+Warning: 0039-cyprus-nicosia-mbbs evidence for 'intake' (university-of-nicosia-6-year-md) has an expired review-by date (2026-10-23).
+Warning: 0039-cyprus-nicosia-mbbs evidence for 'fee' (university-of-nicosia-6-year-md) has an expired review-by date (2026-10-23).
+Warning: 0040-fiji-university-of-fiji-mbbs evidence for 'eligibility' (university-of-fiji-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0040-fiji-university-of-fiji-mbbs evidence for 'admissions' (university-of-fiji-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0040-fiji-university-of-fiji-mbbs evidence for 'intake' (university-of-fiji-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0040-fiji-university-of-fiji-mbbs evidence for 'fee' (university-of-fiji-mbbs) has an expired review-by date (2026-10-23).
+Warning: 0041-ghana-knust-mbchb evidence for 'eligibility' (knust-bsc-human-biology-medicine-mbchb) has an expired review-by date (2026-10-23).
+Warning: 0041-ghana-knust-mbchb evidence for 'admissions' (knust-bsc-human-biology-medicine-mbchb) has an expired review-by date (2026-10-23).
+Warning: 0041-ghana-knust-mbchb evidence for 'intake' (knust-bsc-human-biology-medicine-mbchb) has an expired review-by date (2026-10-23).
+Warning: 0041-ghana-knust-mbchb evidence for 'fee' (knust-bsc-human-biology-medicine-mbchb) has an expired review-by date (2026-10-23).
+Warning: 0042-zambia-university-of-zambia-mbchb evidence for 'eligibility' (university-of-zambia-mbchb) has an expired review-by date (2026-10-23).
+Warning: 0042-zambia-university-of-zambia-mbchb evidence for 'admissions' (university-of-zambia-mbchb) has an expired review-by date (2026-10-23).
+Warning: 0042-zambia-university-of-zambia-mbchb evidence for 'intake' (university-of-zambia-mbchb) has an expired review-by date (2026-10-23).
+Warning: 0042-zambia-university-of-zambia-mbchb evidence for 'fee' (university-of-zambia-mbchb) has an expired review-by date (2026-10-23).
+Warning: 0043-zambia-texila-american-university-mbchb evidence for 'eligibility' (texila-american-university-zambia-mbchb) has an expired review-by date (2026-10-23).
+Warning: 0043-zambia-texila-american-university-mbchb evidence for 'admissions' (texila-american-university-zambia-mbchb) has an expired review-by date (2026-10-23).
+Warning: 0043-zambia-texila-american-university-mbchb evidence for 'intake' (texila-american-university-zambia-mbchb) has an expired review-by date (2026-10-23).
+Warning: 0043-zambia-texila-american-university-mbchb evidence for 'fee' (texila-american-university-zambia-mbchb) has an expired review-by date (2026-10-23).
+Warning: 0044-romania-iuliu-hatieganu-mbbs evidence for 'eligibility' (iuliu-hatieganu-university-of-medicine-and-pharmacy-medicine) has an expired review-by date (2026-10-25).
+Warning: 0044-romania-iuliu-hatieganu-mbbs evidence for 'admissions' (iuliu-hatieganu-university-of-medicine-and-pharmacy-medicine) has an expired review-by date (2026-10-25).
+Warning: 0044-romania-iuliu-hatieganu-mbbs evidence for 'intake' (iuliu-hatieganu-university-of-medicine-and-pharmacy-medicine) has an expired review-by date (2026-10-25).
+Warning: 0044-romania-iuliu-hatieganu-mbbs evidence for 'fee' (iuliu-hatieganu-university-of-medicine-and-pharmacy-medicine) has an expired review-by date (2026-10-25).
+Warning: 0044-romania-iuliu-hatieganu-mbbs evidence for 'student living' (iuliu-hatieganu-university-of-medicine-and-pharmacy) has an expired review-by date (2026-10-25).
+Warning: 0045-romania-carol-davila-mbbs evidence for 'eligibility' (carol-davila-university-of-medicine-and-pharmacy-general-medicine) has an expired review-by date (2026-10-25).
+Warning: 0045-romania-carol-davila-mbbs evidence for 'admissions' (carol-davila-university-of-medicine-and-pharmacy-general-medicine) has an expired review-by date (2026-09-11).
+Warning: 0045-romania-carol-davila-mbbs evidence for 'fee' (carol-davila-university-of-medicine-and-pharmacy-general-medicine) has an expired review-by date (2026-10-25).
+Warning: 0045-romania-carol-davila-mbbs evidence for 'student living' (carol-davila-university-of-medicine-and-pharmacy) has an expired review-by date (2026-10-25).
+Warning: 0046-uae-gulf-medical-university-md evidence for 'eligibility' (gulf-medical-university-md) has an expired review-by date (2026-10-25).
+Warning: 0046-uae-gulf-medical-university-md evidence for 'admissions' (gulf-medical-university-md) has an expired review-by date (2026-10-25).
+Warning: 0046-uae-gulf-medical-university-md evidence for 'intake' (gulf-medical-university-md) has an expired review-by date (2026-10-25).
+Warning: 0046-uae-gulf-medical-university-md evidence for 'fee' (gulf-medical-university-md) has an expired review-by date (2026-10-25).
+Warning: 0046-uae-gulf-medical-university-md evidence for 'student living' (gulf-medical-university) has an expired review-by date (2026-10-25).
+Warning: 0047-tanzania-muhimbili-md evidence for 'eligibility' (muhimbili-university-of-health-and-allied-sciences-md) has an expired review-by date (2026-10-25).
+Warning: 0047-tanzania-muhimbili-md evidence for 'admissions' (muhimbili-university-of-health-and-allied-sciences-md) has an expired review-by date (2026-10-25).
+Warning: 0047-tanzania-muhimbili-md evidence for 'intake' (muhimbili-university-of-health-and-allied-sciences-md) has an expired review-by date (2026-10-25).
+Warning: 0047-tanzania-muhimbili-md evidence for 'fee' (muhimbili-university-of-health-and-allied-sciences-md) has an expired review-by date (2026-10-25).
+Warning: 0048-tanzania-kcmc-university-md evidence for 'eligibility' (kcmc-university-md) has an expired review-by date (2026-10-25).
+Warning: 0048-tanzania-kcmc-university-md evidence for 'admissions' (kcmc-university-md) has an expired review-by date (2026-10-25).
+Warning: 0048-tanzania-kcmc-university-md evidence for 'intake' (kcmc-university-md) has an expired review-by date (2026-10-25).
+Warning: 0048-tanzania-kcmc-university-md evidence for 'fee' (kcmc-university-md) has an expired review-by date (2026-10-25).
+Warning: 0048-tanzania-kcmc-university-md evidence for 'student living' (kcmc-university) has an expired review-by date (2026-10-25).
+Warning: 0049-portugal-catolica-medical-school evidence for 'eligibility' (catolica-medical-school-integrated-master-medicine) has an expired review-by date (2026-10-25).
+Warning: 0049-portugal-catolica-medical-school evidence for 'admissions' (catolica-medical-school-integrated-master-medicine) has an expired review-by date (2026-10-25).
+Warning: 0049-portugal-catolica-medical-school evidence for 'intake' (catolica-medical-school-integrated-master-medicine) has an expired review-by date (2026-10-25).
+Warning: 0049-portugal-catolica-medical-school evidence for 'fee' (catolica-medical-school-integrated-master-medicine) has an expired review-by date (2026-10-25).
+Warning: 0049-portugal-catolica-medical-school evidence for 'student living' (catolica-medical-school) has an expired review-by date (2026-10-25).
+Warning: 0050-croatia-university-of-split-mbbs evidence for 'eligibility' (university-of-split-school-of-medicine-medical-studies-in-english) has an expired review-by date (2026-10-25).
+Warning: 0050-croatia-university-of-split-mbbs evidence for 'admissions' (university-of-split-school-of-medicine-medical-studies-in-english) has an expired review-by date (2026-10-25).
+Warning: 0050-croatia-university-of-split-mbbs evidence for 'intake' (university-of-split-school-of-medicine-medical-studies-in-english) has an expired review-by date (2026-10-25).
+Warning: 0050-croatia-university-of-split-mbbs evidence for 'fee' (university-of-split-school-of-medicine-medical-studies-in-english) has an expired review-by date (2026-10-25).
+Warning: 0050-croatia-university-of-split-mbbs evidence for 'student living' (university-of-split-school-of-medicine) has an expired review-by date (2026-10-25).
+Warning: 0052-uganda-mbarara-university-mbchb evidence for 'eligibility' (mbarara-university-of-science-and-technology-mbchb) has an expired review-by date (2026-10-25).
+Warning: 0052-uganda-mbarara-university-mbchb evidence for 'admissions' (mbarara-university-of-science-and-technology-mbchb) has an expired review-by date (2026-10-25).
+Warning: 0052-uganda-mbarara-university-mbchb evidence for 'intake' (mbarara-university-of-science-and-technology-mbchb) has an expired review-by date (2026-10-25).
+Warning: 0052-uganda-mbarara-university-mbchb evidence for 'fee' (mbarara-university-of-science-and-technology-mbchb) has an expired review-by date (2026-10-25).
+Warning: 0052-uganda-mbarara-university-mbchb evidence for 'student living' (mbarara-university-of-science-and-technology-faculty-of-medicine) has an expired review-by date (2026-10-25).
+Warning: 0053-university-of-mostar-medicine evidence for 'eligibility' (university-of-mostar-faculty-of-medicine-md) has an expired review-by date (2026-10-15).
+Warning: 0053-university-of-mostar-medicine evidence for 'admissions' (university-of-mostar-faculty-of-medicine-md) has an expired review-by date (2026-10-15).
+Warning: 0053-university-of-mostar-medicine evidence for 'intake' (university-of-mostar-faculty-of-medicine-md) has an expired review-by date (2026-10-15).
+Warning: 0053-university-of-mostar-medicine evidence for 'fee' (university-of-mostar-faculty-of-medicine-md) has an expired review-by date (2026-10-15).
+Warning: 0054-uganda-makerere-university-mbchb evidence for 'eligibility' (makerere-university-college-of-health-sciences-mbchb) has an expired review-by date (2026-10-25).
+Warning: 0054-uganda-makerere-university-mbchb evidence for 'admissions' (makerere-university-college-of-health-sciences-mbchb) has an expired review-by date (2026-10-25).
+Warning: 0054-uganda-makerere-university-mbchb evidence for 'intake' (makerere-university-college-of-health-sciences-mbchb) has an expired review-by date (2026-10-25).
+Warning: 0054-uganda-makerere-university-mbchb evidence for 'fee' (makerere-university-college-of-health-sciences-mbchb) has an expired review-by date (2026-10-25).
+Warning: 0054-uganda-makerere-university-mbchb evidence for 'student living' (makerere-university-college-of-health-sciences) has an expired review-by date (2026-10-25).
+Warning: 0056-estonia-university-of-tartu-medicine evidence for 'eligibility' (university-of-tartu-medicine) has an expired review-by date (2026-10-25).
+Warning: 0056-estonia-university-of-tartu-medicine evidence for 'admissions' (university-of-tartu-medicine) has an expired review-by date (2026-10-25).
+Warning: 0056-estonia-university-of-tartu-medicine evidence for 'intake' (university-of-tartu-medicine) has an expired review-by date (2026-10-25).
+Warning: 0056-estonia-university-of-tartu-medicine evidence for 'fee' (university-of-tartu-medicine) has an expired review-by date (2026-10-25).
+Warning: 0056-estonia-university-of-tartu-medicine evidence for 'student living' (university-of-tartu-faculty-of-medicine) has an expired review-by date (2026-10-25).
+Warning: 0058-universidad-catolica-del-uruguay-medicine evidence for 'eligibility' (universidad-catolica-del-uruguay-doctor-medicine) has an expired review-by date (2026-10-25).
+Warning: 0058-universidad-catolica-del-uruguay-medicine evidence for 'admissions' (universidad-catolica-del-uruguay-doctor-medicine) has an expired review-by date (2026-10-25).
+Warning: 0058-universidad-catolica-del-uruguay-medicine evidence for 'intake' (universidad-catolica-del-uruguay-doctor-medicine) has an expired review-by date (2026-10-25).
+Warning: 0058-universidad-catolica-del-uruguay-medicine evidence for 'fee' (universidad-catolica-del-uruguay-doctor-medicine) has an expired review-by date (2026-10-25).
+Warning: 0060-portugal-university-of-lisbon-medicine evidence for 'fee' (university-of-lisbon-faculty-of-medicine-medicine) has an expired review-by date (2026-10-25).
+Warning: 0060-portugal-university-of-lisbon-medicine evidence for 'admissions' (university-of-lisbon-faculty-of-medicine-medicine) has an expired review-by date (2026-10-25).
+Warning: 0060-portugal-university-of-lisbon-medicine evidence for 'intake' (university-of-lisbon-faculty-of-medicine-medicine) has an expired review-by date (2026-10-25).
+Warning: 0060-portugal-university-of-lisbon-medicine evidence for 'eligibility' (university-of-lisbon-faculty-of-medicine-medicine) has an expired review-by date (2026-10-25).
+Warning: 0060-portugal-university-of-lisbon-medicine evidence for 'student living' (university-of-lisbon-faculty-of-medicine) has an expired review-by date (2026-10-25).
+Warning: 0061-university-of-porto-medicine evidence for 'eligibility' (university-of-porto-faculty-of-medicine-integrated-master-medicine) has an expired review-by date (2026-10-25).
+Warning: 0061-university-of-porto-medicine evidence for 'admissions' (university-of-porto-faculty-of-medicine-integrated-master-medicine) has an expired review-by date (2026-10-25).
+Warning: 0061-university-of-porto-medicine evidence for 'intake' (university-of-porto-faculty-of-medicine-integrated-master-medicine) has an expired review-by date (2026-10-25).
+Warning: 0061-university-of-porto-medicine evidence for 'fee' (university-of-porto-faculty-of-medicine-integrated-master-medicine) has an expired review-by date (2026-10-25).
+Warning: 0064-uwi-st-augustine-mbbs evidence for 'eligibility' (uwi-st-augustine-bachelor-medicine-bachelor-surgery) has an expired review-by date (2026-10-25).
+Warning: 0064-uwi-st-augustine-mbbs evidence for 'admissions' (uwi-st-augustine-bachelor-medicine-bachelor-surgery) has an expired review-by date (2026-10-25).
+Warning: 0064-uwi-st-augustine-mbbs evidence for 'intake' (uwi-st-augustine-bachelor-medicine-bachelor-surgery) has an expired review-by date (2026-10-25).
+Warning: 0064-uwi-st-augustine-mbbs evidence for 'fee' (uwi-st-augustine-bachelor-medicine-bachelor-surgery) has an expired review-by date (2026-10-25).
+Warning: 0065-botswana-university-of-botswana-mbbs evidence for 'eligibility' (university-of-botswana-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0065-botswana-university-of-botswana-mbbs evidence for 'admissions' (university-of-botswana-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0065-botswana-university-of-botswana-mbbs evidence for 'intake' (university-of-botswana-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0065-botswana-university-of-botswana-mbbs evidence for 'fee' (university-of-botswana-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0065-botswana-university-of-botswana-mbbs evidence for 'student living' (university-of-botswana) has an expired review-by date (2026-10-25).
+Warning: 0068-rwanda-asome-auca-md evidence for 'eligibility' (asome-auca-school-of-medicine-md) has an expired review-by date (2026-10-25).
+Warning: 0068-rwanda-asome-auca-md evidence for 'admissions' (asome-auca-school-of-medicine-md) has an expired review-by date (2026-10-25).
+Warning: 0068-rwanda-asome-auca-md evidence for 'intake' (asome-auca-school-of-medicine-md) has an expired review-by date (2026-10-25).
+Warning: 0068-rwanda-asome-auca-md evidence for 'fee' (asome-auca-school-of-medicine-md) has an expired review-by date (2026-10-25).
+Warning: 0069-rwanda-university-of-rwanda-mbchb evidence for 'eligibility' (university-of-rwanda-cmhs-mbchb) has an expired review-by date (2026-10-25).
+Warning: 0069-rwanda-university-of-rwanda-mbchb evidence for 'admissions' (university-of-rwanda-cmhs-mbchb) has an expired review-by date (2026-10-25).
+Warning: 0069-rwanda-university-of-rwanda-mbchb evidence for 'intake' (university-of-rwanda-cmhs-mbchb) has an expired review-by date (2026-10-25).
+Warning: 0069-rwanda-university-of-rwanda-mbchb evidence for 'fee' (university-of-rwanda-cmhs-mbchb) has an expired review-by date (2026-10-25).
+Warning: 0069-rwanda-university-of-rwanda-mbchb evidence for 'student living' (university-of-rwanda-college-of-medicine-and-health-sciences) has an expired review-by date (2026-10-25).
+Warning: 0073-university-of-pretoria-mbchb evidence for 'eligibility' (university-of-pretoria-bachelor-medicine-surgery) has an expired review-by date (2026-10-25).
+Warning: 0073-university-of-pretoria-mbchb evidence for 'admissions' (university-of-pretoria-bachelor-medicine-surgery) has an expired review-by date (2026-10-25).
+Warning: 0073-university-of-pretoria-mbchb evidence for 'intake' (university-of-pretoria-bachelor-medicine-surgery) has an expired review-by date (2026-10-25).
+Warning: 0073-university-of-pretoria-mbchb evidence for 'fee' (university-of-pretoria-bachelor-medicine-surgery) has an expired review-by date (2026-10-25).
+Warning: 0079-guyana-texila-american-university-md evidence for 'recognition' (texila-american-university-guyana) has an expired review-by date (2026-10-25).
+Warning: 0079-guyana-texila-american-university-md evidence for 'eligibility' (texila-american-university-guyana-bsmd) has an expired review-by date (2026-10-25).
+Warning: 0079-guyana-texila-american-university-md evidence for 'admissions' (texila-american-university-guyana-bsmd) has an expired review-by date (2026-10-25).
+Warning: 0079-guyana-texila-american-university-md evidence for 'intake' (texila-american-university-guyana-bsmd) has an expired review-by date (2026-10-25).
+Warning: 0079-guyana-texila-american-university-md evidence for 'fee' (texila-american-university-guyana-bsmd) has an expired review-by date (2026-10-25).
+Warning: 0079-guyana-texila-american-university-md evidence for 'student living' (texila-american-university-guyana) has an expired review-by date (2026-10-25).
+Warning: 0080-guyana-university-of-guyana-mbbs evidence for 'eligibility' (university-of-guyana-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0080-guyana-university-of-guyana-mbbs evidence for 'admissions' (university-of-guyana-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0080-guyana-university-of-guyana-mbbs evidence for 'intake' (university-of-guyana-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0080-guyana-university-of-guyana-mbbs evidence for 'fee' (university-of-guyana-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0080-guyana-university-of-guyana-mbbs evidence for 'student living' (university-of-guyana) has an expired review-by date (2026-10-25).
+Warning: 0081-shandong-university-mbbs evidence for 'eligibility' (shandong-university-clinical-medicine-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0081-shandong-university-mbbs evidence for 'admissions' (shandong-university-clinical-medicine-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0081-shandong-university-mbbs evidence for 'intake' (shandong-university-clinical-medicine-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0081-shandong-university-mbbs evidence for 'fee' (shandong-university-clinical-medicine-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0083-jamaica-uwi-mona-mbbs evidence for 'eligibility' (uwi-mona-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0083-jamaica-uwi-mona-mbbs evidence for 'admissions' (uwi-mona-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0083-jamaica-uwi-mona-mbbs evidence for 'intake' (uwi-mona-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0083-jamaica-uwi-mona-mbbs evidence for 'fee' (uwi-mona-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0083-jamaica-uwi-mona-mbbs evidence for 'student living' (university-of-the-west-indies-mona-faculty-of-medical-sciences) has an expired review-by date (2026-10-25).
+Warning: 0084-malawi-kuhes-mbbs evidence for 'eligibility' (kuhes-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0084-malawi-kuhes-mbbs evidence for 'admissions' (kuhes-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0084-malawi-kuhes-mbbs evidence for 'intake' (kuhes-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0084-malawi-kuhes-mbbs evidence for 'fee' (kuhes-mbbs) has an expired review-by date (2026-10-25).
+Warning: 0084-malawi-kuhes-mbbs evidence for 'student living' (kamuzu-university-of-health-sciences-school-of-medicine-and-oral-health) has an expired review-by date (2026-10-25).
+Warning: 0085-medical-university-pleven-medicine evidence for 'eligibility' (medical-university-pleven-medicine-english) has an expired review-by date (2026-10-25).
+Warning: 0085-medical-university-pleven-medicine evidence for 'admissions' (medical-university-pleven-medicine-english) has an expired review-by date (2026-10-25).
+Warning: 0085-medical-university-pleven-medicine evidence for 'intake' (medical-university-pleven-medicine-english) has an expired review-by date (2026-10-25).
+Warning: 0085-medical-university-pleven-medicine evidence for 'fee' (medical-university-pleven-medicine-english) has an expired review-by date (2026-10-25).
+Warning: 0085-medical-university-pleven-medicine evidence for 'eligibility' (medical-university-pleven-medicine-english) has an expired review-by date (2026-10-25).
+Warning: 0086-azerbaijan-medical-university-md evidence for 'eligibility' (azerbaijan-medical-university-general-medicine) has an expired review-by date (2026-10-25).
+Warning: 0086-azerbaijan-medical-university-md evidence for 'admissions' (azerbaijan-medical-university-general-medicine) has an expired review-by date (2026-10-25).
+Warning: 0086-azerbaijan-medical-university-md evidence for 'intake' (azerbaijan-medical-university-general-medicine) has an expired review-by date (2026-10-25).
+Warning: 0086-azerbaijan-medical-university-md evidence for 'fee' (azerbaijan-medical-university-general-medicine) has an expired review-by date (2026-10-25).
+Warning: 0086-azerbaijan-medical-university-md evidence for 'student living' (azerbaijan-medical-university) has an expired review-by date (2026-10-25).
+Warning: 0088-belarus-bsmu-md evidence for 'eligibility' (bsmu-6-year-md) has an expired review-by date (2026-10-25).
+Warning: 0088-belarus-bsmu-md evidence for 'admissions' (bsmu-6-year-md) has an expired review-by date (2026-10-25).
+Warning: 0088-belarus-bsmu-md evidence for 'intake' (bsmu-6-year-md) has an expired review-by date (2026-10-25).
+Warning: 0088-belarus-bsmu-md evidence for 'fee' (bsmu-6-year-md) has an expired review-by date (2026-10-25).
+Warning: 0088-belarus-bsmu-md evidence for 'student living' (belarusian-state-medical-university) has an expired review-by date (2026-10-25).
+Warning: 0098-romania-carol-davila-session-ii-correction evidence for 'eligibility' (carol-davila-university-of-medicine-and-pharmacy-general-medicine) has an expired review-by date (2026-10-25).
+Warning: 0098-romania-carol-davila-session-ii-correction evidence for 'fee' (carol-davila-university-of-medicine-and-pharmacy-general-medicine) has an expired review-by date (2026-10-25).
+Warning: 0098-romania-carol-davila-session-ii-correction evidence for 'student living' (carol-davila-university-of-medicine-and-pharmacy) has an expired review-by date (2026-10-25).
+{
+  "applied": [
+    {
+      "id": "0001-semmelweis-general-medicine",
+      "status": "applied",
+      "appliedAt": "2026-07-21T05:09:03.872Z"
+    },
+    {
+      "id": "0002-umd-computer-science",
+      "status": "applied",
+      "appliedAt": "2026-07-21T05:09:06.199Z"
+    },
+    {
+      "id": "0003-vietnam-medicine-gold-standard",
+      "status": "applied",
+      "appliedAt": "2026-07-21T05:10:45.370Z"
+    },
+    {
+      "id": "0004-philippines-nursing-batch",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:48:05.254Z"
+    },
+    {
+      "id": "0005-uzbekistan-tuit-2026",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:48:07.708Z"
+    },
+    {
+      "id": "0006-germany-italy-university-batch",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:48:10.520Z"
+    },
+    {
+      "id": "0007-uk-lsbu-computer-science",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:48:15.081Z"
+    },
+    {
+      "id": "0008-bangladesh-dcimc-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:48:17.533Z"
+    },
+    {
+      "id": "0009-uk-gcu-computer-science",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:48:20.073Z"
+    },
+    {
+      "id": "0010-uk-anglia-ruskin-university",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:48:24.365Z"
+    },
+    {
+      "id": "0011-uk-robert-gordon-university-2026",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:48:28.130Z"
+    },
+    {
+      "id": "0012-bangladesh-bmc-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:48:32.515Z"
+    },
+    {
+      "id": "0013-armenia-yerevan-haybusak-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:48:37.870Z"
+    },
+    {
+      "id": "0014-armenia-ysmu-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:48:40.091Z"
+    },
+    {
+      "id": "0015-georgia-medical-universities",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:48:41.980Z"
+    },
+    {
+      "id": "0017-kazakhstan-al-farabi-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:48:44.318Z"
+    },
+    {
+      "id": "0018-bosnia-sarajevo-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:48:46.081Z"
+    },
+    {
+      "id": "0019-north-macedonia-goce-delcev-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:48:47.697Z"
+    },
+    {
+      "id": "0020-north-macedonia-ukim-skopje-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:48:49.177Z"
+    },
+    {
+      "id": "0021-poland-jagiellonian-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:48:50.685Z"
+    },
+    {
+      "id": "0022-poland-warsaw-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:48:52.131Z"
+    },
+    {
+      "id": "0023-poland-gdansk-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:48:53.678Z"
+    },
+    {
+      "id": "0024-poland-poznan-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:48:55.304Z"
+    },
+    {
+      "id": "0025-serbia-nis-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:48:56.892Z"
+    },
+    {
+      "id": "0026-serbia-novi-sad-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:48:58.367Z"
+    },
+    {
+      "id": "0027-serbia-kragujevac-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:48:59.846Z"
+    },
+    {
+      "id": "0028-ireland-rcsi-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:01.618Z"
+    },
+    {
+      "id": "0029-bahrain-rcsi-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:03.226Z"
+    },
+    {
+      "id": "0030-mauritius-ssr-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:04.940Z"
+    },
+    {
+      "id": "0031-moldova-testemitanu-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:06.777Z"
+    },
+    {
+      "id": "0032-slovakia-comenius-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:08.896Z"
+    },
+    {
+      "id": "0033-slovakia-slovak-medical-university-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:10.482Z"
+    },
+    {
+      "id": "0034-latvia-university-of-latvia-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:12.343Z"
+    },
+    {
+      "id": "0035-latvia-riga-stradins-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:14.101Z"
+    },
+    {
+      "id": "0036-czechia-palacky-olomouc-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:15.679Z"
+    },
+    {
+      "id": "0037-czechia-ostrava-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:17.177Z"
+    },
+    {
+      "id": "0038-cyprus-european-university-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:18.891Z"
+    },
+    {
+      "id": "0039-cyprus-nicosia-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:20.796Z"
+    },
+    {
+      "id": "0040-fiji-university-of-fiji-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:22.371Z"
+    },
+    {
+      "id": "0041-ghana-knust-mbchb",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:24.212Z"
+    },
+    {
+      "id": "0042-zambia-university-of-zambia-mbchb",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:26.004Z"
+    },
+    {
+      "id": "0043-zambia-texila-american-university-mbchb",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:27.884Z"
+    },
+    {
+      "id": "0044-romania-iuliu-hatieganu-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:29.506Z"
+    },
+    {
+      "id": "0045-romania-carol-davila-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-09-09T04:29:39.702Z"
+    },
+    {
+      "id": "0046-uae-gulf-medical-university-md",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:32.648Z"
+    },
+    {
+      "id": "0047-tanzania-muhimbili-md",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:34.115Z"
+    },
+    {
+      "id": "0048-tanzania-kcmc-university-md",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:35.594Z"
+    },
+    {
+      "id": "0049-portugal-catolica-medical-school",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:37.000Z"
+    },
+    {
+      "id": "0050-croatia-university-of-split-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:38.418Z"
+    },
+    {
+      "id": "0051-macau-must-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:39.766Z"
+    },
+    {
+      "id": "0052-uganda-mbarara-university-mbchb",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:41.258Z"
+    },
+    {
+      "id": "0053-university-of-mostar-medicine",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:43.009Z"
+    },
+    {
+      "id": "0054-uganda-makerere-university-mbchb",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:49:44.446Z"
+    },
+    {
+      "id": "0056-estonia-university-of-tartu-medicine",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:51:14.083Z"
+    },
+    {
+      "id": "0057-bvi-phsu-md",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:51:15.654Z"
+    },
+    {
+      "id": "0058-universidad-catolica-del-uruguay-medicine",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:53:44.723Z"
+    },
+    {
+      "id": "0059-croatia-rijeka-medicine",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:53:46.809Z"
+    },
+    {
+      "id": "0060-portugal-university-of-lisbon-medicine",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:53:48.036Z"
+    },
+    {
+      "id": "0061-university-of-porto-medicine",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:53:49.664Z"
+    },
+    {
+      "id": "0063-slovenia-maribor-general-medicine",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:53:51.299Z"
+    },
+    {
+      "id": "0064-uwi-st-augustine-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:53:52.618Z"
+    },
+    {
+      "id": "0065-botswana-university-of-botswana-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:53:54.366Z"
+    },
+    {
+      "id": "0067-namibia-unam-mbchb",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:53:55.755Z"
+    },
+    {
+      "id": "0068-rwanda-asome-auca-md",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:53:57.236Z"
+    },
+    {
+      "id": "0069-rwanda-university-of-rwanda-mbchb",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:53:58.661Z"
+    },
+    {
+      "id": "0073-university-of-pretoria-mbchb",
+      "status": "applied",
+      "appliedAt": "2026-07-25T13:54:00.051Z"
+    },
+    {
+      "id": "0079-guyana-texila-american-university-md",
+      "status": "applied",
+      "appliedAt": "2026-09-09T04:29:42.256Z"
+    },
+    {
+      "id": "0080-guyana-university-of-guyana-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-09-09T04:29:43.882Z"
+    },
+    {
+      "id": "0081-shandong-university-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-09-09T04:29:45.711Z"
+    },
+    {
+      "id": "0083-jamaica-uwi-mona-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-09-09T04:29:47.147Z"
+    },
+    {
+      "id": "0084-malawi-kuhes-mbbs",
+      "status": "applied",
+      "appliedAt": "2026-09-09T04:29:49.524Z"
+    },
+    {
+      "id": "0085-medical-university-pleven-medicine",
+      "status": "applied",
+      "appliedAt": "2026-09-09T04:41:06.730Z"
+    },
+    {
+      "id": "0086-azerbaijan-medical-university-md",
+      "status": "applied",
+      "appliedAt": "2026-09-09T04:31:24.304Z"
+    },
+    {
+      "id": "0088-belarus-bsmu-md",
+      "status": "applied",
+      "appliedAt": "2026-09-09T04:31:26.237Z"
+    },
+    {
+      "id": "0089-india-symbiosis-international-university",
+      "status": "applied",
+      "appliedAt": "2026-09-09T04:31:28.031Z"
+    },
+    {
+      "id": "0090-india-vellore-institute-of-technology",
+      "status": "applied",
+      "appliedAt": "2026-09-09T04:31:34.564Z"
+    },
+    {
+      "id": "0091-india-manipal-academy-of-higher-education",
+      "status": "applied",
+      "appliedAt": "2026-09-09T04:31:41.782Z"
+    },
+    {
+      "id": "0092-india-amity-university-noida",
+      "status": "applied",
+      "appliedAt": "2026-09-09T04:31:51.677Z"
+    },
+    {
+      "id": "0093-india-amrita-vishwa-vidyapeetham",
+      "status": "applied",
+      "appliedAt": "2026-09-09T04:31:59.585Z"
+    },
+    {
+      "id": "0094-india-op-jindal-global-university",
+      "status": "applied",
+      "appliedAt": "2026-09-09T04:32:07.128Z"
+    },
+    {
+      "id": "0095-india-srm-institute-of-science-and-technology",
+      "status": "applied",
+      "appliedAt": "2026-09-09T04:32:19.205Z"
+    },
+    {
+      "id": "0096-india-kiit-deemed-to-be-university",
+      "status": "applied",
+      "appliedAt": "2026-09-09T04:32:34.317Z"
+    },
+    {
+      "id": "0097-india-lovely-professional-university",
+      "status": "applied",
+      "appliedAt": "2026-09-09T04:32:44.274Z"
+    },
+    {
+      "id": "0098-romania-carol-davila-session-ii-correction",
+      "status": "applied",
+      "appliedAt": "2026-09-15T16:11:05.587Z"
+    },
+    {
+      "id": "0099-india-sharda-university",
+      "status": "applied",
+      "appliedAt": "2026-09-21T11:31:59.267Z"
+    },
+    {
+      "id": "0100-india-christ-university",
+      "status": "applied",
+      "appliedAt": "2026-09-21T11:32:06.409Z"
+    },
+    {
+      "id": "0101-india-chandigarh-university",
+      "status": "applied",
+      "appliedAt": "2026-09-21T11:32:14.039Z"
+    },
+    {
+      "id": "0102-india-world-university-of-design",
+      "status": "applied",
+      "appliedAt": "2026-09-21T11:32:21.981Z"
+    },
+    {
+      "id": "0103-india-sri-ramachandra-institute-of-higher-education-and-research",
+      "status": "applied",
+      "appliedAt": "2026-09-21T11:32:29.635Z"
+    },
+    {
+      "id": "0104-india-shiv-nadar-institution-of-eminence",
+      "status": "applied",
+      "appliedAt": "2026-09-21T11:32:35.963Z"
+    },
+    {
+      "id": "0105-india-ashoka-university",
+      "status": "applied",
+      "appliedAt": "2026-09-21T11:32:47.239Z"
+    },
+    {
+      "id": "0106-india-flame-university",
+      "status": "applied",
+      "appliedAt": "2026-09-21T11:32:51.807Z"
+    },
+    {
+      "id": "0107-india-jss-academy-of-higher-education-and-research",
+      "status": "applied",
+      "appliedAt": "2026-09-21T11:32:57.897Z"
+    },
+    {
+      "id": "0108-india-jamia-hamdard",
+      "status": "applied",
+      "appliedAt": "2026-09-21T18:22:31.537Z"
+    },
+    {
+      "id": "0109-india-marwadi-university",
+      "status": "applied",
+      "appliedAt": "2026-09-21T18:23:13.541Z"
+    },
+    {
+      "id": "0110-india-birla-institute-of-technology-and-science-pilani",
+      "status": "applied",
+      "appliedAt": "2026-09-21T18:23:43.104Z"
+    },
+    {
+      "id": "0111-india-university-of-hyderabad",
+      "status": "applied",
+      "appliedAt": "2026-09-21T18:24:10.409Z"
+    },
+    {
+      "id": "0112-india-jamia-millia-islamia",
+      "status": "applied",
+      "appliedAt": "2026-09-21T18:24:47.041Z"
+    },
+    {
+      "id": "0113-india-manipal-university-jaipur",
+      "status": "applied",
+      "appliedAt": "2026-09-21T18:25:50.495Z"
+    },
+    {
+      "id": "0114-india-nellai-college-of-engineering",
+      "status": "applied",
+      "appliedAt": "2026-10-22T09:51:51.181Z"
+    },
+    {
+      "id": "0115-india-sardar-raja-college-of-engineering",
+      "status": "applied",
+      "appliedAt": "2026-10-22T09:51:59.169Z"
+    },
+    {
+      "id": "0116-india-rajas-institute-of-allied-health-sciences",
+      "status": "applied",
+      "appliedAt": "2026-10-22T09:52:07.823Z"
+    },
+    {
+      "id": "0117-india-joy-university",
+      "status": "applied",
+      "appliedAt": "2026-10-22T09:52:10.808Z"
+    },
+    {
+      "id": "0118-india-kalasalingam-academy-of-research-and-education",
+      "status": "applied",
+      "appliedAt": "2026-10-22T09:52:45.581Z"
+    },
+    {
+      "id": "0119-india-arul-tharum-vpmm-college-of-engineering-and-technology",
+      "status": "applied",
+      "appliedAt": "2026-10-22T11:53:33.036Z"
+    },
+    {
+      "id": "0120-india-symbiosis-international-university-fee-audience",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:28:51.640Z"
+    },
+    {
+      "id": "0121-india-vellore-institute-of-technology-fee-audience",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:28:59.275Z"
+    },
+    {
+      "id": "0122-india-manipal-academy-of-higher-education-fee-audience",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:29:05.170Z"
+    },
+    {
+      "id": "0123-india-amity-university-noida-fee-audience",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:29:10.811Z"
+    },
+    {
+      "id": "0124-india-op-jindal-global-university-fee-audience",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:29:16.681Z"
+    },
+    {
+      "id": "0125-india-srm-institute-of-science-and-technology-fee-audience",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:29:25.592Z"
+    },
+    {
+      "id": "0126-india-kiit-deemed-to-be-university-fee-audience",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:29:34.094Z"
+    },
+    {
+      "id": "0127-india-lovely-professional-university-fee-audience",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:29:42.692Z"
+    },
+    {
+      "id": "0128-india-sharda-university-fee-audience",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:29:48.848Z"
+    },
+    {
+      "id": "0129-india-christ-university-fee-audience",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:29:55.494Z"
+    },
+    {
+      "id": "0130-india-chandigarh-university-fee-audience",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:30:02.849Z"
+    },
+    {
+      "id": "0131-india-world-university-of-design-fee-audience",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:30:10.623Z"
+    },
+    {
+      "id": "0132-india-sri-ramachandra-institute-of-higher-education-and-research-fee-audience",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:30:21.558Z"
+    },
+    {
+      "id": "0133-india-ashoka-university-fee-audience",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:30:29.353Z"
+    },
+    {
+      "id": "0134-india-flame-university-fee-audience",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:30:33.239Z"
+    },
+    {
+      "id": "0135-india-jss-academy-of-higher-education-and-research-fee-audience",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:30:38.480Z"
+    },
+    {
+      "id": "0136-india-jamia-hamdard-fee-audience",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:30:44.661Z"
+    },
+    {
+      "id": "0137-india-marwadi-university-fee-audience",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:31:17.799Z"
+    },
+    {
+      "id": "0138-india-birla-institute-of-technology-and-science-pilani-fee-audience",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:31:56.963Z"
+    },
+    {
+      "id": "0139-india-university-of-hyderabad-fee-audience",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:32:23.512Z"
+    },
+    {
+      "id": "0140-india-jamia-millia-islamia-fee-audience",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:32:58.418Z"
+    },
+    {
+      "id": "0141-india-manipal-university-jaipur-fee-audience",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:33:56.199Z"
+    },
+    {
+      "id": "0142-india-joy-university-fee-audience",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:34:27.072Z"
+    },
+    {
+      "id": "0143-india-kalasalingam-academy-of-research-and-education-fee-audience",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:35:08.722Z"
+    },
+    {
+      "id": "0144-india-arul-tharum-vpmm-college-of-engineering-and-technology-fee-audience",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:35:37.790Z"
+    },
+    {
+      "id": "0145-india-amity-university-noida-indian-student-fees",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:39:54.198Z"
+    },
+    {
+      "id": "0146-india-jss-academy-of-higher-education-and-research-indian-student-fees",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:40:00.387Z"
+    },
+    {
+      "id": "0147-india-joy-university-indian-student-fees",
+      "status": "applied",
+      "appliedAt": "2026-10-23T04:40:40.214Z"
+    },
+    {
+      "id": "0148-india-dhanalakshmi-srinivasan-college-of-engineering-and-technology",
+      "status": "applied",
+      "appliedAt": "2026-10-23T07:26:03.103Z"
+    },
+    {
+      "id": "0149-india-anna-university",
+      "status": "applied",
+      "appliedAt": "2026-10-23T10:13:57.858Z"
+    },
+    {
+      "id": "0150-india-university-of-madras",
+      "status": "applied",
+      "appliedAt": "2026-10-23T10:16:03.408Z"
+    },
+    {
+      "id": "0151-india-shanmugha-arts-science-technology-and-research-academy",
+      "status": "applied",
+      "appliedAt": "2026-10-23T10:16:06.888Z"
+    },
+    {
+      "id": "0152-india-jp-college-of-engineering",
+      "status": "applied",
+      "appliedAt": "2026-10-23T15:11:27.065Z"
+    },
+    {
+      "id": "0153-india-jp-college-of-engineering-programme-labels",
+      "status": "applied",
+      "appliedAt": "2026-10-23T16:10:53.904Z"
+    },
+    {
+      "id": "0154-india-jp-college-of-engineering-intake-month",
+      "status": "applied",
+      "appliedAt": "2026-10-23T16:17:22.313Z"
+    },
+    {
+      "id": "0155-india-jp-college-of-engineering-student-living-copy",
+      "status": "applied",
+      "appliedAt": "2026-10-23T18:39:40.971Z"
+    },
+    {
+      "id": "0156-india-jp-college-of-engineering-student-living-media",
+      "status": "applied",
+      "appliedAt": "2026-10-23T18:39:47.639Z"
+    },
+    {
+      "id": "0178-india-kongu-engineering-college",
+      "status": "applied",
+      "appliedAt": "2026-10-24T18:22:28.668Z"
+    },
+    {
+      "id": "0186-india-periyar-maniammai-university",
+      "status": "applied",
+      "appliedAt": "2026-10-24T18:22:45.807Z"
+    },
+    {
+      "id": "0187-india-bharathiar-university",
+      "status": "applied",
+      "appliedAt": "2026-10-24T18:22:57.450Z"
+    },
+    {
+      "id": "0188-india-bharathidasan-university",
+      "status": "applied",
+      "appliedAt": "2026-10-24T18:23:23.824Z"
+    },
+    {
+      "id": "0189-tamil-nadu-verification-date-correction",
+      "status": "applied",
+      "appliedAt": "2026-10-24T18:28:07.769Z"
+    },
+    {
+      "id": "0190-india-panimalar-engineering-college",
+      "status": "applied",
+      "appliedAt": "2026-10-24T18:37:49.395Z"
+    },
+    {
+      "id": "0191-india-shiv-nadar-university-chennai",
+      "status": "applied",
+      "appliedAt": "2026-10-24T18:37:54.723Z"
+    },
+    {
+      "id": "0192-bharathiar-domestic-tuition-rates",
+      "status": "applied",
+      "appliedAt": "2026-10-24T18:40:08.980Z"
+    },
+    {
+      "id": "0193-bharathiar-domestic-fee-notes",
+      "status": "applied",
+      "appliedAt": "2026-10-24T18:44:56.983Z"
+    },
+    {
+      "id": "0194-india-alagappa-university",
+      "status": "applied",
+      "appliedAt": "2026-10-24T19:05:14.803Z"
+    },
+    {
+      "id": "0195-india-tamil-nadu-national-law-university",
+      "status": "applied",
+      "appliedAt": "2026-10-24T19:05:20.030Z"
+    },
+    {
+      "id": "0196-india-rajalakshmi-engineering-college",
+      "status": "applied",
+      "appliedAt": "2026-10-24T19:05:23.984Z"
+    },
+    {
+      "id": "0197-india-vel-tech-university",
+      "status": "applied",
+      "appliedAt": "2026-10-24T19:32:24.743Z"
+    },
+    {
+      "id": "0198-india-hindustan-institute-technology-science",
+      "status": "applied",
+      "appliedAt": "2026-10-24T19:32:50.641Z"
+    },
+    {
+      "id": "0199-india-periyar-university",
+      "status": "applied",
+      "appliedAt": "2026-10-24T19:33:26.963Z"
+    },
+    {
+      "id": "0200-india-annamalai-university",
+      "status": "applied",
+      "appliedAt": "2026-10-24T19:57:30.970Z"
+    },
+    {
+      "id": "0201-india-amet-university",
+      "status": "applied",
+      "appliedAt": "2026-10-24T19:57:41.713Z"
+    },
+    {
+      "id": "0202-india-tamil-nadu-dr-j-jayalalithaa-fisheries-university",
+      "status": "applied",
+      "appliedAt": "2026-10-24T19:58:05.613Z"
+    },
+    {
+      "id": "0203-india-crescent-institute-science-technology",
+      "status": "applied",
+      "appliedAt": "2026-10-24T19:58:21.372Z"
+    },
+    {
+      "id": "0204-india-tamil-nadu-physical-education-and-sports-university",
+      "status": "applied",
+      "appliedAt": "2026-10-24T20:19:44.153Z"
+    },
+    {
+      "id": "0205-india-indian-maritime-university",
+      "status": "applied",
+      "appliedAt": "2026-10-24T20:19:50.545Z"
+    },
+    {
+      "id": "0206-india-iiitdm-kancheepuram",
+      "status": "applied",
+      "appliedAt": "2026-10-24T20:20:11.577Z"
+    },
+    {
+      "id": "0207-india-sri-sairam-engineering-college",
+      "status": "applied",
+      "appliedAt": "2026-10-24T20:34:33.520Z"
+    },
+    {
+      "id": "0208-india-chennai-mathematical-institute",
+      "status": "applied",
+      "appliedAt": "2026-10-24T20:34:47.574Z"
+    },
+    {
+      "id": "0209-india-st-peters-institute-of-higher-education-and-research",
+      "status": "applied",
+      "appliedAt": "2026-10-24T20:34:54.197Z"
+    },
+    {
+      "id": "0210-india-simats-occupational-therapy",
+      "status": "applied",
+      "appliedAt": "2026-10-24T20:35:15.132Z"
+    },
+    {
+      "id": "0211-india-sri-venkateswara-college-of-engineering",
+      "status": "applied",
+      "appliedAt": "2026-10-24T20:44:46.757Z"
+    },
+    {
+      "id": "0212-india-cmi-simats-city-facets",
+      "status": "applied",
+      "appliedAt": "2026-10-24T20:44:57.837Z"
+    },
+    {
+      "id": "0213-india-sathyabama-marine-biology",
+      "status": "applied",
+      "appliedAt": "2026-10-24T20:45:10.099Z"
+    },
+    {
+      "id": "0214-india-loyola-college-chennai",
+      "status": "applied",
+      "appliedAt": "2026-10-24T21:17:39.530Z"
+    },
+    {
+      "id": "0215-india-indian-institute-of-technology-madras",
+      "status": "applied",
+      "appliedAt": "2026-10-24T21:18:18.022Z"
+    },
+    {
+      "id": "0216-india-madras-christian-college",
+      "status": "applied",
+      "appliedAt": "2026-10-24T21:19:14.562Z"
+    },
+    {
+      "id": "0217-india-presidency-college-chennai",
+      "status": "applied",
+      "appliedAt": "2026-10-24T22:02:05.619Z"
+    },
+    {
+      "id": "0218-india-national-institute-of-technology-tiruchirappalli",
+      "status": "applied",
+      "appliedAt": "2026-10-24T22:02:11.984Z"
+    },
+    {
+      "id": "0219-india-psg-college-of-arts-and-science",
+      "status": "applied",
+      "appliedAt": "2026-10-24T22:02:53.240Z"
+    },
+    {
+      "id": "0220-vistas-pallavaram",
+      "status": "applied",
+      "appliedAt": "2026-10-24T22:21:47.103Z"
+    },
+    {
+      "id": "0221-india-tamil-nadu-agricultural-university",
+      "status": "applied",
+      "appliedAt": "2026-10-24T22:22:58.638Z"
+    },
+    {
+      "id": "0222-india-psg-college-of-technology",
+      "status": "applied",
+      "appliedAt": "2026-10-24T22:24:11.277Z"
+    },
+    {
+      "id": "0223-stella-maris-college-chennai",
+      "status": "applied",
+      "appliedAt": "2026-10-24T22:24:38.650Z"
+    },
+    {
+      "id": "0224-india-tamil-nadu-veterinary-and-animal-sciences-university",
+      "status": "applied",
+      "appliedAt": "2026-10-24T22:45:26.171Z"
+    },
+    {
+      "id": "0225-india-womens-christian-college-chennai",
+      "status": "applied",
+      "appliedAt": "2026-10-24T22:45:40.932Z"
+    },
+    {
+      "id": "0226-ethiraj-college-for-women",
+      "status": "applied",
+      "appliedAt": "2026-10-24T22:46:12.162Z"
+    },
+    {
+      "id": "0227-india-karunya-institute-of-technology-and-sciences",
+      "status": "applied",
+      "appliedAt": "2026-10-24T23:01:09.414Z"
+    },
+    {
+      "id": "0228-india-queen-marys-college-chennai",
+      "status": "applied",
+      "appliedAt": "2026-10-24T23:01:35.442Z"
+    },
+    {
+      "id": "0229-mop-vaishnav-college-for-women",
+      "status": "applied",
+      "appliedAt": "2026-10-24T23:02:00.921Z"
+    },
+    {
+      "id": "0230-india-karpagam-academy-of-higher-education",
+      "status": "applied",
+      "appliedAt": "2026-10-24T23:22:14.341Z"
+    },
+    {
+      "id": "0231-india-dg-vaishnav-college",
+      "status": "applied",
+      "appliedAt": "2026-10-24T23:22:31.795Z"
+    },
+    {
+      "id": "0232-guru-nanak-college-chennai",
+      "status": "applied",
+      "appliedAt": "2026-10-24T23:22:54.302Z"
+    },
+    {
+      "id": "0233-india-alagappa-university-programme-expansion",
+      "status": "applied",
+      "appliedAt": "2026-10-25T06:03:41.095Z"
+    },
+    {
+      "id": "0234-india-avinashilingam-institute-home-science-higher-education-women",
+      "status": "applied",
+      "appliedAt": "2026-10-25T06:04:11.107Z"
+    },
+    {
+      "id": "0235-justice-basheer-ahmed-sayeed-college-for-women",
+      "status": "applied",
+      "appliedAt": "2026-10-25T06:05:23.054Z"
+    },
+    {
+      "id": "0236-india-the-new-college-chennai",
+      "status": "applied",
+      "appliedAt": "2026-10-25T06:05:59.037Z"
+    },
+    {
+      "id": "0237-india-new-college-current-audience-clarification",
+      "status": "applied",
+      "appliedAt": "2026-10-25T06:07:08.694Z"
+    },
+    {
+      "id": "0238-ramakrishna-mission-vivekananda-college-chennai",
+      "status": "applied",
+      "appliedAt": "2026-10-25T06:19:11.213Z"
+    },
+    {
+      "id": "0239-india-pachaiyappas-college-chennai",
+      "status": "applied",
+      "appliedAt": "2026-10-25T06:19:33.996Z"
+    },
+    {
+      "id": "0240-india-gandhigram-rural-institute",
+      "status": "applied",
+      "appliedAt": "2026-10-25T06:19:38.355Z"
+    },
+    {
+      "id": "0241-madras-school-of-social-work",
+      "status": "applied",
+      "appliedAt": "2026-10-25T06:57:49.608Z"
+    },
+    {
+      "id": "0242-india-anna-adarsh-college-for-women-chennai",
+      "status": "applied",
+      "appliedAt": "2026-10-25T06:58:03.352Z"
+    },
+    {
+      "id": "0243-india-sri-krishna-arts-and-science-college",
+      "status": "applied",
+      "appliedAt": "2026-10-25T06:58:21.197Z"
+    },
+    {
+      "id": "0244-india-kongunadu-arts-and-science-college",
+      "status": "applied",
+      "appliedAt": "2026-10-25T06:58:56.723Z"
+    },
+    {
+      "id": "0245-india-sdnb-vaishnav-college-for-women-chennai",
+      "status": "applied",
+      "appliedAt": "2026-10-25T06:59:18.849Z"
+    },
+    {
+      "id": "0246-india-avinashilingam-native-reported-fees",
+      "status": "applied",
+      "appliedAt": "2026-10-25T06:59:51.843Z"
+    },
+    {
+      "id": "0247-india-jbas-native-reported-fees",
+      "status": "applied",
+      "appliedAt": "2026-10-25T07:00:52.586Z"
+    },
+    {
+      "id": "0248-india-stella-maris-native-reported-fees",
+      "status": "applied",
+      "appliedAt": "2026-10-25T07:01:30.058Z"
+    },
+    {
+      "id": "0249-india-rkmvc-native-reported-fees",
+      "status": "applied",
+      "appliedAt": "2026-10-25T07:01:57.243Z"
+    },
+    {
+      "id": "0250-india-central-university-of-tamil-nadu",
+      "status": "applied",
+      "appliedAt": "2026-10-25T07:02:18.755Z"
+    },
+    {
+      "id": "0251-india-queen-marys-native-reported-fees",
+      "status": "applied",
+      "appliedAt": "2026-10-25T07:02:48.718Z"
+    },
+    {
+      "id": "0252-india-presidency-native-reported-fees",
+      "status": "applied",
+      "appliedAt": "2026-10-25T07:03:30.771Z"
+    },
+    {
+      "id": "0253-india-wcc-native-reported-fees",
+      "status": "applied",
+      "appliedAt": "2026-10-25T07:13:32.450Z"
+    },
+    {
+      "id": "0254-india-meenakshi-college-for-women-chennai",
+      "status": "applied",
+      "appliedAt": "2026-10-25T07:13:56.471Z"
+    },
+    {
+      "id": "0255-india-loyola-college-chennai-native-reported-fees",
+      "status": "applied",
+      "appliedAt": "2026-10-25T07:14:13.824Z"
+    },
+    {
+      "id": "0256-india-guru-nanak-native-reported-fees",
+      "status": "applied",
+      "appliedAt": "2026-10-25T07:15:00.549Z"
+    },
+    {
+      "id": "0257-india-dg-vaishnav-native-reported-fees",
+      "status": "applied",
+      "appliedAt": "2026-10-25T07:15:35.704Z"
+    },
+    {
+      "id": "0258-india-tamil-university",
+      "status": "applied",
+      "appliedAt": "2026-10-25T07:15:59.043Z"
+    },
+    {
+      "id": "0259-india-psgcas-native-reported-fees",
+      "status": "applied",
+      "appliedAt": "2026-10-25T07:16:10.208Z"
+    },
+    {
+      "id": "0260-india-hits-native-reported-fees",
+      "status": "applied",
+      "appliedAt": "2026-10-25T07:41:36.434Z"
+    },
+    {
+      "id": "0261-india-psgtech-native-reported-fees",
+      "status": "applied",
+      "appliedAt": "2026-10-25T07:42:04.319Z"
+    },
+    {
+      "id": "0262-india-ethiraj-native-reported-fees",
+      "status": "applied",
+      "appliedAt": "2026-10-25T07:42:29.501Z"
+    },
+    {
+      "id": "0263-india-thiruvalluvar-university",
+      "status": "applied",
+      "appliedAt": "2026-10-25T07:42:46.333Z"
+    },
+    {
+      "id": "0264-india-mother-teresa-womens-university",
+      "status": "applied",
+      "appliedAt": "2026-10-25T07:42:57.481Z"
+    },
+    {
+      "id": "0265-india-manonmaniam-sundaranar-university",
+      "status": "applied",
+      "appliedAt": "2026-10-25T07:43:12.318Z"
+    },
+    {
+      "id": "0266-india-periyar-native-reported-fees",
+      "status": "applied",
+      "appliedAt": "2026-10-25T07:55:17.471Z"
+    },
+    {
+      "id": "0267-india-dr-mgr-educational-and-research-institute",
+      "status": "applied",
+      "appliedAt": "2026-10-25T07:55:45.379Z"
+    },
+    {
+      "id": "0268-india-tamil-nadu-dr-j-jayalalithaa-music-and-fine-arts-university",
+      "status": "applied",
+      "appliedAt": "2026-10-25T07:56:31.702Z"
+    },
+    {
+      "id": "0269-india-tamil-nadu-dr-ambedkar-law-university",
+      "status": "applied",
+      "appliedAt": "2026-10-25T08:10:37.728Z"
+    },
+    {
+      "id": "0270-india-ponnaiyah-ramajayam-institute-of-science-and-technology",
+      "status": "applied",
+      "appliedAt": "2026-10-25T08:10:46.596Z"
+    },
+    {
+      "id": "0271-india-madurai-kamaraj-university",
+      "status": "applied",
+      "appliedAt": "2026-10-25T08:11:10.100Z"
+    },
+    {
+      "id": "0272-india-spiher-native-reported-fees",
+      "status": "applied",
+      "appliedAt": "2026-10-25T08:11:42.712Z"
+    },
+    {
+      "id": "0273-india-sri-chandrasekharendra-saraswathi-viswa-mahavidyalaya",
+      "status": "applied",
+      "appliedAt": "2026-10-25T08:12:05.169Z"
+    },
+    {
+      "id": "0274-india-amet-native-reported-fees",
+      "status": "applied",
+      "appliedAt": "2026-10-25T08:29:17.284Z"
+    },
+    {
+      "id": "0275-india-jeppiaar-university",
+      "status": "applied",
+      "appliedAt": "2026-10-25T08:29:41.874Z"
+    },
+    {
+      "id": "0276-india-takshashila-university",
+      "status": "applied",
+      "appliedAt": "2026-10-25T08:29:48.039Z"
+    },
+    {
+      "id": "0277-india-noorul-islam-centre-for-higher-education",
+      "status": "applied",
+      "appliedAt": "2026-10-25T08:30:07.691Z"
+    },
+    {
+      "id": "0278-india-veltech-native-reported-fees",
+      "status": "applied",
+      "appliedAt": "2026-10-25T08:45:24.721Z"
+    },
+    {
+      "id": "0279-india-dhanalakshmi-srinivasan-university",
+      "status": "applied",
+      "appliedAt": "2026-10-25T08:45:52.907Z"
+    },
+    {
+      "id": "0280-india-nmv-university",
+      "status": "applied",
+      "appliedAt": "2026-10-25T08:46:04.440Z"
+    },
+    {
+      "id": "0281-india-meenakshi-academy-of-higher-education-and-research",
+      "status": "applied",
+      "appliedAt": "2026-10-25T08:46:08.812Z"
+    },
+    {
+      "id": "0282-india-st-joseph-university-villupuram",
+      "status": "applied",
+      "appliedAt": "2026-10-25T09:04:49.820Z"
+    },
+    {
+      "id": "0283-india-chettinad-academy-of-research-and-education",
+      "status": "applied",
+      "appliedAt": "2026-10-25T09:05:05.116Z"
+    },
+    {
+      "id": "0284-india-nitttr-chennai",
+      "status": "applied",
+      "appliedAt": "2026-10-25T09:05:25.571Z"
+    },
+    {
+      "id": "0285-india-tamil-nadu-open-university",
+      "status": "applied",
+      "appliedAt": "2026-10-25T09:05:36.417Z"
+    },
+    {
+      "id": "0286-india-vinayaka-missions-research-foundation",
+      "status": "applied",
+      "appliedAt": "2026-10-25T09:20:27.363Z"
+    },
+    {
+      "id": "0287-india-nitttr-chennai-copy",
+      "status": "applied",
+      "appliedAt": "2026-10-25T09:24:44.121Z"
+    },
+    {
+      "id": "0288-india-the-tamil-nadu-dr-mgr-medical-university",
+      "status": "applied",
+      "appliedAt": "2026-10-25T09:25:01.881Z"
+    },
+    {
+      "id": "0289-india-rathinam-global",
+      "status": "applied",
+      "appliedAt": "2026-10-25T09:25:13.096Z"
+    },
+    {
+      "id": "0290-india-dhanalakshmi-srinivasan-institute-of-research-and-technology",
+      "status": "applied",
+      "appliedAt": "2026-10-25T09:46:42.682Z"
+    },
+    {
+      "id": "0291-india-sri-krishna-knowledge-foundation-identity-forward",
+      "status": "applied",
+      "appliedAt": "2026-10-25T09:46:52.578Z"
+    },
+    {
+      "id": "0292-india-p-k-das-institute-of-social-sciences-health-sciences-and-technology",
+      "status": "applied",
+      "appliedAt": "2026-10-25T09:47:07.370Z"
+    },
+    {
+      "id": "0293-india-karpaga-vinayaga-educational-lore-for-learning",
+      "status": "applied",
+      "appliedAt": "2026-10-25T09:47:10.582Z"
+    },
+    {
+      "id": "0294-india-annamalai-villupuram-extension-expansion",
+      "status": "applied",
+      "appliedAt": "2026-10-25T09:47:14.320Z"
+    },
+    {
+      "id": "0295-india-presidency-full-undergraduate-forward",
+      "status": "applied",
+      "appliedAt": "2026-10-25T09:47:25.082Z"
+    },
+    {
+      "id": "0296-india-university-of-madras-expansion",
+      "status": "applied",
+      "appliedAt": "2026-10-25T10:05:26.121Z"
+    },
+    {
+      "id": "0297-india-sathyabama-postgraduate-hold-rescue",
+      "status": "applied",
+      "appliedAt": "2026-10-25T10:05:49.374Z"
+    },
+    {
+      "id": "0298-india-simats-medical-portfolio-forward",
+      "status": "applied",
+      "appliedAt": "2026-10-25T10:05:59.571Z"
+    },
+    {
+      "id": "0299-india-bharathidasan-university-expansion",
+      "status": "applied",
+      "appliedAt": "2026-10-25T10:13:24.023Z"
+    },
+    {
+      "id": "0300-india-biher-constituent-medical-portfolio",
+      "status": "applied",
+      "appliedAt": "2026-10-25T10:13:41.815Z"
+    },
+    {
+      "id": "0301-india-vellore-institute-of-technology-academic-expansion",
+      "status": "applied",
+      "appliedAt": "2026-10-25T10:13:54.881Z"
+    },
+    {
+      "id": "0302-india-biher-medical-award-crosswalk-correction",
+      "status": "applied",
+      "appliedAt": "2026-10-25T10:19:33.996Z"
+    },
+    {
+      "id": "0303-india-amrita-coimbatore-expansion",
+      "status": "applied",
+      "appliedAt": "2026-10-25T10:34:40.651Z"
+    },
+    {
+      "id": "0304-india-srm-institute-of-science-and-technology-academic-expansion",
+      "status": "applied",
+      "appliedAt": "2026-10-25T10:34:56.380Z"
+    },
+    {
+      "id": "0305-india-sriher-current-regular-portfolio",
+      "status": "applied",
+      "appliedAt": "2026-10-25T10:35:24.164Z"
+    },
+    {
+      "id": "0306-india-chettinad-academic-expansion",
+      "status": "applied",
+      "appliedAt": "2026-10-25T10:46:40.362Z"
+    },
+    {
+      "id": "0307-india-pachaiyappas-college-chennai-academic-rescue",
+      "status": "applied",
+      "appliedAt": "2026-10-25T10:46:47.266Z"
+    },
+    {
+      "id": "0308-india-snu-chennai-regular-portfolio-forward",
+      "status": "applied",
+      "appliedAt": "2026-10-25T10:46:52.279Z"
+    },
+    {
+      "id": "0309-india-sai-university-chennai-rescue",
+      "status": "applied",
+      "appliedAt": "2026-10-25T11:17:31.853Z"
+    },
+    {
+      "id": "0310-india-sri-ramachandra-expansion",
+      "status": "applied",
+      "appliedAt": "2026-10-25T12:23:45.222Z"
+    },
+    {
+      "id": "0311-india-tnpesu-academic-hold-rescue",
+      "status": "applied",
+      "appliedAt": "2026-10-25T11:17:38.502Z"
+    },
+    {
+      "id": "0312-india-tanuvas-regular-portfolio-forward",
+      "status": "applied",
+      "appliedAt": "2026-10-25T11:17:41.699Z"
+    },
+    {
+      "id": "0313-india-annamalai-own-campus-expansion",
+      "status": "applied",
+      "appliedAt": "2026-10-25T11:17:44.979Z"
+    },
+    {
+      "id": "0314-india-mcc-current-regular-portfolio-forward",
+      "status": "applied",
+      "appliedAt": "2026-10-25T11:17:53.667Z"
+    },
+    {
+      "id": "0315-india-tnnlu-llm-academic-rescue",
+      "status": "applied",
+      "appliedAt": "2026-10-25T11:18:03.186Z"
+    },
+    {
+      "id": "0316-india-tamil-nadu-teachers-education-university",
+      "status": "applied",
+      "appliedAt": "2026-10-25T11:18:05.165Z"
+    },
+    {
+      "id": "0317-india-karpagam-academic-portfolio-rescue",
+      "status": "applied",
+      "appliedAt": "2026-10-25T11:21:03.005Z"
+    },
+    {
+      "id": "0318-india-pmist-current-regular-portfolio-forward",
+      "status": "applied",
+      "appliedAt": "2026-10-25T11:21:09.234Z"
+    },
+    {
+      "id": "0319-india-ethiraj-postgraduate-academic-rescue",
+      "status": "applied",
+      "appliedAt": "2026-10-25T11:21:18.250Z"
+    },
+    {
+      "id": "0320-india-karunya-regular-academic-rescue",
+      "status": "applied",
+      "appliedAt": "2026-10-25T11:29:13.985Z"
+    },
+    {
+      "id": "0321-india-mop-vaishnav-postgraduate-academic-rescue",
+      "status": "applied",
+      "appliedAt": "2026-10-25T11:29:19.224Z"
+    },
+    {
+      "id": "0322-india-panimalar-regular-postgraduate-forward",
+      "status": "applied",
+      "appliedAt": "2026-10-25T11:29:23.757Z"
+    },
+    {
+      "id": "0323-india-tanuvas-source-attribution-restoration",
+      "status": "applied",
+      "appliedAt": "2026-10-25T11:29:27.961Z"
+    },
+    {
+      "id": "0324-india-mcc-source-attribution-restoration",
+      "status": "applied",
+      "appliedAt": "2026-10-25T11:29:31.203Z"
+    },
+    {
+      "id": "0325-india-karpagam-eligibility-media-correction",
+      "status": "applied",
+      "appliedAt": "2026-10-25T11:29:41.639Z"
+    },
+    {
+      "id": "0326-india-stella-maris-academic-hold-rescue",
+      "status": "applied",
+      "appliedAt": "2026-10-25T11:36:46.320Z"
+    },
+    {
+      "id": "0327-india-rkmvc-academic-hold-rescue",
+      "status": "applied",
+      "appliedAt": "2026-10-25T11:36:53.617Z"
+    },
+    {
+      "id": "0328-india-guru-nanak-regular-postgraduate-forward",
+      "status": "applied",
+      "appliedAt": "2026-10-25T11:36:59.133Z"
+    },
+    {
+      "id": "0329-india-new-college-academic-hold-rescue",
+      "status": "applied",
+      "appliedAt": "2026-10-25T11:48:38.354Z"
+    },
+    {
+      "id": "0330-india-dg-vaishnav-academic-hold-rescue",
+      "status": "applied",
+      "appliedAt": "2026-10-25T11:48:47.235Z"
+    },
+    {
+      "id": "0331-india-panimalar-postgraduate-reported-fees",
+      "status": "applied",
+      "appliedAt": "2026-10-25T11:48:54.398Z"
+    },
+    {
+      "id": "0332-india-loyola-academic-hold-rescue",
+      "status": "applied",
+      "appliedAt": "2026-10-25T11:48:57.446Z"
+    },
+    {
+      "id": "0333-india-psgtech-science-portfolio-rescue",
+      "status": "applied",
+      "appliedAt": "2026-10-25T11:49:08.201Z"
+    },
+    {
+      "id": "0334-india-wcc-academic-hold-rescue",
+      "status": "applied",
+      "appliedAt": "2026-10-25T12:00:55.062Z"
+    },
+    {
+      "id": "0335-india-anna-adarsh-academic-hold-rescue",
+      "status": "applied",
+      "appliedAt": "2026-10-25T12:01:02.767Z"
+    },
+    {
+      "id": "0336-india-qmc-language-award-rescue",
+      "status": "applied",
+      "appliedAt": "2026-10-25T12:01:06.893Z"
+    },
+    {
+      "id": "0337-india-svce-postgraduate-portfolio-rescue",
+      "status": "applied",
+      "appliedAt": "2026-10-25T12:23:56.928Z"
+    },
+    {
+      "id": "0338-india-thiruvalluvar-english-academic-rescue",
+      "status": "applied",
+      "appliedAt": "2026-10-25T12:24:00.877Z"
+    },
+    {
+      "id": "0339-india-sairam-postgraduate-academic-rescue",
+      "status": "applied",
+      "appliedAt": "2026-10-25T12:24:04.024Z"
+    },
+    {
+      "id": "0340-india-sriher-profile-provenance-wording-correction",
+      "status": "applied",
+      "appliedAt": "2026-10-25T12:38:32.668Z"
+    },
+    {
+      "id": "0341-india-quaid-e-millath-government-college-for-women-chennai",
+      "status": "applied",
+      "appliedAt": "2026-10-25T12:46:32.166Z"
+    },
+    {
+      "id": "0342-india-bharathi-womens-college-chennai",
+      "status": "applied",
+      "appliedAt": "2026-10-25T12:46:40.043Z"
+    },
+    {
+      "id": "0343-india-government-arts-science-college-thiruvottiyur",
+      "status": "applied",
+      "appliedAt": "2026-10-25T12:58:10.768Z"
+    },
+    {
+      "id": "0344-india-dagac-vyasarpadi-undergraduate-portfolio",
+      "status": "applied",
+      "appliedAt": "2026-10-25T12:58:12.994Z"
+    },
+    {
+      "id": "0345-india-rajeswari-vedachalam-government-arts-college-chengalpattu",
+      "status": "applied",
+      "appliedAt": "2026-10-25T12:58:18.197Z"
+    },
+    {
+      "id": "0346-india-muthurangam-government-arts-college-vellore",
+      "status": "applied",
+      "appliedAt": "2026-10-25T13:16:50.400Z"
+    },
+    {
+      "id": "0347-india-government-thirumagal-mills-college-gudiyatham",
+      "status": "applied",
+      "appliedAt": "2026-10-25T13:16:54.889Z"
+    },
+    {
+      "id": "0348-india-government-arts-science-college-perumbakkam",
+      "status": "applied",
+      "appliedAt": "2026-10-25T13:17:00.076Z"
+    }
+  ],
+  "pending": [
+    {
+      "id": "0349-india-c-abdul-hakeem-college-melvisharam",
+      "description": "Add C Abdul Hakeem College Melvisharam with17 verified aided and unaided degrees and17 current native fee quotes",
+      "payload": "/Users/bharat/Documents/studentstraffic/content-migrations/0349-india-c-abdul-hakeem-college-melvisharam/payload.json"
+    },
+    {
+      "id": "0350-india-voorhees-college-vellore",
+      "description": "Voorhees College Vellore32 regular academic routes,19UG+13PG in exact aided/self-financing shifts, current ownUG qualifications and TVUapprovedaffiliatePG framework, genuineUGC2f12B and reviewedunchangedcrest/alumni-event media",
+      "payload": "/Users/bharat/Documents/studentstraffic/content-migrations/0350-india-voorhees-college-vellore/payload.json"
+    },
+    {
+      "id": "0351-india-auxilium-college-vellore",
+      "description": "Add28 regular academic Auxilium College Vellore routes with precise aided/self-financed qualifications,27 prior-cycle native first-year quotes and reviewed genuine official media.",
+      "payload": "/Users/bharat/Documents/studentstraffic/content-migrations/0351-india-auxilium-college-vellore/payload.json"
+    },
+    {
+      "id": "0352-india-quaid-e-millath-postgraduate-forward",
+      "description": "Preserve25 Quaid E Millath undergraduate records and add11 verified postgraduate programmes with current native firstyear fees",
+      "payload": "/Users/bharat/Documents/studentstraffic/content-migrations/0352-india-quaid-e-millath-postgraduate-forward/payload.json"
+    },
+    {
+      "id": "0353-india-thiagarajar-college-madurai",
+      "description": "Thiagarajar College Madurai43 regular academic routes with exact current2026 UG3yr/PG2yr qualifyingtables,18native historical semester tuition quotes including10 sourcedNIL aidedUGonly, preciseMScBiotechnologyfamily, fullindependentUGCregister and reviewedunchangedcrest/libraryoriginal",
+      "payload": "/Users/bharat/Documents/studentstraffic/content-migrations/0353-india-thiagarajar-college-madurai/payload.json"
+    },
+    {
+      "id": "0354-india-the-american-college-madurai",
+      "description": "American College Madurai61 academic routes:49main/12satelliteUG,59exact indicative prospectus quotes, current qualifications and six/four-semester framework,114row inventory, linkedUGC2f12B, reviewed genuine crest/main-campus photo; root independent review PASS",
+      "payload": "/Users/bharat/Documents/studentstraffic/content-migrations/0354-india-the-american-college-madurai/payload.json"
+    },
+    {
+      "id": "0355-india-fatima-college-madurai",
+      "description": "Fatima College Madurai38 current academic women routes, exact2026qualifications/3yrUG2yrPG framework,10indicative native fullcourse quotes with truthfulcategorysource scope,53rowinventory,fullUGC2f12B,unchangedreviewedcrest/buildingoriginals; peerPASS",
+      "payload": "/Users/bharat/Documents/studentstraffic/content-migrations/0355-india-fatima-college-madurai/payload.json"
+    }
+  ]
+}
+Applying content migration 0349-india-c-abdul-hakeem-college-melvisharam: Add C Abdul Hakeem College Melvisharam with17 verified aided and unaided degrees and17 current native fee quotes
+Evidence refreshed: 158 records in 1 batch(es).
+Search documents refreshed: 18 upserted, 0 removed.
+Revalidated 18 cache tag(s), 17 slug(s), and 2 path(s).
+Applied 0349-india-c-abdul-hakeem-college-melvisharam.
+Applying content migration 0350-india-voorhees-college-vellore: Voorhees College Vellore32 regular academic routes,19UG+13PG in exact aided/self-financing shifts, current ownUG qualifications and TVUapprovedaffiliatePG framework, genuineUGC2f12B and reviewedunchangedcrest/alumni-event media
+Evidence refreshed: 268 records in 1 batch(es).
+Search documents refreshed: 33 upserted, 0 removed.
+Revalidated 29 cache tag(s), 32 slug(s), and 2 path(s).
+Applied 0350-india-voorhees-college-vellore.
+Applying content migration 0351-india-auxilium-college-vellore: Add28 regular academic Auxilium College Vellore routes with precise aided/self-financed qualifications,27 prior-cycle native first-year quotes and reviewed genuine official media.
+Evidence refreshed: 202 records in 1 batch(es).
+Search documents refreshed: 29 upserted, 0 removed.
+Revalidated 25 cache tag(s), 28 slug(s), and 2 path(s).
+Applied 0351-india-auxilium-college-vellore.
+Applying content migration 0352-india-quaid-e-millath-postgraduate-forward: Preserve25 Quaid E Millath undergraduate records and add11 verified postgraduate programmes with current native firstyear fees
+Evidence refreshed: 363 records in 1 batch(es).
+Search documents refreshed: 37 upserted, 0 removed.
+Revalidated 27 cache tag(s), 36 slug(s), and 2 path(s).
+Applied 0352-india-quaid-e-millath-postgraduate-forward.
+Applying content migration 0353-india-thiagarajar-college-madurai: Thiagarajar College Madurai43 regular academic routes with exact current2026 UG3yr/PG2yr qualifyingtables,18native historical semester tuition quotes including10 sourcedNIL aidedUGonly, preciseMScBiotechnologyfamily, fullindependentUGCregister and reviewedunchangedcrest/libraryoriginal
+Evidence refreshed: 281 records in 1 batch(es).
+Search documents refreshed: 44 upserted, 0 removed.
+Revalidated 28 cache tag(s), 43 slug(s), and 2 path(s).
+Applied 0353-india-thiagarajar-college-madurai.
+Applying content migration 0354-india-the-american-college-madurai: American College Madurai61 academic routes:49main/12satelliteUG,59exact indicative prospectus quotes, current qualifications and six/four-semester framework,114row inventory, linkedUGC2f12B, reviewed genuine crest/main-campus photo; root independent review PASS
+Evidence refreshed: 558 records in 2 batch(es).
+Search documents refreshed: 62 upserted, 0 removed.
+Revalidated 37 cache tag(s), 61 slug(s), and 2 path(s).
+Applied 0354-india-the-american-college-madurai.
+Applying content migration 0355-india-fatima-college-madurai: Fatima College Madurai38 current academic women routes, exact2026qualifications/3yrUG2yrPG framework,10indicative native fullcourse quotes with truthfulcategorysource scope,53rowinventory,fullUGC2f12B,unchangedreviewedcrest/buildingoriginals; peerPASS
+Evidence refreshed: 243 records in 1 batch(es).
+Search documents refreshed: 39 upserted, 0 removed.
+Revalidated 35 cache tag(s), 38 slug(s), and 2 path(s).
+Applied 0355-india-fatima-college-madurai.

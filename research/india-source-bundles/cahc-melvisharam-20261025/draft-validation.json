@@ -1,0 +1,16 @@
+{
+  "state": "Frozen root-approved numbered bundle, ledger validated17",
+  "programmeCount": 17,
+  "genericFamilyCount": 13,
+  "evidenceCount": 158,
+  "reportedFeeQuoteCount": 17,
+  "inventoryRows": 71,
+  "actualReader": "PASS1temporaryfixture",
+  "payloadPath": "/Users/bharat/Documents/studentstraffic/research-drafts/india/cahc-melvisharam-payload.json",
+  "payloadSha256": "2267d249153a64a94b26b16b5eca04cafe91ce4aca325255d9069d801420a3fe",
+  "mediaManifest": "/Users/bharat/Documents/studentstraffic/research/media-enrichment/cahc-melvisharam-20261025-reviewed-upload-manifest.json",
+  "databaseAccess": false,
+  "numberedId": "0349-india-c-abdul-hakeem-college-melvisharam",
+  "actualNumberedReader": "PASS1",
+  "canonicalValidate": "PASS1/0expired; no database connection"
+}

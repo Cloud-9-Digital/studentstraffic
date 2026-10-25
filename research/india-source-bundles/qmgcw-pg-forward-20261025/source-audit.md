@@ -1,0 +1,9 @@
+# QMG postgraduate forward —25October2026
+
+Root researched the full Madras affiliated-college PG common regulations and currently linked2025 revised eligibility; own current course directory/eligibility/HomeScience department, full2020college syllabus and signed2026–27 fee pages. Eleven PG additions retain every original25UG programme object/fee unchanged, plus original generic courses/media. New programmes use existing neutral masters families; no taxonomy expansion.
+
+Four MA awards, Maths/Chemistry/HomeScienceFSM&D/ComputerScience/Zoology/MCom and MCA have exact qualifying routes. MScCS uses the unambiguous BCA route and explicitly allows college assessment of other computing branches, without declaring BCA exclusive. HomeScience uses the2025 revised equivalent-degree foundation conditions. MCA uses the revised2yr50/45percent/Math conditions, authentic currentAICTE60intake EOA and8April2026mandatorydisclosurep9TANCET/governmentcounselling. PBBT remains held solely for exact entry qualification: own2yrduration is clear, award-passing50% cannot become an admission minimum; no equivalence inferred.
+
+Root visually read both complete signedfee pages: newPG first-yearNet1050 for MA/MCom/Math;1080Chemistry/N&D/Zoology;1180CS;MCA1453SCST/2453other. All11nativefirst-yearquotes confirmed, no annualisation/zero tuition inference. Medium and intake explicitly omitted. No UGage rule copied into PG. Currentuniversity-department2026 eligibility PDF was downloaded for scope checking and is not used as an affiliate rule. FullPDFhashes retained; peer-assisted currentMCAselection/EOA/PBBThold notes retained inpeer-assist/.
+
+FulltemporaryreaderPASS36programmes/36quotes/363evidence/0expired. No reservation, DB or upload yet. PublicuniversityFAQ scope updated for PG/MCA;13FAQcount retained. Existing media source/rights are populated and exact0341. No local build.

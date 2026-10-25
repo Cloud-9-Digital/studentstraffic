@@ -1,0 +1,11 @@
+{
+  "sha": "175c1ae2d7acb8dce799ced5696a8a05023a2cd2",
+  "deploymentId": "dpl_DsdK2UKctxsd1NjAttsqdCJvNT86",
+  "verifiedProviderState": "READY",
+  "aliases": [
+    "www.studentstraffic.com",
+    "studentstraffic.com"
+  ],
+  "change": "Explicit fully sourced NIL reported fee quotes accepted; malformed/legacy sentinel zero remains unknown. No inferred annual tuition or structured Offer.",
+  "validation": "14 focused web/mobile parser/fee display tests passed before pause; no local build."
+}

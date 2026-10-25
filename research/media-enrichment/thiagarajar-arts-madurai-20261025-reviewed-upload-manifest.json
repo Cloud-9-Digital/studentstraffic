@@ -1,0 +1,53 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "thiagarajar-college-madurai",
+      "universityName": "Thiagarajar College, Madurai",
+      "sourceBatch": "codex-tn-thiagarajar-arts-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.tcarts.in/images/logo.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.tcarts.in/",
+          "rightsBasis": "Official college identifying crest used for factual institutional identification; no open licence or ownership transfer claimed.",
+          "altText": "Thiagarajar College Madurai complete institutional crest",
+          "visualCheck": "Full native357x336 original viewed by worker and root; complete crest on white tile or genuine institutional library study photograph. No editing, upscaling or capture-date claim.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/thiagarajar-arts-madurai-20261025/logo-footer.jpg",
+          "sha256": "32469da5d013fbab61a608878d319bdd8399430c56637e563eef11ecd6278006",
+          "width": 357,
+          "height": 336,
+          "verificationMethod": "Ordinary public HTTP200 full original source retrieval, checksum and sequential original pixel view; no provider actions.",
+          "proposedPublicId": "studentstraffic/universities/thiagarajar-college-madurai/logo-20261025"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.tcarts.in/college-2026-Pros.pdf",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.tcarts.in/",
+          "rightsBasis": "Original official college prospectus library-study photograph used for institutional illustration; no open licence or ownership transfer claimed.",
+          "altText": "Library study photograph from Thiagarajar College’s official2026–27 prospectus",
+          "visualCheck": "Full native1080x720 original viewed by worker and root; complete crest on white tile or genuine institutional library study photograph. No editing, upscaling or capture-date claim.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/thiagarajar-arts-madurai-20261025/cover-original-008.jpg",
+          "sha256": "5c18b4bceedefbe0898439a576f21e04848b5e36aa889680b1b44e8ee666d6b6",
+          "width": 1080,
+          "height": 720,
+          "verificationMethod": "Ordinary public HTTP200 full original source retrieval, checksum and sequential original pixel view; no provider actions.",
+          "proposedPublicId": "studentstraffic/universities/thiagarajar-college-madurai/cover-20261025",
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Original embedded1080x720JPEG page1image8 extracted unchanged with pdfimages -f1 -l1 -j; no cropping/resampling. Full27page currentPDF and completecover render retained.",
+          "originalDocumentLocalPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/thiagarajar-arts-madurai-20261025/prospectus2026.pdf",
+          "originalDocumentSha256": "b561c41afd73013a17c11f32356de1e52261c0c90889e2d0f385024d7eb41327"
+        }
+      ],
+      "migrationId": "0353-india-thiagarajar-college-madurai"
+    }
+  ]
+}

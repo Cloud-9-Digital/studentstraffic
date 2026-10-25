@@ -1,0 +1,27 @@
+Loaded manifest: 6 universities, 12 assets.
+  [ok]   c-abdul-hakeem-college-melvisharam logo -> https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792944939/studentstraffic/universities/c-abdul-hakeem-college-melvisharam/logo-20261025.jpg
+  [ok]   c-abdul-hakeem-college-melvisharam cover -> https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792944941/studentstraffic/universities/c-abdul-hakeem-college-melvisharam/cover-20261025.jpg
+  [ok]   voorhees-college-vellore logo -> https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792944942/studentstraffic/universities/voorhees-college-vellore/logo-20261025.jpg
+  [ok]   voorhees-college-vellore cover -> https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792944943/studentstraffic/universities/voorhees-college-vellore/cover-20261025.jpg
+  [ok]   auxilium-college-vellore logo -> https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792944945/studentstraffic/universities/auxilium-college-vellore/logo-20261025.png
+  [ok]   auxilium-college-vellore cover -> https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792944948/studentstraffic/universities/auxilium-college-vellore/cover-20261025.jpg
+  [ok]   thiagarajar-college-madurai logo -> https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792944949/studentstraffic/universities/thiagarajar-college-madurai/logo-20261025.jpg
+  [ok]   thiagarajar-college-madurai cover -> https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792944951/studentstraffic/universities/thiagarajar-college-madurai/cover-20261025.jpg
+  [ok]   the-american-college-madurai logo -> https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792944952/studentstraffic/universities/the-american-college-madurai/logo-20261025.jpg
+  [ok]   the-american-college-madurai cover -> https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792944953/studentstraffic/universities/the-american-college-madurai/cover-20261025.jpg
+  [ok]   fatima-college-madurai logo -> https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792944954/studentstraffic/universities/fatima-college-madurai/logo-20261025.jpg
+  [ok]   fatima-college-madurai cover -> https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792944955/studentstraffic/universities/fatima-college-madurai/cover-20261025.jpg
+
+Uploads: 12 ok, 0 failed.
+  [ok]   c-abdul-hakeem-college-melvisharam: logo=true cover=true
+  [ok]   voorhees-college-vellore: logo=true cover=true
+  [ok]   auxilium-college-vellore: logo=true cover=true
+  [ok]   thiagarajar-college-madurai: logo=true cover=true
+  [ok]   the-american-college-madurai: logo=true cover=true
+  [ok]   fatima-college-madurai: logo=true cover=true
+
+Database: updated 6 universities.
+Revalidated 12 cache tag(s), 0 slug(s), and 6 path(s).
+Triggered cache revalidation for updated university pages.
+
+Full report written to /Users/bharat/Documents/studentstraffic/research/media-enrichment/apply-report.json

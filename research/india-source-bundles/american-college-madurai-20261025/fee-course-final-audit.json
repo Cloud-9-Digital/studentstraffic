@@ -1,0 +1,425 @@
+{
+  "checkedAt": "2026-10-25",
+  "payloadSha256": "5425ccaccd75135a41933352785d9860142911b182936f16dd7ee574073711a8",
+  "routes": 61,
+  "exactQuoteMatches": 59,
+  "source": "Full retained own2026 prospectus tables/plaintext, samecampus/aided/SF source alignment; no newhunt",
+  "checks": [
+    {
+      "programme": "american-b-a-tamil-language-and-literature-aided-main",
+      "sourceAmount": 714,
+      "period": "semester",
+      "fundingCampus": "aided; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-a-english-aided-main",
+      "sourceAmount": 714,
+      "period": "semester",
+      "fundingCampus": "aided; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-a-economics-aided-main-english",
+      "sourceAmount": 714,
+      "period": "semester",
+      "fundingCampus": "aided; Tallakkulam main campus; exact English Economics section",
+      "match": true
+    },
+    {
+      "programme": "american-b-a-economics-aided-main-tamil",
+      "sourceAmount": 714,
+      "period": "semester",
+      "fundingCampus": "aided; Tallakkulam main campus; exact Tamil Economics section",
+      "match": true
+    },
+    {
+      "programme": "american-b-a-religion-philosophy-and-sociology-aided-main",
+      "sourceAmount": 714,
+      "period": "semester",
+      "fundingCampus": "aided; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-com-aided-main",
+      "sourceAmount": 714,
+      "period": "semester",
+      "fundingCampus": "aided; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-sc-mathematics-aided-main",
+      "sourceAmount": 864,
+      "period": "semester",
+      "fundingCampus": "aided; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-sc-physics-aided-main",
+      "sourceAmount": 939,
+      "period": "semester",
+      "fundingCampus": "aided; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-sc-chemistry-aided-main",
+      "sourceAmount": 989,
+      "period": "semester",
+      "fundingCampus": "aided; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-sc-botany-aided-main",
+      "sourceAmount": 1014,
+      "period": "semester",
+      "fundingCampus": "aided; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-sc-zoology-aided-main",
+      "sourceAmount": 1014,
+      "period": "semester",
+      "fundingCampus": "aided; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-m-a-tamil-aided-main",
+      "sourceAmount": 624,
+      "period": "semester",
+      "fundingCampus": "aided; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-m-a-english-aided-main",
+      "sourceAmount": 624,
+      "period": "semester",
+      "fundingCampus": "aided; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-m-a-economics-aided-main",
+      "sourceAmount": 624,
+      "period": "semester",
+      "fundingCampus": "aided; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-m-sc-mathematics-aided-main",
+      "sourceAmount": 749,
+      "period": "semester",
+      "fundingCampus": "aided; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-m-sc-physics-aided-main",
+      "sourceAmount": 1099,
+      "period": "semester",
+      "fundingCampus": "aided; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-m-sc-chemistry-aided-main",
+      "sourceAmount": 1249,
+      "period": "semester",
+      "fundingCampus": "aided; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-m-sc-botany-aided-main",
+      "sourceAmount": 1099,
+      "period": "semester",
+      "fundingCampus": "aided; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-m-sc-zoology-aided-main",
+      "sourceAmount": 1099,
+      "period": "semester",
+      "fundingCampus": "aided; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-a-english-sf-main",
+      "sourceAmount": 37205,
+      "period": "academic_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-a-hindi-sf-main",
+      "sourceAmount": 23955,
+      "period": "academic_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-a-french-sf-main",
+      "sourceAmount": 23955,
+      "period": "academic_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-a-economics-sf-main-english",
+      "sourceAmount": 30205,
+      "period": "academic_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus; exact English Economics section",
+      "match": true
+    },
+    {
+      "programme": "american-b-sc-mathematics-sf-main",
+      "sourceAmount": 34205,
+      "period": "academic_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-sc-physics-sf-main",
+      "sourceAmount": 36205,
+      "period": "academic_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-sc-chemistry-sf-main",
+      "sourceAmount": 36205,
+      "period": "academic_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-sc-biochemistry-sf-main",
+      "sourceAmount": 33955,
+      "period": "academic_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-sc-microbiology-sf-main",
+      "sourceAmount": 40955,
+      "period": "academic_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-sc-computer-science-sf-main",
+      "sourceAmount": 46705,
+      "period": "academic_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-sc-information-technology-sf-main",
+      "sourceAmount": 46705,
+      "period": "academic_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-sc-visual-communication-sf-main",
+      "sourceAmount": 71205,
+      "period": "academic_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-sc-food-science-and-nutrition-sf-main",
+      "sourceAmount": 36205,
+      "period": "academic_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-sc-psychology-sf-main",
+      "sourceAmount": 36205,
+      "period": "academic_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-com-sf-main",
+      "sourceAmount": 42705,
+      "period": "academic_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-com-computer-applications-sf-main",
+      "sourceAmount": 44705,
+      "period": "academic_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-com-information-technology-sf-main",
+      "sourceAmount": 44705,
+      "period": "academic_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-com-professional-accounting-sf-main",
+      "sourceAmount": 62705,
+      "period": "academic_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-sc-physical-education-sf-main",
+      "sourceAmount": 36205,
+      "period": "academic_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-s-w-sf-main",
+      "sourceAmount": 29500,
+      "period": "academic_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-m-a-english-sf-main",
+      "sourceAmount": 39755,
+      "period": "first_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-m-com-sf-main",
+      "sourceAmount": 38755,
+      "period": "first_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-m-sc-mathematics-sf-main",
+      "sourceAmount": 31755,
+      "period": "first_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-m-sc-physics-sf-main",
+      "sourceAmount": 38755,
+      "period": "first_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-m-sc-microbiology-sf-main",
+      "sourceAmount": 43755,
+      "period": "first_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-m-sc-food-science-and-nutrition-sf-main",
+      "sourceAmount": 41755,
+      "period": "first_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-m-sc-applied-psychology-sf-main",
+      "sourceAmount": 39755,
+      "period": "first_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-m-sc-visual-communication-sf-main",
+      "sourceAmount": 44605,
+      "period": "first_year",
+      "fundingCampus": "self-financed; Tallakkulam main campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-a-tamil-sf-satellite",
+      "sourceAmount": 27205,
+      "period": "first_year",
+      "fundingCampus": "self-financed; Chatrappati satellite campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-a-english-sf-satellite",
+      "sourceAmount": 37205,
+      "period": "first_year",
+      "fundingCampus": "self-financed; Chatrappati satellite campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-a-history-sf-satellite",
+      "sourceAmount": 27205,
+      "period": "first_year",
+      "fundingCampus": "self-financed; Chatrappati satellite campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-com-sf-satellite",
+      "sourceAmount": 37705,
+      "period": "first_year",
+      "fundingCampus": "self-financed; Chatrappati satellite campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-com-computer-applications-sf-satellite",
+      "sourceAmount": 39705,
+      "period": "first_year",
+      "fundingCampus": "self-financed; Chatrappati satellite campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-sc-mathematics-sf-satellite",
+      "sourceAmount": 34205,
+      "period": "first_year",
+      "fundingCampus": "self-financed; Chatrappati satellite campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-sc-physics-sf-satellite",
+      "sourceAmount": 36205,
+      "period": "first_year",
+      "fundingCampus": "self-financed; Chatrappati satellite campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-sc-computer-science-sf-satellite",
+      "sourceAmount": 41705,
+      "period": "first_year",
+      "fundingCampus": "self-financed; Chatrappati satellite campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-sc-computer-science-artificial-intelligence-sf-satellite",
+      "sourceAmount": 49705,
+      "period": "first_year",
+      "fundingCampus": "self-financed; Chatrappati satellite campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-sc-data-science-sf-satellite",
+      "sourceAmount": 49705,
+      "period": "first_year",
+      "fundingCampus": "self-financed; Chatrappati satellite campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-sc-biotechnology-sf-satellite",
+      "sourceAmount": 35955,
+      "period": "first_year",
+      "fundingCampus": "self-financed; Chatrappati satellite campus",
+      "match": true
+    },
+    {
+      "programme": "american-b-sc-costume-design-and-fashion-sf-satellite",
+      "sourceAmount": 40705,
+      "period": "first_year",
+      "fundingCampus": "self-financed; Chatrappati satellite campus",
+      "match": true
+    }
+  ],
+  "courseChecks": "All61 canonicalfamilies match planned exactdegree/title;32registryfamilies, undergraduateCSAIusesBScCSspecialisation, RPSgenericacademicreligiousstudies, noengineeringcategoryforBScIT. Unknown58medium/intakeomits preserved. No feequote forSFBA Tamil or ambiguousMSW feeM.ASocialWork.",
+  "media": "Bothoriginalhashesmatchacceptednativecrest/maincampusphotomanifest;source/rights populated",
+  "result": "PASS"
+}

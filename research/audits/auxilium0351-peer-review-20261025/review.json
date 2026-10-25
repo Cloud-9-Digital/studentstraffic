@@ -1,0 +1,18 @@
+{
+  "reviewer": "sathyabama_resume",
+  "result": "PASS no material blocker",
+  "checkedAt": "2026-10-25",
+  "payload": "content-migrations/0351-india-auxilium-college-vellore/payload.json",
+  "sha256": "071117aa00a00875d3bc90e622a384a671ae917ae9f6082f0debb82c9bbf1cb5",
+  "routes": 28,
+  "quotes": 27,
+  "checks": [
+    "Exact current own UG/PG qualification tables read, aided/SF distinctions retained. TwoMath routes narrowly require bothMath+Physics: fullTVU2023Annex17Math and owncurrenttablePhysics intersection; no wider combos inferred.",
+    "Own admission-prospectus HTML lines134/182\u2013183 expressly3yrUG/HSC/age21as1July andcategoryrelaxations; public scope women verified, otherage routes require currentcollegeassessment.",
+    "Named own PG table prerequisites checked including Chemistry/Physics55, Microbiology50/listeddegreefields, English2yearsEnglish, BScAppliedScienceMath route. No genericPG prerequisites borrowed.",
+    "All three pages original fees2021.pdf rendered and visuallyread: exact2021\u201322first-year aided6 andSFUG10 plusPG11 quotes27 match. Historical indicative year/basis stored, no current2026claim or annualtuition conversion. DataScience no borrowedquote.",
+    "Full originalcrest andwelcome.jpg campus/auditorium visuallyreviewed; manifestlocalchecksums match. No synthetic/capturedateclaim.",
+    "Canonicalcontentvalidate actual0351 PASS1/0warnings/noDB."
+  ],
+  "constraints": "Existing retained files only; no source hunts or source/payload edits; no DB/upload/build/commit."
+}

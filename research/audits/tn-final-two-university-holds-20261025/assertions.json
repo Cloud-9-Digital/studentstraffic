@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-10-25",
+  "scope": "Final bounded existing-source resolution audit; no legal conclusion or fresh discovery loop",
+  "DSISR": {
+    "result": "Held — exact programme awarding transition not reconciled",
+    "identity": "Primary DoHE24August2026notification verifies DSISR Siruvachur distinct-category deemed status and named three institutions; not merely proposed university",
+    "notification": {
+      "path": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/dsisr-resolution-20261025/dohe-order-en.pdf",
+      "sha256": "358b3ebe634bcbf1fde8e4e7b1d9d9adbeb3aba71b34ef57d93a14fdb6dce330"
+    },
+    "independentRetainedNMCRead": [
+      {
+        "id": 7333,
+        "college_code": "TN/011/P/3",
+        "college_name": "Dhanalakshmi Srinivasan Medical College and Hospital, Perambalur",
+        "course_name": "M.B.B.S.",
+        "university_name": "The Tamilnadu Dr. MGR Medical University,Chennai",
+        "approved_seat": 250,
+        "updated_date": "2026-09-29",
+        "recognition_status": "Recognized when degree granted on or after 2016. The recognition is conditional granted by Oversight Committee. Permitted for increase of seats 150 to 200 under section 26(1)(a)(b) & 28(1)(2) of the NMC Act, 2019 for 2021-22 and increase of 200 to 250 seats permitted in the academic year 2022-2023 on the basis of the order of hon'ble High Court in WP (c) no. 5339 of 2022. Renewal of 150-200 seats for the academic year 2022-23. Permitted for renewal for the Academic Year 2023 -2024. Continuation of Recognition granted for one (01) year for 2022-23 only. Permitted for admission for 2023-24. Annual renewal permission granted for 250 MBBS  seats for AY 2024-25. Annual Renewal Permitted for 250 MBBS seats for AY 2025-26.\r\nAnnual Renewal granted for 250 MBBS Seats for the AY 2026-27"
+      },
+      {
+        "id": 1166,
+        "college_code": "TN/010/P/3",
+        "college_name": "Dhanalakshmi Srinivasan Institute of Medical Sciences and Hospital - Thuraiyur Road, Perambalur",
+        "course_name": "M.B.B.S.",
+        "university_name": "Dhanalakshmi Srinivasan Institute of Science and Research (Deemed to be University)",
+        "approved_seat": 250,
+        "updated_date": "2026-10-07",
+        "recognition_status": "Permitted u/s 26 (1) (a) (b) , 28 (1) (2) and section 61(2) of NMC Act. 2019 for A/Y 2023-2024. Annual renewal permission granted for 150 MBBS  seats for AY 2024-25. Annual Renewal Permitted for 150 MBBS seats for AY 2025-26. \r\n(Affiliated to Dhanalakshmi Srinivasan Institute of Research and Technology (Deemed to be University) from AY 2026-27.) Annual Renewal granted for 150 MBBS Seats for the AY 2026-27\r\nLoP dated 13-09-2026 granted for increase in intake of 100 MBBS seats from 150 to 250 for Academic Year 2026-27."
+      }
+    ],
+    "conflict": "ThuraiyurRoad TN/010/P/3 university_name says DSISR while same recordrecognition_status names DSIRT affiliationfrom2026–27; distinctDoHEconstitutions cannot be silentlymerged. Siruvachur TN/011/P/3 currentretained2026–27row says MGR. No revised definitive currentprogramme-awarding crosswalk recovered.",
+    "currentCheck": {
+      "url": "https://www.dsisruniversity.org/",
+      "access": "Full44lineprimarywebparser opened today",
+      "findings": "Three linkedexistingmedical/dental/nursing institutions andfour explicitlyProposedNewProgrammes; no new exactownDSISR admission/qualification/awarding instrument on reviewedpage"
+    },
+    "limits": "No conclusion that professional approvals are invalid or that DSISR cannot award degrees; only unsupported currentprogramme attachment withheld."
+  },
+  "SriVenkateswaraa": {
+    "result": "Held — campus-specific awarding scope and exact prerequisites not reconciled",
+    "identity": "Exactdouble-aTamilNaduuniversity statutory/UGCidentity verified inretainedprimaryproofs; distinctTirupati/AP andsimilarlynamedinstitutions",
+    "ordinances": {
+      "path": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/sri-venkateswaraa-university-20261025/svu-ordinances.pdf",
+      "sha256": "56f4947adbc92975a2d7cb1c3993552a45afa69b7ae310c93c5b482a1f2673c1",
+      "mainCampus": "Ettayapuram628902",
+      "cityCampus": "51GNTroadRedHills600067"
+    },
+    "ugcLetter": {
+      "path": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/sri-venkateswaraa-university-20261025/ugc-letter.pdf",
+      "sha256": "af27ff27786231da16b06b9b76f78c110a1141791ed2b276b53b7258bcb15d90",
+      "scope": "Retained5June2025letter conditions require specific priorUGCapprovaloutside maincampus; not separatelyinterpretedaslegaloutcome"
+    },
+    "retainedOwnUGCRecord": "id1357same-dayretainedtable shows approvedoffcampusAddress/UGCletterdate as --/--; absenceinthisrecord alone not treatedasproofnoapprovalexists",
+    "currentCheck": {
+      "url": "https://www.ugc.gov.in/universitydetails/Private_university_other?id=1357",
+      "access": "Oneboundedwebopennotaccessible; retainedtodayrecordonly, not falselyclaimedfreshlivevalidation"
+    },
+    "additionalGap": "Owncurrenteligibility controls are placeholderView/# links; exactnamedentryprerequisites remain unverified inretained52-routeinventory.",
+    "limits": "NMC/INC/PCI currentRedhillsapprovals acknowledged, notinvalidated. No legal conclusion aboutcampus or degreeauthorisation; exact affirmative campus/awardcrosswalk andqualificationpublication neededforcatalogueclaims."
+  },
+  "actions": "No ledger/owner changes, programme payload, reservation, database, upload, commit, callbacks or emails. Discovery stopped. Existing held states preserved."
+}

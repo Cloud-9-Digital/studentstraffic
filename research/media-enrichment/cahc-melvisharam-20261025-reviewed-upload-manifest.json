@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "c-abdul-hakeem-college-melvisharam",
+      "universityName": "C. Abdul Hakeem College (Autonomous), Melvisharam",
+      "sourceBatch": "codex-cahc-melvisharam-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://cahc.edu.in/wp-content/uploads/2018/11/hakeemcollegelogo.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://cahc.edu.in/",
+          "rightsBasis": "Official college-published identifying crest and genuine campus photograph used for factual identification and illustration; no open licence, ownership transfer or capture-date claim.",
+          "altText": "C. Abdul Hakeem College complete official crest",
+          "visualCheck": "Complete native410x512shield,mottoandfaithsymbolspreserved; observedownhomepageasset, notfavicon. Workerreviewedoriginalpixels; no crop, editingorupscale. Root independently viewed and accepted fulloriginal25October2026.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/cahc-melvisharam-20261025/logo.jpg",
+          "sha256": "dd0bfbbc9bd73648f9e5047354c35841043527b96721c13b67fb0da28dcfd6b8",
+          "width": 410,
+          "height": 512,
+          "proposedPublicId": "studentstraffic/universities/c-abdul-hakeem-college-melvisharam/logo-20261025",
+          "verificationMethod": "OrdinarypublicHTTPSGET; exactfullnativeoriginal/checksum retained andindependentlyvisuallyreviewed; no syntheticgeneration/editing."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://cahc.edu.in/wp-content/uploads/2022/03/WhatsApp-Image-2022-03-04-at-3.39.25-PM.jpeg",
+          "sourceType": "official-university",
+          "sourcePage": "https://cahc.edu.in/campus/clean-green/",
+          "rightsBasis": "Official college-published identifying crest and genuine campus photograph used for factual identification and illustration; no open licence, ownership transfer or capture-date claim.",
+          "altText": "Trees and a shaded path shown on C. Abdul Hakeem College’s official campus gallery",
+          "visualCheck": "Genuine868x1160tree-linedcampuspath nativephotograph, observedfulloriginalanchoronofficialCleanGreenpage. No campusbuilding/wholecampus/capturedateclaim. Initialmarketingtextbanner retainedbutrejectedforpublication. Root independently viewed and accepted fulloriginal25October2026.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/cahc-melvisharam-20261025/cover-clean.jpeg",
+          "sha256": "4a0f59d3dd16cf4181f480d55a1af9768d954b6f68b6a15027d3b3fefb63d67f",
+          "width": 868,
+          "height": 1160,
+          "proposedPublicId": "studentstraffic/universities/c-abdul-hakeem-college-melvisharam/cover-20261025",
+          "verificationMethod": "OrdinarypublicHTTPSGET; exactfullnativeoriginal/checksum retained andindependentlyvisuallyreviewed; no syntheticgeneration/editing."
+        }
+      ],
+      "migrationId": "0349-india-c-abdul-hakeem-college-melvisharam"
+    }
+  ]
+}

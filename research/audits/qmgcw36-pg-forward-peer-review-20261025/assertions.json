@@ -1,0 +1,30 @@
+{
+  "result": "PASS \u2014 no material blocker found",
+  "checkedAt": "2026-10-25",
+  "payloadPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/qmgcw-pg-forward-20261025/draft-payload.json",
+  "payloadSha256": "9de7902f23975df6f229336f59aea12ac6613b82ed5fd7e9edb407338d5dfb2b",
+  "baselinePath": "/Users/bharat/Documents/studentstraffic/content-migrations/0341-india-quaid-e-millath-government-college-for-women-chennai/payload.json",
+  "baselineProgrammesExact": 25,
+  "totalProgrammes": 36,
+  "additions": 11,
+  "uniqueSlugs": 36,
+  "originalGenericCourseMetadataExact": true,
+  "mediaAttributionExact": true,
+  "universityChangedFields": [
+    "researchSources",
+    "admissionsContent",
+    "faq"
+  ],
+  "actualReader": "PASS1 independent temporary fixture",
+  "assertions": [
+    "Independently compared all25baseline programmeobjects deep-equal including fees, audiences, medium, duration, slugs and nativequotes; no removedoriginalslugs. Originalgenericcoursemetadata preserved.",
+    "Current owncourse directory exactlylists4MA,Math/Chem/HomeScience/CS/PBBT/Zoo,MCom,MCA. Supported11omitPBBTonly. OwnHomeSciencedepartment identifies2015FSM&Daward; newgenericparentmaster-home-science appropriate.",
+    "Actual full Madras affiliated-college commonregulations 2years/foursemesters and exact MAHistory/English/Tamil/Economics,Math/Chem/CS/Zoo/MCom qualificationrows independentlyread. Revised2025FSM&D foundation-subject alternatives retained; MScCSexplicitBCAverifiedroute notuniversalBCA-only exclusion and othercomputingbranchescollegeassessment.",
+    "MCA revised2025 2year/BCA-BScCS-equivalent/Math-or-relatedsubject/50-45percent route retained; own8April2026mandatorydisclosure fullpage9TANCET/governmentquota/GCTsinglewindowcounselling andcurrentEOA permanentID1-784106261/MCA60 exact. No3year historicalMCAoverride/no-testwaiver.",
+    "Independently visuallyread full signed current2026\u201327 FEESDETAILS page2: MA/MCom/Math1050;Chem/N&D/Zoo1080;CS1180;MCA SCST1453/other2453. All11nativefirst-yearquotevalues/categories exact, confirmedGradeA; no annualisation/total-courseclaim/currentNILtuitioninference.2025\u201326mandatefeeappendixnotextrapolated.",
+    "AllnewPGwomen/domestic restrictions apply; no UGageceiling transferred. Newmedium/intake emptywithomitevidence. PBBT admissionqualification held; ownawardpassing50notadmissionminimum.",
+    "OriginalhostedmediaURLpresence and acceptedsource/rights attribution exact0341; no imageupload orprovenance loss. Existingcrest/libraryassetcontext retained."
+  ],
+  "materialRisks": [],
+  "scope": "Existing retained sources only; no new web hunts, payload/ledger edits, reservation, database, uploads or commits"
+}

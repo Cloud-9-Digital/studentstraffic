@@ -1,0 +1,121 @@
+{
+  "checkedAt": "2026-10-25",
+  "sourceAccess": "Full own humanpages rendered in ordinary IAB browser. Ownpage linked publicJavaScript exposed GETsite/v1/page/get?slug route, actualfull responses retained using ordinary XRequestedWith header, no credential/auth/private API. Content matched rendered ownsite selfFinance prospectus, no demo site used. PublicAPIcreationdates are not claimed academic-cycle dates.",
+  "files": [
+    {
+      "path": "research/india-source-bundles/american-college-madurai-20261025/aided.json",
+      "bytes": 45938,
+      "sha256": "2b14504119ae11f8401b5288bde3bbc1cb1c2ae827a733326a46e2039abcdf30"
+    },
+    {
+      "path": "research/india-source-bundles/american-college-madurai-20261025/self-finance.json",
+      "bytes": 68187,
+      "sha256": "e035ac01ad5c79ea72f59b172c5cd5d6c31ce91e2df4ab4c9ba07d845560a47e"
+    },
+    {
+      "path": "research/india-source-bundles/american-college-madurai-20261025/satellite-campus.json",
+      "bytes": 26199,
+      "sha256": "03b74fc1712bdae946e3eb65bb115758de8dfefdb9ec48817d425d85d3750dcf"
+    },
+    {
+      "path": "research/india-source-bundles/american-college-madurai-20261025/for-ug.json",
+      "bytes": 7652,
+      "sha256": "476d2c5a2ed00583257d5a2639ee722421ffceeba6781115c372679780c14ff4"
+    },
+    {
+      "path": "research/india-source-bundles/american-college-madurai-20261025/for-pg.json",
+      "bytes": 10163,
+      "sha256": "2136563d5927c906285873598e77c8070ef0cd397483a75a22d67d8667bf4e52"
+    },
+    {
+      "path": "research/india-source-bundles/american-college-madurai-20261025/aided-courses.json",
+      "bytes": 2985,
+      "sha256": "333cd5a20c0bcf4511fc011922aec4cd8dad4035260e5802352a6df76db862ed"
+    },
+    {
+      "path": "research/india-source-bundles/american-college-madurai-20261025/self-financed-courses.json",
+      "bytes": 5805,
+      "sha256": "e41c4487801fceb9a7240b29fff6af7fead3a4ca145540396f9affa1f799e6ef"
+    },
+    {
+      "path": "research/india-source-bundles/american-college-madurai-20261025/satelite-campus-course.json",
+      "bytes": 2645,
+      "sha256": "3b2d20a07ab9ff74b8e9cd56a49653df93bd45e7be7a94d3a52d38a588bca240"
+    },
+    {
+      "path": "research/india-source-bundles/american-college-madurai-20261025/aided-fee-structure.json",
+      "bytes": 4336,
+      "sha256": "ee3269b30c484ac272038eeb546be1b9195e2fa4b1370eeb4f51e92999d948af"
+    },
+    {
+      "path": "research/india-source-bundles/american-college-madurai-20261025/self-finance-fee-structure.json",
+      "bytes": 7309,
+      "sha256": "55d68d85def56e4fcb370d2089d9a91ac22b1a8e5fb21e8e21375f26439544ff"
+    },
+    {
+      "path": "research/india-source-bundles/american-college-madurai-20261025/satelite-campus-fee-structure.json",
+      "bytes": 3677,
+      "sha256": "4e827b6a97de5377c6775a369d500307788c9c5b67805f30f9a329065d43f1a8"
+    },
+    {
+      "path": "research/india-source-bundles/american-college-madurai-20261025/calendar2024.pdf",
+      "bytes": 61427494,
+      "sha256": "0c0fc1f4c8e1ae15378c45250ac6079c84387550e96d0063656e9e8d4c38389c"
+    },
+    {
+      "path": "research/india-source-bundles/american-college-madurai-20261025/crest.jpeg",
+      "bytes": 10771,
+      "sha256": "7fd3ad4fcf76240e80dc373e1839447d26f866bf08983149a7866fcb1beacdbd"
+    },
+    {
+      "path": "research/india-source-bundles/american-college-madurai-20261025/cover.jpg",
+      "bytes": 336380,
+      "sha256": "5bbf2100de0e667e48bd4d74f34fa504a93843100565bf264879237f2a6ea0ef"
+    }
+  ],
+  "academicFramework": {
+    "file": "calendar2024.pdf",
+    "printedPages": [
+      85,
+      86
+    ],
+    "scope": "Effective2024\u201325onwards allordinaryUGsixsemesters/PGfoursemesters, exact2026 namedownawardscontinued"
+  },
+  "campusCrosswalk": {
+    "satelliteSource": "https://americancollege.edu.in/satellite-campus",
+    "commonQualification": "https://americancollege.edu.in/for-ug",
+    "applicability": "Full common self-financedUG clause includesDataScience specificMath condition. CurrentownDataScience ordinaryUG is explicitly satellite-only in currentownprogrammeportfolio. CommonrecognisedHSC/SFconditions are pairedwith12exactcurrentnamedSatelliteacademicUGawardscurrentcurriculum; no campusguessfrom genericexistingcampuscommunitywording.",
+    "held": "12communitydegrees teachingcampus wording unresolved;2SatPGexactqualifications/currentlinkedPDF404;3SatprofessionalUGplusMBAcurrentapprovalscopeheld."
+  },
+  "feeDecision": {
+    "basis": "Exact single native2026prospectus reference indicative, no disagreementrange",
+    "examples": [
+      {
+        "degree": "MainSFBAEnglish",
+        "prospectus": 37205,
+        "undatedStandalone": 37805,
+        "period": "Per year"
+      },
+      {
+        "degree": "MainSFMAEnglish",
+        "prospectus": 39755,
+        "undatedStandalone": 40755,
+        "period": "I year"
+      }
+    ],
+    "cycleProof": "Actualprospectus body datedApril2026qualifyingexams and/orrefundlimit30September2026, pairedcurrent2026\u201327ownadmissionheading; notAPIcreationdate",
+    "aided": "Stableprintedsemestercombinedtotals kept; no componentarithmeticrepair, dashnotzero",
+    "unknownQuotes": [
+      "SFBA Tamil has no matchingprimaryamount",
+      "MainMSW primaryfeeM.ASocialWork vscurrentM.S.Waward preventsmisassignment"
+    ]
+  },
+  "reader": {
+    "command": "npx tsx research-drafts/india/validate-american.ts",
+    "routes": 61,
+    "quotes": 59,
+    "migrations": 1,
+    "warnings": [],
+    "execution": "Temporaryfixture outside executable content-migrations, no number/DB/upload/build/commit"
+  }
+}
