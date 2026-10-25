@@ -1,0 +1,9 @@
+{
+  "baseline": "0093-india-amrita-vishwa-vidyapeetham",
+  "firstThreeProgrammeObjectsIdentical": true,
+  "mbaDualException": "Only medium and instructionLanguages and teachingPhases.language cleared; parent approved unsupported legacy English omission",
+  "allOtherMbaDualFieldsIdentical": true,
+  "mediaAttributionIdentical": true,
+  "noNewMediaUrlKeysAdded": true,
+  "mediaUpsertBehaviour": "Absent logo/cover keys omitted from update set by publisher; applied image URLs preserved."
+}

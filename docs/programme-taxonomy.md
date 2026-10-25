@@ -411,3 +411,19 @@ M.Sc. Epidemiology (`msc-epidemiology`) is a public-health master's family for p
 ### Integrated food science and technology
 
 `integrated-msc-food-science-technology` is the neutral HSC-entry integrated master’s family for Food Science and Technology. It is distinct from a graduate-entry food-science master’s and from a standalone bachelor’s award. Exact institution-specific duration, admission subjects, exit options and title remain on the offering.
+
+### Integrated data science — 25 October 2026
+
+`integrated-msc-data-science` represents a school-entry integrated science master's degree combining computing, mathematics, statistics and data analysis. It is distinct from a standalone BSc, a graduate-entry MSc, and engineering awards. Preserve the institution's exact title, duration, school subjects and any explicit exit conditions; no intermediate award is inferred.
+
+
+### Financial technology, disaster management and HSC-entry diplomas
+
+`bachelor-financial-technology` is a neutral bachelor’s academic family for finance, computing and digital financial systems, distinct from a business-administration award. `master-disaster-management` covers graduate study of hazards, vulnerability, preparedness, response and recovery. `diploma-financial-management` and `diploma-yoga` are diploma-level families for appropriately evidenced school-entry awards, distinct from postgraduate diplomas. Exact award name, duration, prerequisites and professional limitations belong on each offering; these academic families do not imply clinical or other professional-practice registration.
+
+
+### Geriatrics, laboratory medicine, radiation oncology and undergraduate bioinformatics — 25 October 2026
+
+`md-geriatrics`, `md-laboratory-medicine` and `md-radiation-oncology` represent distinct medical residency disciplines with recognised medical-degree entry. Geriatrics focuses on older adults; laboratory medicine integrates diagnostic laboratory practice; radiation oncology concerns therapeutic cancer treatment. Radiation oncology is distinct from diagnostic radiology and must not map to `md-radiodiagnosis`. Preserve exact medical registration, examination and internship requirements on each offering.
+
+`bsc-bioinformatics` represents a standalone science bachelor's award studying biological data, computing and quantitative analysis. It is distinct from the existing graduate-entry `msc-bioinformatics`, school-entry integrated MSc, and BTech/MTech engineering families. Honours duration and any explicit exit conditions remain programme-specific; no clinical-practice qualification is implied.

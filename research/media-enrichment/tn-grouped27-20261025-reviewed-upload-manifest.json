@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "srm-institute-of-science-and-technology",
+      "universityName": "SRM Institute of Science and Technology",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.srmist.edu.in/wp-content/uploads/2022/05/green-campus-2.png",
+          "sourceType": "official",
+          "sourcePage": "https://www.srmist.edu.in/admissions/",
+          "rightsBasis": "Official institution-owned SRMIST admissions campus-life photograph; no open licence claimed.",
+          "verificationMethod": "Full688x467nativeoriginal verifiedordinaryHTTPS200231808bytes and visuallyreviewedbyworker+root. Genuine tree-linedwalkway with incidentalcampusvisitors, nooverlay/collage/rendering/captureyearclaim; exactcurrentgallerylazyimgdata-src retained. No crop/upscale. Replaces inherited attribution-requiring Commons cover; valid official logo unchanged.",
+          "localPath": "research/india-source-bundles/srm-rescue-20261025/cover-green2.png",
+          "sha256": "0cf2fbfe18fd938cef83a7a9f03d211d61f6663ebbf9bc537164332f2fe71406",
+          "width": 688,
+          "height": 467,
+          "altText": "Tree-lined walkway pictured in SRMIST\u2019s official admissions campus-life gallery",
+          "proposedPublicId": "studentstraffic/universities/srm-institute-of-science-and-technology/cover",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0304-india-srm-institute-of-science-and-technology-academic-expansion"
+    },
+    {
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "universityName": "Sri Ramachandra Institute of Higher Education and Research",
+      "sourceBatch": "codex-sriher-forward-20261025",
+      "migrationId": "0305-india-sriher-current-regular-portfolio",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2025/04/4.jpg",
+          "sourceType": "official-university",
+          "rightsBasis": "Official university homepage photograph used for factual illustration; no ownership transfer or open licence claimed.",
+          "proposedPublicId": "studentstraffic/universities/sri-ramachandra-institute-of-higher-education-and-research/cover-20261025",
+          "altText": "Students in a library shown in Sri Ramachandra university\u2019s own published photograph",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/sriher-forward-20261025/cover-official.jpg",
+          "sha256": "9bc42e9339951373ebb8392992f4da5ecd8849501aa79d6467aca2cfa7383829",
+          "width": 2560,
+          "height": 1707,
+          "notes": "Full2560x1707nativeoriginal; visibleSriRamachandra lanyards/librarycontext. Rootviewedaccepted25October. ReplacespreviousCommonscoverbecauseattributionnotpubliclyrendered; no broadcampusoraerialclaim.",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "notes": "Coverreplacementonly; existingvalidofficiallogoDBURLpreservedbyomission. Exactown844x146logo refetchedandrootviewed; no duplicateupload."
+    }
+  ]
+}

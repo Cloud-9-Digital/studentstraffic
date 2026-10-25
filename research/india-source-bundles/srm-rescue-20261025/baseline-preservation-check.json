@@ -1,0 +1,89 @@
+{
+  "baseline": "0125-india-srm-institute-of-science-and-technology-fee-audience",
+  "baselineCount": 10,
+  "currentCount": 73,
+  "allBaselineSlugsRetained": true,
+  "onlyUnsupportedLanguageFieldsChanged": true,
+  "differences": [
+    {
+      "slug": "srm-kattankulathur-btech-computer-science-engineering",
+      "changedFields": [
+        "teachingPhases",
+        "instructionLanguages",
+        "medium"
+      ]
+    },
+    {
+      "slug": "srm-kattankulathur-btech-mechanical-engineering",
+      "changedFields": [
+        "teachingPhases",
+        "instructionLanguages",
+        "medium"
+      ]
+    },
+    {
+      "slug": "srm-kattankulathur-btech-electronics-communication-engineering",
+      "changedFields": [
+        "teachingPhases",
+        "instructionLanguages",
+        "medium"
+      ]
+    },
+    {
+      "slug": "srm-kattankulathur-btech-civil-engineering",
+      "changedFields": [
+        "teachingPhases",
+        "instructionLanguages",
+        "medium"
+      ]
+    },
+    {
+      "slug": "srm-kattankulathur-btech-aerospace-engineering",
+      "changedFields": [
+        "teachingPhases",
+        "instructionLanguages",
+        "medium"
+      ]
+    },
+    {
+      "slug": "srm-kattankulathur-barch",
+      "changedFields": [
+        "teachingPhases",
+        "instructionLanguages",
+        "medium"
+      ]
+    },
+    {
+      "slug": "srm-kattankulathur-mba",
+      "changedFields": [
+        "teachingPhases",
+        "instructionLanguages",
+        "medium"
+      ]
+    },
+    {
+      "slug": "srm-kattankulathur-mba-business-analytics",
+      "changedFields": [
+        "teachingPhases",
+        "instructionLanguages",
+        "medium"
+      ]
+    },
+    {
+      "slug": "srm-kattankulathur-msc-applied-data-science",
+      "changedFields": [
+        "teachingPhases",
+        "instructionLanguages",
+        "medium"
+      ]
+    },
+    {
+      "slug": "srm-kattankulathur-bcom-commerce",
+      "changedFields": [
+        "teachingPhases",
+        "instructionLanguages",
+        "medium"
+      ]
+    }
+  ]
+}

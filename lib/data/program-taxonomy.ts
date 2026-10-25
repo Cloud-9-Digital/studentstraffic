@@ -72,6 +72,10 @@ function defineProgrammes<const T extends readonly CanonicalProgramme[]>(program
 }
 
 const globalProgrammeFamilies = defineProgrammes([
+  {"slug": "md-geriatrics", "name": "MD in Geriatrics", "shortName": "MD Geriatrics", "stream": "medicine", "level": "residency", "discipline": "geriatrics", "aliases": ["Doctor of Medicine in Geriatrics", "Geriatric Medicine Residency"]},
+  {"slug": "md-laboratory-medicine", "name": "MD in Laboratory Medicine", "shortName": "MD Laboratory Medicine", "stream": "medicine", "level": "residency", "discipline": "laboratory-medicine", "aliases": ["Doctor of Medicine in Laboratory Medicine", "Laboratory Medicine Residency"]},
+  {"slug": "md-radiation-oncology", "name": "MD in Radiation Oncology", "shortName": "MD Radiation Oncology", "stream": "medicine", "level": "residency", "discipline": "radiation-oncology", "aliases": ["Doctor of Medicine in Radiation Oncology", "MD Radiotherapy", "Radiation Oncology Residency"]},
+  {"slug": "bsc-bioinformatics", "name": "B.Sc. in Bioinformatics", "shortName": "B.Sc. Bioinformatics", "stream": "natural-sciences", "level": "bachelors", "discipline": "bioinformatics", "aliases": ["Bachelor of Science in Bioinformatics", "BSc Bioinformatics Honours"]},
   {"slug": "md-physiology", "name": "MD in Physiology", "shortName": "MD Physiology", "stream": "medicine", "level": "residency", "discipline": "physiology", "aliases": ["Doctor of Medicine in Physiology", "Medical Physiology Residency"]},
   { slug: "md-sports-medicine", name: "MD in Sports Medicine", shortName: "MD Sports Medicine", stream: "medicine", level: "residency", discipline: "sports-medicine", aliases: ["Doctor of Medicine in Sports Medicine", "Sports Medicine Residency"] },
   { slug: "md-forensic-medicine", name: "MD in Forensic Medicine and Toxicology", shortName: "MD Forensic Medicine", stream: "medicine", level: "residency", discipline: "forensic-medicine", aliases: ["Doctor of Medicine in Forensic Medicine", "MD Forensic Medicine and Toxicology", "Forensic Medicine Residency"] },
@@ -361,7 +365,12 @@ const globalProgrammeFamilies = defineProgrammes([
 
   {"slug": "msc-bioinformatics", "name": "M.Sc. in Bioinformatics", "shortName": "M.Sc. Bioinformatics", "stream": "natural-sciences", "level": "masters", "discipline": "bioinformatics", "aliases": ["Master of Science in Bioinformatics", "MSc Bioinformatics and Data Science"]},
 
-  {"slug": "integrated-msc-food-science-technology", "name": "Integrated M.Sc. in Food Science and Technology", "shortName": "Integrated M.Sc. Food Science", "stream": "agriculture", "level": "integrated-masters", "discipline": "food-science-technology", "aliases": ["Five-year Integrated Master of Science in Food Science and Technology"]}
+  {"slug": "integrated-msc-food-science-technology", "name": "Integrated M.Sc. in Food Science and Technology", "shortName": "Integrated M.Sc. Food Science", "stream": "agriculture", "level": "integrated-masters", "discipline": "food-science-technology", "aliases": ["Five-year Integrated Master of Science in Food Science and Technology"]},
+  {"slug": "integrated-msc-data-science", "name": "Integrated M.Sc. in Data Science", "shortName": "Integrated M.Sc. Data Science", "stream": "computing-information-systems", "level": "integrated-masters", "discipline": "data-science", "aliases": ["Five-year Integrated Master of Science in Data Science"]},
+  {"slug": "bachelor-financial-technology", "name": "Bachelor's in Financial Technology", "shortName": "Bachelor's Financial Technology", "stream": "economics-commerce", "level": "bachelors", "discipline": "financial-technology", "aliases": ["BS Fintech", "Bachelor of Science in Financial Technology"]},
+  {"slug": "master-disaster-management", "name": "Master's in Disaster Management", "shortName": "Master's Disaster Management", "stream": "environment-sustainability", "level": "masters", "discipline": "disaster-management", "aliases": ["MSc Disaster Management", "Master of Science in Disaster Management"]},
+  {"slug": "diploma-financial-management", "name": "Diploma in Financial Management", "shortName": "Diploma Financial Management", "stream": "business", "level": "diploma", "discipline": "financial-management", "aliases": ["Diploma Certified Financial Management"]},
+  {"slug": "diploma-yoga", "name": "Diploma in Yoga", "shortName": "Diploma Yoga", "stream": "public-health-allied-health", "level": "diploma", "discipline": "yoga", "aliases": ["Yoga Diploma"]}
 ]);
 
 /**
