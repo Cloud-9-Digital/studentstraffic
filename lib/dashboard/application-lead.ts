@@ -118,6 +118,8 @@ export async function handOffSubmittedApplication(userId: string, applicationId:
       sourceQuery: {},
       ctaVariant: APPLICATION_LEAD_CTA,
       notes,
+      // Submitted from the signed-in dashboard, so there is no browser-side attribution to pass on.
+      clientContext: { source: "web_dashboard", applicationId },
     }),
   });
   return true;
