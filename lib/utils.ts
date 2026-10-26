@@ -239,28 +239,21 @@ function feeAudienceLabel(audience: FeeAudience, countrySlug: string) {
   return countrySlug === "india" ? "Indian students" : "Domestic students";
 }
 
-/**
- * Every published annual fee for a programme, each labelled with who it applies to when known,
- * e.g. [{ label: "Indian students", amount: "₹1,95,000" }, { label: "NRI & international", amount: "$4,000" }].
- * Unclassified fees keep the generic label, so older records render as before.
- */
-export function getProgramFeeLines(
-  offering: Pick<
-    ProgramOffering,
-    | "annualTuitionUsd"
-    | "officialAnnualTuitionAmount"
-    | "officialFeeCurrency"
-    | "feeStatus"
-    | "reportedFeeQuote"
-    | "indicativeAnnualTuitionMinUsd"
-    | "indicativeAnnualTuitionMaxUsd"
-    | "feeAudience"
-    | "additionalFees"
-  >,
-  countrySlug: string,
-  fallback = "Fee plan on request",
-): { label: string; amount: string }[] {
-  if (getDisplayedReportedFeeQuote(offering)) return [{ label: getProgramAnnualFeeLabel(offering), amount: formatProgramFee(offering, fallback) }];
+type FeeLineOffering = Pick<
+  ProgramOffering,
+  | "annualTuitionUsd"
+  | "officialAnnualTuitionAmount"
+  | "officialFeeCurrency"
+  | "feeStatus"
+  | "reportedFeeQuote"
+  | "indicativeAnnualTuitionMinUsd"
+  | "indicativeAnnualTuitionMaxUsd"
+  | "feeAudience"
+  | "additionalFees"
+>;
+
+function getAudienceFeeLines(offering: FeeLineOffering, countrySlug: string, fallback: string) {
+  if (getDisplayedReportedFeeQuote(offering)) return [{ label: getProgramAnnualFeeLabel(offering), amount: formatProgramFee(offering, fallback), audience: undefined }];
   const primary = {
     label: offering.feeAudience && offering.feeStatus !== "on_request"
       ? feeAudienceLabel(offering.feeAudience, countrySlug)
@@ -271,7 +264,7 @@ export function getProgramFeeLines(
     label: feeAudienceLabel(fee.audience, countrySlug),
     amount: formatCurrencyAmount(fee.annualAmount, fee.currency),
   }));
-  const lines = [
+  const lines: { label: string; amount: string; audience?: FeeAudience }[] = [
     { ...primary, audience: offering.feeStatus === "on_request" ? undefined : offering.feeAudience },
     ...extra.map((line, index) => ({ ...line, audience: offering.additionalFees?.[index]?.audience })),
   ];
@@ -280,7 +273,45 @@ export function getProgramFeeLines(
   return lines
     .map((line, index) => ({ line, index }))
     .sort((a, b) => rank(a.line.audience) - rank(b.line.audience) || a.index - b.index)
-    .map(({ line }) => ({ label: line.label, amount: line.amount }));
+    .map(({ line }) => line);
+}
+
+/**
+ * Every published annual fee for a programme, each labelled with who it applies to when known,
+ * e.g. [{ label: "Indian students", amount: "₹1,95,000" }, { label: "NRI & international", amount: "$4,000" }].
+ * Unclassified fees keep the generic label, so older records render as before.
+ */
+export function getProgramFeeLines(
+  offering: FeeLineOffering,
+  countrySlug: string,
+  fallback = "Fee plan on request",
+): { label: string; amount: string }[] {
+  return getAudienceFeeLines(offering, countrySlug, fallback).map(({ label, amount }) => ({ label, amount }));
+}
+
+/**
+ * The fee to lead with where only one fits (hero, at-a-glance): the Indian/domestic fee when one is published.
+ * `audienceLabel` is set whenever we know who the fee is for, so an NRI-only dollar fee never reads as the
+ * fee for Indian students.
+ */
+export function getPrimaryProgramFee(
+  offering: FeeLineOffering,
+  countrySlug: string,
+  fallback = "Fee plan on request",
+): { amount: string; audienceLabel?: string } {
+  const [first] = getAudienceFeeLines(offering, countrySlug, fallback);
+  return first.audience ? { amount: first.amount, audienceLabel: first.label } : { amount: first.amount };
+}
+
+/** Every fee on one line for text contexts, e.g. "₹1,95,000 (Indian students) · $4,000 (NRI & international)". */
+export function formatProgramFeeSummary(
+  offering: FeeLineOffering,
+  countrySlug: string,
+  fallback = "Fee plan on request",
+) {
+  return getAudienceFeeLines(offering, countrySlug, fallback)
+    .map((line) => (line.audience ? `${line.amount} (${line.label})` : line.amount))
+    .join(" · ");
 }
 
 export function hasRenderableProgramLivingFee(

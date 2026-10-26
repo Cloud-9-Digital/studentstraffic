@@ -23,6 +23,7 @@ import {
   formatCurrencyUsd,
   formatProgramAnnualFee,
   formatProgramFee,
+  formatProgramFeeSummary,
   getDisplayedReportedFeeQuote,
   formatProgramDuration,
   formatProgramMedium,
@@ -167,7 +168,11 @@ function formatAnnualFeeLine(program: FinderProgram) {
     official && official !== fee ? `official: ${official}` : null,
     offering.feeAcademicYear ? clean(offering.feeAcademicYear) : null,
   ].filter(Boolean);
-  return qualifiers.length ? `${fee} (${qualifiers.join("; ")})` : fee;
+  // Name who each fee is for, so an NRI-only fee isn't read as the Indian-student fee.
+  const amounts = offering.feeAudience || offering.additionalFees?.length
+    ? formatProgramFeeSummary(offering, program.country.slug)
+    : fee;
+  return qualifiers.length ? `${amounts} (${qualifiers.join("; ")})` : amounts;
 }
 
 export function renderUniversityMarkdown(input: {

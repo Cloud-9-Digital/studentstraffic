@@ -15,7 +15,7 @@ import {
 import type { Country, FinderProgram, University } from "@/lib/data/types";
 import { getIntakeMonthLabels } from "@/lib/catalogue-facets";
 import {
-  formatProgramFee,
+  formatProgramFeeSummary,
   formatProgramDuration,
   formatProgramMedium,
   getProgramAnnualFeeLabel,
@@ -60,7 +60,7 @@ export function UniversitySnapshotSection({
     {
       icon: <CircleDollarSign className="size-3.5" />,
       label: getProgramAnnualFeeLabel(primaryProgram.offering),
-      value: formatProgramFee(primaryProgram.offering, "Fee plan on request"),
+      value: formatProgramFeeSummary(primaryProgram.offering, country.slug, "Fee plan on request"),
     },
     {
       icon: <Clock className="size-3.5" />,

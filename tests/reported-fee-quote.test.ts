@@ -4,7 +4,7 @@ import { parseReportedFeeQuote, type ReportedFeeQuote } from "@/lib/reported-fee
 import type { ProgramOffering, FinderProgram } from "@/lib/data/types";
 import { catalogPayloadSchema } from "../scripts/lib/catalog-payload-schema";
 import { assertReportedFeeQuoteEvidence } from "../scripts/lib/reported-fee-quote-evidence";
-import { formatProgramAnnualFee, formatProgramFee, getProgramAnnualFeeLabel, getProgramFeeLines, hasRenderableProgramAnnualFee, hasRenderableProgramDisplayFee, hasRenderableProgramFee } from "@/lib/utils";
+import { formatProgramAnnualFee, formatProgramFee, formatProgramFeeSummary, getPrimaryProgramFee, getProgramAnnualFeeLabel, getProgramFeeLines, hasRenderableProgramAnnualFee, hasRenderableProgramDisplayFee, hasRenderableProgramFee } from "@/lib/utils";
 import { getProgramOfferingStructuredData } from "@/lib/structured-data";
 import { hasAnnualFeeSuffix } from "../mobile/src/lib/program-fees";
 import { mapUniversityDetail, mapFinderCardProgram } from "@/lib/mobile/mappers";
@@ -137,4 +137,22 @@ test("mobile programme quotes suppress annual units in both visible and accessib
   assert.equal(hasAnnualFeeSuffix(annualDto.offerings[0], "₹0"), true);
   assert.equal(hasAnnualFeeSuffix({}, "₹20,000"), true); // Older API compatibility.
   assert.equal(hasAnnualFeeSuffix({}, "Fee on request"), false);
+});
+
+test("single-line fee displays name who each fee is for, so an NRI fee never reads as the Indian fee", () => {
+  const nriOnly = { annualTuitionUsd: 3600, totalTuitionUsd: 0, feeStatus: "confirmed", officialFeeCurrency: "USD", officialAnnualTuitionAmount: 3600, feeAudience: "international", additionalFees: [] } as unknown as ProgramOffering;
+  assert.equal(formatProgramFeeSummary(nriOnly, "india"), "$3,600 (NRI & international)");
+  assert.deepEqual(getPrimaryProgramFee(nriOnly, "india"), { amount: "$3,600", audienceLabel: "NRI & international" });
+  assert.equal(formatProgramFeeSummary(nriOnly, "georgia"), "$3,600 (International students)");
+
+  const both = { ...nriOnly, additionalFees: [{ audience: "domestic", annualAmount: 195000, currency: "INR" }] } as unknown as ProgramOffering;
+  assert.equal(formatProgramFeeSummary(both, "india"), "₹1,95,000 (Indian students) · $3,600 (NRI & international)");
+  assert.deepEqual(getPrimaryProgramFee(both, "india"), { amount: "₹1,95,000", audienceLabel: "Indian students" });
+  // Fee-line output stays { label, amount } for the app API.
+  assert.deepEqual(getProgramFeeLines(both, "india").map(Object.keys), [["label", "amount"], ["label", "amount"]]);
+
+  const unclassified = { ...nriOnly, feeAudience: undefined };
+  assert.equal(formatProgramFeeSummary(unclassified, "india"), "$3,600");
+  assert.deepEqual(getPrimaryProgramFee(unclassified, "india"), { amount: "$3,600" });
+  assert.equal(formatProgramFeeSummary(offering, "india"), "₹55,000 / year");
 });

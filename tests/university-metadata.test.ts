@@ -380,3 +380,20 @@ test("broad catalogues do not claim a single-stream keyword noun", () => {
   });
   assert.ok(meta.keywords.includes("Berlin university"));
 });
+
+test("an Indian university's NRI-only fee is never the headline fee in titles or snippets", () => {
+  const base = program({ slug: "jmi-ba", shortName: "B.Com", stream: "economics-commerce", fee: 3600 });
+  const nriOnly = { ...base, offering: { ...base.offering, feeAudience: "international" as const } };
+  const indiaMeta = buildProgramMetadata({ program: nriOnly, university: kazan, country: { name: "India", slug: "india" }, section: "fees" });
+  assert.ok(!indiaMeta.title.includes("$3,600"));
+  assert.ok(!indiaMeta.description.includes("$3,600"));
+
+  const withIndianFee = { ...nriOnly, offering: { ...nriOnly.offering, additionalFees: [{ audience: "domestic" as const, annualAmount: 25000, currency: "INR" }] } };
+  const localMeta = buildProgramMetadata({ program: withIndianFee, university: kazan, country: { name: "India", slug: "india" }, section: "fees" });
+  assert.ok(localMeta.description.includes("₹25,000"));
+  assert.ok(!localMeta.description.includes("$3,600"));
+
+  // Abroad, the international fee is the fee an Indian student pays, so it stays.
+  const abroad = buildProgramMetadata({ program: nriOnly, university: kazan, country: { name: "Russia", slug: "russia" }, section: "fees" });
+  assert.ok(abroad.description.includes("$3,600"));
+});

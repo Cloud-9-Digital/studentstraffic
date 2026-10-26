@@ -7,7 +7,7 @@ import { getUniversityHref } from "@/lib/routes";
 import { getUniversityInitials } from "@/lib/university-media";
 import {
   getDisplayedReportedFeeQuote,
-  formatProgramFee,
+  formatProgramFeeSummary,
   formatProgramMedium,
   hasPublishedUsdAmount,
 } from "@/lib/utils";
@@ -53,7 +53,7 @@ function buildRows(programs: FinderProgram[]): Row[] {
   return [
     {
       label: programs.some((p) => getDisplayedReportedFeeQuote(p.offering)) ? "Fees" : "Tuition per year",
-      values: programs.map((p) => formatProgramFee(p.offering)),
+      values: programs.map((p) => formatProgramFeeSummary(p.offering, p.country.slug)),
       winnerIndexes:
         hasComparableUsdFees && tuitionWinners.length < programs.length
           ? tuitionWinners

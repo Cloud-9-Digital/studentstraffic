@@ -10,7 +10,7 @@ import {
 import type { FinderProgram, University } from "@/lib/data/types";
 import { getIntakeMonthLabels } from "@/lib/catalogue-facets";
 import {
-  formatProgramFee,
+  formatProgramFeeSummary,
   getDisplayedReportedFeeQuote,
   formatUsdAmountOrTbd,
   formatProgramLivingFee,
@@ -108,7 +108,7 @@ export function UniversityAcademicsSection({
                 {getDisplayedReportedFeeQuote(primaryProgram.offering) ? "Fees" : "Tuition fee"}
               </p>
               <p className="mt-1 text-base font-semibold text-foreground">
-                {formatProgramFee(primaryProgram.offering)}
+                {formatProgramFeeSummary(primaryProgram.offering, university.countrySlug)}
               </p>
             </div>
             <div className="rounded-2xl border border-border bg-muted/30 px-4 py-3">

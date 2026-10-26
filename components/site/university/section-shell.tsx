@@ -5,7 +5,7 @@ import type { Country, FinderProgram, University } from "@/lib/data/types";
 import type { UniversitySection } from "@/lib/university-sections";
 import {
   getDisplayedReportedFeeQuote,
-  formatProgramFee,
+  getPrimaryProgramFee,
   hasRenderableProgramDisplayFee,
 } from "@/lib/utils";
 
@@ -67,6 +67,9 @@ export function UniversitySectionShell({
               />
             )
           : children;
+  const primaryFee = primaryProgram
+    ? getPrimaryProgramFee(primaryProgram.offering, country.slug)
+    : undefined;
 
   return (
     <UniversitySectionShellClient
@@ -83,11 +86,8 @@ export function UniversitySectionShell({
       logoInitials={logoInitials}
       primaryProgramShortName={primaryProgramShortName}
       courseSlug={primaryProgram?.course.slug}
-      feeValue={
-        primaryProgram
-          ? formatProgramFee(primaryProgram.offering, "Fee plan on request")
-          : "Available on request"
-      }
+      feeValue={primaryFee?.amount ?? "Available on request"}
+      feeAudienceLabel={primaryFee?.audienceLabel}
       feeIsAnnual={primaryProgram ? !getDisplayedReportedFeeQuote(primaryProgram.offering) : false}
       hasFee={hasFee}
       recognitionBadge={university.recognitionBadges[0]}

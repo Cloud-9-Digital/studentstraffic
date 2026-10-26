@@ -1,7 +1,7 @@
 import { programmeLevelLabels, type ProgrammeLevel } from "@/lib/data/program-taxonomy";
 import type { FinderCardProgram, FinderProgram, University } from "@/lib/data/types";
 import type { ApplicationRow } from "@/lib/db/schema";
-import { getDisplayedReportedFeeQuote, formatProgramFee, getProgramFeeLines, formatProgramMedium } from "@/lib/utils";
+import { getDisplayedReportedFeeQuote, formatProgramFeeSummary, getProgramFeeLines, formatProgramMedium } from "@/lib/utils";
 
 export function mapFinderCardProgram(program: FinderCardProgram) {
   return {
@@ -18,7 +18,7 @@ export function mapFinderCardProgram(program: FinderCardProgram) {
     courseSlug: program.course.slug,
     offeringSlug: program.offering.slug,
     tuitionUsd: program.offering.annualTuitionUsd,
-    feeLabel: formatProgramFee(program.offering, "Fee on request"),
+    feeLabel: formatProgramFeeSummary(program.offering, program.country.slug, "Fee on request"),
     officialFeeCurrency: program.offering.officialFeeCurrency,
     officialAnnualTuitionAmount: program.offering.officialAnnualTuitionAmount,
   };

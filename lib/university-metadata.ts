@@ -1,6 +1,7 @@
 import type { CourseStream } from "@/lib/data/types";
 import type { UniversitySection, ProgramSection } from "@/lib/university-sections";
-import { formatProgramAnnualFee, hasRenderableProgramFee } from "@/lib/utils";
+import type { ProgramOffering } from "@/lib/data/types";
+import { formatCurrencyAmount, formatProgramAnnualFee, hasRenderableProgramFee } from "@/lib/utils";
 
 /**
  * Pure builders for university / section / programme page metadata.
@@ -23,7 +24,7 @@ type FeeFields = Parameters<typeof hasRenderableProgramFee>[0];
 
 /** Structural subset of `FinderProgram` the metadata builders actually read. */
 export type MetadataProgram = {
-  offering: FeeFields & { slug: string; featured?: boolean };
+  offering: FeeFields & Partial<Pick<ProgramOffering, "feeAudience" | "additionalFees">> & { slug: string; featured?: boolean };
   course: {
     shortName: string;
     stream: CourseStream;
@@ -38,7 +39,7 @@ export type MetadataUniversity = {
   recognitionBadges?: string[];
 };
 
-export type MetadataCountry = { name: string } | null | undefined;
+export type MetadataCountry = { name: string; slug?: string } | null | undefined;
 
 export type BuiltMetadata = {
   title: string;
@@ -340,9 +341,16 @@ export function selectLowestFeeProgram<T extends MetadataProgram>(
   })[0];
 }
 
-function flagshipFeeText(program: MetadataProgram | undefined) {
+function flagshipFeeText(program: MetadataProgram | undefined, country: MetadataCountry) {
   if (!program || !hasRenderableProgramFee(program.offering)) return undefined;
-  return formatProgramAnnualFee(program.offering);
+  const { offering } = program;
+  // Titles and snippets have no room for "NRI & international", and readers of an Indian university's
+  // page are mostly Indian students, so an NRI/foreign fee is never quoted as the headline fee there.
+  if (country?.slug === "india" && offering.feeAudience === "international") {
+    const local = offering.additionalFees?.find((fee) => fee.audience !== "international");
+    return local ? formatCurrencyAmount(local.annualAmount, local.currency) : undefined;
+  }
+  return formatProgramAnnualFee(offering);
 }
 
 function shortRecognitionBadges(badges: readonly string[] | undefined) {
@@ -395,8 +403,8 @@ export function buildUniversityMetadata(input: {
   const { university, country, programs, section } = input;
   const profile = summariseUniversityStreams(programs);
   const flagship = selectFlagshipProgram(programs);
-  const feeText = flagshipFeeText(flagship);
-  const lowestFeeText = flagshipFeeText(selectLowestFeeProgram(programs));
+  const feeText = flagshipFeeText(flagship, country);
+  const lowestFeeText = flagshipFeeText(selectLowestFeeProgram(programs), country);
   const loc = locationLabel(university, country);
   const keywords = buildUniversityKeywords({ university, country, profile, flagship });
 
@@ -570,7 +578,7 @@ export function buildProgramMetadata(input: {
   const { program, university, country, section } = input;
   const course = program.course.shortName;
   const loc = locationLabel(university, country);
-  const feeText = flagshipFeeText(program);
+  const feeText = flagshipFeeText(program, country);
   const spec = PROGRAM_TITLE_SPECS[section ?? "default"];
   const title = fitTitle(spec.entity(course, university.name), spec.suffixes(feeText));
 

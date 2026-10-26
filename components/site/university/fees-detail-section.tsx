@@ -4,7 +4,7 @@ import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import type { Country, FinderProgram, University } from "@/lib/data/types";
 import { getIntakeMonthLabels } from "@/lib/catalogue-facets";
 import {
-  formatProgramFee,
+  formatProgramFeeSummary,
   getProgramAnnualFeeLabel,
   getDisplayedReportedFeeQuote,
   formatProgramDuration,
@@ -125,7 +125,7 @@ function ProgramFeeCard({
               {getProgramAnnualFeeLabel(offering)}
             </p>
             <p className="mt-1.5 text-xl font-bold text-foreground">
-              {formatProgramFee(offering)}
+              {formatProgramFeeSummary(offering, program.country.slug)}
             </p>
             {offering.officialFeeCurrency && hasOfficialFeeAmount(
               offering.officialAnnualTuitionAmount,

@@ -36,6 +36,8 @@ type Props = {
   hasFee: boolean;
   feeValue: string;
   feeIsAnnual: boolean;
+  /** Who the fee is for, e.g. "NRI & international", when the source says so. */
+  feeAudienceLabel?: string;
   coverImage: { url: string; alt: string } | null;
   logoUrl?: string;
   logoInitials: string;
@@ -85,7 +87,7 @@ function ProgramContextStrip(props: Props & { activeSection: ProgramSection | nu
         <Link href={getUniversityHref(props.universitySlug)} className="font-display font-semibold text-heading hover:text-primary hover:underline">{props.universityName}</Link>
         <span className="flex items-center gap-1.5 text-muted-foreground"><MapPin className="size-3.5 shrink-0" />{props.universityCity}, {props.countryName}</span>
         <span className="flex items-center gap-1.5 text-muted-foreground"><GraduationCap className="size-3.5 shrink-0" />{props.courseShortName} · {props.universityType}</span>
-        {props.hasFee ? <span className="font-medium text-accent">{props.feeValue}{props.feeIsAnnual ? "/yr" : ""}</span> : null}
+        {props.hasFee ? <span className="font-medium text-accent">{props.feeValue}{props.feeIsAnnual ? "/yr" : ""}{props.feeAudienceLabel ? ` (${props.feeAudienceLabel})` : ""}</span> : null}
       </div>
       <div className="flex flex-wrap gap-2 border-t border-border/60 bg-background/50 px-5 py-2.5">
         <Link href={getUniversityProgramHref(props.programSlug)} className="text-xs text-muted-foreground hover:text-primary hover:underline">Academics</Link>
