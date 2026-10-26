@@ -1,3 +1,4 @@
+import { siteConfig } from "@/lib/constants";
 import { LeadForm } from "@/components/site/lead-form";
 
 const FOCUS_COUNTRIES = [
@@ -76,7 +77,8 @@ export function LpHero() {
             </h1>
 
             <p className="mt-4 max-w-lg text-base leading-7 text-white/60">
-              Trusted by 3,000+ Indian students since 2014. We help you get
+              Trusted by {siteConfig.studentsGuided} Indian students since{" "}
+              {siteConfig.foundedYear}. We help you get
               admitted to MBBS universities meeting NMC guidelines across 6 countries.
               Book a free counselling call and we will guide you.
             </p>
@@ -105,9 +107,9 @@ export function LpHero() {
 
             <div className="mt-8 flex flex-wrap gap-6 border-t border-white/10 pt-7">
               {[
-                { value: "3,000+", label: "Students Admitted" },
+                { value: siteConfig.studentsGuided, label: "Students Admitted" },
                 { value: "6 Countries", label: "We Specialise In" },
-                { value: "Since 2014", label: "Trusted Platform" },
+                { value: `Since ${siteConfig.foundedYear}`, label: "Trusted Platform" },
               ].map(({ value, label }) => (
                 <div key={label}>
                   <div className="text-xl font-black text-[#F5A623]">{value}</div>

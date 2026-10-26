@@ -1,3 +1,4 @@
+import { siteConfig } from "@/lib/constants";
 import Image from "next/image";
 
 import { BRAND, HAIRLINE } from "./theme";
@@ -14,7 +15,7 @@ const REASONS = [
   },
   {
     title: "Admissions is all we do",
-    body: "Since 2014, and more than 3,000 students admitted. You are speaking to someone who has run this cycle before.",
+    body: `Since ${siteConfig.foundedYear}, and ${siteConfig.studentsGuided} students admitted. You are speaking to someone who has run this cycle before.`,
   },
 ];
 

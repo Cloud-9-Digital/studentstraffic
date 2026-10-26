@@ -1,3 +1,4 @@
+import { siteConfig } from "@/lib/constants";
 import "server-only";
 
 import type { FinderProgram } from "@/lib/data/types";
@@ -379,11 +380,11 @@ export const RUSSIA_LP_CONFIG: CountryLpConfig = {
   countryName: "Russia",
   flag: "🇷🇺",
   contentReviewedAt: "2026-07-10",
-  heroKicker: "Trusted MBBS Admission Partner Since 2014",
+  heroKicker: `Trusted MBBS Admission Partner Since ${siteConfig.foundedYear}`,
   heroHeadlinePrefix: "Want to become a doctor?",
   heroHeadlineHighlight: "Study MBBS in Russia. We will get you admitted.",
   heroSubtext:
-    "Trusted by 3,000+ Indian students since 2014. We help you get admitted to NMC-aligned MBBS universities across Russia — English medium, government-recognized, and home to the largest Indian student community abroad. Book a free counselling call and we will guide you.",
+    `Trusted by ${siteConfig.studentsGuided} Indian students since ${siteConfig.foundedYear}. We help you get admitted to NMC-aligned MBBS universities across Russia — English medium, government-recognized, and home to the largest Indian student community abroad. Book a free counselling call and we will guide you.`,
   whyIntro:
     "Russia has trained Indian doctors since the 1990s. With 60+ NMC-aligned universities, English-medium teaching, and total costs a fraction of private MBBS in India, it remains the most chosen MBBS destination for Indian students.",
   comparisonRows: [
@@ -677,11 +678,11 @@ export const GEORGIA_LP_CONFIG: CountryLpConfig = {
   countryName: "Georgia",
   flag: "🇬🇪",
   contentReviewedAt: "2026-07-10",
-  heroKicker: "Trusted MBBS Admission Partner Since 2014",
+  heroKicker: `Trusted MBBS Admission Partner Since ${siteConfig.foundedYear}`,
   heroHeadlinePrefix: "Want to become a doctor?",
   heroHeadlineHighlight: "Study MBBS in Georgia. We will get you admitted.",
   heroSubtext:
-    "Trusted by 3,000+ Indian students since 2014. We help you get admitted to private, NMC-aligned MBBS universities across Georgia — European-standard, English medium, and one of the highest FMGE pass rates among MBBS-abroad destinations. Book a free counselling call and we will guide you.",
+    `Trusted by ${siteConfig.studentsGuided} Indian students since ${siteConfig.foundedYear}. We help you get admitted to private, NMC-aligned MBBS universities across Georgia — European-standard, English medium, and one of the highest FMGE pass rates among MBBS-abroad destinations. Book a free counselling call and we will guide you.`,
   whyIntro:
     "Georgia offers European-standard medical education at the edge of the EU, with fully English-medium MBBS programmes at private, NMC-aligned universities, strong FMGE outcomes, and a large, settled Indian student community in Tbilisi and Batumi.",
   comparisonRows: [
@@ -771,11 +772,11 @@ export const VIETNAM_LP_CONFIG: CountryLpConfig = {
   slug: "vietnam",
   countryName: "Vietnam",
   flag: "🇻🇳",
-  heroKicker: "Trusted MBBS Admission Partner Since 2014",
+  heroKicker: `Trusted MBBS Admission Partner Since ${siteConfig.foundedYear}`,
   heroHeadlinePrefix: "Want to become a doctor?",
   heroHeadlineHighlight: "Study MBBS in Vietnam. We will get you admitted.",
   heroSubtext:
-    "Trusted by 3,000+ Indian students since 2014. We help you get admitted to NMC-aligned, English-medium MBBS programmes in Vietnam — modern campuses, growing clinical infrastructure, and a fast flight home. Book a free counselling call and we will guide you.",
+    `Trusted by ${siteConfig.studentsGuided} Indian students since ${siteConfig.foundedYear}. We help you get admitted to NMC-aligned, English-medium MBBS programmes in Vietnam — modern campuses, growing clinical infrastructure, and a fast flight home. Book a free counselling call and we will guide you.`,
   whyIntro:
     "Vietnam is a fast-growing, safe, and affordable MBBS destination close to India, with modern hospitals for clinical training and a small number of universities that run their MBBS programme fully in English for international students.",
   comparisonRows: [

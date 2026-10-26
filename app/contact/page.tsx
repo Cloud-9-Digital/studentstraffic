@@ -55,7 +55,7 @@ export default function ContactPage() {
             Get in touch
           </h1>
           <p className="mt-4 max-w-xl text-base leading-7 text-muted-foreground">
-            Our counsellors have guided 2,000+ students to the right university
+            Our counsellors have guided {siteConfig.studentsGuided} students to the right university
             abroad. Reach out — there&apos;s no fee, no commitment, and no rush.
           </p>
         </div>

@@ -1,4 +1,5 @@
 import { LeadForm } from "@/components/site/lead-form";
+import { siteConfig } from "@/lib/constants";
 
 import { LpAvatar } from "./lp-avatar";
 
@@ -30,7 +31,7 @@ export function LpHero({
   const stats = [
     { value: `${minTotalInrLabel} to ${maxTotalInrLabel}`, label: "Approx. Total Cost (6 yrs)" },
     { value: `${durationYears} Years`, label: "Course Duration" },
-    { value: "3,000+", label: "Students Admitted" },
+    { value: siteConfig.studentsGuided, label: "Students Admitted" },
   ];
 
   return (

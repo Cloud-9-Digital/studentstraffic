@@ -443,7 +443,7 @@ export default async function LandingPageRoute({
           </div>
           <div className="shrink-0 lg:text-right">
             <div className="inline-flex flex-col items-center justify-center rounded-2xl border border-white/15 bg-white/10 px-10 py-8 text-center">
-              <span className="font-display text-5xl font-bold text-white">3,000+</span>
+              <span className="font-display text-5xl font-bold text-white">{siteConfig.studentsGuided}</span>
               <span className="mt-2 text-sm text-white/60">students guided abroad</span>
               <div className="mt-5 border-t border-white/15 pt-5">
                 <CounsellingDialog
@@ -1269,7 +1269,7 @@ export default async function LandingPageRoute({
                   Ready to apply? We handle everything, free of charge.
                 </h2>
                 <p className="mt-4 text-sm leading-7 text-white/70">
-                  3,000+ students have already trusted us with their overseas
+                  {siteConfig.studentsGuided} students have already trusted us with their overseas
                   medical applications. Our team manages the full process, so
                   you do not need to visit an office until it is time to board
                   your flight.

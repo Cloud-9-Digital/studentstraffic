@@ -26,6 +26,10 @@ export const siteConfig = {
     addressCountry: "IN",
     countryName: "India",
   },
+  // Company track record, supplied by the owner (2026-10-27). Every page that
+  // states it reads these, so the figures never disagree.
+  studentsGuided: "3,000+",
+  foundedYear: 2014,
   // The app is published under the Cloud 9 Digital developer account.
   operator: "Cloud 9 Digital",
   playStoreUrl: "https://play.google.com/store/apps/details?id=com.studentstraffic.app",

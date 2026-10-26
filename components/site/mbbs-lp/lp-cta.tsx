@@ -1,3 +1,4 @@
+import { siteConfig } from "@/lib/constants";
 import { LeadForm } from "@/components/site/lead-form";
 
 type Props = {
@@ -31,8 +32,8 @@ export function LpCta({ sourcePath, countryName }: Props) {
 
             <div className="mt-8 grid grid-cols-3 gap-4">
               {[
-                { n: "3,000+", l: "Students Admitted" },
-                { n: "Since 2014", l: "In This Field" },
+                { n: siteConfig.studentsGuided, l: "Students Admitted" },
+                { n: `Since ${siteConfig.foundedYear}`, l: "In This Field" },
                 { n: "Free", l: "Counselling Call" },
               ].map(({ n, l }) => (
                 <div key={l} className="rounded-xl border border-white/10 px-4 py-3 text-center">

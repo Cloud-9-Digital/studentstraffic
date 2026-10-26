@@ -1,3 +1,4 @@
+import { siteConfig } from "@/lib/constants";
 import { LeadForm } from "@/components/site/lead-form";
 
 export function LpCta() {
@@ -26,9 +27,9 @@ export function LpCta() {
 
             <div className="mt-8 grid grid-cols-3 gap-4">
               {[
-                { n: "3,000+", l: "Students Admitted" },
+                { n: siteConfig.studentsGuided, l: "Students Admitted" },
                 { n: "10+", l: "Countries" },
-                { n: "Since 2014", l: "In This Field" },
+                { n: `Since ${siteConfig.foundedYear}`, l: "In This Field" },
               ].map(({ n, l }) => (
                 <div key={l} className="rounded-xl border border-white/10 px-4 py-3 text-center">
                   <p className="text-xl font-black" style={{ color: "#F5A623" }}>{n}</p>

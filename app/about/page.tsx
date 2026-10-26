@@ -47,7 +47,7 @@ const pillars = [
     Icon: Users,
     label: "Free Admissions Support",
     heading: "With you from enquiry to visa",
-    body: "Our counsellors have taken 2,000+ students from first enquiry to enrolment — admissions, applications, documents, and visa — across Russia, Georgia, Kazakhstan, Vietnam, Kyrgyzstan, and more, completely free.",
+    body: `Our counsellors have taken ${siteConfig.studentsGuided} students from first enquiry to enrolment — admissions, applications, documents, and visa — across Russia, Georgia, Kazakhstan, Vietnam, Kyrgyzstan, and more, completely free.`,
   },
 ] as const;
 
@@ -133,7 +133,7 @@ export default function AboutPage() {
               {/* Stats — visible on mobile below CTAs, hidden on lg (shown right) */}
               <div className="grid grid-cols-2 gap-3 pt-2 lg:hidden">
                 {[
-                  { number: "2,000+", label: "Students enrolled" },
+                  { number: siteConfig.studentsGuided, label: "Students enrolled" },
                   { number: "Verified", label: "Official-source checks" },
                   { number: "100%", label: "Free service" },
                   { number: "1:1", label: "Personal counselling" },
@@ -150,7 +150,7 @@ export default function AboutPage() {
             <div className="hidden grid-cols-2 gap-4 lg:grid">
               {[
                 {
-                  number: "2,000+",
+                  number: siteConfig.studentsGuided,
                   label: "Students enrolled",
                   note: "Across countries & streams",
                   highlight: true,

@@ -1,3 +1,4 @@
+import { siteConfig } from "@/lib/constants";
 import { LpDialogTrigger } from "./lp-dialog-trigger";
 
 const testimonials = [
@@ -30,7 +31,8 @@ export function LpTrust() {
             Students who trusted us
           </h2>
           <p className="mx-auto mt-3 max-w-lg text-sm leading-7 text-gray-500">
-            Real students. Real results. 3,000+ admissions since 2014.
+            Real students. Real results. {siteConfig.studentsGuided} admissions since{" "}
+            {siteConfig.foundedYear}.
           </p>
         </div>
 
