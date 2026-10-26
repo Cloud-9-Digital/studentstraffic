@@ -75,15 +75,6 @@ export function SeminarNextEvent() {
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-white to-gray-50 py-10 md:py-12">
-      {/* Subtle dot pattern */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-[0.025]"
-        style={{
-          backgroundImage: "radial-gradient(circle, #000 1.5px, transparent 1.5px)",
-          backgroundSize: "32px 32px",
-        }}
-      />
 
       {/* Colored accent glows */}
       <div

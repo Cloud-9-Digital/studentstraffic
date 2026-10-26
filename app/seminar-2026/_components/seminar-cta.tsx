@@ -6,15 +6,6 @@ import { SeminarDialogTrigger } from "./seminar-dialog-trigger";
 export function SeminarCta() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-white via-gray-50 to-white py-16 md:py-20">
-      {/* Grid pattern overlay */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-[0.02]"
-        style={{
-          backgroundImage: "linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)",
-          backgroundSize: "48px 48px",
-        }}
-      />
 
       {/* Subtle colored glow */}
       <div

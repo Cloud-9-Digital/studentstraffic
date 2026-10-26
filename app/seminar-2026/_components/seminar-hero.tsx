@@ -10,15 +10,6 @@ export function SeminarHero() {
     <section
       className="relative overflow-hidden bg-gradient-to-br from-white via-gray-50 to-white"
     >
-      {/* Dot pattern overlay */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-[0.03]"
-        style={{
-          backgroundImage: "radial-gradient(circle, #000 1px, transparent 1px)",
-          backgroundSize: "24px 24px",
-        }}
-      />
 
       {/* Colored gradient glows */}
       <div

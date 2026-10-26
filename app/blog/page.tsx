@@ -283,13 +283,6 @@ export default async function BlogPage({
       {/* ── Masthead ──────────────────────────────────────────────── */}
       <section className="relative overflow-hidden bg-surface-dark">
         <div className="absolute inset-x-0 top-0 h-[3px] bg-accent" />
-        <div
-          className="absolute inset-0 opacity-[0.05]"
-          style={{
-            backgroundImage: "radial-gradient(circle, #ffffff 1px, transparent 1px)",
-            backgroundSize: "24px 24px",
-          }}
-        />
         <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
           <div className="flex flex-col gap-4 py-10 md:flex-row md:items-end md:justify-between md:py-14">
             <div>

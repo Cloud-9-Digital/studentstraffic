@@ -187,17 +187,6 @@ select {
 
 /* ── Layout utilities ─────────────────────────────────────────────────────── */
 
-.page-noise {
-  pointer-events: none;
-  position: fixed;
-  inset: 0;
-  opacity: 0.18;
-  background-image:
-    linear-gradient(rgba(18, 55, 50, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(18, 55, 50, 0.02) 1px, transparent 1px);
-  background-size: 24px 24px;
-  mask-image: radial-gradient(circle at center, black 45%, transparent 100%);
-}
 
 .container-shell {
   width: min(1120px, calc(100% - 2rem));
@@ -243,13 +232,6 @@ select {
   color: inherit;
 }
 
-.hero-grid-lines {
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
-  background-size: 32px 32px;
-  mask-image: radial-gradient(circle at center, black 35%, transparent 100%);
-}
 
 .hero-glass {
   border: 1px solid rgba(255, 255, 255, 0.14);

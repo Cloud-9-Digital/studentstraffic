@@ -27,16 +27,6 @@ export function RouteError({
 }) {
   return (
     <div className="relative overflow-hidden bg-background">
-      {/* Dot-grid texture — matches not-found.tsx */}
-      <div
-        className="pointer-events-none absolute inset-0"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle, #d1d5db 1px, transparent 1px)",
-          backgroundSize: "28px 28px",
-          opacity: 0.35,
-        }}
-      />
       <div
         className="pointer-events-none absolute -right-32 top-0 h-full w-72 -skew-x-6 bg-accent/4"
         aria-hidden

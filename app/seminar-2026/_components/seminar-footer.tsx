@@ -16,15 +16,6 @@ function WhatsAppIcon({ className }: { className?: string }) {
 export function SeminarFooter() {
   return (
     <footer className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white">
-      {/* Subtle grid pattern */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-[0.02]"
-        style={{
-          backgroundImage: "linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)",
-          backgroundSize: "40px 40px",
-        }}
-      />
 
       <div className="relative z-10 mx-auto max-w-5xl px-4 py-12">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">

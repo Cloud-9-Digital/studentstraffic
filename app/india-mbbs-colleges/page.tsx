@@ -111,7 +111,6 @@ function IndiaMbbsFallback() {
     <>
       <div className="relative overflow-hidden bg-surface-dark">
         <div className="absolute inset-0 bg-gradient-to-br from-surface-dark via-surface-dark to-surface-dark-2" />
-        <div className="hero-grid-lines absolute inset-0 pointer-events-none" />
 
         <div className="container-shell relative py-10 pb-8 md:py-16 md:pb-10">
           <div className="mb-7 space-y-3 text-center md:mb-9">

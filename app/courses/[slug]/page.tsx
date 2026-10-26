@@ -173,8 +173,6 @@ export default async function CoursePage({
     <div className="flex flex-col">
       {/* ── Brand Gradient Cover ──────────────────────────────────────────── */}
       <section className="relative overflow-hidden bg-gradient-to-tr from-primary/10 via-background to-accent/5 pt-20 pb-28 md:pt-32 md:pb-40 border-b border-border/40">
-        <div className="page-noise"></div>
-        <div className="hero-grid-lines absolute inset-0 opacity-30 pointer-events-none"></div>
         {/* Soft radial glow to elevate typography */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-background/50 blur-[100px] rounded-full pointer-events-none"></div>
         

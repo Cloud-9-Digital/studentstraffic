@@ -379,7 +379,6 @@ function ComparisonHero({
   return (
     <div className="relative overflow-hidden bg-surface-dark">
       <div className="absolute inset-0 bg-gradient-to-br from-surface-dark via-surface-dark to-surface-dark-2" />
-      <div className="hero-grid-lines pointer-events-none absolute inset-0" />
       <div className="hero-orb hero-orb--warm pointer-events-none absolute -right-24 -top-20 size-96 opacity-25" aria-hidden />
       <div className="hero-orb hero-orb--cool pointer-events-none absolute -bottom-16 left-0 size-80 opacity-40" aria-hidden />
 

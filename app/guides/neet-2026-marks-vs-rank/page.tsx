@@ -233,7 +233,6 @@ export default function Neet2026MarksVsRankPage() {
       <main className="min-h-screen bg-background">
         <section className="relative overflow-hidden bg-surface-dark">
           <div className="absolute inset-0 bg-gradient-to-br from-surface-dark via-surface-dark to-surface-dark-2" />
-          <div className="hero-grid-lines absolute inset-0 pointer-events-none" />
           <div className="container-shell relative py-12 md:py-16 lg:py-18">
             <div className="space-y-6">
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">

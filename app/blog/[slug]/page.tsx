@@ -294,14 +294,6 @@ export default async function BlogPostPage({
         {/* 3px accent top line */}
         <div className="absolute inset-x-0 top-0 h-[3px] bg-accent" />
 
-        {/* Dot-grid background texture */}
-        <div
-          className="absolute inset-0 opacity-[0.05]"
-          style={{
-            backgroundImage: "radial-gradient(circle, #ffffff 1px, transparent 1px)",
-            backgroundSize: "24px 24px",
-          }}
-        />
 
         {/* Mobile: cover image above text */}
         {post.coverUrl && (

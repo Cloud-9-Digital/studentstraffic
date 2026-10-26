@@ -70,16 +70,6 @@ export default function SeminarThankYouPage() {
               "radial-gradient(circle at 50% 0%, rgba(194,65,12,0.1) 0%, transparent 55%), radial-gradient(circle at 80% 80%, rgba(255,255,255,0.02) 0%, transparent 40%)",
           }}
         />
-        {/* Grid */}
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 opacity-[0.04]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(255,255,255,0.6) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.6) 1px, transparent 1px)",
-            backgroundSize: "48px 48px",
-          }}
-        />
 
         <div className="relative mx-auto max-w-2xl px-4 py-20 text-center md:py-28">
           {/* Animated checkmark */}

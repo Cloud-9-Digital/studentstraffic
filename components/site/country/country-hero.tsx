@@ -119,7 +119,6 @@ function BrandedHeroPanel({
 }) {
   return (
     <div className={cn("relative flex h-full min-h-[300px] flex-col justify-between overflow-hidden p-6 text-white sm:min-h-[390px] sm:p-8 lg:min-h-[500px] lg:p-10", "bg-primary")}>
-      <div aria-hidden="true" className="hero-grid-lines pointer-events-none absolute inset-0 opacity-30" />
       <div aria-hidden="true" className="absolute -right-20 -top-24 size-72 rounded-full border border-white/10" />
       <div aria-hidden="true" className="absolute -bottom-32 -left-20 size-80 rounded-full border border-white/10" />
 

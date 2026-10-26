@@ -122,10 +122,6 @@ function LeadStory({ article, topicSlug }: { article: NewsArticle; topicSlug: st
           />
         ) : (
           <div className="relative flex h-full w-full flex-col items-center justify-center gap-3 px-8 py-12 text-center">
-            <div
-              aria-hidden
-              className="hero-grid-lines absolute inset-0 opacity-30"
-            />
             <span className="relative font-display text-2xl font-semibold text-white/90">
               {article.source}
             </span>

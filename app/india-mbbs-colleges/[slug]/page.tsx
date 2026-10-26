@@ -184,7 +184,6 @@ export default async function IndiaMbbsCollegeDetailPage({
     <>
       <section className="relative overflow-hidden bg-surface-dark">
         <div className="absolute inset-0 bg-gradient-to-br from-surface-dark via-surface-dark to-surface-dark-2" />
-        <div className="hero-grid-lines absolute inset-0 pointer-events-none" />
         <div className="container-shell relative py-10 md:py-16">
           <div className="max-w-4xl space-y-5">
             <Link

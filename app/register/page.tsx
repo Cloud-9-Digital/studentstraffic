@@ -30,14 +30,6 @@ export default async function RegisterPage({
     <div className="flex min-h-screen">
       {/* ── Left: brand panel ─────────────────────────────── */}
       <div className="relative hidden lg:flex lg:w-[44%] flex-col overflow-hidden bg-[#0b2e2a]">
-        <div
-          className="absolute inset-0 opacity-[0.04]"
-          style={{
-            backgroundImage:
-              "linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)",
-            backgroundSize: "40px 40px",
-          }}
-        />
         <div className="absolute -top-32 -left-32 size-[500px] rounded-full bg-[#155e53]/50 blur-[120px]" />
         <div className="absolute bottom-0 right-0 size-[400px] rounded-full bg-[#c2410c]/15 blur-[100px]" />
 

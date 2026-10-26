@@ -38,7 +38,6 @@ export function CountryOverviewSection({
 
           {showWhyStudentsChooseIt ? (
             <div className="relative mt-8 overflow-hidden rounded-[1.5rem] border border-primary/10 bg-primary p-5 text-white sm:mt-10 sm:p-8 lg:p-10">
-              <div aria-hidden="true" className="hero-grid-lines pointer-events-none absolute inset-0 opacity-25" />
               <div className="relative">
                 <div className="flex items-start justify-between gap-6">
                   <div className="flex items-center gap-3">

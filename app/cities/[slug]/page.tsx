@@ -336,7 +336,6 @@ export default async function CityPage({
           aria-hidden
           className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_60%_-10%,rgba(240,138,68,0.18),transparent),radial-gradient(ellipse_40%_50%_at_0%_60%,rgba(255,255,255,0.04),transparent)]"
         />
-        <div aria-hidden className="hero-grid-lines absolute inset-0 opacity-20 pointer-events-none" />
 
         <div className="container-shell relative py-12 md:py-16 lg:py-20">
           {/* Breadcrumb */}

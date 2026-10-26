@@ -327,7 +327,6 @@ export function StudentsExplorer({
       {/* ── Dark hero ──────────────────────────────────────────────────── */}
       <div className="relative overflow-hidden bg-surface-dark">
         <div className="absolute inset-0 bg-gradient-to-br from-surface-dark via-surface-dark to-surface-dark-2" />
-        <div className="hero-grid-lines absolute inset-0 pointer-events-none" />
         <div
           className="hero-orb hero-orb--warm pointer-events-none absolute -right-16 -top-20 size-96 opacity-50"
           aria-hidden

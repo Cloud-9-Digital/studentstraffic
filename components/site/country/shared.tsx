@@ -83,7 +83,6 @@ export function CountryImagePlaceholder({
         aspect === "portrait" ? "min-h-[360px]" : "min-h-[240px] sm:min-h-[300px]"
       )}
     >
-      <div aria-hidden="true" className="hero-grid-lines pointer-events-none absolute inset-0 opacity-30" />
       <div aria-hidden="true" className="absolute -right-16 -top-16 size-56 rounded-full border border-white/10" />
       <div aria-hidden="true" className="absolute -bottom-24 -left-10 size-64 rounded-full border border-white/10" />
       <div className="relative mt-auto flex w-full items-end justify-between gap-4 p-5 sm:p-7">

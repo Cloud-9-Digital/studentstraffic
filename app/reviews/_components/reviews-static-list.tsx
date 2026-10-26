@@ -15,7 +15,6 @@ export function ReviewsIntro() {
   return (
     <div className="relative overflow-hidden bg-surface-dark">
       <div className="absolute inset-0 bg-gradient-to-br from-surface-dark via-surface-dark to-surface-dark-2" />
-      <div className="hero-grid-lines absolute inset-0 pointer-events-none" />
       <div className="container-shell relative pb-5 pt-10 text-center md:pt-16">
         <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
           From students, not agents
