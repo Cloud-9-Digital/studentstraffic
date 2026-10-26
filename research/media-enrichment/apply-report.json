@@ -1,43 +1,19 @@
 {
-  "appliedAt": "2026-10-26T13:12:11.836Z",
+  "appliedAt": "2026-10-26T13:58:35.909Z",
   "uploads": {
-    "attempted": 10,
-    "succeeded": 10,
+    "attempted": 1,
+    "succeeded": 1,
     "failed": 0
   },
   "database": {
-    "updated": 5,
+    "updated": 1,
     "notFoundInDb": []
   },
   "updatedUniversities": [
     {
-      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
       "logoUpdated": true,
-      "coverUpdated": true,
-      "notFoundInDb": false
-    },
-    {
-      "universitySlug": "jerusalem-college-of-engineering",
-      "logoUpdated": true,
-      "coverUpdated": true,
-      "notFoundInDb": false
-    },
-    {
-      "universitySlug": "kathir-college-of-engineering",
-      "logoUpdated": true,
-      "coverUpdated": true,
-      "notFoundInDb": false
-    },
-    {
-      "universitySlug": "miet-engineering-college",
-      "logoUpdated": true,
-      "coverUpdated": true,
-      "notFoundInDb": false
-    },
-    {
-      "universitySlug": "tagore-engineering-college",
-      "logoUpdated": true,
-      "coverUpdated": true,
+      "coverUpdated": false,
       "notFoundInDb": false
     }
   ],

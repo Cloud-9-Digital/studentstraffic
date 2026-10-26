@@ -1,0 +1,46 @@
+{
+  "manifestId": "india-tn-colleges-e-s-college-of-engineering-and-technology-media-2026-10-26",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-26",
+  "scope": "logo and cover for content migration 0396-india-e-s-college-of-engineering-and-technology",
+  "rules": [
+    "This manifest permits neither direct database writes nor automatic Cloudinary uploads.",
+    "Every sourceUrl is a direct image URL verified HTTP 200 with an image/* content-type on 2026-10-26; re-verify before upload.",
+    "Only a verified Cloudinary URL may be applied to the catalogue; hold entries are excluded."
+  ],
+  "brochure": {
+    "status": "none-found",
+    "notes": "No official brochure or prospectus PDF is published on escet.in (checked 2026-10-26). The only PDFs on the domain are AICTE EoA letters (/pdf/escet-eoa-23-24.PDF, -24-25, -25-26); the admission pages and courses page link no brochure, and /brochure.pdf, /pdf/brochure.pdf, /pdf/Brochure.pdf and /pdf/escet-brochure.pdf return 404."
+  },
+  "entries": [
+    {
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "universityName": "E.S. College of Engineering and Technology",
+      "sourceBatch": "claude-tn-colleges-batch2-20261026",
+      "migrationId": "0396-india-e-s-college-of-engineering-and-technology",
+      "assets": [
+        {
+          "kind": "logo",
+          "status": "ready",
+          "sourceUrl": "https://escet.in/img/logo/logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://escet.in/",
+          "rightsBasis": "Official site-wide header logo served from the college's own domain (escet.in). No open licence; used only to identify the institution. Checked 2026-10-26: HTTP 200, image/png, 41,407 bytes, 631x150 px RGBA, sha256 12809c436bc3d2fc1b4423fa415fd71ef3eed7a86a0e6f356038d7edf2580d4d. Rendered on white and visually confirmed legible: blue interlocking emblem on the left, blue wordmark 'E.S. COLLEGE of Engineering and Technology' and a small address line '3/249, E.S. Nagar, NH-45, Chennai Trunk Road, Villupuram - 605 601, Tamil Nadu, India'. CAVEAT: wide lock-up (4.2:1) at modest resolution; if a square tile is required, crop the left emblem (approx. x 0-160). Rejected: /img/logo/e-larning.png (e-learning portal mark, not the college logo).",
+          "proposedPublicId": "studentstraffic/universities/e-s-college-of-engineering-and-technology/logo",
+          "localCopy": "research/india-source-bundles/e-s-college-of-engineering-and-technology/media/logo.png"
+        },
+        {
+          "kind": "cover",
+          "status": "hold",
+          "sourceUrl": "https://escet.in/img/features/about_img_03.png",
+          "sourceType": "official",
+          "sourcePage": "https://escet.in/about-us",
+          "rightsBasis": "HOLD - no single, rights-safe campus photograph of adequate size. The only real exterior view is inside a composite: about_img_03.png (HTTP 200, image/png, 439,941 bytes, 625x598 px, sha256 536f1a4d0d882843f3042467c59b900b3cab74a2db0bf2c5556072eafe8d8baa) stacks two orange-framed rounded panels - a library interior with students at the top and, below, a genuine photograph of the five-storey cream academic block with orange arched corridors, an orange stair tower, palms and a few people at mid distance. A reviewer may approve a transformation crop of the lower panel only (approx. x 18-612, y 285-588, about 594x303 px, inside the orange border), but it is low resolution and keeps rounded-corner artefacts; not recommended without review. Other candidates rejected 2026-10-26: gallery e-s-college-of-engineering-and-technology-01 to -09.jpg (800x534, 2012 job-fair and visitor event photos dominated by identifiable people; -04 shows the entrance arch partly behind a crowd); /img/blog/inner_b1-3.jpg, /img/deportment/*.jpg, /img/bg/cta_bg.png and blog_bg.png are stock or illustrative images, not the campus; the home-page hero is a YouTube video, not an image.",
+          "altText": "Academic block of E.S. College of Engineering and Technology with orange arched corridors and palms, Ayyankoilpattu, Villupuram",
+          "proposedPublicId": "studentstraffic/universities/e-s-college-of-engineering-and-technology/cover",
+          "localCopy": "research/india-source-bundles/e-s-college-of-engineering-and-technology/media/about_img_03.png"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1240 @@
+{
+  "courses": [
+    {
+      "slug": "be-btech-data-science",
+      "name": "B.E./B.Tech in Data Science",
+      "shortName": "B.E./B.Tech Data Science",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "data-science",
+      "aliases": [
+        "Bachelor of Data Science",
+        "BSc Data Science"
+      ],
+      "displayOrder": 33,
+      "durationYears": 3,
+      "summary": "Compare undergraduate Data Science degrees abroad by statistics, machine learning, data engineering, applied projects, tuition and admissions. Each university offering keeps its official award title, artificial-intelligence specialisation depth and entry requirements visible before applying.",
+      "metaTitle": "B.E./B.Tech Data Science Abroad | Fees",
+      "metaDescription": "Compare B.E./B.Tech Data Science programmes abroad by curriculum, tuition fees, admissions and practical training."
+    },
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "Bachelor of Technology in Computer Science and Engineering",
+        "BEng Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in computer science and engineering, usually four years after an upper-secondary qualification with mathematics. Typical curricula run from programming, data structures, operating systems, databases and computer networks to algorithms, software engineering and electives in artificial intelligence, machine learning, cloud and security, with project and internship components.",
+      "metaTitle": "B.E./B.Tech CSE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech CSE degrees for international applicants: duration, teaching language, intake months, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-electronics-communication-engineering",
+      "name": "B.E./B.Tech in Electronics and Communication Engineering",
+      "shortName": "B.E./B.Tech ECE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electronics-communication-engineering",
+      "aliases": [
+        "Bachelor of Electronics and Communication Engineering",
+        "BEng Electronic and Communications Engineering",
+        "Electronics and Telecommunications Engineering"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in electronics and communication engineering, usually four years after upper-secondary physics, chemistry and mathematics. Curricula typically span circuit and network theory, analog and digital electronics, signals and systems, digital signal processing, communication systems and embedded or VLSI design, with laboratory and project work.",
+      "metaTitle": "B.E./B.Tech ECE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech ECE degrees for international applicants: duration, teaching language, intakes, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-information-technology",
+      "name": "B.E./B.Tech in Information Technology",
+      "shortName": "B.E./B.Tech IT",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "information-technology",
+      "aliases": [
+        "Bachelor of Engineering in Information Technology",
+        "Computer Science major"
+      ],
+      "displayOrder": 180,
+      "durationYears": 4,
+      "summary": "An approved Engineering catalogue category for four-year undergraduate information technology degrees, including university programmes that publish Computer Science as a major within an Information Technology award. The exact university title and major structure remain visible on each offering.",
+      "metaTitle": "B.E./B.Tech IT Programmes",
+      "metaDescription": "Compare B.E./B.Tech IT programmes, official titles, fees, duration and admissions routes for international students."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "e-s-college-of-engineering-and-technology",
+      "name": "E.S. College of Engineering and Technology",
+      "city": "Villupuram",
+      "type": "Private",
+      "establishedYear": 2007,
+      "officialWebsite": "https://escet.in/",
+      "mediaAttribution": {},
+      "summary": "E.S. College of Engineering and Technology (ESCET) is a private, self-financing engineering college founded in 2007 at Ayyankoilpattu, Villupuram, Tamil Nadu, run by the E.S.S.M. Educational and Charitable Trust. It is not a university: it is a non-autonomous college affiliated to Anna University, Chennai, which sets its syllabus and exams and awards its degrees. It admitted to four AICTE-approved B.E./B.Tech branches through TNEA 2026.",
+      "campusLifestyle": "E.S. College of Engineering and Technology (ESCET)'s campus is at E.S. Nagar on the Chennai Trunk Road (NH-45) at Ayyankoilpattu, on the northern edge of Villupuram. Its AICTE disclosure lists classrooms, tutorial rooms, department laboratories and a drawing hall, and its library holds about 45,000 volumes across seven engineering subjects. Boys' and girls' hostels are on campus and the college runs buses. The college also runs an annual technical symposium, Innobyte.",
+      "cityProfile": "E.S. College of Engineering and Technology (ESCET) is at 3/249 E.S. Nagar, NH-45, Chennai Trunk Road, Ayyankoilpattu, Villupuram 605602, in Vikkiravandi taluk of Viluppuram district, Tamil Nadu. DoTE's TNEA 2026 booklet places it 5 km from the district headquarters and 3 km from Villupuram railway station. Anna University lists it among Villupuram district colleges with code 4210.",
+      "practicalExposure": "E.S. College of Engineering and Technology (ESCET) is not autonomous, so it follows Anna University's curricula and regulations: the university sets the syllabus, conducts the end-semester exams and awards the degree, and the college runs internal assessment. AICTE makes an internship mandatory for every admitted student. An institution-industry cell arranges industrial visits, in-plant training and internships. ESCET's AICTE disclosure reports CSE and ECE campus offers of INR 1.25 lakh to 4 lakh a year (average INR 2.2 lakh) without placement counts.",
+      "hostelOverview": "E.S. College of Engineering and Technology (ESCET) has permanent on-campus hostels for men and women, according to DoTE's TNEA 2026 college booklet. The booklet lists room rent of INR 6,000 a year, electricity of INR 6,000 a year and mess charges of INR 60,800 a year, with a caution deposit of INR 5,000. The college publishes no separate hostel page, so confirm the current charges with the college.",
+      "dietarySupport": "E.S. College of Engineering and Technology (ESCET)'s hostel messes serve both vegetarian and non-vegetarian food for men and women, according to DoTE's TNEA 2026 college booklet, which lists the mess charge at INR 60,800 a year. ESCET publishes no menu and no provision for specific regional or religious diets, so ask the hostel office before joining.",
+      "safetyOverview": "E.S. College of Engineering and Technology (ESCET)'s AICTE disclosure lists an anti-ragging committee of faculty, student representatives, the administrative officer, the security officer and the ladies' hostel deputy warden, plus an internal complaints committee for sexual-harassment complaints and an SC/ST committee. TNEA 2026 publishes an anti-ragging phone number for the college (+91 97904 66108).",
+      "studentSupport": "E.S. College of Engineering and Technology (ESCET) handles grievances through an online grievance redressal mechanism, suggestion boxes on campus and in the hostels, class committee meetings and a student welfare officer. Its scholarship page lists Tamil Nadu welfare scholarships, the First Graduate scheme, the AICTE tuition fee waiver, the 7.5 per cent government-school scheme and Pudhumai Penn. Contact: admin@escet.in or +91 4146 294674.",
+      "whyChoose": [
+        "E.S. College of Engineering and Technology (ESCET) is a TNEA-listed Anna University college (code 1428) in Villupuram, so Class 12 students from the district can study a B.E. or B.Tech without leaving the district.",
+        "ESCET is 3 km from Villupuram railway station and 5 km from the district headquarters, according to DoTE's TNEA 2026 booklet.",
+        "ESCET's hostel charges published in TNEA 2026 are low: room rent INR 6,000 and electricity INR 6,000 a year, with mess at INR 60,800 a year."
+      ],
+      "thingsToConsider": [
+        "E.S. College of Engineering and Technology (ESCET) is an affiliated, non-autonomous college, not a university: Anna University sets its syllabus and exams and awards its degrees, and there are no seats for international students because AICTE shows no NRI or foreign-national approval.",
+        "ESCET publishes no tuition fee, holds no NAAC grade, has no NBA-accredited branch and no NIRF rank, and after TNEA 2026 Round 1 DoTE still listed 286 government-quota vacancies across its four branches.",
+        "ESCET's website still lists B.E. Civil, B.E. EEE and B.E. Mechanical, but none of them was offered in TNEA 2026, so they are not listed here; check with the college before applying for them."
+      ],
+      "bestFitFor": [
+        "Tamil Nadu TNEA applicants from Villupuram and nearby districts who want an Anna University B.E. or B.Tech close to home.",
+        "Students interested in computing branches: CSE, IT and AI and Data Science make up 300 of ESCET's 360 first-year places in TNEA 2026.",
+        "Students who need an on-campus hostel near Villupuram junction with published low room and electricity charges."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "AICTE - Approved institution, Permanent ID 1-3858465 (Private-Self Financing); Extension of Approval 2025-26",
+        "Anna University, Chennai - Affiliated non-autonomous college, college code 4210",
+        "DoTE Tamil Nadu - TNEA 2026 participating college, counselling code 1428"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "AICTE - Approved institutes dashboard",
+          "url": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved"
+        },
+        {
+          "label": "Anna University CAI - Affiliated colleges, Villupuram district",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Villlupuram.php"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+          "url": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is E.S. College of Engineering and Technology autonomous or affiliated to Anna University?",
+          "answer": "E.S. College of Engineering and Technology (ESCET) is a non-autonomous college affiliated to Anna University, Chennai, which sets its syllabus and exams and awards its degrees. Anna University lists it in Villupuram district with college code 4210, and DoTE's TNEA 2026 booklet gives its autonomous status as No."
+        },
+        {
+          "question": "What is the TNEA code for E.S. College of Engineering and Technology, Villupuram?",
+          "answer": "The TNEA counselling code for E.S. College of Engineering and Technology (ESCET) is 1428. In TNEA 2026 ESCET offered AI and Data Science (AD, 60 seats), Computer Science and Engineering (CS, 120), Electronics and Communication Engineering (EC, 60) and Information Technology (IT, 120)."
+        },
+        {
+          "question": "Is E.S. College of Engineering and Technology AICTE approved?",
+          "answer": "Yes, E.S. College of Engineering and Technology (ESCET) is AICTE approved as a private self-financing institution, permanent ID 1-3858465. Its latest published Extension of Approval, for 2025-26 (10 April 2025), covers seven B.E./B.Tech branches, all affiliated to Anna University, Chennai."
+        },
+        {
+          "question": "What is the B.E. fee at E.S. College of Engineering and Technology?",
+          "answer": "E.S. College of Engineering and Technology (ESCET) does not publish its tuition; its disclosure says fees follow Government norms, so ask the college. Tamil Nadu's fee committee fixes tuition for self-financing colleges. TNEA 2026 lists an admission fee of INR 1,000, an establishment charge of INR 2,000 and transport at INR 12,000 to 30,000 a year."
+        },
+        {
+          "question": "Does E.S. College of Engineering and Technology admit international or NRI students?",
+          "answer": "No, E.S. College of Engineering and Technology (ESCET) has no NRI or foreign-national seats: AICTE's 2025-26 approval marks NRI and FN/Gulf/OCI approval as No or NA for every course. TNEA is for Indian nationals; OCI/PIO card holders who are natives of Tamil Nadu may apply unless born abroad after 4 March 2021."
+        },
+        {
+          "question": "How do I get admission to E.S. College of Engineering and Technology?",
+          "answer": "Most B.E./B.Tech seats at E.S. College of Engineering and Technology (ESCET) are filled through TNEA: register at tneaonline.org, get a rank from Mathematics (100), Physics (50) and Chemistry (50), and choose code 1428. TNEA 2026 counselling ran 20 July to 30 August, and Anna University starts first-semester classes on 2 September 2026. Management-quota seats are filled by the college."
+        },
+        {
+          "question": "Is E.S. College of Engineering and Technology NAAC or NBA accredited?",
+          "answer": "No, E.S. College of Engineering and Technology (ESCET) holds no NAAC grade and no NBA accreditation: its AICTE mandatory disclosure records both as nil and not applied for, and DoTE's TNEA 2026 booklet marks all four branches as not NBA accredited."
+        },
+        {
+          "question": "Does E.S. College of Engineering and Technology have hostels?",
+          "answer": "Yes, E.S. College of Engineering and Technology (ESCET) has permanent on-campus hostels for men and women with messes serving vegetarian and non-vegetarian food. TNEA 2026 lists room rent of INR 6,000, electricity of INR 6,000 and mess charges of INR 60,800 a year."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "ESCET - Mandatory Disclosure",
+          "url": "https://escet.in/mandatory-disclosure",
+          "kind": "official-university",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "AICTE - Extension of Approval 2025-26 (ESCET)",
+          "url": "https://escet.in/pdf/escet-eoa-25-26.PDF",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "AICTE - Extension of Approval 2024-25 (ESCET)",
+          "url": "https://escet.in/pdf/escet-eoa-24-25.PDF",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "AICTE - Approved institutes dashboard",
+          "url": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "Anna University CAI - Villupuram district affiliated colleges",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Villlupuram.php",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+          "url": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+          "url": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+          "url": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 vacancy position after Round 1",
+          "url": "https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "Anna University - Affiliated colleges academic calendar Sep-Dec 2026",
+          "url": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+          "url": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "ESCET - Courses offered",
+          "url": "https://escet.in/courses-offered",
+          "kind": "official-program",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "ESCET - Admission procedure",
+          "url": "https://escet.in/admission-procedure",
+          "kind": "official-university",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "ESCET - Scholarship",
+          "url": "https://escet.in/scholarship",
+          "kind": "official-university",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "ESCET - Official website",
+          "url": "https://escet.in/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-26"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "This record covers E.S. College of Engineering and Technology at Ayyankoilpattu, Villupuram only. Other institutions of the E.S. group in Villupuram are outside this record.",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "research_ready",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my ESCET eligibility",
+            "capture": [
+              "nationality and Tamil Nadu nativity or schooling",
+              "Class 12 board and MPC marks",
+              "community category",
+              "intended branch"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Get the ESCET fee for my branch",
+            "capture": [
+              "intended branch",
+              "TNEA or management quota",
+              "hostel and transport needs",
+              "concession eligibility"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my TNEA choices for ESCET",
+            "capture": [
+              "TNEA rank or expected cut-off",
+              "preferred branches",
+              "document readiness"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "escet-btech-artificial-intelligence-data-science",
+          "canonicalCourseSlug": "be-btech-data-science",
+          "officialTitle": "B.Tech. Artificial Intelligence and Data Science, E.S. College of Engineering and Technology",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-26",
+            "notes": "E.S. College of Engineering and Technology (ESCET) publishes no tuition figure: its mandatory disclosure says only 'Fee - As per Government Norms' (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists ESCET's other charges: admission fee INR 1,000, establishment charge INR 2,000, caution deposit INR 5,000, hostel room rent INR 6,000 a year, electricity INR 6,000 a year, mess INR 60,800 a year and college transport INR 12,000 to 30,000 a year."
+          },
+          "officialProgramUrl": "https://escet.in/artificial-intelligence-data-science",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2025-26 approval shows NRI and foreign-national/Gulf/OCI approval as No or NA for every ESCET course, and no international-student route is published, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1428, branch code AD) or the management quota. TNEA's 2026 college booklet lists an approved intake of 60, course started in 2023, not NBA accredited.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.Tech. Artificial Intelligence and Data Science at E.S. College of Engineering and Technology (ESCET) is a four-year, eight-semester degree taught in English in Villupuram. ESCET is a non-autonomous college, so Anna University sets the syllabus and exams and awards the degree. TNEA counselling on Class 12 marks fills 65 per cent of seats and the management quota 35 per cent; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission; Anna University applies the same Government of Tamil Nadu norms to its affiliated colleges.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1428 with branch AD, then confirm the tentative allotment",
+              "Download the allotment order, report to ESCET within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply to the college; ESCET says these seats follow the merit list of the Consortium of Self Financing Engineering Colleges (admission phone +91 94867 22474)"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University's calendar for non-autonomous affiliated colleges starts first-semester classes on 2 September 2026, with end-semester exams from 22 December 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes, and TNEA 2026 lists no Tamil-medium branch at E.S. College of Engineering and Technology.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "E.S. College of Engineering and Technology (ESCET) publishes no tuition figure: its mandatory disclosure says only 'Fee - As per Government Norms' (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists ESCET's other charges: admission fee INR 1,000, establishment charge INR 2,000, caution deposit INR 5,000, hostel room rent INR 6,000 a year, electricity INR 6,000 a year, mess INR 60,800 a year and college transport INR 12,000 to 30,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's Artificial Intelligence and Data Science curriculum covering programming, data structures, machine learning, data analytics and deep learning, in a department ESCET opened in 2023 with 60 seats. Anna University sets the syllabus and end-semester exams; the college runs internal assessment and internship is mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "escet-be-computer-science-engineering",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "B.E. Computer Science and Engineering, E.S. College of Engineering and Technology",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-26",
+            "notes": "E.S. College of Engineering and Technology (ESCET) publishes no tuition figure: its mandatory disclosure says only 'Fee - As per Government Norms' (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists ESCET's other charges: admission fee INR 1,000, establishment charge INR 2,000, caution deposit INR 5,000, hostel room rent INR 6,000 a year, electricity INR 6,000 a year, mess INR 60,800 a year and college transport INR 12,000 to 30,000 a year."
+          },
+          "officialProgramUrl": "https://escet.in/computer-science-and-engineering",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2025-26 approval shows NRI and foreign-national/Gulf/OCI approval as No or NA for every ESCET course, and no international-student route is published, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1428, branch code CS) or the management quota. TNEA's 2026 college booklet lists an approved intake of 120, course started in 2007, not NBA accredited.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Computer Science and Engineering at E.S. College of Engineering and Technology (ESCET) is a four-year, eight-semester degree taught in English in Villupuram. ESCET is a non-autonomous college, so Anna University sets the syllabus and exams and awards the degree. TNEA counselling on Class 12 marks fills 65 per cent of seats and the management quota 35 per cent; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission; Anna University applies the same Government of Tamil Nadu norms to its affiliated colleges.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1428 with branch CS, then confirm the tentative allotment",
+              "Download the allotment order, report to ESCET within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply to the college; ESCET says these seats follow the merit list of the Consortium of Self Financing Engineering Colleges (admission phone +91 94867 22474)"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University's calendar for non-autonomous affiliated colleges starts first-semester classes on 2 September 2026, with end-semester exams from 22 December 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes, and TNEA 2026 lists no Tamil-medium branch at E.S. College of Engineering and Technology.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "E.S. College of Engineering and Technology (ESCET) publishes no tuition figure: its mandatory disclosure says only 'Fee - As per Government Norms' (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists ESCET's other charges: admission fee INR 1,000, establishment charge INR 2,000, caution deposit INR 5,000, hostel room rent INR 6,000 a year, electricity INR 6,000 a year, mess INR 60,800 a year and college transport INR 12,000 to 30,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's Computer Science and Engineering curriculum covering programming, data structures, operating systems, database management, computer networks and software engineering. Anna University sets the syllabus and end-semester exams; the college runs internal assessment and internship is mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "escet-be-electronics-communication-engineering",
+          "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+          "officialTitle": "B.E. Electronics and Communication Engineering, E.S. College of Engineering and Technology",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-26",
+            "notes": "E.S. College of Engineering and Technology (ESCET) publishes no tuition figure: its mandatory disclosure says only 'Fee - As per Government Norms' (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists ESCET's other charges: admission fee INR 1,000, establishment charge INR 2,000, caution deposit INR 5,000, hostel room rent INR 6,000 a year, electricity INR 6,000 a year, mess INR 60,800 a year and college transport INR 12,000 to 30,000 a year."
+          },
+          "officialProgramUrl": "https://escet.in/electronics-and-communication-engineering",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2025-26 approval shows NRI and foreign-national/Gulf/OCI approval as No or NA for every ESCET course, and no international-student route is published, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1428, branch code EC) or the management quota. TNEA's 2026 college booklet lists an approved intake of 60, course started in 2007, not NBA accredited.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Electronics and Communication Engineering at E.S. College of Engineering and Technology (ESCET) is a four-year, eight-semester degree taught in English in Villupuram. ESCET is a non-autonomous college, so Anna University sets the syllabus and exams and awards the degree. TNEA counselling on Class 12 marks fills 65 per cent of seats and the management quota 35 per cent; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission; Anna University applies the same Government of Tamil Nadu norms to its affiliated colleges.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1428 with branch EC, then confirm the tentative allotment",
+              "Download the allotment order, report to ESCET within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply to the college; ESCET says these seats follow the merit list of the Consortium of Self Financing Engineering Colleges (admission phone +91 94867 22474)"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University's calendar for non-autonomous affiliated colleges starts first-semester classes on 2 September 2026, with end-semester exams from 22 December 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes, and TNEA 2026 lists no Tamil-medium branch at E.S. College of Engineering and Technology.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "E.S. College of Engineering and Technology (ESCET) publishes no tuition figure: its mandatory disclosure says only 'Fee - As per Government Norms' (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists ESCET's other charges: admission fee INR 1,000, establishment charge INR 2,000, caution deposit INR 5,000, hostel room rent INR 6,000 a year, electricity INR 6,000 a year, mess INR 60,800 a year and college transport INR 12,000 to 30,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's Electronics and Communication Engineering curriculum covering circuits, signals and systems, digital electronics, communication systems, VLSI and embedded systems. Anna University sets the syllabus and end-semester exams; the college runs internal assessment and internship is mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "escet-btech-information-technology",
+          "canonicalCourseSlug": "be-btech-information-technology",
+          "officialTitle": "B.Tech. Information Technology, E.S. College of Engineering and Technology",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-26",
+            "notes": "E.S. College of Engineering and Technology (ESCET) publishes no tuition figure: its mandatory disclosure says only 'Fee - As per Government Norms' (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists ESCET's other charges: admission fee INR 1,000, establishment charge INR 2,000, caution deposit INR 5,000, hostel room rent INR 6,000 a year, electricity INR 6,000 a year, mess INR 60,800 a year and college transport INR 12,000 to 30,000 a year."
+          },
+          "officialProgramUrl": "https://escet.in/information-technology",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2025-26 approval shows NRI and foreign-national/Gulf/OCI approval as No or NA for every ESCET course, and no international-student route is published, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1428, branch code IT) or the management quota. TNEA's 2026 college booklet lists an approved intake of 120, course started in 2023, not NBA accredited.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.Tech. Information Technology at E.S. College of Engineering and Technology (ESCET) is a four-year, eight-semester degree taught in English in Villupuram. ESCET is a non-autonomous college, so Anna University sets the syllabus and exams and awards the degree. TNEA counselling on Class 12 marks fills 65 per cent of seats and the management quota 35 per cent; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission; Anna University applies the same Government of Tamil Nadu norms to its affiliated colleges.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1428 with branch IT, then confirm the tentative allotment",
+              "Download the allotment order, report to ESCET within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply to the college; ESCET says these seats follow the merit list of the Consortium of Self Financing Engineering Colleges (admission phone +91 94867 22474)"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University's calendar for non-autonomous affiliated colleges starts first-semester classes on 2 September 2026, with end-semester exams from 22 December 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes, and TNEA 2026 lists no Tamil-medium branch at E.S. College of Engineering and Technology.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "E.S. College of Engineering and Technology (ESCET) publishes no tuition figure: its mandatory disclosure says only 'Fee - As per Government Norms' (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists ESCET's other charges: admission fee INR 1,000, establishment charge INR 2,000, caution deposit INR 5,000, hostel room rent INR 6,000 a year, electricity INR 6,000 a year, mess INR 60,800 a year and college transport INR 12,000 to 30,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's Information Technology curriculum covering programming, data structures, database systems, web technologies, networks and cloud computing. Anna University sets the syllabus and end-semester exams; the college runs internal assessment and internship is mandatory."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "publicField": "identity",
+      "claimText": "AICTE EoA 2025-26: E.S. College of Engineering and Technology, Chennai Trunk Road, Ayyankoilpattu, Villupuram, Viluppuram, Tamil Nadu 605602; trust E.S.S.M. Educational & Charitable Trust, 24A/11 Trichy Trunk Road, Villupuram; AICTE permanent ID 1-3858465; Private-Self Financing; established 2007; affiliating body Anna University, Chennai.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2025-26 (ESCET)",
+      "sourceUrl": "https://escet.in/pdf/escet-eoa-25-26.PDF",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "F.No. Southern/1-44642585660/2025/EOA, date of approval 10-Apr-2025. AICTE 2026-27 check pending: facilities.aicte-india.org reset the connection from this environment on 2026-10-26 (HTTPS connection reset, HTTP port refused); ESCET has not published a 2026-27 EoA (its site lists EoA letters 2023-24 to 2025-26; /pdf/escet-eoa-26-27.PDF returns 404). 2026-27 offering rests on the TNEA 2026 seat matrix and Round 1 vacancy list, which DoTE builds from AICTE-approved, Anna University-affiliated seats."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "publicField": "identity",
+      "claimText": "Anna University CAI Villupuram district list: S.No 8, college code 4210, TNEA code 1428, 'E.S. College of Engineering and Technology (formerly Quannta School of Software Engineering)'; not marked Autonomous.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - Villupuram district affiliated colleges",
+      "sourceUrl": "https://www.annauniv.edu/cai/District%20wise/district/Villlupuram.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "District page URL is spelled 'Villlupuram.php' on annauniv.edu. The college PDF link on the page is '#'; the older /cai/PDF/Villupuram/e.s.pdf returns 404."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "publicField": "identity",
+      "claimText": "Not autonomous: TNEA 2026 booklet (1428) autonomous status No, minority status No; UGC autonomous colleges list has no E.S. College of Engineering and Technology entry.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "UGC list read from the copy saved 2026-10-25 at research/india-source-bundles/skasc-20261025/ugc-autonomous-text.txt (https://www.ugc.gov.in/colleges/Autonomous_Colleges_list). Ledger alias check 2026-10-26: no row for ESCET, Quannta, Ayyankoilpattu or AICTE 1-3858465."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "publicField": "establishedYear",
+      "claimText": "Year of establishment 2007 (AICTE EoA 2025-26; mandatory disclosure 'AICTE Ist Approval 2007'; TNEA 2026 CS and EC start year 2007).",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2025-26 (ESCET)",
+      "sourceUrl": "https://escet.in/pdf/escet-eoa-25-26.PDF",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "publicField": "recognitionBadges",
+      "claimText": "AICTE EoA 2025-26 approves Anna University-affiliated UG courses with 2025-26 intake: AI&DS 60, Civil 30, CSE 120, EEE 30, ECE 60, IT 120, Mechanical 60. NRI and FN/Gulf/OCI approval No (CSE, IT) or NA (others).",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2025-26 (ESCET)",
+      "sourceUrl": "https://escet.in/pdf/escet-eoa-25-26.PDF",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AICTE 2026-27 check pending: facilities.aicte-india.org reset the connection from this environment on 2026-10-26 (HTTPS connection reset, HTTP port refused); ESCET has not published a 2026-27 EoA (its site lists EoA letters 2023-24 to 2025-26; /pdf/escet-eoa-26-27.PDF returns 404). 2026-27 offering rests on the TNEA 2026 seat matrix and Round 1 vacancy list, which DoTE builds from AICTE-approved, Anna University-affiliated seats."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "publicField": "recognitionBadges",
+      "claimText": "TNEA 2026 Information about colleges p.95: 1428 E. S. College of Engineering and Technology, Chennai Trunk Road, Ayyankoilpattu, Villupuram District 605602; taluk Vikkiravandi; principal Dr K Indira; autonomous No; minority No; branches AD 60 (2023), CS 120 (2007), EC 60 (2007), IT 120 (2023), all NBA No.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "publicField": "summary",
+      "claimText": "ESCET mandatory disclosure (headed 2025-26): affiliated to Anna University; trust ESSM Educational and Charitable Trust, Regd. 115/1998 of 14-09-1998; chairman Shri S. Selvamani; founder chairman Mr E. Swamikannu; type Self Financing; co-education; AICTE-approved UG programmes ECE, Mechanical, Civil, EEE, CSE, IT, AI&DS.",
+      "status": "verified",
+      "sourceLabel": "ESCET - Mandatory Disclosure",
+      "sourceUrl": "https://escet.in/mandatory-disclosure",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "publicField": "summary",
+      "claimText": "TNEA 2026 Round 1 vacancy list shows college 1428 with exactly four branches: AD, CS, EC, IT.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 vacancy position after Round 1",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "publicField": "campusLifestyle",
+      "claimText": "ESCET facilities page library: titles/volumes by department Civil 2819, CSE 9636, ECE 8581, EEE 7437, IT 5366, Mechanical 5835, AI&DS 5772 (total 45,446). Disclosure lists classrooms, tutorial rooms, laboratories and a drawing hall; TNEA 2026 booklet: transport Yes. Home page links the Innobyte 2K26 symposium.",
+      "status": "verified",
+      "sourceLabel": "ESCET - Facilities",
+      "sourceUrl": "https://escet.in/facilities",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Library table column header pairs titles and volumes; one figure per department is printed, read as volumes. Rounded publicly to about 45,000. Innobyte: https://www.innobyte2k26.online/ (linked from escet.in)."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "publicField": "cityProfile",
+      "claimText": "TNEA 2026 booklet (1428): address No 3/249, E.S. Nagar, NH-45, Chennai Trunk Road, Villupuram; taluk Vikkiravandi; district Viluppuram; 5 km from district HQ; nearest railway station Villupuram, 3 km.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "TNEA booklet and college pages use pincode 605601; AICTE and the TNEA heading use 605602 (AICTE used). Disclosure gives 6 km to the railway station and 132 km to the airport; TNEA figure used."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "publicField": "practicalExposure",
+      "claimText": "ESCET mandatory disclosure: campus placement in last three years, CSE max 4 L, min 1.25 L, average 2.2 L; ECE same; Civil, EEE, Mechanical, IT, AI&DS '-'. Institution-industry cell organises industry visits, in-plant training and internships. AICTE EoA instructions: internship mandatory.",
+      "status": "verified",
+      "sourceLabel": "ESCET - Mandatory Disclosure",
+      "sourceUrl": "https://escet.in/mandatory-disclosure",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "No count of students placed and no year stated; TNEA booklet self-reported 'Placement 95%' not used. Industry cell: https://escet.in/institution-industry-cell"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "publicField": "hostelOverview",
+      "claimText": "TNEA 2026 booklet (1428): hostel for boys and girls, permanent; mess type both; mess bill 60,800, room rent 6,000, electricity 6,000 per annum; caution deposit 5,000; establishment charges 2,000; admission fees 1,000; transport 12,000-30,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "publicField": "dietarySupport",
+      "claimText": "TNEA 2026 booklet (1428): type of mess both (veg/non-veg) for boys and girls hostels; mess bill INR 60,800 per annum.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "publicField": "safetyOverview",
+      "claimText": "ESCET mandatory disclosure: anti-ragging committee (faculty, three students, administrative officer, security officer, ladies hostel deputy warden); internal complaint committee; SC/ST committee; IQAC. TNEA 2026 booklet anti-ragging phone 9790466108.",
+      "status": "verified",
+      "sourceLabel": "ESCET - Mandatory Disclosure",
+      "sourceUrl": "https://escet.in/mandatory-disclosure",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "publicField": "studentSupport",
+      "claimText": "ESCET disclosure: grievance redressal via suggestion boxes on campus and in hostels, class committees, student welfare officer; online grievance redressal page. Scholarship page: TN welfare SC/ST, BC/MBC and minority scholarships, AICTE fee waiver, First Graduate scheme, central sector scholarship, 7.5% government school scholarship, Pudhumai Penn. Contact admin@escet.in, +91 4146 294674.",
+      "status": "verified",
+      "sourceLabel": "ESCET - Scholarship",
+      "sourceUrl": "https://escet.in/scholarship",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Disclosure: https://escet.in/mandatory-disclosure"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "publicField": "whyChoose",
+      "claimText": "TNEA 2026 booklet: Villupuram district college 1428, 5 km from district HQ, 3 km from Villupuram railway station; hostel room 6,000 and electricity 6,000 per annum, mess 60,800 per annum.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "publicField": "thingsToConsider",
+      "claimText": "ESCET mandatory disclosure: NBA accreditation NIL, not applied; NAAC accreditation NIL, not applied; 'Fee - As per Government Norms'. TNEA 2026 Round 1 general academic vacancy for 1428: AD 41, CS 100, EC 46, IT 99 (total 286).",
+      "status": "verified",
+      "sourceLabel": "ESCET - Mandatory Disclosure",
+      "sourceUrl": "https://escet.in/mandatory-disclosure",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Vacancy: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf (sum of OC, BC, BCM, MBC, SC, SCA, ST columns)."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "publicField": "thingsToConsider",
+      "claimText": "Civil (30), EEE (30) and Mechanical (60) are approved in AICTE EoA 2025-26 and listed on ESCET's courses page, but are absent from the TNEA 2026 college booklet (four branches AD, CS, EC, IT) and the Round 1 vacancy list for 1428.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Courses page: https://escet.in/courses-offered (also lists CSE 60 and IT 60, older intakes)."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "publicField": "bestFitFor",
+      "claimText": "TNEA 2026 booklet approved intakes: AD 60, CS 120, EC 60, IT 120 (total 360; computing AD+CS+IT = 300).",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "publicField": "faq",
+      "claimText": "TNEA 2026 schedule: registration 03.05.2026 to 05.06.2026; general counselling 20.07.2026 to 30.08.2026. Brochure: registration fee INR 500 (INR 250 SC/SCA/ST); report to college within 5 days; OCI/PIO natives of Tamil Nadu eligible except those born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Brochure: https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf. Same TNEA facts as bundles 0115, 0358 and 0359."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "publicField": "faq",
+      "claimText": "Anna University academic calendar for non-autonomous affiliated colleges, I semester Sep-Dec 2026 (B.E./B.Tech/B.Arch, MBA (FT), MCA): commencement of classes 2 September 2026; end-semester examinations begin 22 December 2026.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Affiliated colleges academic calendar Sep-Dec 2026",
+      "sourceUrl": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Read from the copy saved for 0359 at research/india-source-bundles/tagore-engineering-college/au-cal.txt."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "publicField": "faq",
+      "claimText": "ESCET admission procedure: Government quota 65% through Government of Tamil Nadu counselling on Mathematics, Physics and Chemistry marks; management quota 35% on the merit list of the Consortium of Self Financing Engineering Colleges; AICTE fee waiver 5%; lateral entry 20%.",
+      "status": "verified",
+      "sourceLabel": "ESCET - Admission procedure",
+      "sourceUrl": "https://escet.in/admission-procedure",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "programmeSlug": "escet-btech-artificial-intelligence-data-science",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 college booklet, college 1428, branch AD (Artificial Intelligence and Data Science): approved intake 60; year of starting 2023; NBA accredited No. Round 1 vacancy list shows branch AD at 1428 (41 general academic vacancies). AICTE EoA 2025-26 lists the course under Anna University, Chennai.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AICTE 2026-27 check pending: facilities.aicte-india.org reset the connection from this environment on 2026-10-26 (HTTPS connection reset, HTTP port refused); ESCET has not published a 2026-27 EoA (its site lists EoA letters 2023-24 to 2025-26; /pdf/escet-eoa-26-27.PDF returns 404). 2026-27 offering rests on the TNEA 2026 seat matrix and Round 1 vacancy list, which DoTE builds from AICTE-approved, Anna University-affiliated seats. EoA 2025-26: https://escet.in/pdf/escet-eoa-25-26.PDF. Vacancy: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "programmeSlug": "escet-btech-artificial-intelligence-data-science",
+      "publicField": "fee",
+      "claimText": "ESCET mandatory disclosure: 'Fee - As per Government Norms' (no figure). TNEA 2026 booklet prints no tuition but lists admission fee 1,000, establishment 2,000, caution deposit 5,000, room rent 6,000, electricity 6,000, mess 60,800 and transport 12,000-30,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "ESCET - Mandatory Disclosure",
+      "sourceUrl": "https://escet.in/mandatory-disclosure",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "No tuition on any ESCET page, AICTE EoA or DoTE document (checked 2026-10-26). Grade C figures rejected as conflicting: Collegedunia (first-year INR 50,000 CSE, 55,000 IT/AI&DS; B.E. total INR 2.2 lakh and INR 3.48 lakh on different pages), Campusoption (INR 2.2 lakh total for every branch), Shiksha (INR 1.2-2 lakh total), Zollege (INR 5.68 lakh AI&DS, 7.68 lakh Mechanical total), Campusoption 'ESEC' (GQ 40,000 / MQ 70,000 p.a.). The recurring INR 2.2 lakh also equals the disclosure's average placement salary, a likely field mix-up."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "programmeSlug": "escet-btech-artificial-intelligence-data-science",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum average 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route; nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "programmeSlug": "escet-btech-artificial-intelligence-data-science",
+      "publicField": "admissions",
+      "claimText": "ESCET admission procedure: 65% government quota through Tamil Nadu counselling, 35% management quota through the Consortium of Self Financing Engineering Colleges merit list; lateral entry 20%. Admission enquiry phone +91 94867 22474.",
+      "status": "verified",
+      "sourceLabel": "ESCET - Admission procedure",
+      "sourceUrl": "https://escet.in/admission-procedure",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "programmeSlug": "escet-btech-artificial-intelligence-data-science",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction English; TNEA 2026 lists no Tamil-medium branch for 1428.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "programmeSlug": "escet-btech-artificial-intelligence-data-science",
+      "publicField": "teachingPhases",
+      "claimText": "ESCET courses page: 'All Courses are run under semester system of the Anna University - Chennai'; Artificial Intelligence and Data Science, 4 years. Department page: https://escet.in/artificial-intelligence-data-science.",
+      "status": "verified",
+      "sourceLabel": "ESCET - Courses offered",
+      "sourceUrl": "https://escet.in/courses-offered",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AI&DS department page: introduced in 2023 with sanctioned intake 60."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "programmeSlug": "escet-be-computer-science-engineering",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 college booklet, college 1428, branch CS (Computer Science and Engineering): approved intake 120; year of starting 2007; NBA accredited No. Round 1 vacancy list shows branch CS at 1428 (100 general academic vacancies). AICTE EoA 2025-26 lists the course under Anna University, Chennai.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AICTE 2026-27 check pending: facilities.aicte-india.org reset the connection from this environment on 2026-10-26 (HTTPS connection reset, HTTP port refused); ESCET has not published a 2026-27 EoA (its site lists EoA letters 2023-24 to 2025-26; /pdf/escet-eoa-26-27.PDF returns 404). 2026-27 offering rests on the TNEA 2026 seat matrix and Round 1 vacancy list, which DoTE builds from AICTE-approved, Anna University-affiliated seats. EoA 2025-26: https://escet.in/pdf/escet-eoa-25-26.PDF. Vacancy: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "programmeSlug": "escet-be-computer-science-engineering",
+      "publicField": "fee",
+      "claimText": "ESCET mandatory disclosure: 'Fee - As per Government Norms' (no figure). TNEA 2026 booklet prints no tuition but lists admission fee 1,000, establishment 2,000, caution deposit 5,000, room rent 6,000, electricity 6,000, mess 60,800 and transport 12,000-30,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "ESCET - Mandatory Disclosure",
+      "sourceUrl": "https://escet.in/mandatory-disclosure",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "No tuition on any ESCET page, AICTE EoA or DoTE document (checked 2026-10-26). Grade C figures rejected as conflicting: Collegedunia (first-year INR 50,000 CSE, 55,000 IT/AI&DS; B.E. total INR 2.2 lakh and INR 3.48 lakh on different pages), Campusoption (INR 2.2 lakh total for every branch), Shiksha (INR 1.2-2 lakh total), Zollege (INR 5.68 lakh AI&DS, 7.68 lakh Mechanical total), Campusoption 'ESEC' (GQ 40,000 / MQ 70,000 p.a.). The recurring INR 2.2 lakh also equals the disclosure's average placement salary, a likely field mix-up."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "programmeSlug": "escet-be-computer-science-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum average 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route; nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "programmeSlug": "escet-be-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "ESCET admission procedure: 65% government quota through Tamil Nadu counselling, 35% management quota through the Consortium of Self Financing Engineering Colleges merit list; lateral entry 20%. Admission enquiry phone +91 94867 22474.",
+      "status": "verified",
+      "sourceLabel": "ESCET - Admission procedure",
+      "sourceUrl": "https://escet.in/admission-procedure",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "programmeSlug": "escet-be-computer-science-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction English; TNEA 2026 lists no Tamil-medium branch for 1428.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "programmeSlug": "escet-be-computer-science-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "ESCET courses page: 'All Courses are run under semester system of the Anna University - Chennai'; Computer Science and Engineering, 4 years. Department page: https://escet.in/computer-science-and-engineering.",
+      "status": "verified",
+      "sourceLabel": "ESCET - Courses offered",
+      "sourceUrl": "https://escet.in/courses-offered",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "programmeSlug": "escet-be-electronics-communication-engineering",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 college booklet, college 1428, branch EC (Electronics and Communication Engineering): approved intake 60; year of starting 2007; NBA accredited No. Round 1 vacancy list shows branch EC at 1428 (46 general academic vacancies). AICTE EoA 2025-26 lists the course under Anna University, Chennai.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AICTE 2026-27 check pending: facilities.aicte-india.org reset the connection from this environment on 2026-10-26 (HTTPS connection reset, HTTP port refused); ESCET has not published a 2026-27 EoA (its site lists EoA letters 2023-24 to 2025-26; /pdf/escet-eoa-26-27.PDF returns 404). 2026-27 offering rests on the TNEA 2026 seat matrix and Round 1 vacancy list, which DoTE builds from AICTE-approved, Anna University-affiliated seats. EoA 2025-26: https://escet.in/pdf/escet-eoa-25-26.PDF. Vacancy: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "programmeSlug": "escet-be-electronics-communication-engineering",
+      "publicField": "fee",
+      "claimText": "ESCET mandatory disclosure: 'Fee - As per Government Norms' (no figure). TNEA 2026 booklet prints no tuition but lists admission fee 1,000, establishment 2,000, caution deposit 5,000, room rent 6,000, electricity 6,000, mess 60,800 and transport 12,000-30,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "ESCET - Mandatory Disclosure",
+      "sourceUrl": "https://escet.in/mandatory-disclosure",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "No tuition on any ESCET page, AICTE EoA or DoTE document (checked 2026-10-26). Grade C figures rejected as conflicting: Collegedunia (first-year INR 50,000 CSE, 55,000 IT/AI&DS; B.E. total INR 2.2 lakh and INR 3.48 lakh on different pages), Campusoption (INR 2.2 lakh total for every branch), Shiksha (INR 1.2-2 lakh total), Zollege (INR 5.68 lakh AI&DS, 7.68 lakh Mechanical total), Campusoption 'ESEC' (GQ 40,000 / MQ 70,000 p.a.). The recurring INR 2.2 lakh also equals the disclosure's average placement salary, a likely field mix-up."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "programmeSlug": "escet-be-electronics-communication-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum average 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route; nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "programmeSlug": "escet-be-electronics-communication-engineering",
+      "publicField": "admissions",
+      "claimText": "ESCET admission procedure: 65% government quota through Tamil Nadu counselling, 35% management quota through the Consortium of Self Financing Engineering Colleges merit list; lateral entry 20%. Admission enquiry phone +91 94867 22474.",
+      "status": "verified",
+      "sourceLabel": "ESCET - Admission procedure",
+      "sourceUrl": "https://escet.in/admission-procedure",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "programmeSlug": "escet-be-electronics-communication-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction English; TNEA 2026 lists no Tamil-medium branch for 1428.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "programmeSlug": "escet-be-electronics-communication-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "ESCET courses page: 'All Courses are run under semester system of the Anna University - Chennai'; Electronics and Communication Engineering, 4 years. Department page: https://escet.in/electronics-and-communication-engineering.",
+      "status": "verified",
+      "sourceLabel": "ESCET - Courses offered",
+      "sourceUrl": "https://escet.in/courses-offered",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "programmeSlug": "escet-btech-information-technology",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 college booklet, college 1428, branch IT (Information Technology): approved intake 120; year of starting 2023; NBA accredited No. Round 1 vacancy list shows branch IT at 1428 (99 general academic vacancies). AICTE EoA 2025-26 lists the course under Anna University, Chennai.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AICTE 2026-27 check pending: facilities.aicte-india.org reset the connection from this environment on 2026-10-26 (HTTPS connection reset, HTTP port refused); ESCET has not published a 2026-27 EoA (its site lists EoA letters 2023-24 to 2025-26; /pdf/escet-eoa-26-27.PDF returns 404). 2026-27 offering rests on the TNEA 2026 seat matrix and Round 1 vacancy list, which DoTE builds from AICTE-approved, Anna University-affiliated seats. EoA 2025-26: https://escet.in/pdf/escet-eoa-25-26.PDF. Vacancy: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "programmeSlug": "escet-btech-information-technology",
+      "publicField": "fee",
+      "claimText": "ESCET mandatory disclosure: 'Fee - As per Government Norms' (no figure). TNEA 2026 booklet prints no tuition but lists admission fee 1,000, establishment 2,000, caution deposit 5,000, room rent 6,000, electricity 6,000, mess 60,800 and transport 12,000-30,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "ESCET - Mandatory Disclosure",
+      "sourceUrl": "https://escet.in/mandatory-disclosure",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "No tuition on any ESCET page, AICTE EoA or DoTE document (checked 2026-10-26). Grade C figures rejected as conflicting: Collegedunia (first-year INR 50,000 CSE, 55,000 IT/AI&DS; B.E. total INR 2.2 lakh and INR 3.48 lakh on different pages), Campusoption (INR 2.2 lakh total for every branch), Shiksha (INR 1.2-2 lakh total), Zollege (INR 5.68 lakh AI&DS, 7.68 lakh Mechanical total), Campusoption 'ESEC' (GQ 40,000 / MQ 70,000 p.a.). The recurring INR 2.2 lakh also equals the disclosure's average placement salary, a likely field mix-up."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "programmeSlug": "escet-btech-information-technology",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum average 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route; nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "programmeSlug": "escet-btech-information-technology",
+      "publicField": "admissions",
+      "claimText": "ESCET admission procedure: 65% government quota through Tamil Nadu counselling, 35% management quota through the Consortium of Self Financing Engineering Colleges merit list; lateral entry 20%. Admission enquiry phone +91 94867 22474.",
+      "status": "verified",
+      "sourceLabel": "ESCET - Admission procedure",
+      "sourceUrl": "https://escet.in/admission-procedure",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "programmeSlug": "escet-btech-information-technology",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction English; TNEA 2026 lists no Tamil-medium branch for 1428.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "e-s-college-of-engineering-and-technology",
+      "programmeSlug": "escet-btech-information-technology",
+      "publicField": "teachingPhases",
+      "claimText": "ESCET courses page: 'All Courses are run under semester system of the Anna University - Chennai'; Information Technology, 4 years. Department page: https://escet.in/information-technology.",
+      "status": "verified",
+      "sourceLabel": "ESCET - Courses offered",
+      "sourceUrl": "https://escet.in/courses-offered",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    }
+  ]
+}
