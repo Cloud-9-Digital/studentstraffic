@@ -148,7 +148,13 @@ The migration payload is now the enforcement point for the catalogue content fra
   audience, currency, annual amount, academic year, checked date and notes). Both land in
   `program_offerings.fee_audience` / `additional_fees` (drizzle `0082_offering_fee_audience`), and
   pages label each fee by audience. Unclassified fees fall back to "Tuition per year". Bundles
-  0120–0144 (2026-10-23) classified every priced Indian programme;
+  0120–0144 (2026-10-23) classified every priced Indian programme. When the source prices by seat
+  category (Tamil Nadu medical and dental colleges publish government, management and NRI quota
+  fees), set `fee.category` and each `additionalFees[].category` to the source's name for it
+  ("Government quota", "Management quota", "NRI quota", 3–60 characters). The category replaces the
+  audience as the fee's label, so two Indian-student fees stay distinct; audience still drives
+  ordering and the NRI handling. Stored in `program_offerings.fee_category` (drizzle
+  `0086_offering_fee_category`) and inside the `additional_fees` jsonb;
 - every material claim is carried in a private root `evidence` record with entity target, public
   field, claim text, source grade, checked date and review-by date;
 - `npm run content:validate` rejects Grade C evidence, prohibited filler, missing

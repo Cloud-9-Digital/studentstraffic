@@ -1414,6 +1414,7 @@ type FinderProgramRow = {
   offeringFeeStatus: ProgramOffering["feeStatus"] | null;
   offeringReportedFeeQuote: unknown;
   offeringFeeAudience: ProgramOffering["feeAudience"] | null;
+  offeringFeeCategory: string | null;
   offeringAdditionalFees: NonNullable<ProgramOffering["additionalFees"]>;
   offeringFeeAcademicYear: string | null;
   offeringIndicativeAnnualTuitionMinUsd: number | null;
@@ -1514,6 +1515,7 @@ function mapFinderProgramRow(row: FinderProgramRow): FinderProgram {
       feeStatus: row.offeringFeeStatus ?? undefined,
       reportedFeeQuote: parseReportedFeeQuote(row.offeringReportedFeeQuote),
       feeAudience: row.offeringFeeAudience ?? undefined,
+      feeCategory: row.offeringFeeCategory ?? undefined,
       additionalFees: row.offeringAdditionalFees,
       feeAcademicYear: row.offeringFeeAcademicYear ?? undefined,
       indicativeAnnualTuitionMinUsd:
@@ -1616,6 +1618,7 @@ async function selectFinderProgramsFromDatabase(
       offeringFeeStatus: programOfferingsTable.feeStatus,
       offeringReportedFeeQuote: sql<unknown>`${programOfferingsTable.admissionsContent}->'reportedFeeQuote'`,
       offeringFeeAudience: programOfferingsTable.feeAudience,
+      offeringFeeCategory: programOfferingsTable.feeCategory,
       offeringAdditionalFees: programOfferingsTable.additionalFees,
       offeringFeeAcademicYear: programOfferingsTable.feeAcademicYear,
       offeringIndicativeAnnualTuitionMinUsd:

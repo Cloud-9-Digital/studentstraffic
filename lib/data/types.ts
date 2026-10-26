@@ -87,6 +87,8 @@ export type FeeAudience = "domestic" | "international" | "all";
 /** A further official fee for the same programme, e.g. the NRI/foreign rate beside the Indian one. */
 export type AdditionalProgramFee = {
   audience: FeeAudience;
+  /** The seat category this fee is for, e.g. "Management quota"; used as its label. */
+  category?: string;
   currency: string;
   annualAmount: number;
   totalAmount?: number | null;
@@ -255,6 +257,8 @@ export type ProgramOffering = {
   feeAcademicYear?: string;
   /** Who the main fee above applies to; absent until classified. */
   feeAudience?: FeeAudience;
+  /** The seat category the main fee is for, e.g. "Government quota"; used as its label. */
+  feeCategory?: string;
   additionalFees?: AdditionalProgramFee[];
   reportedFeeQuote?: ReportedFeeQuote;
   indicativeAnnualTuitionMinUsd?: number;

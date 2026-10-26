@@ -1,5 +1,5 @@
 {
-  "appliedAt": "2026-10-26T13:58:35.909Z",
+  "appliedAt": "2026-10-26T15:36:14.295Z",
   "uploads": {
     "attempted": 1,
     "succeeded": 1,
@@ -11,9 +11,9 @@
   },
   "updatedUniversities": [
     {
-      "universitySlug": "e-s-college-of-engineering-and-technology",
-      "logoUpdated": true,
-      "coverUpdated": false,
+      "universitySlug": "dhanalakshmi-srinivasan-dental-college",
+      "logoUpdated": false,
+      "coverUpdated": true,
       "notFoundInDb": false
     }
   ],

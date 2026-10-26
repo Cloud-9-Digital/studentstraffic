@@ -1,0 +1,46 @@
+{
+  "manifestId": "india-tn-colleges-dhanalakshmi-srinivasan-dental-college-media-2026-10-26",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-26",
+  "scope": "logo and cover for content migration 0398-india-dhanalakshmi-srinivasan-dental-college",
+  "rules": [
+    "This manifest permits neither direct database writes nor automatic Cloudinary uploads.",
+    "Every sourceUrl is a direct image URL verified HTTP 200 with an image/* content-type on 2026-10-26; re-verify before upload.",
+    "Only a verified Cloudinary URL may be applied to the catalogue; hold entries are excluded."
+  ],
+  "brochure": {
+    "status": "none-found",
+    "notes": "No prospectus or brochure PDF on dsdentalcollege.org (checked 2026-10-26). The NDC mandatory disclosure page links only pdf/Annexure-II-SEP.pdf and NIRF PDFs; its fee-structure and policy 'CLICK HERE' items are script links with no document; the admission page links no PDF."
+  },
+  "entries": [
+    {
+      "universitySlug": "dhanalakshmi-srinivasan-dental-college",
+      "universityName": "Dhanalakshmi Srinivasan Dental College",
+      "sourceBatch": "claude-tn-dsisr-colleges-20261026",
+      "migrationId": "0398-india-dhanalakshmi-srinivasan-dental-college",
+      "assets": [
+        {
+          "kind": "logo",
+          "status": "hold",
+          "sourceUrl": "https://dsdentalcollege.org/images/dsd-logo.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://dsdentalcollege.org/",
+          "rightsBasis": "HOLD - only header logo is a 77x100 px JPEG (19,482 bytes, sha256 4691e9e58536097bf9e984e6c4b1829d0dabd7d842ec963f3b49f9fff632e7af) of the Dhanalakshmi Srinivasan Group crest with no college name; too small and not college-specific. Leave logo empty until a higher-resolution official college mark is obtained.",
+          "proposedPublicId": "studentstraffic/universities/dhanalakshmi-srinivasan-dental-college/logo",
+          "localCopy": "research/india-source-bundles/dsisr-colleges-20261026/media/dsdentalcollege.org_images_dsd-logo.jpg"
+        },
+        {
+          "kind": "cover",
+          "status": "ready",
+          "sourceUrl": "https://dsdentalcollege.org/img/dsdent-build.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://dsdentalcollege.org/",
+          "rightsBasis": "Official home-page slider photograph on the college's own domain. No open licence; used only to identify the institution. Checked 2026-10-26: HTTP 200, image/jpeg, 769,478 bytes, 1440x566 px, sha256 f5915b90b9259f8cb914ef1c39549e5944c4ed245301edfd599646a0a269ff72. Real daytime photograph of the white main building with blue 'Dhanalakshmi Srinivasan Dental College' name board, circular portico and gardens; one distant unidentifiable person. Wide 2.5:1 crop. Rejected: dsdc-s1..s7.jpg (event and clinic photos with identifiable patients/students).",
+          "altText": "Main building of Dhanalakshmi Srinivasan Dental College with its name board and circular portico, Siruvachur, Perambalur",
+          "proposedPublicId": "studentstraffic/universities/dhanalakshmi-srinivasan-dental-college/cover",
+          "localCopy": "research/india-source-bundles/dsisr-colleges-20261026/media/dsdentalcollege.org_img_dsdent-build.jpg"
+        }
+      ]
+    }
+  ]
+}

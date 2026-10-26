@@ -24,7 +24,7 @@ type FeeFields = Parameters<typeof hasRenderableProgramFee>[0];
 
 /** Structural subset of `FinderProgram` the metadata builders actually read. */
 export type MetadataProgram = {
-  offering: FeeFields & Partial<Pick<ProgramOffering, "feeAudience" | "additionalFees">> & { slug: string; featured?: boolean };
+  offering: FeeFields & Partial<Pick<ProgramOffering, "feeAudience" | "feeCategory" | "additionalFees">> & { slug: string; featured?: boolean };
   course: {
     shortName: string;
     stream: CourseStream;

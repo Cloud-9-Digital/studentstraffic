@@ -49,9 +49,14 @@ const evidenceSchema = z.object({
 // Who a fee applies to. Indian universities often publish an Indian-student fee and a separate
 // NRI/foreign fee for the same programme; "all" means one fee for every applicant.
 const feeAudienceSchema = z.enum(["domestic", "international", "all"]);
+// The seat category a fee belongs to, as the source names it (e.g. "Government quota",
+// "Management quota", "NRI quota"). Shown as the fee's label, so two Indian-student fees for
+// different quotas can be told apart.
+const feeCategorySchema = z.string().trim().min(3).max(60);
 
 const additionalFeeSchema = z.object({
   audience: feeAudienceSchema,
+  category: feeCategorySchema.optional(),
   currency: z.string().length(3),
   annualAmount: z.number().int().positive(),
   totalAmount: z.number().int().positive().nullable().optional(),
@@ -64,6 +69,7 @@ const feeSchema = z.discriminatedUnion("status", [
   z.object({
     status: z.literal("confirmed"),
     audience: feeAudienceSchema.optional(),
+    category: feeCategorySchema.optional(),
     academicYear: z.string().min(4).max(40),
     officialFeeCurrency: z.string().regex(/^[A-Z]{3}$/),
     // An explicit native zero means verified NIL tuition, not missing pricing.
@@ -78,6 +84,7 @@ const feeSchema = z.discriminatedUnion("status", [
   z.object({
     status: z.literal("indicative"),
     audience: feeAudienceSchema.optional(),
+    category: feeCategorySchema.optional(),
     academicYear: z.string().min(4).max(40),
     annualTuitionMinUsd: z.number().int().positive(),
     annualTuitionMaxUsd: z.number().int().positive(),

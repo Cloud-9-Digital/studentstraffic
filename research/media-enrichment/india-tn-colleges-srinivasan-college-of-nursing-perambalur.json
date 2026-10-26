@@ -1,0 +1,44 @@
+{
+  "manifestId": "india-tn-colleges-srinivasan-college-of-nursing-perambalur-media-2026-10-26",
+  "status": "held-no-content-migration",
+  "checkedAt": "2026-10-26",
+  "scope": "logo and cover candidates; no content migration (college held)",
+  "rules": [
+    "This manifest permits neither direct database writes nor automatic Cloudinary uploads.",
+    "Every sourceUrl is a direct image URL verified HTTP 200 with an image/* content-type on 2026-10-26; re-verify before upload.",
+    "Only a verified Cloudinary URL may be applied to the catalogue; hold entries are excluded."
+  ],
+  "brochure": {
+    "status": "none-found",
+    "notes": "srinursing.org (static HTML site) publishes no prospectus or brochure PDF (checked 2026-10-26)."
+  },
+  "entries": [
+    {
+      "universitySlug": "srinivasan-college-of-nursing-perambalur",
+      "universityName": "Srinivasan College of Nursing",
+      "sourceBatch": "claude-tn-dsisr-colleges-20261026",
+      "migrationId": null,
+      "assets": [
+        {
+          "kind": "logo",
+          "status": "hold",
+          "sourceUrl": "https://www.srinursing.org/",
+          "sourceType": "official",
+          "sourcePage": "https://www.srinursing.org/",
+          "rightsBasis": "HOLD - college held (not on INC 2026-27 suitability list); site header is a 1003x66 banner strip (images/index_05.jpg) with no standalone logo. Not reviewed further.",
+          "proposedPublicId": "studentstraffic/universities/srinivasan-college-of-nursing-perambalur/logo"
+        },
+        {
+          "kind": "cover",
+          "status": "hold",
+          "sourceUrl": "https://www.srinursing.org/",
+          "sourceType": "official",
+          "sourcePage": "https://www.srinursing.org/",
+          "rightsBasis": "HOLD - college held; no campus photograph on the home or courses pages.",
+          "altText": "Srinivasan College of Nursing, Siruvachur, Perambalur",
+          "proposedPublicId": "studentstraffic/universities/srinivasan-college-of-nursing-perambalur/cover"
+        }
+      ]
+    }
+  ]
+}

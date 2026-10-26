@@ -268,6 +268,7 @@ export const programOfferings = pgTable(
     feeStatus: text("fee_status").$type<FeeStatus>(),
     feeAcademicYear: text("fee_academic_year"),
     feeAudience: text("fee_audience").$type<FeeAudience>(),
+    feeCategory: text("fee_category"),
     additionalFees: jsonb("additional_fees").$type<AdditionalProgramFee[]>().notNull().default([]),
     indicativeAnnualTuitionMinUsd: integer("indicative_annual_tuition_min_usd"),
     indicativeAnnualTuitionMaxUsd: integer("indicative_annual_tuition_max_usd"),

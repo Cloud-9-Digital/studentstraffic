@@ -249,19 +249,24 @@ type FeeLineOffering = Pick<
   | "indicativeAnnualTuitionMinUsd"
   | "indicativeAnnualTuitionMaxUsd"
   | "feeAudience"
+  | "feeCategory"
   | "additionalFees"
 >;
 
 function getAudienceFeeLines(offering: FeeLineOffering, countrySlug: string, fallback: string) {
   if (getDisplayedReportedFeeQuote(offering)) return [{ label: getProgramAnnualFeeLabel(offering), amount: formatProgramFee(offering, fallback), audience: undefined }];
   const primary = {
-    label: offering.feeAudience && offering.feeStatus !== "on_request"
-      ? feeAudienceLabel(offering.feeAudience, countrySlug)
-      : getProgramAnnualFeeLabel(offering),
+    // A named seat category ("Government quota") says more than the audience alone, and keeps
+    // two Indian-student fees for different quotas apart.
+    label: offering.feeStatus !== "on_request" && offering.feeCategory
+      ? offering.feeCategory
+      : offering.feeAudience && offering.feeStatus !== "on_request"
+        ? feeAudienceLabel(offering.feeAudience, countrySlug)
+        : getProgramAnnualFeeLabel(offering),
     amount: formatProgramAnnualFee(offering, fallback),
   };
   const extra = (offering.additionalFees ?? []).map((fee) => ({
-    label: feeAudienceLabel(fee.audience, countrySlug),
+    label: fee.category ?? feeAudienceLabel(fee.audience, countrySlug),
     amount: formatCurrencyAmount(fee.annualAmount, fee.currency),
   }));
   const lines: { label: string; amount: string; audience?: FeeAudience }[] = [

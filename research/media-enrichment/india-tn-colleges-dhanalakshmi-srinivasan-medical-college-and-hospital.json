@@ -1,0 +1,45 @@
+{
+  "manifestId": "india-tn-colleges-dhanalakshmi-srinivasan-medical-college-and-hospital-media-2026-10-26",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-26",
+  "scope": "logo and cover for content migration 0397-india-dhanalakshmi-srinivasan-medical-college-and-hospital",
+  "rules": [
+    "This manifest permits neither direct database writes nor automatic Cloudinary uploads.",
+    "Every sourceUrl is a direct image URL verified HTTP 200 with an image/* content-type on 2026-10-26; re-verify before upload.",
+    "Only a verified Cloudinary URL may be applied to the catalogue; hold entries are excluded."
+  ],
+  "brochure": {
+    "status": "none-found",
+    "notes": "No official prospectus or brochure PDF on dsmedicalcollege.org (checked 2026-10-25/26). The site's PDFs are NIRF 2023 data, MARB NMC pro-forma, committee lists and student name lists; the 'Tuition Fees' and 'Apply Now' items link no document. The Tamil Nadu Selection Committee's 2026-27 MBBS/BDS prospectuses (https://tnmedicalselection.net/news/30062026003157.pdf, 8,455,645 bytes; https://tnmedicalselection.net/news/28062026235144.pdf, 2,782,818 bytes) are government documents covering all colleges, not the college's own brochure, so they are not proposed for the lead-gated brochure slot."
+  },
+  "entries": [
+    {
+      "universitySlug": "dhanalakshmi-srinivasan-medical-college-and-hospital",
+      "universityName": "Dhanalakshmi Srinivasan Medical College and Hospital",
+      "sourceBatch": "claude-tn-dsisr-colleges-20261026",
+      "migrationId": "0397-india-dhanalakshmi-srinivasan-medical-college-and-hospital",
+      "assets": [
+        {
+          "kind": "logo",
+          "status": "ready",
+          "sourceUrl": "https://dsmedicalcollege.org/wp-content/uploads/2020/03/DS-logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://dsmedicalcollege.org/",
+          "rightsBasis": "Official college logo lock-up served from the college's own domain (footer/header). No open licence; used only to identify the institution. Checked 2026-10-26: HTTP 200, image/png, 12,779 bytes, 285x88 px RGBA, sha256 65cb7b7e52a78918855910f25dc91a7053ad02b58a8662684230dcf0dd236052. Rendered on white and visually confirmed legible: black crest with founder portrait and 'Dhanalakshmi Srinivasan Group' shield, wordmark 'Dhanalakshmi Srinivasan Medical College & Hospital'. CAVEAT: small (285 px wide); acceptable for the logo tile, crop crest (approx. x 0-60) if a square is required. Rejected: cropped-cropped-logo-new.webp (group crest only, no college name) and cropped-Ds-logo.png ('Residential Campus' badge plus crest).",
+          "proposedPublicId": "studentstraffic/universities/dhanalakshmi-srinivasan-medical-college-and-hospital/logo",
+          "localCopy": "research/india-source-bundles/dsisr-colleges-20261026/media/dsmedicalcollege.org_wp-content_uploads_2020_03_DS-logo.png"
+        },
+        {
+          "kind": "cover",
+          "status": "hold",
+          "sourceUrl": "https://dsmedicalcollege.org/",
+          "sourceType": "official",
+          "sourcePage": "https://dsmedicalcollege.org/",
+          "rightsBasis": "HOLD - no real campus photograph found. The home and about pages carry only programme tiles (Dhanalakshmi_Srinivasan_Medical_College_Undergraduate/Post-Graduate/...png, 400x300 graphics), a theme stock image (footer_woman2...jpg from the 'estudiar' WordPress theme) and logos. The dental college's banner photo shows the dental building, not the medical college, and is not reused here. Next step: source an official photo of the medical college/hospital block from the college or a rights-cleared official channel.",
+          "altText": "Dhanalakshmi Srinivasan Medical College and Hospital campus, Siruvachur, Perambalur",
+          "proposedPublicId": "studentstraffic/universities/dhanalakshmi-srinivasan-medical-college-and-hospital/cover"
+        }
+      ]
+    }
+  ]
+}

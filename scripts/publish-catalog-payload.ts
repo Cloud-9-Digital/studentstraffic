@@ -266,6 +266,7 @@ export async function publishCatalogPayload(
           ? {
               feeStatus: fee.status,
               feeAudience: fee.audience ?? null,
+              feeCategory: fee.category ?? null,
               feeAcademicYear: fee.academicYear,
               officialFeeCurrency: fee.officialFeeCurrency,
               officialAnnualTuitionAmount: fee.officialAnnualTuitionAmount,
@@ -281,6 +282,7 @@ export async function publishCatalogPayload(
             ? {
                 feeStatus: fee.status,
                 feeAudience: fee.audience ?? null,
+                feeCategory: fee.category ?? null,
                 feeAcademicYear: fee.academicYear,
                 officialFeeCurrency: null,
                 officialAnnualTuitionAmount: null,
@@ -295,6 +297,7 @@ export async function publishCatalogPayload(
             : {
                 feeStatus: fee.status,
                 feeAudience: null,
+                feeCategory: null,
                 feeAcademicYear: null,
                 officialFeeCurrency: null,
                 officialAnnualTuitionAmount: null,

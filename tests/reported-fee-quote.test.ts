@@ -156,3 +156,23 @@ test("single-line fee displays name who each fee is for, so an NRI fee never rea
   assert.deepEqual(getPrimaryProgramFee(unclassified, "india"), { amount: "$3,600" });
   assert.equal(formatProgramFeeSummary(offering, "india"), "₹55,000 / year");
 });
+
+test("a named seat category labels its fee, so quota fees for the same audience stay distinct", () => {
+  const quotas = {
+    annualTuitionUsd: 0, totalTuitionUsd: 0, feeStatus: "confirmed", officialFeeCurrency: "INR", officialAnnualTuitionAmount: 250000,
+    feeAudience: "domestic", feeCategory: "Government quota",
+    additionalFees: [
+      { audience: "domestic", category: "Management quota", annualAmount: 600000, currency: "INR" },
+      { audience: "international", category: "NRI quota", annualAmount: 900000, currency: "INR" },
+    ],
+  } as unknown as ProgramOffering;
+  assert.deepEqual(getProgramFeeLines(quotas, "india"), [
+    { label: "Government quota", amount: "₹2,50,000" },
+    { label: "Management quota", amount: "₹6,00,000" },
+    { label: "NRI quota", amount: "₹9,00,000" },
+  ]);
+  assert.equal(formatProgramFeeSummary(quotas, "india"), "₹2,50,000 (Government quota) · ₹6,00,000 (Management quota) · ₹9,00,000 (NRI quota)");
+  assert.deepEqual(getPrimaryProgramFee(quotas, "india"), { amount: "₹2,50,000", audienceLabel: "Government quota" });
+  // An on-request main fee never shows a stale category.
+  assert.equal(getProgramFeeLines({ ...quotas, feeStatus: "on_request", additionalFees: [] } as ProgramOffering, "india")[0].label, "Fee plan");
+});
