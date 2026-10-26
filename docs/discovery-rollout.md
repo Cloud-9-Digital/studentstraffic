@@ -5,6 +5,7 @@ This project now exposes the main technical building blocks for organic discover
 - `robots.txt` at `/robots.txt`
 - complete root sitemap at `/sitemap.xml`
 - `llms.txt` at `/llms.txt`
+- markdown views (`Accept: text/markdown` or `.md`) and the agent skills index at `/.well-known/agent-skills/index.json`; see `docs/seo/ai-discovery.md`
 - page-level metadata and JSON-LD
 
 Use this checklist after each production deploy.

@@ -12,6 +12,7 @@ import { GoogleAnalytics } from "@/components/google-analytics";
 import { MetaPixel } from "@/components/meta-pixel";
 import { MicrosoftClarity } from "@/components/microsoft-clarity";
 import { AttributionTracking } from "@/components/site/attribution-tracking";
+import { WebMcpTools } from "@/components/site/webmcp-tools";
 import { JsonLd } from "@/components/shared/json-ld";
 import { Toaster } from "@/components/ui/sonner";
 import { env } from "@/lib/env";
@@ -88,6 +89,7 @@ export default async function RootLayout({
           </NavCountriesClientProvider>
         </Providers>
         <Toaster position="top-center" />
+        <WebMcpTools />
         <JsonLd
           data={getStructuredDataGraph([
             getOrganizationStructuredData(),

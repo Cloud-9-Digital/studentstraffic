@@ -1,12 +1,12 @@
 # Search, answer-engine and AI-agent discovery
 
-Updated: 2026-10-22
+Updated: 2026-10-26
 
 How studentstraffic.com is crawled, read and cited by search engines, LLM answer engines
 (ChatGPT, Perplexity, Gemini, Claude, Google AI Overviews) and AI agents. Structured data has its
 own contract in [`structured-data-contract.md`](./structured-data-contract.md).
 
-## Crawler policy (`app/robots.ts`)
+## Crawler policy (`app/robots.txt/route.ts`, built in `lib/robots-txt.ts`)
 
 - Search engines, answer engines, assistant fetchers and training crawlers are all allowed on the
   public catalogue. Being quoted by assistants is a lead source, so the training crawlers
@@ -16,6 +16,13 @@ own contract in [`structured-data-contract.md`](./structured-data-contract.md).
   with only `allow: "/"` would ignore the `*` disallows.
 - `/search` and `/thank-you` stay crawlable so their `noindex` can be read.
 - `/llms-full.txt` is disallowed for `*` only; the named AI agents may fetch it.
+- Every group carries `Content-Signal: search=yes, ai-input=yes, ai-train=yes`
+  ([Content Signals](https://contentsignals.org/)), placed right after the group's `User-Agent`
+  lines. It states how content may be used once fetched: search indexing, AI answers (RAG,
+  grounding) and training are all granted, matching the allow policy above.
+- robots.txt is a route handler, not `app/robots.ts`: `MetadataRoute.Robots` has no field for
+  Content-Signal. Apart from those lines the output is byte-identical to the old metadata route;
+  `tests/robots-txt.test.ts` pins the full text.
 
 ## llms.txt and llms-full.txt
 
@@ -30,22 +37,56 @@ own contract in [`structured-data-contract.md`](./structured-data-contract.md).
   publish: the shared tags are refused by publishers, and a per-publish refresh of this full read
   would defeat the egress rules in `docs/university-pipeline-architecture.md`.
 
-## Markdown views for agents
+## Markdown views for agents (Markdown for Agents)
 
-| URL | Served by | Content |
+| URL (`.md` suffix, or the HTML URL with `Accept: text/markdown`) | Served by | Content |
 | --- | --- | --- |
-| `/university/{slug}.md` | `app/md/university/[slug]/route.ts` | facts, recognition with verification links, programme table, admissions, student life, FAQs, sources, counselling |
-| `/university/{slug}` with `Accept: text/markdown` | same | same |
-| `/{programme-slug}.md` | `app/md/programme/[slug]/route.ts` | facts, fees, year-wise cost, eligibility, admissions, teaching phases, regulatory advisory, sources, counselling |
+| `/` → `/index.md` | `app/md/home/route.ts` | the `/llms.txt` site guide (`lib/llms-txt.ts`) |
+| `/university/{slug}` | `app/md/university/[slug]/route.ts` | facts, recognition with verification links, programme table, admissions, student life, FAQs, sources, counselling |
+| `/countries/{slug}` | `app/md/country/[slug]/route.ts` | overview, regulatory advisory, university table with courses and markdown links, counselling |
+| `/{slug}` (programme, landing page or study-abroad guide) | `app/md/programme/[slug]/route.ts` | programme: facts, fees, year-wise cost, eligibility, admissions, teaching phases, advisory, sources. Landing page: highlights, eligibility, steps, FAQs. Guide: takeaways, sections, tables, FAQs |
 
-- Rewrites live in `next.config.ts` (`beforeFiles`). Section slugs (`-faq`, `-fees`, …) resolve to the
-  whole record. Guides on the root route have no markdown view and return 404; content negotiation
-  is therefore limited to `/university/{slug}`, where every valid slug has a view.
-- Responses send `Link: <html-url>; rel="canonical"` so search engines index the HTML page, plus
-  `Vary: Accept`. HTML pages advertise the view with
+- Routing lives in `lib/agent-discovery.ts` (`getMarkdownRewrites`, used by `next.config.ts`;
+  tested in `tests/agent-discovery.test.ts`). A request is negotiated when its Accept header contains
+  `text/markdown`; browsers never send it, so they get HTML. `q=0` for markdown is not honoured
+  (rewrite `has` matching is a regex).
+- `/`, `/university/*` and `/countries/*` negotiate in `beforeFiles`. The root `/{slug}` negotiates in
+  `afterFiles`, after static routes such as `/about` or `/contact` have matched, so those stay HTML.
+  The root handler resolves slugs in the same order as `app/[slug]/page.tsx` (landing page, guide,
+  programme); an unknown slug returns a markdown 404.
+- HTML only (no markdown view): blog, comparisons, budget guides, courses, finder, `/countries`
+  index, India MBBS college pages, static pages and other nested routes.
+- Responses send `Content-Type: text/markdown; charset=utf-8`, `Vary: Accept`, an
+  `x-markdown-tokens` estimate (characters / 4) and `Link: <html-url>; rel="canonical"` so search
+  engines index the HTML page. Markdown is served from a distinct internal path (`/md/...`), so the
+  CDN never mixes it with the cached HTML. University and programme pages advertise the view with
   `<link rel="alternate" type="text/markdown">` (`markdownPath` in `buildIndexableMetadata`).
 - Rendering is in `lib/agent-markdown.ts` (tested in `tests/agent-markdown.test.ts`). It renders
   only published fields and omits empty ones; a placeholder medium is omitted, not shown.
+
+## Agent discovery
+
+- **Home page Link header** (RFC 8288, `getHomeLinkHeaderRule` in `lib/agent-discovery.ts`, applied in
+  `next.config.ts` `headers()`): `</llms.txt>; rel="describedby"`,
+  `</.well-known/agent-skills/index.json>; rel="describedby"` and
+  `</index.md>; rel="alternate"; type="text/markdown"`. Sent on the www HTML response only. The apex
+  `studentstraffic.com` is a Vercel domain 307 to www that never reaches the app, so checkers must
+  follow the redirect to see the header.
+- **Agent Skills index** (Agent Skills Discovery RFC v0.2.0): `/.well-known/agent-skills/index.json`
+  lists `studentstraffic-catalog`, served at `/.well-known/agent-skills/studentstraffic-catalog/SKILL.md`.
+  Both routes read `lib/agent-skills.ts`, so the `sha256:` digest is computed from the bytes served;
+  `tests/agent-skills.test.ts` recomputes it. Edit the skill when URL patterns, markdown views or fee
+  labels (`lib/utils.ts`) change.
+- **WebMCP** (`components/site/webmcp-tools.tsx`, logic in `lib/webmcp.ts`, tested in
+  `tests/webmcp.test.ts`): after hydration, if `document.modelContext` (spec) or
+  `navigator.modelContext` (Chrome preview) exists, registers three read-only tools:
+  `search_catalog` (`/api/suggestions`, the search-box endpoint), `get_university_details` (markdown
+  view) and `open_page` (university, country or root-level pages on this origin only). Unmount aborts
+  the registration signal. No tool submits a form or sends personal data.
+- **Not published**: an RFC 9727 API catalog. The only unauthenticated read API is the mobile app's
+  `/api/mobile/v1/universities`, an internal contract for the app; `/api/` is disallowed in
+  robots.txt and there is no public API, OpenAPI spec or docs. Agents use the markdown views and
+  `/llms-full.txt` instead.
 
 ## Server HTML must carry the facts
 
@@ -121,6 +162,9 @@ curl -s localhost:3000/robots.txt
 curl -s localhost:3000/llms.txt | head -40
 curl -sI localhost:3000/university/jamia-millia-islamia.md
 curl -s -H 'Accept: text/markdown' localhost:3000/university/jamia-millia-islamia | head
+curl -sI -H 'Accept: text/markdown' localhost:3000/countries/georgia
+curl -sI localhost:3000/ | grep -i '^link'
+curl -s localhost:3000/.well-known/agent-skills/index.json
 ```
 
 On a university page, check for one page-level JSON-LD graph, one `<h1>`, every FAQ answer in the

@@ -2,12 +2,19 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import {
+  estimateMarkdownTokens,
   getProgramMarkdownHref,
+  markdownResponse,
+  renderCountryMarkdown,
+  renderGuideMarkdown,
+  renderLandingPageMarkdown,
   getUniversityMarkdownHref,
   renderProgramMarkdown,
   renderUniversityMarkdown,
 } from "@/lib/agent-markdown";
-import type { Country, FinderProgram, University } from "@/lib/data/types";
+import type { CountryProgramDirectoryRow } from "@/lib/data/catalog";
+import type { Country, FinderProgram, LandingPage, University } from "@/lib/data/types";
+import type { StudyAbroadGuidePageProps } from "@/components/site/study-abroad-guide-page";
 
 const country = { slug: "india", name: "India" } as Country;
 
@@ -113,4 +120,72 @@ test("reported full-course quote uses generic Fees without annual units or inter
   const universityMarkdown = renderUniversityMarkdown({ university, country, programs: [quotedProgram] });
   assert.match(universityMarkdown, /\| Medium \| Fees \|/);
   assert.doesNotMatch(universityMarkdown, /Tuition per year|₹90,000\/year/);
+});
+
+test("markdown responses send negotiation headers and a token estimate", async () => {
+  const body = "# Title\n\nSome text.\n";
+  const response = markdownResponse(body, "/university/example-university");
+  assert.equal(response.headers.get("content-type"), "text/markdown; charset=utf-8");
+  assert.equal(response.headers.get("vary"), "Accept");
+  assert.equal(response.headers.get("x-markdown-tokens"), String(estimateMarkdownTokens(body)));
+  assert.equal(response.headers.get("link"), '<http://localhost:3000/university/example-university>; rel="canonical"');
+  assert.equal(await response.text(), body);
+});
+
+test("country markdown lists each university once with its courses", () => {
+  const row = (courseShortName: string) =>
+    ({
+      university: { slug: "example-university", name: "Example University", city: "Tbilisi", type: "Public", featured: false },
+      course: { slug: courseShortName.toLowerCase(), shortName: courseShortName, stream: "medicine", durationYears: 6 },
+      offering: { annualTuitionUsd: 5000, livingUsd: 3000, medium: "English", intakeMonths: [] },
+    }) as unknown as CountryProgramDirectoryRow;
+  const markdown = renderCountryMarkdown({
+    country: { slug: "georgia", name: "Georgia", summary: "Georgia summary.", whyStudentsChooseIt: "Reasons.", climate: "Mild", metaDescription: "Study MBBS in Georgia." } as Country,
+    programRows: [row("MBBS"), row("BDS")],
+  });
+  assert.match(markdown, /^# Study in Georgia\n/);
+  assert.match(markdown, /Canonical page: http:\/\/localhost:3000\/countries\/georgia/);
+  assert.equal(markdown.match(/\[Example University\]/g)?.length, 1);
+  assert.match(markdown, /\| MBBS, BDS \|/);
+  assert.match(markdown, /studying in Georgia/);
+});
+
+test("guide markdown renders sections, tables and FAQs", () => {
+  const guide = {
+    path: "/mbbs-in-russia-fees",
+    title: "MBBS in Russia fees",
+    updatedOn: "October 2026",
+    summary: "Fees summary.",
+    keyTakeaways: ["Takeaway one"],
+    sections: [
+      { title: "Fee table", paragraphs: ["Intro."], table: { headers: ["University", "Fee"], rows: [["A | B", "$5,000"]] } },
+    ],
+    faqItems: [{ question: "Is NEET needed?", answer: "Yes." }],
+    notes: "",
+  } as unknown as StudyAbroadGuidePageProps;
+  const markdown = renderGuideMarkdown({ guide });
+  assert.match(markdown, /^# MBBS in Russia fees\n/);
+  assert.match(markdown, /- Updated: October 2026/);
+  assert.doesNotMatch(markdown, /Last reviewed/);
+  assert.match(markdown, /\| University \| Fee \|\n\| --- \| --- \|\n\| A \/ B \| \$5,000 \|/);
+  assert.match(markdown, /### Is NEET needed\?\n\nYes\./);
+});
+
+test("landing page markdown keeps highlights, steps and FAQs", () => {
+  const page = {
+    slug: "mbbs-in-georgia",
+    courseSlug: "mbbs",
+    countrySlug: "georgia",
+    title: "MBBS in Georgia",
+    summary: "Summary.",
+    heroHighlights: ["English medium"],
+    reasonsToChoose: ["NMC aligned"],
+    admissionSteps: ["Apply", "Get visa"],
+    faq: [{ question: "Duration?", answer: "Six years." }],
+  } as unknown as LandingPage;
+  const markdown = renderLandingPageMarkdown({ page, canonicalPath: "/mbbs-in-georgia", country: { slug: "georgia", name: "Georgia" } });
+  assert.match(markdown, /^# MBBS in Georgia\n/);
+  assert.match(markdown, /1\. Apply\n2\. Get visa/);
+  assert.match(markdown, /\[Universities in Georgia\]\(http:\/\/localhost:3000\/countries\/georgia\)/);
+  assert.match(markdown, /### Duration\?\n\nSix years\./);
 });

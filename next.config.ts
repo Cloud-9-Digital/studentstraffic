@@ -1,5 +1,7 @@
 import type { NextConfig } from "next";
 
+import { getHomeLinkHeaderRule, getMarkdownRewrites } from "./lib/agent-discovery";
+
 const mediaHostnames = (process.env.MEDIA_HOSTNAMES ?? "")
   .split(",")
   .map((hostname) => hostname.trim())
@@ -167,28 +169,9 @@ const nextConfig: NextConfig = {
     ];
   },
   async rewrites() {
-    return {
-      // Markdown views for AI agents (lib/agent-markdown.ts). beforeFiles so
-      // they win over the /university/[slug] and /[slug] dynamic routes.
-      beforeFiles: [
-        {
-          source: "/university/:slug([^/.]+)\\.md",
-          destination: "/md/university/:slug",
-        },
-        {
-          // Content negotiation: agents that ask for markdown get it at the
-          // canonical URL. Limited to university pages, where every valid
-          // slug has a markdown view; the root route also serves guides.
-          source: "/university/:slug([^/.]+)",
-          has: [{ type: "header", key: "accept", value: "(.*)text/markdown(.*)" }],
-          destination: "/md/university/:slug",
-        },
-        {
-          source: "/:slug([^/.]+)\\.md",
-          destination: "/md/programme/:slug",
-        },
-      ],
-    };
+    // Markdown views and `Accept: text/markdown` negotiation for AI agents
+    // (lib/agent-discovery.ts, rendered by lib/agent-markdown.ts).
+    return getMarkdownRewrites();
   },
   async headers() {
     return [
@@ -196,6 +179,8 @@ const nextConfig: NextConfig = {
         source: "/(.*)",
         headers: securityHeaders,
       },
+      // RFC 8288 discovery links for agents on the home page.
+      getHomeLinkHeaderRule(),
       {
         source: "/admin/:path*",
         headers: [
