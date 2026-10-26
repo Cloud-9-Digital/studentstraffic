@@ -30,6 +30,7 @@ import { FaqDisclosureList } from "@/components/shared/faq-disclosure-list";
 import { Button } from "@/components/ui/button";
 import {
   catalogReviewedAt,
+  contentAuthorSlug,
   formatContentDate,
 } from "@/lib/content-governance";
 import { siteConfig } from "@/lib/constants";
@@ -55,10 +56,12 @@ import {
 import { getProgramMarkdownHref } from "@/lib/agent-markdown";
 import { buildIndexableMetadata, buildNotFoundMetadata } from "@/lib/metadata";
 import { buildProgramMetadata } from "@/lib/university-metadata";
+import { formatProgramDisplayName, getProgramDisplayLabel } from "@/lib/program-variant";
 import {
   getLandingPageBySlug,
   getLandingPageContext,
   getProgramBySlug,
+  getProgramSiblingVariants,
 } from "@/lib/data/catalog";
 import {
   getStudyAbroadGuideBySlug,
@@ -127,6 +130,18 @@ const getProgramPageData = cache(async (rawSlug: string) => {
   if (!program) return null;
 
   const { university, country } = program;
+  const siblings = await getProgramSiblingVariants(programSlug);
+  const displayLabel = getProgramDisplayLabel(
+    {
+      slug: program.offering.slug,
+      title: program.offering.title,
+      medium: program.offering.medium,
+      overview: program.offering.admissionsContent?.overview,
+      restrictions: program.offering.audienceEligibility?.restrictions,
+    },
+    siblings,
+    program.course.shortName,
+  );
   const countryContent = getCountryContent(country.slug);
   const countryAdvisory = getCountryRegulatoryAdvisory(country.slug);
   const universityAdvisory = getUniversityRegulatoryAdvisory(
@@ -143,6 +158,7 @@ const getProgramPageData = cache(async (rawSlug: string) => {
     countryContent,
     countryAdvisory,
     universityAdvisory,
+    displayLabel,
   };
 });
 
@@ -162,7 +178,7 @@ export async function generateMetadata({
 
     const programData = await getProgramPageData(slug);
     if (programData) {
-      const { program, university, country, section } = programData;
+      const { program, university, country, section, displayLabel } = programData;
       // The entity of this page is the programme *at this university*, so the
       // title leads with it; the university page leads with the institution.
       const { title, description, keywords } = buildProgramMetadata({
@@ -170,6 +186,7 @@ export async function generateMetadata({
         university,
         country,
         section,
+        displayLabel,
       });
       return buildIndexableMetadata({
         title,
@@ -1309,11 +1326,16 @@ async function ProgramPageRoute({
   countryContent,
   countryAdvisory,
   universityAdvisory,
+  displayLabel,
 }: NonNullable<Awaited<ReturnType<typeof getProgramPageData>>>) {
+  const programName = formatProgramDisplayName(displayLabel);
   const coverImage = getUniversityCoverImage(university);
   const pageReviewedAt = university.lastVerifiedAt || catalogReviewedAt;
   const authorSlug = getUniversityAuthorSlug(university.slug);
-  const author = authorSlug ? getAuthor(authorSlug) : null;
+  // The visible byline names the same person as the Article/WebPage schema:
+  // the mapped author, else the governed catalogue author (both have
+  // /author profile pages).
+  const author = getAuthor(authorSlug ?? contentAuthorSlug);
   const path = section ? `/${programSlug}-${section}` : `/${programSlug}`;
 
   const countryStructuredData = getCountryStructuredData(country);
@@ -1332,15 +1354,15 @@ async function ProgramPageRoute({
       { name: "Home", path: "/" },
       { name: "Universities", path: "/universities" },
       { name: university.name, path: getUniversityHref(university.slug) },
-      { name: program.course.shortName, path },
+      { name: programName, path },
     ]),
     countryStructuredData,
     courseStructuredData,
     universityStructuredData,
     getWebPageStructuredData({
       path,
-      name: `${program.course.shortName} at ${university.name}`,
-      description: `${program.course.shortName} fees, admissions, eligibility, academics and recognition at ${university.name}, ${university.city}.`,
+      name: `${programName} at ${university.name}`,
+      description: `${programName} fees, admissions, eligibility, academics and recognition at ${university.name}, ${university.city}.`,
       aboutIds: [
         countryStructuredData["@id"],
         universityStructuredData["@id"],
@@ -1349,14 +1371,16 @@ async function ProgramPageRoute({
       mainEntityId: programStructuredData["@id"],
       datePublished: pageReviewedAt,
       dateModified: pageReviewedAt,
+      author,
     }),
     getArticleStructuredData({
       path,
-      headline: `${program.course.shortName} at ${university.name}`,
-      description: `${program.course.shortName} fees, admissions, eligibility, academics and recognition at ${university.name}, ${university.city}.`,
+      headline: `${programName} at ${university.name}`,
+      description: `${programName} fees, admissions, eligibility, academics and recognition at ${university.name}, ${university.city}.`,
       datePublished: pageReviewedAt,
       dateModified: pageReviewedAt,
       image: coverImage?.url,
+      author,
     }),
     programStructuredData,
     // No FAQPage: programme pages do not render the university FAQs. They are
@@ -1379,6 +1403,7 @@ async function ProgramPageRoute({
         logoInitials={getUniversityInitials(university.name)}
         lastVerifiedAt={pageReviewedAt}
         author={author}
+        programDisplayName={displayLabel.variant || displayLabel.courseLabel !== program.course.shortName ? programName : undefined}
       />
 
       <JsonLd data={getStructuredDataGraph(structuredDataItems)} />

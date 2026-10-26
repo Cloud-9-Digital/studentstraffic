@@ -26,6 +26,8 @@ type Props = {
   initialSection: ProgramSection | null;
   programSlug: string;
   courseShortName: string;
+  /** Sibling-aware programme name for the H1, e.g. "B.A. Economics (Tamil medium, Shift II)". */
+  programDisplayName?: string;
   courseSlug: string;
   universityName: string;
   universitySlug: string;
@@ -53,7 +55,7 @@ export function ProgramSectionShellClient(props: Props) {
   return (
     <>
       <UniversityHeroSection
-        universityName={`${props.courseShortName} at ${props.universityName}`}
+        universityName={`${props.programDisplayName ?? props.courseShortName} at ${props.universityName}`}
         universitySlug={props.universitySlug}
         universitySummary={getProgramSectionSummary(activeSection, props)}
         logoUrl={props.logoUrl}

@@ -1,6 +1,10 @@
 import type { CourseStream } from "@/lib/data/types";
 import type { UniversitySection, ProgramSection } from "@/lib/university-sections";
 import type { ProgramOffering } from "@/lib/data/types";
+import {
+  formatProgramDisplayName,
+  type ProgramDisplayLabel,
+} from "@/lib/program-variant";
 import { formatCurrencyAmount, formatProgramAnnualFee, hasRenderableProgramFee } from "@/lib/utils";
 
 /**
@@ -565,6 +569,66 @@ const PROGRAM_TITLE_SPECS: Record<ProgramSection | "default", ProgramTitleSpec> 
   },
 };
 
+/** "Tamil medium, Shift II" -> "Tamil, Shift II", used only when a title is tight. */
+function compactDisplayLabel(label: ProgramDisplayLabel): ProgramDisplayLabel {
+  return label.variant
+    ? { ...label, variant: label.variant.replace(/ medium\b/g, "") }
+    : label;
+}
+
+/**
+ * Tries the full sibling-aware course label, then a compact one, with every
+ * suffix; falls back to the bare title, or for section pages to a truncated
+ * entity that keeps a short section suffix. The last course candidate (the
+ * label without its variant) is only used to keep a section suffix in budget,
+ * never for the main page, where the variant is what keeps siblings apart.
+ * Recognition pages of siblings can then share a title; the main programme
+ * pages, which carry the content that differs, stay distinct.
+ */
+function fitProgramTitle(input: {
+  spec: ProgramTitleSpec;
+  feeText?: string;
+  university: string;
+  courses: string[];
+  sectionSuffix?: string;
+}) {
+  const { spec, feeText, university, courses, sectionSuffix } = input;
+  const suffixes = spec.suffixes(feeText);
+  const distinctCourses = [...new Set(courses)];
+  const withVariant = distinctCourses.length > 1 ? distinctCourses.slice(0, -1) : distinctCourses;
+
+  const fullEntity = normalizeSpace(spec.entity(withVariant[0], university));
+  for (const course of withVariant) {
+    const entity = normalizeSpace(spec.entity(course, university));
+    for (const suffix of suffixes) {
+      if (!suffix) continue;
+      const candidate = `${entity} — ${suffix}`;
+      if (candidate.length <= TITLE_MAX_CHARS) return candidate;
+    }
+    // The full label alone reads better than a compacted label with a suffix.
+    if (!sectionSuffix && entity === fullEntity && fullEntity.length <= TITLE_MAX_CHARS) {
+      return fullEntity;
+    }
+  }
+
+  if (!sectionSuffix) {
+    const compact = withVariant[1] && normalizeSpace(spec.entity(withVariant[1], university));
+    return compact && compact.length <= TITLE_MAX_CHARS
+      ? compact
+      : truncateToWordBoundary(fullEntity, TITLE_MAX_CHARS);
+  }
+
+  // Section pages may drop the variant (their H1 keeps it) before the
+  // university name is cut.
+  for (const course of distinctCourses) {
+    const candidate = `${normalizeSpace(spec.entity(course, university))} — ${sectionSuffix}`;
+    if (candidate.length <= TITLE_MAX_CHARS) return candidate;
+  }
+  const tail = ` — ${sectionSuffix}`;
+  const entity = normalizeSpace(spec.entity(distinctCourses.at(-1)!, university));
+  return `${truncateToWordBoundary(entity, TITLE_MAX_CHARS - tail.length)}${tail}`;
+}
+
 /**
  * Programme pages lead with the programme *at that university* — the entity
  * the page is actually about — rather than with a bare course keyword.
@@ -574,13 +638,32 @@ export function buildProgramMetadata(input: {
   university: MetadataUniversity;
   country: MetadataCountry;
   section: ProgramSection | null;
+  /**
+   * Sibling-aware label (see lib/program-variant.ts). When the university
+   * publishes the same course more than once, it carries the offering title
+   * and the shift/medium/stream/campus that keep sibling titles distinct.
+   */
+  displayLabel?: ProgramDisplayLabel;
 }): BuiltMetadata {
-  const { program, university, country, section } = input;
-  const course = program.course.shortName;
+  const { program, university, country, section, displayLabel } = input;
+  const course = displayLabel
+    ? formatProgramDisplayName(displayLabel)
+    : program.course.shortName;
   const loc = locationLabel(university, country);
   const feeText = flagshipFeeText(program, country);
   const spec = PROGRAM_TITLE_SPECS[section ?? "default"];
-  const title = fitTitle(spec.entity(course, university.name), spec.suffixes(feeText));
+  const title = fitProgramTitle({
+    spec,
+    feeText,
+    university: university.name,
+    courses: displayLabel?.variant
+      ? [course, formatProgramDisplayName(compactDisplayLabel(displayLabel)), displayLabel.courseLabel]
+      : [course],
+    // The recognition section shares the main page's entity ("<course> at
+    // <university>"), so it must never collapse to the bare title; the other
+    // sections name themselves in the entity ("Fees at", "Eligibility at").
+    sectionSuffix: section === "recognition" ? "Recognition" : undefined,
+  });
 
   const description = (() => {
     switch (section) {
@@ -632,12 +715,13 @@ export function buildProgramMetadata(input: {
     }
   })();
 
+  const keywordCourse = displayLabel?.courseLabel ?? program.course.shortName;
   const keywords = [
-    `${course} at ${university.name}`,
-    `${course} in ${university.city}`,
-    `${university.name} ${course} fees`,
+    `${keywordCourse} at ${university.name}`,
+    `${keywordCourse} in ${university.city}`,
+    `${university.name} ${keywordCourse} fees`,
     `${university.name} admission`,
-    country ? `${course} in ${country.name} for Indian students` : undefined,
+    country ? `${keywordCourse} in ${country.name} for Indian students` : undefined,
   ].filter(Boolean) as string[];
 
   return { title, description, keywords: [...new Set(keywords)] };

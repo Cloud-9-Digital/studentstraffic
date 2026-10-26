@@ -51,7 +51,6 @@ Sitemap: https://www.studentstraffic.com/sitemap.xml
 Sitemap: https://www.studentstraffic.com/universities/sitemap/0.xml
 Sitemap: https://www.studentstraffic.com/programs/sitemap/0.xml
 Sitemap: https://www.studentstraffic.com/compare/sitemap/0.xml
-Sitemap: https://www.studentstraffic.com/news-sitemap.xml
 `;
 
 test("robots.txt matches production plus a Content-Signal line per group", () => {

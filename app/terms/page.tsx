@@ -72,6 +72,7 @@ export default function TermsPage() {
     <section className="section-space">
       <div className="container-shell space-y-12">
         <SectionHeading
+          as="h1"
           eyebrow="Terms of Service"
           title="Rules for using Students Traffic"
           description="These terms explain the responsibilities that apply when you browse the site, submit an enquiry, or use Students Traffic for admissions guidance."

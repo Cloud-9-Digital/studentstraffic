@@ -130,12 +130,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly",
       lastModified: catalogLastModified,
     },
-    {
-      url: absoluteUrl("/news"),
-      priority: 0.75,
-      changeFrequency: "hourly",
-      lastModified: governanceLastModified,
-    },
+    // /news is noindex while it has no articles, so it stays out of the sitemap.
     {
       url: absoluteUrl("/blog"),
       priority: 0.8,
@@ -438,6 +433,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     {
       url: absoluteUrl("/methodology"),
       priority: 0.7,
+      changeFrequency: "monthly",
+      lastModified: governanceLastModified,
+    },
+    {
+      url: absoluteUrl("/corrections"),
+      priority: 0.5,
+      changeFrequency: "monthly",
+      lastModified: governanceLastModified,
+    },
+    {
+      url: absoluteUrl("/ai-access"),
+      priority: 0.5,
       changeFrequency: "monthly",
       lastModified: governanceLastModified,
     },

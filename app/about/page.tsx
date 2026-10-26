@@ -1,10 +1,21 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, FileCheck, Globe, MessageCircle, Search, Users } from "lucide-react";
+import {
+  ArrowRight,
+  FileCheck,
+  Globe,
+  Mail,
+  MapPin,
+  MessageCircle,
+  Phone,
+  Search,
+  Users,
+} from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { Button } from "@/components/ui/button";
+import { formatSiteAddress, siteConfig } from "@/lib/constants";
 import { buildIndexableMetadata } from "@/lib/metadata";
 import {
   getBreadcrumbStructuredData,
@@ -22,8 +33,8 @@ export const metadata: Metadata = buildIndexableMetadata({
 const pillars = [
   {
     Icon: Search,
-    label: "500+ Universities Listed",
-    heading: "The most complete database",
+    label: "Detailed Programme Data",
+    heading: "Fees and facts in one place",
     body: "Every program listed includes tuition fees, hostel costs, recognition status, intake dates, eligibility criteria, and teaching medium — updated regularly so the numbers you see are the numbers you can plan around.",
   },
   {
@@ -36,7 +47,7 @@ const pillars = [
     Icon: Users,
     label: "Free Admissions Support",
     heading: "With you from enquiry to visa",
-    body: "Our award-winning counsellors have taken 2,000+ students from first enquiry to enrolment — admissions, applications, documents, and visa — across Russia, Georgia, Kazakhstan, Vietnam, Kyrgyzstan, and more, completely free.",
+    body: "Our counsellors have taken 2,000+ students from first enquiry to enrolment — admissions, applications, documents, and visa — across Russia, Georgia, Kazakhstan, Vietnam, Kyrgyzstan, and more, completely free.",
   },
 ] as const;
 
@@ -123,9 +134,9 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 gap-3 pt-2 lg:hidden">
                 {[
                   { number: "2,000+", label: "Students enrolled" },
-                  { number: "6+", label: "Study destinations" },
+                  { number: "Verified", label: "Official-source checks" },
                   { number: "100%", label: "Free service" },
-                  { number: "Award", label: "Winning counsellors" },
+                  { number: "1:1", label: "Personal counselling" },
                 ].map(({ number, label }) => (
                   <div key={label} className="rounded-xl border border-border bg-muted/40 px-4 py-3">
                     <p className="text-2xl font-bold text-heading">{number}</p>
@@ -145,9 +156,9 @@ export default function AboutPage() {
                   highlight: true,
                 },
                 {
-                  number: "6+",
-                  label: "Study destinations",
-                  note: "Russia, Georgia, Vietnam & more",
+                  number: "Verified",
+                  label: "Official-source checks",
+                  note: "Fees and eligibility checked against university and regulator documents",
                   highlight: false,
                 },
                 {
@@ -157,9 +168,9 @@ export default function AboutPage() {
                   highlight: false,
                 },
                 {
-                  number: "Award",
-                  label: "Winning counsellors",
-                  note: "Recognised expert guidance",
+                  number: "1:1",
+                  label: "Personal counselling",
+                  note: "Experienced counsellors who check fees, eligibility and admission rules against official sources before advising you",
                   highlight: false,
                 },
               ].map(({ number, label, note, highlight }) => (
@@ -284,6 +295,38 @@ export default function AboutPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Company details ───────────────────────────────────────────────── */}
+      <section className="section-space border-b border-border">
+        <div className="container-shell">
+          <div className="mx-auto max-w-2xl rounded-3xl border border-border bg-card p-8 md:p-10">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+              Company details
+            </p>
+            <h2 className="mt-3 font-display text-2xl font-semibold text-heading md:text-3xl">
+              {siteConfig.legalName}
+            </h2>
+            <address className="mt-6 space-y-3 text-sm not-italic leading-6 text-muted-foreground">
+              <p className="flex items-start gap-3">
+                <MapPin className="mt-0.5 size-4 shrink-0 text-primary" />
+                <span>{formatSiteAddress()}</span>
+              </p>
+              <p className="flex items-center gap-3">
+                <Phone className="size-4 shrink-0 text-primary" />
+                <a href={`tel:${siteConfig.phone.replace(/\s/g, "")}`} className="hover:text-foreground">
+                  {siteConfig.phone}
+                </a>
+              </p>
+              <p className="flex items-center gap-3">
+                <Mail className="size-4 shrink-0 text-primary" />
+                <a href={`mailto:${siteConfig.email}`} className="hover:text-foreground">
+                  {siteConfig.email}
+                </a>
+              </p>
+            </address>
           </div>
         </div>
       </section>

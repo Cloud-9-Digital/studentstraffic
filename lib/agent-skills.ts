@@ -1,7 +1,15 @@
 import { createHash } from "node:crypto";
 
+import { isMcpServerEnabled } from "@/lib/agent-discovery";
 import { siteConfig } from "@/lib/constants";
 import { absoluteUrl } from "@/lib/metadata";
+import {
+  AI_ACCESS_PATH,
+  MCP_ENDPOINT_PATH,
+  MCP_RATE_LIMITS,
+  MCP_SERVER_CARD_PATH,
+  PUBLIC_CATALOG_TOOLS,
+} from "@/lib/public-catalog-api";
 
 /**
  * Agent Skills discovery (Agent Skills Discovery RFC v0.2.0,
@@ -27,6 +35,17 @@ function buildCatalogSkillMd() {
   const url = (path: string) => absoluteUrl(path);
   // URL templates: absoluteUrl would percent-encode {placeholders}.
   const pattern = (path: string) => `${absoluteUrl("/").replace(/\/$/, "")}${path}`;
+  // Advertised only while the MCP_SERVER_ENABLED kill switch is on.
+  const toolNames = PUBLIC_CATALOG_TOOLS.map((tool) => `\`${tool.name}\``).join(", ");
+  const mcpSection = isMcpServerEnabled()
+    ? `## Use the MCP server
+
+- Read-only MCP server (Streamable HTTP, no sign-in): ${url(MCP_ENDPOINT_PATH)}. Tools: ${toolNames}. Server card: ${url(MCP_SERVER_CARD_PATH)}.
+- For answering individual questions only: ${MCP_RATE_LIMITS.minute.limit} requests a minute and ${MCP_RATE_LIMITS.day.limit} a day per IP, no bulk copying, and attribution with a link to the page URL is required. Terms: ${url(AI_ACCESS_PATH)}.
+- Every result carries the canonical page URL and the counselling link.
+
+`
+    : "";
 
   return `---
 name: ${CATALOG_SKILL_NAME}
@@ -40,9 +59,9 @@ ${siteConfig.name} (${url("/")}) publishes university profiles and programme pag
 ## Start here
 
 - ${url("/llms.txt")}: site guide with URL patterns, catalogue hubs and destinations.
-- ${url("/llms-full.txt")}: every published country, course, university and programme with fees, duration and language. Large; fetch it when you need to scan the whole catalogue.
+- ${url("/llms-full.txt")}: every published country and course, and one line per university (location, type, main recognition, programme count, page and markdown URLs). Fees and programme details are on each page.
 
-## Read pages as markdown
+${mcpSection}## Read pages as markdown
 
 Send \`Accept: text/markdown\` to a page URL, or append \`.md\`. The response is \`text/markdown\` with a \`Link: <html-url>; rel="canonical"\` header; cite the canonical HTML URL.
 
@@ -58,7 +77,7 @@ University section pages (\`-programs\`, \`-student-life\`, \`-hostel\`, \`-faq\
 
 ## Find a university or programme
 
-1. Look up the university, country or course in /llms.txt or /llms-full.txt to get its slug.
+1. Search with the MCP \`search_catalog\` tool when it is available, or look up the university, country or course in /llms.txt or /llms-full.txt to get its slug.
 2. Or browse the finder: ${pattern("/universities?country={country-slug}&course={course-slug}")} (HTML).
 3. Fetch the university markdown; its programme table links each programme page.
 

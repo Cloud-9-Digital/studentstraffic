@@ -25,7 +25,13 @@ import {
   getUniqueCities,
 } from "@/lib/data/catalog";
 import { getCityGuide } from "@/lib/data/city-guide";
+import type { FinderProgram } from "@/lib/data/types";
 import { buildIndexableMetadata, buildNotFoundMetadata } from "@/lib/metadata";
+import {
+  composeDescription,
+  fitTitle,
+  summariseUniversityStreams,
+} from "@/lib/university-metadata";
 import {
   getCitiesIndexHref,
   getCityHref,
@@ -48,6 +54,62 @@ import {
 } from "@/lib/utils";
 
 const MAX_STATIC_CITY_PARAMS = 1;
+// One comparison row per university. Large Indian cities list hundreds of
+// programmes; rendering every one made /cities/coimbatore ~3 MB of HTML.
+const MAX_CITY_TABLE_ROWS = 60;
+const MAX_CITY_COURSE_PILLS = 8;
+const MAX_CITY_BADGE_PILLS = 6;
+
+/**
+ * Loads a city's programmes without letting a failed catalogue query render an
+ * empty, indexable page: a failure is treated the same as "no published
+ * content" (noindex + missing page) instead of bailing out to client rendering.
+ */
+async function loadCityPrograms(slug: string): Promise<FinderProgram[]> {
+  try {
+    return await getProgramsForCity(slug);
+  } catch (error) {
+    console.error(`[cities] failed to load programmes for ${slug}`, error);
+    return [];
+  }
+}
+
+/**
+ * Wording is derived from the streams the city actually offers. Only a
+ * medicine-only city outside India keeps the MBBS-abroad copy (NEET, visa);
+ * everything else gets neutral "colleges" wording.
+ */
+function getCityWording(programs: FinderProgram[]) {
+  const country = programs[0].country;
+  const cityName = programs[0].university.city;
+  const streams = summariseUniversityStreams(programs);
+  const isMedical = streams.isSingleStream && streams.dominantStream === "medicine";
+  const isMbbsAbroad = isMedical && country.slug !== "india";
+  const institutionNoun = isMbbsAbroad
+    ? "medical universities"
+    : isMedical
+      ? "medical colleges"
+      : "colleges and universities";
+
+  const headlinePrefix = isMbbsAbroad
+    ? "MBBS in"
+    : isMedical
+      ? "Medical colleges in"
+      : "Colleges in";
+
+  return {
+    cityName,
+    country,
+    streams,
+    isMbbsAbroad,
+    institutionNoun,
+    headlinePrefix,
+    headline: `${headlinePrefix} ${cityName}`,
+    summary: isMbbsAbroad
+      ? `Medical universities in ${cityName}, ${country.name}. Compare fees, recognition, and programs to decide if this city is the right base for your MBBS.`
+      : `Compare ${streams.streamPhrase} programmes at ${institutionNoun} in ${cityName}, ${country.name}: fees, teaching medium and recognition.`,
+  };
+}
 
 export async function generateStaticParams() {
   const cities = await getUniqueCities();
@@ -66,14 +128,15 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const programs = await getProgramsForCity(slug);
+  const programs = await loadCityPrograms(slug);
 
   if (!programs.length) {
     return buildNotFoundMetadata("City Not Found");
   }
 
-  const cityName = programs[0].university.city;
-  const countryName = programs[0].country.name;
+  const { cityName, country, streams, isMbbsAbroad, headline, summary } =
+    getCityWording(programs);
+  const countryName = country.name;
   const guide = getCityGuide(slug);
 
   const pricedPrograms = programs.filter((p) =>
@@ -84,23 +147,41 @@ export async function generateMetadata({
     : null;
   const feeHint = minTuition ? ` from ${formatCurrencyUsd(minTuition)}/year` : "";
 
-  const title = `MBBS in ${cityName}, ${countryName} 2026 | Universities, Fees & Comparison`;
-  const description =
-    guide?.summary.slice(0, 155) ??
-    `Compare medical universities in ${cityName}, ${countryName} for MBBS${feeHint}. English-medium programs, fees, NMC recognition, and Indian student context.`;
+  const title = isMbbsAbroad
+    ? fitTitle(`MBBS in ${cityName}, ${countryName}`, [
+        "Universities & Fees 2026",
+        "Universities & Fees",
+        "Fees 2026",
+      ])
+    : fitTitle(`${headline}, ${countryName}`, ["Courses & Fees 2026", "Courses & Fees"]);
+  const description = guide
+    ? composeDescription([guide.summary])
+    : isMbbsAbroad
+      ? composeDescription([
+          `Compare medical universities in ${cityName}, ${countryName} for MBBS${feeHint}.`,
+          "English-medium programs, fees, NMC recognition, and Indian student context.",
+        ])
+      : composeDescription([summary, "Get free counselling to shortlist and apply."]);
 
   return buildIndexableMetadata({
     title,
     description,
     path: getCityHref(slug),
-    keywords: [
-      `MBBS in ${cityName}`,
-      `MBBS in ${cityName} ${countryName}`,
-      `medical university ${cityName}`,
-      `MBBS ${cityName} fees`,
-      `study medicine in ${cityName}`,
-      `${cityName} medical college for Indian students`,
-    ],
+    keywords: isMbbsAbroad
+      ? [
+          `MBBS in ${cityName}`,
+          `MBBS in ${cityName} ${countryName}`,
+          `medical university ${cityName}`,
+          `MBBS ${cityName} fees`,
+          `study medicine in ${cityName}`,
+          `${cityName} medical college for Indian students`,
+        ]
+      : [
+          `colleges in ${cityName}`,
+          `universities in ${cityName}`,
+          `${cityName} ${streams.keywordNoun}`,
+          `${cityName} college fees`,
+        ],
   });
 }
 
@@ -146,14 +227,14 @@ export default async function CityPage({
   // slugs at request time so valid cities never reuse the build fallback page.
   await connection();
   const { slug } = await params;
-  const programs = await getProgramsForCity(slug);
+  const programs = await loadCityPrograms(slug);
 
   if (!programs.length) {
     return <MissingPage />;
   }
 
-  const cityName = programs[0].university.city;
-  const country = programs[0].country;
+  const { cityName, country, isMbbsAbroad, institutionNoun, headline, headlinePrefix, summary } =
+    getCityWording(programs);
   const guide = getCityGuide(slug);
 
   const uniqueUniversityMap = new Map(
@@ -171,10 +252,13 @@ export default async function CityPage({
   const maxTuition = tuitions.length ? Math.max(...tuitions) : null;
   const feeRange = formatUsdRange(minTuition, maxTuition);
 
-  const uniqueCourses = [...new Set(programs.map((p) => p.course.shortName))];
+  const uniqueCourses = [...new Set(programs.map((p) => p.course.shortName))].slice(
+    0,
+    MAX_CITY_COURSE_PILLS,
+  );
   const allRecognitionBadges = [
     ...new Set(programs.flatMap((p) => p.university.recognitionBadges)),
-  ];
+  ].slice(0, MAX_CITY_BADGE_PILLS);
   const allMediums = [
     ...new Set(
       programs
@@ -196,6 +280,23 @@ export default async function CityPage({
 
   const path = getCityHref(slug);
 
+  // One row per university (its lowest published fee), cheapest first, capped.
+  const tablePrograms = [...programs]
+    .sort((a, b) => {
+      const aFee = hasPublishedUsdAmount(a.offering.annualTuitionUsd)
+        ? a.offering.annualTuitionUsd
+        : Number.POSITIVE_INFINITY;
+      const bFee = hasPublishedUsdAmount(b.offering.annualTuitionUsd)
+        ? b.offering.annualTuitionUsd
+        : Number.POSITIVE_INFINITY;
+      return aFee - bFee;
+    })
+    .filter(
+      (p, i, self) =>
+        self.findIndex((q) => q.university.slug === p.university.slug) === i,
+    )
+    .slice(0, MAX_CITY_TABLE_ROWS);
+
   const structuredData = [
     getBreadcrumbStructuredData([
       { name: "Home", path: "/" },
@@ -204,19 +305,17 @@ export default async function CityPage({
     ]),
     getCollectionPageStructuredData({
       path,
-      name: `MBBS in ${cityName}`,
-      description:
-        guide?.summary ??
-        `Compare medical universities in ${cityName}, ${country.name} for MBBS.`,
-      mainEntityId: programs.length ? getItemListStructuredDataId(path) : undefined,
+      name: headline,
+      description: guide?.summary ?? summary,
+      mainEntityId: tablePrograms.length ? getItemListStructuredDataId(path) : undefined,
       datePublished: catalogReviewedAt,
       dateModified: catalogReviewedAt,
     }),
-    programs.length
+    tablePrograms.length
       ? getProgramItemListStructuredData({
           path,
-          name: `${cityName} medical university programs`,
-          programs,
+          name: `Programmes at ${institutionNoun} in ${cityName}`,
+          programs: tablePrograms,
         })
       : null,
     guide?.faq.length
@@ -226,24 +325,6 @@ export default async function CityPage({
         )
       : null,
   ];
-
-  // Deduplicated programs for the comparison table
-  const tablePrograms = programs
-    .filter(
-      (p, i, self) =>
-        self.findIndex(
-          (q) => q.university.slug === p.university.slug && q.course.slug === p.course.slug,
-        ) === i,
-    )
-    .sort((a, b) => {
-      const aFee = hasPublishedUsdAmount(a.offering.annualTuitionUsd)
-        ? a.offering.annualTuitionUsd
-        : Number.POSITIVE_INFINITY;
-      const bFee = hasPublishedUsdAmount(b.offering.annualTuitionUsd)
-        ? b.offering.annualTuitionUsd
-        : Number.POSITIVE_INFINITY;
-      return aFee - bFee;
-    });
 
   return (
     <>
@@ -275,12 +356,12 @@ export default async function CityPage({
             </p>
 
             <h1 className="font-display text-[clamp(3rem,7vw,6rem)] font-semibold leading-[0.9] tracking-tight text-white">
-              MBBS in <em className="not-italic text-accent">{cityName}</em>
+              {headlinePrefix}{" "}
+              <em className="not-italic text-accent">{cityName}</em>
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-white/65 md:text-lg md:leading-9">
-              {guide?.summary ??
-                `Medical universities in ${cityName}, ${country.name}. Compare fees, recognition, and programs to decide if this city is the right base for your MBBS.`}
+              {guide?.summary ?? summary}
             </p>
 
             {/* Stat pills */}
@@ -324,8 +405,12 @@ export default async function CityPage({
                 triggerSize="lg"
                 countrySlug={country.slug}
                 ctaVariant="city_hero"
-                title={`Study MBBS in ${cityName}`}
-                description={`Leave your number and we will call you with college options in ${cityName} that fit your NEET score, budget, and priorities.`}
+                title={isMbbsAbroad ? `Study MBBS in ${cityName}` : `Study in ${cityName}`}
+                description={
+                  isMbbsAbroad
+                    ? `Leave your number and we will call you with college options in ${cityName} that fit your NEET score, budget, and priorities.`
+                    : `Leave your number and we will call you with college options in ${cityName} that fit your marks, course and budget.`
+                }
               />
               <Button
                 asChild
@@ -350,7 +435,7 @@ export default async function CityPage({
           <SectionLabel icon={<MapPin className="size-3.5" />} text="City Overview" />
 
           <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-            {cityName} as an MBBS destination
+            {isMbbsAbroad ? `${cityName} as an MBBS destination` : `Studying in ${cityName}`}
           </h2>
 
           {guide ? (
@@ -359,7 +444,7 @@ export default async function CityPage({
             </div>
           ) : (
             <p className="mt-5 max-w-3xl text-base leading-8 text-muted-foreground">
-              Compare the published medical universities in {cityName}, {country.name}. Use the comparison table below to evaluate fees, recognition, and program medium before applying.
+              Compare the published {institutionNoun} in {cityName}, {country.name}. Use the comparison table below to evaluate fees, recognition, and teaching medium before applying.
             </p>
           )}
 
@@ -378,7 +463,7 @@ export default async function CityPage({
           <SectionLabel icon={<Building2 className="size-3.5" />} text="University Comparison" />
 
           <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-            Medical universities in {cityName}
+            <span className="capitalize">{institutionNoun}</span> in {cityName}
           </h2>
           <p className="mt-3 max-w-2xl text-base leading-8 text-muted-foreground">
             {publicCount > 0 && privateCount > 0
@@ -685,10 +770,12 @@ export default async function CityPage({
                   Ready to apply?
                 </p>
                 <h2 className="mt-2 font-display text-2xl font-semibold text-heading-contrast md:text-3xl">
-                  Know which {cityName} university fits your NEET score.
+                  {isMbbsAbroad
+                    ? `Know which ${cityName} university fits your NEET score.`
+                    : `Find the ${cityName} college that fits your marks and budget.`}
                 </h2>
                 <p className="mt-2 max-w-lg text-sm leading-7 text-white/65">
-                  Our counsellors have supported Indian students across {country.name} this cycle. Request counselling and we will help you compare the right college options.
+                  Request counselling and we will help you compare the right college options.
                 </p>
               </div>
               <div className="shrink-0">
@@ -705,7 +792,11 @@ export default async function CityPage({
                   countrySlug={country.slug}
                   ctaVariant="city_mid"
                   title={`Apply — ${cityName}`}
-                  description={`Leave your number and we'll call you. Our experts know the colleges in ${cityName} and will help you compare the right options based on your NEET score and budget.`}
+                  description={
+                    isMbbsAbroad
+                      ? `Leave your number and we'll call you. Our experts know the colleges in ${cityName} and will help you compare the right options based on your NEET score and budget.`
+                      : `Leave your number and we'll call you to compare colleges in ${cityName} by course, fees and eligibility.`
+                  }
                 />
               </div>
             </div>
@@ -786,13 +877,17 @@ export default async function CityPage({
       <section className="border-t border-border bg-muted/40">
         <div className="container-shell py-12 text-center">
           <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-            We handle the full process
+            {isMbbsAbroad ? "We handle the full process" : "Free counselling"}
           </p>
           <h2 className="font-display text-2xl font-semibold text-heading md:text-3xl">
-            Application, documents, and visa — all done for you.
+            {isMbbsAbroad
+              ? "Application, documents, and visa — all done for you."
+              : "Shortlist and apply with expert help."}
           </h2>
           <p className="mx-auto mt-3 mb-7 max-w-lg text-sm leading-7 text-muted-foreground">
-            Our counsellors work with Indian students every admission cycle and can help you compare the colleges in {cityName} based on NEET score, budget, and NExT pathway. Request a counselling call and get practical guidance today.
+            {isMbbsAbroad
+              ? `Our counsellors work with Indian students every admission cycle and can help you compare the colleges in ${cityName} based on NEET score, budget, and NExT pathway. Request a counselling call and get practical guidance today.`
+              : `Our counsellors can help you compare the colleges in ${cityName} by course, fees and eligibility. Request a counselling call and get practical guidance today.`}
           </p>
           <CounsellingDialog
             triggerContent={

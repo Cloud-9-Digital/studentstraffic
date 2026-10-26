@@ -93,6 +93,7 @@ export default function PrivacyPage() {
     <section className="section-space">
       <div className="container-shell space-y-12">
         <SectionHeading
+          as="h1"
           eyebrow="Privacy Policy"
           title="How we handle student information"
           description="Students Traffic is built around enquiries and admissions support, so this page explains what we collect, why we collect it, and how you can reach us about your information."

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Mail, Phone } from "lucide-react";
+import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
 import { LeadForm } from "@/components/site/lead-form";
@@ -10,7 +10,7 @@ import {
   catalogReviewedAt,
   governancePublishedAt,
 } from "@/lib/content-governance";
-import { siteConfig } from "@/lib/constants";
+import { formatSiteAddress, siteConfig } from "@/lib/constants";
 import { buildIndexableMetadata } from "@/lib/metadata";
 import {
   getBreadcrumbStructuredData,
@@ -155,6 +155,23 @@ export default function ContactPage() {
                           <ArrowRight className="size-3.5" />
                         </Link>
                       </Button>
+                    </div>
+                  </div>
+
+                  <div className="border-t border-border" />
+
+                  {/* Office */}
+                  <div className="flex items-start gap-4">
+                    <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary/8 text-primary">
+                      <MapPin className="size-4.5" />
+                    </div>
+                    <div>
+                      <p className="text-sm font-semibold text-foreground">Office</p>
+                      <address className="mt-0.5 text-sm not-italic leading-6 text-muted-foreground">
+                        {siteConfig.legalName}
+                        <br />
+                        {formatSiteAddress()}
+                      </address>
                     </div>
                   </div>
                 </div>

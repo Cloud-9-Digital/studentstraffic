@@ -21,7 +21,7 @@ import { UniversitySectionShell } from "@/components/site/university/section-she
 import { SectionLabel } from "@/components/site/university/shared";
 import { UniversityStudentLifeSection } from "@/components/site/university/student-life-section";
 import { getAuthor } from "@/lib/authors";
-import { catalogReviewedAt } from "@/lib/content-governance";
+import { catalogReviewedAt, contentAuthorSlug } from "@/lib/content-governance";
 import { getUniversityAuthorSlug } from "@/lib/university-authors";
 import {
   getComparisonGuidesForUniversity,
@@ -222,7 +222,10 @@ export default async function UniversityDetailPage({
   const coverImage = getUniversityCoverImage(university);
   const pageReviewedAt = university.lastVerifiedAt || catalogReviewedAt;
   const authorSlug = getUniversityAuthorSlug(university.slug);
-  const author = authorSlug ? getAuthor(authorSlug) : null;
+  // The visible byline names the same person as the Article/WebPage schema:
+  // the mapped author, else the governed catalogue author (both have
+  // /author profile pages).
+  const author = getAuthor(authorSlug ?? contentAuthorSlug);
   const path = section
     ? `/university/${university.slug}-${section}`
     : `/university/${university.slug}`;
@@ -255,6 +258,7 @@ export default async function UniversityDetailPage({
       mainEntityId: universityStructuredData["@id"],
       datePublished: pageReviewedAt,
       dateModified: pageReviewedAt,
+      author,
     }),
     getArticleStructuredData({
       path,
@@ -263,6 +267,7 @@ export default async function UniversityDetailPage({
       datePublished: pageReviewedAt,
       dateModified: pageReviewedAt,
       image: coverImage?.url,
+      author,
     }),
     universityStructuredData,
     programs.length

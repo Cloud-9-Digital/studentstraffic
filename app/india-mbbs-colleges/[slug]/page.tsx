@@ -11,6 +11,7 @@ import {
   getIndiaMbbsCollegeSlugs,
 } from "@/lib/data/india-mbbs";
 import { buildIndexableMetadata, buildNotFoundMetadata } from "@/lib/metadata";
+import { composeDescription, fitTitle } from "@/lib/university-metadata";
 import { getIndiaMbbsCollegeHref, getIndiaMbbsCollegesHref } from "@/lib/routes";
 import {
   getBreadcrumbStructuredData,
@@ -26,19 +27,47 @@ function getDatePart(value?: string) {
   return value?.slice(0, 10);
 }
 
-function buildOverview(college: NonNullable<Awaited<ReturnType<typeof getIndiaMbbsCollegeBySlug>>>) {
-  const program = college.programs.find((item) => item.courseName === "MBBS") ?? college.programs[0];
+type IndiaMbbsCollege = NonNullable<Awaited<ReturnType<typeof getIndiaMbbsCollegeBySlug>>>;
+
+function getPrimaryProgram(college: IndiaMbbsCollege) {
+  return college.programs.find((item) => item.courseName === "MBBS") ?? college.programs[0];
+}
+
+function describeManagement(managementType?: string) {
+  const value = managementType?.trim();
+  if (!value) return "medical college";
+  const normalized = /^govt\.?$/i.test(value) ? "government" : value.toLowerCase();
+  return `${normalized} medical college`;
+}
+
+// Built only from the imported NMC fields, so every clause is a fact the page
+// can show. Clauses without data are left out rather than padded; the meta
+// description keeps the clauses in order while they fit (seats before
+// affiliation, the more searched fact).
+function buildOverviewClauses(college: IndiaMbbsCollege) {
+  const program = getPrimaryProgram(college);
   const location = college.cityName
     ? `${college.cityName}, ${college.stateName}`
     : college.stateName;
-  const seats = program?.annualIntakeSeats
-    ? `${program.annualIntakeSeats} MBBS seats`
-    : "MBBS intake listed in NMC data";
-  const management = college.managementType
-    ? `${college.managementType.toLowerCase()} medical college`
-    : "medical college";
+  const intake = program?.annualIntakeSeats
+    ? `It admits ${program.annualIntakeSeats} MBBS students a year${
+        program.yearOfInception ? ` and has taught MBBS since ${program.yearOfInception}` : ""
+      }.`
+    : undefined;
+  const affiliation = college.universityName
+    ? `It is affiliated to ${college.universityName.replace(/,(?=\S)/g, ", ")}.`
+    : undefined;
 
-  return `${college.collegeName} is a ${management} in ${location}. Students can review ${seats}, year of inception, university affiliation, and current source-backed admissions information before shortlisting the college.`;
+  return [
+    `${college.collegeName} is a ${describeManagement(college.managementType)} in ${location}.`,
+    intake,
+    affiliation,
+    "MBBS admission is through NEET-UG counselling.",
+  ];
+}
+
+function buildOverview(college: IndiaMbbsCollege) {
+  return buildOverviewClauses(college).filter(Boolean).join(" ");
 }
 
 export async function generateStaticParams() {
@@ -61,14 +90,21 @@ export async function generateMetadata({
     return buildNotFoundMetadata("College Not Found");
   }
 
-  const description =
-    college.editorialContent.overview?.trim() || buildOverview(college);
+  const editorialOverview = college.editorialContent.overview?.trim();
+  const description = editorialOverview
+    ? composeDescription([editorialOverview])
+    : composeDescription(buildOverviewClauses(college));
   const location = college.cityName
     ? `${college.cityName}, ${college.stateName}`
     : college.stateName;
 
   return buildIndexableMetadata({
-    title: `${college.collegeName} MBBS Admission 2026 | Seats, Location, Details`,
+    title: fitTitle(college.collegeName, [
+      "MBBS Seats & Admission 2026",
+      "MBBS Admission 2026",
+      "MBBS Admission",
+      "MBBS",
+    ]),
     description,
     path: getIndiaMbbsCollegeHref(college.slug),
     keywords: [
@@ -106,7 +142,7 @@ export default async function IndiaMbbsCollegeDetailPage({
     catalogReviewedAt;
   const path = getIndiaMbbsCollegeHref(college.slug);
   const faq = college.editorialContent.faq ?? [];
-  const primaryProgram = college.programs.find((item) => item.courseName === "MBBS") ?? college.programs[0];
+  const primaryProgram = getPrimaryProgram(college);
 
   const structuredData = getStructuredDataGraph([
     getBreadcrumbStructuredData([
@@ -190,11 +226,11 @@ export default async function IndiaMbbsCollegeDetailPage({
               />
               <FactCard
                 label="MBBS seats"
-                value={primaryProgram?.annualIntakeSeats?.toString() ?? "Check source"}
+                value={primaryProgram?.annualIntakeSeats?.toString() ?? "Not listed"}
               />
               <FactCard
                 label="Year of inception"
-                value={primaryProgram?.yearOfInception?.toString() ?? "Check source"}
+                value={primaryProgram?.yearOfInception?.toString() ?? "Not listed"}
               />
               <FactCard
                 label="Source"
@@ -208,11 +244,6 @@ export default async function IndiaMbbsCollegeDetailPage({
       <section className="py-10 md:py-14">
         <div className="container-shell grid gap-8 lg:grid-cols-[minmax(0,1fr)_320px]">
           <div className="space-y-8">
-            <ContentSection
-              title="College Snapshot"
-              body={`This page combines imported ${college.sourceAuthority}-linked facts with your editorial content layer, so each college page can start with real data and then grow into a stronger admissions page over time.`}
-            />
-
             {college.editorialContent.whyChoose?.length ? (
               <ListSection
                 title="Why students shortlist this college"
@@ -268,7 +299,7 @@ export default async function IndiaMbbsCollegeDetailPage({
                   Programs and intake
                 </h2>
                 <p className="text-sm leading-6 text-muted-foreground">
-                  Use this as the factual layer for the page. If you want richer content later, keep these source-backed rows and add editorial context above them.
+                  Annual intake and starting year for each course, as listed by {college.sourceAuthority}.
                 </p>
               </div>
 
@@ -340,7 +371,7 @@ export default async function IndiaMbbsCollegeDetailPage({
           <aside className="space-y-4">
             <div className="rounded-3xl border border-border bg-card p-5">
               <h2 className="font-display text-xl font-semibold text-heading">
-                Content governance
+                College details
               </h2>
               <dl className="mt-4 space-y-3 text-sm">
                 <div>
@@ -352,7 +383,7 @@ export default async function IndiaMbbsCollegeDetailPage({
                 <div>
                   <dt className="text-muted-foreground">Affiliating university</dt>
                   <dd className="font-medium text-foreground">
-                    {college.universityName ?? "Not listed in current import"}
+                    {college.universityName ?? "Not listed"}
                   </dd>
                 </div>
                 <div>
@@ -364,24 +395,6 @@ export default async function IndiaMbbsCollegeDetailPage({
               </dl>
             </div>
 
-            <div className="rounded-3xl border border-border bg-card p-5">
-              <h2 className="font-display text-xl font-semibold text-heading">
-                How to manage real content
-              </h2>
-              <p className="mt-3 text-sm leading-7 text-muted-foreground">
-                Store only verified copy in the editorial content JSON for this college. Keep facts like seats, course names, and codes in the import tables so future NMC refreshes do not overwrite your human-reviewed page sections.
-              </p>
-              {college.sourceUrl ? (
-                <a
-                  href={college.sourceUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-4 inline-flex text-sm font-semibold text-accent underline underline-offset-2"
-                >
-                  View source file
-                </a>
-              ) : null}
-            </div>
           </aside>
         </div>
       </section>

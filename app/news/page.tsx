@@ -1,19 +1,27 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import { buildIndexableMetadata } from "@/lib/metadata";
+import { buildIndexableMetadata, buildNoIndexMetadata } from "@/lib/metadata";
 import { getNewsGroups } from "@/lib/news";
 import { NewsFeed } from "@/components/site/news-feed";
 
-export const metadata: Metadata = buildIndexableMetadata({
-  title: "News | Study Abroad, Education & Career Updates | Students Traffic",
+const newsMetadata = buildIndexableMetadata({
+  title: "Study Abroad & Education News",
   description:
     "Latest news on study abroad, higher education, university admissions, career pathways, and policy changes — curated for students worldwide.",
   path: "/news",
 });
 
+// An empty feed is a thin page: keep it out of the index (and the sitemap)
+// until there are articles to show.
+export async function generateMetadata(): Promise<Metadata> {
+  const groups = await getNewsGroups().catch(() => []);
+  const hasArticles = groups.some((group) => group.articles.length > 0);
+  return hasArticles ? newsMetadata : buildNoIndexMetadata(newsMetadata);
+}
+
 export default async function NewsPage() {
-  const groups = await getNewsGroups();
+  const groups = await getNewsGroups().catch(() => []);
   const hasArticles = groups.some((g) => g.articles.length > 0);
 
   return (

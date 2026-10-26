@@ -37,10 +37,15 @@ type FaqItem = {
   answer: string;
 };
 
+/** A named author with a profile page at /author/{slug}. */
+type SchemaAuthor = { slug: string; name: string };
+
 type WebPageSchemaInput = {
   path: string;
   name: string;
   description: string;
+  /** The author shown in the visible byline; defaults to the governed author. */
+  author?: SchemaAuthor | null;
   pageType?: "WebPage" | "CollectionPage";
   aboutIds?: string[];
   mainEntityId?: string;
@@ -227,6 +232,8 @@ export function getArticleStructuredData(input: {
   datePublished: string;
   dateModified: string;
   image?: string;
+  /** The author shown in the visible byline; defaults to the governed author. */
+  author?: SchemaAuthor | null;
 }) {
   return {
     "@type": "Article",
@@ -238,9 +245,7 @@ export function getArticleStructuredData(input: {
     description: input.description,
     datePublished: input.datePublished,
     dateModified: input.dateModified,
-    author: {
-      "@id": getAuthorStructuredDataId(),
-    },
+    author: getAuthorReference(input.author),
     publisher: {
       "@id": getOrganizationStructuredDataId(),
     },
@@ -265,6 +270,25 @@ export function getWebsiteStructuredDataId() {
 
 export function getAuthorStructuredDataId() {
   return withFragment(contentAuthorPath, "person");
+}
+
+/**
+ * Schema author matching the visible byline. The governed author is a bare
+ * reference to the site-wide Person node; any other author gets an inline
+ * Person with the same @id as their /author/{slug} ProfilePage.
+ */
+export function getAuthorReference(author?: SchemaAuthor | null) {
+  if (!author || author.slug === contentAuthorSlug) {
+    return { "@id": getAuthorStructuredDataId() };
+  }
+  const path = `/author/${author.slug}`;
+  return {
+    "@type": "Person",
+    "@id": withFragment(path, "person"),
+    name: author.name,
+    url: absoluteUrl(path),
+    worksFor: { "@id": getOrganizationStructuredDataId() },
+  };
 }
 
 export function getWebPageStructuredDataId(path: string) {
@@ -303,8 +327,17 @@ export function getOrganizationStructuredData() {
     "@type": "Organization",
     "@id": getOrganizationStructuredDataId(),
     name: siteConfig.name,
+    legalName: siteConfig.legalName,
     alternateName: siteConfig.shortName,
     url: absoluteUrl("/"),
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: siteConfig.address.streetAddress,
+      addressLocality: siteConfig.address.addressLocality,
+      addressRegion: siteConfig.address.addressRegion,
+      postalCode: siteConfig.address.postalCode,
+      addressCountry: siteConfig.address.addressCountry,
+    },
     logo: {
       "@type": "ImageObject",
       url: absoluteUrl("/logo.webp"),
@@ -429,9 +462,7 @@ export function getWebPageStructuredData(input: WebPageSchemaInput) {
     isPartOf: {
       "@id": getWebsiteStructuredDataId(),
     },
-    author: {
-      "@id": getAuthorStructuredDataId(),
-    },
+    author: getAuthorReference(input.author),
     publisher: {
       "@id": getOrganizationStructuredDataId(),
     },

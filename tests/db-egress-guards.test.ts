@@ -21,9 +21,15 @@ async function listProjectSourceFiles(relativeDir: string) {
 }
 
 test("autocomplete uses one cached index and bounded in-memory matches", async () => {
-  const source = await readProjectFile("app/api/suggestions/route.ts");
+  // The route is a thin wrapper; the ranking lives in lib/search/suggestions.ts
+  // so the public MCP search tool shares it.
+  const [route, source] = await Promise.all([
+    readProjectFile("app/api/suggestions/route.ts"),
+    readProjectFile("lib/search/suggestions.ts"),
+  ]);
 
-  assert.doesNotMatch(source, /getCatalogSnapshot|getProgramOfferings|getUniversities/);
+  assert.match(route, /searchCatalogSuggestions/);
+  assert.doesNotMatch(route + source, /getCatalogSnapshot|getProgramOfferings|getUniversities/);
   assert.match(source, /getSuggestionSource\(q\)/);
   assert.match(source, /getSuggestionIndex\(\)/);
   assert.match(source, /takeMatching\(index\.countries, 12/);

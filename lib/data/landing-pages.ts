@@ -603,7 +603,7 @@ export const landingPages: LandingPage[] = [
     ],
     metaTitle: "MBBS in Georgia for Indian Students 2026 | Fees, Universities, English Medium",
     metaDescription:
-      "Compare MBBS in Georgia options by university, fee, hostel, and support quality with a high-intent landing page built for Indian students.",
+      "Compare MBBS in Georgia for Indian students by university, fees, hostel, teaching medium and support, then get free help to shortlist and apply.",
     intakeTimeline: [
       { milestone: "Application Opens", timeline: "May - June", details: "Submit academic documents and passport." },
       { milestone: "Interview & Offer", timeline: "July", details: "Skype interview (basic English check) followed by offer letter." },

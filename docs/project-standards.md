@@ -149,6 +149,8 @@ Every catalogue template must describe **the entity the page is about**. A unive
 - Descriptions: 140–155 characters, benefit-led and specific. `composeDescription()` appends clauses only while they fit, and picks the longest surviving variant of each clause.
 - The year appears only where it earns the click (fees, admissions, course lists), never on evergreen sections that would then look stale.
 - No two sibling pages may share a title template; the section suffixes are distinct by design, and the tests assert it.
+- When a university publishes the same course more than once (per shift, medium, aided/self-financed stream or campus), the programme title and H1 use the offering title plus the smallest qualifier that tells the siblings apart, e.g. "B.A. Economics (Tamil medium, Shift II)" (`lib/program-variant.ts`). Slugs do not change.
+- Hand-written landing, hub and guide titles go through `buildIndexableMetadata`, which applies the same 60/155 budgets (`fitPageTitle`, `fitPageDescription`): trailing " | " keyword segments and trailing sentences are dropped before anything is cut.
 
 **Data honesty**
 

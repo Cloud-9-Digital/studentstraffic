@@ -116,9 +116,9 @@ function UniversitiesExplorerFallback() {
         <div className="absolute inset-0 bg-gradient-to-r from-primary via-[#7ccfbf]/30 to-[#d95f38]/40" />
 
         <div className="container-shell relative py-3 md:py-4">
-          <h1 className="whitespace-nowrap text-center font-display text-[clamp(1.65rem,7.5vw,2.5rem)] font-bold tracking-tight text-white">
+          <p aria-hidden="true" className="whitespace-nowrap text-center font-display text-[clamp(1.65rem,7.5vw,2.5rem)] font-bold tracking-tight text-white">
             Browse universities
-          </h1>
+          </p>
         </div>
       </div>
 

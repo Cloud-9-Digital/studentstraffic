@@ -8,7 +8,10 @@ export function SectionHeading({
   description,
   align = "left",
   aside,
+  as: Heading = "h2",
 }: {
+  /** Use "h1" when this is the page's main heading. */
+  as?: "h1" | "h2";
   eyebrow?: string;
   title: string;
   description?: string;
@@ -29,9 +32,9 @@ export function SectionHeading({
               {eyebrow}
             </p>
           ) : null}
-          <h2 className="font-display text-heading text-4xl font-semibold tracking-tight md:text-5xl">
+          <Heading className="font-display text-heading text-4xl font-semibold tracking-tight md:text-5xl">
             {title}
-          </h2>
+          </Heading>
           {description ? (
             <p className="max-w-2xl text-base leading-7 text-muted-foreground">
               {description}

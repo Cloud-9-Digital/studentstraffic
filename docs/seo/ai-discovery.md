@@ -30,12 +30,16 @@ own contract in [`structured-data-contract.md`](./structured-data-contract.md).
   sections. It covers live catalogue counts, the machine-readable surfaces, URL patterns, catalogue
   hubs, destinations with university counts, popular guides, editorial standards and counselling
   contacts. URL templates are written with `{slug}` placeholders, not percent-encoded.
-- `/llms-full.txt` lists every published country, course, university and programme. Each programme
-  line links its page and uses the page's fee precedence (indicative range, USD, then official
-  currency). Its `unstable_cache` key must be bumped whenever the selected row shape changes,
-  because the data cache outlives deploys. It refreshes daily (`revalidate: 86400`) rather than on
-  publish: the shared tags are refused by publishers, and a per-publish refresh of this full read
-  would defeat the egress rules in `docs/university-pipeline-architecture.md`.
+- `/llms-full.txt` (rendered by `lib/llms-full-txt.ts`, tested in `tests/llms-full-txt.test.ts`)
+  keeps the header, evergreen pages, countries, courses and blog posts, and lists **one line per
+  published university**: name, city and country, type, main recognition or affiliation (first
+  recognition badge), published programme count, page URL and markdown URL. It deliberately has no
+  per-programme fees or programme lists, so it is not a bulk export of the dataset; the per-page
+  markdown views (`/university/{slug}.md`, `/{programme}.md`) stay available, so an agent can still
+  read any single page in full. It ends with the counselling contacts. Its `unstable_cache` keys
+  (`llms-full-catalog-entities-v2`, `llms-full-programme-counts-v1`) must be bumped whenever the
+  selected row shape changes, because the data cache outlives deploys. It refreshes daily
+  (`revalidate: 86400`) rather than on publish.
 
 ## Markdown views for agents (Markdown for Agents)
 
@@ -85,10 +89,61 @@ own contract in [`structured-data-contract.md`](./structured-data-contract.md).
   the search-box endpoint), `get_university_details` (markdown view) and `open_page` (university,
   country or root-level pages on this origin only). `window.__stWebMcp` holds the AbortController
   that unregisters them. No tool submits a form or sends personal data.
-- **Not published**: an RFC 9727 API catalog. The only unauthenticated read API is the mobile app's
-  `/api/mobile/v1/universities`, an internal contract for the app; `/api/` is disallowed in
-  robots.txt and there is no public API, OpenAPI spec or docs. Agents use the markdown views and
-  `/llms-full.txt` instead.
+- **Home page Link header** also carries `</.well-known/api-catalog>; rel="api-catalog"` while the
+  MCP server is enabled (`getHomeLinkHeader` drops it when `MCP_SERVER_ENABLED=false`).
+
+## Public MCP server (read-only, rate-limited)
+
+There is deliberately **no public REST/JSON data API and no OpenAPI spec**: the owner's rule is that
+nothing is public without limits and controls, and a REST mirror would be a bulk-export surface.
+`/api/` stays disallowed in robots.txt. The only machine surface beyond the pages is the MCP server.
+
+| Piece | Path | Notes |
+| --- | --- | --- |
+| MCP server | `/mcp` (`app/mcp/route.ts`) | `mcp-handler` 2.3.0 + `@modelcontextprotocol/server` 2.3.1; Streamable HTTP, stateless (2026-07-28 era natively, 2025-era clients through the SDK's stateless fallback), no auth, `maxSubscriptions: 0`, body ≤ 64 KB. |
+| Health | `/mcp/health` | `{status:"ok"}` (503 `disabled` when switched off); no data, no database. |
+| Server card | `/.well-known/mcp/server-card.json` and `/mcp/server-card` | `buildServerCard()`: SEP-2127 fields (`$schema`, `name: com.studentstraffic/catalog`, `version`, `remotes`) plus `serverInfo`, `transport`, `capabilities` and `tools` for checkers. |
+| API catalog (RFC 9727) | `/.well-known/api-catalog` | `application/linkset+json; profile="https://www.rfc-editor.org/info/rfc9727"`, HEAD sends `Link: <…>; rel="api-catalog"`. One entry: anchor `/mcp`, `service-desc` server card, `service-doc` `/ai-access`, `status` `/mcp/health`. |
+| Terms and setup | `/ai-access` | Free, read-only, rate-limited; attribution link required; no bulk scraping or redistribution; access may be revoked; usage is logged. In the sitemap and footer. |
+
+Code: tools in `lib/public-catalog-api.ts` (pure, tested with fake readers in
+`tests/public-catalog-api.test.ts`), MCP registration and usage logging in
+`lib/public-catalog-mcp.ts`, server binding, rate limits and log context in
+`lib/public-catalog-server.ts`, discovery documents in `lib/public-catalog-discovery.ts` and
+`lib/public-catalog-routes.ts`. Reads go through the cached catalogue readers
+(`getUniversityBySlug`, `getProgramsForUniversity`, `getProgramBySlug`, `getCountryBySlug`,
+`getFinderOptions`, `listFinderPrograms`) and the search-box ranking (`searchCatalogSuggestions` in
+`lib/search/suggestions.ts`, shared with `/api/suggestions`), so they hit the pages' cache entries.
+
+- **Tools** (all `readOnlyHint: true`, per-question lookups only): `search_catalog` (max 5 matches),
+  `get_university` (one markdown profile, capped at 60k characters), `get_programme` (one
+  programme), `list_programmes` (first 25, then "open the page for the full list"),
+  `find_programmes` (course **and** country required, both checked against `getFinderOptions()`;
+  optional city / USD ceiling; max 10). Inputs are slugs (`^[a-z0-9]+(?:-[a-z0-9]+)*$`, ≤200) or a
+  2–100 character query with at least two letters/digits; wildcards (`*`, `%`, `?`) and empty
+  queries are rejected. No tool can enumerate the catalogue.
+- **Output rules**: only published records, copied onto explicit shapes (no ids, research notes,
+  leads or users); fees always from `getProgramFeeLines` with their label (audience, seat quota or
+  "Approx. fees"); every result has the canonical page URL, the `/contact` counselling link and an
+  attribution line pointing to `/ai-access`.
+- **Rate limits**: per IP, 30 a minute and 500 a day (fixed windows, `MCP_RATE_LIMITS`), through
+  `rateLimit()` in `lib/rate-limit.ts` keyed `mcp:{minute|day}:{ipHash}`. Storage is Upstash Redis
+  when `UPSTASH_REDIS_REST_URL`/`UPSTASH_REDIS_REST_TOKEN` are set; otherwise a per-instance
+  in-memory counter that is **not durable** (resets per instance/cold start). The Upstash limiter
+  fails open on Redis errors. Over the limit: HTTP 429, `Retry-After`, JSON-RPC error `-32029`.
+- **Kill switch**: `MCP_SERVER_ENABLED` (default on when unset; `false`/`0`/`off`/`no` turns it off).
+  Off: `/mcp` answers 503 with a JSON-RPC error, `/mcp/health` 503, server card and API catalog 404,
+  and the home Link header and SKILL.md stop advertising the server. The discovery routes are
+  prerendered, so on Vercel set the variable and redeploy.
+- **Usage logging**: one JSON `console.log` line per tool call (`source: "mcp"`,
+  `event: "mcp_tool_call"`, tool, ok/status, `latencyMs`, `resultChars`, `resultItems`, `argChars`,
+  salted `ipHash`, user agent ≤200 chars) and one per rate-limited request (`mcp_rate_limited`).
+  Arguments are never logged. The IP hash salt is `MCP_LOG_SALT`, falling back to `AUTH_SECRET`/`NEXTAUTH_SECRET`.
+  No database table: the schema has no analytics/events table to reuse.
+- Bump `PUBLIC_CATALOG_VERSION` when a tool or result shape changes; the server card and
+  `serverInfo` both read it.
+- Not published: `/.well-known/ai-catalog.json` (the SEP-2127 domain catalog); DNS-AID is managed
+  in Cloudflare.
 
 ## Server HTML must carry the facts
 
@@ -129,9 +184,9 @@ filters) because the desktop programme menu rendered its panels up front. `Progr
 mounts its links on first open, like the countries menu. `/budget` renders one card per course
 with a link per budget ceiling instead of a card per guide (about 470).
 
-`/llms-full.txt` splits its data cache into catalogue entities and programme tuples:
-`unstable_cache` silently refuses entries over 2 MB, and the single entry had reached 3 MB, so every
-request re-read the full catalogue from Neon.
+`/llms-full.txt` splits its data cache into catalogue entities and per-university programme counts:
+`unstable_cache` silently refuses entries over 2 MB, and the old single entry (with every programme
+and fee) had reached 3 MB, so every request re-read the full catalogue from Neon.
 
 ## App links (search results open in the mobile app)
 
@@ -167,6 +222,11 @@ curl -s -H 'Accept: text/markdown' localhost:3000/university/jamia-millia-islami
 curl -sI -H 'Accept: text/markdown' localhost:3000/countries/georgia
 curl -sI localhost:3000/ | grep -i '^link'
 curl -s localhost:3000/.well-known/agent-skills/index.json
+curl -sI localhost:3000/.well-known/api-catalog
+curl -s localhost:3000/.well-known/mcp/server-card.json
+curl -s localhost:3000/mcp -H 'Content-Type: application/json' \
+  -H 'Accept: application/json, text/event-stream' \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
 ```
 
 On a university page, check for one page-level JSON-LD graph, one `<h1>`, every FAQ answer in the

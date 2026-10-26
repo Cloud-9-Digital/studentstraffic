@@ -31,9 +31,9 @@ export async function generateMetadata({
   const page = parseIndiaMbbsPage(pageParam);
 
   const base = buildIndexableMetadata({
-    title: "India MBBS Colleges 2026 | Government and Private Medical Colleges by State",
+    title: "MBBS Colleges in India 2026: Government & Private",
     description:
-      "Browse MBBS colleges in India separately from our abroad catalogue. Filter government and private colleges by state, management type, seats, and college name using NMC-sourced data.",
+      "Find government and private MBBS colleges in India by state, management type and annual seats, using National Medical Commission (NMC) data.",
     path: "/india-mbbs-colleges",
     keywords: [
       "India MBBS colleges",
@@ -115,9 +115,9 @@ function IndiaMbbsFallback() {
 
         <div className="container-shell relative py-10 pb-8 md:py-16 md:pb-10">
           <div className="mb-7 space-y-3 text-center md:mb-9">
-            <h1 className="font-display text-4xl font-semibold leading-[1.15] tracking-tight text-white md:text-5xl">
+            <p aria-hidden="true" className="font-display text-4xl font-semibold leading-[1.15] tracking-tight text-white md:text-5xl">
               Browse MBBS colleges in India
-            </h1>
+            </p>
             <p className="mx-auto max-w-2xl text-sm leading-6 text-white/60 md:text-base md:leading-7">
               Filter MBBS colleges by state, management type, seats,
               and college name.

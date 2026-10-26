@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { CheckCircle2, Shield, FileCheck, Users, RefreshCw, AlertCircle, Calendar } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
@@ -22,7 +23,7 @@ import {
 export const metadata: Metadata = buildIndexableMetadata({
   title: "Editorial Policy & Content Standards | Students Traffic",
   description:
-    "Learn how Students Traffic verifies MBBS abroad university information, fees, admissions data, and student reviews. Our commitment to accuracy and transparency for Indian students.",
+    "How Students Traffic checks university facts, fees, admissions data and student reviews against official sources before publishing, and how we fix errors.",
   path: "/editorial-policy",
 });
 
@@ -75,9 +76,9 @@ const editorialProcess = [
 const transparencyCommitments = [
   "We clearly label sponsored content and maintain editorial independence",
   "We disclose when university information is pending verification",
-  "We publish correction notices when significant errors are found",
+  "We correct significant errors promptly and flag the change on the page — see our corrections policy",
   "We don't alter student reviews except for language or privacy concerns",
-  "We maintain a public record of major content updates and changes",
+  "Every catalogue page shows the date it was last updated",
 ];
 
 export default function EditorialPolicyPage() {
@@ -268,6 +269,13 @@ export default function EditorialPolicyPage() {
               </li>
             ))}
           </ul>
+          <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+            Spotted an error? Report it and see how we handle fixes on our{" "}
+            <Link href="/corrections" className="font-medium text-accent hover:underline">
+              corrections page
+            </Link>
+            .
+          </p>
         </div>
       </section>
 
@@ -306,21 +314,21 @@ export default function EditorialPolicyPage() {
             Questions About Our Editorial Standards?
           </h2>
           <p className="mt-4 text-base text-accent-foreground/80">
-            We're committed to transparency. If you have questions about how we verify information or want to report an error, please reach out to us.
+            We&apos;re committed to transparency. If you have questions about how we verify information or want to report an error, please reach out to us.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-            <a
+            <Link
               href="/contact"
               className="inline-flex items-center justify-center rounded-lg bg-background px-6 py-3 font-semibold text-foreground shadow-lg transition hover:bg-background/90"
             >
               Contact Our Team
-            </a>
-            <a
-              href="mailto:editorial@studentstraffic.com"
+            </Link>
+            <Link
+              href="/corrections"
               className="inline-flex items-center justify-center rounded-lg border-2 border-accent-foreground/20 px-6 py-3 font-semibold text-accent-foreground transition hover:bg-accent-foreground/10"
             >
               Report an Error
-            </a>
+            </Link>
           </div>
         </div>
       </section>

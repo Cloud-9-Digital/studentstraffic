@@ -8,7 +8,9 @@ import {
 
 import {
   HOME_LINK_HEADER,
+  getHomeLinkHeader,
   getHomeLinkHeaderRule,
+  isMcpServerEnabled,
   getMarkdownRewrites,
   requestsMarkdown,
 } from "@/lib/agent-discovery";
@@ -18,7 +20,7 @@ const nextConfig = {
     return getMarkdownRewrites();
   },
   async headers() {
-    return [getHomeLinkHeaderRule()];
+    return [getHomeLinkHeaderRule(true)];
   },
 };
 
@@ -98,9 +100,22 @@ test("the home page HTML advertises agent resources with RFC 8288 links", async 
   assert.match(HOME_LINK_HEADER, /<\/llms\.txt>; rel="describedby"/);
   assert.match(HOME_LINK_HEADER, /<\/\.well-known\/agent-skills\/index\.json>; rel="describedby"/);
   assert.match(HOME_LINK_HEADER, /<\/index\.md>; rel="alternate"; type="text\/markdown"/);
+  assert.match(HOME_LINK_HEADER, /<\/\.well-known\/api-catalog>; rel="api-catalog"/);
 
   const markdown = await rewriteFor("/", "text/markdown");
   assert.equal(markdown.response.headers.get("link"), null);
   const other = await rewriteFor("/about", BROWSER_ACCEPT);
   assert.equal(other.response.headers.get("link"), null);
+});
+
+test("the api-catalog link follows the MCP kill switch", () => {
+  assert.equal(isMcpServerEnabled(undefined), true);
+  assert.equal(isMcpServerEnabled("true"), true);
+  assert.equal(isMcpServerEnabled("false"), false);
+  assert.equal(isMcpServerEnabled(" FALSE "), false);
+  assert.equal(isMcpServerEnabled("0"), false);
+  assert.match(getHomeLinkHeader(true), /rel="api-catalog"/);
+  assert.doesNotMatch(getHomeLinkHeader(false), /api-catalog/);
+  assert.match(getHomeLinkHeader(false), /<\/llms\.txt>; rel="describedby"/);
+  assert.equal(getHomeLinkHeaderRule(false).headers[0].value, getHomeLinkHeader(false));
 });

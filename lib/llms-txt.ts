@@ -53,7 +53,7 @@ export async function buildLlmsTxt() {
     `${siteConfig.name} is a study-abroad and university catalogue for Indian and international students. It publishes university profiles and programme pages across study destinations, including India, with fees, duration, teaching language, admission route, recognition and approvals, and FAQs. Facts are researched from official university, regulator and government sources, and pages show their last review date. Free admission counselling is available on every page.`,
     "",
     "## Machine-readable access",
-    `- [Full catalogue index](${absoluteUrl("/llms-full.txt")}): every published country, course, university and programme with fees, duration and language, plus blog posts`,
+    `- [Full catalogue index](${absoluteUrl("/llms-full.txt")}): every published country and course, one line per university (location, type, main recognition, programme count, page and markdown URLs), plus blog posts`,
     `- Markdown views: send \`Accept: text/markdown\` to the home page, a university, programme, country or course-guide URL, or append \`.md\` to it, e.g. [Jamia Millia Islamia](${absoluteUrl("/university/jamia-millia-islamia.md")}) or [B.Tech Computer Engineering at JMI](${absoluteUrl("/jmi-btech-computer-engineering.md")})`,
     `- [Agent skills index](${absoluteUrl("/.well-known/agent-skills/index.json")}): a SKILL.md on finding universities, programmes and fees and reading fee labels`,
     `- [Sitemap index](${absoluteUrl("/sitemap.xml")}), [university sitemap](${absoluteUrl("/universities/sitemap/0.xml")}), [programme sitemap](${absoluteUrl("/programs/sitemap/0.xml")})`,

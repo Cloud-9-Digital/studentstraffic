@@ -37,6 +37,12 @@ function TableCell({ children, ...props }: ComponentPropsWithoutRef<"td">) {
   );
 }
 
+// The page hero owns the only <h1>. Some posts open with a "# Title" line, which
+// rendered a second H1 in the server HTML, so markdown H1s render as H2s.
+function DemotedHeading({ children, ...props }: ComponentPropsWithoutRef<"h1">) {
+  return <h2 {...props}>{children}</h2>;
+}
+
 export function MarkdownContent({ content }: { content: string }) {
   return (
     <div className="prose prose-slate max-w-none
@@ -59,7 +65,12 @@ export function MarkdownContent({ content }: { content: string }) {
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         rehypePlugins={[rehypeSlug]}
-        components={{ table: ScrollableTable, th: TableHeaderCell, td: TableCell }}
+        components={{
+          h1: DemotedHeading,
+          table: ScrollableTable,
+          th: TableHeaderCell,
+          td: TableCell,
+        }}
       >
         {content}
       </ReactMarkdown>

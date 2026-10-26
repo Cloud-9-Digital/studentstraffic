@@ -40,7 +40,9 @@ Source: `siteConfig` in `lib/constants.ts`.
 Fields include:
 
 - `@id`: `https://studentstraffic.com/#organization`;
-- `name`, `alternateName`, `url`, `logo`, `image`;
+- `name`, `legalName`, `alternateName`, `url`, `logo`, `image`;
+- `address` as a `PostalAddress` (street, locality, region, postal code, country code) from
+  `siteConfig.address`, the same office address shown on `/about`, `/contact` and in the footer;
 - support `email`, `telephone`, `contactPoint` and `areaServed`;
 - site description.
 
@@ -57,6 +59,11 @@ Fields include:
 
 The governed content author is emitted with the site-wide graph. Author identity must come from
 the maintained author configuration; do not create a person solely to fill a schema field.
+
+The `Article`/`WebPage` `author` must name the person in the page's visible byline. University
+and programme pages show the mapped author from `lib/university-authors.ts`, falling back to the
+governed author, and pass the same author to the schema (`getAuthorReference`); a non-governed
+author is emitted as an inline `Person` whose `@id` matches their `/author/{slug}` profile page.
 
 ## Country-page graph
 

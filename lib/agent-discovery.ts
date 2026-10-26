@@ -78,22 +78,42 @@ export function getMarkdownRewrites(): {
 }
 
 /**
+ * Kill switch for the public MCP server (/mcp), its server card and its API
+ * catalog entry. Enabled unless MCP_SERVER_ENABLED is "false" (or "0"/"off").
+ * Kept here, import-free, because next.config.ts reads it for the home page
+ * Link header. On Vercel an env change takes effect on the next deployment.
+ */
+export function isMcpServerEnabled(value = process.env.MCP_SERVER_ENABLED) {
+  return !["false", "0", "off", "no"].includes((value ?? "").trim().toLowerCase());
+}
+
+/**
  * RFC 8288 Link header for the home page HTML: where agents find the site
- * description (llms.txt), the agent skills index and the markdown view.
+ * description (llms.txt), the agent skills index, the markdown view and the
+ * RFC 9727 API catalog (public REST API and MCP server).
  * Relative targets resolve against https://www.studentstraffic.com; the apex
  * domain is a Vercel 307 to www that never reaches this app.
  */
-export const HOME_LINK_HEADER = [
+const HOME_LINKS = [
   '</llms.txt>; rel="describedby"; type="text/plain"',
   '</.well-known/agent-skills/index.json>; rel="describedby"; type="application/json"',
   '</index.md>; rel="alternate"; type="text/markdown"',
-].join(", ");
+];
 
-export function getHomeLinkHeaderRule() {
+/** The API catalog lists only the MCP server, so it is advertised only while that is on. */
+const API_CATALOG_LINK = '</.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json"';
+
+export function getHomeLinkHeader(mcpEnabled = isMcpServerEnabled()) {
+  return [...HOME_LINKS, ...(mcpEnabled ? [API_CATALOG_LINK] : [])].join(", ");
+}
+
+export const HOME_LINK_HEADER = getHomeLinkHeader(true);
+
+export function getHomeLinkHeaderRule(mcpEnabled = isMcpServerEnabled()) {
   return {
     source: "/",
     // The markdown view sends its own canonical Link.
     missing: acceptsMarkdown,
-    headers: [{ key: "Link", value: HOME_LINK_HEADER }],
+    headers: [{ key: "Link", value: getHomeLinkHeader(mcpEnabled) }],
   };
 }

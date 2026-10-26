@@ -20,8 +20,11 @@ import {
 const path = "/guides/neet-2026-marks-vs-rank";
 const title =
   "NEET 2026 Marks vs Rank: Expected Rank Range After Provisional Answer Key";
+// Search title within the 60-character budget (before " | Students Traffic");
+// the page H1 and Article headline keep the full title.
+const metaTitle = "NEET 2026 Marks vs Rank: Expected Rank Range";
 const description =
-  "A May 12, 2026 marks-vs-rank planning guide based on NEET's provisional answer key. Treat estimates as historical context and verify current results with NTA.";
+  "A May 12, 2026 marks-vs-rank guide based on NEET's provisional answer key. Treat estimates as historical context and verify current results with NTA.";
 const publishedAt = "2026-05-04";
 const updatedAt = "2026-05-12";
 const reviewedAt = "May 12, 2026, 10:54 AM IST";
@@ -30,11 +33,11 @@ const ogImage = getOgImageUrl(path);
 const authorUrl = absoluteUrl(`/authors/${contentAuthorSlug}`);
 
 export const metadata: Metadata = {
-  title: { absolute: `${title} | Students Traffic` },
+  title: { absolute: `${metaTitle} | Students Traffic` },
   description,
   alternates: { canonical: canonicalUrl },
   openGraph: {
-    title,
+    title: metaTitle,
     description,
     type: "article",
     url: canonicalUrl,
@@ -48,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title,
+    title: metaTitle,
     description,
     images: [ogImage],
   },

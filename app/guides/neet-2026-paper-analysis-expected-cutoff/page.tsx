@@ -26,8 +26,11 @@ import {
 const path = "/guides/neet-2026-paper-analysis-expected-cutoff";
 const title =
   "NEET 2026 Answer Key Live: Official Provisional Key, OMR Challenge, Expected Cut Off";
+// Search title within the 60-character budget (before " | Students Traffic");
+// the page H1 and Article headline keep the full title.
+const metaTitle = "NEET 2026 Answer Key: Provisional Key & Expected Cut-Off";
 const description =
-  "A May 12, 2026 snapshot of the NEET provisional answer key, OMR challenge, and expected cut-off context. Check the NTA website for current results and notices.";
+  "A May 12, 2026 snapshot of the NEET provisional answer key, OMR challenge and expected cut-off. Check the NTA website for current results and notices.";
 const publishedAt = "2026-05-03";
 const updatedAt = "2026-05-12";
 const reviewedAt = "May 12, 2026, 10:54 AM IST";
@@ -38,13 +41,13 @@ const canonicalUrl = absoluteUrl(path);
 const authorUrl = absoluteUrl(`/authors/${contentAuthorSlug}`);
 
 export const metadata: Metadata = {
-  title: { absolute: `${title} | Students Traffic` },
+  title: { absolute: `${metaTitle} | Students Traffic` },
   description,
   alternates: {
     canonical: canonicalUrl,
   },
   openGraph: {
-    title,
+    title: metaTitle,
     description,
     type: "article",
     url: canonicalUrl,
@@ -65,7 +68,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title,
+    title: metaTitle,
     description,
     images: [coverUrl],
   },

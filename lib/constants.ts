@@ -14,12 +14,29 @@ export const siteConfig = {
   email: "hello@studentstraffic.com",
   phone: "+91 91761 62888",
   whatsappNumber: "919176162888",
+  // Registered company name and office address, supplied by the owner
+  // (2026-10-26). Read everywhere from here: /about, /contact, the footer and
+  // the Organization structured data.
+  legalName: "Students Traffic",
+  address: {
+    streetAddress: "46, Sri Sakthi Nagar",
+    addressLocality: "Tenkasi",
+    addressRegion: "Tamil Nadu",
+    postalCode: "627811",
+    addressCountry: "IN",
+    countryName: "India",
+  },
   // The app is published under the Cloud 9 Digital developer account.
   operator: "Cloud 9 Digital",
   playStoreUrl: "https://play.google.com/store/apps/details?id=com.studentstraffic.app",
   // Set once the iOS app is live; the App Store badge stays hidden until then.
   appStoreUrl: null as string | null,
 };
+
+/** One-line office address, e.g. "46, Sri Sakthi Nagar, Tenkasi, Tamil Nadu 627811, India". */
+export function formatSiteAddress(address = siteConfig.address) {
+  return `${address.streetAddress}, ${address.addressLocality}, ${address.addressRegion} ${address.postalCode}, ${address.countryName}`;
+}
 
 export const maxSitemapUrls = 50_000;
 

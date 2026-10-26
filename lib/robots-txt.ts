@@ -56,7 +56,8 @@ const SITEMAPS = [
   "/universities/sitemap/0.xml",
   "/programs/sitemap/0.xml",
   "/compare/sitemap/0.xml",
-  "/news-sitemap.xml",
+  // /news-sitemap.xml is left out while it lists no articles (growth audit
+  // 2026-10-26); add it back once news posts are published.
 ];
 
 function group(userAgents: string[], disallow: string[]) {

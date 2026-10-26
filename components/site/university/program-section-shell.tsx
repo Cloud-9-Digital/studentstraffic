@@ -31,6 +31,7 @@ export function ProgramSectionShell({
   logoInitials,
   lastVerifiedAt,
   author,
+  programDisplayName,
 }: {
   initialSection: ProgramSection | null;
   programSlug: string;
@@ -45,6 +46,7 @@ export function ProgramSectionShell({
   logoInitials: string;
   lastVerifiedAt: string;
   author?: Author | null;
+  programDisplayName?: string;
 }) {
   const content = initialSection === "admissions"
     ? (
@@ -89,6 +91,7 @@ export function ProgramSectionShell({
       initialSection={initialSection}
       programSlug={programSlug}
       courseShortName={program.course.shortName}
+      programDisplayName={programDisplayName}
       courseSlug={program.course.slug}
       universityName={university.name}
       universitySlug={university.slug}

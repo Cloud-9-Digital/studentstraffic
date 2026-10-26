@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Mail, Phone } from "lucide-react";
+import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
 
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { TrackedContactLink } from "@/components/site/tracked-contact-link";
 import { useNavCourses } from "@/components/app/nav-courses-client-provider";
-import { siteConfig } from "@/lib/constants";
+import { formatSiteAddress, siteConfig } from "@/lib/constants";
 import { useNavCountries } from "@/components/app/nav-countries-client-provider";
 
 export function SiteFooter() {
@@ -99,6 +99,10 @@ export function SiteFooter() {
                 <Mail className="size-3.5 shrink-0" />
                 {siteConfig.email}
               </a>
+              <p className="flex items-start gap-2.5 text-sm text-white/75">
+                <MapPin className="mt-0.5 size-3.5 shrink-0" />
+                <span>{formatSiteAddress()}</span>
+              </p>
             </div>
             <div className="flex flex-wrap gap-3">
               <a
@@ -193,6 +197,8 @@ export function SiteFooter() {
                 { label: "About Us", href: "/about" },
                 { label: "How We Work", href: "/methodology" },
                 { label: "Editorial Policy", href: "/editorial-policy" },
+                { label: "Corrections", href: "/corrections" },
+                { label: "AI Assistant Access", href: "/ai-access" },
                 { label: "Privacy Policy", href: "/privacy" },
                 { label: "Terms of Service", href: "/terms" },
               ].map((item) => (

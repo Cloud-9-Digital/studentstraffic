@@ -44,6 +44,7 @@ export default function MethodologyPage() {
     <section className="section-space">
       <div className="container-shell space-y-12">
         <SectionHeading
+          as="h1"
           eyebrow="Methodology"
           title="How the catalog is assembled"
           description="Students Traffic turns a wide range of university and destination details into a more comparable catalog so students can decide faster."

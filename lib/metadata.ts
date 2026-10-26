@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 
 import { env } from "@/lib/env";
 import { siteConfig } from "@/lib/constants";
+import {
+  DESCRIPTION_MAX_CHARS,
+  TITLE_MAX_CHARS,
+  truncateToWordBoundary,
+} from "@/lib/university-metadata";
 
 const defaultRobots = {
   index: true,
@@ -44,20 +49,68 @@ export function getOgImageUrl(path = "/") {
   return absoluteUrl(getOgImagePath(path));
 }
 
+const BRAND_SUFFIX = ` | ${siteConfig.name}`;
+
+/**
+ * Keeps hand-written landing, hub and guide titles inside the same budget as
+ * the catalogue builders (lib/university-metadata.ts): at most 60 characters
+ * before the " | Students Traffic" template. Trailing " | " segments are
+ * dropped first (they are keyword lists), then the remainder is cut at a word
+ * boundary. A title that already names the brand keeps it as its suffix.
+ */
+export function fitPageTitle(rawTitle: string, max = TITLE_MAX_CHARS) {
+  let title = rawTitle.trim().replace(/\s+/g, " ");
+  const brandIndex = title.toLocaleLowerCase().lastIndexOf(BRAND_SUFFIX.toLocaleLowerCase());
+  if (brandIndex > 0 && brandIndex + BRAND_SUFFIX.length === title.length) {
+    title = title.slice(0, brandIndex);
+  }
+
+  const segments = title.split(" | ");
+  while (segments.length > 1 && segments.join(" | ").length > max) {
+    segments.pop();
+  }
+  return truncateToWordBoundary(segments.join(" | "), max);
+}
+
+function namesBrand(title: string) {
+  return title.toLocaleLowerCase().includes(siteConfig.name.toLocaleLowerCase());
+}
+
+/**
+ * Keeps meta descriptions inside the 155-character snippet budget by dropping
+ * whole trailing sentences; only a single over-long sentence is cut.
+ */
+export function fitPageDescription(rawDescription: string) {
+  const description = rawDescription.trim().replace(/\s+/g, " ");
+  if (description.length <= DESCRIPTION_MAX_CHARS) return description;
+
+  const sentences = description.split(/(?<=[.!?])\s+/);
+  let out = "";
+  for (const sentence of sentences) {
+    const candidate = out ? `${out} ${sentence}` : sentence;
+    if (candidate.length > DESCRIPTION_MAX_CHARS) break;
+    out = candidate;
+  }
+  return out || truncateToWordBoundary(description, DESCRIPTION_MAX_CHARS);
+}
+
 export function buildIndexableMetadata(
   input: IndexableMetadataInput
 ): Metadata {
   const imageUrl = getOgImageUrl(input.path);
-  const title = input.title.trim();
-  const hasBrandInTitle = title
-    .toLocaleLowerCase()
-    .includes(siteConfig.name.toLocaleLowerCase());
+  // The root layout appends " | Students Traffic" to every page title. A title
+  // that names the brand elsewhere ("About Students Traffic | …") is rendered
+  // as-is instead, so it gets the whole rendered budget.
+  const fitted = fitPageTitle(input.title);
+  const keepsBrand = namesBrand(fitted);
+  const title = keepsBrand
+    ? fitPageTitle(input.title, TITLE_MAX_CHARS + BRAND_SUFFIX.length)
+    : fitted;
+  const description = fitPageDescription(input.description);
 
   return {
-    // The root layout applies the brand template to ordinary page titles.
-    // Preserve titles that already include the brand without duplicating it.
-    title: hasBrandInTitle ? { absolute: title } : title,
-    description: input.description,
+    title: keepsBrand ? { absolute: title } : title,
+    description,
     keywords: input.keywords,
     category: input.category ?? "education",
     alternates: {
@@ -73,7 +126,7 @@ export function buildIndexableMetadata(
       siteName: siteConfig.name,
       url: absoluteUrl(input.path),
       title,
-      description: input.description,
+      description,
       images: [
         {
           url: imageUrl,
@@ -86,7 +139,7 @@ export function buildIndexableMetadata(
     twitter: {
       card: "summary_large_image",
       title,
-      description: input.description,
+      description,
       images: [imageUrl],
     },
   };

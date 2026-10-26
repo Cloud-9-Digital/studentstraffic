@@ -68,6 +68,7 @@ import { getFinderSort } from "@/lib/filters";
 import { finderCityCondition, matchesFinderCity, normalizeFinderCity } from "@/lib/finder-city";
 import { applyUniversityContentOverride } from "@/lib/data/university-content-overrides";
 import { getUniversityDisplayName } from "@/lib/university-presentation";
+import type { ProgramVariantSource } from "@/lib/program-variant";
 type CatalogSnapshot = {
   countries: Country[];
   courses: Course[];
@@ -1548,13 +1549,57 @@ function mapFinderProgramRow(row: FinderProgramRow): FinderProgram {
 async function selectFinderProgramsFromDatabase(
   whereClause?: ReturnType<typeof and>,
   limit?: number,
-  options: { includeMediumNote?: boolean; includeAdmissionsDetails?: boolean } = {},
+  options: {
+    includeMediumNote?: boolean;
+    includeAdmissionsDetails?: boolean;
+    /**
+     * Replace the long university, country and course prose/JSON columns with
+     * empty values. They are repeated on every programme row, so a city with
+     * ~2,000 programmes returned ~30 MB and the Neon HTTP response was cut off
+     * ("terminated"). Use for listings that only need names, slugs, city,
+     * type, recognition and the offering's own fields.
+     */
+    omitLongContent?: boolean;
+  } = {},
 ): Promise<FinderProgram[] | null> {
   const db = getDb();
 
   if (!db) {
     return null;
   }
+
+  const emptyText = sql<string>`''`;
+  const emptyJsonArray = sql<never[]>`'[]'::jsonb`;
+  const emptyTextArray = sql<string[]>`'{}'::text[]`;
+  const longContentColumns = options.omitLongContent
+    ? {
+        countrySummary: emptyText,
+        countryWhyStudentsChooseIt: emptyText,
+        countryClimate: emptyText,
+        countryMetaTitle: emptyText,
+        countryMetaDescription: emptyText,
+        courseSummary: emptyText,
+        courseMetaTitle: emptyText,
+        courseMetaDescription: emptyText,
+        universitySummary: emptyText,
+        universityCampusLifestyle: emptyText,
+        universityCityProfile: emptyText,
+        universityClinicalExposure: emptyText,
+        universityHostelOverview: emptyText,
+        universityIndianFoodSupport: emptyText,
+        universitySafetyOverview: emptyText,
+        universityStudentSupport: emptyText,
+        universityWhyChoose: emptyJsonArray,
+        universityThingsToConsider: emptyJsonArray,
+        universityBestFitFor: emptyJsonArray,
+        universityTeachingHospitals: emptyTextArray,
+        universityFaq: emptyJsonArray,
+        universitySimilarUniversitySlugs: emptyTextArray,
+        universityResearchSources: emptyJsonArray,
+        universityResearchNotes: sql<string | null>`null`,
+        universityAdmissionsContent: sql<null>`null`,
+      }
+    : {};
 
   const query = db
     .select({
@@ -1606,6 +1651,7 @@ async function selectFinderProgramsFromDatabase(
       universityResearchSources: universitiesTable.researchSources,
       universityResearchNotes: universitiesTable.researchNotes,
       universityAdmissionsContent: universitiesTable.admissionsContent,
+      ...longContentColumns,
       offeringSlug: programOfferingsTable.slug,
       offeringTitle: programOfferingsTable.title,
       offeringDurationYears: programOfferingsTable.durationYears,
@@ -2389,6 +2435,8 @@ export async function getProgramsForCity(citySlug: string) {
       eq(countriesTable.slug, city.countrySlug),
       eq(universitiesTable.city, city.name),
     ),
+    undefined,
+    { omitLongContent: true },
   );
 
   if (databasePrograms) {
@@ -2746,4 +2794,50 @@ export async function getLandingPageContext(page: LandingPage) {
     featuredPrograms,
     allPrograms: finderPrograms,
   };
+}
+
+/**
+ * Light read of the published offerings that share a programme's university
+ * and course (the programme itself included), used to give sibling pages
+ * distinct titles and H1s (see lib/program-variant.ts). Selects only the
+ * fields that tell siblings apart, never the university row.
+ */
+export async function getProgramSiblingVariants(
+  programSlug: string,
+): Promise<ProgramVariantSource[]> {
+  "use cache: remote";
+
+  cacheLife("catalog");
+  cacheTag("catalog");
+  cacheTag(`program:${programSlug}`);
+
+  const db = getDb();
+  if (!db) return [];
+
+  try {
+    const rows = await db
+      .select({
+        slug: programOfferingsTable.slug,
+        title: programOfferingsTable.title,
+        medium: programOfferingsTable.medium,
+        overview: sql<string | null>`${programOfferingsTable.admissionsContent}->>'overview'`,
+        restrictions: sql<string[] | null>`${programOfferingsTable.audienceEligibility}->'restrictions'`,
+      })
+      .from(programOfferingsTable)
+      .where(
+        and(
+          eq(programOfferingsTable.published, true),
+          sql`(${programOfferingsTable.universityId}, ${programOfferingsTable.courseId}) = (select po.university_id, po.course_id from program_offerings po where po.slug = ${programSlug} limit 1)`,
+        ),
+      )
+      .orderBy(asc(programOfferingsTable.slug));
+
+    return rows.map((row) => ({
+      ...row,
+      restrictions: Array.isArray(row.restrictions) ? row.restrictions : [],
+    }));
+  } catch (error) {
+    console.error(`[catalog] sibling variants failed for ${programSlug}`, error);
+    return [];
+  }
 }

@@ -46,19 +46,9 @@ export function ReviewsHero({
         aria-hidden
       />
 
-      <div className="container-shell relative py-10 pb-8 md:py-16 md:pb-10">
-        <div className="mb-7 space-y-3 text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
-            From students, not agents
-          </p>
-          <h1 className="font-display text-4xl font-semibold leading-[1.15] tracking-tight text-white md:text-5xl">
-            Student reviews
-          </h1>
-          <p className="mx-auto max-w-lg text-sm leading-6 text-white/60 md:text-base md:leading-7">
-            Real experiences from students studying medicine abroad —
-            academics, hostels, food, clinical training, and life on campus.
-          </p>
-        </div>
+      {/* The page heading is server-rendered above this band (ReviewsIntro) so
+          the H1 is in the HTML whether or not this client component renders. */}
+      <div className="container-shell relative pb-8 pt-2 md:pb-10">
 
         <div className="mx-auto flex max-w-xl gap-2">
           <div className="relative flex-1">
