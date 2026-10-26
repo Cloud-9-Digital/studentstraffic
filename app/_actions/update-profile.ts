@@ -6,6 +6,7 @@ import { z } from "zod";
 import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { users } from "@/lib/db/schema";
+import { resolveDbUserId } from "@/lib/server-session";
 
 const schema = z.object({
   name: z
@@ -34,7 +35,7 @@ export type ProfileState = { status: "idle" | "success" | "error"; message?: str
 
 export async function updateProfileAction(_: ProfileState, formData: FormData): Promise<ProfileState> {
   const session = await auth();
-  if (!session?.user?.id) return { status: "error", message: "Not authenticated." };
+  if (!session?.user?.email) return { status: "error", message: "Not authenticated." };
 
   const parsed = schema.safeParse({
     name: formData.get("name"),
@@ -51,6 +52,10 @@ export async function updateProfileAction(_: ProfileState, formData: FormData): 
   const db = getDb();
   if (!db) return { status: "error", message: "Service unavailable. Please try again." };
 
+  // session.user.id is "1" for admin sessions; resolve the real user by email.
+  const userId = await resolveDbUserId(session.user.email);
+  if (!userId) return { status: "error", message: "Not authenticated." };
+
   await db
     .update(users)
     .set({
@@ -61,7 +66,7 @@ export async function updateProfileAction(_: ProfileState, formData: FormData): 
       preferredCountries: parsed.data.preferredCountries ?? [],
       updatedAt: new Date(),
     })
-    .where(eq(users.id, session.user.id));
+    .where(eq(users.id, userId));
 
   return { status: "success", message: "Profile updated successfully." };
 }

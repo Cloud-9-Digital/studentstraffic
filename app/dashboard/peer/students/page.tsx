@@ -1,13 +1,20 @@
 import { redirect } from "next/navigation";
-import { Users, Phone, PhoneOff, PhoneMissed, Clock } from "lucide-react";
-import { count, desc, eq } from "drizzle-orm";
+import { Clock, Phone, PhoneMissed, PhoneOff, Users } from "lucide-react";
+import { count, desc, eq, sql } from "drizzle-orm";
 
 import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { env } from "@/lib/env";
-import { peerCallSessions, peerRequests, studentPeers, users } from "@/lib/db/schema";
-import { resolveDbUserId } from "@/lib/server-session";
+import { peerCallSessions, studentPeers, universities, users } from "@/lib/db/schema";
+import { getDashboardViewer } from "@/lib/dashboard/nav-counts";
 import { DataPagination } from "@/components/ui/data-pagination";
+import { DashboardPage, EmptyState, PageHeader, Section, SectionList } from "@/components/dashboard/ui";
+import { loadGuideStudents, toSafeGuideStudentRow } from "@/lib/dashboard/guide-students-data";
+import { formatGuideDate } from "@/lib/dashboard/guide-students";
+import { peerSafeText } from "@/lib/peer-contact-policy";
+import { StudentsList } from "./students-list";
+
+export const metadata = { title: "My students | Dashboard" };
 
 const HISTORY_PER_PAGE = 10;
 
@@ -31,9 +38,7 @@ function callDuration(start: Date | null, end: Date | null): string | null {
   if (!start || !end) return null;
   const secs = Math.round((end.getTime() - start.getTime()) / 1000);
   if (secs < 60) return `${secs}s`;
-  const m = Math.floor(secs / 60);
-  const s = secs % 60;
-  return `${m}m ${s}s`;
+  return `${Math.floor(secs / 60)}m ${secs % 60}s`;
 }
 
 export default async function PeerStudentsPage({
@@ -47,12 +52,14 @@ export default async function PeerStudentsPage({
   const db = getDb();
   if (!db) return <p className="text-sm text-[#6b7280]">Service temporarily unavailable.</p>;
 
-  const userId = await resolveDbUserId(session.user.email);
-  if (!userId) redirect("/login");
+  const viewer = await getDashboardViewer(session.user.email);
+  if (!viewer) redirect("/login");
+  const userId = viewer.userId;
 
   const [peer] = await db
-    .select({ id: studentPeers.id })
+    .select({ id: studentPeers.id, status: studentPeers.status, universityName: universities.name })
     .from(studentPeers)
+    .innerJoin(universities, eq(studentPeers.universityId, universities.id))
     .where(eq(studentPeers.peerUserId, userId))
     .limit(1);
 
@@ -60,217 +67,105 @@ export default async function PeerStudentsPage({
 
   const params = await searchParams;
   const rawPage = Array.isArray(params.page) ? params.page[0] : params.page;
-  const historyPage = Math.max(1, parseInt(rawPage ?? "1", 10));
+  const historyPage = Math.max(1, parseInt(rawPage ?? "1", 10) || 1);
   const historyOffset = (historyPage - 1) * HISTORY_PER_PAGE;
 
-  const [students, callHistory, historyCountResult] = await Promise.all([
-    db
-      .select({
-        id: peerRequests.id,
-        fullName: peerRequests.fullName,
-        userState: peerRequests.userState,
-        userCity: peerRequests.userCity,
-        courseInterest: peerRequests.courseInterest,
-        createdAt: peerRequests.createdAt,
-      })
-      .from(peerRequests)
-      .where(eq(peerRequests.matchedPeerId, peer.id))
-      .orderBy(desc(peerRequests.createdAt)),
-
+  const [{ students, truncated }, callHistory, historyCountResult] = await Promise.all([
+    loadGuideStudents(db, { peerId: peer.id, peerUserId: userId, guideActive: peer.status === "active" }),
     env.hasAgoraVoice
       ? db
           .select({
             id: peerCallSessions.id,
-            callerName: users.name,
+            callerUserId: peerCallSessions.callerUserId,
+            studentName: users.name,
             status: peerCallSessions.status,
-            startedAt: peerCallSessions.startedAt,
             answeredAt: peerCallSessions.answeredAt,
             endedAt: peerCallSessions.endedAt,
             createdAt: peerCallSessions.createdAt,
           })
           .from(peerCallSessions)
-          .leftJoin(users, eq(peerCallSessions.callerUserId, users.id))
+          .leftJoin(
+            users,
+            sql`${users.id} = case when ${peerCallSessions.callerUserId} = ${userId} then ${peerCallSessions.peerUserId} else ${peerCallSessions.callerUserId} end`,
+          )
           .where(eq(peerCallSessions.peerId, peer.id))
           .orderBy(desc(peerCallSessions.createdAt))
           .limit(HISTORY_PER_PAGE)
           .offset(historyOffset)
       : Promise.resolve([]),
-
     env.hasAgoraVoice
-      ? db
-          .select({ total: count() })
-          .from(peerCallSessions)
-          .where(eq(peerCallSessions.peerId, peer.id))
+      ? db.select({ total: count() }).from(peerCallSessions).where(eq(peerCallSessions.peerId, peer.id))
       : Promise.resolve([{ total: 0 }]),
   ]);
 
+  const rows = students.map(toSafeGuideStudentRow);
   const historyTotal = historyCountResult[0]?.total ?? 0;
   const historyTotalPages = Math.max(1, Math.ceil(historyTotal / HISTORY_PER_PAGE));
+  const total = `${rows.length}${truncated ? "+" : ""}`;
 
   return (
-    <div className="space-y-10 pb-8">
+    <DashboardPage wide>
+      <PageHeader
+        title="My students"
+        description={
+          rows.length === 0
+            ? "Students who request a call, message or call you will appear here."
+            : `${total} student${rows.length === 1 ? "" : "s"} have requested a call, messaged or called you.`
+        }
+      />
 
-      {/* Students section */}
-      <div className="space-y-5">
-        <div>
-          <h1 className="text-2xl font-bold text-[#0f1f1c]">My Students</h1>
-          <p className="mt-0.5 text-sm text-[#6b7280]">
-            {students.length === 0
-              ? "No students have contacted you yet."
-              : `${students.length} student${students.length === 1 ? "" : "s"} have contacted you.`}
-          </p>
-        </div>
-
-        {students.length === 0 ? (
-          <div className="py-14 text-center">
-            <div className="mx-auto mb-4 flex size-14 items-center justify-center rounded-full bg-[#f0f7f5]">
-              <Users className="size-7 text-[#0f3d37]" />
-            </div>
-            <p className="text-sm font-semibold text-[#374151]">No students yet</p>
-            <p className="mt-1 text-xs text-[#9ca3af]">When students contact you, they will appear here.</p>
-          </div>
+      <Section flush>
+        {rows.length === 0 ? (
+          <EmptyState
+            icon={Users}
+            title="No students yet"
+            description="When students find you on your university page and send a request or message, they show up here."
+          />
         ) : (
-          <>
-            {/* Mobile flat list */}
-            <div className="md:hidden divide-y divide-[#eaeaea]">
-              {students.map((s) => (
-                <div key={s.id} className="py-4">
-                  <div className="flex items-start justify-between gap-2">
-                    <p className="font-semibold text-sm text-[#0f1f1c]">{s.fullName}</p>
-                    <p className="text-xs text-[#9ca3af] shrink-0">
-                      {s.createdAt?.toLocaleString("en-IN", { day: "numeric", month: "short", year: "numeric" }) ?? "—"}
-                    </p>
-                  </div>
-                  {(s.userCity || s.userState) && (
-                    <p className="mt-0.5 text-xs text-[#6b7280]">
-                      {s.userCity ? `${s.userCity}, ${s.userState}` : s.userState}
-                    </p>
-                  )}
-                  {s.courseInterest && (
-                    <p className="mt-0.5 text-xs text-[#6b7280]">{s.courseInterest}</p>
-                  )}
-                </div>
-              ))}
-            </div>
-
-            {/* Desktop table */}
-            <div className="hidden md:block overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b border-[#eaeaea]">
-                    <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Name</th>
-                    <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Location</th>
-                    <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Course interest</th>
-                    <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Date</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-[#eaeaea]">
-                  {students.map((s) => (
-                    <tr key={s.id} className="hover:bg-[#fafafa] transition-colors">
-                      <td className="py-4 pr-6 font-medium text-[#0f1f1c] whitespace-nowrap">{s.fullName}</td>
-                      <td className="py-4 pr-6 text-[#6b7280] whitespace-nowrap">
-                        {s.userCity ? `${s.userCity}, ${s.userState}` : (s.userState ?? "—")}
-                      </td>
-                      <td className="py-4 pr-6 text-[#6b7280]">{s.courseInterest ?? "—"}</td>
-                      <td className="py-4 text-[#9ca3af] whitespace-nowrap text-xs">
-                        {s.createdAt?.toLocaleString("en-IN", { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" }) ?? "—"}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </>
+          <StudentsList students={rows} universityName={peer.universityName} voiceEnabled={env.hasAgoraVoice} />
         )}
-      </div>
+      </Section>
 
-      {/* Call activity */}
-      {env.hasAgoraVoice && (
-        <div className="space-y-4">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#9ca3af]">Call activity</p>
-            {historyTotal > 0 && (
-              <p className="mt-0.5 text-sm text-[#6b7280]">
-                {historyTotal} call{historyTotal === 1 ? "" : "s"} recorded.
-              </p>
-            )}
-          </div>
-
-          {historyTotal === 0 ? (
-            <div className="py-10 text-center">
-              <Phone className="mx-auto size-7 text-[#d1d5db] mb-3" />
-              <p className="text-sm text-[#374151]">No calls yet</p>
-              <p className="mt-1 text-xs text-[#9ca3af]">When students call you, the history appears here.</p>
-            </div>
-          ) : (
-            <>
-              {/* Mobile list */}
-              <div className="md:hidden divide-y divide-[#eaeaea]">
-                {callHistory.map((c) => (
-                  <div key={c.id} className="py-4">
-                    <div className="flex items-center justify-between gap-2">
-                      <p className="font-semibold text-sm text-[#0f1f1c]">{c.callerName ?? "Unknown student"}</p>
-                      <p className="text-xs text-[#9ca3af] shrink-0">
-                        {c.createdAt?.toLocaleString("en-IN", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }) ?? "—"}
-                      </p>
-                    </div>
-                    <div className="mt-1 flex items-center gap-2 text-xs text-[#6b7280]">
-                      <span className="inline-flex items-center gap-1">
-                        {callStatusIcon(c.status)}
-                        {callStatusLabel(c.status)}
-                      </span>
-                      {callDuration(c.answeredAt, c.endedAt) && (
-                        <span>· {callDuration(c.answeredAt, c.endedAt)}</span>
-                      )}
-                    </div>
+      {env.hasAgoraVoice && historyTotal > 0 ? (
+        <Section
+          title="Call history"
+          description={`${historyTotal} call${historyTotal === 1 ? "" : "s"} recorded`}
+          flush
+        >
+          <SectionList>
+            {callHistory.map((c) => {
+              const youCalled = c.callerUserId === userId;
+              const name = peerSafeText(c.studentName?.trim() || "Student");
+              const duration = callDuration(c.answeredAt, c.endedAt);
+              return (
+                <li key={c.id} className="flex items-center justify-between gap-3 px-4 py-3 sm:px-5">
+                  <div className="min-w-0">
+                    <p className="truncate text-sm font-medium text-[#0f1f1c]">
+                      {name}
+                      <span className="ml-1.5 text-xs font-normal text-[#9ca3af]">{youCalled ? "You called" : "Called you"}</span>
+                    </p>
+                    <p className="mt-0.5 inline-flex items-center gap-1.5 text-xs text-[#6b7280]">
+                      {callStatusIcon(c.status)}
+                      {callStatusLabel(c.status)}
+                      {duration ? <span>· {duration}</span> : null}
+                    </p>
                   </div>
-                ))}
-              </div>
-
-              {/* Desktop table */}
-              <div className="hidden md:block overflow-x-auto">
-                <table className="w-full text-sm">
-                  <thead>
-                    <tr className="border-b border-[#eaeaea]">
-                      <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Student</th>
-                      <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Status</th>
-                      <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Duration</th>
-                      <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Date</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-[#eaeaea]">
-                    {callHistory.map((c) => (
-                      <tr key={c.id} className="hover:bg-[#fafafa] transition-colors">
-                        <td className="py-4 pr-6 font-medium text-[#0f1f1c] whitespace-nowrap">
-                          {c.callerName ?? "Unknown student"}
-                        </td>
-                        <td className="py-4 pr-6">
-                          <span className="inline-flex items-center gap-1.5">
-                            {callStatusIcon(c.status)}
-                            <span className="text-[#6b7280]">{callStatusLabel(c.status)}</span>
-                          </span>
-                        </td>
-                        <td className="py-4 pr-6 text-[#6b7280]">
-                          {callDuration(c.answeredAt, c.endedAt) ?? "—"}
-                        </td>
-                        <td className="py-4 text-xs text-[#9ca3af] whitespace-nowrap">
-                          {c.createdAt?.toLocaleString("en-IN", { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" }) ?? "—"}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-
+                  <p className="shrink-0 text-xs text-[#9ca3af]">{formatGuideDate(c.createdAt, true) ?? "—"}</p>
+                </li>
+              );
+            })}
+          </SectionList>
+          {historyTotalPages > 1 ? (
+            <div className="border-t border-[#f0f0f0] px-4 py-3">
               <DataPagination
                 page={historyPage}
                 totalPages={historyTotalPages}
                 buildHref={(p) => `/dashboard/peer/students?page=${p}`}
               />
-            </>
-          )}
-        </div>
-      )}
-    </div>
+            </div>
+          ) : null}
+        </Section>
+      ) : null}
+    </DashboardPage>
   );
 }

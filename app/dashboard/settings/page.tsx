@@ -1,8 +1,14 @@
+import type { Metadata } from "next";
+import { eq } from "drizzle-orm";
+
 import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { users } from "@/lib/db/schema";
-import { eq } from "drizzle-orm";
+import { resolveDbUserId } from "@/lib/server-session";
 import { SettingsForm } from "@/components/dashboard/settings-form";
+import { DashboardPage, PageHeader } from "@/components/dashboard/ui";
+
+export const metadata: Metadata = { title: "Settings | Dashboard" };
 
 export default async function SettingsPage() {
   const session = await auth();
@@ -17,7 +23,10 @@ export default async function SettingsPage() {
     preferredCountries: null as string[] | null,
   };
 
-  if (db && session?.user?.id) {
+  // session.user.id is "1" for admin sessions; resolve the real user by email.
+  const userId = session?.user?.email ? await resolveDbUserId(session.user.email) : null;
+
+  if (db && userId) {
     const [row] = await db
       .select({
         name: users.name,
@@ -28,19 +37,15 @@ export default async function SettingsPage() {
         preferredCountries: users.preferredCountries,
       })
       .from(users)
-      .where(eq(users.id, session.user.id))
+      .where(eq(users.id, userId))
       .limit(1);
 
     if (row) user = row;
   }
 
   return (
-    <div className="max-w-2xl space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-[#0f1f1c]">Settings</h1>
-        <p className="mt-1 text-sm text-[#6b7280]">Manage your profile and study preferences.</p>
-      </div>
-
+    <DashboardPage>
+      <PageHeader title="Settings" description="Your profile and study preferences." />
       <SettingsForm
         name={user.name}
         email={user.email}
@@ -49,6 +54,6 @@ export default async function SettingsPage() {
         budgetUsd={user.budgetUsd}
         preferredCountries={user.preferredCountries}
       />
-    </div>
+    </DashboardPage>
   );
 }

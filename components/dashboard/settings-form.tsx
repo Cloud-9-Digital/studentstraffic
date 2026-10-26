@@ -1,11 +1,16 @@
 "use client";
 
 import { useActionState, useState, useEffect, useRef } from "react";
-import { ChevronDown, Loader2 } from "lucide-react";
+import { Check, ChevronDown, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 import { updateProfileAction, type ProfileState } from "@/app/_actions/update-profile";
 import { PhoneInputField } from "@/components/ui/phone-input";
+import { Section, dashboardButton } from "@/components/dashboard/ui";
 import { cn } from "@/lib/utils";
+
+const labelClass = "block text-sm font-medium text-[#374151]";
+const inputClass =
+  "w-full rounded-lg border border-[#e5e7eb] bg-white px-3.5 py-2.5 text-sm text-[#0f1f1c] outline-none transition focus:border-[#0f3d37] focus:ring-2 focus:ring-[#0f3d37]/10";
 
 const COUNTRY_OPTIONS = [
   "Russia", "Kazakhstan", "Kyrgyzstan", "Georgia", "Philippines",
@@ -32,6 +37,11 @@ interface Props {
 export function SettingsForm({ name, email, phone, neetScore, budgetUsd, preferredCountries }: Props) {
   const [state, action, pending] = useActionState<ProfileState, FormData>(updateProfileAction, { status: "idle" });
   const [selected, setSelected] = useState<Set<string>>(new Set(preferredCountries ?? []));
+  // The action result the user last edited after: a new result (save finished)
+  // clears "unsaved" without setting state in an effect. Errors keep it.
+  const [editedAfter, setEditedAfter] = useState<ProfileState | null>(null);
+  const dirty = editedAfter !== null && (editedAfter === state || state.status === "error");
+  const markDirty = () => setEditedAfter(state);
 
   const mounted = useRef(false);
   useEffect(() => {
@@ -41,6 +51,7 @@ export function SettingsForm({ name, email, phone, neetScore, budgetUsd, preferr
   }, [state]);
 
   function toggleCountry(country: string) {
+    markDirty();
     setSelected((prev) => {
       const next = new Set(prev);
       if (next.has(country)) next.delete(country);
@@ -50,81 +61,62 @@ export function SettingsForm({ name, email, phone, neetScore, budgetUsd, preferr
   }
 
   return (
-    <form action={action} className="space-y-8">
+    <form
+      action={action}
+      onChange={markDirty}
+      className="space-y-6"
+    >
       {/* Hidden field for preferred countries */}
       <input type="hidden" name="preferredCountries" value={[...selected].join(",")} />
 
-      {/* Personal info */}
-      <section className="space-y-5">
-        <div className="border-b border-[#eaeaea] pb-3">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#9ca3af]">Personal information</p>
-        </div>
+      <Section title="Profile" description="How guides and our counsellors will know you.">
         <div className="grid gap-5 sm:grid-cols-2">
           <div className="space-y-1.5">
-            <label htmlFor="name" className="block text-xs font-semibold text-[#374151]">
+            <label htmlFor="name" className={labelClass}>
               Full name
             </label>
             <input
               id="name"
               name="name"
               type="text"
+              autoComplete="name"
               defaultValue={name ?? ""}
               required
-              className="w-full rounded-xl border border-[#e5e7eb] bg-[#f9fafb] px-3.5 py-2.5 text-sm text-[#0f1f1c] outline-none transition focus:border-[#0f3d37] focus:bg-white focus:ring-2 focus:ring-[#0f3d37]/10"
+              className={inputClass}
             />
           </div>
 
           <div className="space-y-1.5">
-            <label className="block text-xs font-semibold text-[#374151]">
-              Email address
-            </label>
-            <input
-              type="email"
-              value={email}
-              readOnly
-              className="w-full cursor-not-allowed rounded-xl border border-[#e5e7eb] bg-[#f3f4f6] px-3.5 py-2.5 text-sm text-[#9ca3af]"
-            />
-            <p className="text-[10px] text-[#9ca3af]">Email cannot be changed.</p>
-          </div>
-
-          <div className="space-y-1.5">
-            <label className="block text-xs font-semibold text-[#374151]">
+            <label htmlFor="phone" className={labelClass}>
               Phone number
             </label>
-            <PhoneInputField
-              name="phone"
-              defaultValue={phone ?? ""}
-            />
+            <PhoneInputField id="phone" name="phone" defaultValue={phone ?? ""} />
           </div>
         </div>
-      </section>
+      </Section>
 
-      {/* Study preferences */}
-      <section className="space-y-5">
-        <div className="border-b border-[#eaeaea] pb-3">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#9ca3af]">Study preferences</p>
-          <p className="mt-0.5 text-xs text-[#6b7280]">Help us personalise recommendations for you.</p>
-        </div>
-
+      <Section title="Study preferences" description="We use these to suggest universities that fit your score and budget.">
         <div className="grid gap-5 sm:grid-cols-2">
           <div className="space-y-1.5">
-            <label htmlFor="neetScore" className="block text-xs font-semibold text-[#374151]">
+            <label htmlFor="neetScore" className={labelClass}>
               NEET score
             </label>
             <input
               id="neetScore"
               name="neetScore"
               type="number"
+              inputMode="numeric"
               min={0}
               max={720}
               defaultValue={neetScore ?? ""}
               placeholder="e.g. 540"
-              className="w-full rounded-xl border border-[#e5e7eb] bg-[#f9fafb] px-3.5 py-2.5 text-sm text-[#0f1f1c] outline-none transition focus:border-[#0f3d37] focus:bg-white focus:ring-2 focus:ring-[#0f3d37]/10"
+              className={inputClass}
             />
+            <p className="text-xs text-[#6b7280]">Out of 720. Leave blank if you haven&apos;t taken it yet.</p>
           </div>
 
           <div className="space-y-1.5">
-            <label htmlFor="budgetUsd" className="block text-xs font-semibold text-[#374151]">
+            <label htmlFor="budgetUsd" className={labelClass}>
               Total budget
             </label>
             <div className="relative">
@@ -132,48 +124,71 @@ export function SettingsForm({ name, email, phone, neetScore, budgetUsd, preferr
                 id="budgetUsd"
                 name="budgetUsd"
                 defaultValue={budgetUsd?.toString() ?? ""}
-                className="w-full appearance-none rounded-xl border border-[#e5e7eb] bg-[#f9fafb] px-3.5 py-2.5 pr-9 text-sm text-[#0f1f1c] outline-none transition focus:border-[#0f3d37] focus:bg-white focus:ring-2 focus:ring-[#0f3d37]/10"
+                className={cn(inputClass, "appearance-none pr-9")}
               >
                 <option value="">Select a range</option>
                 {BUDGET_OPTIONS.map((o) => (
                   <option key={o.value} value={o.value}>{o.label}</option>
                 ))}
               </select>
-              <ChevronDown className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 size-4 text-[#9ca3af]" />
+              <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-[#9ca3af]" />
             </div>
+            <p className="text-xs text-[#6b7280]">For the whole course, including tuition and living costs.</p>
           </div>
 
-          <div className="space-y-2 sm:col-span-2">
-            <label className="block text-xs font-semibold text-[#374151]">
-              Preferred countries
-            </label>
+          <fieldset className="space-y-2 sm:col-span-2">
+            <legend className={labelClass}>Preferred countries</legend>
             <div className="flex flex-wrap gap-2">
-              {COUNTRY_OPTIONS.map((country) => (
-                <button
-                  key={country}
-                  type="button"
-                  onClick={() => toggleCountry(country)}
-                  className={cn(
-                    "rounded-xl border px-3 py-1.5 text-xs font-medium transition",
-                    selected.has(country)
-                      ? "border-[#0f3d37]/40 bg-[#f0f7f5] text-[#0f3d37]"
-                      : "border-[#e5e7eb] bg-[#f9fafb] text-[#374151] hover:border-[#0f3d37]/20 hover:bg-[#f5faf9]"
-                  )}
-                >
-                  {country}
-                </button>
-              ))}
+              {COUNTRY_OPTIONS.map((country) => {
+                const isSelected = selected.has(country);
+                return (
+                  <button
+                    key={country}
+                    type="button"
+                    aria-pressed={isSelected}
+                    onClick={() => toggleCountry(country)}
+                    className={cn(
+                      "inline-flex items-center gap-1 rounded-lg border px-3 py-1.5 text-sm font-medium transition",
+                      isSelected
+                        ? "border-[#0f3d37]/40 bg-[#f0f5f4] text-[#0f3d37]"
+                        : "border-[#e5e7eb] bg-white text-[#374151] hover:border-[#0f3d37]/20 hover:bg-[#f9fafb]"
+                    )}
+                  >
+                    {isSelected && <Check className="size-3.5" />}
+                    {country}
+                  </button>
+                );
+              })}
             </div>
-          </div>
+            <p className="text-xs text-[#6b7280]">
+              {selected.size === 0 ? "Pick as many as you like." : `${selected.size} selected`}
+            </p>
+          </fieldset>
         </div>
-      </section>
+      </Section>
 
-      <div className="flex justify-end">
-        <button
-          type="submit"
-          disabled={pending}
-          className="inline-flex items-center gap-2 rounded-xl bg-[#0f3d37] px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-[#184a43] disabled:opacity-60"
-        >
+      <Section title="Account">
+        <div className="space-y-1.5 sm:max-w-sm">
+          <label htmlFor="email" className={labelClass}>
+            Email address
+          </label>
+          <input
+            id="email"
+            type="email"
+            value={email}
+            readOnly
+            className="w-full cursor-not-allowed rounded-lg border border-[#e5e7eb] bg-[#f3f4f6] px-3.5 py-2.5 text-sm text-[#6b7280]"
+          />
+          <p className="text-xs text-[#6b7280]">You sign in with this email. It can&apos;t be changed here.</p>
+        </div>
+      </Section>
+
+      {/* Save bar: sticks above the mobile bottom nav, and to the bottom of the viewport on desktop */}
+      <div className="sticky bottom-[calc(4.5rem_+_env(safe-area-inset-bottom))] z-20 flex items-center justify-between gap-3 rounded-xl border border-[#eaeaea] bg-white/95 px-4 py-3 shadow-sm backdrop-blur lg:bottom-4">
+        <p className="min-w-0 text-xs text-[#6b7280]" aria-live="polite">
+          {pending ? "Saving your changes…" : dirty ? "You have unsaved changes." : "All changes saved."}
+        </p>
+        <button type="submit" disabled={pending} className={dashboardButton.primary}>
           {pending && <Loader2 className="size-4 animate-spin" />}
           {pending ? "Saving…" : "Save changes"}
         </button>

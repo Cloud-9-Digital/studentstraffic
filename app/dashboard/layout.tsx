@@ -1,19 +1,24 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
-import { eq } from "drizzle-orm";
 
 import { auth } from "@/lib/auth";
-import { getDb } from "@/lib/db/server";
 import { env } from "@/lib/env";
-import { studentPeers } from "@/lib/db/schema";
 import { getIncomingPeerCalls, getActivePeerCallForUser, getIncomingStudentCalls } from "@/lib/peer-calls";
-import { resolveDbUserId } from "@/lib/server-session";
-import { DashboardSidebar, DashboardBottomNav, DashboardMobileHeader } from "@/components/dashboard/sidebar";
+import { getDashboardViewer } from "@/lib/dashboard/nav-counts";
+import { EMPTY_NAV_COUNTS } from "@/lib/dashboard/nav";
+import {
+  DashboardSidebar,
+  DashboardBottomNav,
+  DashboardMobileHeader,
+  type DashboardUser,
+} from "@/components/dashboard/sidebar";
 import { IncomingCallsFloating } from "@/components/dashboard/incoming-calls-floating";
 import { IncomingStudentCallsFloating } from "@/components/dashboard/incoming-student-calls";
 import { RejoinCallBanner } from "@/components/dashboard/rejoin-call-banner";
 
 export const metadata: Metadata = {
+  // Fallback for dashboard pages without their own title; the root template adds "| Students Traffic".
+  title: "Dashboard",
   robots: { index: false, follow: false },
 };
 
@@ -21,66 +26,59 @@ export default async function DashboardLayout({ children }: { children: React.Re
   const session = await auth();
   if (!session?.user) redirect("/login");
 
-  let isPeerWithVoice = false;
+  // One query: real DB user (by email; session.user.id is "1" for admins),
+  // guide status and nav badge counts. Shared with pages via React cache.
+  const viewer = session.user.email ? await getDashboardViewer(session.user.email) : null;
+
+  // The user card renders from server data so it never depends on the client
+  // session having loaded (that is what showed "Student" / "U" before).
+  const user: DashboardUser = {
+    name: viewer?.name ?? session.user.name ?? null,
+    email: viewer?.email ?? session.user.email ?? null,
+    image: viewer?.image ?? session.user.image ?? null,
+  };
+  const isGuide = viewer?.isGuide ?? false;
+  const counts = viewer?.counts ?? EMPTY_NAV_COUNTS;
+
   let initialCalls: Awaited<ReturnType<typeof getIncomingPeerCalls>> = [];
   let initialStudentCalls: Awaited<ReturnType<typeof getIncomingStudentCalls>> = [];
   let activeCall: Awaited<ReturnType<typeof getActivePeerCallForUser>> = null;
-  let voiceUserId: string | null = null;
+  const voiceUserId = env.hasAgoraVoice && viewer ? viewer.userId : null;
 
-  if (env.hasAgoraVoice && session.user.email) {
-    const db = getDb();
-    const userId = await resolveDbUserId(session.user.email);
-    if (db && userId) {
-      voiceUserId = userId;
-      const [peer] = await db
-        .select({ id: studentPeers.id })
-        .from(studentPeers)
-        .where(eq(studentPeers.peerUserId, userId))
-        .limit(1);
-
-      const [incomingResult, studentIncomingResult, activeCallResult] = await Promise.all([
-        peer ? getIncomingPeerCalls(userId) : Promise.resolve([]),
-        getIncomingStudentCalls(userId),
-        getActivePeerCallForUser(userId),
-      ]);
-
-      if (peer) {
-        isPeerWithVoice = true;
-        initialCalls = incomingResult;
-      }
-      initialStudentCalls = studentIncomingResult;
-      activeCall = activeCallResult;
-    }
+  if (voiceUserId) {
+    [initialCalls, initialStudentCalls, activeCall] = await Promise.all([
+      isGuide ? getIncomingPeerCalls(voiceUserId) : Promise.resolve([]),
+      getIncomingStudentCalls(voiceUserId),
+      getActivePeerCallForUser(voiceUserId),
+    ]);
   }
 
   return (
     <div className="flex min-h-screen bg-[#f9fafb]">
       {/* Desktop sidebar */}
       <div className="hidden lg:flex">
-        <DashboardSidebar />
+        <DashboardSidebar user={user} isGuide={isGuide} counts={counts} />
       </div>
 
-      {/* Main content */}
-      <div className="flex flex-1 flex-col min-w-0">
-        <DashboardMobileHeader />
-        <main className="flex-1 p-6 pb-nav-safe lg:p-8 lg:pb-8">
+      {/* Main content: pages centre themselves with <DashboardPage> */}
+      <div className="flex min-w-0 flex-1 flex-col">
+        <DashboardMobileHeader user={user} />
+        <main className="min-w-0 flex-1 overflow-x-clip px-4 pt-6 pb-[calc(5.5rem_+_env(safe-area-inset-bottom))] sm:px-6 lg:px-8 lg:pt-8 lg:pb-8">
           {children}
         </main>
       </div>
 
       {/* Mobile bottom nav */}
-      <DashboardBottomNav />
+      <DashboardBottomNav isGuide={isGuide} counts={counts} />
 
       {/* Rejoin banner — shown to any user (caller or peer) with an active call after a refresh */}
       {activeCall && <RejoinCallBanner call={activeCall} />}
 
       {/* Floating incoming-call dialog — only for peer guides with voice enabled */}
-      {isPeerWithVoice && voiceUserId && (
-        <IncomingCallsFloating initialCalls={initialCalls} userId={voiceUserId} />
-      )}
+      {isGuide && voiceUserId && <IncomingCallsFloating initialCalls={initialCalls} userId={voiceUserId} />}
 
       {/* Floating incoming-call dialog for students — when a guide calls them */}
-      {env.hasAgoraVoice && initialStudentCalls.length > 0 && voiceUserId && (
+      {initialStudentCalls.length > 0 && voiceUserId && (
         <IncomingStudentCallsFloating initialCalls={initialStudentCalls} userId={voiceUserId} />
       )}
     </div>

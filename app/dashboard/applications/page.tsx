@@ -1,169 +1,123 @@
-import { auth } from "@/lib/auth";
-import { getDb } from "@/lib/db/server";
-import { applications, universities, countries } from "@/lib/db/schema";
-import { eq } from "drizzle-orm";
-import { ChevronRight, Clock, FileText, GraduationCap, MapPin } from "lucide-react";
+import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
+import { redirect } from "next/navigation";
+import { FileText, GraduationCap } from "lucide-react";
 
-export const metadata = { title: "Applications | Dashboard" };
+import { ApplicationCard } from "@/app/dashboard/applications/_components/application-card";
+import { CounsellorHelp } from "@/app/dashboard/applications/_components/counsellor-help";
+import { ShortlistRow } from "@/app/dashboard/shortlists/_components/shortlist-row";
+import { DashboardPage, EmptyState, PageHeader, Section, SectionList, dashboardButton } from "@/components/dashboard/ui";
+import { auth } from "@/lib/auth";
+import { listApplicationsForUser, listShortlistForUser } from "@/lib/dashboard/applications";
+import { resolveDbUserId } from "@/lib/server-session";
 
-const statusConfig: Record<string, { label: string; color: string; dot: string }> = {
-  draft:        { label: "Draft",        color: "text-[#9ca3af]",  dot: "bg-[#d1d5db]" },
-  submitted:    { label: "Submitted",    color: "text-blue-600",   dot: "bg-blue-400"  },
-  under_review: { label: "Under Review", color: "text-amber-600",  dot: "bg-amber-400" },
-  accepted:     { label: "Accepted",     color: "text-emerald-600",dot: "bg-emerald-400"},
-  rejected:     { label: "Rejected",     color: "text-red-500",    dot: "bg-red-400"   },
-  waitlisted:   { label: "Waitlisted",   color: "text-violet-600", dot: "bg-violet-400"},
-};
+export const metadata: Metadata = { title: "Applications | Dashboard | Students Traffic" };
+
+const HOW_IT_WORKS = [
+  { title: "Shortlist universities", description: "Save the universities you like from their pages." },
+  { title: "Start an application", description: "Pick a programme. This saves a draft." },
+  { title: "Submit for review", description: "A counsellor checks it with you and contacts you." },
+  { title: "Apply with your counsellor", description: "The university reviews it and decides." },
+];
 
 export default async function ApplicationsPage() {
   const session = await auth();
-  const db = getDb();
+  if (!session?.user?.email) redirect("/login");
+  const userId = await resolveDbUserId(session.user.email);
 
-  let apps: Array<{
-    id: number;
-    universitySlug: string;
-    courseSlug: string;
-    status: string;
-    submittedAt: Date | null;
-    createdAt: Date;
-    universityName: string | null;
-    universityLogoUrl: string | null;
-    countryName: string | null;
-    universityCity: string | null;
-  }> = [];
+  const [applications, shortlist] = userId
+    ? await Promise.all([listApplicationsForUser(userId), listShortlistForUser(userId)])
+    : [[], []];
+  const notStarted = shortlist.filter((item) => !item.applicationId);
 
-  if (db && session?.user?.id) {
-    const rows = await db
-      .select({
-        id: applications.id,
-        universitySlug: applications.universitySlug,
-        courseSlug: applications.courseSlug,
-        status: applications.status,
-        submittedAt: applications.submittedAt,
-        createdAt: applications.createdAt,
-        universityName: universities.name,
-        universityLogoUrl: universities.logoUrl,
-        universityCity: universities.city,
-        countryName: countries.name,
-      })
-      .from(applications)
-      .leftJoin(universities, eq(universities.slug, applications.universitySlug))
-      .leftJoin(countries, eq(countries.id, universities.countryId))
-      .where(eq(applications.userId, session.user.id))
-      .orderBy(applications.createdAt);
-
-    apps = rows;
-  }
+  const browse = (
+    <Link href="/universities" className={dashboardButton.secondary}>
+      <GraduationCap className="size-4" />
+      Browse universities
+    </Link>
+  );
 
   return (
-    <div className="space-y-6 pb-8">
-      <div>
-        <h1 className="text-2xl font-bold text-[#0f1f1c]">My Applications</h1>
-        <p className="mt-0.5 text-sm text-[#6b7280]">
-          {apps.length === 0
-            ? "Track the status of your university applications."
-            : `${apps.length} ${apps.length === 1 ? "application" : "applications"}`}
-        </p>
-      </div>
+    <DashboardPage className="pb-8">
+      <PageHeader
+        title="Applications"
+        description={
+          applications.length === 0
+            ? "Start an application from your shortlist and track it here."
+            : `${applications.length} ${applications.length === 1 ? "application" : "applications"}`
+        }
+        actions={browse}
+      />
 
-      {apps.length === 0 ? (
-        <>
-          {/* How it works */}
-          <div className="space-y-4">
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#9ca3af]">How it works</p>
-            <div className="divide-y divide-[#eaeaea]">
-              {[
-                { step: "1", title: "Shortlist universities", desc: "Save universities you're interested in" },
-                { step: "2", title: "Start application",      desc: "Fill in your personal info and documents" },
-                { step: "3", title: "Submit",                 desc: "We review and help you through the process" },
-                { step: "4", title: "Get accepted",           desc: "Receive your admission letter" },
-              ].map(({ step, title, desc }) => (
-                <div key={step} className="flex items-center gap-4 py-4">
-                  <div className="flex size-8 shrink-0 items-center justify-center rounded-full bg-[#0f3d37] text-xs font-bold text-white">
-                    {step}
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold text-[#0f1f1c]">{title}</p>
-                    <p className="text-xs text-[#6b7280]">{desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+      {applications.length > 0 ? (
+        <Section flush>
+          <SectionList>
+            {applications.map((application) => (
+              <ApplicationCard key={application.id} application={application} />
+            ))}
+          </SectionList>
+        </Section>
+      ) : shortlist.length === 0 ? (
+        <Section>
+          <EmptyState
+            icon={FileText}
+            title="No applications yet"
+            description="Shortlist the universities you like first, then start an application from here."
+            action={
+              <Link href="/universities" className={dashboardButton.primary}>
+                Browse universities
+              </Link>
+            }
+          />
+        </Section>
+      ) : null}
 
-          <div className="py-8 text-center">
-            <div className="mx-auto mb-4 flex size-14 items-center justify-center rounded-full bg-[#f0f7f5]">
-              <FileText className="size-7 text-[#0f3d37]" />
-            </div>
-            <p className="text-base font-semibold text-[#0f1f1c]">No applications yet</p>
-            <p className="mt-1 text-sm text-[#6b7280]">
-              Start by exploring universities and shortlisting your favourites.
-            </p>
-            <Link
-              href="/universities"
-              className="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#0f3d37] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#184a43]"
-            >
-              <GraduationCap className="size-4" />
-              Browse universities
+      {notStarted.length > 0 ? (
+        <Section
+          flush
+          title={
+            applications.length === 0
+              ? `Apply to one of your ${notStarted.length} shortlisted ${notStarted.length === 1 ? "university" : "universities"}`
+              : "Ready to apply"
+          }
+          description={
+            applications.length === 0
+              ? "Pick a university and a programme to save a draft."
+              : "Shortlisted universities you haven't applied to yet."
+          }
+          action={
+            <Link href="/dashboard/shortlists" className="text-xs font-medium text-[#0f3d37] hover:underline">
+              Manage shortlist
             </Link>
-          </div>
-        </>
-      ) : (
-        <div className="divide-y divide-[#eaeaea]">
-          {apps.map((app) => {
-            const s = statusConfig[app.status] ?? statusConfig.draft;
-            return (
-              <div key={app.id} className="flex items-center gap-4 py-4">
-                <div className="flex size-12 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-[#eaeaea] bg-[#f9fafb]">
-                  {app.universityLogoUrl ? (
-                    <Image
-                      src={app.universityLogoUrl}
-                      alt={app.universityName ?? ""}
-                      width={48}
-                      height={48}
-                      className="size-full object-contain p-1"
-                    />
-                  ) : (
-                    <GraduationCap className="size-5 text-[#9ca3af]" />
-                  )}
-                </div>
+          }
+        >
+          <SectionList>
+            {notStarted.map((item) => (
+              <ShortlistRow key={item.id} item={item} showRemove={false} />
+            ))}
+          </SectionList>
+        </Section>
+      ) : null}
 
-                <div className="min-w-0 flex-1">
-                  <p className="text-sm font-semibold text-[#0f1f1c]">{app.universityName ?? app.universitySlug}</p>
-                  {(app.universityCity || app.countryName) && (
-                    <p className="mt-0.5 flex items-center gap-1 text-xs text-[#6b7280]">
-                      <MapPin className="size-3 shrink-0" />
-                      {[app.universityCity, app.countryName].filter(Boolean).join(", ")}
-                    </p>
-                  )}
-                  <p className="mt-0.5 text-xs capitalize text-[#9ca3af]">{app.courseSlug.replace(/-/g, " ")}</p>
-                  <div className="mt-1.5 flex items-center gap-2">
-                    <span className={`inline-flex items-center gap-1.5 text-xs font-semibold ${s.color}`}>
-                      <span className={`size-1.5 rounded-full ${s.dot}`} />
-                      {s.label}
-                    </span>
-                    {app.submittedAt && (
-                      <span className="flex items-center gap-0.5 text-[10px] text-[#c9c9c9]">
-                        <Clock className="size-2.5" />
-                        {new Date(app.submittedAt).toLocaleDateString("en-IN", { day: "numeric", month: "short" })}
-                      </span>
-                    )}
-                  </div>
+      {applications.length === 0 ? (
+        <Section title="How it works">
+          <ol className="grid gap-4 sm:grid-cols-2">
+            {HOW_IT_WORKS.map((step, index) => (
+              <li key={step.title} className="flex gap-3">
+                <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-[#0f3d37] text-xs font-semibold text-white">
+                  {index + 1}
+                </span>
+                <div>
+                  <p className="text-sm font-medium text-[#0f1f1c]">{step.title}</p>
+                  <p className="text-xs text-[#6b7280]">{step.description}</p>
                 </div>
+              </li>
+            ))}
+          </ol>
+        </Section>
+      ) : null}
 
-                <Link
-                  href={`/university/${app.universitySlug}`}
-                  className="shrink-0 text-[#c9c9c9] hover:text-[#0f3d37] transition"
-                >
-                  <ChevronRight className="size-5" />
-                </Link>
-              </div>
-            );
-          })}
-        </div>
-      )}
-    </div>
+      <CounsellorHelp compact={applications.length === 0} />
+    </DashboardPage>
   );
 }

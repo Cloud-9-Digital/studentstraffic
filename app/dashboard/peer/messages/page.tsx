@@ -11,7 +11,7 @@ import {
 } from "@/lib/guide-chat";
 import { resolveDbUserId } from "@/lib/server-session";
 
-export const metadata = { title: "Guide Messages | Dashboard" };
+export const metadata = { title: "Guide inbox | Dashboard" };
 
 export default async function PeerMessagesPage({
   searchParams,
@@ -73,14 +73,15 @@ export default async function PeerMessagesPage({
       role="guide"
       userId={userId}
       basePath="/dashboard/peer/messages"
-      title="Guide Messages"
-      subtitle="Live student conversations with a mobile-first thread view and an inbox that updates instantly."
+      title="Guide inbox"
+      subtitle="Reply to students and call them from the same conversation."
       composerPlaceholder="Reply to {name}..."
       emptyStateTitle="Say hello first"
       emptyStateDescription="Introduce yourself, offer help, and keep the student conversation moving without leaving the page."
       initialConversations={conversations}
       initialStarters={starters}
       initialSelectedConversationId={selectedConversationId}
+      openThreadInitially={selectedConversationId === requestedConversationId}
       initialMessages={initialMessages}
       initialCalls={initialCalls}
       realtimeEnabled={env.hasAblyRealtime}

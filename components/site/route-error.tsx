@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { MoveRight, RotateCcw } from "lucide-react";
+import { RotateCcw } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import { siteConfig } from "@/lib/constants";
 
 /**
  * Shared UI for route-segment error boundaries (`error.tsx`).
@@ -17,62 +18,56 @@ import { Button } from "@/components/ui/button";
 export function RouteError({
   error,
   reset,
-  title = "Something went wrong.",
-  description = "We hit a problem loading this page. It is usually temporary — try again, or keep exploring from one of the links below.",
+  title = "Something went wrong",
+  description = "This page didn't load properly. Please try again in a moment.",
 }: {
   error: Error & { digest?: string };
   reset: () => void;
   title?: string;
   description?: string;
 }) {
+  const whatsappHref = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(
+    `Hi Students Traffic, a page didn't load for me${error.digest ? ` (reference ${error.digest})` : ""}.`,
+  )}`;
+
   return (
-    <div className="relative overflow-hidden bg-background">
-      <div
-        className="pointer-events-none absolute -right-32 top-0 h-full w-72 -skew-x-6 bg-accent/4"
-        aria-hidden
-      />
+    <div className="container-shell flex min-h-[65vh] flex-col items-center justify-center py-16 text-center">
+      <ErrorIllustration className="size-28" />
 
-      <div className="container-shell relative z-10 flex min-h-[60vh] flex-col justify-center py-20">
-        <div className="max-w-xl">
-          <p
-            className="font-display select-none text-[7rem] font-semibold leading-none tracking-tighter text-heading/[0.06] sm:text-[9rem]"
-            aria-hidden
-          >
-            Oops
-          </p>
+      <h1 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading">{title}</h1>
+      <p className="mt-2 max-w-md text-base text-muted-foreground">{description}</p>
 
-          <h1 className="mt-2 font-display text-3xl font-semibold leading-tight tracking-tight text-heading sm:text-4xl">
-            {title}
-          </h1>
-          <p className="mt-3 max-w-md text-base leading-relaxed text-muted-foreground">
-            {description}
-          </p>
-
-          {/* The digest is the only handle support has on a server-side
-              failure, so surface it rather than hiding the error entirely. */}
-          {error.digest ? (
-            <p className="mt-4 font-mono text-xs text-muted-foreground">
-              Reference: {error.digest}
-            </p>
-          ) : null}
-
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Button onClick={reset} size="default">
-              <RotateCcw className="size-4" />
-              Try again
-            </Button>
-            <Button asChild variant="outline" size="default">
-              <Link href="/universities">
-                Browse universities
-                <MoveRight className="size-4" />
-              </Link>
-            </Button>
-            <Button asChild variant="ghost" size="default">
-              <Link href="/">Go home</Link>
-            </Button>
-          </div>
-        </div>
+      <div className="mt-7 flex items-center gap-3">
+        <Button onClick={reset}>
+          <RotateCcw className="size-4" />
+          Try again
+        </Button>
+        <Button asChild variant="outline">
+          <Link href="/">Go home</Link>
+        </Button>
       </div>
+
+      <p className="mt-8 text-xs text-muted-foreground">
+        Still not working?{" "}
+        <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="font-medium text-heading underline-offset-4 hover:underline">
+          Message us on WhatsApp
+        </a>
+        {/* The digest is the only handle support has on a server-side failure. */}
+        {error.digest ? <> · Ref <span className="font-mono">{error.digest}</span></> : null}
+      </p>
     </div>
+  );
+}
+
+/** A torn page on a soft circle. currentColor follows the theme's heading green; the tear uses the accent. */
+function ErrorIllustration({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 120 120" fill="none" aria-hidden className={`text-heading ${className ?? ""}`}>
+      <circle cx="60" cy="60" r="56" fill="currentColor" fillOpacity="0.07" />
+      <path d="M40 28h28l14 14v50a4 4 0 0 1-4 4H40a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4z" className="fill-background" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+      <path d="M68 28v10a4 4 0 0 0 4 4h10" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+      <path d="M44 52h22M44 60h30" stroke="currentColor" strokeOpacity="0.3" strokeWidth="3" strokeLinecap="round" />
+      <path className="text-accent" d="M36 72l8 6 8-6 8 6 8-6 8 6 6-4" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
   );
 }

@@ -11,7 +11,7 @@ import {
 } from "@/lib/guide-chat";
 import { resolveDbUserId } from "@/lib/server-session";
 
-export const metadata = { title: "Connect | Dashboard" };
+export const metadata = { title: "Messages | Dashboard" };
 
 export default async function StudentMessagesPage({
   searchParams,
@@ -72,14 +72,15 @@ export default async function StudentMessagesPage({
       role="student"
       userId={userId}
       basePath="/dashboard/messages"
-      title="Connect"
-      subtitle="Message your student guides and start voice calls from the same conversation."
+      title="Messages"
+      subtitle="Chat with your student guides and call them from the same conversation."
       composerPlaceholder="Message {name}..."
       emptyStateTitle="Start the conversation"
       emptyStateDescription="Ask about accommodation, budget, daily life, academics, or anything you want clarity on before the next step."
       initialConversations={conversations}
       initialStarters={starters}
       initialSelectedConversationId={selectedConversationId}
+      openThreadInitially={selectedConversationId === requestedConversationId}
       initialMessages={initialMessages}
       initialCalls={initialCalls}
       realtimeEnabled={env.hasAblyRealtime}

@@ -1,79 +1,54 @@
-import { peerSafeText } from "@/lib/peer-contact-policy";
+import Link from "next/link";
 import { redirect } from "next/navigation";
-import { and, count, desc, eq, ne } from "drizzle-orm";
-import { Inbox, Clock, Check, MessageCircle, X } from "lucide-react";
+import { and, desc, eq, sql, type SQL } from "drizzle-orm";
+import { Inbox } from "lucide-react";
 
 import { auth } from "@/lib/auth";
-import { openGuideConversationFromBookingAction } from "@/app/_actions/guide-chat";
-import { FormSubmitButton } from "@/components/dashboard/chat/form-submit-button";
 import { getDb } from "@/lib/db/server";
 import { env } from "@/lib/env";
-import { peerCallBookings, studentPeers, universities, users } from "@/lib/db/schema";
-import { resolveDbUserId } from "@/lib/server-session";
+import { guideConversations, peerCallBookings, studentPeers, universities, users } from "@/lib/db/schema";
+import { getDashboardViewer } from "@/lib/dashboard/nav-counts";
+import { peerSafeText } from "@/lib/peer-contact-policy";
+import { formatGuideDate, type GuideStudentStatus } from "@/lib/dashboard/guide-students";
 import { DataPagination } from "@/components/ui/data-pagination";
+import { DashboardPage, EmptyState, PageHeader, Section, SectionList } from "@/components/dashboard/ui";
+import { cn } from "@/lib/utils";
+import { StudentActions } from "../students/student-actions";
+import { StudentAvatar, StudentStatusPill } from "../students/student-bits";
+import { ExpandableText } from "./expandable-text";
 import { RequestActions } from "./request-actions";
-import { PeerStartCallButton } from "./peer-start-call-button";
 
-export const metadata = { title: "Call Requests | Dashboard" };
+export const metadata = { title: "Call requests | Dashboard" };
 
-const HISTORY_PER_PAGE = 10;
+const PER_PAGE = 10;
 
-const AVATAR_COLORS = [
-  "bg-[#0f3d37] text-white",
-  "bg-[#c2410c] text-white",
-  "bg-violet-600 text-white",
-  "bg-sky-600 text-white",
-  "bg-emerald-600 text-white",
-  "bg-pink-600 text-white",
+type Tab = "pending" | "accepted" | "closed";
+
+const TABS: { id: Tab; label: string }[] = [
+  { id: "pending", label: "Pending" },
+  { id: "accepted", label: "Accepted" },
+  { id: "closed", label: "Declined & closed" },
 ];
 
-function InitialsAvatar({ name, size = "md" }: { name: string; size?: "sm" | "md" }) {
-  const initials = name
-    .split(" ")
-    .map((n) => n[0])
-    .slice(0, 2)
-    .join("")
-    .toUpperCase();
-  const color = AVATAR_COLORS[name.charCodeAt(0) % AVATAR_COLORS.length];
-  const dim = size === "sm" ? "size-8 text-[10px]" : "size-10 text-xs";
-  return (
-    <div className={`flex shrink-0 items-center justify-center rounded-full font-bold ${dim} ${color}`}>
-      {initials}
-    </div>
-  );
-}
+const EMPTY: Record<Tab, { title: string; description: string }> = {
+  pending: {
+    title: "No pending requests",
+    description: "When a student asks to talk to you, the request appears here for you to accept or decline.",
+  },
+  accepted: {
+    title: "No accepted requests yet",
+    description: "Students you accept appear here, ready to message or call.",
+  },
+  closed: {
+    title: "Nothing here",
+    description: "Requests you declined, that students cancelled, or that were blocked appear here.",
+  },
+};
 
-function statusLabel(status: string) {
-  if (status === "accepted") {
-    return (
-      <span className="inline-flex items-center gap-1 text-xs font-semibold text-emerald-600">
-        <Check className="size-3" /> Accepted
-      </span>
-    );
-  }
-  if (status === "declined") {
-    return (
-      <span className="inline-flex items-center gap-1 text-xs font-medium text-red-500">
-        <X className="size-3" /> Declined
-      </span>
-    );
-  }
-  return (
-    <span className="inline-flex items-center gap-1 text-xs font-medium text-amber-600">
-      <Clock className="size-3" /> Pending
-    </span>
-  );
-}
-
-function formatDate(date: Date | null) {
-  if (!date) return "—";
-  return date.toLocaleString("en-IN", {
-    day: "numeric",
-    month: "short",
-    year: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-  });
+function bookingStatus(status: string, blocked: boolean): GuideStudentStatus {
+  if (blocked) return "blocked";
+  if (status === "pending" || status === "accepted" || status === "declined" || status === "cancelled") return status;
+  return "contacted";
 }
 
 export default async function PeerRequestsPage({
@@ -87,11 +62,12 @@ export default async function PeerRequestsPage({
   const db = getDb();
   if (!db) return <p className="text-sm text-[#6b7280]">Service temporarily unavailable.</p>;
 
-  const userId = await resolveDbUserId(session.user.email);
-  if (!userId) redirect("/login");
+  const viewer = await getDashboardViewer(session.user.email);
+  if (!viewer) redirect("/login");
+  const userId = viewer.userId;
 
   const [peer] = await db
-    .select({ id: studentPeers.id, universityName: universities.name })
+    .select({ id: studentPeers.id, status: studentPeers.status, universityName: universities.name })
     .from(studentPeers)
     .innerJoin(universities, eq(studentPeers.universityId, universities.id))
     .where(eq(studentPeers.peerUserId, userId))
@@ -100,282 +76,161 @@ export default async function PeerRequestsPage({
   if (!peer) redirect("/join");
 
   const params = await searchParams;
-  const rawPage = Array.isArray(params.page) ? params.page[0] : params.page;
-  const historyPage = Math.max(1, parseInt(rawPage ?? "1", 10));
-  const historyOffset = (historyPage - 1) * HISTORY_PER_PAGE;
+  const first = (value: string | string[] | undefined) => (Array.isArray(value) ? value[0] : value);
+  const rawTab = first(params.tab);
+  const tab: Tab = rawTab === "accepted" || rawTab === "closed" ? rawTab : "pending";
+  const page = Math.max(1, parseInt(first(params.page) ?? "1", 10) || 1);
 
-  const [pendingRequests, respondedRequests, [{ total }]] = await Promise.all([
+  const blocked = sql`(${peerCallBookings.studentBlockedAt} is not null or ${peerCallBookings.peerBlockedAt} is not null)`;
+  const bucket: Record<Tab, SQL> = {
+    pending: sql`(${peerCallBookings.status} = 'pending' and not ${blocked})`,
+    accepted: sql`(${peerCallBookings.status} = 'accepted' and not ${blocked})`,
+    closed: sql`(${peerCallBookings.status} not in ('pending','accepted') or ${blocked})`,
+  };
+
+  const [[counts], rows] = await db.batch([
     db
       .select({
-        id: peerCallBookings.id,
-        message: peerCallBookings.message,
-        createdAt: peerCallBookings.createdAt,
-        studentName: users.name,
-
+        pending: sql<number>`count(*) filter (where ${bucket.pending})`.mapWith(Number),
+        accepted: sql<number>`count(*) filter (where ${bucket.accepted})`.mapWith(Number),
+        closed: sql<number>`count(*) filter (where ${bucket.closed})`.mapWith(Number),
       })
       .from(peerCallBookings)
-      .innerJoin(users, eq(peerCallBookings.studentUserId, users.id))
-      .where(and(eq(peerCallBookings.peerId, peer.id), eq(peerCallBookings.status, "pending")))
-      .orderBy(desc(peerCallBookings.createdAt)),
-
+      .where(eq(peerCallBookings.peerId, peer.id)),
     db
       .select({
         id: peerCallBookings.id,
         status: peerCallBookings.status,
+        blocked: sql<boolean>`${blocked}`,
         message: peerCallBookings.message,
         createdAt: peerCallBookings.createdAt,
+        updatedAt: peerCallBookings.updatedAt,
         studentName: users.name,
-
+        conversationId: guideConversations.id,
       })
       .from(peerCallBookings)
       .innerJoin(users, eq(peerCallBookings.studentUserId, users.id))
-      .where(and(eq(peerCallBookings.peerId, peer.id), ne(peerCallBookings.status, "pending")))
-      .orderBy(desc(peerCallBookings.createdAt))
-      .limit(HISTORY_PER_PAGE)
-      .offset(historyOffset),
-
-    db
-      .select({ total: count() })
-      .from(peerCallBookings)
-      .where(and(eq(peerCallBookings.peerId, peer.id), ne(peerCallBookings.status, "pending"))),
+      .leftJoin(
+        guideConversations,
+        and(
+          eq(guideConversations.peerId, peerCallBookings.peerId),
+          eq(guideConversations.studentUserId, peerCallBookings.studentUserId),
+        ),
+      )
+      .where(and(eq(peerCallBookings.peerId, peer.id), bucket[tab]))
+      .orderBy(tab === "pending" ? desc(peerCallBookings.createdAt) : desc(peerCallBookings.updatedAt))
+      .limit(PER_PAGE)
+      .offset((page - 1) * PER_PAGE),
   ]);
 
-  const historyTotalPages = Math.max(1, Math.ceil(total / HISTORY_PER_PAGE));
+  const tabCount = counts?.[tab] ?? 0;
+  const totalPages = Math.max(1, Math.ceil(tabCount / PER_PAGE));
+  const guideActive = peer.status === "active";
+  const pendingCount = counts?.pending ?? 0;
 
   return (
-    <div className="space-y-10 pb-8">
+    <DashboardPage wide>
+      <PageHeader
+        title="Call requests"
+        description={
+          pendingCount === 0
+            ? "No students are waiting for a reply."
+            : `${pendingCount} student${pendingCount === 1 ? " is" : "s are"} waiting for your reply.`
+        }
+      />
 
-      {/* Pending requests */}
-      <div className="space-y-5">
-        <div className="flex items-start justify-between gap-4">
-          <div>
-            <h1 className="text-2xl font-bold text-[#0f1f1c]">Call Requests</h1>
-            <p className="mt-0.5 text-sm text-[#6b7280]">
-              {pendingRequests.length === 0
-                ? "No pending requests right now."
-                : `${pendingRequests.length} student${pendingRequests.length === 1 ? "" : "s"} waiting for your response.`}
-            </p>
-          </div>
-          {pendingRequests.length > 0 && (
-            <span className="mt-1 inline-flex size-7 shrink-0 items-center justify-center rounded-full bg-amber-100 text-xs font-bold text-amber-700">
-              {pendingRequests.length}
-            </span>
-          )}
-        </div>
+      <Section flush>
+        <nav aria-label="Request status" className="flex gap-1 overflow-x-auto border-b border-[#f0f0f0] px-3 sm:px-4">
+          {TABS.map((t) => {
+            const active = t.id === tab;
+            const n = counts?.[t.id] ?? 0;
+            return (
+              <Link
+                key={t.id}
+                href={t.id === "pending" ? "/dashboard/peer/requests" : `/dashboard/peer/requests?tab=${t.id}`}
+                aria-current={active ? "page" : undefined}
+                className={cn(
+                  "-mb-px inline-flex shrink-0 items-center gap-1.5 border-b-2 px-2.5 py-3 text-sm font-medium transition",
+                  active ? "border-[#0f3d37] text-[#0f1f1c]" : "border-transparent text-[#6b7280] hover:text-[#0f1f1c]",
+                )}
+              >
+                {t.label}
+                <span
+                  className={cn(
+                    "rounded-full px-1.5 py-0.5 text-[11px] tabular-nums",
+                    t.id === "pending" && n > 0 ? "bg-amber-100 text-amber-800" : "bg-[#f3f4f6] text-[#6b7280]",
+                  )}
+                >
+                  {n}
+                </span>
+              </Link>
+            );
+          })}
+        </nav>
 
-        {pendingRequests.length === 0 ? (
-          <div className="py-14 text-center">
-            <div className="mx-auto mb-4 flex size-14 items-center justify-center rounded-full bg-[#f0f7f5]">
-              <Inbox className="size-7 text-[#0f3d37]" />
-            </div>
-            <p className="text-sm font-semibold text-[#374151]">All clear</p>
-            <p className="mt-1 text-xs text-[#9ca3af] max-w-xs mx-auto">
-              When students request a call with you, they&apos;ll appear here for you to accept or decline.
-            </p>
-          </div>
+        {rows.length === 0 ? (
+          <EmptyState icon={Inbox} title={EMPTY[tab].title} description={EMPTY[tab].description} />
         ) : (
-          <>
-            {/* Mobile flat list */}
-            <div className="md:hidden divide-y divide-[#eaeaea]">
-              {pendingRequests.map((req) => {
-                const displayName = req.studentName?.trim() || "Student";
-                return (
-                  <div key={req.id} className="py-4">
-                    <div className="flex items-center gap-3 mb-3">
-                      <InitialsAvatar name={displayName} />
-                      <div className="min-w-0 flex-1">
-                        <p className="truncate text-sm font-semibold text-[#0f1f1c]">{displayName}</p>
-                      </div>
-                      <p className="shrink-0 text-[10px] text-[#9ca3af]">{formatDate(req.createdAt)}</p>
-                    </div>
-                    {req.message ? (
-                      <p className="mb-3 text-sm text-[#374151] leading-relaxed">{peerSafeText(req.message)}</p>
-                    ) : (
-                      <p className="mb-3 text-xs italic text-[#9ca3af]">No message included.</p>
-                    )}
-                    <RequestActions bookingId={req.id} fullWidth />
-                  </div>
-                );
-              })}
-            </div>
-
-            {/* Desktop table */}
-            <div className="hidden md:block overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b border-[#eaeaea]">
-                    <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Student</th>
-                    <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">What they want to discuss</th>
-                    <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Requested</th>
-                    <th className="pb-3 text-right text-xs font-semibold text-[#9ca3af]">Actions</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-[#eaeaea]">
-                  {pendingRequests.map((req) => {
-                    const displayName = req.studentName?.trim() || "Student";
-                    return (
-                      <tr key={req.id} className="hover:bg-[#fafafa] transition-colors">
-                        <td className="py-4 pr-6">
-                          <div className="flex items-center gap-3">
-                            <InitialsAvatar name={displayName} />
-                            <div className="min-w-0">
-                              <p className="font-semibold text-[#0f1f1c] whitespace-nowrap">{displayName}</p>
-                            </div>
-                          </div>
-                        </td>
-                        <td className="py-4 pr-6 max-w-xs">
-                          {req.message ? (
-                            <p className="line-clamp-2 text-xs text-[#6b7280] leading-relaxed">{peerSafeText(req.message)}</p>
-                          ) : (
-                            <p className="text-xs italic text-[#9ca3af]">No message</p>
-                          )}
-                        </td>
-                        <td className="py-4 pr-6 text-xs text-[#9ca3af] whitespace-nowrap">
-                          {formatDate(req.createdAt)}
-                        </td>
-                        <td className="py-4">
-                          <div className="flex justify-end">
-                            <RequestActions bookingId={req.id} />
-                          </div>
-                        </td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
-            </div>
-          </>
-        )}
-      </div>
-
-      {/* History */}
-      {(respondedRequests.length > 0 || historyPage > 1) && (
-        <div className="space-y-4">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#9ca3af]">History</p>
-            <p className="mt-0.5 text-sm text-[#6b7280]">
-              {total} responded request{total === 1 ? "" : "s"}
-            </p>
-          </div>
-
-          {/* Mobile flat list */}
-          <div className="md:hidden divide-y divide-[#eaeaea]">
-            {respondedRequests.map((req) => {
-              const displayName = req.studentName?.trim() || "Student";
+          <SectionList>
+            {rows.map((req) => {
+              const name = peerSafeText(req.studentName?.trim() || "Student");
+              const status = bookingStatus(req.status, req.blocked);
+              const open = guideActive && !req.blocked;
+              const sent = formatGuideDate(req.createdAt, true);
+              const responded = req.status !== "pending" ? formatGuideDate(req.updatedAt, true) : null;
               return (
-                <div key={req.id} className="flex items-center gap-3 py-3.5">
-                  <InitialsAvatar name={displayName} size="sm" />
-                  <div className="min-w-0 flex-1">
-                    <p className="truncate text-sm font-semibold text-[#0f1f1c]">{displayName}</p>
-                    <p className="text-[10px] text-[#9ca3af]">{formatDate(req.createdAt)}</p>
+                <li key={req.id} className="flex flex-col gap-3 px-4 py-4 sm:flex-row sm:items-start sm:px-5">
+                  <div className="flex min-w-0 flex-1 gap-3">
+                    <StudentAvatar name={name} />
+                    <div className="min-w-0 flex-1">
+                      <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                        <p className="truncate text-sm font-semibold text-[#0f1f1c]">{name}</p>
+                        {tab !== "pending" ? <StudentStatusPill status={status} /> : null}
+                      </div>
+                      <p className="mt-0.5 text-xs text-[#6b7280]">
+                        Sent {sent ?? "—"}
+                        {responded ? <> · Updated {responded}</> : null}
+                      </p>
+                      <div className="mt-1.5">
+                        {req.message ? (
+                          <ExpandableText text={peerSafeText(req.message)} />
+                        ) : (
+                          <p className="text-sm italic text-[#9ca3af]">No message included.</p>
+                        )}
+                      </div>
+                    </div>
                   </div>
-                  <div className="shrink-0 flex items-center gap-2">
-                    {req.status === "accepted" && env.hasAgoraVoice && (
-                      <>
-                        <form action={openGuideConversationFromBookingAction}>
-                          <input type="hidden" name="bookingId" value={req.id} />
-                          <input type="hidden" name="redirectPath" value="/dashboard/peer/messages" />
-                          <FormSubmitButton
-                            className="inline-flex items-center gap-1.5 rounded-xl border border-[#e5e7eb] px-3 py-2 text-xs font-semibold text-[#374151] transition hover:bg-[#f9fafb]"
-                            pendingLabel="Opening…"
-                          >
-                            <MessageCircle className="size-3.5" />
-                            Message
-                          </FormSubmitButton>
-                        </form>
-                        <PeerStartCallButton
-                          bookingId={req.id}
-                          studentName={displayName}
-                          universityName={peer.universityName}
-                        />
-                      </>
-                    )}
-                    {!env.hasAgoraVoice && statusLabel(req.status)}
-                    {env.hasAgoraVoice && req.status !== "accepted" && statusLabel(req.status)}
+                  <div className="pl-12 sm:pl-0">
+                    {status === "pending" && open ? (
+                      <RequestActions bookingId={req.id} studentName={name} />
+                    ) : status === "accepted" && open ? (
+                      <StudentActions
+                        studentName={name}
+                        universityName={peer.universityName}
+                        bookingId={req.id}
+                        conversationId={req.conversationId}
+                        canAccept={false}
+                        canMessage
+                        canCall={env.hasAgoraVoice}
+                      />
+                    ) : null}
                   </div>
-                </div>
+                </li>
               );
             })}
-          </div>
+          </SectionList>
+        )}
 
-          {/* Desktop table */}
-          <div className="hidden md:block overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b border-[#eaeaea]">
-                  <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Student</th>
-                  <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Message</th>
-                  <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Status</th>
-                  <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Date</th>
-                  {env.hasAgoraVoice && (
-                    <th className="pb-3 text-right text-xs font-semibold text-[#9ca3af]">Action</th>
-                  )}
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-[#eaeaea]">
-                {respondedRequests.map((req) => {
-                  const displayName = req.studentName?.trim() || "Student";
-                  return (
-                    <tr key={req.id} className="hover:bg-[#fafafa] transition-colors">
-                      <td className="py-4 pr-6">
-                        <div className="flex items-center gap-3">
-                          <InitialsAvatar name={displayName} size="sm" />
-                          <div className="min-w-0">
-                            <p className="font-medium text-[#0f1f1c] whitespace-nowrap">{displayName}</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td className="py-4 pr-6 max-w-xs">
-                        <p className="line-clamp-2 text-xs text-[#6b7280]">{req.message ? peerSafeText(req.message) : "—"}</p>
-                      </td>
-                      <td className="py-4 pr-6 whitespace-nowrap">
-                        {statusLabel(req.status)}
-                      </td>
-                      <td className="py-4 pr-6 text-xs text-[#9ca3af] whitespace-nowrap">
-                        {formatDate(req.createdAt)}
-                      </td>
-                      {env.hasAgoraVoice && (
-                        <td className="py-4">
-                          <div className="flex justify-end">
-                            {req.status === "accepted" ? (
-                              <div className="flex items-center gap-2">
-                                <form action={openGuideConversationFromBookingAction}>
-                                  <input type="hidden" name="bookingId" value={req.id} />
-                                  <input type="hidden" name="redirectPath" value="/dashboard/peer/messages" />
-                                  <FormSubmitButton
-                                    className="inline-flex items-center gap-1.5 rounded-xl border border-[#e5e7eb] px-3 py-2 text-xs font-semibold text-[#374151] transition hover:bg-[#f9fafb]"
-                                    pendingLabel="Opening…"
-                                  >
-                                    <MessageCircle className="size-3.5" />
-                                    Message
-                                  </FormSubmitButton>
-                                </form>
-                                <PeerStartCallButton
-                                  bookingId={req.id}
-                                  studentName={displayName}
-                                  universityName={peer.universityName}
-                                />
-                              </div>
-                            ) : (
-                              <span className="text-xs text-[#9ca3af]">—</span>
-                            )}
-                          </div>
-                        </td>
-                      )}
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+        {totalPages > 1 ? (
+          <div className="border-t border-[#f0f0f0] px-4 py-3">
+            <DataPagination
+              page={page}
+              totalPages={totalPages}
+              buildHref={(p) => `/dashboard/peer/requests?${tab === "pending" ? "" : `tab=${tab}&`}page=${p}`}
+            />
           </div>
-
-          <DataPagination
-            page={historyPage}
-            totalPages={historyTotalPages}
-            buildHref={(p) => `/dashboard/peer/requests?page=${p}`}
-          />
-        </div>
-      )}
-    </div>
+        ) : null}
+      </Section>
+    </DashboardPage>
   );
 }

@@ -12,18 +12,34 @@ import {
 import {
   Check,
   CheckCheck,
+  ChevronDown,
   ChevronLeft,
   Loader2,
   MessageSquare,
   PhoneCall,
+  PhoneIncoming,
+  PhoneMissed,
+  PhoneOff,
+  PhoneOutgoing,
   Plus,
-  Send,
+  Search,
+  SendHorizontal,
+  ShieldCheck,
 } from "lucide-react";
 import { useRouter } from "next/navigation";
 
+import { toast } from "sonner";
 import type { GuideCallTimelineEvent, GuideChatMessage, GuideConversationSummary } from "@/lib/guide-chat";
 import { getGuideChatRealtimeClient } from "@/lib/realtime/ably-browser";
 import { cn } from "@/lib/utils";
+import { deriveCallStatus, describeCallForThread } from "@/lib/calls/call-status";
+import {
+  buildThreadTimeline,
+  formatCallTimeRange,
+  groupHasMissedCall,
+  summarizeCallGroup,
+} from "@/lib/chat/call-events";
+import { DashboardPage, EmptyState, PageHeader } from "@/components/dashboard/ui";
 import { startPeerCallAction } from "@/app/_actions/start-peer-call";
 import { startCallAsPeerAction } from "@/app/_actions/start-call-as-peer";
 import { ConversationSafety } from "./conversation-safety";
@@ -81,6 +97,9 @@ type ChatWorkspaceProps = {
   initialConversations: GuideConversationSummary[];
   initialStarters: ChatStarterItem[];
   initialSelectedConversationId: number | null;
+  /** True when the URL asked for this conversation (?conversation=…). Only then does mobile open the
+   * thread straight away; otherwise mobile lands on the inbox, while desktop still previews the first chat. */
+  openThreadInitially?: boolean;
   initialMessages: GuideChatMessage[];
   initialCalls: GuideCallTimelineEvent[];
   realtimeEnabled: boolean;
@@ -104,21 +123,28 @@ function formatMessageTime(date: DateValue) {
   return d.toLocaleString("en-IN", { hour: "2-digit", minute: "2-digit" });
 }
 
-function formatCallDuration(seconds: number | null) {
-  if (seconds == null) return null;
-  const minutes = Math.floor(seconds / 60);
-  const remainder = seconds % 60;
-  return `${minutes}:${String(remainder).padStart(2, "0")}`;
+function CallIcon({ call, className }: { call: GuideCallTimelineEvent; className?: string }) {
+  const { outcome } = deriveCallStatus(call);
+  if (outcome === "declined") return <PhoneOff className={className} aria-hidden />;
+  if (outcome === "missed" || outcome === "no_answer" || outcome === "cancelled") {
+    return <PhoneMissed className={className} aria-hidden />;
+  }
+  if (outcome === "completed") {
+    return call.direction === "outgoing"
+      ? <PhoneOutgoing className={className} aria-hidden />
+      : <PhoneIncoming className={className} aria-hidden />;
+  }
+  return <PhoneCall className={className} aria-hidden />;
 }
 
-function getCallLabel(call: GuideCallTimelineEvent) {
-  const duration = formatCallDuration(call.durationSeconds);
-  if (call.answeredAt) return `${call.direction === "outgoing" ? "Outgoing" : "Incoming"} voice call${duration ? ` · ${duration}` : ""}`;
-  if (call.status === "expired" || call.status === "missed") {
-    return call.direction === "incoming" ? "Missed voice call" : "No answer";
-  }
-  if (call.status === "ringing") return `${call.direction === "outgoing" ? "Calling" : "Incoming"} voice call`;
-  return call.direction === "outgoing" ? "Outgoing call cancelled" : "Missed voice call";
+function DateSeparator({ date }: { date: DateValue }) {
+  return (
+    <div className="my-3 flex items-center gap-2" role="separator">
+      <div className="h-px flex-1 bg-[#e5eeeb]" />
+      <span className="text-[10px] font-semibold uppercase tracking-wide text-[#9aada8]">{formatDateSeparator(date)}</span>
+      <div className="h-px flex-1 bg-[#e5eeeb]" />
+    </div>
+  );
 }
 
 function formatDateSeparator(date: DateValue) {
@@ -130,14 +156,6 @@ function formatDateSeparator(date: DateValue) {
   if (d.toDateString() === now.toDateString()) return "Today";
   if (d.toDateString() === yesterday.toDateString()) return "Yesterday";
   return d.toLocaleString("en-IN", { day: "numeric", month: "long", year: "numeric" });
-}
-
-function needsDateSeparator(message: LiveMessage, prevMessage?: LiveMessage) {
-  if (!prevMessage) return true;
-  const a = message.createdAt ? new Date(message.createdAt) : null;
-  const b = prevMessage.createdAt ? new Date(prevMessage.createdAt) : null;
-  if (!a || !b) return false;
-  return a.toDateString() !== b.toDateString();
 }
 
 function isFirstInGroup(messages: LiveMessage[], index: number) {
@@ -208,6 +226,7 @@ export function ChatWorkspace({
   initialConversations,
   initialStarters,
   initialSelectedConversationId,
+  openThreadInitially = false,
   initialMessages,
   initialCalls,
   realtimeEnabled,
@@ -225,12 +244,18 @@ export function ChatWorkspace({
   const [sendError, setSendError] = useState<string | null>(null);
   const [loadingConversation, setLoadingConversation] = useState(false);
   const [sending, setSending] = useState(false);
-  const [isSidebarVisible, setIsSidebarVisible] = useState(!initialSelectedConversationId);
+  const [isSidebarVisible, setIsSidebarVisible] = useState(!initialSelectedConversationId || !openThreadInitially);
+  const isSidebarVisibleRef = useRef(isSidebarVisible);
+  useEffect(() => {
+    isSidebarVisibleRef.current = isSidebarVisible;
+  }, [isSidebarVisible]);
   const [connectionState, setConnectionState] = useState<"connecting" | "connected" | "offline">(
     realtimeEnabled ? "connecting" : "offline"
   );
   const [activeCall, setActiveCall] = useState<{ callId: string; displayName: string; universityName: string } | null>(null);
   const [callingPending, setCallingPending] = useState(false);
+  const [expandedCallGroups, setExpandedCallGroups] = useState<Set<string>>(() => new Set());
+  const [inboxQuery, setInboxQuery] = useState("");
   const [, startTransition] = useTransition();
   const lastMarkedConversationIdRef = useRef<number | null>(null);
   const selectedConversationIdRef = useRef<number | null>(initialSelectedConversationId);
@@ -244,7 +269,10 @@ export function ChatWorkspace({
 
   // Lock body scroll when mobile thread overlay is open to prevent background scroll leak
   useEffect(() => {
-    const overlayOpen = !!selectedConversation && !isSidebarVisible;
+    const overlayOpen =
+      !!selectedConversation &&
+      !isSidebarVisible &&
+      window.matchMedia("(max-width: 1023px)").matches;
     if (overlayOpen) {
       document.body.style.overflow = "hidden";
       document.body.style.touchAction = "none";
@@ -357,7 +385,9 @@ export function ChatWorkspace({
           if (current.some((message) => message.id === payload.message?.id)) return current;
           return [...current, payload.message!];
         });
-        if (!payload.message.isMine && document.visibilityState === "visible") {
+        // On mobile the thread is only on screen when it is open; don't mark it read from the inbox.
+        const threadOnScreen = !isSidebarVisibleRef.current || window.matchMedia("(min-width: 1024px)").matches;
+        if (!payload.message.isMine && document.visibilityState === "visible" && threadOnScreen) {
           lastMarkedConversationIdRef.current = null;
           void markAsRead(payload.conversationId);
         }
@@ -571,51 +601,90 @@ export function ChatWorkspace({
 
   // ─── Shared sub-renders ───────────────────────────────────────────────────
 
-  function MessageBubbles({ listRef }: { listRef: React.RefObject<HTMLDivElement | null> }) {
-    const timeline = [
-      ...messages.map((message) => ({ kind: "message" as const, createdAt: message.createdAt, message })),
-      ...calls.map((call) => ({ kind: "call" as const, createdAt: call.createdAt, call })),
-    ].sort((left, right) => {
-      const leftTime = left.createdAt ? new Date(left.createdAt).getTime() : 0;
-      const rightTime = right.createdAt ? new Date(right.createdAt).getTime() : 0;
-      return leftTime - rightTime;
+  function toggleCallGroup(key: string) {
+    setExpandedCallGroups((current) => {
+      const next = new Set(current);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
     });
+  }
+
+  function MessageBubbles({ listRef }: { listRef: React.RefObject<HTMLDivElement | null> }) {
+    const timeline = buildThreadTimeline(messages, calls);
 
     return (
-      <div ref={listRef} className="flex-1 overflow-y-auto overscroll-contain bg-white">
+      <div ref={listRef} className="min-h-0 flex-1 overflow-y-auto overscroll-contain bg-white">
         {timeline.length === 0 ? (
-          <div className="flex h-full min-h-[200px] items-center justify-center px-6">
-            <div className="max-w-xs text-center">
-              <div className="mx-auto mb-3 flex size-14 items-center justify-center rounded-full bg-[#edf2f1]">
-                <MessageSquare className="size-7 text-[#94a9a4]" />
-              </div>
-              <p className="text-sm font-semibold text-[#33403d]">{emptyStateTitle}</p>
-              <p className="mt-1 text-xs leading-relaxed text-[#90a19c]">{emptyStateDescription}</p>
-            </div>
+          <div className="flex h-full min-h-[200px] items-center justify-center">
+            <EmptyState icon={MessageSquare} title={emptyStateTitle} description={emptyStateDescription} />
           </div>
         ) : (
-          <div className="px-4 py-4 sm:px-5">
+          <div className="px-3 py-4 sm:px-5">
             {timeline.map((item, index) => {
               const previous = timeline[index - 1];
               const showDateSep = !previous ||
-                (item.createdAt && previous.createdAt && new Date(item.createdAt).toDateString() !== new Date(previous.createdAt).toDateString());
+                Boolean(item.createdAt && previous.createdAt && new Date(item.createdAt).toDateString() !== new Date(previous.createdAt).toDateString());
 
               if (item.kind === "call") {
+                const missed = deriveCallStatus(item.call).outcome === "missed";
                 return (
-                  <div key={item.call.id}>
-                    {showDateSep && (
-                      <div className="my-3 flex items-center gap-2">
-                        <div className="h-px flex-1 bg-[#e5eeeb]" />
-                        <span className="text-[10px] font-semibold uppercase tracking-wide text-[#9aada8]">{formatDateSeparator(item.createdAt)}</span>
-                        <div className="h-px flex-1 bg-[#e5eeeb]" />
-                      </div>
-                    )}
-                    <div className="my-3 flex justify-center">
-                      <div className="flex items-center gap-2 rounded-full bg-[#edf5f2] px-3 py-1.5 text-xs font-medium text-[#35665e]">
-                        <PhoneCall className="size-3.5" />
-                        <span>{getCallLabel(item.call)}</span>
+                  <div key={item.key}>
+                    {showDateSep && <DateSeparator date={item.createdAt} />}
+                    <div className="my-2 flex justify-center">
+                      <div
+                        className={cn(
+                          "inline-flex max-w-full flex-wrap items-center justify-center gap-x-2 gap-y-0.5 rounded-2xl px-3 py-1.5 text-center text-xs font-medium",
+                          missed ? "bg-amber-50 text-amber-800" : "bg-[#edf5f2] text-[#35665e]"
+                        )}
+                      >
+                        <CallIcon call={item.call} className="size-3.5 shrink-0" />
+                        <span>{describeCallForThread(item.call)}</span>
                         <span className="text-[10px] text-[#7b938d]">{formatMessageTime(item.createdAt)}</span>
                       </div>
+                    </div>
+                  </div>
+                );
+              }
+
+              if (item.kind === "call-group") {
+                const expanded = expandedCallGroups.has(item.key);
+                const missed = groupHasMissedCall(item.calls);
+                const listId = `${item.key}-calls`;
+                return (
+                  <div key={item.key}>
+                    {showDateSep && <DateSeparator date={item.createdAt} />}
+                    <div className="my-2 flex flex-col items-center">
+                      <button
+                        type="button"
+                        onClick={() => toggleCallGroup(item.key)}
+                        aria-expanded={expanded}
+                        aria-controls={listId}
+                        className={cn(
+                          "inline-flex max-w-full flex-wrap items-center justify-center gap-x-2 gap-y-0.5 rounded-2xl px-3 py-1.5 text-center text-xs font-medium transition",
+                          missed
+                            ? "bg-amber-50 text-amber-800 hover:bg-amber-100"
+                            : "bg-[#edf5f2] text-[#35665e] hover:bg-[#e2efea]"
+                        )}
+                      >
+                        {missed ? <PhoneMissed className="size-3.5 shrink-0" aria-hidden /> : <PhoneCall className="size-3.5 shrink-0" aria-hidden />}
+                        <span>{summarizeCallGroup(item.calls)}</span>
+                        <span className="inline-flex items-center gap-1 text-[10px] text-[#7b938d]">
+                          {formatCallTimeRange(item.calls[0].createdAt, item.calls[item.calls.length - 1].createdAt)}
+                          <ChevronDown className={cn("size-3 transition-transform", expanded && "rotate-180")} aria-hidden />
+                        </span>
+                      </button>
+                      {expanded && (
+                        <ul id={listId} className="mt-1.5 w-full max-w-xs space-y-1 rounded-xl border border-[#edf2f1] bg-[#fafcfb] px-3 py-2">
+                          {item.calls.map((call) => (
+                            <li key={call.id} className="flex items-center gap-2 text-xs text-[#4b5f59]">
+                              <CallIcon call={call} className="size-3.5 shrink-0 text-[#7b938d]" />
+                              <span className="min-w-0 flex-1">{describeCallForThread(call)}</span>
+                              <span className="shrink-0 text-[10px] text-[#9aada8]">{formatMessageTime(call.createdAt)}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </div>
                   </div>
                 );
@@ -631,16 +700,8 @@ export function ChatWorkspace({
                 : null;
 
               return (
-                <div key={String(message.id)}>
-                  {showMessageDateSep && (
-                    <div className="my-3 flex items-center gap-2">
-                      <div className="h-px flex-1 bg-[#e5eeeb]" />
-                      <span className="text-[10px] font-semibold uppercase tracking-wide text-[#9aada8]">
-                        {formatDateSeparator(message.createdAt)}
-                      </span>
-                      <div className="h-px flex-1 bg-[#e5eeeb]" />
-                    </div>
-                  )}
+                <div key={item.key}>
+                  {showMessageDateSep && <DateSeparator date={message.createdAt} />}
 
                   <div
                     className={cn(
@@ -665,7 +726,7 @@ export function ChatWorkspace({
                           message.failed && "opacity-60"
                         )}
                       >
-                        <p className="whitespace-pre-wrap">{message.body}</p>
+                        <p className="whitespace-pre-wrap [overflow-wrap:anywhere]" title={message.createdAt ? new Date(message.createdAt).toLocaleString("en-IN", { dateStyle: "medium", timeStyle: "short" }) : undefined}>{message.body}</p>
                       </div>
 
                       {last && (
@@ -712,9 +773,8 @@ export function ChatWorkspace({
         className="border-t border-[#edf2f1] bg-white px-3 py-3 sm:px-4"
         style={paddingBottom ? { paddingBottom } : undefined}
       >
-        <p className="mb-2 text-xs text-[#5d726b]">{selectedConversation?.canMessage ? "Chat and call here. Do not share contact details or send money." : "This conversation is closed, blocked, or unavailable."}</p>
         {sendError && <p role="alert" className="mb-2 text-sm text-red-600">{sendError}</p>}
-        <div className="flex items-end gap-2 rounded-[20px] border border-[#d9e6e2] bg-[#f4f9f7] px-3 py-1.5">
+        <div className="flex items-end gap-2 rounded-3xl border border-[#d9e6e2] bg-[#f4f9f7] py-1 pl-4 pr-1 transition focus-within:border-[#0f3d37]/40 focus-within:bg-white focus-within:ring-2 focus-within:ring-[#0f3d37]/10">
           <textarea
             name="body"
             aria-label="Message"
@@ -734,92 +794,116 @@ export function ChatWorkspace({
                 ? composerPlaceholder.replace("{name}", selectedConversation.displayName)
                 : ""
             }
-            className="flex-1 resize-none bg-transparent py-2 text-sm text-[#0f1f1c] outline-none placeholder:text-[#9aada8] [field-sizing:content] min-h-[36px] max-h-[120px]"
+            className="flex-1 resize-none bg-transparent py-2.5 text-sm text-[#0f1f1c] outline-none placeholder:text-[#9aada8] [field-sizing:content] min-h-[36px] max-h-[120px]"
           />
           <button
             type="button"
             onClick={() => void handleSendMessage()}
             disabled={!draft.trim() || sending || !selectedConversation?.canMessage}
             aria-label="Send message"
-            className="mb-0.5 flex size-9 shrink-0 items-center justify-center rounded-2xl bg-[#0f3d37] text-white shadow-sm transition active:bg-[#184a43] disabled:cursor-not-allowed disabled:opacity-40"
+            className="flex size-10 shrink-0 items-center justify-center rounded-full bg-[#0f3d37] text-white shadow-sm transition-all duration-150 hover:bg-[#184a43] hover:shadow active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0f3d37]/30 disabled:cursor-not-allowed disabled:bg-[#dfe8e5] disabled:text-[#9aada8] disabled:shadow-none disabled:hover:bg-[#dfe8e5] disabled:active:scale-100"
           >
             {sending ? (
-              <Loader2 className="size-4 animate-spin" />
+              <Loader2 className="size-[18px] animate-spin" />
             ) : (
-              <Send className="size-4" />
+              <SendHorizontal className="size-[18px] translate-x-px" />
             )}
           </button>
         </div>
+        {selectedConversation?.canMessage ? (
+          <p className="mt-2 flex items-center justify-center gap-1.5 text-[11px] text-[#7b8f89]">
+            <ShieldCheck className="size-3.5 shrink-0" aria-hidden />
+            Keep chats and calls on Students Traffic. Never share contact details or send money.
+          </p>
+        ) : (
+          <p className="mt-2 text-center text-xs text-[#5d726b]">This conversation is closed, blocked or unavailable.</p>
+        )}
       </div>
     );
   }
 
   function ConversationList() {
+    const query = inboxQuery.trim().toLowerCase();
+    const visibleConversations = query
+      ? conversations.filter((conversation) =>
+          `${conversation.displayName} ${conversation.universityName}`.toLowerCase().includes(query)
+        )
+      : conversations;
+    const unreadTotal = conversations.reduce((sum, conversation) => sum + (conversation.unreadCount > 0 ? 1 : 0), 0);
+
     return (
       <>
-        <div className="flex items-center justify-between border-b border-[#eaeaea] px-4 py-3">
-          <p className="text-sm font-semibold text-[#0f1f1c]">Inbox</p>
-          {conversations.length > 0 && (
-            <span className="text-[11px] font-semibold text-[#9ca3af]">
-              {conversations.length}
-            </span>
+        <div className="space-y-2.5 border-b border-[#eaeaea] px-4 py-3">
+          <div className="flex items-center justify-between">
+            <p className="text-sm font-semibold text-[#0f1f1c]">Chats</p>
+            {unreadTotal > 0 && (
+              <span className="text-[11px] font-semibold text-emerald-700">{unreadTotal} unread</span>
+            )}
+          </div>
+          {conversations.length > 4 && (
+            <label className="flex items-center gap-2 rounded-lg border border-[#e5e7eb] bg-[#fafafa] px-2.5 py-1.5 focus-within:border-[#0f3d37]">
+              <Search className="size-3.5 shrink-0 text-[#9ca3af]" aria-hidden />
+              <span className="sr-only">Search chats</span>
+              <input
+                type="search"
+                value={inboxQuery}
+                onChange={(event) => setInboxQuery(event.target.value)}
+                placeholder="Search by name or university"
+                className="min-w-0 flex-1 bg-transparent text-sm text-[#0f1f1c] outline-none placeholder:text-[#9ca3af]"
+              />
+            </label>
           )}
         </div>
 
         {conversations.length === 0 ? (
-          <div className="px-4 py-10 text-center">
-            <MessageSquare className="mx-auto size-8 text-[#d1d5db]" />
-            <p className="mt-3 text-sm font-semibold text-[#374151]">No chats yet</p>
-            <p className="mt-1 text-xs text-[#9ca3af]">Start a new chat from the list below.</p>
-          </div>
+          <EmptyState
+            icon={MessageSquare}
+            title="No chats yet"
+            description={availableStarters.length > 0 ? "Start a chat with someone from the list below." : "Chats appear here once a call request is accepted."}
+          />
+        ) : visibleConversations.length === 0 ? (
+          <p className="px-4 py-6 text-center text-sm text-[#6b7280]">No chats match “{inboxQuery.trim()}”.</p>
         ) : (
           <div className="divide-y divide-[#eaeaea]">
-            {conversations.map((conversation) => {
+            {visibleConversations.map((conversation) => {
               const isActive = conversation.id === selectedConversationId;
+              const unread = conversation.unreadCount > 0;
               return (
                 <button
                   key={conversation.id}
                   type="button"
                   onClick={() => void loadConversation(conversation.id)}
+                  aria-current={isActive ? "true" : undefined}
                   className={cn(
                     "flex w-full items-center gap-3 px-4 py-3.5 text-left transition",
                     isActive ? "bg-[#f0f7f5]" : "hover:bg-[#fafafa] active:bg-[#f0f7f5]"
                   )}
                 >
-                  <div className="relative shrink-0">
-            <div className="flex size-10 items-center justify-center rounded-full bg-[#0f3d37] text-xs font-bold text-white">
-                      {getInitials(conversation.displayName)}
-                    </div>
-                    {conversation.unreadCount > 0 && (
-                      <span className="absolute -right-0.5 -top-0.5 flex min-w-[18px] items-center justify-center rounded-full bg-emerald-500 px-1 py-px text-[9px] font-bold text-white">
-                        {conversation.unreadCount > 9 ? "9+" : conversation.unreadCount}
-                      </span>
-                    )}
+                  <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-[#0f3d37] text-xs font-bold text-white">
+                    {getInitials(conversation.displayName)}
                   </div>
                   <div className="min-w-0 flex-1">
                     <div className="flex items-baseline justify-between gap-2">
-                      <p
-                        className={cn(
-                          "truncate text-sm text-[#0f1f1c]",
-                          conversation.unreadCount > 0 ? "font-bold" : "font-semibold"
-                        )}
-                      >
+                      <p className={cn("truncate text-sm text-[#0f1f1c]", unread ? "font-bold" : "font-semibold")}>
                         {conversation.displayName}
                       </p>
-                      <span className="shrink-0 text-[10px] text-[#9ca3af]">
+                      <span className={cn("shrink-0 text-[11px]", unread ? "font-semibold text-emerald-700" : "text-[#9ca3af]")}>
                         {formatConversationTime(conversation.lastMessageAt)}
                       </span>
                     </div>
-                    <p
-                      className={cn(
-                        "mt-0.5 truncate text-xs",
-                        conversation.unreadCount > 0
-                          ? "font-semibold text-[#0f1f1c]"
-                          : "text-[#6b7280]"
+                    <div className="mt-0.5 flex items-center gap-2">
+                      <p className={cn("min-w-0 flex-1 truncate text-xs", unread ? "font-semibold text-[#0f1f1c]" : "text-[#6b7280]")}>
+                        {conversation.lastMessageText ?? conversation.subtitle}
+                      </p>
+                      {unread && (
+                        <span
+                          className="flex min-w-[18px] shrink-0 items-center justify-center rounded-full bg-emerald-600 px-1.5 py-px text-[10px] font-bold text-white"
+                          aria-label={`${conversation.unreadCount} unread`}
+                        >
+                          {conversation.unreadCount > 9 ? "9+" : conversation.unreadCount}
+                        </span>
                       )}
-                    >
-                      {conversation.lastMessageText ?? conversation.subtitle}
-                    </p>
+                    </div>
                   </div>
                 </button>
               );
@@ -864,138 +948,141 @@ export function ChatWorkspace({
 
   // ─── Render ───────────────────────────────────────────────────────────────
 
+  /** Why calling is off in this chat, in words the user can act on; null when calling is available. */
+  function callUnavailableReason(conversation: GuideConversationSummary): string | null {
+    if (!voiceEnabled) return "Voice calls are switched off right now";
+    if (conversation.canCall) return null;
+    const viewerIsGuide = conversation.peerUserId === userId;
+    if (conversation.connectionStatus === "blocked") return "Calls are off because this conversation is blocked";
+    if (conversation.connectionStatus === "pending") {
+      return viewerIsGuide
+        ? `Accept ${conversation.displayName}'s request to call them`
+        : `You can call once ${conversation.displayName} accepts your request`;
+    }
+    return "Calls are not available in this conversation";
+  }
+
+  function renderCallButton(size: "md" | "sm" = "md") {
+    if (!selectedConversation) return null;
+    const unavailableReason = callUnavailableReason(selectedConversation);
+    return (
+      <button
+        type="button"
+        onClick={() => {
+          // Calling stays tappable when unavailable so people learn why, instead of a dead grey button.
+          if (unavailableReason) {
+            toast(unavailableReason);
+            return;
+          }
+          void handleStartCall();
+        }}
+        disabled={callingPending || loadingConversation}
+        aria-disabled={Boolean(unavailableReason)}
+        aria-label={`Call ${selectedConversation.displayName}`}
+        title={unavailableReason ?? "Start a voice call"}
+        className={cn(
+          "flex shrink-0 items-center justify-center rounded-full text-[#0f3d37] transition hover:bg-[#f0f5f4] active:bg-[#e5efec] disabled:opacity-40 aria-disabled:text-[#9aada8] aria-disabled:hover:bg-transparent",
+          size === "sm" ? "size-9" : "size-9 border border-[#e5e7eb]"
+        )}
+      >
+        {callingPending ? <Loader2 className="size-4 animate-spin" /> : <PhoneCall className="size-[18px]" />}
+      </button>
+    );
+  }
+
   return (
     <>
-      {/* ── Mobile: full-screen thread overlay ── */}
+      {/* ── Mobile: full-screen thread ── */}
       {selectedConversation && !isSidebarVisible && (
         <div
-          className="fixed inset-0 z-[60] flex flex-col bg-white xl:hidden"
+          className="fixed inset-0 z-[60] flex h-dvh flex-col bg-white lg:hidden"
           style={{ paddingTop: "env(safe-area-inset-top)" }}
         >
-          {/* Header */}
-          <div className="flex items-center gap-3 border-b border-[#edf2f1] bg-white px-3 py-2.5 shadow-sm">
+          <div className="flex shrink-0 items-center gap-2 border-b border-[#edf2f1] bg-white px-2 py-2 shadow-sm">
             <button
               type="button"
-              aria-label="Back to conversations"
+              aria-label="Back to chats"
               onClick={() => {
                 setIsSidebarVisible(true);
                 setSelectedConversationId(null);
                 setMessages([]);
+                setCalls([]);
                 replaceUrl(null);
               }}
               className="flex size-9 shrink-0 items-center justify-center rounded-full text-[#5d726b] transition active:bg-[#f0f5f4]"
             >
               <ChevronLeft className="size-5" />
             </button>
-            <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-[#0f3d37] text-xs font-bold text-white">
+            <div className="flex size-9 shrink-0 items-center justify-center rounded-full bg-[#0f3d37] text-xs font-bold text-white">
               {getInitials(selectedConversation.displayName)}
             </div>
             <div className="min-w-0 flex-1">
-              <p className="truncate text-sm font-semibold text-[#0f1f1c]">
-                {selectedConversation.displayName}
-              </p>
+              <p className="truncate text-sm font-semibold text-[#0f1f1c]">{selectedConversation.displayName}</p>
               {selectedConversation.universityName && (
-                <p className="truncate text-xs text-[#6b7d77]">
-                  {selectedConversation.universityName}
-                </p>
+                <p className="truncate text-xs text-[#6b7d77]">{selectedConversation.universityName}</p>
               )}
             </div>
+            {renderCallButton("sm")}
             <ConversationSafety compact conversationId={selectedConversation.id} displayName={selectedConversation.displayName} blockedByMe={selectedConversation.blockedByMe} onChanged={() => void loadConversation(selectedConversation.id, { syncUrl: false })} />
-            <button
-              type="button"
-              onClick={() => void handleStartCall()}
-              disabled={callingPending || !selectedConversation.canCall || !voiceEnabled}
-              aria-label="Start voice call"
-              className="flex size-9 shrink-0 items-center justify-center rounded-full text-[#0f3d37] transition active:bg-[#f0f5f4] disabled:opacity-40"
-            >
-              {callingPending ? <Loader2 className="size-4 animate-spin" /> : <PhoneCall className="size-5" />}
-            </button>
           </div>
 
-          {/* Messages */}
           {MessageBubbles({ listRef: mobileMessageListRef })}
 
-          {/* Composer with safe-area bottom padding */}
-          <div style={{ paddingBottom: "env(safe-area-inset-bottom)" }}>
+          <div className="shrink-0" style={{ paddingBottom: "env(safe-area-inset-bottom)" }}>
             {Composer({})}
           </div>
         </div>
       )}
 
-      {/* ── Main page content ── */}
-      <div className="space-y-5">
-        {/* Page header */}
-        <h1 className="text-2xl font-bold text-[#0f1f1c]">{title}</h1>
+      <DashboardPage wide>
+        <PageHeader title={title} description={subtitle} />
 
-        {/* ── Mobile: conversation list ── */}
-        <div className="overflow-hidden rounded-xl border border-[#eaeaea] xl:hidden">
+        {/* ── Mobile: inbox ── */}
+        <div className="overflow-hidden rounded-xl border border-[#eaeaea] bg-white lg:hidden">
           {ConversationList()}
         </div>
 
-        {/* ── Desktop: single flat two-panel container ── */}
+        {/* ── Desktop: inbox left, thread right ── */}
         <div
-          className="hidden xl:grid xl:grid-cols-[280px_minmax(0,1fr)] overflow-hidden rounded-xl border border-[#eaeaea]"
+          className="hidden overflow-hidden rounded-xl border border-[#eaeaea] bg-white lg:grid lg:grid-cols-[300px_minmax(0,1fr)]"
           style={{ height: "74vh", minHeight: "560px" }}
         >
-          {/* Left sidebar */}
-          <aside className="flex flex-col overflow-y-auto border-r border-[#eaeaea]">
+          <aside className="flex min-h-0 flex-col overflow-y-auto border-r border-[#eaeaea]" aria-label="Chats">
             {ConversationList()}
           </aside>
 
-          {/* Right thread */}
-          <section className="flex flex-col overflow-hidden">
+          <section className="flex min-h-0 flex-col overflow-hidden" aria-label="Conversation">
             {selectedConversation ? (
               <>
-                {/* Thread header */}
-                <div className="flex shrink-0 items-center gap-3 border-b border-[#eaeaea] px-5 py-3.5">
+                <div className="flex shrink-0 items-center gap-3 border-b border-[#eaeaea] px-5 py-3">
                   <div className="flex size-9 shrink-0 items-center justify-center rounded-full bg-[#0f3d37] text-xs font-bold text-white">
                     {getInitials(selectedConversation.displayName)}
                   </div>
                   <div className="min-w-0 flex-1">
-                    <p className="truncate text-sm font-semibold text-[#0f1f1c]">
-                      {selectedConversation.displayName}
-                    </p>
+                    <p className="truncate text-sm font-semibold text-[#0f1f1c]">{selectedConversation.displayName}</p>
                     {selectedConversation.universityName && (
-                      <p className="truncate text-xs text-[#6b7280]">
-                        {selectedConversation.universityName}
-                      </p>
+                      <p className="truncate text-xs text-[#6b7280]">{selectedConversation.universityName}</p>
                     )}
                   </div>
+                  {loadingConversation && <Loader2 className="size-4 shrink-0 animate-spin text-[#9ca3af]" aria-label="Loading" />}
+                  {renderCallButton()}
                   <ConversationSafety conversationId={selectedConversation.id} displayName={selectedConversation.displayName} blockedByMe={selectedConversation.blockedByMe} onChanged={() => void loadConversation(selectedConversation.id, { syncUrl: false })} />
-                  {loadingConversation && (
-                    <Loader2 className="size-4 shrink-0 animate-spin text-[#9ca3af]" />
-                  )}
-                  {!loadingConversation && (
-                    <button
-                      type="button"
-                      onClick={() => void handleStartCall()}
-                      disabled={callingPending || !selectedConversation.canCall || !voiceEnabled}
-              aria-label="Start voice call"
-                      className="flex size-9 shrink-0 items-center justify-center rounded-full text-[#374151] transition hover:bg-[#f3f4f6] disabled:opacity-40"
-                    >
-                      {callingPending ? <Loader2 className="size-4 animate-spin" /> : <PhoneCall className="size-5" />}
-                    </button>
-                  )}
                 </div>
                 {MessageBubbles({ listRef: desktopMessageListRef })}
-                {Composer({})}
+                <div className="shrink-0">{Composer({})}</div>
               </>
             ) : (
-              <div className="flex flex-1 items-center justify-center px-6">
-                <div className="max-w-sm text-center">
-                  <div className="mx-auto mb-4 flex size-14 items-center justify-center rounded-full bg-[#f3f4f6]">
-                    <MessageSquare className="size-7 text-[#9ca3af]" />
-                  </div>
-                  <p className="text-sm font-semibold text-[#374151]">Select a conversation</p>
-                  <p className="mt-1 text-xs leading-relaxed text-[#9ca3af]">
-                    Pick a thread or start a new one from the sidebar.
-                  </p>
-                </div>
+              <div className="flex flex-1 items-center justify-center">
+                <EmptyState
+                  icon={MessageSquare}
+                  title="Select a chat"
+                  description="Pick a chat on the left, or start a new one."
+                />
               </div>
             )}
           </section>
         </div>
-      </div>
+      </DashboardPage>
 
       {activeCall && (
         <CallOverlay

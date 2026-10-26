@@ -1,11 +1,17 @@
+import Link from "next/link";
 import { redirect } from "next/navigation";
-import { eq } from "drizzle-orm";
+import { eq, sql } from "drizzle-orm";
+import { ExternalLink } from "lucide-react";
 
 import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
-import { studentPeers, universities } from "@/lib/db/schema";
+import { env } from "@/lib/env";
+import { countries, studentPeers, universities } from "@/lib/db/schema";
+import { getDashboardViewer } from "@/lib/dashboard/nav-counts";
+import { DashboardPage, PageHeader, dashboardButton } from "@/components/dashboard/ui";
 import { PeerEditForm } from "@/components/dashboard/peer-edit-form";
-import { resolveDbUserId } from "@/lib/server-session";
+
+export const metadata = { title: "Guide profile | Dashboard" };
 
 export default async function PeerEditPage() {
   const session = await auth();
@@ -14,8 +20,8 @@ export default async function PeerEditPage() {
   const db = getDb();
   if (!db) return <p className="text-sm text-[#6b7280]">Service temporarily unavailable.</p>;
 
-  const userId = await resolveDbUserId(session.user.email);
-  if (!userId) redirect("/login");
+  const viewer = await getDashboardViewer(session.user.email);
+  if (!viewer) redirect("/login");
 
   const [peer] = await db
     .select({
@@ -28,22 +34,34 @@ export default async function PeerEditPage() {
       homeState: studentPeers.homeState,
       homeCity: studentPeers.homeCity,
       languages: studentPeers.languages,
+      hasWhatsApp: sql<boolean>`${studentPeers.contactPhone} is not null`.mapWith(Boolean),
+      canReceiveCalls: sql<boolean>`${studentPeers.peerUserId} is not null`.mapWith(Boolean),
       universityName: universities.name,
+      universitySlug: universities.slug,
+      countryName: sql<string>`coalesce(${countries.name}, '')`,
+      countrySlug: sql<string>`coalesce(${countries.slug}, '')`,
     })
     .from(studentPeers)
     .innerJoin(universities, eq(studentPeers.universityId, universities.id))
-    .where(eq(studentPeers.peerUserId, userId))
+    .leftJoin(countries, eq(studentPeers.countryId, countries.id))
+    .where(eq(studentPeers.peerUserId, viewer.userId))
     .limit(1);
 
   if (!peer) redirect("/join");
 
   return (
-    <div className="max-w-2xl space-y-5">
-      <div>
-        <h1 className="text-2xl font-bold text-[#0f1f1c]">Edit profile</h1>
-        <p className="mt-1 text-sm text-[#6b7280]">Update the details shown to students on your guide profile.</p>
-      </div>
-      <PeerEditForm peer={peer} />
-    </div>
+    <DashboardPage>
+      <PageHeader
+        title="Guide profile"
+        description="What students see on your university page before they request a call."
+        actions={
+          <Link href={`/students?peer=${peer.id}`} className={dashboardButton.secondary}>
+            <ExternalLink className="size-4" />
+            Preview public profile
+          </Link>
+        }
+      />
+      <PeerEditForm peer={peer} voiceCallsEnabled={env.hasAgoraVoice} />
+    </DashboardPage>
   );
 }
