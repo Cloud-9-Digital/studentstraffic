@@ -900,6 +900,7 @@ export function ChatWorkspace({
                 </p>
               )}
             </div>
+            <ConversationSafety compact conversationId={selectedConversation.id} displayName={selectedConversation.displayName} blockedByMe={selectedConversation.blockedByMe} onChanged={() => void loadConversation(selectedConversation.id, { syncUrl: false })} />
             <button
               type="button"
               onClick={() => void handleStartCall()}
@@ -910,8 +911,6 @@ export function ChatWorkspace({
               {callingPending ? <Loader2 className="size-4 animate-spin" /> : <PhoneCall className="size-5" />}
             </button>
           </div>
-
-          <div className="border-b px-3 py-2"><ConversationSafety conversationId={selectedConversation.id} blockedByMe={selectedConversation.blockedByMe} onChanged={() => void loadConversation(selectedConversation.id, { syncUrl: false })} /></div>
 
           {/* Messages */}
           {MessageBubbles({ listRef: mobileMessageListRef })}
@@ -962,7 +961,7 @@ export function ChatWorkspace({
                       </p>
                     )}
                   </div>
-                  <ConversationSafety conversationId={selectedConversation.id} blockedByMe={selectedConversation.blockedByMe} onChanged={() => void loadConversation(selectedConversation.id, { syncUrl: false })} />
+                  <ConversationSafety conversationId={selectedConversation.id} displayName={selectedConversation.displayName} blockedByMe={selectedConversation.blockedByMe} onChanged={() => void loadConversation(selectedConversation.id, { syncUrl: false })} />
                   {loadingConversation && (
                     <Loader2 className="size-4 shrink-0 animate-spin text-[#9ca3af]" />
                   )}
