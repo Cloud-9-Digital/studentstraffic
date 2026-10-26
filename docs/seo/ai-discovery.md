@@ -77,12 +77,14 @@ own contract in [`structured-data-contract.md`](./structured-data-contract.md).
   Both routes read `lib/agent-skills.ts`, so the `sha256:` digest is computed from the bytes served;
   `tests/agent-skills.test.ts` recomputes it. Edit the skill when URL patterns, markdown views or fee
   labels (`lib/utils.ts`) change.
-- **WebMCP** (`components/site/webmcp-tools.tsx`, logic in `lib/webmcp.ts`, tested in
-  `tests/webmcp.test.ts`): after hydration, if `document.modelContext` (spec) or
-  `navigator.modelContext` (Chrome preview) exists, registers three read-only tools:
-  `search_catalog` (`/api/suggestions`, the search-box endpoint), `get_university_details` (markdown
-  view) and `open_page` (university, country or root-level pages on this origin only). Unmount aborts
-  the registration signal. No tool submits a form or sends personal data.
+- **WebMCP** (`WEBMCP_BOOTSTRAP_SCRIPT` in `lib/webmcp.ts`, an inline `<head>` script in the root
+  layout, tested in `tests/webmcp.test.ts`): while the page loads, not after hydration, so agents
+  and checkers see the tools on page load. If `document.modelContext` (spec) or
+  `navigator.modelContext` (Chrome preview) exists, it registers three read-only tools once per page
+  (retrying at DOMContentLoaded if the context appears late): `search_catalog` (`/api/suggestions`,
+  the search-box endpoint), `get_university_details` (markdown view) and `open_page` (university,
+  country or root-level pages on this origin only). `window.__stWebMcp` holds the AbortController
+  that unregisters them. No tool submits a form or sends personal data.
 - **Not published**: an RFC 9727 API catalog. The only unauthenticated read API is the mobile app's
   `/api/mobile/v1/universities`, an internal contract for the app; `/api/` is disallowed in
   robots.txt and there is no public API, OpenAPI spec or docs. Agents use the markdown views and

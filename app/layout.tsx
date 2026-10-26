@@ -12,10 +12,10 @@ import { GoogleAnalytics } from "@/components/google-analytics";
 import { MetaPixel } from "@/components/meta-pixel";
 import { MicrosoftClarity } from "@/components/microsoft-clarity";
 import { AttributionTracking } from "@/components/site/attribution-tracking";
-import { WebMcpTools } from "@/components/site/webmcp-tools";
 import { JsonLd } from "@/components/shared/json-ld";
 import { Toaster } from "@/components/ui/sonner";
 import { env } from "@/lib/env";
+import { WEBMCP_BOOTSTRAP_SCRIPT } from "@/lib/webmcp";
 import { defaultMetadata } from "@/lib/metadata";
 import {
   getAuthorStructuredData,
@@ -67,6 +67,11 @@ export default async function RootLayout({
       data-scroll-behavior="smooth"
       className={`${bodyFont.variable} ${displayFont.variable} h-full antialiased`}
     >
+      <head>
+        {/* Read-only WebMCP tools, registered while the page loads rather
+            than after hydration (lib/webmcp.ts). */}
+        <script dangerouslySetInnerHTML={{ __html: WEBMCP_BOOTSTRAP_SCRIPT }} />
+      </head>
       <body
         suppressHydrationWarning
         className="min-h-full bg-background text-foreground"
@@ -89,7 +94,6 @@ export default async function RootLayout({
           </NavCountriesClientProvider>
         </Providers>
         <Toaster position="top-center" />
-        <WebMcpTools />
         <JsonLd
           data={getStructuredDataGraph([
             getOrganizationStructuredData(),
