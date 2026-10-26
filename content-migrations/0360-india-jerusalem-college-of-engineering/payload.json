@@ -1,0 +1,2561 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "Bachelor of Technology in Computer Science and Engineering",
+        "BEng Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in computer science and engineering, usually four years after an upper-secondary qualification with mathematics. Typical curricula run from programming, data structures, operating systems, databases and computer networks to algorithms, software engineering and electives in artificial intelligence, machine learning, cloud and security, with project and internship components.",
+      "metaTitle": "B.E./B.Tech CSE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech CSE degrees for international applicants: duration, teaching language, intake months, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-data-science",
+      "name": "B.E./B.Tech in Data Science",
+      "shortName": "B.E./B.Tech Data Science",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "data-science",
+      "aliases": [
+        "Bachelor of Technology in Data Science",
+        "BEng Data Science"
+      ],
+      "displayOrder": 33,
+      "durationYears": 4,
+      "summary": "Compare undergraduate Data Science degrees abroad by statistics, machine learning, data engineering, applied projects, tuition and admissions. Each university offering keeps its official award title, artificial-intelligence specialisation depth and entry requirements visible before applying.",
+      "metaTitle": "B.E./B.Tech Data Science Abroad | Fees",
+      "metaDescription": "Compare B.E./B.Tech Data Science programmes abroad by curriculum, tuition fees, admissions and practical training."
+    },
+    {
+      "slug": "be-btech-artificial-intelligence-machine-learning",
+      "name": "B.E./B.Tech in Artificial Intelligence and Machine Learning",
+      "shortName": "B.E./B.Tech AI & ML",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "artificial-intelligence-machine-learning",
+      "aliases": [
+        "Bachelor of Engineering in Artificial Intelligence",
+        "Bachelor of Science in Artificial Intelligence",
+        "Artificial Intelligence and Machine Learning"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "Artificial intelligence and machine learning bachelor's programmes combine core computing and mathematics with statistical learning, data handling and applied model building. Award titles, specialisation depth, admission thresholds and fees differ significantly by university, so the programme record rather than the category should drive a shortlist decision.",
+      "metaTitle": "B.E./B.Tech AI & ML Degree Programmes Abroad",
+      "metaDescription": "Compare B.E./B.Tech AI & ML programmes by curriculum focus, entry thresholds, teaching language, intake, fee state and application route for international applicants."
+    },
+    {
+      "slug": "be-btech-cyber-security",
+      "name": "B.E./B.Tech in Cyber Security",
+      "shortName": "B.E./B.Tech Cyber Security",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "cyber-security",
+      "aliases": [
+        "Bachelor of Cyber Security",
+        "BSc Cyber Security"
+      ],
+      "displayOrder": 101,
+      "durationYears": 4,
+      "summary": "Study cyber security through an undergraduate engineering programme covering network security, cryptography, secure systems design, digital forensics and ethical hacking practice. Compare each university's official award, laboratory facilities, industry certifications, tuition and admissions requirements before applying, since specialisation depth and delivery format vary by institution.",
+      "metaTitle": "B.E./B.Tech Cyber Security Abroad | Fees",
+      "metaDescription": "Compare B.E./B.Tech Cyber Security programmes abroad by curriculum, laboratories, tuition fees and admissions requirements for international students."
+    },
+    {
+      "slug": "be-btech-information-technology",
+      "name": "B.E./B.Tech in Information Technology",
+      "shortName": "B.E./B.Tech IT",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "information-technology",
+      "aliases": [
+        "Bachelor of Engineering in Information Technology",
+        "Bachelor of Information Technology",
+        "BSc Information Technology"
+      ],
+      "displayOrder": 180,
+      "durationYears": 4,
+      "summary": "An approved Engineering catalogue category for four-year undergraduate information technology degrees, including university programmes that publish Computer Science as a major within an Information Technology award. The exact university title and major structure remain visible on each offering.",
+      "metaTitle": "B.E./B.Tech IT Programmes",
+      "metaDescription": "Compare B.E./B.Tech IT programmes, official titles, fees, duration and admissions routes for international students."
+    },
+    {
+      "slug": "be-btech-electronics-communication-engineering",
+      "name": "B.E./B.Tech in Electronics and Communication Engineering",
+      "shortName": "B.E./B.Tech ECE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electronics-communication-engineering",
+      "aliases": [
+        "Bachelor of Electronics and Communication Engineering",
+        "BEng Electronic and Communications Engineering",
+        "Electronics and Telecommunications Engineering"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in electronics and communication engineering, usually four years after upper-secondary physics, chemistry and mathematics. Curricula typically span circuit and network theory, analog and digital electronics, signals and systems, digital signal processing, communication systems and embedded or VLSI design, with laboratory and project work.",
+      "metaTitle": "B.E./B.Tech ECE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech ECE degrees for international applicants: duration, teaching language, intakes, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-electrical-electronics-engineering",
+      "name": "B.E./B.Tech in Electrical and Electronics Engineering",
+      "shortName": "B.E./B.Tech EEE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electrical-electronics-engineering",
+      "aliases": [
+        "Bachelor of Electrical and Electronic Engineering",
+        "BEng Electrical and Electronic Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "This catalogue category covers four-year undergraduate degrees in electrical and electronics engineering taken after an upper-secondary qualification with physics and mathematics. Programmes typically cover circuit theory, electrical machines, power systems, power electronics, control systems and embedded electronics, with laboratory work and electives in renewable energy or electric mobility.",
+      "metaTitle": "B.E./B.Tech EEE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech EEE degrees for international applicants: programme length, teaching language, intake months, tuition and admission routes."
+    },
+    {
+      "slug": "be-btech-biomedical-engineering",
+      "name": "B.E./B.Tech in Biomedical Engineering",
+      "shortName": "B.E./B.Tech Biomedical",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "biomedical-engineering",
+      "aliases": [
+        "Bachelor of Biomedical Engineering",
+        "BEng Biomedical Engineering"
+      ],
+      "displayOrder": 36,
+      "durationYears": 4,
+      "summary": "The Students Traffic catalogue category for four-year undergraduate biomedical engineering degrees. Programmes in this category combine electronics, instrumentation and mechanics with human anatomy and physiology, covering medical devices and imaging, biomaterials, biosignal processing and hospital equipment, usually with laboratory work and clinical or industry exposure. Curriculum, regulator approval, admission route and fees are set by each awarding university, so the programme record should drive a shortlist decision.",
+      "metaTitle": "B.E./B.Tech Biomedical Programmes | Students Traffic",
+      "metaDescription": "Compare B.E./B.Tech Biomedical engineering programmes by curriculum, approvals, admission route, teaching language and fee status before you apply."
+    },
+    {
+      "slug": "mba",
+      "name": "Master of Business Administration",
+      "shortName": "MBA",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "business-administration",
+      "aliases": [
+        "General MBA",
+        "Full-time MBA",
+        "International MBA"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "A postgraduate category for general-management degrees taken after a bachelor qualification. Study commonly combines finance, marketing, organisational behaviour, operations and strategy with applied management work. Programme delivery, selection tests, curriculum and fees vary by university.",
+      "metaTitle": "MBA Programmes and Admissions",
+      "metaDescription": "Compare MBA programmes by official award, academic eligibility, teaching language, duration, university and tuition fees."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "jerusalem-college-of-engineering",
+      "name": "Jerusalem College of Engineering",
+      "city": "Chennai",
+      "type": "Private",
+      "establishedYear": 1995,
+      "officialWebsite": "https://jerusalemengg.ac.in/",
+      "mediaAttribution": {
+        "logo": {
+          "sourceUrl": "https://jerusalemengg.ac.in/images/logo.png",
+          "rights": "Official college header logo served from jerusalemengg.ac.in, used only to identify the institution; no open licence or ownership transfer claimed.",
+          "checkedAt": "2026-10-26"
+        }
+      },
+      "summary": "Jerusalem College of Engineering (JCE) is a private, self-financing engineering college founded in 1995 at Pallikaranai on the Velachery-Tambaram Main Road, Chennai, Tamil Nadu. It is not a university: it is an autonomous college affiliated to Anna University, Chennai, which awards its degrees. It teaches nine AICTE-approved B.E./B.Tech branches and an MBA.",
+      "campusLifestyle": "Jerusalem College of Engineering (JCE) has a single campus at Narayanapuram, Pallikaranai, with 41 undergraduate classrooms, 61 laboratories, an auditorium and seminar halls, an AICTE IDEA Lab and separate hostels for men and women. The central library covers about 13,000 sq ft with 47,040 volumes in 10,005 titles. The trust's administrative office in Nungambakkam is an office, not a teaching campus.",
+      "cityProfile": "Jerusalem College of Engineering (JCE) is on the Velachery-Tambaram Main Road at Narayanapuram, Pallikaranai, Chennai 600100, in Sholinganallur taluk of Chennai district, Tamil Nadu. TNEA 2026 lists it 3 km from Velachery railway station and 20 km from the district headquarters, close to the IT corridor of south Chennai, and the college runs 20 buses on routes across Chennai and towards Chengalpattu and Kanchipuram. Anna University lists it under Chengalpattu district with college code 3109. It is run by the Jerusalem Educational Trust, Nungambakkam.",
+      "practicalExposure": "Jerusalem College of Engineering (JCE) has been an autonomous college since 2019-20: UGC conferred autonomy for 2019-20 to 2028-29, so JCE sets its own Regulation 2023 curricula and runs its own examinations, while Anna University awards the degree. AICTE requires an internship for every admitted student. The college lists an AICTE IDEA Lab, a business incubator and placement training, and reported a 96 per cent placement rate in its TNEA 2026 entry without stating the year or base.",
+      "hostelOverview": "Jerusalem College of Engineering (JCE) has separate permanent on-campus hostels for men and women, each with a warden and its own mess, according to the college and TNEA 2026. The TNEA 2026 college booklet lists room rent at INR 47,500, mess at INR 52,500 and electricity at INR 5,000 a year, with no caution deposit. The college's mandatory disclosure estimates boarding and lodging at INR 90,000 a year.",
+      "dietarySupport": "Jerusalem College of Engineering (JCE)'s hostel messes serve both vegetarian and non-vegetarian food, according to the TNEA 2026 college booklet, and the mess charge is INR 52,500 a year. Meals are part of the hostel fee. No provision for specific regional or religious diets is published, so ask the hostel office before joining.",
+      "safetyOverview": "Jerusalem College of Engineering (JCE) has run an anti-ragging cell since 2009 under UGC regulations and Anna University orders, with a named coordinator and published punishments, plus a women's cell and POSH committee and an SC/ST welfare committee. TNEA 2026 publishes a separate anti-ragging helpline number for the college.",
+      "studentSupport": "Jerusalem College of Engineering (JCE) runs a grievance cell that takes complaints by email, online link, the AICTE support portal or an anonymous box, and a help desk at reception for admissions and academic queries. The scholarship page lists central and Tamil Nadu schemes, including first-graduate, post-matric, AICTE Pragati and Saksham support.",
+      "whyChoose": [
+        "Jerusalem College of Engineering (JCE) is an autonomous college under UGC (2019-20 to 2028-29) with Anna University degrees, and its ECE and IT programmes hold NBA Tier I accreditation to 30 June 2027.",
+        "AICTE approves 630 B.E./B.Tech seats for 2026-27 across nine branches, including CSE (120), ECE (120), IT (90), Biomedical Engineering and four computing specialisations.",
+        "It publishes its tuition: INR 50,000 to 55,000 a year for government-quota B.E./B.Tech seats and INR 35,000 a year for the MBA in its Fees Details 2026 sheet."
+      ],
+      "thingsToConsider": [
+        "Jerusalem College of Engineering (JCE)'s last published NAAC certificate (A grade, CGPA 3.14) was valid to 31 December 2024; no current NAAC certificate is posted, so check the status before relying on it.",
+        "There is no route for international students: AICTE's 2026-27 approval shows no NRI or international-student seats, and TNEA admits only Indian nationals and Tamil Nadu-native OCI/PIO card holders.",
+        "Management-quota tuition was INR 80,000 to 85,000 a year in 2024-25 and no 2026-27 figure is published; the four M.E. programmes are not listed here because no 2026-27 admission notice was found."
+      ],
+      "bestFitFor": [
+        "Tamil Nadu TNEA applicants who want an autonomous Anna University-affiliated college in south Chennai, near Velachery and the OMR IT corridor.",
+        "Students who want an NBA-accredited ECE or IT branch, or a Biomedical Engineering seat, at a published government-quota tuition of INR 50,000 to 55,000 a year.",
+        "Graduates who want a TANCET-route MBA in Chennai at a published tuition of INR 35,000 a year."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "AICTE - Approved institution, Permanent ID 1-10612311 (Private-Self Financing), EoA 2026-27",
+        "UGC - Autonomous college, 2019-20 to 2028-29 (affiliated to Anna University, Chennai)",
+        "UGC - Included under Sections 2(f) and 12(B)",
+        "NBA - Tier I accreditation, B.E. ECE and B.Tech IT, valid to 30 June 2027",
+        "Anna University, Chennai - Affiliated autonomous college, college code 3109",
+        "DoTE Tamil Nadu - TNEA 2026 participating college, counselling code 1307"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "AICTE - Extension of Approval 2026-27 (JCE)",
+          "url": "https://jerusalemengg.ac.in/pdf/2026-2027.PDF"
+        },
+        {
+          "label": "UGC - Autonomous colleges list",
+          "url": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list"
+        },
+        {
+          "label": "NBA - Accreditation letter, ECE and IT (2024)",
+          "url": "https://jerusalemengg.ac.in/pdf/NBA%20TIER%20I%20-%20ECE%20%26%20IT%20ACCREDITATION%20APPROVAL.pdf"
+        },
+        {
+          "label": "Anna University CAI - Affiliated colleges, Chengalpattu district",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Chengalpattu.php"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+          "url": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Jerusalem College of Engineering Chennai autonomous?",
+          "answer": "Yes, Jerusalem College of Engineering (JCE) is autonomous: UGC granted it autonomous status for 10 years, 2019-20 to 2028-29. JCE sets its own curricula and examinations, but it remains a college affiliated to Anna University, Chennai, which awards the degree."
+        },
+        {
+          "question": "What is the TNEA code of Jerusalem College of Engineering?",
+          "answer": "The TNEA counselling code for Jerusalem College of Engineering (JCE) is 1307, and its Anna University college code is 3109. In TNEA 2026 it offered CSE (CS), AI and Data Science (AD), CSE AI and Machine Learning (AM), CSE Cyber Security (SC), CS and Business Systems (CB), IT, ECE (EC), EEE (EE) and Biomedical Engineering (BM)."
+        },
+        {
+          "question": "Is Jerusalem College of Engineering AICTE approved and NBA accredited?",
+          "answer": "Yes, Jerusalem College of Engineering (JCE) is AICTE approved for 2026-27 (permanent ID 1-10612311, private self-financing). NBA accredits its B.E. ECE and B.Tech IT programmes under Tier I to 30 June 2027; the Biomedical and CSE accreditation ran to 30 June 2025."
+        },
+        {
+          "question": "What is the NAAC grade of Jerusalem College of Engineering?",
+          "answer": "Jerusalem College of Engineering (JCE)'s last published NAAC certificate, dated 4 December 2018, gave an A grade with a CGPA of 3.14, valid to 31 December 2024. The college has not posted a newer certificate, so confirm its current NAAC status with the college or NAAC."
+        },
+        {
+          "question": "What is the fee at Jerusalem College of Engineering?",
+          "answer": "Jerusalem College of Engineering (JCE)'s Fees Details 2026 sheet lists tuition of INR 55,000 a year for ECE and IT, INR 50,000 for the other B.E./B.Tech branches and INR 35,000 for the MBA. These are the government-quota rates; management-quota tuition was INR 80,000 to 85,000 in 2024-25. Hostel rent and mess come to about INR 1,05,000 a year."
+        },
+        {
+          "question": "Does Jerusalem College of Engineering have a second campus?",
+          "answer": "No, Jerusalem College of Engineering (JCE) teaches on one campus, at Narayanapuram, Pallikaranai on the Velachery-Tambaram Main Road. AICTE approves a single address under permanent ID 1-10612311. The Nungambakkam address on the contact page is the Jerusalem Educational Trust's administrative office, not a teaching campus."
+        },
+        {
+          "question": "Can NRI or international students apply to Jerusalem College of Engineering?",
+          "answer": "No, Jerusalem College of Engineering (JCE) has no NRI or international-student seats: AICTE's 2026-27 approval marks NRI and international-student approval as No for every programme. TNEA is for Indian nationals; OCI/PIO card holders who are natives of Tamil Nadu may join unless born abroad after 4 March 2021."
+        },
+        {
+          "question": "Who awards the degree at Jerusalem College of Engineering?",
+          "answer": "Anna University, Chennai awards the degrees of Jerusalem College of Engineering (JCE). JCE is an affiliated college, not a university; as an autonomous college it designs its syllabus and runs its examinations, and Anna University issues the B.E., B.Tech and MBA degrees."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "AICTE - Extension of Approval 2026-27 (JCE, published by the college)",
+          "url": "https://jerusalemengg.ac.in/pdf/2026-2027.PDF",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "AICTE - Approved institutes dashboard",
+          "url": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "Anna University - Provisional affiliation orders 2025-26 (JCE)",
+          "url": "https://jerusalemengg.ac.in/pdf/2025%20-%202026%20AU%20Orders.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "Anna University CAI - Chengalpattu district affiliated colleges",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Chengalpattu.php",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "UGC - Autonomous colleges list",
+          "url": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "UGC - Conferment of autonomous status (JCE, 2019)",
+          "url": "https://jerusalemengg.ac.in/pdf/UGC%20%26%20AU.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "UGC - Section 2(f) and 12(B) letters (JCE)",
+          "url": "https://jerusalemengg.ac.in/pdf/2f%20%26%2012b.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "NBA - Accreditation letter, ECE and IT (2024)",
+          "url": "https://jerusalemengg.ac.in/pdf/NBA%20TIER%20I%20-%20ECE%20%26%20IT%20ACCREDITATION%20APPROVAL.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "NAAC - Certificate of accreditation (JCE, 2018)",
+          "url": "https://jerusalemengg.ac.in/pdf/NAAC%20-%20Certificate.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "JCE - Mandatory disclosure (November 2025)",
+          "url": "https://jerusalemengg.ac.in/pdf/Updated%20Mandatory%20Disclosures-25-11-2025%20(4).pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "JCE - Fees Details 2026",
+          "url": "https://jerusalemengg.ac.in/pdf/FeesDetails.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+          "url": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+          "url": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 vacancy position after Round 1",
+          "url": "https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DoTE Tamil Nadu - MBA/MCA Admissions 2026-27 college booklet",
+          "url": "https://static.tn-mbamca.com/docs/TNMBAMCA-ENGINEERING-COLLEGES-BOOKLET-2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "Anna University - TANCET / CEETA-PG 2026 Information Brochure",
+          "url": "https://tancet.annauniv.edu/tancet/Information%20Brochure%202026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "label": "JCE - Academic calendars 2026-27",
+          "url": "https://jerusalemengg.ac.in/academics/academic-calender-2026-27.php",
+          "kind": "official-university",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "JCE - Curriculum and syllabi",
+          "url": "https://jerusalemengg.ac.in/academics/curriculum.php",
+          "kind": "official-program",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "JCE - Contact (campus and administrative office)",
+          "url": "https://jerusalemengg.ac.in/contact.php",
+          "kind": "official-university",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "JCE - Official website",
+          "url": "https://jerusalemengg.ac.in/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-26"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "This record covers Jerusalem College of Engineering's only teaching campus at Narayanapuram, Pallikaranai, Chennai. The Jerusalem Educational Trust's office at Nungambakkam is an administrative office, not a campus, and no other college shares AICTE permanent ID 1-10612311 or TNEA code 1307.",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "research_ready",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my JCE eligibility",
+            "capture": [
+              "nationality and Tamil Nadu nativity or schooling",
+              "Class 12 board and MPC marks",
+              "community category",
+              "intended branch"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Estimate my JCE fees and hostel cost",
+            "capture": [
+              "intended branch",
+              "TNEA or management quota",
+              "hostel and transport needs",
+              "concession eligibility"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my TNEA choices for JCE",
+            "capture": [
+              "TNEA rank or expected cut-off",
+              "preferred branches",
+              "document readiness"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "jce-be-computer-science-engineering",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "B.E. Computer Science and Engineering, Jerusalem College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 50000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Jerusalem College of Engineering (JCE)'s Fees Details 2026 sheet lists tuition for the B.E. Computer Science and Engineering of INR 50,000 a year, the government-quota (TNEA) rate. The college's mandatory disclosure gives the same government-quota (TNEA) tuition, INR 55,000 for NBA-accredited and INR 50,000 for other branches, and lists management-quota tuition of INR 85,000 and INR 80,000 a year for 2024-25; it has not published a 2026-27 management-quota figure. The TNEA 2026 college booklet lists hostel room rent of INR 47,500, mess of INR 52,500 and electricity of INR 5,000 a year, no caution deposit, admission fee or establishment charge, and transport of INR 25,000 to 35,000 a year."
+          },
+          "officialProgramUrl": "https://jerusalemengg.ac.in/department/computer-science-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for every JCE programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1307, branch code CS) or the college's management quota. AICTE approves an intake of 120 for 2026-27; TNEA 2026 lists the branch as started in 1995.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Computer Science and Engineering at Jerusalem College of Engineering (JCE) is a four-year, eight-semester degree at Pallikaranai, Chennai; JCE sets the syllabus and exams as an autonomous college and Anna University awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission to Jerusalem College of Engineering's government-quota seats.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders may apply for lateral entry to the third semester through TNEA Lateral Entry counselling"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1307 with branch CS, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply through the JCE admissions page or call the admissions office on +91 75400 37999"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. JCE has not published its 2026-27 first-year calendar; its odd-semester calendars for second-year and later students schedule end-semester laboratory examinations from 26 October 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Jerusalem College of Engineering publishes its Regulation 2023 curricula, syllabi and admissions material in English, and TNEA 2026 lists no Tamil-medium branch at the college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August",
+            "September"
+          ],
+          "intakeCodes": [
+            "august",
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Jerusalem College of Engineering (JCE)'s Fees Details 2026 sheet lists tuition for the B.E. Computer Science and Engineering of INR 50,000 a year, the government-quota (TNEA) rate. The college's mandatory disclosure gives the same government-quota (TNEA) tuition, INR 55,000 for NBA-accredited and INR 50,000 for other branches, and lists management-quota tuition of INR 85,000 and INR 80,000 a year for 2024-25; it has not published a 2026-27 management-quota figure. The TNEA 2026 college booklet lists hostel room rent of INR 47,500, mess of INR 52,500 and electricity of INR 5,000 a year, no caution deposit, admission fee or establishment charge, and transport of INR 25,000 to 35,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "JCE's own Regulation 2023 curriculum for Computer Science and Engineering, approved by the college's Boards of Studies and Academic Council, with internal assessment tests and college-run end-semester examinations. Anna University, Chennai awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "jce-btech-artificial-intelligence-data-science",
+          "canonicalCourseSlug": "be-btech-data-science",
+          "officialTitle": "B.Tech Artificial Intelligence and Data Science, Jerusalem College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 50000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Jerusalem College of Engineering (JCE)'s Fees Details 2026 sheet lists tuition for the B.Tech Artificial Intelligence and Data Science of INR 50,000 a year, the government-quota (TNEA) rate. The college's mandatory disclosure gives the same government-quota (TNEA) tuition, INR 55,000 for NBA-accredited and INR 50,000 for other branches, and lists management-quota tuition of INR 85,000 and INR 80,000 a year for 2024-25; it has not published a 2026-27 management-quota figure. The TNEA 2026 college booklet lists hostel room rent of INR 47,500, mess of INR 52,500 and electricity of INR 5,000 a year, no caution deposit, admission fee or establishment charge, and transport of INR 25,000 to 35,000 a year."
+          },
+          "officialProgramUrl": "https://jerusalemengg.ac.in/department/artificial-intelligence-data-science/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for every JCE programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1307, branch code AD) or the college's management quota. AICTE approves an intake of 60 for 2026-27; TNEA 2026 lists the branch as started in 2021.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.Tech Artificial Intelligence and Data Science at Jerusalem College of Engineering (JCE) is a four-year, eight-semester degree at Pallikaranai, Chennai; JCE sets the syllabus and exams as an autonomous college and Anna University awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission to Jerusalem College of Engineering's government-quota seats.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders may apply for lateral entry to the third semester through TNEA Lateral Entry counselling"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1307 with branch AD, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply through the JCE admissions page or call the admissions office on +91 75400 37999"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. JCE has not published its 2026-27 first-year calendar; its odd-semester calendars for second-year and later students schedule end-semester laboratory examinations from 26 October 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Jerusalem College of Engineering publishes its Regulation 2023 curricula, syllabi and admissions material in English, and TNEA 2026 lists no Tamil-medium branch at the college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August",
+            "September"
+          ],
+          "intakeCodes": [
+            "august",
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Jerusalem College of Engineering (JCE)'s Fees Details 2026 sheet lists tuition for the B.Tech Artificial Intelligence and Data Science of INR 50,000 a year, the government-quota (TNEA) rate. The college's mandatory disclosure gives the same government-quota (TNEA) tuition, INR 55,000 for NBA-accredited and INR 50,000 for other branches, and lists management-quota tuition of INR 85,000 and INR 80,000 a year for 2024-25; it has not published a 2026-27 management-quota figure. The TNEA 2026 college booklet lists hostel room rent of INR 47,500, mess of INR 52,500 and electricity of INR 5,000 a year, no caution deposit, admission fee or establishment charge, and transport of INR 25,000 to 35,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "JCE's own Regulation 2023 curriculum for Artificial Intelligence and Data Science, approved by the college's Boards of Studies and Academic Council, with internal assessment tests and college-run end-semester examinations. Anna University, Chennai awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "jce-be-computer-science-engineering-ai-machine-learning",
+          "canonicalCourseSlug": "be-btech-artificial-intelligence-machine-learning",
+          "officialTitle": "B.E. Computer Science and Engineering (Artificial Intelligence and Machine Learning), Jerusalem College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 50000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Jerusalem College of Engineering (JCE)'s Fees Details 2026 sheet lists tuition for the B.E. Computer Science and Engineering (Artificial Intelligence and Machine Learning) of INR 50,000 a year, the government-quota (TNEA) rate. The college's mandatory disclosure gives the same government-quota (TNEA) tuition, INR 55,000 for NBA-accredited and INR 50,000 for other branches, and lists management-quota tuition of INR 85,000 and INR 80,000 a year for 2024-25; it has not published a 2026-27 management-quota figure. The TNEA 2026 college booklet lists hostel room rent of INR 47,500, mess of INR 52,500 and electricity of INR 5,000 a year, no caution deposit, admission fee or establishment charge, and transport of INR 25,000 to 35,000 a year."
+          },
+          "officialProgramUrl": "https://jerusalemengg.ac.in/department/artificial-intelligence-machine-learning/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for every JCE programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1307, branch code AM) or the college's management quota. AICTE approves an intake of 60 for 2026-27; TNEA 2026 lists the branch as started in 2022.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Computer Science and Engineering (Artificial Intelligence and Machine Learning) at Jerusalem College of Engineering (JCE) is a four-year, eight-semester degree at Pallikaranai, Chennai; JCE sets the syllabus and exams as an autonomous college and Anna University awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission to Jerusalem College of Engineering's government-quota seats.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders may apply for lateral entry to the third semester through TNEA Lateral Entry counselling"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1307 with branch AM, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply through the JCE admissions page or call the admissions office on +91 75400 37999"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. JCE has not published its 2026-27 first-year calendar; its odd-semester calendars for second-year and later students schedule end-semester laboratory examinations from 26 October 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Jerusalem College of Engineering publishes its Regulation 2023 curricula, syllabi and admissions material in English, and TNEA 2026 lists no Tamil-medium branch at the college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August",
+            "September"
+          ],
+          "intakeCodes": [
+            "august",
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Jerusalem College of Engineering (JCE)'s Fees Details 2026 sheet lists tuition for the B.E. Computer Science and Engineering (Artificial Intelligence and Machine Learning) of INR 50,000 a year, the government-quota (TNEA) rate. The college's mandatory disclosure gives the same government-quota (TNEA) tuition, INR 55,000 for NBA-accredited and INR 50,000 for other branches, and lists management-quota tuition of INR 85,000 and INR 80,000 a year for 2024-25; it has not published a 2026-27 management-quota figure. The TNEA 2026 college booklet lists hostel room rent of INR 47,500, mess of INR 52,500 and electricity of INR 5,000 a year, no caution deposit, admission fee or establishment charge, and transport of INR 25,000 to 35,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "JCE's own Regulation 2023 curriculum for Computer Science and Engineering (Artificial Intelligence and Machine Learning), approved by the college's Boards of Studies and Academic Council, with internal assessment tests and college-run end-semester examinations. Anna University, Chennai awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "jce-be-computer-science-engineering-cyber-security",
+          "canonicalCourseSlug": "be-btech-cyber-security",
+          "officialTitle": "B.E. Computer Science and Engineering (Cyber Security), Jerusalem College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 50000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Jerusalem College of Engineering (JCE)'s Fees Details 2026 sheet lists tuition for the B.E. Computer Science and Engineering (Cyber Security) of INR 50,000 a year, the government-quota (TNEA) rate. The college's mandatory disclosure gives the same government-quota (TNEA) tuition, INR 55,000 for NBA-accredited and INR 50,000 for other branches, and lists management-quota tuition of INR 85,000 and INR 80,000 a year for 2024-25; it has not published a 2026-27 management-quota figure. The TNEA 2026 college booklet lists hostel room rent of INR 47,500, mess of INR 52,500 and electricity of INR 5,000 a year, no caution deposit, admission fee or establishment charge, and transport of INR 25,000 to 35,000 a year."
+          },
+          "officialProgramUrl": "https://jerusalemengg.ac.in/department/cyber-security/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for every JCE programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1307, branch code SC) or the college's management quota. AICTE approves an intake of 60 for 2026-27; TNEA 2026 lists the branch as started in 2022.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Computer Science and Engineering (Cyber Security) at Jerusalem College of Engineering (JCE) is a four-year, eight-semester degree at Pallikaranai, Chennai; JCE sets the syllabus and exams as an autonomous college and Anna University awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission to Jerusalem College of Engineering's government-quota seats.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders may apply for lateral entry to the third semester through TNEA Lateral Entry counselling"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1307 with branch SC, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply through the JCE admissions page or call the admissions office on +91 75400 37999"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. JCE has not published its 2026-27 first-year calendar; its odd-semester calendars for second-year and later students schedule end-semester laboratory examinations from 26 October 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Jerusalem College of Engineering publishes its Regulation 2023 curricula, syllabi and admissions material in English, and TNEA 2026 lists no Tamil-medium branch at the college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August",
+            "September"
+          ],
+          "intakeCodes": [
+            "august",
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Jerusalem College of Engineering (JCE)'s Fees Details 2026 sheet lists tuition for the B.E. Computer Science and Engineering (Cyber Security) of INR 50,000 a year, the government-quota (TNEA) rate. The college's mandatory disclosure gives the same government-quota (TNEA) tuition, INR 55,000 for NBA-accredited and INR 50,000 for other branches, and lists management-quota tuition of INR 85,000 and INR 80,000 a year for 2024-25; it has not published a 2026-27 management-quota figure. The TNEA 2026 college booklet lists hostel room rent of INR 47,500, mess of INR 52,500 and electricity of INR 5,000 a year, no caution deposit, admission fee or establishment charge, and transport of INR 25,000 to 35,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "JCE's own Regulation 2023 curriculum for Computer Science and Engineering (Cyber Security), approved by the college's Boards of Studies and Academic Council, with internal assessment tests and college-run end-semester examinations. Anna University, Chennai awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "jce-btech-computer-science-business-systems",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "B.Tech Computer Science and Business Systems, Jerusalem College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 50000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Jerusalem College of Engineering (JCE)'s Fees Details 2026 sheet lists tuition for the B.Tech Computer Science and Business Systems of INR 50,000 a year, the government-quota (TNEA) rate. The college's mandatory disclosure gives the same government-quota (TNEA) tuition, INR 55,000 for NBA-accredited and INR 50,000 for other branches, and lists management-quota tuition of INR 85,000 and INR 80,000 a year for 2024-25; it has not published a 2026-27 management-quota figure. The TNEA 2026 college booklet lists hostel room rent of INR 47,500, mess of INR 52,500 and electricity of INR 5,000 a year, no caution deposit, admission fee or establishment charge, and transport of INR 25,000 to 35,000 a year."
+          },
+          "officialProgramUrl": "https://jerusalemengg.ac.in/department/computer-science-and-business-system/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for every JCE programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1307, branch code CB) or the college's management quota. AICTE approves an intake of 30 for 2026-27; TNEA 2026 lists the branch as started in 2021.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.Tech Computer Science and Business Systems at Jerusalem College of Engineering (JCE) is a four-year, eight-semester degree at Pallikaranai, Chennai; JCE sets the syllabus and exams as an autonomous college and Anna University awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission to Jerusalem College of Engineering's government-quota seats.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders may apply for lateral entry to the third semester through TNEA Lateral Entry counselling"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1307 with branch CB, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply through the JCE admissions page or call the admissions office on +91 75400 37999"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. JCE has not published its 2026-27 first-year calendar; its odd-semester calendars for second-year and later students schedule end-semester laboratory examinations from 26 October 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Jerusalem College of Engineering publishes its Regulation 2023 curricula, syllabi and admissions material in English, and TNEA 2026 lists no Tamil-medium branch at the college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August",
+            "September"
+          ],
+          "intakeCodes": [
+            "august",
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Jerusalem College of Engineering (JCE)'s Fees Details 2026 sheet lists tuition for the B.Tech Computer Science and Business Systems of INR 50,000 a year, the government-quota (TNEA) rate. The college's mandatory disclosure gives the same government-quota (TNEA) tuition, INR 55,000 for NBA-accredited and INR 50,000 for other branches, and lists management-quota tuition of INR 85,000 and INR 80,000 a year for 2024-25; it has not published a 2026-27 management-quota figure. The TNEA 2026 college booklet lists hostel room rent of INR 47,500, mess of INR 52,500 and electricity of INR 5,000 a year, no caution deposit, admission fee or establishment charge, and transport of INR 25,000 to 35,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "JCE's own Regulation 2023 curriculum for Computer Science and Business Systems, approved by the college's Boards of Studies and Academic Council, with internal assessment tests and college-run end-semester examinations. Anna University, Chennai awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "jce-btech-information-technology",
+          "canonicalCourseSlug": "be-btech-information-technology",
+          "officialTitle": "B.Tech Information Technology, Jerusalem College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 55000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Jerusalem College of Engineering (JCE)'s Fees Details 2026 sheet lists tuition for the B.Tech Information Technology of INR 55,000 a year, the government-quota (TNEA) rate. The college's mandatory disclosure gives the same government-quota (TNEA) tuition, INR 55,000 for NBA-accredited and INR 50,000 for other branches, and lists management-quota tuition of INR 85,000 and INR 80,000 a year for 2024-25; it has not published a 2026-27 management-quota figure. The TNEA 2026 college booklet lists hostel room rent of INR 47,500, mess of INR 52,500 and electricity of INR 5,000 a year, no caution deposit, admission fee or establishment charge, and transport of INR 25,000 to 35,000 a year."
+          },
+          "officialProgramUrl": "https://jerusalemengg.ac.in/department/information-technology/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for every JCE programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1307, branch code IT) or the college's management quota. AICTE approves an intake of 90 for 2026-27; TNEA 2026 lists the branch as started in 1999. NBA accredits the programme (Tier I) to 30 June 2027.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.Tech Information Technology at Jerusalem College of Engineering (JCE) is a four-year, eight-semester degree at Pallikaranai, Chennai; JCE sets the syllabus and exams as an autonomous college and Anna University awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission to Jerusalem College of Engineering's government-quota seats.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders may apply for lateral entry to the third semester through TNEA Lateral Entry counselling"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1307 with branch IT, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply through the JCE admissions page or call the admissions office on +91 75400 37999"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. JCE has not published its 2026-27 first-year calendar; its odd-semester calendars for second-year and later students schedule end-semester laboratory examinations from 26 October 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Jerusalem College of Engineering publishes its Regulation 2023 curricula, syllabi and admissions material in English, and TNEA 2026 lists no Tamil-medium branch at the college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August",
+            "September"
+          ],
+          "intakeCodes": [
+            "august",
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Jerusalem College of Engineering (JCE)'s Fees Details 2026 sheet lists tuition for the B.Tech Information Technology of INR 55,000 a year, the government-quota (TNEA) rate. The college's mandatory disclosure gives the same government-quota (TNEA) tuition, INR 55,000 for NBA-accredited and INR 50,000 for other branches, and lists management-quota tuition of INR 85,000 and INR 80,000 a year for 2024-25; it has not published a 2026-27 management-quota figure. The TNEA 2026 college booklet lists hostel room rent of INR 47,500, mess of INR 52,500 and electricity of INR 5,000 a year, no caution deposit, admission fee or establishment charge, and transport of INR 25,000 to 35,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "JCE's own Regulation 2023 curriculum for Information Technology, approved by the college's Boards of Studies and Academic Council, with internal assessment tests and college-run end-semester examinations. Anna University, Chennai awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "jce-be-electronics-communication-engineering",
+          "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+          "officialTitle": "B.E. Electronics and Communication Engineering, Jerusalem College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 55000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Jerusalem College of Engineering (JCE)'s Fees Details 2026 sheet lists tuition for the B.E. Electronics and Communication Engineering of INR 55,000 a year, the government-quota (TNEA) rate. The college's mandatory disclosure gives the same government-quota (TNEA) tuition, INR 55,000 for NBA-accredited and INR 50,000 for other branches, and lists management-quota tuition of INR 85,000 and INR 80,000 a year for 2024-25; it has not published a 2026-27 management-quota figure. The TNEA 2026 college booklet lists hostel room rent of INR 47,500, mess of INR 52,500 and electricity of INR 5,000 a year, no caution deposit, admission fee or establishment charge, and transport of INR 25,000 to 35,000 a year."
+          },
+          "officialProgramUrl": "https://jerusalemengg.ac.in/department/electronics-communication/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for every JCE programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1307, branch code EC) or the college's management quota. AICTE approves an intake of 120 for 2026-27; TNEA 2026 lists the branch as started in 1995. NBA accredits the programme (Tier I) to 30 June 2027.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Electronics and Communication Engineering at Jerusalem College of Engineering (JCE) is a four-year, eight-semester degree at Pallikaranai, Chennai; JCE sets the syllabus and exams as an autonomous college and Anna University awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission to Jerusalem College of Engineering's government-quota seats.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders may apply for lateral entry to the third semester through TNEA Lateral Entry counselling"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1307 with branch EC, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply through the JCE admissions page or call the admissions office on +91 75400 37999"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. JCE has not published its 2026-27 first-year calendar; its odd-semester calendars for second-year and later students schedule end-semester laboratory examinations from 26 October 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Jerusalem College of Engineering publishes its Regulation 2023 curricula, syllabi and admissions material in English, and TNEA 2026 lists no Tamil-medium branch at the college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August",
+            "September"
+          ],
+          "intakeCodes": [
+            "august",
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Jerusalem College of Engineering (JCE)'s Fees Details 2026 sheet lists tuition for the B.E. Electronics and Communication Engineering of INR 55,000 a year, the government-quota (TNEA) rate. The college's mandatory disclosure gives the same government-quota (TNEA) tuition, INR 55,000 for NBA-accredited and INR 50,000 for other branches, and lists management-quota tuition of INR 85,000 and INR 80,000 a year for 2024-25; it has not published a 2026-27 management-quota figure. The TNEA 2026 college booklet lists hostel room rent of INR 47,500, mess of INR 52,500 and electricity of INR 5,000 a year, no caution deposit, admission fee or establishment charge, and transport of INR 25,000 to 35,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "JCE's own Regulation 2023 curriculum for Electronics and Communication Engineering, approved by the college's Boards of Studies and Academic Council, with internal assessment tests and college-run end-semester examinations. Anna University, Chennai awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "jce-be-electrical-electronics-engineering",
+          "canonicalCourseSlug": "be-btech-electrical-electronics-engineering",
+          "officialTitle": "B.E. Electrical and Electronics Engineering, Jerusalem College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 50000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Jerusalem College of Engineering (JCE)'s Fees Details 2026 sheet lists tuition for the B.E. Electrical and Electronics Engineering of INR 50,000 a year, the government-quota (TNEA) rate. The college's mandatory disclosure gives the same government-quota (TNEA) tuition, INR 55,000 for NBA-accredited and INR 50,000 for other branches, and lists management-quota tuition of INR 85,000 and INR 80,000 a year for 2024-25; it has not published a 2026-27 management-quota figure. The TNEA 2026 college booklet lists hostel room rent of INR 47,500, mess of INR 52,500 and electricity of INR 5,000 a year, no caution deposit, admission fee or establishment charge, and transport of INR 25,000 to 35,000 a year."
+          },
+          "officialProgramUrl": "https://jerusalemengg.ac.in/department/electrical-electronics-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for every JCE programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1307, branch code EE) or the college's management quota. AICTE approves an intake of 30 for 2026-27; TNEA 2026 lists the branch as started in 1995.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Electrical and Electronics Engineering at Jerusalem College of Engineering (JCE) is a four-year, eight-semester degree at Pallikaranai, Chennai; JCE sets the syllabus and exams as an autonomous college and Anna University awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission to Jerusalem College of Engineering's government-quota seats.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders may apply for lateral entry to the third semester through TNEA Lateral Entry counselling"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1307 with branch EE, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply through the JCE admissions page or call the admissions office on +91 75400 37999"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. JCE has not published its 2026-27 first-year calendar; its odd-semester calendars for second-year and later students schedule end-semester laboratory examinations from 26 October 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Jerusalem College of Engineering publishes its Regulation 2023 curricula, syllabi and admissions material in English, and TNEA 2026 lists no Tamil-medium branch at the college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August",
+            "September"
+          ],
+          "intakeCodes": [
+            "august",
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Jerusalem College of Engineering (JCE)'s Fees Details 2026 sheet lists tuition for the B.E. Electrical and Electronics Engineering of INR 50,000 a year, the government-quota (TNEA) rate. The college's mandatory disclosure gives the same government-quota (TNEA) tuition, INR 55,000 for NBA-accredited and INR 50,000 for other branches, and lists management-quota tuition of INR 85,000 and INR 80,000 a year for 2024-25; it has not published a 2026-27 management-quota figure. The TNEA 2026 college booklet lists hostel room rent of INR 47,500, mess of INR 52,500 and electricity of INR 5,000 a year, no caution deposit, admission fee or establishment charge, and transport of INR 25,000 to 35,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "JCE's own Regulation 2023 curriculum for Electrical and Electronics Engineering, approved by the college's Boards of Studies and Academic Council, with internal assessment tests and college-run end-semester examinations. Anna University, Chennai awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "jce-be-biomedical-engineering",
+          "canonicalCourseSlug": "be-btech-biomedical-engineering",
+          "officialTitle": "B.E. Biomedical Engineering, Jerusalem College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 50000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Jerusalem College of Engineering (JCE)'s Fees Details 2026 sheet lists tuition for the B.E. Biomedical Engineering of INR 50,000 a year, the government-quota (TNEA) rate. The college's mandatory disclosure gives the same government-quota (TNEA) tuition, INR 55,000 for NBA-accredited and INR 50,000 for other branches, and lists management-quota tuition of INR 85,000 and INR 80,000 a year for 2024-25; it has not published a 2026-27 management-quota figure. The TNEA 2026 college booklet lists hostel room rent of INR 47,500, mess of INR 52,500 and electricity of INR 5,000 a year, no caution deposit, admission fee or establishment charge, and transport of INR 25,000 to 35,000 a year."
+          },
+          "officialProgramUrl": "https://jerusalemengg.ac.in/department/biomedical-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for every JCE programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1307, branch code BM) or the college's management quota. AICTE approves an intake of 60 for 2026-27; TNEA 2026 lists the branch as started in 2005.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Biomedical Engineering at Jerusalem College of Engineering (JCE) is a four-year, eight-semester degree at Pallikaranai, Chennai; JCE sets the syllabus and exams as an autonomous college and Anna University awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission to Jerusalem College of Engineering's government-quota seats.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders may apply for lateral entry to the third semester through TNEA Lateral Entry counselling"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1307 with branch BM, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply through the JCE admissions page or call the admissions office on +91 75400 37999"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. JCE has not published its 2026-27 first-year calendar; its odd-semester calendars for second-year and later students schedule end-semester laboratory examinations from 26 October 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Jerusalem College of Engineering publishes its Regulation 2023 curricula, syllabi and admissions material in English, and TNEA 2026 lists no Tamil-medium branch at the college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August",
+            "September"
+          ],
+          "intakeCodes": [
+            "august",
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Jerusalem College of Engineering (JCE)'s Fees Details 2026 sheet lists tuition for the B.E. Biomedical Engineering of INR 50,000 a year, the government-quota (TNEA) rate. The college's mandatory disclosure gives the same government-quota (TNEA) tuition, INR 55,000 for NBA-accredited and INR 50,000 for other branches, and lists management-quota tuition of INR 85,000 and INR 80,000 a year for 2024-25; it has not published a 2026-27 management-quota figure. The TNEA 2026 college booklet lists hostel room rent of INR 47,500, mess of INR 52,500 and electricity of INR 5,000 a year, no caution deposit, admission fee or establishment charge, and transport of INR 25,000 to 35,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "JCE's own Regulation 2023 curriculum for Biomedical Engineering, approved by the college's Boards of Studies and Academic Council, with internal assessment tests and college-run end-semester examinations. Anna University, Chennai awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "jce-mba",
+          "canonicalCourseSlug": "mba",
+          "officialTitle": "Master of Business Administration (MBA), Jerusalem College of Engineering",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 35000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Jerusalem College of Engineering (JCE)'s Fees Details 2026 sheet lists MBA tuition of INR 35,000 a year, and the college's mandatory disclosure gives the same INR 35,000 for 2022-23 to 2024-25 without a separate management-quota rate. The Tamil Nadu MBA/MCA 2026-27 college booklet lists an admission fee of INR 1,000, hostel room rent of INR 47,500, mess of INR 52,500 and electricity of INR 5,000 a year, with no deposit."
+          },
+          "officialProgramUrl": "https://jerusalemengg.ac.in/department/mba/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian graduates who meet the TANCET 2026 eligibility rules (government-quota seats through Tamil Nadu MBA/MCA counselling)",
+              "Indian graduates applying to the college for management-quota seats"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for the JCE MBA, so foreign nationals cannot be admitted on a student visa.",
+              "Government-quota seats go through Tamil Nadu's single-window MBA/MCA counselling, which uses TANCET scores and Tamil Nadu reservation rules."
+            ],
+            "notes": "The college admits men and women. The Tamil Nadu MBA/MCA 2026-27 college booklet lists JCE (college code 1307) with an approved MBA intake of 60, started in 2008; AICTE approves 60 seats for 2026-27.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tn-mbamca.com/docs/TNMBAMCA-ENGINEERING-COLLEGES-BOOKLET-2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The Master of Business Administration at Jerusalem College of Engineering (JCE) is a two-year, four-semester degree at Pallikaranai, Chennai, taught under JCE's own MBA Regulation 2023; Anna University awards the degree. Government-quota seats are allotted through the Tamil Nadu MBA/MCA single-window counselling (college code 1307) on TANCET scores, and management-quota seats are filled by the college.",
+            "eligibility": {
+              "intro": "TANCET 2026 sets the MBA qualification that Tamil Nadu's MBA/MCA counselling and Anna University-affiliated colleges admit against.",
+              "items": [
+                "A recognised bachelor's degree of at least three years in any discipline",
+                "At least 50 per cent in the qualifying degree (45 per cent for Tamil Nadu BC, BCM, MBC, SC, SCA and ST candidates)",
+                "A TANCET (MBA) 2026 score for government-quota seats"
+              ]
+            },
+            "applicationSteps": [
+              "Take TANCET (MBA) at tancet.annauniv.edu; the 2026 test was held on 9 May 2026",
+              "For a government-quota seat, apply in the Tamil Nadu MBA/MCA 2026-27 single-window counselling run by the Directorate of Technical Education and choose college code 1307",
+              "For a management-quota seat, apply through the JCE admissions page or call the admissions office on +91 75400 37999",
+              "Submit degree, school and community certificates for verification and pay the fees to confirm the seat"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Bachelor's degree certificate or provisional certificate",
+                "Mark sheets for all semesters of the degree",
+                "Class 10 and Class 12 (or diploma) mark sheets",
+                "Transfer certificate"
+              ],
+              "application": [
+                "TANCET 2026 MBA score card",
+                "Community certificate where applicable",
+                "Photo ID issued by the State or Central Government"
+              ]
+            },
+            "deadlinesNote": "The TANCET 2026 MBA test was held on 9 May 2026. JCE has not published its 2026-27 first-semester start date for the MBA."
+          },
+          "medium": "English",
+          "mediumNote": "Jerusalem College of Engineering publishes its MBA Regulation 2023 and programme pages in English; Anna University awards the degree.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August",
+            "September"
+          ],
+          "intakeCodes": [
+            "august",
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Jerusalem College of Engineering (JCE)'s Fees Details 2026 sheet lists MBA tuition of INR 35,000 a year, and the college's mandatory disclosure gives the same INR 35,000 for 2022-23 to 2024-25 without a separate management-quota rate. The Tamil Nadu MBA/MCA 2026-27 college booklet lists an admission fee of INR 1,000, hostel room rent of INR 47,500, mess of INR 52,500 and electricity of INR 5,000 a year, with no deposit.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-2 (4 semesters)",
+              "language": "English",
+              "details": "JCE's own MBA Regulation 2023 curriculum under its autonomous status, with internal assessments and college-run end-semester examinations. Anna University, Chennai awards the degree."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "publicField": "identity",
+      "claimText": "AICTE EoA 2026-27 (F.No. Southern/1-46218533461/2026/EOA, 22-Apr-2026): Permanent Id 1-10612311, JERUSALEM COLLEGE OF ENGINEERING, Velachery-Tambaram Main Road, Narayanapuram, Pallikkaranai, Chennai 600100; Society/Trust JERUSALEM EDUCATIONAL TRUST, 25 Mahalingam Chetty Street, Mahalingapuram, Nungambakkam, Chennai 600034; Private-Self Financing; Southern region; year of establishment 1995; affiliating body Anna University, Chennai for every course; NRI and International Students approval No for every course. One institution address only.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (JCE)",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/2026-2027.PDF",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AICTE EoA 2026-27 is the computer-generated letter published by the college (file 2026-2027.PDF, printed 27 April 2026, SHA-256 b9b55b79...) with a text layer; saved in research/india-source-bundles/jerusalem-college-of-engineering/aicte2627.txt. AICTE dashboard unreachable from this environment on 2026-10-26 (TLS connection reset)."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "publicField": "identity",
+      "claimText": "Two-campus check: AICTE EoA 2026-27, AU 2025-26 orders, UGC autonomy letter, TNEA 2026 and the TN MBA/MCA 2026-27 booklet all name one address (Velachery-Tambaram Main Road, Narayanapuram, Pallikkaranai, Chennai 600100) under one AICTE permanent ID (1-10612311), one TNEA code (1307) and one AU code (3109). The college contact page lists a second address, 'Administrative Office, No.25 Mahalingam street, Mahalingapuram, Nungambakkam', which is the trust's registered address in the AICTE letter, not a teaching campus. No second Jerusalem college appears in the AU CAI Chennai, Chengalpattu or Kancheepuram lists or in TNEA 2026.",
+      "status": "verified",
+      "sourceLabel": "JCE - Contact page",
+      "sourceUrl": "https://jerusalemengg.ac.in/contact.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AU CAI lists saved in research/india-source-bundles/jerusalem-college-of-engineering/au-cai-*.html; TNEA booklet text research/india-source-bundles/psg-college-of-technology/tnea-colleges2026.txt lines 7979-8075."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "publicField": "identity",
+      "claimText": "Anna University CAI Chengalpattu district list: S.No 10, college code 3109, TNEA code 1307, Jerusalem College of Engineering (Autonomous).",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - Chengalpattu district list",
+      "sourceUrl": "https://www.annauniv.edu/cai/District%20wise/district/Chengalpattu.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "publicField": "establishedYear",
+      "claimText": "AICTE EoA 2026-27, UGC 2(f) letter (2006) and TNEA 2026 give year of establishment 1995; the college's About page says it was established in 1995 under the Jerusalem Educational Trust.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (JCE)",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/2026-2027.PDF",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "publicField": "summary",
+      "claimText": "UGC autonomous colleges list (Tamil Nadu, S.No 1078): Jerusalem College of Engineering, Velachery, Tambaram Main Road, Narayanapuram, Pallikaranai, Chennai 600 100; autonomy from 2019-2020, period 2019-2020 to 2028-2029; Anna University, Chennai. UGC letter F.22-1/2017(AC) of April 2019 and Anna University letter 3672/AU/CAC/Autonomous/2018 confirm ten years from 2019-20 to 2028-29.",
+      "status": "verified",
+      "sourceLabel": "UGC - Autonomous colleges list",
+      "sourceUrl": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Cached copy research/india-source-bundles/skasc-20261025/ugc-autonomous-text.txt line 6562. Letters (scanned, OCR) at https://jerusalemengg.ac.in/pdf/UGC%20%26%20AU.pdf."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "publicField": "summary",
+      "claimText": "TNEA 2026 Information about colleges, p.61: college 1307 Jerusalem College of Engineering (Autonomous), Narayanapuram, Pallikaranai, Chennai 600 100; branches AD 60 (2021), EC 120 (1995, NBA to 2027), CB 30 (2021), EE 30 (1995), BM 60 (2005), IT 90 (1999, NBA to 2027), CS 120 (1995), SC 60 (2022), AM 60 (2022); minority No; autonomous Yes.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.61)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Cached text research/india-source-bundles/psg-college-of-technology/tnea-colleges2026.txt lines 7979-8075."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "publicField": "recognitionBadges",
+      "claimText": "AICTE EoA 2026-27 approves JERUSALEM COLLEGE OF ENGINEERING, permanent ID 1-10612311, Private-Self Financing, for 2026-27: UG AI&DS 60, Biomedical 60, CS&BS 30, CSE 120, CSE (AI&ML) 60, CSE (Cyber Security) 60, EEE 30, ECE 120 (up from 60), IT 90; PG M.E. CSE 6, Applied Electronics 6, Power Electronics and Drives 6, Construction Engineering and Management 18, MBA 60; MBA (Hospital Administration) closure approved, intake 0; working-professional UG CSE 30 and PG CSE 15.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (JCE)",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/2026-2027.PDF",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AICTE EoA 2026-27 is the computer-generated letter published by the college (file 2026-2027.PDF, printed 27 April 2026, SHA-256 b9b55b79...) with a text layer; saved in research/india-source-bundles/jerusalem-college-of-engineering/aicte2627.txt. AICTE dashboard unreachable from this environment on 2026-10-26 (TLS connection reset)."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "publicField": "recognitionBadges",
+      "claimText": "UGC letter F.8-97/2006 (CPP-I) of September 2006 includes Jerusalem College of Engineering (est. 1995) under Section 2(f); UGC letter F.No.8-271/2017 (CPP-I/C) of November 2017 includes it under Section 12(B) (AISHE C-16525).",
+      "status": "verified",
+      "sourceLabel": "UGC - Section 2(f) and 12(B) letters (JCE)",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/2f%20%26%2012b.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned letters hosted by the college; OCR in research/india-source-bundles/jerusalem-college-of-engineering/img/hi-2f12b-*.txt."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "publicField": "recognitionBadges",
+      "claimText": "NBA letter File No. 33-51/2010-NBA dated 18.09.2024: Electronics and Communication Engineering and Information Technology accredited, Tier-I, academic years 2024-2025 to 2026-2027, i.e. up to 30-06-2027. NBA letter dated 14-06-2022: Biomedical Engineering and Computer Science and Engineering accredited Tier-II for 2022-2023 to 2024-2025 (to 30-06-2025). TNEA 2026 marks only EC and IT as NBA accredited (valid to 2027).",
+      "status": "verified",
+      "sourceLabel": "NBA - Accreditation letter, ECE and IT (2024)",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/NBA%20TIER%20I%20-%20ECE%20%26%20IT%20ACCREDITATION%20APPROVAL.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned letters hosted by the college; Tier II: https://jerusalemengg.ac.in/pdf/NBA%20-%20BME%20%26%20CSE.pdf. NBA's own portal not re-read."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "publicField": "thingsToConsider",
+      "claimText": "NAAC certificate EC/82/AU/216 dated December 04, 2018: Jerusalem College of Engineering, Pallikkaranai, Chennai, affiliated to Anna University, accredited with CGPA 3.14 on four-point scale at A grade, valid up to December 31, 2024. Earlier certificate dated 15 November 2015 valid to 14 November 2020. College mandatory disclosure (Nov 2025) says 'NAAC accreditation - Validity from 2020 to till date' but posts no newer certificate.",
+      "status": "verified",
+      "sourceLabel": "NAAC - Certificate of accreditation (JCE, 2018)",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/NAAC%20-%20Certificate.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "NAAC portal (assessmentonline.naac.gov.in) unreachable from this environment on 2026-10-26; no NAAC badge published because the last verifiable certificate expired 31-12-2024. Re-check before publishing."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "publicField": "recognitionBadges",
+      "claimText": "Anna University letter 02/AFFLN/CAI/CHE/AU/2025-2026/3109 dated 31-07-2025: provisional affiliation for 2025-2026 at Jerusalem College of Engineering (Autonomous) for B.E. CSE (AI&ML) 60, B.E. CSE (Cyber Security) 60, B.Tech AI&DS 60, B.Tech CS&BS 30, MBA Hospital Administration 60, MBA 60, M.E. Applied Electronics 6, M.E. CSE 6, M.E. Construction Engineering and Management 18, M.E. Power Electronics and Drives 6. Older branches (BME, ECE, IT and others) hold Anna University permanent affiliation (letters 2014-15 and 2015-16).",
+      "status": "verified",
+      "sourceLabel": "Anna University - Provisional affiliation orders 2025-26 (JCE)",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/2025%20-%202026%20AU%20Orders.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned letter hosted by the college; OCR in research/india-source-bundles/jerusalem-college-of-engineering/img/auo-*. Permanent affiliation letters: https://jerusalemengg.ac.in/pdf/AU%20-%20Permanent%20Affiliation.pdf. The 2026-27 AU order is not posted; TNEA 2026 participation of all nine branches is the current-year affiliation signal."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "publicField": "campusLifestyle",
+      "claimText": "JCE mandatory disclosure (Nov 2025): UG classrooms 41, PG classrooms/tutorial rooms 10, laboratories 61, drawing halls 2, auditorium and seminar halls, hostel available. Library page: central library on the first floor of the main block, about 13,000 sq ft, 47,040 volumes, 10,005 titles. Home page lists the JCE-AICTE IDEA Lab (3rd floor, main block).",
+      "status": "verified",
+      "sourceLabel": "JCE - Mandatory disclosure (November 2025)",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/Updated%20Mandatory%20Disclosures-25-11-2025%20(4).pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Library: https://jerusalemengg.ac.in/facilities/library.php. Disclosure library table gives 1,300 sq m, 45,800 volumes and 9,831 titles (older); library page figures used."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "publicField": "cityProfile",
+      "claimText": "TNEA 2026 booklet p.61: address Velachery Main Road, Narayanapuram, Pallikaranai; taluk Sholinganallur; district Chennai; PIN 600100; 20 km from district HQ; nearest railway station Velachery, 3 km. Transport page: 20 buses on six routes (Chengalpet, Kanchipuram, Ambattur/Avadi, Ennore/Anna Nagar, Thiruvottiyur/T.Nagar, Anna University/Adyar). AU CAI lists the college under Chengalpattu district, code 3109.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.61)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Transport: https://jerusalemengg.ac.in/facilities/transport.php; About: https://jerusalemengg.ac.in/about-us/about-us.php"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "publicField": "practicalExposure",
+      "claimText": "UGC autonomy 2019-20 to 2028-29; JCE curriculum page posts Regulation 2023 curricula and syllabi for CSE, AI&DS, CSE (AI&ML), CSE (CS), CS&BS, ECE, EEE and IT. AICTE EoA requires internship. TNEA 2026 booklet lists Placement 96% (college-furnished, no year or base).",
+      "status": "verified",
+      "sourceLabel": "JCE - Curriculum and syllabi",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/curriculum.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Home-page '90% placement, 12 lakhs highest package' claim not used."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "publicField": "hostelOverview",
+      "claimText": "TNEA 2026 booklet p.61: boys and girls hostel accommodation yes, permanent; mess both veg and non-veg; mess bill 52,500; room rent 47,500; electricity 5,000 per annum; caution deposit 0; establishment charges 0; admission fees 0; transport 25,000-35,000 per annum. Hostel page: separate hostels for boys and girls on campus with a warden each; each hostel runs its own mess as part of the hostel fee. Mandatory disclosure: estimated boarding and lodging Rs.90,000.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.61)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Hostel: https://jerusalemengg.ac.in/facilities/hostel.php; disclosure: https://jerusalemengg.ac.in/pdf/Updated%20Mandatory%20Disclosures-25-11-2025%20(4).pdf"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "publicField": "dietarySupport",
+      "claimText": "TNEA 2026 booklet: type of mess Both (veg/NV) for boys and girls, mess INR 52,500 per annum. Hostel page: meals part of the hostel fee.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.61)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "publicField": "safetyOverview",
+      "claimText": "JCE anti-ragging page: Anti Ragging Cell from 2009 per UGC and Anna University letter 3654/SA 1/2011; coordinator named with phone; punishments listed. Site menu lists Women Cell and POSH, SC/ST Welfare Committee. TNEA 2026 lists anti-ragging phone for 1307.",
+      "status": "verified",
+      "sourceLabel": "JCE - Anti-ragging cell",
+      "sourceUrl": "https://jerusalemengg.ac.in/campus-life/anti-ragging.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "publicField": "studentSupport",
+      "claimText": "JCE grievance page: help desk at reception for admissions and academic queries; grievances collected by email, online link, AICTE centralised support link and written letters; anonymous suggestion box in the administrative block. Scholarship page lists first graduate / post-matric (SC/SCA/ST), AICTE HRD (two girl children, differently abled), PMSSS and Tamil Nadu schemes.",
+      "status": "verified",
+      "sourceLabel": "JCE - Grievance cell and help desk",
+      "sourceUrl": "https://jerusalemengg.ac.in/grievance-cell.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scholarships: https://jerusalemengg.ac.in/admission/scholarship.php"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "publicField": "whyChoose",
+      "claimText": "UGC autonomy 2019-20 to 2028-29; NBA Tier I ECE and IT to 30-06-2027; AICTE 2026-27 UG intakes AD 60, BM 60, CB 30, CS 120, AM 60, SC 60, EE 30, EC 120, IT 90 = 630; Fees Details 2026: B.E./B.Tech 50,000 (55,000 IT and ECE), MBA 35,000.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (JCE)",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/2026-2027.PDF",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Fees: https://jerusalemengg.ac.in/pdf/FeesDetails.pdf"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "publicField": "thingsToConsider",
+      "claimText": "Mandatory disclosure fee table: B.E./B.Tech government quota Rs.55,000 (accredited) / Rs.50,000 (non-accredited), management quota Rs.85,000 / Rs.80,000 for 2022-23 to 2024-25; M.E. Rs.50,000; MBA Rs.35,000. M.E. actual intake (disclosure): Applied Electronics 3 of 6, CSE 4 of 6, CEM 10 of 18, PED 1 of 6; 2024-25 M.E. admissions GQ 0, MQ 18.",
+      "status": "verified",
+      "sourceLabel": "JCE - Mandatory disclosure (November 2025)",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/Updated%20Mandatory%20Disclosures-25-11-2025%20(4).pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "publicField": "faq",
+      "claimText": "TNEA 2026 brochure: OCI/PIO cardholders who are natives of Tamil Nadu eligible under open competition, not applicable to those born in a foreign country after 04.03.2021; registration fee Rs. 500 (Rs. 250 SC/SCA/ST); report to college within 5 days of allotment.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Schedule: https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf (registration 3 May-5 June 2026; general counselling 20 July-30 August 2026, as in 0115/0119/0356/0358)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-computer-science-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "AICTE EoA 2026-27: Computer Science and Engineering intake 120 for 2026-27, affiliating body Anna University, Chennai, NRI No, International Students No. TNEA 2026 booklet p.61 lists 1307 branch CS, intake 120, started 1995; Round 1 vacancy list shows 1307 branch CS.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (JCE)",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/2026-2027.PDF",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "TNEA booklet: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf. Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf (cached research/india-source-bundles/tagore-engineering-college/tnea-vacancy-r1.txt lines 2379-2425). AICTE EoA 2026-27 is the computer-generated letter published by the college (file 2026-2027.PDF, printed 27 April 2026, SHA-256 b9b55b79...) with a text layer; saved in research/india-source-bundles/jerusalem-college-of-engineering/aicte2627.txt. AICTE dashboard unreachable from this environment on 2026-10-26 (TLS connection reset)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 tentative schedule: online registration 3 May to 5 June 2026; general academic counselling 20 July to 30 August 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-computer-science-engineering",
+      "publicField": "intake",
+      "claimText": "JCE academic calendars 2026-27 page posts odd-semester calendars for CS&BS, CSE, Cyber Security, ECE, EEE, IT and M.E. CEM, all for second-year (III semester) or later students; study holidays 14.10.2026 to 24.10.2026 and end-semester laboratory examinations from 26.10.2026. No first-year 2026-27 calendar is posted.",
+      "status": "verified",
+      "sourceLabel": "JCE - Academic calendars 2026-27",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/academic-calender-2026-27.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned calendars, OCR in research/india-source-bundles/jerusalem-college-of-engineering/cal/. Example: https://jerusalemengg.ac.in/academics/pdf/ECE%20ACADEMIC%20CALENDAR%20AY%202026-27%20ODD.pdf. JCE is autonomous from 2019-20, so its own calendar applies rather than Anna University's non-autonomous calendar."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-computer-science-engineering",
+      "publicField": "fee",
+      "claimText": "JCE 'Fees Details - 2026' sheet: Computer Science and Engineering tuition fees 50,000. Mandatory disclosure: government quota Rs.55,000 accredited / Rs.50,000 non-accredited; management quota Rs.85,000 / Rs.80,000 (2024-25 and earlier).",
+      "status": "verified",
+      "sourceLabel": "JCE - Fees Details 2026",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/FeesDetails.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Sheet does not label the quota or period; its figures match the disclosure's annual government-quota tuition (55,000 for the two NBA-accredited branches, 50,000 for others), so it is recorded as the 2026-27 annual government-quota fee with audience=domestic. Fee sheet SHA-256 3b0c411b..."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-computer-science-engineering",
+      "publicField": "medium",
+      "claimText": "JCE curriculum page posts Regulation 2023 curricula and syllabi in English; TNEA 2026 lists no Tamil-medium branch for 1307.",
+      "status": "verified",
+      "sourceLabel": "JCE - Curriculum and syllabi",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/curriculum.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-computer-science-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "JCE curriculum page: Regulation 2023 curriculum and syllabus for Computer Science and Engineering (or the department's current regulation); autonomous college examinations; Anna University awards the degree.",
+      "status": "verified",
+      "sourceLabel": "JCE - Curriculum and syllabi",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/curriculum.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-btech-artificial-intelligence-data-science",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-btech-artificial-intelligence-data-science",
+      "publicField": "admissions",
+      "claimText": "AICTE EoA 2026-27: Artificial Intelligence and Data Science intake 60 for 2026-27, affiliating body Anna University, Chennai, NRI No, International Students No. TNEA 2026 booklet p.61 lists 1307 branch AD, intake 60, started 2021; Round 1 vacancy list shows 1307 branch AD.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (JCE)",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/2026-2027.PDF",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "TNEA booklet: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf. Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf (cached research/india-source-bundles/tagore-engineering-college/tnea-vacancy-r1.txt lines 2379-2425). AICTE EoA 2026-27 is the computer-generated letter published by the college (file 2026-2027.PDF, printed 27 April 2026, SHA-256 b9b55b79...) with a text layer; saved in research/india-source-bundles/jerusalem-college-of-engineering/aicte2627.txt. AICTE dashboard unreachable from this environment on 2026-10-26 (TLS connection reset)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-btech-artificial-intelligence-data-science",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 tentative schedule: online registration 3 May to 5 June 2026; general academic counselling 20 July to 30 August 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-btech-artificial-intelligence-data-science",
+      "publicField": "intake",
+      "claimText": "JCE academic calendars 2026-27 page posts odd-semester calendars for CS&BS, CSE, Cyber Security, ECE, EEE, IT and M.E. CEM, all for second-year (III semester) or later students; study holidays 14.10.2026 to 24.10.2026 and end-semester laboratory examinations from 26.10.2026. No first-year 2026-27 calendar is posted.",
+      "status": "verified",
+      "sourceLabel": "JCE - Academic calendars 2026-27",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/academic-calender-2026-27.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned calendars, OCR in research/india-source-bundles/jerusalem-college-of-engineering/cal/. Example: https://jerusalemengg.ac.in/academics/pdf/ECE%20ACADEMIC%20CALENDAR%20AY%202026-27%20ODD.pdf. JCE is autonomous from 2019-20, so its own calendar applies rather than Anna University's non-autonomous calendar."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-btech-artificial-intelligence-data-science",
+      "publicField": "fee",
+      "claimText": "JCE 'Fees Details - 2026' sheet: Artificial Intelligence and Data Science tuition fees 50,000. Mandatory disclosure: government quota Rs.55,000 accredited / Rs.50,000 non-accredited; management quota Rs.85,000 / Rs.80,000 (2024-25 and earlier).",
+      "status": "verified",
+      "sourceLabel": "JCE - Fees Details 2026",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/FeesDetails.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Sheet does not label the quota or period; its figures match the disclosure's annual government-quota tuition (55,000 for the two NBA-accredited branches, 50,000 for others), so it is recorded as the 2026-27 annual government-quota fee with audience=domestic. Fee sheet SHA-256 3b0c411b..."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-btech-artificial-intelligence-data-science",
+      "publicField": "medium",
+      "claimText": "JCE curriculum page posts Regulation 2023 curricula and syllabi in English; TNEA 2026 lists no Tamil-medium branch for 1307.",
+      "status": "verified",
+      "sourceLabel": "JCE - Curriculum and syllabi",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/curriculum.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-btech-artificial-intelligence-data-science",
+      "publicField": "teachingPhases",
+      "claimText": "JCE curriculum page: Regulation 2023 curriculum and syllabus for Artificial Intelligence and Data Science (or the department's current regulation); autonomous college examinations; Anna University awards the degree.",
+      "status": "verified",
+      "sourceLabel": "JCE - Curriculum and syllabi",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/curriculum.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-computer-science-engineering-ai-machine-learning",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-computer-science-engineering-ai-machine-learning",
+      "publicField": "admissions",
+      "claimText": "AICTE EoA 2026-27: Computer Science and Engineering (Artificial Intelligence and Machine Learning) intake 60 for 2026-27, affiliating body Anna University, Chennai, NRI No, International Students No. TNEA 2026 booklet p.61 lists 1307 branch AM, intake 60, started 2022; Round 1 vacancy list shows 1307 branch AM.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (JCE)",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/2026-2027.PDF",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "TNEA booklet: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf. Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf (cached research/india-source-bundles/tagore-engineering-college/tnea-vacancy-r1.txt lines 2379-2425). AICTE EoA 2026-27 is the computer-generated letter published by the college (file 2026-2027.PDF, printed 27 April 2026, SHA-256 b9b55b79...) with a text layer; saved in research/india-source-bundles/jerusalem-college-of-engineering/aicte2627.txt. AICTE dashboard unreachable from this environment on 2026-10-26 (TLS connection reset)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-computer-science-engineering-ai-machine-learning",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 tentative schedule: online registration 3 May to 5 June 2026; general academic counselling 20 July to 30 August 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-computer-science-engineering-ai-machine-learning",
+      "publicField": "intake",
+      "claimText": "JCE academic calendars 2026-27 page posts odd-semester calendars for CS&BS, CSE, Cyber Security, ECE, EEE, IT and M.E. CEM, all for second-year (III semester) or later students; study holidays 14.10.2026 to 24.10.2026 and end-semester laboratory examinations from 26.10.2026. No first-year 2026-27 calendar is posted.",
+      "status": "verified",
+      "sourceLabel": "JCE - Academic calendars 2026-27",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/academic-calender-2026-27.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned calendars, OCR in research/india-source-bundles/jerusalem-college-of-engineering/cal/. Example: https://jerusalemengg.ac.in/academics/pdf/ECE%20ACADEMIC%20CALENDAR%20AY%202026-27%20ODD.pdf. JCE is autonomous from 2019-20, so its own calendar applies rather than Anna University's non-autonomous calendar."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-computer-science-engineering-ai-machine-learning",
+      "publicField": "fee",
+      "claimText": "JCE 'Fees Details - 2026' sheet: Computer Science and Engineering (Artificial Intelligence and Machine Learning) tuition fees 50,000. Mandatory disclosure: government quota Rs.55,000 accredited / Rs.50,000 non-accredited; management quota Rs.85,000 / Rs.80,000 (2024-25 and earlier).",
+      "status": "verified",
+      "sourceLabel": "JCE - Fees Details 2026",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/FeesDetails.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Sheet does not label the quota or period; its figures match the disclosure's annual government-quota tuition (55,000 for the two NBA-accredited branches, 50,000 for others), so it is recorded as the 2026-27 annual government-quota fee with audience=domestic. Fee sheet SHA-256 3b0c411b..."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-computer-science-engineering-ai-machine-learning",
+      "publicField": "medium",
+      "claimText": "JCE curriculum page posts Regulation 2023 curricula and syllabi in English; TNEA 2026 lists no Tamil-medium branch for 1307.",
+      "status": "verified",
+      "sourceLabel": "JCE - Curriculum and syllabi",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/curriculum.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-computer-science-engineering-ai-machine-learning",
+      "publicField": "teachingPhases",
+      "claimText": "JCE curriculum page: Regulation 2023 curriculum and syllabus for Computer Science and Engineering (Artificial Intelligence and Machine Learning) (or the department's current regulation); autonomous college examinations; Anna University awards the degree.",
+      "status": "verified",
+      "sourceLabel": "JCE - Curriculum and syllabi",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/curriculum.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-computer-science-engineering-cyber-security",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-computer-science-engineering-cyber-security",
+      "publicField": "admissions",
+      "claimText": "AICTE EoA 2026-27: Computer Science and Engineering (Cyber Security) intake 60 for 2026-27, affiliating body Anna University, Chennai, NRI No, International Students No. TNEA 2026 booklet p.61 lists 1307 branch SC, intake 60, started 2022; Round 1 vacancy list shows 1307 branch SC.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (JCE)",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/2026-2027.PDF",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "TNEA booklet: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf. Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf (cached research/india-source-bundles/tagore-engineering-college/tnea-vacancy-r1.txt lines 2379-2425). AICTE EoA 2026-27 is the computer-generated letter published by the college (file 2026-2027.PDF, printed 27 April 2026, SHA-256 b9b55b79...) with a text layer; saved in research/india-source-bundles/jerusalem-college-of-engineering/aicte2627.txt. AICTE dashboard unreachable from this environment on 2026-10-26 (TLS connection reset)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-computer-science-engineering-cyber-security",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 tentative schedule: online registration 3 May to 5 June 2026; general academic counselling 20 July to 30 August 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-computer-science-engineering-cyber-security",
+      "publicField": "intake",
+      "claimText": "JCE academic calendars 2026-27 page posts odd-semester calendars for CS&BS, CSE, Cyber Security, ECE, EEE, IT and M.E. CEM, all for second-year (III semester) or later students; study holidays 14.10.2026 to 24.10.2026 and end-semester laboratory examinations from 26.10.2026. No first-year 2026-27 calendar is posted.",
+      "status": "verified",
+      "sourceLabel": "JCE - Academic calendars 2026-27",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/academic-calender-2026-27.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned calendars, OCR in research/india-source-bundles/jerusalem-college-of-engineering/cal/. Example: https://jerusalemengg.ac.in/academics/pdf/ECE%20ACADEMIC%20CALENDAR%20AY%202026-27%20ODD.pdf. JCE is autonomous from 2019-20, so its own calendar applies rather than Anna University's non-autonomous calendar."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-computer-science-engineering-cyber-security",
+      "publicField": "fee",
+      "claimText": "JCE 'Fees Details - 2026' sheet: Computer Science and Engineering (Cyber Security) tuition fees 50,000. Mandatory disclosure: government quota Rs.55,000 accredited / Rs.50,000 non-accredited; management quota Rs.85,000 / Rs.80,000 (2024-25 and earlier).",
+      "status": "verified",
+      "sourceLabel": "JCE - Fees Details 2026",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/FeesDetails.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Sheet does not label the quota or period; its figures match the disclosure's annual government-quota tuition (55,000 for the two NBA-accredited branches, 50,000 for others), so it is recorded as the 2026-27 annual government-quota fee with audience=domestic. Fee sheet SHA-256 3b0c411b..."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-computer-science-engineering-cyber-security",
+      "publicField": "medium",
+      "claimText": "JCE curriculum page posts Regulation 2023 curricula and syllabi in English; TNEA 2026 lists no Tamil-medium branch for 1307.",
+      "status": "verified",
+      "sourceLabel": "JCE - Curriculum and syllabi",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/curriculum.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-computer-science-engineering-cyber-security",
+      "publicField": "teachingPhases",
+      "claimText": "JCE curriculum page: Regulation 2023 curriculum and syllabus for Computer Science and Engineering (Cyber Security) (or the department's current regulation); autonomous college examinations; Anna University awards the degree.",
+      "status": "verified",
+      "sourceLabel": "JCE - Curriculum and syllabi",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/curriculum.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-btech-computer-science-business-systems",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-btech-computer-science-business-systems",
+      "publicField": "admissions",
+      "claimText": "AICTE EoA 2026-27: Computer Science and Business Systems intake 30 for 2026-27, affiliating body Anna University, Chennai, NRI No, International Students No. TNEA 2026 booklet p.61 lists 1307 branch CB, intake 30, started 2021; Round 1 vacancy list shows 1307 branch CB.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (JCE)",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/2026-2027.PDF",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "TNEA booklet: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf. Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf (cached research/india-source-bundles/tagore-engineering-college/tnea-vacancy-r1.txt lines 2379-2425). AICTE EoA 2026-27 is the computer-generated letter published by the college (file 2026-2027.PDF, printed 27 April 2026, SHA-256 b9b55b79...) with a text layer; saved in research/india-source-bundles/jerusalem-college-of-engineering/aicte2627.txt. AICTE dashboard unreachable from this environment on 2026-10-26 (TLS connection reset)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-btech-computer-science-business-systems",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 tentative schedule: online registration 3 May to 5 June 2026; general academic counselling 20 July to 30 August 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-btech-computer-science-business-systems",
+      "publicField": "intake",
+      "claimText": "JCE academic calendars 2026-27 page posts odd-semester calendars for CS&BS, CSE, Cyber Security, ECE, EEE, IT and M.E. CEM, all for second-year (III semester) or later students; study holidays 14.10.2026 to 24.10.2026 and end-semester laboratory examinations from 26.10.2026. No first-year 2026-27 calendar is posted.",
+      "status": "verified",
+      "sourceLabel": "JCE - Academic calendars 2026-27",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/academic-calender-2026-27.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned calendars, OCR in research/india-source-bundles/jerusalem-college-of-engineering/cal/. Example: https://jerusalemengg.ac.in/academics/pdf/ECE%20ACADEMIC%20CALENDAR%20AY%202026-27%20ODD.pdf. JCE is autonomous from 2019-20, so its own calendar applies rather than Anna University's non-autonomous calendar."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-btech-computer-science-business-systems",
+      "publicField": "fee",
+      "claimText": "JCE 'Fees Details - 2026' sheet: Computer Science and Business Systems tuition fees 50,000. Mandatory disclosure: government quota Rs.55,000 accredited / Rs.50,000 non-accredited; management quota Rs.85,000 / Rs.80,000 (2024-25 and earlier).",
+      "status": "verified",
+      "sourceLabel": "JCE - Fees Details 2026",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/FeesDetails.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Sheet does not label the quota or period; its figures match the disclosure's annual government-quota tuition (55,000 for the two NBA-accredited branches, 50,000 for others), so it is recorded as the 2026-27 annual government-quota fee with audience=domestic. Fee sheet SHA-256 3b0c411b..."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-btech-computer-science-business-systems",
+      "publicField": "medium",
+      "claimText": "JCE curriculum page posts Regulation 2023 curricula and syllabi in English; TNEA 2026 lists no Tamil-medium branch for 1307.",
+      "status": "verified",
+      "sourceLabel": "JCE - Curriculum and syllabi",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/curriculum.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-btech-computer-science-business-systems",
+      "publicField": "teachingPhases",
+      "claimText": "JCE curriculum page: Regulation 2023 curriculum and syllabus for Computer Science and Business Systems (or the department's current regulation); autonomous college examinations; Anna University awards the degree.",
+      "status": "verified",
+      "sourceLabel": "JCE - Curriculum and syllabi",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/curriculum.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-btech-information-technology",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-btech-information-technology",
+      "publicField": "admissions",
+      "claimText": "AICTE EoA 2026-27: Information Technology intake 90 for 2026-27, affiliating body Anna University, Chennai, NRI No, International Students No. TNEA 2026 booklet p.61 lists 1307 branch IT, intake 90, started 1999; Round 1 vacancy list shows 1307 branch IT.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (JCE)",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/2026-2027.PDF",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "TNEA booklet: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf. Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf (cached research/india-source-bundles/tagore-engineering-college/tnea-vacancy-r1.txt lines 2379-2425). AICTE EoA 2026-27 is the computer-generated letter published by the college (file 2026-2027.PDF, printed 27 April 2026, SHA-256 b9b55b79...) with a text layer; saved in research/india-source-bundles/jerusalem-college-of-engineering/aicte2627.txt. AICTE dashboard unreachable from this environment on 2026-10-26 (TLS connection reset)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-btech-information-technology",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 tentative schedule: online registration 3 May to 5 June 2026; general academic counselling 20 July to 30 August 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-btech-information-technology",
+      "publicField": "intake",
+      "claimText": "JCE academic calendars 2026-27 page posts odd-semester calendars for CS&BS, CSE, Cyber Security, ECE, EEE, IT and M.E. CEM, all for second-year (III semester) or later students; study holidays 14.10.2026 to 24.10.2026 and end-semester laboratory examinations from 26.10.2026. No first-year 2026-27 calendar is posted.",
+      "status": "verified",
+      "sourceLabel": "JCE - Academic calendars 2026-27",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/academic-calender-2026-27.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned calendars, OCR in research/india-source-bundles/jerusalem-college-of-engineering/cal/. Example: https://jerusalemengg.ac.in/academics/pdf/ECE%20ACADEMIC%20CALENDAR%20AY%202026-27%20ODD.pdf. JCE is autonomous from 2019-20, so its own calendar applies rather than Anna University's non-autonomous calendar."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-btech-information-technology",
+      "publicField": "fee",
+      "claimText": "JCE 'Fees Details - 2026' sheet: Information Technology tuition fees 55,000. Mandatory disclosure: government quota Rs.55,000 accredited / Rs.50,000 non-accredited; management quota Rs.85,000 / Rs.80,000 (2024-25 and earlier).",
+      "status": "verified",
+      "sourceLabel": "JCE - Fees Details 2026",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/FeesDetails.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Sheet does not label the quota or period; its figures match the disclosure's annual government-quota tuition (55,000 for the two NBA-accredited branches, 50,000 for others), so it is recorded as the 2026-27 annual government-quota fee with audience=domestic. Fee sheet SHA-256 3b0c411b..."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-btech-information-technology",
+      "publicField": "medium",
+      "claimText": "JCE curriculum page posts Regulation 2023 curricula and syllabi in English; TNEA 2026 lists no Tamil-medium branch for 1307.",
+      "status": "verified",
+      "sourceLabel": "JCE - Curriculum and syllabi",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/curriculum.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-btech-information-technology",
+      "publicField": "teachingPhases",
+      "claimText": "JCE curriculum page: Regulation 2023 curriculum and syllabus for Information Technology (or the department's current regulation); autonomous college examinations; Anna University awards the degree.",
+      "status": "verified",
+      "sourceLabel": "JCE - Curriculum and syllabi",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/curriculum.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-electronics-communication-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-electronics-communication-engineering",
+      "publicField": "admissions",
+      "claimText": "AICTE EoA 2026-27: Electronics and Communication Engineering intake 120 for 2026-27, affiliating body Anna University, Chennai, NRI No, International Students No. TNEA 2026 booklet p.61 lists 1307 branch EC, intake 120, started 1995; Round 1 vacancy list shows 1307 branch EC.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (JCE)",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/2026-2027.PDF",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "TNEA booklet: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf. Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf (cached research/india-source-bundles/tagore-engineering-college/tnea-vacancy-r1.txt lines 2379-2425). AICTE EoA 2026-27 is the computer-generated letter published by the college (file 2026-2027.PDF, printed 27 April 2026, SHA-256 b9b55b79...) with a text layer; saved in research/india-source-bundles/jerusalem-college-of-engineering/aicte2627.txt. AICTE dashboard unreachable from this environment on 2026-10-26 (TLS connection reset)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-electronics-communication-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 tentative schedule: online registration 3 May to 5 June 2026; general academic counselling 20 July to 30 August 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-electronics-communication-engineering",
+      "publicField": "intake",
+      "claimText": "JCE academic calendars 2026-27 page posts odd-semester calendars for CS&BS, CSE, Cyber Security, ECE, EEE, IT and M.E. CEM, all for second-year (III semester) or later students; study holidays 14.10.2026 to 24.10.2026 and end-semester laboratory examinations from 26.10.2026. No first-year 2026-27 calendar is posted.",
+      "status": "verified",
+      "sourceLabel": "JCE - Academic calendars 2026-27",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/academic-calender-2026-27.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned calendars, OCR in research/india-source-bundles/jerusalem-college-of-engineering/cal/. Example: https://jerusalemengg.ac.in/academics/pdf/ECE%20ACADEMIC%20CALENDAR%20AY%202026-27%20ODD.pdf. JCE is autonomous from 2019-20, so its own calendar applies rather than Anna University's non-autonomous calendar."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-electronics-communication-engineering",
+      "publicField": "fee",
+      "claimText": "JCE 'Fees Details - 2026' sheet: Electronics and Communication Engineering tuition fees 55,000. Mandatory disclosure: government quota Rs.55,000 accredited / Rs.50,000 non-accredited; management quota Rs.85,000 / Rs.80,000 (2024-25 and earlier).",
+      "status": "verified",
+      "sourceLabel": "JCE - Fees Details 2026",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/FeesDetails.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Sheet does not label the quota or period; its figures match the disclosure's annual government-quota tuition (55,000 for the two NBA-accredited branches, 50,000 for others), so it is recorded as the 2026-27 annual government-quota fee with audience=domestic. Fee sheet SHA-256 3b0c411b..."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-electronics-communication-engineering",
+      "publicField": "medium",
+      "claimText": "JCE curriculum page posts Regulation 2023 curricula and syllabi in English; TNEA 2026 lists no Tamil-medium branch for 1307.",
+      "status": "verified",
+      "sourceLabel": "JCE - Curriculum and syllabi",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/curriculum.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-electronics-communication-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "JCE curriculum page: Regulation 2023 curriculum and syllabus for Electronics and Communication Engineering (or the department's current regulation); autonomous college examinations; Anna University awards the degree.",
+      "status": "verified",
+      "sourceLabel": "JCE - Curriculum and syllabi",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/curriculum.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-electrical-electronics-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-electrical-electronics-engineering",
+      "publicField": "admissions",
+      "claimText": "AICTE EoA 2026-27: Electrical and Electronics Engineering intake 30 for 2026-27, affiliating body Anna University, Chennai, NRI No, International Students No. TNEA 2026 booklet p.61 lists 1307 branch EE, intake 30, started 1995; Round 1 vacancy list shows 1307 branch EE.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (JCE)",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/2026-2027.PDF",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "TNEA booklet: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf. Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf (cached research/india-source-bundles/tagore-engineering-college/tnea-vacancy-r1.txt lines 2379-2425). AICTE EoA 2026-27 is the computer-generated letter published by the college (file 2026-2027.PDF, printed 27 April 2026, SHA-256 b9b55b79...) with a text layer; saved in research/india-source-bundles/jerusalem-college-of-engineering/aicte2627.txt. AICTE dashboard unreachable from this environment on 2026-10-26 (TLS connection reset)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-electrical-electronics-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 tentative schedule: online registration 3 May to 5 June 2026; general academic counselling 20 July to 30 August 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-electrical-electronics-engineering",
+      "publicField": "intake",
+      "claimText": "JCE academic calendars 2026-27 page posts odd-semester calendars for CS&BS, CSE, Cyber Security, ECE, EEE, IT and M.E. CEM, all for second-year (III semester) or later students; study holidays 14.10.2026 to 24.10.2026 and end-semester laboratory examinations from 26.10.2026. No first-year 2026-27 calendar is posted.",
+      "status": "verified",
+      "sourceLabel": "JCE - Academic calendars 2026-27",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/academic-calender-2026-27.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned calendars, OCR in research/india-source-bundles/jerusalem-college-of-engineering/cal/. Example: https://jerusalemengg.ac.in/academics/pdf/ECE%20ACADEMIC%20CALENDAR%20AY%202026-27%20ODD.pdf. JCE is autonomous from 2019-20, so its own calendar applies rather than Anna University's non-autonomous calendar."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-electrical-electronics-engineering",
+      "publicField": "fee",
+      "claimText": "JCE 'Fees Details - 2026' sheet: Electrical and Electronics Engineering tuition fees 50,000. Mandatory disclosure: government quota Rs.55,000 accredited / Rs.50,000 non-accredited; management quota Rs.85,000 / Rs.80,000 (2024-25 and earlier).",
+      "status": "verified",
+      "sourceLabel": "JCE - Fees Details 2026",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/FeesDetails.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Sheet does not label the quota or period; its figures match the disclosure's annual government-quota tuition (55,000 for the two NBA-accredited branches, 50,000 for others), so it is recorded as the 2026-27 annual government-quota fee with audience=domestic. Fee sheet SHA-256 3b0c411b..."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-electrical-electronics-engineering",
+      "publicField": "medium",
+      "claimText": "JCE curriculum page posts Regulation 2023 curricula and syllabi in English; TNEA 2026 lists no Tamil-medium branch for 1307.",
+      "status": "verified",
+      "sourceLabel": "JCE - Curriculum and syllabi",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/curriculum.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-electrical-electronics-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "JCE curriculum page: Regulation 2023 curriculum and syllabus for Electrical and Electronics Engineering (or the department's current regulation); autonomous college examinations; Anna University awards the degree.",
+      "status": "verified",
+      "sourceLabel": "JCE - Curriculum and syllabi",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/curriculum.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-biomedical-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-biomedical-engineering",
+      "publicField": "admissions",
+      "claimText": "AICTE EoA 2026-27: Biomedical Engineering intake 60 for 2026-27, affiliating body Anna University, Chennai, NRI No, International Students No. TNEA 2026 booklet p.61 lists 1307 branch BM, intake 60, started 2005; Round 1 vacancy list shows 1307 branch BM.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (JCE)",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/2026-2027.PDF",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "TNEA booklet: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf. Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf (cached research/india-source-bundles/tagore-engineering-college/tnea-vacancy-r1.txt lines 2379-2425). AICTE EoA 2026-27 is the computer-generated letter published by the college (file 2026-2027.PDF, printed 27 April 2026, SHA-256 b9b55b79...) with a text layer; saved in research/india-source-bundles/jerusalem-college-of-engineering/aicte2627.txt. AICTE dashboard unreachable from this environment on 2026-10-26 (TLS connection reset)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-biomedical-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 tentative schedule: online registration 3 May to 5 June 2026; general academic counselling 20 July to 30 August 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-biomedical-engineering",
+      "publicField": "intake",
+      "claimText": "JCE academic calendars 2026-27 page posts odd-semester calendars for CS&BS, CSE, Cyber Security, ECE, EEE, IT and M.E. CEM, all for second-year (III semester) or later students; study holidays 14.10.2026 to 24.10.2026 and end-semester laboratory examinations from 26.10.2026. No first-year 2026-27 calendar is posted.",
+      "status": "verified",
+      "sourceLabel": "JCE - Academic calendars 2026-27",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/academic-calender-2026-27.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned calendars, OCR in research/india-source-bundles/jerusalem-college-of-engineering/cal/. Example: https://jerusalemengg.ac.in/academics/pdf/ECE%20ACADEMIC%20CALENDAR%20AY%202026-27%20ODD.pdf. JCE is autonomous from 2019-20, so its own calendar applies rather than Anna University's non-autonomous calendar."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-biomedical-engineering",
+      "publicField": "fee",
+      "claimText": "JCE 'Fees Details - 2026' sheet: Biomedical Engineering tuition fees 50,000. Mandatory disclosure: government quota Rs.55,000 accredited / Rs.50,000 non-accredited; management quota Rs.85,000 / Rs.80,000 (2024-25 and earlier).",
+      "status": "verified",
+      "sourceLabel": "JCE - Fees Details 2026",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/FeesDetails.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Sheet does not label the quota or period; its figures match the disclosure's annual government-quota tuition (55,000 for the two NBA-accredited branches, 50,000 for others), so it is recorded as the 2026-27 annual government-quota fee with audience=domestic. Fee sheet SHA-256 3b0c411b..."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-biomedical-engineering",
+      "publicField": "medium",
+      "claimText": "JCE curriculum page posts Regulation 2023 curricula and syllabi in English; TNEA 2026 lists no Tamil-medium branch for 1307.",
+      "status": "verified",
+      "sourceLabel": "JCE - Curriculum and syllabi",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/curriculum.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-be-biomedical-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "JCE curriculum page: Regulation 2023 curriculum and syllabus for Biomedical Engineering (or the department's current regulation); autonomous college examinations; Anna University awards the degree.",
+      "status": "verified",
+      "sourceLabel": "JCE - Curriculum and syllabi",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/curriculum.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Biomedical Engineering's posted curriculum is Regulation 2019; Regulation 2023 is the college-wide UG regulation on the regulations page."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-mba",
+      "publicField": "eligibility",
+      "claimText": "TANCET 2026 MBA eligibility: bachelor's degree of minimum three years with at least 50 per cent (45 per cent for Tamil Nadu BC, BCM, MBC, SC, SCA, ST); test held 9 May 2026.",
+      "status": "verified",
+      "sourceLabel": "Anna University - TANCET / CEETA-PG 2026 Information Brochure",
+      "sourceUrl": "https://tancet.annauniv.edu/tancet/Information%20Brochure%202026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Same TANCET brochure facts used in 0357 and 0359."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-mba",
+      "publicField": "admissions",
+      "claimText": "Tamil Nadu MBA/MCA Admissions 2026-2027 booklet p.57: 1307 Jerusalem College of Engineering (Autonomous), MBA approved intake 60, self-financing, started 2008, not accredited; hostel optional, room rent 47,500, electricity 5,000, mess 52,500, admission fee 1,000, deposit 0. AICTE EoA 2026-27: MBA 60, NRI No, International Students No.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - MBA/MCA Admissions 2026-27 college booklet",
+      "sourceUrl": "https://static.tn-mbamca.com/docs/TNMBAMCA-ENGINEERING-COLLEGES-BOOKLET-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Cached text research/india-source-bundles/tagore-engineering-college/tnmbamca.txt lines 3155-3190."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-mba",
+      "publicField": "intake",
+      "claimText": "Tamil Nadu MBA/MCA Admissions 2026-2027 college booklet: 1307 Jerusalem College of Engineering (Autonomous); MBA approved intake 60; self-financing; started 2008; affiliating university Anna University. JCE has not posted a 2026-27 first-year MBA calendar.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - MBA/MCA Admissions 2026-27 college booklet",
+      "sourceUrl": "https://static.tn-mbamca.com/docs/TNMBAMCA-ENGINEERING-COLLEGES-BOOKLET-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-mba",
+      "publicField": "fee",
+      "claimText": "JCE 'Fees Details - 2026' sheet: MBA Master of Business Administration tuition fees 35,000. Mandatory disclosure: MBA Rs.35,000 for 2024-25, 2023-24 and 2022-23 (no quota split).",
+      "status": "verified",
+      "sourceLabel": "JCE - Fees Details 2026",
+      "sourceUrl": "https://jerusalemengg.ac.in/pdf/FeesDetails.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-mba",
+      "publicField": "teachingPhases",
+      "claimText": "JCE regulations page lists MBA Regulation 2023 (14.11.23); autonomous examinations; Anna University awards the degree.",
+      "status": "verified",
+      "sourceLabel": "JCE - Regulations",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/regulations.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jerusalem-college-of-engineering",
+      "programmeSlug": "jce-mba",
+      "publicField": "medium",
+      "claimText": "JCE publishes the MBA Regulation 2023 and department pages in English.",
+      "status": "verified",
+      "sourceLabel": "JCE - Regulations",
+      "sourceUrl": "https://jerusalemengg.ac.in/academics/regulations.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    }
+  ]
+}

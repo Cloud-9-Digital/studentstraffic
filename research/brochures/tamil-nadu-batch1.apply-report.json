@@ -1,0 +1,566 @@
+{
+  "appliedAt": "2026-10-26T13:29:48.819Z",
+  "batch": "tamil-nadu-batch1",
+  "results": [
+    {
+      "universitySlug": "vellore-institute-of-technology",
+      "sourceUrl": "https://vit.ac.in/files/prospectus/Int-M.Sc-Information-Brochure-2026.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/vellore-institute-of-technology/brochure.pdf",
+        "bytes": 5461156,
+        "fileName": "Int-M.Sc-Information-Brochure-2026.pdf",
+        "title": "Integrated M.Sc. information brochure 2026",
+        "academicYear": "2026-27",
+        "sourceUrl": "https://vit.ac.in/files/prospectus/Int-M.Sc-Information-Brochure-2026.pdf",
+        "sourceLabel": "VIT official website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "sourceUrl": "https://webfiles.amrita.edu/2025/11/aeee-2026-information-handbook.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/amrita-vishwa-vidyapeetham/brochure.pdf",
+        "bytes": 1148685,
+        "fileName": "aeee-2026-information-handbook.pdf",
+        "title": "AEEE 2026 information handbook (B.Tech admissions)",
+        "academicYear": "2026-27",
+        "sourceUrl": "https://webfiles.amrita.edu/2025/11/aeee-2026-information-handbook.pdf",
+        "sourceLabel": "Amrita Vishwa Vidyapeetham official website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "srm-institute-of-science-and-technology",
+      "sourceUrl": "https://webstor.srmist.edu.in/web_assets/downloads/2026/srm-admission-brochure-2026-2027.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/srm-institute-of-science-and-technology/brochure.pdf",
+        "bytes": 6578081,
+        "fileName": "srm-admission-brochure-2026-2027.pdf",
+        "title": "Admission brochure 2026-27",
+        "academicYear": "2026-27",
+        "sourceUrl": "https://webstor.srmist.edu.in/web_assets/downloads/2026/srm-admission-brochure-2026-2027.pdf",
+        "sourceLabel": "SRMIST official website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A24_2363.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/jss-academy-of-higher-education-and-research/brochure.pdf",
+        "bytes": 9586174,
+        "fileName": "A24_2363.pdf",
+        "title": "UG and PG pharmacy information brochure 2026-27",
+        "academicYear": "2026-27",
+        "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A24_2363.pdf",
+        "sourceLabel": "JSS AHER official website (admission notifications storage)",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "kalasalingam-academy-of-research-and-education",
+      "sourceUrl": "https://www.kalasalingam.ac.in/wp-content/uploads/2025/12/Brochure2026.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/kalasalingam-academy-of-research-and-education/brochure.pdf",
+        "bytes": 3558591,
+        "fileName": "Brochure2026.pdf",
+        "title": "Admission brochure 2026",
+        "academicYear": "2026-27",
+        "sourceUrl": "https://www.kalasalingam.ac.in/wp-content/uploads/2025/12/Brochure2026.pdf",
+        "sourceLabel": "Kalasalingam official website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "sourceUrl": "https://engineering.vpmm.in/content/PDF/vpmm_group_of_institution_brochure.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/arul-tharum-vpmm-college-of-engineering-and-technology/brochure.pdf",
+        "bytes": 6665213,
+        "fileName": "vpmm_group_of_institution_brochure.pdf",
+        "title": "VPMM Group of Institutions brochure (2025)",
+        "academicYear": "2025-26",
+        "sourceUrl": "https://engineering.vpmm.in/content/PDF/vpmm_group_of_institution_brochure.pdf",
+        "sourceLabel": "VPMM College of Engineering official website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "anna-university",
+      "sourceUrl": "https://cfa.annauniv.edu/cfa/pdf/CEAP_BOOKLET_INFORMATION_2026.pdf",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "universitySlug": "university-of-madras",
+      "sourceUrl": "https://egovernance.unom.ac.in/CBCS2627/download/Prospectus.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/university-of-madras/brochure.pdf",
+        "bytes": 1626206,
+        "fileName": "Prospectus.pdf",
+        "title": "Prospectus 2026-27 (university departments, CBCS)",
+        "academicYear": "2026-27",
+        "sourceUrl": "https://egovernance.unom.ac.in/CBCS2627/download/Prospectus.pdf",
+        "sourceLabel": "University of Madras official e-governance portal",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "dhanalakshmi-srinivasan-college-of-engineering-and-technology",
+      "sourceUrl": "https://dscet.ac.in/assets/pdf/DSCETbrouchre-admission.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/dhanalakshmi-srinivasan-college-of-engineering-and-technology/brochure.pdf",
+        "bytes": 787404,
+        "fileName": "DSCETbrouchre-admission.pdf",
+        "title": "Admission brochure (2026 intake)",
+        "academicYear": "2026-27",
+        "sourceUrl": "https://dscet.ac.in/assets/pdf/DSCETbrouchre-admission.pdf",
+        "sourceLabel": "DSCET official website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "bharathidasan-university",
+      "sourceUrl": "https://oms.bdu.ac.in/admissions/assets/docs/bdu-regular-admissions-2026-2027-prospectus.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/bharathidasan-university/brochure.pdf",
+        "bytes": 792582,
+        "fileName": "bdu-regular-admissions-2026-2027-prospectus.pdf",
+        "title": "Regular admissions prospectus 2026-27",
+        "academicYear": "2026-27",
+        "sourceUrl": "https://oms.bdu.ac.in/admissions/assets/docs/bdu-regular-admissions-2026-2027-prospectus.pdf",
+        "sourceLabel": "Bharathidasan University official admissions portal",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "madurai-kamaraj-university",
+      "sourceUrl": "https://admissions.mkuniversity.ac.in/Prospectus.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/madurai-kamaraj-university/brochure.pdf",
+        "bytes": 1475214,
+        "fileName": "Prospectus.pdf",
+        "title": "Admission notification and prospectus 2026-27",
+        "academicYear": "2026-27",
+        "sourceUrl": "https://admissions.mkuniversity.ac.in/Prospectus.pdf",
+        "sourceLabel": "Madurai Kamaraj University official admissions portal",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "vel-tech-rangarajan-dr-sagunthala-rd-institute-of-science-and-technology",
+      "sourceUrl": "https://veltech.edu.in/brochure/VTUEEE_2026%20Brochure.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/vel-tech-rangarajan-dr-sagunthala-rd-institute-of-science-and-technology/brochure.pdf",
+        "bytes": 3771945,
+        "fileName": "VTUEEE_2026 Brochure.pdf",
+        "title": "VTUEEE 2026 information brochure (B.Tech admissions)",
+        "academicYear": "2026-27",
+        "sourceUrl": "https://veltech.edu.in/brochure/VTUEEE_2026%20Brochure.pdf",
+        "sourceLabel": "Vel Tech official website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "shiv-nadar-university-chennai",
+      "sourceUrl": "https://www.snuchennai.edu.in/wp-content/uploads/2026/04/SNU-Chennai-Prospectus-2026-27.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/shiv-nadar-university-chennai/brochure.pdf",
+        "bytes": 2385282,
+        "fileName": "SNU-Chennai-Prospectus-2026-27.pdf",
+        "title": "Prospectus 2026-27",
+        "academicYear": "2026-27",
+        "sourceUrl": "https://www.snuchennai.edu.in/wp-content/uploads/2026/04/SNU-Chennai-Prospectus-2026-27.pdf",
+        "sourceLabel": "Shiv Nadar University Chennai official website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "alagappa-university",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/alagappa-university/brochure.pdf",
+        "bytes": 2658925,
+        "fileName": "ALU_Prospectus_2026-2027.pdf",
+        "title": "Prospectus 2026-27",
+        "academicYear": "2026-27",
+        "sourceUrl": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf",
+        "sourceLabel": "Alagappa University official website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/tamil-nadu-dr-ambedkar-law-university/brochure.pdf",
+        "bytes": 934577,
+        "fileName": "Prospectus  2026-2027 - School of Excellence in Law.pdf",
+        "title": "School of Excellence in Law prospectus 2026-27",
+        "academicYear": "2026-27",
+        "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+        "sourceLabel": "TNDALU official admission portal (linked from tndalu.ac.in)",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "annamalai-university",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2026/prospectus/Engg_Pharm.D_Six_Year_Prospectus_2026-27.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/annamalai-university/brochure.pdf",
+        "bytes": 1118918,
+        "fileName": "Engg_Pharm.D_Six_Year_Prospectus_2026-27.pdf",
+        "title": "Pharm.D. (six-year and post-baccalaureate) prospectus 2026-27",
+        "academicYear": "2026-27",
+        "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2026/prospectus/Engg_Pharm.D_Six_Year_Prospectus_2026-27.pdf",
+        "sourceLabel": "Annamalai University official website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "periyar-university",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/periyar-university/brochure.pdf",
+        "bytes": 4279788,
+        "fileName": "Prospectus.pdf",
+        "title": "University departments prospectus 2025-26",
+        "academicYear": "2025-26",
+        "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf",
+        "sourceLabel": "Periyar University official website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "tamil-nadu-dr-j-jayalalithaa-fisheries-university",
+      "sourceUrl": "https://admission.tnjfu.ac.in/Documents/TN/Notification/PROSPECTUS.pdf",
+      "status": "failed",
+      "error": "File size too large. Got 38810301. Maximum is 10485760."
+    },
+    {
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "sourceUrl": "https://www.tnteu.ac.in/admin/file_storage/cms/10001%20-%20%20M.Ed.%20Brochure%20-%20(2026-2027)%20-%2012.06.2026.pdf.pdf.pdf.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/tamil-nadu-teachers-education-university/brochure.pdf",
+        "bytes": 2542941,
+        "fileName": "10001 -  M.Ed. Brochure - (2026-2027) - 12.06.2026.pdf.pdf.pdf.pdf",
+        "title": "M.Ed. brochure 2026-27",
+        "academicYear": "2026-27",
+        "sourceUrl": "https://www.tnteu.ac.in/admin/file_storage/cms/10001%20-%20%20M.Ed.%20Brochure%20-%20(2026-2027)%20-%2012.06.2026.pdf.pdf.pdf.pdf",
+        "sourceLabel": "TNTEU official website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "sri-venkateswara-college-of-engineering",
+      "sourceUrl": "https://www.svce.ac.in/wp-content/uploads/2026/03/PROSPECTUS-2026.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/sri-venkateswara-college-of-engineering/brochure.pdf",
+        "bytes": 5774545,
+        "fileName": "PROSPECTUS-2026.pdf",
+        "title": "Prospectus 2026",
+        "academicYear": "2026-27",
+        "sourceUrl": "https://www.svce.ac.in/wp-content/uploads/2026/03/PROSPECTUS-2026.pdf",
+        "sourceLabel": "SVCE official website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "loyola-college-chennai",
+      "sourceUrl": "https://www.loyolacollege.edu/docs/pdf/Prospectus080526.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/loyola-college-chennai/brochure.pdf",
+        "bytes": 10235904,
+        "fileName": "Prospectus080526.pdf",
+        "title": "Prospectus 2026-27",
+        "academicYear": "2026-27",
+        "sourceUrl": "https://www.loyolacollege.edu/docs/pdf/Prospectus080526.pdf",
+        "sourceLabel": "Loyola College official website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "national-institute-of-technology-tiruchirappalli",
+      "sourceUrl": "https://www.nitt.edu/home/admissions/bscbed/Admission%20Brochure_Integrated%20Teacher%20Education%20Programme_B.Sc.%20B.Ed._2026-27.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/national-institute-of-technology-tiruchirappalli/brochure.pdf",
+        "bytes": 2924393,
+        "fileName": "Admission Brochure_Integrated Teacher Education Programme_B.Sc. B.Ed._2026-27.pdf",
+        "title": "Integrated Teacher Education Programme (B.Sc. B.Ed.) admission brochure 2026-27",
+        "academicYear": "2026-27",
+        "sourceUrl": "https://www.nitt.edu/home/admissions/bscbed/Admission%20Brochure_Integrated%20Teacher%20Education%20Programme_B.Sc.%20B.Ed._2026-27.pdf",
+        "sourceLabel": "NIT Tiruchirappalli official website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "psg-college-of-arts-and-science",
+      "sourceUrl": "https://www.psgcas.ac.in/admissions/files/SF-2026-27_Brochure.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/psg-college-of-arts-and-science/brochure.pdf",
+        "bytes": 3753084,
+        "fileName": "SF-2026-27_Brochure.pdf",
+        "title": "Self-financing programmes brochure 2026-27",
+        "academicYear": "2026-27",
+        "sourceUrl": "https://www.psgcas.ac.in/admissions/files/SF-2026-27_Brochure.pdf",
+        "sourceLabel": "PSG CAS official website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "tamil-nadu-agricultural-university",
+      "sourceUrl": "https://ucanapplym.s3.ap-south-1.amazonaws.com/TNAU+UG+Brochure+2026-2027+-+(13.05.2026).pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/tamil-nadu-agricultural-university/brochure.pdf",
+        "bytes": 1865875,
+        "fileName": "TNAU+UG+Brochure+2026-2027+-+(13.05.2026).pdf",
+        "title": "UG admission brochure 2026-27",
+        "academicYear": "2026-27",
+        "sourceUrl": "https://ucanapplym.s3.ap-south-1.amazonaws.com/TNAU+UG+Brochure+2026-2027+-+(13.05.2026).pdf",
+        "sourceLabel": "TNAU official admission portal (tnau.ucanapply.com)",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "tamil-nadu-veterinary-and-animal-sciences-university",
+      "sourceUrl": "https://adm.tanuvas.ac.in/menudoc/New%20Doc/TANUVAS%20UG%20Prospectus%2022.05.2026.pdf",
+      "status": "failed",
+      "error": "File size too large. Got 20242494. Maximum is 10485760."
+    },
+    {
+      "universitySlug": "karunya-institute-of-technology-and-sciences",
+      "sourceUrl": "https://admissions.karunya.edu/sites/admissions/files/uploads/brochures/2026/AllCourseBrochure_2026-27.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/karunya-institute-of-technology-and-sciences/brochure.pdf",
+        "bytes": 4088634,
+        "fileName": "AllCourseBrochure_2026-27.pdf",
+        "title": "All-course brochure 2026-27",
+        "academicYear": "2026-27",
+        "sourceUrl": "https://admissions.karunya.edu/sites/admissions/files/uploads/brochures/2026/AllCourseBrochure_2026-27.pdf",
+        "sourceLabel": "Karunya official admissions website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "karpagam-academy-of-higher-education",
+      "sourceUrl": "https://kahedu.edu.in/n/wp-content/uploads/2025/03/KAHE-BROCHURE.pdf",
+      "status": "failed",
+      "error": "File size too large. Got 12317322. Maximum is 10485760."
+    },
+    {
+      "universitySlug": "gandhigram-rural-institute",
+      "sourceUrl": "https://www.ruraluniv.ac.in/includes/admissions/2026/pdf/Prospectus_202627.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/gandhigram-rural-institute/brochure.pdf",
+        "bytes": 2449738,
+        "fileName": "Prospectus_202627.pdf",
+        "title": "Prospectus 2026-27",
+        "academicYear": "2026-27",
+        "sourceUrl": "https://www.ruraluniv.ac.in/includes/admissions/2026/pdf/Prospectus_202627.pdf",
+        "sourceLabel": "Gandhigram Rural Institute official website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "sri-krishna-arts-and-science-college-coimbatore",
+      "sourceUrl": "https://sku.edu.in/wp-content/uploads/2026/08/Prospect-Brochure.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/sri-krishna-arts-and-science-college-coimbatore/brochure.pdf",
+        "bytes": 320694,
+        "fileName": "Prospect-Brochure.pdf",
+        "title": "Prospectus brochure (August 2026 edition)",
+        "academicYear": "2026-27",
+        "sourceUrl": "https://sku.edu.in/wp-content/uploads/2026/08/Prospect-Brochure.pdf",
+        "sourceLabel": "Sri Krishna Arts and Science College official website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "central-university-of-tamil-nadu",
+      "sourceUrl": "https://cutn.ac.in/wp-content/uploads/2025/05/CUTN_International_Admission_Brochure-2025-26_042025.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/central-university-of-tamil-nadu/brochure.pdf",
+        "bytes": 746089,
+        "fileName": "CUTN_International_Admission_Brochure-2025-26_042025.pdf",
+        "title": "International admissions brochure 2025-26",
+        "academicYear": "2025-26",
+        "sourceUrl": "https://cutn.ac.in/wp-content/uploads/2025/05/CUTN_International_Admission_Brochure-2025-26_042025.pdf",
+        "sourceLabel": "CUTN official website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "manonmaniam-sundaranar-university",
+      "sourceUrl": "https://www.msuniv.ac.in/images/admission/PG_Prospectus.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/manonmaniam-sundaranar-university/brochure.pdf",
+        "bytes": 725517,
+        "fileName": "PG_Prospectus.pdf",
+        "title": "PG prospectus 2026-27",
+        "academicYear": "2026-27",
+        "sourceUrl": "https://www.msuniv.ac.in/images/admission/PG_Prospectus.pdf",
+        "sourceLabel": "MSU official website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "takshashila-university",
+      "sourceUrl": "https://takshashilauniv.ac.in/wp-content/uploads/2025/04/TU-2025-BROCHURE.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/takshashila-university/brochure.pdf",
+        "bytes": 4308795,
+        "fileName": "TU-2025-BROCHURE.pdf",
+        "title": "Admission brochure 2025",
+        "academicYear": "2025-26",
+        "sourceUrl": "https://takshashilauniv.ac.in/wp-content/uploads/2025/04/TU-2025-BROCHURE.pdf",
+        "sourceLabel": "Takshashila University official website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "dhanalakshmi-srinivasan-university",
+      "sourceUrl": "https://www.dsuniversity.ac.in/pdf/DSU-Brochure.pdf",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "universitySlug": "chettinad-academy-of-research-and-education",
+      "sourceUrl": "https://caremedicine.care.edu.in/assets/images/MBBS_CHRI_Information_Bulletin_2026_27.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/chettinad-academy-of-research-and-education/brochure.pdf",
+        "bytes": 796594,
+        "fileName": "MBBS_CHRI_Information_Bulletin_2026_27.pdf",
+        "title": "MBBS information bulletin 2026-27",
+        "academicYear": "2026-27",
+        "sourceUrl": "https://caremedicine.care.edu.in/assets/images/MBBS_CHRI_Information_Bulletin_2026_27.pdf",
+        "sourceLabel": "Chettinad Academy official website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "tamil-nadu-open-university",
+      "sourceUrl": "https://www.tnou.ac.in/Documents/2026/KVS/CY2026PROSPECTUS06022026.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/tamil-nadu-open-university/brochure.pdf",
+        "bytes": 1082454,
+        "fileName": "CY2026PROSPECTUS06022026.pdf",
+        "title": "Prospectus, calendar-year 2026 session",
+        "academicYear": "2026",
+        "sourceUrl": "https://www.tnou.ac.in/Documents/2026/KVS/CY2026PROSPECTUS06022026.pdf",
+        "sourceLabel": "Tamil Nadu Open University official website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "c-abdul-hakeem-college-melvisharam",
+      "sourceUrl": "https://cahc.edu.in/wp-content/uploads/2021/07/Day-College-Prospectus-20-21.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/c-abdul-hakeem-college-melvisharam/brochure.pdf",
+        "bytes": 4349217,
+        "fileName": "Day-College-Prospectus-20-21.pdf",
+        "title": "Day college prospectus 2020-21 (older edition)",
+        "academicYear": "2020-21",
+        "sourceUrl": "https://cahc.edu.in/wp-content/uploads/2021/07/Day-College-Prospectus-20-21.pdf",
+        "sourceLabel": "C. Abdul Hakeem College official website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    },
+    {
+      "universitySlug": "auxilium-college-vellore",
+      "sourceUrl": "https://admission.auxiliumcollege.edu.in/Content/assets/applicant_dashboard/Prospectus.pdf",
+      "status": "failed",
+      "error": "File size too large. Got 12833615. Maximum is 10485760."
+    },
+    {
+      "universitySlug": "thiagarajar-college-madurai",
+      "sourceUrl": "https://www.tcarts.in/college-2026-Pros.pdf",
+      "status": "failed",
+      "error": "File size too large. Got 34836597. Maximum is 10485760."
+    },
+    {
+      "universitySlug": "fatima-college-madurai",
+      "sourceUrl": "https://fatimacollegemdu.org/ufiles/Admission/2026-2027/UG-Prospectus.pdf",
+      "status": "failed",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "universitySlug": "tagore-engineering-college",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/2024-Admission-Leaflets-TEC-Final.pdf",
+      "status": "applied",
+      "brochure": {
+        "publicId": "studentstraffic/brochures/tagore-engineering-college/brochure.pdf",
+        "bytes": 1923773,
+        "fileName": "2024-Admission-Leaflets-TEC-Final.pdf",
+        "title": "2024 admission leaflet (older edition)",
+        "academicYear": "2024-25",
+        "sourceUrl": "https://tagore-engg.ac.in/pdf/2024-Admission-Leaflets-TEC-Final.pdf",
+        "sourceLabel": "Tagore Engineering College official website",
+        "checkedAt": "2026-10-26"
+      },
+      "rights": "Official admission brochure published by the institution for prospective students; redistributed unchanged to prospective students."
+    }
+  ]
+}

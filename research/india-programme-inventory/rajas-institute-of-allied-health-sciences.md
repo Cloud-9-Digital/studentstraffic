@@ -106,3 +106,11 @@ this worker has not made it.
 - Cover: none rights-safe. The official site's admissions image (admission2.webp) appears
   AI-generated and is not a campus photograph. The gallery images are event photos with no reuse
   terms.
+
+## Fee pass 2026-10-26
+
+Bundle 0394-india-rajas-institute-of-allied-health-sciences-fees supersedes 0116; it changes fees, fee notes, `reportedFeeQuote`, fee evidence and (validation-required) intake labels only.
+
+- B.Sc Cardiac Technology and B.Sc OTAT: indicative Grade C `reportedFeeQuote` INR 1,00,000 per `academic_year` from CollegeBatch (https://www.collegebatch.com/19226-rajas-institute-of-allied-health-sciences-fees-structure-courses-tirunelveli; "Rs. 1,00,000/- per year", "Rs. 3 Lakh Total Fees", 2026 page). Corroborated by Collegedunia college 63399 (Rs 1,00,000 first year; page 401, search listing only). The Rs 3 lakh total was not used because the page shows 3 years and the official course is 4 years including internship.
+- Official sources rechecked: riahs.rmi.net.in course pages (no fee, no prospectus link). The TN DME paramedical prospectus does not cover these courses in self-financing colleges, so no government-fixed fee applies. No TNMGRMU fee notification covers institute-filled seats.
+- `intakeMonths` changed from "August - course commences 1 August; admissions close 30 September" to "August": validation rejects non-label values for bundles numbered 154 and above. The caveat is already in `deadlinesNote`.

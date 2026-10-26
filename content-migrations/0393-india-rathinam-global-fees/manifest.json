@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "id": "0393-india-rathinam-global-fees",
+  "description": "Correction superseding 0289-india-rathinam-global: fills programme fees with indicative third-party reported fee quotes for 2 of 3 on-request programmes.",
+  "createdAt": "2026-10-26",
+  "payload": "payload.json"
+}

@@ -15,3 +15,16 @@ Evidence and exact source-date/applicability decisions: sourcebundle/source-audi
 ## Forward checkpoint —25October2026
 
 Actual same owned row is validated0320/21 under codex-karunya-forward-20261025, preserving0227/16. Complete21-route draft preserves all16 original programme/media fields and adds five current degrees: BScForensicScience, named BComProfessionalAccounting/FinancialTechnology, MTechBiomedicalInstrumentation, MTechFoodProcessing/Engineering and MScForensicScience. Exact primary prerequisites: current2027central OtherUG+2/HSC/equivalent60%, ForensicScience named department subjects/PGdegree50%; official2026BME/Food brochures visually read. DepartmentUG50% superseded for2027bydatedcentral60% and retained internally; no invented Commerce-only subjects or universal KEE. Five exactcurrent2027–28 native semester quotes confirmed, noannualisation:69900/69900/65750/65750/72400, applicableone-timeadmission/exams extra. Newlanguage/intake omitted.124discoveryrows including realcurrentqualification/pendingapproval/identity/legacyaward holds retained. Actualcanonicalscoped validation0320PASS0expired,20families/324evidence. Frozen for root publication; no taxonomy/DB/upload/commit.
+
+## Fee pass 2026-10-26
+
+Scope: 0 of 21 programmes are missing a fee. The 16 programmes from 0227 have confirmed Indian-national annual tuition, and all of them already have NRI/foreign (and SAARC, where published) `additionalFees`. The five 0320 additions (B.Sc. Forensic Science, B.Com. Professional Accounting and Financial Technology, M.Tech. Biomedical Instrumentation, M.Tech. Food Processing and Engineering, M.Sc. Forensic Science) are `on_request`, but each already carries a Grade A confirmed semester `reportedFeeQuote`. Under the pass rule they stay unchanged, so no correction bundle was created.
+
+Re-checked on 2026-10-26 (all Grade A, admissions.karunya.edu/sites/admissions/files/uploads/content/Fee/):
+- Other UG Programs Fee Structure 2027-28 (Indian, 2027–30 batch): INR 69,900 in each of six semesters, INR 5,000 admission. This covers the B.Com. PAFT and B.Sc. Forensic Science rows.
+- Other UG Programs NRI, Foreign Nationals Fee Structure 2027-28: USD 2,000 per semester for six semesters, USD 250 admission. It names both of the UG programmes above.
+- All M.Tech. Programs Fee Structure 2027-28 (Indian, 2027–29): INR 65,750 in each of four semesters, INR 10,000 admission.
+- All M.Tech. Programs- NRI, Foreign Nationals Fee Structure 2027-28: USD 2,500 per semester for four semesters, USD 250 admission.
+- Other PG Programs Fee Structure 2027-28 (Indian, 2027–29): M.Sc. Forensic Science INR 72,400 in each of four semesters, INR 5,000 admission. No current 2027-28 Other PG NRI/foreign table was reachable. The filename variants returned 404, and the only NRI PG sheets found online are 2025-26 or earlier.
+
+Possible future upgrade (not applied): these tables list every semester's tuition, the same basis as the confirmed M.Tech. Aerospace record. That would support confirmed annual tuition (2 × semester) plus `additionalFees` for four of the five programmes. M.Sc. Forensic Science has no current NRI table. While the reported quote is shown, `additionalFees` does not render.

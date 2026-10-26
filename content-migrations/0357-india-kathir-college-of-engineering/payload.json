@@ -1,0 +1,2053 @@
+{
+  "courses": [
+    {
+      "slug": "be-btech-data-science",
+      "name": "B.E./B.Tech in Data Science",
+      "shortName": "B.E./B.Tech Data Science",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "data-science",
+      "aliases": [
+        "Bachelor of Technology in Data Science",
+        "BEng Data Science"
+      ],
+      "displayOrder": 33,
+      "durationYears": 4,
+      "summary": "Compare undergraduate Data Science degrees abroad by statistics, machine learning, data engineering, applied projects, tuition and admissions. Each university offering keeps its official award title, artificial-intelligence specialisation depth and entry requirements visible before applying.",
+      "metaTitle": "B.E./B.Tech Data Science Abroad | Fees",
+      "metaDescription": "Compare B.E./B.Tech Data Science programmes abroad by curriculum, tuition fees, admissions and practical training."
+    },
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "Bachelor of Technology in Computer Science and Engineering",
+        "BEng Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in computer science and engineering, usually four years after an upper-secondary qualification with mathematics. Typical curricula run from programming, data structures, operating systems, databases and computer networks to algorithms, software engineering and electives in artificial intelligence, machine learning, cloud and security, with project and internship components.",
+      "metaTitle": "B.E./B.Tech CSE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech CSE degrees for international applicants: duration, teaching language, intake months, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-artificial-intelligence-machine-learning",
+      "name": "B.E./B.Tech in Artificial Intelligence and Machine Learning",
+      "shortName": "B.E./B.Tech AI & ML",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "artificial-intelligence-machine-learning",
+      "aliases": [
+        "Bachelor of Engineering in Artificial Intelligence",
+        "Bachelor of Science in Artificial Intelligence",
+        "Artificial Intelligence and Machine Learning"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "Artificial intelligence and machine learning bachelor's programmes combine core computing and mathematics with statistical learning, data handling and applied model building. Award titles, specialisation depth, admission thresholds and fees differ significantly by university, so the programme record rather than the category should drive a shortlist decision.",
+      "metaTitle": "B.E./B.Tech AI & ML Degree Programmes Abroad",
+      "metaDescription": "Compare B.E./B.Tech AI & ML programmes by curriculum focus, entry thresholds, teaching language, intake, fee state and application route for international applicants."
+    },
+    {
+      "slug": "be-btech-computer-communication-engineering",
+      "name": "B.E./B.Tech in Computer and Communication Engineering",
+      "shortName": "B.E./B.Tech Computer and Communication",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-communication-engineering",
+      "aliases": [
+        "Bachelor of Computer and Communication Engineering",
+        "BEng Computer and Communication Engineering"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "Computer and Communication Engineering combines computing systems with communication technologies. Programmes may cover programming, electronics, networks, signal transmission, embedded systems, laboratories and engineering projects. Compare each institution’s curriculum, entry requirements, teaching language, practical training and tuition status before choosing a course. The exact balance of computing and communications varies by university.",
+      "metaTitle": "B.E./B.Tech Computer and Communication: Courses",
+      "metaDescription": "Compare B.E./B.Tech Computer and Communication programmes by entry requirements, curriculum, teaching language, duration, tuition and practical training."
+    },
+    {
+      "slug": "be-btech-electronics-communication-engineering",
+      "name": "B.E./B.Tech in Electronics and Communication Engineering",
+      "shortName": "B.E./B.Tech ECE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electronics-communication-engineering",
+      "aliases": [
+        "Bachelor of Electronics and Communication Engineering",
+        "BEng Electronic and Communications Engineering",
+        "Electronics and Telecommunications Engineering"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in electronics and communication engineering, usually four years after upper-secondary physics, chemistry and mathematics. Curricula typically span circuit and network theory, analog and digital electronics, signals and systems, digital signal processing, communication systems and embedded or VLSI design, with laboratory and project work.",
+      "metaTitle": "B.E./B.Tech ECE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech ECE degrees for international applicants: duration, teaching language, intakes, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-electrical-electronics-engineering",
+      "name": "B.E./B.Tech in Electrical and Electronics Engineering",
+      "shortName": "B.E./B.Tech EEE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electrical-electronics-engineering",
+      "aliases": [
+        "Bachelor of Electrical and Electronic Engineering",
+        "BEng Electrical and Electronic Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "This catalogue category covers four-year undergraduate degrees in electrical and electronics engineering taken after an upper-secondary qualification with physics and mathematics. Programmes typically cover circuit theory, electrical machines, power systems, power electronics, control systems and embedded electronics, with laboratory work and electives in renewable energy or electric mobility.",
+      "metaTitle": "B.E./B.Tech EEE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech EEE degrees for international applicants: programme length, teaching language, intake months, tuition and admission routes."
+    },
+    {
+      "slug": "be-btech-mechanical-engineering",
+      "name": "B.E./B.Tech in Mechanical Engineering",
+      "shortName": "B.E./B.Tech Mechanical",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "mechanical-engineering",
+      "aliases": [
+        "Bachelor of Mechanical Engineering",
+        "BEng Mechanical Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "A four-year undergraduate engineering degree covering engineering mechanics, thermodynamics, fluid mechanics, heat transfer, machine design, manufacturing processes and control systems. Teaching is built around workshop practice, thermal and materials laboratories, computer-aided design and a final-year project. Graduates move into manufacturing, automotive, energy, thermal and design roles, or continue to a master's specialisation such as thermal engineering or machine design.",
+      "metaTitle": "B.E./B.Tech Mechanical: Course, Fees and Admission",
+      "metaDescription": "What a four-year B.E./B.Tech Mechanical degree covers, its entry requirements, how admission is decided and what tuition and duration to plan for."
+    },
+    {
+      "slug": "mba",
+      "name": "Master of Business Administration",
+      "shortName": "MBA",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "business-administration",
+      "aliases": [
+        "General MBA",
+        "Full-time MBA",
+        "International MBA"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "A postgraduate category for general-management degrees taken after a bachelor qualification. Study commonly combines finance, marketing, organisational behaviour, operations and strategy with applied management work. Programme delivery, selection tests, curriculum and fees vary by university.",
+      "metaTitle": "MBA Programmes and Admissions",
+      "metaDescription": "Compare MBA programmes by official award, academic eligibility, teaching language, duration, university and tuition fees."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "kathir-college-of-engineering",
+      "name": "Kathir College of Engineering",
+      "city": "Coimbatore",
+      "type": "Private",
+      "establishedYear": 2008,
+      "officialWebsite": "https://kathir.ac.in/",
+      "mediaAttribution": {},
+      "summary": "Kathir College of Engineering (KCE) is a private self-financing engineering college founded in 2008 at Neelambur, on Avinashi Road, Coimbatore, Tamil Nadu. It is an affiliated college of Anna University, Chennai, and Anna University awards its degrees; UGC granted it autonomy from 2024-25, so it sets its own syllabus and exams. It teaches seven B.E./B.Tech branches and an MBA.",
+      "campusLifestyle": "Kathir College of Engineering (KCE)'s 2026-27 AICTE disclosure lists 12,146 sq m of built-up academic, administrative and amenity space, 403 networked computers, 300 Mbps internet and a 625 sq m library with 31,665 books in 7,851 titles and 144 journals. The campus has a gymnasium, sports grounds, a cafeteria, an auditorium, a co-operative store and ramps, wheelchairs and adapted toilets for students with disabilities.",
+      "cityProfile": "Kathir College of Engineering (KCE) is at 'Wisdom Tree', Avinashi Road, Neelambur, Coimbatore 641062, in Sulur taluk of Coimbatore district, Tamil Nadu. DoTE's TNEA 2026 college booklet places it 18 km from the district headquarters and from Coimbatore Junction, the nearest railway station. Coimbatore is an industrial and engineering centre in western Tamil Nadu. The college is run by the Lamika Educational and Charitable Trust and belongs to the Kathir Institutions group; Anna University lists it under Coimbatore district with examination code 7116.",
+      "practicalExposure": "Kathir College of Engineering (KCE) is autonomous: its Academic Council sets the Regulation 2024 curricula and its Controller of Examinations runs the exams and recommends graduates to Anna University, which awards the degree. AICTE makes an internship mandatory for every admitted student. The training and placement cell runs aptitude, coding and communication training from the first year and on-campus and pooled drives. In KCE's NIRF 2026 data, 130 of the 133 B.E./B.Tech students graduating in 2024-25 were placed at a median salary of INR 4,25,000, and 5 of 9 postgraduates at a median of INR 4,30,000. NIRF 2026 data also report 5 sponsored research projects and 5 consultancy projects in 2024-25 and 11 patents published in 2024. No KCE programme is NBA-accredited.",
+      "hostelOverview": "Kathir College of Engineering (KCE) has separate on-campus hostels for men and women, with rooms that have attached bathrooms, common rooms, a gym and 24-hour security and wardens. DoTE's TNEA 2026 booklet lists room rent of INR 40,000 a year for men and INR 30,000 for women, and the Tamil Nadu MBA/MCA 2026-27 booklet lists room rent of INR 45,000 and mess charges of INR 35,000 a year; confirm the current charge for your course with the college.",
+      "dietarySupport": "Kathir College of Engineering (KCE)'s hostel mess, run by the college, serves both vegetarian and non-vegetarian food for men and women, according to DoTE's TNEA 2026 college booklet. KCE publishes no menu and no provision for specific regional or religious diets, so ask the hostel office before joining.",
+      "safetyOverview": "Kathir College of Engineering (KCE)'s 2026-27 anti-ragging committee includes the Sulur police inspector, the Neelambur village administrative officer, an NGO representative and a parent, alongside faculty members. The college also has an internal complaints committee for harassment complaints, a women empowerment committee and an anti-drug committee. Hostel entry and exit are controlled.",
+      "studentSupport": "Kathir College of Engineering (KCE) takes academic and non-academic grievances through physical and online forms handled by a grievance redressal committee chaired by the principal. Its 2026-27 disclosure reports management fee waivers for 456 students (51 full, 405 partial) and state scholarships for BC/MBC, SC/ST and first-graduate students. Contact: kathirce@gmail.com or 0422 2203778.",
+      "whyChoose": [
+        "Kathir College of Engineering (KCE) publishes its 2026-27 tuition: INR 50,000 a year for every TNEA government-quota B.E./B.Tech seat, and INR 85,000 or INR 50,000 a year for management-quota seats depending on the branch.",
+        "KCE holds a NAAC A+ grade (CGPA 3.49, second cycle, valid to 27 February 2028) and UGC autonomy from 2024-25 to 2033-34, while Anna University awards its degrees.",
+        "In KCE's NIRF 2026 data, 130 of 133 B.E./B.Tech graduates of 2024-25 were placed at a median salary of INR 4,25,000."
+      ],
+      "thingsToConsider": [
+        "Kathir College of Engineering (KCE) has no seats for international students: AICTE's 2024-25 and 2025-26 approvals show no NRI, foreign-national or OCI seats, and TNEA admits Indian nationals and Tamil Nadu-native OCI/PIO card holders only.",
+        "No KCE programme is NBA-accredited, according to DoTE's TNEA 2026 college booklet, and KCE's NIRF 2026 data report no Ph.D. students.",
+        "KCE also lists four M.E. programmes (CSE, Manufacturing, Power Electronics and Drives, VLSI Design and Embedded Systems) with intakes of 6 each, but they are not listed here because no 2026-27 approval or counselling record could be checked."
+      ],
+      "bestFitFor": [
+        "Tamil Nadu TNEA applicants who want an Anna University B.E. or B.Tech in Coimbatore with a published government-quota fee of INR 50,000 a year.",
+        "Students interested in computing branches: AI and Data Science, CSE, CSE (AI and ML) and Computer and Communication Engineering make up 270 of KCE's 480 first-year places.",
+        "Graduates who want a TANCET-route MBA in Coimbatore at a published tuition of INR 60,000 a year."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "AICTE - Approved institution, Permanent ID 1-2389972 (Private-Self Financing); Extension of Approval 2025-26",
+        "Anna University, Chennai - Affiliated college, examination code 7116",
+        "UGC - Autonomous college under Anna University, 2024-25 to 2033-34",
+        "NAAC - A+ grade, CGPA 3.49, Cycle 2 (valid to 27 February 2028)",
+        "DoTE Tamil Nadu - TNEA 2026 participating college, counselling code 2745"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "AICTE - Approved institutes dashboard",
+          "url": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved"
+        },
+        {
+          "label": "Anna University CAI - Affiliated colleges, Coimbatore district",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Coimbatore.php"
+        },
+        {
+          "label": "UGC - List of autonomous colleges",
+          "url": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list"
+        },
+        {
+          "label": "NAAC - Certificate of accreditation (KCE)",
+          "url": "https://kathir.ac.in/wp-content/uploads/2026/02/Naac_Certificate_2023.pdf"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+          "url": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Kathir College of Engineering autonomous and affiliated to Anna University?",
+          "answer": "Yes, Kathir College of Engineering (KCE) is an autonomous college affiliated to Anna University, Chennai, which awards its degrees. UGC's list of autonomous colleges gives KCE autonomy under Anna University from 2024-25 to 2033-34, and Anna University lists it in Coimbatore district with examination code 7116."
+        },
+        {
+          "question": "What is the TNEA code for Kathir College of Engineering?",
+          "answer": "The TNEA counselling code for Kathir College of Engineering (KCE) is 2745. In TNEA 2026 KCE offered AI and Data Science (AD), CSE (CS), CSE AI and ML (AM), Computer and Communication Engineering (CO), ECE (EC), EEE (EE) and Mechanical (ME). The same code 2745 is used in Tamil Nadu's MBA/MCA counselling."
+        },
+        {
+          "question": "Is Kathir College of Engineering AICTE approved?",
+          "answer": "Yes, Kathir College of Engineering (KCE) is AICTE approved as a private self-financing institution, permanent ID 1-2389972. Its latest published Extension of Approval, for 2025-26 (10 April 2025), covers seven B.E./B.Tech branches, the MBA and four M.E. programmes, all affiliated to Anna University."
+        },
+        {
+          "question": "What is the fee at Kathir College of Engineering?",
+          "answer": "Kathir College of Engineering (KCE)'s 2026-27 AICTE disclosure lists B.E./B.Tech tuition of INR 50,000 a year for TNEA government-quota seats. Management-quota tuition is INR 85,000 a year for AI and Data Science, CSE, CSE (AI and ML), CCE and ECE, and INR 50,000 for EEE and Mechanical. The MBA costs INR 60,000 a year."
+        },
+        {
+          "question": "What is the NAAC grade of Kathir College of Engineering?",
+          "answer": "Kathir College of Engineering (KCE) holds a NAAC A+ grade with a CGPA of 3.49 on a four-point scale, awarded in its second cycle on 28 February 2023 and valid to 27 February 2028. No KCE programme is NBA-accredited, according to DoTE's TNEA 2026 college booklet."
+        },
+        {
+          "question": "Does Kathir College of Engineering admit international or NRI students?",
+          "answer": "No, Kathir College of Engineering (KCE) has no NRI or foreign-national seats: AICTE's 2024-25 and 2025-26 approvals mark NRI and FN/Gulf/OCI approval as No or NA for every course. TNEA is for Indian nationals; OCI/PIO card holders who are natives of Tamil Nadu may apply unless born abroad after 4 March 2021."
+        },
+        {
+          "question": "How do I get admission to Kathir College of Engineering?",
+          "answer": "Most B.E./B.Tech seats at Kathir College of Engineering (KCE) are filled through TNEA: register at tneaonline.org, get a rank from Mathematics (100), Physics (50) and Chemistry (50), and choose code 2745. TNEA 2026 counselling ran 20 July to 30 August. Management-quota seats go through the self-financing colleges' consortium or the college."
+        },
+        {
+          "question": "What are the placements like at Kathir College of Engineering?",
+          "answer": "In Kathir College of Engineering (KCE)'s NIRF 2026 data, 130 of the 133 B.E./B.Tech students who graduated in 2024-25 were placed, at a median salary of INR 4,25,000, and 3 went on to higher studies. Of 9 postgraduates in 2024-25, 5 were placed at a median of INR 4,30,000."
+        },
+        {
+          "question": "Does Kathir College of Engineering have hostels?",
+          "answer": "Yes, Kathir College of Engineering (KCE) has separate on-campus hostels for men and women with attached-bathroom rooms and a mess serving vegetarian and non-vegetarian food. DoTE's TNEA 2026 booklet lists room rent of INR 40,000 a year for men and INR 30,000 for women."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "KCE - Mandatory Disclosure 2026-27",
+          "url": "https://kathir.ac.in/wp-content/uploads/2026/02/Mandatory-Disclosure-KCE-26-27.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "AICTE - Extension of Approval 2025-26 (KCE)",
+          "url": "https://kathir.ac.in/wp-content/uploads/2026/02/AICTE_2025_26.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "AICTE - Extension of Approval 2024-25 corrigendum (KCE)",
+          "url": "https://kathir.ac.in/wp-content/uploads/2026/02/AICTE_2024_25.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "Anna University CAI - Coimbatore district affiliated colleges",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Coimbatore.php",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "UGC - List of autonomous colleges",
+          "url": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "NAAC - Certificate of accreditation, 2nd cycle (KCE)",
+          "url": "https://kathir.ac.in/wp-content/uploads/2026/02/Naac_Certificate_2023.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+          "url": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+          "url": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+          "url": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 vacancy position after Round 1",
+          "url": "https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DoTE Tamil Nadu - MBA/MCA Admissions 2026-27 college booklet",
+          "url": "https://static.tn-mbamca.com/docs/TNMBAMCA-ENGINEERING-COLLEGES-BOOKLET-2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "Anna University - TANCET / CEETA-PG 2026 Information Brochure",
+          "url": "https://tancet.annauniv.edu/tancet/Information%20Brochure%202026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "label": "KCE - NIRF 2026 data submitted (Engineering)",
+          "url": "https://kathir.ac.in/wp-content/uploads/2026/nirf/Kce_2026_Engineering.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "KCE - Curriculum and syllabi (Regulation 2024)",
+          "url": "https://kathir.ac.in/exams-curriculum-and-syllabi/",
+          "kind": "official-program",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "KCE - Smart hostel facilities",
+          "url": "https://kathir.ac.in/smart-hostel-facilities/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "KCE - Official website",
+          "url": "https://kathir.ac.in/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-26"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "This record covers Kathir College of Engineering at Neelambur, Coimbatore only. Other Kathir Institutions colleges are outside this record.",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "published",
+          "funding": "absent",
+          "placements": "published"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my KCE eligibility",
+            "capture": [
+              "nationality and Tamil Nadu nativity or schooling",
+              "Class 12 board and MPC marks",
+              "community category",
+              "intended branch"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Estimate my KCE fees and hostel cost",
+            "capture": [
+              "intended branch",
+              "TNEA or management quota",
+              "hostel needs",
+              "concession eligibility"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my TNEA choices for KCE",
+            "capture": [
+              "TNEA rank or expected cut-off",
+              "preferred branches",
+              "document readiness"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "kathir-btech-artificial-intelligence-data-science",
+          "canonicalCourseSlug": "be-btech-data-science",
+          "officialTitle": "B.Tech. Artificial Intelligence and Data Science, Kathir College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 50000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Kathir College of Engineering (KCE)'s 2026-27 AICTE mandatory disclosure lists tuition for the B.Tech. Artificial Intelligence and Data Science of INR 50,000 a year for government-quota (TNEA) seats and INR 85,000 a year for management-quota seats. Tamil Nadu's fee committee approves these fees, which are paid yearly at the start of the odd semester. TNEA's 2026 college booklet lists hostel room rent of INR 40,000 a year for men and INR 30,000 for women, a one-time admission fee of INR 5,000 and college transport at INR 12,000 to 26,000 a year. Eligible TNEA entrants can claim the First Graduate concession (INR 25,000 a year) or the Post-Matric Scholarship for SC/ST students."
+          },
+          "officialProgramUrl": "https://kathir.ac.in/artificial-intelligence-and-data-science/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying for management-quota seats through the self-financing colleges' consortium or the college",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2024-25 and 2025-26 approvals show no NRI, foreign-national, Gulf or OCI seats for this programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 2745, branch code AD) or the management quota. TNEA's 2026 college booklet lists an approved intake of 120.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.Tech. Artificial Intelligence and Data Science at Kathir College of Engineering (KCE) is a four-year, eight-semester Anna University degree taught in English at Neelambur, Coimbatore. Most seats are filled through TNEA single-window counselling on Class 12 marks; the rest are management-quota seats. There is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission, and KCE's 2026-27 disclosure repeats the same Mathematics, Physics and Chemistry minimums.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the published minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may join the second year by lateral entry under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 2745 with branch AD, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply through the Consortium of Self-Financing Professional Colleges or the college's online application form at kathir.ac.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. KCE is autonomous and has not published its 2026-27 first-year start date."
+          },
+          "medium": "English",
+          "mediumNote": "Kathir College of Engineering publishes its Regulation 2024 curricula and syllabi in English, and TNEA 2026 lists no Tamil-medium branch at the college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August",
+            "September"
+          ],
+          "intakeCodes": [
+            "august",
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Kathir College of Engineering (KCE)'s 2026-27 AICTE mandatory disclosure lists tuition for the B.Tech. Artificial Intelligence and Data Science of INR 50,000 a year for government-quota (TNEA) seats and INR 85,000 a year for management-quota seats. Tamil Nadu's fee committee approves these fees, which are paid yearly at the start of the odd semester. TNEA's 2026 college booklet lists hostel room rent of INR 40,000 a year for men and INR 30,000 for women, a one-time admission fee of INR 5,000 and college transport at INR 12,000 to 26,000 a year. Eligible TNEA entrants can claim the First Graduate concession (INR 25,000 a year) or the Post-Matric Scholarship for SC/ST students.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Kathir College of Engineering (KCE)'s own Regulation 2024 curriculum (170 credits for the 2024-28 and 2025-29 batches), with deep learning, network security, operating systems and cloud computing in the fifth semester. KCE's Academic Council sets the syllabus and its Controller of Examinations runs the exams; Anna University awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "kathir-be-computer-science-engineering",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "B.E. Computer Science and Engineering, Kathir College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 50000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Kathir College of Engineering (KCE)'s 2026-27 AICTE mandatory disclosure lists tuition for the B.E. Computer Science and Engineering of INR 50,000 a year for government-quota (TNEA) seats and INR 85,000 a year for management-quota seats. Tamil Nadu's fee committee approves these fees, which are paid yearly at the start of the odd semester. TNEA's 2026 college booklet lists hostel room rent of INR 40,000 a year for men and INR 30,000 for women, a one-time admission fee of INR 5,000 and college transport at INR 12,000 to 26,000 a year. Eligible TNEA entrants can claim the First Graduate concession (INR 25,000 a year) or the Post-Matric Scholarship for SC/ST students."
+          },
+          "officialProgramUrl": "https://kathir.ac.in/computer-science-and-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying for management-quota seats through the self-financing colleges' consortium or the college",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2024-25 and 2025-26 approvals show no NRI, foreign-national, Gulf or OCI seats for this programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 2745, branch code CS) or the management quota. TNEA's 2026 college booklet lists an approved intake of 60.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Computer Science and Engineering at Kathir College of Engineering (KCE) is a four-year, eight-semester Anna University degree taught in English at Neelambur, Coimbatore. Most seats are filled through TNEA single-window counselling on Class 12 marks; the rest are management-quota seats. There is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission, and KCE's 2026-27 disclosure repeats the same Mathematics, Physics and Chemistry minimums.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the published minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may join the second year by lateral entry under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 2745 with branch CS, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply through the Consortium of Self-Financing Professional Colleges or the college's online application form at kathir.ac.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. KCE is autonomous and has not published its 2026-27 first-year start date."
+          },
+          "medium": "English",
+          "mediumNote": "Kathir College of Engineering publishes its Regulation 2024 curricula and syllabi in English, and TNEA 2026 lists no Tamil-medium branch at the college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August",
+            "September"
+          ],
+          "intakeCodes": [
+            "august",
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Kathir College of Engineering (KCE)'s 2026-27 AICTE mandatory disclosure lists tuition for the B.E. Computer Science and Engineering of INR 50,000 a year for government-quota (TNEA) seats and INR 85,000 a year for management-quota seats. Tamil Nadu's fee committee approves these fees, which are paid yearly at the start of the odd semester. TNEA's 2026 college booklet lists hostel room rent of INR 40,000 a year for men and INR 30,000 for women, a one-time admission fee of INR 5,000 and college transport at INR 12,000 to 26,000 a year. Eligible TNEA entrants can claim the First Graduate concession (INR 25,000 a year) or the Post-Matric Scholarship for SC/ST students.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Kathir College of Engineering (KCE)'s own Regulation 2024 curriculum, covering programming, operating systems, database design, compiler design, networking, algorithms and data science. KCE's Academic Council sets the syllabus and its Controller of Examinations runs the exams; Anna University awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "kathir-be-cse-artificial-intelligence-machine-learning",
+          "canonicalCourseSlug": "be-btech-artificial-intelligence-machine-learning",
+          "officialTitle": "B.E. Computer Science and Engineering (Artificial Intelligence and Machine Learning), Kathir College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 50000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Kathir College of Engineering (KCE)'s 2026-27 AICTE mandatory disclosure lists tuition for the B.E. Computer Science and Engineering (Artificial Intelligence and Machine Learning) of INR 50,000 a year for government-quota (TNEA) seats and INR 85,000 a year for management-quota seats. Tamil Nadu's fee committee approves these fees, which are paid yearly at the start of the odd semester. TNEA's 2026 college booklet lists hostel room rent of INR 40,000 a year for men and INR 30,000 for women, a one-time admission fee of INR 5,000 and college transport at INR 12,000 to 26,000 a year. Eligible TNEA entrants can claim the First Graduate concession (INR 25,000 a year) or the Post-Matric Scholarship for SC/ST students."
+          },
+          "officialProgramUrl": "https://kathir.ac.in/artificial-intelligence-and-machine-learning/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying for management-quota seats through the self-financing colleges' consortium or the college",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2024-25 and 2025-26 approvals show no NRI, foreign-national, Gulf or OCI seats for this programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 2745, branch code AM) or the management quota. TNEA's 2026 college booklet lists an approved intake of 60.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Computer Science and Engineering (Artificial Intelligence and Machine Learning) at Kathir College of Engineering (KCE) is a four-year, eight-semester Anna University degree taught in English at Neelambur, Coimbatore. Most seats are filled through TNEA single-window counselling on Class 12 marks; the rest are management-quota seats. There is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission, and KCE's 2026-27 disclosure repeats the same Mathematics, Physics and Chemistry minimums.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the published minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may join the second year by lateral entry under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 2745 with branch AM, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply through the Consortium of Self-Financing Professional Colleges or the college's online application form at kathir.ac.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. KCE is autonomous and has not published its 2026-27 first-year start date."
+          },
+          "medium": "English",
+          "mediumNote": "Kathir College of Engineering publishes its Regulation 2024 curricula and syllabi in English, and TNEA 2026 lists no Tamil-medium branch at the college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August",
+            "September"
+          ],
+          "intakeCodes": [
+            "august",
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Kathir College of Engineering (KCE)'s 2026-27 AICTE mandatory disclosure lists tuition for the B.E. Computer Science and Engineering (Artificial Intelligence and Machine Learning) of INR 50,000 a year for government-quota (TNEA) seats and INR 85,000 a year for management-quota seats. Tamil Nadu's fee committee approves these fees, which are paid yearly at the start of the odd semester. TNEA's 2026 college booklet lists hostel room rent of INR 40,000 a year for men and INR 30,000 for women, a one-time admission fee of INR 5,000 and college transport at INR 12,000 to 26,000 a year. Eligible TNEA entrants can claim the First Graduate concession (INR 25,000 a year) or the Post-Matric Scholarship for SC/ST students.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Kathir College of Engineering (KCE)'s own Regulation 2024 curriculum for CSE (AI and ML), a branch AICTE first approved for 2024-25. KCE's Academic Council sets the syllabus and its Controller of Examinations runs the exams; Anna University awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "kathir-be-computer-communication-engineering",
+          "canonicalCourseSlug": "be-btech-computer-communication-engineering",
+          "officialTitle": "B.E. Computer and Communication Engineering, Kathir College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 50000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Kathir College of Engineering (KCE)'s 2026-27 AICTE mandatory disclosure lists tuition for the B.E. Computer and Communication Engineering of INR 50,000 a year for government-quota (TNEA) seats and INR 85,000 a year for management-quota seats. Tamil Nadu's fee committee approves these fees, which are paid yearly at the start of the odd semester. TNEA's 2026 college booklet lists hostel room rent of INR 40,000 a year for men and INR 30,000 for women, a one-time admission fee of INR 5,000 and college transport at INR 12,000 to 26,000 a year. Eligible TNEA entrants can claim the First Graduate concession (INR 25,000 a year) or the Post-Matric Scholarship for SC/ST students."
+          },
+          "officialProgramUrl": "https://kathir.ac.in/computer-and-communication-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying for management-quota seats through the self-financing colleges' consortium or the college",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2024-25 and 2025-26 approvals show no NRI, foreign-national, Gulf or OCI seats for this programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 2745, branch code CO) or the management quota. TNEA's 2026 college booklet lists an approved intake of 30.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Computer and Communication Engineering at Kathir College of Engineering (KCE) is a four-year, eight-semester Anna University degree taught in English at Neelambur, Coimbatore. Most seats are filled through TNEA single-window counselling on Class 12 marks; the rest are management-quota seats. There is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission, and KCE's 2026-27 disclosure repeats the same Mathematics, Physics and Chemistry minimums.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the published minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may join the second year by lateral entry under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 2745 with branch CO, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply through the Consortium of Self-Financing Professional Colleges or the college's online application form at kathir.ac.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. KCE is autonomous and has not published its 2026-27 first-year start date."
+          },
+          "medium": "English",
+          "mediumNote": "Kathir College of Engineering publishes its Regulation 2024 curricula and syllabi in English, and TNEA 2026 lists no Tamil-medium branch at the college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August",
+            "September"
+          ],
+          "intakeCodes": [
+            "august",
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Kathir College of Engineering (KCE)'s 2026-27 AICTE mandatory disclosure lists tuition for the B.E. Computer and Communication Engineering of INR 50,000 a year for government-quota (TNEA) seats and INR 85,000 a year for management-quota seats. Tamil Nadu's fee committee approves these fees, which are paid yearly at the start of the odd semester. TNEA's 2026 college booklet lists hostel room rent of INR 40,000 a year for men and INR 30,000 for women, a one-time admission fee of INR 5,000 and college transport at INR 12,000 to 26,000 a year. Eligible TNEA entrants can claim the First Graduate concession (INR 25,000 a year) or the Post-Matric Scholarship for SC/ST students.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Kathir College of Engineering (KCE)'s own Regulation 2024 curriculum for Computer and Communication Engineering, a branch started in 2023. KCE's Academic Council sets the syllabus and its Controller of Examinations runs the exams; Anna University awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "kathir-be-electronics-communication-engineering",
+          "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+          "officialTitle": "B.E. Electronics and Communication Engineering, Kathir College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 50000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Kathir College of Engineering (KCE)'s 2026-27 AICTE mandatory disclosure lists tuition for the B.E. Electronics and Communication Engineering of INR 50,000 a year for government-quota (TNEA) seats and INR 85,000 a year for management-quota seats. Tamil Nadu's fee committee approves these fees, which are paid yearly at the start of the odd semester. TNEA's 2026 college booklet lists hostel room rent of INR 40,000 a year for men and INR 30,000 for women, a one-time admission fee of INR 5,000 and college transport at INR 12,000 to 26,000 a year. Eligible TNEA entrants can claim the First Graduate concession (INR 25,000 a year) or the Post-Matric Scholarship for SC/ST students."
+          },
+          "officialProgramUrl": "https://kathir.ac.in/electronics-and-communication-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying for management-quota seats through the self-financing colleges' consortium or the college",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2024-25 and 2025-26 approvals show no NRI, foreign-national, Gulf or OCI seats for this programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 2745, branch code EC) or the management quota. TNEA's 2026 college booklet lists an approved intake of 120.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Electronics and Communication Engineering at Kathir College of Engineering (KCE) is a four-year, eight-semester Anna University degree taught in English at Neelambur, Coimbatore. Most seats are filled through TNEA single-window counselling on Class 12 marks; the rest are management-quota seats. There is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission, and KCE's 2026-27 disclosure repeats the same Mathematics, Physics and Chemistry minimums.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the published minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may join the second year by lateral entry under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 2745 with branch EC, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply through the Consortium of Self-Financing Professional Colleges or the college's online application form at kathir.ac.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. KCE is autonomous and has not published its 2026-27 first-year start date."
+          },
+          "medium": "English",
+          "mediumNote": "Kathir College of Engineering publishes its Regulation 2024 curricula and syllabi in English, and TNEA 2026 lists no Tamil-medium branch at the college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August",
+            "September"
+          ],
+          "intakeCodes": [
+            "august",
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Kathir College of Engineering (KCE)'s 2026-27 AICTE mandatory disclosure lists tuition for the B.E. Electronics and Communication Engineering of INR 50,000 a year for government-quota (TNEA) seats and INR 85,000 a year for management-quota seats. Tamil Nadu's fee committee approves these fees, which are paid yearly at the start of the odd semester. TNEA's 2026 college booklet lists hostel room rent of INR 40,000 a year for men and INR 30,000 for women, a one-time admission fee of INR 5,000 and college transport at INR 12,000 to 26,000 a year. Eligible TNEA entrants can claim the First Graduate concession (INR 25,000 a year) or the Post-Matric Scholarship for SC/ST students.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Kathir College of Engineering (KCE)'s own Regulation 2024 curriculum for Electronics and Communication Engineering. KCE's Academic Council sets the syllabus and its Controller of Examinations runs the exams; Anna University awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "kathir-be-electrical-electronics-engineering",
+          "canonicalCourseSlug": "be-btech-electrical-electronics-engineering",
+          "officialTitle": "B.E. Electrical and Electronics Engineering, Kathir College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 50000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Kathir College of Engineering (KCE)'s 2026-27 AICTE mandatory disclosure lists tuition for the B.E. Electrical and Electronics Engineering of INR 50,000 a year for government-quota (TNEA) seats and the same INR 50,000 a year for management-quota seats. Tamil Nadu's fee committee approves these fees, which are paid yearly at the start of the odd semester. TNEA's 2026 college booklet lists hostel room rent of INR 40,000 a year for men and INR 30,000 for women, a one-time admission fee of INR 5,000 and college transport at INR 12,000 to 26,000 a year. Eligible TNEA entrants can claim the First Graduate concession (INR 25,000 a year) or the Post-Matric Scholarship for SC/ST students."
+          },
+          "officialProgramUrl": "https://kathir.ac.in/electrical-and-electronics-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying for management-quota seats through the self-financing colleges' consortium or the college",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2024-25 and 2025-26 approvals show no NRI, foreign-national, Gulf or OCI seats for this programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 2745, branch code EE) or the management quota. TNEA's 2026 college booklet lists an approved intake of 60.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Electrical and Electronics Engineering at Kathir College of Engineering (KCE) is a four-year, eight-semester Anna University degree taught in English at Neelambur, Coimbatore. Most seats are filled through TNEA single-window counselling on Class 12 marks; the rest are management-quota seats. There is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission, and KCE's 2026-27 disclosure repeats the same Mathematics, Physics and Chemistry minimums.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the published minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may join the second year by lateral entry under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 2745 with branch EE, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply through the Consortium of Self-Financing Professional Colleges or the college's online application form at kathir.ac.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. KCE is autonomous and has not published its 2026-27 first-year start date."
+          },
+          "medium": "English",
+          "mediumNote": "Kathir College of Engineering publishes its Regulation 2024 curricula and syllabi in English, and TNEA 2026 lists no Tamil-medium branch at the college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August",
+            "September"
+          ],
+          "intakeCodes": [
+            "august",
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Kathir College of Engineering (KCE)'s 2026-27 AICTE mandatory disclosure lists tuition for the B.E. Electrical and Electronics Engineering of INR 50,000 a year for government-quota (TNEA) seats and the same INR 50,000 a year for management-quota seats. Tamil Nadu's fee committee approves these fees, which are paid yearly at the start of the odd semester. TNEA's 2026 college booklet lists hostel room rent of INR 40,000 a year for men and INR 30,000 for women, a one-time admission fee of INR 5,000 and college transport at INR 12,000 to 26,000 a year. Eligible TNEA entrants can claim the First Graduate concession (INR 25,000 a year) or the Post-Matric Scholarship for SC/ST students.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Kathir College of Engineering (KCE)'s own Regulation 2024 curriculum for Electrical and Electronics Engineering. KCE's Academic Council sets the syllabus and its Controller of Examinations runs the exams; Anna University awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "kathir-be-mechanical-engineering",
+          "canonicalCourseSlug": "be-btech-mechanical-engineering",
+          "officialTitle": "B.E. Mechanical Engineering, Kathir College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 50000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Kathir College of Engineering (KCE)'s 2026-27 AICTE mandatory disclosure lists tuition for the B.E. Mechanical Engineering of INR 50,000 a year for government-quota (TNEA) seats and the same INR 50,000 a year for management-quota seats. Tamil Nadu's fee committee approves these fees, which are paid yearly at the start of the odd semester. TNEA's 2026 college booklet lists hostel room rent of INR 40,000 a year for men and INR 30,000 for women, a one-time admission fee of INR 5,000 and college transport at INR 12,000 to 26,000 a year. Eligible TNEA entrants can claim the First Graduate concession (INR 25,000 a year) or the Post-Matric Scholarship for SC/ST students."
+          },
+          "officialProgramUrl": "https://kathir.ac.in/mechanical-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying for management-quota seats through the self-financing colleges' consortium or the college",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2024-25 and 2025-26 approvals show no NRI, foreign-national, Gulf or OCI seats for this programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 2745, branch code ME) or the management quota. TNEA's 2026 college booklet lists an approved intake of 30.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Mechanical Engineering at Kathir College of Engineering (KCE) is a four-year, eight-semester Anna University degree taught in English at Neelambur, Coimbatore. Most seats are filled through TNEA single-window counselling on Class 12 marks; the rest are management-quota seats. There is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission, and KCE's 2026-27 disclosure repeats the same Mathematics, Physics and Chemistry minimums.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the published minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may join the second year by lateral entry under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 2745 with branch ME, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply through the Consortium of Self-Financing Professional Colleges or the college's online application form at kathir.ac.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. KCE is autonomous and has not published its 2026-27 first-year start date."
+          },
+          "medium": "English",
+          "mediumNote": "Kathir College of Engineering publishes its Regulation 2024 curricula and syllabi in English, and TNEA 2026 lists no Tamil-medium branch at the college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August",
+            "September"
+          ],
+          "intakeCodes": [
+            "august",
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Kathir College of Engineering (KCE)'s 2026-27 AICTE mandatory disclosure lists tuition for the B.E. Mechanical Engineering of INR 50,000 a year for government-quota (TNEA) seats and the same INR 50,000 a year for management-quota seats. Tamil Nadu's fee committee approves these fees, which are paid yearly at the start of the odd semester. TNEA's 2026 college booklet lists hostel room rent of INR 40,000 a year for men and INR 30,000 for women, a one-time admission fee of INR 5,000 and college transport at INR 12,000 to 26,000 a year. Eligible TNEA entrants can claim the First Graduate concession (INR 25,000 a year) or the Post-Matric Scholarship for SC/ST students.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Kathir College of Engineering (KCE)'s own Regulation 2024 curriculum for Mechanical Engineering, taught with the college workshop and drawing hall. KCE's Academic Council sets the syllabus and its Controller of Examinations runs the exams; Anna University awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "kathir-mba",
+          "canonicalCourseSlug": "mba",
+          "officialTitle": "Master of Business Administration (M.B.A.), Kathir College of Engineering",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 60000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Kathir College of Engineering (KCE)'s 2026-27 AICTE mandatory disclosure lists MBA tuition of INR 60,000 a year for both government-quota and management-quota seats, as approved by Tamil Nadu's fee committee and paid yearly at the start of the odd semester. The Tamil Nadu MBA/MCA 2026-27 college booklet lists hostel room rent of INR 45,000 and mess charges of INR 35,000 a year, a deposit of INR 5,000 and an admission fee of INR 5,000."
+          },
+          "officialProgramUrl": "https://kathir.ac.in/mba/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian graduates who meet the TANCET 2026 eligibility rules (government-quota seats through Tamil Nadu MBA/MCA counselling)",
+              "Indian graduates applying for management-quota seats"
+            ],
+            "restrictions": [
+              "AICTE's 2024-25 and 2025-26 approvals show no NRI, foreign-national, Gulf or OCI seats for the MBA, so foreign nationals cannot be admitted on a student visa.",
+              "Government-quota seats go through Tamil Nadu's single-window MBA/MCA counselling, which uses TANCET scores and Tamil Nadu reservation rules."
+            ],
+            "notes": "The college admits men and women. The Tamil Nadu MBA/MCA 2026-27 college booklet lists KCE (college code 2745) with an approved MBA intake of 60, started in 2009.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tn-mbamca.com/docs/TNMBAMCA-ENGINEERING-COLLEGES-BOOKLET-2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The Master of Business Administration at Kathir College of Engineering (KCE) is a two-year, four-semester Anna University degree taught in English at Neelambur, Coimbatore. Government-quota seats are allotted through the Tamil Nadu MBA/MCA single-window counselling (college code 2745) on TANCET scores, and management-quota seats are filled separately.",
+            "eligibility": {
+              "intro": "TANCET 2026 sets the MBA qualification that Tamil Nadu's MBA/MCA counselling and Anna University-affiliated colleges admit against.",
+              "items": [
+                "A recognised bachelor's degree of at least three years in any discipline",
+                "At least 50 per cent in the qualifying degree (45 per cent for Tamil Nadu BC, BCM, MBC, SC, SCA and ST candidates)",
+                "A TANCET (MBA) 2026 score for government-quota seats"
+              ]
+            },
+            "applicationSteps": [
+              "Take TANCET (MBA) at tancet.annauniv.edu; the 2026 test was held on 9 May 2026",
+              "For a government-quota seat, apply in the Tamil Nadu MBA/MCA 2026-27 single-window counselling run by the Directorate of Technical Education and choose college code 2745",
+              "For a management-quota seat, apply to KCE through its online application form or admissions office at kathirce@gmail.com",
+              "Submit degree, school and community certificates for verification and pay the fees to confirm the seat"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Bachelor's degree certificate or provisional certificate",
+                "Mark sheets for all semesters of the degree",
+                "Class 10 and Class 12 (or diploma) mark sheets",
+                "Transfer certificate"
+              ],
+              "application": [
+                "TANCET 2026 MBA score card",
+                "Community certificate where applicable",
+                "Photo ID issued by the State or Central Government"
+              ]
+            },
+            "deadlinesNote": "The TANCET 2026 MBA test was held on 9 May 2026. KCE has not published its 2026-27 first-semester start date for the MBA."
+          },
+          "medium": "English",
+          "mediumNote": "Kathir College of Engineering publishes its MBA programme pages and Regulation 2024 PG material in English; Anna University awards the degree.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August",
+            "September"
+          ],
+          "intakeCodes": [
+            "august",
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Kathir College of Engineering (KCE)'s 2026-27 AICTE mandatory disclosure lists MBA tuition of INR 60,000 a year for both government-quota and management-quota seats, as approved by Tamil Nadu's fee committee and paid yearly at the start of the odd semester. The Tamil Nadu MBA/MCA 2026-27 college booklet lists hostel room rent of INR 45,000 and mess charges of INR 35,000 a year, a deposit of INR 5,000 and an admission fee of INR 5,000.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-2 (4 semesters)",
+              "language": "English",
+              "details": "KCE's own MBA curriculum under its autonomous status, with specialisations listed in Human Resource Management, Business Analytics, Marketing, Finance, Operations, Logistics and Supply Chain, Tourism, and Infrastructure and Real Estate Management. KCE's Controller of Examinations runs the exams; Anna University awards the degree."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "kathir-college-of-engineering",
+      "publicField": "identity",
+      "claimText": "Kathir College of Engineering, Wisdom Tree, Avinashi Road, Neelambur, Coimbatore 641062; Lamika Educational and Charitable Trust; AICTE permanent ID 1-2389972; Private-Self Financing; established 2008; affiliating body Anna University, Chennai.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2025-26 (KCE)",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/AICTE_2025_26.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "F.No. Southern/1-44639335976/2025/EOA, 10-Apr-2025. AICTE dashboard (2026-27) unreachable from this environment on 2026-10-26 (TLS connection reset on every attempt)."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kathir-college-of-engineering",
+      "publicField": "identity",
+      "claimText": "Anna University CAI Coimbatore district list: Kathir College of Engineering, examination code 7116, TNEA counselling code 2745.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - Coimbatore district affiliated colleges",
+      "sourceUrl": "https://www.annauniv.edu/cai/District%20wise/district/Coimbatore.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kathir-college-of-engineering",
+      "publicField": "establishedYear",
+      "claimText": "Year of establishment 2008 (AICTE EoA 2025-26; TNEA MBA/MCA 2026-27 booklet).",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2025-26 (KCE)",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/AICTE_2025_26.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kathir-college-of-engineering",
+      "publicField": "recognitionBadges",
+      "claimText": "UGC autonomous colleges list (Tamil Nadu): Kathir College of Engineering, Coimbatore-641 062; autonomy from 2024-2025, period 2024-2025 to 2033-2034; university Anna University, Chennai.",
+      "status": "verified",
+      "sourceLabel": "UGC - List of autonomous colleges",
+      "sourceUrl": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Read from the copy saved at research/india-source-bundles/skasc-20261025/ugc-autonomous-text.txt (fetched 2026-10-25). KCE's 2026-27 disclosure also states autonomy for 10 years from 2024-25."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kathir-college-of-engineering",
+      "publicField": "recognitionBadges",
+      "claimText": "NAAC certificate: Kathir College of Engineering, Neelambur, Coimbatore, affiliated to Anna University, accredited with CGPA 3.49 on four-point scale at A+ grade, valid up to 27 February 2028; dated 28 February 2023; EC(SC)/146/2nd Cycle/TNCOGN24510.",
+      "status": "verified",
+      "sourceLabel": "NAAC - Certificate of accreditation, 2nd cycle (KCE)",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/Naac_Certificate_2023.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Certificate image hosted by the college; NAAC's own valid-accreditation spreadsheet not re-read this session."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kathir-college-of-engineering",
+      "publicField": "recognitionBadges",
+      "claimText": "TNEA 2026 Information about colleges: 2745 Kathir College of Engineering (Autonomous), Neelambur; autonomous status Yes; minority No; NBA accredited No for all seven branches.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kathir-college-of-engineering",
+      "publicField": "recognitionBadges",
+      "claimText": "AICTE EoA 2025-26 approves Anna University-affiliated courses: UG AI&DS 120, CCE 30, CSE 60, CSE (AI&ML) 60, EEE 60, ECE 120, Mechanical 30; PG MBA 60, M.E. CSE 6, Power Electronics and Drives 6, Manufacturing Engineering 6, VLSI Design and Embedded Systems 6 (new). NRI and FN/Gulf/OCI approval No or NA for all.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2025-26 (KCE)",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/AICTE_2025_26.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kathir-college-of-engineering",
+      "publicField": "summary",
+      "claimText": "KCE 2026-27 mandatory disclosure: private autonomous engineering institution in Neelambur, Coimbatore, established 2008, affiliated with Anna University, AICTE-approved, NAAC A+; autonomous status conferred by UGC and Anna University for 10 years from 2024-25.",
+      "status": "verified",
+      "sourceLabel": "KCE - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/Mandatory-Disclosure-KCE-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kathir-college-of-engineering",
+      "publicField": "campusLifestyle",
+      "claimText": "KCE 2026-27 disclosure: total area available 12,146 sq m; 403 nodes; 300 Mbps; library 625 sq m, 31,665 books, 7,851 titles, 144 journals; barrier-free facilities; hostels for boys and girls; gym, sports, cafeteria, auditorium, medical support.",
+      "status": "verified",
+      "sourceLabel": "KCE - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/Mandatory-Disclosure-KCE-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kathir-college-of-engineering",
+      "publicField": "cityProfile",
+      "claimText": "TNEA 2026 booklet: address Wisdom Tree, Avinashi Road, Neelambur; taluk Sulur; district Coimbatore; PIN 641062; 18 km from district HQ; nearest railway station Coimbatore Junction, 18 km.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kathir-college-of-engineering",
+      "publicField": "practicalExposure",
+      "claimText": "NIRF 2026 data (KCE, IR-E-C-36988): UG graduating 2024-25 in minimum time 133, placed 130, median salary INR 4,25,000, higher studies 3; PG graduating 2024-25 9, placed 5, median INR 4,30,000; 2024-25 sponsored projects 5 (INR 9,60,500), consultancy 5 (INR 6,86,000); patents published 2024: 11; Ph.D. students 0.",
+      "status": "verified",
+      "sourceLabel": "KCE - NIRF 2026 data submitted (Engineering)",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/nirf/Kce_2026_Engineering.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kathir-college-of-engineering",
+      "publicField": "practicalExposure",
+      "claimText": "AICTE EoA 2025-26 instruction 8: internship is mandatory for all admitted students. KCE COE recommends students for the award of degree in accordance with Anna University's guidelines.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2025-26 (KCE)",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/AICTE_2025_26.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "COE role: https://kathir.ac.in/exams-regulation-2017-and-2021/"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kathir-college-of-engineering",
+      "publicField": "hostelOverview",
+      "claimText": "TNEA 2026 booklet (2745): boys and girls hostels, permanent; mess both veg and non-veg; room rent INR 40,000 (boys) and INR 30,000 (girls) per annum; admission fee INR 5,000; transport INR 12,000 to 26,000 per annum. MBA/MCA 2026-27 booklet: room rent INR 45,000, mess INR 35,000, deposit INR 5,000, admission fee INR 5,000.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "TNEA booklet lists mess bill as INR 3,500 per annum, inconsistent with the MBA/MCA booklet's INR 35,000; the TNEA mess figure is not used. MBA/MCA booklet: https://static.tn-mbamca.com/docs/TNMBAMCA-ENGINEERING-COLLEGES-BOOKLET-2026.pdf"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kathir-college-of-engineering",
+      "publicField": "hostelOverview",
+      "claimText": "KCE hostel page: separate hostels for men and women, rooms with attached restrooms, common rooms, 24x7 security and supervision, wardens, controlled entry and exit.",
+      "status": "verified",
+      "sourceLabel": "KCE - Smart hostel facilities",
+      "sourceUrl": "https://kathir.ac.in/smart-hostel-facilities/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kathir-college-of-engineering",
+      "publicField": "dietarySupport",
+      "claimText": "TNEA 2026 booklet: type of mess both (veg/non-veg) for boys and girls hostels; disclosure: food from the college's own mess.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kathir-college-of-engineering",
+      "publicField": "safetyOverview",
+      "claimText": "KCE 2026-27 anti-ragging committee: Police Inspector, Sulur police station; Village Administrative Officer, Neelambur; NGO chairperson (Saranalayam); parent representative; four faculty members. Women empowerment committee and internal complaints committee listed; anti-drug committee document published.",
+      "status": "verified",
+      "sourceLabel": "KCE - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/Mandatory-Disclosure-KCE-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "ICC: https://kathir.ac.in/grievance-redressal-and-internal-complaints-committee/"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kathir-college-of-engineering",
+      "publicField": "studentSupport",
+      "claimText": "KCE 2026-27 disclosure: management fee waivers to 51 students (full, INR 30,70,000) and 405 students (partial, INR 1,07,39,000); government schemes BC/MBC 248 students, SC/ST 203, FG 236; FG concession INR 25,000 per year for TNEA GQ; post-matric SC/ST INR 50,000 per year.",
+      "status": "verified",
+      "sourceLabel": "KCE - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/Mandatory-Disclosure-KCE-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kathir-college-of-engineering",
+      "publicField": "whyChoose",
+      "claimText": "KCE 2026-27 disclosure fee table approved by State Fee Committee: B.E./B.Tech GQ INR 50,000 per year all branches; MQ INR 85,000 (AI&DS, CSE, ECE, CCE, CSE AI&ML), INR 50,000 (EEE, Mechanical); M.E. INR 50,000; MBA INR 60,000 GQ and MQ.",
+      "status": "verified",
+      "sourceLabel": "KCE - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/Mandatory-Disclosure-KCE-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kathir-college-of-engineering",
+      "publicField": "thingsToConsider",
+      "claimText": "KCE lists M.E. CSE, M.E. Manufacturing Engineering, M.E. Power Electronics and Drives and M.E. VLSI Design and Embedded Systems (sanctioned intake 6 each in 2025-26). No 2026-27 AICTE approval could be read (dashboard unreachable), and no 2026-27 state PG counselling list naming KCE's M.E. seats was found.",
+      "status": "indicative",
+      "sourceLabel": "KCE - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/Mandatory-Disclosure-KCE-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kathir-college-of-engineering",
+      "publicField": "bestFitFor",
+      "claimText": "TNEA 2026 booklet approved intakes: AM 60, CO 30, AD 120, CS 60, EC 120, EE 60, ME 30 (total 480; computing branches AD+CS+AM+CO = 270).",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kathir-college-of-engineering",
+      "publicField": "faq",
+      "claimText": "TNEA 2026 Round 1 vacancy list shows college 2745 with branches AD, AM, CO, CS, EC, EE, ME.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 vacancy position after Round 1",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kathir-college-of-engineering",
+      "publicField": "faq",
+      "claimText": "TNEA 2026 schedule: registration 03.05.2026 to 05.06.2026; general counselling 20.07.2026 to 30.08.2026. Brochure: registration fee INR 500 (INR 250 SC/SCA/ST); report to college within 5 days; OCI/PIO natives of Tamil Nadu eligible except those born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Brochure: https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-btech-artificial-intelligence-data-science",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 college booklet, college 2745, branch AD (Artificial Intelligence and Data Science): approved intake 120; year of starting 2020; NBA accredited No. Round 1 vacancy list shows branch AD at 2745. AICTE EoA 2025-26 lists the course under Anna University, Chennai.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AICTE 2026-27 course list not readable (dashboard connection reset 2026-10-26). EoA 2025-26: https://kathir.ac.in/wp-content/uploads/2026/02/AICTE_2025_26.pdf. Vacancy: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-btech-artificial-intelligence-data-science",
+      "publicField": "fee",
+      "claimText": "KCE 2026-27 mandatory disclosure, fee approved by State Fee Committee: Artificial Intelligence and Data Science GQ INR 50,000 per year; MQ INR 85,000 per year; paid yearly at the beginning of the odd semester.",
+      "status": "verified",
+      "sourceLabel": "KCE - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/Mandatory-Disclosure-KCE-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "fee.audience=domestic: the disclosure's GQ/MQ fees apply to TNEA and consortium/management admissions of Indian candidates; AICTE shows no NRI/FN seats."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-btech-artificial-intelligence-data-science",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum average 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route; nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-btech-artificial-intelligence-data-science",
+      "publicField": "admissions",
+      "claimText": "KCE 2026-27 disclosure: government quota through TNEA single-window counselling; management quota through the Consortium of self-financing professional colleges rank list; seats split 65 per cent GQ and 35 per cent MQ.",
+      "status": "verified",
+      "sourceLabel": "KCE - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/Mandatory-Disclosure-KCE-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "College online application link on https://kathir.ac.in/admission-admission-eligibility/"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-btech-artificial-intelligence-data-science",
+      "publicField": "medium",
+      "claimText": "KCE Regulation 2024 curricula and syllabi are published in English (Technical English and Professional English in semesters I and II); TNEA 2026 lists no Tamil-medium branch for 2745.",
+      "status": "verified",
+      "sourceLabel": "KCE - Curriculum and syllabi (Regulation 2024)",
+      "sourceUrl": "https://kathir.ac.in/exams-curriculum-and-syllabi/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-btech-artificial-intelligence-data-science",
+      "publicField": "teachingPhases",
+      "claimText": "Regulation 2024 curriculum published for Artificial Intelligence and Data Science; KCE autonomous (Academic Council, COE); Anna University awards the degree.",
+      "status": "verified",
+      "sourceLabel": "KCE - Curriculum and syllabi (Regulation 2024)",
+      "sourceUrl": "https://kathir.ac.in/exams-curriculum-and-syllabi/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AI&DS R2024 PDF: 170 credits, batches 2024-28 and 2025-29; https://kathir.ac.in/wp-content/uploads/2026/curriculum/R2024_AIDS.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-computer-science-engineering",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 college booklet, college 2745, branch CS (Computer Science and Engineering): approved intake 60; year of starting 2008; NBA accredited No. Round 1 vacancy list shows branch CS at 2745. AICTE EoA 2025-26 lists the course under Anna University, Chennai.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AICTE 2026-27 course list not readable (dashboard connection reset 2026-10-26). EoA 2025-26: https://kathir.ac.in/wp-content/uploads/2026/02/AICTE_2025_26.pdf. Vacancy: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-computer-science-engineering",
+      "publicField": "fee",
+      "claimText": "KCE 2026-27 mandatory disclosure, fee approved by State Fee Committee: Computer Science and Engineering GQ INR 50,000 per year; MQ INR 85,000 per year; paid yearly at the beginning of the odd semester.",
+      "status": "verified",
+      "sourceLabel": "KCE - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/Mandatory-Disclosure-KCE-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "fee.audience=domestic: the disclosure's GQ/MQ fees apply to TNEA and consortium/management admissions of Indian candidates; AICTE shows no NRI/FN seats."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-computer-science-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum average 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route; nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "KCE 2026-27 disclosure: government quota through TNEA single-window counselling; management quota through the Consortium of self-financing professional colleges rank list; seats split 65 per cent GQ and 35 per cent MQ.",
+      "status": "verified",
+      "sourceLabel": "KCE - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/Mandatory-Disclosure-KCE-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "College online application link on https://kathir.ac.in/admission-admission-eligibility/"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-computer-science-engineering",
+      "publicField": "medium",
+      "claimText": "KCE Regulation 2024 curricula and syllabi are published in English (Technical English and Professional English in semesters I and II); TNEA 2026 lists no Tamil-medium branch for 2745.",
+      "status": "verified",
+      "sourceLabel": "KCE - Curriculum and syllabi (Regulation 2024)",
+      "sourceUrl": "https://kathir.ac.in/exams-curriculum-and-syllabi/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-computer-science-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "Regulation 2024 curriculum published for Computer Science and Engineering; KCE autonomous (Academic Council, COE); Anna University awards the degree.",
+      "status": "verified",
+      "sourceLabel": "KCE - Curriculum and syllabi (Regulation 2024)",
+      "sourceUrl": "https://kathir.ac.in/exams-curriculum-and-syllabi/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-cse-artificial-intelligence-machine-learning",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 college booklet, college 2745, branch AM (Computer Science and Engineering (Artificial Intelligence and Machine Learning)): approved intake 60; year of starting not stated (AICTE first approved 2024-25); NBA accredited No. Round 1 vacancy list shows branch AM at 2745. AICTE EoA 2025-26 lists the course under Anna University, Chennai.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AICTE 2026-27 course list not readable (dashboard connection reset 2026-10-26). EoA 2025-26: https://kathir.ac.in/wp-content/uploads/2026/02/AICTE_2025_26.pdf. Vacancy: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-cse-artificial-intelligence-machine-learning",
+      "publicField": "fee",
+      "claimText": "KCE 2026-27 mandatory disclosure, fee approved by State Fee Committee: Computer Science and Engineering (Artificial Intelligence and Machine Learning) GQ INR 50,000 per year; MQ INR 85,000 per year; paid yearly at the beginning of the odd semester.",
+      "status": "verified",
+      "sourceLabel": "KCE - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/Mandatory-Disclosure-KCE-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "fee.audience=domestic: the disclosure's GQ/MQ fees apply to TNEA and consortium/management admissions of Indian candidates; AICTE shows no NRI/FN seats."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-cse-artificial-intelligence-machine-learning",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum average 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route; nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-cse-artificial-intelligence-machine-learning",
+      "publicField": "admissions",
+      "claimText": "KCE 2026-27 disclosure: government quota through TNEA single-window counselling; management quota through the Consortium of self-financing professional colleges rank list; seats split 65 per cent GQ and 35 per cent MQ.",
+      "status": "verified",
+      "sourceLabel": "KCE - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/Mandatory-Disclosure-KCE-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "College online application link on https://kathir.ac.in/admission-admission-eligibility/"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-cse-artificial-intelligence-machine-learning",
+      "publicField": "medium",
+      "claimText": "KCE Regulation 2024 curricula and syllabi are published in English (Technical English and Professional English in semesters I and II); TNEA 2026 lists no Tamil-medium branch for 2745.",
+      "status": "verified",
+      "sourceLabel": "KCE - Curriculum and syllabi (Regulation 2024)",
+      "sourceUrl": "https://kathir.ac.in/exams-curriculum-and-syllabi/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-cse-artificial-intelligence-machine-learning",
+      "publicField": "teachingPhases",
+      "claimText": "Regulation 2024 curriculum published for Computer Science and Engineering (Artificial Intelligence and Machine Learning); KCE autonomous (Academic Council, COE); Anna University awards the degree.",
+      "status": "verified",
+      "sourceLabel": "KCE - Curriculum and syllabi (Regulation 2024)",
+      "sourceUrl": "https://kathir.ac.in/exams-curriculum-and-syllabi/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-computer-communication-engineering",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 college booklet, college 2745, branch CO (Computer and Communication Engineering): approved intake 30; year of starting 2023; NBA accredited No. Round 1 vacancy list shows branch CO at 2745. AICTE EoA 2025-26 lists the course under Anna University, Chennai.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AICTE 2026-27 course list not readable (dashboard connection reset 2026-10-26). EoA 2025-26: https://kathir.ac.in/wp-content/uploads/2026/02/AICTE_2025_26.pdf. Vacancy: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-computer-communication-engineering",
+      "publicField": "fee",
+      "claimText": "KCE 2026-27 mandatory disclosure, fee approved by State Fee Committee: Computer and Communication Engineering GQ INR 50,000 per year; MQ INR 85,000 per year; paid yearly at the beginning of the odd semester.",
+      "status": "verified",
+      "sourceLabel": "KCE - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/Mandatory-Disclosure-KCE-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "fee.audience=domestic: the disclosure's GQ/MQ fees apply to TNEA and consortium/management admissions of Indian candidates; AICTE shows no NRI/FN seats."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-computer-communication-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum average 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route; nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-computer-communication-engineering",
+      "publicField": "admissions",
+      "claimText": "KCE 2026-27 disclosure: government quota through TNEA single-window counselling; management quota through the Consortium of self-financing professional colleges rank list; seats split 65 per cent GQ and 35 per cent MQ.",
+      "status": "verified",
+      "sourceLabel": "KCE - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/Mandatory-Disclosure-KCE-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "College online application link on https://kathir.ac.in/admission-admission-eligibility/"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-computer-communication-engineering",
+      "publicField": "medium",
+      "claimText": "KCE Regulation 2024 curricula and syllabi are published in English (Technical English and Professional English in semesters I and II); TNEA 2026 lists no Tamil-medium branch for 2745.",
+      "status": "verified",
+      "sourceLabel": "KCE - Curriculum and syllabi (Regulation 2024)",
+      "sourceUrl": "https://kathir.ac.in/exams-curriculum-and-syllabi/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-computer-communication-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "Regulation 2024 curriculum published for Computer and Communication Engineering; KCE autonomous (Academic Council, COE); Anna University awards the degree.",
+      "status": "verified",
+      "sourceLabel": "KCE - Curriculum and syllabi (Regulation 2024)",
+      "sourceUrl": "https://kathir.ac.in/exams-curriculum-and-syllabi/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-electronics-communication-engineering",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 college booklet, college 2745, branch EC (Electronics and Communication Engineering): approved intake 120; year of starting 2008; NBA accredited No. Round 1 vacancy list shows branch EC at 2745. AICTE EoA 2025-26 lists the course under Anna University, Chennai.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AICTE 2026-27 course list not readable (dashboard connection reset 2026-10-26). EoA 2025-26: https://kathir.ac.in/wp-content/uploads/2026/02/AICTE_2025_26.pdf. Vacancy: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-electronics-communication-engineering",
+      "publicField": "fee",
+      "claimText": "KCE 2026-27 mandatory disclosure, fee approved by State Fee Committee: Electronics and Communication Engineering GQ INR 50,000 per year; MQ INR 85,000 per year; paid yearly at the beginning of the odd semester.",
+      "status": "verified",
+      "sourceLabel": "KCE - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/Mandatory-Disclosure-KCE-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "fee.audience=domestic: the disclosure's GQ/MQ fees apply to TNEA and consortium/management admissions of Indian candidates; AICTE shows no NRI/FN seats."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-electronics-communication-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum average 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route; nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-electronics-communication-engineering",
+      "publicField": "admissions",
+      "claimText": "KCE 2026-27 disclosure: government quota through TNEA single-window counselling; management quota through the Consortium of self-financing professional colleges rank list; seats split 65 per cent GQ and 35 per cent MQ.",
+      "status": "verified",
+      "sourceLabel": "KCE - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/Mandatory-Disclosure-KCE-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "College online application link on https://kathir.ac.in/admission-admission-eligibility/"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-electronics-communication-engineering",
+      "publicField": "medium",
+      "claimText": "KCE Regulation 2024 curricula and syllabi are published in English (Technical English and Professional English in semesters I and II); TNEA 2026 lists no Tamil-medium branch for 2745.",
+      "status": "verified",
+      "sourceLabel": "KCE - Curriculum and syllabi (Regulation 2024)",
+      "sourceUrl": "https://kathir.ac.in/exams-curriculum-and-syllabi/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-electronics-communication-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "Regulation 2024 curriculum published for Electronics and Communication Engineering; KCE autonomous (Academic Council, COE); Anna University awards the degree.",
+      "status": "verified",
+      "sourceLabel": "KCE - Curriculum and syllabi (Regulation 2024)",
+      "sourceUrl": "https://kathir.ac.in/exams-curriculum-and-syllabi/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-electrical-electronics-engineering",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 college booklet, college 2745, branch EE (Electrical and Electronics Engineering): approved intake 60; year of starting 2008; NBA accredited No. Round 1 vacancy list shows branch EE at 2745. AICTE EoA 2025-26 lists the course under Anna University, Chennai.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AICTE 2026-27 course list not readable (dashboard connection reset 2026-10-26). EoA 2025-26: https://kathir.ac.in/wp-content/uploads/2026/02/AICTE_2025_26.pdf. Vacancy: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-electrical-electronics-engineering",
+      "publicField": "fee",
+      "claimText": "KCE 2026-27 mandatory disclosure, fee approved by State Fee Committee: Electrical and Electronics Engineering GQ INR 50,000 per year; MQ INR 50,000 per year; paid yearly at the beginning of the odd semester.",
+      "status": "verified",
+      "sourceLabel": "KCE - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/Mandatory-Disclosure-KCE-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "fee.audience=domestic: the disclosure's GQ/MQ fees apply to TNEA and consortium/management admissions of Indian candidates; AICTE shows no NRI/FN seats."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-electrical-electronics-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum average 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route; nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-electrical-electronics-engineering",
+      "publicField": "admissions",
+      "claimText": "KCE 2026-27 disclosure: government quota through TNEA single-window counselling; management quota through the Consortium of self-financing professional colleges rank list; seats split 65 per cent GQ and 35 per cent MQ.",
+      "status": "verified",
+      "sourceLabel": "KCE - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/Mandatory-Disclosure-KCE-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "College online application link on https://kathir.ac.in/admission-admission-eligibility/"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-electrical-electronics-engineering",
+      "publicField": "medium",
+      "claimText": "KCE Regulation 2024 curricula and syllabi are published in English (Technical English and Professional English in semesters I and II); TNEA 2026 lists no Tamil-medium branch for 2745.",
+      "status": "verified",
+      "sourceLabel": "KCE - Curriculum and syllabi (Regulation 2024)",
+      "sourceUrl": "https://kathir.ac.in/exams-curriculum-and-syllabi/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-electrical-electronics-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "Regulation 2024 curriculum published for Electrical and Electronics Engineering; KCE autonomous (Academic Council, COE); Anna University awards the degree.",
+      "status": "verified",
+      "sourceLabel": "KCE - Curriculum and syllabi (Regulation 2024)",
+      "sourceUrl": "https://kathir.ac.in/exams-curriculum-and-syllabi/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-mechanical-engineering",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 college booklet, college 2745, branch ME (Mechanical Engineering): approved intake 30; year of starting 2009; NBA accredited No. Round 1 vacancy list shows branch ME at 2745. AICTE EoA 2025-26 lists the course under Anna University, Chennai.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AICTE 2026-27 course list not readable (dashboard connection reset 2026-10-26). EoA 2025-26: https://kathir.ac.in/wp-content/uploads/2026/02/AICTE_2025_26.pdf. Vacancy: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-mechanical-engineering",
+      "publicField": "fee",
+      "claimText": "KCE 2026-27 mandatory disclosure, fee approved by State Fee Committee: Mechanical Engineering GQ INR 50,000 per year; MQ INR 50,000 per year; paid yearly at the beginning of the odd semester.",
+      "status": "verified",
+      "sourceLabel": "KCE - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/Mandatory-Disclosure-KCE-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "fee.audience=domestic: the disclosure's GQ/MQ fees apply to TNEA and consortium/management admissions of Indian candidates; AICTE shows no NRI/FN seats."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-mechanical-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum average 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route; nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-mechanical-engineering",
+      "publicField": "admissions",
+      "claimText": "KCE 2026-27 disclosure: government quota through TNEA single-window counselling; management quota through the Consortium of self-financing professional colleges rank list; seats split 65 per cent GQ and 35 per cent MQ.",
+      "status": "verified",
+      "sourceLabel": "KCE - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/Mandatory-Disclosure-KCE-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "College online application link on https://kathir.ac.in/admission-admission-eligibility/"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-mechanical-engineering",
+      "publicField": "medium",
+      "claimText": "KCE Regulation 2024 curricula and syllabi are published in English (Technical English and Professional English in semesters I and II); TNEA 2026 lists no Tamil-medium branch for 2745.",
+      "status": "verified",
+      "sourceLabel": "KCE - Curriculum and syllabi (Regulation 2024)",
+      "sourceUrl": "https://kathir.ac.in/exams-curriculum-and-syllabi/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-be-mechanical-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "Regulation 2024 curriculum published for Mechanical Engineering; KCE autonomous (Academic Council, COE); Anna University awards the degree.",
+      "status": "verified",
+      "sourceLabel": "KCE - Curriculum and syllabi (Regulation 2024)",
+      "sourceUrl": "https://kathir.ac.in/exams-curriculum-and-syllabi/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-mba",
+      "publicField": "intake",
+      "claimText": "Tamil Nadu MBA/MCA Admissions 2026-27 college booklet: 2745 Kathir College of Engineering (Autonomous); MBA approved intake 60; self-financing; started 2009; accredited No; affiliating university Anna University.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - MBA/MCA Admissions 2026-27 college booklet",
+      "sourceUrl": "https://static.tn-mbamca.com/docs/TNMBAMCA-ENGINEERING-COLLEGES-BOOKLET-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-mba",
+      "publicField": "fee",
+      "claimText": "KCE 2026-27 mandatory disclosure: MBA GQ INR 60,000 per year, MQ INR 60,000 per year (State Fee Committee). MBA/MCA 2026-27 booklet: tuition collected as per Government norms; room rent INR 45,000, mess INR 35,000, deposit INR 5,000, admission fee INR 5,000.",
+      "status": "verified",
+      "sourceLabel": "KCE - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2026/02/Mandatory-Disclosure-KCE-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-mba",
+      "publicField": "eligibility",
+      "claimText": "TANCET 2026 MBA eligibility: recognised bachelor's degree of at least three years with at least 50 per cent (45 per cent for Tamil Nadu BC, BCM, MBC, SC, SCA, ST); test held 9 May 2026.",
+      "status": "verified",
+      "sourceLabel": "Anna University - TANCET / CEETA-PG 2026 Information Brochure",
+      "sourceUrl": "https://tancet.annauniv.edu/tancet/Information%20Brochure%202026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "tancet.annauniv.edu timed out from this environment on 2026-10-26; figures carried from the brochure as read for bundle 0148 on 2026-10-23."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-mba",
+      "publicField": "admissions",
+      "claimText": "Government-quota MBA seats through the Tamil Nadu MBA/MCA 2026-27 single-window counselling (DoTE), college code 2745; management quota through the consortium/college.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - MBA/MCA Admissions 2026-27 college booklet",
+      "sourceUrl": "https://static.tn-mbamca.com/docs/TNMBAMCA-ENGINEERING-COLLEGES-BOOKLET-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Management quota procedure: https://kathir.ac.in/wp-content/uploads/2026/02/Mandatory-Disclosure-KCE-26-27.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-mba",
+      "publicField": "medium",
+      "claimText": "KCE MBA programme page and Regulation 2024 PG curriculum material published in English.",
+      "status": "verified",
+      "sourceLabel": "KCE - MBA",
+      "sourceUrl": "https://kathir.ac.in/mba/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kathir-college-of-engineering",
+      "programmeSlug": "kathir-mba",
+      "publicField": "teachingPhases",
+      "claimText": "KCE MBA page: two-year full-time MBA, launched 2009, specialisations HRM, Business Analytics, Marketing, Finance, Operations, Logistics and Supply Chain, Tourism, Infrastructure and Real Estate Management.",
+      "status": "verified",
+      "sourceLabel": "KCE - MBA",
+      "sourceUrl": "https://kathir.ac.in/mba/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    }
+  ]
+}

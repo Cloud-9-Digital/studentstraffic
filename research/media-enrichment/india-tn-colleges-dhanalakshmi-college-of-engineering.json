@@ -1,0 +1,33 @@
+{
+  "manifestId": "india-tn-colleges-dhanalakshmi-college-of-engineering",
+  "checkedAt": "2026-10-26",
+  "entries": [
+    {
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "universityName": "Dhanalakshmi College of Engineering",
+      "sourceBatch": "claude-tn-colleges-batch1-20261026",
+      "migrationId": "0358-india-dhanalakshmi-college-of-engineering",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/01/DCE-logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://dce.edu.in/",
+          "rightsBasis": "Official site-wide header logo served from the college's own domain (dce.edu.in). No open licence - used only to identify the institution. Checked 2026-10-26: image/png, 135,052 bytes, 1294x231 px RGBA, SHA-256 23fc4c7e9159c2dad8cab490acaded7634900361b1bdbbb8a2233b490298d90c (fetched through WebFetch; plain curl to dce.edu.in/wp-content/uploads returns HTTP 403 to non-browser clients, so re-check HTTP 200 from the upload host). Rendered on white and visually confirmed: navy circular 'Dhanalakshmi College of Engineering / Discipline Character Education' seal, a 'DCE CHENNAI AUTONOMOUS' block and a navy 'DHANALAKSHMI COLLEGE OF ENGINEERING - TEMPLE OF LEARNING' wordmark; legible on a white tile, no white-on-transparent elements. CAVEAT: wide header lockup (5.6:1). If a square tile is required, crop the left circular seal (approx. x 0-225).",
+          "proposedPublicId": "studentstraffic/universities/dhanalakshmi-college-of-engineering/logo",
+          "localCopy": "research/india-source-bundles/dhanalakshmi-college-of-engineering/logo.png"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/01/DCE-Hero.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://dce.edu.in/",
+          "rightsBasis": "Official campus photograph used as the dce.edu.in home-page hero (same building appears captioned 'Electronics and Communication Engineering' as Infrastructure-04 in the college gallery). No open licence stated - official institutional image used to identify the institution, same basis as earlier official covers. Checked 2026-10-26: image/jpeg, 279,602 bytes, 1920x1044 px landscape, SHA-256 dafec7f3d07c21770885c85c0ee0687b7a9acc69e832fe56a80ef38acdb63722, fetched through WebFetch (plain curl returns HTTP 403; re-check HTTP 200 from the upload host). Visual confirmation: four-storey cream academic block with a green glass central entrance, palms and hedges, a covered walkway and an empty paved drive under clear blue sky; no people, no text overlay or watermark. Alternative rejected: gallery Infrastructure-01.jpg aerial view (no overlay but only 400x258 px); other gallery shots carry caption overlays.",
+          "altText": "Electronics and Communication Engineering block of Dhanalakshmi College of Engineering at Manimangalam, Chennai, with its glass-fronted entrance, palms and a covered walkway",
+          "proposedPublicId": "studentstraffic/universities/dhanalakshmi-college-of-engineering/cover",
+          "localCopy": "research/india-source-bundles/dhanalakshmi-college-of-engineering/cover-dce-hero.jpg"
+        }
+      ]
+    }
+  ]
+}

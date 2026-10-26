@@ -9,3 +9,7 @@ Exact own detailed tables provide qualifications and3yrUG/2yrPG durations. Two B
 27exact own prior-cycle indicative2021–22first-year fee quotes, aided/SF and exact award preserved. Combined/unitemised fee basis, no annual tuition or recurrence inference. DataScience2023notin2021table staysonrequest. Own2024handbook p74 only partial component list, no total/NIL assumption or arithmetic.
 
 Media: whole clean1412x1476crest observed ownBOT and5472x3078aerialcampuswelcome original from ownhome; worker and root visually accepted. No edits/upscale/dateclaim. DefaultHTTP403, one ordinary conventional browser User-Agent GET returned200 with complete content; no cookie/challenge bypass.
+
+## Fee pass 2026-10-26
+
+- B.Sc. Data Science (SF): still on request. The official FEES STRUCTURE.pdf (2021-22) has no Data Science row and is stale; the current admission prospectus PDF has no extractable fee text; Careers360, Collegedunia and Zollege show only generic B.Sc ranges with no Data Science line.

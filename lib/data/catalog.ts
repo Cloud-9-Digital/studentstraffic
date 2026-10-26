@@ -149,6 +149,7 @@ function mapUniversityRow(
     researchSources: university.researchSources,
     researchNotes: university.researchNotes ?? undefined,
     admissionsContent: university.admissionsContent ?? undefined,
+    brochure: university.brochure ?? undefined,
     updatedAt: university.updatedAt?.toISOString(),
   });
 }

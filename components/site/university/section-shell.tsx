@@ -93,6 +93,7 @@ export function UniversitySectionShell({
       recognitionBadge={university.recognitionBadges[0]}
       lastVerifiedAt={lastVerifiedAt}
       author={author}
+      hasBrochure={Boolean(university.brochure)}
       content={content}
     />
   );

@@ -48,6 +48,7 @@ import type {
   UniversityReviewVisibilityStatus,
   University,
   UniversityAdmissionsContent,
+  UniversityBrochure,
   YearlyCostBreakdown,
 } from "@/lib/data/types";
 import type { IndexableMetadataInput } from "@/lib/metadata";
@@ -228,6 +229,10 @@ export const universities = pgTable(
       .$type<UniversityAdmissionsContent>()
       .notNull()
       .default({}),
+    // Lead-gated brochure stored as a private (authenticated) Cloudinary raw
+    // asset. Written only by scripts/apply-brochures.ts; served through
+    // /api/brochures/[slug] so the Cloudinary URL is never exposed.
+    brochure: jsonb("brochure").$type<UniversityBrochure>(),
     createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),
   },
@@ -541,6 +546,29 @@ export const leads = pgTable(
     uniqueIndex("leads_wati_whatsapp_message_unique_idx")
       .on(table.watiWhatsappMessageId)
       .where(sql`${table.watiWhatsappMessageId} IS NOT NULL`),
+  ]
+);
+
+// One row per brochure a lead downloaded, so counsellors can see which
+// universities' brochures a student took (see app/api/brochures/[slug]).
+export const brochureDownloads = pgTable(
+  "brochure_downloads",
+  {
+    id: serial("id").primaryKey(),
+    leadId: integer("lead_id")
+      .notNull()
+      .references(() => leads.id, { onDelete: "cascade" }),
+    universitySlug: text("university_slug").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+  },
+  (table) => [
+    index("brochure_downloads_lead_created_idx").on(table.leadId, table.createdAt),
+    index("brochure_downloads_university_created_idx").on(
+      table.universitySlug,
+      table.createdAt,
+    ),
   ]
 );
 

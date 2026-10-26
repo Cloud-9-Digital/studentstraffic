@@ -37,6 +37,9 @@ Keep it current — see "Keeping this doc current" at the bottom.
   Students Traffic Cloudinary URL plus original source, rights basis, checked date and alt text.
   This uses the existing JSONB field; no section-specific image columns are required. Student-living
   text is validated against the hard field limits in `docs/university-content-spec.md` before write.
+
+  `brochure` (nullable jsonb, migration 0085) points at a private Cloudinary PDF; it is written only
+  by `scripts/apply-brochures.ts`. See "Lead-gated brochures" below.
 - **`programOfferings`** — one row per program at a university, FK to `universities` + `courses`.
   Key fields: `slug`, `title`, `durationYears` (`numeric(4,1)`, preserving fractional years),
   `annualTuitionUsd`/`totalTuitionUsd`/`livingUsd` (normalized USD), `officialFeeCurrency` +
@@ -587,6 +590,51 @@ image signature and SHA-256 checks reject challenge HTML or changed files before
 local check does not fall back to a different source. Existing reviewed Cloudinary crops still apply
 at upload; public delivery and provenance fields remain unchanged. This supports ordinary saved
 public originals and does not authorise bypassing access controls.
+
+## Lead-gated brochures (26 October 2026)
+
+Official university brochures are stored on our side and served only from our domain after the
+student has submitted the lead form. Students are never sent to the university's PDF URL.
+
+- **Storage:** Cloudinary `resource_type: "raw"`, `type: "authenticated"` at
+  `studentstraffic/brochures/<slug>/brochure.pdf`. The asset has no public URL.
+- **Data:** `universities.brochure` (nullable jsonb, migration `0085_university_brochures`) holds
+  `{ publicId, fileName, title, academicYear?, bytes, sourceUrl, sourceLabel, checkedAt }`. Null
+  hides the button. `brochure_downloads (lead_id, university_slug, created_at)` records every
+  download against the lead.
+- **Apply:** write `research/brochures/<batch>.json` and run
+  `npx tsx scripts/apply-brochures.ts <batch> --dry-run`, then without `--dry-run`. Manifest:
+
+  ```json
+  {
+    "checkedAt": "2026-10-26",
+    "entries": [
+      {
+        "universitySlug": "anna-university",
+        "sourceUrl": "https://<official-site>/prospectus.pdf",
+        "sourceLabel": "Anna University official website",
+        "title": "Prospectus 2026-27",
+        "academicYear": "2026-27",
+        "rights": "Official prospectus published for prospective students"
+      }
+    ]
+  }
+  ```
+
+  `academicYear` and a per-entry `checkedAt` are optional. The script rejects anything that is not a
+  PDF (`%PDF-` signature) or is over 40 MB, uploads it as above, writes `universities.brochure`, and
+  revalidates only `university:<slug>`, `university-programs:<slug>` and `/university/<slug>`
+  (scope `exact`). `--dry-run` downloads and validates but does not upload, write or revalidate.
+  A report is written to `research/brochures/<batch>.apply-report.json`. Use only the university's
+  own official brochure or prospectus, and record the rights basis in `rights`.
+- **Gate:** the hero "Download brochure" button calls `GET /api/brochures/<slug>`. Without a valid
+  `st_brochure_access` cookie it answers 401 and the page opens the lead form
+  (`ctaVariant: "brochure_download"`, same validation, rate limits and CRM/WhatsApp delivery as every
+  lead). On success the action sets the cookie (httpOnly, sameSite=lax, 180 days, HMAC-signed with a
+  key derived from `NEXTAUTH_SECRET`, carrying the lead id) instead of redirecting to /thank-you, and
+  the download starts in place. Later brochure downloads anywhere on the site skip the form.
+- **Delivery:** the route fetches a short-lived `private_download_url` server-side and streams the
+  bytes with `Content-Disposition: attachment; filename="<University> brochure.pdf"`.
 
 ## Medium normalization (2026-09-09)
 

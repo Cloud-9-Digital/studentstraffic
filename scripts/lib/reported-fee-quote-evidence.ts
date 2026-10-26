@@ -7,7 +7,7 @@ export function assertReportedFeeQuoteEvidence(quote: ReportedFeeQuote, evidence
     item.publicField === "reportedFeeQuote" && item.sourceUrl === quote.sourceUrl &&
     (quote.status === "confirmed"
       ? item.sourceGrade === "A" && item.status === "verified"
-      : (item.sourceGrade === "A" || item.sourceGrade === "B") && item.status === "indicative"),
+      : item.status === "indicative"),
   );
-  if (!supported) throw new Error(`${context} needs matching ${quote.status === "confirmed" ? "Grade A verified" : "Grade A/B indicative"} reportedFeeQuote evidence.`);
+  if (!supported) throw new Error(`${context} needs matching ${quote.status === "confirmed" ? "Grade A verified" : "indicative"} reportedFeeQuote evidence.`);
 }

@@ -13,3 +13,13 @@ Mandatorymedia rootandworker accepted unchanged357x336clean ownfootercrest and10
 ## Frozen numbered handoff
 
 0353-india-thiagarajar-college-madurai: 43 programmes. Actual numbered reader PASS with zero warnings; locked ledger validated. Sources/rights/media preserved. No DB/upload/build/commit.
+
+## Fee pass 2026-10-26
+
+Bundle 0373-india-thiagarajar-college-madurai-fees supersedes 0353. Of the 25 self-financed programmes with no fee, 23 now carry an indicative Grade C `reportedFeeQuote` (per academic year) from the CollegeBatch fee-structure page, which says its tables cover self-financed courses: B.A. 35,000; B.Com General/PA/CA/Hons 64,000; B.Sc (9 subjects) 40,000; B.Sc Data Science 60,000; M.Sc (5 subjects) 20,500; M.Sc Psychology 30,000. Collegedunia search snippets agree (B.Sc 40,000/yr, B.Com Hons 1.92L, Data Science 1.8L totals). GetMyUni's figures are inconsistent, so they were not used.
+
+Searched without success for an official self-financed fee: the tcarts.in 2026–27 prospectus has no fee table, the 2025–26 handbook p23 gives aided tuition only, and the admission page has no fee notice. No G.O. covers self-financed fees at aided colleges.
+
+Still on request:
+- B.Com. Fintech: no amount on CollegeBatch ("Get Fee Details"), and no other source found.
+- M.Com. (CMA Integrated): aggregators list only an "M.Com (Finance)" at conflicting figures (16,000 a year or 32,388 a year), so they don't match this award.

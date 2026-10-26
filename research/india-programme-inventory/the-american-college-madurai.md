@@ -15,3 +15,8 @@ Singleprinted2026prospectuscombinedfeequotes indicative, exactsemester/PerYear/I
 ## Frozen numbered handoff
 
 0354-india-the-american-college-madurai: 61 programmes. Actual numbered reader PASS with zero warnings; locked ledger validated. Sources/rights/media preserved. No DB/upload/build/commit.
+
+## Fee pass 2026-10-26
+
+- M.S.W. (SF, main campus): indicative first-year quote Rs 32,005 added in 0388 from the official self-finance page row labelled M.A. Social Work.
+- B.A. Tamil (SF, main campus): still on request. The official self-finance UG fee table (americancollege.edu.in/self-finance) has no B.A. Tamil row; Careers360 fees page has no B.A. Tamil row; Collegedunia's B.A. Tamil Literature total (Rs 74,665) does not state aided/self-financed or campus, so rejected. Satellite-campus Tamil fee not borrowed.

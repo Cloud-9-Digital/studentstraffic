@@ -19,10 +19,12 @@ const offering = { annualTuitionUsd: 0, totalTuitionUsd: 0, feeStatus: "on_reque
 const quoteSchema = catalogPayloadSchema.shape.universities.element.shape.programmes.element.shape.admissionsContent.shape.reportedFeeQuote;
 
 test("native combined quote displays amount only without becoming annual tuition or a structured Offer", () => {
-  assert.equal(formatProgramFee(offering), "₹55,000");
+  assert.equal(formatProgramFee(offering), "₹55,000 / year");
   assert.equal(formatProgramAnnualFee(offering), "Fee plan on request");
-  assert.equal(getProgramAnnualFeeLabel(offering), "Fees");
-  assert.deepEqual(getProgramFeeLines(offering, "india"), [{ label: "Fees", amount: "₹55,000" }]);
+  assert.equal(getProgramAnnualFeeLabel(offering), "Approx. fees");
+  assert.deepEqual(getProgramFeeLines(offering, "india"), [{ label: "Approx. fees", amount: "₹55,000 / year" }]);
+  const confirmedOffering = { ...offering, reportedFeeQuote: { ...quote, status: "confirmed" as const } } as ProgramOffering;
+  assert.equal(getProgramAnnualFeeLabel(confirmedOffering), "Fees");
   assert.equal(hasRenderableProgramDisplayFee(offering), true);
   assert.equal(hasRenderableProgramAnnualFee(offering), false);
   assert.equal(hasRenderableProgramFee(offering), false);
@@ -40,10 +42,12 @@ test("semester and full-course ranges retain exact internal basis but render onl
     assert.equal(parsed.category, quote.category);
     assert.equal(parsed.componentBasis, quote.componentBasis);
     assert.equal(parsed.sourceUrl, quote.sourceUrl);
-    assert.equal(formatProgramFee({ ...offering, reportedFeeQuote: parsed }), "₹75,000–₹1,80,000");
-    assert.doesNotMatch(formatProgramFee({ ...offering, reportedFeeQuote: parsed }), /year|semester|course|2026|example|indicative/i);
+    // The billing period is shown so per-semester and full-course figures can't be mistaken for each other;
+    // provenance (year, source, status) still stays internal.
+    assert.equal(formatProgramFee({ ...offering, reportedFeeQuote: parsed }), `₹75,000–₹1,80,000 ${period === "semester" ? "/ semester" : "full course"}`);
+    assert.doesNotMatch(formatProgramFee({ ...offering, reportedFeeQuote: parsed }), /2026|example|indicative/i);
   }
-  assert.equal(formatProgramFee({ ...offering, reportedFeeQuote: { ...quote, maxAmount: quote.minAmount } }), "₹55,000");
+  assert.equal(formatProgramFee({ ...offering, reportedFeeQuote: { ...quote, maxAmount: quote.minAmount } }), "₹55,000 / year");
 });
 
 test("confirmed native NIL and published annual tuition keep precedence over combined quotes", () => {
@@ -59,7 +63,7 @@ test("explicit sourced NIL quotes display without turning unknown annual tuition
   const nil = quoteSchema.parse({ ...quote, minAmount: 0, period: "semester", componentBasis: "Published tuition is NIL; laboratory, deposit and other charges are separate." })!;
   const display = { ...offering, reportedFeeQuote: nil };
   assert.equal(parseReportedFeeQuote(nil)?.minAmount, 0);
-  assert.equal(formatProgramFee(display), "₹0");
+  assert.equal(formatProgramFee(display), "₹0 / semester");
   assert.equal(hasRenderableProgramDisplayFee(display), true);
   assert.equal(hasRenderableProgramAnnualFee(display), false);
   assert.equal(formatProgramAnnualFee(display), "Fee plan on request");
@@ -87,18 +91,21 @@ test("quote publication requires the exact quote evidence field, source and grad
   const evidence = { publicField: "reportedFeeQuote", sourceUrl: quote.sourceUrl, sourceGrade: "A", status: "indicative" };
   assert.doesNotThrow(() => assertReportedFeeQuoteEvidence(quote, [evidence], "example"));
   assert.doesNotThrow(() => assertReportedFeeQuoteEvidence(quote, [{ ...evidence, sourceGrade: "B" }], "example"));
-  for (const patch of [{ publicField: "fee" }, { sourceUrl: "https://other.example/fees" }, { sourceGrade: "C" }, { status: "verified" }, { status: "omit" }]) {
+  // A third-party website (Grade C) may support an indicative quote, which pages label "Approx. fees".
+  assert.doesNotThrow(() => assertReportedFeeQuoteEvidence(quote, [{ ...evidence, sourceGrade: "C" }], "example"));
+  for (const patch of [{ publicField: "fee" }, { sourceUrl: "https://other.example/fees" }, { status: "verified" }, { status: "omit" }]) {
     assert.throws(() => assertReportedFeeQuoteEvidence(quote, [{ ...evidence, ...patch }], "example"), /reportedFeeQuote evidence/);
   }
   const confirmed = { ...quote, status: "confirmed" as const };
   assert.doesNotThrow(() => assertReportedFeeQuoteEvidence(confirmed, [{ ...evidence, status: "verified" }], "example"));
   assert.throws(() => assertReportedFeeQuoteEvidence(confirmed, [{ ...evidence, status: "verified", sourceGrade: "B" }], "example"), /Grade A verified/);
+  assert.throws(() => assertReportedFeeQuoteEvidence(confirmed, [{ ...evidence, status: "verified", sourceGrade: "C" }], "example"), /Grade A verified/);
   assert.throws(() => assertReportedFeeQuoteEvidence(confirmed, [evidence], "example"), /Grade A verified/);
 });
 
 test("mobile finder receives formatted quote and preserves its numeric annual budget sentinel", () => {
   const card = mapFinderCardProgram({ university: { slug: "example", name: "Example", city: "Chennai", type: "Private", featured: false }, country: { name: "India", slug: "india" }, course: { shortName: "MSW", slug: "master-social-work" }, offering: { ...offering, slug: "example-msw", featured: false } });
-  assert.equal(card.feeLabel, "₹55,000");
+  assert.equal(card.feeLabel, "₹55,000 / year");
   assert.equal(card.tuitionUsd, 0);
   assert.equal("reportedFeeQuote" in card, false);
 });
@@ -111,15 +118,15 @@ test("mobile programme quotes suppress annual units in both visible and accessib
   } as unknown as FinderProgram;
   const university = { slug: "example", name: "Example", countrySlug: "india" } as Parameters<typeof mapUniversityDetail>[0];
   const dto = mapUniversityDetail(university, "India", [program]);
-  assert.equal(dto.offerings[0].feeLabel, "₹55,000");
+  assert.equal(dto.offerings[0].feeLabel, "₹55,000 / year");
   assert.equal(dto.offerings[0].feeIsAnnual, false);
-  assert.deepEqual(dto.offerings[0].feeLines, [{ label: "Fees", amount: "₹55,000" }]);
+  assert.deepEqual(dto.offerings[0].feeLines, [{ label: "Approx. fees", amount: "₹55,000 / year" }]);
   assert.equal(dto.primaryOffering?.feeIsAnnual, false);
   assert.equal(dto.primaryOffering?.annualTuitionUsd, 0);
   assert.equal(hasAnnualFeeSuffix(dto.offerings[0], dto.offerings[0].feeLines[0].amount), false);
 
   const nilDto = mapUniversityDetail(university, "India", [{ ...program, offering: { ...program.offering, reportedFeeQuote: { ...quote, minAmount: 0, period: "semester" } } }]);
-  assert.equal(nilDto.offerings[0].feeLabel, "₹0");
+  assert.equal(nilDto.offerings[0].feeLabel, "₹0 / semester");
   assert.equal(nilDto.offerings[0].feeIsAnnual, false);
   assert.equal(hasAnnualFeeSuffix(nilDto.offerings[0], "₹0"), false);
 

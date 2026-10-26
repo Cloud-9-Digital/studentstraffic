@@ -1,0 +1,38 @@
+{
+  "manifestId": "india-tn-colleges-tagore-engineering-college-media-2026-10-26",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-26",
+  "scope": "logo and cover for content migration 0359-india-tagore-engineering-college",
+  "rules": [
+    "This manifest permits neither direct database writes nor automatic Cloudinary uploads.",
+    "Every sourceUrl is a direct image URL verified HTTP 200 with an image/* content-type on 2026-10-26; re-verify before upload.",
+    "Only a verified Cloudinary URL may be applied to the catalogue; hold entries are excluded."
+  ],
+  "entries": [
+    {
+      "universitySlug": "tagore-engineering-college",
+      "universityName": "Tagore Engineering College",
+      "sourceBatch": "claude-tn-colleges-batch1-20261026",
+      "migrationId": "0359-india-tagore-engineering-college",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://tagore-engg.ac.in/images/tagore-logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://tagore-engg.ac.in/",
+          "rightsBasis": "Official TEC header lock-up served from the college's own domain (tagore-engg.ac.in, site-wide header). No open licence; used only to identify the institution. Checked 2026-10-26: HTTP 200, image/png, 86,626 bytes, 2772x500 px, sha256 45e873d50129ba5fbc6456f2f591817a696ec06f7f2035bb36ae32d6f8609043. Rendered on white and visually confirmed legible: maroon shield crest reading 'Tagore Engineering College' and 'Labour to Glory', maroon wordmark 'TAGORE ENGINEERING COLLEGE', and two navy lines (AICTE/NBA/Anna University affiliation and the Rathinamangalam address). CAVEAT: wide banner; the 'Accredited by NBA' line describes programme, not institutional, accreditation. Rejected: logo2/logo3/logo4.png and actual/college-logo.png (100 px icons).",
+          "proposedPublicId": "studentstraffic/universities/tagore-engineering-college/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://tagore-engg.ac.in/images/gallery/tg11.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://tagore-engg.ac.in/",
+          "rightsBasis": "Official campus photograph from the home-page gallery on the college's own domain. No open licence; used only to depict the institution. Checked 2026-10-26: HTTP 200, image/jpeg, 233,240 bytes, 500x400 px, sha256 091904dd279e829b9b64ab4089580e3c941021791722ca1dc255312b600d7f21. Visually confirmed as a single real photograph, not a composite or AI image: wide view of the machine shop with lathes and a radial drilling machine under a steel-truss roof; students are at mid or far distance, none in close-up; no text overlay or watermark. CAVEAT: low resolution (500x400) and an interior workshop view; the site publishes no exterior building photograph. Rejected: pic1.jpg (award banner with text and identifiable people), tagore-web.png (conference banner), tec-gallery-3 to 6 (event photos of identifiable people), tg8.jpg (students posed in a line in front of an aircraft), tg2/tg3/tg4/tg12 (closer student shots).",
+          "altText": "Machine shop with lathes and a radial drilling machine at Tagore Engineering College, Rathinamangalam, Chennai",
+          "proposedPublicId": "studentstraffic/universities/tagore-engineering-college/cover"
+        }
+      ]
+    }
+  ]
+}

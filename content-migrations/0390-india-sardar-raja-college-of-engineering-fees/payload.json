@@ -1,0 +1,2627 @@
+{
+  "countries": [
+    {
+      "slug": "india",
+      "name": "India",
+      "region": "South Asia",
+      "summary": "India's higher-education system is overseen by the Ministry of Education and its statutory regulators - the University Grants Commission for universities and degrees, the All India Council for Technical Education for technical and management programmes, and the National Medical Commission for medical education. International applicants normally enter through an institution's own international-admissions office, through the government's Study in India portal, or through a centrally administered scheme such as DASA for engineering and architecture seats at NITs, IIITs and other centrally funded technical institutes. Entry rules differ by nationality, residency status, the prior qualification held and the discipline chosen.",
+      "whyStudentsChooseIt": "International applicants look at India for English-taught degrees across computing, engineering, management, design, sciences, law and health disciplines, and for a single national application route: the Ministry of Education's Study in India portal issues an SII ID and lets an applicant send one profile to several participating institutes. Government-funded study places also exist through Indian Council for Cultural Relations scholarship schemes, which are applied for through Indian diplomatic missions rather than directly to a university. What an individual applicant can access depends on citizenship, residency status, how the prior qualification is assessed for equivalence, and whether the programme is attached to a national entrance test.",
+      "climate": "Climate varies widely by region, from alpine Himalayan conditions in the north to tropical coastal and semi-arid zones further south, with a June-to-September monsoon across most of the country.",
+      "currencyCode": "INR",
+      "metaTitle": "Study in India: Guide for International Students",
+      "metaDescription": "Regulators, admission routes, entrance tests, student visa and FRRO rules that international applicants should verify before applying to an Indian university."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "be-btech-civil-engineering",
+      "name": "B.E./B.Tech in Civil Engineering",
+      "shortName": "B.E./B.Tech Civil",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "civil-engineering",
+      "aliases": [
+        "Bachelor of Civil Engineering",
+        "BEng Civil Engineering"
+      ],
+      "displayOrder": 3,
+      "durationYears": 4,
+      "summary": "A four-year undergraduate engineering degree covering structural analysis and design, geotechnical engineering, transportation engineering, water resources, environmental engineering, surveying and construction management. Programmes pair lecture teaching with materials, hydraulics and surveying laboratories, site visits and a final-year design project. Graduates work in construction, infrastructure, consultancy and public works, or continue to a master's specialisation.",
+      "metaTitle": "B.E./B.Tech Civil: Course, Fees and Admission",
+      "metaDescription": "What a four-year B.E./B.Tech Civil degree covers, the entry requirements it carries, how admission is decided and what tuition to plan for."
+    },
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "Bachelor of Technology in Computer Science and Engineering",
+        "BEng Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in computer science and engineering, usually four years after an upper-secondary qualification with mathematics. Typical curricula run from programming, data structures, operating systems, databases and computer networks to algorithms, software engineering and electives in artificial intelligence, machine learning, cloud and security, with project and internship components.",
+      "metaTitle": "B.E./B.Tech CSE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech CSE degrees for international applicants: duration, teaching language, intake months, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-cyber-security",
+      "name": "B.E./B.Tech in Cyber Security",
+      "shortName": "B.E./B.Tech Cyber Security",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "cyber-security",
+      "aliases": [
+        "Bachelor of Cyber Security",
+        "BSc Cyber Security"
+      ],
+      "displayOrder": 101,
+      "durationYears": 3,
+      "summary": "Study cyber security through an undergraduate engineering programme covering network security, cryptography, secure systems design, digital forensics and ethical hacking practice. Compare each university's official award, laboratory facilities, industry certifications, tuition and admissions requirements before applying, since specialisation depth and delivery format vary by institution.",
+      "metaTitle": "B.E./B.Tech Cyber Security Abroad | Fees",
+      "metaDescription": "Compare B.E./B.Tech Cyber Security programmes abroad by curriculum, laboratories, tuition fees and admissions requirements for international students."
+    },
+    {
+      "slug": "be-btech-electrical-electronics-engineering",
+      "name": "B.E./B.Tech in Electrical and Electronics Engineering",
+      "shortName": "B.E./B.Tech EEE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electrical-electronics-engineering",
+      "aliases": [
+        "Bachelor of Electrical and Electronic Engineering",
+        "BEng Electrical and Electronic Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "This catalogue category covers four-year undergraduate degrees in electrical and electronics engineering taken after an upper-secondary qualification with physics and mathematics. Programmes typically cover circuit theory, electrical machines, power systems, power electronics, control systems and embedded electronics, with laboratory work and electives in renewable energy or electric mobility.",
+      "metaTitle": "B.E./B.Tech EEE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech EEE degrees for international applicants: programme length, teaching language, intake months, tuition and admission routes."
+    },
+    {
+      "slug": "be-btech-electronics-communication-engineering",
+      "name": "B.E./B.Tech in Electronics and Communication Engineering",
+      "shortName": "B.E./B.Tech ECE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electronics-communication-engineering",
+      "aliases": [
+        "Bachelor of Electronics and Communication Engineering",
+        "BEng Electronic and Communications Engineering",
+        "Electronics and Telecommunications Engineering"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in electronics and communication engineering, usually four years after upper-secondary physics, chemistry and mathematics. Curricula typically span circuit and network theory, analog and digital electronics, signals and systems, digital signal processing, communication systems and embedded or VLSI design, with laboratory and project work.",
+      "metaTitle": "B.E./B.Tech ECE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech ECE degrees for international applicants: duration, teaching language, intakes, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-mechanical-engineering",
+      "name": "B.E./B.Tech in Mechanical Engineering",
+      "shortName": "B.E./B.Tech Mechanical",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "mechanical-engineering",
+      "aliases": [
+        "Bachelor of Mechanical Engineering",
+        "BEng Mechanical Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "A four-year undergraduate engineering degree covering engineering mechanics, thermodynamics, fluid mechanics, heat transfer, machine design, manufacturing processes and control systems. Teaching is built around workshop practice, thermal and materials laboratories, computer-aided design and a final-year project. Graduates move into manufacturing, automotive, energy, thermal and design roles, or continue to a master's specialisation such as thermal engineering or machine design.",
+      "metaTitle": "B.E./B.Tech Mechanical: Course, Fees and Admission",
+      "metaDescription": "What a four-year B.E./B.Tech Mechanical degree covers, its entry requirements, how admission is decided and what tuition and duration to plan for."
+    },
+    {
+      "slug": "be-btech-data-science",
+      "name": "B.E./B.Tech in Data Science",
+      "shortName": "B.E./B.Tech Data Science",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "data-science",
+      "aliases": [
+        "Bachelor of Data Science",
+        "BSc Data Science"
+      ],
+      "displayOrder": 33,
+      "durationYears": 3,
+      "summary": "Compare undergraduate Data Science degrees abroad by statistics, machine learning, data engineering, applied projects, tuition and admissions. Each university offering keeps its official award title, artificial-intelligence specialisation depth and entry requirements visible before applying.",
+      "metaTitle": "B.E./B.Tech Data Science Abroad | Fees",
+      "metaDescription": "Compare B.E./B.Tech Data Science programmes abroad by curriculum, tuition fees, admissions and practical training."
+    },
+    {
+      "slug": "mca",
+      "name": "Master of Computer Applications",
+      "shortName": "MCA",
+      "stream": "computing-information-systems",
+      "level": "masters",
+      "discipline": "computer-applications",
+      "aliases": [
+        "M.C.A.",
+        "Master in Computer Applications"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "The Master of Computer Applications is a two-year postgraduate degree in applied computing, open to graduates who have studied computing or mathematics at undergraduate level. Study covers advanced programming, algorithms, database management, software engineering, computer networks and web technologies, with electives such as machine learning, cloud computing, data analytics and cyber security, and usually a major project or industry internship. Graduates typically work as software developers, systems analysts or IT consultants, and some continue to doctoral research in computer applications.",
+      "metaTitle": "MCA (Master of Computer Applications) Programmes",
+      "metaDescription": "Compare MCA programmes open to international students: eligibility, specialisations, project work, duration, tuition and intake timing."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "sardar-raja-college-of-engineering",
+      "name": "Sardar Raja College of Engineering",
+      "city": "Alangulam",
+      "type": "Private",
+      "establishedYear": 2000,
+      "officialWebsite": "https://src.org.in/",
+      "mediaAttribution": {},
+      "summary": "Sardar Raja College of Engineering (SRCE) is a private, self-financing engineering college founded in 2000 at Alangulam in Tenkasi district, Tamil Nadu. It is not a university: it is a non-autonomous college affiliated to Anna University, Chennai, which awards its degrees, and its courses are AICTE-approved. It teaches six B.E. branches, a B.Tech in AI and Data Science, and the MCA in English.",
+      "campusLifestyle": "SRCE's 2026-27 Anna University filing records 16.89 acres at Adaikalapattinam, 40,500 sq m of buildings, a 1,000 sq m library with 40,006 volumes, about 100 networked terminals in the central computing facility, a 5,000 sq m playground, a gymnasium and a 1,000-seat auditorium. The library has subscribed to DELNET since 2003 and carries IEEE journals. Anna University records show about 500 students across all years in 2025-26. The college enforces a dress code and needs 75 per cent attendance to sit university exams.",
+      "cityProfile": "The campus is at Raja Nagar, Adaikalapattinam, in Alangulam taluk of Tenkasi district, beside the Tenkasi-Tirunelveli highway. The college's Anna University filing describes the site as rural. TNEA's 2026 college guide puts it 19 km from the district headquarters at Tenkasi, with Pavoorchatram the nearest railway station, 10 km away. The college runs its own buses, priced at INR 7,500 to 25,000 a year by route. Older AICTE records still give the district as Tirunelveli, from which Tenkasi district was formed.",
+      "practicalExposure": "Teaching follows Anna University's curricula and regulations: the university sets the syllabus and conducts end-semester exams, and the college runs internal assessments (three tests per course). AICTE's 2026-27 approval makes an internship mandatory for every admitted student, and Anna University's 2025 regulations give one credit for each two weeks of internship. SRCE's 2026-27 filing lists department laboratories such as Surveying and Levelling, Hydraulic Engineering, Soil Mechanics and Highway Engineering (Civil), Cryptography and Cyber Security (CSE Cyber Security), Electrical Machines I and II and Power laboratories (EEE), and Cloud Computing and Security laboratories (CSE). A training and placement cell is led by a CSE faculty member. In 2026 the college ran a six-day employability course with the Mahindra Pride Classroom of the Naandi Foundation, a GATE awareness session and department visits including an EEE trip to a TNEB substation in Tirunelveli.",
+      "hostelOverview": "SRCE has its own on-campus hostels: St Joseph Hostel for men and Sophia Raja Ladies Hostel for women, each with 20 three-seat rooms for 60 residents. In 2025-26 they housed 17 men and 6 women. TNEA's 2026 college guide lists room rent at INR 10,000 a year and mess at INR 40,000 a year for both hostels, with no caution deposit or establishment charge. Each hostel has its own kitchen, dining hall and reading room, and the hostel block includes a medical room, a canteen and an indoor games hall.",
+      "dietarySupport": "The hostel messes serve both vegetarian and non-vegetarian food, according to TNEA's 2026 college guide. The campus has a 300 sq m cafeteria, and drinking water is supplied through coolers on campus. The campus also has a bank extension counter or post facility and a stationery and reprography store. Specific regional or religious diets are not documented, so ask the hostel wardens before joining.",
+      "safetyOverview": "SRCE has an anti-ragging committee and squad, and its listed anti-ragging phone is 8220077054. The college reports ragging to Anna University and the police. Each hostel has a warden, and the campus has CCTV coverage. Smoking, alcohol and harassment are banned under the college's student rules.",
+      "studentSupport": "A health centre is staffed by an MBBS doctor, and students are covered by group insurance. A counselling centre gives career guidance, and grievances can be filed through the college's online grievance form. Eligible TNEA entrants can claim the First Graduate concession, the AICTE Tuition Fee Waiver or the Post-Matric Scholarship. Contact: srce@src.org.in or 82200 77052.",
+      "whyChoose": [
+        "AICTE has approved all seven B.E./B.Tech branches and the MCA for 2026-27, and each leads to an Anna University, Chennai degree",
+        "TNEA entrants can use state concessions: First Graduate tuition concession, AICTE Tuition Fee Waiver on up to 5 per cent of seats for family income under INR 8 lakh, and Post-Matric Scholarship for SC/SCA/ST",
+        "On-campus hostels charge INR 10,000 a year for a room and INR 40,000 for mess, according to TNEA's 2026 guide, and college buses cost INR 7,500 to 25,000 a year",
+        "Computing options include B.E. CSE (since 2000), B.Tech AI and Data Science (since 2022) and B.E. CSE (Cyber Security) (since 2025)",
+        "Small cohorts: Anna University records show 156 first-year students across all eight programmes in 2025-26"
+      ],
+      "thingsToConsider": [
+        "SRCE is an affiliated college, not a university. Anna University sets the syllabus, holds the end-semester exams and awards the degree, and the college is not autonomous",
+        "There are no seats for international students. AICTE's 2026-27 approval shows no NRI or foreign-national seats, and TNEA admits only Indian nationals and Tamil Nadu-native OCI/PIO card holders",
+        "No programme is NBA-accredited. The college reports no NAAC grade in its 2026-27 Anna University filing and has no NIRF rank",
+        "Some branches have very few students: Anna University records show 1 first-year Civil student and 9 first-year Mechanical students in 2025-26. AICTE also cut several M.E. intakes after five years of low admissions",
+        "AICTE approves seven M.E. programmes, but they are missing from the college's 2026-27 Anna University affiliation filing and are not listed here. Confirm any M.E. admission in writing",
+        "The college publishes no tuition fees. Government-quota fees at self-financing colleges are set by the Tamil Nadu fee committee, and management-quota fees are quoted only on request"
+      ],
+      "bestFitFor": [
+        "Tamil Nadu applicants using TNEA who want an Anna University B.E. or B.Tech near Tenkasi and Tirunelveli",
+        "Students who want a small, rural campus with on-site hostels and college transport in Tenkasi district",
+        "Graduates with a TANCET score who want a two-year Anna University MCA in south Tamil Nadu"
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "AICTE - Extension of Approval 2026-27, Permanent ID 1-2894011 (Private-Self Financing)",
+        "Anna University, Chennai - Affiliated non-autonomous college, examination code 9527",
+        "DoTE Tamil Nadu - TNEA 2026 participating college, counselling code 4968"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "AICTE - Approved institutes dashboard",
+          "url": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved"
+        },
+        {
+          "label": "Anna University CAI - Affiliated colleges, Tenkasi district",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Tenkasi.php"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+          "url": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Sardar Raja College of Engineering a university?",
+          "answer": "No. SRCE is a private, self-financing engineering college run by the Raja Educational and Charitable Trust. It is affiliated to Anna University, Chennai, and is not autonomous, so Anna University sets the curriculum, conducts the end-semester exams and awards the B.E., B.Tech or MCA degree. AICTE approves its courses each year; the 2026-27 approval is dated 13 May 2026."
+        },
+        {
+          "question": "Can international students or NRIs apply to SRCE?",
+          "answer": "Not on student visas. AICTE's 2026-27 approval for SRCE shows no NRI or international-student seats for any course. TNEA, which fills the government-quota B.E./B.Tech seats, is for Indian nationals. OCI and PIO card holders who are natives of Tamil Nadu may join under open competition, unless they were born abroad after 4 March 2021."
+        },
+        {
+          "question": "Which programmes does SRCE offer in 2026-27?",
+          "answer": "Anna University affiliation and TNEA 2026 cover seven undergraduate programmes: B.E. Civil, Computer Science and Engineering, CSE (Cyber Security), Electrical and Electronics, Electronics and Communication, and Mechanical Engineering, plus a B.Tech in Artificial Intelligence and Data Science. There is also a two-year MCA. AICTE also lists seven M.E. programmes, but they are not in the college's 2026-27 Anna University filing."
+        },
+        {
+          "question": "How do I get a B.E. or B.Tech seat at SRCE?",
+          "answer": "Most seats are filled through TNEA, the Tamil Nadu single-window counselling run by DoTE. You register at tneaonline.org, upload your certificates, receive a rank based on Mathematics (100), Physics (50) and Chemistry (50), and choose college code 4968 during counselling. In 2026, registration closed on 5 June and general counselling ran from 20 July to 30 August. Management-quota seats are applied for directly with the college."
+        },
+        {
+          "question": "What marks do I need for B.E./B.Tech admission?",
+          "answer": "You need a pass in HSC (Class 11 and 12) with Mathematics, Physics and Chemistry, averaging at least 45 per cent for the General category or 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST candidates. A vocational HSC route with an engineering subject is also accepted. There is no entrance exam for TNEA."
+        },
+        {
+          "question": "What does it cost to study at SRCE?",
+          "answer": "SRCE does not publish its tuition, and TNEA's 2026 guide gives no tuition for the college. Government-quota fees at Tamil Nadu self-financing colleges are fixed by the state fee committee, and management-quota fees are quoted by the college on request. TNEA does list living costs: hostel room INR 10,000 a year, mess INR 40,000 a year and college bus INR 7,500 to 25,000 a year."
+        },
+        {
+          "question": "Are there fee concessions or scholarships?",
+          "answer": "TNEA entrants can apply for the First Graduate tuition concession, which covers self-financing colleges. The AICTE Tuition Fee Waiver covers up to 5 per cent of B.E./B.Tech seats for families earning under INR 8 lakh a year. SC/SCA/ST candidates with family income under INR 2.5 lakh can get the Post-Matric Scholarship. All are claimed in the TNEA application with e-certificates."
+        },
+        {
+          "question": "How do I join the MCA?",
+          "answer": "Take TANCET, Anna University's entrance test for MCA and MBA. The 2026 MCA test was on 9 May. You need a three-year bachelor's degree in BCA, B.Sc. IT or Computer Science, or any degree with Mathematics at Class 12 or degree level, with 50 per cent marks (45 per cent for reserved Tamil Nadu categories). SRCE did not offer MCA seats in the 2026 state counselling, so apply to the college directly."
+        },
+        {
+          "question": "When do classes start?",
+          "answer": "Anna University's calendar for non-autonomous affiliated colleges starts first-semester B.E./B.Tech and MCA classes on 2 September 2026. The last working day of the semester is 17 December, and end-semester exams begin on 22 December 2026. There is one intake a year."
+        },
+        {
+          "question": "What is the teaching language?",
+          "answer": "English. Anna University's 2025 regulations for affiliated colleges make English the medium of instruction for all B.E./B.Tech, M.E./M.Tech, MCA and MBA programmes. Tamil-medium sections of Civil and Mechanical Engineering exist in the university system but are not listed for SRCE."
+        },
+        {
+          "question": "Is accommodation available?",
+          "answer": "Yes. SRCE has separate on-campus hostels for men (St Joseph Hostel) and women (Sophia Raja Ladies Hostel), each with 60 places in three-seat rooms. TNEA's 2026 guide lists room rent at INR 10,000 a year and mess at INR 40,000 a year, with vegetarian and non-vegetarian food."
+        },
+        {
+          "question": "Is SRCE accredited by NBA or NAAC?",
+          "answer": "No. TNEA's 2026 college guide marks every SRCE branch as not NBA-accredited. The college's 2026-27 Anna University filing lists only AICTE approval, with no NAAC grade and no NIRF rank. Its recognition comes from AICTE approval and Anna University affiliation."
+        },
+        {
+          "question": "Is SRCE part of a larger education group?",
+          "answer": "SRCE was founded by Dr. S.A. Raja and calls itself the third engineering college of the Rajas group. It is run by its own trust, the Raja Educational and Charitable Trust, chaired by Er. A. Jesus Raja. Its degrees are Anna University degrees, not degrees of any group-run private university."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "AICTE - Extension of Approval 2026-27 (SRCE)",
+          "url": "https://src.org.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "AICTE - Approved institutes dashboard",
+          "url": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+          "kind": "recognition",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "Anna University CAI - SRCE Institution Application 2026-27",
+          "url": "https://src.org.in/wp-content/uploads/2026/05/sardar-raja-college-of-engineering-2026-2027.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "Anna University CAI - Tenkasi district affiliated colleges",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Tenkasi.php",
+          "kind": "recognition",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+          "url": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+          "url": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "Anna University - TANCET 2026 Information Brochure",
+          "url": "https://tancet.annauniv.edu/tancet/Information%20Brochure%202026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+          "url": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "Anna University - Academic Regulations 2025 (PG, affiliated)",
+          "url": "https://cac.annauniv.edu/aidetails/reg/R2025/PG%20Regulations%202025.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "Anna University - Affiliated colleges academic calendar Sep-Dec 2026",
+          "url": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "SRCE - Official website",
+          "url": "https://src.org.in/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-22"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "research_ready",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "published",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my SRCE eligibility",
+            "capture": [
+              "nationality and Tamil Nadu nativity or schooling",
+              "Class 12 board and MPC marks",
+              "community category",
+              "intended branch"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Estimate my SRCE fees and hostel cost",
+            "capture": [
+              "intended branch",
+              "TNEA or management quota",
+              "hostel and transport needs",
+              "concession eligibility"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my TNEA choices for SRCE",
+            "capture": [
+              "TNEA rank or expected cut-off",
+              "preferred branches",
+              "document readiness"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "sardar-raja-be-civil-engineering",
+          "canonicalCourseSlug": "be-btech-civil-engineering",
+          "officialTitle": "B.E. Civil Engineering, Sardar Raja College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-22",
+            "notes": "SRCE publishes no tuition figure for this programme (official website checked 22 October 2026), and neither the TNEA 2026 brochure nor its college booklet prints college-wise tuition, so tuition is on request from srce@src.org.in or 82200 77052. Government-quota tuition at Tamil Nadu self-financing engineering colleges is fixed by the state fee committee and paid when a TNEA allotment is confirmed. TNEA 2026 lists SRCE hostel room rent at INR 10,000 and mess at INR 40,000 a year, and college transport at INR 7,500 to 25,000 a year."
+          },
+          "officialProgramUrl": "https://src.org.in/civil-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows no NRI or international-student seats for this programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category.",
+              "Anna University COE records show only 1 first-year Civil student in 2025-26; ask the college about current batch size before choosing it."
+            ],
+            "notes": "Indian applicants enter through TNEA 2026 (college code 4968, branch code CE) or the college's management quota. AICTE approves an intake of 30 for 2026-27.",
+            "verifiedAt": "2026-10-22",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Civil Engineering is a four-year, eight-semester Anna University degree taught in English at SRCE, Alangulam. Most seats are filled through the Tamil Nadu Engineering Admissions (TNEA) single-window counselling on Class 12 marks; the rest are management-quota seats filled by the college. There is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission; Anna University applies the same Government of Tamil Nadu norms to its affiliated colleges.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 4968 with branch CE, then confirm the tentative allotment",
+              "Download the allotment order, report to SRCE within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to SRCE through its admission form or at srce@src.org.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University starts first-semester classes at affiliated colleges on 2 September 2026.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 85000,
+              "status": "indicative",
+              "period": "academic_year",
+              "componentBasis": "Third-party CollegeBatch listing for SRCE (Tirunelveli) names Civil Engineering under Bachelor of Engineering [B.E] (4 years, full time) at Rs. 85,000/- per year and Rs. 3.4 Lakh Total Fees. Recorded as the stated yearly fee; not an official college or fee-committee tariff; quota, components and exclusions unstated.",
+              "audience": "domestic",
+              "category": "Reported general B.E. fee; TNEA government-quota versus management-quota basis not stated",
+              "academicYear": "Unstated; listing titled 2026",
+              "sourceUrl": "https://www.collegebatch.com/4088-sardar-raja-college-of-engineering-fees-structure-courses-tirunelveli",
+              "sourceLabel": "CollegeBatch Sardar Raja College of Engineering fees and courses 2026 listing (Grade C)",
+              "verifiedAt": "2026-10-26"
+            }
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-22",
+          "feeNotes": "SRCE publishes no tuition figure for this programme (official website checked 22 October 2026), and neither the TNEA 2026 brochure nor its college booklet prints college-wise tuition, so tuition is on request from srce@src.org.in or 82200 77052. Government-quota tuition at Tamil Nadu self-financing engineering colleges is fixed by the state fee committee and paid when a TNEA allotment is confirmed. TNEA 2026 lists SRCE hostel room rent at INR 10,000 and mess at INR 40,000 a year, and college transport at INR 7,500 to 25,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's Civil curriculum with the college's Surveying and Levelling, Hydraulic Engineering, Materials Testing, Soil Mechanics, Highway Engineering and Water and Wastewater Analysis laboratories, plus building drawing and detailing. Anna University sets the syllabus and end-semester exams; internship is mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "sardar-raja-be-computer-science-engineering",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "B.E. Computer Science and Engineering, Sardar Raja College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-22",
+            "notes": "SRCE publishes no tuition figure for this programme (official website checked 22 October 2026), and neither the TNEA 2026 brochure nor its college booklet prints college-wise tuition, so tuition is on request from srce@src.org.in or 82200 77052. Government-quota tuition at Tamil Nadu self-financing engineering colleges is fixed by the state fee committee and paid when a TNEA allotment is confirmed. TNEA 2026 lists SRCE hostel room rent at INR 10,000 and mess at INR 40,000 a year, and college transport at INR 7,500 to 25,000 a year."
+          },
+          "officialProgramUrl": "https://src.org.in/computer-science-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows no NRI or international-student seats for this programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "Indian applicants enter through TNEA 2026 (college code 4968, branch code CS) or the college's management quota. AICTE approves an intake of 60 for 2026-27.",
+            "verifiedAt": "2026-10-22",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Computer Science and Engineering is a four-year, eight-semester Anna University degree taught in English at SRCE, Alangulam. Most seats are filled through the Tamil Nadu Engineering Admissions (TNEA) single-window counselling on Class 12 marks; the rest are management-quota seats filled by the college. There is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission; Anna University applies the same Government of Tamil Nadu norms to its affiliated colleges.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 4968 with branch CS, then confirm the tentative allotment",
+              "Download the allotment order, report to SRCE within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to SRCE through its admission form or at srce@src.org.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University starts first-semester classes at affiliated colleges on 2 September 2026.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 85000,
+              "status": "indicative",
+              "period": "academic_year",
+              "componentBasis": "Third-party CollegeBatch listing for SRCE (Tirunelveli) names Computer Science & Engineering under Bachelor of Engineering [B.E] (4 years, full time) at Rs. 85,000/- per year and Rs. 3.4 Lakh Total Fees. Recorded as the stated yearly fee; not an official college or fee-committee tariff; quota, components and exclusions unstated.",
+              "audience": "domestic",
+              "category": "Reported general B.E. fee; TNEA government-quota versus management-quota basis not stated",
+              "academicYear": "Unstated; listing titled 2026",
+              "sourceUrl": "https://www.collegebatch.com/4088-sardar-raja-college-of-engineering-fees-structure-courses-tirunelveli",
+              "sourceLabel": "CollegeBatch Sardar Raja College of Engineering fees and courses 2026 listing (Grade C)",
+              "verifiedAt": "2026-10-26"
+            }
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-22",
+          "feeNotes": "SRCE publishes no tuition figure for this programme (official website checked 22 October 2026), and neither the TNEA 2026 brochure nor its college booklet prints college-wise tuition, so tuition is on request from srce@src.org.in or 82200 77052. Government-quota tuition at Tamil Nadu self-financing engineering colleges is fixed by the state fee committee and paid when a TNEA allotment is confirmed. TNEA 2026 lists SRCE hostel room rent at INR 10,000 and mess at INR 40,000 a year, and college transport at INR 7,500 to 25,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's CSE curriculum with programming in C, data structures, data science, operating systems, database management, cloud computing and security laboratories. Anna University sets the syllabus and end-semester exams; internship is mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "sardar-raja-be-cse-cyber-security",
+          "canonicalCourseSlug": "be-btech-cyber-security",
+          "officialTitle": "B.E. Computer Science and Engineering (Cyber Security), Sardar Raja College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-22",
+            "notes": "SRCE publishes no tuition figure for this programme (official website checked 22 October 2026), and neither the TNEA 2026 brochure nor its college booklet prints college-wise tuition, so tuition is on request from srce@src.org.in or 82200 77052. Government-quota tuition at Tamil Nadu self-financing engineering colleges is fixed by the state fee committee and paid when a TNEA allotment is confirmed. TNEA 2026 lists SRCE hostel room rent at INR 10,000 and mess at INR 40,000 a year, and college transport at INR 7,500 to 25,000 a year."
+          },
+          "officialProgramUrl": "https://src.org.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows no NRI or international-student seats for this programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category.",
+              "The programme started in 2025; its first batch has not graduated. The college website does not yet list it, but AICTE, Anna University and TNEA 2026 do."
+            ],
+            "notes": "Indian applicants enter through TNEA 2026 (college code 4968, branch code SC) or the college's management quota. AICTE approves an intake of 60 for 2026-27.",
+            "verifiedAt": "2026-10-22",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Computer Science and Engineering (Cyber Security) is a four-year, eight-semester Anna University degree taught in English at SRCE, Alangulam. Most seats are filled through the Tamil Nadu Engineering Admissions (TNEA) single-window counselling on Class 12 marks; the rest are management-quota seats filled by the college. There is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission; Anna University applies the same Government of Tamil Nadu norms to its affiliated colleges.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 4968 with branch SC, then confirm the tentative allotment",
+              "Download the allotment order, report to SRCE within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to SRCE through its admission form or at srce@src.org.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University starts first-semester classes at affiliated colleges on 2 September 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-22",
+          "feeNotes": "SRCE publishes no tuition figure for this programme (official website checked 22 October 2026), and neither the TNEA 2026 brochure nor its college booklet prints college-wise tuition, so tuition is on request from srce@src.org.in or 82200 77052. Government-quota tuition at Tamil Nadu self-financing engineering colleges is fixed by the state fee committee and paid when a TNEA allotment is confirmed. TNEA 2026 lists SRCE hostel room rent at INR 10,000 and mess at INR 40,000 a year, and college transport at INR 7,500 to 25,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's CSE (Cyber Security) curriculum with cryptography and cyber security, database management and security, data structures and algorithms, computer networks and data science laboratories. Anna University sets the syllabus and end-semester exams; internship is mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "sardar-raja-be-electrical-electronics-engineering",
+          "canonicalCourseSlug": "be-btech-electrical-electronics-engineering",
+          "officialTitle": "B.E. Electrical and Electronics Engineering, Sardar Raja College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-22",
+            "notes": "SRCE publishes no tuition figure for this programme (official website checked 22 October 2026), and neither the TNEA 2026 brochure nor its college booklet prints college-wise tuition, so tuition is on request from srce@src.org.in or 82200 77052. Government-quota tuition at Tamil Nadu self-financing engineering colleges is fixed by the state fee committee and paid when a TNEA allotment is confirmed. TNEA 2026 lists SRCE hostel room rent at INR 10,000 and mess at INR 40,000 a year, and college transport at INR 7,500 to 25,000 a year."
+          },
+          "officialProgramUrl": "https://src.org.in/electrical-and-electronics-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows no NRI or international-student seats for this programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "Indian applicants enter through TNEA 2026 (college code 4968, branch code EE) or the college's management quota. AICTE approves an intake of 30 for 2026-27.",
+            "verifiedAt": "2026-10-22",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Electrical and Electronics Engineering is a four-year, eight-semester Anna University degree taught in English at SRCE, Alangulam. Most seats are filled through the Tamil Nadu Engineering Admissions (TNEA) single-window counselling on Class 12 marks; the rest are management-quota seats filled by the college. There is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission; Anna University applies the same Government of Tamil Nadu norms to its affiliated colleges.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 4968 with branch EE, then confirm the tentative allotment",
+              "Download the allotment order, report to SRCE within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to SRCE through its admission form or at srce@src.org.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University starts first-semester classes at affiliated colleges on 2 September 2026.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 85000,
+              "status": "indicative",
+              "period": "academic_year",
+              "componentBasis": "Third-party CollegeBatch listing for SRCE (Tirunelveli) names Electrical and Electronics Engineering under Bachelor of Engineering [B.E] (4 years, full time) at Rs. 85,000/- per year and Rs. 3.4 Lakh Total Fees. Recorded as the stated yearly fee; not an official college or fee-committee tariff; quota, components and exclusions unstated.",
+              "audience": "domestic",
+              "category": "Reported general B.E. fee; TNEA government-quota versus management-quota basis not stated",
+              "academicYear": "Unstated; listing titled 2026",
+              "sourceUrl": "https://www.collegebatch.com/4088-sardar-raja-college-of-engineering-fees-structure-courses-tirunelveli",
+              "sourceLabel": "CollegeBatch Sardar Raja College of Engineering fees and courses 2026 listing (Grade C)",
+              "verifiedAt": "2026-10-26"
+            }
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-22",
+          "feeNotes": "SRCE publishes no tuition figure for this programme (official website checked 22 October 2026), and neither the TNEA 2026 brochure nor its college booklet prints college-wise tuition, so tuition is on request from srce@src.org.in or 82200 77052. Government-quota tuition at Tamil Nadu self-financing engineering colleges is fixed by the state fee committee and paid when a TNEA allotment is confirmed. TNEA 2026 lists SRCE hostel room rent at INR 10,000 and mess at INR 40,000 a year, and college transport at INR 7,500 to 25,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's EEE curriculum with electric circuits, electronic devices and circuits, two electrical machines laboratories, linear and digital circuits, microprocessor and microcontroller, and power laboratories. Anna University sets the syllabus and end-semester exams; internship is mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "sardar-raja-be-electronics-communication-engineering",
+          "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+          "officialTitle": "B.E. Electronics and Communication Engineering, Sardar Raja College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-22",
+            "notes": "SRCE publishes no tuition figure for this programme (official website checked 22 October 2026), and neither the TNEA 2026 brochure nor its college booklet prints college-wise tuition, so tuition is on request from srce@src.org.in or 82200 77052. Government-quota tuition at Tamil Nadu self-financing engineering colleges is fixed by the state fee committee and paid when a TNEA allotment is confirmed. TNEA 2026 lists SRCE hostel room rent at INR 10,000 and mess at INR 40,000 a year, and college transport at INR 7,500 to 25,000 a year."
+          },
+          "officialProgramUrl": "https://src.org.in/electronics-and-communication-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows no NRI or international-student seats for this programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "Indian applicants enter through TNEA 2026 (college code 4968, branch code EC) or the college's management quota. AICTE approves an intake of 30 for 2026-27.",
+            "verifiedAt": "2026-10-22",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Electronics and Communication Engineering is a four-year, eight-semester Anna University degree taught in English at SRCE, Alangulam. Most seats are filled through the Tamil Nadu Engineering Admissions (TNEA) single-window counselling on Class 12 marks; the rest are management-quota seats filled by the college. There is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission; Anna University applies the same Government of Tamil Nadu norms to its affiliated colleges.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 4968 with branch EC, then confirm the tentative allotment",
+              "Download the allotment order, report to SRCE within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to SRCE through its admission form or at srce@src.org.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University starts first-semester classes at affiliated colleges on 2 September 2026.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 85000,
+              "status": "indicative",
+              "period": "academic_year",
+              "componentBasis": "Third-party CollegeBatch listing for SRCE (Tirunelveli) names Electronics & Communication Engineering under Bachelor of Engineering [B.E] (4 years, full time) at Rs. 85,000/- per year and Rs. 3.4 Lakh Total Fees. Recorded as the stated yearly fee; not an official college or fee-committee tariff; quota, components and exclusions unstated.",
+              "audience": "domestic",
+              "category": "Reported general B.E. fee; TNEA government-quota versus management-quota basis not stated",
+              "academicYear": "Unstated; listing titled 2026",
+              "sourceUrl": "https://www.collegebatch.com/4088-sardar-raja-college-of-engineering-fees-structure-courses-tirunelveli",
+              "sourceLabel": "CollegeBatch Sardar Raja College of Engineering fees and courses 2026 listing (Grade C)",
+              "verifiedAt": "2026-10-26"
+            }
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-22",
+          "feeNotes": "SRCE publishes no tuition figure for this programme (official website checked 22 October 2026), and neither the TNEA 2026 brochure nor its college booklet prints college-wise tuition, so tuition is on request from srce@src.org.in or 82200 77052. Government-quota tuition at Tamil Nadu self-financing engineering colleges is fixed by the state fee committee and paid when a TNEA allotment is confirmed. TNEA 2026 lists SRCE hostel room rent at INR 10,000 and mess at INR 40,000 a year, and college transport at INR 7,500 to 25,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's ECE curriculum covering electronic circuits, devices, communication systems, embedded systems and programming, with the department's electronic devices and communication systems laboratories. Anna University sets the syllabus and end-semester exams; internship is mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "sardar-raja-be-mechanical-engineering",
+          "canonicalCourseSlug": "be-btech-mechanical-engineering",
+          "officialTitle": "B.E. Mechanical Engineering, Sardar Raja College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-22",
+            "notes": "SRCE publishes no tuition figure for this programme (official website checked 22 October 2026), and neither the TNEA 2026 brochure nor its college booklet prints college-wise tuition, so tuition is on request from srce@src.org.in or 82200 77052. Government-quota tuition at Tamil Nadu self-financing engineering colleges is fixed by the state fee committee and paid when a TNEA allotment is confirmed. TNEA 2026 lists SRCE hostel room rent at INR 10,000 and mess at INR 40,000 a year, and college transport at INR 7,500 to 25,000 a year."
+          },
+          "officialProgramUrl": "https://src.org.in/mechanical-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows no NRI or international-student seats for this programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category.",
+              "Anna University COE records show 9 first-year and no second-year Mechanical students in 2025-26; ask the college about current batch size."
+            ],
+            "notes": "Indian applicants enter through TNEA 2026 (college code 4968, branch code ME) or the college's management quota. AICTE approves an intake of 30 for 2026-27.",
+            "verifiedAt": "2026-10-22",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Mechanical Engineering is a four-year, eight-semester Anna University degree taught in English at SRCE, Alangulam. Most seats are filled through the Tamil Nadu Engineering Admissions (TNEA) single-window counselling on Class 12 marks; the rest are management-quota seats filled by the college. There is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission; Anna University applies the same Government of Tamil Nadu norms to its affiliated colleges.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 4968 with branch ME, then confirm the tentative allotment",
+              "Download the allotment order, report to SRCE within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to SRCE through its admission form or at srce@src.org.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University starts first-semester classes at affiliated colleges on 2 September 2026.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 85000,
+              "status": "indicative",
+              "period": "academic_year",
+              "componentBasis": "Third-party CollegeBatch listing for SRCE (Tirunelveli) names Mechanical Engineering under Bachelor of Engineering [B.E] (4 years, full time) at Rs. 85,000/- per year and Rs. 3.4 Lakh Total Fees. Recorded as the stated yearly fee; not an official college or fee-committee tariff; quota, components and exclusions unstated.",
+              "audience": "domestic",
+              "category": "Reported general B.E. fee; TNEA government-quota versus management-quota basis not stated",
+              "academicYear": "Unstated; listing titled 2026",
+              "sourceUrl": "https://www.collegebatch.com/4088-sardar-raja-college-of-engineering-fees-structure-courses-tirunelveli",
+              "sourceLabel": "CollegeBatch Sardar Raja College of Engineering fees and courses 2026 listing (Grade C)",
+              "verifiedAt": "2026-10-26"
+            }
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-22",
+          "feeNotes": "SRCE publishes no tuition figure for this programme (official website checked 22 October 2026), and neither the TNEA 2026 brochure nor its college booklet prints college-wise tuition, so tuition is on request from srce@src.org.in or 82200 77052. Government-quota tuition at Tamil Nadu self-financing engineering colleges is fixed by the state fee committee and paid when a TNEA allotment is confirmed. TNEA 2026 lists SRCE hostel room rent at INR 10,000 and mess at INR 40,000 a year, and college transport at INR 7,500 to 25,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's Mechanical curriculum covering thermodynamics, solid mechanics, manufacturing and design; the department runs student renewable-energy fabrication activities. Anna University sets the syllabus and end-semester exams; internship is mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "sardar-raja-btech-artificial-intelligence-data-science",
+          "canonicalCourseSlug": "be-btech-data-science",
+          "officialTitle": "B.Tech. Artificial Intelligence and Data Science, Sardar Raja College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-22",
+            "notes": "SRCE publishes no tuition figure for this programme (official website checked 22 October 2026), and neither the TNEA 2026 brochure nor its college booklet prints college-wise tuition, so tuition is on request from srce@src.org.in or 82200 77052. Government-quota tuition at Tamil Nadu self-financing engineering colleges is fixed by the state fee committee and paid when a TNEA allotment is confirmed. TNEA 2026 lists SRCE hostel room rent at INR 10,000 and mess at INR 40,000 a year, and college transport at INR 7,500 to 25,000 a year."
+          },
+          "officialProgramUrl": "https://src.org.in/artificial-intelligence-and-data-science/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows no NRI or international-student seats for this programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "Indian applicants enter through TNEA 2026 (college code 4968, branch code AD) or the college's management quota. AICTE approves an intake of 60 for 2026-27.",
+            "verifiedAt": "2026-10-22",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.Tech. Artificial Intelligence and Data Science is a four-year, eight-semester Anna University degree taught in English at SRCE, Alangulam. Most seats are filled through the Tamil Nadu Engineering Admissions (TNEA) single-window counselling on Class 12 marks; the rest are management-quota seats filled by the college. There is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission; Anna University applies the same Government of Tamil Nadu norms to its affiliated colleges.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 4968 with branch AD, then confirm the tentative allotment",
+              "Download the allotment order, report to SRCE within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to SRCE through its admission form or at srce@src.org.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University starts first-semester classes at affiliated colleges on 2 September 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-22",
+          "feeNotes": "SRCE publishes no tuition figure for this programme (official website checked 22 October 2026), and neither the TNEA 2026 brochure nor its college booklet prints college-wise tuition, so tuition is on request from srce@src.org.in or 82200 77052. Government-quota tuition at Tamil Nadu self-financing engineering colleges is fixed by the state fee committee and paid when a TNEA allotment is confirmed. TNEA 2026 lists SRCE hostel room rent at INR 10,000 and mess at INR 40,000 a year, and college transport at INR 7,500 to 25,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's B.Tech AI and Data Science curriculum covering machine learning, artificial intelligence, data processing, analysis and visualisation. Anna University sets the syllabus and end-semester exams; internship is mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "sardar-raja-mca",
+          "canonicalCourseSlug": "mca",
+          "officialTitle": "Master of Computer Applications (M.C.A.), Sardar Raja College of Engineering",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-22",
+            "notes": "SRCE publishes no MCA tuition figure (official website checked 22 October 2026) and did not offer MCA seats in the 2026 state MBA/MCA counselling, so tuition is on request from srce@src.org.in or 82200 77052. Fees for self-financing professional colleges in Tamil Nadu are fixed by the state fee committee. TNEA 2026 lists SRCE hostel room rent at INR 10,000 and mess at INR 40,000 a year, and college transport at INR 7,500 to 25,000 a year."
+          },
+          "officialProgramUrl": "https://src.org.in/mca/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian graduates who meet the TANCET 2026 MCA eligibility rules",
+              "Indian graduates applying directly to the college"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows no international-student seats for the MCA, so foreign nationals cannot be admitted on a student visa.",
+              "SRCE did not offer MCA seats in the 2026 Tamil Nadu MBA/MCA single-window counselling; admission is by direct application to the college."
+            ],
+            "notes": "AICTE approves an MCA intake of 30 for 2026-27; Anna University COE records show 20 first-year MCA students in 2025-26.",
+            "verifiedAt": "2026-10-22",
+            "sourceUrl": "https://src.org.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The M.C.A. at SRCE is a two-year, four-semester Anna University degree taught in English. Tamil Nadu requires TANCET for MCA admission; SRCE did not take part in the 2026 state MCA counselling, so applicants apply to the college directly with their TANCET score and degree results.",
+            "eligibility": {
+              "intro": "TANCET 2026 sets the MCA qualification that Anna University-affiliated colleges admit against.",
+              "items": [
+                "A recognised bachelor's degree of at least three years in BCA or B.Sc. (Information Technology or Computer Science or equivalent)",
+                "Or any recognised three-year bachelor's degree with Mathematics at Class 12 or degree level",
+                "At least 50 per cent in the qualifying degree (45 per cent for Tamil Nadu BC, BCM, MBC, SC, SCA and ST candidates)",
+                "10+2+3, 10 + 3-year diploma + 2/3 years, or AMIE routes with two years' experience are accepted patterns",
+                "Degrees obtained without studying Class 10 and Class 12 or a three-year diploma are not eligible"
+              ]
+            },
+            "applicationSteps": [
+              "Register for TANCET at tancet.annauniv.edu (fee INR 1,000, or INR 500 for Tamil Nadu SC/SCA/ST); the 2026 MCA test was held on 9 May 2026",
+              "Download the TANCET score card",
+              "Contact SRCE at srce@src.org.in or 82200 77052 and complete the college's postgraduate admission form",
+              "Submit degree and school mark sheets with the TANCET score card for verification",
+              "Pay the fees quoted by the college to confirm the seat"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Bachelor's degree certificate and mark sheets for all semesters",
+                "Class 10 and Class 12 (or diploma) mark sheets",
+                "Transfer certificate"
+              ],
+              "application": [
+                "TANCET 2026 MCA score card",
+                "Community certificate where applicable",
+                "Photo ID issued by the State or Central Government"
+              ]
+            },
+            "deadlinesNote": "The 2026 TANCET MCA test was on 9 May 2026 and score cards were downloadable until 26 June 2026. Anna University starts first-semester MCA classes at affiliated colleges on 2 September 2026.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 50000,
+              "status": "indicative",
+              "period": "academic_year",
+              "componentBasis": "Third-party CollegeBatch listing for SRCE (Tirunelveli) names Master of Computer Application [MCA] (listed as 3 years, full time) at Rs. 50,000/- per year and Rs. 1.5 Lakh Total Fees. Recorded as the stated yearly fee only; the listed duration predates the current 2-year MCA, and the figure is not an official college or fee-committee tariff; quota, components and exclusions unstated.",
+              "audience": "domestic",
+              "category": "Reported general MCA fee; quota basis not stated",
+              "academicYear": "Unstated; listing titled 2026",
+              "sourceUrl": "https://www.collegebatch.com/4088-sardar-raja-college-of-engineering-fees-structure-courses-tirunelveli",
+              "sourceLabel": "CollegeBatch Sardar Raja College of Engineering fees and courses 2026 listing (Grade C)",
+              "verifiedAt": "2026-10-26"
+            }
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all M.E., M.Tech, M.C.A. and M.B.A. programmes.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-22",
+          "feeNotes": "SRCE publishes no MCA tuition figure (official website checked 22 October 2026) and did not offer MCA seats in the 2026 state MBA/MCA counselling, so tuition is on request from srce@src.org.in or 82200 77052. Fees for self-financing professional colleges in Tamil Nadu are fixed by the state fee committee. TNEA 2026 lists SRCE hostel room rent at INR 10,000 and mess at INR 40,000 a year, and college transport at INR 7,500 to 25,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-2 (4 semesters)",
+              "language": "English",
+              "details": "Anna University's MCA curriculum in English at SRCE, with 15 networked terminals allotted to the MCA in the central computing facility. Full-time students may not take up any other programme or job during the course."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The University Grants Commission is the statutory body of the Government of India for coordination, determination and maintenance of standards of higher education, operating under the Ministry of Education.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission (UGC) - official site",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "UGC publishes the authoritative lists of Central, State, Deemed-to-be and State Private universities, plus a published list of fake universities. Corroborated by the Study in India portal Indian Higher Education page, which states all institutions are governed by the Ministry of Education."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The All India Council for Technical Education is the Government of India statutory body for technical education, covering engineering, management and allied technical programmes.",
+      "status": "verified",
+      "sourceLabel": "All India Council for Technical Education (AICTE) - official site",
+      "sourceUrl": "https://www.aicte-india.org/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Medical Commission is the Government of India regulator for medical education and medical institutions; medical and dental admission is governed separately from general higher education.",
+      "status": "verified",
+      "sourceLabel": "National Medical Commission (NMC) - official site",
+      "sourceUrl": "https://www.nmc.org.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "India's higher-education landscape includes over 1,100 universities and more than 45,000 colleges, all governed by the Ministry of Education, and higher education begins after 12 years of schooling.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Indian Higher Education",
+      "sourceUrl": "https://www.studyinindia.gov.in/indian-higher-education",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal-published counts are approximate and shift between AISHE cycles; treat them as indicative and re-check at review. Regulator identity is separately verified against UGC and AICTE."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Study in India portal is the Government of India route for international applicants: the applicant registers for a compulsory SII ID, explores participating institutes and courses, submits applications to several institutes from one profile, accepts an offer letter, then applies for a student visa or student e-visa.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - official portal",
+      "sourceUrl": "https://www.studyinindia.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Bureau of Immigration directs foreign nationals who wish to apply to Indian institutes to register under the Study in India scheme, confirming the portal as a government-recognised route rather than a third-party service.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Indian Council for Cultural Relations administers Government of India scholarship schemes for international students at UG, PG and PhD level, including AYUSH streams; applications are handled through the ICCR A2A scholarship portal and the applicant's Indian diplomatic mission.",
+      "status": "verified",
+      "sourceLabel": "ICCR Admissions to Alumni (A2A) Scholarship Portal",
+      "sourceUrl": "https://a2ascholarships.iccr.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal states that applicants should contact the Indian Mission for scholarship updates - eligibility and open cycles are mission-specific and vary by country, so no scheme may be presented as open to all nationalities."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals must obtain a Student Visa to pursue on-campus, full-time structured courses or research at educational institutions recognised by the Government of India. Student (S-3) visas cover yoga, Vedic culture, Indian dance, music and Buddhist studies at approved institutions; Student (S-5) visas cover internships.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals entering India on a Student visa valid for more than 180 days must register with the jurisdictional FRRO or FRO within 14 days of arrival. Pakistani nationals must register within 24 hours. Children under 12 years and OCI cardholders are exempt from registration, and citizens of Nepal and Bhutan are exempt from both visa and registration requirements.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Registration Requirements",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Corroborated by the Study in India Onboarding & FRRO page, which states e-FRRO registration within 14 days of landing. Nationality-dependent rule - never state one universal deadline."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Students on an Indian Student visa must not undertake employment or business activity in India, must open a Non-Resident Ordinary (NRO) account with a recognised Indian bank and furnish the details to the FRRO, and must not enrol in off-campus franchise centres, distance-learning study centres of open universities or outreach programmes.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Directly constrains any work-rights or earn-while-you-study claim on India pages. Do not publish part-time work guidance for India."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "An applicant should possess proof of admission to a full-time regular academic course at a recognised Indian institution and evidence of financial support, and must also hold a No Objection Certificate from the Ministry of Health where the admission is to a medical or paramedical course.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Onboarding & FRRO",
+      "sourceUrl": "https://studyinindia.gov.in/Onboarding-&-FRRO",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The portal adds its own disclaimer that document requirements differ across countries and must be confirmed with the nearest Indian embassy."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Admission for Foreign Nationals, OCIs, PIOs and NRIs to undergraduate engineering, architecture and planning programmes at NITs, IIEST, IIITs, SPAs and other centrally funded technical institutes runs through the Ministry of Education DASA scheme, and for the 2026-27 year admission is on the basis of JEE (Main) 2026. DASA seats are supernumerary and capped at up to 15 per cent of a programme's total seats. IITs are outside the DASA scheme.",
+      "status": "verified",
+      "sourceLabel": "Information Brochure DASA 2026 (UG), Central Seat Allocation Board / Ministry of Education",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The qualifying-exam basis has changed between cycles (SAT in earlier cycles, JEE Main for 2026-27). Never state the accepted exam without naming the admission year. Corroborated by dasanit.org, which describes DASA as an MoE scheme for Foreign Nationals, PIOs, OCIs and NRIs to NITs, CFTIs and other premier technical institutions other than IITs."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Non-Resident Indians, Overseas Citizens of India and Foreign Nationals are eligible to appear in NEET (UG) and are eligible for admission to medical and dental colleges subject to the rules of the respective State Governments, institutions and the Government of India. Foreign applicants must upload documentary proof of nationality with the application and are directed to confirm eligibility with the competent state and counselling authorities.",
+      "status": "verified",
+      "sourceLabel": "Information Bulletin NEET (UG)-2026, National Testing Agency",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602081576322299.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Chapter 6, sections 1-2. No India medical page may present a NEET-free route. Eligibility is explicitly conditional on state and institution rules, so it varies by college."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Assessment and Accreditation Council, established in 1994 as an autonomous institution of the UGC, assesses and accredits Indian higher education institutions. The National Institutional Ranking Framework, launched by the Ministry of Education in September 2015, is the government ranking framework for Indian institutions.",
+      "status": "verified",
+      "sourceLabel": "NAAC - official site",
+      "sourceUrl": "https://www.naac.gov.in/index.php/en/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "NIRF corroborated separately at https://www.nirfindia.org/Home (MoE, launched 29 September 2015). Use a NAAC grade or NIRF rank only with the assessment or ranking year stated."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The UGC publishes a list of fake universities alongside its lists of Central, State, Deemed-to-be and State Private universities, so institutional recognition must be checked against UGC records before an Indian institution is presented as degree-awarding.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - Higher Education Institutions listings",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Operational rule for this catalogue: no Indian university is published without a verifiable UGC listing and, where applicable, AICTE approval or NMC recognition."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "climate",
+      "claimText": "India spans Himalayan, tropical coastal, semi-arid and monsoon-affected climate zones, with the southwest monsoon typically running from June to September.",
+      "status": "indicative",
+      "sourceLabel": "India Meteorological Department, Ministry of Earth Sciences",
+      "sourceUrl": "https://mausam.imd.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "General climatic framing only; do not present city-level weather claims at country level."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "summary",
+      "claimText": "AICTE Extension of Approval 2026-27 (F.No. Southern/1-46258425313/2026/EOA, 13 May 2026) names Sardar Raja College of Engineering, Raja Nagar, Alangulam, permanent ID 1-2894011, institution type Private-Self Financing, year of establishment 2000, trust Raja Educational and Charitable Trust, with every course's affiliating body Anna University, Chennai.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 letter (published by the college)",
+      "sourceUrl": "https://src.org.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "AICTE-generated letter hosted on src.org.in. Cross-checked against the AICTE dashboard approved-institute data for Tamil Nadu 2026-27 (permanent ID 1-2894011, Private-Self Financing)."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "summary",
+      "claimText": "Anna University's Centre for Affiliation of Institutions lists Sardar Raja College of Engineering among affiliated colleges in Tenkasi district, examination code 9527, TNEA counselling code 4968.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - Region IV Tirunelveli, Tenkasi district list",
+      "sourceUrl": "https://www.annauniv.edu/cai/District%20wise/district/Tenkasi.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "summary",
+      "claimText": "SRCE's Anna University CAI Institution Application 2026-2027 records it as Self Financing, Non Minority, Non Autonomous, Engineering category, established 2000, at Raja Nagar, Adaikalapattinam (Post), Alangulam, Tenkasi district 627808, offering B.E. Civil, CSE, CSE (Cyber Security), EEE, ECE, Mechanical, B.Tech AI and Data Science and MCA.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - Institution Application Form 2026-2027 (SRCE)",
+      "sourceUrl": "https://src.org.in/wp-content/uploads/2026/05/sardar-raja-college-of-engineering-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "recognitionBadges",
+      "claimText": "AICTE approves SRCE for 2026-27 with UG intakes AI & Data Science 60, Civil 30, CSE 60, CSE (Cyber Security) 60, EEE 30, ECE 30, Mechanical 30; MCA 30; and M.E. Applied Electronics, CSE, Power Systems, Structural, Manufacturing, Communication and Networking and VLSI Design at 9 each. NRI and international-student approval status is No or NA for every course.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 letter",
+      "sourceUrl": "https://src.org.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "AICTE dashboard (facilities.aicte-india.org approvedinstituteserver, state Tamil Nadu, 2026-2027) lists the institute: 1-46258425313, SARDAR RAJA COLLEGE OF ENGINEERING, TIRUNELVELI, Private-Self Financing, 1-2894011."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "recognitionBadges",
+      "claimText": "AICTE's approved-institution dashboard for 2026-2027 lists SARDAR RAJA COLLEGE OF ENGINEERING, Raja Nagar, Alangulam, with permanent ID 1-2894011 and type Private-Self Financing.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved institutes dashboard 2026-27",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "recognitionBadges",
+      "claimText": "Anna University lists SRCE as an affiliated college (exam code 9527); the college's CAI 2026-27 form shows each of its eight courses with affiliation nature 'Provisional' and status 'Active', and Non Autonomous status.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - Tenkasi district list and SRCE CAI form 2026-27",
+      "sourceUrl": "https://www.annauniv.edu/cai/District%20wise/district/Tenkasi.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Affiliation nature and autonomy from the CAI form: https://src.org.in/wp-content/uploads/2026/05/sardar-raja-college-of-engineering-2026-2027.pdf"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "recognitionBadges",
+      "claimText": "The TNEA 2026 Information about Colleges lists college 4968, Sardar Raja College of Engineering, with branches AD (2022), CE (2002), CS (2000), EE (2006), EC (2000), ME (2000) and SC (2025), all marked not NBA-accredited, minority status No, autonomous status No.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.360)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "thingsToConsider",
+      "claimText": "The CAI 2026-27 accreditation section shows only 'AICTE Approved' with 0 NBA-accredited programmes, and NIRF Engineering rank 0 (not ranked). TNEA 2026 marks every branch as not NBA-accredited.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - SRCE Institution Application 2026-27",
+      "sourceUrl": "https://src.org.in/wp-content/uploads/2026/05/sardar-raja-college-of-engineering-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "No NAAC grade appears in the CAI accreditation table. No NAAC claim made publicly beyond 'reports no NAAC grade'."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "thingsToConsider",
+      "claimText": "Anna University COE enrolment for 2025-26 first year: Civil 1, CSE 48, CSE (Cyber Security) 10, EEE 18, ECE 23, Mechanical 9, AI & DS 27, MCA 20 (total about 500 across all years). AICTE reduced several M.E. intakes because admissions were at or below 30 per cent of approved intake for five consecutive years.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - SRCE Institution Application 2026-27 (Students enrolled as per COE records)",
+      "sourceUrl": "https://src.org.in/wp-content/uploads/2026/05/sardar-raja-college-of-engineering-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "AICTE reduction footnote from https://src.org.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf. All-year totals: Civil 16, CSE 162, Cyber 10, EEE 50, ECE 67, Mech 31, AI&DS 128, MCA 36 = 500."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "thingsToConsider",
+      "claimText": "SRCE's CAI 2026-27 application lists only eight existing affiliated and approved courses (seven UG and MCA) and states no additional courses; no M.E. programme appears, although AICTE's 2026-27 letter approves seven M.E. programmes at intake 9.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - SRCE Institution Application 2026-27",
+      "sourceUrl": "https://src.org.in/wp-content/uploads/2026/05/sardar-raja-college-of-engineering-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "thingsToConsider",
+      "claimText": "TNEA 2026 is a single-window admission system for Indian nationals; OCI/PIO card holders who are natives of Tamil Nadu may participate under open category, except those born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "campusLifestyle",
+      "claimText": "CAI 2026-27 form: total land earmarked 16.89 acres (rural, Adaikalapattinam village, Alangulam block), built-up area 40,500 sq m, library 1,000 sq m with 40,006 volumes and 12,126 titles, central computing facility 450 sq m with 100 B.E. terminals, playground 5,000 sq m, auditorium/amphitheatre 1,000 sq m, gymnasium.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - SRCE Institution Application 2026-27",
+      "sourceUrl": "https://src.org.in/wp-content/uploads/2026/05/sardar-raja-college-of-engineering-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "The college's About page says 'more than 25 acres'; the regulator filing figure (16.89 acres earmarked) is used publicly. The About page's '1500 students and 300 staff' is outdated vs COE records and not used."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "campusLifestyle",
+      "claimText": "SRCE requires a minimum of 75 per cent attendance to appear for the university examination; it has a Mother Theresa Auditorium seating 1,000 and a library subscribing to DELNET since 2003 and to IEEE journals.",
+      "status": "verified",
+      "sourceLabel": "SRCE - Admissions rules and About SRCE",
+      "sourceUrl": "https://src.org.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Library/DELNET from https://src.org.in/life-srce/; auditorium from https://src.org.in/about-srce/"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "cityProfile",
+      "claimText": "TNEA 2026 lists SRCE in Alangulam taluk, Tenkasi district, 19 km from the district headquarters, with Pavoorchatram the nearest railway station at 10 km; transport facilities available at INR 7,500 to 25,000 a year.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.360)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "College About page: campus beside the Tenkasi-Tirunelveli highway. CAI land record: rural location, Adaikalapattinam village."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "practicalExposure",
+      "claimText": "AICTE's 2026-27 approval states that internship is mandatory for all admitted students; Anna University's AR2025 (affiliated UG) assigns one credit per two weeks of industrial training or internship and sets English as the medium of instruction.",
+      "status": "verified",
+      "sourceLabel": "AICTE EoA 2026-27 and Anna University Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://src.org.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Regulations: https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "practicalExposure",
+      "claimText": "SRCE's CAI 2026-27 laboratory list includes CE3361 Surveying and Levelling, CE3411 Hydraulic Engineering, CE3413 Soil Mechanics and CE3511 Highway Engineering labs (Civil); CB3411 Cryptography and Cyber Security lab (CSE Cyber Security); EE3311/EE3411 Electrical Machines labs (EEE); a training and placement cell led by an assistant professor of CSE.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - SRCE Institution Application 2026-27 (Laboratory space)",
+      "sourceUrl": "https://src.org.in/wp-content/uploads/2026/05/sardar-raja-college-of-engineering-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "College news pages (2026): Mahindra Pride Classroom 6-day employability training by Naandi Foundation ending 01-08-2026; EEE industrial visit to a TNEB substation, Tirunelveli, 03-09-2026; GATE awareness programme 03-08-2026. Source https://src.org.in/"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "hostelOverview",
+      "claimText": "CAI 2026-27: owned on-campus boys' hostel (St Joseph Hostel) and girls' hostel (Sophia Raja Ladies Hostel), each 20 triple-seated rooms for 60 residents, admitted strength 17 and 6; hostel kitchen and dining hall, medical room, canteen and indoor games hall.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - SRCE Institution Application 2026-27",
+      "sourceUrl": "https://src.org.in/wp-content/uploads/2026/05/sardar-raja-college-of-engineering-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "hostelOverview",
+      "claimText": "TNEA 2026: boys' and girls' hostels available for UG, permanent buildings, mess veg and non-veg, mess bill INR 40,000 per annum, room rent INR 10,000 per annum, electricity 0, caution deposit 0, establishment charges 0, admission fees 0.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.360)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "dietarySupport",
+      "claimText": "TNEA 2026 lists the SRCE hostel messes as serving both vegetarian and non-vegetarian food; the CAI form records a 300 sq m cafeteria and a bank extension counter or post facility; the college site says mineral water is served through water coolers.",
+      "status": "verified",
+      "sourceLabel": "DoTE TNEA 2026 college information and SRCE CAI 2026-27",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "CAI: https://src.org.in/wp-content/uploads/2026/05/sardar-raja-college-of-engineering-2026-2027.pdf; water coolers: https://src.org.in/about-srce/"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "safetyOverview",
+      "claimText": "SRCE's CAI 2026-27 form names an anti-ragging committee and squad, wardens for the boys' and girls' hostels, and CCTV security; TNEA lists anti-ragging phone 8220077054; the college bans ragging and reports offenders to the university and police.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - SRCE 2026-27; SRCE admissions rules",
+      "sourceUrl": "https://src.org.in/wp-content/uploads/2026/05/sardar-raja-college-of-engineering-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Ragging rule: https://src.org.in/admissions/; phone: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "studentSupport",
+      "claimText": "CAI 2026-27: health centre staffed by an MBBS doctor with 25 years' experience, group insurance for students, functioning alumni association; college site: counselling centre, college bus fleet, online grievance form; contact srce@src.org.in, 82200 77052.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - SRCE 2026-27 and SRCE Life/Contact pages",
+      "sourceUrl": "https://src.org.in/wp-content/uploads/2026/05/sardar-raja-college-of-engineering-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Life: https://src.org.in/life-srce/; contact: https://src.org.in/contact-us/"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "whyChoose",
+      "claimText": "TNEA 2026 provides First Graduate tuition fee concession (self-financing colleges included), AICTE Tuition Fee Waiver on up to 5 per cent of sanctioned B.E./B.Tech intake for family income under INR 8 lakh, and Post-Matric Scholarship for SC/SCA/ST candidates with family income under INR 2.5 lakh.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure (section 7)",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "faq",
+      "claimText": "The college does not publish a tuition schedule (website checked 22 October 2026). Tamil Nadu's Committee on fixation of fee for self-financing professional colleges (Justice R. Pongiappan, G.O. No. 285 of 23.11.2023) fixes fees for self-financing engineering colleges; its page shows engineering fee-proposal formats for 2024-25 to 2026-27 but no published order.",
+      "status": "verified",
+      "sourceLabel": "DTE Tamil Nadu - Fee Fixation Committee",
+      "sourceUrl": "https://dte.tn.gov.in/fee-fixation-committee",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "faq",
+      "claimText": "Anna University's 2026 academic calendar for non-autonomous affiliated colleges starts I-semester B.E./B.Tech, MCA and MBA classes on 2 September 2026, with end-semester exams from 22 December 2026.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAC - Academic Calendar, non-autonomous affiliated colleges, I Semester Sep-Dec 2026",
+      "sourceUrl": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 schedule: online registration from 03.05.2026 to 05.06.2026, rank list 01.07.2026, general counselling (online) 20.07.2026 to 30.08.2026; merit is computed from Mathematics (100), Physics (50) and Chemistry (50).",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 schedule and Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Merit formula: https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "intake",
+      "claimText": "Anna University academic calendar for non-autonomous affiliated colleges: first-semester classes commence 2 September 2026 for B.E./B.Tech. and M.C.A.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAC - Academic Calendar I Semester Sep-Dec 2026 (affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure (section 3)",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-civil-engineering",
+      "internalNotes": "Anna University AR2025 (affiliated UG) clause 4.1-4.2: admission per Government of Tamil Nadu norms; lateral entry for diploma holders and B.Sc. (Maths) graduates. https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "eligibility",
+      "claimText": "AICTE's 2026-27 letter shows NRI approval and international-students approval as No or NA for this course, so no foreign-national or NRI supernumerary seats are approved.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 letter",
+      "sourceUrl": "https://src.org.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-civil-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 lists college 4968 Sardar Raja College of Engineering with branch CE in the general academic vacancy position after Round 1; admission steps: online registration (INR 500 / INR 250), certificate upload, rank on Maths 100 + Physics 50 + Chemistry 50, online choice filling, confirmation, reporting to college within 5 days with fees.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure and Round 1 vacancy list",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-civil-engineering",
+      "internalNotes": "Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. Management-quota category appears on the college's own UG admission form: https://src.org.in/undergraduate-admission/"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "admissions",
+      "claimText": "CAI 2026-27 lists for B.E. Civil: CE3311 Water and Wastewater Analysis, CE3361 Surveying and Levelling, CE3411 Hydraulic Engineering, CE3412 Materials Testing, CE3413 Soil Mechanics, CE3511 Highway Engineering laboratories and CE3611 Building Drawing and Detailing.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - SRCE 2026-27 / SRCE department page",
+      "sourceUrl": "https://src.org.in/wp-content/uploads/2026/05/sardar-raja-college-of-engineering-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-civil-engineering",
+      "internalNotes": "AICTE intake 2026-27: 30. TNEA starting year: 2002."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 schedule: registration 03.05.2026-05.06.2026, general counselling 20.07.2026-30.08.2026; Anna University calendar for non-autonomous affiliated colleges: I-semester B.E./B.Tech classes commence 2 September 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE TNEA 2026 schedule and Anna University affiliated-college calendar",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-civil-engineering",
+      "internalNotes": "Calendar: https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "fee",
+      "claimText": "SRCE publishes no tuition figure on its website (checked 2026-10-22) and the TNEA 2026 Information about colleges entry for 4968 lists hostel, mess and transport charges but no tuition; the fee is therefore on request.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.360) and SRCE website",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-civil-engineering",
+      "internalNotes": "DTE fee-fixation page shows only fee-proposal formats for engineering 2024-27: https://dte.tn.gov.in/fee-fixation-committee"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "Anna University AR2025 (affiliated UG): programme duration four years (eight semesters); medium of instruction for all B.E./B.Tech programmes is English; one credit per two weeks of internship.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-civil-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure (section 3)",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-computer-science-engineering",
+      "internalNotes": "Anna University AR2025 (affiliated UG) clause 4.1-4.2: admission per Government of Tamil Nadu norms; lateral entry for diploma holders and B.Sc. (Maths) graduates. https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "eligibility",
+      "claimText": "AICTE's 2026-27 letter shows NRI approval and international-students approval as No or NA for this course, so no foreign-national or NRI supernumerary seats are approved.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 letter",
+      "sourceUrl": "https://src.org.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-computer-science-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 lists college 4968 Sardar Raja College of Engineering with branch CS in the general academic vacancy position after Round 1; admission steps: online registration (INR 500 / INR 250), certificate upload, rank on Maths 100 + Physics 50 + Chemistry 50, online choice filling, confirmation, reporting to college within 5 days with fees.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure and Round 1 vacancy list",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-computer-science-engineering",
+      "internalNotes": "Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. Management-quota category appears on the college's own UG admission form: https://src.org.in/undergraduate-admission/"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "admissions",
+      "claimText": "CAI 2026-27 lists for B.E. CSE: CS3271 Programming in C, CS3311 Data Structures, CS3361 Data Science, CS3461 Operating Systems, CS3481 Database Management Systems, CS8711 Cloud Computing and IT8761 Security laboratories.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - SRCE 2026-27 / SRCE department page",
+      "sourceUrl": "https://src.org.in/wp-content/uploads/2026/05/sardar-raja-college-of-engineering-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-computer-science-engineering",
+      "internalNotes": "AICTE intake 2026-27: 60. TNEA starting year: 2000."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 schedule: registration 03.05.2026-05.06.2026, general counselling 20.07.2026-30.08.2026; Anna University calendar for non-autonomous affiliated colleges: I-semester B.E./B.Tech classes commence 2 September 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE TNEA 2026 schedule and Anna University affiliated-college calendar",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-computer-science-engineering",
+      "internalNotes": "Calendar: https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "fee",
+      "claimText": "SRCE publishes no tuition figure on its website (checked 2026-10-22) and the TNEA 2026 Information about colleges entry for 4968 lists hostel, mess and transport charges but no tuition; the fee is therefore on request.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.360) and SRCE website",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-computer-science-engineering",
+      "internalNotes": "DTE fee-fixation page shows only fee-proposal formats for engineering 2024-27: https://dte.tn.gov.in/fee-fixation-committee"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "Anna University AR2025 (affiliated UG): programme duration four years (eight semesters); medium of instruction for all B.E./B.Tech programmes is English; one credit per two weeks of internship.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-computer-science-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure (section 3)",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-cse-cyber-security",
+      "internalNotes": "Anna University AR2025 (affiliated UG) clause 4.1-4.2: admission per Government of Tamil Nadu norms; lateral entry for diploma holders and B.Sc. (Maths) graduates. https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "eligibility",
+      "claimText": "AICTE's 2026-27 letter shows NRI approval and international-students approval as No or NA for this course, so no foreign-national or NRI supernumerary seats are approved.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 letter",
+      "sourceUrl": "https://src.org.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-cse-cyber-security"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 lists college 4968 Sardar Raja College of Engineering with branch SC in the general academic vacancy position after Round 1; admission steps: online registration (INR 500 / INR 250), certificate upload, rank on Maths 100 + Physics 50 + Chemistry 50, online choice filling, confirmation, reporting to college within 5 days with fees.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure and Round 1 vacancy list",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-cse-cyber-security",
+      "internalNotes": "Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. Management-quota category appears on the college's own UG admission form: https://src.org.in/undergraduate-admission/"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "admissions",
+      "claimText": "CAI 2026-27 lists for B.E. CSE (Cyber Security): CB3411 Cryptography and Cyber Security, CB3412 Database Management Systems and Security, CD3281 Data Structures and Algorithms, Computer Networks and CS3361 Data Science laboratories.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - SRCE 2026-27 / SRCE department page",
+      "sourceUrl": "https://src.org.in/wp-content/uploads/2026/05/sardar-raja-college-of-engineering-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-cse-cyber-security",
+      "internalNotes": "AICTE intake 2026-27: 60. TNEA starting year: 2025."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 schedule: registration 03.05.2026-05.06.2026, general counselling 20.07.2026-30.08.2026; Anna University calendar for non-autonomous affiliated colleges: I-semester B.E./B.Tech classes commence 2 September 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE TNEA 2026 schedule and Anna University affiliated-college calendar",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-cse-cyber-security",
+      "internalNotes": "Calendar: https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "fee",
+      "claimText": "SRCE publishes no tuition figure on its website (checked 2026-10-22) and the TNEA 2026 Information about colleges entry for 4968 lists hostel, mess and transport charges but no tuition; the fee is therefore on request.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.360) and SRCE website",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-cse-cyber-security",
+      "internalNotes": "DTE fee-fixation page shows only fee-proposal formats for engineering 2024-27: https://dte.tn.gov.in/fee-fixation-committee"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "Anna University AR2025 (affiliated UG): programme duration four years (eight semesters); medium of instruction for all B.E./B.Tech programmes is English; one credit per two weeks of internship.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-cse-cyber-security"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure (section 3)",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-electrical-electronics-engineering",
+      "internalNotes": "Anna University AR2025 (affiliated UG) clause 4.1-4.2: admission per Government of Tamil Nadu norms; lateral entry for diploma holders and B.Sc. (Maths) graduates. https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "eligibility",
+      "claimText": "AICTE's 2026-27 letter shows NRI approval and international-students approval as No or NA for this course, so no foreign-national or NRI supernumerary seats are approved.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 letter",
+      "sourceUrl": "https://src.org.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-electrical-electronics-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 lists college 4968 Sardar Raja College of Engineering with branch EE in the general academic vacancy position after Round 1; admission steps: online registration (INR 500 / INR 250), certificate upload, rank on Maths 100 + Physics 50 + Chemistry 50, online choice filling, confirmation, reporting to college within 5 days with fees.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure and Round 1 vacancy list",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-electrical-electronics-engineering",
+      "internalNotes": "Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. Management-quota category appears on the college's own UG admission form: https://src.org.in/undergraduate-admission/"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "admissions",
+      "claimText": "CAI 2026-27 lists for B.E. EEE: EE3271 Electric Circuits, EC3311 Electronic Devices and Circuits, EE3311 and EE3411 Electrical Machines I and II, EE3412 Linear and Digital Circuits, EE3413 Microprocessor and Microcontroller and EE3511 Power laboratories.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - SRCE 2026-27 / SRCE department page",
+      "sourceUrl": "https://src.org.in/wp-content/uploads/2026/05/sardar-raja-college-of-engineering-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-electrical-electronics-engineering",
+      "internalNotes": "AICTE intake 2026-27: 30. TNEA starting year: 2006."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 schedule: registration 03.05.2026-05.06.2026, general counselling 20.07.2026-30.08.2026; Anna University calendar for non-autonomous affiliated colleges: I-semester B.E./B.Tech classes commence 2 September 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE TNEA 2026 schedule and Anna University affiliated-college calendar",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-electrical-electronics-engineering",
+      "internalNotes": "Calendar: https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "fee",
+      "claimText": "SRCE publishes no tuition figure on its website (checked 2026-10-22) and the TNEA 2026 Information about colleges entry for 4968 lists hostel, mess and transport charges but no tuition; the fee is therefore on request.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.360) and SRCE website",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-electrical-electronics-engineering",
+      "internalNotes": "DTE fee-fixation page shows only fee-proposal formats for engineering 2024-27: https://dte.tn.gov.in/fee-fixation-committee"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "Anna University AR2025 (affiliated UG): programme duration four years (eight semesters); medium of instruction for all B.E./B.Tech programmes is English; one credit per two weeks of internship.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-electrical-electronics-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure (section 3)",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-electronics-communication-engineering",
+      "internalNotes": "Anna University AR2025 (affiliated UG) clause 4.1-4.2: admission per Government of Tamil Nadu norms; lateral entry for diploma holders and B.Sc. (Maths) graduates. https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "eligibility",
+      "claimText": "AICTE's 2026-27 letter shows NRI approval and international-students approval as No or NA for this course, so no foreign-national or NRI supernumerary seats are approved.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 letter",
+      "sourceUrl": "https://src.org.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-electronics-communication-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 lists college 4968 Sardar Raja College of Engineering with branch EC in the general academic vacancy position after Round 1; admission steps: online registration (INR 500 / INR 250), certificate upload, rank on Maths 100 + Physics 50 + Chemistry 50, online choice filling, confirmation, reporting to college within 5 days with fees.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure and Round 1 vacancy list",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-electronics-communication-engineering",
+      "internalNotes": "Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. Management-quota category appears on the college's own UG admission form: https://src.org.in/undergraduate-admission/"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "admissions",
+      "claimText": "The SRCE ECE department page describes the programme as covering electronic circuits, devices, communication systems, embedded systems and programming, and lists Electronic Devices and Circuits and Communication Systems laboratories.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - SRCE 2026-27 / SRCE department page",
+      "sourceUrl": "https://src.org.in/electronics-and-communication-engineering/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-electronics-communication-engineering",
+      "internalNotes": "AICTE intake 2026-27: 30. TNEA starting year: 2000."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 schedule: registration 03.05.2026-05.06.2026, general counselling 20.07.2026-30.08.2026; Anna University calendar for non-autonomous affiliated colleges: I-semester B.E./B.Tech classes commence 2 September 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE TNEA 2026 schedule and Anna University affiliated-college calendar",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-electronics-communication-engineering",
+      "internalNotes": "Calendar: https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "fee",
+      "claimText": "SRCE publishes no tuition figure on its website (checked 2026-10-22) and the TNEA 2026 Information about colleges entry for 4968 lists hostel, mess and transport charges but no tuition; the fee is therefore on request.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.360) and SRCE website",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-electronics-communication-engineering",
+      "internalNotes": "DTE fee-fixation page shows only fee-proposal formats for engineering 2024-27: https://dte.tn.gov.in/fee-fixation-committee"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "Anna University AR2025 (affiliated UG): programme duration four years (eight semesters); medium of instruction for all B.E./B.Tech programmes is English; one credit per two weeks of internship.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-electronics-communication-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure (section 3)",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-mechanical-engineering",
+      "internalNotes": "Anna University AR2025 (affiliated UG) clause 4.1-4.2: admission per Government of Tamil Nadu norms; lateral entry for diploma holders and B.Sc. (Maths) graduates. https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "eligibility",
+      "claimText": "AICTE's 2026-27 letter shows NRI approval and international-students approval as No or NA for this course, so no foreign-national or NRI supernumerary seats are approved.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 letter",
+      "sourceUrl": "https://src.org.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 lists college 4968 Sardar Raja College of Engineering with branch ME in the general academic vacancy position after Round 1; admission steps: online registration (INR 500 / INR 250), certificate upload, rank on Maths 100 + Physics 50 + Chemistry 50, online choice filling, confirmation, reporting to college within 5 days with fees.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure and Round 1 vacancy list",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-mechanical-engineering",
+      "internalNotes": "Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. Management-quota category appears on the college's own UG admission form: https://src.org.in/undergraduate-admission/"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "admissions",
+      "claimText": "The SRCE Mechanical department page states the department was established in 2000, promotes renewable-energy activities with students fabricating renewable-energy products, and covers thermodynamics, mechatronics, solid mechanics and robotics.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - SRCE 2026-27 / SRCE department page",
+      "sourceUrl": "https://src.org.in/mechanical-engineering/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-mechanical-engineering",
+      "internalNotes": "AICTE intake 2026-27: 30. TNEA starting year: 2000."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 schedule: registration 03.05.2026-05.06.2026, general counselling 20.07.2026-30.08.2026; Anna University calendar for non-autonomous affiliated colleges: I-semester B.E./B.Tech classes commence 2 September 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE TNEA 2026 schedule and Anna University affiliated-college calendar",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-mechanical-engineering",
+      "internalNotes": "Calendar: https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "fee",
+      "claimText": "SRCE publishes no tuition figure on its website (checked 2026-10-22) and the TNEA 2026 Information about colleges entry for 4968 lists hostel, mess and transport charges but no tuition; the fee is therefore on request.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.360) and SRCE website",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-mechanical-engineering",
+      "internalNotes": "DTE fee-fixation page shows only fee-proposal formats for engineering 2024-27: https://dte.tn.gov.in/fee-fixation-committee"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "Anna University AR2025 (affiliated UG): programme duration four years (eight semesters); medium of instruction for all B.E./B.Tech programmes is English; one credit per two weeks of internship.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-be-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure (section 3)",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-btech-artificial-intelligence-data-science",
+      "internalNotes": "Anna University AR2025 (affiliated UG) clause 4.1-4.2: admission per Government of Tamil Nadu norms; lateral entry for diploma holders and B.Sc. (Maths) graduates. https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "eligibility",
+      "claimText": "AICTE's 2026-27 letter shows NRI approval and international-students approval as No or NA for this course, so no foreign-national or NRI supernumerary seats are approved.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 letter",
+      "sourceUrl": "https://src.org.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-btech-artificial-intelligence-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 lists college 4968 Sardar Raja College of Engineering with branch AD in the general academic vacancy position after Round 1; admission steps: online registration (INR 500 / INR 250), certificate upload, rank on Maths 100 + Physics 50 + Chemistry 50, online choice filling, confirmation, reporting to college within 5 days with fees.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure and Round 1 vacancy list",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-btech-artificial-intelligence-data-science",
+      "internalNotes": "Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. Management-quota category appears on the college's own UG admission form: https://src.org.in/undergraduate-admission/"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "admissions",
+      "claimText": "The SRCE AI and Data Science department page describes a four-year undergraduate course in machine learning, artificial intelligence, data processing, analysis and visualisation; AICTE approves intake 60; TNEA 2026 lists the branch (AD) as started in 2022.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - SRCE 2026-27 / SRCE department page",
+      "sourceUrl": "https://src.org.in/artificial-intelligence-and-data-science/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-btech-artificial-intelligence-data-science",
+      "internalNotes": "AICTE intake 2026-27: 60. TNEA starting year: 2022."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 schedule: registration 03.05.2026-05.06.2026, general counselling 20.07.2026-30.08.2026; Anna University calendar for non-autonomous affiliated colleges: I-semester B.E./B.Tech classes commence 2 September 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE TNEA 2026 schedule and Anna University affiliated-college calendar",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-btech-artificial-intelligence-data-science",
+      "internalNotes": "Calendar: https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "fee",
+      "claimText": "SRCE publishes no tuition figure on its website (checked 2026-10-22) and the TNEA 2026 Information about colleges entry for 4968 lists hostel, mess and transport charges but no tuition; the fee is therefore on request.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.360) and SRCE website",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-btech-artificial-intelligence-data-science",
+      "internalNotes": "DTE fee-fixation page shows only fee-proposal formats for engineering 2024-27: https://dte.tn.gov.in/fee-fixation-committee"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "Anna University AR2025 (affiliated UG): programme duration four years (eight semesters); medium of instruction for all B.E./B.Tech programmes is English; one credit per two weeks of internship.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-btech-artificial-intelligence-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "eligibility",
+      "claimText": "TANCET 2026 MCA eligibility: recognised bachelor's degree of minimum 3 years in BCA or B.Sc. (IT/CS or equivalent), or any recognised 3-year bachelor's degree with Mathematics at 10+2 or graduation level, with at least 50% (45% for Tamil Nadu BC, BCM, MBC, SC, SCA, ST); patterns 10+2+3/4/5, 10+3-year diploma+2/3, or AMIE with 2 years' experience; degrees without Class 10/12 or 3-year diploma not eligible.",
+      "status": "verified",
+      "sourceLabel": "Anna University - TANCET / CEETA-PG 2026 Information Brochure",
+      "sourceUrl": "https://tancet.annauniv.edu/tancet/Information%20Brochure%202026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-mca"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "eligibility",
+      "claimText": "AICTE's 2026-27 letter approves the MCA at intake 30 with international-students approval status NA.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 letter",
+      "sourceUrl": "https://src.org.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-mca"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "admissions",
+      "claimText": "TANCET 2026: MCA admission involves appearing for TANCET 2026 and then applying to the admitting authorities concerned; MCA test on 09.05.2026, fee Rs.1000 (Rs.500 for Tamil Nadu SC/SCA/ST); score cards downloadable 27.05.2026 to 26.06.2026.",
+      "status": "verified",
+      "sourceLabel": "Anna University - TANCET 2026 Information Brochure and TANCET home page",
+      "sourceUrl": "https://tancet.annauniv.edu/tancet/Information%20Brochure%202026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-mca",
+      "internalNotes": "Score-card window from https://tancet.annauniv.edu/tancet/index.html."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "admissions",
+      "claimText": "The TN MBA/MCA Admissions 2026 (GCT Coimbatore) engineering-colleges booklet and the MCA vacancy list after SCA-to-SC conversion counselling do not list SRCE (college 4968), so the college offered no MCA seats through state counselling in 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE / GCT Coimbatore - TN MBA/MCA 2026 Engineering Colleges Booklet",
+      "sourceUrl": "https://static.tn-mbamca.com/docs/TNMBAMCA-ENGINEERING-COLLEGES-BOOKLET-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-mca",
+      "internalNotes": "Also checked https://static.tn-mbamca.com/docs/MCA-VACANCY-POSITION-AFTER-SCA-TO-SC-CONVERSION-COUNSELLING-2026.pdf. SRCE postgraduate admission form: https://src.org.in/postgraduate-admission/. CAI 2026-27: MCA 2025-26 first-year enrolment 20; 15 MCA terminals."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "intake",
+      "claimText": "Anna University academic calendar for non-autonomous affiliated colleges (I Semester Sep-Dec 2026) covers B.E./B.Tech., M.B.A.(FT), M.C.A. and M.B.A. (Integrated); classes commence 2 September 2026.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAC - Academic Calendar I Semester Sep-Dec 2026 (affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-mca"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "fee",
+      "claimText": "SRCE publishes no MCA tuition figure on its website (checked 2026-10-22) and is not in the 2026 state MBA/MCA counselling booklet, which is where counselling-quota fees would apply; fee is on request.",
+      "status": "verified",
+      "sourceLabel": "SRCE - MCA page and TN MBA/MCA 2026 booklet",
+      "sourceUrl": "https://src.org.in/mca/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-mca",
+      "internalNotes": "Booklet: https://static.tn-mbamca.com/docs/TNMBAMCA-ENGINEERING-COLLEGES-BOOKLET-2026.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "Anna University AR2025 (PG, affiliated): MCA full-time duration two years (four semesters); medium of instruction English; full-time students may not take up any other full-time programme or job.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (PG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/PG%20Regulations%202025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "programmeSlug": "sardar-raja-mca"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "programmeSlug": "sardar-raja-be-civil-engineering",
+      "publicField": "reportedFeeQuote",
+      "claimText": "B.E. Civil Engineering: CollegeBatch SRCE fees page (titled 2026) reports Rs. 85,000 per year (Rs. 3.4 lakh total for 4 years); indicative academic_year quote, tariff year and quota unstated.",
+      "status": "indicative",
+      "sourceLabel": "CollegeBatch Sardar Raja College of Engineering fees and courses 2026 listing (Grade C)",
+      "sourceUrl": "https://www.collegebatch.com/4088-sardar-raja-college-of-engineering-fees-structure-courses-tirunelveli",
+      "sourceGrade": "C",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-01-26",
+      "internalNotes": "Fee pass 2026-10-26: CollegeBatch page retrieved (HTTP 200), titled 'Fees Structure & Courses 2026'. Third-party aggregator, Grade C, indicative only. Campusoption's SRCE course page independently lists B.E. at Rs. 3.4 Lakhs total (consistent with INR 85,000 x 4). Lower third-party figure noted, not used: Collegedunia and a Campusoption reader reply give INR 2.2 lakh for the four-year B.E. (about INR 55,000 a year, 2023-24/2024 data; Collegedunia returned HTTP 403). The two levels are consistent with the Tamil Nadu fee committee's government-quota and management-quota bands, so INR 85,000 may reflect the management-quota level; quota is unstated. Official sources checked without a tuition figure: src.org.in admissions pages, SRCE 2026-27 AICTE application report (its fee summary is the AICTE processing fee, not tuition), TNEA 2026 brochure and college booklet (tuition as per Government norms), DoTE fee-fixation-committee page (no college-wise order)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "programmeSlug": "sardar-raja-be-computer-science-engineering",
+      "publicField": "reportedFeeQuote",
+      "claimText": "B.E. Computer Science and Engineering: CollegeBatch SRCE fees page (titled 2026) reports Rs. 85,000 per year (Rs. 3.4 lakh total for 4 years); indicative academic_year quote, tariff year and quota unstated.",
+      "status": "indicative",
+      "sourceLabel": "CollegeBatch Sardar Raja College of Engineering fees and courses 2026 listing (Grade C)",
+      "sourceUrl": "https://www.collegebatch.com/4088-sardar-raja-college-of-engineering-fees-structure-courses-tirunelveli",
+      "sourceGrade": "C",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-01-26",
+      "internalNotes": "Fee pass 2026-10-26: CollegeBatch page retrieved (HTTP 200), titled 'Fees Structure & Courses 2026'. Third-party aggregator, Grade C, indicative only. Campusoption's SRCE course page independently lists B.E. at Rs. 3.4 Lakhs total (consistent with INR 85,000 x 4). Lower third-party figure noted, not used: Collegedunia and a Campusoption reader reply give INR 2.2 lakh for the four-year B.E. (about INR 55,000 a year, 2023-24/2024 data; Collegedunia returned HTTP 403). The two levels are consistent with the Tamil Nadu fee committee's government-quota and management-quota bands, so INR 85,000 may reflect the management-quota level; quota is unstated. Official sources checked without a tuition figure: src.org.in admissions pages, SRCE 2026-27 AICTE application report (its fee summary is the AICTE processing fee, not tuition), TNEA 2026 brochure and college booklet (tuition as per Government norms), DoTE fee-fixation-committee page (no college-wise order)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "programmeSlug": "sardar-raja-be-electrical-electronics-engineering",
+      "publicField": "reportedFeeQuote",
+      "claimText": "B.E. Electrical and Electronics Engineering: CollegeBatch SRCE fees page (titled 2026) reports Rs. 85,000 per year (Rs. 3.4 lakh total for 4 years); indicative academic_year quote, tariff year and quota unstated.",
+      "status": "indicative",
+      "sourceLabel": "CollegeBatch Sardar Raja College of Engineering fees and courses 2026 listing (Grade C)",
+      "sourceUrl": "https://www.collegebatch.com/4088-sardar-raja-college-of-engineering-fees-structure-courses-tirunelveli",
+      "sourceGrade": "C",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-01-26",
+      "internalNotes": "Fee pass 2026-10-26: CollegeBatch page retrieved (HTTP 200), titled 'Fees Structure & Courses 2026'. Third-party aggregator, Grade C, indicative only. Campusoption's SRCE course page independently lists B.E. at Rs. 3.4 Lakhs total (consistent with INR 85,000 x 4). Lower third-party figure noted, not used: Collegedunia and a Campusoption reader reply give INR 2.2 lakh for the four-year B.E. (about INR 55,000 a year, 2023-24/2024 data; Collegedunia returned HTTP 403). The two levels are consistent with the Tamil Nadu fee committee's government-quota and management-quota bands, so INR 85,000 may reflect the management-quota level; quota is unstated. Official sources checked without a tuition figure: src.org.in admissions pages, SRCE 2026-27 AICTE application report (its fee summary is the AICTE processing fee, not tuition), TNEA 2026 brochure and college booklet (tuition as per Government norms), DoTE fee-fixation-committee page (no college-wise order)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "programmeSlug": "sardar-raja-be-electronics-communication-engineering",
+      "publicField": "reportedFeeQuote",
+      "claimText": "B.E. Electronics and Communication Engineering: CollegeBatch SRCE fees page (titled 2026) reports Rs. 85,000 per year (Rs. 3.4 lakh total for 4 years); indicative academic_year quote, tariff year and quota unstated.",
+      "status": "indicative",
+      "sourceLabel": "CollegeBatch Sardar Raja College of Engineering fees and courses 2026 listing (Grade C)",
+      "sourceUrl": "https://www.collegebatch.com/4088-sardar-raja-college-of-engineering-fees-structure-courses-tirunelveli",
+      "sourceGrade": "C",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-01-26",
+      "internalNotes": "Fee pass 2026-10-26: CollegeBatch page retrieved (HTTP 200), titled 'Fees Structure & Courses 2026'. Third-party aggregator, Grade C, indicative only. Campusoption's SRCE course page independently lists B.E. at Rs. 3.4 Lakhs total (consistent with INR 85,000 x 4). Lower third-party figure noted, not used: Collegedunia and a Campusoption reader reply give INR 2.2 lakh for the four-year B.E. (about INR 55,000 a year, 2023-24/2024 data; Collegedunia returned HTTP 403). The two levels are consistent with the Tamil Nadu fee committee's government-quota and management-quota bands, so INR 85,000 may reflect the management-quota level; quota is unstated. Official sources checked without a tuition figure: src.org.in admissions pages, SRCE 2026-27 AICTE application report (its fee summary is the AICTE processing fee, not tuition), TNEA 2026 brochure and college booklet (tuition as per Government norms), DoTE fee-fixation-committee page (no college-wise order)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "programmeSlug": "sardar-raja-be-mechanical-engineering",
+      "publicField": "reportedFeeQuote",
+      "claimText": "B.E. Mechanical Engineering: CollegeBatch SRCE fees page (titled 2026) reports Rs. 85,000 per year (Rs. 3.4 lakh total for 4 years); indicative academic_year quote, tariff year and quota unstated.",
+      "status": "indicative",
+      "sourceLabel": "CollegeBatch Sardar Raja College of Engineering fees and courses 2026 listing (Grade C)",
+      "sourceUrl": "https://www.collegebatch.com/4088-sardar-raja-college-of-engineering-fees-structure-courses-tirunelveli",
+      "sourceGrade": "C",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-01-26",
+      "internalNotes": "Fee pass 2026-10-26: CollegeBatch page retrieved (HTTP 200), titled 'Fees Structure & Courses 2026'. Third-party aggregator, Grade C, indicative only. Campusoption's SRCE course page independently lists B.E. at Rs. 3.4 Lakhs total (consistent with INR 85,000 x 4). Lower third-party figure noted, not used: Collegedunia and a Campusoption reader reply give INR 2.2 lakh for the four-year B.E. (about INR 55,000 a year, 2023-24/2024 data; Collegedunia returned HTTP 403). The two levels are consistent with the Tamil Nadu fee committee's government-quota and management-quota bands, so INR 85,000 may reflect the management-quota level; quota is unstated. Official sources checked without a tuition figure: src.org.in admissions pages, SRCE 2026-27 AICTE application report (its fee summary is the AICTE processing fee, not tuition), TNEA 2026 brochure and college booklet (tuition as per Government norms), DoTE fee-fixation-committee page (no college-wise order)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "programmeSlug": "sardar-raja-mca",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Master of Computer Applications: CollegeBatch SRCE fees page (titled 2026) reports Rs. 50,000 per year for the MCA (listed as a 3-year course, Rs. 1.5 lakh total); indicative academic_year quote, tariff year and quota unstated.",
+      "status": "indicative",
+      "sourceLabel": "CollegeBatch Sardar Raja College of Engineering fees and courses 2026 listing (Grade C)",
+      "sourceUrl": "https://www.collegebatch.com/4088-sardar-raja-college-of-engineering-fees-structure-courses-tirunelveli",
+      "sourceGrade": "C",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-01-26",
+      "internalNotes": "Fee pass 2026-10-26: CollegeBatch page retrieved (HTTP 200). Third-party aggregator, Grade C, indicative only. The listing still describes the MCA as a 3-year course (the AICTE MCA has been 2 years since 2020-21), so the tariff may predate the current curriculum; Campusoption likewise lists MCA Rs. 1.5 Lakhs for 3 years. INR 50,000 a year is in line with self-financing MCA fees in Tamil Nadu, so it is retained as indicative. Official sources checked without a tuition figure: src.org.in admissions pages, SRCE 2026-27 AICTE application report (its fee summary is the AICTE processing fee, not tuition), TNEA 2026 brochure and college booklet (tuition as per Government norms), DoTE fee-fixation-committee page (no college-wise order)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "programmeSlug": "sardar-raja-be-civil-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction is English for all B.E./B.Tech programmes.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Fee pass 2026-10-26: added because the content validator requires medium evidence for bundles numbered 0266 or later; same regulation already cited for this programme's teachingPhases and mediumNote."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "programmeSlug": "sardar-raja-be-computer-science-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction is English for all B.E./B.Tech programmes.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Fee pass 2026-10-26: added because the content validator requires medium evidence for bundles numbered 0266 or later; same regulation already cited for this programme's teachingPhases and mediumNote."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "programmeSlug": "sardar-raja-be-cse-cyber-security",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction is English for all B.E./B.Tech programmes.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Fee pass 2026-10-26: added because the content validator requires medium evidence for bundles numbered 0266 or later; same regulation already cited for this programme's teachingPhases and mediumNote."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "programmeSlug": "sardar-raja-be-electrical-electronics-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction is English for all B.E./B.Tech programmes.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Fee pass 2026-10-26: added because the content validator requires medium evidence for bundles numbered 0266 or later; same regulation already cited for this programme's teachingPhases and mediumNote."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "programmeSlug": "sardar-raja-be-electronics-communication-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction is English for all B.E./B.Tech programmes.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Fee pass 2026-10-26: added because the content validator requires medium evidence for bundles numbered 0266 or later; same regulation already cited for this programme's teachingPhases and mediumNote."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "programmeSlug": "sardar-raja-be-mechanical-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction is English for all B.E./B.Tech programmes.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Fee pass 2026-10-26: added because the content validator requires medium evidence for bundles numbered 0266 or later; same regulation already cited for this programme's teachingPhases and mediumNote."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "programmeSlug": "sardar-raja-btech-artificial-intelligence-data-science",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction is English for all B.E./B.Tech programmes.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Fee pass 2026-10-26: added because the content validator requires medium evidence for bundles numbered 0266 or later; same regulation already cited for this programme's teachingPhases and mediumNote."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "programmeSlug": "sardar-raja-mca",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (PG, affiliated colleges): medium of instruction is English for M.E., M.Tech, M.C.A. and M.B.A. programmes.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (PG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/PG%20Regulations%202025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Fee pass 2026-10-26: added because the content validator requires medium evidence for bundles numbered 0266 or later; same regulation already cited for this programme's teachingPhases and mediumNote."
+    }
+  ]
+}

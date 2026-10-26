@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-10-25",
+  "reviewStatus": "DO NOT APPLY AS IS: material cover provenance and blanket exemption issues",
+  "scopedReader": "PASS1 schema only",
+  "baseline": {
+    "id": "0305-india-sriher-current-regular-portfolio",
+    "sha256": "0446ee36bdacc28598f9b5d17c2e1ca70be7954abc9a2854d2b64e07815d2e58",
+    "programmeCount": 98,
+    "evidenceCount": 908
+  },
+  "reviewed": {
+    "id": "0310-india-sri-ramachandra-expansion",
+    "sha256": "d0d1cef143bf265248fde1b59d73a0cf1815c5f2fcb0a1b83811466198ec77a7",
+    "programmeCount": 98,
+    "evidenceCount": 1065
+  },
+  "programmeSlugSetsEqual": true,
+  "noDurationOrCanonicalFamilyChanges": true,
+  "all98ProgrammeObjectsChanged": true,
+  "programmeFieldCounts": {
+    "admissionsContent": 98,
+    "fee": 37,
+    "audienceEligibility": 37,
+    "feeNotes": 37,
+    "additionalFees": 36,
+    "officialTitle": 2
+  },
+  "admissionsSubfieldCounts": {
+    "deadlinesNote": 92,
+    "reportedFeeQuote": 71,
+    "eligibility": 60,
+    "overview": 38,
+    "applicationSteps": 36
+  },
+  "USDWholeCourseQuotes": 42,
+  "newForeignRoutes": 36,
+  "oldForeignRoutes": 6,
+  "domesticAnnualChargePreservedFromOldNativeQuote": 36,
+  "quoteCountPreserved": 71,
+  "feeNumbersAnnualisationDetected": false,
+  "materialFindings": [
+    {
+      "priority": "blocker",
+      "field": "mediaAttribution.cover",
+      "finding": "0310 restores historical Commons aerialsource/credit/alt, while no coverImageUrl is supplied and0305rootalready replaced hostedcover with officiallibraryphoto. This falsely attributes retainedlibrarypixels and would reintroduce old licence/render problem. Restore actualaccepted0305officialcoverattribution."
+    },
+    {
+      "priority": "material",
+      "field": "36 new FNroute eligibility/applications",
+      "finding": "Blanket noSRIHERentranceexam removes primarypolicy condition: exemption is universitygovernedprogramme unlessotherwisespecified, with interviewsreserved/statutoryconditions. Retain exact exceptions and scope."
+    },
+    {
+      "priority": "material",
+      "field": "USDquotecomponentBasis",
+      "finding": "Quotes say nottuitiononly; actualUGp8footnote/PGp18 saysfullcoursetuition and feessectionTuitionFees(TotalProgramFees), with registration/insurance/exam/hostelextra. Keep exactsourcebasis, no inventedcombinedchargeclassification."
+    },
+    {
+      "priority": "integration",
+      "field": "ledger/appliedreceipt",
+      "finding": "Ledgerexternalownerclaude-tn-sri-ramachandra-20261025 markedpublished0310 withappliednote, but roots explicitreceipt290set excluded0310. Local note is not verifiedDBapplyreceipt. Must reconcilebeforeallpendingrun."
+    }
+  ],
+  "recognitionReview": {
+    "NAACdatedClaimCorroborated": "Retainedregulatorworkbook Universitiesrow372,U0478,TNUNGN10143,Cycle3,3.53,A++,25January2021; historicaldeclarationonly, notnewcurrencyterm.",
+    "otherBadges": "0310removesverifiedUGCbadge,restores2NBA+4NIRF+NAAC. NBAownrows andnonMedicalNIRFrankingrows notindependentlyreverifiedinthisboundedpass. Evidenceclaimlistsoldbadgefacts; rootshouldreviewactualscopesratherthantreatschemapassasrecognitionverification."
+  },
+  "sourceFiles": {
+    "foreignUG": "research/india-source-bundles/sriher-forward-20261025/foreign-ug2026.pdf + OCR",
+    "foreignPG": "research/india-source-bundles/sriher-forward-20261025/foreign-pg2026.pdf + OCR",
+    "domestic": "existing0305officialnativequoteevidence:36amounts/periodacademic_yearexactlymatchnewadditionalFees",
+    "NAAC": "research/india-source-bundles/tnteu-20261025-rescue/naac-valid-accreditation-14082025.xlsx"
+  },
+  "noDBOrEditsToPayloadOrLedger": true
+}

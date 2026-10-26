@@ -1,0 +1,2069 @@
+{
+  "courses": [
+    {
+      "slug": "be-btech-aerospace-engineering",
+      "name": "B.E./B.Tech in Aerospace Engineering",
+      "shortName": "B.E./B.Tech Aerospace",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "aerospace-engineering",
+      "aliases": [
+        "Bachelor of Aerospace Engineering",
+        "BEng Aerospace Engineering"
+      ],
+      "displayOrder": 4,
+      "durationYears": 4,
+      "summary": "The Students Traffic catalogue category for four-year undergraduate aerospace engineering degrees. Programmes in this category cover aerodynamics, flight mechanics, propulsion, aerospace structures, control systems and spacecraft dynamics, supported by wind-tunnel, propulsion and structures laboratories and a final-year design project. In India the award is a B.Tech. or B.E. over eight semesters, and international entry normally requires physics and mathematics at the school-leaving stage.",
+      "metaTitle": "B.E./B.Tech Aerospace Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech Aerospace degrees abroad by four-year structure, subject prerequisites, teaching language, tuition in USD and international entry."
+    },
+    {
+      "slug": "be-btech-data-science",
+      "name": "B.E./B.Tech in Data Science",
+      "shortName": "B.E./B.Tech Data Science",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "data-science",
+      "aliases": [
+        "Bachelor of Technology in Data Science",
+        "BEng Data Science"
+      ],
+      "displayOrder": 33,
+      "durationYears": 4,
+      "summary": "Compare undergraduate Data Science degrees abroad by statistics, machine learning, data engineering, applied projects, tuition and admissions. Each university offering keeps its official award title, artificial-intelligence specialisation depth and entry requirements visible before applying.",
+      "metaTitle": "B.E./B.Tech Data Science Abroad | Fees",
+      "metaDescription": "Compare B.E./B.Tech Data Science programmes abroad by curriculum, tuition fees, admissions and practical training."
+    },
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "Bachelor of Technology in Computer Science and Engineering",
+        "BEng Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in computer science and engineering, usually four years after an upper-secondary qualification with mathematics. Typical curricula run from programming, data structures, operating systems, databases and computer networks to algorithms, software engineering and electives in artificial intelligence, machine learning, cloud and security, with project and internship components.",
+      "metaTitle": "B.E./B.Tech CSE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech CSE degrees for international applicants: duration, teaching language, intake months, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-cyber-security",
+      "name": "B.E./B.Tech in Cyber Security",
+      "shortName": "B.E./B.Tech Cyber Security",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "cyber-security",
+      "aliases": [
+        "Bachelor of Cyber Security",
+        "BSc Cyber Security"
+      ],
+      "displayOrder": 101,
+      "durationYears": 4,
+      "summary": "Study cyber security through an undergraduate engineering programme covering network security, cryptography, secure systems design, digital forensics and ethical hacking practice. Compare each university's official award, laboratory facilities, industry certifications, tuition and admissions requirements before applying, since specialisation depth and delivery format vary by institution.",
+      "metaTitle": "B.E./B.Tech Cyber Security Abroad | Fees",
+      "metaDescription": "Compare B.E./B.Tech Cyber Security programmes abroad by curriculum, laboratories, tuition fees and admissions requirements for international students."
+    },
+    {
+      "slug": "be-btech-electronics-communication-engineering",
+      "name": "B.E./B.Tech in Electronics and Communication Engineering",
+      "shortName": "B.E./B.Tech ECE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electronics-communication-engineering",
+      "aliases": [
+        "Bachelor of Electronics and Communication Engineering",
+        "BEng Electronic and Communications Engineering",
+        "Electronics and Telecommunications Engineering"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in electronics and communication engineering, usually four years after upper-secondary physics, chemistry and mathematics. Curricula typically span circuit and network theory, analog and digital electronics, signals and systems, digital signal processing, communication systems and embedded or VLSI design, with laboratory and project work.",
+      "metaTitle": "B.E./B.Tech ECE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech ECE degrees for international applicants: duration, teaching language, intakes, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-information-technology",
+      "name": "B.E./B.Tech in Information Technology",
+      "shortName": "B.E./B.Tech IT",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "information-technology",
+      "aliases": [
+        "Bachelor of Engineering in Information Technology",
+        "Bachelor of Information Technology",
+        "BSc Information Technology"
+      ],
+      "displayOrder": 180,
+      "durationYears": 4,
+      "summary": "An approved Engineering catalogue category for four-year undergraduate information technology degrees, including university programmes that publish Computer Science as a major within an Information Technology award. The exact university title and major structure remain visible on each offering.",
+      "metaTitle": "B.E./B.Tech IT Programmes",
+      "metaDescription": "Compare B.E./B.Tech IT programmes, official titles, fees, duration and admissions routes for international students."
+    },
+    {
+      "slug": "be-btech-mechanical-engineering",
+      "name": "B.E./B.Tech in Mechanical Engineering",
+      "shortName": "B.E./B.Tech Mechanical",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "mechanical-engineering",
+      "aliases": [
+        "Bachelor of Mechanical Engineering",
+        "BEng Mechanical Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "A four-year undergraduate engineering degree covering engineering mechanics, thermodynamics, fluid mechanics, heat transfer, machine design, manufacturing processes and control systems. Teaching is built around workshop practice, thermal and materials laboratories, computer-aided design and a final-year project. Graduates move into manufacturing, automotive, energy, thermal and design roles, or continue to a master's specialisation such as thermal engineering or machine design.",
+      "metaTitle": "B.E./B.Tech Mechanical: Course, Fees and Admission",
+      "metaDescription": "What a four-year B.E./B.Tech Mechanical degree covers, its entry requirements, how admission is decided and what tuition and duration to plan for."
+    },
+    {
+      "slug": "mba",
+      "name": "Master of Business Administration",
+      "shortName": "MBA",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "business-administration",
+      "aliases": [
+        "General MBA",
+        "Full-time MBA",
+        "International MBA"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "A postgraduate category for general-management degrees taken after a bachelor qualification. Study commonly combines finance, marketing, organisational behaviour, operations and strategy with applied management work. Programme delivery, selection tests, curriculum and fees vary by university.",
+      "metaTitle": "MBA Programmes and Admissions",
+      "metaDescription": "Compare MBA programmes by official award, academic eligibility, teaching language, duration, university and tuition fees."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "tagore-engineering-college",
+      "name": "Tagore Engineering College",
+      "city": "Chennai",
+      "type": "Private",
+      "establishedYear": 1998,
+      "officialWebsite": "https://tagore-engg.ac.in/",
+      "mediaAttribution": {},
+      "summary": "Tagore Engineering College (TEC) is a private, self-financing engineering college founded in 1998 at Rathinamangalam, Vandalur, on the southern edge of Chennai in Chengalpattu district, Tamil Nadu. It is not a university: it is a non-autonomous college affiliated to Anna University, Chennai, which sets its syllabus and exams and awards its degrees. It teaches seven AICTE-approved B.E./B.Tech branches and an MBA in English.",
+      "campusLifestyle": "Tagore Engineering College (TEC)'s campus on the Vandalur-Kelambakkam Road has four academic blocks, department laboratories including an aeronautical hangar with aero engines, a machine shop, a computer centre, a library, an auditorium, a 150-seat air-conditioned mini auditorium (Bharathiar Hall) and an open-air auditorium. Its 2026-27 disclosure lists indoor games, a gym, outdoor courts and grounds for ten sports, a cafeteria, a bank and lifts and ground-floor classrooms for students with disabilities. The cultural festival is called YASHAS.",
+      "cityProfile": "Tagore Engineering College (TEC) is at Rathinamangalam on the Vandalur-Kelambakkam Main Road, Chennai 600127, in Vandalur taluk of Chengalpattu district, Tamil Nadu (AICTE's records still show the former Kanchipuram district). DoTE's TNEA 2026 booklet places it 40 km from the district headquarters and 7 km from Vandalur railway station. Anna University lists it among Chengalpattu district colleges with examination code 4127. The college is run by the Tagore Educational Trust, Chennai; Tagore Medical and Dental colleges are separate institutions not covered here.",
+      "practicalExposure": "Tagore Engineering College (TEC) is not autonomous, so it follows Anna University's curricula and regulations: the university sets the syllabus, conducts the end-semester exams and awards the degree, and the college runs internal assessment. AICTE makes an internship mandatory for every admitted student. The training and placement cell runs aptitude, personality and technical training. In TEC's NIRF 2026 engineering data, 158 of 160 B.E./B.Tech students graduating in 2024-25 were placed at a median salary of INR 4,00,000, and its management data show 47 of 53 MBA graduates placed at a median of INR 4,00,000. NBA accredits CSE, ECE, IT and the MBA to 30 June 2027.",
+      "hostelOverview": "Tagore Engineering College (TEC) has permanent on-campus hostels for men and women, with furnished shared rooms and a campus clinic staffed by an MBBS doctor and a nurse. Its 2026-27 AICTE disclosure estimates boarding and lodging at INR 85,000 a year, and the Tamil Nadu MBA/MCA 2026-27 booklet lists room rent of INR 37,000, electricity of INR 11,000 and mess charges of INR 47,000 a year; confirm the current charge with the college.",
+      "dietarySupport": "Tagore Engineering College (TEC)'s hostel messes serve both vegetarian and non-vegetarian food for men and women, according to DoTE's TNEA 2026 college booklet. The MBA/MCA 2026-27 booklet lists the mess charge at INR 47,000 a year. TEC publishes no menu and no provision for specific regional or religious diets, so ask the hostel office before joining.",
+      "safetyOverview": "Tagore Engineering College (TEC)'s anti-ragging committee, chaired by the principal, includes the Thazhambur police inspector, the Vandalur revenue inspector, parent and student representatives and both hostel wardens, and covers the campus, bus stops and college buses. An internal complaints committee handles sexual-harassment complaints and reports to Anna University's POSH cell. TNEA 2026 publishes an anti-ragging phone number for the college.",
+      "studentSupport": "Tagore Engineering College (TEC) handles complaints through a grievance redressal committee: students first raise an issue with the head of department, who must respond within 7 working days, and can then take it to the committee. An SC/ST committee guides students to scholarships, slow learners get teacher guardians and remedial classes, and sports-quota entrants get fee concessions. Contact: principal@tagore-engg.ac.in or 044 2229 9400.",
+      "whyChoose": [
+        "Tagore Engineering College (TEC) publishes its fee-committee tuition: for 2025-26 admissions, INR 50,000 a year for TNEA government-quota seats (INR 55,000 on NBA-accredited CSE, ECE and IT) and INR 35,000 a year for government-quota MBA seats.",
+        "NBA accredits TEC's B.E. CSE, B.E. ECE, B.Tech IT and MBA for academic years 2024-25 to 2026-27, valid to 30 June 2027.",
+        "In TEC's NIRF 2026 data, 158 of 160 B.E./B.Tech graduates of 2024-25 were placed at a median salary of INR 4,00,000."
+      ],
+      "thingsToConsider": [
+        "Tagore Engineering College (TEC) is an affiliated, non-autonomous college, not a university: Anna University sets its syllabus and exams and awards its degrees, and there are no seats for international students because AICTE shows no NRI or foreign-national approval.",
+        "TEC holds no current NAAC grade and has no NIRF rank, and some branches run well below capacity: its 2026-27 disclosure reports 13 Aeronautical and 16 Mechanical admissions against 30 seats each in 2025-26.",
+        "TEC also runs an M.E. in Computer Science and Engineering and an M.E. in Environmental Engineering (18 seats each), but they are not listed here because no 2026-27 AICTE approval or state PG counselling record for them could be checked."
+      ],
+      "bestFitFor": [
+        "Tamil Nadu TNEA applicants who want an Anna University B.E. or B.Tech on Chennai's southern fringe near Vandalur with a published government-quota fee.",
+        "Students interested in computing branches: CSE, IT, AI and Data Science and CSE (Cyber Security) make up 360 of TEC's 480 first-year places in TNEA 2026.",
+        "Graduates who want an NBA-accredited, TANCET-route MBA in Chennai at a published government-quota tuition of INR 35,000 a year."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "AICTE - Approved institution, Permanent ID 1-9722913 (Private-Self Financing); Extension of Approval 2025-26",
+        "Anna University, Chennai - Affiliated non-autonomous college, examination code 4127",
+        "NBA - B.E. CSE, B.E. ECE, B.Tech IT (Tier II) and MBA accredited for 2024-25 to 2026-27 (valid to 30 June 2027)",
+        "DoTE Tamil Nadu - TNEA 2026 participating college, counselling code 1420"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "AICTE - Approved institutes dashboard",
+          "url": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved"
+        },
+        {
+          "label": "Anna University CAI - Affiliated colleges, Chengalpattu district",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Chengalpattu.php"
+        },
+        {
+          "label": "NBA - Accreditation letters (TEC)",
+          "url": "https://tagore-engg.ac.in/pdf/NBA.pdf"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+          "url": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Tagore Engineering College autonomous or affiliated to Anna University?",
+          "answer": "Tagore Engineering College (TEC) is a non-autonomous college affiliated to Anna University, Chennai, which sets its syllabus and exams and awards its degrees. Anna University lists it in Chengalpattu district with examination code 4127, and DoTE's TNEA 2026 booklet gives its autonomous status as No."
+        },
+        {
+          "question": "What is the TNEA code for Tagore Engineering College?",
+          "answer": "The TNEA counselling code for Tagore Engineering College (TEC) is 1420. In TNEA 2026 TEC offered AI and Data Science (AD), Aeronautical (AE), CSE (CS), CSE Cyber Security (SC), ECE (EC), IT (IT) and Mechanical (ME). The same code 1420 is used in Tamil Nadu's MBA/MCA counselling."
+        },
+        {
+          "question": "Is Tagore Engineering College AICTE approved?",
+          "answer": "Yes, Tagore Engineering College (TEC) is AICTE approved as a private self-financing institution, permanent ID 1-9722913. Its latest published Extension of Approval, for 2025-26 (3 January 2025), covers seven B.E./B.Tech branches, the MBA and two M.E. programmes, all affiliated to Anna University."
+        },
+        {
+          "question": "What is the fee at Tagore Engineering College?",
+          "answer": "Tagore Engineering College (TEC)'s 2026-27 AICTE disclosure lists 2025-26 tuition of INR 50,000 a year for TNEA government-quota B.E./B.Tech seats, or INR 55,000 on NBA-accredited CSE, ECE and IT. Management-quota tuition is INR 85,000, or INR 87,000 on accredited branches. The MBA costs INR 35,000 (government quota) or INR 41,000 a year."
+        },
+        {
+          "question": "Is Tagore Engineering College NBA accredited?",
+          "answer": "Yes, for four programmes: NBA accredits Tagore Engineering College (TEC)'s B.E. Computer Science and Engineering, B.E. Electronics and Communication Engineering, B.Tech Information Technology and MBA for academic years 2024-25 to 2026-27, valid to 30 June 2027. Aeronautical, Mechanical, AI and Data Science and Cyber Security are not accredited."
+        },
+        {
+          "question": "Does Tagore Engineering College admit international or NRI students?",
+          "answer": "No, Tagore Engineering College (TEC) has no NRI or foreign-national seats: AICTE's 2024-25 and 2025-26 approvals mark NRI and FN/Gulf/OCI approval as No for every course. TNEA is for Indian nationals; OCI/PIO card holders who are natives of Tamil Nadu may apply unless born abroad after 4 March 2021."
+        },
+        {
+          "question": "How do I get admission to Tagore Engineering College?",
+          "answer": "Most B.E./B.Tech seats at Tagore Engineering College (TEC) are filled through TNEA: register at tneaonline.org, get a rank from Mathematics (100), Physics (50) and Chemistry (50), and choose code 1420. TNEA 2026 counselling ran 20 July to 30 August, and Anna University starts first-semester classes on 2 September 2026. Management-quota seats are filled by the college."
+        },
+        {
+          "question": "What are the placements like at Tagore Engineering College?",
+          "answer": "In Tagore Engineering College (TEC)'s NIRF 2026 data, 158 of the 160 B.E./B.Tech students who graduated in 2024-25 were placed, at a median salary of INR 4,00,000. In the management data, 47 of 53 MBA graduates of 2024-25 were placed at a median of INR 4,00,000."
+        },
+        {
+          "question": "Does Tagore Engineering College have hostels?",
+          "answer": "Yes, Tagore Engineering College (TEC) has permanent on-campus hostels for men and women with messes serving vegetarian and non-vegetarian food. Its 2026-27 disclosure estimates boarding and lodging at INR 85,000 a year."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "TEC - Mandatory Disclosure 2026-27",
+          "url": "https://tagore-engg.ac.in/pdf/MANDATORY%20DISCLOSURE%202026-2027%20(1)_removed.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "AICTE - Extension of Approval 2025-26 (TEC)",
+          "url": "https://tagore-engg.ac.in/pdf/AICTE%20-%20EOA%20Report%202025-2026.PDF",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "AICTE - Extension of Approval 2024-25 (TEC)",
+          "url": "https://tagore-engg.ac.in/pdf/EOA.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "Anna University CAI - Chengalpattu district affiliated colleges",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Chengalpattu.php",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "NBA - Accreditation letters, 2024 (TEC)",
+          "url": "https://tagore-engg.ac.in/pdf/NBA.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+          "url": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+          "url": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+          "url": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 vacancy position after Round 1",
+          "url": "https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DoTE Tamil Nadu - MBA/MCA Admissions 2026-27 college booklet",
+          "url": "https://static.tn-mbamca.com/docs/TNMBAMCA-ENGINEERING-COLLEGES-BOOKLET-2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "Anna University - TANCET / CEETA-PG 2026 Information Brochure",
+          "url": "https://tancet.annauniv.edu/tancet/Information%20Brochure%202026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-23"
+        },
+        {
+          "label": "Anna University - Affiliated colleges academic calendar Sep-Dec 2026",
+          "url": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+          "url": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "Anna University - Academic Regulations 2025 (PG, affiliated)",
+          "url": "https://cac.annauniv.edu/aidetails/reg/R2025/PG%20Regulations%202025.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "TEC - NIRF 2026 data submitted (Engineering)",
+          "url": "https://tagore-engg.ac.in/pdf/NIRF%202026%20ENGINEERIG.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "TEC - NIRF 2026 data submitted (Management)",
+          "url": "https://tagore-engg.ac.in/pdf/NIRF%202026%20MANAGEMENT.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "TEC - Faculty details for Anna University affiliation 2026-27",
+          "url": "https://tagore-engg.ac.in/pdf/Faculty%20details%20for%20AU%20affiliation%20AY%2026-27%20-%20SEPTEMBER%202026%20BIOMETRIC.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "TEC - Hostel and facilities",
+          "url": "https://tagore-engg.ac.in/facilities/hostel.php",
+          "kind": "official-university",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "TEC - Official website",
+          "url": "https://tagore-engg.ac.in/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-26"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "This record covers Tagore Engineering College at Rathinamangalam, Vandalur, Chennai only. Tagore Medical College, Tagore Dental College and other Tagore Educational Trust institutions are outside this record.",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "published"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my TEC eligibility",
+            "capture": [
+              "nationality and Tamil Nadu nativity or schooling",
+              "Class 12 board and MPC marks",
+              "community category",
+              "intended branch"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Estimate my TEC fees and hostel cost",
+            "capture": [
+              "intended branch",
+              "TNEA or management quota",
+              "hostel and transport needs",
+              "concession eligibility"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my TNEA choices for TEC",
+            "capture": [
+              "TNEA rank or expected cut-off",
+              "preferred branches",
+              "document readiness"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "tagore-be-aeronautical-engineering",
+          "canonicalCourseSlug": "be-btech-aerospace-engineering",
+          "officialTitle": "B.E. Aeronautical Engineering, Tagore Engineering College",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2025-26",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 50000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Tagore Engineering College (TEC)'s 2026-27 AICTE mandatory disclosure publishes the Tamil Nadu fee committee's tuition for 2025-26 admissions to non-accredited branches such as the B.E. Aeronautical Engineering: INR 50,000 a year for TNEA government-quota seats and INR 85,000 a year for management-quota seats. The disclosure prints no separate 2026-27 figure, so confirm the 2026-27 fee with the college. TNEA's 2026 college booklet lists a caution deposit of INR 5,000, an establishment charge of INR 2,500, no admission fee and college transport at INR 10,000 to 45,000 a year; the disclosure estimates hostel boarding and lodging at INR 85,000 a year. Students in the first three Anna University ranks have their full tuition reimbursed at the end of the course."
+          },
+          "officialProgramUrl": "https://tagore-engg.ac.in/academics/ug/aeronautical/index.php",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2024-25 and 2025-26 approvals show NRI and foreign-national/Gulf/OCI approval as No for every TEC course, and no international-student route is published, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1420, branch code AE) or the management quota. TNEA's 2026 college booklet lists an approved intake of 30.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Aeronautical Engineering at Tagore Engineering College (TEC) is a four-year, eight-semester Anna University degree taught in English at Rathinamangalam, Vandalur, Chennai. TEC is an affiliated, non-autonomous college, so Anna University sets the syllabus and exams and awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission; Anna University applies the same Government of Tamil Nadu norms to its affiliated colleges.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1420 with branch AE, then confirm the tentative allotment",
+              "Download the allotment order, report to TEC within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to the TEC admission office (forms from the college office; admission phone +91 75400 54222)"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University's calendar for non-autonomous affiliated colleges starts first-semester classes on 2 September 2026, with end-semester exams from 22 December 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes, and TNEA 2026 lists no Tamil-medium branch at Tagore Engineering College.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Tagore Engineering College (TEC)'s 2026-27 AICTE mandatory disclosure publishes the Tamil Nadu fee committee's tuition for 2025-26 admissions to non-accredited branches such as the B.E. Aeronautical Engineering: INR 50,000 a year for TNEA government-quota seats and INR 85,000 a year for management-quota seats. The disclosure prints no separate 2026-27 figure, so confirm the 2026-27 fee with the college. TNEA's 2026 college booklet lists a caution deposit of INR 5,000, an establishment charge of INR 2,500, no admission fee and college transport at INR 10,000 to 45,000 a year; the disclosure estimates hostel boarding and lodging at INR 85,000 a year. Students in the first three Anna University ranks have their full tuition reimbursed at the end of the course.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's Aeronautical Engineering curriculum covering aerodynamics, aircraft structures, propulsion and flight mechanics, taught with the college's aircraft hangar, aero engines and aerodynamics laboratory. Anna University sets the syllabus and end-semester exams; the college runs internal assessment and internship is mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "tagore-btech-artificial-intelligence-data-science",
+          "canonicalCourseSlug": "be-btech-data-science",
+          "officialTitle": "B.Tech. Artificial Intelligence and Data Science, Tagore Engineering College",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2025-26",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 50000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Tagore Engineering College (TEC)'s 2026-27 AICTE mandatory disclosure publishes the Tamil Nadu fee committee's tuition for 2025-26 admissions to non-accredited branches such as the B.Tech. Artificial Intelligence and Data Science: INR 50,000 a year for TNEA government-quota seats and INR 85,000 a year for management-quota seats. The disclosure prints no separate 2026-27 figure, so confirm the 2026-27 fee with the college. TNEA's 2026 college booklet lists a caution deposit of INR 5,000, an establishment charge of INR 2,500, no admission fee and college transport at INR 10,000 to 45,000 a year; the disclosure estimates hostel boarding and lodging at INR 85,000 a year. Students in the first three Anna University ranks have their full tuition reimbursed at the end of the course."
+          },
+          "officialProgramUrl": "https://tagore-engg.ac.in/academics/ug/artificial-intelligence/index.php",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2024-25 and 2025-26 approvals show NRI and foreign-national/Gulf/OCI approval as No for every TEC course, and no international-student route is published, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1420, branch code AD) or the management quota. TNEA's 2026 college booklet lists an approved intake of 60.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.Tech. Artificial Intelligence and Data Science at Tagore Engineering College (TEC) is a four-year, eight-semester Anna University degree taught in English at Rathinamangalam, Vandalur, Chennai. TEC is an affiliated, non-autonomous college, so Anna University sets the syllabus and exams and awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission; Anna University applies the same Government of Tamil Nadu norms to its affiliated colleges.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1420 with branch AD, then confirm the tentative allotment",
+              "Download the allotment order, report to TEC within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to the TEC admission office (forms from the college office; admission phone +91 75400 54222)"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University's calendar for non-autonomous affiliated colleges starts first-semester classes on 2 September 2026, with end-semester exams from 22 December 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes, and TNEA 2026 lists no Tamil-medium branch at Tagore Engineering College.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Tagore Engineering College (TEC)'s 2026-27 AICTE mandatory disclosure publishes the Tamil Nadu fee committee's tuition for 2025-26 admissions to non-accredited branches such as the B.Tech. Artificial Intelligence and Data Science: INR 50,000 a year for TNEA government-quota seats and INR 85,000 a year for management-quota seats. The disclosure prints no separate 2026-27 figure, so confirm the 2026-27 fee with the college. TNEA's 2026 college booklet lists a caution deposit of INR 5,000, an establishment charge of INR 2,500, no admission fee and college transport at INR 10,000 to 45,000 a year; the disclosure estimates hostel boarding and lodging at INR 85,000 a year. Students in the first three Anna University ranks have their full tuition reimbursed at the end of the course.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's Artificial Intelligence and Data Science curriculum covering programming, data structures, machine learning, data analytics and deep learning. Anna University sets the syllabus and end-semester exams; the college runs internal assessment and internship is mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "tagore-be-computer-science-engineering",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "B.E. Computer Science and Engineering, Tagore Engineering College",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2025-26",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 55000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Tagore Engineering College (TEC)'s 2026-27 AICTE mandatory disclosure publishes the Tamil Nadu fee committee's tuition for 2025-26 admissions to NBA-accredited branches such as the B.E. Computer Science and Engineering: INR 55,000 a year for TNEA government-quota seats and INR 87,000 a year for management-quota seats. The disclosure prints no separate 2026-27 figure, so confirm the 2026-27 fee with the college. TNEA's 2026 college booklet lists a caution deposit of INR 5,000, an establishment charge of INR 2,500, no admission fee and college transport at INR 10,000 to 45,000 a year; the disclosure estimates hostel boarding and lodging at INR 85,000 a year. Students in the first three Anna University ranks have their full tuition reimbursed at the end of the course."
+          },
+          "officialProgramUrl": "https://tagore-engg.ac.in/academics/ug/cse/index.php",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2024-25 and 2025-26 approvals show NRI and foreign-national/Gulf/OCI approval as No for every TEC course, and no international-student route is published, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1420, branch code CS) or the management quota. TNEA's 2026 college booklet lists an approved intake of 120. NBA accredits the programme (Tier II) for academic years 2024-25 to 2026-27, valid to 30 June 2027.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Computer Science and Engineering at Tagore Engineering College (TEC) is a four-year, eight-semester Anna University degree taught in English at Rathinamangalam, Vandalur, Chennai. TEC is an affiliated, non-autonomous college, so Anna University sets the syllabus and exams and awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission; Anna University applies the same Government of Tamil Nadu norms to its affiliated colleges.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1420 with branch CS, then confirm the tentative allotment",
+              "Download the allotment order, report to TEC within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to the TEC admission office (forms from the college office; admission phone +91 75400 54222)"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University's calendar for non-autonomous affiliated colleges starts first-semester classes on 2 September 2026, with end-semester exams from 22 December 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes, and TNEA 2026 lists no Tamil-medium branch at Tagore Engineering College.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Tagore Engineering College (TEC)'s 2026-27 AICTE mandatory disclosure publishes the Tamil Nadu fee committee's tuition for 2025-26 admissions to NBA-accredited branches such as the B.E. Computer Science and Engineering: INR 55,000 a year for TNEA government-quota seats and INR 87,000 a year for management-quota seats. The disclosure prints no separate 2026-27 figure, so confirm the 2026-27 fee with the college. TNEA's 2026 college booklet lists a caution deposit of INR 5,000, an establishment charge of INR 2,500, no admission fee and college transport at INR 10,000 to 45,000 a year; the disclosure estimates hostel boarding and lodging at INR 85,000 a year. Students in the first three Anna University ranks have their full tuition reimbursed at the end of the course.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's Computer Science and Engineering curriculum covering programming, data structures, operating systems, database management, computer networks and software engineering. Anna University sets the syllabus and end-semester exams; the college runs internal assessment and internship is mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "tagore-be-cse-cyber-security",
+          "canonicalCourseSlug": "be-btech-cyber-security",
+          "officialTitle": "B.E. Computer Science and Engineering (Cyber Security), Tagore Engineering College",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2025-26",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 50000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Tagore Engineering College (TEC)'s 2026-27 AICTE mandatory disclosure publishes the Tamil Nadu fee committee's tuition for 2025-26 admissions to non-accredited branches such as the B.E. Computer Science and Engineering (Cyber Security): INR 50,000 a year for TNEA government-quota seats and INR 85,000 a year for management-quota seats. The disclosure prints no separate 2026-27 figure, so confirm the 2026-27 fee with the college. TNEA's 2026 college booklet lists a caution deposit of INR 5,000, an establishment charge of INR 2,500, no admission fee and college transport at INR 10,000 to 45,000 a year; the disclosure estimates hostel boarding and lodging at INR 85,000 a year. Students in the first three Anna University ranks have their full tuition reimbursed at the end of the course."
+          },
+          "officialProgramUrl": "https://tagore-engg.ac.in/academics/ug/cyber-security/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2024-25 and 2025-26 approvals show NRI and foreign-national/Gulf/OCI approval as No for every TEC course, and no international-student route is published, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1420, branch code SC) or the management quota. TNEA's 2026 college booklet lists an approved intake of 60.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Computer Science and Engineering (Cyber Security) at Tagore Engineering College (TEC) is a four-year, eight-semester Anna University degree taught in English at Rathinamangalam, Vandalur, Chennai. TEC is an affiliated, non-autonomous college, so Anna University sets the syllabus and exams and awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission; Anna University applies the same Government of Tamil Nadu norms to its affiliated colleges.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1420 with branch SC, then confirm the tentative allotment",
+              "Download the allotment order, report to TEC within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to the TEC admission office (forms from the college office; admission phone +91 75400 54222)"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University's calendar for non-autonomous affiliated colleges starts first-semester classes on 2 September 2026, with end-semester exams from 22 December 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes, and TNEA 2026 lists no Tamil-medium branch at Tagore Engineering College.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Tagore Engineering College (TEC)'s 2026-27 AICTE mandatory disclosure publishes the Tamil Nadu fee committee's tuition for 2025-26 admissions to non-accredited branches such as the B.E. Computer Science and Engineering (Cyber Security): INR 50,000 a year for TNEA government-quota seats and INR 85,000 a year for management-quota seats. The disclosure prints no separate 2026-27 figure, so confirm the 2026-27 fee with the college. TNEA's 2026 college booklet lists a caution deposit of INR 5,000, an establishment charge of INR 2,500, no admission fee and college transport at INR 10,000 to 45,000 a year; the disclosure estimates hostel boarding and lodging at INR 85,000 a year. Students in the first three Anna University ranks have their full tuition reimbursed at the end of the course.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's CSE (Cyber Security) curriculum, a branch TEC started in 2024, combining the core computer science subjects with security-focused courses. Anna University sets the syllabus and end-semester exams; the college runs internal assessment and internship is mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "tagore-be-electronics-communication-engineering",
+          "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+          "officialTitle": "B.E. Electronics and Communication Engineering, Tagore Engineering College",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2025-26",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 55000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Tagore Engineering College (TEC)'s 2026-27 AICTE mandatory disclosure publishes the Tamil Nadu fee committee's tuition for 2025-26 admissions to NBA-accredited branches such as the B.E. Electronics and Communication Engineering: INR 55,000 a year for TNEA government-quota seats and INR 87,000 a year for management-quota seats. The disclosure prints no separate 2026-27 figure, so confirm the 2026-27 fee with the college. TNEA's 2026 college booklet lists a caution deposit of INR 5,000, an establishment charge of INR 2,500, no admission fee and college transport at INR 10,000 to 45,000 a year; the disclosure estimates hostel boarding and lodging at INR 85,000 a year. Students in the first three Anna University ranks have their full tuition reimbursed at the end of the course."
+          },
+          "officialProgramUrl": "https://tagore-engg.ac.in/academics/ug/ece/index.php",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2024-25 and 2025-26 approvals show NRI and foreign-national/Gulf/OCI approval as No for every TEC course, and no international-student route is published, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1420, branch code EC) or the management quota. TNEA's 2026 college booklet lists an approved intake of 60. NBA accredits the programme (Tier II) for academic years 2024-25 to 2026-27, valid to 30 June 2027.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Electronics and Communication Engineering at Tagore Engineering College (TEC) is a four-year, eight-semester Anna University degree taught in English at Rathinamangalam, Vandalur, Chennai. TEC is an affiliated, non-autonomous college, so Anna University sets the syllabus and exams and awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission; Anna University applies the same Government of Tamil Nadu norms to its affiliated colleges.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1420 with branch EC, then confirm the tentative allotment",
+              "Download the allotment order, report to TEC within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to the TEC admission office (forms from the college office; admission phone +91 75400 54222)"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University's calendar for non-autonomous affiliated colleges starts first-semester classes on 2 September 2026, with end-semester exams from 22 December 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes, and TNEA 2026 lists no Tamil-medium branch at Tagore Engineering College.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Tagore Engineering College (TEC)'s 2026-27 AICTE mandatory disclosure publishes the Tamil Nadu fee committee's tuition for 2025-26 admissions to NBA-accredited branches such as the B.E. Electronics and Communication Engineering: INR 55,000 a year for TNEA government-quota seats and INR 87,000 a year for management-quota seats. The disclosure prints no separate 2026-27 figure, so confirm the 2026-27 fee with the college. TNEA's 2026 college booklet lists a caution deposit of INR 5,000, an establishment charge of INR 2,500, no admission fee and college transport at INR 10,000 to 45,000 a year; the disclosure estimates hostel boarding and lodging at INR 85,000 a year. Students in the first three Anna University ranks have their full tuition reimbursed at the end of the course.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's Electronics and Communication Engineering curriculum covering circuits, signals and systems, digital electronics, communication systems, VLSI and embedded systems. Anna University sets the syllabus and end-semester exams; the college runs internal assessment and internship is mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "tagore-btech-information-technology",
+          "canonicalCourseSlug": "be-btech-information-technology",
+          "officialTitle": "B.Tech. Information Technology, Tagore Engineering College",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2025-26",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 55000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Tagore Engineering College (TEC)'s 2026-27 AICTE mandatory disclosure publishes the Tamil Nadu fee committee's tuition for 2025-26 admissions to NBA-accredited branches such as the B.Tech. Information Technology: INR 55,000 a year for TNEA government-quota seats and INR 87,000 a year for management-quota seats. The disclosure prints no separate 2026-27 figure, so confirm the 2026-27 fee with the college. TNEA's 2026 college booklet lists a caution deposit of INR 5,000, an establishment charge of INR 2,500, no admission fee and college transport at INR 10,000 to 45,000 a year; the disclosure estimates hostel boarding and lodging at INR 85,000 a year. Students in the first three Anna University ranks have their full tuition reimbursed at the end of the course."
+          },
+          "officialProgramUrl": "https://tagore-engg.ac.in/academics/ug/it/index.php",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2024-25 and 2025-26 approvals show NRI and foreign-national/Gulf/OCI approval as No for every TEC course, and no international-student route is published, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1420, branch code IT) or the management quota. TNEA's 2026 college booklet lists an approved intake of 120. NBA accredits the programme (Tier II) for academic years 2024-25 to 2026-27, valid to 30 June 2027.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.Tech. Information Technology at Tagore Engineering College (TEC) is a four-year, eight-semester Anna University degree taught in English at Rathinamangalam, Vandalur, Chennai. TEC is an affiliated, non-autonomous college, so Anna University sets the syllabus and exams and awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission; Anna University applies the same Government of Tamil Nadu norms to its affiliated colleges.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1420 with branch IT, then confirm the tentative allotment",
+              "Download the allotment order, report to TEC within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to the TEC admission office (forms from the college office; admission phone +91 75400 54222)"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University's calendar for non-autonomous affiliated colleges starts first-semester classes on 2 September 2026, with end-semester exams from 22 December 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes, and TNEA 2026 lists no Tamil-medium branch at Tagore Engineering College.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Tagore Engineering College (TEC)'s 2026-27 AICTE mandatory disclosure publishes the Tamil Nadu fee committee's tuition for 2025-26 admissions to NBA-accredited branches such as the B.Tech. Information Technology: INR 55,000 a year for TNEA government-quota seats and INR 87,000 a year for management-quota seats. The disclosure prints no separate 2026-27 figure, so confirm the 2026-27 fee with the college. TNEA's 2026 college booklet lists a caution deposit of INR 5,000, an establishment charge of INR 2,500, no admission fee and college transport at INR 10,000 to 45,000 a year; the disclosure estimates hostel boarding and lodging at INR 85,000 a year. Students in the first three Anna University ranks have their full tuition reimbursed at the end of the course.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's Information Technology curriculum covering programming, data structures, database systems, web technologies, networks and cloud computing. Anna University sets the syllabus and end-semester exams; the college runs internal assessment and internship is mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "tagore-be-mechanical-engineering",
+          "canonicalCourseSlug": "be-btech-mechanical-engineering",
+          "officialTitle": "B.E. Mechanical Engineering, Tagore Engineering College",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2025-26",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 50000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Tagore Engineering College (TEC)'s 2026-27 AICTE mandatory disclosure publishes the Tamil Nadu fee committee's tuition for 2025-26 admissions to non-accredited branches such as the B.E. Mechanical Engineering: INR 50,000 a year for TNEA government-quota seats and INR 85,000 a year for management-quota seats. The disclosure prints no separate 2026-27 figure, so confirm the 2026-27 fee with the college. TNEA's 2026 college booklet lists a caution deposit of INR 5,000, an establishment charge of INR 2,500, no admission fee and college transport at INR 10,000 to 45,000 a year; the disclosure estimates hostel boarding and lodging at INR 85,000 a year. Students in the first three Anna University ranks have their full tuition reimbursed at the end of the course."
+          },
+          "officialProgramUrl": "https://tagore-engg.ac.in/academics/ug/mech/index.php",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2024-25 and 2025-26 approvals show NRI and foreign-national/Gulf/OCI approval as No for every TEC course, and no international-student route is published, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1420, branch code ME) or the management quota. TNEA's 2026 college booklet lists an approved intake of 30.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Mechanical Engineering at Tagore Engineering College (TEC) is a four-year, eight-semester Anna University degree taught in English at Rathinamangalam, Vandalur, Chennai. TEC is an affiliated, non-autonomous college, so Anna University sets the syllabus and exams and awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission; Anna University applies the same Government of Tamil Nadu norms to its affiliated colleges.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1420 with branch ME, then confirm the tentative allotment",
+              "Download the allotment order, report to TEC within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to the TEC admission office (forms from the college office; admission phone +91 75400 54222)"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University's calendar for non-autonomous affiliated colleges starts first-semester classes on 2 September 2026, with end-semester exams from 22 December 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes, and TNEA 2026 lists no Tamil-medium branch at Tagore Engineering College.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Tagore Engineering College (TEC)'s 2026-27 AICTE mandatory disclosure publishes the Tamil Nadu fee committee's tuition for 2025-26 admissions to non-accredited branches such as the B.E. Mechanical Engineering: INR 50,000 a year for TNEA government-quota seats and INR 85,000 a year for management-quota seats. The disclosure prints no separate 2026-27 figure, so confirm the 2026-27 fee with the college. TNEA's 2026 college booklet lists a caution deposit of INR 5,000, an establishment charge of INR 2,500, no admission fee and college transport at INR 10,000 to 45,000 a year; the disclosure estimates hostel boarding and lodging at INR 85,000 a year. Students in the first three Anna University ranks have their full tuition reimbursed at the end of the course.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's Mechanical Engineering curriculum covering engineering mechanics, thermodynamics, manufacturing technology, machine design and fluid mechanics, taught with the college's machine shop and workshops. Anna University sets the syllabus and end-semester exams; the college runs internal assessment and internship is mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "tagore-mba",
+          "canonicalCourseSlug": "mba",
+          "officialTitle": "Master of Business Administration (M.B.A.), Tagore Engineering College",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2025-26",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 35000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-26",
+            "notes": "Tagore Engineering College (TEC)'s 2026-27 AICTE mandatory disclosure publishes the Tamil Nadu fee committee's MBA tuition for 2025-26 admissions: INR 35,000 a year for government-quota (counselling) seats and INR 41,000 a year for management-quota seats. The disclosure prints no separate 2026-27 figure, so confirm the 2026-27 fee with the college. The Tamil Nadu MBA/MCA 2026-27 college booklet lists hostel room rent of INR 37,000, electricity of INR 11,000 and mess charges of INR 47,000 a year, with no deposit or admission fee."
+          },
+          "officialProgramUrl": "https://tagore-engg.ac.in/academics/pg/mba/index.php",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian graduates who meet the TANCET 2026 eligibility rules (government-quota seats through Tamil Nadu MBA/MCA counselling)",
+              "Indian graduates applying to the college for management-quota seats"
+            ],
+            "restrictions": [
+              "AICTE's 2024-25 and 2025-26 approvals show no NRI, foreign-national, Gulf or OCI seats for the MBA, so foreign nationals cannot be admitted on a student visa.",
+              "Government-quota seats go through Tamil Nadu's single-window MBA/MCA counselling, which uses TANCET scores and Tamil Nadu reservation rules."
+            ],
+            "notes": "The college admits men and women. The Tamil Nadu MBA/MCA 2026-27 college booklet lists TEC (college code 1420) with an approved MBA intake of 60, started in 2002. NBA accredits the MBA for academic years 2024-25 to 2026-27, valid to 30 June 2027.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tn-mbamca.com/docs/TNMBAMCA-ENGINEERING-COLLEGES-BOOKLET-2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The Master of Business Administration at Tagore Engineering College (TEC) is a two-year, four-semester Anna University degree taught in English at Rathinamangalam, Vandalur, Chennai. Government-quota seats are allotted through the Tamil Nadu MBA/MCA single-window counselling (college code 1420) on TANCET scores, and management-quota seats are filled by the college.",
+            "eligibility": {
+              "intro": "TANCET 2026 sets the MBA qualification that Tamil Nadu's MBA/MCA counselling and Anna University-affiliated colleges admit against.",
+              "items": [
+                "A recognised bachelor's degree of at least three years in any discipline",
+                "At least 50 per cent in the qualifying degree (45 per cent for Tamil Nadu BC, BCM, MBC, SC, SCA and ST candidates)",
+                "A TANCET (MBA) 2026 score for government-quota seats"
+              ]
+            },
+            "applicationSteps": [
+              "Take TANCET (MBA) at tancet.annauniv.edu; the 2026 test was held on 9 May 2026",
+              "For a government-quota seat, apply in the Tamil Nadu MBA/MCA 2026-27 single-window counselling run by the Directorate of Technical Education and choose college code 1420",
+              "For a management-quota seat, apply to the TEC admission office (forms from the college office; admission phone +91 75400 54222)",
+              "Submit degree, school and community certificates for verification and pay the fees to confirm the seat"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Bachelor's degree certificate or provisional certificate",
+                "Mark sheets for all semesters of the degree",
+                "Class 10 and Class 12 (or diploma) mark sheets",
+                "Transfer certificate"
+              ],
+              "application": [
+                "TANCET 2026 MBA score card",
+                "Community certificate where applicable",
+                "Photo ID issued by the State or Central Government"
+              ]
+            },
+            "deadlinesNote": "The TANCET 2026 MBA test was held on 9 May 2026. Anna University's calendar for non-autonomous affiliated colleges starts first-semester full-time MBA classes on 2 September 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Regulations 2025 for postgraduate programmes at affiliated colleges set English as the medium of instruction, and Anna University awards the MBA.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Tagore Engineering College (TEC)'s 2026-27 AICTE mandatory disclosure publishes the Tamil Nadu fee committee's MBA tuition for 2025-26 admissions: INR 35,000 a year for government-quota (counselling) seats and INR 41,000 a year for management-quota seats. The disclosure prints no separate 2026-27 figure, so confirm the 2026-27 fee with the college. The Tamil Nadu MBA/MCA 2026-27 college booklet lists hostel room rent of INR 37,000, electricity of INR 11,000 and mess charges of INR 47,000 a year, with no deposit or admission fee.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-2 (4 semesters)",
+              "language": "English",
+              "details": "Anna University's full-time MBA curriculum covering management principles, accounting, economics, marketing, finance, human resources and operations, followed by electives and a project. Anna University sets the syllabus and end-semester exams and awards the degree."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "tagore-engineering-college",
+      "publicField": "identity",
+      "claimText": "Tagore Engineering College, Rathinamangalam, Vandalur, Chennai 600048/600127 (AICTE address shows Kanchipuram district); Tagore Educational Trust, 25 Mahalingam Street, Mahalingapuram, Chennai 600034; AICTE permanent ID 1-9722913; Private-Self Financing; established 1998; affiliating body Anna University, Chennai.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2025-26 (TEC)",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/AICTE%20-%20EOA%20Report%202025-2026.PDF",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "F.No. Southern/1-44643134823/2025/EOA, date of approval 03-Jan-2025. AICTE 2026-27 check pending: facilities.aicte-india.org unreachable from this environment on 2026-10-26 (connection failed, HTTP 000); TEC has not published a 2026-27 EoA letter (aicte.php lists letters to 2025-26)."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tagore-engineering-college",
+      "publicField": "identity",
+      "claimText": "Anna University CAI Chengalpattu district list: Tagore Engineering College, examination code 4127, TNEA counselling code 1420 (not marked Autonomous).",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - Chengalpattu district affiliated colleges",
+      "sourceUrl": "https://www.annauniv.edu/cai/District%20wise/district/Chengalpattu.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tagore-engineering-college",
+      "publicField": "identity",
+      "claimText": "Not autonomous: TNEA 2026 booklet autonomous status No; MBA/MCA 2026-27 booklet autonomous status No; UGC autonomous colleges list has no Tagore Engineering College entry (only Tagore Government Arts and Science College, Puducherry).",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "UGC list read from the copy saved 2026-10-25 at research/india-source-bundles/skasc-20261025/ugc-autonomous-text.txt (https://www.ugc.gov.in/colleges/Autonomous_Colleges_list). Distinct from Tagore Institute of Engineering and Technology, Salem (TNEA 2646), Tagore Medical College and Tagore Dental College."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tagore-engineering-college",
+      "publicField": "establishedYear",
+      "claimText": "Year of establishment 1998 (AICTE EoA 2025-26; MBA/MCA 2026-27 booklet).",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2025-26 (TEC)",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/AICTE%20-%20EOA%20Report%202025-2026.PDF",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tagore-engineering-college",
+      "publicField": "recognitionBadges",
+      "claimText": "AICTE EoA 2025-26 approves Anna University-affiliated courses with 2025-26 intake: UG Aeronautical 30, AI&DS 60, CSE 120, CSE (Cyber Security) 60, ECE 60, IT 60, Mechanical 30; PG MBA 60, M.E. CSE 18, M.E. Environmental Engineering 18. NRI and FN/Gulf/OCI approval No for all.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2025-26 (TEC)",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/AICTE%20-%20EOA%20Report%202025-2026.PDF",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "IT intake 120 for 2026-27 per the 2026-27 mandatory disclosure and TNEA 2026 booklet. AICTE 2026-27 check pending: facilities.aicte-india.org unreachable from this environment on 2026-10-26 (connection failed, HTTP 000); TEC has not published a 2026-27 EoA letter (aicte.php lists letters to 2025-26)."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tagore-engineering-college",
+      "publicField": "recognitionBadges",
+      "claimText": "NBA letters F.No. 33-239/2010/NBA dated 05-11-2024: UG CSE, ECE and IT accredited (Tier II, basis June 2015 document) for academic years 2024-25 to 2026-27, i.e. up to 30-06-2027; MBA accredited (basis February 2023 document) for 2024-25 to 2026-27, up to 30-06-2027.",
+      "status": "verified",
+      "sourceLabel": "NBA - Accreditation letters, 2024 (TEC)",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/NBA.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned letters hosted by the college; read by OCR. NBA's own portal not re-read this session. TNEA 2026 booklet independently marks CS, EC, IT as NBA Yes valid to 2027 and the MBA/MCA booklet marks MBA accredited to 2027."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tagore-engineering-college",
+      "publicField": "recognitionBadges",
+      "claimText": "TNEA 2026 Information about colleges: 1420 Tagore Engineering College, Rathnamangalam, Vandalur Post; district Chengalpattu; autonomous No; minority No; branches AD 60 (2022), AE 30 (2005), CS 120 (1998, NBA to 2027), EC 60 (1996, NBA to 2027), IT 120 (1996, NBA to 2027), ME 30 (1998), SC 60 (2024).",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tagore-engineering-college",
+      "publicField": "summary",
+      "claimText": "TEC 2026-27 mandatory disclosure: affiliating university Anna University; AICTE-approved UG Aeronautical, CSE, ECE, IT, Mechanical, AI&DS, CSE (Cyber Security); PG MBA, M.E. CSE, M.E. Environmental Engineering; external evaluation is the responsibility of the affiliating university.",
+      "status": "verified",
+      "sourceLabel": "TEC - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/MANDATORY%20DISCLOSURE%202026-2027%20(1)_removed.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tagore-engineering-college",
+      "publicField": "campusLifestyle",
+      "claimText": "TEC 2026-27 disclosure: Blocks I-IV; aeronautical, CSE, ECE, mechanical, workshop, chemistry and electrical laboratories; computer centre; library; auditorium; Bharathiar Hall mini auditorium (150 seats, air-conditioned); open-air auditorium; indoor games and gym; ten outdoor sports; cafeteria; banking; lift and ground-floor classrooms for disabled students; cultural meet YASHAS.",
+      "status": "verified",
+      "sourceLabel": "TEC - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/MANDATORY%20DISCLOSURE%202026-2027%20(1)_removed.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tagore-engineering-college",
+      "publicField": "cityProfile",
+      "claimText": "TNEA 2026 booklet: Rathinamangalam, Vandalur-Kelambakkam Main Road, Chennai 600127; taluk Vandalur; district Chengalpattu; 40 km from district HQ; nearest railway station Vandalur, 7 km.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "MBA/MCA booklet gives 10 km from Vandalur station; TNEA figure used."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tagore-engineering-college",
+      "publicField": "practicalExposure",
+      "claimText": "NIRF 2026 Engineering data (IR-E-C-16541): UG graduating 2024-25 in minimum time 160, placed 158, median INR 4,00,000, higher studies 2; PG (M.E.) graduating 2024-25 22, placed 19, median INR 3,50,000; Ph.D. part-time 12.",
+      "status": "verified",
+      "sourceLabel": "TEC - NIRF 2026 data submitted (Engineering)",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/NIRF%202026%20ENGINEERIG.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tagore-engineering-college",
+      "publicField": "practicalExposure",
+      "claimText": "NIRF 2026 Management data (IR-M-C-16541): MBA graduating 2024-25 53, placed 47, median INR 4,00,000.",
+      "status": "verified",
+      "sourceLabel": "TEC - NIRF 2026 data submitted (Management)",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/NIRF%202026%20MANAGEMENT.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tagore-engineering-college",
+      "publicField": "practicalExposure",
+      "claimText": "AICTE EoA 2025-26 instruction 8: internship is mandatory for all admitted students.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2025-26 (TEC)",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/AICTE%20-%20EOA%20Report%202025-2026.PDF",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tagore-engineering-college",
+      "publicField": "hostelOverview",
+      "claimText": "TEC 2026-27 disclosure: estimated cost of boarding and lodging INR 85,000. MBA/MCA 2026-27 booklet (1420): boys and girls hostels; room rent INR 37,000, electricity INR 11,000, mess INR 47,000 per annum; deposit 0; admission fee 0. Hostel page: separate furnished hostels; clinic with MBBS doctor and nurse.",
+      "status": "verified",
+      "sourceLabel": "TEC - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/MANDATORY%20DISCLOSURE%202026-2027%20(1)_removed.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "TNEA 2026 booklet lists mess 3,500, room rent 2,833 and electricity 750 'per annum' (apparently monthly figures), caution deposit 5,000, establishment 2,500, admission fee 0, transport 10,000-45,000; the TNEA hostel amounts are not used publicly. MBA/MCA booklet: https://static.tn-mbamca.com/docs/TNMBAMCA-ENGINEERING-COLLEGES-BOOKLET-2026.pdf; hostel page: https://tagore-engg.ac.in/facilities/hostel.php"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tagore-engineering-college",
+      "publicField": "dietarySupport",
+      "claimText": "TNEA 2026 booklet: type of mess both (veg/non-veg) for boys and girls hostels.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tagore-engineering-college",
+      "publicField": "safetyOverview",
+      "claimText": "TEC 2026-27 anti-ragging committee chaired by the principal includes Inspector, Thazhambur; Revenue Inspector, Vandalur; parent and student representatives; boys' and girls' hostel deputy wardens; covers campus, bus stops and buses. Internal Complaint Committee reports to Anna University POSH cell. TNEA 2026 booklet lists an anti-ragging phone number.",
+      "status": "verified",
+      "sourceLabel": "TEC - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/MANDATORY%20DISCLOSURE%202026-2027%20(1)_removed.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tagore-engineering-college",
+      "publicField": "studentSupport",
+      "claimText": "TEC 2026-27 disclosure: grievance first to HoD, resolution within 7 working days, then the Grievance Redressal Committee; SC/ST committee for scholarships; teacher guardians and remedial teaching for slow learners; sports-quota admissions with fee concession; first three university rank holders reimbursed full tuition; INR 5,000 award to each branch topper. Principal: principal@tagore-engg.ac.in, 044-22299400.",
+      "status": "verified",
+      "sourceLabel": "TEC - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/MANDATORY%20DISCLOSURE%202026-2027%20(1)_removed.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tagore-engineering-college",
+      "publicField": "whyChoose",
+      "claimText": "TEC 2026-27 disclosure, fee as approved by State Fee Committee for 2025-26 admissions: UG counselling non-accredited INR 50,000, accredited INR 55,000; UG management non-accredited INR 85,000, accredited INR 87,000; MBA counselling INR 35,000, management INR 41,000; M.E. INR 50,000.",
+      "status": "verified",
+      "sourceLabel": "TEC - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/MANDATORY%20DISCLOSURE%202026-2027%20(1)_removed.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tagore-engineering-college",
+      "publicField": "thingsToConsider",
+      "claimText": "TEC 2026-27 disclosure enrolment 2025-26: Aeronautical 13, Mechanical 16 (sanctioned 30 each); M.E. CSE 6, M.E. Environmental 16 (sanctioned 18 each). The college website's NAAC statement refers to 2009 accreditation with no current grade; NIRF 2026 data submitted without a published rank claim.",
+      "status": "verified",
+      "sourceLabel": "TEC - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/MANDATORY%20DISCLOSURE%202026-2027%20(1)_removed.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "About page: https://tagore-engg.ac.in/about/about.php"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tagore-engineering-college",
+      "publicField": "thingsToConsider",
+      "claimText": "M.E. CSE and M.E. Environmental Engineering: AICTE EoA 2025-26 intake 18 each; 2026-27 disclosure sanctioned 18 each for 2026-27; listed in TEC's faculty statement for Anna University affiliation 2026-27. No 2026-27 AICTE approval readable and no 2026-27 state PG (TANCA) counselling record found; tanca.annauniv.edu timed out.",
+      "status": "indicative",
+      "sourceLabel": "TEC - Faculty details for Anna University affiliation 2026-27",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/Faculty%20details%20for%20AU%20affiliation%20AY%2026-27%20-%20SEPTEMBER%202026%20BIOMETRIC.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tagore-engineering-college",
+      "publicField": "bestFitFor",
+      "claimText": "TNEA 2026 booklet approved intakes: AD 60, AE 30, CS 120, EC 60, IT 120, ME 30, SC 60 (total 480; computing AD+CS+IT+SC = 360).",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tagore-engineering-college",
+      "publicField": "faq",
+      "claimText": "TNEA 2026 Round 1 vacancy list shows college 1420 with branches AD, AE, CS, EC, IT, ME, SC.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 vacancy position after Round 1",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tagore-engineering-college",
+      "publicField": "faq",
+      "claimText": "TNEA 2026 schedule: registration 03.05.2026 to 05.06.2026; general counselling 20.07.2026 to 30.08.2026. Brochure: registration fee INR 500 (INR 250 SC/SCA/ST); report to college within 5 days; OCI/PIO natives of Tamil Nadu eligible except those born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Brochure: https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf. Same TNEA facts as bundles 0115, 0356 and 0357."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tagore-engineering-college",
+      "publicField": "faq",
+      "claimText": "Anna University academic calendar for non-autonomous affiliated colleges, I semester Sep-Dec 2026 (B.E./B.Tech/B.Arch, MBA (FT), MCA): commencement of classes 2 September 2026; end-semester examinations begin 22 December 2026.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Affiliated colleges academic calendar Sep-Dec 2026",
+      "sourceUrl": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-aeronautical-engineering",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 college booklet, college 1420, branch AE (Aeronautical Engineering): approved intake 30; year of starting 2005; NBA accredited No. Round 1 vacancy list shows branch AE at 1420. AICTE EoA 2025-26 lists the course under Anna University, Chennai, with NRI and FN/Gulf/OCI approval No.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AICTE 2026-27 check pending: facilities.aicte-india.org unreachable from this environment on 2026-10-26 (connection failed, HTTP 000); TEC has not published a 2026-27 EoA letter (aicte.php lists letters to 2025-26). EoA 2025-26: https://tagore-engg.ac.in/pdf/AICTE%20-%20EOA%20Report%202025-2026.PDF. Vacancy: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. 2026-27 disclosure lists sanctioned intake 2026-27 for this course."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-aeronautical-engineering",
+      "publicField": "fee",
+      "claimText": "TEC 2026-27 mandatory disclosure, fee approved by State Fee Committee for 2025-26 admissions, non-accredited branch: counselling (GQ) INR 50,000 per year; management INR 85,000 per year.",
+      "status": "verified",
+      "sourceLabel": "TEC - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/MANDATORY%20DISCLOSURE%202026-2027%20(1)_removed.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "fee.audience=domestic: the disclosure's counselling/management fees apply to TNEA and management admissions of Indian candidates; AICTE shows no NRI/FN seats. academicYear 2025-26 because the disclosure labels the table for 2025-26 admissions."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-aeronautical-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum average 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route; nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-aeronautical-engineering",
+      "publicField": "admissions",
+      "claimText": "TEC admission page: candidates selected through TNEA counselling on HSC performance, or directly under management quota with forms from the college office; admission contact +91 7540054222.",
+      "status": "verified",
+      "sourceLabel": "TEC - Admission",
+      "sourceUrl": "https://tagore-engg.ac.in/admission/admission.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-aeronautical-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction English; TNEA 2026 lists no Tamil-medium branch for 1420.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-aeronautical-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "Aeronautical Engineering is taught to Anna University's curriculum at a non-autonomous affiliated college; external evaluation is the affiliating university's responsibility (TEC 2026-27 disclosure). Department page: https://tagore-engg.ac.in/academics/ug/aeronautical/index.php.",
+      "status": "verified",
+      "sourceLabel": "TEC - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/MANDATORY%20DISCLOSURE%202026-2027%20(1)_removed.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-btech-artificial-intelligence-data-science",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 college booklet, college 1420, branch AD (Artificial Intelligence and Data Science): approved intake 60; year of starting 2022; NBA accredited No. Round 1 vacancy list shows branch AD at 1420. AICTE EoA 2025-26 lists the course under Anna University, Chennai, with NRI and FN/Gulf/OCI approval No.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AICTE 2026-27 check pending: facilities.aicte-india.org unreachable from this environment on 2026-10-26 (connection failed, HTTP 000); TEC has not published a 2026-27 EoA letter (aicte.php lists letters to 2025-26). EoA 2025-26: https://tagore-engg.ac.in/pdf/AICTE%20-%20EOA%20Report%202025-2026.PDF. Vacancy: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. 2026-27 disclosure lists sanctioned intake 2026-27 for this course."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-btech-artificial-intelligence-data-science",
+      "publicField": "fee",
+      "claimText": "TEC 2026-27 mandatory disclosure, fee approved by State Fee Committee for 2025-26 admissions, non-accredited branch: counselling (GQ) INR 50,000 per year; management INR 85,000 per year.",
+      "status": "verified",
+      "sourceLabel": "TEC - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/MANDATORY%20DISCLOSURE%202026-2027%20(1)_removed.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "fee.audience=domestic: the disclosure's counselling/management fees apply to TNEA and management admissions of Indian candidates; AICTE shows no NRI/FN seats. academicYear 2025-26 because the disclosure labels the table for 2025-26 admissions."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-btech-artificial-intelligence-data-science",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum average 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route; nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-btech-artificial-intelligence-data-science",
+      "publicField": "admissions",
+      "claimText": "TEC admission page: candidates selected through TNEA counselling on HSC performance, or directly under management quota with forms from the college office; admission contact +91 7540054222.",
+      "status": "verified",
+      "sourceLabel": "TEC - Admission",
+      "sourceUrl": "https://tagore-engg.ac.in/admission/admission.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-btech-artificial-intelligence-data-science",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction English; TNEA 2026 lists no Tamil-medium branch for 1420.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-btech-artificial-intelligence-data-science",
+      "publicField": "teachingPhases",
+      "claimText": "Artificial Intelligence and Data Science is taught to Anna University's curriculum at a non-autonomous affiliated college; external evaluation is the affiliating university's responsibility (TEC 2026-27 disclosure). Department page: https://tagore-engg.ac.in/academics/ug/artificial-intelligence/index.php.",
+      "status": "verified",
+      "sourceLabel": "TEC - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/MANDATORY%20DISCLOSURE%202026-2027%20(1)_removed.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-computer-science-engineering",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 college booklet, college 1420, branch CS (Computer Science and Engineering): approved intake 120; year of starting 1998; NBA accredited Yes, valid to 2027. Round 1 vacancy list shows branch CS at 1420. AICTE EoA 2025-26 lists the course under Anna University, Chennai, with NRI and FN/Gulf/OCI approval No.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AICTE 2026-27 check pending: facilities.aicte-india.org unreachable from this environment on 2026-10-26 (connection failed, HTTP 000); TEC has not published a 2026-27 EoA letter (aicte.php lists letters to 2025-26). EoA 2025-26: https://tagore-engg.ac.in/pdf/AICTE%20-%20EOA%20Report%202025-2026.PDF. Vacancy: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. 2026-27 disclosure lists sanctioned intake 2026-27 for this course."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-computer-science-engineering",
+      "publicField": "fee",
+      "claimText": "TEC 2026-27 mandatory disclosure, fee approved by State Fee Committee for 2025-26 admissions, accredited branch: counselling (GQ) INR 55,000 per year; management INR 87,000 per year.",
+      "status": "verified",
+      "sourceLabel": "TEC - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/MANDATORY%20DISCLOSURE%202026-2027%20(1)_removed.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "fee.audience=domestic: the disclosure's counselling/management fees apply to TNEA and management admissions of Indian candidates; AICTE shows no NRI/FN seats. academicYear 2025-26 because the disclosure labels the table for 2025-26 admissions."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-computer-science-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum average 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route; nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "TEC admission page: candidates selected through TNEA counselling on HSC performance, or directly under management quota with forms from the college office; admission contact +91 7540054222.",
+      "status": "verified",
+      "sourceLabel": "TEC - Admission",
+      "sourceUrl": "https://tagore-engg.ac.in/admission/admission.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-computer-science-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction English; TNEA 2026 lists no Tamil-medium branch for 1420.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-computer-science-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "Computer Science and Engineering is taught to Anna University's curriculum at a non-autonomous affiliated college; external evaluation is the affiliating university's responsibility (TEC 2026-27 disclosure). Department page: https://tagore-engg.ac.in/academics/ug/cse/index.php.",
+      "status": "verified",
+      "sourceLabel": "TEC - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/MANDATORY%20DISCLOSURE%202026-2027%20(1)_removed.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-cse-cyber-security",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 college booklet, college 1420, branch SC (Computer Science and Engineering (Cyber Security)): approved intake 60; year of starting 2024; NBA accredited No. Round 1 vacancy list shows branch SC at 1420. AICTE EoA 2025-26 lists the course under Anna University, Chennai, with NRI and FN/Gulf/OCI approval No.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AICTE 2026-27 check pending: facilities.aicte-india.org unreachable from this environment on 2026-10-26 (connection failed, HTTP 000); TEC has not published a 2026-27 EoA letter (aicte.php lists letters to 2025-26). EoA 2025-26: https://tagore-engg.ac.in/pdf/AICTE%20-%20EOA%20Report%202025-2026.PDF. Vacancy: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. 2026-27 disclosure lists sanctioned intake 2026-27 for this course."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-cse-cyber-security",
+      "publicField": "fee",
+      "claimText": "TEC 2026-27 mandatory disclosure, fee approved by State Fee Committee for 2025-26 admissions, non-accredited branch: counselling (GQ) INR 50,000 per year; management INR 85,000 per year.",
+      "status": "verified",
+      "sourceLabel": "TEC - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/MANDATORY%20DISCLOSURE%202026-2027%20(1)_removed.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "fee.audience=domestic: the disclosure's counselling/management fees apply to TNEA and management admissions of Indian candidates; AICTE shows no NRI/FN seats. academicYear 2025-26 because the disclosure labels the table for 2025-26 admissions."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-cse-cyber-security",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum average 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route; nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-cse-cyber-security",
+      "publicField": "admissions",
+      "claimText": "TEC admission page: candidates selected through TNEA counselling on HSC performance, or directly under management quota with forms from the college office; admission contact +91 7540054222.",
+      "status": "verified",
+      "sourceLabel": "TEC - Admission",
+      "sourceUrl": "https://tagore-engg.ac.in/admission/admission.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-cse-cyber-security",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction English; TNEA 2026 lists no Tamil-medium branch for 1420.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-cse-cyber-security",
+      "publicField": "teachingPhases",
+      "claimText": "Computer Science and Engineering (Cyber Security) is taught to Anna University's curriculum at a non-autonomous affiliated college; external evaluation is the affiliating university's responsibility (TEC 2026-27 disclosure). Department page: https://tagore-engg.ac.in/academics/ug/cyber-security/.",
+      "status": "verified",
+      "sourceLabel": "TEC - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/MANDATORY%20DISCLOSURE%202026-2027%20(1)_removed.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-electronics-communication-engineering",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 college booklet, college 1420, branch EC (Electronics and Communication Engineering): approved intake 60; year of starting 1996; NBA accredited Yes, valid to 2027. Round 1 vacancy list shows branch EC at 1420. AICTE EoA 2025-26 lists the course under Anna University, Chennai, with NRI and FN/Gulf/OCI approval No.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AICTE 2026-27 check pending: facilities.aicte-india.org unreachable from this environment on 2026-10-26 (connection failed, HTTP 000); TEC has not published a 2026-27 EoA letter (aicte.php lists letters to 2025-26). EoA 2025-26: https://tagore-engg.ac.in/pdf/AICTE%20-%20EOA%20Report%202025-2026.PDF. Vacancy: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. 2026-27 disclosure lists sanctioned intake 2026-27 for this course."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-electronics-communication-engineering",
+      "publicField": "fee",
+      "claimText": "TEC 2026-27 mandatory disclosure, fee approved by State Fee Committee for 2025-26 admissions, accredited branch: counselling (GQ) INR 55,000 per year; management INR 87,000 per year.",
+      "status": "verified",
+      "sourceLabel": "TEC - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/MANDATORY%20DISCLOSURE%202026-2027%20(1)_removed.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "fee.audience=domestic: the disclosure's counselling/management fees apply to TNEA and management admissions of Indian candidates; AICTE shows no NRI/FN seats. academicYear 2025-26 because the disclosure labels the table for 2025-26 admissions."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-electronics-communication-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum average 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route; nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-electronics-communication-engineering",
+      "publicField": "admissions",
+      "claimText": "TEC admission page: candidates selected through TNEA counselling on HSC performance, or directly under management quota with forms from the college office; admission contact +91 7540054222.",
+      "status": "verified",
+      "sourceLabel": "TEC - Admission",
+      "sourceUrl": "https://tagore-engg.ac.in/admission/admission.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-electronics-communication-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction English; TNEA 2026 lists no Tamil-medium branch for 1420.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-electronics-communication-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "Electronics and Communication Engineering is taught to Anna University's curriculum at a non-autonomous affiliated college; external evaluation is the affiliating university's responsibility (TEC 2026-27 disclosure). Department page: https://tagore-engg.ac.in/academics/ug/ece/index.php.",
+      "status": "verified",
+      "sourceLabel": "TEC - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/MANDATORY%20DISCLOSURE%202026-2027%20(1)_removed.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-btech-information-technology",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 college booklet, college 1420, branch IT (Information Technology): approved intake 120; year of starting 1996; NBA accredited Yes, valid to 2027. Round 1 vacancy list shows branch IT at 1420. AICTE EoA 2025-26 lists the course under Anna University, Chennai, with NRI and FN/Gulf/OCI approval No.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AICTE 2026-27 check pending: facilities.aicte-india.org unreachable from this environment on 2026-10-26 (connection failed, HTTP 000); TEC has not published a 2026-27 EoA letter (aicte.php lists letters to 2025-26). EoA 2025-26: https://tagore-engg.ac.in/pdf/AICTE%20-%20EOA%20Report%202025-2026.PDF. Vacancy: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. 2026-27 disclosure lists sanctioned intake 2026-27 for this course."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-btech-information-technology",
+      "publicField": "fee",
+      "claimText": "TEC 2026-27 mandatory disclosure, fee approved by State Fee Committee for 2025-26 admissions, accredited branch: counselling (GQ) INR 55,000 per year; management INR 87,000 per year.",
+      "status": "verified",
+      "sourceLabel": "TEC - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/MANDATORY%20DISCLOSURE%202026-2027%20(1)_removed.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "fee.audience=domestic: the disclosure's counselling/management fees apply to TNEA and management admissions of Indian candidates; AICTE shows no NRI/FN seats. academicYear 2025-26 because the disclosure labels the table for 2025-26 admissions."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-btech-information-technology",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum average 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route; nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-btech-information-technology",
+      "publicField": "admissions",
+      "claimText": "TEC admission page: candidates selected through TNEA counselling on HSC performance, or directly under management quota with forms from the college office; admission contact +91 7540054222.",
+      "status": "verified",
+      "sourceLabel": "TEC - Admission",
+      "sourceUrl": "https://tagore-engg.ac.in/admission/admission.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-btech-information-technology",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction English; TNEA 2026 lists no Tamil-medium branch for 1420.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-btech-information-technology",
+      "publicField": "teachingPhases",
+      "claimText": "Information Technology is taught to Anna University's curriculum at a non-autonomous affiliated college; external evaluation is the affiliating university's responsibility (TEC 2026-27 disclosure). Department page: https://tagore-engg.ac.in/academics/ug/it/index.php.",
+      "status": "verified",
+      "sourceLabel": "TEC - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/MANDATORY%20DISCLOSURE%202026-2027%20(1)_removed.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-mechanical-engineering",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 college booklet, college 1420, branch ME (Mechanical Engineering): approved intake 30; year of starting 1998; NBA accredited No. Round 1 vacancy list shows branch ME at 1420. AICTE EoA 2025-26 lists the course under Anna University, Chennai, with NRI and FN/Gulf/OCI approval No.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AICTE 2026-27 check pending: facilities.aicte-india.org unreachable from this environment on 2026-10-26 (connection failed, HTTP 000); TEC has not published a 2026-27 EoA letter (aicte.php lists letters to 2025-26). EoA 2025-26: https://tagore-engg.ac.in/pdf/AICTE%20-%20EOA%20Report%202025-2026.PDF. Vacancy: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. 2026-27 disclosure lists sanctioned intake 2026-27 for this course."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-mechanical-engineering",
+      "publicField": "fee",
+      "claimText": "TEC 2026-27 mandatory disclosure, fee approved by State Fee Committee for 2025-26 admissions, non-accredited branch: counselling (GQ) INR 50,000 per year; management INR 85,000 per year.",
+      "status": "verified",
+      "sourceLabel": "TEC - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/MANDATORY%20DISCLOSURE%202026-2027%20(1)_removed.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "fee.audience=domestic: the disclosure's counselling/management fees apply to TNEA and management admissions of Indian candidates; AICTE shows no NRI/FN seats. academicYear 2025-26 because the disclosure labels the table for 2025-26 admissions."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-mechanical-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum average 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route; nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-mechanical-engineering",
+      "publicField": "admissions",
+      "claimText": "TEC admission page: candidates selected through TNEA counselling on HSC performance, or directly under management quota with forms from the college office; admission contact +91 7540054222.",
+      "status": "verified",
+      "sourceLabel": "TEC - Admission",
+      "sourceUrl": "https://tagore-engg.ac.in/admission/admission.php",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-mechanical-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction English; TNEA 2026 lists no Tamil-medium branch for 1420.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-be-mechanical-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "Mechanical Engineering is taught to Anna University's curriculum at a non-autonomous affiliated college; external evaluation is the affiliating university's responsibility (TEC 2026-27 disclosure). Department page: https://tagore-engg.ac.in/academics/ug/mech/index.php.",
+      "status": "verified",
+      "sourceLabel": "TEC - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/MANDATORY%20DISCLOSURE%202026-2027%20(1)_removed.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-mba",
+      "publicField": "intake",
+      "claimText": "Tamil Nadu MBA/MCA Admissions 2026-27 college booklet: 1420 Tagore Engineering College, Chengalpattu district; MBA approved intake 60; self-supporting; started 2002; accredited Yes, valid up to 2027; affiliating university Anna University; autonomous No.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - MBA/MCA Admissions 2026-27 college booklet",
+      "sourceUrl": "https://static.tn-mbamca.com/docs/TNMBAMCA-ENGINEERING-COLLEGES-BOOKLET-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AICTE 2026-27 check pending: facilities.aicte-india.org unreachable from this environment on 2026-10-26 (connection failed, HTTP 000); TEC has not published a 2026-27 EoA letter (aicte.php lists letters to 2025-26)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-mba",
+      "publicField": "fee",
+      "claimText": "TEC 2026-27 mandatory disclosure: MBA tuition for 2025-26 admissions INR 35,000 (counselling) and INR 41,000 (management) per year, State Fee Committee. MBA/MCA 2026-27 booklet: tuition per Government norms; room rent INR 37,000, electricity INR 11,000, mess INR 47,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "TEC - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://tagore-engg.ac.in/pdf/MANDATORY%20DISCLOSURE%202026-2027%20(1)_removed.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "fee.audience=domestic (Indian counselling and management admissions; no NRI/FN seats)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-mba",
+      "publicField": "eligibility",
+      "claimText": "TANCET 2026 MBA eligibility: recognised bachelor's degree of at least three years with at least 50 per cent (45 per cent for Tamil Nadu BC, BCM, MBC, SC, SCA, ST); test held 9 May 2026.",
+      "status": "verified",
+      "sourceLabel": "Anna University - TANCET / CEETA-PG 2026 Information Brochure",
+      "sourceUrl": "https://tancet.annauniv.edu/tancet/Information%20Brochure%202026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "tancet.annauniv.edu timed out from this environment on 2026-10-26; figures carried from the brochure as read for bundle 0148 on 2026-10-23 (same as 0357)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-mba",
+      "publicField": "admissions",
+      "claimText": "Government-quota MBA seats through the Tamil Nadu MBA/MCA 2026-27 single-window counselling (DoTE), college code 1420; TEC PG page: TANCET-based selection or management quota through the college.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - MBA/MCA Admissions 2026-27 college booklet",
+      "sourceUrl": "https://static.tn-mbamca.com/docs/TNMBAMCA-ENGINEERING-COLLEGES-BOOKLET-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "PG admission text: https://tagore-engg.ac.in/admission/admission.php"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-mba",
+      "publicField": "medium",
+      "claimText": "Anna University Regulations 2025 (PG, affiliated colleges): medium of instruction English.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (PG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/PG%20Regulations%202025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tagore-engineering-college",
+      "programmeSlug": "tagore-mba",
+      "publicField": "teachingPhases",
+      "claimText": "Anna University calendar for non-autonomous affiliated colleges covers MBA (FT) I semester from 2 September 2026; Anna University sets syllabus and exams.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Affiliated colleges academic calendar Sep-Dec 2026",
+      "sourceUrl": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    }
+  ]
+}

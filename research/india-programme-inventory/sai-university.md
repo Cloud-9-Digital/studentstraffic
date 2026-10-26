@@ -91,3 +91,20 @@ Three taxonomy gaps were resolved in this batch rather than invented per program
 ## Integrator review — 25 October 2026
 
 The pending 0309 payload is trimmed to 45 academic awards. BA LLB and BBA LLB remain held because current BCI approval is not verified on the regulator; UGC listing alone does not establish qualifying-law professional scope. The inherited checklist also carries age/entrance details that require current reconciliation. Other academic courses make no independent BCI/AICTE or professional-licence claim. Native tuition amounts are explicitly Rs per annum on current own programme pages; the pages do not state their fee cycle, so the unsupported 2026–27 fee-year label is replaced with an unstated-cycle/check-date record. The original researcher 47-row draft is retained separately; no applied migration is edited. Source URLs, exact amounts, quoted basis and verification dates remain intact.
+
+## Fee pass 2026-10-26
+
+`https://www.saiuniversity.edu.in/sai-university-fees` is not blank: its fee table is an HTML embed
+(rendered in an iframe) headed "The Program Fees for the academic year 2026-27". It covers 25
+programme rows. Correction bundle `0378-india-sai-university-fees` supersedes 0309 and fills all 8
+programmes that had no fee:
+
+- Confirmed annual tuition: Daksha Fellowship (row "PG Diploma in Technology and Law (Online)",
+  Rs 10,000 p.a.; the programme page CMS fee block also says Rs 10,000) and B.AOTT (School of Allied
+  Health Sciences "all specialisations" row, Rs 2,50,000 p.a.).
+- Indicative reported quotes: the five B.Tech Computer Science specialisations (Full Stack, AI & Data
+  Science with L&T, AI and ML, Cyber Security, with Xebia) use the parent "B.Tech Computer Science" row
+  (Rs 3,00,000 p.a.). B.A. (Hons.) English Literature uses the School of Arts and Sciences rate
+  (Rs 2,00,000 p.a.). None of these six is listed separately.
+- Grade C cross-checks (not cited): Zollege shows B.Tech at about Rs 3 lakh a year. Careers360 and
+  Collegedunia show older or conflicting totals (Rs 16 lakh for B.Tech, Rs 12 lakh for BA Literature).

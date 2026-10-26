@@ -115,6 +115,29 @@ export type YearlyCostBreakdown = {
   notes?: string;
 };
 
+/**
+ * A university's official brochure, stored as a private (authenticated)
+ * Cloudinary raw asset and only ever streamed through /api/brochures/[slug]
+ * after the student has submitted the lead form.
+ */
+export type UniversityBrochure = {
+  /** Cloudinary public id of the authenticated raw asset (includes `.pdf`). */
+  publicId: string;
+  /** Original file name of the downloaded PDF, kept for provenance. */
+  fileName: string;
+  /** Human title, e.g. "Undergraduate prospectus". */
+  title: string;
+  /** e.g. "2026-27", when the brochure states one. */
+  academicYear?: string;
+  bytes: number;
+  /** Official URL the PDF was downloaded from. */
+  sourceUrl: string;
+  /** Who published it, e.g. "Official university website". */
+  sourceLabel: string;
+  /** Date the source was reviewed (YYYY-MM-DD). */
+  checkedAt: string;
+};
+
 export type University = {
   slug: string;
   countrySlug: string;
@@ -161,6 +184,7 @@ export type University = {
   researchSources: ResearchSource[];
   researchNotes?: string;
   admissionsContent?: UniversityAdmissionsContent;
+  brochure?: UniversityBrochure;
   updatedAt?: string;
 };
 

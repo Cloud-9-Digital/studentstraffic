@@ -1,0 +1,33 @@
+{
+  "manifestId": "india-tn-colleges-miet-engineering-college",
+  "checkedAt": "2026-10-26",
+  "entries": [
+    {
+      "universitySlug": "miet-engineering-college",
+      "universityName": "M.I.E.T. Engineering College",
+      "sourceBatch": "claude-tn-colleges-batch1-20261026",
+      "migrationId": "0356-india-miet-engineering-college",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.miet.edu/images/logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://www.miet.edu/",
+          "rightsBasis": "Official site-wide header logo served from the college's own domain (miet.edu). No open licence - used only to identify the institution. Checked 2026-10-26: image/png, 58,674 bytes, 540x100 px (fetched through WebFetch; plain curl to miet.edu returns HTTP 406 to non-browser clients, so re-check HTTP 200 from the upload host). Rendered on white and visually confirmed: blue 'MIET INSTITUTIONS Since 1984' monogram on the left and a blue 'MIET ENGINEERING COLLEGE (Autonomous)' wordmark with the straplines 'Anna University Recognized Research Institute' and 'Accredited by NAAC with A+ Grade' - legible on a white tile, no white-on-transparent elements. CAVEAT: wide header lockup (5.4:1) that combines the group monogram and the college wordmark; small raster, no SVG or larger brand asset found. If a square tile is required, crop the left MIET monogram (approx. x 0-95) rather than using a favicon.",
+          "proposedPublicId": "studentstraffic/universities/miet-engineering-college/logo",
+          "localCopy": "research/india-source-bundles/miet-engineering-college/logo.png"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.miet.edu/images/g63.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://www.miet.edu/photo-gallery.html",
+          "rightsBasis": "Official campus photograph on the college's domain, captioned 'B-Block' in the Photo Gallery. No open licence stated - official institutional image used to identify the institution, same basis as earlier official covers. Checked 2026-10-26: image/jpeg, 423,520 bytes, 700x469 px (landscape), fetched through WebFetch (plain curl to miet.edu returns HTTP 406 to non-browser clients, so re-check HTTP 200 from the upload host). Visual confirmation: the two-storey B-Block with its 'M.I.E.T. ENGINEERING COLLEGE' name board over a glazed entrance, a paved path through gardens, a blue department direction signboard at left and blue sky; no people, no watermark or overlay. Alternative: images/g62.jpg (gallery caption 'A-Block', 257,131 bytes, 700x469, wider view with an araucaria, letterboxed with black bands that would need cropping).",
+          "altText": "B-Block of M.I.E.T. Engineering College on the Trichy-Pudukkottai Road, Tiruchirappalli, with its name board above the entrance and gardens in front",
+          "proposedPublicId": "studentstraffic/universities/miet-engineering-college/cover",
+          "localCopy": "research/india-source-bundles/miet-engineering-college/cover-g63-b-block.jpg"
+        }
+      ]
+    }
+  ]
+}

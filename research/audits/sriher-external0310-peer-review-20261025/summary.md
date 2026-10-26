@@ -1,0 +1,11 @@
+# External SRIHER0310 read-only peer review
+
+**Do not apply as-is.** Offline actual reader PASS1 confirms schema only. Same98unique programme slugs, canonicalfamilies anddurations as applied0305; everyprogrammeobject changed.37fee/audiencefields changed,36domesticannualcharges moved toadditionalFees with exactoldnativequoteamounts/academic_yearbasis;71quotes remain,42USDfull_course(6old+36new). ReviewedUGfeeprintedp7 andPGp17–18images: amounts/durations match these tableentries,10nursing/audiology/SLPheldnotadded. No annualisationdetected. ProfessionalMasterPGqualifications spotcheckmatchescurrentFNbrochure. Twoofficialtitles cosmeticallychanged,10genericcoursealiases/MScspacingalsochanged.
+
+Material blockers/risks:
+1. CoverattributionrevertsCommonsaerialsource/CCcredit/alt althoughhostedpixelswereofficiallibraryreplacementafter0305andURLkeysabsent. This overwritesacceptedprovenancewithwrongimageassociation.
+2.36newFNeligibilityrowsappendunconditional noSRIHERexam. Primaryexemptionisforuniversitygovernedprogrammes unlessotherwisespecified; interviews/statutoryconditionsremain. Mustqualify.
+3. USDfullcoursetablesexplicitlycalltuitionfees;0310saysnotatuition-onlyfigure. Preserveactualsourcebasiswithseparateextraexpenses.
+4. Externalledgeralreadyclaimspublished0310/appliednote; rootreceiptsetexcluded0310. Needactualreceiptresolutionbeforeallpendingpublication, noDBverificationbyreviewer.
+
+HistoricNAACdeclaration independentlymatchesretainedownregulatorworkbookrow372(U0478,A++,3.53,cycle3,25January2021); nofuturevalidityinferred. TwoNBA/fourNIRFrestoredbadgesneedseparateexactprimaryscopecheck; verifiedUGCbadgewasremoved. Sourcehashes,42routefee/audiencecrosswalk,all98fielddiffsandobservedledgerrowretained. No payload/ledgerchanges, sourcehunts, reservation, DB/upload/apply/commit.

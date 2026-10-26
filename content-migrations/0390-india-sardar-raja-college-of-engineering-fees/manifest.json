@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "id": "0390-india-sardar-raja-college-of-engineering-fees",
+  "description": "Correction superseding 0115-india-sardar-raja-college-of-engineering: fills programme fees with indicative third-party reported fee quotes for 6 of 8 programmes (CollegeBatch 2026 listing: B.E. INR 85,000 and MCA INR 50,000 a year) and normalises intakeMonths to bare month labels.",
+  "createdAt": "2026-10-26",
+  "payload": "payload.json"
+}

@@ -57,3 +57,21 @@ https://www.annauniv.edu/constituent_colleges.php and in the TNEA 2026 "Constitu
 - cfa.annauniv.edu, tancet.annauniv.edu and cac.annauniv.edu serve an incomplete certificate chain; fetched with the
   proxy CA bundle plus Sectigo's published intermediate (verification kept on).
 - Constituent-college tuition is not published (TNEA booklet lists deposits and hostel charges only): fee `on_request`.
+
+## Fee pass 2026-10-26
+
+Correction bundle `content-migrations/0368-india-anna-university-fees` (supersedes 0149). All 109 on-request fees
+filled as confirmed domestic annual tuition (2025-26); no programme remains on request.
+
+- 108 constituent-college / regional-campus programmes: Anna University Registrar circular 102/Misc/PD4/2023-2
+  (14 June 2023, constituent colleges fee revision, from 2023-24), re-hosted at
+  https://www.annaunivtut.in/doc/FEES%20structure-2023.pdf, corroborated by the BIT Campus "College Fees Structure 2025"
+  (https://aubit.edu.in/wp-content/uploads/2025/07/College-Fees-Structure-2025.pdf). Tuition per semester: B.E./B.Tech.
+  INR 6,000; MBA INR 15,000; MCA INR 9,000. Both scanned PDFs were read visually (no text layer).
+- CEG MCA (Evening, self-supporting): CEG M.B.A./M.C.A. admission circular and fee structure 2025-26
+  (ceg.annauniv.edu/files/dean/), tuition INR 21,500 a semester for general candidates.
+- Not used: the 2014 CPDE self-supporting circular (too old); Careers360/Collegedunia/GetMyUni figures (discovery only).
+- No 2026-27 constituent-college fee table was found; the 2026-27 odd-semester circular (No. 5/AU/eGov-UCE, 17 June 2026)
+  gives payment dates only.
+- Bundle 0368 also normalises `intakeMonths` to bare month labels (validator rule for bundles >= 0154); timing text was
+  already in each `deadlinesNote`.

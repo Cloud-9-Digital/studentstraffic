@@ -11,3 +11,7 @@ Currently linked2025–26 qualificationPDF explicitly requires allArtsScience50%
 CurrentSchool22rows:15ready,4BCA/BBA professionalapplicabilityholds,3PG exact prior-degree prerequisiteholds. Remaining fee/legacy inventory rows hold current award identity/qualification/duration or applicable professional approval scope, not an assertion of programmeabsence or unapproved status. Exact overlap retained as separate source-discovery rows. BScCyber faculty abbreviation uniquely expandsCyberSecurity, repeated35000fee rows are oneaward. BScIoT currentshorttitle matches unique ComputerScience(IOT)fee row; fullaward nomenclature confirmation advised, no extra offering.
 
 Media: full official100x100crest (no upscale claim), full3430x1876 campus photograph; ordinary HTTPS200, originalhashes and fullimage review retained. Mandatory manifest prepared before executable promotion.
+
+## Fee pass 2026-10-26
+
+- B.Sc. Forensic Science and B.Sc. Hotel Management: still on request. Official ad-fee-structure.php has no rows for either; Careers360 DSU fees page lists no Forensic or Hotel Management rows; CollegeDekho shows only a generic Rs 45,000-2,00,000 science range; web searches found no programme-specific figure. Mamallapuram arts college and other institutions' fees not used.

@@ -1,0 +1,137 @@
+{
+  "manifestId": "india-tn-colleges-batch1",
+  "checkedAt": "2026-10-26",
+  "entries": [
+    {
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "universityName": "Dhanalakshmi College of Engineering",
+      "sourceBatch": "claude-tn-colleges-batch1-20261026",
+      "migrationId": "0358-india-dhanalakshmi-college-of-engineering",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/01/DCE-logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://dce.edu.in/",
+          "rightsBasis": "Official site-wide header logo served from the college's own domain (dce.edu.in). No open licence - used only to identify the institution. Checked 2026-10-26: image/png, 135,052 bytes, 1294x231 px RGBA, SHA-256 23fc4c7e9159c2dad8cab490acaded7634900361b1bdbbb8a2233b490298d90c (fetched through WebFetch; plain curl to dce.edu.in/wp-content/uploads returns HTTP 403 to non-browser clients, so re-check HTTP 200 from the upload host). Rendered on white and visually confirmed: navy circular 'Dhanalakshmi College of Engineering / Discipline Character Education' seal, a 'DCE CHENNAI AUTONOMOUS' block and a navy 'DHANALAKSHMI COLLEGE OF ENGINEERING - TEMPLE OF LEARNING' wordmark; legible on a white tile, no white-on-transparent elements. CAVEAT: wide header lockup (5.6:1). If a square tile is required, crop the left circular seal (approx. x 0-225).",
+          "proposedPublicId": "studentstraffic/universities/dhanalakshmi-college-of-engineering/logo",
+          "localCopy": "research/india-source-bundles/dhanalakshmi-college-of-engineering/logo.png"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/01/DCE-Hero.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://dce.edu.in/",
+          "rightsBasis": "Official campus photograph used as the dce.edu.in home-page hero (same building appears captioned 'Electronics and Communication Engineering' as Infrastructure-04 in the college gallery). No open licence stated - official institutional image used to identify the institution, same basis as earlier official covers. Checked 2026-10-26: image/jpeg, 279,602 bytes, 1920x1044 px landscape, SHA-256 dafec7f3d07c21770885c85c0ee0687b7a9acc69e832fe56a80ef38acdb63722, fetched through WebFetch (plain curl returns HTTP 403; re-check HTTP 200 from the upload host). Visual confirmation: four-storey cream academic block with a green glass central entrance, palms and hedges, a covered walkway and an empty paved drive under clear blue sky; no people, no text overlay or watermark. Alternative rejected: gallery Infrastructure-01.jpg aerial view (no overlay but only 400x258 px); other gallery shots carry caption overlays.",
+          "altText": "Electronics and Communication Engineering block of Dhanalakshmi College of Engineering at Manimangalam, Chennai, with its glass-fronted entrance, palms and a covered walkway",
+          "proposedPublicId": "studentstraffic/universities/dhanalakshmi-college-of-engineering/cover",
+          "localCopy": "research/india-source-bundles/dhanalakshmi-college-of-engineering/cover-dce-hero.jpg"
+        }
+      ]
+    },
+    {
+      "universitySlug": "jerusalem-college-of-engineering",
+      "universityName": "Jerusalem College of Engineering",
+      "sourceBatch": "claude-tn-colleges-batch1-20261026",
+      "migrationId": "0360-india-jerusalem-college-of-engineering",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://jerusalemengg.ac.in/images/logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://jerusalemengg.ac.in/",
+          "rightsBasis": "Official site-wide header logo served from the college's own domain (jerusalemengg.ac.in). No open licence - used only to identify the institution. Checked 2026-10-26: HTTP 200 via curl, image/png, 38,109 bytes, 404x100 px RGBA, SHA-256 bd5be95b4fd5cad08bdee2b3f446e75abe65daabeab206c365e7fce337218e29. Visually confirmed on white: blue 'JERUSALEM College of Engg' shield crest, blue 'JERUSALEM COLLEGE OF ENGINEERING / An AUTONOMOUS Institution / Affiliated to ANNA UNIVERSITY / Approved from AICTE, New Delhi' wordmark and a gold '25 years' anniversary seal on the right; legible on a white tile. CAVEAT: wide lockup (4:1) including an anniversary seal; if a square tile is required, crop the left crest (approx. x 0-80).",
+          "proposedPublicId": "studentstraffic/universities/jerusalem-college-of-engineering/logo",
+          "localCopy": "research/india-source-bundles/jerusalem-college-of-engineering/logo.png"
+        },
+        {
+          "kind": "cover",
+          "status": "held",
+          "sourceUrl": "https://jerusalemengg.ac.in/upload/Web-Slider1.png",
+          "sourceType": "official",
+          "sourcePage": "https://jerusalemengg.ac.in/",
+          "rightsBasis": "HOLD - not proposed for upload. Checked 2026-10-26: the only real campus photograph found on jerusalemengg.ac.in is the home-page slider Web-Slider1.png (image/png, 356,385 bytes, 1920x600, SHA-256 55fb572d328d3c78ae1ec5e871bc0f21f7106d4c76192d88222ffa8233f6fbe4), which shows the cream-and-terracotta main academic block with trees, but carries overlaid marketing text ('EXPERIENCE THE STATE-OF-ART INFRASTRUCTURE', a 'Know More' button) and a dark gradient across its left half. Rejected alternatives: upload/home1.jpg, home2.jpg and home3.jpg are stock-style lifestyle photos (home1 shows two students on a lawn, not the campus); Web-banner-jce.jpg and img/p1.jpg are text-heavy admission banners/composites; student-council gallery images are close-ups of identifiable students; Wikipedia has only the logo. Option for the user: approve a right-side crop of Web-Slider1.png (approx. x 800-1920, 1120x600, no text) as the cover, or source a clean campus photo from the college.",
+          "proposedPublicId": "studentstraffic/universities/jerusalem-college-of-engineering/cover",
+          "localCopy": "research/india-source-bundles/jerusalem-college-of-engineering/media/u-Web-Slider1.png"
+        }
+      ]
+    },
+    {
+      "universitySlug": "kathir-college-of-engineering",
+      "universityName": "Kathir College of Engineering",
+      "sourceBatch": "claude-tn-colleges-batch1-20261026",
+      "migrationId": "0357-india-kathir-college-of-engineering",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2025/11/An-Autonomous-Institution-logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://kathir.ac.in/",
+          "rightsBasis": "Official KCE header lock-up served from the college's own domain (kathir.ac.in, site-wide header). No open licence; used only to identify the institution. Checked 2026-10-26: HTTP 200, image/png, 277,467 bytes, 1536x307 px, sha256 a0e9a5fe20c54ea43eeaa48e803e8bb33225aceab4c0ad2742cdd8ee8bdd7ddd. Rendered on white and visually confirmed legible: circular blue KCE seal reading 'Kathir College of Engineering, Coimbatore - 641 062', navy wordmark 'Kathir College of Engineering', red line '[An Autonomous Institution]', the accreditation line and address, and a gold NAAC A+ (CGPA 3.49) badge at the right. CAVEAT: wide banner with small text lines and an embedded NAAC badge; no seal-only or SVG asset is published. Rejected: Kathir-Eng-logo-white.png (white-on-transparent, illegible on white) and home-admission-logo.png (494x127, white text).",
+          "proposedPublicId": "studentstraffic/universities/kathir-college-of-engineering/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2025/11/student-facilities-img-3.png",
+          "sourceType": "official",
+          "sourcePage": "https://kathir.ac.in/life-at-kce-student-facilities/",
+          "rightsBasis": "Official campus photograph on the college's own domain (Student facilities page). No open licence; used only to depict the institution. Checked 2026-10-26: HTTP 200, image/png, 172,355 bytes, 600x400 px, sha256 29d83ec2e97b92813c346220281c14110002b5c6c9b8a896932106ed38e922d7. Visually confirmed as a single real photograph, not a composite or AI image: white three-storey building signed 'Girls Hostel' with a lawn in front, blue sky and trees; a few distant figures are not identifiable; no text overlay or watermark. CAVEAT: low resolution (600x400); the college publishes no larger building photograph. Rejected: 2026/01/Slider-image-01.jpg (1920x1036 but a close-up of five identifiable students), 2026/01/Life-@-KEC-img-02.jpg (600x400 building with a partial third-party 'CADD' sign), placement-image.png (collage), home-gallery-img-1.png and home-about-preview images (close-ups of identifiable students).",
+          "altText": "White three-storey girls' hostel building with a front lawn at Kathir College of Engineering, Neelambur, Coimbatore",
+          "proposedPublicId": "studentstraffic/universities/kathir-college-of-engineering/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "miet-engineering-college",
+      "universityName": "M.I.E.T. Engineering College",
+      "sourceBatch": "claude-tn-colleges-batch1-20261026",
+      "migrationId": "0356-india-miet-engineering-college",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.miet.edu/images/logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://www.miet.edu/",
+          "rightsBasis": "Official site-wide header logo served from the college's own domain (miet.edu). No open licence - used only to identify the institution. Checked 2026-10-26: image/png, 58,674 bytes, 540x100 px (fetched through WebFetch; plain curl to miet.edu returns HTTP 406 to non-browser clients, so re-check HTTP 200 from the upload host). Rendered on white and visually confirmed: blue 'MIET INSTITUTIONS Since 1984' monogram on the left and a blue 'MIET ENGINEERING COLLEGE (Autonomous)' wordmark with the straplines 'Anna University Recognized Research Institute' and 'Accredited by NAAC with A+ Grade' - legible on a white tile, no white-on-transparent elements. CAVEAT: wide header lockup (5.4:1) that combines the group monogram and the college wordmark; small raster, no SVG or larger brand asset found. If a square tile is required, crop the left MIET monogram (approx. x 0-95) rather than using a favicon.",
+          "proposedPublicId": "studentstraffic/universities/miet-engineering-college/logo",
+          "localCopy": "research/india-source-bundles/miet-engineering-college/logo.png"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.miet.edu/images/g63.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://www.miet.edu/photo-gallery.html",
+          "rightsBasis": "Official campus photograph on the college's domain, captioned 'B-Block' in the Photo Gallery. No open licence stated - official institutional image used to identify the institution, same basis as earlier official covers. Checked 2026-10-26: image/jpeg, 423,520 bytes, 700x469 px (landscape), fetched through WebFetch (plain curl to miet.edu returns HTTP 406 to non-browser clients, so re-check HTTP 200 from the upload host). Visual confirmation: the two-storey B-Block with its 'M.I.E.T. ENGINEERING COLLEGE' name board over a glazed entrance, a paved path through gardens, a blue department direction signboard at left and blue sky; no people, no watermark or overlay. Alternative: images/g62.jpg (gallery caption 'A-Block', 257,131 bytes, 700x469, wider view with an araucaria, letterboxed with black bands that would need cropping).",
+          "altText": "B-Block of M.I.E.T. Engineering College on the Trichy-Pudukkottai Road, Tiruchirappalli, with its name board above the entrance and gardens in front",
+          "proposedPublicId": "studentstraffic/universities/miet-engineering-college/cover",
+          "localCopy": "research/india-source-bundles/miet-engineering-college/cover-g63-b-block.jpg"
+        }
+      ]
+    },
+    {
+      "universitySlug": "tagore-engineering-college",
+      "universityName": "Tagore Engineering College",
+      "sourceBatch": "claude-tn-colleges-batch1-20261026",
+      "migrationId": "0359-india-tagore-engineering-college",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://tagore-engg.ac.in/images/tagore-logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://tagore-engg.ac.in/",
+          "rightsBasis": "Official TEC header lock-up served from the college's own domain (tagore-engg.ac.in, site-wide header). No open licence; used only to identify the institution. Checked 2026-10-26: HTTP 200, image/png, 86,626 bytes, 2772x500 px, sha256 45e873d50129ba5fbc6456f2f591817a696ec06f7f2035bb36ae32d6f8609043. Rendered on white and visually confirmed legible: maroon shield crest reading 'Tagore Engineering College' and 'Labour to Glory', maroon wordmark 'TAGORE ENGINEERING COLLEGE', and two navy lines (AICTE/NBA/Anna University affiliation and the Rathinamangalam address). CAVEAT: wide banner; the 'Accredited by NBA' line describes programme, not institutional, accreditation. Rejected: logo2/logo3/logo4.png and actual/college-logo.png (100 px icons).",
+          "proposedPublicId": "studentstraffic/universities/tagore-engineering-college/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://tagore-engg.ac.in/images/gallery/tg11.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://tagore-engg.ac.in/",
+          "rightsBasis": "Official campus photograph from the home-page gallery on the college's own domain. No open licence; used only to depict the institution. Checked 2026-10-26: HTTP 200, image/jpeg, 233,240 bytes, 500x400 px, sha256 091904dd279e829b9b64ab4089580e3c941021791722ca1dc255312b600d7f21. Visually confirmed as a single real photograph, not a composite or AI image: wide view of the machine shop with lathes and a radial drilling machine under a steel-truss roof; students are at mid or far distance, none in close-up; no text overlay or watermark. CAVEAT: low resolution (500x400) and an interior workshop view; the site publishes no exterior building photograph. Rejected: pic1.jpg (award banner with text and identifiable people), tagore-web.png (conference banner), tec-gallery-3 to 6 (event photos of identifiable people), tg8.jpg (students posed in a line in front of an aircraft), tg2/tg3/tg4/tg12 (closer student shots).",
+          "altText": "Machine shop with lathes and a radial drilling machine at Tagore Engineering College, Rathinamangalam, Chennai",
+          "proposedPublicId": "studentstraffic/universities/tagore-engineering-college/cover"
+        }
+      ]
+    }
+  ]
+}

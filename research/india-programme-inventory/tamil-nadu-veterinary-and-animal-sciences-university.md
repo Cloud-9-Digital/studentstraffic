@@ -19,3 +19,7 @@ Root normalized six inventory-only restricted statuses to canonical unknown, pre
 142 LF rows retained. Complete13-route forward preserves10 published0224 programme objects exactly and supports CFDT Dairy Technology plus current two-year MSc Biotechnology and MSc Dairy Science. Unknown new programme languages and MSc intakes are explicitly omitted; Dairy's historical2025notice is qualified. Native rounded full-course INR1.17lakh secondaryBiotechnology quote is indicative, not annual tuition; no fee transfer to DairyScience.
 
 Superseding PG hold: current minimum-marks header is malformed; genuine2025–26 own correct undergraduate table is only indexed, direct404/timeout/certificate mismatch. No full-read claim, no marks/fee inference.22MVSc and6MTech remain held on actual qualification evidence, not language or intake. Full detail in research/india-source-bundles/tanuvas-forward-20261025/source-audit.md. Existing distance/research/affiliated holds remain scoped. Owner codex-tanuvas-forward-20261025.
+
+## Fee pass 2026-10-26
+
+- M.Sc. Dairy Science: still on request. ce_pg.php has no fees; no 2026-27 PG prospectus found; the 2025-26 PG fee annexure URL now returns 404/HTML (and would be stale); aggregators list M.Sc. Bioinformatics/Biostatistics/Biotechnology only. Biotechnology quote not transferred.

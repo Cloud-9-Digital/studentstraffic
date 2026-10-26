@@ -61,3 +61,7 @@ See the `notes` column of the CSV for each: M.Optom. (no published eligibility);
 unreadable); B.Sc./B.Com., B.Ed. integrated x3 (NCTE list unreachable); integrated M.A. Sanskrit (teaching language
 not confirmed); Chennai B.B.A. and B.C.A. (not in the 2026-27 Chennai calendar); Chennai B.Sc. Visual Communications
 (not on the 2026 programme list).
+
+## Fee pass 2026-10-26
+
+- B.Sc. Electronics Manufacturing: still on request. Official fee-structure.html has generic B.Sc. rows only for Kumbakonam (Rs 30,000/semester) and Chennai (Rs 40,000/semester) campuses, not Thanjavur; programme page has no fee; Careers360 shows only a generic B.Sc. average. Other-campus rates not borrowed.

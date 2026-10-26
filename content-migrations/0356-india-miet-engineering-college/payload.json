@@ -1,0 +1,2467 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "be-btech-civil-engineering",
+      "name": "B.E./B.Tech in Civil Engineering",
+      "shortName": "B.E./B.Tech Civil",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "civil-engineering",
+      "aliases": [
+        "Bachelor of Civil Engineering",
+        "BEng Civil Engineering"
+      ],
+      "displayOrder": 3,
+      "durationYears": 4,
+      "summary": "A four-year undergraduate engineering degree covering structural analysis and design, geotechnical engineering, transportation engineering, water resources, environmental engineering, surveying and construction management. Programmes pair lecture teaching with materials, hydraulics and surveying laboratories, site visits and a final-year design project. Graduates work in construction, infrastructure, consultancy and public works, or continue to a master's specialisation.",
+      "metaTitle": "B.E./B.Tech Civil: Course, Fees and Admission",
+      "metaDescription": "What a four-year B.E./B.Tech Civil degree covers, the entry requirements it carries, how admission is decided and what tuition to plan for."
+    },
+    {
+      "slug": "be-btech-mechanical-engineering",
+      "name": "B.E./B.Tech in Mechanical Engineering",
+      "shortName": "B.E./B.Tech Mechanical",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "mechanical-engineering",
+      "aliases": [
+        "Bachelor of Mechanical Engineering",
+        "BEng Mechanical Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "A four-year undergraduate engineering degree covering engineering mechanics, thermodynamics, fluid mechanics, heat transfer, machine design, manufacturing processes and control systems. Teaching is built around workshop practice, thermal and materials laboratories, computer-aided design and a final-year project. Graduates move into manufacturing, automotive, energy, thermal and design roles, or continue to a master's specialisation such as thermal engineering or machine design.",
+      "metaTitle": "B.E./B.Tech Mechanical: Course, Fees and Admission",
+      "metaDescription": "What a four-year B.E./B.Tech Mechanical degree covers, its entry requirements, how admission is decided and what tuition and duration to plan for."
+    },
+    {
+      "slug": "be-btech-electrical-electronics-engineering",
+      "name": "B.E./B.Tech in Electrical and Electronics Engineering",
+      "shortName": "B.E./B.Tech EEE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electrical-electronics-engineering",
+      "aliases": [
+        "Bachelor of Electrical and Electronic Engineering",
+        "BEng Electrical and Electronic Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "This catalogue category covers four-year undergraduate degrees in electrical and electronics engineering taken after an upper-secondary qualification with physics and mathematics. Programmes typically cover circuit theory, electrical machines, power systems, power electronics, control systems and embedded electronics, with laboratory work and electives in renewable energy or electric mobility.",
+      "metaTitle": "B.E./B.Tech EEE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech EEE degrees for international applicants: programme length, teaching language, intake months, tuition and admission routes."
+    },
+    {
+      "slug": "be-btech-electronics-communication-engineering",
+      "name": "B.E./B.Tech in Electronics and Communication Engineering",
+      "shortName": "B.E./B.Tech ECE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electronics-communication-engineering",
+      "aliases": [
+        "Bachelor of Electronics and Communication Engineering",
+        "BEng Electronic and Communications Engineering",
+        "Electronics and Telecommunications Engineering"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in electronics and communication engineering, usually four years after upper-secondary physics, chemistry and mathematics. Curricula typically span circuit and network theory, analog and digital electronics, signals and systems, digital signal processing, communication systems and embedded or VLSI design, with laboratory and project work.",
+      "metaTitle": "B.E./B.Tech ECE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech ECE degrees for international applicants: duration, teaching language, intakes, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "Bachelor of Technology in Computer Science and Engineering",
+        "BEng Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in computer science and engineering, usually four years after an upper-secondary qualification with mathematics. Typical curricula run from programming, data structures, operating systems, databases and computer networks to algorithms, software engineering and electives in artificial intelligence, machine learning, cloud and security, with project and internship components.",
+      "metaTitle": "B.E./B.Tech CSE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech CSE degrees for international applicants: duration, teaching language, intake months, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-biomedical-engineering",
+      "name": "B.E./B.Tech in Biomedical Engineering",
+      "shortName": "B.E./B.Tech Biomedical",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "biomedical-engineering",
+      "aliases": [
+        "Bachelor of Biomedical Engineering",
+        "BEng Biomedical Engineering"
+      ],
+      "displayOrder": 36,
+      "durationYears": 4,
+      "summary": "The Students Traffic catalogue category for four-year undergraduate biomedical engineering degrees. Programmes in this category combine electronics, instrumentation and mechanics with human anatomy and physiology, covering medical devices and imaging, biomaterials, biosignal processing and hospital equipment, usually with laboratory work and clinical or industry exposure. Curriculum, regulator approval, admission route and fees are set by each awarding university, so the programme record should drive a shortlist decision.",
+      "metaTitle": "B.E./B.Tech Biomedical Programmes | Students Traffic",
+      "metaDescription": "Compare B.E./B.Tech Biomedical engineering programmes by curriculum, approvals, admission route, teaching language and fee status before you apply."
+    },
+    {
+      "slug": "be-btech-information-technology",
+      "name": "B.E./B.Tech in Information Technology",
+      "shortName": "B.E./B.Tech IT",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "information-technology",
+      "aliases": [
+        "Bachelor of Engineering in Information Technology",
+        "Bachelor of Information Technology",
+        "BSc Information Technology"
+      ],
+      "displayOrder": 180,
+      "durationYears": 4,
+      "summary": "An approved Engineering catalogue category for four-year undergraduate information technology degrees, including university programmes that publish Computer Science as a major within an Information Technology award. The exact university title and major structure remain visible on each offering.",
+      "metaTitle": "B.E./B.Tech IT Programmes",
+      "metaDescription": "Compare B.E./B.Tech IT programmes, official titles, fees, duration and admissions routes for international students."
+    },
+    {
+      "slug": "be-btech-data-science",
+      "name": "B.E./B.Tech in Data Science",
+      "shortName": "B.E./B.Tech Data Science",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "data-science",
+      "aliases": [
+        "Bachelor of Technology in Data Science",
+        "BEng Data Science"
+      ],
+      "displayOrder": 33,
+      "durationYears": 4,
+      "summary": "Compare undergraduate Data Science degrees abroad by statistics, machine learning, data engineering, applied projects, tuition and admissions. Each university offering keeps its official award title, artificial-intelligence specialisation depth and entry requirements visible before applying.",
+      "metaTitle": "B.E./B.Tech Data Science Abroad | Fees",
+      "metaDescription": "Compare B.E./B.Tech Data Science programmes abroad by curriculum, tuition fees, admissions and practical training."
+    },
+    {
+      "slug": "mba",
+      "name": "Master of Business Administration",
+      "shortName": "MBA",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "business-administration",
+      "aliases": [
+        "General MBA",
+        "Full-time MBA",
+        "International MBA"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "A postgraduate category for general-management degrees taken after a bachelor qualification. Study commonly combines finance, marketing, organisational behaviour, operations and strategy with applied management work. Programme delivery, selection tests, curriculum and fees vary by university.",
+      "metaTitle": "MBA Programmes and Admissions",
+      "metaDescription": "Compare MBA programmes by official award, academic eligibility, teaching language, duration, university and tuition fees."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "miet-engineering-college",
+      "name": "M.I.E.T. Engineering College",
+      "city": "Tiruchirappalli",
+      "type": "Private",
+      "establishedYear": 1998,
+      "officialWebsite": "https://www.miet.edu/",
+      "mediaAttribution": {
+        "logo": {
+          "sourceUrl": "https://www.miet.edu/images/logo.png",
+          "rights": "Official college header logo served from miet.edu, used only to identify the institution; no open licence or ownership transfer claimed.",
+          "checkedAt": "2026-10-26"
+        },
+        "cover": {
+          "sourceUrl": "https://www.miet.edu/images/g63.jpg",
+          "rights": "Official campus photograph (B-Block) from the college's photo gallery on miet.edu, used for institutional illustration; no open licence or ownership transfer claimed.",
+          "checkedAt": "2026-10-26",
+          "altText": "B-Block of M.I.E.T. Engineering College on the Trichy-Pudukkottai Road, Tiruchirappalli, with its name board above the entrance and gardens in front"
+        }
+      },
+      "summary": "M.I.E.T. Engineering College (MIET) is a private, self-financing engineering college founded in 1998 on the Trichy-Pudukkottai Road at Gundur, Tiruchirappalli, Tamil Nadu. It is not a university: it is an autonomous college affiliated to Anna University, Chennai, which awards its degrees. It teaches eight AICTE-approved B.E./B.Tech branches and an MBA in English.",
+      "campusLifestyle": "M.I.E.T. Engineering College (MIET)'s campus on the Trichy-Pudukkottai Road has A, B and C academic blocks, separate hostels for men and women, playgrounds, a gym and a mini theatre. Its library in C Block covers 725 sq m with 50,442 volumes in 18,329 titles, open 9 am to 7 pm on working days, with IEEE, Springer, Elsevier, ASME and ASCE e-journals and DELNET and National Digital Library membership. The site also lists NSS, NCC, clubs, a masjid and a bank on campus.",
+      "cityProfile": "M.I.E.T. Engineering College (MIET) is at Gundur on the Trichy-Pudukkottai Road, Tiruchirappalli 620007, in Tiruverumbur taluk of Tiruchirappalli district, Tamil Nadu, near Tiruchirappalli airport. TNEA 2026 lists it 8 km from both the district headquarters and Tiruchirappalli railway station. Anna University lists it among the Tiruchirappalli district colleges with examination code 8124. The college is run by the Mohamed Institute of Education and Technology (MIET) Society, founded in 1984, which also runs M.I.E.T. Arts and Science College and M.I.E.T. Polytechnic College; those institutions are not covered here.",
+      "practicalExposure": "M.I.E.T. Engineering College (MIET) has been an autonomous college since 2024-25: UGC and Anna University granted autonomy for 2024-25 to 2033-34, so MIET writes its own Regulations 2024 curricula and conducts its own examinations, while Anna University approves and awards the degree. Theory courses carry 40 marks of continuous assessment and a 60-mark end-semester examination. AICTE makes an internship mandatory for every admitted student, and the 2026-27 calendar schedules industrial visits, guest lectures and value-added courses for each department. The training and placement cell runs aptitude, English and technical training, group discussions and mock interviews; the college reported a 93 per cent placement rate in its TNEA 2026 entry without stating the year or base.",
+      "hostelOverview": "M.I.E.T. Engineering College (MIET) has permanent on-campus hostels for men and women, according to TNEA 2026. The 2026 TNEA college booklet lists room rent at INR 21,000 a year, electricity at INR 12,000 a year and mess at INR 40,000 a year, with no caution deposit. The college hostel page lists RO drinking water, a gym, indoor games, a reading room, a computer lab with internet and a mini theatre.",
+      "dietarySupport": "M.I.E.T. Engineering College (MIET)'s hostel messes serve both vegetarian and non-vegetarian food, according to the TNEA 2026 college booklet and the college's hostel page. The mess charge is INR 40,000 a year. No menu or provision for specific regional or religious diets is published, so ask the hostel office before joining.",
+      "safetyOverview": "M.I.E.T. Engineering College (MIET) states that ragging is prohibited on campus and has an anti-ragging committee chaired by the principal, plus an internal committee. The hostel page lists 24-hour ambulance service for emergencies. TNEA 2026 publishes a separate anti-ragging helpline number for the college.",
+      "studentSupport": "M.I.E.T. Engineering College (MIET) handles complaints through a student grievance redressal committee chaired by the vice principal, and students can also file grievances on the college's online portal. The training and placement cell offers coaching for government exams and for TOEFL, IELTS, GRE and GMAT, and the site lists a merit scholarship.",
+      "whyChoose": [
+        "M.I.E.T. Engineering College (MIET) is an autonomous college accredited by NAAC with an A+ grade (CGPA 3.33, valid to 14 February 2027), and Anna University awards its degrees.",
+        "Eight B.E./B.Tech branches were offered in TNEA 2026 under college code 3811, with intakes from 30 (Civil, Biomedical) to 180 (Computer Science and Engineering), plus a 60-seat MBA.",
+        "TNEA 2026 publishes the college's hostel costs: room rent INR 21,000, electricity INR 12,000 and mess INR 40,000 a year, with separate permanent hostels for men and women."
+      ],
+      "thingsToConsider": [
+        "M.I.E.T. Engineering College (MIET) publishes no tuition amount; its fee page says fees follow Government of Tamil Nadu norms, so confirm the current tuition with the college before choosing a quota.",
+        "There is no route for international students: AICTE's 2025-26 approval shows no NRI or foreign-national seats, and TNEA admits only Indian nationals and Tamil Nadu-native OCI/PIO card holders.",
+        "Only B.E. Civil Engineering holds current NBA accreditation (to 30 June 2027); ECE's ran to 30 June 2026, and CSE, EEE and Mechanical's lapsed in June 2025. The college's M.E. programmes are not listed here because no 2026-27 intake evidence was found."
+      ],
+      "bestFitFor": [
+        "Tamil Nadu TNEA applicants who want a B.E. or B.Tech from an autonomous, NAAC A+ college in Tiruchirappalli that leads to an Anna University degree.",
+        "Students who want Civil Engineering with current NBA accreditation, or a large Computer Science and Engineering intake of 180 seats.",
+        "Graduates with a TANCET 2026 (MBA) score who want an MBA in Tiruchirappalli through Tamil Nadu's state counselling."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "AICTE - Approved institution, Permanent ID 1-7532291 (Private-Self Financing)",
+        "UGC - Autonomous college, 2024-25 to 2033-34 (affiliated to Anna University, Chennai)",
+        "NAAC - A+ grade, CGPA 3.33, Cycle 1, valid to 14 February 2027",
+        "NBA - B.E. Civil Engineering accredited (Tier II), valid to 30 June 2027",
+        "Anna University, Chennai - Affiliated autonomous college, examination code 8124",
+        "DoTE Tamil Nadu - TNEA 2026 participating college, counselling code 3811"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "AICTE - Approved institutes dashboard",
+          "url": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved"
+        },
+        {
+          "label": "UGC - Autonomous colleges list",
+          "url": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list"
+        },
+        {
+          "label": "NAAC - Certificate of accreditation (MIET)",
+          "url": "https://www.miet.edu/pdf2/NAAC.pdf"
+        },
+        {
+          "label": "NBA - Civil Engineering accreditation letter (MIET)",
+          "url": "https://www.miet.edu/pdf2/Civil-NBA-Approved-copy.pdf"
+        },
+        {
+          "label": "Anna University CAI - Affiliated colleges, Tiruchirappalli district",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Tiruchirappalli.php"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+          "url": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is MIET Engineering College Trichy autonomous?",
+          "answer": "Yes, M.I.E.T. Engineering College (MIET) is autonomous: UGC conferred autonomous status for 10 years, 2024-25 to 2033-34, and Anna University issued its order in February 2024. MIET sets its own curricula and examinations under Regulations 2024, but it remains affiliated to Anna University, Chennai, which awards the degree."
+        },
+        {
+          "question": "What is the TNEA code of MIET Engineering College?",
+          "answer": "The TNEA counselling code for M.I.E.T. Engineering College (MIET) is 3811, and its Anna University examination code is 8124. In TNEA 2026 it offered Civil (CE), Mechanical (ME), EEE (EE), ECE (EC), CSE (CS), Biomedical (BM), IT and AI and Data Science (AD) seats."
+        },
+        {
+          "question": "Is MIET Trichy AICTE approved and NAAC accredited?",
+          "answer": "Yes, M.I.E.T. Engineering College (MIET) is AICTE approved (permanent ID 1-7532291, private self-financing) and NAAC accredited with an A+ grade and a CGPA of 3.33 in its first cycle, valid to 14 February 2027. NBA accredits its B.E. Civil Engineering programme to 30 June 2027."
+        },
+        {
+          "question": "What is the fee at MIET Engineering College?",
+          "answer": "M.I.E.T. Engineering College (MIET) does not publish its tuition; its fee page says fees are as prescribed by the Government of Tamil Nadu, so ask the college for the current amount. TNEA 2026 lists an admission fee of INR 5,000, hostel room rent of INR 21,000, electricity of INR 12,000 and mess of INR 40,000 a year, and transport of INR 6,200 to 25,400 a year."
+        },
+        {
+          "question": "Does MIET Engineering College have hostels?",
+          "answer": "Yes, M.I.E.T. Engineering College (MIET) has separate permanent on-campus hostels for men and women, with messes serving vegetarian and non-vegetarian food. TNEA 2026 lists room rent at INR 21,000, electricity at INR 12,000 and mess at INR 40,000 a year, with no caution deposit."
+        },
+        {
+          "question": "Can NRI or international students apply to MIET Trichy?",
+          "answer": "No, M.I.E.T. Engineering College (MIET) has no NRI or foreign-national seats: AICTE's 2025-26 approval marks NRI and foreign/OCI approval as No for every programme. TNEA is for Indian nationals; OCI/PIO card holders who are natives of Tamil Nadu may join unless born abroad after 4 March 2021."
+        },
+        {
+          "question": "How do I get admission to MIET Engineering College?",
+          "answer": "Most B.E./B.Tech seats at M.I.E.T. Engineering College (MIET) are filled through TNEA: register at tneaonline.org, get a rank from Mathematics (100), Physics (50) and Chemistry (50), and choose code 3811. TNEA 2026 counselling ran 20 July to 30 August, and MIET started first-year classes on 24 August 2026. MBA seats use TANCET and state MBA counselling."
+        },
+        {
+          "question": "Who awards the degree at MIET Engineering College?",
+          "answer": "Anna University, Chennai awards the degrees of M.I.E.T. Engineering College (MIET). MIET is an affiliated college, not a university; as an autonomous college it designs its syllabus and runs its examinations, and Anna University approves the results and issues the B.E., B.Tech and MBA degrees."
+        },
+        {
+          "question": "Is MIET Trichy the same as Mahath Amma Institute of Engineering and Technology (MIET), Pudukkottai?",
+          "answer": "No, M.I.E.T. Engineering College (MIET) at Gundur, Tiruchirappalli (TNEA code 3811) is a different college from Mahath Amma Institute of Engineering and Technology, which also uses the short form MIET and is at Illupur, Pudukkottai district (TNEA code 3854). Check the TNEA code when filling choices."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "AICTE - Extension of Approval 2025-26 (MIET, published by the college)",
+          "url": "https://www.miet.edu/pdf3/2025-2026_AICTE.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "AICTE - Approved institutes dashboard (2026-27; unreachable from the research network on 2026-10-26)",
+          "url": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "UGC - Conferment of autonomous status, M.I.E.T. Engineering College (November 2023)",
+          "url": "https://www.miet.edu/pdf2/AUTONOMOUS-UGCConferment.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "UGC - Autonomous colleges list",
+          "url": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "Anna University - Conferment of autonomous status order (09.02.2024)",
+          "url": "https://www.miet.edu/pdf2/AUTONOMOUS-%E2%80%93-AU-Grant.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "Anna University CAI - Tiruchirappalli district affiliated colleges",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Tiruchirappalli.php",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "NAAC - Certificate of accreditation (MIET, 2022)",
+          "url": "https://www.miet.edu/pdf2/NAAC.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "NBA - Civil Engineering accreditation letter (08.04.2024)",
+          "url": "https://www.miet.edu/pdf2/Civil-NBA-Approved-copy.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "NBA - ECE accreditation appeal decision (07.05.2024)",
+          "url": "https://www.miet.edu/pdf3/NBA-ECE.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+          "url": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+          "url": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 vacancy position after Round 1",
+          "url": "https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DTE Tamil Nadu - TN MBA/MCA 2026-27 engineering colleges booklet",
+          "url": "https://static.tn-mbamca.com/docs/TNMBAMCA-ENGINEERING-COLLEGES-BOOKLET-2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DTE Tamil Nadu - MBA 2026-27 information and instructions",
+          "url": "https://static.tn-mbamca.com/docs/MBA_Instructions.pdf?t=1781654400022",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "MIET - Academic calendar 2026-2027",
+          "url": "https://www.miet.edu/pdf2/engineeringacademiccalendar2026%20%E2%80%932027.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "MIET - B.E./B.Tech Regulations 2024",
+          "url": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "MIET - MBA Regulations 2024",
+          "url": "https://www.miet.edu/pdf/MBA%20Regulations-2024.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "MIET - Courses offered",
+          "url": "https://www.miet.edu/courses-offered.html",
+          "kind": "official-program",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "MIET - Fees structure",
+          "url": "https://www.miet.edu/fees-structure.html",
+          "kind": "official-fee",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "MIET - Official website",
+          "url": "https://www.miet.edu/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-26"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "This record covers M.I.E.T. Engineering College at Gundur, Tiruchirappalli only. M.I.E.T. Arts and Science College, M.I.E.T. Polytechnic College and Mahath Amma Institute of Engineering and Technology, Pudukkottai are outside this record.",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "research_ready",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MIET eligibility",
+            "capture": [
+              "nationality and Tamil Nadu nativity or schooling",
+              "Class 12 board and MPC marks",
+              "community category",
+              "intended branch"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Estimate my MIET fees and hostel cost",
+            "capture": [
+              "intended branch",
+              "TNEA or management quota",
+              "hostel and transport needs",
+              "concession eligibility"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my TNEA choices for MIET",
+            "capture": [
+              "TNEA rank or expected cut-off",
+              "preferred branches",
+              "document readiness"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "miet-be-civil-engineering",
+          "canonicalCourseSlug": "be-btech-civil-engineering",
+          "officialTitle": "B.E. Civil Engineering, M.I.E.T. Engineering College",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-26",
+            "notes": "M.I.E.T. Engineering College (MIET) publishes no tuition figure: its fee page says only that fees are \"as prescribed by Government of Tamil Nadu\" (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists MIET's other charges: admission fee INR 5,000, establishment charge INR 12,000, hostel room rent INR 21,000 a year, electricity INR 12,000 a year, mess INR 40,000 a year and college transport INR 6,200 to 25,400 a year."
+          },
+          "officialProgramUrl": "https://www.miet.edu/civil-engineering.html",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2025-26 approval shows NRI and foreign-national/OCI approval as No for every MIET programme, and no international-student route is published, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 3811, branch code CE) or the college's management quota. TNEA 2026 lists an approved intake of 30; the branch started in 2006. NBA accredits the programme (Tier II) for academic years 2024-25 to 2026-27, valid to 30 June 2027.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Civil Engineering at M.I.E.T. Engineering College (MIET) is a four-year, eight-semester degree taught in English at Gundur, Tiruchirappalli; MIET sets the syllabus and exams as an autonomous college and Anna University awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission, and MIET's Regulations 2024 follow Government of Tamil Nadu norms.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu rules"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 3811 with branch CE, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to the college through its admission enquiry form or the admissions office"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. MIET's 2026-27 calendar held the first-year induction from 19 August and started first-year classes on 24 August 2026."
+          },
+          "medium": "English",
+          "mediumNote": "MIET's B.E./B.Tech Regulations 2024 (clause 4.16) set English as the medium of instruction.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "M.I.E.T. Engineering College (MIET) publishes no tuition figure: its fee page says only that fees are \"as prescribed by Government of Tamil Nadu\" (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists MIET's other charges: admission fee INR 5,000, establishment charge INR 12,000, hostel room rent INR 21,000 a year, electricity INR 12,000 a year, mess INR 40,000 a year and college transport INR 6,200 to 25,400 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "MIET's own Regulations 2024 curriculum for Civil Engineering, set by the autonomous college's Board of Studies: 165 to 175 credits, with continuous internal assessment worth 40 marks and a college-run end-semester examination worth 60 marks in theory courses. Anna University approves and awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "miet-be-mechanical-engineering",
+          "canonicalCourseSlug": "be-btech-mechanical-engineering",
+          "officialTitle": "B.E. Mechanical Engineering, M.I.E.T. Engineering College",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-26",
+            "notes": "M.I.E.T. Engineering College (MIET) publishes no tuition figure: its fee page says only that fees are \"as prescribed by Government of Tamil Nadu\" (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists MIET's other charges: admission fee INR 5,000, establishment charge INR 12,000, hostel room rent INR 21,000 a year, electricity INR 12,000 a year, mess INR 40,000 a year and college transport INR 6,200 to 25,400 a year."
+          },
+          "officialProgramUrl": "https://www.miet.edu/mechanical-engineering.html",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2025-26 approval shows NRI and foreign-national/OCI approval as No for every MIET programme, and no international-student route is published, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 3811, branch code ME) or the college's management quota. TNEA 2026 lists an approved intake of 60; the branch started in 1998.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Mechanical Engineering at M.I.E.T. Engineering College (MIET) is a four-year, eight-semester degree taught in English at Gundur, Tiruchirappalli; MIET sets the syllabus and exams as an autonomous college and Anna University awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission, and MIET's Regulations 2024 follow Government of Tamil Nadu norms.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu rules"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 3811 with branch ME, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to the college through its admission enquiry form or the admissions office"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. MIET's 2026-27 calendar held the first-year induction from 19 August and started first-year classes on 24 August 2026."
+          },
+          "medium": "English",
+          "mediumNote": "MIET's B.E./B.Tech Regulations 2024 (clause 4.16) set English as the medium of instruction.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "M.I.E.T. Engineering College (MIET) publishes no tuition figure: its fee page says only that fees are \"as prescribed by Government of Tamil Nadu\" (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists MIET's other charges: admission fee INR 5,000, establishment charge INR 12,000, hostel room rent INR 21,000 a year, electricity INR 12,000 a year, mess INR 40,000 a year and college transport INR 6,200 to 25,400 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "MIET's own Regulations 2024 curriculum for Mechanical Engineering, set by the autonomous college's Board of Studies: 165 to 175 credits, with continuous internal assessment worth 40 marks and a college-run end-semester examination worth 60 marks in theory courses. Anna University approves and awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "miet-be-electrical-electronics-engineering",
+          "canonicalCourseSlug": "be-btech-electrical-electronics-engineering",
+          "officialTitle": "B.E. Electrical and Electronics Engineering, M.I.E.T. Engineering College",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-26",
+            "notes": "M.I.E.T. Engineering College (MIET) publishes no tuition figure: its fee page says only that fees are \"as prescribed by Government of Tamil Nadu\" (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists MIET's other charges: admission fee INR 5,000, establishment charge INR 12,000, hostel room rent INR 21,000 a year, electricity INR 12,000 a year, mess INR 40,000 a year and college transport INR 6,200 to 25,400 a year."
+          },
+          "officialProgramUrl": "https://www.miet.edu/electrical-electronics-engineering.html",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2025-26 approval shows NRI and foreign-national/OCI approval as No for every MIET programme, and no international-student route is published, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 3811, branch code EE) or the college's management quota. TNEA 2026 lists an approved intake of 60; the branch started in 1998.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Electrical and Electronics Engineering at M.I.E.T. Engineering College (MIET) is a four-year, eight-semester degree taught in English at Gundur, Tiruchirappalli; MIET sets the syllabus and exams as an autonomous college and Anna University awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission, and MIET's Regulations 2024 follow Government of Tamil Nadu norms.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu rules"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 3811 with branch EE, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to the college through its admission enquiry form or the admissions office"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. MIET's 2026-27 calendar held the first-year induction from 19 August and started first-year classes on 24 August 2026."
+          },
+          "medium": "English",
+          "mediumNote": "MIET's B.E./B.Tech Regulations 2024 (clause 4.16) set English as the medium of instruction.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "M.I.E.T. Engineering College (MIET) publishes no tuition figure: its fee page says only that fees are \"as prescribed by Government of Tamil Nadu\" (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists MIET's other charges: admission fee INR 5,000, establishment charge INR 12,000, hostel room rent INR 21,000 a year, electricity INR 12,000 a year, mess INR 40,000 a year and college transport INR 6,200 to 25,400 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "MIET's own Regulations 2024 curriculum for Electrical and Electronics Engineering, set by the autonomous college's Board of Studies: 165 to 175 credits, with continuous internal assessment worth 40 marks and a college-run end-semester examination worth 60 marks in theory courses. Anna University approves and awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "miet-be-electronics-communication-engineering",
+          "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+          "officialTitle": "B.E. Electronics and Communication Engineering, M.I.E.T. Engineering College",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-26",
+            "notes": "M.I.E.T. Engineering College (MIET) publishes no tuition figure: its fee page says only that fees are \"as prescribed by Government of Tamil Nadu\" (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists MIET's other charges: admission fee INR 5,000, establishment charge INR 12,000, hostel room rent INR 21,000 a year, electricity INR 12,000 a year, mess INR 40,000 a year and college transport INR 6,200 to 25,400 a year."
+          },
+          "officialProgramUrl": "https://www.miet.edu/electronics-communication-engineering.html",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2025-26 approval shows NRI and foreign-national/OCI approval as No for every MIET programme, and no international-student route is published, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 3811, branch code EC) or the college's management quota. TNEA 2026 lists an approved intake of 60; the branch started in 2001.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Electronics and Communication Engineering at M.I.E.T. Engineering College (MIET) is a four-year, eight-semester degree taught in English at Gundur, Tiruchirappalli; MIET sets the syllabus and exams as an autonomous college and Anna University awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission, and MIET's Regulations 2024 follow Government of Tamil Nadu norms.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu rules"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 3811 with branch EC, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to the college through its admission enquiry form or the admissions office"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. MIET's 2026-27 calendar held the first-year induction from 19 August and started first-year classes on 24 August 2026."
+          },
+          "medium": "English",
+          "mediumNote": "MIET's B.E./B.Tech Regulations 2024 (clause 4.16) set English as the medium of instruction.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "M.I.E.T. Engineering College (MIET) publishes no tuition figure: its fee page says only that fees are \"as prescribed by Government of Tamil Nadu\" (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists MIET's other charges: admission fee INR 5,000, establishment charge INR 12,000, hostel room rent INR 21,000 a year, electricity INR 12,000 a year, mess INR 40,000 a year and college transport INR 6,200 to 25,400 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "MIET's own Regulations 2024 curriculum for Electronics and Communication Engineering, set by the autonomous college's Board of Studies: 165 to 175 credits, with continuous internal assessment worth 40 marks and a college-run end-semester examination worth 60 marks in theory courses. Anna University approves and awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "miet-be-computer-science-engineering",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "B.E. Computer Science and Engineering, M.I.E.T. Engineering College",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-26",
+            "notes": "M.I.E.T. Engineering College (MIET) publishes no tuition figure: its fee page says only that fees are \"as prescribed by Government of Tamil Nadu\" (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists MIET's other charges: admission fee INR 5,000, establishment charge INR 12,000, hostel room rent INR 21,000 a year, electricity INR 12,000 a year, mess INR 40,000 a year and college transport INR 6,200 to 25,400 a year."
+          },
+          "officialProgramUrl": "https://www.miet.edu/computer-science-engineering.html",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2025-26 approval shows NRI and foreign-national/OCI approval as No for every MIET programme, and no international-student route is published, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 3811, branch code CS) or the college's management quota. TNEA 2026 lists an approved intake of 180; the branch started in 1998.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Computer Science and Engineering at M.I.E.T. Engineering College (MIET) is a four-year, eight-semester degree taught in English at Gundur, Tiruchirappalli; MIET sets the syllabus and exams as an autonomous college and Anna University awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission, and MIET's Regulations 2024 follow Government of Tamil Nadu norms.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu rules"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 3811 with branch CS, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to the college through its admission enquiry form or the admissions office"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. MIET's 2026-27 calendar held the first-year induction from 19 August and started first-year classes on 24 August 2026."
+          },
+          "medium": "English",
+          "mediumNote": "MIET's B.E./B.Tech Regulations 2024 (clause 4.16) set English as the medium of instruction.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "M.I.E.T. Engineering College (MIET) publishes no tuition figure: its fee page says only that fees are \"as prescribed by Government of Tamil Nadu\" (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists MIET's other charges: admission fee INR 5,000, establishment charge INR 12,000, hostel room rent INR 21,000 a year, electricity INR 12,000 a year, mess INR 40,000 a year and college transport INR 6,200 to 25,400 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "MIET's own Regulations 2024 curriculum for Computer Science and Engineering, set by the autonomous college's Board of Studies: 165 to 175 credits, with continuous internal assessment worth 40 marks and a college-run end-semester examination worth 60 marks in theory courses. Anna University approves and awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "miet-be-biomedical-engineering",
+          "canonicalCourseSlug": "be-btech-biomedical-engineering",
+          "officialTitle": "B.E. Biomedical Engineering, M.I.E.T. Engineering College",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-26",
+            "notes": "M.I.E.T. Engineering College (MIET) publishes no tuition figure: its fee page says only that fees are \"as prescribed by Government of Tamil Nadu\" (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists MIET's other charges: admission fee INR 5,000, establishment charge INR 12,000, hostel room rent INR 21,000 a year, electricity INR 12,000 a year, mess INR 40,000 a year and college transport INR 6,200 to 25,400 a year."
+          },
+          "officialProgramUrl": "https://www.miet.edu/bio-medical-engineering.html",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2025-26 approval shows NRI and foreign-national/OCI approval as No for every MIET programme, and no international-student route is published, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 3811, branch code BM) or the college's management quota. TNEA 2026 lists an approved intake of 30; the branch started in 2022.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Biomedical Engineering at M.I.E.T. Engineering College (MIET) is a four-year, eight-semester degree taught in English at Gundur, Tiruchirappalli; MIET sets the syllabus and exams as an autonomous college and Anna University awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission, and MIET's Regulations 2024 follow Government of Tamil Nadu norms.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu rules"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 3811 with branch BM, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to the college through its admission enquiry form or the admissions office"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. MIET's 2026-27 calendar held the first-year induction from 19 August and started first-year classes on 24 August 2026."
+          },
+          "medium": "English",
+          "mediumNote": "MIET's B.E./B.Tech Regulations 2024 (clause 4.16) set English as the medium of instruction.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "M.I.E.T. Engineering College (MIET) publishes no tuition figure: its fee page says only that fees are \"as prescribed by Government of Tamil Nadu\" (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists MIET's other charges: admission fee INR 5,000, establishment charge INR 12,000, hostel room rent INR 21,000 a year, electricity INR 12,000 a year, mess INR 40,000 a year and college transport INR 6,200 to 25,400 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "MIET's own Regulations 2024 curriculum for Biomedical Engineering, set by the autonomous college's Board of Studies: 165 to 175 credits, with continuous internal assessment worth 40 marks and a college-run end-semester examination worth 60 marks in theory courses. Anna University approves and awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "miet-btech-information-technology",
+          "canonicalCourseSlug": "be-btech-information-technology",
+          "officialTitle": "B.Tech Information Technology, M.I.E.T. Engineering College",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-26",
+            "notes": "M.I.E.T. Engineering College (MIET) publishes no tuition figure: its fee page says only that fees are \"as prescribed by Government of Tamil Nadu\" (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists MIET's other charges: admission fee INR 5,000, establishment charge INR 12,000, hostel room rent INR 21,000 a year, electricity INR 12,000 a year, mess INR 40,000 a year and college transport INR 6,200 to 25,400 a year."
+          },
+          "officialProgramUrl": "https://www.miet.edu/information-technology.html",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2025-26 approval shows NRI and foreign-national/OCI approval as No for every MIET programme, and no international-student route is published, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 3811, branch code IT) or the college's management quota. TNEA 2026 lists an approved intake of 120; the branch started in 2022.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.Tech Information Technology at M.I.E.T. Engineering College (MIET) is a four-year, eight-semester degree taught in English at Gundur, Tiruchirappalli; MIET sets the syllabus and exams as an autonomous college and Anna University awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission, and MIET's Regulations 2024 follow Government of Tamil Nadu norms.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu rules"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 3811 with branch IT, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to the college through its admission enquiry form or the admissions office"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. MIET's 2026-27 calendar held the first-year induction from 19 August and started first-year classes on 24 August 2026."
+          },
+          "medium": "English",
+          "mediumNote": "MIET's B.E./B.Tech Regulations 2024 (clause 4.16) set English as the medium of instruction.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "M.I.E.T. Engineering College (MIET) publishes no tuition figure: its fee page says only that fees are \"as prescribed by Government of Tamil Nadu\" (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists MIET's other charges: admission fee INR 5,000, establishment charge INR 12,000, hostel room rent INR 21,000 a year, electricity INR 12,000 a year, mess INR 40,000 a year and college transport INR 6,200 to 25,400 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "MIET's own Regulations 2024 curriculum for Information Technology, set by the autonomous college's Board of Studies: 165 to 175 credits, with continuous internal assessment worth 40 marks and a college-run end-semester examination worth 60 marks in theory courses. Anna University approves and awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "miet-btech-artificial-intelligence-data-science",
+          "canonicalCourseSlug": "be-btech-data-science",
+          "officialTitle": "B.Tech Artificial Intelligence and Data Science, M.I.E.T. Engineering College",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-26",
+            "notes": "M.I.E.T. Engineering College (MIET) publishes no tuition figure: its fee page says only that fees are \"as prescribed by Government of Tamil Nadu\" (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists MIET's other charges: admission fee INR 5,000, establishment charge INR 12,000, hostel room rent INR 21,000 a year, electricity INR 12,000 a year, mess INR 40,000 a year and college transport INR 6,200 to 25,400 a year."
+          },
+          "officialProgramUrl": "https://www.miet.edu/artificial-intelligence-and-data-science.html",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2025-26 approval shows NRI and foreign-national/OCI approval as No for every MIET programme, and no international-student route is published, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 3811, branch code AD) or the college's management quota. TNEA 2026 lists an approved intake of 60; the branch started in 2022.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.Tech Artificial Intelligence and Data Science at M.I.E.T. Engineering College (MIET) is a four-year, eight-semester degree taught in English at Gundur, Tiruchirappalli; MIET sets the syllabus and exams as an autonomous college and Anna University awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission, and MIET's Regulations 2024 follow Government of Tamil Nadu norms.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu rules"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 3811 with branch AD, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to the college through its admission enquiry form or the admissions office"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. MIET's 2026-27 calendar held the first-year induction from 19 August and started first-year classes on 24 August 2026."
+          },
+          "medium": "English",
+          "mediumNote": "MIET's B.E./B.Tech Regulations 2024 (clause 4.16) set English as the medium of instruction.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "M.I.E.T. Engineering College (MIET) publishes no tuition figure: its fee page says only that fees are \"as prescribed by Government of Tamil Nadu\" (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists MIET's other charges: admission fee INR 5,000, establishment charge INR 12,000, hostel room rent INR 21,000 a year, electricity INR 12,000 a year, mess INR 40,000 a year and college transport INR 6,200 to 25,400 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "MIET's own Regulations 2024 curriculum for Artificial Intelligence and Data Science, set by the autonomous college's Board of Studies: 165 to 175 credits, with continuous internal assessment worth 40 marks and a college-run end-semester examination worth 60 marks in theory courses. Anna University approves and awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "miet-mba",
+          "canonicalCourseSlug": "mba",
+          "officialTitle": "Master of Business Administration (MBA), M.I.E.T. Engineering College",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-26",
+            "notes": "M.I.E.T. Engineering College (MIET) publishes no MBA tuition figure: its fee page says only that fees are \"as prescribed by Government of Tamil Nadu\" (checked 26 October 2026), and the 2026-27 Tamil Nadu MBA/MCA college booklet states that tuition is collected as per Government norms without printing an amount, so tuition is on request. The same booklet lists MIET's MBA admission fee at INR 17,000, hostel room rent INR 21,000 a year, electricity INR 12,000 a year and mess INR 40,000 a year."
+          },
+          "officialProgramUrl": "https://www.miet.edu/management-studies.html",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian graduates who meet the Tamil Nadu MBA 2026-27 counselling rules and took TANCET 2026 (MBA)",
+              "OCI/PIO card holders who are natives of Tamil Nadu (open category in state MBA counselling)",
+              "Indian graduates applying to the college for management-quota seats"
+            ],
+            "restrictions": [
+              "AICTE's 2025-26 approval shows NRI and foreign-national/OCI approval as No for the MBA, so foreign nationals cannot be admitted on a student visa.",
+              "State counselling seats need a TANCET 2026 (MBA) mark sheet; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Communal reservation applies only to Tamil Nadu native candidates."
+            ],
+            "notes": "The 2026-27 Tamil Nadu MBA/MCA booklet lists MIET (college code 3811) with an approved MBA intake of 60, a self-financing course started in 2009.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tn-mbamca.com/docs/MBA_Instructions.pdf?t=1781654400022"
+          },
+          "admissionsContent": {
+            "overview": "The MBA at M.I.E.T. Engineering College (MIET) is a two-year, four-semester degree taught in English at Gundur, Tiruchirappalli, under the college's autonomous Regulations 2024, and Anna University awards the degree. Seats are filled through Tamil Nadu's MBA counselling on TANCET scores and by the college.",
+            "eligibility": {
+              "intro": "The Tamil Nadu MBA 2026-27 counselling instructions set these conditions for state-quota seats at MIET.",
+              "items": [
+                "A recognised bachelor's degree of at least three years",
+                "At least 50 per cent in the qualifying degree (45 per cent for Tamil Nadu BC, BCM, MBC/DNC, SC, SCA and ST candidates)",
+                "10+2+3/4/5, 10 + 3-year diploma + degree, lateral-entry diploma + degree and AMIE with two years' experience are accepted patterns",
+                "TANCET 2026 (MBA) mark sheet issued by Anna University",
+                "Degrees taken by distance or weekend B.E./B.Tech study, or without Class 10 and 12 or a diploma, are not eligible"
+              ]
+            },
+            "applicationSteps": [
+              "Take TANCET 2026 (MBA), conducted by Anna University, and download the mark sheet",
+              "Register online for Tamil Nadu MBA 2026-27 counselling (fee INR 800, or INR 400 for Tamil Nadu SC/SCA/ST)",
+              "Upload degree, school and community documents for verification",
+              "Choose college code 3811 (MIET) in counselling and confirm the allotment",
+              "Report to the college with the allotment order and pay the fees; for a management-quota seat, apply to the college directly"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Bachelor's degree certificate and mark sheets for all semesters",
+                "Class 10 and Class 12 (or diploma) mark sheets",
+                "Transfer certificate"
+              ],
+              "application": [
+                "TANCET 2026 (MBA) mark sheet",
+                "Community certificate where claiming reservation",
+                "Nativity certificate where applicable"
+              ]
+            },
+            "deadlinesNote": "MIET's 2026-27 calendar held the inaugural for first-year UG and PG students on 19 August 2026 and schedules first-year MBA internal tests from late September 2026."
+          },
+          "medium": "English",
+          "mediumNote": "MIET's MBA Regulations 2024 (clause 4.15) set English as the medium of instruction.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "M.I.E.T. Engineering College (MIET) publishes no MBA tuition figure: its fee page says only that fees are \"as prescribed by Government of Tamil Nadu\" (checked 26 October 2026), and the 2026-27 Tamil Nadu MBA/MCA college booklet states that tuition is collected as per Government norms without printing an amount, so tuition is on request. The same booklet lists MIET's MBA admission fee at INR 17,000, hostel room rent INR 21,000 a year, electricity INR 12,000 a year and mess INR 40,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-2 (4 semesters)",
+              "language": "English",
+              "details": "MIET's Regulations 2024 MBA curriculum: at least 105 credits across professional core, professional elective and employability courses (project, internship, case study), with college-run examinations. Anna University approves and awards the degree."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "miet-engineering-college",
+      "publicField": "identity",
+      "claimText": "AICTE EoA 2025-26 (F.No. Southern/1-44642899536/2025/EOA, 03-Jan-2025): Permanent Id 1-7532291, M.I.E.T. ENGINEERING COLLEGE, Trichy - Pudukkottai Road, Gundur, Tiruchirappalli 620007; Society MOHAMED INSTITUTE OF EDUCATION AND TECHNOLOGY (MIET) SOCIETY; Private-Self Financing; Southern region; affiliating body Anna University, Chennai for all 13 courses; NRI and FN/Gulf/OCI approval No for every course.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2025-26 (MIET)",
+      "sourceUrl": "https://www.miet.edu/pdf3/2025-2026_AICTE.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "The AICTE dashboard (facilities.aicte-india.org) and aicte-india.org reset the connection from the research network on 2026-10-26, so the 2026-27 approved-course list could not be read directly; the college publishes no 2026-27 EoA. 2026-27 seat evidence is the DoTE TNEA 2026 booklet and Round 1 vacancy list."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "miet-engineering-college",
+      "publicField": "identity",
+      "claimText": "Anna University CAI Tiruchirappalli district list: row 16, college code 8124, TNEA code 3811, M.I.E.T Engineering College.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - Tiruchirappalli district list",
+      "sourceUrl": "https://www.annauniv.edu/cai/District%20wise/district/Tiruchirappalli.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "miet-engineering-college",
+      "publicField": "establishedYear",
+      "claimText": "College site (About MIET) and the TN MBA/MCA 2026-27 booklet give the year of establishment as 1998; TNEA 2026 lists CS, EE and ME starting in 1998. AICTE's 2025-26 EoA prints 1997 (AICTE file 730-52-300(E) ET/97).",
+      "status": "verified",
+      "sourceLabel": "MIET - About MIET and DTE TN MBA/MCA 2026-27 booklet",
+      "sourceUrl": "https://www.miet.edu/about-miet.html",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "1998 used (college plus DoTE, and first branches started 1998); AICTE 1997 is the approval year. Conflict recorded."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "miet-engineering-college",
+      "publicField": "summary",
+      "claimText": "UGC letter F.2-10/2023(AC-Policy), November 2023: the Commission (meeting 03.11.2023) conferred autonomous status on M.I.E.T. Engineering College, Tiruchirappalli, affiliated to Anna University, Chennai, for 10 years from 2024-2025 to 2033-2034.",
+      "status": "verified",
+      "sourceLabel": "UGC - Conferment of autonomous status (MIET)",
+      "sourceUrl": "https://www.miet.edu/pdf2/AUTONOMOUS-UGCConferment.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "UGC autonomous list row 1107 (cached research/india-source-bundles/skasc-20261025/ugc-autonomous-text.txt) also lists MIET, 2024-2025 to 2033-2034, Anna University."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "miet-engineering-college",
+      "publicField": "summary",
+      "claimText": "TNEA 2026 Information about colleges, p.283: college 3811 M I E T Engineering College (Autonomous); branches CE 30, EC 60, AD 60, IT 120, CS 180, EE 60, ME 60, BM 30; minority status Yes; autonomous status Yes. MIET B.E. Regulations 2024 clause 1(VII): University means Anna University, Chennai; award of degree must be approved by Anna University.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.283)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "miet-engineering-college",
+      "publicField": "recognitionBadges",
+      "claimText": "AICTE EoA 2025-26 approves M.I.E.T. ENGINEERING COLLEGE, permanent ID 1-7532291, Private-Self Financing.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2025-26 (MIET)",
+      "sourceUrl": "https://www.miet.edu/pdf3/2025-2026_AICTE.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "The AICTE dashboard (facilities.aicte-india.org) and aicte-india.org reset the connection from the research network on 2026-10-26, so the 2026-27 approved-course list could not be read directly; the college publishes no 2026-27 EoA. 2026-27 seat evidence is the DoTE TNEA 2026 booklet and Round 1 vacancy list."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "miet-engineering-college",
+      "publicField": "recognitionBadges",
+      "claimText": "UGC autonomous colleges list (Tamil Nadu, row 1107): M.I.E.T. Engineering College, Trichy-Pudukkottai Main Road, Tiruchirappalli 620007; autonomy 2024-2025 to 2033-2034; Anna University, Chennai.",
+      "status": "verified",
+      "sourceLabel": "UGC - Autonomous colleges list",
+      "sourceUrl": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "miet-engineering-college",
+      "publicField": "recognitionBadges",
+      "claimText": "NAAC certificate dated 15 February 2022 (EC(SC)/93/1st Cycle/TNCOGN109841): M.I.E.T. Engineering College, Gundur, affiliated to Anna University, accredited with CGPA 3.33 on a four-point scale at A+ grade, valid up to 14 February 2027.",
+      "status": "verified",
+      "sourceLabel": "NAAC - Certificate of accreditation (MIET)",
+      "sourceUrl": "https://www.miet.edu/pdf2/NAAC.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned certificate hosted by the college; visually confirmed A+ and 3.33."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "miet-engineering-college",
+      "publicField": "recognitionBadges",
+      "claimText": "NBA letter 33-63/2010-NBA dated 08-04-2024: UG Civil Engineering, Tier II, Accredited for academic years 2024-2025 to 2026-2027, i.e. up to 30-06-2027.",
+      "status": "verified",
+      "sourceLabel": "NBA - Civil Engineering accreditation letter",
+      "sourceUrl": "https://www.miet.edu/pdf2/Civil-NBA-Approved-copy.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "miet-engineering-college",
+      "publicField": "recognitionBadges",
+      "claimText": "Anna University CAI Tiruchirappalli list: M.I.E.T Engineering College, code 8124, TNEA 3811. Anna University letter 4022/AU/CAC/Autonomous/2023-24 dated 09.02.2024 confers autonomous status 2024-25 to 2033-34.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI and CAC autonomy order",
+      "sourceUrl": "https://www.annauniv.edu/cai/District%20wise/district/Tiruchirappalli.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Autonomy order: https://www.miet.edu/pdf2/AUTONOMOUS-%E2%80%93-AU-Grant.pdf. Permanent affiliation for B.E. Mechanical from 2020-21: https://www.miet.edu/pdf2/Permanent-Affiliation.pdf."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "miet-engineering-college",
+      "publicField": "recognitionBadges",
+      "claimText": "TNEA 2026 Round 1 vacancy list shows college 3811 with branches AD, BM, CE, CS, EC, EE, IT and ME.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 vacancy after Round 1",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "miet-engineering-college",
+      "publicField": "campusLifestyle",
+      "claimText": "MIET library page: C Block, 725 sq m; 50,442 volumes (text says more than 50,422), 18,329 titles; DELNET, INDEST, NDL membership; IEEE, Springer, Elsevier, ASME, ASCE packages; 9.00 am to 7.00 pm on working days. Photo gallery: A, B, C Blocks, boys hostel, playgrounds. Site navigation: NSS, NCC, clubs, masjid, bank.",
+      "status": "verified",
+      "sourceLabel": "MIET - Library page and site navigation",
+      "sourceUrl": "https://www.miet.edu/library.html",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Gallery https://www.miet.edu/photo-gallery.html; hostel page lists gym, mini theatre."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "miet-engineering-college",
+      "publicField": "cityProfile",
+      "claimText": "TNEA 2026 booklet p.283: address Trichy-Pudukkotti Main Road, taluk Tiruverumbur, district Tiruchirappalli, PIN 620007; 8 km from district HQ and from Tiruchirappalli railway station. UGC letter describes the address as Near Airport. About page: MIET Society founded 1984 by Er. A. Mohamed Yunus; sister institutions M.I.E.T. Arts & Science College and M.I.E.T. Polytechnic College.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.283)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "About page: https://www.miet.edu/about-miet.html"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "miet-engineering-college",
+      "publicField": "practicalExposure",
+      "claimText": "MIET B.E. Regulations 2024: Controller of Examinations of the College conducts examinations; theory CIA converted to 40 marks, end semester examination 60 marks; 165-175 credits; award of degree approved by Anna University. AICTE EoA 2025-26 instruction 8: internship mandatory for all admitted students.",
+      "status": "verified",
+      "sourceLabel": "MIET - B.E./B.Tech Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "miet-engineering-college",
+      "publicField": "practicalExposure",
+      "claimText": "MIET placements page: training in English, aptitude, reasoning and technical subjects, group discussions, mock interviews, competitive-exam and TOEFL/IELTS/GRE/GMAT coaching. TNEA 2026 booklet p.283 lists Placement 93% (college-furnished, no year/base).",
+      "status": "verified",
+      "sourceLabel": "MIET - Placements page and TNEA 2026 booklet",
+      "sourceUrl": "https://www.miet.edu/placements.html",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Calendar 2026-27 lists industrial visits, guest lectures and VACs: https://www.miet.edu/pdf2/engineeringacademiccalendar2026%20%E2%80%932027.pdf"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "miet-engineering-college",
+      "publicField": "hostelOverview",
+      "claimText": "TNEA 2026 booklet p.283: boys and girls hostel accommodation yes, permanent; mess both veg and non-veg; mess bill INR 40,000; room rent INR 21,000; electricity INR 12,000 per annum; caution deposit 0; establishment charges 12,000; admission fees 5,000; transport INR 6,200-25,400 per annum.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.283)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "miet-engineering-college",
+      "publicField": "hostelOverview",
+      "claimText": "MIET hostel page: separate hostel for boys and girls; vegetarian and non-vegetarian food; purified RO water; 24-hour ambulance; mini theatre with seminar hall; indoor games with gym; reading room; computer lab with internet.",
+      "status": "verified",
+      "sourceLabel": "MIET - Hostel page",
+      "sourceUrl": "https://www.miet.edu/hostel.html",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "miet-engineering-college",
+      "publicField": "dietarySupport",
+      "claimText": "TNEA 2026 booklet: type of mess Both (veg/NV) for boys and girls, mess INR 40,000 per annum; hostel page: vegetarian and non-vegetarian food.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.283)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "miet-engineering-college",
+      "publicField": "safetyOverview",
+      "claimText": "MIET home page: ragging totally prohibited in MIET campus; anti-ragging committee chaired by the principal; internal committee listed; hostel page lists 24-hour ambulance service. TNEA 2026 booklet lists an anti-ragging phone number for 3811.",
+      "status": "verified",
+      "sourceLabel": "MIET - Official website (home page committees)",
+      "sourceUrl": "https://www.miet.edu/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "miet-engineering-college",
+      "publicField": "studentSupport",
+      "claimText": "MIET home page: Students' Grievance Redressal Committee chaired by the vice principal; grievances may be registered through the online portal. Placements page: coaching for TNPSC, UPSC, RRB, IBPS, GATE and TOEFL, IELTS, GRE, GMAT. Home page links a merit scholarship notice.",
+      "status": "verified",
+      "sourceLabel": "MIET - Official website (home page committees)",
+      "sourceUrl": "https://www.miet.edu/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "miet-engineering-college",
+      "publicField": "whyChoose",
+      "claimText": "NAAC A+ (CGPA 3.33) to 14-02-2027; TNEA 2026 intakes CE 30, BM 30, CS 180 and others; TN MBA/MCA 2026-27 MBA intake 60; TNEA 2026 hostel charges room 21,000, electricity 12,000, mess 40,000.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.283)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "miet-engineering-college",
+      "publicField": "thingsToConsider",
+      "claimText": "MIET fee page: 'As Prescribed by Government of Tamil Nadu' with no amounts. NBA: Civil to 30-06-2027; ECE to 30-06-2026 (letter 07-05-2024); CSE, EEE, Mechanical to 30-06-2025 (letter 14-06-2022). M.E. programmes held: absent from the 2026-27 college calendar programme list (Civil, CSE, Mech, EEE, ECE, BME, AI&DS, IT, MBA).",
+      "status": "verified",
+      "sourceLabel": "MIET - Fees structure page",
+      "sourceUrl": "https://www.miet.edu/fees-structure.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "NBA ECE: https://www.miet.edu/pdf3/NBA-ECE.pdf; NBA CSE/EEE/Mech: https://www.miet.edu/pdf2/NBA-Re-Accreddiation-Certificate.pdf; calendar: https://www.miet.edu/pdf2/engineeringacademiccalendar2026%20%E2%80%932027.pdf"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "miet-engineering-college",
+      "publicField": "bestFitFor",
+      "claimText": "TNEA 2026 lists college 3811 as autonomous; NAAC A+; NBA Civil to 2027; CS intake 180; MBA admission requires TANCET 2026 (MBA) mark sheet.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.283)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "MBA rules: https://static.tn-mbamca.com/docs/MBA_Instructions.pdf?t=1781654400022"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "miet-engineering-college",
+      "publicField": "faq",
+      "claimText": "TNEA 2026 brochure: OCI/PIO cardholders who are natives of Tamil Nadu eligible under open competition, not applicable to those born in a foreign country after 04.03.2021; registration fee Rs. 500 (Rs. 250 SC/SCA/ST); report to college within 5 days of allotment. MIET calendar 2026-27: inaugural of I-year UG and PG 19 Aug 2026; commencement of classes for I year 24 Aug 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Schedule: https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf (registration 3 May-5 June 2026; general counselling 20 July-30 August 2026, as in 0115/0119). Calendar: https://www.miet.edu/pdf2/engineeringacademiccalendar2026%20%E2%80%932027.pdf"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "miet-engineering-college",
+      "publicField": "faq",
+      "claimText": "TNEA 2026 booklet index: 3854 Mahath Amma Institute of Engineering and Technology (MIET), Ariyur, Annavasal Road, Illupur Taluk, Pudukkottai District 622101 - a different college from 3811 M I E T Engineering College (Autonomous), Tiruchirappalli.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-civil-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-civil-engineering",
+      "publicField": "eligibility",
+      "claimText": "MIET B.E. Regulations 2024 clause 2: admission with HSC (academic or vocational stream) per Government of Tamil Nadu; lateral entry to third semester for DOTE diploma holders or B.Sc. graduates with Mathematics. MIET eligibility page: 45% OC, 40% BC/BCM/MBC/DNC/SC/SCA/ST.",
+      "status": "verified",
+      "sourceLabel": "MIET - B.E./B.Tech Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Eligibility page: https://www.miet.edu/eligibility.html"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-civil-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 booklet p.283 lists 3811 branch CE with approved intake 30; Round 1 vacancy list shows 3811 branch CE. TNEA brochure: rank from Mathematics 100 + Physics 50 + Chemistry 50; registration fee Rs.500 (Rs.250 SC/SCA/ST); report within 5 days.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.283)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. Courses page lists the same intake: https://www.miet.edu/courses-offered.html. AICTE EoA 2025-26 approved the same intake with NRI/FN No. The AICTE dashboard (facilities.aicte-india.org) and aicte-india.org reset the connection from the research network on 2026-10-26, so the 2026-27 approved-course list could not be read directly; the college publishes no 2026-27 EoA. 2026-27 seat evidence is the DoTE TNEA 2026 booklet and Round 1 vacancy list."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-civil-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 tentative schedule: online registration 3 May to 5 June 2026; general academic counselling 20 July to 30 August 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-civil-engineering",
+      "publicField": "intake",
+      "claimText": "MIET academic calendar 2026-2027 (autonomous): first-year induction programme from 19 August 2026 and commencement of classes for I year on Monday 24 August 2026.",
+      "status": "verified",
+      "sourceLabel": "MIET - Academic calendar 2026-2027",
+      "sourceUrl": "https://www.miet.edu/pdf2/engineeringacademiccalendar2026%20%E2%80%932027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned PDF, OCR in research/india-source-bundles/miet-engineering-college/cal2627.txt. Anna University's 2 September 2026 start applies to non-autonomous colleges only."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-civil-engineering",
+      "publicField": "fee",
+      "claimText": "MIET fee page states fees are 'As Prescribed by Government of Tamil Nadu' with no amount; TNEA 2026 booklet prints no tuition but lists admission fee 5,000, establishment 12,000, room rent 21,000, electricity 12,000, mess 40,000 and transport 6,200-25,400 per annum.",
+      "status": "verified",
+      "sourceLabel": "MIET - Fees structure page",
+      "sourceUrl": "https://www.miet.edu/fees-structure.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "No current MIET mandatory disclosure (latest 2024-25 has no fee table). DTE fee-fixation page shows no published order: https://dte.tn.gov.in/fee-fixation-committee"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-civil-engineering",
+      "publicField": "medium",
+      "claimText": "MIET B.E. Regulations 2024 clause 4.16: The medium of instruction is English; clause 5.1: 4 years (8 semesters), maximum 7 years.",
+      "status": "verified",
+      "sourceLabel": "MIET - B.E./B.Tech Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-civil-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "MIET B.E. Regulations 2024: 165-175 credits; CIA 40 marks and end semester examination 60 marks for theory; Controller of Examinations of the College conducts examinations; award of degree approved by Anna University. NBA letter 08-04-2024: UG Civil Engineering accredited Tier II for AY 2024-25 to 2026-27, up to 30-06-2027.",
+      "status": "verified",
+      "sourceLabel": "MIET - B.E./B.Tech Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "NBA Civil letter: https://www.miet.edu/pdf2/Civil-NBA-Approved-copy.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-mechanical-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-mechanical-engineering",
+      "publicField": "eligibility",
+      "claimText": "MIET B.E. Regulations 2024 clause 2: admission with HSC (academic or vocational stream) per Government of Tamil Nadu; lateral entry to third semester for DOTE diploma holders or B.Sc. graduates with Mathematics. MIET eligibility page: 45% OC, 40% BC/BCM/MBC/DNC/SC/SCA/ST.",
+      "status": "verified",
+      "sourceLabel": "MIET - B.E./B.Tech Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Eligibility page: https://www.miet.edu/eligibility.html"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-mechanical-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 booklet p.283 lists 3811 branch ME with approved intake 60; Round 1 vacancy list shows 3811 branch ME. TNEA brochure: rank from Mathematics 100 + Physics 50 + Chemistry 50; registration fee Rs.500 (Rs.250 SC/SCA/ST); report within 5 days.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.283)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. Courses page lists the same intake: https://www.miet.edu/courses-offered.html. AICTE EoA 2025-26 approved the same intake with NRI/FN No. The AICTE dashboard (facilities.aicte-india.org) and aicte-india.org reset the connection from the research network on 2026-10-26, so the 2026-27 approved-course list could not be read directly; the college publishes no 2026-27 EoA. 2026-27 seat evidence is the DoTE TNEA 2026 booklet and Round 1 vacancy list."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-mechanical-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 tentative schedule: online registration 3 May to 5 June 2026; general academic counselling 20 July to 30 August 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-mechanical-engineering",
+      "publicField": "intake",
+      "claimText": "MIET academic calendar 2026-2027 (autonomous): first-year induction programme from 19 August 2026 and commencement of classes for I year on Monday 24 August 2026.",
+      "status": "verified",
+      "sourceLabel": "MIET - Academic calendar 2026-2027",
+      "sourceUrl": "https://www.miet.edu/pdf2/engineeringacademiccalendar2026%20%E2%80%932027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned PDF, OCR in research/india-source-bundles/miet-engineering-college/cal2627.txt. Anna University's 2 September 2026 start applies to non-autonomous colleges only."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-mechanical-engineering",
+      "publicField": "fee",
+      "claimText": "MIET fee page states fees are 'As Prescribed by Government of Tamil Nadu' with no amount; TNEA 2026 booklet prints no tuition but lists admission fee 5,000, establishment 12,000, room rent 21,000, electricity 12,000, mess 40,000 and transport 6,200-25,400 per annum.",
+      "status": "verified",
+      "sourceLabel": "MIET - Fees structure page",
+      "sourceUrl": "https://www.miet.edu/fees-structure.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "No current MIET mandatory disclosure (latest 2024-25 has no fee table). DTE fee-fixation page shows no published order: https://dte.tn.gov.in/fee-fixation-committee"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-mechanical-engineering",
+      "publicField": "medium",
+      "claimText": "MIET B.E. Regulations 2024 clause 4.16: The medium of instruction is English; clause 5.1: 4 years (8 semesters), maximum 7 years.",
+      "status": "verified",
+      "sourceLabel": "MIET - B.E./B.Tech Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-mechanical-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "MIET B.E. Regulations 2024: 165-175 credits; CIA 40 marks and end semester examination 60 marks for theory; Controller of Examinations of the College conducts examinations; award of degree approved by Anna University.",
+      "status": "verified",
+      "sourceLabel": "MIET - B.E./B.Tech Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-electrical-electronics-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-electrical-electronics-engineering",
+      "publicField": "eligibility",
+      "claimText": "MIET B.E. Regulations 2024 clause 2: admission with HSC (academic or vocational stream) per Government of Tamil Nadu; lateral entry to third semester for DOTE diploma holders or B.Sc. graduates with Mathematics. MIET eligibility page: 45% OC, 40% BC/BCM/MBC/DNC/SC/SCA/ST.",
+      "status": "verified",
+      "sourceLabel": "MIET - B.E./B.Tech Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Eligibility page: https://www.miet.edu/eligibility.html"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-electrical-electronics-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 booklet p.283 lists 3811 branch EE with approved intake 60; Round 1 vacancy list shows 3811 branch EE. TNEA brochure: rank from Mathematics 100 + Physics 50 + Chemistry 50; registration fee Rs.500 (Rs.250 SC/SCA/ST); report within 5 days.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.283)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. Courses page lists the same intake: https://www.miet.edu/courses-offered.html. AICTE EoA 2025-26 approved the same intake with NRI/FN No. The AICTE dashboard (facilities.aicte-india.org) and aicte-india.org reset the connection from the research network on 2026-10-26, so the 2026-27 approved-course list could not be read directly; the college publishes no 2026-27 EoA. 2026-27 seat evidence is the DoTE TNEA 2026 booklet and Round 1 vacancy list."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-electrical-electronics-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 tentative schedule: online registration 3 May to 5 June 2026; general academic counselling 20 July to 30 August 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-electrical-electronics-engineering",
+      "publicField": "intake",
+      "claimText": "MIET academic calendar 2026-2027 (autonomous): first-year induction programme from 19 August 2026 and commencement of classes for I year on Monday 24 August 2026.",
+      "status": "verified",
+      "sourceLabel": "MIET - Academic calendar 2026-2027",
+      "sourceUrl": "https://www.miet.edu/pdf2/engineeringacademiccalendar2026%20%E2%80%932027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned PDF, OCR in research/india-source-bundles/miet-engineering-college/cal2627.txt. Anna University's 2 September 2026 start applies to non-autonomous colleges only."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-electrical-electronics-engineering",
+      "publicField": "fee",
+      "claimText": "MIET fee page states fees are 'As Prescribed by Government of Tamil Nadu' with no amount; TNEA 2026 booklet prints no tuition but lists admission fee 5,000, establishment 12,000, room rent 21,000, electricity 12,000, mess 40,000 and transport 6,200-25,400 per annum.",
+      "status": "verified",
+      "sourceLabel": "MIET - Fees structure page",
+      "sourceUrl": "https://www.miet.edu/fees-structure.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "No current MIET mandatory disclosure (latest 2024-25 has no fee table). DTE fee-fixation page shows no published order: https://dte.tn.gov.in/fee-fixation-committee"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-electrical-electronics-engineering",
+      "publicField": "medium",
+      "claimText": "MIET B.E. Regulations 2024 clause 4.16: The medium of instruction is English; clause 5.1: 4 years (8 semesters), maximum 7 years.",
+      "status": "verified",
+      "sourceLabel": "MIET - B.E./B.Tech Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-electrical-electronics-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "MIET B.E. Regulations 2024: 165-175 credits; CIA 40 marks and end semester examination 60 marks for theory; Controller of Examinations of the College conducts examinations; award of degree approved by Anna University.",
+      "status": "verified",
+      "sourceLabel": "MIET - B.E./B.Tech Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-electronics-communication-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-electronics-communication-engineering",
+      "publicField": "eligibility",
+      "claimText": "MIET B.E. Regulations 2024 clause 2: admission with HSC (academic or vocational stream) per Government of Tamil Nadu; lateral entry to third semester for DOTE diploma holders or B.Sc. graduates with Mathematics. MIET eligibility page: 45% OC, 40% BC/BCM/MBC/DNC/SC/SCA/ST.",
+      "status": "verified",
+      "sourceLabel": "MIET - B.E./B.Tech Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Eligibility page: https://www.miet.edu/eligibility.html"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-electronics-communication-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 booklet p.283 lists 3811 branch EC with approved intake 60; Round 1 vacancy list shows 3811 branch EC. TNEA brochure: rank from Mathematics 100 + Physics 50 + Chemistry 50; registration fee Rs.500 (Rs.250 SC/SCA/ST); report within 5 days.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.283)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. Courses page lists the same intake: https://www.miet.edu/courses-offered.html. AICTE EoA 2025-26 approved the same intake with NRI/FN No. The AICTE dashboard (facilities.aicte-india.org) and aicte-india.org reset the connection from the research network on 2026-10-26, so the 2026-27 approved-course list could not be read directly; the college publishes no 2026-27 EoA. 2026-27 seat evidence is the DoTE TNEA 2026 booklet and Round 1 vacancy list."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-electronics-communication-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 tentative schedule: online registration 3 May to 5 June 2026; general academic counselling 20 July to 30 August 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-electronics-communication-engineering",
+      "publicField": "intake",
+      "claimText": "MIET academic calendar 2026-2027 (autonomous): first-year induction programme from 19 August 2026 and commencement of classes for I year on Monday 24 August 2026.",
+      "status": "verified",
+      "sourceLabel": "MIET - Academic calendar 2026-2027",
+      "sourceUrl": "https://www.miet.edu/pdf2/engineeringacademiccalendar2026%20%E2%80%932027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned PDF, OCR in research/india-source-bundles/miet-engineering-college/cal2627.txt. Anna University's 2 September 2026 start applies to non-autonomous colleges only."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-electronics-communication-engineering",
+      "publicField": "fee",
+      "claimText": "MIET fee page states fees are 'As Prescribed by Government of Tamil Nadu' with no amount; TNEA 2026 booklet prints no tuition but lists admission fee 5,000, establishment 12,000, room rent 21,000, electricity 12,000, mess 40,000 and transport 6,200-25,400 per annum.",
+      "status": "verified",
+      "sourceLabel": "MIET - Fees structure page",
+      "sourceUrl": "https://www.miet.edu/fees-structure.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "No current MIET mandatory disclosure (latest 2024-25 has no fee table). DTE fee-fixation page shows no published order: https://dte.tn.gov.in/fee-fixation-committee"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-electronics-communication-engineering",
+      "publicField": "medium",
+      "claimText": "MIET B.E. Regulations 2024 clause 4.16: The medium of instruction is English; clause 5.1: 4 years (8 semesters), maximum 7 years.",
+      "status": "verified",
+      "sourceLabel": "MIET - B.E./B.Tech Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-electronics-communication-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "MIET B.E. Regulations 2024: 165-175 credits; CIA 40 marks and end semester examination 60 marks for theory; Controller of Examinations of the College conducts examinations; award of degree approved by Anna University.",
+      "status": "verified",
+      "sourceLabel": "MIET - B.E./B.Tech Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-computer-science-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-computer-science-engineering",
+      "publicField": "eligibility",
+      "claimText": "MIET B.E. Regulations 2024 clause 2: admission with HSC (academic or vocational stream) per Government of Tamil Nadu; lateral entry to third semester for DOTE diploma holders or B.Sc. graduates with Mathematics. MIET eligibility page: 45% OC, 40% BC/BCM/MBC/DNC/SC/SCA/ST.",
+      "status": "verified",
+      "sourceLabel": "MIET - B.E./B.Tech Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Eligibility page: https://www.miet.edu/eligibility.html"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 booklet p.283 lists 3811 branch CS with approved intake 180; Round 1 vacancy list shows 3811 branch CS. TNEA brochure: rank from Mathematics 100 + Physics 50 + Chemistry 50; registration fee Rs.500 (Rs.250 SC/SCA/ST); report within 5 days.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.283)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. Courses page lists the same intake: https://www.miet.edu/courses-offered.html. AICTE EoA 2025-26 approved the same intake with NRI/FN No. The AICTE dashboard (facilities.aicte-india.org) and aicte-india.org reset the connection from the research network on 2026-10-26, so the 2026-27 approved-course list could not be read directly; the college publishes no 2026-27 EoA. 2026-27 seat evidence is the DoTE TNEA 2026 booklet and Round 1 vacancy list."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 tentative schedule: online registration 3 May to 5 June 2026; general academic counselling 20 July to 30 August 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-computer-science-engineering",
+      "publicField": "intake",
+      "claimText": "MIET academic calendar 2026-2027 (autonomous): first-year induction programme from 19 August 2026 and commencement of classes for I year on Monday 24 August 2026.",
+      "status": "verified",
+      "sourceLabel": "MIET - Academic calendar 2026-2027",
+      "sourceUrl": "https://www.miet.edu/pdf2/engineeringacademiccalendar2026%20%E2%80%932027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned PDF, OCR in research/india-source-bundles/miet-engineering-college/cal2627.txt. Anna University's 2 September 2026 start applies to non-autonomous colleges only."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-computer-science-engineering",
+      "publicField": "fee",
+      "claimText": "MIET fee page states fees are 'As Prescribed by Government of Tamil Nadu' with no amount; TNEA 2026 booklet prints no tuition but lists admission fee 5,000, establishment 12,000, room rent 21,000, electricity 12,000, mess 40,000 and transport 6,200-25,400 per annum.",
+      "status": "verified",
+      "sourceLabel": "MIET - Fees structure page",
+      "sourceUrl": "https://www.miet.edu/fees-structure.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "No current MIET mandatory disclosure (latest 2024-25 has no fee table). DTE fee-fixation page shows no published order: https://dte.tn.gov.in/fee-fixation-committee"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-computer-science-engineering",
+      "publicField": "medium",
+      "claimText": "MIET B.E. Regulations 2024 clause 4.16: The medium of instruction is English; clause 5.1: 4 years (8 semesters), maximum 7 years.",
+      "status": "verified",
+      "sourceLabel": "MIET - B.E./B.Tech Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-computer-science-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "MIET B.E. Regulations 2024: 165-175 credits; CIA 40 marks and end semester examination 60 marks for theory; Controller of Examinations of the College conducts examinations; award of degree approved by Anna University.",
+      "status": "verified",
+      "sourceLabel": "MIET - B.E./B.Tech Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-biomedical-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-biomedical-engineering",
+      "publicField": "eligibility",
+      "claimText": "MIET B.E. Regulations 2024 clause 2: admission with HSC (academic or vocational stream) per Government of Tamil Nadu; lateral entry to third semester for DOTE diploma holders or B.Sc. graduates with Mathematics. MIET eligibility page: 45% OC, 40% BC/BCM/MBC/DNC/SC/SCA/ST.",
+      "status": "verified",
+      "sourceLabel": "MIET - B.E./B.Tech Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Eligibility page: https://www.miet.edu/eligibility.html"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-biomedical-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 booklet p.283 lists 3811 branch BM with approved intake 30; Round 1 vacancy list shows 3811 branch BM. TNEA brochure: rank from Mathematics 100 + Physics 50 + Chemistry 50; registration fee Rs.500 (Rs.250 SC/SCA/ST); report within 5 days.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.283)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. Courses page lists the same intake: https://www.miet.edu/courses-offered.html. AICTE EoA 2025-26 approved the same intake with NRI/FN No. The AICTE dashboard (facilities.aicte-india.org) and aicte-india.org reset the connection from the research network on 2026-10-26, so the 2026-27 approved-course list could not be read directly; the college publishes no 2026-27 EoA. 2026-27 seat evidence is the DoTE TNEA 2026 booklet and Round 1 vacancy list."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-biomedical-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 tentative schedule: online registration 3 May to 5 June 2026; general academic counselling 20 July to 30 August 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-biomedical-engineering",
+      "publicField": "intake",
+      "claimText": "MIET academic calendar 2026-2027 (autonomous): first-year induction programme from 19 August 2026 and commencement of classes for I year on Monday 24 August 2026.",
+      "status": "verified",
+      "sourceLabel": "MIET - Academic calendar 2026-2027",
+      "sourceUrl": "https://www.miet.edu/pdf2/engineeringacademiccalendar2026%20%E2%80%932027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned PDF, OCR in research/india-source-bundles/miet-engineering-college/cal2627.txt. Anna University's 2 September 2026 start applies to non-autonomous colleges only."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-biomedical-engineering",
+      "publicField": "fee",
+      "claimText": "MIET fee page states fees are 'As Prescribed by Government of Tamil Nadu' with no amount; TNEA 2026 booklet prints no tuition but lists admission fee 5,000, establishment 12,000, room rent 21,000, electricity 12,000, mess 40,000 and transport 6,200-25,400 per annum.",
+      "status": "verified",
+      "sourceLabel": "MIET - Fees structure page",
+      "sourceUrl": "https://www.miet.edu/fees-structure.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "No current MIET mandatory disclosure (latest 2024-25 has no fee table). DTE fee-fixation page shows no published order: https://dte.tn.gov.in/fee-fixation-committee"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-biomedical-engineering",
+      "publicField": "medium",
+      "claimText": "MIET B.E. Regulations 2024 clause 4.16: The medium of instruction is English; clause 5.1: 4 years (8 semesters), maximum 7 years.",
+      "status": "verified",
+      "sourceLabel": "MIET - B.E./B.Tech Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-be-biomedical-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "MIET B.E. Regulations 2024: 165-175 credits; CIA 40 marks and end semester examination 60 marks for theory; Controller of Examinations of the College conducts examinations; award of degree approved by Anna University.",
+      "status": "verified",
+      "sourceLabel": "MIET - B.E./B.Tech Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-btech-information-technology",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-btech-information-technology",
+      "publicField": "eligibility",
+      "claimText": "MIET B.E. Regulations 2024 clause 2: admission with HSC (academic or vocational stream) per Government of Tamil Nadu; lateral entry to third semester for DOTE diploma holders or B.Sc. graduates with Mathematics. MIET eligibility page: 45% OC, 40% BC/BCM/MBC/DNC/SC/SCA/ST.",
+      "status": "verified",
+      "sourceLabel": "MIET - B.E./B.Tech Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Eligibility page: https://www.miet.edu/eligibility.html"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-btech-information-technology",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 booklet p.283 lists 3811 branch IT with approved intake 120; Round 1 vacancy list shows 3811 branch IT. TNEA brochure: rank from Mathematics 100 + Physics 50 + Chemistry 50; registration fee Rs.500 (Rs.250 SC/SCA/ST); report within 5 days.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.283)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. Courses page lists the same intake: https://www.miet.edu/courses-offered.html. AICTE EoA 2025-26 approved the same intake with NRI/FN No. The AICTE dashboard (facilities.aicte-india.org) and aicte-india.org reset the connection from the research network on 2026-10-26, so the 2026-27 approved-course list could not be read directly; the college publishes no 2026-27 EoA. 2026-27 seat evidence is the DoTE TNEA 2026 booklet and Round 1 vacancy list."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-btech-information-technology",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 tentative schedule: online registration 3 May to 5 June 2026; general academic counselling 20 July to 30 August 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-btech-information-technology",
+      "publicField": "intake",
+      "claimText": "MIET academic calendar 2026-2027 (autonomous): first-year induction programme from 19 August 2026 and commencement of classes for I year on Monday 24 August 2026.",
+      "status": "verified",
+      "sourceLabel": "MIET - Academic calendar 2026-2027",
+      "sourceUrl": "https://www.miet.edu/pdf2/engineeringacademiccalendar2026%20%E2%80%932027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned PDF, OCR in research/india-source-bundles/miet-engineering-college/cal2627.txt. Anna University's 2 September 2026 start applies to non-autonomous colleges only."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-btech-information-technology",
+      "publicField": "fee",
+      "claimText": "MIET fee page states fees are 'As Prescribed by Government of Tamil Nadu' with no amount; TNEA 2026 booklet prints no tuition but lists admission fee 5,000, establishment 12,000, room rent 21,000, electricity 12,000, mess 40,000 and transport 6,200-25,400 per annum.",
+      "status": "verified",
+      "sourceLabel": "MIET - Fees structure page",
+      "sourceUrl": "https://www.miet.edu/fees-structure.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "No current MIET mandatory disclosure (latest 2024-25 has no fee table). DTE fee-fixation page shows no published order: https://dte.tn.gov.in/fee-fixation-committee"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-btech-information-technology",
+      "publicField": "medium",
+      "claimText": "MIET B.E. Regulations 2024 clause 4.16: The medium of instruction is English; clause 5.1: 4 years (8 semesters), maximum 7 years.",
+      "status": "verified",
+      "sourceLabel": "MIET - B.E./B.Tech Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-btech-information-technology",
+      "publicField": "teachingPhases",
+      "claimText": "MIET B.E. Regulations 2024: 165-175 credits; CIA 40 marks and end semester examination 60 marks for theory; Controller of Examinations of the College conducts examinations; award of degree approved by Anna University.",
+      "status": "verified",
+      "sourceLabel": "MIET - B.E./B.Tech Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-btech-artificial-intelligence-data-science",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-btech-artificial-intelligence-data-science",
+      "publicField": "eligibility",
+      "claimText": "MIET B.E. Regulations 2024 clause 2: admission with HSC (academic or vocational stream) per Government of Tamil Nadu; lateral entry to third semester for DOTE diploma holders or B.Sc. graduates with Mathematics. MIET eligibility page: 45% OC, 40% BC/BCM/MBC/DNC/SC/SCA/ST.",
+      "status": "verified",
+      "sourceLabel": "MIET - B.E./B.Tech Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Eligibility page: https://www.miet.edu/eligibility.html"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-btech-artificial-intelligence-data-science",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 booklet p.283 lists 3811 branch AD with approved intake 60; Round 1 vacancy list shows 3811 branch AD. TNEA brochure: rank from Mathematics 100 + Physics 50 + Chemistry 50; registration fee Rs.500 (Rs.250 SC/SCA/ST); report within 5 days.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.283)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. Courses page lists the same intake: https://www.miet.edu/courses-offered.html. AICTE EoA 2025-26 approved the same intake with NRI/FN No. The AICTE dashboard (facilities.aicte-india.org) and aicte-india.org reset the connection from the research network on 2026-10-26, so the 2026-27 approved-course list could not be read directly; the college publishes no 2026-27 EoA. 2026-27 seat evidence is the DoTE TNEA 2026 booklet and Round 1 vacancy list."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-btech-artificial-intelligence-data-science",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 tentative schedule: online registration 3 May to 5 June 2026; general academic counselling 20 July to 30 August 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-btech-artificial-intelligence-data-science",
+      "publicField": "intake",
+      "claimText": "MIET academic calendar 2026-2027 (autonomous): first-year induction programme from 19 August 2026 and commencement of classes for I year on Monday 24 August 2026.",
+      "status": "verified",
+      "sourceLabel": "MIET - Academic calendar 2026-2027",
+      "sourceUrl": "https://www.miet.edu/pdf2/engineeringacademiccalendar2026%20%E2%80%932027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned PDF, OCR in research/india-source-bundles/miet-engineering-college/cal2627.txt. Anna University's 2 September 2026 start applies to non-autonomous colleges only."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-btech-artificial-intelligence-data-science",
+      "publicField": "fee",
+      "claimText": "MIET fee page states fees are 'As Prescribed by Government of Tamil Nadu' with no amount; TNEA 2026 booklet prints no tuition but lists admission fee 5,000, establishment 12,000, room rent 21,000, electricity 12,000, mess 40,000 and transport 6,200-25,400 per annum.",
+      "status": "verified",
+      "sourceLabel": "MIET - Fees structure page",
+      "sourceUrl": "https://www.miet.edu/fees-structure.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "No current MIET mandatory disclosure (latest 2024-25 has no fee table). DTE fee-fixation page shows no published order: https://dte.tn.gov.in/fee-fixation-committee"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-btech-artificial-intelligence-data-science",
+      "publicField": "medium",
+      "claimText": "MIET B.E. Regulations 2024 clause 4.16: The medium of instruction is English; clause 5.1: 4 years (8 semesters), maximum 7 years.",
+      "status": "verified",
+      "sourceLabel": "MIET - B.E./B.Tech Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-btech-artificial-intelligence-data-science",
+      "publicField": "teachingPhases",
+      "claimText": "MIET B.E. Regulations 2024: 165-175 credits; CIA 40 marks and end semester examination 60 marks for theory; Controller of Examinations of the College conducts examinations; award of degree approved by Anna University.",
+      "status": "verified",
+      "sourceLabel": "MIET - B.E./B.Tech Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/B.E.%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-mba",
+      "publicField": "eligibility",
+      "claimText": "TN MBA 2026-27 instructions: recognised bachelor's degree of minimum 3 years with 50% (45% for Tamil Nadu BC/BCM/MBC&DNC/SC/SCA/ST); patterns 10+2+3/4/5, 10+3-year diploma+2/3, lateral-entry diploma, AMIE with 2 years' experience; distance/weekend B.E./B.Tech not eligible; TANCET 2026 (MBA) mark sheet required; OCI/PIO natives of Tamil Nadu in open category except those born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DTE Tamil Nadu - MBA 2026-27 information and instructions",
+      "sourceUrl": "https://static.tn-mbamca.com/docs/MBA_Instructions.pdf?t=1781654400022",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-mba",
+      "publicField": "admissions",
+      "claimText": "TN MBA/MCA 2026-27 engineering colleges booklet p.162: 3811 M.I.E.T. Engineering College (Autonomous), Gundur; affiliating university Anna University; self financing; established 1998; autonomous Yes; MBA approved intake 60, started 2009, not accredited; admission fees 17,000; room rent 21,000; electricity 12,000; mess 40,000; tuition fee collected as per Government norms. Counselling registration fee Rs. 800 (Rs. 400 Tamil Nadu SC/SCA/ST).",
+      "status": "verified",
+      "sourceLabel": "DTE Tamil Nadu - TN MBA/MCA 2026-27 engineering colleges booklet",
+      "sourceUrl": "https://static.tn-mbamca.com/docs/TNMBAMCA-ENGINEERING-COLLEGES-BOOKLET-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AICTE EoA 2025-26 approves MBA intake 60 with NRI/FN No; AICTE 2026-27 dashboard unreachable (see identity evidence)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-mba",
+      "publicField": "fee",
+      "claimText": "MIET fee page states fees are 'As Prescribed by Government of Tamil Nadu' with no amount; the TN MBA/MCA 2026-27 booklet says tuition is collected as per Government norms and lists admission fee 17,000, room rent 21,000, electricity 12,000 and mess 40,000.",
+      "status": "verified",
+      "sourceLabel": "MIET - Fees structure page",
+      "sourceUrl": "https://www.miet.edu/fees-structure.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "DTE fee-fixation committee page shows only proposal formats, no published order: https://dte.tn.gov.in/fee-fixation-committee"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-mba",
+      "publicField": "medium",
+      "claimText": "MIET MBA Regulations 2024 clause 4.15: The medium of instruction is English; duration 4 semesters (2 years), maximum 8; minimum 105 credits; admission per DTE Tamil Nadu and Anna University norms.",
+      "status": "verified",
+      "sourceLabel": "MIET - MBA Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/MBA%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-mba",
+      "publicField": "intake",
+      "claimText": "MIET academic calendar 2026-2027: programmes Civil, CSE, Mech, EEE, ECE, BME, AI&DS, IT, MBA; inaugural of I-year UG & PG on 19 August 2026; CIA-I for I year UG & MBA from late September 2026.",
+      "status": "verified",
+      "sourceLabel": "MIET - Academic calendar 2026-2027",
+      "sourceUrl": "https://www.miet.edu/pdf2/engineeringacademiccalendar2026%20%E2%80%932027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned PDF, OCR in research/india-source-bundles/miet-engineering-college/cal2627.txt"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "miet-engineering-college",
+      "programmeSlug": "miet-mba",
+      "publicField": "teachingPhases",
+      "claimText": "MIET MBA Regulations 2024: PCC 60-70, PEC 20-25, EEC 20-25 credits (project work, internship, case study); Controller of Examinations of the College conducts examinations; award of degree approved by the University (Anna University).",
+      "status": "verified",
+      "sourceLabel": "MIET - MBA Regulations 2024",
+      "sourceUrl": "https://www.miet.edu/pdf/MBA%20Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    }
+  ]
+}

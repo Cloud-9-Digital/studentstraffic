@@ -82,7 +82,7 @@ async function main() {
   const reviewedOriginals = new Map<ManifestAsset, Buffer>();
   for (const entry of manifest.entries) {
     for (const asset of entry.assets) {
-      if (asset.uploadFromReviewedLocalOriginal && asset.status !== "hold" && asset.sourceUrl) {
+      if (asset.uploadFromReviewedLocalOriginal && asset.status !== "hold" && asset.status !== "held" && asset.sourceUrl) {
         reviewedOriginals.set(asset, readReviewedMediaOriginal(root, asset));
       }
     }
@@ -174,7 +174,8 @@ async function main() {
 
   for (const entry of manifest.entries) {
     for (const asset of entry.assets) {
-      if (asset.status === "hold" || !asset.sourceUrl) {
+      // Reviewers have written both "hold" and "held"; either means the asset must not be uploaded.
+      if (asset.status === "hold" || asset.status === "held" || !asset.sourceUrl) {
         console.log(`  [skip] ${entry.universitySlug} ${asset.kind}: held in manifest (no source).`);
         continue;
       }

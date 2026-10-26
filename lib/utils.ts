@@ -140,7 +140,9 @@ export function getProgramAnnualFeeLabel(
     | "reportedFeeQuote"
   >,
 ) {
-  if (getDisplayedReportedFeeQuote(offering)) return "Fees";
+  const quote = getDisplayedReportedFeeQuote(offering);
+  // An indicative quote may come from a third-party website, so it is marked as approximate.
+  if (quote) return quote.status === "indicative" ? "Approx. fees" : "Fees";
   if (offering.feeStatus === "indicative") return "Indicative tuition per year";
   if (offering.feeStatus === "on_request") return "Fee plan";
   return hasOfficialFeeAmount(
@@ -207,7 +209,14 @@ export function formatProgramAnnualFee(
   return fallback;
 }
 
-/** Display-only formatter: amount/range without exposing a quote's billing basis or provenance. */
+const REPORTED_FEE_PERIOD_LABELS: Record<string, string> = {
+  semester: "/ semester",
+  academic_year: "/ year",
+  first_year: "first year",
+  full_course: "full course",
+};
+
+/** Display-only formatter: amount/range plus its billing period, without exposing the quote's provenance. */
 export function formatProgramFee(
   offering: Parameters<typeof getDisplayedReportedFeeQuote>[0],
   fallback = "Fee plan on request",
@@ -215,9 +224,13 @@ export function formatProgramFee(
   const quote = getDisplayedReportedFeeQuote(offering);
   if (!quote) return formatProgramAnnualFee(offering, fallback);
   const minimum = formatCurrencyAmount(quote.minAmount, quote.currency);
-  return quote.maxAmount !== undefined && quote.maxAmount !== quote.minAmount
+  const amount = quote.maxAmount !== undefined && quote.maxAmount !== quote.minAmount
     ? `${minimum}–${formatCurrencyAmount(quote.maxAmount, quote.currency)}`
     : minimum;
+  // Quotes come per semester, per year, for the first year or for the whole course; without the
+  // period a per-semester and a full-course figure would read the same.
+  const period = REPORTED_FEE_PERIOD_LABELS[quote.period];
+  return period ? `${amount} ${period}` : amount;
 }
 
 function feeAudienceLabel(audience: FeeAudience, countrySlug: string) {
@@ -247,7 +260,7 @@ export function getProgramFeeLines(
   countrySlug: string,
   fallback = "Fee plan on request",
 ): { label: string; amount: string }[] {
-  if (getDisplayedReportedFeeQuote(offering)) return [{ label: "Fees", amount: formatProgramFee(offering, fallback) }];
+  if (getDisplayedReportedFeeQuote(offering)) return [{ label: getProgramAnnualFeeLabel(offering), amount: formatProgramFee(offering, fallback) }];
   const primary = {
     label: offering.feeAudience && offering.feeStatus !== "on_request"
       ? feeAudienceLabel(offering.feeAudience, countrySlug)

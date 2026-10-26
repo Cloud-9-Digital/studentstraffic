@@ -38,3 +38,14 @@ Reviewed media manifest: `research/media-enrichment/mcc-tambaram-20261025-review
 ## Forward rescue — 25 October 2026
 
 The former language/intake holds are superseded for all54 currentregular degree/stream entries:31UG/23PG. Exact current own programme qualification and calendar structure read; new unknown languages/intakes omitted. AidedMSW is one admission umbrella with second-year specialismchoice, verified narrower60% entrance route and explicit2023Englishpolicy. MCA keeps exact2025–26approval/date with currentcontinuation, not a2026–27EOAclaim; native51513periodotherquote without annualisation. Existing25objects preserved except required BA Tamil language-label formatting. Research/separate/short-course rows remain held.122LFrows retained. See research/india-source-bundles/mcc-forward-20261025/source-audit.md for full evidence and fee-conflict limitations.
+
+## Fee pass 2026-10-26
+
+Correction bundle `0371-india-madras-christian-college-fees` (supersedes 0324) adds indicative Grade C `reportedFeeQuote` entries (per-year tuition, `academic_year`) from Getmyuni branch fee pages for 19 programmes. Each one is a subject MCC offers in only one stream. Aided: B.Sc Statistics, Chemistry, Plant Biology & Plant Biotechnology, Zoology; M.Com; M.Sc Mathematics, Statistics, Physics, PBPB, Zoology. Self-financed: BSW, BBA, BCA, B.Sc Microbiology, Physical Education, Visual Communication, Geography; B.Com Accounting & Finance; M.Sc Applied Microbiology (listed by Getmyuni as "M.Sc. – Microbiology"). Mess fees shown on the same tables are excluded.
+
+Searched without a usable figure: mcc.edu.in (WordPress search and media library, admission 2026-27 page, fee-payment notices, spot admission); onlinemccedu.org (application and first-semester fee portals are applicant-specific); the mandatory disclosure (MCA only); Getmyuni; Campusoption; Targetadmission (MCA only); Timesofcollege; Careers360 Q&A; Shiksha (403); Collegedunia (401/404, snippets only). No official fee table, prospectus fee schedule or aided-stream G.O. figure was found.
+
+The other 34 programmes stay on request:
+- **All BA and MA branches (aided and self-financed).** Getmyuni shows the same templated figure for every branch (BA Rs 18,719/yr, MA Rs 28,457/yr), covering aided History and self-financed Journalism alike, plus languages MCC does not offer. Rejected as not programme-specific.
+- **Subjects offered in both streams** (B.Sc Mathematics, B.Sc Physics, M.Sc Chemistry, B.Com aided vs B.Com General, B.A. English vs English Language & Literature). The sources carry no stream label.
+- **No third-party figure found:** MSW (both), B.Sc Computer Science, Hospitality & Tourism, Psychology; B.Com Professional Accounting; M.Com COBA; M.Sc Data Science, Applied Psychology; MA Communication (templated MA figure only).

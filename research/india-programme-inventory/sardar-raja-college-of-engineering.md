@@ -105,3 +105,11 @@ These 8 programmes are packaged with `audienceEligibility.availability = "restri
 
 Because no `open_to_international` row exists, this is the only way to publish the college. If the
 reviewer decides India `not_open` programmes should not be published, hold the whole bundle.
+
+## Fee pass 2026-10-26
+
+Correction bundle `0390-india-sardar-raja-college-of-engineering-fees` adds indicative (Grade C) reported fee quotes for 6 of 8 programmes. Source: the CollegeBatch SRCE 2026 listing, which gives INR 85,000 a year for B.E. Civil, CSE, EEE, ECE and Mechanical, and INR 50,000 a year for the MCA (listed as 3 years, so the data is stale).
+
+- **Still on request:** B.E. CSE (Cyber Security) and B.Tech AI & Data Science. No third-party or official source names either branch with a fee. CollegeBatch, Campusoption and Collegedunia list only the older branches.
+- **Official sources searched, no tuition found:** src.org.in admissions pages; the 2026-27 AICTE application report (its "Fee summary" is the AICTE processing fee of INR 50,000 per course, not tuition); TNEA 2026 brochure and college booklet (tuition "as per Government norms"); and the DoTE fee-fixation-committee page (no college-wise order).
+- **Lower figure noted, not used:** Collegedunia and a Campusoption reader reply give about INR 2.2 lakh for the four-year B.E. (about INR 55,000 a year, 2023-24/2024 data). Collegedunia returned HTTP 403. The INR 85,000 and 55,000 levels look like the management-quota and government-quota bands, but no source states a quota.

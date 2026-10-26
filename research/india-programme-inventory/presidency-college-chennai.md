@@ -40,3 +40,7 @@ Owner codex-presidency-forward-20261025. Full49current UG routes now supported:4
 Current native combined college fee quotes cover48of49UG records (BComHI category remains unquoted); billingyear/period unlabelled, statusindicative, no annualisation or tuition-zero assumption. Seven language-degree medium fields remain unknown, all47new intake arrays empty.21PG holds remain solely exact qualifying degree/marks where applicable, not unknown language/intake.
 
 See research/india-source-bundles/presidency-forward-20261025/source-audit.md, fullDCEPDF, visual age-rule review and crosswalk. Bundle0295passes actualscopedreader; samepublicslug and existingmedia retained withoutuploads.
+
+## Fee pass 2026-10-26
+
+- B.Com. Hearing Impaired (Shift I): still on request. The official fee page (pcc.ac.in/Academia/FeeStructure) has a separate B.C.A. (Hearing Impaired) column but no B.Com. Hearing Impaired column; the general B.Com. (CS)/(General) column is a different route and was not borrowed.

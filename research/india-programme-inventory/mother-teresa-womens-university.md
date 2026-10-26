@@ -7,3 +7,7 @@ Primary sources: current2026–27 campus-coded programme notice, annual course-f
 Current-linked Computer Science fee-sheet versus undated department tariff is resolved in favour of dated2026–27 central schedule, with conflict retained internally. Named current/historical syllabi are crosschecked per award; no blanket English/marks inference. Tamil conflicting medium, AI incomplete academic detail and unresolved professional approval pathways are held. All intake arrays are empty with omit evidence.
 
 Access limits: one archive host failed TLS validation; its ordinary accessible old-host counterpart was used, with no security bypass. A generic MCom2023 link404 was not replaced by the distinct MComComputerApplications document. Public-share syllabus preview downloads were ordinaryHTTP200. Full sources, unreachable paths and precise programme holds are documented in research/india-source-bundles/mother-teresa-20261025/review.md and its fetch logs. Original crest/admin-block media retained in the reviewed manifest.
+
+## Fee pass 2026-10-26
+
+- M.A. Sociology (regular, two-year): still on request. Careers360 fees page lists five M.A. rows, none for Sociology; generic M.A. range not used; integrated Sociology fee not transferred.

@@ -477,6 +477,13 @@
       "when": 1792886400001,
       "tag": "0084_course_duration_years_numeric",
       "breakpoints": true
+    },
+    {
+      "idx": 82,
+      "version": "7",
+      "when": 1792886400002,
+      "tag": "0085_university_brochures",
+      "breakpoints": true
     }
   ]
 }

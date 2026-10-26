@@ -1,0 +1,33 @@
+{
+  "manifestId": "india-tn-colleges-jerusalem-college-of-engineering",
+  "checkedAt": "2026-10-26",
+  "entries": [
+    {
+      "universitySlug": "jerusalem-college-of-engineering",
+      "universityName": "Jerusalem College of Engineering",
+      "sourceBatch": "claude-tn-colleges-batch1-20261026",
+      "migrationId": "0360-india-jerusalem-college-of-engineering",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://jerusalemengg.ac.in/images/logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://jerusalemengg.ac.in/",
+          "rightsBasis": "Official site-wide header logo served from the college's own domain (jerusalemengg.ac.in). No open licence - used only to identify the institution. Checked 2026-10-26: HTTP 200 via curl, image/png, 38,109 bytes, 404x100 px RGBA, SHA-256 bd5be95b4fd5cad08bdee2b3f446e75abe65daabeab206c365e7fce337218e29. Visually confirmed on white: blue 'JERUSALEM College of Engg' shield crest, blue 'JERUSALEM COLLEGE OF ENGINEERING / An AUTONOMOUS Institution / Affiliated to ANNA UNIVERSITY / Approved from AICTE, New Delhi' wordmark and a gold '25 years' anniversary seal on the right; legible on a white tile. CAVEAT: wide lockup (4:1) including an anniversary seal; if a square tile is required, crop the left crest (approx. x 0-80).",
+          "proposedPublicId": "studentstraffic/universities/jerusalem-college-of-engineering/logo",
+          "localCopy": "research/india-source-bundles/jerusalem-college-of-engineering/logo.png"
+        },
+        {
+          "kind": "cover",
+          "status": "held",
+          "sourceUrl": "https://jerusalemengg.ac.in/upload/Web-Slider1.png",
+          "sourceType": "official",
+          "sourcePage": "https://jerusalemengg.ac.in/",
+          "rightsBasis": "HOLD - not proposed for upload. Checked 2026-10-26: the only real campus photograph found on jerusalemengg.ac.in is the home-page slider Web-Slider1.png (image/png, 356,385 bytes, 1920x600, SHA-256 55fb572d328d3c78ae1ec5e871bc0f21f7106d4c76192d88222ffa8233f6fbe4), which shows the cream-and-terracotta main academic block with trees, but carries overlaid marketing text ('EXPERIENCE THE STATE-OF-ART INFRASTRUCTURE', a 'Know More' button) and a dark gradient across its left half. Rejected alternatives: upload/home1.jpg, home2.jpg and home3.jpg are stock-style lifestyle photos (home1 shows two students on a lawn, not the campus); Web-banner-jce.jpg and img/p1.jpg are text-heavy admission banners/composites; student-council gallery images are close-ups of identifiable students; Wikipedia has only the logo. Option for the user: approve a right-side crop of Web-Slider1.png (approx. x 800-1920, 1120x600, no text) as the cover, or source a clean campus photo from the college.",
+          "proposedPublicId": "studentstraffic/universities/jerusalem-college-of-engineering/cover",
+          "localCopy": "research/india-source-bundles/jerusalem-college-of-engineering/media/u-Web-Slider1.png"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "manifestId": "india-tn-colleges-kathir-college-of-engineering-media-2026-10-26",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-26",
+  "scope": "logo and cover for content migration 0357-india-kathir-college-of-engineering",
+  "rules": [
+    "This manifest permits neither direct database writes nor automatic Cloudinary uploads.",
+    "Every sourceUrl is a direct image URL verified HTTP 200 with an image/* content-type on 2026-10-26; re-verify before upload.",
+    "Only a verified Cloudinary URL may be applied to the catalogue; hold entries are excluded."
+  ],
+  "entries": [
+    {
+      "universitySlug": "kathir-college-of-engineering",
+      "universityName": "Kathir College of Engineering",
+      "sourceBatch": "claude-tn-colleges-batch1-20261026",
+      "migrationId": "0357-india-kathir-college-of-engineering",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2025/11/An-Autonomous-Institution-logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://kathir.ac.in/",
+          "rightsBasis": "Official KCE header lock-up served from the college's own domain (kathir.ac.in, site-wide header). No open licence; used only to identify the institution. Checked 2026-10-26: HTTP 200, image/png, 277,467 bytes, 1536x307 px, sha256 a0e9a5fe20c54ea43eeaa48e803e8bb33225aceab4c0ad2742cdd8ee8bdd7ddd. Rendered on white and visually confirmed legible: circular blue KCE seal reading 'Kathir College of Engineering, Coimbatore - 641 062', navy wordmark 'Kathir College of Engineering', red line '[An Autonomous Institution]', the accreditation line and address, and a gold NAAC A+ (CGPA 3.49) badge at the right. CAVEAT: wide banner with small text lines and an embedded NAAC badge; no seal-only or SVG asset is published. Rejected: Kathir-Eng-logo-white.png (white-on-transparent, illegible on white) and home-admission-logo.png (494x127, white text).",
+          "proposedPublicId": "studentstraffic/universities/kathir-college-of-engineering/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://kathir.ac.in/wp-content/uploads/2025/11/student-facilities-img-3.png",
+          "sourceType": "official",
+          "sourcePage": "https://kathir.ac.in/life-at-kce-student-facilities/",
+          "rightsBasis": "Official campus photograph on the college's own domain (Student facilities page). No open licence; used only to depict the institution. Checked 2026-10-26: HTTP 200, image/png, 172,355 bytes, 600x400 px, sha256 29d83ec2e97b92813c346220281c14110002b5c6c9b8a896932106ed38e922d7. Visually confirmed as a single real photograph, not a composite or AI image: white three-storey building signed 'Girls Hostel' with a lawn in front, blue sky and trees; a few distant figures are not identifiable; no text overlay or watermark. CAVEAT: low resolution (600x400); the college publishes no larger building photograph. Rejected: 2026/01/Slider-image-01.jpg (1920x1036 but a close-up of five identifiable students), 2026/01/Life-@-KEC-img-02.jpg (600x400 building with a partial third-party 'CADD' sign), placement-image.png (collage), home-gallery-img-1.png and home-about-preview images (close-ups of identifiable students).",
+          "altText": "White three-storey girls' hostel building with a front lawn at Kathir College of Engineering, Neelambur, Coimbatore",
+          "proposedPublicId": "studentstraffic/universities/kathir-college-of-engineering/cover"
+        }
+      ]
+    }
+  ]
+}

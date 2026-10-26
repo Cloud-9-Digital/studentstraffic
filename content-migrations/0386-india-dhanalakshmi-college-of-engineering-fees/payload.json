@@ -1,0 +1,2363 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "Bachelor of Technology in Computer Science and Engineering",
+        "BEng Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in computer science and engineering, usually four years after an upper-secondary qualification with mathematics. Typical curricula run from programming, data structures, operating systems, databases and computer networks to algorithms, software engineering and electives in artificial intelligence, machine learning, cloud and security, with project and internship components.",
+      "metaTitle": "B.E./B.Tech CSE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech CSE degrees for international applicants: duration, teaching language, intake months, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-data-science",
+      "name": "B.E./B.Tech in Data Science",
+      "shortName": "B.E./B.Tech Data Science",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "data-science",
+      "aliases": [
+        "Bachelor of Technology in Data Science",
+        "BEng Data Science"
+      ],
+      "displayOrder": 33,
+      "durationYears": 4,
+      "summary": "Compare undergraduate Data Science degrees abroad by statistics, machine learning, data engineering, applied projects, tuition and admissions. Each university offering keeps its official award title, artificial-intelligence specialisation depth and entry requirements visible before applying.",
+      "metaTitle": "B.E./B.Tech Data Science Abroad | Fees",
+      "metaDescription": "Compare B.E./B.Tech Data Science programmes abroad by curriculum, tuition fees, admissions and practical training."
+    },
+    {
+      "slug": "be-btech-artificial-intelligence-machine-learning",
+      "name": "B.E./B.Tech in Artificial Intelligence and Machine Learning",
+      "shortName": "B.E./B.Tech AI & ML",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "artificial-intelligence-machine-learning",
+      "aliases": [
+        "Bachelor of Engineering in Artificial Intelligence",
+        "Bachelor of Science in Artificial Intelligence",
+        "Artificial Intelligence and Machine Learning"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "Artificial intelligence and machine learning bachelor's programmes combine core computing and mathematics with statistical learning, data handling and applied model building. Award titles, specialisation depth, admission thresholds and fees differ significantly by university, so the programme record rather than the category should drive a shortlist decision.",
+      "metaTitle": "B.E./B.Tech AI & ML Degree Programmes Abroad",
+      "metaDescription": "Compare B.E./B.Tech AI & ML programmes by curriculum focus, entry thresholds, teaching language, intake, fee state and application route for international applicants."
+    },
+    {
+      "slug": "be-btech-cyber-security",
+      "name": "B.E./B.Tech in Cyber Security",
+      "shortName": "B.E./B.Tech Cyber Security",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "cyber-security",
+      "aliases": [
+        "Bachelor of Cyber Security",
+        "BSc Cyber Security"
+      ],
+      "displayOrder": 101,
+      "durationYears": 4,
+      "summary": "Study cyber security through an undergraduate engineering programme covering network security, cryptography, secure systems design, digital forensics and ethical hacking practice. Compare each university's official award, laboratory facilities, industry certifications, tuition and admissions requirements before applying, since specialisation depth and delivery format vary by institution.",
+      "metaTitle": "B.E./B.Tech Cyber Security Abroad | Fees",
+      "metaDescription": "Compare B.E./B.Tech Cyber Security programmes abroad by curriculum, laboratories, tuition fees and admissions requirements for international students."
+    },
+    {
+      "slug": "be-btech-information-technology",
+      "name": "B.E./B.Tech in Information Technology",
+      "shortName": "B.E./B.Tech IT",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "information-technology",
+      "aliases": [
+        "Bachelor of Engineering in Information Technology",
+        "Bachelor of Information Technology",
+        "BSc Information Technology"
+      ],
+      "displayOrder": 180,
+      "durationYears": 4,
+      "summary": "An approved Engineering catalogue category for four-year undergraduate information technology degrees, including university programmes that publish Computer Science as a major within an Information Technology award. The exact university title and major structure remain visible on each offering.",
+      "metaTitle": "B.E./B.Tech IT Programmes",
+      "metaDescription": "Compare B.E./B.Tech IT programmes, official titles, fees, duration and admissions routes for international students."
+    },
+    {
+      "slug": "be-btech-electronics-communication-engineering",
+      "name": "B.E./B.Tech in Electronics and Communication Engineering",
+      "shortName": "B.E./B.Tech ECE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electronics-communication-engineering",
+      "aliases": [
+        "Bachelor of Electronics and Communication Engineering",
+        "BEng Electronic and Communications Engineering",
+        "Electronics and Telecommunications Engineering"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in electronics and communication engineering, usually four years after upper-secondary physics, chemistry and mathematics. Curricula typically span circuit and network theory, analog and digital electronics, signals and systems, digital signal processing, communication systems and embedded or VLSI design, with laboratory and project work.",
+      "metaTitle": "B.E./B.Tech ECE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech ECE degrees for international applicants: duration, teaching language, intakes, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-electrical-electronics-engineering",
+      "name": "B.E./B.Tech in Electrical and Electronics Engineering",
+      "shortName": "B.E./B.Tech EEE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electrical-electronics-engineering",
+      "aliases": [
+        "Bachelor of Electrical and Electronic Engineering",
+        "BEng Electrical and Electronic Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "This catalogue category covers four-year undergraduate degrees in electrical and electronics engineering taken after an upper-secondary qualification with physics and mathematics. Programmes typically cover circuit theory, electrical machines, power systems, power electronics, control systems and embedded electronics, with laboratory work and electives in renewable energy or electric mobility.",
+      "metaTitle": "B.E./B.Tech EEE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech EEE degrees for international applicants: programme length, teaching language, intake months, tuition and admission routes."
+    },
+    {
+      "slug": "be-btech-mechanical-engineering",
+      "name": "B.E./B.Tech in Mechanical Engineering",
+      "shortName": "B.E./B.Tech Mechanical",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "mechanical-engineering",
+      "aliases": [
+        "Bachelor of Mechanical Engineering",
+        "BEng Mechanical Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "A four-year undergraduate engineering degree covering engineering mechanics, thermodynamics, fluid mechanics, heat transfer, machine design, manufacturing processes and control systems. Teaching is built around workshop practice, thermal and materials laboratories, computer-aided design and a final-year project. Graduates move into manufacturing, automotive, energy, thermal and design roles, or continue to a master's specialisation such as thermal engineering or machine design.",
+      "metaTitle": "B.E./B.Tech Mechanical: Course, Fees and Admission",
+      "metaDescription": "What a four-year B.E./B.Tech Mechanical degree covers, its entry requirements, how admission is decided and what tuition and duration to plan for."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "dhanalakshmi-college-of-engineering",
+      "name": "Dhanalakshmi College of Engineering",
+      "city": "Chennai",
+      "type": "Private",
+      "establishedYear": 2001,
+      "officialWebsite": "https://dce.edu.in/",
+      "mediaAttribution": {
+        "logo": {
+          "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/01/DCE-logo.png",
+          "rights": "Official college header logo served from dce.edu.in, used only to identify the institution; no open licence or ownership transfer claimed.",
+          "checkedAt": "2026-10-26"
+        },
+        "cover": {
+          "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/01/DCE-Hero.jpg",
+          "rights": "Official campus photograph used as the home-page hero on dce.edu.in, used for institutional illustration; no open licence or ownership transfer claimed.",
+          "checkedAt": "2026-10-26",
+          "altText": "Electronics and Communication Engineering block of Dhanalakshmi College of Engineering at Manimangalam, Chennai, with its glass-fronted entrance, palms and a covered walkway"
+        }
+      },
+      "summary": "Dhanalakshmi College of Engineering (DCE) is a private, self-financing engineering college founded in 2001 at Manimangalam near Tambaram, Chennai, Tamil Nadu. It is not a university: it is an autonomous college affiliated to Anna University, Chennai, which awards its degrees. It teaches eight AICTE-approved B.E./B.Tech branches, mostly in computing and electronics.",
+      "campusLifestyle": "Dhanalakshmi College of Engineering (DCE)'s campus at Dr V P R Nagar, Manimangalam has separate blocks for Science and Humanities, Computer Science and AI and Data Science, ECE, EEE and Mechanical, plus an administrative block, an auditorium, a yoga centre and gym, a herbal greenhouse and Wi-Fi across campus and hostels. The central library covers 1,000 sq m with 37,746 volumes in 9,429 titles and DELNET and INFLIBNET membership, and the physical education department lists about 25 acres of playgrounds.",
+      "cityProfile": "Dhanalakshmi College of Engineering (DCE) is at Dr V P R Nagar, Manimangalam, Tambaram, Chennai 601301, in Sriperumbudur taluk of Kancheepuram district, Tamil Nadu. TNEA 2026 lists it 10 km from Tambaram railway station and 20 km from the district headquarters, and the college runs 16 bus routes across Chennai. Anna University lists it among the Kancheepuram district colleges with code 4107. It is run by the Dhanalakshmi Educational Trust, founded in 1998 by Dr V P Ramamurthi.",
+      "practicalExposure": "Dhanalakshmi College of Engineering (DCE) has been an autonomous college since 2025-26: UGC lists its autonomy for 2025-26 to 2034-35, so DCE sets its own curricula and runs its own examinations, while Anna University awards the degree. Its 2026-27 calendar schedules two internal assessment tests and model examinations each semester before the end-semester practical and theory examinations. AICTE requires an internship for every admitted student. The placement cell runs aptitude, communication and technical training; the college reported a 95 per cent placement rate in its TNEA 2026 entry without stating the year or base.",
+      "hostelOverview": "Dhanalakshmi College of Engineering (DCE) has separate permanent on-campus hostels for men and women, according to TNEA 2026. The TNEA 2026 college booklet lists room rent at INR 15,000 a year, electricity at INR 15,000 a year and mess at INR 70,000 a year, with no caution deposit. The college lists capacity for 500 men and 350 women, Wi-Fi, RO drinking water, solar water heaters, a gym, air-conditioned rooms on request and a 1,200-seat dining hall.",
+      "dietarySupport": "Dhanalakshmi College of Engineering (DCE)'s hostel messes serve both vegetarian and non-vegetarian food, according to the TNEA 2026 college booklet, and the mess charge is INR 70,000 a year. The college says herbs from its campus greenhouse are used in hostel and canteen meals. No provision for specific regional or religious diets is published, so ask the hostel office before joining.",
+      "safetyOverview": "Dhanalakshmi College of Engineering (DCE) has an anti-ragging committee chaired by the principal that applies a zero-tolerance policy under UGC regulations, plus a disciplinary committee and an internal complaints committee for women. The college lists CCTV surveillance across the campus and hostels. TNEA 2026 publishes a separate anti-ragging helpline number for the college.",
+      "studentSupport": "Dhanalakshmi College of Engineering (DCE) handles student complaints about administration, examinations and evaluation through a grievance redressal committee, with appeals to an ombudsman, and lists a student counsellor committee and an SC/ST committee. The admissions FAQ says eligible students may apply for government and institutional scholarships.",
+      "whyChoose": [
+        "Dhanalakshmi College of Engineering (DCE) is an autonomous college accredited by NAAC with an A grade (CGPA 3.19, second cycle, valid to 11 July 2029), and Anna University awards its degrees.",
+        "AICTE approves 720 B.E./B.Tech seats for 2026-27, including 180 each in Computer Science and Engineering and AI and Data Science, plus Cyber Security and AI and Machine Learning branches.",
+        "It is near Tambaram in south-west Chennai, with separate permanent hostels for men and women and 16 college bus routes."
+      ],
+      "thingsToConsider": [
+        "Dhanalakshmi College of Engineering (DCE) publishes no tuition amount; its admissions FAQ says the Admissions Office gives fee details, so confirm the current tuition before choosing a quota. TNEA 2026 lists mess at INR 70,000 a year.",
+        "There is no route for international students: AICTE's 2026-27 approval shows no NRI or international-student seats, and TNEA admits only Indian nationals and Tamil Nadu-native OCI/PIO card holders.",
+        "No DCE programme holds NBA accreditation according to TNEA 2026, and its three M.E. programmes are not listed here because Anna University records show almost no admissions in recent years."
+      ],
+      "bestFitFor": [
+        "Tamil Nadu TNEA applicants who want a computing branch (CSE, AI and Data Science, AI and Machine Learning, Cyber Security or IT) at an autonomous, NAAC A college in Chennai.",
+        "Students from south and west Chennai who want a college near Tambaram with college bus routes or on-campus hostels.",
+        "Applicants who want an Anna University degree from an autonomous college that runs its own curriculum and examinations."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "AICTE - Approved institution, Permanent ID 1-4064279 (Private-Self Financing), EoA 2026-27",
+        "UGC - Autonomous college, 2025-26 to 2034-35 (affiliated to Anna University, Chennai)",
+        "UGC - Included under Sections 2(f) and 12(B)",
+        "NAAC - A grade, CGPA 3.19, Cycle 2, valid to 11 July 2029",
+        "Anna University, Chennai - Affiliated autonomous college, college code 4107",
+        "DoTE Tamil Nadu - TNEA 2026 participating college, counselling code 1405"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "AICTE - Extension of Approval 2026-27 (DCE)",
+          "url": "https://dce.edu.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf"
+        },
+        {
+          "label": "UGC - Autonomous colleges list",
+          "url": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list"
+        },
+        {
+          "label": "NAAC - Certificate of accreditation (DCE)",
+          "url": "https://dce.edu.in/wp-content/uploads/2026/03/NAAC-CERTIFICATE-DCE.pdf"
+        },
+        {
+          "label": "Anna University CAI - Affiliated colleges, Kancheepuram district",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Kancheepuram.php"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+          "url": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Dhanalakshmi College of Engineering Chennai autonomous?",
+          "answer": "Yes, Dhanalakshmi College of Engineering (DCE) is autonomous: UGC lists its autonomous status for 10 years, 2025-26 to 2034-35. DCE sets its own curricula and examinations, but it remains a college affiliated to Anna University, Chennai, which awards the degree."
+        },
+        {
+          "question": "What is the TNEA code of Dhanalakshmi College of Engineering?",
+          "answer": "The TNEA counselling code for Dhanalakshmi College of Engineering (DCE) is 1405, and its Anna University college code is 4107. In TNEA 2026 it offered CSE (CS), AI and Data Science (AD), CSE AI and Machine Learning (AM), CSE Cyber Security (SC), IT, ECE (EC), EEE (EE) and Mechanical (ME) seats."
+        },
+        {
+          "question": "Is Dhanalakshmi College of Engineering AICTE approved and NAAC accredited?",
+          "answer": "Yes, Dhanalakshmi College of Engineering (DCE) is AICTE approved for 2026-27 (permanent ID 1-4064279, private self-financing) and NAAC accredited with an A grade and a CGPA of 3.19 in its second cycle, valid to 11 July 2029. TNEA 2026 lists none of its branches as NBA accredited."
+        },
+        {
+          "question": "What is the fee at Dhanalakshmi College of Engineering?",
+          "answer": "Dhanalakshmi College of Engineering (DCE) does not publish its tuition; its admissions FAQ says the Admissions Office gives fee details. TNEA 2026 lists an admission fee of INR 1,500, an establishment charge of INR 30,000, hostel room rent of INR 15,000, electricity of INR 15,000 and mess of INR 70,000 a year, and transport of INR 35,000 to 50,000 a year."
+        },
+        {
+          "question": "Does Dhanalakshmi College of Engineering have hostels?",
+          "answer": "Yes, Dhanalakshmi College of Engineering (DCE) has separate permanent on-campus hostels for men and women, with messes serving vegetarian and non-vegetarian food. TNEA 2026 lists room rent at INR 15,000, electricity at INR 15,000 and mess at INR 70,000 a year, with no caution deposit."
+        },
+        {
+          "question": "Can NRI or international students apply to Dhanalakshmi College of Engineering?",
+          "answer": "No, Dhanalakshmi College of Engineering (DCE) has no NRI or international-student seats: AICTE's 2026-27 approval marks NRI and international-student approval as No for every programme. TNEA is for Indian nationals; OCI/PIO card holders who are natives of Tamil Nadu may join unless born abroad after 4 March 2021."
+        },
+        {
+          "question": "How do I get admission to Dhanalakshmi College of Engineering?",
+          "answer": "Most B.E./B.Tech seats at Dhanalakshmi College of Engineering (DCE) are filled through TNEA: register at tneaonline.org, get a rank from Mathematics (100), Physics (50) and Chemistry (50), and choose code 1405. TNEA 2026 counselling ran 20 July to 30 August, and DCE started first-year classes on 1 September 2026. Management-quota seats are filled by the college."
+        },
+        {
+          "question": "Who awards the degree at Dhanalakshmi College of Engineering?",
+          "answer": "Anna University, Chennai awards the degrees of Dhanalakshmi College of Engineering (DCE). DCE is an affiliated college, not a university; as an autonomous college it designs its syllabus and runs its examinations, and Anna University issues the B.E. and B.Tech degrees."
+        },
+        {
+          "question": "Is Dhanalakshmi College of Engineering the same as Dhanalakshmi Srinivasan College of Engineering and Technology?",
+          "answer": "No, Dhanalakshmi College of Engineering (DCE) at Manimangalam near Tambaram (TNEA code 1405) is a different college from Dhanalakshmi Srinivasan College of Engineering and Technology on the East Coast Road near Mamallapuram (TNEA code 1322). The Dhanalakshmi Srinivasan colleges in Perambalur and Coimbatore are also separate. Check the TNEA code when filling choices."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "AICTE - Extension of Approval 2026-27 (DCE, published by the college)",
+          "url": "https://dce.edu.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "AICTE - Approved institutes dashboard",
+          "url": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "UGC - Autonomous colleges list",
+          "url": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "Anna University CAI - Kancheepuram district affiliated colleges",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Kancheepuram.php",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "Anna University - Affiliation mandatory disclosure (DCE, code 4107)",
+          "url": "https://dce.edu.in/wp-content/uploads/2026/03/AU_Mandatory-Disclosure-DCE-2026.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "NAAC - Certificate of accreditation (DCE, 2024)",
+          "url": "https://dce.edu.in/wp-content/uploads/2026/03/NAAC-CERTIFICATE-DCE.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "AISHE - Data capture format 2024-25 (DCE, C-16567)",
+          "url": "https://dce.edu.in/wp-content/uploads/2026/05/C-16567-DCF.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+          "url": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+          "url": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 vacancy position after Round 1",
+          "url": "https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DCE - Academic calendar, I year I semester 2026-27",
+          "url": "https://dce.edu.in/wp-content/uploads/2026/09/Academic-Calendar-for-I-Year-I-Sem.-2026-2027-.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DCE - Academic calendar, odd semester 2026-27",
+          "url": "https://dce.edu.in/wp-content/uploads/2026/07/Academic-Calendar-July-Dec-2026-Autonomous.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DCE - Programmes offered",
+          "url": "https://dce.edu.in/programmes-offered/",
+          "kind": "official-program",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DCE - Admissions 2026",
+          "url": "https://dce.edu.in/admissions-dce/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DCE - Life at DCE (library, hostel, transport, sports)",
+          "url": "https://dce.edu.in/life-at-dce/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-26"
+        },
+        {
+          "label": "DCE - Official website",
+          "url": "https://dce.edu.in/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-26"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "This record covers Dhanalakshmi College of Engineering at Manimangalam, Tambaram, Chennai only. Dhanalakshmi Srinivasan College of Engineering and Technology (Mamallapuram) and the Dhanalakshmi Srinivasan institutions in Perambalur, Tiruchirappalli and Coimbatore are separate institutions outside this record.",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "research_ready",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my DCE eligibility",
+            "capture": [
+              "nationality and Tamil Nadu nativity or schooling",
+              "Class 12 board and MPC marks",
+              "community category",
+              "intended branch"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Estimate my DCE fees and hostel cost",
+            "capture": [
+              "intended branch",
+              "TNEA or management quota",
+              "hostel and transport needs",
+              "concession eligibility"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my TNEA choices for DCE",
+            "capture": [
+              "TNEA rank or expected cut-off",
+              "preferred branches",
+              "document readiness"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "dce-be-computer-science-engineering",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "B.E. Computer Science and Engineering, Dhanalakshmi College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-26",
+            "notes": "Dhanalakshmi College of Engineering (DCE) publishes no tuition figure: its admissions FAQ says official fee details are given by the Admissions Office (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists DCE's other charges: admission fee INR 1,500, establishment charge INR 30,000, hostel room rent INR 15,000 a year, electricity INR 15,000 a year, mess INR 70,000 a year and college transport INR 35,000 to 50,000 a year."
+          },
+          "officialProgramUrl": "https://dce.edu.in/department-of-computer-science-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for every DCE programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1405, branch code CS) or the college's management quota. AICTE approves an intake of 180 for 2026-27; TNEA 2026 lists the branch as started in 2001.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Computer Science and Engineering at Dhanalakshmi College of Engineering (DCE) is a four-year, eight-semester degree at Manimangalam near Tambaram, Chennai; DCE sets the syllabus and exams as an autonomous college and Anna University awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission, and DCE's admissions page repeats the same minimum marks.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders may apply for lateral entry to the third semester through TNEA Lateral Entry counselling"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1405 with branch CS, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, contact the DCE admissions office or submit the enquiry form on dce.edu.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. DCE's own 2026-27 calendar started first-year classes with a bridge course on 1 September 2026.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 50000,
+              "status": "indicative",
+              "period": "academic_year",
+              "componentBasis": "Third-party GetMyUni listing for Dhanalakshmi College of Engineering (DCE), Chennai states B.E. tuition of INR 50,000 per annum and lists BE in CSE at INR 2,00,000 for the 4-year course. Recorded as the stated yearly tuition; not an official college or fee-committee tariff; quota, components and exclusions unstated.",
+              "audience": "domestic",
+              "category": "Reported general B.E./B.Tech tuition; TNEA government-quota versus management-quota basis not stated",
+              "academicYear": "Unstated; listing titled 2026",
+              "sourceUrl": "https://getmyuni.com/college/dhanalakshmi-college-of-engineering-dce-chennai-courses-fees",
+              "sourceLabel": "GetMyUni DCE (Dhanalakshmi College of Engineering) courses and fees 2026 listing (Grade C)",
+              "verifiedAt": "2026-10-26"
+            }
+          },
+          "medium": "English",
+          "mediumNote": "DCE's AISHE 2024-25 return records every programme as not offered in an Indian language, and the college publishes its programmes and admissions in English.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Dhanalakshmi College of Engineering (DCE) publishes no tuition figure: its admissions FAQ says official fee details are given by the Admissions Office (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists DCE's other charges: admission fee INR 1,500, establishment charge INR 30,000, hostel room rent INR 15,000 a year, electricity INR 15,000 a year, mess INR 70,000 a year and college transport INR 35,000 to 50,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "DCE's own autonomous curriculum for Computer Science and Engineering, set by the college's Boards of Studies, with college-run internal assessment tests and end-semester examinations. The department page lists compiler, operating systems, networking, internet programming, graphics and multimedia, and DBMS laboratories. Anna University, Chennai awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "dce-btech-artificial-intelligence-data-science",
+          "canonicalCourseSlug": "be-btech-data-science",
+          "officialTitle": "B.Tech Artificial Intelligence and Data Science, Dhanalakshmi College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-26",
+            "notes": "Dhanalakshmi College of Engineering (DCE) publishes no tuition figure: its admissions FAQ says official fee details are given by the Admissions Office (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists DCE's other charges: admission fee INR 1,500, establishment charge INR 30,000, hostel room rent INR 15,000 a year, electricity INR 15,000 a year, mess INR 70,000 a year and college transport INR 35,000 to 50,000 a year."
+          },
+          "officialProgramUrl": "https://dce.edu.in/department-of-artificial-intelligence-data-science-ai-ds/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for every DCE programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1405, branch code AD) or the college's management quota. AICTE approves an intake of 180 for 2026-27; TNEA 2026 lists the branch as started in 2020.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.Tech Artificial Intelligence and Data Science at Dhanalakshmi College of Engineering (DCE) is a four-year, eight-semester degree at Manimangalam near Tambaram, Chennai; DCE sets the syllabus and exams as an autonomous college and Anna University awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission, and DCE's admissions page repeats the same minimum marks.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders may apply for lateral entry to the third semester through TNEA Lateral Entry counselling"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1405 with branch AD, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, contact the DCE admissions office or submit the enquiry form on dce.edu.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. DCE's own 2026-27 calendar started first-year classes with a bridge course on 1 September 2026."
+          },
+          "medium": "English",
+          "mediumNote": "DCE's AISHE 2024-25 return records every programme as not offered in an Indian language, and the college publishes its programmes and admissions in English.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Dhanalakshmi College of Engineering (DCE) publishes no tuition figure: its admissions FAQ says official fee details are given by the Admissions Office (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists DCE's other charges: admission fee INR 1,500, establishment charge INR 30,000, hostel room rent INR 15,000 a year, electricity INR 15,000 a year, mess INR 70,000 a year and college transport INR 35,000 to 50,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "DCE's own autonomous curriculum for Artificial Intelligence and Data Science, set by the college's Boards of Studies, with college-run internal assessment tests and end-semester examinations. The department page lists data science, DBMS, data structures, object-oriented programming and cryptography and cyber security laboratories. Anna University, Chennai awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "dce-be-computer-science-engineering-ai-machine-learning",
+          "canonicalCourseSlug": "be-btech-artificial-intelligence-machine-learning",
+          "officialTitle": "B.E. Computer Science and Engineering (Artificial Intelligence and Machine Learning), Dhanalakshmi College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-26",
+            "notes": "Dhanalakshmi College of Engineering (DCE) publishes no tuition figure: its admissions FAQ says official fee details are given by the Admissions Office (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists DCE's other charges: admission fee INR 1,500, establishment charge INR 30,000, hostel room rent INR 15,000 a year, electricity INR 15,000 a year, mess INR 70,000 a year and college transport INR 35,000 to 50,000 a year."
+          },
+          "officialProgramUrl": "https://dce.edu.in/department-of-computer-science-and-engineeringartificial-intelligence-and-machine-learning/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for every DCE programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1405, branch code AM) or the college's management quota. AICTE approves an intake of 60 for 2026-27; TNEA 2026 lists the branch as started in 2024.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Computer Science and Engineering (Artificial Intelligence and Machine Learning) at Dhanalakshmi College of Engineering (DCE) is a four-year, eight-semester degree at Manimangalam near Tambaram, Chennai; DCE sets the syllabus and exams as an autonomous college and Anna University awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission, and DCE's admissions page repeats the same minimum marks.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders may apply for lateral entry to the third semester through TNEA Lateral Entry counselling"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1405 with branch AM, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, contact the DCE admissions office or submit the enquiry form on dce.edu.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. DCE's own 2026-27 calendar started first-year classes with a bridge course on 1 September 2026."
+          },
+          "medium": "English",
+          "mediumNote": "DCE's AISHE 2024-25 return records every programme as not offered in an Indian language, and the college publishes its programmes and admissions in English.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Dhanalakshmi College of Engineering (DCE) publishes no tuition figure: its admissions FAQ says official fee details are given by the Admissions Office (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists DCE's other charges: admission fee INR 1,500, establishment charge INR 30,000, hostel room rent INR 15,000 a year, electricity INR 15,000 a year, mess INR 70,000 a year and college transport INR 35,000 to 50,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "DCE's own autonomous curriculum for Computer Science and Engineering (Artificial Intelligence and Machine Learning), set by the college's Boards of Studies, with college-run internal assessment tests and end-semester examinations. Anna University, Chennai awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "dce-be-computer-science-engineering-cyber-security",
+          "canonicalCourseSlug": "be-btech-cyber-security",
+          "officialTitle": "B.E. Computer Science and Engineering (Cyber Security), Dhanalakshmi College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-26",
+            "notes": "Dhanalakshmi College of Engineering (DCE) publishes no tuition figure: its admissions FAQ says official fee details are given by the Admissions Office (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists DCE's other charges: admission fee INR 1,500, establishment charge INR 30,000, hostel room rent INR 15,000 a year, electricity INR 15,000 a year, mess INR 70,000 a year and college transport INR 35,000 to 50,000 a year."
+          },
+          "officialProgramUrl": "https://dce.edu.in/department-of-computer-science-and-engineering-cyber-security/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for every DCE programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1405, branch code SC) or the college's management quota. AICTE approves an intake of 60 for 2026-27; TNEA 2026 lists the branch as started in 2022.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Computer Science and Engineering (Cyber Security) at Dhanalakshmi College of Engineering (DCE) is a four-year, eight-semester degree at Manimangalam near Tambaram, Chennai; DCE sets the syllabus and exams as an autonomous college and Anna University awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission, and DCE's admissions page repeats the same minimum marks.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders may apply for lateral entry to the third semester through TNEA Lateral Entry counselling"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1405 with branch SC, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, contact the DCE admissions office or submit the enquiry form on dce.edu.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. DCE's own 2026-27 calendar started first-year classes with a bridge course on 1 September 2026."
+          },
+          "medium": "English",
+          "mediumNote": "DCE's AISHE 2024-25 return records every programme as not offered in an Indian language, and the college publishes its programmes and admissions in English.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Dhanalakshmi College of Engineering (DCE) publishes no tuition figure: its admissions FAQ says official fee details are given by the Admissions Office (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists DCE's other charges: admission fee INR 1,500, establishment charge INR 30,000, hostel room rent INR 15,000 a year, electricity INR 15,000 a year, mess INR 70,000 a year and college transport INR 35,000 to 50,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "DCE's own autonomous curriculum for Computer Science and Engineering (Cyber Security), set by the college's Boards of Studies, with college-run internal assessment tests and end-semester examinations. The department page lists cryptography and cyber security, data science, DBMS and programming laboratories. Anna University, Chennai awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "dce-btech-information-technology",
+          "canonicalCourseSlug": "be-btech-information-technology",
+          "officialTitle": "B.Tech Information Technology, Dhanalakshmi College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-26",
+            "notes": "Dhanalakshmi College of Engineering (DCE) publishes no tuition figure: its admissions FAQ says official fee details are given by the Admissions Office (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists DCE's other charges: admission fee INR 1,500, establishment charge INR 30,000, hostel room rent INR 15,000 a year, electricity INR 15,000 a year, mess INR 70,000 a year and college transport INR 35,000 to 50,000 a year."
+          },
+          "officialProgramUrl": "https://dce.edu.in/department-of-information-technology/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for every DCE programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1405, branch code IT) or the college's management quota. AICTE approves an intake of 90 for 2026-27; TNEA 2026 lists the branch as started in 2024.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.Tech Information Technology at Dhanalakshmi College of Engineering (DCE) is a four-year, eight-semester degree at Manimangalam near Tambaram, Chennai; DCE sets the syllabus and exams as an autonomous college and Anna University awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission, and DCE's admissions page repeats the same minimum marks.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders may apply for lateral entry to the third semester through TNEA Lateral Entry counselling"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1405 with branch IT, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, contact the DCE admissions office or submit the enquiry form on dce.edu.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. DCE's own 2026-27 calendar started first-year classes with a bridge course on 1 September 2026.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 50000,
+              "status": "indicative",
+              "period": "academic_year",
+              "componentBasis": "Third-party GetMyUni listing for Dhanalakshmi College of Engineering (DCE), Chennai states B.E. tuition of INR 50,000 per annum and lists BE in IT at INR 2,00,000 for the 4-year course. Recorded as the stated yearly tuition; not an official college or fee-committee tariff; quota, components and exclusions unstated.",
+              "audience": "domestic",
+              "category": "Reported general B.E./B.Tech tuition; TNEA government-quota versus management-quota basis not stated",
+              "academicYear": "Unstated; listing titled 2026",
+              "sourceUrl": "https://getmyuni.com/college/dhanalakshmi-college-of-engineering-dce-chennai-courses-fees",
+              "sourceLabel": "GetMyUni DCE (Dhanalakshmi College of Engineering) courses and fees 2026 listing (Grade C)",
+              "verifiedAt": "2026-10-26"
+            }
+          },
+          "medium": "English",
+          "mediumNote": "DCE's AISHE 2024-25 return records every programme as not offered in an Indian language, and the college publishes its programmes and admissions in English.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Dhanalakshmi College of Engineering (DCE) publishes no tuition figure: its admissions FAQ says official fee details are given by the Admissions Office (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists DCE's other charges: admission fee INR 1,500, establishment charge INR 30,000, hostel room rent INR 15,000 a year, electricity INR 15,000 a year, mess INR 70,000 a year and college transport INR 35,000 to 50,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "DCE's own autonomous curriculum for Information Technology, set by the college's Boards of Studies, with college-run internal assessment tests and end-semester examinations. Anna University, Chennai awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "dce-be-electronics-communication-engineering",
+          "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+          "officialTitle": "B.E. Electronics and Communication Engineering, Dhanalakshmi College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-26",
+            "notes": "Dhanalakshmi College of Engineering (DCE) publishes no tuition figure: its admissions FAQ says official fee details are given by the Admissions Office (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists DCE's other charges: admission fee INR 1,500, establishment charge INR 30,000, hostel room rent INR 15,000 a year, electricity INR 15,000 a year, mess INR 70,000 a year and college transport INR 35,000 to 50,000 a year."
+          },
+          "officialProgramUrl": "https://dce.edu.in/department-of-electronics-and-communication-engineering-ece/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for every DCE programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1405, branch code EC) or the college's management quota. AICTE approves an intake of 90 for 2026-27; TNEA 2026 lists the branch as started in 2001.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Electronics and Communication Engineering at Dhanalakshmi College of Engineering (DCE) is a four-year, eight-semester degree at Manimangalam near Tambaram, Chennai; DCE sets the syllabus and exams as an autonomous college and Anna University awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission, and DCE's admissions page repeats the same minimum marks.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders may apply for lateral entry to the third semester through TNEA Lateral Entry counselling"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1405 with branch EC, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, contact the DCE admissions office or submit the enquiry form on dce.edu.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. DCE's own 2026-27 calendar started first-year classes with a bridge course on 1 September 2026.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 50000,
+              "status": "indicative",
+              "period": "academic_year",
+              "componentBasis": "Third-party GetMyUni listing for Dhanalakshmi College of Engineering (DCE), Chennai states B.E. tuition of INR 50,000 per annum and lists BE in Electronics & Communication Engineering at INR 2,00,000 for the 4-year course. Recorded as the stated yearly tuition; not an official college or fee-committee tariff; quota, components and exclusions unstated.",
+              "audience": "domestic",
+              "category": "Reported general B.E./B.Tech tuition; TNEA government-quota versus management-quota basis not stated",
+              "academicYear": "Unstated; listing titled 2026",
+              "sourceUrl": "https://getmyuni.com/college/dhanalakshmi-college-of-engineering-dce-chennai-courses-fees",
+              "sourceLabel": "GetMyUni DCE (Dhanalakshmi College of Engineering) courses and fees 2026 listing (Grade C)",
+              "verifiedAt": "2026-10-26"
+            }
+          },
+          "medium": "English",
+          "mediumNote": "DCE's AISHE 2024-25 return records every programme as not offered in an Indian language, and the college publishes its programmes and admissions in English.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Dhanalakshmi College of Engineering (DCE) publishes no tuition figure: its admissions FAQ says official fee details are given by the Admissions Office (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists DCE's other charges: admission fee INR 1,500, establishment charge INR 30,000, hostel room rent INR 15,000 a year, electricity INR 15,000 a year, mess INR 70,000 a year and college transport INR 35,000 to 50,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "DCE's own autonomous curriculum for Electronics and Communication Engineering, set by the college's Boards of Studies, with college-run internal assessment tests and end-semester examinations. The department page lists communication systems, digital signal processing, microprocessor and microcontroller, microwave and optical, and electronic circuits laboratories. Anna University, Chennai awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "dce-be-electrical-electronics-engineering",
+          "canonicalCourseSlug": "be-btech-electrical-electronics-engineering",
+          "officialTitle": "B.E. Electrical and Electronics Engineering, Dhanalakshmi College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-26",
+            "notes": "Dhanalakshmi College of Engineering (DCE) publishes no tuition figure: its admissions FAQ says official fee details are given by the Admissions Office (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists DCE's other charges: admission fee INR 1,500, establishment charge INR 30,000, hostel room rent INR 15,000 a year, electricity INR 15,000 a year, mess INR 70,000 a year and college transport INR 35,000 to 50,000 a year."
+          },
+          "officialProgramUrl": "https://dce.edu.in/department-of-electrical-and-electronics-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for every DCE programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1405, branch code EE) or the college's management quota. AICTE approves an intake of 30 for 2026-27; TNEA 2026 lists the branch as started in 2001.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Electrical and Electronics Engineering at Dhanalakshmi College of Engineering (DCE) is a four-year, eight-semester degree at Manimangalam near Tambaram, Chennai; DCE sets the syllabus and exams as an autonomous college and Anna University awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission, and DCE's admissions page repeats the same minimum marks.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders may apply for lateral entry to the third semester through TNEA Lateral Entry counselling"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1405 with branch EE, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, contact the DCE admissions office or submit the enquiry form on dce.edu.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. DCE's own 2026-27 calendar started first-year classes with a bridge course on 1 September 2026.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 50000,
+              "status": "indicative",
+              "period": "academic_year",
+              "componentBasis": "Third-party GetMyUni listing for Dhanalakshmi College of Engineering (DCE), Chennai states B.E. tuition of INR 50,000 per annum and lists BE in Electrical and Electronics Engineering at INR 2,00,000 for the 4-year course. Recorded as the stated yearly tuition; not an official college or fee-committee tariff; quota, components and exclusions unstated.",
+              "audience": "domestic",
+              "category": "Reported general B.E./B.Tech tuition; TNEA government-quota versus management-quota basis not stated",
+              "academicYear": "Unstated; listing titled 2026",
+              "sourceUrl": "https://getmyuni.com/college/dhanalakshmi-college-of-engineering-dce-chennai-courses-fees",
+              "sourceLabel": "GetMyUni DCE (Dhanalakshmi College of Engineering) courses and fees 2026 listing (Grade C)",
+              "verifiedAt": "2026-10-26"
+            }
+          },
+          "medium": "English",
+          "mediumNote": "DCE's AISHE 2024-25 return records every programme as not offered in an Indian language, and the college publishes its programmes and admissions in English.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Dhanalakshmi College of Engineering (DCE) publishes no tuition figure: its admissions FAQ says official fee details are given by the Admissions Office (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists DCE's other charges: admission fee INR 1,500, establishment charge INR 30,000, hostel room rent INR 15,000 a year, electricity INR 15,000 a year, mess INR 70,000 a year and college transport INR 35,000 to 50,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "DCE's own autonomous curriculum for Electrical and Electronics Engineering, set by the college's Boards of Studies, with college-run internal assessment tests and end-semester examinations. The department page lists electrical machines, control systems, power electronics, power system simulation, and measurement and instrumentation laboratories. Anna University, Chennai awards the degree."
+            }
+          ]
+        },
+        {
+          "slug": "dce-be-mechanical-engineering",
+          "canonicalCourseSlug": "be-btech-mechanical-engineering",
+          "officialTitle": "B.E. Mechanical Engineering, Dhanalakshmi College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-26",
+            "notes": "Dhanalakshmi College of Engineering (DCE) publishes no tuition figure: its admissions FAQ says official fee details are given by the Admissions Office (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists DCE's other charges: admission fee INR 1,500, establishment charge INR 30,000, hostel room rent INR 15,000 a year, electricity INR 15,000 a year, mess INR 70,000 a year and college transport INR 35,000 to 50,000 a year."
+          },
+          "officialProgramUrl": "https://dce.edu.in/department-of-mechanical-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for every DCE programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1405, branch code ME) or the college's management quota. AICTE approves an intake of 30 for 2026-27; TNEA 2026 lists the branch as started in 2011.",
+            "verifiedAt": "2026-10-26",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Mechanical Engineering at Dhanalakshmi College of Engineering (DCE) is a four-year, eight-semester degree at Manimangalam near Tambaram, Chennai; DCE sets the syllabus and exams as an autonomous college and Anna University awards the degree. Most seats are filled through TNEA counselling on Class 12 marks; there is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission, and DCE's admissions page repeats the same minimum marks.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders may apply for lateral entry to the third semester through TNEA Lateral Entry counselling"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1405 with branch ME, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, contact the DCE admissions office or submit the enquiry form on dce.edu.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. DCE's own 2026-27 calendar started first-year classes with a bridge course on 1 September 2026.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 50000,
+              "status": "indicative",
+              "period": "academic_year",
+              "componentBasis": "Third-party GetMyUni listing for Dhanalakshmi College of Engineering (DCE), Chennai states B.E. tuition of INR 50,000 per annum and lists BE in Mechanical Engineering at INR 2,00,000 for the 4-year course. Recorded as the stated yearly tuition; not an official college or fee-committee tariff; quota, components and exclusions unstated.",
+              "audience": "domestic",
+              "category": "Reported general B.E./B.Tech tuition; TNEA government-quota versus management-quota basis not stated",
+              "academicYear": "Unstated; listing titled 2026",
+              "sourceUrl": "https://getmyuni.com/college/dhanalakshmi-college-of-engineering-dce-chennai-courses-fees",
+              "sourceLabel": "GetMyUni DCE (Dhanalakshmi College of Engineering) courses and fees 2026 listing (Grade C)",
+              "verifiedAt": "2026-10-26"
+            }
+          },
+          "medium": "English",
+          "mediumNote": "DCE's AISHE 2024-25 return records every programme as not offered in an Indian language, and the college publishes its programmes and admissions in English.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-26",
+          "feeNotes": "Dhanalakshmi College of Engineering (DCE) publishes no tuition figure: its admissions FAQ says official fee details are given by the Admissions Office (checked 26 October 2026), and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists DCE's other charges: admission fee INR 1,500, establishment charge INR 30,000, hostel room rent INR 15,000 a year, electricity INR 15,000 a year, mess INR 70,000 a year and college transport INR 35,000 to 50,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "DCE's own autonomous curriculum for Mechanical Engineering, set by the college's Boards of Studies, with college-run internal assessment tests and end-semester examinations. Anna University, Chennai awards the degree."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "publicField": "identity",
+      "claimText": "AICTE EoA 2026-27 (F.No. Southern/1-46260325361/2026/EOA, 13-Apr-2026): Permanent Id 1-4064279, DHANALAKSHMI COLLEGE OF ENGINEERING, Manimangalam Puducheri Road, Manimangalam, Sriperumbudur Taluk, Kancheepuram Dist., Chennai 601301; Society/Trust DHANALAKSHMI EDUCATIONAL TRUST, 44 Seshachalam Street, Saidapet, Chennai; Private-Self Financing; Southern region; year of establishment 2001; affiliating body Anna University, Chennai for all 10 courses; NRI and International Students approval No for every course.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (DCE)",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AICTE EoA 2026-27 is the computer-generated letter published by the college (file EOA-Report-26-27.pdf, printed 14 May 2026) with a text layer; saved in research/india-source-bundles/dhanalakshmi-college-of-engineering/aicte2627.txt. Direct dce.edu.in PDF downloads return HTTP 403 to curl; read through WebFetch."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "publicField": "identity",
+      "claimText": "Anna University CAI Kancheepuram district list: S.No 9, college code 4107, TNEA code 1405, Dhanalakshmi College of Engineering. Chengalpattu district list separately shows 3105 / TNEA 1322 Dhanalakshmi Srinivasan College of Engineering and Technology.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - Kancheepuram district list",
+      "sourceUrl": "https://www.annauniv.edu/cai/District%20wise/district/Kancheepuram.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Chengalpattu list: https://www.annauniv.edu/cai/District%20wise/district/Chengalpattu.php. Distinct from DSCET (published slug dhanalakshmi-srinivasan-college-of-engineering-and-technology)."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "publicField": "establishedYear",
+      "claimText": "AICTE EoA 2026-27 and AISHE 2024-25 give year of establishment 2001; DCE Genesis page says the college was set up in 2001-2002. Anna University's affiliation disclosure prints 2000.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (DCE)",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "2001 used (AICTE, AISHE and college). AU 2000 conflict recorded."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "publicField": "summary",
+      "claimText": "UGC autonomous colleges list (Tamil Nadu, S.No 1041): Dhanalakshmi College of Engineering, Manimangalam, Tambaram, Chennai 601 301; autonomy from 2025-2026, period 2025-2026 to 2034-2035; Anna University, Chennai.",
+      "status": "verified",
+      "sourceLabel": "UGC - Autonomous colleges list",
+      "sourceUrl": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Cached copy research/india-source-bundles/skasc-20261025/ugc-autonomous-text.txt and dg-vaishnav-college/ugc-autonomy.html. College's own UGC conferment letter not published on dce.edu.in."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "publicField": "summary",
+      "claimText": "TNEA 2026 Information about colleges, p.77: college 1405 Dhanalakshmi College of Engineering (Autonomous), Manimangalam, Chennai 601301; branches AM 60 (2024), IT 90 (2024), AD 180 (2020), CS 180 (2001), EC 90 (2001), EE 30 (2001), ME 30 (2011), SC 60 (2022); none NBA accredited; minority status No; autonomous status Yes.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.77)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Cached text research/india-source-bundles/psg-college-of-technology/tnea-colleges2026.txt lines 9351-9420."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "publicField": "recognitionBadges",
+      "claimText": "AICTE EoA 2026-27 approves DHANALAKSHMI COLLEGE OF ENGINEERING, permanent ID 1-4064279, Private-Self Financing, for 2026-27.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (DCE)",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AICTE EoA 2026-27 is the computer-generated letter published by the college (file EOA-Report-26-27.pdf, printed 14 May 2026) with a text layer; saved in research/india-source-bundles/dhanalakshmi-college-of-engineering/aicte2627.txt. Direct dce.edu.in PDF downloads return HTTP 403 to curl; read through WebFetch."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "publicField": "recognitionBadges",
+      "claimText": "UGC autonomous colleges list: Dhanalakshmi College of Engineering, autonomy 2025-2026 to 2034-2035, Anna University, Chennai. Anna University affiliation disclosure: Section 2(f) Included and Section 12(B) Included, letter 8-578/2017 (CPP-I/C) dated 19-09-2023.",
+      "status": "verified",
+      "sourceLabel": "UGC - Autonomous colleges list",
+      "sourceUrl": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "2(f)/12(B) from https://dce.edu.in/wp-content/uploads/2026/03/AU_Mandatory-Disclosure-DCE-2026.pdf (generated 31-01-2025)."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "publicField": "recognitionBadges",
+      "claimText": "NAAC certificate dated July 12, 2024 (EC(SC)/207/2nd Cycle/TNCOGN100453): Dhanalakshmi College of Engineering, Manimangalam, Tambaram, Chennai, Kanchipuram, affiliated to Anna University, accredited with CGPA of 3.19 on four point scale at A grade, valid up to July 11, 2029.",
+      "status": "verified",
+      "sourceLabel": "NAAC - Certificate of accreditation (DCE)",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/03/NAAC-CERTIFICATE-DCE.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned certificate hosted by the college; visually confirmed A grade, 3.19, 2nd cycle."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "publicField": "recognitionBadges",
+      "claimText": "Anna University CAI Kancheepuram list: Dhanalakshmi College of Engineering, college code 4107, TNEA 1405. TNEA 2026 Round 1 vacancy list shows 1405 with branches AD, AM, CS, EC, EE, IT, ME and SC.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - Kancheepuram district list",
+      "sourceUrl": "https://www.annauniv.edu/cai/District%20wise/district/Kancheepuram.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Vacancy excerpt saved research/india-source-bundles/dhanalakshmi-college-of-engineering/tnea-vacancy-r1-1405.txt; https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "publicField": "campusLifestyle",
+      "claimText": "DCE Life at DCE page: academic blocks for Science and Humanities, CSE and AI&DS, ECE, EEE, Mechanical and Civil; administrative block, auditorium, yoga centre and gym, Wi-Fi campus; central library 1000 sq m, 37,746 volumes, 9,429 titles, DELNET, INFLIBNET; about 25 acres of playground; herbal greenhouse.",
+      "status": "verified",
+      "sourceLabel": "DCE - Life at DCE page",
+      "sourceUrl": "https://dce.edu.in/life-at-dce/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AISHE 2024-25 records total area 13.28 acres (campus) - the 25-acre playground figure is the college's own claim and is not repeated as campus area. https://dce.edu.in/wp-content/uploads/2026/05/C-16567-DCF.pdf"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "publicField": "cityProfile",
+      "claimText": "TNEA 2026 booklet p.77: address Dr VPR Nagar, Manimangalam, Tambaram, Chennai; taluk Sriperumbudur; district Kancheepuram; PIN 601301; 20 km from district HQ; nearest railway station Tambaram, 10 km. College transport page: 16 transport routes. About page: Dhanalakshmi Educational Trust registered in 1998; founder Dr V P Ramamurthi.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.77)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "About: https://dce.edu.in/about-dce/; Life: https://dce.edu.in/life-at-dce/"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "publicField": "practicalExposure",
+      "claimText": "DCE odd-semester 2026-27 calendar (An Autonomous Institution): classes for II and III year from 8 July 2026; Internal Assessment Tests 1 and 2, Model Examinations 1 and 2; end-semester practical examinations from 11 November and theory from 20 November 2026. AICTE EoA requires internship. TNEA 2026 booklet lists Placement 95% (college-furnished, no year/base).",
+      "status": "verified",
+      "sourceLabel": "DCE - Academic calendar, odd semester 2026-27",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/07/Academic-Calendar-July-Dec-2026-Autonomous.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "College admissions page publishes package and count figures that are internally inconsistent (packages up to 30 LPA alongside students placed above 50 LPA); not used."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "publicField": "hostelOverview",
+      "claimText": "TNEA 2026 booklet p.77: boys and girls hostel accommodation yes, permanent; mess both veg and non-veg; mess bill 70,000; room rent 15,000; electricity 15,000 per annum; caution deposit 0; establishment charges 30,000; admission fees 1,500; transport 35,000-50,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.77)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "publicField": "hostelOverview",
+      "claimText": "DCE hostel page: capacity 500 boys, 350 girls; Wi-Fi, RO drinking water, solar water heater, air-conditioned rooms on request, gym and entertainment hall; dining hall capacity 1200. AISHE 2024-25 lists boys hostel capacity 366 and girls 240.",
+      "status": "verified",
+      "sourceLabel": "DCE - Life at DCE page (hostel)",
+      "sourceUrl": "https://dce.edu.in/life-at-dce/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Capacity conflict between college page and AISHE 2024-25; college's current page figure used and attributed."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "publicField": "dietarySupport",
+      "claimText": "TNEA 2026 booklet: type of mess Both (veg/NV) for boys and girls, mess INR 70,000 per annum. DCE herbal greenhouse: herbs integrated into hostel and canteen meals.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.77)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "publicField": "safetyOverview",
+      "claimText": "DCE administration page: Anti-Ragging Committee chaired by Dr Pradeep Kumar A R under a zero-tolerance policy per UGC regulations; Disciplinary Committee; Internal Complaints Committee (Women). IT page: CCTV surveillance across campus and hostel premises. TNEA 2026 lists anti-ragging phone for 1405.",
+      "status": "verified",
+      "sourceLabel": "DCE - Administration page",
+      "sourceUrl": "https://dce.edu.in/administration/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "publicField": "studentSupport",
+      "claimText": "DCE administration page: Grievance Redressal Committee addresses grievances on administration, examinations, evaluation; appeals to the Ombudsman; SC/ST/Others Committee; Student Counsellor Committee. Admissions FAQ 9: eligible students may apply for government and institutional scholarship schemes.",
+      "status": "verified",
+      "sourceLabel": "DCE - Administration page",
+      "sourceUrl": "https://dce.edu.in/administration/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Admissions: https://dce.edu.in/admissions-dce/"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "publicField": "whyChoose",
+      "claimText": "NAAC A (CGPA 3.19) 2nd cycle to 11-07-2029; AICTE 2026-27 UG intakes AD 180, CS 180, AM 60, SC 60, EC 90, IT 90, EE 30, ME 30 = 720; TNEA 2026 hostels permanent for boys and girls; 16 bus routes.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (DCE)",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "publicField": "thingsToConsider",
+      "claimText": "Admissions FAQ 8: 'Official fee details are communicated by the Admissions Office.' TNEA 2026: no NBA accreditation for any 1405 branch. Anna University affiliation disclosure (generated 31-01-2025): students on roll M.E. CAD/CAM 0 in every year; M.E. CSE 1 (first year); M.E. Embedded System Technologies 1 (second year). AICTE 2026-27 marks M.E. CAD/CAM intake 9** (reduced for admissions <=30% for 5 years).",
+      "status": "verified",
+      "sourceLabel": "DCE - Admissions 2026 (FAQ)",
+      "sourceUrl": "https://dce.edu.in/admissions-dce/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "AU disclosure: https://dce.edu.in/wp-content/uploads/2026/03/AU_Mandatory-Disclosure-DCE-2026.pdf"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "publicField": "bestFitFor",
+      "claimText": "TNEA 2026 lists 1405 as autonomous with computing branches CS, AD, AM, SC, IT; NAAC A; Tambaram location; 16 college bus routes.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges (p.77)",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "publicField": "faq",
+      "claimText": "TNEA 2026 brochure: OCI/PIO cardholders who are natives of Tamil Nadu eligible under open competition, not applicable to those born in a foreign country after 04.03.2021; registration fee Rs. 500 (Rs. 250 SC/SCA/ST); report to college within 5 days of allotment. DCE I-year I-semester 2026-27 calendar: Tue 1 September 2026 Commencement of Classes / Bridge Course Day 1.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Schedule: https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf (registration 3 May-5 June 2026; general counselling 20 July-30 August 2026, as in 0115/0119/0356). Calendar (scanned, OCR + visual check): https://dce.edu.in/wp-content/uploads/2026/09/Academic-Calendar-for-I-Year-I-Sem.-2026-2027-.pdf"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "publicField": "faq",
+      "claimText": "TNEA 2026 booklet index: 1322 Dhanalakshmi Srinivasan College of Engineering and Technology (Autonomous), East Coast Road, Poonjeri, Chennai 603104 - a different college from 1405 Dhanalakshmi College of Engineering (Autonomous), Manimangalam; also 2743 Dhanalakshmi Srinivasan College of Engineering (CBE) and 3805 Dhanalakshmi Srinivasan Engineering College, Perambalur.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-computer-science-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-computer-science-engineering",
+      "publicField": "eligibility",
+      "claimText": "DCE admissions page: HSC or equivalent with Mathematics, Physics and Chemistry; OC 45%, BC/BCM/MBC/DNC/SC/SCA/ST 40% (academic and vocational); lateral entry for diploma holders through TNEA Lateral Entry; management quota and sports quota channels.",
+      "status": "verified",
+      "sourceLabel": "DCE - Admissions 2026",
+      "sourceUrl": "https://dce.edu.in/admissions-dce/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "AICTE EoA 2026-27: Computer Science and Engineering intake 180 for 2026-27, affiliating body Anna University, Chennai, NRI No, International Students No. TNEA 2026 booklet p.77 lists 1405 branch CS, started 2001; Round 1 vacancy list shows 1405 branch CS.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (DCE)",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "TNEA booklet: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf. Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. Anna University affiliation disclosure lists the course under DCE code 4107. AICTE EoA 2026-27 is the computer-generated letter published by the college (file EOA-Report-26-27.pdf, printed 14 May 2026) with a text layer; saved in research/india-source-bundles/dhanalakshmi-college-of-engineering/aicte2627.txt. Direct dce.edu.in PDF downloads return HTTP 403 to curl; read through WebFetch."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 tentative schedule: online registration 3 May to 5 June 2026; general academic counselling 20 July to 30 August 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-computer-science-engineering",
+      "publicField": "intake",
+      "claimText": "DCE First Year (I Semester) academic schedule for odd semester 2026-2027 (An Autonomous Institution): Tue 1 September 2026, Commencement of Classes, Bridge Course Day 1; re-opening for II semester 01.02.2027.",
+      "status": "verified",
+      "sourceLabel": "DCE - Academic calendar, I year I semester 2026-27",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/09/Academic-Calendar-for-I-Year-I-Sem.-2026-2027-.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned image PDF; OCR and visual check saved in research/india-source-bundles/dhanalakshmi-college-of-engineering/cal-i-year-2627.txt. DCE is autonomous from 2025-26, so its own calendar applies rather than Anna University's non-autonomous calendar."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-computer-science-engineering",
+      "publicField": "fee",
+      "claimText": "DCE admissions FAQ 8: 'Official fee details are communicated by the Admissions Office.' TNEA 2026 booklet prints no tuition but lists admission fee 1,500, establishment 30,000, room rent 15,000, electricity 15,000, mess 70,000 and transport 35,000-50,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "DCE - Admissions 2026 (FAQ)",
+      "sourceUrl": "https://dce.edu.in/admissions-dce/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "No tuition in the Anna University affiliation disclosure, the AICTE EoA, the AISHE return or any DCE page (checked 2026-10-26). No secondary figure used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-computer-science-engineering",
+      "publicField": "medium",
+      "claimText": "AISHE 2024-25 data capture format (C-16567), programme table: 'Program offered in any Indian language' = No for every programme.",
+      "status": "verified",
+      "sourceLabel": "AISHE - Data capture format 2024-25 (DCE)",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/05/C-16567-DCF.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "DCE Regulations 2023/2024/2025 links on the academic page are placeholders (href '#'), so no regulation clause on medium is published."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-computer-science-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "DCE academic page: autonomous programmes with Regulations 2023, 2024 and 2025 (documents not posted); odd-semester 2026-27 calendar schedules internal assessment tests, model examinations and college end-semester examinations; Anna University awards the degree. Department page labs: compiler, operating systems, networking, internet programming, graphics and multimedia, and DBMS laboratories.",
+      "status": "verified",
+      "sourceLabel": "DCE - Department page",
+      "sourceUrl": "https://dce.edu.in/department-of-computer-science-engineering/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-btech-artificial-intelligence-data-science",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-btech-artificial-intelligence-data-science",
+      "publicField": "eligibility",
+      "claimText": "DCE admissions page: HSC or equivalent with Mathematics, Physics and Chemistry; OC 45%, BC/BCM/MBC/DNC/SC/SCA/ST 40% (academic and vocational); lateral entry for diploma holders through TNEA Lateral Entry; management quota and sports quota channels.",
+      "status": "verified",
+      "sourceLabel": "DCE - Admissions 2026",
+      "sourceUrl": "https://dce.edu.in/admissions-dce/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-btech-artificial-intelligence-data-science",
+      "publicField": "admissions",
+      "claimText": "AICTE EoA 2026-27: Artificial Intelligence and Data Science intake 180 for 2026-27, affiliating body Anna University, Chennai, NRI No, International Students No. TNEA 2026 booklet p.77 lists 1405 branch AD, started 2020; Round 1 vacancy list shows 1405 branch AD.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (DCE)",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "TNEA booklet: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf. Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. Anna University affiliation disclosure lists the course under DCE code 4107. AICTE EoA 2026-27 is the computer-generated letter published by the college (file EOA-Report-26-27.pdf, printed 14 May 2026) with a text layer; saved in research/india-source-bundles/dhanalakshmi-college-of-engineering/aicte2627.txt. Direct dce.edu.in PDF downloads return HTTP 403 to curl; read through WebFetch."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-btech-artificial-intelligence-data-science",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 tentative schedule: online registration 3 May to 5 June 2026; general academic counselling 20 July to 30 August 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-btech-artificial-intelligence-data-science",
+      "publicField": "intake",
+      "claimText": "DCE First Year (I Semester) academic schedule for odd semester 2026-2027 (An Autonomous Institution): Tue 1 September 2026, Commencement of Classes, Bridge Course Day 1; re-opening for II semester 01.02.2027.",
+      "status": "verified",
+      "sourceLabel": "DCE - Academic calendar, I year I semester 2026-27",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/09/Academic-Calendar-for-I-Year-I-Sem.-2026-2027-.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned image PDF; OCR and visual check saved in research/india-source-bundles/dhanalakshmi-college-of-engineering/cal-i-year-2627.txt. DCE is autonomous from 2025-26, so its own calendar applies rather than Anna University's non-autonomous calendar."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-btech-artificial-intelligence-data-science",
+      "publicField": "fee",
+      "claimText": "DCE admissions FAQ 8: 'Official fee details are communicated by the Admissions Office.' TNEA 2026 booklet prints no tuition but lists admission fee 1,500, establishment 30,000, room rent 15,000, electricity 15,000, mess 70,000 and transport 35,000-50,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "DCE - Admissions 2026 (FAQ)",
+      "sourceUrl": "https://dce.edu.in/admissions-dce/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "No tuition in the Anna University affiliation disclosure, the AICTE EoA, the AISHE return or any DCE page (checked 2026-10-26). No secondary figure used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-btech-artificial-intelligence-data-science",
+      "publicField": "medium",
+      "claimText": "AISHE 2024-25 data capture format (C-16567), programme table: 'Program offered in any Indian language' = No for every programme.",
+      "status": "verified",
+      "sourceLabel": "AISHE - Data capture format 2024-25 (DCE)",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/05/C-16567-DCF.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "DCE Regulations 2023/2024/2025 links on the academic page are placeholders (href '#'), so no regulation clause on medium is published."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-btech-artificial-intelligence-data-science",
+      "publicField": "teachingPhases",
+      "claimText": "DCE academic page: autonomous programmes with Regulations 2023, 2024 and 2025 (documents not posted); odd-semester 2026-27 calendar schedules internal assessment tests, model examinations and college end-semester examinations; Anna University awards the degree. Department page labs: data science, DBMS, data structures, object-oriented programming and cryptography and cyber security laboratories.",
+      "status": "verified",
+      "sourceLabel": "DCE - Department page",
+      "sourceUrl": "https://dce.edu.in/department-of-artificial-intelligence-data-science-ai-ds/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-computer-science-engineering-ai-machine-learning",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-computer-science-engineering-ai-machine-learning",
+      "publicField": "eligibility",
+      "claimText": "DCE admissions page: HSC or equivalent with Mathematics, Physics and Chemistry; OC 45%, BC/BCM/MBC/DNC/SC/SCA/ST 40% (academic and vocational); lateral entry for diploma holders through TNEA Lateral Entry; management quota and sports quota channels.",
+      "status": "verified",
+      "sourceLabel": "DCE - Admissions 2026",
+      "sourceUrl": "https://dce.edu.in/admissions-dce/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-computer-science-engineering-ai-machine-learning",
+      "publicField": "admissions",
+      "claimText": "AICTE EoA 2026-27: Computer Science and Engineering (Artificial Intelligence and Machine Learning) intake 60 for 2026-27, affiliating body Anna University, Chennai, NRI No, International Students No. TNEA 2026 booklet p.77 lists 1405 branch AM, started 2024; Round 1 vacancy list shows 1405 branch AM.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (DCE)",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "TNEA booklet: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf. Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. Anna University affiliation disclosure lists the course under DCE code 4107. AICTE EoA 2026-27 is the computer-generated letter published by the college (file EOA-Report-26-27.pdf, printed 14 May 2026) with a text layer; saved in research/india-source-bundles/dhanalakshmi-college-of-engineering/aicte2627.txt. Direct dce.edu.in PDF downloads return HTTP 403 to curl; read through WebFetch."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-computer-science-engineering-ai-machine-learning",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 tentative schedule: online registration 3 May to 5 June 2026; general academic counselling 20 July to 30 August 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-computer-science-engineering-ai-machine-learning",
+      "publicField": "intake",
+      "claimText": "DCE First Year (I Semester) academic schedule for odd semester 2026-2027 (An Autonomous Institution): Tue 1 September 2026, Commencement of Classes, Bridge Course Day 1; re-opening for II semester 01.02.2027.",
+      "status": "verified",
+      "sourceLabel": "DCE - Academic calendar, I year I semester 2026-27",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/09/Academic-Calendar-for-I-Year-I-Sem.-2026-2027-.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned image PDF; OCR and visual check saved in research/india-source-bundles/dhanalakshmi-college-of-engineering/cal-i-year-2627.txt. DCE is autonomous from 2025-26, so its own calendar applies rather than Anna University's non-autonomous calendar."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-computer-science-engineering-ai-machine-learning",
+      "publicField": "fee",
+      "claimText": "DCE admissions FAQ 8: 'Official fee details are communicated by the Admissions Office.' TNEA 2026 booklet prints no tuition but lists admission fee 1,500, establishment 30,000, room rent 15,000, electricity 15,000, mess 70,000 and transport 35,000-50,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "DCE - Admissions 2026 (FAQ)",
+      "sourceUrl": "https://dce.edu.in/admissions-dce/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "No tuition in the Anna University affiliation disclosure, the AICTE EoA, the AISHE return or any DCE page (checked 2026-10-26). No secondary figure used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-computer-science-engineering-ai-machine-learning",
+      "publicField": "medium",
+      "claimText": "AISHE 2024-25 data capture format (C-16567), programme table: 'Program offered in any Indian language' = No for every programme.",
+      "status": "verified",
+      "sourceLabel": "AISHE - Data capture format 2024-25 (DCE)",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/05/C-16567-DCF.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "DCE Regulations 2023/2024/2025 links on the academic page are placeholders (href '#'), so no regulation clause on medium is published."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-computer-science-engineering-ai-machine-learning",
+      "publicField": "teachingPhases",
+      "claimText": "DCE academic page: autonomous programmes with Regulations 2023, 2024 and 2025 (documents not posted); odd-semester 2026-27 calendar schedules internal assessment tests, model examinations and college end-semester examinations; Anna University awards the degree.",
+      "status": "verified",
+      "sourceLabel": "DCE - Department page",
+      "sourceUrl": "https://dce.edu.in/department-of-computer-science-and-engineeringartificial-intelligence-and-machine-learning/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "The department page heading calls the programme 'B.Tech. - Artificial Intelligence and Machine Learning'; AICTE 2026-27, TNEA 2026 and Anna University use B.E. Computer Science and Engineering (Artificial Intelligence and Machine Learning), which is used here."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-computer-science-engineering-cyber-security",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-computer-science-engineering-cyber-security",
+      "publicField": "eligibility",
+      "claimText": "DCE admissions page: HSC or equivalent with Mathematics, Physics and Chemistry; OC 45%, BC/BCM/MBC/DNC/SC/SCA/ST 40% (academic and vocational); lateral entry for diploma holders through TNEA Lateral Entry; management quota and sports quota channels.",
+      "status": "verified",
+      "sourceLabel": "DCE - Admissions 2026",
+      "sourceUrl": "https://dce.edu.in/admissions-dce/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-computer-science-engineering-cyber-security",
+      "publicField": "admissions",
+      "claimText": "AICTE EoA 2026-27: Computer Science and Engineering (Cyber Security) intake 60 for 2026-27, affiliating body Anna University, Chennai, NRI No, International Students No. TNEA 2026 booklet p.77 lists 1405 branch SC, started 2022; Round 1 vacancy list shows 1405 branch SC.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (DCE)",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "TNEA booklet: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf. Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. Anna University affiliation disclosure lists the course under DCE code 4107. AICTE EoA 2026-27 is the computer-generated letter published by the college (file EOA-Report-26-27.pdf, printed 14 May 2026) with a text layer; saved in research/india-source-bundles/dhanalakshmi-college-of-engineering/aicte2627.txt. Direct dce.edu.in PDF downloads return HTTP 403 to curl; read through WebFetch."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-computer-science-engineering-cyber-security",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 tentative schedule: online registration 3 May to 5 June 2026; general academic counselling 20 July to 30 August 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-computer-science-engineering-cyber-security",
+      "publicField": "intake",
+      "claimText": "DCE First Year (I Semester) academic schedule for odd semester 2026-2027 (An Autonomous Institution): Tue 1 September 2026, Commencement of Classes, Bridge Course Day 1; re-opening for II semester 01.02.2027.",
+      "status": "verified",
+      "sourceLabel": "DCE - Academic calendar, I year I semester 2026-27",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/09/Academic-Calendar-for-I-Year-I-Sem.-2026-2027-.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned image PDF; OCR and visual check saved in research/india-source-bundles/dhanalakshmi-college-of-engineering/cal-i-year-2627.txt. DCE is autonomous from 2025-26, so its own calendar applies rather than Anna University's non-autonomous calendar."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-computer-science-engineering-cyber-security",
+      "publicField": "fee",
+      "claimText": "DCE admissions FAQ 8: 'Official fee details are communicated by the Admissions Office.' TNEA 2026 booklet prints no tuition but lists admission fee 1,500, establishment 30,000, room rent 15,000, electricity 15,000, mess 70,000 and transport 35,000-50,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "DCE - Admissions 2026 (FAQ)",
+      "sourceUrl": "https://dce.edu.in/admissions-dce/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "No tuition in the Anna University affiliation disclosure, the AICTE EoA, the AISHE return or any DCE page (checked 2026-10-26). No secondary figure used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-computer-science-engineering-cyber-security",
+      "publicField": "medium",
+      "claimText": "AISHE 2024-25 data capture format (C-16567), programme table: 'Program offered in any Indian language' = No for every programme.",
+      "status": "verified",
+      "sourceLabel": "AISHE - Data capture format 2024-25 (DCE)",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/05/C-16567-DCF.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "DCE Regulations 2023/2024/2025 links on the academic page are placeholders (href '#'), so no regulation clause on medium is published."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-computer-science-engineering-cyber-security",
+      "publicField": "teachingPhases",
+      "claimText": "DCE academic page: autonomous programmes with Regulations 2023, 2024 and 2025 (documents not posted); odd-semester 2026-27 calendar schedules internal assessment tests, model examinations and college end-semester examinations; Anna University awards the degree. Department page labs: cryptography and cyber security, data science, DBMS and programming laboratories.",
+      "status": "verified",
+      "sourceLabel": "DCE - Department page",
+      "sourceUrl": "https://dce.edu.in/department-of-computer-science-and-engineering-cyber-security/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-btech-information-technology",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-btech-information-technology",
+      "publicField": "eligibility",
+      "claimText": "DCE admissions page: HSC or equivalent with Mathematics, Physics and Chemistry; OC 45%, BC/BCM/MBC/DNC/SC/SCA/ST 40% (academic and vocational); lateral entry for diploma holders through TNEA Lateral Entry; management quota and sports quota channels.",
+      "status": "verified",
+      "sourceLabel": "DCE - Admissions 2026",
+      "sourceUrl": "https://dce.edu.in/admissions-dce/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-btech-information-technology",
+      "publicField": "admissions",
+      "claimText": "AICTE EoA 2026-27: Information Technology intake 90 for 2026-27, affiliating body Anna University, Chennai, NRI No, International Students No. TNEA 2026 booklet p.77 lists 1405 branch IT, started 2024; Round 1 vacancy list shows 1405 branch IT.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (DCE)",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "TNEA booklet: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf. Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. Anna University affiliation disclosure lists the course under DCE code 4107. AICTE EoA 2026-27 is the computer-generated letter published by the college (file EOA-Report-26-27.pdf, printed 14 May 2026) with a text layer; saved in research/india-source-bundles/dhanalakshmi-college-of-engineering/aicte2627.txt. Direct dce.edu.in PDF downloads return HTTP 403 to curl; read through WebFetch."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-btech-information-technology",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 tentative schedule: online registration 3 May to 5 June 2026; general academic counselling 20 July to 30 August 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-btech-information-technology",
+      "publicField": "intake",
+      "claimText": "DCE First Year (I Semester) academic schedule for odd semester 2026-2027 (An Autonomous Institution): Tue 1 September 2026, Commencement of Classes, Bridge Course Day 1; re-opening for II semester 01.02.2027.",
+      "status": "verified",
+      "sourceLabel": "DCE - Academic calendar, I year I semester 2026-27",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/09/Academic-Calendar-for-I-Year-I-Sem.-2026-2027-.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned image PDF; OCR and visual check saved in research/india-source-bundles/dhanalakshmi-college-of-engineering/cal-i-year-2627.txt. DCE is autonomous from 2025-26, so its own calendar applies rather than Anna University's non-autonomous calendar."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-btech-information-technology",
+      "publicField": "fee",
+      "claimText": "DCE admissions FAQ 8: 'Official fee details are communicated by the Admissions Office.' TNEA 2026 booklet prints no tuition but lists admission fee 1,500, establishment 30,000, room rent 15,000, electricity 15,000, mess 70,000 and transport 35,000-50,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "DCE - Admissions 2026 (FAQ)",
+      "sourceUrl": "https://dce.edu.in/admissions-dce/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "No tuition in the Anna University affiliation disclosure, the AICTE EoA, the AISHE return or any DCE page (checked 2026-10-26). No secondary figure used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-btech-information-technology",
+      "publicField": "medium",
+      "claimText": "AISHE 2024-25 data capture format (C-16567), programme table: 'Program offered in any Indian language' = No for every programme.",
+      "status": "verified",
+      "sourceLabel": "AISHE - Data capture format 2024-25 (DCE)",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/05/C-16567-DCF.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "DCE Regulations 2023/2024/2025 links on the academic page are placeholders (href '#'), so no regulation clause on medium is published."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-btech-information-technology",
+      "publicField": "teachingPhases",
+      "claimText": "DCE academic page: autonomous programmes with Regulations 2023, 2024 and 2025 (documents not posted); odd-semester 2026-27 calendar schedules internal assessment tests, model examinations and college end-semester examinations; Anna University awards the degree.",
+      "status": "verified",
+      "sourceLabel": "DCE - Department page",
+      "sourceUrl": "https://dce.edu.in/department-of-information-technology/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-electronics-communication-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-electronics-communication-engineering",
+      "publicField": "eligibility",
+      "claimText": "DCE admissions page: HSC or equivalent with Mathematics, Physics and Chemistry; OC 45%, BC/BCM/MBC/DNC/SC/SCA/ST 40% (academic and vocational); lateral entry for diploma holders through TNEA Lateral Entry; management quota and sports quota channels.",
+      "status": "verified",
+      "sourceLabel": "DCE - Admissions 2026",
+      "sourceUrl": "https://dce.edu.in/admissions-dce/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-electronics-communication-engineering",
+      "publicField": "admissions",
+      "claimText": "AICTE EoA 2026-27: Electronics and Communication Engineering intake 90 for 2026-27, affiliating body Anna University, Chennai, NRI No, International Students No. TNEA 2026 booklet p.77 lists 1405 branch EC, started 2001; Round 1 vacancy list shows 1405 branch EC.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (DCE)",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "TNEA booklet: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf. Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. Anna University affiliation disclosure lists the course under DCE code 4107. AICTE EoA 2026-27 is the computer-generated letter published by the college (file EOA-Report-26-27.pdf, printed 14 May 2026) with a text layer; saved in research/india-source-bundles/dhanalakshmi-college-of-engineering/aicte2627.txt. Direct dce.edu.in PDF downloads return HTTP 403 to curl; read through WebFetch."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-electronics-communication-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 tentative schedule: online registration 3 May to 5 June 2026; general academic counselling 20 July to 30 August 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-electronics-communication-engineering",
+      "publicField": "intake",
+      "claimText": "DCE First Year (I Semester) academic schedule for odd semester 2026-2027 (An Autonomous Institution): Tue 1 September 2026, Commencement of Classes, Bridge Course Day 1; re-opening for II semester 01.02.2027.",
+      "status": "verified",
+      "sourceLabel": "DCE - Academic calendar, I year I semester 2026-27",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/09/Academic-Calendar-for-I-Year-I-Sem.-2026-2027-.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned image PDF; OCR and visual check saved in research/india-source-bundles/dhanalakshmi-college-of-engineering/cal-i-year-2627.txt. DCE is autonomous from 2025-26, so its own calendar applies rather than Anna University's non-autonomous calendar."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-electronics-communication-engineering",
+      "publicField": "fee",
+      "claimText": "DCE admissions FAQ 8: 'Official fee details are communicated by the Admissions Office.' TNEA 2026 booklet prints no tuition but lists admission fee 1,500, establishment 30,000, room rent 15,000, electricity 15,000, mess 70,000 and transport 35,000-50,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "DCE - Admissions 2026 (FAQ)",
+      "sourceUrl": "https://dce.edu.in/admissions-dce/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "No tuition in the Anna University affiliation disclosure, the AICTE EoA, the AISHE return or any DCE page (checked 2026-10-26). No secondary figure used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-electronics-communication-engineering",
+      "publicField": "medium",
+      "claimText": "AISHE 2024-25 data capture format (C-16567), programme table: 'Program offered in any Indian language' = No for every programme.",
+      "status": "verified",
+      "sourceLabel": "AISHE - Data capture format 2024-25 (DCE)",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/05/C-16567-DCF.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "DCE Regulations 2023/2024/2025 links on the academic page are placeholders (href '#'), so no regulation clause on medium is published."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-electronics-communication-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "DCE academic page: autonomous programmes with Regulations 2023, 2024 and 2025 (documents not posted); odd-semester 2026-27 calendar schedules internal assessment tests, model examinations and college end-semester examinations; Anna University awards the degree. Department page labs: communication systems, digital signal processing, microprocessor and microcontroller, microwave and optical, and electronic circuits laboratories.",
+      "status": "verified",
+      "sourceLabel": "DCE - Department page",
+      "sourceUrl": "https://dce.edu.in/department-of-electronics-and-communication-engineering-ece/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-electrical-electronics-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-electrical-electronics-engineering",
+      "publicField": "eligibility",
+      "claimText": "DCE admissions page: HSC or equivalent with Mathematics, Physics and Chemistry; OC 45%, BC/BCM/MBC/DNC/SC/SCA/ST 40% (academic and vocational); lateral entry for diploma holders through TNEA Lateral Entry; management quota and sports quota channels.",
+      "status": "verified",
+      "sourceLabel": "DCE - Admissions 2026",
+      "sourceUrl": "https://dce.edu.in/admissions-dce/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-electrical-electronics-engineering",
+      "publicField": "admissions",
+      "claimText": "AICTE EoA 2026-27: Electrical and Electronics Engineering intake 30 for 2026-27, affiliating body Anna University, Chennai, NRI No, International Students No. TNEA 2026 booklet p.77 lists 1405 branch EE, started 2001; Round 1 vacancy list shows 1405 branch EE.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (DCE)",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "TNEA booklet: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf. Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. Anna University affiliation disclosure lists the course under DCE code 4107. AICTE EoA 2026-27 is the computer-generated letter published by the college (file EOA-Report-26-27.pdf, printed 14 May 2026) with a text layer; saved in research/india-source-bundles/dhanalakshmi-college-of-engineering/aicte2627.txt. Direct dce.edu.in PDF downloads return HTTP 403 to curl; read through WebFetch."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-electrical-electronics-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 tentative schedule: online registration 3 May to 5 June 2026; general academic counselling 20 July to 30 August 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-electrical-electronics-engineering",
+      "publicField": "intake",
+      "claimText": "DCE First Year (I Semester) academic schedule for odd semester 2026-2027 (An Autonomous Institution): Tue 1 September 2026, Commencement of Classes, Bridge Course Day 1; re-opening for II semester 01.02.2027.",
+      "status": "verified",
+      "sourceLabel": "DCE - Academic calendar, I year I semester 2026-27",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/09/Academic-Calendar-for-I-Year-I-Sem.-2026-2027-.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned image PDF; OCR and visual check saved in research/india-source-bundles/dhanalakshmi-college-of-engineering/cal-i-year-2627.txt. DCE is autonomous from 2025-26, so its own calendar applies rather than Anna University's non-autonomous calendar."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-electrical-electronics-engineering",
+      "publicField": "fee",
+      "claimText": "DCE admissions FAQ 8: 'Official fee details are communicated by the Admissions Office.' TNEA 2026 booklet prints no tuition but lists admission fee 1,500, establishment 30,000, room rent 15,000, electricity 15,000, mess 70,000 and transport 35,000-50,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "DCE - Admissions 2026 (FAQ)",
+      "sourceUrl": "https://dce.edu.in/admissions-dce/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "No tuition in the Anna University affiliation disclosure, the AICTE EoA, the AISHE return or any DCE page (checked 2026-10-26). No secondary figure used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-electrical-electronics-engineering",
+      "publicField": "medium",
+      "claimText": "AISHE 2024-25 data capture format (C-16567), programme table: 'Program offered in any Indian language' = No for every programme.",
+      "status": "verified",
+      "sourceLabel": "AISHE - Data capture format 2024-25 (DCE)",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/05/C-16567-DCF.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "DCE Regulations 2023/2024/2025 links on the academic page are placeholders (href '#'), so no regulation clause on medium is published."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-electrical-electronics-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "DCE academic page: autonomous programmes with Regulations 2023, 2024 and 2025 (documents not posted); odd-semester 2026-27 calendar schedules internal assessment tests, model examinations and college end-semester examinations; Anna University awards the degree. Department page labs: electrical machines, control systems, power electronics, power system simulation, and measurement and instrumentation laboratories.",
+      "status": "verified",
+      "sourceLabel": "DCE - Department page",
+      "sourceUrl": "https://dce.edu.in/department-of-electrical-and-electronics-engineering/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-mechanical-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-mechanical-engineering",
+      "publicField": "eligibility",
+      "claimText": "DCE admissions page: HSC or equivalent with Mathematics, Physics and Chemistry; OC 45%, BC/BCM/MBC/DNC/SC/SCA/ST 40% (academic and vocational); lateral entry for diploma holders through TNEA Lateral Entry; management quota and sports quota channels.",
+      "status": "verified",
+      "sourceLabel": "DCE - Admissions 2026",
+      "sourceUrl": "https://dce.edu.in/admissions-dce/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-mechanical-engineering",
+      "publicField": "admissions",
+      "claimText": "AICTE EoA 2026-27: Mechanical Engineering intake 30 for 2026-27, affiliating body Anna University, Chennai, NRI No, International Students No. TNEA 2026 booklet p.77 lists 1405 branch ME, started 2011; Round 1 vacancy list shows 1405 branch ME.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (DCE)",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/05/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "TNEA booklet: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf. Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. Anna University affiliation disclosure lists the course under DCE code 4107. AICTE EoA 2026-27 is the computer-generated letter published by the college (file EOA-Report-26-27.pdf, printed 14 May 2026) with a text layer; saved in research/india-source-bundles/dhanalakshmi-college-of-engineering/aicte2627.txt. Direct dce.edu.in PDF downloads return HTTP 403 to curl; read through WebFetch."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-mechanical-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 tentative schedule: online registration 3 May to 5 June 2026; general academic counselling 20 July to 30 August 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-mechanical-engineering",
+      "publicField": "intake",
+      "claimText": "DCE First Year (I Semester) academic schedule for odd semester 2026-2027 (An Autonomous Institution): Tue 1 September 2026, Commencement of Classes, Bridge Course Day 1; re-opening for II semester 01.02.2027.",
+      "status": "verified",
+      "sourceLabel": "DCE - Academic calendar, I year I semester 2026-27",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/09/Academic-Calendar-for-I-Year-I-Sem.-2026-2027-.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "Scanned image PDF; OCR and visual check saved in research/india-source-bundles/dhanalakshmi-college-of-engineering/cal-i-year-2627.txt. DCE is autonomous from 2025-26, so its own calendar applies rather than Anna University's non-autonomous calendar."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-mechanical-engineering",
+      "publicField": "fee",
+      "claimText": "DCE admissions FAQ 8: 'Official fee details are communicated by the Admissions Office.' TNEA 2026 booklet prints no tuition but lists admission fee 1,500, establishment 30,000, room rent 15,000, electricity 15,000, mess 70,000 and transport 35,000-50,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "DCE - Admissions 2026 (FAQ)",
+      "sourceUrl": "https://dce.edu.in/admissions-dce/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "No tuition in the Anna University affiliation disclosure, the AICTE EoA, the AISHE return or any DCE page (checked 2026-10-26). No secondary figure used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-mechanical-engineering",
+      "publicField": "medium",
+      "claimText": "AISHE 2024-25 data capture format (C-16567), programme table: 'Program offered in any Indian language' = No for every programme.",
+      "status": "verified",
+      "sourceLabel": "AISHE - Data capture format 2024-25 (DCE)",
+      "sourceUrl": "https://dce.edu.in/wp-content/uploads/2026/05/C-16567-DCF.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26",
+      "internalNotes": "DCE Regulations 2023/2024/2025 links on the academic page are placeholders (href '#'), so no regulation clause on medium is published."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-mechanical-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "DCE academic page: autonomous programmes with Regulations 2023, 2024 and 2025 (documents not posted); odd-semester 2026-27 calendar schedules internal assessment tests, model examinations and college end-semester examinations; Anna University awards the degree.",
+      "status": "verified",
+      "sourceLabel": "DCE - Department page",
+      "sourceUrl": "https://dce.edu.in/department-of-mechanical-engineering/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-04-26"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-computer-science-engineering",
+      "publicField": "reportedFeeQuote",
+      "claimText": "B.E. Computer Science and Engineering: GetMyUni states B.E. tuition at DCE of INR 50,000 per annum and lists BE in CSE at INR 2,00,000 for 4 years; indicative academic_year quote, tariff year unstated (page titled 2026).",
+      "status": "indicative",
+      "sourceLabel": "GetMyUni DCE (Dhanalakshmi College of Engineering) courses and fees 2026 listing (Grade C)",
+      "sourceUrl": "https://getmyuni.com/college/dhanalakshmi-college-of-engineering-dce-chennai-courses-fees",
+      "sourceGrade": "C",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-01-26",
+      "internalNotes": "Fee pass 2026-10-26: GetMyUni page retrieved (HTTP 200): narrative states 'The tuition fees for B.E at Dhanalakshmi College of Engineering, [DCE] is INR 50,000 per annum'; course table lists BE Mechanical, Civil, CSE, IT, ECE and EEE at INR 2,00,000 (4 years average fees), consistent with 50,000 a year. Corroborated by Campusoption fee-structure page (Computer, Electrical, IT, Electronics at INR 50,000 per year, 2,00,000 total) and Collegedunia search snippet (B.E./B.Tech INR 2,20,000 total). Third-party aggregators, Grade C, indicative only; 50,000 matches the Tamil Nadu fee committee government-quota band for self-financing engineering colleges. Rejected as conflicting: CollegeBatch (2571) course table INR 1,92,000 a year for most branches versus its own summary of INR 87,000 a year. Official sources checked without a tuition figure (original research 2026-10-26): dce.edu.in admissions FAQ, Anna University disclosure, AICTE EoA 2026-27, TNEA 2026 booklet (tuition as per Government norms). GetMyUni lists IT under B.E.; DCE offers it as B.Tech IT (same TNEA branch)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-btech-information-technology",
+      "publicField": "reportedFeeQuote",
+      "claimText": "B.Tech Information Technology: GetMyUni states B.E. tuition at DCE of INR 50,000 per annum and lists BE in IT at INR 2,00,000 for 4 years; indicative academic_year quote, tariff year unstated (page titled 2026).",
+      "status": "indicative",
+      "sourceLabel": "GetMyUni DCE (Dhanalakshmi College of Engineering) courses and fees 2026 listing (Grade C)",
+      "sourceUrl": "https://getmyuni.com/college/dhanalakshmi-college-of-engineering-dce-chennai-courses-fees",
+      "sourceGrade": "C",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-01-26",
+      "internalNotes": "Fee pass 2026-10-26: GetMyUni page retrieved (HTTP 200): narrative states 'The tuition fees for B.E at Dhanalakshmi College of Engineering, [DCE] is INR 50,000 per annum'; course table lists BE Mechanical, Civil, CSE, IT, ECE and EEE at INR 2,00,000 (4 years average fees), consistent with 50,000 a year. Corroborated by Campusoption fee-structure page (Computer, Electrical, IT, Electronics at INR 50,000 per year, 2,00,000 total) and Collegedunia search snippet (B.E./B.Tech INR 2,20,000 total). Third-party aggregators, Grade C, indicative only; 50,000 matches the Tamil Nadu fee committee government-quota band for self-financing engineering colleges. Rejected as conflicting: CollegeBatch (2571) course table INR 1,92,000 a year for most branches versus its own summary of INR 87,000 a year. Official sources checked without a tuition figure (original research 2026-10-26): dce.edu.in admissions FAQ, Anna University disclosure, AICTE EoA 2026-27, TNEA 2026 booklet (tuition as per Government norms). GetMyUni lists IT under B.E.; DCE offers it as B.Tech IT (same TNEA branch)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-electronics-communication-engineering",
+      "publicField": "reportedFeeQuote",
+      "claimText": "B.E. Electronics and Communication Engineering: GetMyUni states B.E. tuition at DCE of INR 50,000 per annum and lists BE in Electronics & Communication Engineering at INR 2,00,000 for 4 years; indicative academic_year quote, tariff year unstated (page titled 2026).",
+      "status": "indicative",
+      "sourceLabel": "GetMyUni DCE (Dhanalakshmi College of Engineering) courses and fees 2026 listing (Grade C)",
+      "sourceUrl": "https://getmyuni.com/college/dhanalakshmi-college-of-engineering-dce-chennai-courses-fees",
+      "sourceGrade": "C",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-01-26",
+      "internalNotes": "Fee pass 2026-10-26: GetMyUni page retrieved (HTTP 200): narrative states 'The tuition fees for B.E at Dhanalakshmi College of Engineering, [DCE] is INR 50,000 per annum'; course table lists BE Mechanical, Civil, CSE, IT, ECE and EEE at INR 2,00,000 (4 years average fees), consistent with 50,000 a year. Corroborated by Campusoption fee-structure page (Computer, Electrical, IT, Electronics at INR 50,000 per year, 2,00,000 total) and Collegedunia search snippet (B.E./B.Tech INR 2,20,000 total). Third-party aggregators, Grade C, indicative only; 50,000 matches the Tamil Nadu fee committee government-quota band for self-financing engineering colleges. Rejected as conflicting: CollegeBatch (2571) course table INR 1,92,000 a year for most branches versus its own summary of INR 87,000 a year. Official sources checked without a tuition figure (original research 2026-10-26): dce.edu.in admissions FAQ, Anna University disclosure, AICTE EoA 2026-27, TNEA 2026 booklet (tuition as per Government norms). GetMyUni lists IT under B.E.; DCE offers it as B.Tech IT (same TNEA branch)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-electrical-electronics-engineering",
+      "publicField": "reportedFeeQuote",
+      "claimText": "B.E. Electrical and Electronics Engineering: GetMyUni states B.E. tuition at DCE of INR 50,000 per annum and lists BE in Electrical and Electronics Engineering at INR 2,00,000 for 4 years; indicative academic_year quote, tariff year unstated (page titled 2026).",
+      "status": "indicative",
+      "sourceLabel": "GetMyUni DCE (Dhanalakshmi College of Engineering) courses and fees 2026 listing (Grade C)",
+      "sourceUrl": "https://getmyuni.com/college/dhanalakshmi-college-of-engineering-dce-chennai-courses-fees",
+      "sourceGrade": "C",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-01-26",
+      "internalNotes": "Fee pass 2026-10-26: GetMyUni page retrieved (HTTP 200): narrative states 'The tuition fees for B.E at Dhanalakshmi College of Engineering, [DCE] is INR 50,000 per annum'; course table lists BE Mechanical, Civil, CSE, IT, ECE and EEE at INR 2,00,000 (4 years average fees), consistent with 50,000 a year. Corroborated by Campusoption fee-structure page (Computer, Electrical, IT, Electronics at INR 50,000 per year, 2,00,000 total) and Collegedunia search snippet (B.E./B.Tech INR 2,20,000 total). Third-party aggregators, Grade C, indicative only; 50,000 matches the Tamil Nadu fee committee government-quota band for self-financing engineering colleges. Rejected as conflicting: CollegeBatch (2571) course table INR 1,92,000 a year for most branches versus its own summary of INR 87,000 a year. Official sources checked without a tuition figure (original research 2026-10-26): dce.edu.in admissions FAQ, Anna University disclosure, AICTE EoA 2026-27, TNEA 2026 booklet (tuition as per Government norms). GetMyUni lists IT under B.E.; DCE offers it as B.Tech IT (same TNEA branch)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhanalakshmi-college-of-engineering",
+      "programmeSlug": "dce-be-mechanical-engineering",
+      "publicField": "reportedFeeQuote",
+      "claimText": "B.E. Mechanical Engineering: GetMyUni states B.E. tuition at DCE of INR 50,000 per annum and lists BE in Mechanical Engineering at INR 2,00,000 for 4 years; indicative academic_year quote, tariff year unstated (page titled 2026).",
+      "status": "indicative",
+      "sourceLabel": "GetMyUni DCE (Dhanalakshmi College of Engineering) courses and fees 2026 listing (Grade C)",
+      "sourceUrl": "https://getmyuni.com/college/dhanalakshmi-college-of-engineering-dce-chennai-courses-fees",
+      "sourceGrade": "C",
+      "checkedAt": "2026-10-26",
+      "reviewBy": "2027-01-26",
+      "internalNotes": "Fee pass 2026-10-26: GetMyUni page retrieved (HTTP 200): narrative states 'The tuition fees for B.E at Dhanalakshmi College of Engineering, [DCE] is INR 50,000 per annum'; course table lists BE Mechanical, Civil, CSE, IT, ECE and EEE at INR 2,00,000 (4 years average fees), consistent with 50,000 a year. Corroborated by Campusoption fee-structure page (Computer, Electrical, IT, Electronics at INR 50,000 per year, 2,00,000 total) and Collegedunia search snippet (B.E./B.Tech INR 2,20,000 total). Third-party aggregators, Grade C, indicative only; 50,000 matches the Tamil Nadu fee committee government-quota band for self-financing engineering colleges. Rejected as conflicting: CollegeBatch (2571) course table INR 1,92,000 a year for most branches versus its own summary of INR 87,000 a year. Official sources checked without a tuition figure (original research 2026-10-26): dce.edu.in admissions FAQ, Anna University disclosure, AICTE EoA 2026-27, TNEA 2026 booklet (tuition as per Government norms). GetMyUni lists IT under B.E.; DCE offers it as B.Tech IT (same TNEA branch)."
+    }
+  ]
+}

@@ -563,8 +563,10 @@ internally. Do not copy the quote into annual-tuition fields. A precise amount o
 to an unknown display when the evidence supports it; a third-party estimate stays `indicative`.
 
 Add programme evidence with `publicField: "reportedFeeQuote"` and the exact quote source URL.
-A confirmed quote requires Grade A `verified` evidence. An indicative quote requires Grade A or B
-`indicative` evidence. The scoped reader rejects missing, mismatched-source or weaker evidence.
+A confirmed quote requires Grade A `verified` evidence. An indicative quote requires `indicative`
+evidence of any grade: since 2026-10-26 a third-party website (Grade C, e.g. an education portal)
+may support an indicative quote, and pages label every indicative quote "Approx. fees". Grade C
+remains discovery-only for every other claim, and never supports a confirmed fee. The scoped reader rejects missing, mismatched-source or weaker evidence.
 Primary notices explicitly marked tentative also use indicative status. Public display is the native
 amount/range and **Fees** only; source/year/period/component/category remain internal. Existing
 confirmed annual tuition, including native NIL tuition, retains display precedence.

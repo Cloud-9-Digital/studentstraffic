@@ -106,6 +106,11 @@ export type LeadFormProps = {
    * "Country" field is not shown. Used on India-only campaigns.
    */
   lockPhoneToIndia?: boolean;
+  /**
+   * Called when the server action returns success instead of redirecting to
+   * /thank-you (in-page variants such as brochure downloads).
+   */
+  onSuccess?: (state: LeadFormState) => void;
   className?: string;
   children?: React.ReactNode;
 };
@@ -139,6 +144,7 @@ export function LeadForm({
   showNeetCategory = false,
   lockInterest = false,
   lockPhoneToIndia = false,
+  onSuccess,
   className,
   children,
 }: LeadFormProps) {
@@ -146,6 +152,13 @@ export function LeadForm({
     submitLeadAction,
     initialState
   );
+  const onSuccessRef = useRef(onSuccess);
+  useEffect(() => {
+    onSuccessRef.current = onSuccess;
+  }, [onSuccess]);
+  useEffect(() => {
+    if (state.success) onSuccessRef.current?.(state);
+  }, [state]);
   const fieldPrefix = useId();
   const formRef = useRef<HTMLFormElement>(null);
   const startedAtInputRef = useRef<HTMLInputElement>(null);

@@ -1,0 +1,16 @@
+{
+  "university_slug": "sri-ramachandra-institute-of-higher-education-and-research",
+  "university_name": "Sri Ramachandra Institute of Higher Education and Research",
+  "country_slug": "india",
+  "status": "published",
+  "owner_agent_id": "claude-tn-sri-ramachandra-20261025",
+  "claimed_at": "2026-10-25T10:10:25.906Z",
+  "published_at": "2026-10-25T12:24:17.131Z",
+  "programme_count": "98",
+  "payload_file": "content-migrations/0310-india-sri-ramachandra-expansion/payload.json",
+  "published_url": "https://www.studentstraffic.com/university/sri-ramachandra-institute-of-higher-education-and-research",
+  "notes": "India batch 2: health sciences incl. non-MBBS programmes. | Validated offline: 6 foreign-national programmes (BPT, BOT, BSc Applied Psychology, MPH, MSc Clinical Psychology, MBA Hospital & Health Systems Mgmt), 13 FAQs; badges NAAC A++ 3.53 Cy3 (declared Jan 2021, no currency claim), NBA B.Pharm/MBA-HHM, NIRF 2025. MBBS/BDS/B.Pharm omitted: excluded from 2026-27 foreign-national prospectus. Media: official logo + Commons CC BY-SA 4.0 cover ready. | Published via content:migrate --apply 2026-09-21; media applied from research/media-enrichment/india-batch-2-upload-manifest.json. | 2026-10-23: fee-audience correction 0132-india-sri-ramachandra-institute-of-higher-education-and-research-fee-audience supersedes 0103-india-sri-ramachandra-institute-of-higher-education-and-research. | Root-authorised bounded forward expansion25Oct2026; preserve published6/applied0132checkpoint while reusing178-row inventory, verify exact current own-campus medical/nonmedical routes and fees. NoDB/upload/commit. |0305actualnumberedscopedPASS1:98uniqueroutes(6preserved+92new),908evidence,27confirmedannualmedicaltuition+71exactnativequotes,276LFinventory,4approvedneutralfamilies+taxonomy4testsPASS. Original6audience/award/durationpreserved; fullcourseUSDfee-basisandBPTunsupportedNEETclaimcorrected. Rootreviewedofficiallibrarycoverreplacement; logoDBURLpreserved. NoDB/upload/commit. Group27 applied with sourced native fee quotes; genuine new media uploaded, search and caches refreshed; publication connections closed. | 0310 supersedes 0305 (kept as the published historical checkpoint): restores published university narrative, 7 recognition badges/links and 13 FAQs, removes the published catalogue count, repairs glued-year text, and corrects 36 programmes that the 2026-27 foreign-national prospectuses publish from restricted to dual-route global with exact USD full-course reportedFeeQuote plus a separate domestic INR annual charge by audience. 10 FN-listed nursing/audiology/SLP awards held. Offline only: scoped content:validate PASS, no DB/upload/commit. | Applied 2026-10-25 via content:migrate --apply (0310). 98 offerings, 1065 evidence records, scoped search and cache refresh completed.",
+  "batch_id": "tn-group28-20261025",
+  "priority": "high",
+  "migration_id": "0310-india-sri-ramachandra-expansion"
+}

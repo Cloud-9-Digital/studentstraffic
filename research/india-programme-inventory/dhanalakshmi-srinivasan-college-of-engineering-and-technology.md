@@ -126,3 +126,36 @@ All 30 programmes are packaged with `audienceEligibility.availability = "restric
 precedent), with fees `on_request` and the TNEA 2026 hostel, mess and transport charges in the fee
 notes. Mechatronics (new 2026-27) is packaged on AICTE 2026-27 approval plus the TNEA 2026 branch MZ;
 it has no department page, so its official URL is the programmes-offered page.
+
+## Fee pass 2026-10-26
+
+Correction bundle `content-migrations/0375-india-dhanalakshmi-srinivasan-college-of-engineering-and-technology-fees/`
+supersedes 0148. All fees stay `fee.status: "on_request"`; 25 of 30 programmes gain an indicative Grade C
+`admissionsContent.reportedFeeQuote` (pages show "Approx. fees").
+
+Official sources searched, no tuition figure found:
+- dscet.ac.in home page links, `assets/pdf/mandatorydisclosure.pdf` and `assets/pdf/AICTE.pdf` (the AICTE
+  2026-27 application report: only "Fees to be charged ... duly approved by State Govt? Yes", no table),
+  `assets/pdf/DSCETbrouchre-admission.pdf` ("Affordable Fee Structure", no figures).
+- Wayback index of dscet.ac.in: `admission/studentfee` (2021) is only an online-payment page; older
+  brochures (`download/*.pdf`, `admission-24/Brouchure 24-25.pdf`) now 404; Wayback was intermittently offline.
+- DoTE fee-fixation-committee page (https://dte.tn.gov.in/fee-fixation-committee): proposal formats for
+  2024-27 only, no college-wise engineering fee order.
+- TNEA 2026 college booklet and TN MBA/MCA 2026-27 booklet: tuition "as per Government norms".
+
+Third-party figures (Grade C, indicative):
+- CollegeBatch (https://www.collegebatch.com/13357-dhanalakshmi-srinivasan-college-of-engineering-and-technology-fees-structure-courses-chennai,
+  titled 2026, year otherwise unstated): every named B.E./B.Tech branch Rs. 55,000/- per year (Rs. 2.2 lakh
+  total) -> used for 17 Mamallapuram UG programmes. Its PG figures (M.E./M.Tech Rs. 30,000, MBA/MCA Rs. 20,500
+  per year) look stale against 2026-27 peer fee-committee levels and were not used.
+- CollegeDekho (https://www.collegedekho.com/colleges/dhanalakshmi-srinivasan-college-of-engineering-and-technology-courses,
+  "Admission 2026", GQ/MQ listings): MBA INR 90,000, MCA INR 65,000, M.Tech EST INR 70,000, M.E. INR
+  50,000-80,000 per year -> used for the 8 PG programmes. Its UG ranges (B.E. 60,000-1,35,000; B.Tech
+  70,000-1,35,000) are category-level and not used. The page also mixes in the neighbouring arts college.
+- Collegedunia and Shiksha returned 401/403; Careers360 has no DSCET page.
+
+Still without a fee: `dscet-mechatronics` (new 2026-27 branch, not named by any source) and the four Tiruppur
+off-campus UG programmes (`dscet-tir-*`, first intake 2026; no official or third-party figure found).
+
+Packaging note: intakeMonths were normalised to the facet labels (August, September) because the >=0154
+validator rule rejects the 0148 free-text labels; the timing detail already sits in each deadlinesNote.

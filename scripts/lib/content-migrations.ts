@@ -118,8 +118,11 @@ function assertContentFramework(payload: CatalogPayload, migrationId: string, no
   }
 
   for (const evidence of payload.evidence) {
-    if (evidence.sourceGrade === "C") {
-      throw new Error(`${migrationId} includes Grade C evidence for '${evidence.publicField}'. Grade C sources are discovery-only.`);
+    // Grade C (third-party websites) may support only an indicative reported fee quote, which pages
+    // label "Approx. fees". Every other claim still needs an official or credible secondary source.
+    const thirdPartyFeeQuote = evidence.publicField === "reportedFeeQuote" && evidence.status === "indicative";
+    if (evidence.sourceGrade === "C" && !thirdPartyFeeQuote) {
+      throw new Error(`${migrationId} includes Grade C evidence for '${evidence.publicField}'. Grade C sources are discovery-only, except for an indicative reportedFeeQuote.`);
     }
     if (isExpiredReviewDate(evidence.reviewBy, `${migrationId} evidence for '${evidence.publicField}'`, now)) {
       expiredEvidence.push({

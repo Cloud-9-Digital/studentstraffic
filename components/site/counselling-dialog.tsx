@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { Dialog } from "radix-ui";
 import { X } from "lucide-react";
 
+import type { LeadFormState } from "@/app/_actions/submit-lead";
 import type { LeadFormProps } from "@/components/site/lead-form";
 import { LeadForm } from "@/components/site/lead-form";
 import { Button } from "@/components/ui/button";
@@ -32,8 +33,13 @@ export function CounsellingDialog({
   universitySlug,
   notes,
   lockInterest = false,
+  open: controlledOpen,
+  onOpenChange,
+  onLeadSuccess,
+  returnFocusRef,
 }: {
-  triggerContent: React.ReactNode;
+  /** Omit (with `open`/`onOpenChange`) when the caller renders its own trigger. */
+  triggerContent?: React.ReactNode;
   triggerClassName?: string;
   triggerVariant?: React.ComponentProps<typeof Button>["variant"];
   triggerSize?: React.ComponentProps<typeof Button>["size"];
@@ -50,8 +56,20 @@ export function CounsellingDialog({
   notes?: string;
   /** Replaces the course/country selects with hidden inputs — see LeadForm. */
   lockInterest?: boolean;
+  /** Controlled open state, for callers that open the dialog themselves. */
+  open?: boolean;
+  onOpenChange?: (open: boolean) => void;
+  /** In-page variants (brochure downloads) get the result instead of a redirect. */
+  onLeadSuccess?: (state: LeadFormState) => void;
+  /** Element to focus when the dialog closes (e.g. a caller-owned trigger). */
+  returnFocusRef?: React.RefObject<HTMLElement | null>;
 }) {
-  const [open, setOpen] = useState(false);
+  const [uncontrolledOpen, setUncontrolledOpen] = useState(false);
+  const open = controlledOpen ?? uncontrolledOpen;
+  const setOpen = (next: boolean) => {
+    if (controlledOpen === undefined) setUncontrolledOpen(next);
+    onOpenChange?.(next);
+  };
   const contentId = useId();
 
   const openDialog = () => {
@@ -59,7 +77,7 @@ export function CounsellingDialog({
     setOpen(true);
   };
 
-  const trigger = plainTrigger ? (
+  const trigger = triggerContent == null ? null : plainTrigger ? (
     <button
       type="button"
       className={triggerClassName}
@@ -103,6 +121,12 @@ export function CounsellingDialog({
             // dialog container instead; the timer arms on real user input.
             event.preventDefault();
           }}
+          onCloseAutoFocus={(event) => {
+            if (returnFocusRef?.current) {
+              event.preventDefault();
+              returnFocusRef.current.focus();
+            }
+          }}
         >
           <Dialog.Close className="absolute right-5 top-5 z-20 flex h-10 w-10 items-center justify-center rounded-full border border-white/25 bg-white/10 text-white transition-colors hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:right-8 sm:top-8">
             <X className="size-4" />
@@ -132,6 +156,7 @@ export function CounsellingDialog({
               universitySlug={universitySlug}
               notes={notes}
               lockInterest={lockInterest}
+              onSuccess={onLeadSuccess}
               embedded
               emailRequired
               hidePlaceholders

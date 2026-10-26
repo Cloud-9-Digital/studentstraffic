@@ -55,3 +55,16 @@ Reviewed manifest: `research/media-enrichment/vel-tech-2026-10-25.json`.
 Most direct main-site curl/Python requests returned403. Official web retrieval and the public Jina reader recovered the same primary pages/PDFs; original source URLs remain the evidence URLs. Extracted text is under `sources/vel-tech/`. Cross-check the actual linked PDF title/version: an earlier tool link reference returned a different historical PDF until the current hub reference was refreshed. Only the verified current applicable documents above underpin the payload.
 
 Held rows record exact gaps: seven UG entry-criteria gaps; legacy ProfessionalAccounting/MBAIEV/M.TechMachineDesign/ICEngines current scope; two law routes awaiting programme-specific BCI verification/current entry details; doctoral routes require their own degree-specific eligibility,duration and intake verification. UG/PG first-year timing is not transferred to doctorates. No blanket claim is made that all university programmes have NBA accreditation.
+
+## Fee pass 2026-10-26
+
+Outcome: no correction bundle. Latest bundle `0278-india-veltech-native-reported-fees` already gives all 34 published programmes an indicative `reportedFeeQuote` backed by Grade A evidence from the official fee page (https://www.veltech.edu.in/fee-structure/). That is stronger than any Grade C figure, and no confirmed upgrade is possible.
+
+Searched on 2026-10-26:
+- Official fee page, re-read. The B.Tech Phase I/II/III tuition (INR 2,90,000 / 3,10,000 / 3,60,000), PG tables (M.A./M.Sc. 10,000; M.Tech 52,500; Industrial Safety 72,500/1,00,000) and MBA categories 1-4 (1,42,000-2,42,000) are unchanged. None of these tables states an academic year. Only the lateral-entry table ("2025") and the hostel table ("2025-26") carry dates, so confirmed annual tuition cannot be set.
+- International admissions page: SAARC/international group tables (INR, programme fee plus hostel package, concession-based) and USD 4,600/6,600 B.Tech figures. All undated and composite, so they were not used as `additionalFees`.
+- AICTE Mandatory Disclosure PDF (wp-content/uploads/2026/03): 73 pages, no fee table found in the text.
+- VTUEEE 2027 application portal (application.veltech.edu.in/engineering-form): dates only, no fee table. The B.Tech brochure PDF found online is the 2024 edition.
+- Aggregators (Grade C): College Disha lists a "2026 Phase-1" B.Tech tuition of 2,10,000 (total 2,30,000), which conflicts with the official page. Zollege and Careers360 echo 2,90,000, undated. None was adopted, because the official Grade A quotes take precedence.
+
+Next step: a dated 2026-27 or 2027-28 official fee notice or VTUEEE brochure is needed before any programme can move to confirmed.

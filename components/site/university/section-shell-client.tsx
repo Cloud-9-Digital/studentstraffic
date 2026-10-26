@@ -42,6 +42,7 @@ type Props = {
   recognitionBadge?: string;
   lastVerifiedAt: string;
   author?: Author | null;
+  hasBrochure?: boolean;
   content: ReactNode;
 };
 
@@ -88,6 +89,7 @@ export function UniversitySectionShellClient(props: Props) {
         author={props.author}
         countrySlug={props.countrySlug}
         courseSlug={props.courseSlug}
+        hasBrochure={props.hasBrochure}
       />
 
       <UniversityPageNav

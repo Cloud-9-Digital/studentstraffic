@@ -1,0 +1,788 @@
+[
+  {
+    "slug": "sriher-chennai-bachelor-of-physiotherapy",
+    "officialTitle": "Bachelor of Physiotherapy (BPT)",
+    "durationYears": 5,
+    "amountUSD": 26500,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf",
+    "domesticAdditionalFees": [],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-chennai-bachelor-of-occupational-therapy",
+    "officialTitle": "Bachelor of Occupational Therapy (BOT)",
+    "durationYears": 5,
+    "amountUSD": 26500,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf",
+    "domesticAdditionalFees": [],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-chennai-bsc-applied-psychology",
+    "officialTitle": "B.Sc. Applied Psychology",
+    "durationYears": 3,
+    "amountUSD": 14000,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf",
+    "domesticAdditionalFees": [],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-chennai-master-of-public-health",
+    "officialTitle": "Master of Public Health (MPH)",
+    "durationYears": 2,
+    "amountUSD": 7000,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-chennai-msc-clinical-psychology",
+    "officialTitle": "M.Sc. Clinical Psychology",
+    "durationYears": 2,
+    "amountUSD": 9500,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-chennai-mba-hospital-health-systems-management",
+    "officialTitle": "M.B.A. Hospital and Health Systems Management",
+    "durationYears": 2,
+    "amountUSD": 14000,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-b-sc-hons-biomedical-sciences",
+    "officialTitle": "B.Sc. (Hons.) Biomedical Sciences",
+    "durationYears": 4,
+    "amountUSD": 14000,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 150000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-b-sc-hons-medical-microbiology-and-applied-molecular-biology",
+    "officialTitle": "B.Sc. (Hons.) Medical Microbiology and Applied Molecular Biology",
+    "durationYears": 4,
+    "amountUSD": 10500,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 150000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-b-sc-hons-medical-biotechnology",
+    "officialTitle": "B.Sc. (Hons.) Medical Biotechnology",
+    "durationYears": 4,
+    "amountUSD": 16000,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 200000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-b-sc-hons-environmental-health-sciences",
+    "officialTitle": "B.Sc. (Hons.) Environmental Health Sciences",
+    "durationYears": 4,
+    "amountUSD": 5500,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 75000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-b-sc-hons-clinical-research",
+    "officialTitle": "B.Sc. (Hons.) Clinical Research",
+    "durationYears": 4,
+    "amountUSD": 5500,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 75000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-b-sc-hons-sports-and-exercise-sciences",
+    "officialTitle": "B.Sc. (Hons.) Sports and Exercise Sciences",
+    "durationYears": 4,
+    "amountUSD": 5500,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 75000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-b-sc-hons-bioinformatics",
+    "officialTitle": "B.Sc. (Hons.) Bioinformatics",
+    "durationYears": 4,
+    "amountUSD": 8000,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 135000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-b-com-hons",
+    "officialTitle": "B.Com. (Hons.)",
+    "durationYears": 4,
+    "amountUSD": 7000,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 75000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-b-sc-hons-allied-health-sciences",
+    "officialTitle": "B.Sc. (Hons.) Allied Health Sciences",
+    "durationYears": 4,
+    "amountUSD": 9000,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 125000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-master-of-medical-laboratory-science",
+    "officialTitle": "Master of Medical Laboratory Science",
+    "durationYears": 2,
+    "amountUSD": 5500,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 150000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-master-of-dialysis-therapy",
+    "officialTitle": "Master of Dialysis Therapy",
+    "durationYears": 2,
+    "amountUSD": 9500,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 200000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-master-of-medical-radiology-and-imaging-technology",
+    "officialTitle": "Master of Medical Radiology and Imaging Technology",
+    "durationYears": 2,
+    "amountUSD": 12000,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 200000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-master-of-advanced-care-paramedics",
+    "officialTitle": "Master of Advanced Care Paramedics",
+    "durationYears": 2,
+    "amountUSD": 5500,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 150000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-master-of-optometry",
+    "officialTitle": "Master of Optometry",
+    "durationYears": 2,
+    "amountUSD": 7000,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 200000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-master-of-nutrition-and-dietetics",
+    "officialTitle": "Master of Nutrition and Dietetics",
+    "durationYears": 2,
+    "amountUSD": 7000,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 150000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-m-sc-medical-anatomy",
+    "officialTitle": "M.Sc. Medical Anatomy",
+    "durationYears": 3,
+    "amountUSD": 8000,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 150000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-m-sc-medical-physiology",
+    "officialTitle": "M.Sc. Medical Physiology",
+    "durationYears": 3,
+    "amountUSD": 8000,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 150000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-m-sc-medical-biochemistry",
+    "officialTitle": "M.Sc. Medical Biochemistry",
+    "durationYears": 3,
+    "amountUSD": 8000,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 150000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-m-sc-medical-microbiology-and-applied-molecular-biology",
+    "officialTitle": "M.Sc. Medical Microbiology and Applied Molecular Biology",
+    "durationYears": 3,
+    "amountUSD": 14000,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 200000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-m-sc-neuroscience",
+    "officialTitle": "M.Sc. Neuroscience",
+    "durationYears": 2,
+    "amountUSD": 5500,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 150000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-m-sc-urology-technology",
+    "officialTitle": "M.Sc. Urology Technology",
+    "durationYears": 2,
+    "amountUSD": 5500,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 150000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-m-sc-human-genetics",
+    "officialTitle": "M.Sc. Human Genetics",
+    "durationYears": 2,
+    "amountUSD": 7000,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 150000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-m-sc-biotechnology",
+    "officialTitle": "M.Sc. Biotechnology",
+    "durationYears": 2,
+    "amountUSD": 6000,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 125000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-m-sc-perfusion-technology",
+    "officialTitle": "M.Sc. Perfusion Technology",
+    "durationYears": 2,
+    "amountUSD": 7000,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 150000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-m-sc-applied-child-development",
+    "officialTitle": "M.Sc. Applied Child Development",
+    "durationYears": 2,
+    "amountUSD": 7000,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 200000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-m-sc-biomedical-sciences",
+    "officialTitle": "M.Sc. Biomedical Sciences",
+    "durationYears": 2,
+    "amountUSD": 5500,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 150000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-m-sc-clinical-research",
+    "officialTitle": "M.Sc. Clinical Research",
+    "durationYears": 2,
+    "amountUSD": 5500,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 150000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-m-sc-medical-psychology",
+    "officialTitle": "M.Sc. Medical Psychology",
+    "durationYears": 2,
+    "amountUSD": 7000,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 150000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-m-sc-counselling-psychology",
+    "officialTitle": "M.Sc. Counselling Psychology",
+    "durationYears": 2,
+    "amountUSD": 7000,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 150000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-m-sc-wellness-and-health-coaching",
+    "officialTitle": "M.Sc. Wellness and Health Coaching",
+    "durationYears": 2,
+    "amountUSD": 5500,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 150000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-m-sc-stem-cell-and-regenerative-biology",
+    "officialTitle": "M.Sc. Stem Cell and Regenerative Biology",
+    "durationYears": 2,
+    "amountUSD": 5500,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 150000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-m-sc-sports-and-exercise-psychology",
+    "officialTitle": "M.Sc. Sports and Exercise Psychology",
+    "durationYears": 2,
+    "amountUSD": 5500,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 150000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-m-sc-forensic-science",
+    "officialTitle": "M.Sc. Forensic Science",
+    "durationYears": 2,
+    "amountUSD": 5500,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 150000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-m-sc-critical-care-technology",
+    "officialTitle": "M.Sc. Critical Care Technology",
+    "durationYears": 2,
+    "amountUSD": 5500,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 150000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-master-of-social-work",
+    "officialTitle": "Master of Social Work",
+    "durationYears": 2,
+    "amountUSD": 3500,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 100000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  },
+  {
+    "slug": "sriher-m-sc-medical-bioinformatics",
+    "officialTitle": "M.Sc. Medical Bioinformatics",
+    "durationYears": 2,
+    "amountUSD": 4500,
+    "period": "full_course",
+    "audience": "international",
+    "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+    "domesticAdditionalFees": [
+      {
+        "audience": "domestic",
+        "currency": "INR",
+        "annualAmount": 125000,
+        "academicYear": "2026-27",
+        "verifiedAt": "2026-10-25",
+        "notes": "2026-27 published annual programme charge for the regular domestic/general category at Porur. Basis: Exact 2026\u201327 published fee per academic year for this named programme/category. The table does not isolate tuition from programme charges; no total-course or annual conversion. Application, housing and other separately prescribed charges excluded."
+      }
+    ],
+    "quoteChangedFrom0305": true
+  }
+]

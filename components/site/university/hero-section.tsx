@@ -7,6 +7,7 @@ import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { ScrollToButton } from "@/components/site/scroll-to-button";
 import { ShortlistButton } from "@/components/site/shortlist-button";
 import { FocusApplyRailButton } from "@/components/site/university/apply-panel";
+import { BrochureDownloadButton } from "@/components/site/university/brochure-download-button";
 import { ShareButton } from "@/components/site/university/share-button";
 import { UniversityLogoBadge } from "@/components/site/university/shared";
 import type { Author } from "@/lib/authors";
@@ -34,6 +35,7 @@ export function UniversityHeroSection({
   author,
   countrySlug,
   courseSlug,
+  hasBrochure = false,
 }: {
   universityName: string;
   universitySlug: string;
@@ -46,6 +48,8 @@ export function UniversityHeroSection({
   author?: Author | null;
   countrySlug?: string;
   courseSlug?: string;
+  /** Shows the lead-gated "Download brochure" button. */
+  hasBrochure?: boolean;
 }) {
   const heroSummary = getUniversityHeroSummary(universitySummary);
 
@@ -144,6 +148,14 @@ export function UniversityHeroSection({
               >
                 Explore programmes
               </ScrollToButton>
+              {hasBrochure ? (
+                <BrochureDownloadButton
+                  universityName={universityName}
+                  universitySlug={universitySlug}
+                  countrySlug={countrySlug}
+                  courseSlug={courseSlug}
+                />
+              ) : null}
             </div>
 
             <div className="flex flex-wrap items-center gap-2">

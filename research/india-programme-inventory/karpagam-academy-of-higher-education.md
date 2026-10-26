@@ -17,3 +17,11 @@ Actual same ledger row is validated at0317/33 under codex-karpagam-forward-20261
 ###0325 readability and attribution correction
 
 Actual same ledger validated0325/33 after0317publication. Eligibility bullets on16newroutes rewritten coherently, allqualifications/fees/otherprogrammefields unchanged. Previouslyempty payloadmediaAttribution restored from original accepted0230reviewedmanifest. HostedimageURLkeysremainabsent; existingDBimagecolumns inherited bypublisher omission, not queried/readback. Two mediaevidence rows added,320total, actualscopedPASS0expired. Noassetupload/DB/commit. Applied0317immutable.
+
+## Fee pass 2026-10-26
+
+Correction bundle `0379-india-karpagam-academy-of-higher-education-fees` supersedes 0325. Only `admissionsContent.reportedFeeQuote` and matching evidence were added.
+
+- 10 B.E./B.Tech regular routes (Biomedical, Civil, CSE, CSE Cyber Security, ECE, EEE, Mechanical, AI & Data Science, Biotechnology, Food Technology): confirmed `academic_year` quote ranges from the official 2026–27 FoE schedule (`KAHE-FoE-Fee-structure-2026-2027_v1.pdf`, Grade A), read from the mark-band table (60–69% / 70–79% / 80%+). The schedule still does not separate tuition from other annual charges, so `fee.status` stays `on_request`.
+- B.Sc AI & Machine Learning: the official 2026–27 FASCM schedule (re-read 2026-10-26) still has no AI & ML row. An indicative Grade C quote comes from CollegeBatch's KAHE fees page: INR 1,01,833 per year (3.06 lakh total; the listing describes a 3-year course).
+- B.Com Fin Tech (NSE), still without a fee. Searched: the official FASCM 2026–27 schedule (no row) and the KAHE international admissions page (no fee table; only the refund policy). Careers360's course list, CollegeBatch (Fintech listed with "Get Fee Details" and no amount), Collegedunia (page 404), CollegeSearch, Zollege and CollegeChalo turned up no Fin Tech amount. Other Commerce rates are not transferred.

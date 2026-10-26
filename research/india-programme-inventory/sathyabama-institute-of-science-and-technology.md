@@ -173,3 +173,26 @@ Owner codex-tn-sathyabama-rescue-20261025; existingpublished1/0213pointer/status
 13nativequotes: oldGradeAauthenticatedMarineannualcoursefee70000 structuredacademic_yearonly;12exactChennaiCollegeBatch2yearfull-time totalcoursefees GradeBindicative(full_course), underlyingtariffyearunstated. Noannualisation orSriperumbudurfee transfer; QSPhysicsdescription/eligibilitytemplate inconsistent, notused/averaged. CollegeDuniaPhysics1170002025–26indexed corroboration butdirect403truthful. Other10quote gaps remainonrequest only. Sourcecurrent2026prospectus250MBordinaryfetch timedoutafterpartial56MB; ownincompletefile discarded/accesshashlogretained, nofullPDFclaim orretryneededforcurrentPGHTMLproof.
 
 UGCcurrentoffcampusID148 confirmsVadamangalamSriperumbudur GOI10-3/2024-U3(A)30Dec2024; degree/currentcampusassignments precise. Existingreviewedmedia rights retained/noURLoverwrite/newupload. ProposedneutralMScBioinformatics approvedbyroot, sharedregistryeditwaitsGroup24freeze. Actualscope120inventoryrows unchanged; remaining97genuineholdsnotrepublished. Frozen executable 0297-india-sathyabama-postgraduate-hold-rescue; canonical scopedreaderPASS0warnings,23programmes/13quotes; root publicationpending.
+
+## Fee pass 2026-10-26
+
+Bundle `0363-india-sathyabama-institute-of-science-and-technology-fees` supersedes 0297. Missing-fee
+scope: 10 programmes (`on_request` with no `reportedFeeQuote`). The 13 programmes that already had quotes were left unchanged.
+
+- Official sources rechecked:
+  - `https://www.sathyabama.ac.in/fees_` links only to the login fee portal and `fees.sathyabama.ac.in`
+    (empty response).
+  - The `sist.sathyabama.ac.in/fees2/pg/*.jpg` images still return 404.
+  - The full 2026 prospectus is now downloaded (250,559,995 bytes, 40 pages). It has no fee table,
+    even though the UGC Self-Disclosure PDF says the prospectus includes the fee structure.
+  - The NIRF flipbooks carry no programme tuition.
+  - No NRI or foreign fee table was found.
+- Filled with an indicative Grade C quote. The CollegeBatch Chennai page gives Rs. 1,50,000 per year
+  and Rs. 3 Lakh total for each of the three LL.M. programmes: Constitutional Law and Legal Order,
+  Intellectual Property Laws and Criminal Law.
+- Still without a fee: the 7 Sriperumbudur PG programmes (M.A. English, M.Sc. Visual Communication,
+  Physics, Mathematics, Chemistry, Computer Science, M.Com.).
+  - The Careers360 Sriperumbudur course list shows no PG fees.
+  - CollegeReviewz gives only a campus-wide "INR 75,000 - 2,50,000 per year" range, which was rejected
+    as not programme-specific.
+  - Chennai fees were not transferred to Sriperumbudur.

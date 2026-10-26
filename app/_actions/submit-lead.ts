@@ -22,6 +22,12 @@ import {
   QueryParamMap,
   wasSubmittedTooFast,
 } from "@/app/_actions/form-helpers";
+import {
+  BROCHURE_ACCESS_COOKIE,
+  BROCHURE_CTA_VARIANT,
+  brochureAccessCookieOptions,
+  signBrochureAccessToken,
+} from "@/lib/brochure-access";
 import { getDb } from "@/lib/db/server";
 import { leads } from "@/lib/db/schema";
 import { env } from "@/lib/env";
@@ -41,7 +47,29 @@ import {
 
 export type LeadFormState = {
   error?: string;
+  /**
+   * Set only for in-page variants (brochure downloads) that return to the
+   * client instead of redirecting to /thank-you.
+   */
+  success?: boolean;
+  /** Shared with the server-side Conversions API event for deduplication. */
+  eventId?: string;
 };
+
+function grantBrochureAccess(
+  cookieStore: Awaited<ReturnType<typeof cookies>>,
+  leadId: number,
+) {
+  if (!env.nextAuthSecret) {
+    console.error("Brochure access cookie not set: NEXTAUTH_SECRET is missing.");
+    return;
+  }
+  cookieStore.set(
+    BROCHURE_ACCESS_COOKIE,
+    signBrochureAccessToken(leadId, env.nextAuthSecret),
+    brochureAccessCookieOptions,
+  );
+}
 
 const leadSchema = z.object({
   fullName: z.string().trim().min(2, "Please enter your full name."),
@@ -113,6 +141,12 @@ export async function submitLeadAction(
   }
 
   const data = parsed.data;
+  const isBrochureDownload = data.ctaVariant === BROCHURE_CTA_VARIANT;
+
+  if (isBrochureDownload && !emptyToUndefined(data.universitySlug)) {
+    return { error: "Please reload the page and try again." };
+  }
+
   const headerStore = await headers();
   const residenceCountry = resolveResidenceCountry({
     submitted: data.residenceCountry,
@@ -180,9 +214,9 @@ export async function submitLeadAction(
   const metaEventId = randomUUID();
   const ipAddress = getIpAddress(headerStore);
 
-  try {
-    let insertedLeadId: number | undefined;
+  let insertedLeadId: number | undefined;
 
+  try {
     if (db) {
       const deliveryRoute = getLeadDeliveryRoute(data.sourcePath);
       const shouldSyncCrm = deliveryRoute.crm && env.hasCrmLeadSyncConfig;
@@ -198,6 +232,13 @@ export async function submitLeadAction(
         .limit(1);
 
       if (recentLead) {
+        if (isBrochureDownload) {
+          // Same student, same phone, minutes after an earlier enquiry (for
+          // example on another device): reuse that lead rather than blocking
+          // the download or creating a duplicate CRM lead.
+          grantBrochureAccess(cookieStore, recentLead.id);
+          return { success: true };
+        }
         return {
           error:
             "We already received your enquiry recently. Please wait a few minutes before submitting again.",
@@ -343,6 +384,14 @@ export async function submitLeadAction(
     return {
       error: "We could not save your enquiry right now. Please try once more.",
     };
+  }
+
+  if (isBrochureDownload) {
+    // The brochure dialog stays on the page and starts the download itself.
+    if (insertedLeadId) {
+      grantBrochureAccess(cookieStore, insertedLeadId);
+    }
+    return { success: true, eventId: metaEventId };
   }
 
   const interest =

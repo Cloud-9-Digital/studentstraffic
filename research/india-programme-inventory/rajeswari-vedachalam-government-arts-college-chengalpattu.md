@@ -13,3 +13,9 @@ Rootapprovedgenuinefull686x536RVG1entrancefacadephotofromowninnerhome; complete1
 ## Frozen executable handoff
 
 0345-india-rajeswari-vedachalam-government-arts-college-chengalpattu:15academicUGroutes,feesonrequest. Canonicalnumberedreader0warnings; lockedledger validated15. Rootreviewedmedia pendingparentupload/publication. NoDB.
+
+## Fee pass 2026-10-26
+
+Bundle 0380-india-rajeswari-vedachalam-government-arts-college-chengalpattu-fees supersedes 0345. All 15 UG programmes now carry confirmed NIL tuition (INR 0, domestic, 2026-27). The source is the official TNGASA 2026 booklet (Grade A; same file as officialProgramUrl). Note to the Candidates item 1 says tuition is waived as per government orders. Item 2 says all other fees, including University fees, are payable by students. College 1081011 is listed at p.154. The notes keep compulsory other charges separate. No payable total is inferred.
+
+Searched without a usable figure: own site home/UG (no fee schedule); Careers360 courses (all "-") and BA Tamil page; CollegeSearch fees and MA page ("Get Fees Details" only); Chunocollege ("- / -"); TargetAdmission fees (no amounts); Shiksha (403); CollegeDekho (404); Sikshapedia (404). No CollegeDunia listing was found. No Tamil Nadu special-fee G.O. amount was found. Other colleges' official fee tables were not borrowed.
