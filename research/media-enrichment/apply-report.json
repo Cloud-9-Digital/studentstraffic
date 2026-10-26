@@ -1,8 +1,8 @@
 {
-  "appliedAt": "2026-10-26T15:36:14.295Z",
+  "appliedAt": "2026-10-26T15:49:42.618Z",
   "uploads": {
-    "attempted": 1,
-    "succeeded": 1,
+    "attempted": 2,
+    "succeeded": 2,
     "failed": 0
   },
   "database": {
@@ -11,8 +11,8 @@
   },
   "updatedUniversities": [
     {
-      "universitySlug": "dhanalakshmi-srinivasan-dental-college",
-      "logoUpdated": false,
+      "universitySlug": "sri-venkateswaraa-university",
+      "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
     }

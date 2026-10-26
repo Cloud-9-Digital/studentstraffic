@@ -1,0 +1,50 @@
+{
+  "manifestId": "india-tn-colleges-sri-venkateswaraa-university-media-2026-10-26",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-26",
+  "scope": "logo and cover for content migration 0399-india-sri-venkateswaraa-university",
+  "rules": [
+    "This manifest permits neither direct database writes nor automatic Cloudinary uploads.",
+    "Every sourceUrl is a direct image URL verified HTTP 200 with an image/* content-type on 2026-10-26; re-verify before upload.",
+    "Only a verified Cloudinary URL may be applied to the catalogue; hold entries are excluded."
+  ],
+  "brochure": {
+    "status": "none-found",
+    "notes": "The site-wide Admissions menu links https://svuniversity.ac.in/assets/files/brochure/Admission%20Brochure.pdf, which returns HTTP 404 (text/html, 12,078 bytes) on 2026-10-26, as does the '+'-encoded variant. The only admission PDF reachable is https://svuniversity.ac.in/assets/files/research/admission-popup.pdf (HTTP 200, application/pdf, 268,790 bytes, last modified 2 Sep 2026), a one-page Ph.D. admissions poster for 2026-27, not a prospectus. The 2026-27 fee notification is an HTML page (https://svuniversity.ac.in/admission/fees.php), not a PDF."
+  },
+  "entries": [
+    {
+      "universitySlug": "sri-venkateswaraa-university",
+      "universityName": "Sri Venkateswaraa University",
+      "sourceBatch": "tn-group28-20261025",
+      "migrationId": "0399-india-sri-venkateswaraa-university",
+      "assets": [
+        {
+          "kind": "logo",
+          "status": "ready",
+          "sourceUrl": "https://svuniversity.ac.in/assets/img/logo/logo-mbl.png",
+          "sourceType": "official",
+          "sourcePage": "https://svuniversity.ac.in/",
+          "rightsBasis": "Official university logo (mobile header lock-up) served from the university's own domain (svuniversity.ac.in). No open licence; used only to identify the institution. Checked 2026-10-26: HTTP 200, image/png, 12,863 bytes, 250x70 px, sha256 7e34de5f2c05f2be94930a425c4980879417f7e13de2ba0cedb0be5fe8763930. Rendered on white and visually confirmed legible: gold-and-navy circular seal on the left, dark navy wordmark 'Sri Venkateswaraa University'. CAVEAT: small (250x70); if a square tile is needed, crop the seal (approx. x 0-70) or use the 100x100 seal /assets/img/logo/footer-Logo.png. Rejected: /assets/img/logo/logo.png (same lock-up with white wordmark, invisible on a white tile).",
+          "proposedPublicId": "studentstraffic/universities/sri-venkateswaraa-university/logo",
+          "localCopy": "research/india-source-bundles/sri-venkateswaraa-university-20261025/media/logo-mbl.png"
+        },
+        {
+          "kind": "cover",
+          "status": "ready",
+          "sourceUrl": "https://svuniversity.ac.in/assets/img/student-life/transport-hero.JPG",
+          "sourceType": "official",
+          "sourcePage": "https://svuniversity.ac.in/student-life/transportation.php",
+          "rightsBasis": "Official campus photograph used as the hero of the university's Transportation page on svuniversity.ac.in. No open licence; used only to identify the campus. Checked 2026-10-26: HTTP 200, image/jpeg, 10,502,135 bytes, 6720x4480 px, sha256 3e9a57899bcda2dbb484a00a02c3adb26ad045baf8431f8d3435a90f5b5ee62a (large file; a first download truncated, so confirm the full file loads before upload). Real, unedited exterior: multi-storey white hospital and college blocks of the Red Hills City Campus with the Tamil hospital signboard, palms and street lamps, and three yellow university buses in the foreground lettered 'Sri Venkateswaraa Medcity (a unit of M/s ARR Charitable Trust), Redhills Chennai - 600 067' and 'Sri Venkateswaraa University'. One distant person at the left edge; no identifiable students. Rejected 2026-10-26: infra-hero.JPG (classroom posed group of identifiable students), infra-1/-2.JPG (students at MRI scanner / in pharmacy lab, people-dominated), hostel-hero.png (stock bunk-bed photo, not the campus), college gallery images (students in white coats, people-dominated).",
+          "altText": "Hospital and college blocks of Sri Venkateswaraa University's City Campus at Red Hills, Chennai, with university buses in front",
+          "proposedPublicId": "studentstraffic/universities/sri-venkateswaraa-university/cover",
+          "localCopy": "research/india-source-bundles/sri-venkateswaraa-university-20261025/media/transport-hero-2400.jpg",
+          "localPath": "research/india-source-bundles/sri-venkateswaraa-university-20261025/media/transport-hero-2400.jpg",
+          "sha256": "d5251929afe0c9bd9e4d724711f665a6cd4d252e252d789a16e1870d8d876e02",
+          "uploadFromReviewedLocalOriginal": true,
+          "notes": "Uploaded from the reviewed 2400px downscale of the original, because the 10.5 MB original exceeds the image upload limit."
+        }
+      ]
+    }
+  ]
+}
