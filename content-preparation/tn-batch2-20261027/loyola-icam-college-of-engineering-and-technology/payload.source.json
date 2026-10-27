@@ -1,0 +1,1985 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "be-btech-data-science",
+      "name": "B.E./B.Tech in Data Science",
+      "shortName": "B.E./B.Tech Data Science",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "data-science",
+      "aliases": [
+        "Bachelor of Technology in Data Science",
+        "BEng Data Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "Data science engineering combines computing with methods for analysing data and developing intelligent systems. Compare each institution\u2019s official award, mathematical and programming preparation, laboratory work and project structure before selecting a course.",
+      "metaTitle": "B.E./B.Tech Data Science | Courses and entry routes",
+      "metaDescription": "Compare B.E./B.Tech Data Science courses, institution-specific entry requirements, duration, teaching language and fee categories before shortlisting."
+    },
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "Bachelor of Technology in Computer Science and Engineering",
+        "BEng Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "Computer science engineering covers the development and operation of computing systems, including software and computational methods. Individual offerings differ in their practical projects, specialist subjects and entry routes; the institution\u2019s exact curriculum remains the comparison point.",
+      "metaTitle": "B.E./B.Tech CSE | Courses and entry routes",
+      "metaDescription": "Compare B.E./B.Tech CSE courses, institution-specific entry requirements, duration, teaching language and fee categories before shortlisting."
+    },
+    {
+      "slug": "be-btech-electrical-electronics-engineering",
+      "name": "B.E./B.Tech in Electrical and Electronics Engineering",
+      "shortName": "B.E./B.Tech EEE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electrical-electronics-engineering",
+      "aliases": [
+        "Bachelor of Electrical and Electronic Engineering",
+        "BEng Electrical and Electronic Engineering"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "Electrical and electronics engineering develops knowledge of electrical systems and their electronic components, supported by laboratory and computational work. Compare programme-specific subject coverage, practical facilities, entry requirements and the exact award rather than assuming identical curricula.",
+      "metaTitle": "B.E./B.Tech EEE | Courses and entry routes",
+      "metaDescription": "Compare B.E./B.Tech EEE courses, institution-specific entry requirements, duration, teaching language and fee categories before shortlisting."
+    },
+    {
+      "slug": "be-btech-electronics-communication-engineering",
+      "name": "B.E./B.Tech in Electronics and Communication Engineering",
+      "shortName": "B.E./B.Tech ECE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electronics-communication-engineering",
+      "aliases": [
+        "Bachelor of Electronics and Communication Engineering",
+        "BEng Electronic and Communications Engineering",
+        "Electronics and Telecommunications Engineering"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "Electronics and communication engineering focuses on electronic and communication systems with practical laboratory and project work. The balance of specialist subjects and facilities varies by institution, so compare the exact degree title, curriculum, entry route and duration.",
+      "metaTitle": "B.E./B.Tech ECE | Courses and entry routes",
+      "metaDescription": "Compare B.E./B.Tech ECE courses, institution-specific entry requirements, duration, teaching language and fee categories before shortlisting."
+    },
+    {
+      "slug": "be-btech-information-technology",
+      "name": "B.E./B.Tech in Information Technology",
+      "shortName": "B.E./B.Tech IT",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "information-technology",
+      "aliases": [
+        "Bachelor of Engineering in Information Technology",
+        "Bachelor of Information Technology"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "Information technology degrees combine computing study with the application of software and networked systems. Compare the specific curriculum, practical development work, entry requirements and qualification title because institutions can organize this subject differently.",
+      "metaTitle": "B.E./B.Tech IT | Courses and entry routes",
+      "metaDescription": "Compare B.E./B.Tech IT courses, institution-specific entry requirements, duration, teaching language and fee categories before shortlisting."
+    },
+    {
+      "slug": "be-btech-mechanical-engineering",
+      "name": "B.E./B.Tech in Mechanical Engineering",
+      "shortName": "B.E./B.Tech Mechanical",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "mechanical-engineering",
+      "aliases": [
+        "Bachelor of Mechanical Engineering",
+        "BEng Mechanical Engineering"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "Mechanical engineering combines the study of mechanical systems with design and practical engineering work. Laboratory access, project structure and specialist study vary across institutions; compare each official offering\u2019s curriculum, entry requirements and duration.",
+      "metaTitle": "B.E./B.Tech Mechanical | Courses and entry routes",
+      "metaDescription": "Compare B.E./B.Tech Mechanical courses, institution-specific entry requirements, duration, teaching language and fee categories before shortlisting."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "loyola-icam-college-of-engineering-and-technology",
+      "name": "Loyola-ICAM College of Engineering and Technology",
+      "city": "Chennai",
+      "type": "Private",
+      "establishedYear": 2010,
+      "officialWebsite": "https://licet.ac.in/",
+      "mediaAttribution": {
+        "logo": {
+          "sourceUrl": "https://licet.ac.in/wp-content/uploads/2021/02/Artboard-%E2%80%93-3-1-150x150.png",
+          "rights": "Official LICET institutional identifying crest from its own public website, used solely for factual institution identification. No open licence, ownership transfer or endorsement claimed; follows the repository approved official-brand-asset basis.",
+          "checkedAt": "2026-10-27"
+        },
+        "cover": {
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/47/LICET.jpg",
+          "rights": "LICET (2019), photograph by Praveen rijal, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:LICET.jpg; licence https://creativecommons.org/licenses/by-sa/4.0/. Original unchanged.",
+          "checkedAt": "2026-10-27",
+          "altText": "LICET academic building and landscaped frontage in Chennai, photographed in 2019 by Praveen rijal."
+        }
+      },
+      "summary": "Loyola-ICAM College of Engineering and Technology is a private engineering college in the Loyola campus at Nungambakkam, Chennai. Its six undergraduate awards cover computing, electrical, electronics and mechanical engineering, with an English-medium curriculum and Anna University affiliation.",
+      "campusLifestyle": "The Loyola-campus setting combines engineering departments with a central library, laboratories, hostel facilities and student activities. The library provides print collections, electronic resources and NPTEL learning material. Canteen and kiosk facilities support the teaching day. Cover photo credit: Praveen rijal (2019), CC BY-SA 4.0; https://commons.wikimedia.org/wiki/File:LICET.jpg; https://creativecommons.org/licenses/by-sa/4.0/. Original unchanged.",
+      "cityProfile": "LICET is based at Loyola Campus in Nungambakkam, Chennai, rather than a separate out-of-city engineering campus. The housing decision is between an available campus-hostel place and accommodation with a workable daily journey to Nungambakkam. Students Traffic can help compare that practical choice alongside the selected engineering branch.",
+      "practicalExposure": "Engineering study includes laboratory and project work within the UG curriculum. Electrical engineering uses tools including MATLAB, MiPower, ETAP and Altair Flux; information technology adds virtual laboratories and free/open-source software activities. Mechanical engineering has automation and robotics-related learning. These facilities support academic practice, not a placement or internship guarantee.",
+      "hostelOverview": "Separate boys\u2019 and girls\u2019 hostels operate within the Loyola campus, with kitchens and dining areas. The hostel process follows college admission and includes meeting the hostel director with parents. A course place does not establish a current room allocation or hostel price.",
+      "dietarySupport": "LICET has a canteen and kiosk, and hostel kitchens have separate dining areas. Menus, allergy arrangements and special-diet availability are not established in this profile; allow for food preferences when planning the living budget.",
+      "safetyOverview": "An anti-ragging committee and squads handle complaints, awareness activities and preventive visits. These are defined reporting and prevention arrangements, not a guarantee of personal safety.",
+      "studentSupport": "A student counsellor provides personal support, while class advisers track registration, attendance and academic progress. Students Traffic can help compare the course route, document preparation and living-cost plan before an application.",
+      "whyChoose": [
+        "Six current undergraduate engineering awards at one Chennai campus.",
+        "English-medium teaching under a defined engineering curriculum.",
+        "Department-specific laboratory tools and project-based academic work."
+      ],
+      "thingsToConsider": [
+        "The domestic admission route has TNEA schooling, nativity and category conditions.",
+        "Current annual tuition and hostel charges need a separate cost plan.",
+        "International and NRI pathways are not presented as unrestricted options."
+      ],
+      "bestFitFor": [
+        "Applicants comparing computing and core-engineering branches in Chennai.",
+        "Students comfortable with English-medium engineering coursework and project assessment.",
+        "Families comparing Loyola-campus housing with a daily commute."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "Anna University \u2014 affiliated engineering college"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Anna University Chennai district affiliated-college register",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Chennai.php"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is LICET the same institution as Loyola College?",
+          "answer": "No. LICET is the engineering college within the Loyola-campus setting. Its engineering awards, application route and college identity are separate from Loyola College\u2019s arts and science programmes."
+        },
+        {
+          "question": "Which undergraduate courses are included?",
+          "answer": "The six current awards are B.E. Computer Science and Engineering, Electrical and Electronics Engineering, Electronics and Communication Engineering, Mechanical Engineering, B.Tech. Information Technology, and Artificial Intelligence and Data Science."
+        },
+        {
+          "question": "How long is the standard engineering degree?",
+          "answer": "The HSC-entry undergraduate engineering route runs for four years across eight semesters. Lateral-entry regulations exist, but current lateral-entry vacancies are not represented as an open admission offer here."
+        },
+        {
+          "question": "What is the teaching language?",
+          "answer": "English is used for teaching, examinations, seminars and project reports, except courses specifically taught in another language."
+        },
+        {
+          "question": "What academic marks does the TNEA route require?",
+          "answer": "The academic route uses Mathematics, Physics and Chemistry. The minimum combined average is 45% for the general category and 40% for the listed reserved categories, alongside the other TNEA eligibility conditions."
+        },
+        {
+          "question": "How do applicants approach government-quota seats?",
+          "answer": "Use TNEA registration, certificate verification and counselling, then select LICET and the preferred branch in the choice list. Allocation depends on the counselling process and available seats, not only the minimum qualifying marks."
+        },
+        {
+          "question": "Is there a separate college application?",
+          "answer": "The 2026\u201327 college instructions provide an online application using a valid email and mobile number, academic information and document uploads. Submission follows Class 12 results; this does not by itself establish that a new application window remains open."
+        },
+        {
+          "question": "Can an international applicant use these course listings?",
+          "answer": "These listings describe an evidenced domestic route. TNEA permits specified additional categories, including qualifying Tamil Nadu-native OCI/PIO applicants; the current AICTE approval does not authorize the listed NRI or international supernumerary quotas."
+        },
+        {
+          "question": "Are tuition and accommodation included in one price?",
+          "answer": "No combined current price is established here. Annual tuition is on request, and any dated full-course planning estimate is separate from hostel, mess and other charges."
+        },
+        {
+          "question": "Is campus accommodation available?",
+          "answer": "LICET has separate boys\u2019 and girls\u2019 hostels within the Loyola campus. Hostel allocation follows a separate process after college admission; no current room guarantee or tariff is included."
+        },
+        {
+          "question": "What support is available during study?",
+          "answer": "Personal counselling and academic class-adviser support are available. Students Traffic can help organize a shortlist and document plan before applying, while the college handles its own admissions decisions."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "LICET 2026\u201327 admissions",
+          "url": "https://licet.ac.in/admissions-2026-2027/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "AICTE EOA 2026\u201327",
+          "url": "https://licet.ac.in/wp-content/uploads/2026/06/EOA-Report-2026-27-1.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Anna University affiliated-college register",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Chennai.php",
+          "kind": "recognition",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "LICET UG Regulations 2024",
+          "url": "https://licet.ac.in/wp-content/uploads/2025/05/Regulation_Approved_ACM1.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "TNEA 2026 information brochure",
+          "url": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+          "kind": "government",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "LICET hostel",
+          "url": "https://licet.ac.in/hostel/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "LICET central library",
+          "url": "https://licet.ac.in/central-library/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "LICET counselling",
+          "url": "https://licet.ac.in/counselling/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "LICET anti-ragging",
+          "url": "https://licet.ac.in/anti-ragging/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "LICET Mandatory Disclosure 2024\u201325",
+          "url": "https://licet.ac.in/wp-content/uploads/2025/07/Mandatory-Disclosure_2024-2025_Final.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-10-27"
+        }
+      ],
+      "admissionsContent": {
+        "overview": "Six current undergraduate engineering awards are included under the evidenced domestic first-year route. TNEA and college applications are distinct routes with their own instructions.",
+        "primaryAction": "Compare your engineering branch, document route and living-cost plan with Students Traffic."
+      },
+      "programmes": [
+        {
+          "slug": "licet-btech-artificial-intelligence-and-data-science",
+          "canonicalCourseSlug": "be-btech-data-science",
+          "officialTitle": "B.Tech. Artificial Intelligence and Data Science",
+          "durationYears": 4,
+          "officialProgramUrl": "https://licet.ac.in/artificial-intelligence-and-data-science/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants satisfying the applicable TNEA 2026 first-year route",
+              "Tamil Nadu-native OCI/PIO cardholders eligible for TNEA Open Category, subject to its foreign-birth cutoff",
+              "Sri Lankan Tamil refugees who studied in Tamil Nadu and satisfy the documented TNEA certificate route"
+            ],
+            "restrictions": [
+              "Only the documented 2026 first-year TNEA route is represented; this is not unrestricted foreign/NRI, management-quota or lateral-entry admission.",
+              "The OCI/PIO exception does not apply to candidates born in a foreign country after 4 March 2021. Tamil Nadu native status and the academic conditions must also be met.",
+              "Sri Lankan Tamil refugees must have studied in Tamil Nadu and provide the specified identification/camp-registration alternatives.",
+              "AICTE supernumerary NRI/FN/OCI/Gulf approval is No for 2026\u201327; that quota finding is distinct from the limited ordinary TNEA eligibility exceptions."
+            ],
+            "notes": "Government TNEA 2026 college directory, code 1450 (printed page 108), lists this LICET branch. The common government brochure, printed page 2, positively defines the restricted OCI/PIO and refugee routes. No next-cycle opening or unrestricted international route is asserted.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473"
+          },
+          "admissionsContent": {
+            "overview": "The programme combines artificial intelligence and data-science study within a four-year engineering degree. The department focuses on using data and computational methods to address practical problems.",
+            "eligibility": {
+              "intro": "The academic first-year route uses the HSC qualification and Tamil Nadu engineering-admissions conditions.",
+              "items": [
+                "Pass HSC academic (+1 and +2), or an accepted equivalent, with Mathematics, Physics and Chemistry.",
+                "For the TNEA academic route, the minimum combined average in Mathematics, Physics and Chemistry is 45% for the general category and 40% for the listed reserved categories.",
+                "TNEA nativity, schooling and category conditions apply; a qualifying mark does not guarantee allotment.",
+                "Tamil Nadu-native OCI/PIO applicants use Open Category; the exception excludes those born abroad after 4 March 2021.",
+                "Sri Lankan Tamil refugees who studied in Tamil Nadu may be considered under open competition under the documented certificate route."
+              ]
+            },
+            "applicationSteps": [
+              "For a government-quota seat, register for TNEA and upload the academic and category certificates required for the applicable route.",
+              "Participate in certificate verification, ranking and the assigned online counselling round; enter LICET and the chosen engineering branch in the preference list.",
+              "Confirm the allotted option and complete the reporting and payment instructions within the counselling schedule.",
+              "For the college application route, register with a valid email and mobile number, complete academic details, upload the requested documents and submit after Class 12 results."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marksheet",
+                "HSC first-year (+1) and second-year (+2), or equivalent, marksheets",
+                "Transfer certificate"
+              ],
+              "application": [
+                "TNEA registration details and uploaded original-certificate copies",
+                "Nativity and community certificates where applicable",
+                "Income, first-graduate or special-reservation documents where applicable",
+                "For the Sri Lankan Tamil refugee route: identification certificate from the Headquarters Tahsildar.",
+                "If not registered in a refugee camp: original passport, visa and police-station registration letter."
+              ]
+            },
+            "deadlinesNote": "This profile records verified TNEA 2026 eligibility and the college 2026\u201327 application procedure, not an open application window or a future-cycle offer. Check the next official counselling notice before applying."
+          },
+          "medium": "English",
+          "mediumNote": "English is the medium of instruction, examinations, seminars and project reports, except courses in another language.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "Current annual tuition is on request. The final cost depends on the admission quota and applicable fee schedule. Plan separately for housing, mess and other charges. A dated full-course estimate, where shown, is a planning figure rather than a confirmed annual bill."
+          },
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "Current annual tuition is on request. The final cost depends on the admission quota and applicable fee schedule. Plan separately for housing, mess and other charges. A dated full-course estimate, where shown, is a planning figure rather than a confirmed annual bill.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year undergraduate engineering curriculum",
+              "language": "English",
+              "details": "Eight semesters for the standard HSC-entry route, with curriculum-based laboratory, project and internship components."
+            }
+          ]
+        },
+        {
+          "slug": "licet-be-computer-science-and-engineering",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "B.E. Computer Science and Engineering",
+          "durationYears": 4,
+          "officialProgramUrl": "https://licet.ac.in/computer-science-and-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants satisfying the applicable TNEA 2026 first-year route",
+              "Tamil Nadu-native OCI/PIO cardholders eligible for TNEA Open Category, subject to its foreign-birth cutoff",
+              "Sri Lankan Tamil refugees who studied in Tamil Nadu and satisfy the documented TNEA certificate route"
+            ],
+            "restrictions": [
+              "Only the documented 2026 first-year TNEA route is represented; this is not unrestricted foreign/NRI, management-quota or lateral-entry admission.",
+              "The OCI/PIO exception does not apply to candidates born in a foreign country after 4 March 2021. Tamil Nadu native status and the academic conditions must also be met.",
+              "Sri Lankan Tamil refugees must have studied in Tamil Nadu and provide the specified identification/camp-registration alternatives.",
+              "AICTE supernumerary NRI/FN/OCI/Gulf approval is No for 2026\u201327; that quota finding is distinct from the limited ordinary TNEA eligibility exceptions."
+            ],
+            "notes": "Government TNEA 2026 college directory, code 1450 (printed page 108), lists this LICET branch. The common government brochure, printed page 2, positively defines the restricted OCI/PIO and refugee routes. No next-cycle opening or unrestricted international route is asserted.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473"
+          },
+          "admissionsContent": {
+            "overview": "Computer science study combines software development and computing systems with practical projects. Department activities include Red Hat and AWS academy resources alongside the undergraduate curriculum.",
+            "eligibility": {
+              "intro": "The academic first-year route uses the HSC qualification and Tamil Nadu engineering-admissions conditions.",
+              "items": [
+                "Pass HSC academic (+1 and +2), or an accepted equivalent, with Mathematics, Physics and Chemistry.",
+                "For the TNEA academic route, the minimum combined average in Mathematics, Physics and Chemistry is 45% for the general category and 40% for the listed reserved categories.",
+                "TNEA nativity, schooling and category conditions apply; a qualifying mark does not guarantee allotment.",
+                "Tamil Nadu-native OCI/PIO applicants use Open Category; the exception excludes those born abroad after 4 March 2021.",
+                "Sri Lankan Tamil refugees who studied in Tamil Nadu may be considered under open competition under the documented certificate route."
+              ]
+            },
+            "applicationSteps": [
+              "For a government-quota seat, register for TNEA and upload the academic and category certificates required for the applicable route.",
+              "Participate in certificate verification, ranking and the assigned online counselling round; enter LICET and the chosen engineering branch in the preference list.",
+              "Confirm the allotted option and complete the reporting and payment instructions within the counselling schedule.",
+              "For the college application route, register with a valid email and mobile number, complete academic details, upload the requested documents and submit after Class 12 results."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marksheet",
+                "HSC first-year (+1) and second-year (+2), or equivalent, marksheets",
+                "Transfer certificate"
+              ],
+              "application": [
+                "TNEA registration details and uploaded original-certificate copies",
+                "Nativity and community certificates where applicable",
+                "Income, first-graduate or special-reservation documents where applicable",
+                "For the Sri Lankan Tamil refugee route: identification certificate from the Headquarters Tahsildar.",
+                "If not registered in a refugee camp: original passport, visa and police-station registration letter."
+              ]
+            },
+            "deadlinesNote": "This profile records verified TNEA 2026 eligibility and the college 2026\u201327 application procedure, not an open application window or a future-cycle offer. Check the next official counselling notice before applying.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 220000,
+              "status": "indicative",
+              "period": "full_course",
+              "componentBasis": "Full-course tuition for this named four-year award; the source separately lists INR 240,000 total fees. This is a dated planning quote, not current annual tuition or a hostel-inclusive total.",
+              "audience": "domestic",
+              "category": "General category; quota unspecified",
+              "academicYear": "2025 publication; tariff year unstated",
+              "sourceUrl": "https://www.careers360.com/colleges/loyola-icam-college-of-engineering-and-technology-chennai/fees",
+              "sourceLabel": "Careers360 LICET fees, updated 5 July 2025",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "English",
+          "mediumNote": "English is the medium of instruction, examinations, seminars and project reports, except courses in another language.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "Current annual tuition is on request. The final cost depends on the admission quota and applicable fee schedule. Plan separately for housing, mess and other charges. A dated full-course estimate, where shown, is a planning figure rather than a confirmed annual bill."
+          },
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "Current annual tuition is on request. The final cost depends on the admission quota and applicable fee schedule. Plan separately for housing, mess and other charges. A dated full-course estimate, where shown, is a planning figure rather than a confirmed annual bill.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year undergraduate engineering curriculum",
+              "language": "English",
+              "details": "Eight semesters for the standard HSC-entry route, with curriculum-based laboratory, project and internship components."
+            }
+          ]
+        },
+        {
+          "slug": "licet-be-electrical-and-electronics-engineering",
+          "canonicalCourseSlug": "be-btech-electrical-electronics-engineering",
+          "officialTitle": "B.E. Electrical and Electronics Engineering",
+          "durationYears": 4,
+          "officialProgramUrl": "https://licet.ac.in/electrical-and-electronics-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants satisfying the applicable TNEA 2026 first-year route",
+              "Tamil Nadu-native OCI/PIO cardholders eligible for TNEA Open Category, subject to its foreign-birth cutoff",
+              "Sri Lankan Tamil refugees who studied in Tamil Nadu and satisfy the documented TNEA certificate route"
+            ],
+            "restrictions": [
+              "Only the documented 2026 first-year TNEA route is represented; this is not unrestricted foreign/NRI, management-quota or lateral-entry admission.",
+              "The OCI/PIO exception does not apply to candidates born in a foreign country after 4 March 2021. Tamil Nadu native status and the academic conditions must also be met.",
+              "Sri Lankan Tamil refugees must have studied in Tamil Nadu and provide the specified identification/camp-registration alternatives.",
+              "AICTE supernumerary NRI/FN/OCI/Gulf approval is No for 2026\u201327; that quota finding is distinct from the limited ordinary TNEA eligibility exceptions."
+            ],
+            "notes": "Government TNEA 2026 college directory, code 1450 (printed page 108), lists this LICET branch. The common government brochure, printed page 2, positively defines the restricted OCI/PIO and refugee routes. No next-cycle opening or unrestricted international route is asserted.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473"
+          },
+          "admissionsContent": {
+            "overview": "Electrical and electronics engineering combines electrical-system study with laboratory work. The department identifies MATLAB, MiPower, ETAP and Altair Flux among its computational tools.",
+            "eligibility": {
+              "intro": "The academic first-year route uses the HSC qualification and Tamil Nadu engineering-admissions conditions.",
+              "items": [
+                "Pass HSC academic (+1 and +2), or an accepted equivalent, with Mathematics, Physics and Chemistry.",
+                "For the TNEA academic route, the minimum combined average in Mathematics, Physics and Chemistry is 45% for the general category and 40% for the listed reserved categories.",
+                "TNEA nativity, schooling and category conditions apply; a qualifying mark does not guarantee allotment.",
+                "Tamil Nadu-native OCI/PIO applicants use Open Category; the exception excludes those born abroad after 4 March 2021.",
+                "Sri Lankan Tamil refugees who studied in Tamil Nadu may be considered under open competition under the documented certificate route."
+              ]
+            },
+            "applicationSteps": [
+              "For a government-quota seat, register for TNEA and upload the academic and category certificates required for the applicable route.",
+              "Participate in certificate verification, ranking and the assigned online counselling round; enter LICET and the chosen engineering branch in the preference list.",
+              "Confirm the allotted option and complete the reporting and payment instructions within the counselling schedule.",
+              "For the college application route, register with a valid email and mobile number, complete academic details, upload the requested documents and submit after Class 12 results."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marksheet",
+                "HSC first-year (+1) and second-year (+2), or equivalent, marksheets",
+                "Transfer certificate"
+              ],
+              "application": [
+                "TNEA registration details and uploaded original-certificate copies",
+                "Nativity and community certificates where applicable",
+                "Income, first-graduate or special-reservation documents where applicable",
+                "For the Sri Lankan Tamil refugee route: identification certificate from the Headquarters Tahsildar.",
+                "If not registered in a refugee camp: original passport, visa and police-station registration letter."
+              ]
+            },
+            "deadlinesNote": "This profile records verified TNEA 2026 eligibility and the college 2026\u201327 application procedure, not an open application window or a future-cycle offer. Check the next official counselling notice before applying.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 220000,
+              "status": "indicative",
+              "period": "full_course",
+              "componentBasis": "Full-course tuition for this named four-year award; the source separately lists INR 240,000 total fees. This is a dated planning quote, not current annual tuition or a hostel-inclusive total.",
+              "audience": "domestic",
+              "category": "General category; quota unspecified",
+              "academicYear": "2025 publication; tariff year unstated",
+              "sourceUrl": "https://www.careers360.com/colleges/loyola-icam-college-of-engineering-and-technology-chennai/fees",
+              "sourceLabel": "Careers360 LICET fees, updated 5 July 2025",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "English",
+          "mediumNote": "English is the medium of instruction, examinations, seminars and project reports, except courses in another language.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "Current annual tuition is on request. The final cost depends on the admission quota and applicable fee schedule. Plan separately for housing, mess and other charges. A dated full-course estimate, where shown, is a planning figure rather than a confirmed annual bill."
+          },
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "Current annual tuition is on request. The final cost depends on the admission quota and applicable fee schedule. Plan separately for housing, mess and other charges. A dated full-course estimate, where shown, is a planning figure rather than a confirmed annual bill.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year undergraduate engineering curriculum",
+              "language": "English",
+              "details": "Eight semesters for the standard HSC-entry route, with curriculum-based laboratory, project and internship components."
+            }
+          ]
+        },
+        {
+          "slug": "licet-be-electronics-and-communication-engineering",
+          "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+          "officialTitle": "B.E. Electronics and Communication Engineering",
+          "durationYears": 4,
+          "officialProgramUrl": "https://licet.ac.in/electronics-and-communication-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants satisfying the applicable TNEA 2026 first-year route",
+              "Tamil Nadu-native OCI/PIO cardholders eligible for TNEA Open Category, subject to its foreign-birth cutoff",
+              "Sri Lankan Tamil refugees who studied in Tamil Nadu and satisfy the documented TNEA certificate route"
+            ],
+            "restrictions": [
+              "Only the documented 2026 first-year TNEA route is represented; this is not unrestricted foreign/NRI, management-quota or lateral-entry admission.",
+              "The OCI/PIO exception does not apply to candidates born in a foreign country after 4 March 2021. Tamil Nadu native status and the academic conditions must also be met.",
+              "Sri Lankan Tamil refugees must have studied in Tamil Nadu and provide the specified identification/camp-registration alternatives.",
+              "AICTE supernumerary NRI/FN/OCI/Gulf approval is No for 2026\u201327; that quota finding is distinct from the limited ordinary TNEA eligibility exceptions."
+            ],
+            "notes": "Government TNEA 2026 college directory, code 1450 (printed page 108), lists this LICET branch. The common government brochure, printed page 2, positively defines the restricted OCI/PIO and refugee routes. No next-cycle opening or unrestricted international route is asserted.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473"
+          },
+          "admissionsContent": {
+            "overview": "Electronics and communication engineering develops understanding of electronic and communication systems through the four-year engineering curriculum, with departmental laboratory and project activity.",
+            "eligibility": {
+              "intro": "The academic first-year route uses the HSC qualification and Tamil Nadu engineering-admissions conditions.",
+              "items": [
+                "Pass HSC academic (+1 and +2), or an accepted equivalent, with Mathematics, Physics and Chemistry.",
+                "For the TNEA academic route, the minimum combined average in Mathematics, Physics and Chemistry is 45% for the general category and 40% for the listed reserved categories.",
+                "TNEA nativity, schooling and category conditions apply; a qualifying mark does not guarantee allotment.",
+                "Tamil Nadu-native OCI/PIO applicants use Open Category; the exception excludes those born abroad after 4 March 2021.",
+                "Sri Lankan Tamil refugees who studied in Tamil Nadu may be considered under open competition under the documented certificate route."
+              ]
+            },
+            "applicationSteps": [
+              "For a government-quota seat, register for TNEA and upload the academic and category certificates required for the applicable route.",
+              "Participate in certificate verification, ranking and the assigned online counselling round; enter LICET and the chosen engineering branch in the preference list.",
+              "Confirm the allotted option and complete the reporting and payment instructions within the counselling schedule.",
+              "For the college application route, register with a valid email and mobile number, complete academic details, upload the requested documents and submit after Class 12 results."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marksheet",
+                "HSC first-year (+1) and second-year (+2), or equivalent, marksheets",
+                "Transfer certificate"
+              ],
+              "application": [
+                "TNEA registration details and uploaded original-certificate copies",
+                "Nativity and community certificates where applicable",
+                "Income, first-graduate or special-reservation documents where applicable",
+                "For the Sri Lankan Tamil refugee route: identification certificate from the Headquarters Tahsildar.",
+                "If not registered in a refugee camp: original passport, visa and police-station registration letter."
+              ]
+            },
+            "deadlinesNote": "This profile records verified TNEA 2026 eligibility and the college 2026\u201327 application procedure, not an open application window or a future-cycle offer. Check the next official counselling notice before applying.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 220000,
+              "status": "indicative",
+              "period": "full_course",
+              "componentBasis": "Full-course tuition for this named four-year award; the source separately lists INR 240,000 total fees. This is a dated planning quote, not current annual tuition or a hostel-inclusive total.",
+              "audience": "domestic",
+              "category": "General category; quota unspecified",
+              "academicYear": "2025 publication; tariff year unstated",
+              "sourceUrl": "https://www.careers360.com/colleges/loyola-icam-college-of-engineering-and-technology-chennai/fees",
+              "sourceLabel": "Careers360 LICET fees, updated 5 July 2025",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "English",
+          "mediumNote": "English is the medium of instruction, examinations, seminars and project reports, except courses in another language.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "Current annual tuition is on request. The final cost depends on the admission quota and applicable fee schedule. Plan separately for housing, mess and other charges. A dated full-course estimate, where shown, is a planning figure rather than a confirmed annual bill."
+          },
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "Current annual tuition is on request. The final cost depends on the admission quota and applicable fee schedule. Plan separately for housing, mess and other charges. A dated full-course estimate, where shown, is a planning figure rather than a confirmed annual bill.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year undergraduate engineering curriculum",
+              "language": "English",
+              "details": "Eight semesters for the standard HSC-entry route, with curriculum-based laboratory, project and internship components."
+            }
+          ]
+        },
+        {
+          "slug": "licet-btech-information-technology",
+          "canonicalCourseSlug": "be-btech-information-technology",
+          "officialTitle": "B.Tech. Information Technology",
+          "durationYears": 4,
+          "officialProgramUrl": "https://licet.ac.in/information-technology/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants satisfying the applicable TNEA 2026 first-year route",
+              "Tamil Nadu-native OCI/PIO cardholders eligible for TNEA Open Category, subject to its foreign-birth cutoff",
+              "Sri Lankan Tamil refugees who studied in Tamil Nadu and satisfy the documented TNEA certificate route"
+            ],
+            "restrictions": [
+              "Only the documented 2026 first-year TNEA route is represented; this is not unrestricted foreign/NRI, management-quota or lateral-entry admission.",
+              "The OCI/PIO exception does not apply to candidates born in a foreign country after 4 March 2021. Tamil Nadu native status and the academic conditions must also be met.",
+              "Sri Lankan Tamil refugees must have studied in Tamil Nadu and provide the specified identification/camp-registration alternatives.",
+              "AICTE supernumerary NRI/FN/OCI/Gulf approval is No for 2026\u201327; that quota finding is distinct from the limited ordinary TNEA eligibility exceptions."
+            ],
+            "notes": "Government TNEA 2026 college directory, code 1450 (printed page 108), lists this LICET branch. The common government brochure, printed page 2, positively defines the restricted OCI/PIO and refugee routes. No next-cycle opening or unrestricted international route is asserted.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473"
+          },
+          "admissionsContent": {
+            "overview": "Information technology combines computing study with practical software work. Department activities include free and open-source software workshops and virtual laboratories covering networks, data structures and cryptography.",
+            "eligibility": {
+              "intro": "The academic first-year route uses the HSC qualification and Tamil Nadu engineering-admissions conditions.",
+              "items": [
+                "Pass HSC academic (+1 and +2), or an accepted equivalent, with Mathematics, Physics and Chemistry.",
+                "For the TNEA academic route, the minimum combined average in Mathematics, Physics and Chemistry is 45% for the general category and 40% for the listed reserved categories.",
+                "TNEA nativity, schooling and category conditions apply; a qualifying mark does not guarantee allotment.",
+                "Tamil Nadu-native OCI/PIO applicants use Open Category; the exception excludes those born abroad after 4 March 2021.",
+                "Sri Lankan Tamil refugees who studied in Tamil Nadu may be considered under open competition under the documented certificate route."
+              ]
+            },
+            "applicationSteps": [
+              "For a government-quota seat, register for TNEA and upload the academic and category certificates required for the applicable route.",
+              "Participate in certificate verification, ranking and the assigned online counselling round; enter LICET and the chosen engineering branch in the preference list.",
+              "Confirm the allotted option and complete the reporting and payment instructions within the counselling schedule.",
+              "For the college application route, register with a valid email and mobile number, complete academic details, upload the requested documents and submit after Class 12 results."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marksheet",
+                "HSC first-year (+1) and second-year (+2), or equivalent, marksheets",
+                "Transfer certificate"
+              ],
+              "application": [
+                "TNEA registration details and uploaded original-certificate copies",
+                "Nativity and community certificates where applicable",
+                "Income, first-graduate or special-reservation documents where applicable",
+                "For the Sri Lankan Tamil refugee route: identification certificate from the Headquarters Tahsildar.",
+                "If not registered in a refugee camp: original passport, visa and police-station registration letter."
+              ]
+            },
+            "deadlinesNote": "This profile records verified TNEA 2026 eligibility and the college 2026\u201327 application procedure, not an open application window or a future-cycle offer. Check the next official counselling notice before applying.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 220000,
+              "status": "indicative",
+              "period": "full_course",
+              "componentBasis": "Full-course tuition for this named four-year award; the source separately lists INR 240,000 total fees. This is a dated planning quote, not current annual tuition or a hostel-inclusive total.",
+              "audience": "domestic",
+              "category": "General category; quota unspecified",
+              "academicYear": "2025 publication; tariff year unstated",
+              "sourceUrl": "https://www.careers360.com/colleges/loyola-icam-college-of-engineering-and-technology-chennai/fees",
+              "sourceLabel": "Careers360 LICET fees, updated 5 July 2025",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "English",
+          "mediumNote": "English is the medium of instruction, examinations, seminars and project reports, except courses in another language.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "Current annual tuition is on request. The final cost depends on the admission quota and applicable fee schedule. Plan separately for housing, mess and other charges. A dated full-course estimate, where shown, is a planning figure rather than a confirmed annual bill."
+          },
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "Current annual tuition is on request. The final cost depends on the admission quota and applicable fee schedule. Plan separately for housing, mess and other charges. A dated full-course estimate, where shown, is a planning figure rather than a confirmed annual bill.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year undergraduate engineering curriculum",
+              "language": "English",
+              "details": "Eight semesters for the standard HSC-entry route, with curriculum-based laboratory, project and internship components."
+            }
+          ]
+        },
+        {
+          "slug": "licet-be-mechanical-engineering",
+          "canonicalCourseSlug": "be-btech-mechanical-engineering",
+          "officialTitle": "B.E. Mechanical Engineering",
+          "durationYears": 4,
+          "officialProgramUrl": "https://licet.ac.in/mechanical-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants satisfying the applicable TNEA 2026 first-year route",
+              "Tamil Nadu-native OCI/PIO cardholders eligible for TNEA Open Category, subject to its foreign-birth cutoff",
+              "Sri Lankan Tamil refugees who studied in Tamil Nadu and satisfy the documented TNEA certificate route"
+            ],
+            "restrictions": [
+              "Only the documented 2026 first-year TNEA route is represented; this is not unrestricted foreign/NRI, management-quota or lateral-entry admission.",
+              "The OCI/PIO exception does not apply to candidates born in a foreign country after 4 March 2021. Tamil Nadu native status and the academic conditions must also be met.",
+              "Sri Lankan Tamil refugees must have studied in Tamil Nadu and provide the specified identification/camp-registration alternatives.",
+              "AICTE supernumerary NRI/FN/OCI/Gulf approval is No for 2026\u201327; that quota finding is distinct from the limited ordinary TNEA eligibility exceptions."
+            ],
+            "notes": "Government TNEA 2026 college directory, code 1450 (printed page 108), lists this LICET branch. The common government brochure, printed page 2, positively defines the restricted OCI/PIO and refugee routes. No next-cycle opening or unrestricted international route is asserted.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473"
+          },
+          "admissionsContent": {
+            "overview": "Mechanical engineering study includes design and laboratory practice. The department supports hands-on learning through automation facilities and activities in robotics and design thinking.",
+            "eligibility": {
+              "intro": "The academic first-year route uses the HSC qualification and Tamil Nadu engineering-admissions conditions.",
+              "items": [
+                "Pass HSC academic (+1 and +2), or an accepted equivalent, with Mathematics, Physics and Chemistry.",
+                "For the TNEA academic route, the minimum combined average in Mathematics, Physics and Chemistry is 45% for the general category and 40% for the listed reserved categories.",
+                "TNEA nativity, schooling and category conditions apply; a qualifying mark does not guarantee allotment.",
+                "Tamil Nadu-native OCI/PIO applicants use Open Category; the exception excludes those born abroad after 4 March 2021.",
+                "Sri Lankan Tamil refugees who studied in Tamil Nadu may be considered under open competition under the documented certificate route."
+              ]
+            },
+            "applicationSteps": [
+              "For a government-quota seat, register for TNEA and upload the academic and category certificates required for the applicable route.",
+              "Participate in certificate verification, ranking and the assigned online counselling round; enter LICET and the chosen engineering branch in the preference list.",
+              "Confirm the allotted option and complete the reporting and payment instructions within the counselling schedule.",
+              "For the college application route, register with a valid email and mobile number, complete academic details, upload the requested documents and submit after Class 12 results."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marksheet",
+                "HSC first-year (+1) and second-year (+2), or equivalent, marksheets",
+                "Transfer certificate"
+              ],
+              "application": [
+                "TNEA registration details and uploaded original-certificate copies",
+                "Nativity and community certificates where applicable",
+                "Income, first-graduate or special-reservation documents where applicable",
+                "For the Sri Lankan Tamil refugee route: identification certificate from the Headquarters Tahsildar.",
+                "If not registered in a refugee camp: original passport, visa and police-station registration letter."
+              ]
+            },
+            "deadlinesNote": "This profile records verified TNEA 2026 eligibility and the college 2026\u201327 application procedure, not an open application window or a future-cycle offer. Check the next official counselling notice before applying.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 220000,
+              "status": "indicative",
+              "period": "full_course",
+              "componentBasis": "Full-course tuition for this named four-year award; the source separately lists INR 240,000 total fees. This is a dated planning quote, not current annual tuition or a hostel-inclusive total.",
+              "audience": "domestic",
+              "category": "General category; quota unspecified",
+              "academicYear": "2025 publication; tariff year unstated",
+              "sourceUrl": "https://www.careers360.com/colleges/loyola-icam-college-of-engineering-and-technology-chennai/fees",
+              "sourceLabel": "Careers360 LICET fees, updated 5 July 2025",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "English",
+          "mediumNote": "English is the medium of instruction, examinations, seminars and project reports, except courses in another language.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "Current annual tuition is on request. The final cost depends on the admission quota and applicable fee schedule. Plan separately for housing, mess and other charges. A dated full-course estimate, where shown, is a planning figure rather than a confirmed annual bill."
+          },
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "Current annual tuition is on request. The final cost depends on the admission quota and applicable fee schedule. Plan separately for housing, mess and other charges. A dated full-course estimate, where shown, is a planning figure rather than a confirmed annual bill.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year undergraduate engineering curriculum",
+              "language": "English",
+              "details": "Eight semesters for the standard HSC-entry route, with curriculum-based laboratory, project and internship components."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "eligibility",
+      "claimText": "HSC academic first-year applicants need Mathematics, Physics and Chemistry; TNEA sets the 45% general / 40% listed reserved-category aggregate and route eligibility.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 official engineering information brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-btech-artificial-intelligence-and-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "admissions",
+      "claimText": "The TNEA route uses online registration, certificate upload/verification, ranking, choice filling, allotment and reporting; the separate college portal uses email/mobile registration and submission after Class 12 results.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 official engineering information brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-btech-artificial-intelligence-and-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "admissions",
+      "claimText": "The 2026\u201327 college registration instructions require valid email/mobile, personal and academic details, document uploads and submission after Class 12 results.",
+      "status": "verified",
+      "sourceLabel": "LICET 2026\u201327 admission instructions",
+      "sourceUrl": "https://licet.ac.in/admissions-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-btech-artificial-intelligence-and-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "medium",
+      "claimText": "Regulation 2024 section 4.16 establishes English for instruction, examination, seminars and project reports except other-language courses.",
+      "status": "verified",
+      "sourceLabel": "LICET approved UG Regulations 2024",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2025/05/Regulation_Approved_ACM1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-btech-artificial-intelligence-and-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "duration",
+      "claimText": "Six named current engineering awards have a four-year/eight-semester HSC-entry duration under the UG regulations; current EOA lists this award.",
+      "status": "verified",
+      "sourceLabel": "LICET approved UG Regulations 2024",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2025/05/Regulation_Approved_ACM1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-btech-artificial-intelligence-and-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "programmeOverview",
+      "claimText": "The programme combines artificial intelligence and data-science study within a four-year engineering degree. The department focuses on using data and computational methods to address practical problems.",
+      "status": "verified",
+      "sourceLabel": "B.Tech. Artificial Intelligence and Data Science department",
+      "sourceUrl": "https://licet.ac.in/artificial-intelligence-and-data-science/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-btech-artificial-intelligence-and-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "fee",
+      "claimText": "Current annual tuition is on request. A 2024\u201325 disclosure lists quota-based charges without a clear billing period; those figures are not treated as a current annual tariff. Housing, mess and additional charges need a separate budget.",
+      "status": "verified",
+      "sourceLabel": "LICET Mandatory Disclosure 2024\u201325",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2025/07/Mandatory-Disclosure_2024-2025_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-btech-artificial-intelligence-and-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "audienceEligibility",
+      "claimText": "The current EOA lists six UG awards with No in the NRI and foreign-national/OCI/children-of-Indian-workers-in-Gulf supernumerary approval columns.",
+      "status": "verified",
+      "sourceLabel": "AICTE LICET Extension of Approval 2026\u201327",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2026/06/EOA-Report-2026-27-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-btech-artificial-intelligence-and-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "intake",
+      "claimText": "No exact upcoming commencement month is established by the checked admissions page and approval; intake arrays remain empty.",
+      "status": "omit",
+      "sourceLabel": "LICET 2026\u201327 admission instructions",
+      "sourceUrl": "https://licet.ac.in/admissions-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-btech-artificial-intelligence-and-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "eligibility",
+      "claimText": "HSC academic first-year applicants need Mathematics, Physics and Chemistry; TNEA sets the 45% general / 40% listed reserved-category aggregate and route eligibility.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 official engineering information brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-computer-science-and-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "admissions",
+      "claimText": "The TNEA route uses online registration, certificate upload/verification, ranking, choice filling, allotment and reporting; the separate college portal uses email/mobile registration and submission after Class 12 results.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 official engineering information brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-computer-science-and-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "admissions",
+      "claimText": "The 2026\u201327 college registration instructions require valid email/mobile, personal and academic details, document uploads and submission after Class 12 results.",
+      "status": "verified",
+      "sourceLabel": "LICET 2026\u201327 admission instructions",
+      "sourceUrl": "https://licet.ac.in/admissions-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-computer-science-and-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "medium",
+      "claimText": "Regulation 2024 section 4.16 establishes English for instruction, examination, seminars and project reports except other-language courses.",
+      "status": "verified",
+      "sourceLabel": "LICET approved UG Regulations 2024",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2025/05/Regulation_Approved_ACM1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-computer-science-and-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "duration",
+      "claimText": "Six named current engineering awards have a four-year/eight-semester HSC-entry duration under the UG regulations; current EOA lists this award.",
+      "status": "verified",
+      "sourceLabel": "LICET approved UG Regulations 2024",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2025/05/Regulation_Approved_ACM1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-computer-science-and-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "programmeOverview",
+      "claimText": "Computer science study combines software development and computing systems with practical projects. Department activities include Red Hat and AWS academy resources alongside the undergraduate curriculum.",
+      "status": "verified",
+      "sourceLabel": "B.E. Computer Science and Engineering department",
+      "sourceUrl": "https://licet.ac.in/computer-science-and-engineering/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-computer-science-and-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "fee",
+      "claimText": "Current annual tuition is on request. A 2024\u201325 disclosure lists quota-based charges without a clear billing period; those figures are not treated as a current annual tariff. Housing, mess and additional charges need a separate budget.",
+      "status": "verified",
+      "sourceLabel": "LICET Mandatory Disclosure 2024\u201325",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2025/07/Mandatory-Disclosure_2024-2025_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-computer-science-and-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "audienceEligibility",
+      "claimText": "The current EOA lists six UG awards with No in the NRI and foreign-national/OCI/children-of-Indian-workers-in-Gulf supernumerary approval columns.",
+      "status": "verified",
+      "sourceLabel": "AICTE LICET Extension of Approval 2026\u201327",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2026/06/EOA-Report-2026-27-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-computer-science-and-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "intake",
+      "claimText": "No exact upcoming commencement month is established by the checked admissions page and approval; intake arrays remain empty.",
+      "status": "omit",
+      "sourceLabel": "LICET 2026\u201327 admission instructions",
+      "sourceUrl": "https://licet.ac.in/admissions-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-computer-science-and-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "reportedFeeQuote",
+      "claimText": "INR 220,000 full-course tuition is reported for this named four-year course in the 5 July 2025 publication; tariff year and quota are unstated. Do not annualize or label current confirmed tuition.",
+      "status": "indicative",
+      "sourceLabel": "Careers360 LICET fees, updated 5 July 2025",
+      "sourceUrl": "https://www.careers360.com/colleges/loyola-icam-college-of-engineering-and-technology-chennai/fees",
+      "sourceGrade": "C",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-computer-science-and-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "eligibility",
+      "claimText": "HSC academic first-year applicants need Mathematics, Physics and Chemistry; TNEA sets the 45% general / 40% listed reserved-category aggregate and route eligibility.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 official engineering information brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-electrical-and-electronics-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "admissions",
+      "claimText": "The TNEA route uses online registration, certificate upload/verification, ranking, choice filling, allotment and reporting; the separate college portal uses email/mobile registration and submission after Class 12 results.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 official engineering information brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-electrical-and-electronics-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "admissions",
+      "claimText": "The 2026\u201327 college registration instructions require valid email/mobile, personal and academic details, document uploads and submission after Class 12 results.",
+      "status": "verified",
+      "sourceLabel": "LICET 2026\u201327 admission instructions",
+      "sourceUrl": "https://licet.ac.in/admissions-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-electrical-and-electronics-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "medium",
+      "claimText": "Regulation 2024 section 4.16 establishes English for instruction, examination, seminars and project reports except other-language courses.",
+      "status": "verified",
+      "sourceLabel": "LICET approved UG Regulations 2024",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2025/05/Regulation_Approved_ACM1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-electrical-and-electronics-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "duration",
+      "claimText": "Six named current engineering awards have a four-year/eight-semester HSC-entry duration under the UG regulations; current EOA lists this award.",
+      "status": "verified",
+      "sourceLabel": "LICET approved UG Regulations 2024",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2025/05/Regulation_Approved_ACM1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-electrical-and-electronics-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "programmeOverview",
+      "claimText": "Electrical and electronics engineering combines electrical-system study with laboratory work. The department identifies MATLAB, MiPower, ETAP and Altair Flux among its computational tools.",
+      "status": "verified",
+      "sourceLabel": "B.E. Electrical and Electronics Engineering department",
+      "sourceUrl": "https://licet.ac.in/electrical-and-electronics-engineering/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-electrical-and-electronics-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "fee",
+      "claimText": "Current annual tuition is on request. A 2024\u201325 disclosure lists quota-based charges without a clear billing period; those figures are not treated as a current annual tariff. Housing, mess and additional charges need a separate budget.",
+      "status": "verified",
+      "sourceLabel": "LICET Mandatory Disclosure 2024\u201325",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2025/07/Mandatory-Disclosure_2024-2025_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-electrical-and-electronics-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "audienceEligibility",
+      "claimText": "The current EOA lists six UG awards with No in the NRI and foreign-national/OCI/children-of-Indian-workers-in-Gulf supernumerary approval columns.",
+      "status": "verified",
+      "sourceLabel": "AICTE LICET Extension of Approval 2026\u201327",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2026/06/EOA-Report-2026-27-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-electrical-and-electronics-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "intake",
+      "claimText": "No exact upcoming commencement month is established by the checked admissions page and approval; intake arrays remain empty.",
+      "status": "omit",
+      "sourceLabel": "LICET 2026\u201327 admission instructions",
+      "sourceUrl": "https://licet.ac.in/admissions-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-electrical-and-electronics-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "reportedFeeQuote",
+      "claimText": "INR 220,000 full-course tuition is reported for this named four-year course in the 5 July 2025 publication; tariff year and quota are unstated. Do not annualize or label current confirmed tuition.",
+      "status": "indicative",
+      "sourceLabel": "Careers360 LICET fees, updated 5 July 2025",
+      "sourceUrl": "https://www.careers360.com/colleges/loyola-icam-college-of-engineering-and-technology-chennai/fees",
+      "sourceGrade": "C",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-electrical-and-electronics-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "eligibility",
+      "claimText": "HSC academic first-year applicants need Mathematics, Physics and Chemistry; TNEA sets the 45% general / 40% listed reserved-category aggregate and route eligibility.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 official engineering information brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-electronics-and-communication-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "admissions",
+      "claimText": "The TNEA route uses online registration, certificate upload/verification, ranking, choice filling, allotment and reporting; the separate college portal uses email/mobile registration and submission after Class 12 results.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 official engineering information brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-electronics-and-communication-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "admissions",
+      "claimText": "The 2026\u201327 college registration instructions require valid email/mobile, personal and academic details, document uploads and submission after Class 12 results.",
+      "status": "verified",
+      "sourceLabel": "LICET 2026\u201327 admission instructions",
+      "sourceUrl": "https://licet.ac.in/admissions-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-electronics-and-communication-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "medium",
+      "claimText": "Regulation 2024 section 4.16 establishes English for instruction, examination, seminars and project reports except other-language courses.",
+      "status": "verified",
+      "sourceLabel": "LICET approved UG Regulations 2024",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2025/05/Regulation_Approved_ACM1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-electronics-and-communication-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "duration",
+      "claimText": "Six named current engineering awards have a four-year/eight-semester HSC-entry duration under the UG regulations; current EOA lists this award.",
+      "status": "verified",
+      "sourceLabel": "LICET approved UG Regulations 2024",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2025/05/Regulation_Approved_ACM1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-electronics-and-communication-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "programmeOverview",
+      "claimText": "Electronics and communication engineering develops understanding of electronic and communication systems through the four-year engineering curriculum, with departmental laboratory and project activity.",
+      "status": "verified",
+      "sourceLabel": "B.E. Electronics and Communication Engineering department",
+      "sourceUrl": "https://licet.ac.in/electronics-and-communication-engineering/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-electronics-and-communication-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "fee",
+      "claimText": "Current annual tuition is on request. A 2024\u201325 disclosure lists quota-based charges without a clear billing period; those figures are not treated as a current annual tariff. Housing, mess and additional charges need a separate budget.",
+      "status": "verified",
+      "sourceLabel": "LICET Mandatory Disclosure 2024\u201325",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2025/07/Mandatory-Disclosure_2024-2025_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-electronics-and-communication-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "audienceEligibility",
+      "claimText": "The current EOA lists six UG awards with No in the NRI and foreign-national/OCI/children-of-Indian-workers-in-Gulf supernumerary approval columns.",
+      "status": "verified",
+      "sourceLabel": "AICTE LICET Extension of Approval 2026\u201327",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2026/06/EOA-Report-2026-27-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-electronics-and-communication-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "intake",
+      "claimText": "No exact upcoming commencement month is established by the checked admissions page and approval; intake arrays remain empty.",
+      "status": "omit",
+      "sourceLabel": "LICET 2026\u201327 admission instructions",
+      "sourceUrl": "https://licet.ac.in/admissions-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-electronics-and-communication-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "reportedFeeQuote",
+      "claimText": "INR 220,000 full-course tuition is reported for this named four-year course in the 5 July 2025 publication; tariff year and quota are unstated. Do not annualize or label current confirmed tuition.",
+      "status": "indicative",
+      "sourceLabel": "Careers360 LICET fees, updated 5 July 2025",
+      "sourceUrl": "https://www.careers360.com/colleges/loyola-icam-college-of-engineering-and-technology-chennai/fees",
+      "sourceGrade": "C",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-electronics-and-communication-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "eligibility",
+      "claimText": "HSC academic first-year applicants need Mathematics, Physics and Chemistry; TNEA sets the 45% general / 40% listed reserved-category aggregate and route eligibility.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 official engineering information brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-btech-information-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "admissions",
+      "claimText": "The TNEA route uses online registration, certificate upload/verification, ranking, choice filling, allotment and reporting; the separate college portal uses email/mobile registration and submission after Class 12 results.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 official engineering information brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-btech-information-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "admissions",
+      "claimText": "The 2026\u201327 college registration instructions require valid email/mobile, personal and academic details, document uploads and submission after Class 12 results.",
+      "status": "verified",
+      "sourceLabel": "LICET 2026\u201327 admission instructions",
+      "sourceUrl": "https://licet.ac.in/admissions-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-btech-information-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "medium",
+      "claimText": "Regulation 2024 section 4.16 establishes English for instruction, examination, seminars and project reports except other-language courses.",
+      "status": "verified",
+      "sourceLabel": "LICET approved UG Regulations 2024",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2025/05/Regulation_Approved_ACM1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-btech-information-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "duration",
+      "claimText": "Six named current engineering awards have a four-year/eight-semester HSC-entry duration under the UG regulations; current EOA lists this award.",
+      "status": "verified",
+      "sourceLabel": "LICET approved UG Regulations 2024",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2025/05/Regulation_Approved_ACM1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-btech-information-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "programmeOverview",
+      "claimText": "Information technology combines computing study with practical software work. Department activities include free and open-source software workshops and virtual laboratories covering networks, data structures and cryptography.",
+      "status": "verified",
+      "sourceLabel": "B.Tech. Information Technology department",
+      "sourceUrl": "https://licet.ac.in/information-technology/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-btech-information-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "fee",
+      "claimText": "Current annual tuition is on request. A 2024\u201325 disclosure lists quota-based charges without a clear billing period; those figures are not treated as a current annual tariff. Housing, mess and additional charges need a separate budget.",
+      "status": "verified",
+      "sourceLabel": "LICET Mandatory Disclosure 2024\u201325",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2025/07/Mandatory-Disclosure_2024-2025_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-btech-information-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "audienceEligibility",
+      "claimText": "The current EOA lists six UG awards with No in the NRI and foreign-national/OCI/children-of-Indian-workers-in-Gulf supernumerary approval columns.",
+      "status": "verified",
+      "sourceLabel": "AICTE LICET Extension of Approval 2026\u201327",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2026/06/EOA-Report-2026-27-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-btech-information-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "intake",
+      "claimText": "No exact upcoming commencement month is established by the checked admissions page and approval; intake arrays remain empty.",
+      "status": "omit",
+      "sourceLabel": "LICET 2026\u201327 admission instructions",
+      "sourceUrl": "https://licet.ac.in/admissions-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-btech-information-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "reportedFeeQuote",
+      "claimText": "INR 220,000 full-course tuition is reported for this named four-year course in the 5 July 2025 publication; tariff year and quota are unstated. Do not annualize or label current confirmed tuition.",
+      "status": "indicative",
+      "sourceLabel": "Careers360 LICET fees, updated 5 July 2025",
+      "sourceUrl": "https://www.careers360.com/colleges/loyola-icam-college-of-engineering-and-technology-chennai/fees",
+      "sourceGrade": "C",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-btech-information-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "eligibility",
+      "claimText": "HSC academic first-year applicants need Mathematics, Physics and Chemistry; TNEA sets the 45% general / 40% listed reserved-category aggregate and route eligibility.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 official engineering information brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "admissions",
+      "claimText": "The TNEA route uses online registration, certificate upload/verification, ranking, choice filling, allotment and reporting; the separate college portal uses email/mobile registration and submission after Class 12 results.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 official engineering information brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "admissions",
+      "claimText": "The 2026\u201327 college registration instructions require valid email/mobile, personal and academic details, document uploads and submission after Class 12 results.",
+      "status": "verified",
+      "sourceLabel": "LICET 2026\u201327 admission instructions",
+      "sourceUrl": "https://licet.ac.in/admissions-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "medium",
+      "claimText": "Regulation 2024 section 4.16 establishes English for instruction, examination, seminars and project reports except other-language courses.",
+      "status": "verified",
+      "sourceLabel": "LICET approved UG Regulations 2024",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2025/05/Regulation_Approved_ACM1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "duration",
+      "claimText": "Six named current engineering awards have a four-year/eight-semester HSC-entry duration under the UG regulations; current EOA lists this award.",
+      "status": "verified",
+      "sourceLabel": "LICET approved UG Regulations 2024",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2025/05/Regulation_Approved_ACM1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "programmeOverview",
+      "claimText": "Mechanical engineering study includes design and laboratory practice. The department supports hands-on learning through automation facilities and activities in robotics and design thinking.",
+      "status": "verified",
+      "sourceLabel": "B.E. Mechanical Engineering department",
+      "sourceUrl": "https://licet.ac.in/mechanical-engineering/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "fee",
+      "claimText": "Current annual tuition is on request. A 2024\u201325 disclosure lists quota-based charges without a clear billing period; those figures are not treated as a current annual tariff. Housing, mess and additional charges need a separate budget.",
+      "status": "verified",
+      "sourceLabel": "LICET Mandatory Disclosure 2024\u201325",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2025/07/Mandatory-Disclosure_2024-2025_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "audienceEligibility",
+      "claimText": "The current EOA lists six UG awards with No in the NRI and foreign-national/OCI/children-of-Indian-workers-in-Gulf supernumerary approval columns.",
+      "status": "verified",
+      "sourceLabel": "AICTE LICET Extension of Approval 2026\u201327",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2026/06/EOA-Report-2026-27-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "intake",
+      "claimText": "No exact upcoming commencement month is established by the checked admissions page and approval; intake arrays remain empty.",
+      "status": "omit",
+      "sourceLabel": "LICET 2026\u201327 admission instructions",
+      "sourceUrl": "https://licet.ac.in/admissions-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "reportedFeeQuote",
+      "claimText": "INR 220,000 full-course tuition is reported for this named four-year course in the 5 July 2025 publication; tariff year and quota are unstated. Do not annualize or label current confirmed tuition.",
+      "status": "indicative",
+      "sourceLabel": "Careers360 LICET fees, updated 5 July 2025",
+      "sourceUrl": "https://www.careers360.com/colleges/loyola-icam-college-of-engineering-and-technology-chennai/fees",
+      "sourceGrade": "C",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15",
+      "programmeSlug": "licet-be-mechanical-engineering"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "recognition",
+      "claimText": "LICET is listed as an Anna University affiliated college in Chennai, examination code 3111 and TNEA code 1450.",
+      "status": "verified",
+      "sourceLabel": "Anna University affiliated-college register",
+      "sourceUrl": "https://www.annauniv.edu/cai/District%20wise/district/Chennai.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "identity",
+      "claimText": "LICET is the private self-financing engineering institution established in 2010, distinct from Loyola College; the current EOA lists six UG awards.",
+      "status": "verified",
+      "sourceLabel": "AICTE EOA 2026\u201327",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2026/06/EOA-Report-2026-27-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "campusLifestyle",
+      "claimText": "The central library supports electronic resources and NPTEL; the engineering college is within Loyola campus at Nungambakkam.",
+      "status": "verified",
+      "sourceLabel": "LICET central library",
+      "sourceUrl": "https://licet.ac.in/central-library/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "cityProfile",
+      "claimText": "LICET address is Loyola Campus, Nungambakkam, Chennai; housing-versus-commute comparison is editorial planning guidance without travel-time or cost claims.",
+      "status": "verified",
+      "sourceLabel": "LICET institutional overview",
+      "sourceUrl": "https://licet.ac.in/about/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "hostelOverview",
+      "claimText": "Separate boys and girls hostels within Loyola campus provide kitchen/dining areas; applicants meet the hostel director with parents after college admission.",
+      "status": "verified",
+      "sourceLabel": "LICET hostel",
+      "sourceUrl": "https://licet.ac.in/hostel/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "dietarySupport",
+      "claimText": "Canteen and kiosk operate; hostel kitchens/dining areas are documented. No special-diet guarantee or price is inferred.",
+      "status": "verified",
+      "sourceLabel": "LICET canteen",
+      "sourceUrl": "https://licet.ac.in/licet-cafe-canteen/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "safetyOverview",
+      "claimText": "Anti-ragging committee/squads receive complaints, run awareness activities and preventive visits.",
+      "status": "verified",
+      "sourceLabel": "LICET anti-ragging",
+      "sourceUrl": "https://licet.ac.in/anti-ragging/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "studentSupport",
+      "claimText": "The institution provides a student counsellor; no outcome promise is made.",
+      "status": "verified",
+      "sourceLabel": "LICET counselling",
+      "sourceUrl": "https://licet.ac.in/counselling/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "studentSupport",
+      "claimText": "Class-adviser duties include registration, attendance, progress and academic counselling.",
+      "status": "verified",
+      "sourceLabel": "LICET UG Regulations 2024",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2025/05/Regulation_Approved_ACM1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "practicalExposure",
+      "claimText": "Department-specific laboratory/software and project activity are described without placement, salary or access guarantees.",
+      "status": "verified",
+      "sourceLabel": "LICET official engineering department",
+      "sourceUrl": "https://licet.ac.in/electrical-and-electronics-engineering/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "practicalExposure",
+      "claimText": "Department-specific laboratory/software and project activity are described without placement, salary or access guarantees.",
+      "status": "verified",
+      "sourceLabel": "LICET official engineering department",
+      "sourceUrl": "https://licet.ac.in/information-technology/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "publicField": "practicalExposure",
+      "claimText": "Department-specific laboratory/software and project activity are described without placement, salary or access guarantees.",
+      "status": "verified",
+      "sourceLabel": "LICET official engineering department",
+      "sourceUrl": "https://licet.ac.in/mechanical-engineering/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-15"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "programmeSlug": "licet-btech-artificial-intelligence-and-data-science",
+      "publicField": "audienceEligibility",
+      "status": "verified",
+      "sourceGrade": "A",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+      "sourceLabel": "TNEA 2026 information brochure, printed page 2",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "claimText": "Tamil Nadu-native OCI/PIO cardholders may participate under Open Category, except those born abroad after 4 March 2021. Sri Lankan Tamil refugees who studied in Tamil Nadu have a specified open-competition certificate route.",
+      "internalNotes": "Exact restricted route only. General foreign/NRI, lateral-entry and research admissions are not inferred. Existing AICTE quota evidence remains narrowly scoped."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "programmeSlug": "licet-btech-artificial-intelligence-and-data-science",
+      "publicField": "audienceEligibility",
+      "status": "verified",
+      "sourceGrade": "A",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceLabel": "Government TNEA 2026 college directory, code 1450, printed page 108",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "claimText": "The current government counselling directory lists LICET and branch codes AD, CS, EC, EE, IT and ME, tying the common first-year route to all six packaged awards.",
+      "internalNotes": "Exact restricted route only. General foreign/NRI, lateral-entry and research admissions are not inferred. Existing AICTE quota evidence remains narrowly scoped."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "programmeSlug": "licet-btech-artificial-intelligence-and-data-science",
+      "publicField": "admissions",
+      "status": "verified",
+      "sourceGrade": "A",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+      "sourceLabel": "TNEA 2026 printed page 2: refugee verification documents",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "claimText": "The refugee route specifies Headquarters Tahsildar identification; those not registered in a refugee camp must present original passport, visa and police-station registration letter.",
+      "internalNotes": "Conditional documentation only; no generic foreign-applicant checklist is invented."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "programmeSlug": "licet-be-computer-science-and-engineering",
+      "publicField": "audienceEligibility",
+      "status": "verified",
+      "sourceGrade": "A",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+      "sourceLabel": "TNEA 2026 information brochure, printed page 2",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "claimText": "Tamil Nadu-native OCI/PIO cardholders may participate under Open Category, except those born abroad after 4 March 2021. Sri Lankan Tamil refugees who studied in Tamil Nadu have a specified open-competition certificate route.",
+      "internalNotes": "Exact restricted route only. General foreign/NRI, lateral-entry and research admissions are not inferred. Existing AICTE quota evidence remains narrowly scoped."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "programmeSlug": "licet-be-computer-science-and-engineering",
+      "publicField": "audienceEligibility",
+      "status": "verified",
+      "sourceGrade": "A",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceLabel": "Government TNEA 2026 college directory, code 1450, printed page 108",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "claimText": "The current government counselling directory lists LICET and branch codes AD, CS, EC, EE, IT and ME, tying the common first-year route to all six packaged awards.",
+      "internalNotes": "Exact restricted route only. General foreign/NRI, lateral-entry and research admissions are not inferred. Existing AICTE quota evidence remains narrowly scoped."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "programmeSlug": "licet-be-computer-science-and-engineering",
+      "publicField": "admissions",
+      "status": "verified",
+      "sourceGrade": "A",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+      "sourceLabel": "TNEA 2026 printed page 2: refugee verification documents",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "claimText": "The refugee route specifies Headquarters Tahsildar identification; those not registered in a refugee camp must present original passport, visa and police-station registration letter.",
+      "internalNotes": "Conditional documentation only; no generic foreign-applicant checklist is invented."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "programmeSlug": "licet-be-electrical-and-electronics-engineering",
+      "publicField": "audienceEligibility",
+      "status": "verified",
+      "sourceGrade": "A",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+      "sourceLabel": "TNEA 2026 information brochure, printed page 2",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "claimText": "Tamil Nadu-native OCI/PIO cardholders may participate under Open Category, except those born abroad after 4 March 2021. Sri Lankan Tamil refugees who studied in Tamil Nadu have a specified open-competition certificate route.",
+      "internalNotes": "Exact restricted route only. General foreign/NRI, lateral-entry and research admissions are not inferred. Existing AICTE quota evidence remains narrowly scoped."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "programmeSlug": "licet-be-electrical-and-electronics-engineering",
+      "publicField": "audienceEligibility",
+      "status": "verified",
+      "sourceGrade": "A",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceLabel": "Government TNEA 2026 college directory, code 1450, printed page 108",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "claimText": "The current government counselling directory lists LICET and branch codes AD, CS, EC, EE, IT and ME, tying the common first-year route to all six packaged awards.",
+      "internalNotes": "Exact restricted route only. General foreign/NRI, lateral-entry and research admissions are not inferred. Existing AICTE quota evidence remains narrowly scoped."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "programmeSlug": "licet-be-electrical-and-electronics-engineering",
+      "publicField": "admissions",
+      "status": "verified",
+      "sourceGrade": "A",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+      "sourceLabel": "TNEA 2026 printed page 2: refugee verification documents",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "claimText": "The refugee route specifies Headquarters Tahsildar identification; those not registered in a refugee camp must present original passport, visa and police-station registration letter.",
+      "internalNotes": "Conditional documentation only; no generic foreign-applicant checklist is invented."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "programmeSlug": "licet-be-electronics-and-communication-engineering",
+      "publicField": "audienceEligibility",
+      "status": "verified",
+      "sourceGrade": "A",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+      "sourceLabel": "TNEA 2026 information brochure, printed page 2",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "claimText": "Tamil Nadu-native OCI/PIO cardholders may participate under Open Category, except those born abroad after 4 March 2021. Sri Lankan Tamil refugees who studied in Tamil Nadu have a specified open-competition certificate route.",
+      "internalNotes": "Exact restricted route only. General foreign/NRI, lateral-entry and research admissions are not inferred. Existing AICTE quota evidence remains narrowly scoped."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "programmeSlug": "licet-be-electronics-and-communication-engineering",
+      "publicField": "audienceEligibility",
+      "status": "verified",
+      "sourceGrade": "A",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceLabel": "Government TNEA 2026 college directory, code 1450, printed page 108",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "claimText": "The current government counselling directory lists LICET and branch codes AD, CS, EC, EE, IT and ME, tying the common first-year route to all six packaged awards.",
+      "internalNotes": "Exact restricted route only. General foreign/NRI, lateral-entry and research admissions are not inferred. Existing AICTE quota evidence remains narrowly scoped."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "programmeSlug": "licet-be-electronics-and-communication-engineering",
+      "publicField": "admissions",
+      "status": "verified",
+      "sourceGrade": "A",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+      "sourceLabel": "TNEA 2026 printed page 2: refugee verification documents",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "claimText": "The refugee route specifies Headquarters Tahsildar identification; those not registered in a refugee camp must present original passport, visa and police-station registration letter.",
+      "internalNotes": "Conditional documentation only; no generic foreign-applicant checklist is invented."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "programmeSlug": "licet-btech-information-technology",
+      "publicField": "audienceEligibility",
+      "status": "verified",
+      "sourceGrade": "A",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+      "sourceLabel": "TNEA 2026 information brochure, printed page 2",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "claimText": "Tamil Nadu-native OCI/PIO cardholders may participate under Open Category, except those born abroad after 4 March 2021. Sri Lankan Tamil refugees who studied in Tamil Nadu have a specified open-competition certificate route.",
+      "internalNotes": "Exact restricted route only. General foreign/NRI, lateral-entry and research admissions are not inferred. Existing AICTE quota evidence remains narrowly scoped."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "programmeSlug": "licet-btech-information-technology",
+      "publicField": "audienceEligibility",
+      "status": "verified",
+      "sourceGrade": "A",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceLabel": "Government TNEA 2026 college directory, code 1450, printed page 108",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "claimText": "The current government counselling directory lists LICET and branch codes AD, CS, EC, EE, IT and ME, tying the common first-year route to all six packaged awards.",
+      "internalNotes": "Exact restricted route only. General foreign/NRI, lateral-entry and research admissions are not inferred. Existing AICTE quota evidence remains narrowly scoped."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "programmeSlug": "licet-btech-information-technology",
+      "publicField": "admissions",
+      "status": "verified",
+      "sourceGrade": "A",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+      "sourceLabel": "TNEA 2026 printed page 2: refugee verification documents",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "claimText": "The refugee route specifies Headquarters Tahsildar identification; those not registered in a refugee camp must present original passport, visa and police-station registration letter.",
+      "internalNotes": "Conditional documentation only; no generic foreign-applicant checklist is invented."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "programmeSlug": "licet-be-mechanical-engineering",
+      "publicField": "audienceEligibility",
+      "status": "verified",
+      "sourceGrade": "A",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+      "sourceLabel": "TNEA 2026 information brochure, printed page 2",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "claimText": "Tamil Nadu-native OCI/PIO cardholders may participate under Open Category, except those born abroad after 4 March 2021. Sri Lankan Tamil refugees who studied in Tamil Nadu have a specified open-competition certificate route.",
+      "internalNotes": "Exact restricted route only. General foreign/NRI, lateral-entry and research admissions are not inferred. Existing AICTE quota evidence remains narrowly scoped."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "programmeSlug": "licet-be-mechanical-engineering",
+      "publicField": "audienceEligibility",
+      "status": "verified",
+      "sourceGrade": "A",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceLabel": "Government TNEA 2026 college directory, code 1450, printed page 108",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "claimText": "The current government counselling directory lists LICET and branch codes AD, CS, EC, EE, IT and ME, tying the common first-year route to all six packaged awards.",
+      "internalNotes": "Exact restricted route only. General foreign/NRI, lateral-entry and research admissions are not inferred. Existing AICTE quota evidence remains narrowly scoped."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+      "programmeSlug": "licet-be-mechanical-engineering",
+      "publicField": "admissions",
+      "status": "verified",
+      "sourceGrade": "A",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+      "sourceLabel": "TNEA 2026 printed page 2: refugee verification documents",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "claimText": "The refugee route specifies Headquarters Tahsildar identification; those not registered in a refugee camp must present original passport, visa and police-station registration letter.",
+      "internalNotes": "Conditional documentation only; no generic foreign-applicant checklist is invented."
+    }
+  ]
+}

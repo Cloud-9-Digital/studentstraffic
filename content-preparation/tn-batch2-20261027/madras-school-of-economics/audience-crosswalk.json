@@ -1,0 +1,656 @@
+{
+  "checkedAt": "2026-10-27",
+  "recognitionReview": {
+    "universitySlug": "madras-school-of-economics",
+    "replaceFields": {
+      "recognitionBadges": [
+        "UGC — institution established under State Legislature Act"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC Annual Report 2022–23, pp 95 and 142",
+          "url": "https://www.ugc.gov.in/oldpdf/annualreport/AR.2022-23.English_WEB.pdf"
+        }
+      ]
+    },
+    "appendResearchSources": [
+      {
+        "label": "UGC statutory-institution listing and degree-awarding category",
+        "url": "https://www.ugc.gov.in/oldpdf/annualreport/AR.2022-23.English_WEB.pdf",
+        "kind": "recognition",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "UGC official annual-reports index",
+        "url": "https://www.ugc.gov.in/publication/Annual_Reports",
+        "kind": "government",
+        "checkedAt": "2026-10-27"
+      }
+    ],
+    "appendEvidence": [
+      {
+        "entity": "university",
+        "countrySlug": "india",
+        "universitySlug": "madras-school-of-economics",
+        "publicField": "recognition",
+        "claimText": "UGC Annual Report 2022–23, printed p 142 table 2.2(i)(b)(v), names Madras School of Economics at its Chennai address under Institutions Established under State Legislature Act, with recognition date 1 April 2021. Printed p 95 describes this category among institutions empowered to award degrees under legislation.",
+        "status": "verified",
+        "sourceLabel": "UGC Annual Report 2022–23, pp 95 and 142",
+        "sourceUrl": "https://www.ugc.gov.in/oldpdf/annualreport/AR.2022-23.English_WEB.pdf",
+        "sourceGrade": "A",
+        "checkedAt": "2026-10-27",
+        "reviewBy": "2027-01-27",
+        "internalNotes": "Original regulator-hosted PDF downloaded HTTP 200 and visually checked at PDF pages 107 and 154. As-of date of named table 31 March 2023 is retained; no NAAC grade, all-programme accreditation, public ownership or Section 12 B funding eligibility is inferred."
+      },
+      {
+        "entity": "university",
+        "countrySlug": "india",
+        "universitySlug": "madras-school-of-economics",
+        "publicField": "degreeAuthority",
+        "claimText": "The same UGC report identifies institutions established under state legislature among degree-awarding university-level institutions. Its named statutory-institutions table includes MSE with recognition 1 April 2021.",
+        "status": "verified",
+        "sourceLabel": "UGC Annual Report 2022–23, sections 2.2(i) and 2.2(i)(b)(v)",
+        "sourceUrl": "https://www.ugc.gov.in/oldpdf/annualreport/AR.2022-23.English_WEB.pdf",
+        "sourceGrade": "A",
+        "checkedAt": "2026-10-27",
+        "reviewBy": "2027-01-27"
+      }
+    ],
+    "scope": "Primary regulator listing resolves independent statutory-recognition evidence. The final Tamil Nadu Act PDF itself still returned 503; do not claim it was retrieved."
+  },
+  "programmeSpecificReplacements": [
+    {
+      "programmeSlug": "integrated-ma-economics",
+      "officialTitle": "Integrated Master of Arts in Economics",
+      "replaceFields": {
+        "audienceEligibility": {
+          "availability": "global",
+          "eligibleAudiences": [
+            "Indian applicants meeting the 2026 integrated-MA qualification and age rules",
+            "Foreign nationals meeting the equivalent qualification rules through self-financing direct admission"
+          ],
+          "restrictions": [
+            "The academic, mathematics and age rules below concern the 2026 admission cycle, not an announced future intake.",
+            "Foreign self-financing applicants require an equivalent qualifying examination and the same minimum academic qualifications. Indian reserved-category concessions are not automatically extended to foreign applicants.",
+            "For foreign qualifications, MSE checks correspondence against the AIU list; an unlisted university or board requires an AIU equivalence certificate.",
+            "Foreign applicants submit attested English translations of transcripts. Overseas records also require the stated authorised-government-agency attestation and Indian Embassy or Consulate certification.",
+            "Foreign self-financing applicants do not take the entrance test. This foreign-national exemption is not automatically an exemption for every Indian-passport NRI applicant."
+          ],
+          "notes": "The integrated-MA 2026 brochure itself establishes the foreign route and equivalence documents. No MA/MSc English-test threshold is imported into this integrated programme.",
+          "verifiedAt": "2026-10-27",
+          "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/IMA-2026-Broucher.pdf"
+        },
+        "admissionsContent": {
+          "overview": "This five-year integrated economics degree has three- and four-year exit awards. Indian applicants take the MSE entrance test; eligible foreign nationals have a separate self-financing route.",
+          "eligibility": {
+            "intro": "Use the correct Indian, NRI or foreign self-financing route; nationality alone does not waive academic or documentation conditions.",
+            "items": [
+              "For 2026 entry, pass 10+2 on the first attempt in the final 2026 academic-year cohort; candidates appearing in May 2026 could also apply.",
+              "Indian-route marks: 65% General, 60% eligible OBC-NCL, or 50% eligible SC/ST/PwD; equivalent grades or credits are accepted.",
+              "Study Standard, Applied or Business Mathematics at 10+2.",
+              "Be under 22 on 1 July 2026.",
+              "Foreign self-financing applicants need equivalent qualifying examinations and the same minimum qualifications; a foreign passport does not establish an Indian reservation concession."
+            ]
+          },
+          "applicationSteps": [
+            "Check the 2026 qualification, mathematics, age and applicant-category conditions before selecting the admission route.",
+            "Indian-route applicants complete the MSE online application and take the designated entrance test; qualifying marks and age break entrance-score ties.",
+            "Foreign self-financing applicants send the prescribed application, bio-data and academic qualifications to the designated BA Students Office; no entrance test applies to this route.",
+            "Submit the required equivalence, translated and authenticated qualification records for review before completing admission and category-specific fee payment."
+          ],
+          "documentsRequired": {
+            "academic": [
+              "10+2 marksheet and qualifying-examination certificate",
+              "Records showing Standard, Applied or Business Mathematics at 10+2",
+              "Foreign route: AIU equivalence certificate if the university or board is not in the AIU list",
+              "Foreign route: duly attested English translations of all transcripts",
+              "Overseas records: authorised-government-agency attestation and Indian Embassy or Consulate certification"
+            ],
+            "application": [
+              "Prescribed programme application",
+              "Foreign self-financing route: bio-data and academic qualification details"
+            ]
+          },
+          "deadlinesNote": "These requirements describe the 2026 admission cycle. Its application windows are not a promise of a current opening or a future intake; confirm the next published cycle before applying.",
+          "reportedFeeQuote": {
+            "currency": "USD",
+            "minAmount": 3025,
+            "status": "confirmed",
+            "period": "semester",
+            "componentBasis": "Foreign-national BA-stage tuition only, first three years; excludes USD 750 semester infrastructure and USD 500 one-time admission/processing. Years four/five use MA fees.",
+            "audience": "international",
+            "category": "Foreign national — BA stage, not NRI",
+            "academicYear": "2026–27",
+            "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/08/IMA-Student-Handbook-2026.pdf",
+            "sourceLabel": "MSE integrated-MA student handbook 2026–27, p14",
+            "verifiedAt": "2026-10-27"
+          }
+        }
+      },
+      "preserveFields": [
+        "The existing fee and reportedFeeQuote retain their exact domestic/foreign category and source-native currency basis.",
+        "Unknown teaching language stays omitted; English-proficiency admission rules do not establish teaching medium.",
+        "No unverified future intake months or deadlines are added."
+      ],
+      "scope": "Programme-specific 2026 route with documented foreign-qualification equivalence; no MBA or research-award hold is changed."
+    },
+    {
+      "programmeSlug": "ma-general-economics",
+      "officialTitle": "Master of Arts in General Economics",
+      "replaceFields": {
+        "audienceEligibility": {
+          "availability": "global",
+          "eligibleAudiences": [
+            "Indian applicants meeting the 2026 programme qualification and age rules",
+            "NRI applicants through the separately labelled 2026 application route",
+            "Foreign nationals meeting equivalent qualification rules through self-financing admission"
+          ],
+          "restrictions": [
+            "The academic, mathematics and age rules below concern the 2026 admission cycle, not an announced future intake.",
+            "Foreign self-financing applicants require an equivalent qualifying examination and the same minimum academic qualifications. Indian reserved-category concessions are not automatically extended to foreign applicants.",
+            "For foreign qualifications, MSE checks correspondence against the AIU list; an unlisted university or board requires an AIU equivalence certificate.",
+            "Foreign applicants submit attested English translations of transcripts. Overseas records also require the stated authorised-government-agency attestation and Indian Embassy or Consulate certification.",
+            "The dedicated NRI/foreign form does not make every applicant eligible. Foreign-national entrance-test exemption is not automatically extended to Indian-passport NRI applicants.",
+            "Foreign applicants must document English proficiency. Where English is not the first language or the medium during secondary and tertiary education, the ordinance requires a qualifying English test no more than two years old."
+          ],
+          "notes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence.",
+          "verifiedAt": "2026-10-27",
+          "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf"
+        },
+        "admissionsContent": {
+          "overview": "This two-year general economics degree uses the MSE entrance test for the regular Indian route. NRI and foreign applicants use the separately labelled application route; eligible foreign nationals may apply through self-financing admission.",
+          "eligibility": {
+            "intro": "Use the correct Indian, NRI or foreign self-financing route; nationality alone does not waive academic or documentation conditions.",
+            "items": [
+              "An undergraduate degree in social sciences, including commerce/management, sciences or engineering; final-year candidates in AY 2026 could also apply.",
+              "Indian-route undergraduate marks: 55% General, 50% eligible OBC-NCL or 45% eligible SC/ST/PwD. Foreign applicants require equivalent qualifications; these concessions are not automatic.",
+              "Be under 25 on 1 July 2026.",
+              "Mathematics at 10+2 or equivalent, including NIOS Senior Secondary mathematics, or undergraduate mathematical-economics coursework.",
+              "Regular Indian-route selection uses the MSE entrance test; qualifying marks and age break entrance-score ties.",
+              "Foreign self-financing applicants need an equivalent qualifying examination. Obtain AIU equivalence if the university or board is not on the AIU list.",
+              "When the foreign-route English-test rule applies: IELTS 6.5 overall and 6 in each section, or TOEFL iBT 95 overall and at least 20 in writing; scores must be no more than two years old."
+            ]
+          },
+          "applicationSteps": [
+            "Check the programme qualification, mathematics, age and applicant-category conditions for the 2026 cycle.",
+            "Regular entrance-route applicants complete the MSE online form and take the designated test; qualifying marks and age break entrance-score ties.",
+            "NRI and foreign applicants use the separately labelled form linked from the official admissions page and prepare the prescribed application, bio-data and qualifications for the designated programme office.",
+            "Foreign self-financing applicants complete equivalence, authenticated-document and applicable English-proficiency review before admission and category-specific payment."
+          ],
+          "documentsRequired": {
+            "academic": [
+              "Qualifying undergraduate transcripts and degree records",
+              "Records establishing the required mathematics study",
+              "Foreign route: grade transcripts with grading explanation and secondary-school, diploma and degree certificates; do not post originals",
+              "Foreign route: attested qualifying-degree syllabi and curricula",
+              "Foreign route: AIU equivalence certificate if the university or board is unlisted",
+              "Foreign route: duly attested English translations of transcripts",
+              "Overseas records: authorised-government-agency attestation and Indian Embassy or Consulate certification"
+            ],
+            "application": [
+              "Prescribed programme application",
+              "Foreign self-financing route: bio-data and academic qualification details",
+              "Foreign route: passport copy showing nationality and personal details",
+              "Foreign route: government fee-payment undertaking or bank statement showing USD 5,000",
+              "Foreign route: English-proficiency evidence, with a qualifying test where required"
+            ]
+          },
+          "deadlinesNote": "These requirements describe the 2026 admission cycle. Its application windows are not a promise of a current opening or a future intake; confirm the next published cycle before applying.",
+          "reportedFeeQuote": {
+            "currency": "USD",
+            "minAmount": 4333,
+            "status": "confirmed",
+            "period": "semester",
+            "componentBasis": "Foreign-national tuition per semester only; excludes USD 750 semester infrastructure and USD 500 one-time admission.",
+            "audience": "international",
+            "category": "Foreign national — not NRI",
+            "academicYear": "2026–27",
+            "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+            "sourceLabel": "MSE MA brochure 2026",
+            "verifiedAt": "2026-10-27"
+          }
+        }
+      },
+      "preserveFields": [
+        "The existing fee and reportedFeeQuote retain their exact domestic/foreign category and source-native currency basis.",
+        "Unknown teaching language stays omitted; English-proficiency admission rules do not establish teaching medium.",
+        "No unverified future intake months or deadlines are added."
+      ],
+      "scope": "Programme-specific 2026 route with documented foreign-qualification equivalence; no MBA or research-award hold is changed."
+    },
+    {
+      "programmeSlug": "ma-financial-economics",
+      "officialTitle": "Master of Arts in Financial Economics",
+      "replaceFields": {
+        "audienceEligibility": {
+          "availability": "global",
+          "eligibleAudiences": [
+            "Indian applicants meeting the 2026 programme qualification and age rules",
+            "NRI applicants through the separately labelled 2026 application route",
+            "Foreign nationals meeting equivalent qualification rules through self-financing admission"
+          ],
+          "restrictions": [
+            "The academic, mathematics and age rules below concern the 2026 admission cycle, not an announced future intake.",
+            "Foreign self-financing applicants require an equivalent qualifying examination and the same minimum academic qualifications. Indian reserved-category concessions are not automatically extended to foreign applicants.",
+            "For foreign qualifications, MSE checks correspondence against the AIU list; an unlisted university or board requires an AIU equivalence certificate.",
+            "Foreign applicants submit attested English translations of transcripts. Overseas records also require the stated authorised-government-agency attestation and Indian Embassy or Consulate certification.",
+            "The dedicated NRI/foreign form does not make every applicant eligible. Foreign-national entrance-test exemption is not automatically extended to Indian-passport NRI applicants.",
+            "Foreign applicants must document English proficiency. Where English is not the first language or the medium during secondary and tertiary education, the ordinance requires a qualifying English test no more than two years old."
+          ],
+          "notes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence.",
+          "verifiedAt": "2026-10-27",
+          "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf"
+        },
+        "admissionsContent": {
+          "overview": "This two-year financial economics degree uses the MSE entrance test for the regular Indian route. NRI and foreign applicants use the separately labelled application route; eligible foreign nationals may apply through self-financing admission.",
+          "eligibility": {
+            "intro": "Use the correct Indian, NRI or foreign self-financing route; nationality alone does not waive academic or documentation conditions.",
+            "items": [
+              "An undergraduate degree in social sciences, including commerce/management, sciences or engineering; final-year candidates in AY 2026 could also apply.",
+              "Indian-route undergraduate marks: 55% General, 50% eligible OBC-NCL or 45% eligible SC/ST/PwD. Foreign applicants require equivalent qualifications; these concessions are not automatic.",
+              "Be under 25 on 1 July 2026.",
+              "Mathematics at 10+2 or equivalent, including NIOS Senior Secondary mathematics, or undergraduate mathematical-economics coursework.",
+              "Regular Indian-route selection uses the MSE entrance test; qualifying marks and age break entrance-score ties.",
+              "Foreign self-financing applicants need an equivalent qualifying examination. Obtain AIU equivalence if the university or board is not on the AIU list.",
+              "When the foreign-route English-test rule applies: IELTS 6.5 overall and 6 in each section, or TOEFL iBT 95 overall and at least 20 in writing; scores must be no more than two years old."
+            ]
+          },
+          "applicationSteps": [
+            "Check the programme qualification, mathematics, age and applicant-category conditions for the 2026 cycle.",
+            "Regular entrance-route applicants complete the MSE online form and take the designated test; qualifying marks and age break entrance-score ties.",
+            "NRI and foreign applicants use the separately labelled form linked from the official admissions page and prepare the prescribed application, bio-data and qualifications for the designated programme office.",
+            "Foreign self-financing applicants complete equivalence, authenticated-document and applicable English-proficiency review before admission and category-specific payment."
+          ],
+          "documentsRequired": {
+            "academic": [
+              "Qualifying undergraduate transcripts and degree records",
+              "Records establishing the required mathematics study",
+              "Foreign route: grade transcripts with grading explanation and secondary-school, diploma and degree certificates; do not post originals",
+              "Foreign route: attested qualifying-degree syllabi and curricula",
+              "Foreign route: AIU equivalence certificate if the university or board is unlisted",
+              "Foreign route: duly attested English translations of transcripts",
+              "Overseas records: authorised-government-agency attestation and Indian Embassy or Consulate certification"
+            ],
+            "application": [
+              "Prescribed programme application",
+              "Foreign self-financing route: bio-data and academic qualification details",
+              "Foreign route: passport copy showing nationality and personal details",
+              "Foreign route: government fee-payment undertaking or bank statement showing USD 5,000",
+              "Foreign route: English-proficiency evidence, with a qualifying test where required"
+            ]
+          },
+          "deadlinesNote": "These requirements describe the 2026 admission cycle. Its application windows are not a promise of a current opening or a future intake; confirm the next published cycle before applying.",
+          "reportedFeeQuote": {
+            "currency": "USD",
+            "minAmount": 4333,
+            "status": "confirmed",
+            "period": "semester",
+            "componentBasis": "Foreign-national tuition per semester only; excludes USD 750 semester infrastructure and USD 500 one-time admission.",
+            "audience": "international",
+            "category": "Foreign national — not NRI",
+            "academicYear": "2026–27",
+            "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+            "sourceLabel": "MSE MA brochure 2026",
+            "verifiedAt": "2026-10-27"
+          }
+        }
+      },
+      "preserveFields": [
+        "The existing fee and reportedFeeQuote retain their exact domestic/foreign category and source-native currency basis.",
+        "Unknown teaching language stays omitted; English-proficiency admission rules do not establish teaching medium.",
+        "No unverified future intake months or deadlines are added."
+      ],
+      "scope": "Programme-specific 2026 route with documented foreign-qualification equivalence; no MBA or research-award hold is changed."
+    },
+    {
+      "programmeSlug": "ma-applied-quantitative-finance",
+      "officialTitle": "Master of Arts in Applied Quantitative Finance",
+      "replaceFields": {
+        "audienceEligibility": {
+          "availability": "global",
+          "eligibleAudiences": [
+            "Indian applicants meeting the 2026 programme qualification and age rules",
+            "NRI applicants through the separately labelled 2026 application route",
+            "Foreign nationals meeting equivalent qualification rules through self-financing admission"
+          ],
+          "restrictions": [
+            "The academic, mathematics and age rules below concern the 2026 admission cycle, not an announced future intake.",
+            "Foreign self-financing applicants require an equivalent qualifying examination and the same minimum academic qualifications. Indian reserved-category concessions are not automatically extended to foreign applicants.",
+            "For foreign qualifications, MSE checks correspondence against the AIU list; an unlisted university or board requires an AIU equivalence certificate.",
+            "Foreign applicants submit attested English translations of transcripts. Overseas records also require the stated authorised-government-agency attestation and Indian Embassy or Consulate certification.",
+            "The dedicated NRI/foreign form does not make every applicant eligible. Foreign-national entrance-test exemption is not automatically extended to Indian-passport NRI applicants.",
+            "Foreign applicants must document English proficiency. Where English is not the first language or the medium during secondary and tertiary education, the ordinance requires a qualifying English test no more than two years old."
+          ],
+          "notes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence.",
+          "verifiedAt": "2026-10-27",
+          "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf"
+        },
+        "admissionsContent": {
+          "overview": "This two-year applied quantitative finance degree uses the MSE entrance test for the regular Indian route. NRI and foreign applicants use the separately labelled application route; eligible foreign nationals may apply through self-financing admission.",
+          "eligibility": {
+            "intro": "Use the correct Indian, NRI or foreign self-financing route; nationality alone does not waive academic or documentation conditions.",
+            "items": [
+              "An undergraduate degree in social sciences, including commerce/management, sciences or engineering; final-year candidates in AY 2026 could also apply.",
+              "Indian-route undergraduate marks: 55% General, 50% eligible OBC-NCL or 45% eligible SC/ST/PwD. Foreign applicants require equivalent qualifications; these concessions are not automatic.",
+              "Be under 25 on 1 July 2026.",
+              "Mathematics at 10+2 or equivalent, including NIOS Senior Secondary mathematics, or undergraduate mathematical-economics coursework.",
+              "Regular Indian-route selection uses the MSE entrance test; qualifying marks and age break entrance-score ties.",
+              "Foreign self-financing applicants need an equivalent qualifying examination. Obtain AIU equivalence if the university or board is not on the AIU list.",
+              "When the foreign-route English-test rule applies: IELTS 6.5 overall and 6 in each section, or TOEFL iBT 95 overall and at least 20 in writing; scores must be no more than two years old."
+            ]
+          },
+          "applicationSteps": [
+            "Check the programme qualification, mathematics, age and applicant-category conditions for the 2026 cycle.",
+            "Regular entrance-route applicants complete the MSE online form and take the designated test; qualifying marks and age break entrance-score ties.",
+            "NRI and foreign applicants use the separately labelled form linked from the official admissions page and prepare the prescribed application, bio-data and qualifications for the designated programme office.",
+            "Foreign self-financing applicants complete equivalence, authenticated-document and applicable English-proficiency review before admission and category-specific payment."
+          ],
+          "documentsRequired": {
+            "academic": [
+              "Qualifying undergraduate transcripts and degree records",
+              "Records establishing the required mathematics study",
+              "Foreign route: grade transcripts with grading explanation and secondary-school, diploma and degree certificates; do not post originals",
+              "Foreign route: attested qualifying-degree syllabi and curricula",
+              "Foreign route: AIU equivalence certificate if the university or board is unlisted",
+              "Foreign route: duly attested English translations of transcripts",
+              "Overseas records: authorised-government-agency attestation and Indian Embassy or Consulate certification"
+            ],
+            "application": [
+              "Prescribed programme application",
+              "Foreign self-financing route: bio-data and academic qualification details",
+              "Foreign route: passport copy showing nationality and personal details",
+              "Foreign route: government fee-payment undertaking or bank statement showing USD 5,000",
+              "Foreign route: English-proficiency evidence, with a qualifying test where required"
+            ]
+          },
+          "deadlinesNote": "These requirements describe the 2026 admission cycle. Its application windows are not a promise of a current opening or a future intake; confirm the next published cycle before applying.",
+          "reportedFeeQuote": {
+            "currency": "USD",
+            "minAmount": 4333,
+            "status": "confirmed",
+            "period": "semester",
+            "componentBasis": "Foreign-national tuition per semester only; excludes USD 750 semester infrastructure and USD 500 one-time admission.",
+            "audience": "international",
+            "category": "Foreign national — not NRI",
+            "academicYear": "2026–27",
+            "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+            "sourceLabel": "MSE MA brochure 2026",
+            "verifiedAt": "2026-10-27"
+          }
+        }
+      },
+      "preserveFields": [
+        "The existing fee and reportedFeeQuote retain their exact domestic/foreign category and source-native currency basis.",
+        "Unknown teaching language stays omitted; English-proficiency admission rules do not establish teaching medium.",
+        "No unverified future intake months or deadlines are added."
+      ],
+      "scope": "Programme-specific 2026 route with documented foreign-qualification equivalence; no MBA or research-award hold is changed."
+    },
+    {
+      "programmeSlug": "ma-actuarial-economics",
+      "officialTitle": "Master of Arts in Actuarial Economics",
+      "replaceFields": {
+        "audienceEligibility": {
+          "availability": "global",
+          "eligibleAudiences": [
+            "Indian applicants meeting the 2026 programme qualification and age rules",
+            "NRI applicants through the separately labelled 2026 application route",
+            "Foreign nationals meeting equivalent qualification rules through self-financing admission"
+          ],
+          "restrictions": [
+            "The academic, mathematics and age rules below concern the 2026 admission cycle, not an announced future intake.",
+            "Foreign self-financing applicants require an equivalent qualifying examination and the same minimum academic qualifications. Indian reserved-category concessions are not automatically extended to foreign applicants.",
+            "For foreign qualifications, MSE checks correspondence against the AIU list; an unlisted university or board requires an AIU equivalence certificate.",
+            "Foreign applicants submit attested English translations of transcripts. Overseas records also require the stated authorised-government-agency attestation and Indian Embassy or Consulate certification.",
+            "The dedicated NRI/foreign form does not make every applicant eligible. Foreign-national entrance-test exemption is not automatically extended to Indian-passport NRI applicants.",
+            "Foreign applicants must document English proficiency. Where English is not the first language or the medium during secondary and tertiary education, the ordinance requires a qualifying English test no more than two years old."
+          ],
+          "notes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence.",
+          "verifiedAt": "2026-10-27",
+          "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf"
+        },
+        "admissionsContent": {
+          "overview": "This two-year actuarial economics degree uses the MSE entrance test for the regular Indian route. NRI and foreign applicants use the separately labelled application route; eligible foreign nationals may apply through self-financing admission.",
+          "eligibility": {
+            "intro": "Use the correct Indian, NRI or foreign self-financing route; nationality alone does not waive academic or documentation conditions.",
+            "items": [
+              "An undergraduate degree in social sciences, including commerce/management, sciences or engineering; final-year candidates in AY 2026 could also apply.",
+              "Indian-route undergraduate marks: 55% General, 50% eligible OBC-NCL or 45% eligible SC/ST/PwD. Foreign applicants require equivalent qualifications; these concessions are not automatic.",
+              "Be under 25 on 1 July 2026.",
+              "Mathematics at 10+2 or equivalent, including NIOS Senior Secondary mathematics, or undergraduate mathematical-economics coursework.",
+              "Regular Indian-route selection uses the MSE entrance test; qualifying marks and age break entrance-score ties.",
+              "Foreign self-financing applicants need an equivalent qualifying examination. Obtain AIU equivalence if the university or board is not on the AIU list.",
+              "When the foreign-route English-test rule applies: IELTS 6.5 overall and 6 in each section, or TOEFL iBT 95 overall and at least 20 in writing; scores must be no more than two years old."
+            ]
+          },
+          "applicationSteps": [
+            "Check the programme qualification, mathematics, age and applicant-category conditions for the 2026 cycle.",
+            "Regular entrance-route applicants complete the MSE online form and take the designated test; qualifying marks and age break entrance-score ties.",
+            "NRI and foreign applicants use the separately labelled form linked from the official admissions page and prepare the prescribed application, bio-data and qualifications for the designated programme office.",
+            "Foreign self-financing applicants complete equivalence, authenticated-document and applicable English-proficiency review before admission and category-specific payment."
+          ],
+          "documentsRequired": {
+            "academic": [
+              "Qualifying undergraduate transcripts and degree records",
+              "Records establishing the required mathematics study",
+              "Foreign route: grade transcripts with grading explanation and secondary-school, diploma and degree certificates; do not post originals",
+              "Foreign route: attested qualifying-degree syllabi and curricula",
+              "Foreign route: AIU equivalence certificate if the university or board is unlisted",
+              "Foreign route: duly attested English translations of transcripts",
+              "Overseas records: authorised-government-agency attestation and Indian Embassy or Consulate certification"
+            ],
+            "application": [
+              "Prescribed programme application",
+              "Foreign self-financing route: bio-data and academic qualification details",
+              "Foreign route: passport copy showing nationality and personal details",
+              "Foreign route: government fee-payment undertaking or bank statement showing USD 5,000",
+              "Foreign route: English-proficiency evidence, with a qualifying test where required"
+            ]
+          },
+          "deadlinesNote": "These requirements describe the 2026 admission cycle. Its application windows are not a promise of a current opening or a future intake; confirm the next published cycle before applying.",
+          "reportedFeeQuote": {
+            "currency": "USD",
+            "minAmount": 4333,
+            "status": "confirmed",
+            "period": "semester",
+            "componentBasis": "Foreign-national tuition per semester only; excludes USD 750 semester infrastructure and USD 500 one-time admission.",
+            "audience": "international",
+            "category": "Foreign national — not NRI",
+            "academicYear": "2026–27",
+            "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+            "sourceLabel": "MSE MA brochure 2026",
+            "verifiedAt": "2026-10-27"
+          }
+        }
+      },
+      "preserveFields": [
+        "The existing fee and reportedFeeQuote retain their exact domestic/foreign category and source-native currency basis.",
+        "Unknown teaching language stays omitted; English-proficiency admission rules do not establish teaching medium.",
+        "No unverified future intake months or deadlines are added."
+      ],
+      "scope": "Programme-specific 2026 route with documented foreign-qualification equivalence; no MBA or research-award hold is changed."
+    },
+    {
+      "programmeSlug": "ma-environmental-economics",
+      "officialTitle": "Master of Arts in Environmental Economics",
+      "replaceFields": {
+        "audienceEligibility": {
+          "availability": "global",
+          "eligibleAudiences": [
+            "Indian applicants meeting the 2026 programme qualification and age rules",
+            "NRI applicants through the separately labelled 2026 application route",
+            "Foreign nationals meeting equivalent qualification rules through self-financing admission"
+          ],
+          "restrictions": [
+            "The academic, mathematics and age rules below concern the 2026 admission cycle, not an announced future intake.",
+            "Foreign self-financing applicants require an equivalent qualifying examination and the same minimum academic qualifications. Indian reserved-category concessions are not automatically extended to foreign applicants.",
+            "For foreign qualifications, MSE checks correspondence against the AIU list; an unlisted university or board requires an AIU equivalence certificate.",
+            "Foreign applicants submit attested English translations of transcripts. Overseas records also require the stated authorised-government-agency attestation and Indian Embassy or Consulate certification.",
+            "The dedicated NRI/foreign form does not make every applicant eligible. Foreign-national entrance-test exemption is not automatically extended to Indian-passport NRI applicants.",
+            "Foreign applicants must document English proficiency. Where English is not the first language or the medium during secondary and tertiary education, the ordinance requires a qualifying English test no more than two years old."
+          ],
+          "notes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence.",
+          "verifiedAt": "2026-10-27",
+          "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf"
+        },
+        "admissionsContent": {
+          "overview": "This two-year environmental economics degree uses the MSE entrance test for the regular Indian route. NRI and foreign applicants use the separately labelled application route; eligible foreign nationals may apply through self-financing admission.",
+          "eligibility": {
+            "intro": "Use the correct Indian, NRI or foreign self-financing route; nationality alone does not waive academic or documentation conditions.",
+            "items": [
+              "An undergraduate degree in social sciences, including commerce/management, sciences or engineering; final-year candidates in AY 2026 could also apply.",
+              "Indian-route undergraduate marks: 55% General, 50% eligible OBC-NCL or 45% eligible SC/ST/PwD. Foreign applicants require equivalent qualifications; these concessions are not automatic.",
+              "Be under 25 on 1 July 2026.",
+              "Mathematics at 10+2 or equivalent, including NIOS Senior Secondary mathematics, or undergraduate mathematical-economics coursework.",
+              "Regular Indian-route selection uses the MSE entrance test; qualifying marks and age break entrance-score ties.",
+              "Foreign self-financing applicants need an equivalent qualifying examination. Obtain AIU equivalence if the university or board is not on the AIU list.",
+              "When the foreign-route English-test rule applies: IELTS 6.5 overall and 6 in each section, or TOEFL iBT 95 overall and at least 20 in writing; scores must be no more than two years old."
+            ]
+          },
+          "applicationSteps": [
+            "Check the programme qualification, mathematics, age and applicant-category conditions for the 2026 cycle.",
+            "Regular entrance-route applicants complete the MSE online form and take the designated test; qualifying marks and age break entrance-score ties.",
+            "NRI and foreign applicants use the separately labelled form linked from the official admissions page and prepare the prescribed application, bio-data and qualifications for the designated programme office.",
+            "Foreign self-financing applicants complete equivalence, authenticated-document and applicable English-proficiency review before admission and category-specific payment."
+          ],
+          "documentsRequired": {
+            "academic": [
+              "Qualifying undergraduate transcripts and degree records",
+              "Records establishing the required mathematics study",
+              "Foreign route: grade transcripts with grading explanation and secondary-school, diploma and degree certificates; do not post originals",
+              "Foreign route: attested qualifying-degree syllabi and curricula",
+              "Foreign route: AIU equivalence certificate if the university or board is unlisted",
+              "Foreign route: duly attested English translations of transcripts",
+              "Overseas records: authorised-government-agency attestation and Indian Embassy or Consulate certification"
+            ],
+            "application": [
+              "Prescribed programme application",
+              "Foreign self-financing route: bio-data and academic qualification details",
+              "Foreign route: passport copy showing nationality and personal details",
+              "Foreign route: government fee-payment undertaking or bank statement showing USD 5,000",
+              "Foreign route: English-proficiency evidence, with a qualifying test where required"
+            ]
+          },
+          "deadlinesNote": "These requirements describe the 2026 admission cycle. Its application windows are not a promise of a current opening or a future intake; confirm the next published cycle before applying.",
+          "reportedFeeQuote": {
+            "currency": "USD",
+            "minAmount": 4333,
+            "status": "confirmed",
+            "period": "semester",
+            "componentBasis": "Foreign-national tuition per semester only; excludes USD 750 semester infrastructure and USD 500 one-time admission.",
+            "audience": "international",
+            "category": "Foreign national — not NRI",
+            "academicYear": "2026–27",
+            "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+            "sourceLabel": "MSE MA brochure 2026",
+            "verifiedAt": "2026-10-27"
+          }
+        }
+      },
+      "preserveFields": [
+        "The existing fee and reportedFeeQuote retain their exact domestic/foreign category and source-native currency basis.",
+        "Unknown teaching language stays omitted; English-proficiency admission rules do not establish teaching medium.",
+        "No unverified future intake months or deadlines are added."
+      ],
+      "scope": "Programme-specific 2026 route with documented foreign-qualification equivalence; no MBA or research-award hold is changed."
+    },
+    {
+      "programmeSlug": "msc-data-science",
+      "officialTitle": "Master of Science in Data Science",
+      "replaceFields": {
+        "audienceEligibility": {
+          "availability": "global",
+          "eligibleAudiences": [
+            "Indian applicants meeting the 2026 programme qualification and age rules",
+            "NRI applicants through the separately labelled 2026 application route",
+            "Foreign nationals meeting equivalent qualification rules through self-financing admission"
+          ],
+          "restrictions": [
+            "The academic, mathematics and age rules below concern the 2026 admission cycle, not an announced future intake.",
+            "Foreign self-financing applicants require an equivalent qualifying examination and the same minimum academic qualifications. Indian reserved-category concessions are not automatically extended to foreign applicants.",
+            "For foreign qualifications, MSE checks correspondence against the AIU list; an unlisted university or board requires an AIU equivalence certificate.",
+            "Foreign applicants submit attested English translations of transcripts. Overseas records also require the stated authorised-government-agency attestation and Indian Embassy or Consulate certification.",
+            "The dedicated NRI/foreign form does not make every applicant eligible. Foreign-national entrance-test exemption is not automatically extended to Indian-passport NRI applicants.",
+            "Foreign applicants must document English proficiency. Where English is not the first language or the medium during secondary and tertiary education, the ordinance requires a qualifying English test no more than two years old."
+          ],
+          "notes": "The 2026 brochure and live admissions page establish the current route. Foreign equivalence/documents are taken from the programme-specific ordinance effective 2025–26, referenced generically by the 2026 brochure; old dates, seat counts, fees and contact details are not reused.",
+          "verifiedAt": "2026-10-27",
+          "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-M.Sc_.-Degree-in-Data-Science-Brochure-2026-v2.pdf"
+        },
+        "admissionsContent": {
+          "overview": "This two-year data-science degree offers MSE entrance-test and specified GATE-score routes. NRI and foreign applicants use the separately labelled application route; foreign self-financing applications require qualification review.",
+          "eligibility": {
+            "intro": "Use the correct Indian, NRI or foreign self-financing route; nationality alone does not waive academic or documentation conditions.",
+            "items": [
+              "Entrance-test route: an undergraduate degree in social sciences, commerce/management, sciences, engineering, mathematics or statistics; final-year candidates in AY 2026 could also apply.",
+              "Indian-route undergraduate marks: 55% General, 50% eligible OBC-NCL or 45% eligible SC/ST/PwD. Foreign applicants require equivalent qualifications; these concessions are not automatic.",
+              "Be under 25 on 1 July 2026.",
+              "Entrance-test route: mathematics at 10+2 or equivalent, or undergraduate mathematical-economics coursework.",
+              "Alternatively, valid GATE CS, DA, MA, ST or PH scores can be used for up to 50% of seats without the MSE entrance test; GATE is not compulsory for every route.",
+              "Foreign self-financing applicants need an equivalent qualifying examination. Obtain AIU equivalence if the university or board is not on the AIU list.",
+              "When the foreign-route English-test rule applies: IELTS 6.5 overall and 6 in each section, or TOEFL iBT 95 overall and at least 20 in writing; scores must be no more than two years old."
+            ]
+          },
+          "applicationSteps": [
+            "Check the programme qualification, mathematics, age and applicant-category conditions for the 2026 cycle.",
+            "Regular entrance-route applicants complete the MSE online form and take the designated test; qualifying marks and age break entrance-score ties.",
+            "Eligible GATE-score applicants use the separate GATE application route rather than assuming the MSE entrance test is compulsory.",
+            "NRI and foreign applicants use the separately labelled form linked from the official admissions page and prepare the prescribed application, bio-data and qualifications for the designated programme office.",
+            "Foreign self-financing applicants complete equivalence, authenticated-document and applicable English-proficiency review before admission and category-specific payment."
+          ],
+          "documentsRequired": {
+            "academic": [
+              "Qualifying undergraduate transcripts and degree records",
+              "Records establishing the required mathematics study",
+              "Foreign route: grade transcripts with grading explanation and secondary-school, diploma and degree certificates; do not post originals",
+              "Foreign route: attested qualifying-degree syllabi and curricula",
+              "Foreign route: AIU equivalence certificate if the university or board is unlisted",
+              "Foreign route: duly attested English translations of transcripts",
+              "Overseas records: authorised-government-agency attestation and Indian Embassy or Consulate certification"
+            ],
+            "application": [
+              "Prescribed programme application",
+              "Foreign self-financing route: bio-data and academic qualification details",
+              "Foreign route: passport copy showing nationality and personal details",
+              "Foreign route: government fee-payment undertaking or bank statement showing USD 10,000",
+              "Foreign route: English-proficiency evidence, with a qualifying test where required",
+              "Valid score record when applying through the specified GATE route"
+            ]
+          },
+          "deadlinesNote": "These requirements describe the 2026 admission cycle. Its application windows are not a promise of a current opening or a future intake; confirm the next published cycle before applying.",
+          "reportedFeeQuote": {
+            "currency": "USD",
+            "minAmount": 6934,
+            "status": "confirmed",
+            "period": "semester",
+            "componentBasis": "Foreign-national tuition per semester only; excludes USD 750 semester infrastructure and USD 500 one-time admission.",
+            "audience": "international",
+            "category": "Foreign national — not NRI",
+            "academicYear": "2026–27",
+            "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-M.Sc_.-Degree-in-Data-Science-Brochure-2026-v2.pdf",
+            "sourceLabel": "MSE Data Science brochure 2026",
+            "verifiedAt": "2026-10-27"
+          }
+        }
+      },
+      "preserveFields": [
+        "The existing fee and reportedFeeQuote retain their exact domestic/foreign category and source-native currency basis.",
+        "Unknown teaching language stays omitted; English-proficiency admission rules do not establish teaching medium.",
+        "No unverified future intake months or deadlines are added."
+      ],
+      "scope": "Programme-specific 2026 route with documented foreign-qualification equivalence; no MBA or research-award hold is changed."
+    }
+  ],
+  "standingPolicyBoundary": "- Integrated MA: its **2026 brochure itself** specifies current age, marks, mathematics, first-attempt/cohort rules and the foreign self-financing route, AIU equivalence where required, attested translations and overseas authentication. No MA/MSc English-test rule is copied into integrated MA.\n- Five MAs: the **2026 brochure** sets current academic/age/mathematics conditions and foreign direct-application instructions. The **live admissions page** explicitly labels its NRI/foreign form for admissions 2026. The **current MA academic page still links the April 2025 ordinance**; that programme-specific standing document supplies foreign equivalence, documents, financial assurance and conditional English proficiency. Old ordinance fees/dates are not reused.\n- MSc: the **2026 v2 brochure** supplies current requirements and clearly separates entrance-test from specified GATE-score admission. It explicitly directs foreign applicants to the MSc ordinance for detailed guidelines. The **live admissions page** labels both NRI/foreign and GATE application entry points for 2026. The retrieved **MSc ordinance effective 2025–26** supplies foreign equivalence and document rules. It is not a newly issued 2026 document; its old age date, obsolete three-seat statement, fee amounts and inconsistent office address are excluded.\n- Indian reservation-category marks are labelled Indian-route concessions. No foreign applicant is automatically assigned OBC/SC/ST concessions. A form labelled NRI/foreign does not establish that every NRI meets eligibility or receives a foreign-national entrance-test exemption.\n- The English-test rule retains the ordinance's condition and scores. It is not evidence that the programme is taught in English. Unknown teaching language and future intakes remain omitted.\n- Programme-specific foreign financial proof differs: MA bank statement USD 5,000; MSc USD 10,000; each alternatively permits the stated government fee-payment undertaking. Neither is a tuition quotation.",
+  "integratedFeeCorrection": {
+    "url": "https://mse.ac.in/wp-content/uploads/2026/08/IMA-Student-Handbook-2026.pdf",
+    "page": 14,
+    "firstThreeYears": "BA-stage fees, native semester basis",
+    "laterYears": "MA rates apply in years4–5, no five-year fixed sum",
+    "foreignTuitionUSD": 3025,
+    "nriTuitionUSD": 1815,
+    "semesterInfrastructureUSD": 750,
+    "oneTimeAdmissionProcessingUSD": 500
+  },
+  "scope": "Seven current economics/data-science routes only. Indian category concessions never assigned automatically to foreign applicants. MBA conflicts and research route gaps remain held."
+}

@@ -1,0 +1,45 @@
+{
+  "schemaPass": true,
+  "actualReaderPass": true,
+  "expiredEvidenceCount": 0,
+  "programmes": 9,
+  "evidenceRows": 170,
+  "readyForLocalMediaPreparation": true,
+  "readyForDirectApply": false,
+  "uploads": 0,
+  "databaseAccess": false,
+  "note": "Source links are reviewed. Explicit local upload or verified existing mappings are still required before a real migration.",
+  "checkedAt": "2026-10-27",
+  "preparationSafetyTests": {
+    "passed": 12,
+    "failed": 0,
+    "command": "node --import tsx --test content-preparation/tn-batch2-20261027/psg-institute-of-technology-and-applied-research/prepare-local.test.mjs"
+  },
+  "sourceMediaHTTPImageAndVisualReview": [
+    {
+      "kind": "logo",
+      "url": "https://psgitech.ac.in/design/assets/images/PSG_logo.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 75499,
+      "sha256": "3b04ff6ec8eebe7a894acd201f0947851d3bb0c3eeac491ac9fd8ecde7d53464",
+      "unchanged": true,
+      "checkedAt": "2026-10-27T12:41:14.048506+00:00"
+    },
+    {
+      "kind": "cover",
+      "url": "https://psgitech.ac.in/uploads/main_website/image_slider/active/11.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 168040,
+      "sha256": "b38b0b57bc2ad2f00c1fdd2d371e891bb9b9f8f5a755bf36a9a4674535d58e98",
+      "unchanged": true,
+      "checkedAt": "2026-10-27T12:41:18.449441+00:00"
+    }
+  ],
+  "cloudinaryUpload": "not_run: explicit user local stage",
+  "numberedMigrationValidation": "not_run: intentionally outside content-migrations until hosted media is verified",
+  "sharedRemoteLedgerEdited": false,
+  "livePublished": false,
+  "payloadSha256": "4b3883cd9e9185f61f70486e7cf3f24896b9579a49299c81aecd5cb545ba11bc"
+}

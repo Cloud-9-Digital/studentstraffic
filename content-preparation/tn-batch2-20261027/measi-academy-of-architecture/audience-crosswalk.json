@@ -1,0 +1,70 @@
+{
+  "checkedAt": "2026-10-27",
+  "institution": "measi-academy-of-architecture",
+  "officialSource": "https://static.tneaonline.org/docs/BArch_Information_Brochure_2026.pdf?t=1777925997129",
+  "applicableOffering": "measi-academy-barch",
+  "academicAndAudience": {
+    "availability": "restricted",
+    "eligibleAudiences": [
+      "Indian applicants meeting the TNEA 2026 B.Arch nationality/nativity/schooling rules",
+      "Tamil Nadu-native OCI/PIO cardholders permitted by the stated exception",
+      "Sri Lankan Tamil refugees educated in Tamil Nadu with prescribed documents"
+    ],
+    "restrictions": [
+      "Only the positively evidenced TNEA B.Arch counselling route is covered, not general foreign or NRI admission.",
+      "Tamil Nadu candidates educated in Classes 8–12 within the state need no nativity certificate; Tamil Nadu natives who studied any of those classes outside it need the prescribed electronic nativity certificate.",
+      "Children of Central Government employees serving continuously in Tamil Nadu for five years need employer proof; a guardian qualifies only if both parents are deceased.",
+      "Children of permanent public-sector/government-recognised-institution employees serving in Tamil Nadu for five years need employer/employment evidence.",
+      "Children of Tamil Nadu-cadre All India Service officers need parental declaration; other-state applicants educated in Classes 8–12 in Tamil Nadu may apply.",
+      "Parent-service and other-state-schooling categories compete in Open Competition, not Tamil Nadu communal reservation.",
+      "Tamil Nadu-native OCI/PIO cardholders compete in Open Category; the exception does not cover those born abroad after 4 March 2021.",
+      "Sri Lankan Tamil refugees educated in Tamil Nadu compete in Open Competition with the prescribed refugee evidence.",
+      "Academic qualification, single-board subject rules and accepted architecture aptitude qualification all remain mandatory; minimum eligibility does not assure a seat."
+    ],
+    "notes": "Exact architecture-brochure rules, not transplanted engineering-subject conditions. No unverified nationality ban or unrestricted international availability is asserted.",
+    "verifiedAt": "2026-10-27",
+    "sourceUrl": "https://static.tneaonline.org/docs/BArch_Information_Brochure_2026.pdf?t=1777925997129"
+  },
+  "qualification": {
+    "intro": "The B.Arch route requires both the academic qualification and an accepted architecture aptitude-test result.",
+    "items": [
+      "Pass all subjects in 10+2 or equivalent from a single board, with Physics and Mathematics compulsory and at least 45% aggregate.",
+      "The third eligible subject can be Chemistry, Biology, a Technical Vocational subject, Computer Science, IT, Informatics Practices, Engineering Graphics or Business Studies.",
+      "Alternatively, pass a 10+3 diploma with Mathematics compulsory and at least 45% aggregate.",
+      "Qualify NATA or the accepted JEE Paper 2 architecture aptitude route. TNEA schooling, nativity and category rules also apply to its counselling seats."
+    ]
+  },
+  "documents": {
+    "academic": [
+      "Class 10 and Class 11 marksheets",
+      "HSC Class 12/equivalent or diploma marksheets",
+      "Transfer certificate",
+      "Qualifying NATA or accepted JEE Paper 2 architecture result"
+    ],
+    "application": [
+      "Applicable electronic Tamil Nadu nativity certificate or parent-employer/All India Service declaration evidence",
+      "Applicable Tamil Nadu community and special-reservation certificates",
+      "Income certificate and first-graduate certificate/joint declaration, when applicable",
+      "Government-school Classes 6–12 proof if claiming 7.5% reservation",
+      "OCI/PIO card and Tamil Nadu nativity evidence for that exception",
+      "Sri Lankan Tamil refugees: Headquarters Tahsildar identification certificate",
+      "Refugees not registered in a camp additionally need original passport, visa and police-station registration letter",
+      "Application number for the college provisional-admission payment route"
+    ]
+  },
+  "independentApproval": {
+    "url": "https://coa.gov.in/institutionStatus.php",
+    "identity": "TN13 MEASI Academy Of Architecture, 87 Peters Road Royapettah Chennai 600014",
+    "programme": "B.Arch",
+    "approvalPeriod": "2026–27",
+    "intake": 160,
+    "commencementYear": 1999,
+    "affiliator": "Anna University, Chennai"
+  },
+  "scopeCautions": [
+    "The crest 1902 is MEASI trust branding, not academy establishment year.",
+    "Only government counselling admissions are positively scoped; do not infer general foreign/NRI or institutional nationality ban.",
+    "M.Arch General and M.Arch Real Estate Development remain individual holds; full current selection/documents/audience unverified.",
+    "Unknown medium/intake omitted; fees on_request supported by exact official payment instructions, no third-party annualisation."
+  ]
+}

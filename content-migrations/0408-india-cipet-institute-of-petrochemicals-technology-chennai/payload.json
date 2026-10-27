@@ -1,0 +1,979 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "be-btech-manufacturing-engineering",
+      "name": "B.E./B.Tech in Manufacturing Engineering",
+      "shortName": "B.E./B.Tech Manufacturing",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "manufacturing-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Manufacturing Engineering",
+        "BTech Manufacturing Engineering"
+      ],
+      "durationYears": 4,
+      "displayOrder": 0,
+      "summary": "An undergraduate manufacturing-engineering category covering manufacturing processes, production systems, design, materials and applied engineering methods. Institutions define their own entry qualifications, laboratory work, curriculum, delivery language and practical experience.",
+      "metaTitle": "B.E./B.Tech Manufacturing Programmes and Admissions",
+      "metaDescription": "Compare B.E./B.Tech Manufacturing programmes by official award, entry requirements, duration, applicant category, language and tuition fees."
+    },
+    {
+      "slug": "be-btech-rubber-plastics-technology",
+      "name": "B.E./B.Tech in Rubber and Plastics Technology",
+      "shortName": "B.E./B.Tech Rubber & Plastics",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "polymer-technology",
+      "aliases": [
+        "B.Tech Polymer Technology",
+        "B.Tech Plastics Technology"
+      ],
+      "durationYears": 4,
+      "displayOrder": 0,
+      "summary": "An undergraduate engineering category for rubber, plastics and related polymer technology. Programmes can combine materials, processing, testing, design and manufacturing study; exact academic prerequisites, curriculum and practical components remain institution-specific.",
+      "metaTitle": "B.E./B.Tech Rubber & Plastics Programmes and Admissions",
+      "metaDescription": "Compare B.E./B.Tech Rubber & Plastics programmes by official award, entry requirements, duration, applicant category, language and tuition fees."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "name": "CIPET Institute of Petrochemicals Technology Chennai",
+      "city": "Chennai",
+      "type": "Public",
+      "establishedYear": 1968,
+      "officialWebsite": "https://www.cipet.gov.in/centres/cipet-chennai/introduction.php",
+      "mediaAttribution": {
+        "logo": {
+          "sourceUrl": "https://www.cipet.gov.in/images/new/cipet-logo-2-new.jpg",
+          "rights": "Official CIPET institutional brand asset supplied intact on its public website, used for factual institutional identification. The original includes the department/ministry wordmark; no cropped masthead, PDF extraction or tiny favicon substitute is used. No open licence, ownership transfer or endorsement is claimed.",
+          "checkedAt": "2026-10-27"
+        },
+        "cover": {
+          "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/img/slides/6.jpg",
+          "rights": "Official CIPET Chennai campus entrance photograph from its centre-specific slideshow, used intact for factual campus identification. The publisher’s identifying caption is retained unchanged. No open licence, ownership transfer or endorsement is claimed.",
+          "checkedAt": "2026-10-27",
+          "altText": "Entrance to CIPET Institute of Petrochemicals Technology Chennai"
+        }
+      },
+      "summary": "CIPET IPT Chennai is a government technical institute at Guindy Industrial Estate. Its first-year engineering routes include Plastics Technology and Manufacturing Engineering, alongside a wider campus portfolio in polymer science, design and technical training. Laboratory-based study and industrially focused facilities distinguish this specialist Chennai centre.",
+      "campusLifestyle": "Laboratories for processing, testing, mould-related work and computer-aided design sit alongside classrooms, a library, digital resources, cafeteria and hostels. The campus profile combines academic teaching with technical training rather than a broad multi-faculty university portfolio.",
+      "cityProfile": "The centre is at Thiru Vi-Ka Industrial Estate in Guindy, Chennai. Its campus page identifies nearby Ekkatuthangal Metro and Guindy suburban rail connections. The profile is limited to this Chennai centre: CIPET’s national navigation also lists many other centres, which must not be treated as additional Chennai campuses or programme locations.",
+      "practicalExposure": "The Chennai academic materials feature processing and testing laboratories, computer-aided design resources and library facilities for polymer-related study. The programme mix connects plastics technology, mould design and manufacturing with applied laboratory work. Training and placement services form part of the institutional provision, but a recruiter list or previous graduate outcome is not a guaranteed internship or job for a new applicant.",
+      "hostelOverview": "The Chennai prospectus describes separate boys’ and girls’ hostels for outstation students within the campus, with water, power backup and round-the-clock security. Accommodation charges and mess advances are additional to academic tuition; a place should be confirmed directly.",
+      "dietarySupport": "The campus has a cafeteria and hostel mess arrangements, with mess advances shown separately in the prospectus. Specific dietary or allergy provision is not established in the reviewed documents and should be confirmed before residence.",
+      "safetyOverview": "The hostel provision includes round-the-clock security according to the current prospectus. This describes an institutional service, not a guarantee of personal safety; applicants should ask the centre for current emergency and grievance contacts.",
+      "studentSupport": "The admissions materials identify programme contacts and the appropriate counselling or direct-application route. Library, digital-library and training-and-placement provision support academic work and preparation for the next stage of study or employment. Students Traffic can help assess the correct admission category and prepare an application and full-cost plan.",
+      "whyChoose": [
+        "Study plastics technology or manufacturing engineering at a specialist government technical institute.",
+        "Processing, testing and design laboratories support applied technical study.",
+        "The Guindy campus combines classrooms, library resources and separate residential facilities."
+      ],
+      "thingsToConsider": [
+        "Only the positively verified first-year academic TNEA route is detailed here; other programme and entry modes require their own assessment.",
+        "The prospectus states an age limit of 21 for first-year UG admission but does not specify an age-calculation date.",
+        "Published tuition excludes development, university, admission, hostel and mess costs; the specific OCI/PIO/refugee tariff is not separately established."
+      ],
+      "bestFitFor": [
+        "School-leavers with the required mathematics, physics and chemistry qualification.",
+        "Applicants who meet the exact TNEA academic, nativity or specifically permitted category conditions.",
+        "Students comparing focused plastics or manufacturing study with broader engineering colleges."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "Anna University — listed affiliated engineering college"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Anna University Chennai district affiliated-college roster",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Chennai%20-%20Copy.php"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Where is this CIPET centre located?",
+          "answer": "This profile concerns CIPET IPT at Thiru Vi-Ka Industrial Estate, Guindy, Chennai. It does not combine programmes from CIPET’s other centres. The campus identifies nearby Ekkatuthangal Metro and Guindy suburban-rail connections."
+        },
+        {
+          "question": "Which engineering routes are detailed here?",
+          "answer": "The supported first-year academic routes are four-year B.Tech Plastics Technology and B.E. Manufacturing Engineering, through TNEA college code 1321. Other campus awards and lateral-entry modes have separate requirements."
+        },
+        {
+          "question": "What independent affiliation and current course evidence is available?",
+          "answer": "Anna University’s own affiliated-college roster lists the Chennai centre with examination code 3103 and TNEA code 1321. DTE’s 2026 directory records approved intake for both UG branches, and its current counselling matrix names PA Plastics Technology and MN Manufacturing Engineering. This is not a claim that a separate 2026–27 AICTE EoA was retrieved."
+        },
+        {
+          "question": "What academic qualification is required?",
+          "answer": "The academic route requires a pass in HSC +1 and +2 or an accepted equivalent, with Mathematics, Physics and Chemistry. TNEA uses a 45% PCM average for General and 40% for the stated eligible reserved categories. Minimum marks do not assure allotment."
+        },
+        {
+          "question": "Is there an age restriction?",
+          "answer": "The 2026–27 CIPET prospectus states an age limit of 21 for first-year undergraduate entry. It does not identify the calculation date, so an applicant near the limit needs the centre’s cycle-specific clarification."
+        },
+        {
+          "question": "Can applicants from outside Tamil Nadu use TNEA?",
+          "answer": "Only the listed nativity, Tamil Nadu schooling or parent-service exceptions apply; an Indian passport alone is not enough. The programme entries state the exact categories and conditional employer, schooling and nativity records."
+        },
+        {
+          "question": "Can OCI or PIO applicants apply through this route?",
+          "answer": "The verified TNEA exception covers Tamil Nadu-native OCI/PIO cardholders under Open Category and excludes those born abroad after 4 March 2021. This does not establish an unrestricted foreign or separate NRI quota."
+        },
+        {
+          "question": "What is the Sri Lankan Tamil refugee route?",
+          "answer": "Sri Lankan Tamil refugees who studied in Tamil Nadu may participate under Open Competition with Headquarters Tahsildar identification. Those outside camp registration additionally need their original passport, visa and police-station registration letter."
+        },
+        {
+          "question": "How should the tuition amounts be read?",
+          "answer": "The first-year 2026–27 prospectus quotes standard annual tuition of INR 55,000 for B.Tech Plastics and INR 50,000 for B.E. Manufacturing. It does not separately identify the OCI/PIO/refugee tariff. Development, university, admission, hostel and mess charges are additional; request a category-specific full-cost plan."
+        },
+        {
+          "question": "Is accommodation available?",
+          "answer": "The prospectus describes separate on-campus hostels for men and women, with water, power backup and round-the-clock security. Room allocation and hostel/mess charges require separate confirmation; academic tuition does not cover them."
+        },
+        {
+          "question": "Are these admissions currently open?",
+          "answer": "The verified rules concern the 2026 counselling cycle. They do not establish a currently vacant seat or a future application window; follow the next specifically announced counselling dates."
+        },
+        {
+          "question": "Are lateral entry and postgraduate study the same application?",
+          "answer": "No. The current portfolio also contains separately advertised lateral-entry, postgraduate and diploma routes. Their exact eligibility, applicant categories and approvals must be checked individually rather than copied from the two first-year engineering routes."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Chennai campus identity and facilities",
+          "url": "https://www.cipet.gov.in/centres/cipet-chennai/introduction.php",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Chennai academic directory",
+          "url": "https://www.cipet.gov.in/centres/cipet-chennai/academics.php",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Chennai2026–27 UG/PG prospectus",
+          "url": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Chennai2026–27 diploma admission leaflet",
+          "url": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/12-05-2026-001/CSTS_ADMISSION_2026-27.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Anna University affiliated-college list",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Chennai%20-%20Copy.php",
+          "kind": "recognition",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Historical AICTE2025–26 degree EoA, institution-hosted",
+          "url": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/09-05-2025-001/EoA_from_AICTE_for_UG_PG_Programs_AY_2025-26.pdf",
+          "kind": "other",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Anna University current affiliated-college roster",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Chennai%20-%20Copy.php",
+          "kind": "recognition",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "DTE 2026 approved UG intake at CIPET Chennai",
+          "url": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "DTE 2026 academic counselling branch matrix",
+          "url": "https://static.tneaonline.org/docs/GENERAL_ACADEMIC_SEAT_MATRIX_BEFORE_SPECIAL_RESERVATION_COUNSELLING_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "TNEA 2026 exact eligibility and document policy",
+          "url": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1778803200023",
+          "kind": "government",
+          "checkedAt": "2026-10-27"
+        }
+      ],
+      "admissionsContent": {
+        "overview": "First-year academic-stream B.Tech Plastics Technology and B.E. Manufacturing Engineering use TNEA counselling, college code 1321. Exact qualification, age, nativity and permitted applicant-category rules apply; other centres, lateral-entry and postgraduate procedures are not substituted."
+      },
+      "programmes": [
+        {
+          "slug": "btech-plastics-technology",
+          "canonicalCourseSlug": "be-btech-rubber-plastics-technology",
+          "officialTitle": "Bachelor of Technology in Plastics Technology",
+          "durationYears": 4,
+          "officialProgramUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "The 2026–27 first-year UG prospectus publishes INR 55,000 per annum as this programme’s standard tuition, separate from development, university, admission, hostel and mess charges. It does not separately identify the tariff for OCI/PIO/refugee applicants. Applicant-specific tuition remains on request; do not label the standard table as a verified foreign-category fee. Request a full category-specific cost plan."
+          },
+          "medium": "",
+          "mediumNote": null,
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "The 2026–27 first-year UG prospectus publishes INR 55,000 per annum as this programme’s standard tuition, separate from development, university, admission, hostel and mess charges. It does not separately identify the tariff for OCI/PIO/refugee applicants. Applicant-specific tuition remains on request; do not label the standard table as a verified foreign-category fee. Request a full category-specific cost plan.",
+          "teachingPhases": [
+            {
+              "phase": "Full-time first-year entry degree route",
+              "language": "",
+              "details": "Four-year academic-stream engineering study at CIPET IPT Chennai; no lateral-entry or other-centre programme is substituted."
+            }
+          ],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting a specified TNEA 2026 nativity/schooling/parent-service category",
+              "Tamil Nadu-native OCI/PIO cardholders within the specific TNEA exception",
+              "Sri Lankan Tamil refugees who studied in Tamil Nadu and meet the stated documentation rule"
+            ],
+            "restrictions": [
+              "This listing covers only first-year academic-stream TNEA seats surrendered by CIPET Chennai, not an independently verified foreign/NRI quota or lateral-entry route.",
+              "Indian applicants must satisfy one of the six TNEA nativity, Tamil Nadu schooling or parent-service categories detailed below; an Indian passport alone is insufficient.",
+              "Tamil Nadu candidates who passed Classes VIII–XII in Tamil Nadu may apply without a nativity certificate. Tamil Nadu natives who studied any of those classes outside the state require a digitally signed nativity certificate.",
+              "Children of Central Government employees qualify irrespective of nativity if a parent—or guardian only where both parents are deceased—served continuously in Tamil Nadu for five years; employer evidence is required.",
+              "Children of permanent public-sector or government-recognised-institution employees qualify irrespective of domicile with five continuous years of Tamil Nadu employment and the specified employer/supporting records.",
+              "Children of All India Service Tamil Nadu-cadre officers require a parental declaration. Other-state candidates who studied Classes VIII–XII in Tamil Nadu may apply without a nativity certificate.",
+              "The parent-service and other-state schooling categories are considered under Open Competition; communal reservation requires Tamil Nadu nativity and the prescribed state community certificate.",
+              "Tamil Nadu-native OCI/PIO cardholders may participate under Open Category, except those born in a foreign country after 4 March 2021. Do not broaden this to every OCI/PIO or foreign applicant.",
+              "Sri Lankan Tamil refugees who studied in Tamil Nadu may participate under Open Competition with Headquarters Tahsildar identification; those outside refugee-camp registration also need original passport, visa and police-registration letter."
+            ],
+            "notes": "TNEA 2026 explicitly names CIPET Chennai among participating central-government institutions. This is a positive route definition, not a declaration that the institution excludes every other applicant. NRI residence alone neither creates a verified NRI quota nor negates eligibility as an Indian national under these rules.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1778803200023"
+          },
+          "admissionsContent": {
+            "overview": "This four-year plastics-technology degree listing covers the first-year academic-stream TNEA route at CIPET Chennai. Selection uses qualifying-subject marks and online counselling, subject to the exact nationality, nativity and documentation categories.",
+            "eligibility": {
+              "intro": "Academic-stream applicants must meet both the CIPET programme conditions and TNEA 2026 admission rules.",
+              "items": [
+                "Pass HSC Academic, both +1 and +2, or an accepted equivalent, with Mathematics, Physics and Chemistry.",
+                "The minimum raw +2 average across Mathematics, Physics and Chemistry is 45% for General and 40% for eligible BC/BCM, MBC/DNC, SC/SCA/ST categories.",
+                "CIPET’s 2026–27 prospectus states an age limit of 21 for first-year UG entry; it does not specify the age-calculation date.",
+                "Indian applicants must meet a TNEA nativity, Tamil Nadu schooling or eligible parent-service category; reserved-category claims need the prescribed Tamil Nadu documents.",
+                "Only the specified Tamil Nadu-native OCI/PIO and Sri Lankan Tamil refugee exceptions are established here; general foreign or NRI-quota admission is not asserted.",
+                "Vocational-stream and lateral-entry applicants are not covered by this narrow academic-route record."
+              ]
+            },
+            "applicationSteps": [
+              "Register one online TNEA application and select the correct applicant/reservation categories.",
+              "Upload the required original-certificate copies, including route-specific nativity, parent-service, OCI/PIO or refugee evidence where applicable.",
+              "Review the qualifying-marks rank and complete online choice filling for CIPET Chennai, college code 1321, branch PA.",
+              "Confirm the allotted college and branch, complete the required fee payment and report with original records within the published counselling deadlines."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marksheet",
+                "HSC first-year (+1) marksheet",
+                "HSC second-year (+2) or accepted-equivalent marksheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Digitally signed nativity certificate where the applicable TNEA category requires it",
+                "Employer service certificate and supporting permanent-employment records where applicable",
+                "Parental declaration for the All India Service Tamil Nadu-cadre category where applicable",
+                "Tamil Nadu community certificate for a communal-reservation claim",
+                "OCI/PIO status and Tamil Nadu nativity evidence where using that specified exception",
+                "Income/first-graduate/government-school or special-reservation certificates only when claiming the corresponding benefit",
+                "Sri Lankan Tamil refugees: Headquarters Tahsildar identification certificate",
+                "Refugees outside camp registration additionally need original passport, visa and police-station registration letter"
+              ]
+            },
+            "deadlinesNote": "These are the completed 2026 counselling-cycle rules. No upcoming application deadline or recurring intake month is inferred from them.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 55000,
+              "status": "confirmed",
+              "period": "academic_year",
+              "componentBasis": "Explicit per-annum tuition in the first-year2026–27 UG table, not the combined A+B+C total. Applicant-category scope is not separately identified; not verified as an OCI/PIO/refugee/foreign tariff.",
+              "category": "Published first-year UG standard tariff; applicant scope unconfirmed",
+              "academicYear": "2026–27",
+              "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+              "sourceLabel": "CIPET Chennai2026–27 UG/PG prospectus, p5",
+              "verifiedAt": "2026-10-27"
+            }
+          }
+        },
+        {
+          "slug": "be-manufacturing-engineering",
+          "canonicalCourseSlug": "be-btech-manufacturing-engineering",
+          "officialTitle": "Bachelor of Engineering in Manufacturing Engineering",
+          "durationYears": 4,
+          "officialProgramUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "The 2026–27 first-year UG prospectus publishes INR 50,000 per annum as this programme’s standard tuition, separate from development, university, admission, hostel and mess charges. It does not separately identify the tariff for OCI/PIO/refugee applicants. Applicant-specific tuition remains on request; do not label the standard table as a verified foreign-category fee. Request a full category-specific cost plan."
+          },
+          "medium": "",
+          "mediumNote": null,
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "The 2026–27 first-year UG prospectus publishes INR 50,000 per annum as this programme’s standard tuition, separate from development, university, admission, hostel and mess charges. It does not separately identify the tariff for OCI/PIO/refugee applicants. Applicant-specific tuition remains on request; do not label the standard table as a verified foreign-category fee. Request a full category-specific cost plan.",
+          "teachingPhases": [
+            {
+              "phase": "Full-time first-year entry degree route",
+              "language": "",
+              "details": "Four-year academic-stream engineering study at CIPET IPT Chennai; no lateral-entry or other-centre programme is substituted."
+            }
+          ],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting a specified TNEA 2026 nativity/schooling/parent-service category",
+              "Tamil Nadu-native OCI/PIO cardholders within the specific TNEA exception",
+              "Sri Lankan Tamil refugees who studied in Tamil Nadu and meet the stated documentation rule"
+            ],
+            "restrictions": [
+              "This listing covers only first-year academic-stream TNEA seats surrendered by CIPET Chennai, not an independently verified foreign/NRI quota or lateral-entry route.",
+              "Indian applicants must satisfy one of the six TNEA nativity, Tamil Nadu schooling or parent-service categories detailed below; an Indian passport alone is insufficient.",
+              "Tamil Nadu candidates who passed Classes VIII–XII in Tamil Nadu may apply without a nativity certificate. Tamil Nadu natives who studied any of those classes outside the state require a digitally signed nativity certificate.",
+              "Children of Central Government employees qualify irrespective of nativity if a parent—or guardian only where both parents are deceased—served continuously in Tamil Nadu for five years; employer evidence is required.",
+              "Children of permanent public-sector or government-recognised-institution employees qualify irrespective of domicile with five continuous years of Tamil Nadu employment and the specified employer/supporting records.",
+              "Children of All India Service Tamil Nadu-cadre officers require a parental declaration. Other-state candidates who studied Classes VIII–XII in Tamil Nadu may apply without a nativity certificate.",
+              "The parent-service and other-state schooling categories are considered under Open Competition; communal reservation requires Tamil Nadu nativity and the prescribed state community certificate.",
+              "Tamil Nadu-native OCI/PIO cardholders may participate under Open Category, except those born in a foreign country after 4 March 2021. Do not broaden this to every OCI/PIO or foreign applicant.",
+              "Sri Lankan Tamil refugees who studied in Tamil Nadu may participate under Open Competition with Headquarters Tahsildar identification; those outside refugee-camp registration also need original passport, visa and police-registration letter."
+            ],
+            "notes": "TNEA 2026 explicitly names CIPET Chennai among participating central-government institutions. This is a positive route definition, not a declaration that the institution excludes every other applicant. NRI residence alone neither creates a verified NRI quota nor negates eligibility as an Indian national under these rules.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1778803200023"
+          },
+          "admissionsContent": {
+            "overview": "This four-year manufacturing-engineering degree listing covers the first-year academic-stream TNEA route at CIPET Chennai. Selection uses qualifying-subject marks and online counselling, subject to the exact nationality, nativity and documentation categories.",
+            "eligibility": {
+              "intro": "Academic-stream applicants must meet both the CIPET programme conditions and TNEA 2026 admission rules.",
+              "items": [
+                "Pass HSC Academic, both +1 and +2, or an accepted equivalent, with Mathematics, Physics and Chemistry.",
+                "The minimum raw +2 average across Mathematics, Physics and Chemistry is 45% for General and 40% for eligible BC/BCM, MBC/DNC, SC/SCA/ST categories.",
+                "CIPET’s 2026–27 prospectus states an age limit of 21 for first-year UG entry; it does not specify the age-calculation date.",
+                "Indian applicants must meet a TNEA nativity, Tamil Nadu schooling or eligible parent-service category; reserved-category claims need the prescribed Tamil Nadu documents.",
+                "Only the specified Tamil Nadu-native OCI/PIO and Sri Lankan Tamil refugee exceptions are established here; general foreign or NRI-quota admission is not asserted.",
+                "Vocational-stream and lateral-entry applicants are not covered by this narrow academic-route record."
+              ]
+            },
+            "applicationSteps": [
+              "Register one online TNEA application and select the correct applicant/reservation categories.",
+              "Upload the required original-certificate copies, including route-specific nativity, parent-service, OCI/PIO or refugee evidence where applicable.",
+              "Review the qualifying-marks rank and complete online choice filling for CIPET Chennai, college code 1321, branch MN.",
+              "Confirm the allotted college and branch, complete the required fee payment and report with original records within the published counselling deadlines."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marksheet",
+                "HSC first-year (+1) marksheet",
+                "HSC second-year (+2) or accepted-equivalent marksheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Digitally signed nativity certificate where the applicable TNEA category requires it",
+                "Employer service certificate and supporting permanent-employment records where applicable",
+                "Parental declaration for the All India Service Tamil Nadu-cadre category where applicable",
+                "Tamil Nadu community certificate for a communal-reservation claim",
+                "OCI/PIO status and Tamil Nadu nativity evidence where using that specified exception",
+                "Income/first-graduate/government-school or special-reservation certificates only when claiming the corresponding benefit",
+                "Sri Lankan Tamil refugees: Headquarters Tahsildar identification certificate",
+                "Refugees outside camp registration additionally need original passport, visa and police-station registration letter"
+              ]
+            },
+            "deadlinesNote": "These are the completed 2026 counselling-cycle rules. No upcoming application deadline or recurring intake month is inferred from them.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 50000,
+              "status": "confirmed",
+              "period": "academic_year",
+              "componentBasis": "Explicit per-annum tuition in the first-year2026–27 UG table, not the combined A+B+C total. Applicant-category scope is not separately identified; not verified as an OCI/PIO/refugee/foreign tariff.",
+              "category": "Published first-year UG standard tariff; applicant scope unconfirmed",
+              "academicYear": "2026–27",
+              "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+              "sourceLabel": "CIPET Chennai2026–27 UG/PG prospectus, p5",
+              "verifiedAt": "2026-10-27"
+            }
+          }
+        }
+      ],
+      "logoUrl": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1793126900/studentstraffic/universities/cipet-institute-of-petrochemicals-technology-chennai/logo-a134c3816f40.jpg",
+      "coverImageUrl": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1793126903/studentstraffic/universities/cipet-institute-of-petrochemicals-technology-chennai/cover-9f8d038e34ee.jpg"
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "btech-plastics-technology",
+      "publicField": "programme",
+      "claimText": "Bachelor of Technology in Plastics Technology, 4 years, appears in the Chennai centre academic directory and current admission materials.",
+      "status": "verified",
+      "sourceLabel": "CIPET Chennai 2026–27 prospectus/admission leaflet",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "btech-plastics-technology",
+      "publicField": "eligibility",
+      "claimText": "HSC Academic (+1 and +2) / 10+2 with Mathematics, Physics and Chemistry; published age limit21. Selection and eligibility also subject to DOTE/TNEA2026.",
+      "status": "verified",
+      "sourceLabel": "CIPET Chennai 2026–27 prospectus/admission leaflet",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "btech-plastics-technology",
+      "publicField": "admissions",
+      "claimText": "TNEA government engineering counselling; current applicant-category restrictions require further verification.",
+      "status": "verified",
+      "sourceLabel": "CIPET Chennai 2026–27 prospectus/admission leaflet",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "btech-plastics-technology",
+      "publicField": "medium",
+      "claimText": "No explicit teaching-medium statement established in reviewed Chennai sources; language not inferred.",
+      "status": "omit",
+      "sourceLabel": "CIPET Chennai current programme sources",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "btech-plastics-technology",
+      "publicField": "intake",
+      "claimText": "Current-cycle notices do not establish a future2027 admissions month; no month is inferred.",
+      "status": "omit",
+      "sourceLabel": "CIPET Chennai current programme sources",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "be-manufacturing-engineering",
+      "publicField": "programme",
+      "claimText": "Bachelor of Engineering in Manufacturing Engineering, 4 years, appears in the Chennai centre academic directory and current admission materials.",
+      "status": "verified",
+      "sourceLabel": "CIPET Chennai 2026–27 prospectus/admission leaflet",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "be-manufacturing-engineering",
+      "publicField": "eligibility",
+      "claimText": "HSC Academic (+1 and +2) / 10+2 with Mathematics, Physics and Chemistry; published age limit21. Selection and eligibility also subject to DOTE/TNEA2026.",
+      "status": "verified",
+      "sourceLabel": "CIPET Chennai 2026–27 prospectus/admission leaflet",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "be-manufacturing-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA government engineering counselling; current applicant-category restrictions require further verification.",
+      "status": "verified",
+      "sourceLabel": "CIPET Chennai 2026–27 prospectus/admission leaflet",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "be-manufacturing-engineering",
+      "publicField": "medium",
+      "claimText": "No explicit teaching-medium statement established in reviewed Chennai sources; language not inferred.",
+      "status": "omit",
+      "sourceLabel": "CIPET Chennai current programme sources",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "be-manufacturing-engineering",
+      "publicField": "intake",
+      "claimText": "Current-cycle notices do not establish a future2027 admissions month; no month is inferred.",
+      "status": "omit",
+      "sourceLabel": "CIPET Chennai current programme sources",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "publicField": "summary",
+      "claimText": "CIPET Chennai is a government petrochemicals-training centre at Guindy Industrial Estate. Its current academic portfolio spans plastics and manufacturing engineering, polymer science, diploma and advanced-diploma routes. Engineering and science awards have different affiliating universities, and lateral-entry pathways have their own qualification rules.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "publicField": "campusLifestyle",
+      "claimText": "Laboratories for processing, testing, mould-related work and computer-aided design sit alongside classrooms, a library, digital resources, cafeteria and hostels. The campus profile combines academic teaching with technical training rather than a broad multi-faculty university portfolio.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "publicField": "cityProfile",
+      "claimText": "The centre is at Thiru Vi-Ka Industrial Estate in Guindy, Chennai. Its campus page identifies nearby Ekkatuthangal Metro and Guindy suburban rail connections. The profile is limited to this Chennai centre: CIPET’s national navigation also lists many other centres, which must not be treated as additional Chennai campuses or programme locations.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/introduction.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "publicField": "practicalExposure",
+      "claimText": "The Chennai academic materials feature processing and testing laboratories, computer-aided design resources and library facilities for polymer-related study. The programme mix connects plastics technology, mould design and manufacturing with applied laboratory work. Training and placement services form part of the institutional provision, but a recruiter list or previous graduate outcome is not a guaranteed internship or job for a new applicant.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "publicField": "hostelOverview",
+      "claimText": "The Chennai prospectus describes separate boys’ and girls’ hostels for outstation students within the campus, with water, power backup and round-the-clock security. Accommodation charges and mess advances are additional to academic tuition; a place should be confirmed directly.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "publicField": "dietarySupport",
+      "claimText": "The campus has a cafeteria and hostel mess arrangements, with mess advances shown separately in the prospectus. Specific dietary or allergy provision is not established in the reviewed documents and should be confirmed before residence.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "publicField": "safetyOverview",
+      "claimText": "The hostel provision includes round-the-clock security according to the current prospectus. This describes an institutional service, not a guarantee of personal safety; applicants should ask the centre for current emergency and grievance contacts.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "publicField": "studentSupport",
+      "claimText": "The admissions materials identify programme contacts and the appropriate counselling or direct-application route. Library, digital-library and training-and-placement provision support academic work and preparation for the next stage of study or employment.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "publicField": "recognition",
+      "claimText": "Anna University lists the Chennai Central Institute of Petrochemicals Engineering and Technology as an affiliated engineering college, counselling code1321/examination code3103. This does not independently prove current2026–27 course approval or MSc affiliation.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://www.annauniv.edu/cai/District%20wise/district/Chennai%20-%20Copy.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "publicField": "recognition",
+      "claimText": "Anna University’s own current Chennai district affiliated-college roster lists Central Institute of Petrochemicals Engineering and Technology with examination code 3103 and TNEA code 1321; retrieved 27 October 2026. It does not identify a year-specific renewal order.",
+      "status": "verified",
+      "sourceLabel": "Anna University Centre for Affiliation of Institutions — Chennai roster",
+      "sourceUrl": "https://www.annauniv.edu/cai/District%20wise/district/Chennai%20-%20Copy.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "publicField": "programmeApproval",
+      "claimText": "DTE’s official Information about Colleges 2026 lists CIPET Chennai code 1321, branch MN andPA, with approved intake 60 each. This is current government-listed UG intake evidence, not a separately retrieved AICTE 2026–27 EoA.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu DTE TNEA 2026 college directory, printed p 69",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "PDF page 110 visually checked. Do not promote its secondary NBA column into an independently verified NBA badge."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "btech-plastics-technology",
+      "publicField": "eligibility",
+      "claimText": "Academic HSC(+1,+2) or equivalent with PCM; minimum +2 PCM average 45%General or 40%eligible reserved categories. Exact TNEA nationality/nativity and limited OCI/PIO/refugee categories apply.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 information brochure, printed pp 1–4",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1778803200023",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "btech-plastics-technology",
+      "publicField": "eligibility",
+      "claimText": "CIPET 2026–27 first-year BTech Plastics and BE Manufacturing entry uses HSC Academic with Mathematics, Physics and Chemistry and states age limit 21; no age-calculation date is specified.",
+      "status": "verified",
+      "sourceLabel": "CIPET Chennai 2026–27 prospectus, programme table",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "btech-plastics-technology",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 explicitly includes CIPET Chennai. Qualifying PCM marks form the merit basis, followed by online choice filling, allotment confirmation and reporting. Original-certificate copies and applicant-category records are required.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 information brochure, printed pp 9–13",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1778803200023",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "btech-plastics-technology",
+      "publicField": "audienceEligibility",
+      "claimText": "The positive audience is eligible Indian nationals in the six prescribed nativity/schooling/parent-service groups, specified Tamil Nadu-native OCI/PIO cardholders and documented Sri Lankan Tamil refugees who studied in Tamil Nadu. This is not blanket global or domestic-only eligibility.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 information brochure, printed pp 1–2",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1778803200023",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "btech-plastics-technology",
+      "publicField": "documents",
+      "claimText": "The TNEA certificate list requires Class 10,+1,+2/equivalent marksheets and transfer certificate, plus applicable nativity, community, refugee, income, first-graduate, government-school and special-reservation documents. Parent-service categories require their supporting certificates.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 information brochure, printed pp 1–2 and 12",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1778803200023",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "btech-plastics-technology",
+      "publicField": "programmeApproval",
+      "claimText": "The 2026 DTE college directory names CIPET code 1321 and branch PA with approved intake 60. Its 2026 general academic seat matrix independently includes this branch at the same college.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 college directory, printed p 69",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "btech-plastics-technology",
+      "publicField": "admissions",
+      "claimText": "The official 2026 DTE general academic seat matrix includes CIPET code 1321 branch PA for Bachelor of Technology in Plastics Technology. Matrix seat counts are a counselling snapshot, not the sanctioned total intake.",
+      "status": "verified",
+      "sourceLabel": "DTE TNEA 2026 general academic matrix, PDF p 56",
+      "sourceUrl": "https://static.tneaonline.org/docs/GENERAL_ACADEMIC_SEAT_MATRIX_BEFORE_SPECIAL_RESERVATION_COUNSELLING_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "be-manufacturing-engineering",
+      "publicField": "eligibility",
+      "claimText": "Academic HSC(+1,+2) or equivalent with PCM; minimum +2 PCM average 45%General or 40%eligible reserved categories. Exact TNEA nationality/nativity and limited OCI/PIO/refugee categories apply.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 information brochure, printed pp 1–4",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1778803200023",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "be-manufacturing-engineering",
+      "publicField": "eligibility",
+      "claimText": "CIPET 2026–27 first-year BTech Plastics and BE Manufacturing entry uses HSC Academic with Mathematics, Physics and Chemistry and states age limit 21; no age-calculation date is specified.",
+      "status": "verified",
+      "sourceLabel": "CIPET Chennai 2026–27 prospectus, programme table",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "be-manufacturing-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 explicitly includes CIPET Chennai. Qualifying PCM marks form the merit basis, followed by online choice filling, allotment confirmation and reporting. Original-certificate copies and applicant-category records are required.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 information brochure, printed pp 9–13",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1778803200023",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "be-manufacturing-engineering",
+      "publicField": "audienceEligibility",
+      "claimText": "The positive audience is eligible Indian nationals in the six prescribed nativity/schooling/parent-service groups, specified Tamil Nadu-native OCI/PIO cardholders and documented Sri Lankan Tamil refugees who studied in Tamil Nadu. This is not blanket global or domestic-only eligibility.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 information brochure, printed pp 1–2",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1778803200023",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "be-manufacturing-engineering",
+      "publicField": "documents",
+      "claimText": "The TNEA certificate list requires Class 10,+1,+2/equivalent marksheets and transfer certificate, plus applicable nativity, community, refugee, income, first-graduate, government-school and special-reservation documents. Parent-service categories require their supporting certificates.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 information brochure, printed pp 1–2 and 12",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1778803200023",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "be-manufacturing-engineering",
+      "publicField": "programmeApproval",
+      "claimText": "The 2026 DTE college directory names CIPET code 1321 and branch MN with approved intake 60. Its 2026 general academic seat matrix independently includes this branch at the same college.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 college directory, printed p 69",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "be-manufacturing-engineering",
+      "publicField": "admissions",
+      "claimText": "The official 2026 DTE general academic seat matrix includes CIPET code 1321 branch MN for Bachelor of Engineering in Manufacturing Engineering. Matrix seat counts are a counselling snapshot, not the sanctioned total intake.",
+      "status": "verified",
+      "sourceLabel": "DTE TNEA 2026 general academic matrix, PDF p 56",
+      "sourceUrl": "https://static.tneaonline.org/docs/GENERAL_ACADEMIC_SEAT_MATRIX_BEFORE_SPECIAL_RESERVATION_COUNSELLING_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "btech-plastics-technology",
+      "publicField": "fee",
+      "claimText": "The current prospectus p5 explicitly quotes programme tuition per annum but does not separately label OCI/PIO/refugee tariffs. Applicant-specific tuition is on_request for the verified restricted audience, not because no fees exist. Standard quoted amount is preserved without claiming it is a foreign-category charge.",
+      "status": "verified",
+      "sourceLabel": "CIPET Chennai2026–27 programme prospectus, pp3 and5",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "btech-plastics-technology",
+      "publicField": "reportedFeeQuote",
+      "claimText": "First-year2026–27 UG fee table p5: B.Tech Plastics Technology tuition INR55000; B.E. Manufacturing Engineering INR50000. A.COURSE FEES is expressly PER ANNUM. These are tuition rows, not total A+B+C or a uniform overseas-category tariff.",
+      "status": "verified",
+      "sourceLabel": "CIPET Chennai2026–27 programme prospectus, pp3 and5",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "btech-plastics-technology",
+      "publicField": "duration",
+      "claimText": "The current Chennai academic directory and2026–27 UG prospectus establish four-year first-year-entry engineering degrees; the separately three-year lateral route is not substituted.",
+      "status": "verified",
+      "sourceLabel": "CIPET Chennai2026–27 programme prospectus, pp3 and5",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "be-manufacturing-engineering",
+      "publicField": "fee",
+      "claimText": "The current prospectus p5 explicitly quotes programme tuition per annum but does not separately label OCI/PIO/refugee tariffs. Applicant-specific tuition is on_request for the verified restricted audience, not because no fees exist. Standard quoted amount is preserved without claiming it is a foreign-category charge.",
+      "status": "verified",
+      "sourceLabel": "CIPET Chennai2026–27 programme prospectus, pp3 and5",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "be-manufacturing-engineering",
+      "publicField": "reportedFeeQuote",
+      "claimText": "First-year2026–27 UG fee table p5: B.Tech Plastics Technology tuition INR55000; B.E. Manufacturing Engineering INR50000. A.COURSE FEES is expressly PER ANNUM. These are tuition rows, not total A+B+C or a uniform overseas-category tariff.",
+      "status": "verified",
+      "sourceLabel": "CIPET Chennai2026–27 programme prospectus, pp3 and5",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "programmeSlug": "be-manufacturing-engineering",
+      "publicField": "duration",
+      "claimText": "The current Chennai academic directory and2026–27 UG prospectus establish four-year first-year-entry engineering degrees; the separately three-year lateral route is not substituted.",
+      "status": "verified",
+      "sourceLabel": "CIPET Chennai2026–27 programme prospectus, pp3 and5",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    }
+  ]
+}

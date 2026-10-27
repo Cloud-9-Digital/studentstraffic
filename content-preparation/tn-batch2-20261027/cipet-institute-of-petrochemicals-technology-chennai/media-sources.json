@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+  "universityName": "CIPET Institute of Petrochemicals Technology Chennai",
+  "batch": "tn-batch2-20261027",
+  "checkedAt": "2026-10-27",
+  "purpose": "User-authorized source-links local publication preparation; not direct apply.",
+  "payload": "payload.source.json",
+  "approvedSourceAssets": [
+    {
+      "kind": "logo",
+      "sourceUrl": "https://www.cipet.gov.in/images/new/cipet-logo-2-new.jpg",
+      "sourceType": "official-university",
+      "sourcePageUrl": "https://www.cipet.gov.in/centres/cipet-chennai/introduction.php",
+      "rightsBasis": "Official CIPET institutional brand asset supplied intact on its public website, used for factual institutional identification. The original includes the department/ministry wordmark; no cropped masthead, PDF extraction or tiny favicon substitute is used. No open licence, ownership transfer or endorsement is claimed.",
+      "checkedAt": "2026-10-27",
+      "status": "reviewed-source-ready-for-local-upload",
+      "sha256": "a134c3816f4085e1bc4bc1002cdd6a9222339a45239bd6fd2cf5fd10fa887b32",
+      "bytes": 73342,
+      "contentType": "image/jpeg",
+      "dimensions": {
+        "width": 530,
+        "height": 301
+      },
+      "proposedPublicId": "studentstraffic/universities/cipet-institute-of-petrochemicals-technology-chennai/logo-a134c3816f40",
+      "visualReview": "Intact high-resolution official orange/green emblem and CIPET wordmark, dark text on white. Replaces weak66px header icon; not recoloured or cropped.",
+      "altText": "CIPET official emblem and institutional wordmark",
+      "licenseUrl": null,
+      "licenseSourceUrl": null
+    },
+    {
+      "kind": "cover",
+      "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/img/slides/6.jpg",
+      "sourceType": "official-university",
+      "sourcePageUrl": "https://www.cipet.gov.in/centres/cipet-chennai/introduction.php",
+      "rightsBasis": "Official CIPET Chennai campus entrance photograph from its centre-specific slideshow, used intact for factual campus identification. The publisher’s identifying caption is retained unchanged. No open licence, ownership transfer or endorsement is claimed.",
+      "checkedAt": "2026-10-27",
+      "status": "reviewed-source-ready-for-local-upload",
+      "sha256": "9f8d038e34eeeb9c58493a5de8a402f5dad21b03b0d6d6029e0226e0d11b013f",
+      "bytes": 224538,
+      "contentType": "image/jpeg",
+      "dimensions": {
+        "width": 1500,
+        "height": 475
+      },
+      "proposedPublicId": "studentstraffic/universities/cipet-institute-of-petrochemicals-technology-chennai/cover-9f8d038e34ee",
+      "visualReview": "Actual Chennai entrance and institute sign clearly visible. Native official caption strip retained; no generated scene or ranking/event poster.",
+      "altText": "Entrance to CIPET Institute of Petrochemicals Technology Chennai",
+      "licenseUrl": null,
+      "licenseSourceUrl": null
+    }
+  ],
+  "readyForLocalMediaPreparation": true,
+  "readyForDirectApply": false,
+  "prohibitedActions": [
+    "No direct source hotlinks in logoUrl/coverImageUrl",
+    "No fabricated Cloudinary URLs",
+    "No DB access or live apply by this preparation tool"
+  ],
+  "remainingLocalSteps": [
+    "Upload the two reviewed original assets or supply verified existing Cloudinary mappings",
+    "Generate the hosted-media payload and run actual scoped reader",
+    "Reserve/claim through locked canonical workflow, run scoped/full validation, commit final immutable migration before user-owned apply"
+  ]
+}

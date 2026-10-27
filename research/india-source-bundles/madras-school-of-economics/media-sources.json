@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "universitySlug": "madras-school-of-economics",
+  "universityName": "Madras School of Economics",
+  "batch": "tn-batch2-20261027",
+  "checkedAt": "2026-10-27",
+  "purpose": "User-authorized source-links local publication preparation; not direct apply.",
+  "payload": "payload.source.json",
+  "approvedSourceAssets": [
+    {
+      "kind": "logo",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2021/11/BLUE-1-.png",
+      "sourceType": "official-university",
+      "sourcePageUrl": "https://mse.ac.in/",
+      "rightsBasis": "Official Madras School of Economics identity asset supplied on its own public website, used intact for factual institutional identification. No open licence, ownership transfer or endorsement is claimed.",
+      "checkedAt": "2026-10-27",
+      "status": "reviewed-source-ready-for-local-upload",
+      "sha256": "896054972d63fcb8647d0403052ffd2c9a88ebd9bbd0774e42162c3436ead694",
+      "bytes": 12819,
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 500,
+        "height": 500
+      },
+      "proposedPublicId": "studentstraffic/universities/madras-school-of-economics/logo-896054972d63",
+      "visualReview": "Intact book emblem, cyan MSE letters and dark-red tagline, legible on white; no generated mark, crop or favicon substitute.",
+      "altText": "Madras School of Economics book emblem and MSE wordmark",
+      "licenseUrl": null,
+      "licenseSourceUrl": null
+    },
+    {
+      "kind": "cover",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2021/09/final-image.jpg",
+      "sourceType": "official-university",
+      "sourcePageUrl": "https://mse.ac.in/",
+      "rightsBasis": "Official Madras School of Economics campus photograph supplied on its public website, used intact for factual campus identification and context. No open licence, ownership transfer or endorsement is claimed.",
+      "checkedAt": "2026-10-27",
+      "status": "reviewed-source-ready-for-local-upload",
+      "sha256": "18805180b86417020fe96307d1b0cfafb233c1868f0fe002d64257f25ae14063",
+      "bytes": 256535,
+      "contentType": "image/jpeg",
+      "dimensions": {
+        "width": 1600,
+        "height": 500
+      },
+      "proposedPublicId": "studentstraffic/universities/madras-school-of-economics/cover-18805180b864",
+      "visualReview": "Actual campus building and gardens, wide original photograph; no watermark, poster overlay or synthetic content.",
+      "altText": "Madras School of Economics campus building and gardens, Chennai",
+      "licenseUrl": null,
+      "licenseSourceUrl": null
+    }
+  ],
+  "readyForLocalMediaPreparation": true,
+  "readyForDirectApply": false,
+  "prohibitedActions": [
+    "No direct source hotlinks in logoUrl/coverImageUrl",
+    "No fabricated Cloudinary URLs",
+    "No DB access or live apply by this preparation tool"
+  ],
+  "remainingLocalSteps": [
+    "Upload the two reviewed original assets or supply verified existing Cloudinary mappings",
+    "Generate the hosted-media payload and run actual scoped reader",
+    "Reserve/claim through locked canonical workflow, run scoped/full validation, commit final immutable migration before user-owned apply"
+  ]
+}

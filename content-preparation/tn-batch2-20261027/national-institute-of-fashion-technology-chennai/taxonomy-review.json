@@ -1,0 +1,32 @@
+{
+  "status": "integrated neutral canonical categories",
+  "categories": [
+    {
+      "slug": "bachelor-fashion-technology",
+      "name": "Bachelor of Fashion Technology",
+      "shortName": "B.F.Tech",
+      "stream": "design-creative-arts",
+      "level": "bachelors",
+      "discipline": "fashion-technology",
+      "aliases": [
+        "BFTech",
+        "Bachelor of Fashion Technology in Apparel Production"
+      ]
+    },
+    {
+      "slug": "master-fashion-management",
+      "name": "Master of Fashion Management",
+      "shortName": "M.F.M.",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "fashion-management",
+      "aliases": [
+        "MFM",
+        "Masters of Fashion Management"
+      ]
+    }
+  ],
+  "reason": "B.F.Tech is a distinct fashion-technology award, not an engineering B.E./B.Tech; M.F.M is fashion management, not MBA. B.Des specialisations remain under existing bdes.",
+  "registryPath": "lib/data/program-taxonomy.ts",
+  "existingCategoriesReclassified": false
+}

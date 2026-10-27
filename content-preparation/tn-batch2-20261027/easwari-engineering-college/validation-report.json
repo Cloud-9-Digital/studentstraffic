@@ -1,0 +1,52 @@
+{
+  "schemaPass": true,
+  "actualReaderPass": true,
+  "expiredEvidenceCount": 0,
+  "programmes": 15,
+  "evidenceRows": 177,
+  "readyForLocalMediaPreparation": true,
+  "readyForDirectApply": false,
+  "uploads": 0,
+  "databaseAccess": false,
+  "note": "Source links are reviewed. Explicit local upload or verified existing mappings are still required before a real migration.",
+  "checkedAt": "2026-10-27",
+  "preparationSafetyTests": {
+    "passed": 12,
+    "failed": 0,
+    "command": "node --import tsx --test content-preparation/tn-batch2-20261027/easwari-engineering-college/prepare-local.test.mjs"
+  },
+  "sourceMediaHTTPImageAndVisualReview": [
+    {
+      "kind": "logo",
+      "url": "https://cdn.npfs.co/uploads/template/468/5084/publish/images/EEC-LOGO.png?1733490597",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 23699,
+      "sha256": "84b8e7a1d0efa5205cbfdd030dcaf20021dea4cbde2e9babaa345f06f6710e0f",
+      "checkedAt": "2026-10-27T13:23:56.440957+00:00",
+      "finalUrl": "https://cdn.npfs.co/uploads/template/468/5084/publish/images/EEC-LOGO.png?1733490597",
+      "matchesReviewedOriginal": true
+    },
+    {
+      "kind": "cover",
+      "url": "https://cdn.npfs.co/uploads/template/468/5084/publish/images/why/City%20Green%20Campus.jpg?1764582201",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 299627,
+      "sha256": "368422c657fc045aa84bcadf3429c638e9dd00bec557be7d5f2d154d1f3bcba9",
+      "checkedAt": "2026-10-27T13:23:56.481113+00:00",
+      "finalUrl": "https://cdn.npfs.co/uploads/template/468/5084/publish/images/why/City%20Green%20Campus.jpg?1764582201",
+      "matchesReviewedOriginal": true
+    }
+  ],
+  "existingRepositoryRegressionTests": {
+    "passed": 20,
+    "failed": 0,
+    "scope": "Separate taxonomy/content-migration tests, not generated-payload validation"
+  },
+  "cloudinaryUpload": "not_run: explicit user-local stage",
+  "numberedMigrationValidation": "not_run: outside content-migrations until hosted media is verified",
+  "sharedRemoteLedgerEdited": false,
+  "livePublished": false,
+  "payloadSha256": "24d88d55a4016b985ab6cd913278c8045705347960c264af8160bdc213094856"
+}

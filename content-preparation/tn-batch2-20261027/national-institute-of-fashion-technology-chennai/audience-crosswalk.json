@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-10-27",
+  "institution": "national-institute-of-fashion-technology-chennai",
+  "applicableOfferings": [
+    "bdes-accessory-design",
+    "bdes-fashion-communication",
+    "bdes-fashion-design",
+    "bdes-knitwear-design",
+    "bdes-leather-design",
+    "bdes-textile-design",
+    "bftech-apparel-production",
+    "mfm-fashion-management"
+  ],
+  "officialSource": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+  "locators": {
+    "campusPortfolio": "Current Chennai homepage lists six B.Des specialisations, Apparel Production B.F.Tech, M.F.M; printed pp112\u2013114 seat matrix also campus-specific.",
+    "regularQualifications": "printed pp115\u2013116; UG under24 with five-year SC/ST/PwD relaxation; B.Des recognised10+2/accepted diploma/equivalence, B.F.Tech mathematics/engineering diploma, M.F.M recognised bachelor or min3year NIFT/NID diploma; no PG age limit.",
+    "international": "printed pp120\u2013121; Foreign National/NRI/OCI/PIO/SAARC whether residing in India or abroad; UG under24 and PG no age limit, relevant academic qualifications, AIU/UGC equivalence for foreign qualification, English working knowledge; SAT for UG, GMAT for M.F.M. No regular entrance test for this category.",
+    "fee": "printed p151 Chennai NRI annual tuition907000INR for2026\u201327, p150 separate regular semester tuition150000INR; no annualisation.",
+    "cycle": "Historical2026 admission dates are closed and labelled as such, not next-year promises."
+  },
+  "excludedFromPayload": "12 short awards lack exact academic/international admission support; seven lateral routes lack campus-current evidence; national PhD lacks confirmed Chennai admitting/supervision scope; individually held in inventory."
+}

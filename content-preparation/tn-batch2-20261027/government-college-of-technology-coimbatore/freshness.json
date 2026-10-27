@@ -1,0 +1,99 @@
+{
+  "checkedAt": "2026-10-27",
+  "latestLiveChecks": [
+    {
+      "url": "https://studentstraffic.com/api/mobile/v1/universities/government-college-of-technology-coimbatore",
+      "status": 404,
+      "body": "{\"error\":{\"code\":\"not_found\",\"message\":\"University not found.\"}}"
+    }
+  ],
+  "originalDedupe": {
+    "checkedAt": "2026-10-27",
+    "canonicalSlug": "government-college-of-technology-coimbatore",
+    "institutionName": "Government College of Technology, Coimbatore",
+    "officialDomain": "gct.ac.in",
+    "identityAnchors": {
+      "tneaCollegeCode": "2005",
+      "aictePermanentId": "1-410916521",
+      "location": "Thadagam Road, Coimbatore 641013",
+      "formerName": "Arthur Hope College of Technology"
+    },
+    "aliasesChecked": [
+      "government-college-of-technology-coimbatore",
+      "government-college-of-technology",
+      "gct-coimbatore",
+      "arthur-hope-college-of-technology"
+    ],
+    "remoteDefaultBranchLedger": {
+      "repository": "Cloud-9-Digital/studentstraffic",
+      "path": "research/university-publishing-ledger.csv",
+      "sha": "4db547c3d254bd7d50d726425bd9c0fa766399e8",
+      "result": "No canonical/domain/former-name match at pre-research check; read through GitHub connector."
+    },
+    "remoteOriginal68": {
+      "path": "research/tamil-nadu-scope-reconciliation-20261025.csv",
+      "sha": "e3a96ee2dccaea80314334e67fa1233bfda94f90",
+      "result": "No canonical/domain/former-name match; local file also has 68 rows with no identity match."
+    },
+    "immutableMigrationIdentityScan": {
+      "filesScanned": 358,
+      "matches": [],
+      "scope": "Parsed universities identity fields, not incidental counselling-centre references in other profiles."
+    },
+    "remoteCodeSearch": {
+      "query": "government-college-of-technology",
+      "result": "No result returned by GitHub repository search during initial independent dedupe."
+    },
+    "liveApiResults": [
+      {
+        "url": "https://www.studentstraffic.com/api/mobile/v1/universities/government-college-of-technology-coimbatore",
+        "httpStatus": 404,
+        "body": {
+          "error": {
+            "code": "not_found",
+            "message": "University not found."
+          }
+        }
+      },
+      {
+        "url": "https://www.studentstraffic.com/api/mobile/v1/universities/government-college-of-technology",
+        "httpStatus": 404,
+        "body": {
+          "error": {
+            "code": "not_found",
+            "message": "University not found."
+          }
+        }
+      },
+      {
+        "url": "https://www.studentstraffic.com/api/mobile/v1/universities/gct-coimbatore",
+        "httpStatus": 404,
+        "body": {
+          "error": {
+            "code": "not_found",
+            "message": "University not found."
+          }
+        }
+      },
+      {
+        "url": "https://www.studentstraffic.com/api/mobile/v1/universities/arthur-hope-college-of-technology",
+        "httpStatus": 404,
+        "body": {
+          "error": {
+            "code": "not_found",
+            "message": "University not found."
+          }
+        }
+      }
+    ],
+    "decision": "Fresh at independent pre-research check. Integrator later placed its own local-only researching claim at 2026-10-27T10:53:09.864Z. No researcher ledger mutation or remote reservation.",
+    "distinguishFrom": [
+      "Coimbatore Institute of Technology",
+      "PSG College of Technology",
+      "Government College of Engineering, Salem",
+      "other similarly named Government Colleges of Technology"
+    ]
+  },
+  "remoteMain": "d541a55c38e4fc68c3d1c221b6dad4807e3abfdf",
+  "claims": "Existing integrator local researching claim only; remote shared ledger unchanged. Recheck remote and aliases before local reservation."
+}

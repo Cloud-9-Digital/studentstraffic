@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "universitySlug": "government-college-of-technology-coimbatore",
+  "universityName": "Government College of Technology, Coimbatore",
+  "batch": "tn-batch2-20261027",
+  "checkedAt": "2026-10-27",
+  "purpose": "User-authorized source-links local publication preparation; not direct apply.",
+  "payload": "payload.source.json",
+  "approvedSourceAssets": [
+    {
+      "kind": "logo",
+      "sourceUrl": "https://gct.ac.in/sites/gct.ac.in/files/update_0.png",
+      "sourceType": "official-university-high-resolution-brand-original",
+      "rightsBasis": "Official GCT-hosted institutional crest selected directly by the current official college website. Proposed use is accurate identification of the college in its profile, not endorsement or logo redesign; no open-content licence is asserted. No open licence, ownership transfer or endorsement is claimed.",
+      "checkedAt": "2026-10-27",
+      "status": "reviewed-source-ready-for-local-upload",
+      "sha256": "2370a8a8eeaa73db7a51a452c395da30193fe36fff5221394713fe29c4cc09fc",
+      "bytes": 775634,
+      "contentType": "image/png",
+      "dimensions": [
+        681,
+        884
+      ],
+      "proposedPublicId": "studentstraffic/universities/government-college-of-technology-coimbatore/logo-2370a8a8eeaa",
+      "visualReview": "Intact high-resolution 681×884 original crest; independently viewed original and white-tile QA at 160px. Blue/gold/green/black mark remains visible. Official HTML also references this original as rel=icon, but this is not a small favicon fallback, crop or PDF extraction.",
+      "altText": "Government College of Technology, Coimbatore crest.",
+      "licenseUrl": null,
+      "licenseSourceUrl": null
+    },
+    {
+      "kind": "cover",
+      "sourceUrl": "https://gct.ac.in/sites/gct.ac.in/files/home%20gallery/block.png",
+      "sourceType": "official-university-campus-image",
+      "rightsBasis": "Official GCT homepage campus photograph, used to identify the institution and campus; no third-party stock asset. No open licence, ownership transfer or endorsement is claimed.",
+      "checkedAt": "2026-10-27",
+      "status": "reviewed-source-ready-for-local-upload",
+      "sha256": "77127589f59640a9579e62275412871432f19c6370384e7704c98a98f5a2811c",
+      "bytes": 3171578,
+      "contentType": "image/png",
+      "dimensions": [
+        1685,
+        933
+      ],
+      "proposedPublicId": "studentstraffic/universities/government-college-of-technology-coimbatore/cover-77127589f596",
+      "visualReview": "Tree-lined walkway beside a real academic building; no text overlay or fabricated imagery.",
+      "altText": "Tree-lined walkway beside an academic building at Government College of Technology, Coimbatore.",
+      "licenseUrl": null,
+      "licenseSourceUrl": null
+    }
+  ],
+  "readyForLocalMediaPreparation": true,
+  "readyForDirectApply": false,
+  "prohibitedActions": [
+    "No direct source hotlinks in logoUrl/coverImageUrl",
+    "No fabricated Cloudinary URLs",
+    "No DB access or live apply by this preparation tool"
+  ],
+  "remainingLocalSteps": [
+    "Upload the two reviewed original assets or supply verified existing Cloudinary mappings",
+    "Generate the hosted-media payload and run actual scoped reader",
+    "Reserve/claim through locked canonical workflow, run scoped/full validation, commit final immutable migration before user-owned apply"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schemaPass": true,
+  "actualReaderPass": true,
+  "expiredEvidenceCount": 0,
+  "programmes": 2,
+  "evidenceRows": 41,
+  "readyForLocalMediaPreparation": true,
+  "readyForDirectApply": false,
+  "uploads": 0,
+  "databaseAccess": false,
+  "note": "Source links are reviewed. Explicit local upload or verified existing mappings are still required before a real migration.",
+  "checkedAt": "2026-10-27",
+  "preparationSafetyTests": {
+    "passed": 12,
+    "failed": 0,
+    "command": "node --import tsx --test content-preparation/tn-batch2-20261027/cipet-institute-of-petrochemicals-technology-chennai/prepare-local.test.mjs"
+  },
+  "sourceMediaHTTPImageAndVisualReview": [
+    {
+      "kind": "logo",
+      "url": "https://www.cipet.gov.in/images/new/cipet-logo-2-new.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 73342,
+      "sha256": "a134c3816f4085e1bc4bc1002cdd6a9222339a45239bd6fd2cf5fd10fa887b32",
+      "unchanged": true,
+      "checkedAt": "2026-10-27T12:57:51.904054+00:00"
+    },
+    {
+      "kind": "cover",
+      "url": "https://www.cipet.gov.in/centres/cipet-chennai/img/slides/6.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 224538,
+      "sha256": "9f8d038e34eeeb9c58493a5de8a402f5dad21b03b0d6d6029e0226e0d11b013f",
+      "unchanged": true,
+      "checkedAt": "2026-10-27T12:57:56.024598+00:00"
+    }
+  ],
+  "existingRepositoryRegressionTests": {
+    "passed": 20,
+    "failed": 0,
+    "scope": "Separate taxonomy/content-migration regression tests, not a substitute for generated payload checks"
+  },
+  "cloudinaryUpload": "not_run: explicit user local stage",
+  "numberedMigrationValidation": "not_run: outside content-migrations until hosted media is verified",
+  "sharedRemoteLedgerEdited": false,
+  "livePublished": false,
+  "payloadSha256": "594f8c0283f4c92635c73b8a56ffb0e3c481d14e6549259d83ecba0234ed62ff"
+}

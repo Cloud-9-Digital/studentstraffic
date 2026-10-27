@@ -1,0 +1,1880 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "bdes",
+      "name": "Bachelor of Design",
+      "shortName": "B.Des",
+      "stream": "design-creative-arts",
+      "level": "bachelors",
+      "discipline": "design",
+      "aliases": [
+        "BDes",
+        "Bachelor in Design"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "A bachelor-level design category covering studio-led study, design research, materials, visual communication and project development. Each institution defines its own specialisation, admission tests, curriculum, language, practical work and degree requirements.",
+      "metaTitle": "B.Des Programmes and Admissions",
+      "metaDescription": "Compare B.Des programmes by official award, academic eligibility, duration, teaching language, admissions route and tuition fees."
+    },
+    {
+      "slug": "bachelor-fashion-technology",
+      "name": "Bachelor of Fashion Technology",
+      "shortName": "B.F.Tech",
+      "stream": "design-creative-arts",
+      "level": "bachelors",
+      "discipline": "fashion-technology",
+      "aliases": [
+        "BFTech",
+        "Bachelor of Fashion Technology in Apparel Production"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "A bachelor degree category for fashion technology and apparel production. Programmes can combine garment engineering, manufacturing systems, quality, merchandising and supply-chain study with laboratory and industry projects. Entry requirements and curriculum remain institution-specific.",
+      "metaTitle": "B.F.Tech Programmes and Admissions",
+      "metaDescription": "Compare B.F.Tech programmes by official award, academic eligibility, duration, teaching language, admissions route and tuition fees."
+    },
+    {
+      "slug": "master-fashion-management",
+      "name": "Master of Fashion Management",
+      "shortName": "M.F.M.",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "fashion-management",
+      "aliases": [
+        "MFM",
+        "Masters of Fashion Management"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "A postgraduate degree category focused on management in fashion and related consumer industries. Study may combine merchandising, marketing, retail, sourcing and business research with applied projects. Each university retains its own entry qualifications, selection process and academic requirements.",
+      "metaTitle": "M.F.M. Programmes and Admissions",
+      "metaDescription": "Compare M.F.M. programmes by official award, academic eligibility, duration, teaching language, admissions route and tuition fees."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "national-institute-of-fashion-technology-chennai",
+      "name": "National Institute of Fashion Technology Chennai",
+      "city": "Chennai",
+      "type": "Public",
+      "establishedYear": 1995,
+      "officialWebsite": "https://nift.ac.in/chennai/",
+      "mediaAttribution": {
+        "logo": {
+          "sourceUrl": "https://nift.ac.in/chennai/themes/nift/images/Microsite_logos/4_Chennai_Microsite_logo.png",
+          "rights": "Official NIFT Chennai institutional identifying mark supplied on its own public campus website, used solely for factual institutional identification; no open licence, ownership transfer or endorsement claimed.",
+          "checkedAt": "2026-10-27"
+        },
+        "cover": {
+          "sourceUrl": "https://nift.ac.in/chennai/sites/default/files/2026-10/4_Chennai.jpg",
+          "rights": "Official NIFT Chennai campus photograph supplied as its own public campus website hero image, used solely to identify the represented campus in factual education content; no open licence, ownership transfer or endorsement claimed.",
+          "checkedAt": "2026-10-27",
+          "altText": "National Institute of Fashion Technology Chennai campus frontage and entrance in Taramani."
+        }
+      },
+      "summary": "NIFT Chennai is the Chennai campus of the statutory National Institute of Fashion Technology, established in 1995. Its core degree portfolio combines six design specialisations, apparel production and postgraduate fashion management. Design studios, technical laboratories and industry-linked projects support these different study routes.",
+      "campusLifestyle": "Studios, laboratories, workshops and a resource centre support creative practice alongside classroom learning. The Chennai campus also has an auditorium, fitness centre, sports facilities and a courtyard amphitheatre. Hostel availability and allocation should be checked separately from an academic offer.",
+      "cityProfile": "The campus is on Rajiv Gandhi Salai in Taramani, Chennai, Tamil Nadu. This profile covers the Chennai campus rather than the NIFT network as a whole. Applicants choosing a campus during seat allocation should use the Chennai address when planning accommodation, travel and the practicalities of attending studio and laboratory sessions.",
+      "practicalExposure": "The design degrees combine material exploration, studio projects and interdisciplinary learning. Apparel Production adds specialised laboratories, live industry projects, internships and a graduation project across garment engineering and manufacturing. Fashion Management focuses on the commercial side of the industry. The shared NIFT curriculum also includes industry visits and real-world projects; none of these activities guarantees a placement.",
+      "hostelOverview": "Chennai has hostel facilities, and campus induction includes hostel affairs. An academic allocation is not itself confirmation of a hostel room; check room availability, allotment conditions and current charges with the campus.",
+      "dietarySupport": "Meal plans, special diets and allergy arrangements need to be discussed with the campus before accepting accommodation; the reviewed Chennai pages do not establish a guaranteed dietary service.",
+      "safetyOverview": "The Chennai site provides an Internal Complaint Committee section with committee information and harassment-redressal material. Applicants can use that channel to identify the relevant reporting procedure; it is not a guarantee that incidents cannot occur.",
+      "studentSupport": "Campus induction introduces academic guidance, student services, the Campus Management System and hostel affairs. The campus also provides access to its resource centre and student-affairs information.",
+      "whyChoose": [
+        "Choose among six distinct design specialisations without confusing them with the apparel-technology degree.",
+        "Apparel Production combines manufacturing laboratories with industry-linked projects and internships.",
+        "The separate international admissions route accepts SAT for undergraduate degrees and GMAT for Fashion Management."
+      ],
+      "thingsToConsider": [
+        "Regular and international/NRI applicants have different selection procedures and substantially different fee schedules.",
+        "The 2026 dates are a completed admissions cycle, not confirmation of a future application window.",
+        "Short diploma and continuing-education courses depend on minimum enrolment and are not substitutes for the four-year degrees."
+      ],
+      "bestFitFor": [
+        "Applicants seeking studio-led design study in a clearly identified fashion or product specialisation.",
+        "Applicants with the required mathematics background who prefer apparel manufacturing and technology.",
+        "Graduates seeking fashion-business study and able to meet the correct regular or international selection route."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "Ministry of Textiles — Statutory institute under NIFT Act 2006"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Ministry of Textiles annual report 2025–26, NIFT section",
+          "url": "https://www.texmin.gov.in/static/uploads/2026/05/5c48e80d2180ca3194b9e9b01340696d.pdf"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Which degrees are available at NIFT Chennai?",
+          "answer": "The campus lists B.Des in Accessory Design, Fashion Communication, Fashion Design, Knitwear Design, Leather Design and Textile Design; B.F.Tech in Apparel Production; and Master of Fashion Management."
+        },
+        {
+          "question": "How long are the main degree programmes?",
+          "answer": "The B.Des and B.F.Tech routes take four years. Master of Fashion Management takes two years. Short diploma and continuing-education courses have separate durations and entry rules."
+        },
+        {
+          "question": "Can international applicants apply?",
+          "answer": "Foreign nationals, NRI, OCI, PIO and SAARC applicants have a separate admissions category. It requires category evidence, suitable academic qualifications and working knowledge of English. Foreign qualifications need the prescribed equivalence."
+        },
+        {
+          "question": "Which entrance tests apply to overseas-category applicants?",
+          "answer": "The international category uses SAT for B.Des and B.F.Tech, and GMAT for Master of Fashion Management. These applicants do not use the regular NIFT entrance examination; campus and programme allocation follows score-based merit and preferences."
+        },
+        {
+          "question": "Is mathematics needed for every undergraduate degree?",
+          "answer": "Mathematics is required for the 10+2 route into B.F.Tech. The B.Des 10+2 route does not impose that subject condition. Accepted diploma and equivalent-qualification routes have their own requirements."
+        },
+        {
+          "question": "What does the quoted annual fee cover?",
+          "answer": "INR 907,000 is the 2026–27 NRI-category annual tuition at Chennai for two semesters. It excludes other academic charges and living costs. Regular-category tuition is separately published at INR 150,000 per semester."
+        },
+        {
+          "question": "Is teaching in English?",
+          "answer": "NIFT explicitly identifies English as its teaching medium. Applicants in the international category must also possess working knowledge of English."
+        },
+        {
+          "question": "Does admission guarantee accommodation or employment?",
+          "answer": "No such guarantee is established here. Chennai has hostel facilities, but rooms require separate confirmation. Internships, projects and career preparation are academic opportunities rather than guaranteed employment."
+        },
+        {
+          "question": "Are the 2026 application dates still usable?",
+          "answer": "No. The deadlines in the cited 2026 cycle have passed. Applicants should use the relevant new admissions notice rather than assume the same dates will recur."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "NIFT Chennai campus portfolio",
+          "url": "https://nift.ac.in/chennai/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "2026 degree admissions and fee schedules",
+          "url": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "2026 programme prospectus",
+          "url": "https://nift.ac.in/sites/default/files/2026-08/Admission-Prospectus-2026.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Statutory recognition — Ministry of Textiles annual report",
+          "url": "https://www.texmin.gov.in/static/uploads/2026/05/5c48e80d2180ca3194b9e9b01340696d.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Chennai establishment year — PIB",
+          "url": "https://www.pib.gov.in/newsite/PrintRelease.aspx?lang=2&reg=48&relid=103898",
+          "kind": "government",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Chennai Internal Complaint Committee",
+          "url": "https://nift.ac.in/chennai/internal-complaint-committee",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Chennai short-course content 2026",
+          "url": "https://nift.ac.in/chennai/sites/default/files/2026-09/DIPLOMA%20AND%20CE%20PROGRAMME%20COURSE%20CONTENT.docx",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        }
+      ],
+      "admissionsContent": {
+        "overview": "Choose the Chennai campus and the exact programme during the applicable admissions process. Regular Indian and international/NRI-category routes use different tests, applicant documentation and fee schedules.",
+        "applicationUrl": "https://nift.ac.in/admission"
+      },
+      "programmes": [
+        {
+          "slug": "bdes-accessory-design",
+          "canonicalCourseSlug": "bdes",
+          "officialTitle": "Bachelor of Design in Accessory Design",
+          "durationYears": 4,
+          "officialProgramUrl": "https://nift.ac.in/chennai/academics/programmes/undergraduate/fashion-and-lifestyle-accessory",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Indian citizens under the regular route",
+              "Foreign nationals, NRI, OCI, PIO and SAARC applicants under the separate international category"
+            ],
+            "restrictions": [
+              "Applicant-category status must be documented; international-category candidates follow the SAT or GMAT route rather than the regular NIFT entrance examination.",
+              "Foreign qualifications require AIU/UGC equivalence before admission; international applicants need working knowledge of English."
+            ],
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "A four-year design degree specialising in accessory design, with studio, material and project-based learning. Regular and international applicants have different selection routes.",
+            "eligibility": {
+              "intro": "Admission depends on the qualification and applicant-category requirements for this programme.",
+              "items": [
+                "Pass recognised 10+2, NIOS with at least five subjects, or an accepted equivalent qualification.",
+                "Alternatively, a three- or four-year diploma recognised by AICTE or a State Board after Class 10 can qualify.",
+                "Regular undergraduate applicants must be under 24 on 1 August of the admission year; SC, ST and PwD applicants receive a five-year relaxation.",
+                "Applicants using a foreign qualification must obtain the required equivalence; international-category applicants need working knowledge of English.",
+                "For the separate foreign-national/NRI/OCI/PIO/SAARC category, the undergraduate age must also be under 24 on 1 August of the admission year; do not assume the regular-category relaxation applies to this separate route."
+              ]
+            },
+            "applicationSteps": [
+              "Choose the correct applicant category and check its qualification and age conditions before registering online.",
+              "Regular-route applicants complete GAT, CAT and a Situation Test and participate in the applicable merit-based seat-allocation process.",
+              "International-category applicants apply through NIFT admissions and arrange official SAT (institution code 7258) score delivery; campus and programme allocation depends on merit and preferences.",
+              "Submit original qualification/category documents for verification and pay the applicable fees after allocation."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying examination certificate and marksheets",
+                "Degree or diploma records for the qualifying route",
+                "Equivalence certificate for foreign qualifications where required"
+              ],
+              "application": [
+                "Identity and date-of-birth proof",
+                "Applicant-category evidence and applicable passport/NRI/OCI/PIO documents",
+                "Official SAT score for the international category",
+                "Regular-route examination and allotment records where applicable"
+              ]
+            },
+            "deadlinesNote": "The cited admissions rules concern the 2026 cycle. Do not treat its closed application dates as a future intake announcement.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 150000,
+              "status": "confirmed",
+              "period": "semester",
+              "componentBasis": "Regular-category tuition per semester only; excludes library, examination, mediclaim/student development, registration and refundable deposit.",
+              "audience": "domestic",
+              "category": "Regular / Artisan / Ward of Artisan",
+              "academicYear": "2026–27",
+              "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+              "sourceLabel": "NIFT 2026 admission guidelines, fee table p150",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "English",
+          "mediumNote": null,
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "fee": {
+            "status": "confirmed",
+            "audience": "international",
+            "category": "NRI / foreign-category annual fee",
+            "academicYear": "2026–27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 907000,
+            "verifiedAt": "2026-10-27",
+            "notes": "Published annual tuition for the NRI fee category at Chennai, covering two semesters. This is not the regular Indian-student fee. Library, mediclaim/student development, examination, deposits, registration and living costs are separate; future fees may change."
+          },
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "For 2026–27 the Chennai NRI-category annual tuition is INR 907,000. Recurring academic charges total INR 998,000; the first-year total is INR 1,019,900 including security deposit and registration. Regular-category tuition is INR 150,000 per semester, not the same tariff. Housing, meals and personal costs need separate budgeting.",
+          "teachingPhases": [
+            {
+              "phase": "Campus study",
+              "language": "English",
+              "details": "A four-year design degree specialising in accessory design, with studio, material and project-based learning. Regular and international applicants have different selection routes."
+            }
+          ]
+        },
+        {
+          "slug": "bdes-fashion-communication",
+          "canonicalCourseSlug": "bdes",
+          "officialTitle": "Bachelor of Design in Fashion Communication",
+          "durationYears": 4,
+          "officialProgramUrl": "https://nift.ac.in/chennai/academics/programmes/undergraduate/fashion-communication",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Indian citizens under the regular route",
+              "Foreign nationals, NRI, OCI, PIO and SAARC applicants under the separate international category"
+            ],
+            "restrictions": [
+              "Applicant-category status must be documented; international-category candidates follow the SAT or GMAT route rather than the regular NIFT entrance examination.",
+              "Foreign qualifications require AIU/UGC equivalence before admission; international applicants need working knowledge of English."
+            ],
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "A four-year design degree specialising in fashion communication, with studio, material and project-based learning. Regular and international applicants have different selection routes.",
+            "eligibility": {
+              "intro": "Admission depends on the qualification and applicant-category requirements for this programme.",
+              "items": [
+                "Pass recognised 10+2, NIOS with at least five subjects, or an accepted equivalent qualification.",
+                "Alternatively, a three- or four-year diploma recognised by AICTE or a State Board after Class 10 can qualify.",
+                "Regular undergraduate applicants must be under 24 on 1 August of the admission year; SC, ST and PwD applicants receive a five-year relaxation.",
+                "Applicants using a foreign qualification must obtain the required equivalence; international-category applicants need working knowledge of English.",
+                "For the separate foreign-national/NRI/OCI/PIO/SAARC category, the undergraduate age must also be under 24 on 1 August of the admission year; do not assume the regular-category relaxation applies to this separate route."
+              ]
+            },
+            "applicationSteps": [
+              "Choose the correct applicant category and check its qualification and age conditions before registering online.",
+              "Regular-route applicants complete GAT, CAT and a Situation Test and participate in the applicable merit-based seat-allocation process.",
+              "International-category applicants apply through NIFT admissions and arrange official SAT (institution code 7258) score delivery; campus and programme allocation depends on merit and preferences.",
+              "Submit original qualification/category documents for verification and pay the applicable fees after allocation."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying examination certificate and marksheets",
+                "Degree or diploma records for the qualifying route",
+                "Equivalence certificate for foreign qualifications where required"
+              ],
+              "application": [
+                "Identity and date-of-birth proof",
+                "Applicant-category evidence and applicable passport/NRI/OCI/PIO documents",
+                "Official SAT score for the international category",
+                "Regular-route examination and allotment records where applicable"
+              ]
+            },
+            "deadlinesNote": "The cited admissions rules concern the 2026 cycle. Do not treat its closed application dates as a future intake announcement.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 150000,
+              "status": "confirmed",
+              "period": "semester",
+              "componentBasis": "Regular-category tuition per semester only; excludes library, examination, mediclaim/student development, registration and refundable deposit.",
+              "audience": "domestic",
+              "category": "Regular / Artisan / Ward of Artisan",
+              "academicYear": "2026–27",
+              "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+              "sourceLabel": "NIFT 2026 admission guidelines, fee table p150",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "English",
+          "mediumNote": null,
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "fee": {
+            "status": "confirmed",
+            "audience": "international",
+            "category": "NRI / foreign-category annual fee",
+            "academicYear": "2026–27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 907000,
+            "verifiedAt": "2026-10-27",
+            "notes": "Published annual tuition for the NRI fee category at Chennai, covering two semesters. This is not the regular Indian-student fee. Library, mediclaim/student development, examination, deposits, registration and living costs are separate; future fees may change."
+          },
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "For 2026–27 the Chennai NRI-category annual tuition is INR 907,000. Recurring academic charges total INR 998,000; the first-year total is INR 1,019,900 including security deposit and registration. Regular-category tuition is INR 150,000 per semester, not the same tariff. Housing, meals and personal costs need separate budgeting.",
+          "teachingPhases": [
+            {
+              "phase": "Campus study",
+              "language": "English",
+              "details": "A four-year design degree specialising in fashion communication, with studio, material and project-based learning. Regular and international applicants have different selection routes."
+            }
+          ]
+        },
+        {
+          "slug": "bdes-fashion-design",
+          "canonicalCourseSlug": "bdes",
+          "officialTitle": "Bachelor of Design in Fashion Design",
+          "durationYears": 4,
+          "officialProgramUrl": "https://nift.ac.in/chennai/academics/programmes/undergraduate/fashion-design",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Indian citizens under the regular route",
+              "Foreign nationals, NRI, OCI, PIO and SAARC applicants under the separate international category"
+            ],
+            "restrictions": [
+              "Applicant-category status must be documented; international-category candidates follow the SAT or GMAT route rather than the regular NIFT entrance examination.",
+              "Foreign qualifications require AIU/UGC equivalence before admission; international applicants need working knowledge of English."
+            ],
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "A four-year design degree specialising in fashion design, with studio, material and project-based learning. Regular and international applicants have different selection routes.",
+            "eligibility": {
+              "intro": "Admission depends on the qualification and applicant-category requirements for this programme.",
+              "items": [
+                "Pass recognised 10+2, NIOS with at least five subjects, or an accepted equivalent qualification.",
+                "Alternatively, a three- or four-year diploma recognised by AICTE or a State Board after Class 10 can qualify.",
+                "Regular undergraduate applicants must be under 24 on 1 August of the admission year; SC, ST and PwD applicants receive a five-year relaxation.",
+                "Applicants using a foreign qualification must obtain the required equivalence; international-category applicants need working knowledge of English.",
+                "For the separate foreign-national/NRI/OCI/PIO/SAARC category, the undergraduate age must also be under 24 on 1 August of the admission year; do not assume the regular-category relaxation applies to this separate route."
+              ]
+            },
+            "applicationSteps": [
+              "Choose the correct applicant category and check its qualification and age conditions before registering online.",
+              "Regular-route applicants complete GAT, CAT and a Situation Test and participate in the applicable merit-based seat-allocation process.",
+              "International-category applicants apply through NIFT admissions and arrange official SAT (institution code 7258) score delivery; campus and programme allocation depends on merit and preferences.",
+              "Submit original qualification/category documents for verification and pay the applicable fees after allocation."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying examination certificate and marksheets",
+                "Degree or diploma records for the qualifying route",
+                "Equivalence certificate for foreign qualifications where required"
+              ],
+              "application": [
+                "Identity and date-of-birth proof",
+                "Applicant-category evidence and applicable passport/NRI/OCI/PIO documents",
+                "Official SAT score for the international category",
+                "Regular-route examination and allotment records where applicable"
+              ]
+            },
+            "deadlinesNote": "The cited admissions rules concern the 2026 cycle. Do not treat its closed application dates as a future intake announcement.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 150000,
+              "status": "confirmed",
+              "period": "semester",
+              "componentBasis": "Regular-category tuition per semester only; excludes library, examination, mediclaim/student development, registration and refundable deposit.",
+              "audience": "domestic",
+              "category": "Regular / Artisan / Ward of Artisan",
+              "academicYear": "2026–27",
+              "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+              "sourceLabel": "NIFT 2026 admission guidelines, fee table p150",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "English",
+          "mediumNote": null,
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "fee": {
+            "status": "confirmed",
+            "audience": "international",
+            "category": "NRI / foreign-category annual fee",
+            "academicYear": "2026–27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 907000,
+            "verifiedAt": "2026-10-27",
+            "notes": "Published annual tuition for the NRI fee category at Chennai, covering two semesters. This is not the regular Indian-student fee. Library, mediclaim/student development, examination, deposits, registration and living costs are separate; future fees may change."
+          },
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "For 2026–27 the Chennai NRI-category annual tuition is INR 907,000. Recurring academic charges total INR 998,000; the first-year total is INR 1,019,900 including security deposit and registration. Regular-category tuition is INR 150,000 per semester, not the same tariff. Housing, meals and personal costs need separate budgeting.",
+          "teachingPhases": [
+            {
+              "phase": "Campus study",
+              "language": "English",
+              "details": "A four-year design degree specialising in fashion design, with studio, material and project-based learning. Regular and international applicants have different selection routes."
+            }
+          ]
+        },
+        {
+          "slug": "bdes-knitwear-design",
+          "canonicalCourseSlug": "bdes",
+          "officialTitle": "Bachelor of Design in Knitwear Design",
+          "durationYears": 4,
+          "officialProgramUrl": "https://nift.ac.in/chennai/academics/programmes/undergraduate/knitwear-design",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Indian citizens under the regular route",
+              "Foreign nationals, NRI, OCI, PIO and SAARC applicants under the separate international category"
+            ],
+            "restrictions": [
+              "Applicant-category status must be documented; international-category candidates follow the SAT or GMAT route rather than the regular NIFT entrance examination.",
+              "Foreign qualifications require AIU/UGC equivalence before admission; international applicants need working knowledge of English."
+            ],
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "A four-year design degree specialising in knitwear design, with studio, material and project-based learning. Regular and international applicants have different selection routes.",
+            "eligibility": {
+              "intro": "Admission depends on the qualification and applicant-category requirements for this programme.",
+              "items": [
+                "Pass recognised 10+2, NIOS with at least five subjects, or an accepted equivalent qualification.",
+                "Alternatively, a three- or four-year diploma recognised by AICTE or a State Board after Class 10 can qualify.",
+                "Regular undergraduate applicants must be under 24 on 1 August of the admission year; SC, ST and PwD applicants receive a five-year relaxation.",
+                "Applicants using a foreign qualification must obtain the required equivalence; international-category applicants need working knowledge of English.",
+                "For the separate foreign-national/NRI/OCI/PIO/SAARC category, the undergraduate age must also be under 24 on 1 August of the admission year; do not assume the regular-category relaxation applies to this separate route."
+              ]
+            },
+            "applicationSteps": [
+              "Choose the correct applicant category and check its qualification and age conditions before registering online.",
+              "Regular-route applicants complete GAT, CAT and a Situation Test and participate in the applicable merit-based seat-allocation process.",
+              "International-category applicants apply through NIFT admissions and arrange official SAT (institution code 7258) score delivery; campus and programme allocation depends on merit and preferences.",
+              "Submit original qualification/category documents for verification and pay the applicable fees after allocation."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying examination certificate and marksheets",
+                "Degree or diploma records for the qualifying route",
+                "Equivalence certificate for foreign qualifications where required"
+              ],
+              "application": [
+                "Identity and date-of-birth proof",
+                "Applicant-category evidence and applicable passport/NRI/OCI/PIO documents",
+                "Official SAT score for the international category",
+                "Regular-route examination and allotment records where applicable"
+              ]
+            },
+            "deadlinesNote": "The cited admissions rules concern the 2026 cycle. Do not treat its closed application dates as a future intake announcement.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 150000,
+              "status": "confirmed",
+              "period": "semester",
+              "componentBasis": "Regular-category tuition per semester only; excludes library, examination, mediclaim/student development, registration and refundable deposit.",
+              "audience": "domestic",
+              "category": "Regular / Artisan / Ward of Artisan",
+              "academicYear": "2026–27",
+              "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+              "sourceLabel": "NIFT 2026 admission guidelines, fee table p150",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "English",
+          "mediumNote": null,
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "fee": {
+            "status": "confirmed",
+            "audience": "international",
+            "category": "NRI / foreign-category annual fee",
+            "academicYear": "2026–27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 907000,
+            "verifiedAt": "2026-10-27",
+            "notes": "Published annual tuition for the NRI fee category at Chennai, covering two semesters. This is not the regular Indian-student fee. Library, mediclaim/student development, examination, deposits, registration and living costs are separate; future fees may change."
+          },
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "For 2026–27 the Chennai NRI-category annual tuition is INR 907,000. Recurring academic charges total INR 998,000; the first-year total is INR 1,019,900 including security deposit and registration. Regular-category tuition is INR 150,000 per semester, not the same tariff. Housing, meals and personal costs need separate budgeting.",
+          "teachingPhases": [
+            {
+              "phase": "Campus study",
+              "language": "English",
+              "details": "A four-year design degree specialising in knitwear design, with studio, material and project-based learning. Regular and international applicants have different selection routes."
+            }
+          ]
+        },
+        {
+          "slug": "bdes-leather-design",
+          "canonicalCourseSlug": "bdes",
+          "officialTitle": "Bachelor of Design in Leather Design",
+          "durationYears": 4,
+          "officialProgramUrl": "https://nift.ac.in/chennai/academics/programmes/undergraduate/leather-design",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Indian citizens under the regular route",
+              "Foreign nationals, NRI, OCI, PIO and SAARC applicants under the separate international category"
+            ],
+            "restrictions": [
+              "Applicant-category status must be documented; international-category candidates follow the SAT or GMAT route rather than the regular NIFT entrance examination.",
+              "Foreign qualifications require AIU/UGC equivalence before admission; international applicants need working knowledge of English."
+            ],
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "A four-year design degree specialising in leather design, with studio, material and project-based learning. Regular and international applicants have different selection routes.",
+            "eligibility": {
+              "intro": "Admission depends on the qualification and applicant-category requirements for this programme.",
+              "items": [
+                "Pass recognised 10+2, NIOS with at least five subjects, or an accepted equivalent qualification.",
+                "Alternatively, a three- or four-year diploma recognised by AICTE or a State Board after Class 10 can qualify.",
+                "Regular undergraduate applicants must be under 24 on 1 August of the admission year; SC, ST and PwD applicants receive a five-year relaxation.",
+                "Applicants using a foreign qualification must obtain the required equivalence; international-category applicants need working knowledge of English.",
+                "For the separate foreign-national/NRI/OCI/PIO/SAARC category, the undergraduate age must also be under 24 on 1 August of the admission year; do not assume the regular-category relaxation applies to this separate route."
+              ]
+            },
+            "applicationSteps": [
+              "Choose the correct applicant category and check its qualification and age conditions before registering online.",
+              "Regular-route applicants complete GAT, CAT and a Situation Test and participate in the applicable merit-based seat-allocation process.",
+              "International-category applicants apply through NIFT admissions and arrange official SAT (institution code 7258) score delivery; campus and programme allocation depends on merit and preferences.",
+              "Submit original qualification/category documents for verification and pay the applicable fees after allocation."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying examination certificate and marksheets",
+                "Degree or diploma records for the qualifying route",
+                "Equivalence certificate for foreign qualifications where required"
+              ],
+              "application": [
+                "Identity and date-of-birth proof",
+                "Applicant-category evidence and applicable passport/NRI/OCI/PIO documents",
+                "Official SAT score for the international category",
+                "Regular-route examination and allotment records where applicable"
+              ]
+            },
+            "deadlinesNote": "The cited admissions rules concern the 2026 cycle. Do not treat its closed application dates as a future intake announcement.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 150000,
+              "status": "confirmed",
+              "period": "semester",
+              "componentBasis": "Regular-category tuition per semester only; excludes library, examination, mediclaim/student development, registration and refundable deposit.",
+              "audience": "domestic",
+              "category": "Regular / Artisan / Ward of Artisan",
+              "academicYear": "2026–27",
+              "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+              "sourceLabel": "NIFT 2026 admission guidelines, fee table p150",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "English",
+          "mediumNote": null,
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "fee": {
+            "status": "confirmed",
+            "audience": "international",
+            "category": "NRI / foreign-category annual fee",
+            "academicYear": "2026–27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 907000,
+            "verifiedAt": "2026-10-27",
+            "notes": "Published annual tuition for the NRI fee category at Chennai, covering two semesters. This is not the regular Indian-student fee. Library, mediclaim/student development, examination, deposits, registration and living costs are separate; future fees may change."
+          },
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "For 2026–27 the Chennai NRI-category annual tuition is INR 907,000. Recurring academic charges total INR 998,000; the first-year total is INR 1,019,900 including security deposit and registration. Regular-category tuition is INR 150,000 per semester, not the same tariff. Housing, meals and personal costs need separate budgeting.",
+          "teachingPhases": [
+            {
+              "phase": "Campus study",
+              "language": "English",
+              "details": "A four-year design degree specialising in leather design, with studio, material and project-based learning. Regular and international applicants have different selection routes."
+            }
+          ]
+        },
+        {
+          "slug": "bdes-textile-design",
+          "canonicalCourseSlug": "bdes",
+          "officialTitle": "Bachelor of Design in Textile Design",
+          "durationYears": 4,
+          "officialProgramUrl": "https://nift.ac.in/chennai/academics/programmes/undergraduate/textile-design",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Indian citizens under the regular route",
+              "Foreign nationals, NRI, OCI, PIO and SAARC applicants under the separate international category"
+            ],
+            "restrictions": [
+              "Applicant-category status must be documented; international-category candidates follow the SAT or GMAT route rather than the regular NIFT entrance examination.",
+              "Foreign qualifications require AIU/UGC equivalence before admission; international applicants need working knowledge of English."
+            ],
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "A four-year design degree specialising in textile design, with studio, material and project-based learning. Regular and international applicants have different selection routes.",
+            "eligibility": {
+              "intro": "Admission depends on the qualification and applicant-category requirements for this programme.",
+              "items": [
+                "Pass recognised 10+2, NIOS with at least five subjects, or an accepted equivalent qualification.",
+                "Alternatively, a three- or four-year diploma recognised by AICTE or a State Board after Class 10 can qualify.",
+                "Regular undergraduate applicants must be under 24 on 1 August of the admission year; SC, ST and PwD applicants receive a five-year relaxation.",
+                "Applicants using a foreign qualification must obtain the required equivalence; international-category applicants need working knowledge of English.",
+                "For the separate foreign-national/NRI/OCI/PIO/SAARC category, the undergraduate age must also be under 24 on 1 August of the admission year; do not assume the regular-category relaxation applies to this separate route."
+              ]
+            },
+            "applicationSteps": [
+              "Choose the correct applicant category and check its qualification and age conditions before registering online.",
+              "Regular-route applicants complete GAT, CAT and a Situation Test and participate in the applicable merit-based seat-allocation process.",
+              "International-category applicants apply through NIFT admissions and arrange official SAT (institution code 7258) score delivery; campus and programme allocation depends on merit and preferences.",
+              "Submit original qualification/category documents for verification and pay the applicable fees after allocation."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying examination certificate and marksheets",
+                "Degree or diploma records for the qualifying route",
+                "Equivalence certificate for foreign qualifications where required"
+              ],
+              "application": [
+                "Identity and date-of-birth proof",
+                "Applicant-category evidence and applicable passport/NRI/OCI/PIO documents",
+                "Official SAT score for the international category",
+                "Regular-route examination and allotment records where applicable"
+              ]
+            },
+            "deadlinesNote": "The cited admissions rules concern the 2026 cycle. Do not treat its closed application dates as a future intake announcement.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 150000,
+              "status": "confirmed",
+              "period": "semester",
+              "componentBasis": "Regular-category tuition per semester only; excludes library, examination, mediclaim/student development, registration and refundable deposit.",
+              "audience": "domestic",
+              "category": "Regular / Artisan / Ward of Artisan",
+              "academicYear": "2026–27",
+              "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+              "sourceLabel": "NIFT 2026 admission guidelines, fee table p150",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "English",
+          "mediumNote": null,
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "fee": {
+            "status": "confirmed",
+            "audience": "international",
+            "category": "NRI / foreign-category annual fee",
+            "academicYear": "2026–27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 907000,
+            "verifiedAt": "2026-10-27",
+            "notes": "Published annual tuition for the NRI fee category at Chennai, covering two semesters. This is not the regular Indian-student fee. Library, mediclaim/student development, examination, deposits, registration and living costs are separate; future fees may change."
+          },
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "For 2026–27 the Chennai NRI-category annual tuition is INR 907,000. Recurring academic charges total INR 998,000; the first-year total is INR 1,019,900 including security deposit and registration. Regular-category tuition is INR 150,000 per semester, not the same tariff. Housing, meals and personal costs need separate budgeting.",
+          "teachingPhases": [
+            {
+              "phase": "Campus study",
+              "language": "English",
+              "details": "A four-year design degree specialising in textile design, with studio, material and project-based learning. Regular and international applicants have different selection routes."
+            }
+          ]
+        },
+        {
+          "slug": "bftech-apparel-production",
+          "canonicalCourseSlug": "bachelor-fashion-technology",
+          "officialTitle": "Bachelor of Fashion Technology in Apparel Production",
+          "durationYears": 4,
+          "officialProgramUrl": "https://nift.ac.in/chennai/academics/programmes/undergraduate/apparel-production",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Indian citizens under the regular route",
+              "Foreign nationals, NRI, OCI, PIO and SAARC applicants under the separate international category"
+            ],
+            "restrictions": [
+              "Applicant-category status must be documented; international-category candidates follow the SAT or GMAT route rather than the regular NIFT entrance examination.",
+              "Foreign qualifications require AIU/UGC equivalence before admission; international applicants need working knowledge of English."
+            ],
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "A four-year apparel-production degree combining manufacturing, engineering and fashion-business applications. Regular and international applicants have different selection routes.",
+            "eligibility": {
+              "intro": "Admission depends on the qualification and applicant-category requirements for this programme.",
+              "items": [
+                "Pass recognised 10+2, NIOS with at least five subjects, or an accepted equivalent qualification.",
+                "Mathematics is required at the senior-secondary/equivalent level for the 10+2 admission route.",
+                "Alternatively, a three- or four-year engineering diploma recognised by AICTE or a State Board after Class 10 can qualify.",
+                "Regular undergraduate applicants must be under 24 on 1 August of the admission year; SC, ST and PwD applicants receive a five-year relaxation.",
+                "Applicants using a foreign qualification must obtain the required equivalence; international-category applicants need working knowledge of English.",
+                "For the separate foreign-national/NRI/OCI/PIO/SAARC category, the undergraduate age must also be under 24 on 1 August of the admission year; do not assume the regular-category relaxation applies to this separate route."
+              ]
+            },
+            "applicationSteps": [
+              "Choose the correct applicant category and check its qualification and age conditions before registering online.",
+              "Regular-route applicants complete GAT and participate in the applicable merit-based seat-allocation process.",
+              "International-category applicants apply through NIFT admissions and arrange official SAT (institution code 7258) score delivery; campus and programme allocation depends on merit and preferences.",
+              "Submit original qualification/category documents for verification and pay the applicable fees after allocation."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying examination certificate and marksheets",
+                "Degree or diploma records for the qualifying route",
+                "Equivalence certificate for foreign qualifications where required"
+              ],
+              "application": [
+                "Identity and date-of-birth proof",
+                "Applicant-category evidence and applicable passport/NRI/OCI/PIO documents",
+                "Official SAT score for the international category",
+                "Regular-route examination and allotment records where applicable"
+              ]
+            },
+            "deadlinesNote": "The cited admissions rules concern the 2026 cycle. Do not treat its closed application dates as a future intake announcement.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 150000,
+              "status": "confirmed",
+              "period": "semester",
+              "componentBasis": "Regular-category tuition per semester only; excludes library, examination, mediclaim/student development, registration and refundable deposit.",
+              "audience": "domestic",
+              "category": "Regular / Artisan / Ward of Artisan",
+              "academicYear": "2026–27",
+              "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+              "sourceLabel": "NIFT 2026 admission guidelines, fee table p150",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "English",
+          "mediumNote": null,
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "fee": {
+            "status": "confirmed",
+            "audience": "international",
+            "category": "NRI / foreign-category annual fee",
+            "academicYear": "2026–27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 907000,
+            "verifiedAt": "2026-10-27",
+            "notes": "Published annual tuition for the NRI fee category at Chennai, covering two semesters. This is not the regular Indian-student fee. Library, mediclaim/student development, examination, deposits, registration and living costs are separate; future fees may change."
+          },
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "For 2026–27 the Chennai NRI-category annual tuition is INR 907,000. Recurring academic charges total INR 998,000; the first-year total is INR 1,019,900 including security deposit and registration. Regular-category tuition is INR 150,000 per semester, not the same tariff. Housing, meals and personal costs need separate budgeting.",
+          "teachingPhases": [
+            {
+              "phase": "Campus study",
+              "language": "English",
+              "details": "A four-year apparel-production degree combining manufacturing, engineering and fashion-business applications. Regular and international applicants have different selection routes."
+            }
+          ]
+        },
+        {
+          "slug": "mfm-fashion-management",
+          "canonicalCourseSlug": "master-fashion-management",
+          "officialTitle": "Master of Fashion Management",
+          "durationYears": 2,
+          "officialProgramUrl": "https://nift.ac.in/chennai/academics/programmes/postgraduate/master-fashion-management",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Indian citizens under the regular route",
+              "Foreign nationals, NRI, OCI, PIO and SAARC applicants under the separate international category"
+            ],
+            "restrictions": [
+              "Applicant-category status must be documented; international-category candidates follow the SAT or GMAT route rather than the regular NIFT entrance examination.",
+              "Foreign qualifications require AIU/UGC equivalence before admission; international applicants need working knowledge of English."
+            ],
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "A two-year postgraduate route focused on fashion business, merchandising and management. Regular and international applicants have different selection routes.",
+            "eligibility": {
+              "intro": "Admission depends on the qualification and applicant-category requirements for this programme.",
+              "items": [
+                "A recognised undergraduate degree in any discipline, or a minimum three-year undergraduate diploma from NIFT or NID.",
+                "There is no upper age limit for the master’s programme.",
+                "Applicants using a foreign qualification must obtain the required equivalence; international-category applicants need working knowledge of English."
+              ]
+            },
+            "applicationSteps": [
+              "Choose the correct applicant category and check its qualification and age conditions before registering online.",
+              "Regular-route applicants complete GAT and a personal interview and participate in the applicable merit-based seat-allocation process.",
+              "International-category applicants apply through NIFT admissions and arrange official GMAT score delivery; campus and programme allocation depends on merit and preferences.",
+              "Submit original qualification/category documents for verification and pay the applicable fees after allocation."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying examination certificate and marksheets",
+                "Degree or diploma records for the qualifying route",
+                "Equivalence certificate for foreign qualifications where required"
+              ],
+              "application": [
+                "Identity and date-of-birth proof",
+                "Applicant-category evidence and applicable passport/NRI/OCI/PIO documents",
+                "Official GMAT score for the international category",
+                "Regular-route examination and allotment records where applicable"
+              ]
+            },
+            "deadlinesNote": "The cited admissions rules concern the 2026 cycle. Do not treat its closed application dates as a future intake announcement.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 150000,
+              "status": "confirmed",
+              "period": "semester",
+              "componentBasis": "Regular-category tuition per semester only; excludes library, examination, mediclaim/student development, registration and refundable deposit.",
+              "audience": "domestic",
+              "category": "Regular / Artisan / Ward of Artisan",
+              "academicYear": "2026–27",
+              "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+              "sourceLabel": "NIFT 2026 admission guidelines, fee table p150",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "English",
+          "mediumNote": null,
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "fee": {
+            "status": "confirmed",
+            "audience": "international",
+            "category": "NRI / foreign-category annual fee",
+            "academicYear": "2026–27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 907000,
+            "verifiedAt": "2026-10-27",
+            "notes": "Published annual tuition for the NRI fee category at Chennai, covering two semesters. This is not the regular Indian-student fee. Library, mediclaim/student development, examination, deposits, registration and living costs are separate; future fees may change."
+          },
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "For 2026–27 the Chennai NRI-category annual tuition is INR 907,000. Recurring academic charges total INR 998,000; the first-year total is INR 1,019,900 including security deposit and registration. Regular-category tuition is INR 150,000 per semester, not the same tariff. Housing, meals and personal costs need separate budgeting.",
+          "teachingPhases": [
+            {
+              "phase": "Campus study",
+              "language": "English",
+              "details": "A two-year postgraduate route focused on fashion business, merchandising and management. Regular and international applicants have different selection routes."
+            }
+          ]
+        }
+      ],
+      "logoUrl": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1793126949/studentstraffic/universities/national-institute-of-fashion-technology-chennai/logo-d9bbe9e6382f.png",
+      "coverImageUrl": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1793126951/studentstraffic/universities/national-institute-of-fashion-technology-chennai/cover-86d92bcc9ed1.jpg"
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-accessory-design",
+      "publicField": "eligibility",
+      "claimText": "Pass recognised 10+2, NIOS with at least five subjects, or an accepted equivalent qualification.; Alternatively, a three- or four-year diploma recognised by AICTE or a State Board after Class 10 can qualify.; Regular undergraduate applicants must be under 24 on 1 August of the admission year; SC, ST and PwD applicants receive a five-year relaxation.; Applicants using a foreign qualification must obtain the required equivalence; international-category applicants need working knowledge of English.; For the separate foreign-national/NRI/OCI/PIO/SAARC category, the undergraduate age must also be under 24 on 1 August of the admission year; do not assume the regular-category relaxation applies to this separate route.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines, printed pp115–116 (regular qualifications) and p120 (international category and age)",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-accessory-design",
+      "publicField": "admissions",
+      "claimText": "Regular selection: GAT, CAT and a Situation Test. International category: SAT with merit and preference-based campus allocation; foreign-equivalence and category documentation apply.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-accessory-design",
+      "publicField": "medium",
+      "claimText": "The NIFT 2026 admission guidelines explicitly identify English as the medium of instruction.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-accessory-design",
+      "publicField": "fee",
+      "claimText": "For 2026–27 the Chennai NRI-category annual tuition is INR 907,000. Recurring academic charges total INR 998,000; the first-year total is INR 1,019,900 including security deposit and registration. Regular-category tuition is INR 150,000 per semester, not the same tariff. Housing, meals and personal costs need separate budgeting.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-accessory-design",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Regular-category tuition is INR 150,000 per semester for 2026–27; it is not annualised and does not include other charges.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-accessory-design",
+      "publicField": "intake",
+      "claimText": "The cited 2026 admission calendar is closed as of 27 October 2026; no next intake month is established by these sources.",
+      "status": "omit",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-accessory-design",
+      "publicField": "programme",
+      "claimText": "Exact campus programme title, duration and curriculum are confirmed by the Chennai programme page.",
+      "status": "verified",
+      "sourceLabel": "NIFT Chennai programme page",
+      "sourceUrl": "https://nift.ac.in/chennai/academics/programmes/undergraduate/fashion-and-lifestyle-accessory",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-fashion-communication",
+      "publicField": "eligibility",
+      "claimText": "Pass recognised 10+2, NIOS with at least five subjects, or an accepted equivalent qualification.; Alternatively, a three- or four-year diploma recognised by AICTE or a State Board after Class 10 can qualify.; Regular undergraduate applicants must be under 24 on 1 August of the admission year; SC, ST and PwD applicants receive a five-year relaxation.; Applicants using a foreign qualification must obtain the required equivalence; international-category applicants need working knowledge of English.; For the separate foreign-national/NRI/OCI/PIO/SAARC category, the undergraduate age must also be under 24 on 1 August of the admission year; do not assume the regular-category relaxation applies to this separate route.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines, printed pp115–116 (regular qualifications) and p120 (international category and age)",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-fashion-communication",
+      "publicField": "admissions",
+      "claimText": "Regular selection: GAT, CAT and a Situation Test. International category: SAT with merit and preference-based campus allocation; foreign-equivalence and category documentation apply.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-fashion-communication",
+      "publicField": "medium",
+      "claimText": "The NIFT 2026 admission guidelines explicitly identify English as the medium of instruction.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-fashion-communication",
+      "publicField": "fee",
+      "claimText": "For 2026–27 the Chennai NRI-category annual tuition is INR 907,000. Recurring academic charges total INR 998,000; the first-year total is INR 1,019,900 including security deposit and registration. Regular-category tuition is INR 150,000 per semester, not the same tariff. Housing, meals and personal costs need separate budgeting.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-fashion-communication",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Regular-category tuition is INR 150,000 per semester for 2026–27; it is not annualised and does not include other charges.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-fashion-communication",
+      "publicField": "intake",
+      "claimText": "The cited 2026 admission calendar is closed as of 27 October 2026; no next intake month is established by these sources.",
+      "status": "omit",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-fashion-communication",
+      "publicField": "programme",
+      "claimText": "Exact campus programme title, duration and curriculum are confirmed by the Chennai programme page.",
+      "status": "verified",
+      "sourceLabel": "NIFT Chennai programme page",
+      "sourceUrl": "https://nift.ac.in/chennai/academics/programmes/undergraduate/fashion-communication",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-fashion-design",
+      "publicField": "eligibility",
+      "claimText": "Pass recognised 10+2, NIOS with at least five subjects, or an accepted equivalent qualification.; Alternatively, a three- or four-year diploma recognised by AICTE or a State Board after Class 10 can qualify.; Regular undergraduate applicants must be under 24 on 1 August of the admission year; SC, ST and PwD applicants receive a five-year relaxation.; Applicants using a foreign qualification must obtain the required equivalence; international-category applicants need working knowledge of English.; For the separate foreign-national/NRI/OCI/PIO/SAARC category, the undergraduate age must also be under 24 on 1 August of the admission year; do not assume the regular-category relaxation applies to this separate route.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines, printed pp115–116 (regular qualifications) and p120 (international category and age)",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-fashion-design",
+      "publicField": "admissions",
+      "claimText": "Regular selection: GAT, CAT and a Situation Test. International category: SAT with merit and preference-based campus allocation; foreign-equivalence and category documentation apply.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-fashion-design",
+      "publicField": "medium",
+      "claimText": "The NIFT 2026 admission guidelines explicitly identify English as the medium of instruction.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-fashion-design",
+      "publicField": "fee",
+      "claimText": "For 2026–27 the Chennai NRI-category annual tuition is INR 907,000. Recurring academic charges total INR 998,000; the first-year total is INR 1,019,900 including security deposit and registration. Regular-category tuition is INR 150,000 per semester, not the same tariff. Housing, meals and personal costs need separate budgeting.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-fashion-design",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Regular-category tuition is INR 150,000 per semester for 2026–27; it is not annualised and does not include other charges.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-fashion-design",
+      "publicField": "intake",
+      "claimText": "The cited 2026 admission calendar is closed as of 27 October 2026; no next intake month is established by these sources.",
+      "status": "omit",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-fashion-design",
+      "publicField": "programme",
+      "claimText": "Exact campus programme title, duration and curriculum are confirmed by the Chennai programme page.",
+      "status": "verified",
+      "sourceLabel": "NIFT Chennai programme page",
+      "sourceUrl": "https://nift.ac.in/chennai/academics/programmes/undergraduate/fashion-design",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-knitwear-design",
+      "publicField": "eligibility",
+      "claimText": "Pass recognised 10+2, NIOS with at least five subjects, or an accepted equivalent qualification.; Alternatively, a three- or four-year diploma recognised by AICTE or a State Board after Class 10 can qualify.; Regular undergraduate applicants must be under 24 on 1 August of the admission year; SC, ST and PwD applicants receive a five-year relaxation.; Applicants using a foreign qualification must obtain the required equivalence; international-category applicants need working knowledge of English.; For the separate foreign-national/NRI/OCI/PIO/SAARC category, the undergraduate age must also be under 24 on 1 August of the admission year; do not assume the regular-category relaxation applies to this separate route.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines, printed pp115–116 (regular qualifications) and p120 (international category and age)",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-knitwear-design",
+      "publicField": "admissions",
+      "claimText": "Regular selection: GAT, CAT and a Situation Test. International category: SAT with merit and preference-based campus allocation; foreign-equivalence and category documentation apply.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-knitwear-design",
+      "publicField": "medium",
+      "claimText": "The NIFT 2026 admission guidelines explicitly identify English as the medium of instruction.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-knitwear-design",
+      "publicField": "fee",
+      "claimText": "For 2026–27 the Chennai NRI-category annual tuition is INR 907,000. Recurring academic charges total INR 998,000; the first-year total is INR 1,019,900 including security deposit and registration. Regular-category tuition is INR 150,000 per semester, not the same tariff. Housing, meals and personal costs need separate budgeting.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-knitwear-design",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Regular-category tuition is INR 150,000 per semester for 2026–27; it is not annualised and does not include other charges.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-knitwear-design",
+      "publicField": "intake",
+      "claimText": "The cited 2026 admission calendar is closed as of 27 October 2026; no next intake month is established by these sources.",
+      "status": "omit",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-knitwear-design",
+      "publicField": "programme",
+      "claimText": "Exact campus programme title, duration and curriculum are confirmed by the Chennai programme page.",
+      "status": "verified",
+      "sourceLabel": "NIFT Chennai programme page",
+      "sourceUrl": "https://nift.ac.in/chennai/academics/programmes/undergraduate/knitwear-design",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-leather-design",
+      "publicField": "eligibility",
+      "claimText": "Pass recognised 10+2, NIOS with at least five subjects, or an accepted equivalent qualification.; Alternatively, a three- or four-year diploma recognised by AICTE or a State Board after Class 10 can qualify.; Regular undergraduate applicants must be under 24 on 1 August of the admission year; SC, ST and PwD applicants receive a five-year relaxation.; Applicants using a foreign qualification must obtain the required equivalence; international-category applicants need working knowledge of English.; For the separate foreign-national/NRI/OCI/PIO/SAARC category, the undergraduate age must also be under 24 on 1 August of the admission year; do not assume the regular-category relaxation applies to this separate route.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines, printed pp115–116 (regular qualifications) and p120 (international category and age)",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-leather-design",
+      "publicField": "admissions",
+      "claimText": "Regular selection: GAT, CAT and a Situation Test. International category: SAT with merit and preference-based campus allocation; foreign-equivalence and category documentation apply.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-leather-design",
+      "publicField": "medium",
+      "claimText": "The NIFT 2026 admission guidelines explicitly identify English as the medium of instruction.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-leather-design",
+      "publicField": "fee",
+      "claimText": "For 2026–27 the Chennai NRI-category annual tuition is INR 907,000. Recurring academic charges total INR 998,000; the first-year total is INR 1,019,900 including security deposit and registration. Regular-category tuition is INR 150,000 per semester, not the same tariff. Housing, meals and personal costs need separate budgeting.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-leather-design",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Regular-category tuition is INR 150,000 per semester for 2026–27; it is not annualised and does not include other charges.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-leather-design",
+      "publicField": "intake",
+      "claimText": "The cited 2026 admission calendar is closed as of 27 October 2026; no next intake month is established by these sources.",
+      "status": "omit",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-leather-design",
+      "publicField": "programme",
+      "claimText": "Exact campus programme title, duration and curriculum are confirmed by the Chennai programme page.",
+      "status": "verified",
+      "sourceLabel": "NIFT Chennai programme page",
+      "sourceUrl": "https://nift.ac.in/chennai/academics/programmes/undergraduate/leather-design",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-textile-design",
+      "publicField": "eligibility",
+      "claimText": "Pass recognised 10+2, NIOS with at least five subjects, or an accepted equivalent qualification.; Alternatively, a three- or four-year diploma recognised by AICTE or a State Board after Class 10 can qualify.; Regular undergraduate applicants must be under 24 on 1 August of the admission year; SC, ST and PwD applicants receive a five-year relaxation.; Applicants using a foreign qualification must obtain the required equivalence; international-category applicants need working knowledge of English.; For the separate foreign-national/NRI/OCI/PIO/SAARC category, the undergraduate age must also be under 24 on 1 August of the admission year; do not assume the regular-category relaxation applies to this separate route.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines, printed pp115–116 (regular qualifications) and p120 (international category and age)",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-textile-design",
+      "publicField": "admissions",
+      "claimText": "Regular selection: GAT, CAT and a Situation Test. International category: SAT with merit and preference-based campus allocation; foreign-equivalence and category documentation apply.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-textile-design",
+      "publicField": "medium",
+      "claimText": "The NIFT 2026 admission guidelines explicitly identify English as the medium of instruction.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-textile-design",
+      "publicField": "fee",
+      "claimText": "For 2026–27 the Chennai NRI-category annual tuition is INR 907,000. Recurring academic charges total INR 998,000; the first-year total is INR 1,019,900 including security deposit and registration. Regular-category tuition is INR 150,000 per semester, not the same tariff. Housing, meals and personal costs need separate budgeting.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-textile-design",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Regular-category tuition is INR 150,000 per semester for 2026–27; it is not annualised and does not include other charges.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-textile-design",
+      "publicField": "intake",
+      "claimText": "The cited 2026 admission calendar is closed as of 27 October 2026; no next intake month is established by these sources.",
+      "status": "omit",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bdes-textile-design",
+      "publicField": "programme",
+      "claimText": "Exact campus programme title, duration and curriculum are confirmed by the Chennai programme page.",
+      "status": "verified",
+      "sourceLabel": "NIFT Chennai programme page",
+      "sourceUrl": "https://nift.ac.in/chennai/academics/programmes/undergraduate/textile-design",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bftech-apparel-production",
+      "publicField": "eligibility",
+      "claimText": "Pass recognised 10+2, NIOS with at least five subjects, or an accepted equivalent qualification.; Mathematics is required at the senior-secondary/equivalent level for the 10+2 admission route.; Alternatively, a three- or four-year engineering diploma recognised by AICTE or a State Board after Class 10 can qualify.; Regular undergraduate applicants must be under 24 on 1 August of the admission year; SC, ST and PwD applicants receive a five-year relaxation.; Applicants using a foreign qualification must obtain the required equivalence; international-category applicants need working knowledge of English.; For the separate foreign-national/NRI/OCI/PIO/SAARC category, the undergraduate age must also be under 24 on 1 August of the admission year; do not assume the regular-category relaxation applies to this separate route.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines, printed pp115–116 (regular qualifications) and p120 (international category and age)",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bftech-apparel-production",
+      "publicField": "admissions",
+      "claimText": "Regular selection: GAT. International category: SAT with merit and preference-based campus allocation; foreign-equivalence and category documentation apply.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bftech-apparel-production",
+      "publicField": "medium",
+      "claimText": "The NIFT 2026 admission guidelines explicitly identify English as the medium of instruction.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bftech-apparel-production",
+      "publicField": "fee",
+      "claimText": "For 2026–27 the Chennai NRI-category annual tuition is INR 907,000. Recurring academic charges total INR 998,000; the first-year total is INR 1,019,900 including security deposit and registration. Regular-category tuition is INR 150,000 per semester, not the same tariff. Housing, meals and personal costs need separate budgeting.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bftech-apparel-production",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Regular-category tuition is INR 150,000 per semester for 2026–27; it is not annualised and does not include other charges.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bftech-apparel-production",
+      "publicField": "intake",
+      "claimText": "The cited 2026 admission calendar is closed as of 27 October 2026; no next intake month is established by these sources.",
+      "status": "omit",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "bftech-apparel-production",
+      "publicField": "programme",
+      "claimText": "Exact campus programme title, duration and curriculum are confirmed by the Chennai programme page.",
+      "status": "verified",
+      "sourceLabel": "NIFT Chennai programme page",
+      "sourceUrl": "https://nift.ac.in/chennai/academics/programmes/undergraduate/apparel-production",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "mfm-fashion-management",
+      "publicField": "eligibility",
+      "claimText": "A recognised undergraduate degree in any discipline, or a minimum three-year undergraduate diploma from NIFT or NID.; There is no upper age limit for the master’s programme.; Applicants using a foreign qualification must obtain the required equivalence; international-category applicants need working knowledge of English.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines, printed pp115–116 (regular qualifications) and p120 (international category and age)",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "mfm-fashion-management",
+      "publicField": "admissions",
+      "claimText": "Regular selection: GAT and a personal interview. International category: GMAT with merit and preference-based campus allocation; foreign-equivalence and category documentation apply.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "mfm-fashion-management",
+      "publicField": "medium",
+      "claimText": "The NIFT 2026 admission guidelines explicitly identify English as the medium of instruction.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "mfm-fashion-management",
+      "publicField": "fee",
+      "claimText": "For 2026–27 the Chennai NRI-category annual tuition is INR 907,000. Recurring academic charges total INR 998,000; the first-year total is INR 1,019,900 including security deposit and registration. Regular-category tuition is INR 150,000 per semester, not the same tariff. Housing, meals and personal costs need separate budgeting.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "mfm-fashion-management",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Regular-category tuition is INR 150,000 per semester for 2026–27; it is not annualised and does not include other charges.",
+      "status": "verified",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "mfm-fashion-management",
+      "publicField": "intake",
+      "claimText": "The cited 2026 admission calendar is closed as of 27 October 2026; no next intake month is established by these sources.",
+      "status": "omit",
+      "sourceLabel": "NIFT 2026 admission guidelines",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "programmeSlug": "mfm-fashion-management",
+      "publicField": "programme",
+      "claimText": "Exact campus programme title, duration and curriculum are confirmed by the Chennai programme page.",
+      "status": "verified",
+      "sourceLabel": "NIFT Chennai programme page",
+      "sourceUrl": "https://nift.ac.in/chennai/academics/programmes/postgraduate/master-fashion-management",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "publicField": "recognition",
+      "claimText": "The Ministry of Textiles identifies NIFT as a statutory institute under the NIFT Act 2006, lists Chennai among its campuses, and confirms degree-awarding powers.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://www.texmin.gov.in/static/uploads/2026/05/5c48e80d2180ca3194b9e9b01340696d.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "publicField": "identity",
+      "claimText": "Government PIB lists the Chennai NIFT centre with establishment year 1995.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://www.pib.gov.in/newsite/PrintRelease.aspx?lang=2&reg=48&relid=103898",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "publicField": "summary",
+      "claimText": "Chennai offers six B.Des specialisations, B.F.Tech Apparel Production and Master of Fashion Management.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://nift.ac.in/chennai/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "publicField": "campusLifestyle",
+      "claimText": "Chennai campus facilities include studios, laboratories, workshops, resource centre, auditorium, fitness, sports, hostel and courtyard amphitheatre.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://nift.ac.in/chennai/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "publicField": "cityProfile",
+      "claimText": "The 2026 prospectus gives the Chennai campus address as Rajiv Gandhi Salai, Taramani, Chennai 600113.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://nift.ac.in/sites/default/files/2026-08/Admission-Prospectus-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "publicField": "practicalExposure",
+      "claimText": "NIFT academic curriculum includes internships, industry visits and real-life projects; Chennai Apparel Production specifies laboratories, live industry projects and graduation work.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://www.texmin.gov.in/static/uploads/2026/05/5c48e80d2180ca3194b9e9b01340696d.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "publicField": "hostelOverview",
+      "claimText": "Chennai lists hostel facilities and induction includes hostel affairs; a guaranteed room or current tariff is not established.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://nift.ac.in/chennai/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "publicField": "dietarySupport",
+      "claimText": "No guaranteed special-diet service is established in reviewed Chennai campus sources; public text directs applicants to confirm arrangements.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://nift.ac.in/chennai/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "publicField": "safetyOverview",
+      "claimText": "The Chennai Internal Complaint Committee page links committee composition and redressal resources.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://nift.ac.in/chennai/internal-complaint-committee",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "publicField": "studentSupport",
+      "claimText": "Chennai induction includes academic guidance, the Campus Management System and hostel affairs.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://nift.ac.in/chennai/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "publicField": "practicalExposure",
+      "claimText": "The Chennai Apparel Production page specifies specialised laboratories, live industry projects, internships and a graduation project.",
+      "status": "verified",
+      "sourceLabel": "Official programme source",
+      "sourceUrl": "https://nift.ac.in/chennai/academics/programmes/undergraduate/apparel-production",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "national-institute-of-fashion-technology-chennai",
+      "publicField": "practicalExposure",
+      "claimText": "Chennai Master of Fashion Management includes an eight-week Fashion Industry Internship and Training and an eighteen-week graduation project.",
+      "status": "verified",
+      "sourceLabel": "Official programme source",
+      "sourceUrl": "https://nift.ac.in/chennai/academics/programmes/postgraduate/master-fashion-management",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    }
+  ]
+}

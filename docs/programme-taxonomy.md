@@ -465,3 +465,5 @@ M.Sc. Epidemiology (`msc-epidemiology`) is a public-health master's family for p
 ### Postgraduate certificate in business management — 27 October 2026
 
 `pg-certificate-business-management` covers one-year management programmes whose awarded credential is a Post Graduate Certificate in Management (AICTE course code PGCM), for example Great Lakes Chennai's PGPM. It is distinct from an MBA degree and from a two-year PGDM (`pg-diploma-business-management`); the institution's marketing title is retained on each offering.
+
+`bachelor-fashion-technology` (B.F.Tech, design stream) and `master-fashion-management` (M.F.M., business stream) are NIFT's own degrees, kept distinct from `be-btech-fashion-technology` and from the fashion-design degrees. `be-btech-manufacturing-engineering` covers CIPET's B.E./B.Tech Manufacturing Engineering route. `master-quantitative-finance` covers Madras School of Economics' applied quantitative finance master's and is separate from `msc-finance`.

@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "universitySlug": "national-institute-of-fashion-technology-chennai",
+  "universityName": "National Institute of Fashion Technology Chennai",
+  "batch": "tn-batch2-20261027",
+  "checkedAt": "2026-10-27",
+  "purpose": "User-authorized source-links local publication preparation; not direct apply.",
+  "payload": "payload.source.json",
+  "approvedSourceAssets": [
+    {
+      "kind": "logo",
+      "sourceUrl": "https://nift.ac.in/chennai/themes/nift/images/Microsite_logos/4_Chennai_Microsite_logo.png",
+      "sourceType": "official-university",
+      "rightsBasis": "Official NIFT Chennai institutional identifying mark supplied on its own public campus website, used solely for factual institutional identification; no open licence, ownership transfer or endorsement claimed.",
+      "checkedAt": "2026-10-27",
+      "status": "reviewed-source-ready-for-local-upload",
+      "sha256": "d9bbe9e6382feb7ba39b81505014416e4ca8d83b05e519eeb04bc374aa45a151",
+      "bytes": 41570,
+      "contentType": "image/png",
+      "dimensions": [
+        497,
+        106
+      ],
+      "proposedPublicId": "studentstraffic/universities/national-institute-of-fashion-technology-chennai/logo-d9bbe9e6382f",
+      "visualReview": "Intact 497×106 official crest and bilingual campus wordmark; independently composited on white for QA, dark text and crest remain legible. Original bytes unmodified.",
+      "altText": null,
+      "licenseUrl": null,
+      "licenseSourceUrl": null
+    },
+    {
+      "kind": "cover",
+      "sourceUrl": "https://nift.ac.in/chennai/sites/default/files/2026-10/4_Chennai.jpg",
+      "sourceType": "official-university",
+      "rightsBasis": "Official NIFT Chennai campus photograph supplied as its own public campus website hero image, used solely to identify the represented campus in factual education content; no open licence, ownership transfer or endorsement claimed.",
+      "checkedAt": "2026-10-27",
+      "status": "reviewed-source-ready-for-local-upload",
+      "sha256": "86d92bcc9ed1d133c28d30863b6f6110ae66677eeafa50f05bf66c4f1d2c0b92",
+      "bytes": 187195,
+      "contentType": "image/jpeg",
+      "dimensions": [
+        1570,
+        700
+      ],
+      "proposedPublicId": "studentstraffic/universities/national-institute-of-fashion-technology-chennai/cover-86d92bcc9ed1",
+      "visualReview": "Real Chennai campus frontage with NIFT Chennai name visible; sharp 1570×700 original, no montage, crop, recolouring or future-capture claim.",
+      "altText": "National Institute of Fashion Technology Chennai campus frontage and entrance in Taramani.",
+      "licenseUrl": null,
+      "licenseSourceUrl": null
+    }
+  ],
+  "readyForLocalMediaPreparation": true,
+  "readyForDirectApply": false,
+  "prohibitedActions": [
+    "No direct source hotlinks in logoUrl/coverImageUrl",
+    "No fabricated Cloudinary URLs",
+    "No DB access or live apply by this preparation tool"
+  ],
+  "remainingLocalSteps": [
+    "Upload the two reviewed original assets or supply verified existing Cloudinary mappings",
+    "Generate the hosted-media payload and run actual scoped reader",
+    "Reserve/claim through locked canonical workflow, run scoped/full validation, commit final immutable migration before user-owned apply"
+  ]
+}
