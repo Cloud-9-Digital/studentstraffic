@@ -51,6 +51,15 @@
       "frameworkIndependentlyRerun": true,
       "completeExecutableMigration": false,
       "remainingGates": "Complete-portfolio unknowns, precise applicant/cycle conditions, taxonomy where proposed, rights-cleared hosted media and user-owned publication."
+    },
+    {
+      "slug": "thiagarajar-college-of-engineering",
+      "status": "held_full_framework_subset_pass",
+      "inventoryRows": 38,
+      "frameworkPassingSubsetProgrammes": 12,
+      "frameworkIndependentlyRerun": true,
+      "completeExecutableMigration": false,
+      "remainingGates": "Complete-portfolio unknowns, precise applicant/cycle conditions, taxonomy where proposed, rights-cleared hosted media and user-owned publication."
     }
   ]
 }

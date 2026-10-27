@@ -1,0 +1,1687 @@
+{
+  "status": "completed_research_draft_with_explicit_review_gates",
+  "checkedAt": "2026-10-27",
+  "publicationAttempted": false,
+  "profile": {
+    "countrySlug": "india",
+    "slug": "thiagarajar-college-of-engineering",
+    "name": "Thiagarajar College of Engineering",
+    "city": "Madurai",
+    "type": "Private",
+    "establishedYear": 1957,
+    "officialWebsite": "https://www.tce.edu/",
+    "summary": "Thiagarajar College of Engineering is a government-aided autonomous college in Madurai, Tamil Nadu. Its current programme directory covers engineering, architecture, interior design, computing and urban planning, including a five-year integrated Data Science route. It is a distinct institution from Thiagarajar College, the arts and science college.",
+    "campusLifestyle": "The college is at Thiruparankundram in Madurai. Its official campus-life pages provide separate men’s and women’s hostel information and a counselling division. Prospective students should check the facilities and admission route relevant to their programme rather than relying on the similarly named arts college.",
+    "hostelOverview": "The college publishes separate men’s and women’s hostel pages, including warden contacts and links to general, maintenance, discipline and mess information. The women’s hostel page explicitly makes accommodation subject to availability. Confirm the current room charges directly with the hostel office.",
+    "dietarySupport": "Both hostel sections link mess information. The captured pages do not establish a current menu, special-diet provision or allergy-handling arrangements, so students should ask the relevant hostel office about individual requirements.",
+    "studentSupport": "The college’s counselling cell operates at the campus health centre. Its official page describes a tutor–ward system and tele-counselling service, and a link with Chella Muthu Trust Research Foundation for counsellor orientation and training.",
+    "whyChoose": [
+      "UGC’s own register confirms autonomous status for the engineering college.",
+      "The portfolio extends beyond engineering into design, architecture, computing and planning.",
+      "Separate hostel contacts and a dedicated counselling division are published."
+    ],
+    "thingsToConsider": [
+      "This is not Thiagarajar College at tcarts.in.",
+      "Some admission pages contain legacy examination or threshold wording that needs current-cycle checking.",
+      "TNEA engineering access includes only specified OCI/PIO and refugee categories; an unrestricted foreign-national route and current fee categories are not established."
+    ],
+    "bestFitFor": [
+      "Students comparing engineering disciplines in the Madurai region.",
+      "Applicants seeking the specifically listed integrated Data Science or planning route.",
+      "Research applicants who can verify an Anna University-recognized supervisor and current call."
+    ],
+    "industryPartners": [],
+    "recognitionBadges": [
+      "UGC autonomous status: 2022–23 to 2031–32"
+    ],
+    "recognitionLinks": [
+      {
+        "label": "UGC autonomous colleges register: Thiagarajar College of Engineering, Madurai",
+        "url": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list"
+      }
+    ],
+    "admissionsContent": {
+      "cta": "Check your programme, qualifying subjects and current counselling category before applying.",
+      "identityWarning": "Use tce.edu for the engineering college; do not reuse tcarts.in admissions or fees."
+    },
+    "faq": [
+      {
+        "question": "Is this Thiagarajar College of Engineering or the arts college?",
+        "answer": "This is Thiagarajar College of Engineering at Thiruparankundram, Madurai, with official website tce.edu. It is not the separately published Thiagarajar College at tcarts.in."
+      },
+      {
+        "question": "What does autonomous status mean for this listing?",
+        "answer": "UGC’s own autonomous-colleges register identifies Thiagarajar College of Engineering, Madurai, affiliated to Anna University, with autonomy shown for 2022–23 through 2031–32."
+      },
+      {
+        "question": "How many taught programmes are in the current directory?",
+        "answer": "The captured directory lists 22 taught awards: 12 engineering bachelor’s routes, B.Arch., B.Des., integrated M.Sc. Data Science, five M.E. routes, MCA and M.Plan."
+      },
+      {
+        "question": "How long is B.Des. Interior Design?",
+        "answer": "The official programme directory lists B.Des. Interior Design as four years. A secondary fee page describing a three-year course conflicts with that source and is not used."
+      },
+      {
+        "question": "Is Data Science a regular two-year M.Sc.?",
+        "answer": "No. The listed M.Sc. Data Science is a five-year integrated programme. It should not be mapped to a conventional two-year postgraduate M.Sc."
+      },
+      {
+        "question": "Does the college list postgraduate planning?",
+        "answer": "Yes. The current directory includes a two-year M.Plan in Urban Planning. Its current eligibility, admission examination and fee category should be checked before applying."
+      },
+      {
+        "question": "Are all research centres current open PhD places?",
+        "answer": "No. The research admissions page lists recognized centres and M.S./Ph.D. routes through Anna University. That does not establish a current vacancy under every supervisor or in every discipline."
+      },
+      {
+        "question": "Are hostel places guaranteed?",
+        "answer": "No. The women’s hostel page expressly says accommodation is subject to availability. Separate hostel pages provide warden contacts, and applicants should confirm an allocation before relying on a room."
+      },
+      {
+        "question": "What counselling support is published?",
+        "answer": "The college describes a counselling cell at the health centre, a tutor–ward system and tele-counselling. The page also identifies training support through Chella Muthu Trust Research Foundation."
+      },
+      {
+        "question": "Are the fee figures on comparison sites sufficient?",
+        "answer": "Not on their own. The reviewed secondary fee page mixes course-family ranges, older schedules and a B.Des. duration conflict. Request a current programme- and category-specific quotation rather than treating those figures as annual tuition."
+      },
+      {
+        "question": "Are current international admissions confirmed?",
+        "answer": "For engineering, TNEA 2026 permits only specified Tamil Nadu-native OCI/PIO and Sri Lankan Tamil refugee applicants, subject to its restrictions. This is not global foreign-national access. International eligibility for the other listed awards remains unverified."
+      }
+    ],
+    "researchSources": [
+      {
+        "label": "Official research source",
+        "url": "https://www.tce.edu/about/about-the-college",
+        "kind": "official-university",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official research source",
+        "url": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list",
+        "kind": "recognition",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official research source",
+        "url": "https://www.tce.edu/campuslife/hostel/womenshostel",
+        "kind": "official-university",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official research source",
+        "url": "https://www.tce.edu/campuslife/hostel/menshostel",
+        "kind": "official-university",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official research source",
+        "url": "https://www.tce.edu/campuslife/counselling-division",
+        "kind": "official-university",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official research source",
+        "url": "https://www.tce.edu/admission/programmes-offered",
+        "kind": "official-university",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official research source",
+        "url": "https://www.tce.edu/admission/msc-phd",
+        "kind": "official-university",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official institutional / regulator evidence",
+        "url": "https://www.tce.edu/about/mandatory-disclosure",
+        "kind": "official-university",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official institutional / regulator evidence",
+        "url": "https://www.tce.edu/admission/be-btech",
+        "kind": "official-university",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Secondary fee research (not programme existence evidence)",
+        "url": "https://www.shiksha.com/college/thiagarajar-college-of-engineering-madurai-36795/fees",
+        "kind": "other",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official institutional / regulator evidence",
+        "url": "https://www.tce.edu/admission/barch",
+        "kind": "official-university",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official institutional / regulator evidence",
+        "url": "https://www.tce.edu/admission/bdes",
+        "kind": "official-university",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official institutional / regulator evidence",
+        "url": "https://www.tce.edu/admission/msc-ds",
+        "kind": "official-university",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official institutional / regulator evidence",
+        "url": "https://www.tce.edu/admission/me-mca",
+        "kind": "official-university",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official institutional / regulator evidence",
+        "url": "https://www.tce.edu/admission/mplan",
+        "kind": "official-university",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "TNEA 2026 official information brochure",
+        "url": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+        "kind": "government",
+        "checkedAt": "2026-10-27"
+      }
+    ],
+    "cityProfile": "Thiagarajar College of Engineering is based at Thiruparankundram in Madurai, Tamil Nadu, with the official postal address Madurai 625015. Students should plan housing and daily travel around this engineering-college campus, rather than the separate Thiagarajar College arts and science institution.",
+    "practicalExposure": "TCE describes a CDIO approach—Conceive, Design, Implement and Operate—to curriculum design, teaching and assessment, with hands-on training. Its About page also identifies industry-supported laboratories, collaborative projects and internships, including curriculum work with TVS Motors in mechanical and electrical engineering. Availability depends on the programme and activity; no placement is guaranteed.",
+    "safetyOverview": "TCE’s mandatory disclosure identifies a grievance-redressal mechanism for students, staff and faculty, and lists medical facilities and student insurance. Its counselling division operates at the campus health centre. Applicants should verify current access arrangements rather than assume round-the-clock emergency coverage."
+  },
+  "programmeDrafts": [
+    {
+      "candidatePayloadFields": {
+        "slug": "b-e-civil-engineering",
+        "officialTitle": "B.E. Civil Engineering",
+        "officialProgramUrl": "https://www.tce.edu/admission/programmes-offered",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "be-btech-civil-engineering",
+        "durationYears": 4,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "4 years; full-time on-campus."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "This four-year engineering programme uses TCE’s published single-window route. The requirements below describe TNEA 2026 academic-stream applications, not every management, foreign-national or vocational pathway.",
+          "applicationSteps": [
+            "Register one application through the official TNEA portal and enter academic, school, identity and relevant category details.",
+            "Upload the required certificates for verification, then follow the notified counselling, choice-filling and allotment process.",
+            "Complete TCE reporting only against the allotted programme and comply with its verified document and fee instructions."
+          ],
+          "deadlinesNote": "These are the 2026 route conditions. All relevant 2026 counselling dates must be treated as historical; check the next published cycle before applying.",
+          "eligibility": {
+            "intro": "TNEA 2026 requires the appropriate nationality/nativity category and a pass in both higher-secondary years or equivalent. This summary covers the academic stream.",
+            "items": [
+              "General category: at least 45% average in Mathematics, Physics and Chemistry at Class XII.",
+              "BC/BCM, MBC/DNC and SC/SCA/ST: at least 40% average in those subjects, subject to the applicable category rules.",
+              "TNEA nativity, Tamil Nadu schooling or specified parental-service conditions apply.",
+              "Tamil Nadu-native OCI/PIO applicants are permitted under the brochure’s restrictions; foreign-country births after 4 March 2021 are excluded under that OCI/PIO provision.",
+              "The brochure has a separate prescribed vocational stream; do not substitute academic-stream subject rules for vocational applicants."
+            ]
+          },
+          "documentsRequired": {
+            "academic": [
+              "Class X and Class XII mark sheets",
+              "School-study details for Classes VI–XII",
+              "School-study certificates or other proof for claimed reservation benefits where required"
+            ],
+            "application": [
+              "Aadhaar/identity details specified by the portal",
+              "Community and nativity/employer evidence for the category claimed",
+              "OCI/PIO or refugee-category documentation where applicable",
+              "Income and first-graduate/special-reservation documents only if claiming those benefits"
+            ]
+          }
+        },
+        "audienceEligibility": {
+          "availability": "restricted",
+          "eligibleAudiences": [
+            "Indian nationals satisfying TNEA category rules",
+            "Tamil Nadu-native OCI/PIO applicants permitted by TNEA 2026",
+            "Eligible Sri Lankan Tamil refugee applicants under TNEA rules"
+          ],
+          "restrictions": [
+            "This is the TNEA route, not a claim that all foreign nationals or all OCI/PIO applicants can apply.",
+            "OCI/PIO participation is limited by Tamil Nadu nativity and the brochure’s exclusion for those born in a foreign country after 4 March 2021.",
+            "Academic qualifications, category documents and counselling allotment are required."
+          ],
+          "notes": "A separate unrestricted international admission route remains unverified. Narrow eligible OCI/PIO/refugee categories are retained rather than asserting global availability.",
+          "verifiedAt": "2026-10-27",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "open_to_international",
+      "durationSourceText": "4 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "Open only to the narrow OCI/PIO and refugee categories expressly permitted by TNEA 2026, subject to nativity/other restrictions; not unrestricted foreign-national admission. Academic-stream 45%/40% PCM rules and documentation are captured. Exact fee remains on request after official/secondary review.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "b-e-computer-science-and-engineering",
+        "officialTitle": "B.E. Computer Science and Engineering",
+        "officialProgramUrl": "https://www.tce.edu/admission/programmes-offered",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "be-btech-computer-science-engineering",
+        "durationYears": 4,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "4 years; full-time on-campus."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "This four-year engineering programme uses TCE’s published single-window route. The requirements below describe TNEA 2026 academic-stream applications, not every management, foreign-national or vocational pathway.",
+          "applicationSteps": [
+            "Register one application through the official TNEA portal and enter academic, school, identity and relevant category details.",
+            "Upload the required certificates for verification, then follow the notified counselling, choice-filling and allotment process.",
+            "Complete TCE reporting only against the allotted programme and comply with its verified document and fee instructions."
+          ],
+          "deadlinesNote": "These are the 2026 route conditions. All relevant 2026 counselling dates must be treated as historical; check the next published cycle before applying.",
+          "eligibility": {
+            "intro": "TNEA 2026 requires the appropriate nationality/nativity category and a pass in both higher-secondary years or equivalent. This summary covers the academic stream.",
+            "items": [
+              "General category: at least 45% average in Mathematics, Physics and Chemistry at Class XII.",
+              "BC/BCM, MBC/DNC and SC/SCA/ST: at least 40% average in those subjects, subject to the applicable category rules.",
+              "TNEA nativity, Tamil Nadu schooling or specified parental-service conditions apply.",
+              "Tamil Nadu-native OCI/PIO applicants are permitted under the brochure’s restrictions; foreign-country births after 4 March 2021 are excluded under that OCI/PIO provision.",
+              "The brochure has a separate prescribed vocational stream; do not substitute academic-stream subject rules for vocational applicants."
+            ]
+          },
+          "documentsRequired": {
+            "academic": [
+              "Class X and Class XII mark sheets",
+              "School-study details for Classes VI–XII",
+              "School-study certificates or other proof for claimed reservation benefits where required"
+            ],
+            "application": [
+              "Aadhaar/identity details specified by the portal",
+              "Community and nativity/employer evidence for the category claimed",
+              "OCI/PIO or refugee-category documentation where applicable",
+              "Income and first-graduate/special-reservation documents only if claiming those benefits"
+            ]
+          }
+        },
+        "audienceEligibility": {
+          "availability": "restricted",
+          "eligibleAudiences": [
+            "Indian nationals satisfying TNEA category rules",
+            "Tamil Nadu-native OCI/PIO applicants permitted by TNEA 2026",
+            "Eligible Sri Lankan Tamil refugee applicants under TNEA rules"
+          ],
+          "restrictions": [
+            "This is the TNEA route, not a claim that all foreign nationals or all OCI/PIO applicants can apply.",
+            "OCI/PIO participation is limited by Tamil Nadu nativity and the brochure’s exclusion for those born in a foreign country after 4 March 2021.",
+            "Academic qualifications, category documents and counselling allotment are required."
+          ],
+          "notes": "A separate unrestricted international admission route remains unverified. Narrow eligible OCI/PIO/refugee categories are retained rather than asserting global availability.",
+          "verifiedAt": "2026-10-27",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "open_to_international",
+      "durationSourceText": "4 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "Open only to the narrow OCI/PIO and refugee categories expressly permitted by TNEA 2026, subject to nativity/other restrictions; not unrestricted foreign-national admission. Academic-stream 45%/40% PCM rules and documentation are captured. Exact fee remains on request after official/secondary review.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "b-e-computer-science-and-engineering-artificial-intelligence-and-machine-learning",
+        "officialTitle": "B.E. Computer Science and Engineering (Artificial Intelligence and Machine Learning)",
+        "officialProgramUrl": "https://www.tce.edu/admission/programmes-offered",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "be-btech-artificial-intelligence-machine-learning",
+        "durationYears": 4,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "4 years; full-time on-campus."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "This four-year engineering programme uses TCE’s published single-window route. The requirements below describe TNEA 2026 academic-stream applications, not every management, foreign-national or vocational pathway.",
+          "applicationSteps": [
+            "Register one application through the official TNEA portal and enter academic, school, identity and relevant category details.",
+            "Upload the required certificates for verification, then follow the notified counselling, choice-filling and allotment process.",
+            "Complete TCE reporting only against the allotted programme and comply with its verified document and fee instructions."
+          ],
+          "deadlinesNote": "These are the 2026 route conditions. All relevant 2026 counselling dates must be treated as historical; check the next published cycle before applying.",
+          "eligibility": {
+            "intro": "TNEA 2026 requires the appropriate nationality/nativity category and a pass in both higher-secondary years or equivalent. This summary covers the academic stream.",
+            "items": [
+              "General category: at least 45% average in Mathematics, Physics and Chemistry at Class XII.",
+              "BC/BCM, MBC/DNC and SC/SCA/ST: at least 40% average in those subjects, subject to the applicable category rules.",
+              "TNEA nativity, Tamil Nadu schooling or specified parental-service conditions apply.",
+              "Tamil Nadu-native OCI/PIO applicants are permitted under the brochure’s restrictions; foreign-country births after 4 March 2021 are excluded under that OCI/PIO provision.",
+              "The brochure has a separate prescribed vocational stream; do not substitute academic-stream subject rules for vocational applicants."
+            ]
+          },
+          "documentsRequired": {
+            "academic": [
+              "Class X and Class XII mark sheets",
+              "School-study details for Classes VI–XII",
+              "School-study certificates or other proof for claimed reservation benefits where required"
+            ],
+            "application": [
+              "Aadhaar/identity details specified by the portal",
+              "Community and nativity/employer evidence for the category claimed",
+              "OCI/PIO or refugee-category documentation where applicable",
+              "Income and first-graduate/special-reservation documents only if claiming those benefits"
+            ]
+          }
+        },
+        "audienceEligibility": {
+          "availability": "restricted",
+          "eligibleAudiences": [
+            "Indian nationals satisfying TNEA category rules",
+            "Tamil Nadu-native OCI/PIO applicants permitted by TNEA 2026",
+            "Eligible Sri Lankan Tamil refugee applicants under TNEA rules"
+          ],
+          "restrictions": [
+            "This is the TNEA route, not a claim that all foreign nationals or all OCI/PIO applicants can apply.",
+            "OCI/PIO participation is limited by Tamil Nadu nativity and the brochure’s exclusion for those born in a foreign country after 4 March 2021.",
+            "Academic qualifications, category documents and counselling allotment are required."
+          ],
+          "notes": "A separate unrestricted international admission route remains unverified. Narrow eligible OCI/PIO/refugee categories are retained rather than asserting global availability.",
+          "verifiedAt": "2026-10-27",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "open_to_international",
+      "durationSourceText": "4 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "Open only to the narrow OCI/PIO and refugee categories expressly permitted by TNEA 2026, subject to nativity/other restrictions; not unrestricted foreign-national admission. Academic-stream 45%/40% PCM rules and documentation are captured. Exact fee remains on request after official/secondary review.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "b-e-electrical-and-electronics-engineering",
+        "officialTitle": "B.E. Electrical and Electronics Engineering",
+        "officialProgramUrl": "https://www.tce.edu/admission/programmes-offered",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "be-btech-electrical-electronics-engineering",
+        "durationYears": 4,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "4 years; full-time on-campus."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "This four-year engineering programme uses TCE’s published single-window route. The requirements below describe TNEA 2026 academic-stream applications, not every management, foreign-national or vocational pathway.",
+          "applicationSteps": [
+            "Register one application through the official TNEA portal and enter academic, school, identity and relevant category details.",
+            "Upload the required certificates for verification, then follow the notified counselling, choice-filling and allotment process.",
+            "Complete TCE reporting only against the allotted programme and comply with its verified document and fee instructions."
+          ],
+          "deadlinesNote": "These are the 2026 route conditions. All relevant 2026 counselling dates must be treated as historical; check the next published cycle before applying.",
+          "eligibility": {
+            "intro": "TNEA 2026 requires the appropriate nationality/nativity category and a pass in both higher-secondary years or equivalent. This summary covers the academic stream.",
+            "items": [
+              "General category: at least 45% average in Mathematics, Physics and Chemistry at Class XII.",
+              "BC/BCM, MBC/DNC and SC/SCA/ST: at least 40% average in those subjects, subject to the applicable category rules.",
+              "TNEA nativity, Tamil Nadu schooling or specified parental-service conditions apply.",
+              "Tamil Nadu-native OCI/PIO applicants are permitted under the brochure’s restrictions; foreign-country births after 4 March 2021 are excluded under that OCI/PIO provision.",
+              "The brochure has a separate prescribed vocational stream; do not substitute academic-stream subject rules for vocational applicants."
+            ]
+          },
+          "documentsRequired": {
+            "academic": [
+              "Class X and Class XII mark sheets",
+              "School-study details for Classes VI–XII",
+              "School-study certificates or other proof for claimed reservation benefits where required"
+            ],
+            "application": [
+              "Aadhaar/identity details specified by the portal",
+              "Community and nativity/employer evidence for the category claimed",
+              "OCI/PIO or refugee-category documentation where applicable",
+              "Income and first-graduate/special-reservation documents only if claiming those benefits"
+            ]
+          }
+        },
+        "audienceEligibility": {
+          "availability": "restricted",
+          "eligibleAudiences": [
+            "Indian nationals satisfying TNEA category rules",
+            "Tamil Nadu-native OCI/PIO applicants permitted by TNEA 2026",
+            "Eligible Sri Lankan Tamil refugee applicants under TNEA rules"
+          ],
+          "restrictions": [
+            "This is the TNEA route, not a claim that all foreign nationals or all OCI/PIO applicants can apply.",
+            "OCI/PIO participation is limited by Tamil Nadu nativity and the brochure’s exclusion for those born in a foreign country after 4 March 2021.",
+            "Academic qualifications, category documents and counselling allotment are required."
+          ],
+          "notes": "A separate unrestricted international admission route remains unverified. Narrow eligible OCI/PIO/refugee categories are retained rather than asserting global availability.",
+          "verifiedAt": "2026-10-27",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "open_to_international",
+      "durationSourceText": "4 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "Open only to the narrow OCI/PIO and refugee categories expressly permitted by TNEA 2026, subject to nativity/other restrictions; not unrestricted foreign-national admission. Academic-stream 45%/40% PCM rules and documentation are captured. Exact fee remains on request after official/secondary review.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "b-e-electronics-and-communication-engineering",
+        "officialTitle": "B.E. Electronics and Communication Engineering",
+        "officialProgramUrl": "https://www.tce.edu/admission/programmes-offered",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+        "durationYears": 4,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "4 years; full-time on-campus."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "This four-year engineering programme uses TCE’s published single-window route. The requirements below describe TNEA 2026 academic-stream applications, not every management, foreign-national or vocational pathway.",
+          "applicationSteps": [
+            "Register one application through the official TNEA portal and enter academic, school, identity and relevant category details.",
+            "Upload the required certificates for verification, then follow the notified counselling, choice-filling and allotment process.",
+            "Complete TCE reporting only against the allotted programme and comply with its verified document and fee instructions."
+          ],
+          "deadlinesNote": "These are the 2026 route conditions. All relevant 2026 counselling dates must be treated as historical; check the next published cycle before applying.",
+          "eligibility": {
+            "intro": "TNEA 2026 requires the appropriate nationality/nativity category and a pass in both higher-secondary years or equivalent. This summary covers the academic stream.",
+            "items": [
+              "General category: at least 45% average in Mathematics, Physics and Chemistry at Class XII.",
+              "BC/BCM, MBC/DNC and SC/SCA/ST: at least 40% average in those subjects, subject to the applicable category rules.",
+              "TNEA nativity, Tamil Nadu schooling or specified parental-service conditions apply.",
+              "Tamil Nadu-native OCI/PIO applicants are permitted under the brochure’s restrictions; foreign-country births after 4 March 2021 are excluded under that OCI/PIO provision.",
+              "The brochure has a separate prescribed vocational stream; do not substitute academic-stream subject rules for vocational applicants."
+            ]
+          },
+          "documentsRequired": {
+            "academic": [
+              "Class X and Class XII mark sheets",
+              "School-study details for Classes VI–XII",
+              "School-study certificates or other proof for claimed reservation benefits where required"
+            ],
+            "application": [
+              "Aadhaar/identity details specified by the portal",
+              "Community and nativity/employer evidence for the category claimed",
+              "OCI/PIO or refugee-category documentation where applicable",
+              "Income and first-graduate/special-reservation documents only if claiming those benefits"
+            ]
+          }
+        },
+        "audienceEligibility": {
+          "availability": "restricted",
+          "eligibleAudiences": [
+            "Indian nationals satisfying TNEA category rules",
+            "Tamil Nadu-native OCI/PIO applicants permitted by TNEA 2026",
+            "Eligible Sri Lankan Tamil refugee applicants under TNEA rules"
+          ],
+          "restrictions": [
+            "This is the TNEA route, not a claim that all foreign nationals or all OCI/PIO applicants can apply.",
+            "OCI/PIO participation is limited by Tamil Nadu nativity and the brochure’s exclusion for those born in a foreign country after 4 March 2021.",
+            "Academic qualifications, category documents and counselling allotment are required."
+          ],
+          "notes": "A separate unrestricted international admission route remains unverified. Narrow eligible OCI/PIO/refugee categories are retained rather than asserting global availability.",
+          "verifiedAt": "2026-10-27",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "open_to_international",
+      "durationSourceText": "4 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "Open only to the narrow OCI/PIO and refugee categories expressly permitted by TNEA 2026, subject to nativity/other restrictions; not unrestricted foreign-national admission. Academic-stream 45%/40% PCM rules and documentation are captured. Exact fee remains on request after official/secondary review.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "b-e-mechanical-engineering",
+        "officialTitle": "B.E. Mechanical Engineering",
+        "officialProgramUrl": "https://www.tce.edu/admission/programmes-offered",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "be-btech-mechanical-engineering",
+        "durationYears": 4,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "4 years; full-time on-campus."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "This four-year engineering programme uses TCE’s published single-window route. The requirements below describe TNEA 2026 academic-stream applications, not every management, foreign-national or vocational pathway.",
+          "applicationSteps": [
+            "Register one application through the official TNEA portal and enter academic, school, identity and relevant category details.",
+            "Upload the required certificates for verification, then follow the notified counselling, choice-filling and allotment process.",
+            "Complete TCE reporting only against the allotted programme and comply with its verified document and fee instructions."
+          ],
+          "deadlinesNote": "These are the 2026 route conditions. All relevant 2026 counselling dates must be treated as historical; check the next published cycle before applying.",
+          "eligibility": {
+            "intro": "TNEA 2026 requires the appropriate nationality/nativity category and a pass in both higher-secondary years or equivalent. This summary covers the academic stream.",
+            "items": [
+              "General category: at least 45% average in Mathematics, Physics and Chemistry at Class XII.",
+              "BC/BCM, MBC/DNC and SC/SCA/ST: at least 40% average in those subjects, subject to the applicable category rules.",
+              "TNEA nativity, Tamil Nadu schooling or specified parental-service conditions apply.",
+              "Tamil Nadu-native OCI/PIO applicants are permitted under the brochure’s restrictions; foreign-country births after 4 March 2021 are excluded under that OCI/PIO provision.",
+              "The brochure has a separate prescribed vocational stream; do not substitute academic-stream subject rules for vocational applicants."
+            ]
+          },
+          "documentsRequired": {
+            "academic": [
+              "Class X and Class XII mark sheets",
+              "School-study details for Classes VI–XII",
+              "School-study certificates or other proof for claimed reservation benefits where required"
+            ],
+            "application": [
+              "Aadhaar/identity details specified by the portal",
+              "Community and nativity/employer evidence for the category claimed",
+              "OCI/PIO or refugee-category documentation where applicable",
+              "Income and first-graduate/special-reservation documents only if claiming those benefits"
+            ]
+          }
+        },
+        "audienceEligibility": {
+          "availability": "restricted",
+          "eligibleAudiences": [
+            "Indian nationals satisfying TNEA category rules",
+            "Tamil Nadu-native OCI/PIO applicants permitted by TNEA 2026",
+            "Eligible Sri Lankan Tamil refugee applicants under TNEA rules"
+          ],
+          "restrictions": [
+            "This is the TNEA route, not a claim that all foreign nationals or all OCI/PIO applicants can apply.",
+            "OCI/PIO participation is limited by Tamil Nadu nativity and the brochure’s exclusion for those born in a foreign country after 4 March 2021.",
+            "Academic qualifications, category documents and counselling allotment are required."
+          ],
+          "notes": "A separate unrestricted international admission route remains unverified. Narrow eligible OCI/PIO/refugee categories are retained rather than asserting global availability.",
+          "verifiedAt": "2026-10-27",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "open_to_international",
+      "durationSourceText": "4 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "Open only to the narrow OCI/PIO and refugee categories expressly permitted by TNEA 2026, subject to nativity/other restrictions; not unrestricted foreign-national admission. Academic-stream 45%/40% PCM rules and documentation are captured. Exact fee remains on request after official/secondary review.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "b-e-mechatronics",
+        "officialTitle": "B.E. Mechatronics",
+        "officialProgramUrl": "https://www.tce.edu/admission/programmes-offered",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "be-btech-mechatronics-engineering",
+        "durationYears": 4,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "4 years; full-time on-campus."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "This four-year engineering programme uses TCE’s published single-window route. The requirements below describe TNEA 2026 academic-stream applications, not every management, foreign-national or vocational pathway.",
+          "applicationSteps": [
+            "Register one application through the official TNEA portal and enter academic, school, identity and relevant category details.",
+            "Upload the required certificates for verification, then follow the notified counselling, choice-filling and allotment process.",
+            "Complete TCE reporting only against the allotted programme and comply with its verified document and fee instructions."
+          ],
+          "deadlinesNote": "These are the 2026 route conditions. All relevant 2026 counselling dates must be treated as historical; check the next published cycle before applying.",
+          "eligibility": {
+            "intro": "TNEA 2026 requires the appropriate nationality/nativity category and a pass in both higher-secondary years or equivalent. This summary covers the academic stream.",
+            "items": [
+              "General category: at least 45% average in Mathematics, Physics and Chemistry at Class XII.",
+              "BC/BCM, MBC/DNC and SC/SCA/ST: at least 40% average in those subjects, subject to the applicable category rules.",
+              "TNEA nativity, Tamil Nadu schooling or specified parental-service conditions apply.",
+              "Tamil Nadu-native OCI/PIO applicants are permitted under the brochure’s restrictions; foreign-country births after 4 March 2021 are excluded under that OCI/PIO provision.",
+              "The brochure has a separate prescribed vocational stream; do not substitute academic-stream subject rules for vocational applicants."
+            ]
+          },
+          "documentsRequired": {
+            "academic": [
+              "Class X and Class XII mark sheets",
+              "School-study details for Classes VI–XII",
+              "School-study certificates or other proof for claimed reservation benefits where required"
+            ],
+            "application": [
+              "Aadhaar/identity details specified by the portal",
+              "Community and nativity/employer evidence for the category claimed",
+              "OCI/PIO or refugee-category documentation where applicable",
+              "Income and first-graduate/special-reservation documents only if claiming those benefits"
+            ]
+          }
+        },
+        "audienceEligibility": {
+          "availability": "restricted",
+          "eligibleAudiences": [
+            "Indian nationals satisfying TNEA category rules",
+            "Tamil Nadu-native OCI/PIO applicants permitted by TNEA 2026",
+            "Eligible Sri Lankan Tamil refugee applicants under TNEA rules"
+          ],
+          "restrictions": [
+            "This is the TNEA route, not a claim that all foreign nationals or all OCI/PIO applicants can apply.",
+            "OCI/PIO participation is limited by Tamil Nadu nativity and the brochure’s exclusion for those born in a foreign country after 4 March 2021.",
+            "Academic qualifications, category documents and counselling allotment are required."
+          ],
+          "notes": "A separate unrestricted international admission route remains unverified. Narrow eligible OCI/PIO/refugee categories are retained rather than asserting global availability.",
+          "verifiedAt": "2026-10-27",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "open_to_international",
+      "durationSourceText": "4 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "Open only to the narrow OCI/PIO and refugee categories expressly permitted by TNEA 2026, subject to nativity/other restrictions; not unrestricted foreign-national admission. Academic-stream 45%/40% PCM rules and documentation are captured. Exact fee remains on request after official/secondary review.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "b-tech-computer-science-and-business-systems",
+        "officialTitle": "B.Tech. Computer Science and Business Systems",
+        "officialProgramUrl": "https://www.tce.edu/admission/programmes-offered",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "be-btech-computer-science-engineering",
+        "durationYears": 4,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "4 years; full-time on-campus."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "This four-year engineering programme uses TCE’s published single-window route. The requirements below describe TNEA 2026 academic-stream applications, not every management, foreign-national or vocational pathway.",
+          "applicationSteps": [
+            "Register one application through the official TNEA portal and enter academic, school, identity and relevant category details.",
+            "Upload the required certificates for verification, then follow the notified counselling, choice-filling and allotment process.",
+            "Complete TCE reporting only against the allotted programme and comply with its verified document and fee instructions."
+          ],
+          "deadlinesNote": "These are the 2026 route conditions. All relevant 2026 counselling dates must be treated as historical; check the next published cycle before applying.",
+          "eligibility": {
+            "intro": "TNEA 2026 requires the appropriate nationality/nativity category and a pass in both higher-secondary years or equivalent. This summary covers the academic stream.",
+            "items": [
+              "General category: at least 45% average in Mathematics, Physics and Chemistry at Class XII.",
+              "BC/BCM, MBC/DNC and SC/SCA/ST: at least 40% average in those subjects, subject to the applicable category rules.",
+              "TNEA nativity, Tamil Nadu schooling or specified parental-service conditions apply.",
+              "Tamil Nadu-native OCI/PIO applicants are permitted under the brochure’s restrictions; foreign-country births after 4 March 2021 are excluded under that OCI/PIO provision.",
+              "The brochure has a separate prescribed vocational stream; do not substitute academic-stream subject rules for vocational applicants."
+            ]
+          },
+          "documentsRequired": {
+            "academic": [
+              "Class X and Class XII mark sheets",
+              "School-study details for Classes VI–XII",
+              "School-study certificates or other proof for claimed reservation benefits where required"
+            ],
+            "application": [
+              "Aadhaar/identity details specified by the portal",
+              "Community and nativity/employer evidence for the category claimed",
+              "OCI/PIO or refugee-category documentation where applicable",
+              "Income and first-graduate/special-reservation documents only if claiming those benefits"
+            ]
+          }
+        },
+        "audienceEligibility": {
+          "availability": "restricted",
+          "eligibleAudiences": [
+            "Indian nationals satisfying TNEA category rules",
+            "Tamil Nadu-native OCI/PIO applicants permitted by TNEA 2026",
+            "Eligible Sri Lankan Tamil refugee applicants under TNEA rules"
+          ],
+          "restrictions": [
+            "This is the TNEA route, not a claim that all foreign nationals or all OCI/PIO applicants can apply.",
+            "OCI/PIO participation is limited by Tamil Nadu nativity and the brochure’s exclusion for those born in a foreign country after 4 March 2021.",
+            "Academic qualifications, category documents and counselling allotment are required."
+          ],
+          "notes": "A separate unrestricted international admission route remains unverified. Narrow eligible OCI/PIO/refugee categories are retained rather than asserting global availability.",
+          "verifiedAt": "2026-10-27",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "open_to_international",
+      "durationSourceText": "4 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "Open only to the narrow OCI/PIO and refugee categories expressly permitted by TNEA 2026, subject to nativity/other restrictions; not unrestricted foreign-national admission. Academic-stream 45%/40% PCM rules and documentation are captured. Exact fee remains on request after official/secondary review.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "b-tech-information-technology",
+        "officialTitle": "B.Tech. Information Technology",
+        "officialProgramUrl": "https://www.tce.edu/admission/programmes-offered",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "be-btech-information-technology",
+        "durationYears": 4,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "4 years; full-time on-campus."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "This four-year engineering programme uses TCE’s published single-window route. The requirements below describe TNEA 2026 academic-stream applications, not every management, foreign-national or vocational pathway.",
+          "applicationSteps": [
+            "Register one application through the official TNEA portal and enter academic, school, identity and relevant category details.",
+            "Upload the required certificates for verification, then follow the notified counselling, choice-filling and allotment process.",
+            "Complete TCE reporting only against the allotted programme and comply with its verified document and fee instructions."
+          ],
+          "deadlinesNote": "These are the 2026 route conditions. All relevant 2026 counselling dates must be treated as historical; check the next published cycle before applying.",
+          "eligibility": {
+            "intro": "TNEA 2026 requires the appropriate nationality/nativity category and a pass in both higher-secondary years or equivalent. This summary covers the academic stream.",
+            "items": [
+              "General category: at least 45% average in Mathematics, Physics and Chemistry at Class XII.",
+              "BC/BCM, MBC/DNC and SC/SCA/ST: at least 40% average in those subjects, subject to the applicable category rules.",
+              "TNEA nativity, Tamil Nadu schooling or specified parental-service conditions apply.",
+              "Tamil Nadu-native OCI/PIO applicants are permitted under the brochure’s restrictions; foreign-country births after 4 March 2021 are excluded under that OCI/PIO provision.",
+              "The brochure has a separate prescribed vocational stream; do not substitute academic-stream subject rules for vocational applicants."
+            ]
+          },
+          "documentsRequired": {
+            "academic": [
+              "Class X and Class XII mark sheets",
+              "School-study details for Classes VI–XII",
+              "School-study certificates or other proof for claimed reservation benefits where required"
+            ],
+            "application": [
+              "Aadhaar/identity details specified by the portal",
+              "Community and nativity/employer evidence for the category claimed",
+              "OCI/PIO or refugee-category documentation where applicable",
+              "Income and first-graduate/special-reservation documents only if claiming those benefits"
+            ]
+          }
+        },
+        "audienceEligibility": {
+          "availability": "restricted",
+          "eligibleAudiences": [
+            "Indian nationals satisfying TNEA category rules",
+            "Tamil Nadu-native OCI/PIO applicants permitted by TNEA 2026",
+            "Eligible Sri Lankan Tamil refugee applicants under TNEA rules"
+          ],
+          "restrictions": [
+            "This is the TNEA route, not a claim that all foreign nationals or all OCI/PIO applicants can apply.",
+            "OCI/PIO participation is limited by Tamil Nadu nativity and the brochure’s exclusion for those born in a foreign country after 4 March 2021.",
+            "Academic qualifications, category documents and counselling allotment are required."
+          ],
+          "notes": "A separate unrestricted international admission route remains unverified. Narrow eligible OCI/PIO/refugee categories are retained rather than asserting global availability.",
+          "verifiedAt": "2026-10-27",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "open_to_international",
+      "durationSourceText": "4 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "Open only to the narrow OCI/PIO and refugee categories expressly permitted by TNEA 2026, subject to nativity/other restrictions; not unrestricted foreign-national admission. Academic-stream 45%/40% PCM rules and documentation are captured. Exact fee remains on request after official/secondary review.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "b-e-electrical-and-computer-engineering",
+        "officialTitle": "B.E. Electrical and Computer Engineering",
+        "officialProgramUrl": "https://www.tce.edu/admission/programmes-offered",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "be-btech-electrical-computer-engineering",
+        "durationYears": 4,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "4 years; full-time on-campus."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "This four-year engineering programme uses TCE’s published single-window route. The requirements below describe TNEA 2026 academic-stream applications, not every management, foreign-national or vocational pathway.",
+          "applicationSteps": [
+            "Register one application through the official TNEA portal and enter academic, school, identity and relevant category details.",
+            "Upload the required certificates for verification, then follow the notified counselling, choice-filling and allotment process.",
+            "Complete TCE reporting only against the allotted programme and comply with its verified document and fee instructions."
+          ],
+          "deadlinesNote": "These are the 2026 route conditions. All relevant 2026 counselling dates must be treated as historical; check the next published cycle before applying.",
+          "eligibility": {
+            "intro": "TNEA 2026 requires the appropriate nationality/nativity category and a pass in both higher-secondary years or equivalent. This summary covers the academic stream.",
+            "items": [
+              "General category: at least 45% average in Mathematics, Physics and Chemistry at Class XII.",
+              "BC/BCM, MBC/DNC and SC/SCA/ST: at least 40% average in those subjects, subject to the applicable category rules.",
+              "TNEA nativity, Tamil Nadu schooling or specified parental-service conditions apply.",
+              "Tamil Nadu-native OCI/PIO applicants are permitted under the brochure’s restrictions; foreign-country births after 4 March 2021 are excluded under that OCI/PIO provision.",
+              "The brochure has a separate prescribed vocational stream; do not substitute academic-stream subject rules for vocational applicants."
+            ]
+          },
+          "documentsRequired": {
+            "academic": [
+              "Class X and Class XII mark sheets",
+              "School-study details for Classes VI–XII",
+              "School-study certificates or other proof for claimed reservation benefits where required"
+            ],
+            "application": [
+              "Aadhaar/identity details specified by the portal",
+              "Community and nativity/employer evidence for the category claimed",
+              "OCI/PIO or refugee-category documentation where applicable",
+              "Income and first-graduate/special-reservation documents only if claiming those benefits"
+            ]
+          }
+        },
+        "audienceEligibility": {
+          "availability": "restricted",
+          "eligibleAudiences": [
+            "Indian nationals satisfying TNEA category rules",
+            "Tamil Nadu-native OCI/PIO applicants permitted by TNEA 2026",
+            "Eligible Sri Lankan Tamil refugee applicants under TNEA rules"
+          ],
+          "restrictions": [
+            "This is the TNEA route, not a claim that all foreign nationals or all OCI/PIO applicants can apply.",
+            "OCI/PIO participation is limited by Tamil Nadu nativity and the brochure’s exclusion for those born in a foreign country after 4 March 2021.",
+            "Academic qualifications, category documents and counselling allotment are required."
+          ],
+          "notes": "A separate unrestricted international admission route remains unverified. Narrow eligible OCI/PIO/refugee categories are retained rather than asserting global availability.",
+          "verifiedAt": "2026-10-27",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "open_to_international",
+      "durationSourceText": "4 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "Open only to the narrow OCI/PIO and refugee categories expressly permitted by TNEA 2026, subject to nativity/other restrictions; not unrestricted foreign-national admission. Academic-stream 45%/40% PCM rules and documentation are captured. Exact fee remains on request after official/secondary review.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "b-tech-fashion-technology",
+        "officialTitle": "B.Tech. Fashion Technology",
+        "officialProgramUrl": "https://www.tce.edu/admission/programmes-offered",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "be-btech-fashion-technology",
+        "durationYears": 4,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "4 years; full-time on-campus."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "This four-year engineering programme uses TCE’s published single-window route. The requirements below describe TNEA 2026 academic-stream applications, not every management, foreign-national or vocational pathway.",
+          "applicationSteps": [
+            "Register one application through the official TNEA portal and enter academic, school, identity and relevant category details.",
+            "Upload the required certificates for verification, then follow the notified counselling, choice-filling and allotment process.",
+            "Complete TCE reporting only against the allotted programme and comply with its verified document and fee instructions."
+          ],
+          "deadlinesNote": "These are the 2026 route conditions. All relevant 2026 counselling dates must be treated as historical; check the next published cycle before applying.",
+          "eligibility": {
+            "intro": "TNEA 2026 requires the appropriate nationality/nativity category and a pass in both higher-secondary years or equivalent. This summary covers the academic stream.",
+            "items": [
+              "General category: at least 45% average in Mathematics, Physics and Chemistry at Class XII.",
+              "BC/BCM, MBC/DNC and SC/SCA/ST: at least 40% average in those subjects, subject to the applicable category rules.",
+              "TNEA nativity, Tamil Nadu schooling or specified parental-service conditions apply.",
+              "Tamil Nadu-native OCI/PIO applicants are permitted under the brochure’s restrictions; foreign-country births after 4 March 2021 are excluded under that OCI/PIO provision.",
+              "The brochure has a separate prescribed vocational stream; do not substitute academic-stream subject rules for vocational applicants."
+            ]
+          },
+          "documentsRequired": {
+            "academic": [
+              "Class X and Class XII mark sheets",
+              "School-study details for Classes VI–XII",
+              "School-study certificates or other proof for claimed reservation benefits where required"
+            ],
+            "application": [
+              "Aadhaar/identity details specified by the portal",
+              "Community and nativity/employer evidence for the category claimed",
+              "OCI/PIO or refugee-category documentation where applicable",
+              "Income and first-graduate/special-reservation documents only if claiming those benefits"
+            ]
+          }
+        },
+        "audienceEligibility": {
+          "availability": "restricted",
+          "eligibleAudiences": [
+            "Indian nationals satisfying TNEA category rules",
+            "Tamil Nadu-native OCI/PIO applicants permitted by TNEA 2026",
+            "Eligible Sri Lankan Tamil refugee applicants under TNEA rules"
+          ],
+          "restrictions": [
+            "This is the TNEA route, not a claim that all foreign nationals or all OCI/PIO applicants can apply.",
+            "OCI/PIO participation is limited by Tamil Nadu nativity and the brochure’s exclusion for those born in a foreign country after 4 March 2021.",
+            "Academic qualifications, category documents and counselling allotment are required."
+          ],
+          "notes": "A separate unrestricted international admission route remains unverified. Narrow eligible OCI/PIO/refugee categories are retained rather than asserting global availability.",
+          "verifiedAt": "2026-10-27",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "open_to_international",
+      "durationSourceText": "4 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "Open only to the narrow OCI/PIO and refugee categories expressly permitted by TNEA 2026, subject to nativity/other restrictions; not unrestricted foreign-national admission. Academic-stream 45%/40% PCM rules and documentation are captured. Exact fee remains on request after official/secondary review.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "b-tech-electronics-engineering-vlsi-design-technology",
+        "officialTitle": "B.Tech. Electronics Engineering (VLSI Design & Technology)",
+        "officialProgramUrl": "https://www.tce.edu/admission/programmes-offered",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+        "durationYears": 4,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "4 years; full-time on-campus."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "This four-year engineering programme uses TCE’s published single-window route. The requirements below describe TNEA 2026 academic-stream applications, not every management, foreign-national or vocational pathway.",
+          "applicationSteps": [
+            "Register one application through the official TNEA portal and enter academic, school, identity and relevant category details.",
+            "Upload the required certificates for verification, then follow the notified counselling, choice-filling and allotment process.",
+            "Complete TCE reporting only against the allotted programme and comply with its verified document and fee instructions."
+          ],
+          "deadlinesNote": "These are the 2026 route conditions. All relevant 2026 counselling dates must be treated as historical; check the next published cycle before applying.",
+          "eligibility": {
+            "intro": "TNEA 2026 requires the appropriate nationality/nativity category and a pass in both higher-secondary years or equivalent. This summary covers the academic stream.",
+            "items": [
+              "General category: at least 45% average in Mathematics, Physics and Chemistry at Class XII.",
+              "BC/BCM, MBC/DNC and SC/SCA/ST: at least 40% average in those subjects, subject to the applicable category rules.",
+              "TNEA nativity, Tamil Nadu schooling or specified parental-service conditions apply.",
+              "Tamil Nadu-native OCI/PIO applicants are permitted under the brochure’s restrictions; foreign-country births after 4 March 2021 are excluded under that OCI/PIO provision.",
+              "The brochure has a separate prescribed vocational stream; do not substitute academic-stream subject rules for vocational applicants."
+            ]
+          },
+          "documentsRequired": {
+            "academic": [
+              "Class X and Class XII mark sheets",
+              "School-study details for Classes VI–XII",
+              "School-study certificates or other proof for claimed reservation benefits where required"
+            ],
+            "application": [
+              "Aadhaar/identity details specified by the portal",
+              "Community and nativity/employer evidence for the category claimed",
+              "OCI/PIO or refugee-category documentation where applicable",
+              "Income and first-graduate/special-reservation documents only if claiming those benefits"
+            ]
+          }
+        },
+        "audienceEligibility": {
+          "availability": "restricted",
+          "eligibleAudiences": [
+            "Indian nationals satisfying TNEA category rules",
+            "Tamil Nadu-native OCI/PIO applicants permitted by TNEA 2026",
+            "Eligible Sri Lankan Tamil refugee applicants under TNEA rules"
+          ],
+          "restrictions": [
+            "This is the TNEA route, not a claim that all foreign nationals or all OCI/PIO applicants can apply.",
+            "OCI/PIO participation is limited by Tamil Nadu nativity and the brochure’s exclusion for those born in a foreign country after 4 March 2021.",
+            "Academic qualifications, category documents and counselling allotment are required."
+          ],
+          "notes": "A separate unrestricted international admission route remains unverified. Narrow eligible OCI/PIO/refugee categories are retained rather than asserting global availability.",
+          "verifiedAt": "2026-10-27",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "open_to_international",
+      "durationSourceText": "4 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "Open only to the narrow OCI/PIO and refugee categories expressly permitted by TNEA 2026, subject to nativity/other restrictions; not unrestricted foreign-national admission. Academic-stream 45%/40% PCM rules and documentation are captured. Exact fee remains on request after official/secondary review.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "b-arch-architecture",
+        "officialTitle": "B.Arch. Architecture",
+        "officialProgramUrl": "https://www.tce.edu/admission/programmes-offered",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "barch",
+        "durationYears": 5,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "5 years; full-time on-campus."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "The current TCE directory lists this programme. Use its own admission route and the relevant current counselling rules; the similarly named arts college has different admissions.",
+          "applicationSteps": [
+            "Review the current programme admission notice and the relevant state/Anna University eligibility rules before applying.",
+            "Complete the designated official application/counselling process and follow document verification and allotment/reporting instructions."
+          ],
+          "deadlinesNote": "No future intake or application deadline is inferred from historical counselling dates or the research page’s usual twice-yearly pattern."
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "unknown",
+      "durationSourceText": "5 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "Current official programme directory. International route, current programme-specific fee, qualification thresholds and current counselling rules remain to be confirmed. Funding/quota variants must not be collapsed into a single assumed fee.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "b-des-interior-design",
+        "officialTitle": "B.Des. (Interior Design)",
+        "officialProgramUrl": "https://www.tce.edu/admission/programmes-offered",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "bdes",
+        "durationYears": 4,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "4 years; full-time on-campus."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "The current TCE directory lists this programme. Use its own admission route and the relevant current counselling rules; the similarly named arts college has different admissions.",
+          "applicationSteps": [
+            "Review the current programme admission notice and the relevant state/Anna University eligibility rules before applying.",
+            "Complete the designated official application/counselling process and follow document verification and allotment/reporting instructions."
+          ],
+          "deadlinesNote": "No future intake or application deadline is inferred from historical counselling dates or the research page’s usual twice-yearly pattern."
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "unknown",
+      "durationSourceText": "4 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "Current official programme directory. International route, current programme-specific fee, qualification thresholds and current counselling rules remain to be confirmed. Funding/quota variants must not be collapsed into a single assumed fee.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "m-sc-data-science-5-years",
+        "officialTitle": "M.Sc. (Data Science) (5 Years)",
+        "officialProgramUrl": "https://www.tce.edu/admission/programmes-offered",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "integrated-msc-data-science",
+        "durationYears": 5,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "5 years; full-time on-campus."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "The current TCE directory lists this programme. Use its own admission route and the relevant current counselling rules; the similarly named arts college has different admissions.",
+          "applicationSteps": [
+            "Review the current programme admission notice and the relevant state/Anna University eligibility rules before applying.",
+            "Complete the designated official application/counselling process and follow document verification and allotment/reporting instructions."
+          ],
+          "deadlinesNote": "No future intake or application deadline is inferred from historical counselling dates or the research page’s usual twice-yearly pattern.",
+          "eligibility": {
+            "intro": "The official five-year integrated Data Science admissions page identifies the qualifying school subjects and its aggregate-based selection route.",
+            "items": [
+              "Higher-secondary qualification with Mathematics, Physics and Chemistry.",
+              "Selection considers the relevant Mathematics, Physics and Chemistry aggregate; current minimum category thresholds require confirmation."
+            ]
+          }
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "unknown",
+      "durationSourceText": "5 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "Current official programme directory. International route, current programme-specific fee, qualification thresholds and current counselling rules remain to be confirmed. Funding/quota variants must not be collapsed into a single assumed fee.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "m-e-structural-engineering",
+        "officialTitle": "M.E. Structural Engineering",
+        "officialProgramUrl": "https://www.tce.edu/admission/programmes-offered",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "me-mtech-civil-engineering",
+        "durationYears": 2,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "2 years; full-time on-campus."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "The current TCE directory lists this programme. Use its own admission route and the relevant current counselling rules; the similarly named arts college has different admissions.",
+          "applicationSteps": [
+            "Review the current programme admission notice and the relevant state/Anna University eligibility rules before applying.",
+            "Complete the designated official application/counselling process and follow document verification and allotment/reporting instructions."
+          ],
+          "deadlinesNote": "No future intake or application deadline is inferred from historical counselling dates or the research page’s usual twice-yearly pattern."
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "unknown",
+      "durationSourceText": "2 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "Current official programme directory. International route, current programme-specific fee, qualification thresholds and current counselling rules remain to be confirmed. Funding/quota variants must not be collapsed into a single assumed fee.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "m-e-construction-engineering-and-management",
+        "officialTitle": "M.E. Construction Engineering and Management",
+        "officialProgramUrl": "https://www.tce.edu/admission/programmes-offered",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "me-mtech-civil-engineering",
+        "durationYears": 2,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "2 years; full-time on-campus."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "The current TCE directory lists this programme. Use its own admission route and the relevant current counselling rules; the similarly named arts college has different admissions.",
+          "applicationSteps": [
+            "Review the current programme admission notice and the relevant state/Anna University eligibility rules before applying.",
+            "Complete the designated official application/counselling process and follow document verification and allotment/reporting instructions."
+          ],
+          "deadlinesNote": "No future intake or application deadline is inferred from historical counselling dates or the research page’s usual twice-yearly pattern."
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "unknown",
+      "durationSourceText": "2 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "Current official programme directory. International route, current programme-specific fee, qualification thresholds and current counselling rules remain to be confirmed. Funding/quota variants must not be collapsed into a single assumed fee.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "m-e-communication-systems",
+        "officialTitle": "M.E. Communication Systems",
+        "officialProgramUrl": "https://www.tce.edu/admission/programmes-offered",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "me-mtech-electronics-communication-engineering",
+        "durationYears": 2,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "2 years; full-time on-campus."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "The current TCE directory lists this programme. Use its own admission route and the relevant current counselling rules; the similarly named arts college has different admissions.",
+          "applicationSteps": [
+            "Review the current programme admission notice and the relevant state/Anna University eligibility rules before applying.",
+            "Complete the designated official application/counselling process and follow document verification and allotment/reporting instructions."
+          ],
+          "deadlinesNote": "No future intake or application deadline is inferred from historical counselling dates or the research page’s usual twice-yearly pattern."
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "unknown",
+      "durationSourceText": "2 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "Current official programme directory. International route, current programme-specific fee, qualification thresholds and current counselling rules remain to be confirmed. Funding/quota variants must not be collapsed into a single assumed fee.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "m-e-computer-science-and-engineering",
+        "officialTitle": "M.E. Computer Science and Engineering",
+        "officialProgramUrl": "https://www.tce.edu/admission/programmes-offered",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "me-mtech-computer-science-engineering",
+        "durationYears": 2,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "2 years; full-time on-campus."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "The current TCE directory lists this programme. Use its own admission route and the relevant current counselling rules; the similarly named arts college has different admissions.",
+          "applicationSteps": [
+            "Review the current programme admission notice and the relevant state/Anna University eligibility rules before applying.",
+            "Complete the designated official application/counselling process and follow document verification and allotment/reporting instructions."
+          ],
+          "deadlinesNote": "No future intake or application deadline is inferred from historical counselling dates or the research page’s usual twice-yearly pattern."
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "unknown",
+      "durationSourceText": "2 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "Current official programme directory. International route, current programme-specific fee, qualification thresholds and current counselling rules remain to be confirmed. Funding/quota variants must not be collapsed into a single assumed fee.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "m-e-embedded-system-technologies",
+        "officialTitle": "M.E. Embedded System Technologies",
+        "officialProgramUrl": "https://www.tce.edu/admission/programmes-offered",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "me-mtech-electronics-communication-engineering",
+        "durationYears": 2,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "2 years; full-time on-campus."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "The current TCE directory lists this programme. Use its own admission route and the relevant current counselling rules; the similarly named arts college has different admissions.",
+          "applicationSteps": [
+            "Review the current programme admission notice and the relevant state/Anna University eligibility rules before applying.",
+            "Complete the designated official application/counselling process and follow document verification and allotment/reporting instructions."
+          ],
+          "deadlinesNote": "No future intake or application deadline is inferred from historical counselling dates or the research page’s usual twice-yearly pattern."
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "unknown",
+      "durationSourceText": "2 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "Current official programme directory. International route, current programme-specific fee, qualification thresholds and current counselling rules remain to be confirmed. Funding/quota variants must not be collapsed into a single assumed fee.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "m-c-a",
+        "officialTitle": "M.C.A.",
+        "officialProgramUrl": "https://www.tce.edu/admission/programmes-offered",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "mca",
+        "durationYears": 2,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "2 years; full-time on-campus."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "The current TCE directory lists this programme. Use its own admission route and the relevant current counselling rules; the similarly named arts college has different admissions.",
+          "applicationSteps": [
+            "Review the current programme admission notice and the relevant state/Anna University eligibility rules before applying.",
+            "Complete the designated official application/counselling process and follow document verification and allotment/reporting instructions."
+          ],
+          "deadlinesNote": "No future intake or application deadline is inferred from historical counselling dates or the research page’s usual twice-yearly pattern.",
+          "eligibility": {
+            "intro": "The MCA admissions page specifies a bachelor-level route and mathematics background. Current examination and minimum category thresholds must be checked separately.",
+            "items": [
+              "Recognized bachelor degree under the stated 10+2+3 route.",
+              "Mathematics at higher-secondary level or mathematics/statistics at degree level, as specified on the admissions page."
+            ]
+          }
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "unknown",
+      "durationSourceText": "2 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "Current official programme directory. International route, current programme-specific fee, qualification thresholds and current counselling rules remain to be confirmed. Funding/quota variants must not be collapsed into a single assumed fee.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "m-plan-urban-planning",
+        "officialTitle": "M.Plan (Urban Planning)",
+        "officialProgramUrl": "https://www.tce.edu/admission/programmes-offered",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "master-urban-regional-planning",
+        "durationYears": 2,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "2 years; full-time on-campus."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "The current TCE directory lists this programme. Use its own admission route and the relevant current counselling rules; the similarly named arts college has different admissions.",
+          "applicationSteps": [
+            "Review the current programme admission notice and the relevant state/Anna University eligibility rules before applying.",
+            "Complete the designated official application/counselling process and follow document verification and allotment/reporting instructions."
+          ],
+          "deadlinesNote": "No future intake or application deadline is inferred from historical counselling dates or the research page’s usual twice-yearly pattern."
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "unknown",
+      "durationSourceText": "2 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "Current official programme directory. International route, current programme-specific fee, qualification thresholds and current counselling rules remain to be confirmed. Funding/quota variants must not be collapsed into a single assumed fee.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "m-s-by-research",
+        "officialTitle": "M.S. (By Research)",
+        "officialProgramUrl": "https://www.tce.edu/admission/msc-phd",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "not verified; full-time / part-time."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "The current TCE directory lists this programme. Use its own admission route and the relevant current counselling rules; the similarly named arts college has different admissions.",
+          "applicationSteps": [
+            "Check Anna University’s current research admission call and the suitable TCE research centre/supervisor.",
+            "Forward the research application to Anna University through TCE, following the applicable full-time, part-time or QIP route."
+          ],
+          "deadlinesNote": "No future intake or application deadline is inferred from historical counselling dates or the research page’s usual twice-yearly pattern."
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "unknown",
+      "durationSourceText": "not verified",
+      "deliveryModeSourceText": "full-time / part-time",
+      "notes": "Umbrella research award linked to Anna University; centre recognition does not establish current seats or exact discipline award name.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "ph-d",
+        "officialTitle": "Ph.D.",
+        "officialProgramUrl": "https://www.tce.edu/admission/msc-phd",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official TCE programme/admission/disclosure sources and a full secondary fee page were reviewed. Published course-family ranges, stale totals and a B.Des. duration conflict do not establish this programme’s current annual fee or applicant/quota category."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "not verified; full-time / part-time."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "The current TCE directory lists this programme. Use its own admission route and the relevant current counselling rules; the similarly named arts college has different admissions.",
+          "applicationSteps": [
+            "Check Anna University’s current research admission call and the suitable TCE research centre/supervisor.",
+            "Forward the research application to Anna University through TCE, following the applicable full-time, part-time or QIP route."
+          ],
+          "deadlinesNote": "No future intake or application deadline is inferred from historical counselling dates or the research page’s usual twice-yearly pattern."
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "unknown",
+      "durationSourceText": "not verified",
+      "deliveryModeSourceText": "full-time / part-time",
+      "notes": "Umbrella research award; map each confirmed discipline only after current Anna University call and supervisor availability are checked.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    }
+  ],
+  "feeResearchFile": "fee-research.json",
+  "holds": [
+    "Twelve engineering awards now have current TNEA academic-stream qualification/document rules and narrowly scoped OCI/PIO/refugee eligibility, not global availability.",
+    "B.Arch., B.Des., integrated MSc, postgraduate and research routes still require the missing current eligibility/document/audience facts identified in schema-validation.json.",
+    "Current engineering-PG exam is CEETA-PG, not the legacy TANCET wording; exact branch qualification matrix remains to be captured.",
+    "Programme-specific annual tuition remains on request after official/secondary review; no aggregate range annualized.",
+    "Research standard duration, exact discipline award mapping and current supervisor seats remain unresolved.",
+    "Programme directory and 2026–27 approval-file intake differences remain excluded from public seat claims.",
+    "Logo/cover candidates inspected; rights, Cloudinary upload and final rendered page review remain incomplete.",
+    "The binary Private classification should retain the visible government-aided autonomous description; it must not be presented as a government-owned university."
+  ],
+  "omittedUnsupportedFields": [
+    "See actual schema-validation.json for precise field paths; all required university narrative fields are now authored."
+  ],
+  "publicURL": null,
+  "publicationOwnership": "User owns local apply; no deployment credentials are needed for this research delivery. Integrator must clear evidence, taxonomy, media and rendering gates first."
+}

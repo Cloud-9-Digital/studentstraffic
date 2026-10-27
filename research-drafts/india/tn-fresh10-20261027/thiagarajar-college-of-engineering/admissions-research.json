@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-10-27",
+  "status": "completion reviewed; normalized supported fields in proposed-payload.json; precise missing fields in schema-validation.json",
+  "routes": {
+    "be-admission": {
+      "sourceUrl": "https://www.tce.edu/admission/be-btech",
+      "confirmed": "TNEA 2026 academic-stream PCM thresholds, category/nativity rules, document requirements and restricted OCI/PIO/refugee eligibility are captured and normalized for the twelve engineering awards.",
+      "held": "No unrestricted international or management-route eligibility inferred; academic-stream rules must not replace the separate vocational provisions. 2026 dates are historical.",
+      "sourceUrls": [
+        "https://www.tce.edu/admission/be-btech",
+        "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+      ]
+    },
+    "barch-admission": {
+      "sourceUrl": "https://www.tce.edu/admission/barch",
+      "legacySource": "Page mentions HSC mathematics, 50% and NATA 70/200.",
+      "held": "Potentially stale. Do not publish these thresholds without current Council of Architecture and Tamil Nadu admissions rules."
+    },
+    "bdes-admission": {
+      "sourceUrl": "https://www.tce.edu/admission/bdes",
+      "confirmed": "Official programme directory lists four-year B.Des. Interior Design.",
+      "held": "Exact current qualifying subjects and admission scheme not established by generic higher-secondary language."
+    },
+    "pg-admission": {
+      "sourceUrl": "https://www.tce.edu/admission/me-mca",
+      "legacySource": "M.E./M.Tech. page references TANCET/GATE; MCA page specifies a recognized 10+2+3 bachelor pathway with mathematics at Class XII or maths/statistics at degree level.",
+      "held": "Current 2026 engineering-PG examination is CEETA-PG; exact branch qualification matrix remains missing. MCA uses its own TANCET route; do not transfer engineering rules to MCA."
+    },
+    "msc-admission": {
+      "sourceUrl": "https://www.tce.edu/admission/msc-ds",
+      "confirmed": "Five-year integrated Data Science admission page identifies HSC Mathematics, Physics and Chemistry and selection using the relevant aggregate.",
+      "held": "Current minimum aggregate and international-equivalence route not verified."
+    },
+    "mplan-admission": {
+      "sourceUrl": "https://www.tce.edu/admission/mplan",
+      "legacySource": "Page states recognized relevant bachelor 50% / 45% Tamil Nadu reserved category; relevant engineering/architecture or specified postgraduate pathways, and TANCET/GATE wording.",
+      "held": "Verify current exam and branch/degree eligibility. Do not generalize the alternative postgraduate route to any degree."
+    },
+    "research-admission": {
+      "sourceUrl": "https://www.tce.edu/admission/msc-phd",
+      "confirmed": "Applicants forward Ph.D./M.S. applications to Anna University through TCE. Full-time and part-time modes are described; research centres and QIP routes are listed.",
+      "held": "Current supervisor vacancies, discipline-specific entry qualifications, fee, standard duration and current call must be verified. The page’s usual January/July pattern is not a confirmed future intake."
+    }
+  },
+  "completionAddendum": "TNEA 2026 academic-stream qualifications, document requirements and narrow OCI/PIO/refugee eligibility captured; do not generalize to every foreign applicant.",
+  "currentNormalizedAdmissionsFile": "proposed-payload.json"
+}

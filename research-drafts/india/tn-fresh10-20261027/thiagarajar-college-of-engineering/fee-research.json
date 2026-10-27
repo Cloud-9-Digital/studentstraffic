@@ -1,0 +1,65 @@
+{
+  "status": "annual_on_request_after_official_and_secondary_review",
+  "officialSourcesReviewed": [
+    "https://www.tce.edu/admission/be-btech",
+    "https://www.tce.edu/admission/barch",
+    "https://www.tce.edu/admission/bdes",
+    "https://www.tce.edu/admission/me-mca",
+    "https://www.tce.edu/admission/msc-ds",
+    "https://www.tce.edu/admission/mplan",
+    "https://www.tce.edu/admission/msc-phd",
+    "https://www.tce.edu/about/mandatory-disclosure"
+  ],
+  "secondaryReview": {
+    "sourceUrl": "https://www.shiksha.com/college/thiagarajar-college-of-engineering-madurai-36795/fees",
+    "grade": "C",
+    "checkedAt": "2026-10-27",
+    "decisions": [
+      {
+        "item": "B.E./B.Tech.",
+        "quote": "INR 34,400–164,000",
+        "decision": "reject aggregation across programmes; not programme-specific annual tuition"
+      },
+      {
+        "item": "M.E.",
+        "quote": "INR 50,000–260,000",
+        "decision": "reject aggregation across specializations"
+      },
+      {
+        "item": "B.Arch.",
+        "quote": "INR 154,000 for full course",
+        "decision": "hold pending component/audience/vintage confirmation; not annual"
+      },
+      {
+        "item": "MCA",
+        "quote": "INR 53,480 for full course, based on TNEA 2023",
+        "decision": "historical indicative only; current amount not supported"
+      },
+      {
+        "item": "B.Des.",
+        "quote": "INR 241,650; 3 years claimed",
+        "decision": "reject duration conflict: official programme is 4 years"
+      },
+      {
+        "item": "M.Sc.",
+        "quote": "INR 87,500",
+        "decision": "hold: exact integrated award, fee basis and vintage need confirmation"
+      },
+      {
+        "item": "M.Arch.",
+        "quote": "INR 260,000",
+        "decision": "exclude historical programme absent current directory"
+      }
+    ]
+  },
+  "annualAmount": null,
+  "notes": "Annual fees are on request after official admission/disclosure and full secondary fee review; rejected ranges, historical totals and duration conflicts are documented. No annualization.",
+  "completionReview": {
+    "checkedAt": "2026-10-27",
+    "annualOnRequestDecision": "Current annual tuition is left on request where only semester/full-course combined amounts, ambiguous categories or unsound secondary estimates exist; supported native quotes are now in proposed-payload admissionsContent.reportedFeeQuote.",
+    "secondarySources": [
+      "https://www.shiksha.com/college/thiagarajar-college-of-engineering-madurai-36795/fees"
+    ],
+    "rejectedInferences": "No annualization, no unsupported zero tuition, no aggregate fee range applied to an individual programme."
+  }
+}

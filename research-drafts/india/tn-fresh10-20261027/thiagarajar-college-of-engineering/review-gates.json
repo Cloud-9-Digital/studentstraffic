@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-10-27",
+  "researchDeliveryBlocked": false,
+  "userOwnsLocalApply": true,
+  "publicationAttempted": false,
+  "remainingEvidenceAndEditorialGates": [
+    "Twelve engineering awards now have current TNEA academic-stream qualification/document rules and narrowly scoped OCI/PIO/refugee eligibility, not global availability.",
+    "B.Arch., B.Des., integrated MSc, postgraduate and research routes still require the missing current eligibility/document/audience facts identified in schema-validation.json.",
+    "Current engineering-PG exam is CEETA-PG, not the legacy TANCET wording; exact branch qualification matrix remains to be captured.",
+    "Programme-specific annual tuition remains on request after official/secondary review; no aggregate range annualized.",
+    "Research standard duration, exact discipline award mapping and current supervisor seats remain unresolved.",
+    "Programme directory and 2026–27 approval-file intake differences remain excluded from public seat claims.",
+    "Logo/cover candidates inspected; rights, Cloudinary upload and final rendered page review remain incomplete.",
+    "The binary Private classification should retain the visible government-aided autonomous description; it must not be presented as a government-owned university."
+  ],
+  "finishedDrafting": [
+    "All required university narratives",
+    "Canonical course payload metadata where duration is established",
+    "Native fee quote normalization for supported schedules",
+    "Route-specific admissions content to the extent evidenced",
+    "Teaching format fields without assumed instruction language"
+  ],
+  "requiredFieldOmissions": {
+    "audienceEligibility": 12,
+    "admissionsContent.eligibility": 10,
+    "admissionsContent.documentsRequired": 12,
+    "canonicalCourseSlug": 2,
+    "durationYears": 2
+  },
+  "structurallyCompleteSubset": {
+    "schemaResult": "PASS",
+    "issueCount": 0,
+    "programmeCount": 12,
+    "courseCount": 10,
+    "publicationReady": false
+  },
+  "publicationGate": "Not cleared: required media and institution/programme-specific editorial review remain.",
+  "localApplyAuthority": "User owns local apply. No DB, deployment or media operation was attempted. Credential availability is not a research-delivery blocker."
+}

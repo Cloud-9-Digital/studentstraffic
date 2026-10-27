@@ -1,0 +1,127 @@
+{
+  "checkedAt": "2026-10-27T10:52:45.903Z",
+  "schema": "scripts/lib/catalog-payload-schema.ts:catalogPayloadSchema",
+  "validationMode": "local strict-schema safeParse only; no migration/DB access",
+  "success": true,
+  "issueCount": 0,
+  "issues": [],
+  "programmeCount": 12,
+  "courseCount": 10,
+  "includedProgrammeSlugs": [
+    "b-e-civil-engineering",
+    "b-e-computer-science-and-engineering",
+    "b-e-computer-science-and-engineering-artificial-intelligence-and-machine-learning",
+    "b-e-electrical-and-electronics-engineering",
+    "b-e-electronics-and-communication-engineering",
+    "b-e-mechanical-engineering",
+    "b-e-mechatronics",
+    "b-tech-computer-science-and-business-systems",
+    "b-tech-information-technology",
+    "b-e-electrical-and-computer-engineering",
+    "b-tech-fashion-technology",
+    "b-tech-electronics-engineering-vlsi-design-technology"
+  ],
+  "excludedProgrammes": [
+    {
+      "slug": "b-arch-architecture",
+      "missingFields": [
+        "audienceEligibility",
+        "admissionsContent.eligibility",
+        "admissionsContent.documentsRequired"
+      ]
+    },
+    {
+      "slug": "b-des-interior-design",
+      "missingFields": [
+        "audienceEligibility",
+        "admissionsContent.eligibility",
+        "admissionsContent.documentsRequired"
+      ]
+    },
+    {
+      "slug": "m-sc-data-science-5-years",
+      "missingFields": [
+        "audienceEligibility",
+        "admissionsContent.documentsRequired"
+      ]
+    },
+    {
+      "slug": "m-e-structural-engineering",
+      "missingFields": [
+        "audienceEligibility",
+        "admissionsContent.eligibility",
+        "admissionsContent.documentsRequired"
+      ]
+    },
+    {
+      "slug": "m-e-construction-engineering-and-management",
+      "missingFields": [
+        "audienceEligibility",
+        "admissionsContent.eligibility",
+        "admissionsContent.documentsRequired"
+      ]
+    },
+    {
+      "slug": "m-e-communication-systems",
+      "missingFields": [
+        "audienceEligibility",
+        "admissionsContent.eligibility",
+        "admissionsContent.documentsRequired"
+      ]
+    },
+    {
+      "slug": "m-e-computer-science-and-engineering",
+      "missingFields": [
+        "audienceEligibility",
+        "admissionsContent.eligibility",
+        "admissionsContent.documentsRequired"
+      ]
+    },
+    {
+      "slug": "m-e-embedded-system-technologies",
+      "missingFields": [
+        "audienceEligibility",
+        "admissionsContent.eligibility",
+        "admissionsContent.documentsRequired"
+      ]
+    },
+    {
+      "slug": "m-c-a",
+      "missingFields": [
+        "audienceEligibility",
+        "admissionsContent.documentsRequired"
+      ]
+    },
+    {
+      "slug": "m-plan-urban-planning",
+      "missingFields": [
+        "audienceEligibility",
+        "admissionsContent.eligibility",
+        "admissionsContent.documentsRequired"
+      ]
+    },
+    {
+      "slug": "m-s-by-research",
+      "missingFields": [
+        "canonicalCourseSlug",
+        "durationYears",
+        "audienceEligibility",
+        "admissionsContent.eligibility",
+        "admissionsContent.documentsRequired"
+      ]
+    },
+    {
+      "slug": "ph-d",
+      "missingFields": [
+        "canonicalCourseSlug",
+        "durationYears",
+        "audienceEligibility",
+        "admissionsContent.eligibility",
+        "admissionsContent.documentsRequired"
+      ]
+    }
+  ],
+  "publicationReady": false,
+  "editorialApproval": false,
+  "interpretation": "Actual schema validation of the authored, structurally complete subset. Not a publication or migration-validation pass: mandatory media, current-cycle applicability, restricted audience interpretation and any proposed taxonomy still require integrator review. All excluded awards remain in the complete inventory and full draft."
+}
