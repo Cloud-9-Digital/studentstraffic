@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "universitySlug": "loyola-icam-college-of-engineering-and-technology",
+  "universityName": "Loyola-ICAM College of Engineering and Technology",
+  "batch": "tn-batch2-20261027",
+  "checkedAt": "2026-10-27",
+  "purpose": "User-authorized source-links local publication preparation; not direct apply.",
+  "payload": "payload.source.json",
+  "approvedSourceAssets": [
+    {
+      "kind": "logo",
+      "sourceUrl": "https://licet.ac.in/wp-content/uploads/2021/02/Artboard-%E2%80%93-3-1-150x150.png",
+      "sourceType": "official-university",
+      "rightsBasis": "Official LICET institutional identifying crest from its own public website, used solely for factual institution identification. No open licence, ownership transfer or endorsement claimed; follows the repository approved official-brand-asset basis.",
+      "checkedAt": "2026-10-27",
+      "status": "reviewed-source-ready-for-local-upload",
+      "sha256": "d1497bcc1f32d3060751ff92c27aa5bdfd3125e1f5b4be63a14cda415b219152",
+      "bytes": 23587,
+      "contentType": "image/png",
+      "dimensions": [
+        150,
+        150
+      ],
+      "proposedPublicId": "studentstraffic/universities/loyola-icam-college-of-engineering-and-technology/logo-d1497bcc1f32",
+      "visualReview": "Intact genuine crest, blue/yellow mark legible on white; no favicon or redesign.",
+      "altText": null,
+      "licenseUrl": null,
+      "licenseSourceUrl": null
+    },
+    {
+      "kind": "cover",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/47/LICET.jpg",
+      "sourceType": "wikimedia-commons-own-work-cc-by-sa-4.0",
+      "rightsBasis": "LICET (2019), photograph by Praveen rijal, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:LICET.jpg; licence https://creativecommons.org/licenses/by-sa/4.0/. Original unchanged.",
+      "checkedAt": "2026-10-27",
+      "status": "reviewed-source-ready-for-local-upload",
+      "sha256": "ff87e0d5634acdd8d4601bde982e0a0458943b24704bf83f22b0b03e3dbb6a9d",
+      "bytes": 6757809,
+      "contentType": "image/jpeg",
+      "dimensions": [
+        4000,
+        3000
+      ],
+      "proposedPublicId": "studentstraffic/universities/loyola-icam-college-of-engineering-and-technology/cover-ff87e0d5634a",
+      "visualReview": "Original 4000x3000 real LICET building, named facade visible; diagonal composition retained without alteration, no misleading current-capture claim.",
+      "altText": "LICET academic building and landscaped frontage in Chennai, photographed in 2019 by Praveen rijal.",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "licenseSourceUrl": "https://commons.wikimedia.org/wiki/File:LICET.jpg"
+    }
+  ],
+  "readyForLocalMediaPreparation": true,
+  "readyForDirectApply": false,
+  "prohibitedActions": [
+    "No direct source hotlinks in logoUrl/coverImageUrl",
+    "No fabricated Cloudinary URLs",
+    "No DB access or live apply by this preparation tool"
+  ],
+  "remainingLocalSteps": [
+    "Upload the two reviewed original assets or supply verified existing Cloudinary mappings",
+    "Generate the hosted-media payload and run actual scoped reader",
+    "Reserve/claim through locked canonical workflow, run scoped/full validation, commit final immutable migration before user-owned apply"
+  ]
+}

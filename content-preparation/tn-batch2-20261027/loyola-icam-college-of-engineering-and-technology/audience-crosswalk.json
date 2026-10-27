@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-27",
+  "governmentDirectory": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+  "collegeCode": "1450",
+  "printedPage": 108,
+  "branchCodes": [
+    "AD",
+    "CS",
+    "EC",
+    "EE",
+    "IT",
+    "ME"
+  ],
+  "commonBrochure": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+  "printedAudiencePage": 2,
+  "packagedRestrictedRoutes": 6,
+  "decision": "Positive official OCI/PIO/refugee eligibility, not an inference from No supernumerary approval. General foreign/NRI admission is not represented.",
+  "publicCreditLocation": "campusLifestyle is rendered by components/site/university/student-life-section.tsx; credit/Commons source/licence URLs remain visible in the public campus-environment paragraph.",
+  "nonPackagedRows": 9
+}
