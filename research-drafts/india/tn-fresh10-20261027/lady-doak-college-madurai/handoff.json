@@ -1,0 +1,92 @@
+{
+  "institution": "Lady Doak College",
+  "slug": "lady-doak-college-madurai",
+  "checkedAt": "2026-10-27",
+  "status": "research-packet-held-for-integration",
+  "counts": {
+    "namedInventoryRows": 75,
+    "degreeAndResearchRows": 49,
+    "shortCourseAndAddonRows": 26,
+    "doctoralRows": 8,
+    "schemaFragmentRows": 26,
+    "programmeDraftEligibleRows": 26,
+    "programmeHeldRows": 49,
+    "publishReadyRows": 0,
+    "taxonomyGapRows": 26,
+    "levels": {
+      "bachelors": 26,
+      "masters": 15,
+      "doctoral": 8,
+      "pg-diploma": 3,
+      "diploma": 6,
+      "certificate": 17
+    }
+  },
+  "inventoryCoverage": "All named awards in reviewed current official catalogue/prospectus union, including individual PhD routes, funding/shift variants and source-conflict rows. Unenumerated aggregate claims are reported separately, never invented as courses.",
+  "schemaSpecimenWarning": "DO-NOT-PUBLISH review artifact. Lady Doak now passes the actual framework reader for 26 UG fragments; Bishop Heber retains eligibility failures and Holy Cross retains deliberate missing-document/schema failures. This is neither an executable migration nor publication approval.",
+  "publishReady": false,
+  "ledger": "Parent owns and has made local claims; this researcher did not edit shared ledger. No pre-existing duplicate found.",
+  "gates": [
+    {
+      "status": "pending",
+      "gate": "15 PG, 8 PhD and supplementary awards need exact current eligibility/duration/authorization as recorded individually."
+    },
+    {
+      "status": "uncertain",
+      "gate": "Current handbook gives four online certificates; official counselling source names three. Fourth title is not enumerated and is not fabricated."
+    },
+    {
+      "status": "uncertain",
+      "gate": "Handbook counts 3 diploma/9 certificate courses whereas current programme directory names 5 diploma/14 certificate routes. Union retained; current admission activity of directory-only short courses needs confirmation."
+    },
+    {
+      "status": "pending",
+      "gate": "Serial editorial review, field evidence review and current original68/ledger/API freshness recheck before reservation."
+    },
+    {
+      "status": "pending",
+      "gate": "Media rights, logo/cover final suitability, authorized Cloudinary upload and public asset verification."
+    },
+    {
+      "status": "pending",
+      "gate": "Serial editorial/inventory completeness, audience and media review remain required; research-only framework success is not publish approval."
+    }
+  ],
+  "artifacts": [
+    "programme-inventory.csv",
+    "programme-records.json",
+    "held-programmes.json",
+    "taxonomy-mappings.json",
+    "taxonomy-proposals.json",
+    "proposed-content.json",
+    "schema-review-specimen.DO-NOT-PUBLISH.json",
+    "evidence.json",
+    "freshness.json",
+    "media-candidates.json",
+    "source-register.json",
+    "validate-offline.cjs",
+    "validation.json",
+    "schema-validation.json",
+    "admissions-provenance.json",
+    "framework-validation.before.json",
+    "framework-validation.json",
+    "validate-framework.cjs"
+  ],
+  "inventoryExclusions": [
+    "Repeated integrated-programme listing under UG and PG is deduplicated as one full award; lateral entry is a separately held admission route.",
+    "General student clubs, workshops, exam-preparation modules, curriculum components and unenumerated value-added-course totals are not invented as standalone admitting qualifications. Named supplementary courses are included where sufficiently identifiable.",
+    "Current handbook reports 54 value-added courses without a complete named independent-admission catalogue; counselling activities Discovering the Real Self and Conflict Resolution and Mediation Skills are curricular activities, not represented as separate degrees or independently admitting awards."
+  ],
+  "actualFrameworkValidation": {
+    "validator": "scripts/lib/content-migrations.ts::readContentMigrations",
+    "passed": 26,
+    "failed": 0,
+    "total": 26,
+    "fullSpecimenPassed": true,
+    "beforePassed": 0,
+    "beforeFailed": 26,
+    "report": "framework-validation.json",
+    "scope": "Actual readContentMigrations reader against an isolated disposable research fixture; no content-migrations reservation or production action."
+  },
+  "operationalContext": "GitHub-only serial integration is the requested delivery path. Credential availability is not a research-packet blocker. No Vercel environment, production DB or media-upload operation was attempted."
+}

@@ -60,6 +60,15 @@
       "frameworkIndependentlyRerun": true,
       "completeExecutableMigration": false,
       "remainingGates": "Complete-portfolio unknowns, precise applicant/cycle conditions, taxonomy where proposed, rights-cleared hosted media and user-owned publication."
+    },
+    {
+      "slug": "lady-doak-college-madurai",
+      "status": "held_full_framework_subset_pass",
+      "inventoryRows": 75,
+      "frameworkPassingSubsetProgrammes": 26,
+      "frameworkIndependentlyRerun": true,
+      "completeExecutableMigration": false,
+      "remainingGates": "49 remaining programme holds; audience/cycle review; rights-cleared hosted media."
     }
   ]
 }
