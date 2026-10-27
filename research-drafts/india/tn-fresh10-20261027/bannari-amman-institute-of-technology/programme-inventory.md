@@ -2,7 +2,7 @@
 
 Checked: 2026-10-27. Companion to `programme-inventory.csv`; research-only, not a publication manifest.
 
-Researcher did not mutate the queue; integrator local claim exists under research_tn_batch_b, not remotely synced.
+Researcher did not mutate the queue; the integrator local claim exists under research_tn_batch_b and is held. Remote-ledger synchronization is unverified in this completion pass.
 
 Research delivery target is GitHub/local bundle; the user owns live publishing. Missing live-publishing credentials do not block saving or handing off this research. Evidence, media and actual catalogue/migration validation remain separate publication gates.
 
@@ -48,10 +48,14 @@ Doctorates are in catalogue scope. Listing a research subject or centre does not
 - ME/MBA precise qualifying-degree combinations and applicable entrance/counselling routes need current programme-specific authority; no generic engineering admission copied.
 - AI/ML old/new conflict and obsolete programmes must remain excluded; ME VLSI current 2026 source supersedes stale Communications Systems intro, but approval remains held.
 - Mandatory logo and real-campus-cover HTTP 200/image content-type, white-tile visual QA, rights record and Cloudinary hosting not completed.
-- No confirmed category-specific annual tuition. Two credible full-course secondary sources conflict; do not divide totals into annual fees.
+- No confirmed branch/category-specific annual tuition. The official 2026–27 quota/NBA-category fee table is preserved privately, but its exact billing period, currency label and tuition-only components are not explicit; the branch accreditation category also remains unverified. Conflicting secondary full-course figures are not annualised.
 - Each of the 13 listed doctoral research areas is retained within catalogue scope and individually held for exact award, duration/mode, current admission/audience rules and awarding-university authorization.
 - Latest remote duplicate/ledger recheck and any executable payload assembly, mandatory media validation and actual scoped catalogue/migration validation remain integrator work before publication; they do not prevent research-bundle delivery.
 
 ## Packaging boundary
 
 This companion remains inside the assigned research folder. The integrator may copy the CSV and companion into the canonical `research/india-programme-inventory/` location serially. No shared inventory path, queue, taxonomy or numbered migration was changed by this correction.
+
+## Bounded completion subset
+
+The complete CSV is unchanged at 43 rows. The separate ten-UG candidate passes the actual strict schema and isolated catalogue reader with 120 evidence records. Four PG routes and thirteen doctoral research areas are outside that subset and remain explicitly held. Mandatory media, current professional approval and complete audience assessment still prevent publication. See `catalogue-reader-validation.json` and `catalogue-subset-crosswalk.json`.

@@ -7,9 +7,9 @@
   "programmeDraftFragments": 14,
   "heldGapRows": 0,
   "publiclyPublishable": false,
-  "catalogPayloadSchemaValidation": "not_applicable: content-draft is deliberately incomplete research shape, not a catalog payload",
-  "contentMigrationValidation": "not_run: no numbered migration or manifest; required programme approval and media gates held",
-  "ledgerStatus": "integrator_local_claim_pending_hold",
+  "catalogPayloadSchemaValidation": "PASS for separate ten-UG catalogue-subset-candidate.json; full research draft remains intentionally incomplete",
+  "contentMigrationValidation": "production_scoped_not_run: no reserved numbered migration; separate isolated actual-reader result below",
+  "ledgerStatus": "integrator_local_claim_held",
   "researchDeliveryBlockedByCredentials": false,
   "doctoralResearchAreaDrafts": 13,
   "doctoralInventoryDiscoveryPlaceholders": 0,
@@ -21,14 +21,31 @@
     "embedded_pathway_excluded": 2
   },
   "files": {
-    "README.md": "9d491f1e44eebf245292d0b81a1d4542daf9e446bb8ef802f6d758f92ff92dfa",
-    "evidence.json": "ffa3a64c4ee9297cf658f2d2f96dd6b2fdf262326d6c887737065c0d1577ded3",
-    "programme-inventory.md": "3a3906eb47de52e0973d5fdc36cd40b51c9849885e99e1e136e3eca4f488434d",
-    "sources.json": "1a7997fd96f61f8f80fe166d5bdcaba7b161aa79d8db5f9427f5cdb46caf6106",
+    "catalogue-subset-schema-validation.json": "385e67341f815d89e1ac364d5f100ffffb2865762ab81a924b7aa20531ea48ac",
+    "README.md": "f9e3c697dfc8dc456b7055c069125f284eecaf891893a94808d5a609a7a5c367",
+    "evidence.json": "b03531ad573d6ca6e390b97f57c20f7629fd79440487cc16d72e372b096c95d5",
+    "programme-inventory.md": "09747294f9fbf5068c15e8a91fca608eb596b26fd0e6ce65cf80ea137e125637",
+    "sources.json": "417c40807852a2f775500a2563b588acd26283716df66be0b01f20c0fd04e5cd",
+    "official-fee-table.json": "fa3a7be2a48cfb2292f7441454b1e44a675894534320458340557598018f04b6",
+    "catalogue-reader-validation.json": "ff6666f04c42896699fa84e564ad164e2ab14d2e1b1789849dfa48c5419a3d91",
     "media-status.json": "5944116e6ff337c594221c2cdb2e4f8dfed6cc3809aea92f56902b2008161bb8",
-    "integrator-review.json": "c45e275b31f8e3fdcbcdfc4a7f7d66d9c98aa23489def7750202362010675827",
-    "dedupe.json": "4dae71be54fb0222f7f1b6b49110014460c8d50bd47c44d11af8865331e2282d",
+    "integrator-review.json": "a61f4edb92e9d64f758fb10fbb61934d9c9fe8426a6fe4c8526d0ae18ff308e8",
+    "catalogue-subset-candidate.json": "b842317170ba0b0debcd95af9ac63b34bfb6e59e74ead0785af0ed5551494f92",
+    "framework-validation.json": "b193147ea0649be774b32ad5bb6d57c0587005b253d83a368bca768ee976f566",
+    "catalogue-subset-crosswalk.json": "68713809f4e76fac054bc2d01d497ac75c4cfbd226ebbedc71eeca55474dd833",
+    "dedupe.json": "41f83a9a50a94159635910c51d0d026be30969761a34142b6c55da2fb684de5e",
     "programme-inventory.csv": "cba7e0faa2cce8b4a85f5cbaeecfcd1c9124c3269d870d4a1cfc7cc39dc81ab8",
-    "content-draft.json": "350b23af606fd11e4c4bc3eada9e62cd215b0216d22736e1349376e200434ada"
+    "content-draft.json": "70d41d7bb2da0815eefb0ffc64bbef77eb965b8d2be4bcf7dbcfbb0e257ea206"
+  },
+  "isolatedSubsetReader": {
+    "success": true,
+    "programmeCount": 10,
+    "courseCount": 10,
+    "evidenceCount": 120,
+    "expiredEvidence": [],
+    "payloadSha256": "b842317170ba0b0debcd95af9ac63b34bfb6e59e74ead0785af0ed5551494f92",
+    "publicationReady": false,
+    "migrationReserved": false,
+    "temporaryFixtureRemoved": true
   }
 }

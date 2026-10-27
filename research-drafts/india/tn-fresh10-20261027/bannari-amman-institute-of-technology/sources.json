@@ -51,7 +51,7 @@
     "checkedAt": "2026-10-27",
     "accessStatus": "read",
     "sourceGrade": "A",
-    "notes": "55 pages. Header references 2026-27 EoA 12-May-2026 F.No. Southern/1-46260020194/2026/EOA; institutional disclosure does not replace AICTE own current list. Historical enrolment tables and historical courses not current admitting awards."
+    "notes": "55 pages. Header references 2026-27 EoA 12-May-2026 F.No. Southern/1-46260020194/2026/EOA; institutional disclosure does not replace AICTE own current list. Historical enrolment tables and historical courses not current admitting awards. Completion pass: printed p.13 lists 2026–27 B.E./B.Tech. fees by government/management quota and accredited/non-accredited category; ME/MTech and MBA rows too. Period and tuition-only components are not explicit, and table currency is not labelled in extracted text. Raw values preserved in official-fee-table.json; no forced annual fee. PDF screenshot attempt failed with cache miss."
   },
   {
     "id": "old-approval",

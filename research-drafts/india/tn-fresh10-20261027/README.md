@@ -13,14 +13,14 @@ This batch contains exactly the first ten fresh institutions. Rolling batches ar
 | IIIT Tiruchirappalli | 15 | 4 B.Tech subset passes | 9 incomplete award candidates plus 2 secondary-only MSc leads; media |
 | Great Lakes Chennai | 32 | PGPM/PGDM subset: 2 pass | 4 other awards held, PGCM taxonomy and category/cycle review, media |
 | Thiagarajar College of Engineering | 38 | 12-offering subset passes | 12 incomplete award candidates, narrow applicant categories, media |
-| Bannari Amman Institute of Technology | 43 | Not run on research fragments | Current approvals/admissions evidence; bounded completion underway |
+| Bannari Amman Institute of Technology | 43 | 10 UG subset passes | Current AICTE approval, audience scope, 4 PG/13 doctoral holds, media |
 | Sona College of Technology | 46 | Not run on research fragments | Primary-source access, complete doctoral discovery, programme facts |
 | St Joseph's College, Tiruchirappalli | 97 | Not run on research fragments | Primary-source access and exact programme facts; JIM fee components retained |
 | Bishop Heber College | 121 | 0/36 pass: genuine eligibility failures | All inventory rows held; exact subject eligibility and media |
 | Holy Cross College, Tiruchirappalli | 88 | 0/47 pass: genuine required-document/schema failures | All rows held; audience unknown, required documents and current PG process |
 | Lady Doak College | 75 | 26 UG fragments pass | 49 other inventory rows held, audience/cycle editorial review and media |
 
-The **46 passing programme fragments** are not 46 publication-approved programmes. Actual reader tests use disposable isolated fixtures, no numbered migration reservation or database. Shape checks, custom inventory checks and the pre-existing 23 regression tests are separate stages. All per-row holds remain binding.
+The **56 passing programme fragments** are not 46 publication-approved programmes. Actual reader tests use disposable isolated fixtures, no numbered migration reservation or database. Shape checks, custom inventory checks and the pre-existing 23 regression tests are separate stages. All per-row holds remain binding.
 
 ## Pull without disturbing local edits
 

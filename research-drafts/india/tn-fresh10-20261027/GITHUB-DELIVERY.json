@@ -16,11 +16,15 @@
     },
     {
       "slug": "bannari-amman-institute-of-technology",
-      "status": "held_research_fragments",
+      "status": "held_full_framework_subset_pass",
       "inventoryRows": 43,
       "taughtFragments": 14,
       "doctoralAreaHolds": 13,
-      "catalogueSchemaValidated": false
+      "catalogueSchemaValidated": true,
+      "frameworkPassingSubsetProgrammes": 10,
+      "frameworkIndependentlyRerun": true,
+      "completeExecutableMigration": false,
+      "remainingGates": "Current AICTE approval, full audience assessment, 4 PG exact admissions, 13 doctoral holds and rights-cleared hosted media."
     },
     {
       "slug": "sona-college-of-technology",

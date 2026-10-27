@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-10-27T11:13:42.989Z",
+  "validator": "scripts/lib/content-migrations.ts:readContentMigrations",
+  "mode": "Actual isolated reader, temporary research-local manifest; no numbered content-migrations folder, reservation, queue or database operation.",
+  "syntheticTestId": "9999-isolated-bit-research-subset",
+  "temporaryFixtureRemoved": true,
+  "payloadFile": "catalogue-subset-candidate.json",
+  "payloadSha256": "b842317170ba0b0debcd95af9ac63b34bfb6e59e74ead0785af0ed5551494f92",
+  "success": true,
+  "migrationCount": 1,
+  "programmeCount": 10,
+  "courseCount": 10,
+  "evidenceCount": 120,
+  "expiredEvidence": [],
+  "checksum": "8e5a6a3c7aca2c7d2ad42080875cd9ff60889e8d6160567fbb1145b36aae1549",
+  "publicationReady": false,
+  "editorialApproval": false,
+  "migrationReserved": false,
+  "missingExternalGates": [
+    "Current AICTE regulator-owned programme approval",
+    "Complete per-programme applicant-category/international assessment beyond the restricted TNEA 2026 route",
+    "Mandatory logo/cover rights, HTTP/image/visual validation and approved hosting",
+    "Fresh identity/ledger check before eventual controlled publication"
+  ],
+  "scope": "Ten evidenced regular UG candidates only. Four current PG routes lack exact eligibility and stay outside this subset; all doctoral, conflicting, embedded and historical rows remain explicitly held or excluded in the complete inventory."
+}

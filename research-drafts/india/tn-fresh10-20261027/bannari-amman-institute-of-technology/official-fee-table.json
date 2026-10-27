@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-10-27",
+  "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/aicte-mandatory-disclosure.pdf",
+  "sourceLabel": "BIT mandatory disclosure, printed page 13",
+  "sourceGrade": "A",
+  "sourceRead": "Full PDF text read; table found at section 6(vi), printed page 13 (zero-based page 12).",
+  "sourceHeading": "Fee (as approved by the State government)",
+  "academicYear": "2026-27",
+  "currency": null,
+  "billingPeriod": null,
+  "tuitionOnly": null,
+  "visualVerification": "Not completed: web PDF screenshot returned cache miss; no retry or bypass.",
+  "publicQuoteIncluded": false,
+  "rows": [
+    {
+      "programmeFamily": "B.E./B.Tech.",
+      "quota": "Government",
+      "nbaCategory": "Accredited",
+      "rawAmount": "75,000"
+    },
+    {
+      "programmeFamily": "B.E./B.Tech.",
+      "quota": "Government",
+      "nbaCategory": "Non-Accredited",
+      "rawAmount": "70,000"
+    },
+    {
+      "programmeFamily": "B.E./B.Tech.",
+      "quota": "Management",
+      "nbaCategory": "Accredited",
+      "rawAmount": "1,65,000"
+    },
+    {
+      "programmeFamily": "B.E./B.Tech.",
+      "quota": "Management",
+      "nbaCategory": "Non-Accredited",
+      "rawAmount": "1,60,000"
+    },
+    {
+      "programmeFamily": "M.E./M.Tech.",
+      "quota": null,
+      "nbaCategory": null,
+      "rawAmount": "50,000"
+    },
+    {
+      "programmeFamily": "M.B.A.",
+      "quota": null,
+      "nbaCategory": null,
+      "rawAmount": "41,000"
+    }
+  ],
+  "limitations": [
+    "The 2026–27 column is an academic-year label, not an explicit annual billing-period statement.",
+    "The extracted fee table does not explicitly label currency or separate tuition from other charges.",
+    "Current NBA category has not been verified per exact branch.",
+    "The institution describes the table as State-government-approved; the State fee order itself has not been read, so no independent regulatory confirmation is asserted.",
+    "Do not transfer these numbers into confirmed annual tuition or reportedFeeQuote without resolving the missing basis."
+  ]
+}

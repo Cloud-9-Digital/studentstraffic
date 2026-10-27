@@ -16,14 +16,14 @@
     "entity": "university",
     "universitySlug": "bannari-amman-institute-of-technology",
     "publicField": "cityProfile",
-    "claimText": "The teaching campus is on the Sathy–Bhavani State Highway at Alathukombai, Sathyamangalam, in Erode district, Tamil Nadu 638401. Sathyamangalam is the canonical town; Erode is the district rather than a substitute campus city. TNEA counselling identifies the college with code 2702.",
+    "claimText": "BIT identifies its campus at Alathukombai, Sathyamangalam 638401, Erode District, Tamil Nadu.",
     "status": "verified",
     "sourceLabel": "BIT current programme directory",
     "sourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
     "sourceGrade": "A",
     "checkedAt": "2026-10-27",
     "reviewBy": "2027-01-27",
-    "internalNotes": ""
+    "internalNotes": "The highway description is separately supported by the mandatory disclosure; counselling code is separately supported by the Anna register."
   },
   {
     "entity": "university",
@@ -81,14 +81,14 @@
     "entity": "university",
     "universitySlug": "bannari-amman-institute-of-technology",
     "publicField": "studentSupport",
-    "claimText": "Undergraduate students are assigned a faculty mentor for course registration, academic progression and career objectives. Students Traffic can help compare the admission route, branch and full-cost plan.",
+    "claimText": "Undergraduate Regulations 2026 assign faculty mentors to support course registration, academic progression and academic planning.",
     "status": "verified",
     "sourceLabel": "BIT B.E./B.Tech Regulations 2026",
     "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/R2026_Regulation-Updated-as-on-09.09.2026_Approved.pdf",
     "sourceGrade": "A",
     "checkedAt": "2026-10-27",
     "reviewBy": "2027-01-27",
-    "internalNotes": ""
+    "internalNotes": "The Students Traffic cost/admission-support sentence is a service CTA, not an institutional service or a claim sourced to BIT."
   },
   {
     "entity": "university",
@@ -146,14 +146,14 @@
     "entity": "university",
     "universitySlug": "bannari-amman-institute-of-technology",
     "publicField": "fee",
-    "claimText": "No reliable current category-specific annual tuition is established. Conflicting full-course secondary totals must not be annualised.",
+    "claimText": "An exact branch/category-specific annual tuition amount remains unestablished. The official 2026–27 quota/accreditation fee table is preserved privately; its period, explicit currency label and tuition-only basis are unresolved.",
     "status": "omit",
-    "sourceLabel": "Careers 360 BIT fee table",
-    "sourceUrl": "https://www.careers360.com/colleges/bannari-amman-institute-of-technology-erode/fees",
-    "sourceGrade": "B",
+    "sourceLabel": "BIT mandatory disclosure, printed page 13",
+    "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/aicte-mandatory-disclosure.pdf",
+    "sourceGrade": "A",
     "checkedAt": "2026-10-27",
     "reviewBy": "2027-01-27",
-    "internalNotes": "See second independently read fee source."
+    "internalNotes": "Supersedes the earlier incomplete fee investigation. Do not state that no fees are published. Secondary full-course amounts remain conflicting; no annualisation."
   },
   {
     "entity": "programme",
@@ -1635,5 +1635,31 @@
     "checkedAt": "2026-10-27",
     "reviewBy": "2027-01-27",
     "internalNotes": "Supports only this component of the summary; other summary components have separately attributed evidence."
+  },
+  {
+    "entity": "university",
+    "universitySlug": "bannari-amman-institute-of-technology",
+    "publicField": "faqFees",
+    "claimText": "The institutional fee table distinguishes government and management quotas and NBA accreditation categories; the extracted table does not establish branch-specific annual tuition.",
+    "status": "verified",
+    "sourceLabel": "BIT mandatory disclosure, printed page 13",
+    "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/aicte-mandatory-disclosure.pdf",
+    "sourceGrade": "A",
+    "checkedAt": "2026-10-27",
+    "reviewBy": "2027-01-27",
+    "internalNotes": "Retain the official table basis; no currency, period, tuition-only interpretation or branch NBA status is invented."
+  },
+  {
+    "entity": "university",
+    "universitySlug": "bannari-amman-institute-of-technology",
+    "publicField": "cityProfile",
+    "claimText": "The institutional mandatory disclosure locates the campus on Sathy–Bhavani State Highway at Alathukombai, Sathyamangalam in Tamil Nadu.",
+    "status": "verified",
+    "sourceLabel": "BIT mandatory disclosure, printed page 1",
+    "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/aicte-mandatory-disclosure.pdf",
+    "sourceGrade": "A",
+    "checkedAt": "2026-10-27",
+    "reviewBy": "2027-01-27",
+    "internalNotes": "Location only; no independent current AICTE programme approval inferred from the document header."
   }
 ]

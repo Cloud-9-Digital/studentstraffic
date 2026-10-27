@@ -16,7 +16,7 @@
     "hostelOverview": "Separate men’s and women’s hostels provide single, double and four-person room options. Hostel dining halls, kitchens and storage facilities are available. Room allocation and current hostel and mess charges require a separate accommodation budget.",
     "dietarySupport": "Hostel dining halls and a campus cafeteria provide meal facilities. The verified information does not specify allergy provision or every dietary option; these requirements should be discussed before accepting accommodation.",
     "safetyOverview": "The campus medical centre has resident medical officers, nursing staff and a round-the-clock emergency ambulance service for access to hospitals in Sathyamangalam, Coimbatore or Erode.",
-    "studentSupport": "Undergraduate students are assigned a faculty mentor for course registration, academic progression and career objectives. Students Traffic can help compare the admission route, branch and full-cost plan.",
+    "studentSupport": "Undergraduate students are assigned a faculty mentor for course registration, academic progression and academic planning. Students Traffic can help compare the admission route, branch and full-cost plan.",
     "whyChoose": [
       "Engineering and technology branches with a separate MBA pathway.",
       "Laboratory and project components across the taught curricula.",
@@ -77,7 +77,7 @@
       },
       {
         "question": "Are fees the same for every applicant?",
-        "answer": "A current full-cost plan should distinguish admission category, tuition, compulsory charges and accommodation. No annual tuition amount is stated here because the fee evidence does not establish one reliable category-specific annual rate."
+        "answer": "The institutional fee table distinguishes government and management quotas and programme accreditation categories. A full-cost plan must also separate academic charges, accommodation and meals; the available table does not establish a tuition-only annual figure for each exact branch and category."
       },
       {
         "question": "Are honours and minor pathways separate admissions?",
@@ -743,7 +743,7 @@
     "ME/MBA precise qualifying-degree combinations and applicable entrance/counselling routes need current programme-specific authority; no generic engineering admission copied.",
     "AI/ML old/new conflict and obsolete programmes must remain excluded; ME VLSI current 2026 source supersedes stale Communications Systems intro, but approval remains held.",
     "Mandatory logo and real-campus-cover HTTP 200/image content-type, white-tile visual QA, rights record and Cloudinary hosting not completed.",
-    "No confirmed category-specific annual tuition. Two credible full-course secondary sources conflict; do not divide totals into annual fees.",
+    "No confirmed branch/category-specific annual tuition. The official 2026–27 quota/NBA-category fee table is preserved privately, but its exact billing period, currency label and tuition-only components are not explicit; the branch accreditation category also remains unverified. Conflicting secondary full-course figures are not annualised.",
     "Each of the 13 listed doctoral research areas is retained within catalogue scope and individually held for exact award, duration/mode, current admission/audience rules and awarding-university authorization.",
     "Latest remote duplicate/ledger recheck and any executable payload assembly, mandatory media validation and actual scoped catalogue/migration validation remain integrator work before publication; they do not prevent research-bundle delivery."
   ],
@@ -988,7 +988,16 @@
     "target": "github_local_bundle",
     "livePublishingOwner": "user",
     "researchDeliveryBlockedByCredentials": false,
-    "queueNote": "Researcher did not mutate the queue; integrator local claim exists under research_tn_batch_b, not remotely synced.",
+    "queueNote": "Researcher did not mutate the queue; the integrator local claim exists under research_tn_batch_b and is held. Remote-ledger synchronization is unverified in this completion pass.",
     "notes": "Research delivery target is GitHub/local bundle; the user owns live publishing. Missing live-publishing credentials do not block saving or handing off this research. Evidence, media and actual catalogue/migration validation remain separate publication gates."
+  },
+  "completionSubset": {
+    "candidateFile": "catalogue-subset-candidate.json",
+    "programmeCount": 10,
+    "scope": "Evidence-supported regular UG structure and TNEA 2026 route only; all ten remain held for professional approval, audience assessment and mandatory media.",
+    "validationReport": "catalogue-reader-validation.json",
+    "currentPGOutsideSubset": 4,
+    "doctoralResearchAreasOutsideSubset": 13,
+    "productionMigrationReserved": false
   }
 }

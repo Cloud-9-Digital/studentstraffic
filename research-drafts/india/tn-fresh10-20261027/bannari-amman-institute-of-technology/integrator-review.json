@@ -1,19 +1,22 @@
 {
   "checkedAt": "2026-10-27",
-  "integratorReview": "accepted_for_research_delivery_only",
-  "cataloguePayloadReady": false,
-  "executableMigration": false,
-  "workerValidatorRerun": "PASS",
-  "reviewCorrections": [
-    "Local integrator claims correctly distinguished from researcher queue mutations and remote reservations",
-    "Current doctoral areas individually held rather than blanket excluded",
-    "Bannari summary source claims narrowed to what each source supports"
+  "status": "accepted_for_research_delivery_only",
+  "inventoryRows": 43,
+  "actualFrameworkIndependentlyRerun": true,
+  "fullSubsetPassed": true,
+  "programmePassCount": 10,
+  "programmeFailCount": 0,
+  "expiredEvidenceCount": 0,
+  "payloadSha256": "b842317170ba0b0debcd95af9ac63b34bfb6e59e74ead0785af0ed5551494f92",
+  "publishReady": false,
+  "completeExecutableMigration": false,
+  "remainingHolds": [
+    "Current independent AICTE approval",
+    "Full audience verification beyond narrow TNEA2026 route",
+    "4 PG exact entry/admission fields",
+    "13 doctoral area holds",
+    "Mandatory rights-cleared hosted media"
   ],
-  "independentPrimarySpotChecks": [
-    "https://www.bitsathy.ac.in/programmes-offered/",
-    "https://www.annauniv.edu/cai/Affiliated%20Colleges%20list%20by%20Alphabetical/B.html"
-  ],
-  "canonicalInventoryCopiedTo": "research/india-programme-inventory/bannari-amman-institute-of-technology.csv",
-  "inventorySha256": "cba7e0faa2cce8b4a85f5cbaeecfcd1c9124c3269d870d4a1cfc7cc39dc81ab8",
-  "scopeCaution": "Research checks do not validate completeness of inaccessible sources. Preserve every exact hold; do not run content apply on these fragments."
+  "rawSourcePolicy": "No raw sources, full pages, PDF or media binaries in Git delivery",
+  "claim": "Local held claim only; remote canonical ledger not mutated"
 }
