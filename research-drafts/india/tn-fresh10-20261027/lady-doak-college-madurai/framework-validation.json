@@ -1,0 +1,175 @@
+{
+  "checkedAt": "2026-10-27T00:00:00.000Z",
+  "validator": "scripts/lib/content-migrations.ts::readContentMigrations",
+  "command": "node --import tsx research-drafts/india/tn-fresh10-20261027/lady-doak-college-madurai/validate-framework.cjs",
+  "isolatedResearchFixture": true,
+  "actualContentMigrationsDirectoryTouched": false,
+  "fullSpecimen": {
+    "passed": true,
+    "readMigrations": 1,
+    "expiredEvidenceCount": 0
+  },
+  "totalProgrammeFragments": 26,
+  "programmePassCount": 26,
+  "programmeFailCount": 0,
+  "programmes": [
+    {
+      "slug": "b-a-tamil-aided",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "b-a-english-aided",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "b-a-history-aided",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "b-sc-psychology-aided",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "b-a-economics-tamil-medium-aided",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "b-a-economics-english-medium-aided",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "b-com-aided",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "b-sc-mathematics-aided",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "b-sc-physics-aided",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "b-sc-chemistry-aided",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "b-sc-botany-aided",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "b-sc-zoology-aided",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "b-a-english-self-financed",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "b-b-a-self-financed",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "b-sc-computer-science-self-financed",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "b-sc-information-technology-self-financed",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "b-sc-data-science-self-financed",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "b-sc-mathematics-with-computer-applications-self-financed",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "b-sc-physics-with-computer-applications-self-financed",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "b-sc-biotechnology-self-financed",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "b-sc-costume-design-and-fashion-self-financed",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "b-com-with-computer-applications-self-financed",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "b-com-corporate-secretaryship-self-financed",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "b-com-banking-and-insurance-self-financed",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "b-com-professional-accounting-self-financed",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "b-com-honours-self-financed",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    }
+  ],
+  "publishReady": false,
+  "warning": "Reader success checks source-link structure, not editorial truth or audience/media readiness. Existing row holds remain binding."
+}

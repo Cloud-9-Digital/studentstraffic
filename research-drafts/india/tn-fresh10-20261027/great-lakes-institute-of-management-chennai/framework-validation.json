@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-27T10:54:15.857Z",
+  "validator": "scripts/lib/content-migrations.ts:readContentMigrations",
+  "validatorSha256": "51169812a194c38759fc5a875e7210f0d54459e5179256f1e8e477c0441a20d6",
+  "input": "structurally-complete-subset.json",
+  "inputSha256": "a7f48ab6cdf89f8c7aace2738202810aee974c2372afef35053c7b6b7bcac6ed",
+  "testMode": "Actual isolated migration reader and complete assertContentFramework; no DB, shared migration directory, ledger, media, network or remote writes",
+  "fixtureId": "9999-local-offline-evidence-test",
+  "fixtureIsNotReservation": true,
+  "fixtureRemoved": true,
+  "programmeCount": 2,
+  "publicationReady": false,
+  "editorialApproval": false,
+  "success": true,
+  "result": "PASS",
+  "migrationCount": 1,
+  "checksum": "b98ef7d163ed2636ad42e944ec5d49e52edc48f1d7a2ca28af56b66c64a8fc7f",
+  "expiredEvidence": [],
+  "errors": []
+}

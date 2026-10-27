@@ -1,0 +1,94 @@
+{
+  "checkedAt": "2026-10-27T11:10:44.899Z",
+  "scope": "Offline draft schema and selected evidence checks only. No numbered content migration; no DB connection. This is not content:validate or publish readiness.",
+  "checks": [
+    {
+      "name": "canonical_catalogue_schema",
+      "pass": true
+    },
+    {
+      "name": "single_badge_grade_a_regulator_evidence",
+      "pass": true
+    },
+    {
+      "name": "iim-trichy-pgpm-mba:language",
+      "ok": true,
+      "value": {
+        "medium": "",
+        "mediumNote": null,
+        "instructionLanguages": []
+      }
+    },
+    {
+      "name": "iim-trichy-pgpm-mba:reported_fee_grade_a_provenance",
+      "pass": true
+    },
+    {
+      "name": "iim-trichy-pgpm-mba:eligibility_evidence",
+      "pass": true
+    },
+    {
+      "name": "iim-trichy-pgpm-mba:admissions_evidence",
+      "pass": true
+    },
+    {
+      "name": "iim-trichy-pgpm-mba:fee_evidence",
+      "pass": true
+    },
+    {
+      "name": "iim-trichy-pgpm-mba:medium_explicit_omission",
+      "pass": true
+    },
+    {
+      "name": "iim-trichy-pgpm-mba:intake_explicit_omission",
+      "pass": true
+    },
+    {
+      "name": "iim-trichy-pgpm-hr-mba:language",
+      "ok": true,
+      "value": {
+        "medium": "",
+        "mediumNote": null,
+        "instructionLanguages": []
+      }
+    },
+    {
+      "name": "iim-trichy-pgpm-hr-mba:reported_fee_grade_a_provenance",
+      "pass": true
+    },
+    {
+      "name": "iim-trichy-pgpm-hr-mba:eligibility_evidence",
+      "pass": true
+    },
+    {
+      "name": "iim-trichy-pgpm-hr-mba:admissions_evidence",
+      "pass": true
+    },
+    {
+      "name": "iim-trichy-pgpm-hr-mba:fee_evidence",
+      "pass": true
+    },
+    {
+      "name": "iim-trichy-pgpm-hr-mba:medium_explicit_omission",
+      "pass": true
+    },
+    {
+      "name": "iim-trichy-pgpm-hr-mba:intake_explicit_omission",
+      "pass": true
+    }
+  ],
+  "machineChecksPassed": true,
+  "editorialAndPublicationStatus": "HELD",
+  "hardGates": [
+    "Complete the two MBAs domestic qualification/document crosswalk; overseas restrictions are route-specific",
+    "Mandatory rights-cleared media not approved or Cloudinary-hosted",
+    "User owns local publication; cloud publication is outside this research delivery",
+    "15 programme inventory rows held for explicit audience verification",
+    "No numbered committed executable migration; actual isolated reader result is recorded separately"
+  ],
+  "priorRegressionTests": {
+    "passed": 23,
+    "failed": 0,
+    "scope": "Existing university-publishing-ledger and content-migrations test suites, not tests of this generated payload"
+  }
+}

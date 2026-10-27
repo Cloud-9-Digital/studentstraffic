@@ -1,0 +1,452 @@
+[
+  {
+    "offeringSlug": "b-a-tamil-aided",
+    "officialTitle": "B.A. Tamil",
+    "canonicalCourseSlug": "ba-languages-linguistics",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-a-english-aided",
+    "officialTitle": "B.A. English",
+    "canonicalCourseSlug": "ba-english-literature",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-a-history-aided",
+    "officialTitle": "B.A. History",
+    "canonicalCourseSlug": "ba-history",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-psychology-aided",
+    "officialTitle": "B.Sc. Psychology",
+    "canonicalCourseSlug": "bachelor-psychology",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-a-economics-tamil-medium-aided",
+    "officialTitle": "B.A. Economics (Tamil Medium)",
+    "canonicalCourseSlug": "ba-languages-linguistics",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-a-economics-english-medium-aided",
+    "officialTitle": "B.A. Economics (English Medium)",
+    "canonicalCourseSlug": "ba-english-literature",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-com-aided",
+    "officialTitle": "B.Com.",
+    "canonicalCourseSlug": "bcom",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-mathematics-aided",
+    "officialTitle": "B.Sc. Mathematics",
+    "canonicalCourseSlug": "bsc-mathematics",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-physics-aided",
+    "officialTitle": "B.Sc. Physics",
+    "canonicalCourseSlug": "bsc-physics",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-chemistry-aided",
+    "officialTitle": "B.Sc. Chemistry",
+    "canonicalCourseSlug": "bsc-chemistry",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-botany-aided",
+    "officialTitle": "B.Sc. Botany",
+    "canonicalCourseSlug": "bsc-biological-sciences",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-zoology-aided",
+    "officialTitle": "B.Sc. Zoology",
+    "canonicalCourseSlug": "bsc-biological-sciences",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-a-english-self-financed",
+    "officialTitle": "B.A. English",
+    "canonicalCourseSlug": "ba-english-literature",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-b-a-self-financed",
+    "officialTitle": "B.B.A.",
+    "canonicalCourseSlug": "bba",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-computer-science-self-financed",
+    "officialTitle": "B.Sc. Computer Science",
+    "canonicalCourseSlug": "bsc-computer-science",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-information-technology-self-financed",
+    "officialTitle": "B.Sc. Information Technology",
+    "canonicalCourseSlug": "bsc-information-technology",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-data-science-self-financed",
+    "officialTitle": "B.Sc. Data Science",
+    "canonicalCourseSlug": "bsc-data-science",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-mathematics-with-computer-applications-self-financed",
+    "officialTitle": "B.Sc. Mathematics with Computer Applications",
+    "canonicalCourseSlug": "bsc-mathematics",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-physics-with-computer-applications-self-financed",
+    "officialTitle": "B.Sc. Physics with Computer Applications",
+    "canonicalCourseSlug": "bsc-physics",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-biotechnology-self-financed",
+    "officialTitle": "B.Sc. Biotechnology",
+    "canonicalCourseSlug": "bsc-biotechnology",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-costume-design-and-fashion-self-financed",
+    "officialTitle": "B.Sc. Costume Design and Fashion",
+    "canonicalCourseSlug": "bachelor-fashion-design",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-com-with-computer-applications-self-financed",
+    "officialTitle": "B.Com. with Computer Applications",
+    "canonicalCourseSlug": "bcom",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-com-corporate-secretaryship-self-financed",
+    "officialTitle": "B.Com. Corporate Secretaryship",
+    "canonicalCourseSlug": "bcom",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-com-banking-and-insurance-self-financed",
+    "officialTitle": "B.Com. Banking and Insurance",
+    "canonicalCourseSlug": "bcom",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-com-professional-accounting-self-financed",
+    "officialTitle": "B.Com. Professional Accounting",
+    "canonicalCourseSlug": "bcom",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-com-honours-self-financed",
+    "officialTitle": "B.Com. Honours",
+    "canonicalCourseSlug": "bcom",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-a-tamil-aided",
+    "officialTitle": "M.A. Tamil",
+    "canonicalCourseSlug": "ma-languages-linguistics",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-a-english-aided",
+    "officialTitle": "M.A. English",
+    "canonicalCourseSlug": "ma-english-literature",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-a-history-aided",
+    "officialTitle": "M.A. History",
+    "canonicalCourseSlug": "ma-history",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-a-economics-aided",
+    "officialTitle": "M.A. Economics",
+    "canonicalCourseSlug": "master-economics",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-sc-mathematics-aided",
+    "officialTitle": "M.Sc. Mathematics",
+    "canonicalCourseSlug": "msc-mathematics",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-sc-zoology-aided",
+    "officialTitle": "M.Sc. Zoology",
+    "canonicalCourseSlug": "msc-biological-sciences",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-com-self-financed",
+    "officialTitle": "M.Com.",
+    "canonicalCourseSlug": "mcom",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-s-w-social-work-self-financed",
+    "officialTitle": "M.S.W. Social Work",
+    "canonicalCourseSlug": "master-social-work",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-sc-physics-self-financed",
+    "officialTitle": "M.Sc. Physics",
+    "canonicalCourseSlug": "msc-physics",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-sc-chemistry-self-financed",
+    "officialTitle": "M.Sc. Chemistry",
+    "canonicalCourseSlug": "msc-chemistry",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-sc-botany-self-financed",
+    "officialTitle": "M.Sc. Botany",
+    "canonicalCourseSlug": "msc-biological-sciences",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-sc-biotechnology-self-financed",
+    "officialTitle": "M.Sc. Biotechnology",
+    "canonicalCourseSlug": "msc-biotechnology",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-sc-computer-science-self-financed",
+    "officialTitle": "M.Sc. Computer Science",
+    "canonicalCourseSlug": "msc-computer-science",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-sc-information-technology-self-financed",
+    "officialTitle": "M.Sc. Information Technology",
+    "canonicalCourseSlug": "msc-information-technology",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-sc-psychology-self-financed",
+    "officialTitle": "M.Sc. Psychology",
+    "canonicalCourseSlug": "master-psychology",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "ph-d-tamil-research",
+    "officialTitle": "Ph.D. Tamil",
+    "canonicalCourseSlug": "phd-arts-humanities",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "ph-d-english-research",
+    "officialTitle": "Ph.D. English",
+    "canonicalCourseSlug": "phd-arts-humanities",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "ph-d-history-research",
+    "officialTitle": "Ph.D. History",
+    "canonicalCourseSlug": "phd-arts-humanities",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "ph-d-economics-research",
+    "officialTitle": "Ph.D. Economics",
+    "canonicalCourseSlug": "GAP:ph-d-economics",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "ph-d-physics-research",
+    "officialTitle": "Ph.D. Physics",
+    "canonicalCourseSlug": "phd-natural-sciences",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "ph-d-chemistry-research",
+    "officialTitle": "Ph.D. Chemistry",
+    "canonicalCourseSlug": "phd-natural-sciences",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "ph-d-botany-and-microbiology-research",
+    "officialTitle": "Ph.D. Botany and Microbiology",
+    "canonicalCourseSlug": "phd-natural-sciences",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "ph-d-zoology-research",
+    "officialTitle": "Ph.D. Zoology",
+    "canonicalCourseSlug": "phd-natural-sciences",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "pg-diploma-in-counselling-and-psychotherapy-self-financed",
+    "officialTitle": "PG Diploma in Counselling and Psychotherapy",
+    "canonicalCourseSlug": "GAP:pg-diploma-in-counselling-and-psychotherapy",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "pg-diploma-in-human-resource-development-self-financed",
+    "officialTitle": "PG Diploma in Human Resource Development",
+    "canonicalCourseSlug": "pg-diploma-human-resource-management",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "pg-diploma-in-geospatial-technology-self-financed",
+    "officialTitle": "PG Diploma in Geospatial Technology",
+    "canonicalCourseSlug": "GAP:pg-diploma-in-geospatial-technology",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "diploma-in-medical-laboratory-techniques-self-financed",
+    "officialTitle": "Diploma in Medical Laboratory Techniques",
+    "canonicalCourseSlug": "GAP:diploma-in-medical-laboratory-techniques",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "diploma-in-fitness-training-self-financed",
+    "officialTitle": "Diploma in Fitness Training",
+    "canonicalCourseSlug": "GAP:diploma-in-fitness-training",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "diploma-in-apparel-designing-self-financed",
+    "officialTitle": "Diploma in Apparel Designing",
+    "canonicalCourseSlug": "GAP:diploma-in-apparel-designing",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "diploma-in-digital-film-production-self-financed",
+    "officialTitle": "Diploma in Digital Film Production",
+    "canonicalCourseSlug": "GAP:diploma-in-digital-film-production",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "diploma-in-nutrition-and-dietetics-self-financed",
+    "officialTitle": "Diploma in Nutrition and Dietetics",
+    "canonicalCourseSlug": "GAP:diploma-in-nutrition-and-dietetics",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "certificate-course-in-economics-and-business-studies-self-financed",
+    "officialTitle": "Certificate Course in Economics and Business Studies",
+    "canonicalCourseSlug": "GAP:certificate-course-in-economics-and-business-studies",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "certificate-course-in-data-science-self-financed",
+    "officialTitle": "Certificate Course in Data Science",
+    "canonicalCourseSlug": "GAP:certificate-course-in-data-science",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "certificate-course-in-medical-instrumentation-self-financed",
+    "officialTitle": "Certificate Course in Medical Instrumentation",
+    "canonicalCourseSlug": "GAP:certificate-course-in-medical-instrumentation",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "certificate-course-in-aari-work-self-financed",
+    "officialTitle": "Certificate Course in Aari Work",
+    "canonicalCourseSlug": "GAP:certificate-course-in-aari-work",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "certificate-course-in-basic-fabric-painting-self-financed",
+    "officialTitle": "Certificate Course in Basic Fabric Painting",
+    "canonicalCourseSlug": "GAP:certificate-course-in-basic-fabric-painting",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "certificate-course-in-advanced-fabric-painting-self-financed",
+    "officialTitle": "Certificate Course in Advanced Fabric Painting",
+    "canonicalCourseSlug": "GAP:certificate-course-in-advanced-fabric-painting",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "certificate-course-in-dress-making-self-financed",
+    "officialTitle": "Certificate Course in Dress Making",
+    "canonicalCourseSlug": "GAP:certificate-course-in-dress-making",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "certificate-course-in-hand-embroidery-self-financed",
+    "officialTitle": "Certificate Course in Hand Embroidery",
+    "canonicalCourseSlug": "GAP:certificate-course-in-hand-embroidery",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "certificate-course-in-jute-handicrafts-self-financed",
+    "officialTitle": "Certificate Course in Jute Handicrafts",
+    "canonicalCourseSlug": "GAP:certificate-course-in-jute-handicrafts",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "certificate-course-in-machine-embroidery-self-financed",
+    "officialTitle": "Certificate Course in Machine Embroidery",
+    "canonicalCourseSlug": "GAP:certificate-course-in-machine-embroidery",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "certificate-course-in-french-language-skill-enhancement-self-financed",
+    "officialTitle": "Certificate Course in French Language Skill Enhancement",
+    "canonicalCourseSlug": "GAP:certificate-course-in-french-language-skill-enhancement",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "certificate-course-in-remote-sensing-and-gis-self-financed",
+    "officialTitle": "Certificate Course in Remote Sensing and GIS",
+    "canonicalCourseSlug": "GAP:certificate-course-in-remote-sensing-and-gis",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "certificate-course-in-energy-utilization-self-financed",
+    "officialTitle": "Certificate Course in Energy Utilization",
+    "canonicalCourseSlug": "GAP:certificate-course-in-energy-utilization",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "certificate-course-in-food-processing-technology-and-quality-control-self-financed",
+    "officialTitle": "Certificate Course in Food Processing Technology and Quality Control",
+    "canonicalCourseSlug": "GAP:certificate-course-in-food-processing-technology-and-quality-control",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "diploma-in-cultivating-emotional-wellbeing-counselling-centre-online",
+    "officialTitle": "Diploma in Cultivating Emotional Wellbeing",
+    "canonicalCourseSlug": "GAP:diploma-in-cultivating-emotional-wellbeing",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "certificate-in-building-emotional-awareness-online-diploma-component",
+    "officialTitle": "Certificate in Building Emotional Awareness",
+    "canonicalCourseSlug": "GAP:certificate-in-building-emotional-awareness",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "certificate-in-healthy-ways-of-managing-emotions-online-diploma-component",
+    "officialTitle": "Certificate in Healthy Ways of Managing Emotions",
+    "canonicalCourseSlug": "GAP:certificate-in-healthy-ways-of-managing-emotions",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "certificate-in-communicating-empathy-and-practising-generosity-online-diploma-component",
+    "officialTitle": "Certificate in Communicating Empathy and Practising Generosity",
+    "canonicalCourseSlug": "GAP:certificate-in-communicating-empathy-and-practising-generosity",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  }
+]

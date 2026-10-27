@@ -1,0 +1,1005 @@
+{
+  "checkedAt": "2026-10-27",
+  "includedProgrammeSlugs": [
+    "bit-b-tech-agricultural-engineering",
+    "bit-b-tech-artificial-intelligence-and-data-science",
+    "bit-b-tech-biotechnology",
+    "bit-b-e-computer-science-and-engineering",
+    "bit-b-e-electrical-and-electronics-engineering",
+    "bit-b-e-electronics-and-communication-engineering",
+    "bit-b-e-electronics-and-instrumentation-engineering",
+    "bit-b-tech-information-technology",
+    "bit-b-e-mechanical-engineering",
+    "bit-b-e-mechatronics-engineering"
+  ],
+  "includedProgrammeEvidence": [
+    {
+      "slug": "bit-b-tech-agricultural-engineering",
+      "officialTitle": "B.Tech. Agricultural Engineering",
+      "evidence": [
+        {
+          "publicField": "programme",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/programmes-offered/"
+        },
+        {
+          "publicField": "duration",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/R2026_Regulation-Updated-as-on-09.09.2026_Approved.pdf"
+        },
+        {
+          "publicField": "medium",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/R2026_Regulation-Updated-as-on-09.09.2026_Approved.pdf"
+        },
+        {
+          "publicField": "eligibility",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        },
+        {
+          "publicField": "admissions",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/admissions/"
+        },
+        {
+          "publicField": "intake",
+          "status": "omit",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/admissions/"
+        },
+        {
+          "publicField": "approval",
+          "status": "omit",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/approvals-circulars/"
+        },
+        {
+          "publicField": "fee",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/aicte-mandatory-disclosure.pdf"
+        },
+        {
+          "publicField": "audienceEligibility",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        },
+        {
+          "publicField": "admissions",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "bit-b-tech-artificial-intelligence-and-data-science",
+      "officialTitle": "B.Tech. Artificial Intelligence and Data Science",
+      "evidence": [
+        {
+          "publicField": "programme",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/programmes-offered/"
+        },
+        {
+          "publicField": "duration",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/R2026_Regulation-Updated-as-on-09.09.2026_Approved.pdf"
+        },
+        {
+          "publicField": "medium",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/R2026_Regulation-Updated-as-on-09.09.2026_Approved.pdf"
+        },
+        {
+          "publicField": "eligibility",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        },
+        {
+          "publicField": "admissions",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/admissions/"
+        },
+        {
+          "publicField": "intake",
+          "status": "omit",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/admissions/"
+        },
+        {
+          "publicField": "approval",
+          "status": "omit",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/approvals-circulars/"
+        },
+        {
+          "publicField": "fee",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/aicte-mandatory-disclosure.pdf"
+        },
+        {
+          "publicField": "audienceEligibility",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        },
+        {
+          "publicField": "admissions",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "bit-b-tech-biotechnology",
+      "officialTitle": "B.Tech. Biotechnology",
+      "evidence": [
+        {
+          "publicField": "programme",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/programmes-offered/"
+        },
+        {
+          "publicField": "duration",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/R2026_Regulation-Updated-as-on-09.09.2026_Approved.pdf"
+        },
+        {
+          "publicField": "medium",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/R2026_Regulation-Updated-as-on-09.09.2026_Approved.pdf"
+        },
+        {
+          "publicField": "eligibility",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        },
+        {
+          "publicField": "admissions",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/admissions/"
+        },
+        {
+          "publicField": "intake",
+          "status": "omit",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/admissions/"
+        },
+        {
+          "publicField": "approval",
+          "status": "omit",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/approvals-circulars/"
+        },
+        {
+          "publicField": "fee",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/aicte-mandatory-disclosure.pdf"
+        },
+        {
+          "publicField": "audienceEligibility",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        },
+        {
+          "publicField": "admissions",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "bit-b-e-computer-science-and-engineering",
+      "officialTitle": "B.E. Computer Science and Engineering",
+      "evidence": [
+        {
+          "publicField": "programme",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/programmes-offered/"
+        },
+        {
+          "publicField": "duration",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/R2026_Regulation-Updated-as-on-09.09.2026_Approved.pdf"
+        },
+        {
+          "publicField": "medium",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/R2026_Regulation-Updated-as-on-09.09.2026_Approved.pdf"
+        },
+        {
+          "publicField": "eligibility",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        },
+        {
+          "publicField": "admissions",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/admissions/"
+        },
+        {
+          "publicField": "intake",
+          "status": "omit",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/admissions/"
+        },
+        {
+          "publicField": "approval",
+          "status": "omit",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/approvals-circulars/"
+        },
+        {
+          "publicField": "fee",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/aicte-mandatory-disclosure.pdf"
+        },
+        {
+          "publicField": "audienceEligibility",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        },
+        {
+          "publicField": "admissions",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "bit-b-e-electrical-and-electronics-engineering",
+      "officialTitle": "B.E. Electrical and Electronics Engineering",
+      "evidence": [
+        {
+          "publicField": "programme",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/programmes-offered/"
+        },
+        {
+          "publicField": "duration",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/R2026_Regulation-Updated-as-on-09.09.2026_Approved.pdf"
+        },
+        {
+          "publicField": "medium",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/R2026_Regulation-Updated-as-on-09.09.2026_Approved.pdf"
+        },
+        {
+          "publicField": "eligibility",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        },
+        {
+          "publicField": "admissions",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/admissions/"
+        },
+        {
+          "publicField": "intake",
+          "status": "omit",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/admissions/"
+        },
+        {
+          "publicField": "approval",
+          "status": "omit",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/approvals-circulars/"
+        },
+        {
+          "publicField": "fee",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/aicte-mandatory-disclosure.pdf"
+        },
+        {
+          "publicField": "audienceEligibility",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        },
+        {
+          "publicField": "admissions",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "bit-b-e-electronics-and-communication-engineering",
+      "officialTitle": "B.E. Electronics and Communication Engineering",
+      "evidence": [
+        {
+          "publicField": "programme",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/programmes-offered/"
+        },
+        {
+          "publicField": "duration",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/R2026_Regulation-Updated-as-on-09.09.2026_Approved.pdf"
+        },
+        {
+          "publicField": "medium",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/R2026_Regulation-Updated-as-on-09.09.2026_Approved.pdf"
+        },
+        {
+          "publicField": "eligibility",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        },
+        {
+          "publicField": "admissions",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/admissions/"
+        },
+        {
+          "publicField": "intake",
+          "status": "omit",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/admissions/"
+        },
+        {
+          "publicField": "approval",
+          "status": "omit",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/approvals-circulars/"
+        },
+        {
+          "publicField": "fee",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/aicte-mandatory-disclosure.pdf"
+        },
+        {
+          "publicField": "audienceEligibility",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        },
+        {
+          "publicField": "admissions",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "bit-b-e-electronics-and-instrumentation-engineering",
+      "officialTitle": "B.E. Electronics and Instrumentation Engineering",
+      "evidence": [
+        {
+          "publicField": "programme",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/programmes-offered/"
+        },
+        {
+          "publicField": "duration",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/R2026_Regulation-Updated-as-on-09.09.2026_Approved.pdf"
+        },
+        {
+          "publicField": "medium",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/R2026_Regulation-Updated-as-on-09.09.2026_Approved.pdf"
+        },
+        {
+          "publicField": "eligibility",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        },
+        {
+          "publicField": "admissions",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/admissions/"
+        },
+        {
+          "publicField": "intake",
+          "status": "omit",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/admissions/"
+        },
+        {
+          "publicField": "approval",
+          "status": "omit",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/approvals-circulars/"
+        },
+        {
+          "publicField": "fee",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/aicte-mandatory-disclosure.pdf"
+        },
+        {
+          "publicField": "audienceEligibility",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        },
+        {
+          "publicField": "admissions",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "bit-b-tech-information-technology",
+      "officialTitle": "B.Tech. Information Technology",
+      "evidence": [
+        {
+          "publicField": "programme",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/programmes-offered/"
+        },
+        {
+          "publicField": "duration",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/R2026_Regulation-Updated-as-on-09.09.2026_Approved.pdf"
+        },
+        {
+          "publicField": "medium",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/R2026_Regulation-Updated-as-on-09.09.2026_Approved.pdf"
+        },
+        {
+          "publicField": "eligibility",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        },
+        {
+          "publicField": "admissions",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/admissions/"
+        },
+        {
+          "publicField": "intake",
+          "status": "omit",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/admissions/"
+        },
+        {
+          "publicField": "approval",
+          "status": "omit",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/approvals-circulars/"
+        },
+        {
+          "publicField": "fee",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/aicte-mandatory-disclosure.pdf"
+        },
+        {
+          "publicField": "audienceEligibility",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        },
+        {
+          "publicField": "admissions",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "bit-b-e-mechanical-engineering",
+      "officialTitle": "B.E. Mechanical Engineering",
+      "evidence": [
+        {
+          "publicField": "programme",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/programmes-offered/"
+        },
+        {
+          "publicField": "duration",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/R2026_Regulation-Updated-as-on-09.09.2026_Approved.pdf"
+        },
+        {
+          "publicField": "medium",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/R2026_Regulation-Updated-as-on-09.09.2026_Approved.pdf"
+        },
+        {
+          "publicField": "eligibility",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        },
+        {
+          "publicField": "admissions",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/admissions/"
+        },
+        {
+          "publicField": "intake",
+          "status": "omit",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/admissions/"
+        },
+        {
+          "publicField": "approval",
+          "status": "omit",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/approvals-circulars/"
+        },
+        {
+          "publicField": "fee",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/aicte-mandatory-disclosure.pdf"
+        },
+        {
+          "publicField": "audienceEligibility",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        },
+        {
+          "publicField": "admissions",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "bit-b-e-mechatronics-engineering",
+      "officialTitle": "B.E. Mechatronics Engineering",
+      "evidence": [
+        {
+          "publicField": "programme",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/programmes-offered/"
+        },
+        {
+          "publicField": "duration",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/R2026_Regulation-Updated-as-on-09.09.2026_Approved.pdf"
+        },
+        {
+          "publicField": "medium",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/R2026_Regulation-Updated-as-on-09.09.2026_Approved.pdf"
+        },
+        {
+          "publicField": "eligibility",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        },
+        {
+          "publicField": "admissions",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/admissions/"
+        },
+        {
+          "publicField": "intake",
+          "status": "omit",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/admissions/"
+        },
+        {
+          "publicField": "approval",
+          "status": "omit",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/approvals-circulars/"
+        },
+        {
+          "publicField": "fee",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://www.bitsathy.ac.in/wp-content/uploads/aicte-mandatory-disclosure.pdf"
+        },
+        {
+          "publicField": "audienceEligibility",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        },
+        {
+          "publicField": "admissions",
+          "status": "verified",
+          "sourceGrade": "A",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+        }
+      ]
+    }
+  ],
+  "excludedCurrentTaught": [
+    {
+      "slug": "bit-m-e-computer-science-and-engineering",
+      "officialTitle": "M.E. Computer Science and Engineering",
+      "missing": [
+        "Current AICTE own listing",
+        "Exact qualifying degree and entrance-route eligibility",
+        "International route assessment"
+      ]
+    },
+    {
+      "slug": "bit-m-e-industrial-safety-engineering",
+      "officialTitle": "M.E. Industrial Safety Engineering",
+      "missing": [
+        "Current AICTE own listing",
+        "Exact qualifying degree and entrance-route eligibility",
+        "International route assessment"
+      ]
+    },
+    {
+      "slug": "bit-m-e-vlsi-design",
+      "officialTitle": "M.E. VLSI Design",
+      "missing": [
+        "Current AICTE own listing",
+        "Exact qualifying degree and entrance-route eligibility",
+        "International route assessment"
+      ]
+    },
+    {
+      "slug": "bit-m-b-a-master-of-business-administration",
+      "officialTitle": "M.B.A. Master of Business Administration",
+      "missing": [
+        "Current AICTE own listing",
+        "Exact qualifying degree and entrance-route eligibility",
+        "International route assessment"
+      ]
+    }
+  ],
+  "heldDoctoralResearchAreas": [
+    {
+      "researchListingLabel": "Ph.D. Biotechnology",
+      "canonicalCourseCandidate": "phd-natural-sciences",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Chemistry",
+      "canonicalCourseCandidate": "phd-natural-sciences",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Civil Engineering",
+      "canonicalCourseCandidate": "phd-engineering",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Computer Science and Engineering",
+      "canonicalCourseCandidate": "phd-computer-science",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Electrical and Electronics Engineering",
+      "canonicalCourseCandidate": "phd-engineering",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Electronics and Communication Engineering",
+      "canonicalCourseCandidate": "phd-engineering",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Electronics and Instrumentation Engineering",
+      "canonicalCourseCandidate": "phd-engineering",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Information Technology",
+      "canonicalCourseCandidate": "phd-computer-science",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Mathematics",
+      "canonicalCourseCandidate": "phd-natural-sciences",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Mechanical Engineering",
+      "canonicalCourseCandidate": "phd-engineering",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Mechatronics",
+      "canonicalCourseCandidate": "phd-engineering",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Physics",
+      "canonicalCourseCandidate": "phd-natural-sciences",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Management Studies",
+      "canonicalCourseCandidate": "phd-business-management",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    }
+  ],
+  "courseDefinitionReferences": [
+    {
+      "slug": "be-btech-agricultural-engineering",
+      "source": "content-migrations/0375-india-dhanalakshmi-srinivasan-college-of-engineering-and-technology-fees/payload.json",
+      "scope": "Shared canonical course metadata only; no institution-specific facts copied."
+    },
+    {
+      "slug": "be-btech-data-science",
+      "source": "content-migrations/0396-india-e-s-college-of-engineering-and-technology/payload.json",
+      "scope": "Shared canonical course metadata only; no institution-specific facts copied."
+    },
+    {
+      "slug": "be-btech-biotechnology",
+      "source": "content-migrations/0384-india-sri-venkateswara-college-of-engineering-fees/payload.json",
+      "scope": "Shared canonical course metadata only; no institution-specific facts copied."
+    },
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "source": "content-migrations/0396-india-e-s-college-of-engineering-and-technology/payload.json",
+      "scope": "Shared canonical course metadata only; no institution-specific facts copied."
+    },
+    {
+      "slug": "be-btech-electrical-electronics-engineering",
+      "source": "content-migrations/0392-india-nellai-college-of-engineering-fees/payload.json",
+      "scope": "Shared canonical course metadata only; no institution-specific facts copied."
+    },
+    {
+      "slug": "be-btech-electronics-communication-engineering",
+      "source": "content-migrations/0396-india-e-s-college-of-engineering-and-technology/payload.json",
+      "scope": "Shared canonical course metadata only; no institution-specific facts copied."
+    },
+    {
+      "slug": "be-btech-instrumentation-engineering",
+      "source": "content-migrations/0368-india-anna-university-fees/payload.json",
+      "scope": "Shared canonical course metadata only; no institution-specific facts copied."
+    },
+    {
+      "slug": "be-btech-information-technology",
+      "source": "content-migrations/0396-india-e-s-college-of-engineering-and-technology/payload.json",
+      "scope": "Shared canonical course metadata only; no institution-specific facts copied."
+    },
+    {
+      "slug": "be-btech-mechanical-engineering",
+      "source": "content-migrations/0392-india-nellai-college-of-engineering-fees/payload.json",
+      "scope": "Shared canonical course metadata only; no institution-specific facts copied."
+    },
+    {
+      "slug": "be-btech-mechatronics-engineering",
+      "source": "content-migrations/0375-india-dhanalakshmi-srinivasan-college-of-engineering-and-technology-fees/payload.json",
+      "scope": "Shared canonical course metadata only; no institution-specific facts copied."
+    }
+  ],
+  "inventoryFile": "programme-inventory.csv",
+  "wholePortfolioCompleteForPublication": false
+}

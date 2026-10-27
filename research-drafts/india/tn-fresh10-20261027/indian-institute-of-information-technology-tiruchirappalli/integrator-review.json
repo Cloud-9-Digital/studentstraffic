@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-10-27",
+  "status": "accepted_for_research_delivery_framework_subset_pass",
+  "completeExecutableMigration": false,
+  "programmeInventoryRows": 15,
+  "note": "Actual isolated migration reader and full evidence framework pass for the named subset. This is not a reserved executable migration or publication approval; full-scope unknowns, taxonomy, media and exact category/cycle review remain binding.",
+  "frameworkSubset": {
+    "passed": true,
+    "programmeCount": 4,
+    "input": "structurally-complete-subset.json",
+    "inputSha256": "c9d21f806b8b32ce2928ee7ddd842a0cb61a207776d57a3752dd24e0781dfd8b",
+    "expiredEvidence": 0,
+    "independentlyRerun": true
+  },
+  "previousSelectedGateFailures": "Resolved by exact source-backed evidence field/slug crosswalk. Full draft remains intentionally incomplete and held."
+}

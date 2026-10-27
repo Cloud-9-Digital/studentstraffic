@@ -1,0 +1,100 @@
+{
+  "counts": {
+    "inventoryRows": 38,
+    "standaloneAwardCandidates": 24,
+    "heldAwardCandidates": 24,
+    "excludedNonstandaloneRows": 13,
+    "historicalHeldRows": 1,
+    "publishReadyOfferings": 0,
+    "aggregatorOnlyHeldRows": 0,
+    "internationalRouteConfirmedCandidates": 12,
+    "structurallyCompleteCandidates": 12,
+    "candidatesWithUnresolvedRequiredFields": 12
+  },
+  "csvRequiredColumns": [
+    "university_slug",
+    "programme_official_title",
+    "level",
+    "discipline",
+    "duration",
+    "campus",
+    "delivery_mode",
+    "intl_status",
+    "intl_evidence_url",
+    "official_source_url",
+    "other_sources",
+    "already_on_site",
+    "existing_offering_slug",
+    "canonical_course_match",
+    "notes"
+  ],
+  "allRowsHaveOfficialSource": true,
+  "unknownTaxonomySlugs": [],
+  "narrativeLengths": {
+    "summary": 350,
+    "campusLifestyle": 314,
+    "cityProfile": 298,
+    "practicalExposure": 408,
+    "hostelOverview": 302,
+    "dietarySupport": 233,
+    "safetyOverview": 325,
+    "studentSupport": 242
+  },
+  "narrativeOverBudget": {},
+  "faqCount": 11,
+  "noLiveURLClaim": true,
+  "noDBOrMediaWrites": true,
+  "canonicalSchemaResult": "FAIL",
+  "publicationGate": "BLOCKED",
+  "heldReasons": [
+    "Twelve engineering awards now have current TNEA academic-stream qualification/document rules and narrowly scoped OCI/PIO/refugee eligibility, not global availability.",
+    "B.Arch., B.Des., integrated MSc, postgraduate and research routes still require the missing current eligibility/document/audience facts identified in schema-validation.json.",
+    "Current engineering-PG exam is CEETA-PG, not the legacy TANCET wording; exact branch qualification matrix remains to be captured.",
+    "Programme-specific annual tuition remains on request after official/secondary review; no aggregate range annualized.",
+    "Research standard duration, exact discipline award mapping and current supervisor seats remain unresolved.",
+    "Programme directory and 2026–27 approval-file intake differences remain excluded from public seat claims.",
+    "Logo/cover candidates inspected; rights, Cloudinary upload and final rendered page review remain incomplete."
+  ],
+  "schemaIssueCount": 38,
+  "localArtifactChecks": {
+    "validJsonFiles": true,
+    "csvRowCountMatches": true,
+    "sourceManifestFiles": 118,
+    "allRowsInternationalStatusAllowed": true,
+    "allNormalTaxonomySlugsVerified": true,
+    "mandatoryNarrativeCapsPass": true,
+    "latestLiveApiStatus": 404,
+    "noExistingMigrationIdentity": true,
+    "noForbiddenPublicMediaURLs": true,
+    "csvValuesMatchInventoryJson": true,
+    "sourceManifestHashesPass": true,
+    "profileAndProgrammeCopiesMatch": true,
+    "evidenceCopiesMatch": true
+  },
+  "researchDeliveryBlocked": false,
+  "structurallyCompleteSubset": {
+    "schemaResult": "PASS",
+    "issueCount": 0,
+    "programmeCount": 12,
+    "courseCount": 10,
+    "publicationReady": false
+  },
+  "summaryWordCount": 46,
+  "remainingRequiredFields": {
+    "audienceEligibility": 12,
+    "admissionsContent.eligibility": 10,
+    "admissionsContent.documentsRequired": 12,
+    "canonicalCourseSlug": 2,
+    "durationYears": 2
+  },
+  "coursesMissingFromFullDraft": [],
+  "coursesMissingNote": "Held doctoral/research candidates may reference existing/proposed families without complete course payload metadata because a standard duration remains unresolved. No such missing course remains in the separately validated subset.",
+  "actualEvidenceFramework": {
+    "result": "PASS",
+    "validator": "scripts/lib/content-migrations.ts:readContentMigrations",
+    "input": "structurally-complete-subset.json",
+    "programmeCount": 12,
+    "expiredEvidence": 0,
+    "publicationReady": false
+  }
+}

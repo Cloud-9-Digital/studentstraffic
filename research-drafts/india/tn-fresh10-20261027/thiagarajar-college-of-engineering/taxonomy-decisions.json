@@ -1,0 +1,276 @@
+{
+  "checkedAt": "2026-10-27",
+  "registry": "lib/data/program-taxonomy.ts",
+  "registrySha256": "0491f115d50e8cffa69d4322553c1aa00d2783e6fa73f472c9fdbd7b32a742fd",
+  "decisions": [
+    {
+      "officialTitle": "B.E. Civil Engineering",
+      "canonicalCourseMatch": "be-btech-civil-engineering",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Open only to the narrow OCI/PIO and refugee categories expressly permitted by TNEA 2026, subject to nativity/other restrictions; not unrestricted foreign-national admission. Academic-stream 45%/40% PCM rules and documentation are captured. Exact fee remains on request after official/secondary review."
+    },
+    {
+      "officialTitle": "B.E. Computer Science and Engineering",
+      "canonicalCourseMatch": "be-btech-computer-science-engineering",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Open only to the narrow OCI/PIO and refugee categories expressly permitted by TNEA 2026, subject to nativity/other restrictions; not unrestricted foreign-national admission. Academic-stream 45%/40% PCM rules and documentation are captured. Exact fee remains on request after official/secondary review."
+    },
+    {
+      "officialTitle": "B.E. Computer Science and Engineering (Artificial Intelligence and Machine Learning)",
+      "canonicalCourseMatch": "be-btech-artificial-intelligence-machine-learning",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Open only to the narrow OCI/PIO and refugee categories expressly permitted by TNEA 2026, subject to nativity/other restrictions; not unrestricted foreign-national admission. Academic-stream 45%/40% PCM rules and documentation are captured. Exact fee remains on request after official/secondary review."
+    },
+    {
+      "officialTitle": "B.E. Electrical and Electronics Engineering",
+      "canonicalCourseMatch": "be-btech-electrical-electronics-engineering",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Open only to the narrow OCI/PIO and refugee categories expressly permitted by TNEA 2026, subject to nativity/other restrictions; not unrestricted foreign-national admission. Academic-stream 45%/40% PCM rules and documentation are captured. Exact fee remains on request after official/secondary review."
+    },
+    {
+      "officialTitle": "B.E. Electronics and Communication Engineering",
+      "canonicalCourseMatch": "be-btech-electronics-communication-engineering",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Open only to the narrow OCI/PIO and refugee categories expressly permitted by TNEA 2026, subject to nativity/other restrictions; not unrestricted foreign-national admission. Academic-stream 45%/40% PCM rules and documentation are captured. Exact fee remains on request after official/secondary review."
+    },
+    {
+      "officialTitle": "B.E. Mechanical Engineering",
+      "canonicalCourseMatch": "be-btech-mechanical-engineering",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Open only to the narrow OCI/PIO and refugee categories expressly permitted by TNEA 2026, subject to nativity/other restrictions; not unrestricted foreign-national admission. Academic-stream 45%/40% PCM rules and documentation are captured. Exact fee remains on request after official/secondary review."
+    },
+    {
+      "officialTitle": "B.E. Mechatronics",
+      "canonicalCourseMatch": "be-btech-mechatronics-engineering",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Open only to the narrow OCI/PIO and refugee categories expressly permitted by TNEA 2026, subject to nativity/other restrictions; not unrestricted foreign-national admission. Academic-stream 45%/40% PCM rules and documentation are captured. Exact fee remains on request after official/secondary review."
+    },
+    {
+      "officialTitle": "B.Tech. Computer Science and Business Systems",
+      "canonicalCourseMatch": "be-btech-computer-science-engineering",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Open only to the narrow OCI/PIO and refugee categories expressly permitted by TNEA 2026, subject to nativity/other restrictions; not unrestricted foreign-national admission. Academic-stream 45%/40% PCM rules and documentation are captured. Exact fee remains on request after official/secondary review."
+    },
+    {
+      "officialTitle": "B.Tech. Information Technology",
+      "canonicalCourseMatch": "be-btech-information-technology",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Open only to the narrow OCI/PIO and refugee categories expressly permitted by TNEA 2026, subject to nativity/other restrictions; not unrestricted foreign-national admission. Academic-stream 45%/40% PCM rules and documentation are captured. Exact fee remains on request after official/secondary review."
+    },
+    {
+      "officialTitle": "B.E. Electrical and Computer Engineering",
+      "canonicalCourseMatch": "be-btech-electrical-computer-engineering",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Open only to the narrow OCI/PIO and refugee categories expressly permitted by TNEA 2026, subject to nativity/other restrictions; not unrestricted foreign-national admission. Academic-stream 45%/40% PCM rules and documentation are captured. Exact fee remains on request after official/secondary review."
+    },
+    {
+      "officialTitle": "B.Tech. Fashion Technology",
+      "canonicalCourseMatch": "be-btech-fashion-technology",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Open only to the narrow OCI/PIO and refugee categories expressly permitted by TNEA 2026, subject to nativity/other restrictions; not unrestricted foreign-national admission. Academic-stream 45%/40% PCM rules and documentation are captured. Exact fee remains on request after official/secondary review."
+    },
+    {
+      "officialTitle": "B.Tech. Electronics Engineering (VLSI Design & Technology)",
+      "canonicalCourseMatch": "be-btech-electronics-communication-engineering",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Open only to the narrow OCI/PIO and refugee categories expressly permitted by TNEA 2026, subject to nativity/other restrictions; not unrestricted foreign-national admission. Academic-stream 45%/40% PCM rules and documentation are captured. Exact fee remains on request after official/secondary review."
+    },
+    {
+      "officialTitle": "B.Arch. Architecture",
+      "canonicalCourseMatch": "barch",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Current official programme directory. International route, current programme-specific fee, qualification thresholds and current counselling rules remain to be confirmed. Funding/quota variants must not be collapsed into a single assumed fee."
+    },
+    {
+      "officialTitle": "B.Des. (Interior Design)",
+      "canonicalCourseMatch": "bdes",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Current official programme directory. International route, current programme-specific fee, qualification thresholds and current counselling rules remain to be confirmed. Funding/quota variants must not be collapsed into a single assumed fee."
+    },
+    {
+      "officialTitle": "M.Sc. (Data Science) (5 Years)",
+      "canonicalCourseMatch": "integrated-msc-data-science",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Current official programme directory. International route, current programme-specific fee, qualification thresholds and current counselling rules remain to be confirmed. Funding/quota variants must not be collapsed into a single assumed fee."
+    },
+    {
+      "officialTitle": "M.E. Structural Engineering",
+      "canonicalCourseMatch": "me-mtech-civil-engineering",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Current official programme directory. International route, current programme-specific fee, qualification thresholds and current counselling rules remain to be confirmed. Funding/quota variants must not be collapsed into a single assumed fee."
+    },
+    {
+      "officialTitle": "M.E. Construction Engineering and Management",
+      "canonicalCourseMatch": "me-mtech-civil-engineering",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Current official programme directory. International route, current programme-specific fee, qualification thresholds and current counselling rules remain to be confirmed. Funding/quota variants must not be collapsed into a single assumed fee."
+    },
+    {
+      "officialTitle": "M.E. Communication Systems",
+      "canonicalCourseMatch": "me-mtech-electronics-communication-engineering",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Current official programme directory. International route, current programme-specific fee, qualification thresholds and current counselling rules remain to be confirmed. Funding/quota variants must not be collapsed into a single assumed fee."
+    },
+    {
+      "officialTitle": "M.E. Computer Science and Engineering",
+      "canonicalCourseMatch": "me-mtech-computer-science-engineering",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Current official programme directory. International route, current programme-specific fee, qualification thresholds and current counselling rules remain to be confirmed. Funding/quota variants must not be collapsed into a single assumed fee."
+    },
+    {
+      "officialTitle": "M.E. Embedded System Technologies",
+      "canonicalCourseMatch": "me-mtech-electronics-communication-engineering",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Current official programme directory. International route, current programme-specific fee, qualification thresholds and current counselling rules remain to be confirmed. Funding/quota variants must not be collapsed into a single assumed fee."
+    },
+    {
+      "officialTitle": "M.C.A.",
+      "canonicalCourseMatch": "mca",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Current official programme directory. International route, current programme-specific fee, qualification thresholds and current counselling rules remain to be confirmed. Funding/quota variants must not be collapsed into a single assumed fee."
+    },
+    {
+      "officialTitle": "M.Plan (Urban Planning)",
+      "canonicalCourseMatch": "master-urban-regional-planning",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Current official programme directory. International route, current programme-specific fee, qualification thresholds and current counselling rules remain to be confirmed. Funding/quota variants must not be collapsed into a single assumed fee."
+    },
+    {
+      "officialTitle": "M.S. (By Research)",
+      "canonicalCourseMatch": "GAP:research-masters-award",
+      "rowKind": "standalone_award",
+      "decision": "gap-held",
+      "rationale": "Umbrella research award linked to Anna University; centre recognition does not establish current seats or exact discipline award name."
+    },
+    {
+      "officialTitle": "Ph.D.",
+      "canonicalCourseMatch": "GAP:discipline-specific-phd-selection",
+      "rowKind": "standalone_award",
+      "decision": "gap-held",
+      "rationale": "Umbrella research award; map each confirmed discipline only after current Anna University call and supervisor availability are checked."
+    },
+    {
+      "officialTitle": "Research centre: Civil Engineering",
+      "canonicalCourseMatch": "",
+      "rowKind": "research_area",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Recognized research centre named on admissions page; not a separately confirmed live offering. Mathematics and English are one page label, not collapsed into one discipline."
+    },
+    {
+      "officialTitle": "Research centre: Electrical and Electronics Engineering",
+      "canonicalCourseMatch": "",
+      "rowKind": "research_area",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Recognized research centre named on admissions page; not a separately confirmed live offering. Mathematics and English are one page label, not collapsed into one discipline."
+    },
+    {
+      "officialTitle": "Research centre: Electronics and Communication Engineering",
+      "canonicalCourseMatch": "",
+      "rowKind": "research_area",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Recognized research centre named on admissions page; not a separately confirmed live offering. Mathematics and English are one page label, not collapsed into one discipline."
+    },
+    {
+      "officialTitle": "Research centre: Computer Science and Engineering",
+      "canonicalCourseMatch": "",
+      "rowKind": "research_area",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Recognized research centre named on admissions page; not a separately confirmed live offering. Mathematics and English are one page label, not collapsed into one discipline."
+    },
+    {
+      "officialTitle": "Research centre: Mechanical Engineering",
+      "canonicalCourseMatch": "",
+      "rowKind": "research_area",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Recognized research centre named on admissions page; not a separately confirmed live offering. Mathematics and English are one page label, not collapsed into one discipline."
+    },
+    {
+      "officialTitle": "Research centre: Information Technology",
+      "canonicalCourseMatch": "",
+      "rowKind": "research_area",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Recognized research centre named on admissions page; not a separately confirmed live offering. Mathematics and English are one page label, not collapsed into one discipline."
+    },
+    {
+      "officialTitle": "Research centre: Architecture",
+      "canonicalCourseMatch": "",
+      "rowKind": "research_area",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Recognized research centre named on admissions page; not a separately confirmed live offering. Mathematics and English are one page label, not collapsed into one discipline."
+    },
+    {
+      "officialTitle": "Research centre: Mechatronics",
+      "canonicalCourseMatch": "",
+      "rowKind": "research_area",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Recognized research centre named on admissions page; not a separately confirmed live offering. Mathematics and English are one page label, not collapsed into one discipline."
+    },
+    {
+      "officialTitle": "Research centre: Physics",
+      "canonicalCourseMatch": "",
+      "rowKind": "research_area",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Recognized research centre named on admissions page; not a separately confirmed live offering. Mathematics and English are one page label, not collapsed into one discipline."
+    },
+    {
+      "officialTitle": "Research centre: Mathematics and English",
+      "canonicalCourseMatch": "",
+      "rowKind": "research_area",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Recognized research centre named on admissions page; not a separately confirmed live offering. Mathematics and English are one page label, not collapsed into one discipline."
+    },
+    {
+      "officialTitle": "Research centre: Chemistry",
+      "canonicalCourseMatch": "",
+      "rowKind": "research_area",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Recognized research centre named on admissions page; not a separately confirmed live offering. Mathematics and English are one page label, not collapsed into one discipline."
+    },
+    {
+      "officialTitle": "Research centre: Computer Applications",
+      "canonicalCourseMatch": "",
+      "rowKind": "research_area",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Recognized research centre named on admissions page; not a separately confirmed live offering. Mathematics and English are one page label, not collapsed into one discipline."
+    },
+    {
+      "officialTitle": "M.Arch.",
+      "canonicalCourseMatch": "",
+      "rowKind": "historical",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Old disclosure reports zero intake; absent current programme list. Hold as historical, do not publish."
+    },
+    {
+      "officialTitle": "QIP Ph.D. research area: Computer Science and Business Systems",
+      "canonicalCourseMatch": "",
+      "rowKind": "research_area",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Additional area listed for AICTE QIP sponsored faculty route, not a standalone confirmed current programme seat."
+    }
+  ],
+  "sharedRegistryChanged": false,
+  "completionNotes": "Existing taught-course parents verified; research umbrella titles remain unexpanded pending exact discipline awards.",
+  "metadataIntegrationInstruction": "Existing canonical course objects are schema-complete draft proposals, not authority to overwrite richer published global course metadata. Reuse the current canonical records where available; review new definitions separately."
+}

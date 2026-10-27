@@ -1,0 +1,68 @@
+{
+  "btech": {
+    "status": "reported_native_quote",
+    "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/B.Tech.%20Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%201%20sem.pdf",
+    "academicPeriod": "2026–27 odd semester, first semester",
+    "currency": "INR",
+    "tuition": 115200,
+    "oneTimeCharges": 32400,
+    "additionalInstituteCharges": 14000,
+    "hostelAndMess": 45600,
+    "grandTotal": 207200,
+    "annualAmount": null,
+    "notes": "One-time charges include refundable deposits; do not multiply semester 1 by two."
+  },
+  "dasa": {
+    "status": "reported_native_quotes",
+    "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/IIITT-Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%20DASA.pdf",
+    "academicPeriod": "2026–27 first odd semester",
+    "categories": [
+      {
+        "category": "CIWG",
+        "currency": "INR",
+        "tuition": 115200
+      },
+      {
+        "category": "Non-SAARC",
+        "currency": "USD",
+        "tuition": 4000
+      },
+      {
+        "category": "SAARC",
+        "currency": "USD",
+        "tuition": 2000
+      }
+    ],
+    "additionalCharges": {
+      "currency": "INR",
+      "amount": 92000
+    },
+    "annualAmount": null,
+    "notes": "Preserve source categories and mixed currencies; no annual conversion or assumed exchange rate."
+  },
+  "mtech": {
+    "status": "reported_native_quote",
+    "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/M.Tech%20Fee%20Structure_July_2026.pdf",
+    "academicPeriod": "July 2026 first semester",
+    "currency": "INR",
+    "tuition": 42000,
+    "oneTimeCharges": 31800,
+    "additionalInstituteCharges": 16200,
+    "hostelAndMess": 45600,
+    "grandTotal": 135600,
+    "annualAmount": null
+  },
+  "phd": {
+    "status": "annual_on_request_after_review",
+    "annualAmount": null,
+    "reason": "Official research sources and full secondary fee pages reviewed. The secondary two-course three-year fee estimate is not discipline/category-specific and does not establish an annual amount; no zero tuition inferred."
+  },
+  "completionReview": {
+    "checkedAt": "2026-10-27",
+    "annualOnRequestDecision": "Current annual tuition is left on request where only semester/full-course combined amounts, ambiguous categories or unsound secondary estimates exist; supported native quotes are now in proposed-payload admissionsContent.reportedFeeQuote.",
+    "secondarySources": [
+      "https://www.shiksha.com/college/iiit-trichy-indian-institute-of-information-technology-tiruchirappalli-53872/fees"
+    ],
+    "rejectedInferences": "No annualization, no unsupported zero tuition, no aggregate fee range applied to an individual programme."
+  }
+}

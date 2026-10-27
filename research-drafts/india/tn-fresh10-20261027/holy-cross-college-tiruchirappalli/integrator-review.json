@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-10-27",
+  "status": "accepted_for_research_delivery_only",
+  "programmeInventoryRows": 88,
+  "completeExecutableMigration": false,
+  "actualFrameworkIndependentlyRerun": true,
+  "framework": {
+    "validator": "scripts/lib/content-migrations.ts::readContentMigrations",
+    "fullSpecimenPassed": false,
+    "programmePassCount": 0,
+    "programmeFailCount": 47,
+    "expiredEvidenceCount": null,
+    "report": "framework-validation.json"
+  },
+  "offlineResearchInvariantsPassed": true,
+  "schemaShapePassed": false,
+  "editorialAndMediaGates": [
+    {
+      "status": "pending",
+      "gate": "International-audience eligibility remains unknown outside the limited foreign-equivalence wording for BASLP; every row carries a publication hold."
+    },
+    {
+      "status": "pending",
+      "gate": "Current regulator sources for audiology, rehabilitation and special education; professional scope for Physician Assistant; exact ambiguous PG and shift criteria."
+    },
+    {
+      "status": "unavailable",
+      "gate": "No usable current programme-specific tuition schedule. Official and secondary fee checks do not support annual tuition values."
+    },
+    {
+      "status": "uncertain",
+      "gate": "MSc Visual/Media Communication titles, MSc Computer Science qualification variants, PGDBI/PGDPM shifts and older-only PGDMET/BCom CA Shift I need reconciliation."
+    },
+    {
+      "status": "pending",
+      "gate": "Serial editorial review, field evidence review and current original68/ledger/API freshness recheck before reservation."
+    },
+    {
+      "status": "pending",
+      "gate": "Media rights, logo/cover final suitability, authorized Cloudinary upload and public asset verification."
+    },
+    {
+      "status": "pending",
+      "gate": "Serial editorial/inventory completeness, audience and media review remain required; research-only framework success is not publish approval."
+    },
+    {
+      "status": "missing-evidence",
+      "gate": "Named required-document checklist absent for all 47 review fragments. Current captured procedure is UG-only; 16 PG fragments also lack an exact current application procedure. Unsupported document/PG-process arrays have been emptied, intentionally failing schema completeness."
+    }
+  ],
+  "rawSourceDelivery": "Full captured pages, PDFs and image binaries remain local and are excluded from Git. Source register and admissions-provenance preserve official URLs, receipts and exact locators.",
+  "queue": "Integrator claim is local only, not a shared remote reservation.",
+  "published": false
+}

@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-10-27",
+  "command": "node --import tsx research-drafts/india/tn-fresh10-20261027/lady-doak-college-madurai/validate-offline.cjs",
+  "offlineResearchChecksPassed": true,
+  "schemaShapePassed": true,
+  "issues": [],
+  "counts": {
+    "namedInventoryRows": 75,
+    "degreeAndResearchRows": 49,
+    "shortCourseAndAddonRows": 26,
+    "doctoralRows": 8,
+    "schemaFragmentRows": 26,
+    "programmeDraftEligibleRows": 26,
+    "programmeHeldRows": 49,
+    "publishReadyRows": 0,
+    "taxonomyGapRows": 26,
+    "levels": {
+      "bachelors": 26,
+      "masters": 15,
+      "doctoral": 8,
+      "pg-diploma": 3,
+      "diploma": 6,
+      "certificate": 17
+    }
+  },
+  "scopedMigrationValidation": "not_run: no numbered migration or publishable payload",
+  "actualFrameworkReader": {
+    "passed": 26,
+    "failed": 0,
+    "total": 26,
+    "fullSpecimenPassed": true
+  },
+  "publicationReadiness": "blocked: per-row and university gates in handoff.json",
+  "networkCalls": 0,
+  "databaseCalls": 0
+}

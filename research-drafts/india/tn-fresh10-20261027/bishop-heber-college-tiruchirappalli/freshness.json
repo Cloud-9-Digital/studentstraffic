@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-10-27",
+  "status": "fresh-parent-claimed",
+  "ledgerMatches": [
+    {
+      "university_slug": "bishop-heber-college-tiruchirappalli",
+      "university_name": "Bishop Heber College Tiruchirappalli",
+      "country_slug": "india",
+      "status": "researching",
+      "owner_agent_id": "research_tn_batch_c",
+      "claimed_at": "2026-10-27T09:52:28.280Z",
+      "published_at": "",
+      "programme_count": "",
+      "payload_file": "",
+      "published_url": "",
+      "notes": "Parallel offline research authorized 2026-10-27. Local checkout claim only; fresh identity checked against remote main and live public API. Original 68 excluded. Publication remains credential-blocked.",
+      "batch_id": "tn-fresh10-20261027",
+      "priority": "high",
+      "migration_id": ""
+    }
+  ],
+  "original68Matches": [],
+  "migrationMatches": [],
+  "apiChecks": [
+    {
+      "url": "https://www.studentstraffic.com/api/mobile/v1/universities/bishop-heber-college-tiruchirappalli",
+      "status": 404,
+      "body": "{\"error\":{\"code\":\"not_found\",\"message\":\"University not found.\"}}"
+    },
+    {
+      "url": "https://www.studentstraffic.com/api/mobile/v1/universities/bishop-heber-college",
+      "status": 404,
+      "body": "{\"error\":{\"code\":\"not_found\",\"message\":\"University not found.\"}}"
+    }
+  ],
+  "ledgerSha256": "6719756eb7bea9e87b3cf4ef98483e2cdda1eee1449d9634106965a538cd235e",
+  "originalScopeRows": 68,
+  "claimOwnershipNote": "Parent added this research_tn_batch_c claim after initial duplicate checks. Researcher did not edit shared queue."
+}

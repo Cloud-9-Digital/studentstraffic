@@ -1,0 +1,97 @@
+{
+  "institution": "Bishop Heber College",
+  "slug": "bishop-heber-college-tiruchirappalli",
+  "checkedAt": "2026-10-27",
+  "status": "research-packet-held-for-integration",
+  "counts": {
+    "namedInventoryRows": 121,
+    "degreeAndResearchRows": 82,
+    "shortCourseAndAddonRows": 39,
+    "doctoralRows": 17,
+    "schemaFragmentRows": 36,
+    "programmeDraftEligibleRows": 0,
+    "programmeHeldRows": 121,
+    "publishReadyRows": 0,
+    "taxonomyGapRows": 43,
+    "levels": {
+      "bachelors": 38,
+      "integrated-masters": 1,
+      "masters": 26,
+      "doctoral": 17,
+      "diploma": 12,
+      "pg-diploma": 8,
+      "certificate": 14,
+      "addon": 5
+    }
+  },
+  "inventoryCoverage": "All named awards in reviewed current official catalogue/prospectus union, including individual PhD routes, funding/shift variants and source-conflict rows. Unenumerated aggregate claims are reported separately, never invented as courses.",
+  "schemaSpecimenWarning": "DO-NOT-PUBLISH review artifact. Lady Doak now passes the actual framework reader for 26 UG fragments; Bishop Heber retains eligibility failures and Holy Cross retains deliberate missing-document/schema failures. This is neither an executable migration nor publication approval.",
+  "publishReady": false,
+  "ledger": "Parent owns and has made local claims; this researcher did not edit shared ledger. No pre-existing duplicate found.",
+  "gates": [
+    {
+      "status": "pending",
+      "gate": "Programme-specific UG subject criteria; general current 10+2 eligibility is not enough to clear the 36 review fragments."
+    },
+    {
+      "status": "pending",
+      "gate": "All 26 PG entries need exact current entry requirements and independently confirmed duration; library award labels conflict."
+    },
+    {
+      "status": "uncertain",
+      "gate": "Self-financed Botany/Zoology appear in directory but not current portal/fee table; proposed BBA Tourism and Hotel Management remains subject to approval."
+    },
+    {
+      "status": "blocked_http_403",
+      "gate": "Direct official-site PDF/media downloads returned HTTP 403; readable official web retrieval retained. This is a website response, not permission approval."
+    },
+    {
+      "status": "pending",
+      "gate": "Serial editorial review, field evidence review and current original68/ledger/API freshness recheck before reservation."
+    },
+    {
+      "status": "pending",
+      "gate": "Media rights, logo/cover final suitability, authorized Cloudinary upload and public asset verification."
+    },
+    {
+      "status": "pending",
+      "gate": "Serial editorial/inventory completeness, audience and media review remain required; research-only framework success is not publish approval."
+    }
+  ],
+  "artifacts": [
+    "programme-inventory.csv",
+    "programme-records.json",
+    "held-programmes.json",
+    "taxonomy-mappings.json",
+    "taxonomy-proposals.json",
+    "proposed-content.json",
+    "schema-review-specimen.DO-NOT-PUBLISH.json",
+    "evidence.json",
+    "freshness.json",
+    "media-candidates.json",
+    "source-register.json",
+    "validate-offline.cjs",
+    "validation.json",
+    "schema-validation.json",
+    "admissions-provenance.json",
+    "framework-validation.before.json",
+    "framework-validation.json",
+    "validate-framework.cjs"
+  ],
+  "inventoryExclusions": [
+    "Repeated integrated-programme listing under UG and PG is deduplicated as one full award; lateral entry is a separately held admission route.",
+    "General student clubs, workshops, exam-preparation modules, curriculum components and unenumerated value-added-course totals are not invented as standalone admitting qualifications. Named supplementary courses are included where sufficiently identifiable."
+  ],
+  "actualFrameworkValidation": {
+    "validator": "scripts/lib/content-migrations.ts::readContentMigrations",
+    "passed": 0,
+    "failed": 36,
+    "total": 36,
+    "fullSpecimenPassed": false,
+    "beforePassed": 0,
+    "beforeFailed": 36,
+    "report": "framework-validation.json",
+    "scope": "Actual readContentMigrations reader against an isolated disposable research fixture; no content-migrations reservation or production action."
+  },
+  "operationalContext": "GitHub-only serial integration is the requested delivery path. Credential availability is not a research-packet blocker. No Vercel environment, production DB or media-upload operation was attempted."
+}

@@ -1,0 +1,20 @@
+{
+  "remoteHead": "d541a55c38e4fc68c3d1c221b6dad4807e3abfdf",
+  "remoteRows": 943,
+  "localRows": 953,
+  "freshBatchSlugs": [
+    "indian-institute-of-management-tiruchirappalli",
+    "indian-institute-of-information-technology-tiruchirappalli",
+    "great-lakes-institute-of-management-chennai",
+    "thiagarajar-college-of-engineering",
+    "bannari-amman-institute-of-technology",
+    "sona-college-of-technology",
+    "st-josephs-college-tiruchirappalli",
+    "bishop-heber-college-tiruchirappalli",
+    "holy-cross-college-tiruchirappalli",
+    "lady-doak-college-madurai"
+  ],
+  "remoteSlugCollisions": [],
+  "changedExistingRemoteRows": [],
+  "localOnlyClaims": true
+}

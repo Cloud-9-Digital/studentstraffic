@@ -1,0 +1,32 @@
+[
+  {
+    "role": "logo",
+    "source": {
+      "url": "https://bhc.edu.in/bhc-logo.png",
+      "error": "HTTP Error 403: Forbidden",
+      "checkedAt": "2026-10-27"
+    },
+    "localFile": null,
+    "visuallyReviewed": false,
+    "visualNotes": "No local image successfully downloaded; no visual-review claim.",
+    "rightsStatus": "Official first-party source identified; reuse authorization/terms not independently established.",
+    "uploaded": false,
+    "cloudinaryUrl": null,
+    "gate": "source retrieval unresolved"
+  },
+  {
+    "role": "cover",
+    "source": {
+      "url": "https://bhc.edu.in/assets/banners/campus.webp",
+      "error": "HTTP Error 403: Forbidden",
+      "checkedAt": "2026-10-27"
+    },
+    "localFile": null,
+    "visuallyReviewed": false,
+    "visualNotes": "No local image successfully downloaded; no visual-review claim.",
+    "rightsStatus": "Official first-party source identified; reuse authorization/terms not independently established.",
+    "uploaded": false,
+    "cloudinaryUrl": null,
+    "gate": "source retrieval unresolved"
+  }
+]

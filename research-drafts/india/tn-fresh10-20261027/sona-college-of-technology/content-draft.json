@@ -1,0 +1,228 @@
+{
+  "status": "held_research_draft_not_publishable",
+  "checkedAt": "2026-10-27",
+  "university": {
+    "countrySlug": "india",
+    "slug": "sona-college-of-technology",
+    "name": "Sona College of Technology",
+    "city": "Salem",
+    "officialWebsite": "https://www.sonatech.ac.in/",
+    "summary": "Sona College of Technology is an autonomous engineering college in Salem, Tamil Nadu. Anna University includes it in the Salem affiliated-college register with counselling code 2618. Programme-specific admission conditions and approval must be assessed separately from this institutional affiliation.",
+    "recognitionBadges": [
+      "Anna University — affiliated autonomous college, TNEA 2618"
+    ],
+    "recognitionLinks": [
+      {
+        "label": "Anna University Salem affiliated-college register",
+        "url": "https://annauniv.edu/cai/District%20wise/district/Salem.php"
+      }
+    ],
+    "admissionsContent": {
+      "contentState": "held_primary_access",
+      "notes": "Only regulator identity/affiliation is verified. Teaching, fees, living and eligibility copy intentionally not padded with search-only claims."
+    }
+  },
+  "programmeDrafts": [
+    {
+      "officialTitle": "B.E. Mechanical Engineering",
+      "canonicalCourseSlug": "be-btech-mechanical-engineering",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "B.E. Mechatronics Engineering",
+      "canonicalCourseSlug": "be-btech-mechatronics-engineering",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "B.E. Safety and Fire Engineering",
+      "canonicalCourseSlug": "be-btech-fire-safety-engineering",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "B.E. Bio Medical Engineering",
+      "canonicalCourseSlug": "be-btech-biomedical-engineering",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "B.E. Electrical and Electronics Engineering",
+      "canonicalCourseSlug": "be-btech-electrical-electronics-engineering",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "B.E. Electrical and Computer Engineering",
+      "canonicalCourseSlug": "be-btech-electrical-computer-engineering",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "B.E. Electronics and Communication Engineering",
+      "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "B.E. Electronics and Computer Engineering",
+      "canonicalCourseSlug": "be-btech-electronics-computer-engineering",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "B.E. Electronics Engineering (VLSI Design and Technology)",
+      "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "B.E. Computer Science and Design",
+      "canonicalCourseSlug": "be-btech-computer-science-engineering",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "B.E. Computer Science and Engineering",
+      "canonicalCourseSlug": "be-btech-computer-science-engineering",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "B.E. CSE (Cyber Security)",
+      "canonicalCourseSlug": "be-btech-cyber-security",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "B.E. CSE (Artificial Intelligence & Machine Learning)",
+      "canonicalCourseSlug": "be-btech-artificial-intelligence-machine-learning",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "B.Tech. Computer Science and Business Systems",
+      "canonicalCourseSlug": "be-btech-computer-science-engineering",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "B.Tech. Artificial Intelligence & Data Science",
+      "canonicalCourseSlug": "be-btech-data-science",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "B.Tech. Information Technology",
+      "canonicalCourseSlug": "be-btech-information-technology",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "B.E. Civil Engineering",
+      "canonicalCourseSlug": "be-btech-civil-engineering",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "B.Tech. Fashion Technology",
+      "canonicalCourseSlug": "be-btech-fashion-technology",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "M.E. Computer Science and Engineering",
+      "canonicalCourseSlug": "me-mtech-computer-science-engineering",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "M.E. Power System Engineering",
+      "canonicalCourseSlug": "me-mtech-electrical-engineering",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "M.E. Industrial Safety and Engineering",
+      "canonicalCourseSlug": "me-mtech-industrial-safety-engineering",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "M.E. Engineering Design",
+      "canonicalCourseSlug": "me-mtech-mechanical-engineering",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "M.E. VLSI Design",
+      "canonicalCourseSlug": "me-mtech-electronics-communication-engineering",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "M.E. Structural Engineering",
+      "canonicalCourseSlug": "me-mtech-civil-engineering",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "M.E. Construction Engineering & Management",
+      "canonicalCourseSlug": "me-mtech-civil-engineering",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "M.Tech. Information Technology",
+      "canonicalCourseSlug": "me-mtech-information-technology",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "M.B.A. Master of Business Administration",
+      "canonicalCourseSlug": "mba",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    },
+    {
+      "officialTitle": "M.C.A. Master of Computer Applications",
+      "canonicalCourseSlug": "mca",
+      "status": "discovery_only_do_not_publish",
+      "officialProgramUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php"
+    }
+  ],
+  "blockingGaps": [
+    "Sona homepage, programme directory, CSE and civil source pages returned 403; no repeat or bypass. Search-index extracts are discovery only (GradeC), not publication evidence.",
+    "Complete current taught and continuing-education inventory cannot be certified until primary sources are readable;28 degree entries,2 part-time variants and 15 short-award discoveries are retained for reconciliation.",
+    "Current AICTE own programme approval, admission routes, exact entry qualification and applicant-category scope are unverified.",
+    "Continuing-education diploma/certificate taxonomy gaps are held; no forced mapping to degree awards.",
+    "Current exact fees, mandatory logo/cover HTTP/image validation, rights and hosted media unresolved.",
+    "Doctoral routes are in scope. The single research-centre coverage placeholder is not an award: exact individual current research areas must be enumerated and their award, duration/mode, admission/audience and authorization evidence verified.",
+    "Latest remote duplicate/ledger recheck and any executable payload assembly, mandatory media validation and actual scoped catalogue/migration validation remain integrator work before publication; they do not prevent research-bundle delivery."
+  ],
+  "doctoralResearchAreaDrafts": [],
+  "researchInventoryDiscoveryGaps": [
+    {
+      "researchListingLabel": "Ph.D. / research study (department-specific awards unresolved)",
+      "officialSourceUrl": "https://cfr.annauniv.edu/research/academics/institution.php/index.php",
+      "status": "held_doctoral_inventory_not_enumerated",
+      "missing": [
+        "Individually named current doctoral research areas",
+        "Exact award identity",
+        "Duration and full-time/part-time mode",
+        "Applicant-category and international eligibility",
+        "Current entry qualifications and selection route",
+        "Current awarding-university research-centre and subject authorization"
+      ],
+      "note": "Do not turn this coverage placeholder into a generic publishable PhD offering."
+    }
+  ],
+  "deliveryStatus": {
+    "target": "github_local_bundle",
+    "livePublishingOwner": "user",
+    "researchDeliveryBlockedByCredentials": false,
+    "queueNote": "Researcher did not mutate the queue; integrator local claim exists under research_tn_batch_b, not remotely synced.",
+    "notes": "Research delivery target is GitHub/local bundle; the user owns live publishing. Missing live-publishing credentials do not block saving or handing off this research. Evidence, media and actual catalogue/migration validation remain separate publication gates."
+  }
+}

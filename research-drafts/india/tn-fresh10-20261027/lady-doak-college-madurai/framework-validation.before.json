@@ -1,0 +1,148 @@
+{
+  "checkedAt": "2026-10-27T00:00:00.000Z",
+  "validator": "scripts/lib/content-migrations.ts::readContentMigrations",
+  "command": "node --import tsx research-drafts/india/tn-fresh10-20261027/lady-doak-college-madurai/validate-framework.cjs",
+  "isolatedResearchFixture": true,
+  "actualContentMigrationsDirectoryTouched": false,
+  "fullSpecimen": {
+    "passed": false,
+    "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-a-tamil-aided."
+  },
+  "totalProgrammeFragments": 26,
+  "programmePassCount": 0,
+  "programmeFailCount": 26,
+  "programmes": [
+    {
+      "slug": "b-a-tamil-aided",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-a-tamil-aided."
+    },
+    {
+      "slug": "b-a-english-aided",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-a-english-aided."
+    },
+    {
+      "slug": "b-a-history-aided",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-a-history-aided."
+    },
+    {
+      "slug": "b-sc-psychology-aided",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-psychology-aided."
+    },
+    {
+      "slug": "b-a-economics-tamil-medium-aided",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-a-economics-tamil-medium-aided."
+    },
+    {
+      "slug": "b-a-economics-english-medium-aided",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-a-economics-english-medium-aided."
+    },
+    {
+      "slug": "b-com-aided",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-com-aided."
+    },
+    {
+      "slug": "b-sc-mathematics-aided",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-mathematics-aided."
+    },
+    {
+      "slug": "b-sc-physics-aided",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-physics-aided."
+    },
+    {
+      "slug": "b-sc-chemistry-aided",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-chemistry-aided."
+    },
+    {
+      "slug": "b-sc-botany-aided",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-botany-aided."
+    },
+    {
+      "slug": "b-sc-zoology-aided",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-zoology-aided."
+    },
+    {
+      "slug": "b-a-english-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-a-english-self-financed."
+    },
+    {
+      "slug": "b-b-a-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-b-a-self-financed."
+    },
+    {
+      "slug": "b-sc-computer-science-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-computer-science-self-financed."
+    },
+    {
+      "slug": "b-sc-information-technology-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-information-technology-self-financed."
+    },
+    {
+      "slug": "b-sc-data-science-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-data-science-self-financed."
+    },
+    {
+      "slug": "b-sc-mathematics-with-computer-applications-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-mathematics-with-computer-applications-self-financed."
+    },
+    {
+      "slug": "b-sc-physics-with-computer-applications-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-physics-with-computer-applications-self-financed."
+    },
+    {
+      "slug": "b-sc-biotechnology-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-biotechnology-self-financed."
+    },
+    {
+      "slug": "b-sc-costume-design-and-fashion-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-costume-design-and-fashion-self-financed."
+    },
+    {
+      "slug": "b-com-with-computer-applications-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-com-with-computer-applications-self-financed."
+    },
+    {
+      "slug": "b-com-corporate-secretaryship-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-com-corporate-secretaryship-self-financed."
+    },
+    {
+      "slug": "b-com-banking-and-insurance-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-com-banking-and-insurance-self-financed."
+    },
+    {
+      "slug": "b-com-professional-accounting-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-com-professional-accounting-self-financed."
+    },
+    {
+      "slug": "b-com-honours-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-com-honours-self-financed."
+    }
+  ],
+  "publishReady": false,
+  "warning": "Reader success checks source-link structure, not editorial truth or audience/media readiness. Existing row holds remain binding."
+}

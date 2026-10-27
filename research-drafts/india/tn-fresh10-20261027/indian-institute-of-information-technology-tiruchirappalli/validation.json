@@ -1,0 +1,106 @@
+{
+  "counts": {
+    "inventoryRows": 15,
+    "standaloneAwardCandidates": 13,
+    "heldAwardCandidates": 13,
+    "excludedNonstandaloneRows": 0,
+    "historicalHeldRows": 0,
+    "publishReadyOfferings": 0,
+    "aggregatorOnlyHeldRows": 2,
+    "internationalRouteConfirmedCandidates": 4,
+    "structurallyCompleteCandidates": 4,
+    "candidatesWithUnresolvedRequiredFields": 9
+  },
+  "csvRequiredColumns": [
+    "university_slug",
+    "programme_official_title",
+    "level",
+    "discipline",
+    "duration",
+    "campus",
+    "delivery_mode",
+    "intl_status",
+    "intl_evidence_url",
+    "official_source_url",
+    "other_sources",
+    "already_on_site",
+    "existing_offering_slug",
+    "canonical_course_match",
+    "notes"
+  ],
+  "allRowsHaveOfficialSource": "All rows link a relevant official source; two aggregator-only MSc rows link the official PG inventory only to document lack of confirmation, not evidence of award existence.",
+  "unknownTaxonomySlugs": [],
+  "narrativeLengths": {
+    "summary": 321,
+    "campusLifestyle": 259,
+    "cityProfile": 317,
+    "practicalExposure": 371,
+    "hostelOverview": 282,
+    "dietarySupport": 235,
+    "safetyOverview": 260,
+    "studentSupport": 220
+  },
+  "narrativeOverBudget": {},
+  "faqCount": 10,
+  "noLiveURLClaim": true,
+  "noDBOrMediaWrites": true,
+  "canonicalSchemaResult": "FAIL",
+  "publicationGate": "BLOCKED",
+  "heldReasons": [
+    "M.Tech. and PhD international eligibility remains unverified; four B.Tech. DASA branches are now verified.",
+    "PhD standard duration, current admission document checklist and current call/supervisor availability remain unverified; minimum registration periods are not standard duration.",
+    "Two MSc awards found only on a secondary site are excluded pending official confirmation.",
+    "Proposed PhD Mathematics/Economics canonical definitions require integrator approval and course metadata; no shared registry changed.",
+    "Logo candidate is inspected; cover source and final media rights/upload/page rendering remain incomplete."
+  ],
+  "schemaIssueCount": 23,
+  "localArtifactChecks": {
+    "validJsonFiles": true,
+    "csvRowCountMatches": true,
+    "sourceManifestFiles": 93,
+    "allRowsInternationalStatusAllowed": true,
+    "allNormalTaxonomySlugsVerified": true,
+    "mandatoryNarrativeCapsPass": true,
+    "latestLiveApiStatus": 404,
+    "noExistingMigrationIdentity": true,
+    "noForbiddenPublicMediaURLs": true,
+    "csvValuesMatchInventoryJson": true,
+    "sourceManifestHashesPass": true,
+    "profileAndProgrammeCopiesMatch": true,
+    "evidenceCopiesMatch": true
+  },
+  "researchDeliveryBlocked": false,
+  "officialExistenceConfirmedRows": 13,
+  "aggregatorOnlyRowsNotOfficiallyConfirmed": 2,
+  "structurallyCompleteSubset": {
+    "schemaResult": "PASS",
+    "issueCount": 0,
+    "programmeCount": 4,
+    "courseCount": 3,
+    "publicationReady": false
+  },
+  "summaryWordCount": 39,
+  "remainingRequiredFields": {
+    "audienceEligibility": 9,
+    "durationYears": 7,
+    "admissionsContent.documentsRequired": 7
+  },
+  "coursesMissingFromFullDraft": [
+    "phd-computer-science",
+    "phd-engineering",
+    "phd-engineering",
+    "phd-natural-sciences",
+    "phd-mathematics",
+    "phd-economics",
+    "phd-arts-humanities"
+  ],
+  "coursesMissingNote": "Held doctoral/research candidates may reference existing/proposed families without complete course payload metadata because a standard duration remains unresolved. No such missing course remains in the separately validated subset.",
+  "actualEvidenceFramework": {
+    "result": "PASS",
+    "validator": "scripts/lib/content-migrations.ts:readContentMigrations",
+    "input": "structurally-complete-subset.json",
+    "programmeCount": 4,
+    "expiredEvidence": 0,
+    "publicationReady": false
+  }
+}

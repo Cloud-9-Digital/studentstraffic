@@ -1,0 +1,595 @@
+{
+  "checkedAt": "2026-10-27",
+  "files": [
+    {
+      "path": "sources/about-images.json",
+      "bytes": 1123,
+      "sha256": "c38678e4e131a4024261db038ee97381f6f2e06467b4ee4aeebb0ec9aa516e94"
+    },
+    {
+      "path": "sources/about-links.json",
+      "bytes": 13717,
+      "sha256": "ecfef4f5ab328467d48491d7550b6ec0b2b68672f97b160a22e05969666ca051"
+    },
+    {
+      "path": "sources/about-receipt.json",
+      "bytes": 336,
+      "sha256": "5b43150b983dbea21eae0506e309a7feed5bd55ddbfaf499eaa8f34a0288b490"
+    },
+    {
+      "path": "sources/about.html",
+      "bytes": 57307,
+      "sha256": "328d0a40a90884967d7df912f73d9102218c3dc8330bafbb3e993f41e6b951df"
+    },
+    {
+      "path": "sources/about.txt",
+      "bytes": 6211,
+      "sha256": "40440d04784b1fad0f691f62be0689ef394a53ab6916fdb6f25bd215e8320a55"
+    },
+    {
+      "path": "sources/academic-programs-images.json",
+      "bytes": 1123,
+      "sha256": "c38678e4e131a4024261db038ee97381f6f2e06467b4ee4aeebb0ec9aa516e94"
+    },
+    {
+      "path": "sources/academic-programs-links.json",
+      "bytes": 16442,
+      "sha256": "5b8862605ee7c3a55e0d1033a02d0878ecb17a55ffc0160d81545424f54a3d48"
+    },
+    {
+      "path": "sources/academic-programs-receipt.json",
+      "bytes": 330,
+      "sha256": "41d18a2d4421425711e8bf4e92cd3f1d71127a444c7dbbc66312ab976bbdd1d4"
+    },
+    {
+      "path": "sources/academic-programs.html",
+      "bytes": 58063,
+      "sha256": "59781b3cbe07d5d2444705954c429718dcc7acf244b4cb5139fb73bcecf76006"
+    },
+    {
+      "path": "sources/academic-programs.txt",
+      "bytes": 4035,
+      "sha256": "27a622242f74083b7e362fd317c69bc93604d07f1de5e88fc121c85c239a3637"
+    },
+    {
+      "path": "sources/admissions-2026-images.json",
+      "bytes": 1123,
+      "sha256": "c38678e4e131a4024261db038ee97381f6f2e06467b4ee4aeebb0ec9aa516e94"
+    },
+    {
+      "path": "sources/admissions-2026-links.json",
+      "bytes": 14441,
+      "sha256": "4afb41f566c799e10d4cdd8d4dbf49f4efb185c53c460776567d39f324f19445"
+    },
+    {
+      "path": "sources/admissions-2026-receipt.json",
+      "bytes": 326,
+      "sha256": "edc7d60a8db4001b1dadfdb8b9c6f2795e05a6a30185878e8647839a846e9702"
+    },
+    {
+      "path": "sources/admissions-2026.html",
+      "bytes": 54223,
+      "sha256": "52d0cf95d8e0b47472493e58b64265904963aefce425a304ed17407213a52426"
+    },
+    {
+      "path": "sources/admissions-2026.txt",
+      "bytes": 3153,
+      "sha256": "6a093b24629b173201583e171a66d036b876272c1b5bf8873e1d5a49a3ec0546"
+    },
+    {
+      "path": "sources/aicte-1.png",
+      "bytes": 643072,
+      "sha256": "5e74fdda292f37d7a316962438cf5e2187612586fb28e40caa0a75f8bc59946a"
+    },
+    {
+      "path": "sources/aicte-1.txt",
+      "bytes": 1719,
+      "sha256": "99252a248ac4d3dbb775f9d8c764c8dc569c355dee29f8af7bc9d3dd42b9719f"
+    },
+    {
+      "path": "sources/aicte-2.png",
+      "bytes": 527497,
+      "sha256": "dd93762f9c00de9cb3098101a2cd558a3b2fddee356b01da14884aa5fe0600c5"
+    },
+    {
+      "path": "sources/aicte-2.txt",
+      "bytes": 1490,
+      "sha256": "dd791a40c6c8080251adad68e1a509821bee177316a3e92b8dd24633fd545632"
+    },
+    {
+      "path": "sources/aicte-2026-receipt.json",
+      "bytes": 363,
+      "sha256": "b346c8e3b04263e6120a2ccfec5dc5de3c703f4912bd3c04e7cf09e27035fcc4"
+    },
+    {
+      "path": "sources/aicte-2026.pdf",
+      "bytes": 987864,
+      "sha256": "278c573b4f7ff80c95773444dab474ae179a70e82e26c058e255129a689ebda2"
+    },
+    {
+      "path": "sources/aicte-2026.txt",
+      "bytes": 5,
+      "sha256": "2e9faebbd47a57f8d00d2f73a2e412bbf5353a95a112f2278b24f69ee5d14b62"
+    },
+    {
+      "path": "sources/aicte-3.png",
+      "bytes": 496899,
+      "sha256": "456f8277cad63b0193b73f7c11a80bd51a2a77523f3f910c664c14e663a2bd7c"
+    },
+    {
+      "path": "sources/aicte-3.txt",
+      "bytes": 1496,
+      "sha256": "209cccd3c93f181394cc0f935bd8fc1689e88082d0b66e73fa7b065d29c6611d"
+    },
+    {
+      "path": "sources/aicte-4.png",
+      "bytes": 503842,
+      "sha256": "6f166698aa8cbba4104237e599a13458b944ad4dfcbce0e843a0946056729e56"
+    },
+    {
+      "path": "sources/aicte-4.txt",
+      "bytes": 3102,
+      "sha256": "d61463419b7bf0799235ad2a012a4b8695c1c527f144dc7068e80275a300f8a4"
+    },
+    {
+      "path": "sources/approval-images.json",
+      "bytes": 1123,
+      "sha256": "c38678e4e131a4024261db038ee97381f6f2e06467b4ee4aeebb0ec9aa516e94"
+    },
+    {
+      "path": "sources/approval-links.json",
+      "bytes": 15360,
+      "sha256": "41bd12ccceada48e05de6f41ababed01ea6a89c706cf39d29634d4eaa970cbc1"
+    },
+    {
+      "path": "sources/approval-receipt.json",
+      "bytes": 346,
+      "sha256": "33499ceb6afae45617cedf5dd4d4de5d023855004d7ca8bd4f8a224050d2faca"
+    },
+    {
+      "path": "sources/approval.html",
+      "bytes": 55719,
+      "sha256": "be666c9653e66ed7e76bf250edb38dfc37ab0720155b504b5f7c33b731f0156f"
+    },
+    {
+      "path": "sources/approval.txt",
+      "bytes": 2868,
+      "sha256": "2223455ee86121d42b37bd59604c280dc39cad589bc72808b80a895fb5b84b60"
+    },
+    {
+      "path": "sources/barch-admission-images.json",
+      "bytes": 1123,
+      "sha256": "c38678e4e131a4024261db038ee97381f6f2e06467b4ee4aeebb0ec9aa516e94"
+    },
+    {
+      "path": "sources/barch-admission-links.json",
+      "bytes": 13619,
+      "sha256": "f7d5c6aa606c8991bd614c754e7500aef227808b655d31e0b67b9df5e4c9fb39"
+    },
+    {
+      "path": "sources/barch-admission-receipt.json",
+      "bytes": 320,
+      "sha256": "ff02e59f37c306c3379a0cfa52990f4c81ba2fde9e9a1f82eb3556d8a420630d"
+    },
+    {
+      "path": "sources/barch-admission.html",
+      "bytes": 54254,
+      "sha256": "d72a28baca41a6d6b4ca8eec940e979c3a0c1e1051198e726ec603dcab33e2e9"
+    },
+    {
+      "path": "sources/barch-admission.txt",
+      "bytes": 3197,
+      "sha256": "5f3534fcc9cb21d786bc62f0a2850e6378189db26263aceb1b7f1a133b2cffc6"
+    },
+    {
+      "path": "sources/bdes-admission-images.json",
+      "bytes": 1123,
+      "sha256": "c38678e4e131a4024261db038ee97381f6f2e06467b4ee4aeebb0ec9aa516e94"
+    },
+    {
+      "path": "sources/bdes-admission-links.json",
+      "bytes": 13606,
+      "sha256": "da3c8a9cc44fed07ef021fd07a8de072d8ebb53bab95ddc2e95ca453f9e5c91e"
+    },
+    {
+      "path": "sources/bdes-admission-receipt.json",
+      "bytes": 318,
+      "sha256": "97ce08314b54e485b1a4f09cabd04fecbe12d6052549a2aaac51ef9478e4041f"
+    },
+    {
+      "path": "sources/bdes-admission.html",
+      "bytes": 54337,
+      "sha256": "f17a261f9ba8b40556d691a7b0f73cd299f3a410369fdac4103460b8c38a1b2f"
+    },
+    {
+      "path": "sources/bdes-admission.txt",
+      "bytes": 3230,
+      "sha256": "f22db46d9fae1fa1f9324e29481313993e3a7861515fe4dff1b66c749665ac4b"
+    },
+    {
+      "path": "sources/be-admission-images.json",
+      "bytes": 1123,
+      "sha256": "c38678e4e131a4024261db038ee97381f6f2e06467b4ee4aeebb0ec9aa516e94"
+    },
+    {
+      "path": "sources/be-admission-links.json",
+      "bytes": 15010,
+      "sha256": "44452c0730e2b6aa6eaca4c318f9a6f5a62648c2f0bf8fa38dd96754b67f4454"
+    },
+    {
+      "path": "sources/be-admission-receipt.json",
+      "bytes": 326,
+      "sha256": "57e42ad2e93bca4b92abda8d988c2161b5e0d927f6c6641d97ea00b9c25a1fd7"
+    },
+    {
+      "path": "sources/be-admission.html",
+      "bytes": 57151,
+      "sha256": "f16ee8f09430c3fb440d528ba4548c0ab70382ecee0241c11024ac70cf0f231c"
+    },
+    {
+      "path": "sources/be-admission.txt",
+      "bytes": 3924,
+      "sha256": "ee15417bf86cc6cf68cbedacd558b5d9d70216b3053cc872e07e25e208871fda"
+    },
+    {
+      "path": "sources/coa-2026-receipt.json",
+      "bytes": 383,
+      "sha256": "61f86d7a29eb69b258e503060ccb485e29f57653541b22aaa016619bc891b586"
+    },
+    {
+      "path": "sources/coa-2026.pdf",
+      "bytes": 601361,
+      "sha256": "e7aaa2a8630387516dd343fe989a0f6eb02d300c3d0a812b63c116c89e39a966"
+    },
+    {
+      "path": "sources/coa-2026.txt",
+      "bytes": 3962,
+      "sha256": "486349d8dcba8b70ba7892d04197a6cc73b38d30c34e21cc5caff0ba143a8cfe"
+    },
+    {
+      "path": "sources/completion-tce-current.json",
+      "bytes": 30303,
+      "sha256": "5044d1abae773b1c30c492588b125df26baafaf7e44272f105cd95e93a1a7816"
+    },
+    {
+      "path": "sources/completion-tce-full.json",
+      "bytes": 25384,
+      "sha256": "dbf5cb5f9c84110445642205359a8d1a69fbade5a142a8fc37bbd3a65359ba35"
+    },
+    {
+      "path": "sources/counselling-images.json",
+      "bytes": 1123,
+      "sha256": "c38678e4e131a4024261db038ee97381f6f2e06467b4ee4aeebb0ec9aa516e94"
+    },
+    {
+      "path": "sources/counselling-links.json",
+      "bytes": 14198,
+      "sha256": "2f03ffb74cde91efc1cc3028cefaf00a88840016ce713f5babe217d82fb126f3"
+    },
+    {
+      "path": "sources/counselling-receipt.json",
+      "bytes": 352,
+      "sha256": "89c49a092491d762aa2d78193b10fe33da3a436e8f2edf292e9fb746eb49a760"
+    },
+    {
+      "path": "sources/counselling.html",
+      "bytes": 55009,
+      "sha256": "2d1adbff0428cde8f4b96649b943847816bf5534f056341cdf23320f5790f98f"
+    },
+    {
+      "path": "sources/counselling.txt",
+      "bytes": 3503,
+      "sha256": "dcd449d4161abb7d9c25c891dc2901bfcb9a00c71b1419f84392bc050df3102e"
+    },
+    {
+      "path": "sources/disclosure-images.json",
+      "bytes": 1307,
+      "sha256": "8cd35df25bb02a9bd373b1951b52f459fea77db88cae9776be0ca573b88d57ad"
+    },
+    {
+      "path": "sources/disclosure-links.json",
+      "bytes": 13784,
+      "sha256": "92a0528739b607a5c71ba6a5442bef512af5c0232ad79edb09d320905b91fd1d"
+    },
+    {
+      "path": "sources/disclosure-receipt.json",
+      "bytes": 342,
+      "sha256": "6517708c62a6f41a4e63ab6c1d74d86b7338c9e410f04e6c1329902c5c467670"
+    },
+    {
+      "path": "sources/disclosure.html",
+      "bytes": 53766,
+      "sha256": "cb929264b5145306f229b61dcea40a0827aa55e8047aa8cb8b1b8ab956895f5c"
+    },
+    {
+      "path": "sources/disclosure.txt",
+      "bytes": 2694,
+      "sha256": "4e8e2c306a58eaed21988a42b737af77bc6aafa9ada1e16dab7d31fdd3b1f339"
+    },
+    {
+      "path": "sources/fees_and_law.json",
+      "bytes": 32757,
+      "sha256": "6989d81001b1a05f442a26244986f85eeb7b08cb703293aa67cbef82236b3abb"
+    },
+    {
+      "path": "sources/home-links.json",
+      "bytes": 17370,
+      "sha256": "d25f938b5e457806760f363eee998465c72f6c7e0db4263cb4731af213838765"
+    },
+    {
+      "path": "sources/home.html",
+      "bytes": 146743,
+      "sha256": "f27642eb4f9961e30492e5ac494cd4b67a06d4e42297427fba7d91122cfd0ec0"
+    },
+    {
+      "path": "sources/home.txt",
+      "bytes": 36267,
+      "sha256": "3c836188430f22ffb87ef922b371db4e9f3b6f4dad6ad7f8028ca7a87606db21"
+    },
+    {
+      "path": "sources/hostel-images.json",
+      "bytes": 1325,
+      "sha256": "085c5a193af62983a364ba0df1300a1760c9c87d60a9b29f7d1ff80cf164e882"
+    },
+    {
+      "path": "sources/hostel-links.json",
+      "bytes": 13903,
+      "sha256": "e7eee66410fb8c8cda9ecad29a181b70b311f525b4a12467782d33e7b37b1c1d"
+    },
+    {
+      "path": "sources/hostel-receipt.json",
+      "bytes": 324,
+      "sha256": "04b62fbeb739c7aa63f534bf6a61bb594a2dd2201ea9696475e9f8e55ce6e812"
+    },
+    {
+      "path": "sources/hostel.html",
+      "bytes": 55186,
+      "sha256": "bd0c2d2a6b6d5486910cdfa1bae09829d998d7a652676771be2075a1025c47a7"
+    },
+    {
+      "path": "sources/hostel.txt",
+      "bytes": 2718,
+      "sha256": "d243fbd98b6e98a0dca4b4544ae3af68d800fba39f554dc3d38ee1e21ce73475"
+    },
+    {
+      "path": "sources/lastsources.json",
+      "bytes": 29948,
+      "sha256": "939deae21c0e99c0a9ea11b27d207954e84d9fe39c830d9dbacd78727bb8ea1c"
+    },
+    {
+      "path": "sources/mandatory-disclosure-receipt.json",
+      "bytes": 417,
+      "sha256": "11983b17db7ac6c904ef62fdeca3b135c7da778d0b8b3f1222c3ecee65fe4a85"
+    },
+    {
+      "path": "sources/mandatory-disclosure.pdf",
+      "bytes": 252146,
+      "sha256": "94228fc0cf6f22511c545d2ac9d8639f916df61bcd8c017b169949476b2aa539"
+    },
+    {
+      "path": "sources/mandatory-disclosure.txt",
+      "bytes": 65929,
+      "sha256": "f93e66c4aa53fc2cf2ac6e3a6499f12db790afc78ff1a9ebef256ad58936e5b5"
+    },
+    {
+      "path": "sources/mens-hostel-images.json",
+      "bytes": 2046,
+      "sha256": "5a1424b6320c5fd1ad186bdca33f4c430226e7fdf8d4049283b7255f98fa044f"
+    },
+    {
+      "path": "sources/mens-hostel-links.json",
+      "bytes": 14361,
+      "sha256": "e0b8a56657b88d5bf5c7bc7129fb1adf419256f87515a0349fb2fa35c1c159c3"
+    },
+    {
+      "path": "sources/mens-hostel-receipt.json",
+      "bytes": 346,
+      "sha256": "aae2e4ab3b26d1f647755c655d87cd841e5198d460f0d0a505adde1bc37e76fe"
+    },
+    {
+      "path": "sources/mens-hostel.html",
+      "bytes": 70575,
+      "sha256": "a469c8169d43c335a4d08418b226ede665330d3a260481c828eb77411a14e690"
+    },
+    {
+      "path": "sources/mens-hostel.txt",
+      "bytes": 3043,
+      "sha256": "771b5ba2b6426054874e93df30a9bfae62b406e0cc83aef1f067679d176a673f"
+    },
+    {
+      "path": "sources/mplan-admission-images.json",
+      "bytes": 1123,
+      "sha256": "c38678e4e131a4024261db038ee97381f6f2e06467b4ee4aeebb0ec9aa516e94"
+    },
+    {
+      "path": "sources/mplan-admission-links.json",
+      "bytes": 13619,
+      "sha256": "a96eba39fb1adc33da7e771d1d4a74b0ec86c6282be24c9e7a57f6eda765010b"
+    },
+    {
+      "path": "sources/mplan-admission-receipt.json",
+      "bytes": 320,
+      "sha256": "c617827d93b9d0d3a8afa78999b50fd6e61e066ed9fef5fdb84cc0d27fd0cd4b"
+    },
+    {
+      "path": "sources/mplan-admission.html",
+      "bytes": 54418,
+      "sha256": "29b5999026f98420dbd8a9b95c7e1e818132b26dc38240d930d7f302875e7969"
+    },
+    {
+      "path": "sources/mplan-admission.txt",
+      "bytes": 3303,
+      "sha256": "317a232d65362057df5c206ca7dd65d0e2422de9197f3f07c28196eb96f11d8d"
+    },
+    {
+      "path": "sources/msc-admission-images.json",
+      "bytes": 1123,
+      "sha256": "c38678e4e131a4024261db038ee97381f6f2e06467b4ee4aeebb0ec9aa516e94"
+    },
+    {
+      "path": "sources/msc-admission-links.json",
+      "bytes": 13632,
+      "sha256": "523a04ae04aa3a1aee2e6b9db8c4acabc1cafeec07110741f265cb8c62f91b94"
+    },
+    {
+      "path": "sources/msc-admission-receipt.json",
+      "bytes": 322,
+      "sha256": "fcb3c421cb1186352402a42f222011b471adb28cb96fd1501094788fd3611b88"
+    },
+    {
+      "path": "sources/msc-admission.html",
+      "bytes": 54209,
+      "sha256": "5e51de5db08309d8d26d2a962c509589b56bb0a3e286f3102dd832298c3abd2c"
+    },
+    {
+      "path": "sources/msc-admission.txt",
+      "bytes": 3214,
+      "sha256": "23a663ec667fb14ec550db0d933c9a3b55c7d4e68a82c06ab1397f6d8f8155d6"
+    },
+    {
+      "path": "sources/pg-admission-images.json",
+      "bytes": 1123,
+      "sha256": "c38678e4e131a4024261db038ee97381f6f2e06467b4ee4aeebb0ec9aa516e94"
+    },
+    {
+      "path": "sources/pg-admission-links.json",
+      "bytes": 14247,
+      "sha256": "37559c4ebb4b45aff0b217c006133ab04d3e159a82b812b3994c17faaf7deac1"
+    },
+    {
+      "path": "sources/pg-admission-receipt.json",
+      "bytes": 322,
+      "sha256": "add5fd168b6aa0bb7562afd9be1609efcf0a394accf2ca9fa693e69bdb81e14c"
+    },
+    {
+      "path": "sources/pg-admission.html",
+      "bytes": 55905,
+      "sha256": "1edf8238663d1acd7d2f74057e49d56c45dccb5cef747db788b58e1a8f257877"
+    },
+    {
+      "path": "sources/pg-admission.txt",
+      "bytes": 4111,
+      "sha256": "da651af59d80a8dae77ceeb96b2f02d9af5cc22deda870dfdd4157ec285e44d1"
+    },
+    {
+      "path": "sources/programs-images.json",
+      "bytes": 1123,
+      "sha256": "c38678e4e131a4024261db038ee97381f6f2e06467b4ee4aeebb0ec9aa516e94"
+    },
+    {
+      "path": "sources/programs-links.json",
+      "bytes": 13683,
+      "sha256": "347ea0f5b42c8a3468e351c0806b5fdc5e4bcc0c93fc6cb9c40c00049d6d1a1f"
+    },
+    {
+      "path": "sources/programs-receipt.json",
+      "bytes": 346,
+      "sha256": "6cc7f58bec174d6fd909f82d211c858d492918cdd4ad672d38c73def968ece51"
+    },
+    {
+      "path": "sources/programs.html",
+      "bytes": 58645,
+      "sha256": "35129a6947fbeeeec8e9e2a6d87ac400336c559a6664ddb809a4dbcf5c9f1f15"
+    },
+    {
+      "path": "sources/programs.txt",
+      "bytes": 3895,
+      "sha256": "c215b17d8750981bb8dd828b889a75f9bae9395a5f7ed2a227e350aff02d142b"
+    },
+    {
+      "path": "sources/research-admission-images.json",
+      "bytes": 1123,
+      "sha256": "c38678e4e131a4024261db038ee97381f6f2e06467b4ee4aeebb0ec9aa516e94"
+    },
+    {
+      "path": "sources/research-admission-links.json",
+      "bytes": 13647,
+      "sha256": "ead2614f7355a3f8a3bf31dc16d0d3c846b9932816554eff5da85746a1cacad2"
+    },
+    {
+      "path": "sources/research-admission-receipt.json",
+      "bytes": 324,
+      "sha256": "5eca115a29e3f92ca1f74c2fe047254e588247e0f09995f7eab2fea98a46943e"
+    },
+    {
+      "path": "sources/research-admission.html",
+      "bytes": 55605,
+      "sha256": "75463cab649af71693b8c1c2f31bdf00458a61cd22acff737834e84248bf590e"
+    },
+    {
+      "path": "sources/research-admission.txt",
+      "bytes": 4688,
+      "sha256": "6e6c2193c1f305c09d80d13cb94211c35513fda085f49789ee941611418f1362"
+    },
+    {
+      "path": "sources/tancet-ceeta-2026-receipt.json",
+      "bytes": 225,
+      "sha256": "f79881886acd64e54399bac8ef4e9f7dc66684b0498998b9ddd4909231c08a52"
+    },
+    {
+      "path": "sources/tnea-2026-receipt.json",
+      "bytes": 373,
+      "sha256": "51321a40549c1087c5e852d1bcf4a5c52dac13731ac4e9161c439381ffafb4a2"
+    },
+    {
+      "path": "sources/tnea-2026.pdf",
+      "bytes": 2038373,
+      "sha256": "2242626455a14caf7613494626b4d8bcc903607c3e8dcdf209b5291ba6a2bb88"
+    },
+    {
+      "path": "sources/tnea-2026.txt",
+      "bytes": 142142,
+      "sha256": "1ca0119c6e8dbe943607a7940ead1d89237b555cd96e0ebfe9c5041eef68a0db"
+    },
+    {
+      "path": "sources/ugc-register-images.json",
+      "bytes": 2709,
+      "sha256": "d84c4948558d25f16e27263bd178776ddc47ce7a3b4787e117ab06b33580e984"
+    },
+    {
+      "path": "sources/ugc-register-links.json",
+      "bytes": 10845,
+      "sha256": "083e2cfef4b023e0bd7091929ed3648a5bfa5ebff95cb9109cb07ccaf5598531"
+    },
+    {
+      "path": "sources/ugc-register-receipt.json",
+      "bytes": 362,
+      "sha256": "8b89a18a7df4e81c7b77a67ac5696a41eecc98fcae8a0bb54071c55a64b92733"
+    },
+    {
+      "path": "sources/ugc-register.html",
+      "bytes": 1576300,
+      "sha256": "6d89c636fdeac881a11245258306724d697ad88f2847eaaf4986e50efff7c455"
+    },
+    {
+      "path": "sources/ugc-register.txt",
+      "bytes": 303271,
+      "sha256": "b0a4b0454e3b6211e37c6e1d65b6d3a5ef2d27e2f7608bf2223443e659f8a61c"
+    },
+    {
+      "path": "sources/womens-hostel-images.json",
+      "bytes": 3125,
+      "sha256": "9b087594cb51f206e6266645628bc93bb30f74a0db62458a79e0a9f14dcc6e05"
+    },
+    {
+      "path": "sources/womens-hostel-links.json",
+      "bytes": 14403,
+      "sha256": "63b2dd4e4e9aef7529296a474c0991fd92623ca1d007ef6908f896cc9c32d6d4"
+    },
+    {
+      "path": "sources/womens-hostel-receipt.json",
+      "bytes": 350,
+      "sha256": "31566324972c2e4a733b08b8c71ace6f2aed21d44948bbe658969d74ef62c3c2"
+    },
+    {
+      "path": "sources/womens-hostel.html",
+      "bytes": 75386,
+      "sha256": "a58507d3c8dd979b959809d25bccd8a74d4c731acb156b8144984774396dc3ba"
+    },
+    {
+      "path": "sources/womens-hostel.txt",
+      "bytes": 3216,
+      "sha256": "cfb1de3e46d18c033b383e4d2df31fa2f1b624b376fc61e673852f66d3a7c337"
+    }
+  ]
+}

@@ -1,0 +1,1752 @@
+{
+  "checkedAt": "2026-10-27",
+  "scope": "shape-only, DO-NOT-PUBLISH review specimen",
+  "passed": false,
+  "issues": [
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        0,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        0,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        1,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        1,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        2,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        2,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        3,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        3,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        4,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        4,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        5,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        5,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        6,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        6,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        7,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        7,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        8,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        8,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        9,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        9,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        10,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        10,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        11,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        11,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        12,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        12,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        13,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        13,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        14,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        14,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        15,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        15,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        16,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        16,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        17,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        17,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        18,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        18,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        19,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        19,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        20,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        20,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        21,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        21,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        22,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        22,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        23,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        23,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        24,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        24,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        25,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        25,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        26,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        26,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        27,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        27,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        28,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        28,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        29,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        29,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        30,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        30,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 2,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        31,
+        "admissionsContent",
+        "applicationSteps"
+      ],
+      "message": "Too small: expected array to have >=2 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        31,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        31,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 2,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        32,
+        "admissionsContent",
+        "applicationSteps"
+      ],
+      "message": "Too small: expected array to have >=2 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        32,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        32,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 2,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        33,
+        "admissionsContent",
+        "applicationSteps"
+      ],
+      "message": "Too small: expected array to have >=2 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        33,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        33,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 2,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        34,
+        "admissionsContent",
+        "applicationSteps"
+      ],
+      "message": "Too small: expected array to have >=2 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        34,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        34,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 2,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        35,
+        "admissionsContent",
+        "applicationSteps"
+      ],
+      "message": "Too small: expected array to have >=2 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        35,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        35,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 2,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        36,
+        "admissionsContent",
+        "applicationSteps"
+      ],
+      "message": "Too small: expected array to have >=2 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        36,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        36,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 2,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        37,
+        "admissionsContent",
+        "applicationSteps"
+      ],
+      "message": "Too small: expected array to have >=2 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        37,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        37,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 2,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        38,
+        "admissionsContent",
+        "applicationSteps"
+      ],
+      "message": "Too small: expected array to have >=2 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        38,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        38,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 2,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        39,
+        "admissionsContent",
+        "applicationSteps"
+      ],
+      "message": "Too small: expected array to have >=2 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        39,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        39,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 2,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        40,
+        "admissionsContent",
+        "applicationSteps"
+      ],
+      "message": "Too small: expected array to have >=2 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        40,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        40,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 2,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        41,
+        "admissionsContent",
+        "applicationSteps"
+      ],
+      "message": "Too small: expected array to have >=2 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        41,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        41,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 2,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        42,
+        "admissionsContent",
+        "applicationSteps"
+      ],
+      "message": "Too small: expected array to have >=2 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        42,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        42,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 2,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        43,
+        "admissionsContent",
+        "applicationSteps"
+      ],
+      "message": "Too small: expected array to have >=2 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        43,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        43,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 2,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        44,
+        "admissionsContent",
+        "applicationSteps"
+      ],
+      "message": "Too small: expected array to have >=2 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        44,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        44,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 2,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        45,
+        "admissionsContent",
+        "applicationSteps"
+      ],
+      "message": "Too small: expected array to have >=2 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        45,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        45,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 2,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        46,
+        "admissionsContent",
+        "applicationSteps"
+      ],
+      "message": "Too small: expected array to have >=2 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        46,
+        "admissionsContent",
+        "documentsRequired",
+        "academic"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    },
+    {
+      "origin": "array",
+      "code": "too_small",
+      "minimum": 1,
+      "inclusive": true,
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        46,
+        "admissionsContent",
+        "documentsRequired",
+        "application"
+      ],
+      "message": "Too small: expected array to have >=1 items"
+    }
+  ],
+  "publishReady": false
+}

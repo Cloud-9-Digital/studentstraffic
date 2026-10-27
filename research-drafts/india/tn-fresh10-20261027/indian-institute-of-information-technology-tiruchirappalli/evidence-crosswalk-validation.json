@@ -1,0 +1,58 @@
+{
+  "checkedAt": "2026-10-27",
+  "baselineSnapshotCommit": "514e4651ac1b278469eaee9e694bbeca438fa392",
+  "baselineEvidenceSha256": "393294635ee977a7a9c909171c8c6e8149a2b95a1e41cf6effdbbab0eb7f264c",
+  "claimScope": "Only the already-authored structurally complete subset; held programme eligibility/award/duration fields are not promoted. Recognition and language/intake omissions normalize existing supported evidence keys.",
+  "recognition": {
+    "field": "recognition",
+    "source": "https://upload.indiacode.nic.in/showfile?actid=AC_CEN_9_30_00033_201723_1517807328002&filename=191586-59-88.pdf&type=statute",
+    "status": "verified",
+    "grade": "A"
+  },
+  "programmes": [
+    {
+      "programmeSlug": "b-tech-computer-science-and-engineering",
+      "eligibilitySource": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "admissionsSource": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceLocator": "sources/dasa-brochure-2026.txt: PDF pages 12–14 eligibility, 17–22 application stages, 46 Annexure 5; sources/dasa-matrix-2026.txt: institute 314. Do not extend this evidence to M.Tech. or PhD.",
+      "feeDecisionSource": "https://store.iiitt.ac.in/downloads/admission/IIITT-Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%20DASA.pdf",
+      "feeDecisionScope": "sources/dasa-fees.pdf and .txt. Verified describes the official schedule period/category and justified editorial annual-fee omission, not a newly verified annual amount.",
+      "medium": "omit: unchanged empty language fields; exact framework key now used",
+      "intake": "omit: no future month inferred; exact framework key now used"
+    },
+    {
+      "programmeSlug": "b-tech-computer-science-and-engineering-artificial-intelligence-and-data-science",
+      "eligibilitySource": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "admissionsSource": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceLocator": "sources/dasa-brochure-2026.txt: PDF pages 12–14 eligibility, 17–22 application stages, 46 Annexure 5; sources/dasa-matrix-2026.txt: institute 314. Do not extend this evidence to M.Tech. or PhD.",
+      "feeDecisionSource": "https://store.iiitt.ac.in/downloads/admission/IIITT-Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%20DASA.pdf",
+      "feeDecisionScope": "sources/dasa-fees.pdf and .txt. Verified describes the official schedule period/category and justified editorial annual-fee omission, not a newly verified annual amount.",
+      "medium": "omit: unchanged empty language fields; exact framework key now used",
+      "intake": "omit: no future month inferred; exact framework key now used"
+    },
+    {
+      "programmeSlug": "b-tech-electronics-and-communication-engineering",
+      "eligibilitySource": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "admissionsSource": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceLocator": "sources/dasa-brochure-2026.txt: PDF pages 12–14 eligibility, 17–22 application stages, 46 Annexure 5; sources/dasa-matrix-2026.txt: institute 314. Do not extend this evidence to M.Tech. or PhD.",
+      "feeDecisionSource": "https://store.iiitt.ac.in/downloads/admission/IIITT-Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%20DASA.pdf",
+      "feeDecisionScope": "sources/dasa-fees.pdf and .txt. Verified describes the official schedule period/category and justified editorial annual-fee omission, not a newly verified annual amount.",
+      "medium": "omit: unchanged empty language fields; exact framework key now used",
+      "intake": "omit: no future month inferred; exact framework key now used"
+    },
+    {
+      "programmeSlug": "b-tech-electronics-and-communication-engineering-vlsi-design",
+      "eligibilitySource": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "admissionsSource": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceLocator": "sources/dasa-brochure-2026.txt: PDF pages 12–14 eligibility, 17–22 application stages, 46 Annexure 5; sources/dasa-matrix-2026.txt: institute 314. Do not extend this evidence to M.Tech. or PhD.",
+      "feeDecisionSource": "https://store.iiitt.ac.in/downloads/admission/IIITT-Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%20DASA.pdf",
+      "feeDecisionScope": "sources/dasa-fees.pdf and .txt. Verified describes the official schedule period/category and justified editorial annual-fee omission, not a newly verified annual amount.",
+      "medium": "omit: unchanged empty language fields; exact framework key now used",
+      "intake": "omit: no future month inferred; exact framework key now used"
+    }
+  ],
+  "discoveryEvidenceRecordsOutsideExecutablePayload": 11,
+  "publicationReady": false,
+  "frameworkResult": "PASS",
+  "frameworkReport": "framework-validation.json"
+}

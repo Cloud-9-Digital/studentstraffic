@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-10-27",
+  "command": "node --import tsx research-drafts/india/tn-fresh10-20261027/holy-cross-college-tiruchirappalli/validate-offline.cjs",
+  "offlineResearchChecksPassed": true,
+  "schemaShapePassed": false,
+  "issues": [],
+  "counts": {
+    "namedInventoryRows": 88,
+    "degreeAndResearchRows": 75,
+    "shortCourseAndAddonRows": 13,
+    "doctoralRows": 14,
+    "schemaFragmentRows": 47,
+    "programmeDraftEligibleRows": 0,
+    "programmeHeldRows": 88,
+    "publishReadyRows": 0,
+    "taxonomyGapRows": 19,
+    "levels": {
+      "bachelors": 37,
+      "integrated-masters": 1,
+      "masters": 23,
+      "doctoral": 14,
+      "diploma": 3,
+      "pg-diploma": 5,
+      "certificate": 1,
+      "addon": 4
+    }
+  },
+  "scopedMigrationValidation": "not_run: no numbered migration or publishable payload",
+  "actualFrameworkReader": {
+    "passed": 0,
+    "failed": 47,
+    "total": 47,
+    "fullSpecimenPassed": false
+  },
+  "publicationReadiness": "blocked: per-row and university gates in handoff.json",
+  "networkCalls": 0,
+  "databaseCalls": 0
+}

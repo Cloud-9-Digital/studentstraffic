@@ -1,0 +1,188 @@
+{
+  "checkedAt": "2026-10-27",
+  "note": "Raw downloaded HTML/PDF/image files remain local and are not part of the GitHub delivery. Retrieve from these official source URLs if resuming elsewhere. Hashes describe the research snapshot, not a licence to republish originals.",
+  "sources": [
+    {
+      "url": "https://www.iimtrichy.ac.in/fpm-support",
+      "finalUrl": "https://www.iimtrichy.ac.in/fpm-support",
+      "status": 200,
+      "file": "financial-support.html",
+      "sha256": "38ac0c79433ab58877c36f401341b960687ffa6471e1449694bca49e07501e0a"
+    },
+    {
+      "url": "https://www.iimtrichy.ac.in/en/acd_programmes",
+      "finalUrl": "https://www.iimtrichy.ac.in/en/acd_programmes",
+      "status": 200,
+      "file": "academic-directory.html",
+      "sha256": "3be6d1221a0dff29acf65cae14faac395cd6cd7ff85f5e0adec3b55f4ee70257"
+    },
+    {
+      "url": "https://www.iimtrichy.ac.in/en/fpm-faq",
+      "finalUrl": "https://www.iimtrichy.ac.in/en/fpm-faq",
+      "status": 200,
+      "file": "phd-faq.html",
+      "sha256": "2058796e0442cb553c318f63053db99dc3b5603d00d3e8bb3e53232ee9b21a27"
+    },
+    {
+      "url": "https://www.amba-bga.com/schools/indian-institute-of-management-tiruchirappalli",
+      "error": "'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte"
+    },
+    {
+      "url": "https://www.iimtrichy.ac.in/en/campus-facilities",
+      "finalUrl": "https://www.iimtrichy.ac.in/en/campus-facilities",
+      "status": 200,
+      "file": "campus-facilities.html",
+      "sha256": "0f08a5616f48e93d42520e3e75ba7b9a1204b17e46b1b7549ec591764cf533a1"
+    },
+    {
+      "url": "https://www.iimtrichy.ac.in/en/anti_ragging",
+      "finalUrl": "https://www.iimtrichy.ac.in/en/anti_ragging",
+      "status": 200,
+      "file": "anti-ragging.html",
+      "sha256": "6cad909834e76a73fda85f6a10282d1b1d2dd420579b37f26531dc417e0cfaf9"
+    },
+    {
+      "url": "https://www.iimtrichy.ac.in/en/Internal_Committees",
+      "finalUrl": "https://www.iimtrichy.ac.in/en/Internal_Committees",
+      "status": 200,
+      "file": "committees.html",
+      "sha256": "b7fc14e9eb941eda01129ba67500831e2ad8c7cebc024420e6f8aa7b638c66e9"
+    },
+    {
+      "url": "https://admissions.iimtrichy.ac.in/index.php",
+      "finalUrl": "https://admissions.iimtrichy.ac.in/index.php",
+      "status": 200,
+      "file": "admissions-closed.html",
+      "sha256": "07407c52a3e219b0909ff8895ab359aebe376bd459557886a67eee3df7043280"
+    },
+    {
+      "url": "https://www.iimtrichy.ac.in/overseas_pgpm",
+      "finalUrl": "https://www.iimtrichy.ac.in/overseas_pgpm",
+      "status": 200,
+      "file": "10.html",
+      "sha256": "a440a34a08208e2e046c9ced1263dbbab9fa5fc50e8cb70b112a3adcb06eb441"
+    },
+    {
+      "url": "https://www.iimtrichy.ac.in/overseas_pgpm-hr",
+      "finalUrl": "https://www.iimtrichy.ac.in/overseas_pgpm-hr",
+      "status": 200,
+      "file": "11.html",
+      "sha256": "9467d5281db1b51e94f892d9fd443852ff6f2816c2c7580ff1bd52ac0cc7bef8"
+    },
+    {
+      "url": "https://www.iimtrichy.ac.in/en/admission_policy",
+      "finalUrl": "https://www.iimtrichy.ac.in/en/admission_policy",
+      "status": 200,
+      "file": "12.html",
+      "sha256": "3132bba16c12c7109a961fa7126197536c6c4d95687ede9d7cae8f122865d6ad"
+    },
+    {
+      "url": "https://www.iimtrichy.ac.in/en/hostels",
+      "finalUrl": "https://www.iimtrichy.ac.in/en/hostels",
+      "status": 200,
+      "file": "13.html",
+      "sha256": "b49aaa23468b420d6e44d096bf8e2ac72208b263d3d718c8c08d95190aac453a"
+    },
+    {
+      "url": "https://www.iimtrichy.ac.in/en/pgpbm-admission-criteria",
+      "finalUrl": "https://www.iimtrichy.ac.in/en/pgpbm-admission-criteria",
+      "status": 200,
+      "file": "14.html",
+      "sha256": "36f40d223bca46a91b49c5caceb81be8ffe7909466e92c70ed362936e9ed42c0"
+    },
+    {
+      "url": "https://www.iimtrichy.ac.in/en/campus",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.iimtrichy.ac.in/en/health-care",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.iimtrichy.ac.in/en/genesis",
+      "finalUrl": "https://www.iimtrichy.ac.in/en/genesis",
+      "status": 200,
+      "file": "17.html",
+      "sha256": "e3d659cefc8a9891bd3e1acf9545874a77b8443504eb7a569e07feda0d893ef7"
+    },
+    {
+      "url": "https://www.iimtrichy.ac.in/",
+      "finalUrl": "https://www.iimtrichy.ac.in/",
+      "status": 200,
+      "file": "00.html",
+      "sha256": "655a40e825cc71dbd81e4e962b4f10c28b941a6ae2bd5afcae562c86a4c24a5a"
+    },
+    {
+      "url": "https://www.iimtrichy.ac.in/en/pgpm",
+      "finalUrl": "https://www.iimtrichy.ac.in/en/pgpm",
+      "status": 200,
+      "file": "01.html",
+      "sha256": "2e626542ce5a6e8b90ee6999ce4d7cda5d9fb5fc69132d0b706969a30a261f0c"
+    },
+    {
+      "url": "https://www.iimtrichy.ac.in/en/pgpm-hr",
+      "finalUrl": "https://www.iimtrichy.ac.in/en/pgpm-hr",
+      "status": 200,
+      "file": "02.html",
+      "sha256": "97b8085966a7173a346318ca3785c4f055b454d93fc011d7c571577a9e2c2491"
+    },
+    {
+      "url": "https://www.iimtrichy.ac.in/en/pgpm-admin-criteria",
+      "finalUrl": "https://www.iimtrichy.ac.in/en/pgpm-admin-criteria",
+      "status": 200,
+      "file": "03.html",
+      "sha256": "c32f07acd9f1ae1b5dc6e2e8b15b59b1d272cbdbaddd00e4383849acaae7d688"
+    },
+    {
+      "url": "https://www.iimtrichy.ac.in/en/Admission%20Criteria-pgpm-hr",
+      "finalUrl": "https://www.iimtrichy.ac.in/en/Admission%20Criteria-pgpm-hr",
+      "status": 200,
+      "file": "04.html",
+      "sha256": "fd56156b1bb40bcd9e9d7e2ca180c081c3f8be0642bf48732238cb35e7defa7c"
+    },
+    {
+      "url": "https://www.iimtrichy.ac.in/en/dpm",
+      "finalUrl": "https://www.iimtrichy.ac.in/en/dpm",
+      "status": 200,
+      "file": "05.html",
+      "sha256": "b684da1a99fb3f2d9b1b6027b1e427ae565d02d036bc71bf5f86c46f9d37295e"
+    },
+    {
+      "url": "https://www.iimtrichy.ac.in/en/fpm-criteria",
+      "finalUrl": "https://www.iimtrichy.ac.in/en/fpm-criteria",
+      "status": 200,
+      "file": "06.html",
+      "sha256": "b9d3cc54d27fb0a55f2b63a9891d8a45b3d579ea95c6044bf58da74429c92de7"
+    },
+    {
+      "url": "https://www.iimtrichy.ac.in/en/edpm",
+      "finalUrl": "https://www.iimtrichy.ac.in/en/edpm",
+      "status": 200,
+      "file": "07.html",
+      "sha256": "9e93eabeb9a7681b026543a0431e7d8e250ee9e7f9641b9fe73da6946684000c"
+    },
+    {
+      "url": "https://www.iimtrichy.ac.in/pgpbm/",
+      "finalUrl": "https://www.iimtrichy.ac.in/pgpbm/",
+      "status": 200,
+      "file": "08.html",
+      "sha256": "b3b7400b6a75f045193788460a29412ee723b97b5b5455ebb7c8377adf39a24f"
+    },
+    {
+      "url": "https://www.iimtrichy.ac.in/sites/default/files/upload/23Jan2026132141_AdmissionPolicy-Overseas-PGPM-2026-28_Final_23Jan2026.pdf",
+      "file": "pgpm-overseas-2026.pdf",
+      "sha256": "bab6b4ca3ec8eb23960aa0211e1e522014610311cea3693e47afc0b972e50252",
+      "status": 200,
+      "contentType": "application/pdf",
+      "titleVerified": true
+    },
+    {
+      "url": "https://www.iimtrichy.ac.in/sites/default/files/upload/23Jan2026132735_AdmissionPolicy-Overseas-PGPM-HR-2026-28_Final_23Jan2026.pdf",
+      "file": "pgpm-hr-overseas-2026.pdf",
+      "sha256": "8ed87bcd04b20ca0568cb059d907f1a7e4369ccec721ff75d6d6d15d1125d420",
+      "status": 200,
+      "contentType": "application/pdf",
+      "titleVerified": true
+    }
+  ]
+}

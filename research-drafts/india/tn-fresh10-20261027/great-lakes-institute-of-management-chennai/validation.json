@@ -1,0 +1,100 @@
+{
+  "counts": {
+    "inventoryRows": 32,
+    "standaloneAwardCandidates": 6,
+    "heldAwardCandidates": 6,
+    "excludedNonstandaloneRows": 25,
+    "historicalHeldRows": 1,
+    "publishReadyOfferings": 0,
+    "aggregatorOnlyHeldRows": 0,
+    "internationalRouteConfirmedCandidates": 2,
+    "structurallyCompleteCandidates": 2,
+    "candidatesWithUnresolvedRequiredFields": 4
+  },
+  "csvRequiredColumns": [
+    "university_slug",
+    "programme_official_title",
+    "level",
+    "discipline",
+    "duration",
+    "campus",
+    "delivery_mode",
+    "intl_status",
+    "intl_evidence_url",
+    "official_source_url",
+    "other_sources",
+    "already_on_site",
+    "existing_offering_slug",
+    "canonical_course_match",
+    "notes"
+  ],
+  "allRowsHaveOfficialSource": true,
+  "unknownTaxonomySlugs": [],
+  "narrativeLengths": {
+    "summary": 378,
+    "campusLifestyle": 268,
+    "cityProfile": 324,
+    "practicalExposure": 383,
+    "hostelOverview": 258,
+    "dietarySupport": 223,
+    "safetyOverview": 317,
+    "studentSupport": 287
+  },
+  "narrativeOverBudget": {},
+  "faqCount": 11,
+  "noLiveURLClaim": true,
+  "noDBOrMediaWrites": true,
+  "canonicalSchemaResult": "FAIL",
+  "publicationGate": "BLOCKED",
+  "heldReasons": [
+    "PGXPM exact credential/canonical family remains unverified; do not equate its marketing description to an MBA award.",
+    "FBE, PGXPM, FPM and online PGDM international eligibility remains unverified; PGPM and PGDM explicit foreign-applicant evidence is captured.",
+    "FPM variable 4–5-year description does not establish a single standard durationYears; generic fellowship taxonomy proposal needs integrator review.",
+    "PGCM taxonomy proposal for PGPM/FBE requires registry integration, not relabeling as MBA. FBE certificate award is now confirmed.",
+    "FBE fee immersion component conflict remains; PGDM quote retains 2026–28 vintage.",
+    "Chennai online helpdesk and EOA support online linkage, but exact shared-site enrollment variant remains to be confirmed.",
+    "Brand-resource ZIP requests returned HTTP 403; visual/rights review and media upload remain incomplete; no bypass attempted."
+  ],
+  "schemaIssueCount": 6,
+  "localArtifactChecks": {
+    "validJsonFiles": true,
+    "csvRowCountMatches": true,
+    "sourceManifestFiles": 16,
+    "allRowsInternationalStatusAllowed": true,
+    "allNormalTaxonomySlugsVerified": true,
+    "mandatoryNarrativeCapsPass": true,
+    "latestLiveApiStatus": 404,
+    "noExistingMigrationIdentity": true,
+    "noForbiddenPublicMediaURLs": true,
+    "csvValuesMatchInventoryJson": true,
+    "sourceManifestHashesPass": true,
+    "profileAndProgrammeCopiesMatch": true,
+    "evidenceCopiesMatch": true
+  },
+  "researchDeliveryBlocked": false,
+  "structurallyCompleteSubset": {
+    "schemaResult": "PASS",
+    "issueCount": 0,
+    "programmeCount": 2,
+    "courseCount": 2,
+    "publicationReady": false
+  },
+  "summaryWordCount": 50,
+  "remainingRequiredFields": {
+    "audienceEligibility": 4,
+    "canonicalCourseSlug": 1,
+    "durationYears": 1
+  },
+  "coursesMissingFromFullDraft": [
+    "fellow-programme-business-management"
+  ],
+  "coursesMissingNote": "Held doctoral/research candidates may reference existing/proposed families without complete course payload metadata because a standard duration remains unresolved. No such missing course remains in the separately validated subset.",
+  "actualEvidenceFramework": {
+    "result": "PASS",
+    "validator": "scripts/lib/content-migrations.ts:readContentMigrations",
+    "input": "structurally-complete-subset.json",
+    "programmeCount": 2,
+    "expiredEvidence": 0,
+    "publicationReady": false
+  }
+}

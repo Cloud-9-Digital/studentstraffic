@@ -1,0 +1,138 @@
+{
+  "checkedAt": "2026-10-27",
+  "baselineSnapshotCommit": "514e4651ac1b278469eaee9e694bbeca438fa392",
+  "baselineEvidenceSha256": "bffb4b8f100b486ecd46f9db45ddf15ec3cfacb387d185afe10e3ba91c0355a9",
+  "claimScope": "Only the already-authored structurally complete subset; held programme eligibility/award/duration fields are not promoted. Recognition and language/intake omissions normalize existing supported evidence keys.",
+  "recognition": {
+    "field": "recognition",
+    "source": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list",
+    "status": "verified",
+    "grade": "A"
+  },
+  "programmes": [
+    {
+      "programmeSlug": "b-e-civil-engineering",
+      "eligibilitySource": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "admissionsSource": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceLocator": "sources/tnea-2026.txt: PDF pages 2–3 scope/nativity/OCI/refugee/academic requirements, 12–15 registration and certificates; sources/be-admission.txt confirms the TCE single-window route; sources/programs.txt confirms the exact award. Vocational rules are separate.",
+      "feeDecisionSource": "https://www.tce.edu/admission/be-btech",
+      "feeDecisionScope": "sources/be-admission.txt and sources/mandatory-disclosure.txt reviewed; fee-research.json records rejected secondary ranges/old totals. Verified means the source review supports an unresolved annual-fee status, not that TCE publishes a specific on-request tariff. Grade C discovery notes are retained outside executable evidence.",
+      "medium": "omit: unchanged empty language fields; exact framework key now used",
+      "intake": "omit: no future month inferred; exact framework key now used"
+    },
+    {
+      "programmeSlug": "b-e-computer-science-and-engineering",
+      "eligibilitySource": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "admissionsSource": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceLocator": "sources/tnea-2026.txt: PDF pages 2–3 scope/nativity/OCI/refugee/academic requirements, 12–15 registration and certificates; sources/be-admission.txt confirms the TCE single-window route; sources/programs.txt confirms the exact award. Vocational rules are separate.",
+      "feeDecisionSource": "https://www.tce.edu/admission/be-btech",
+      "feeDecisionScope": "sources/be-admission.txt and sources/mandatory-disclosure.txt reviewed; fee-research.json records rejected secondary ranges/old totals. Verified means the source review supports an unresolved annual-fee status, not that TCE publishes a specific on-request tariff. Grade C discovery notes are retained outside executable evidence.",
+      "medium": "omit: unchanged empty language fields; exact framework key now used",
+      "intake": "omit: no future month inferred; exact framework key now used"
+    },
+    {
+      "programmeSlug": "b-e-computer-science-and-engineering-artificial-intelligence-and-machine-learning",
+      "eligibilitySource": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "admissionsSource": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceLocator": "sources/tnea-2026.txt: PDF pages 2–3 scope/nativity/OCI/refugee/academic requirements, 12–15 registration and certificates; sources/be-admission.txt confirms the TCE single-window route; sources/programs.txt confirms the exact award. Vocational rules are separate.",
+      "feeDecisionSource": "https://www.tce.edu/admission/be-btech",
+      "feeDecisionScope": "sources/be-admission.txt and sources/mandatory-disclosure.txt reviewed; fee-research.json records rejected secondary ranges/old totals. Verified means the source review supports an unresolved annual-fee status, not that TCE publishes a specific on-request tariff. Grade C discovery notes are retained outside executable evidence.",
+      "medium": "omit: unchanged empty language fields; exact framework key now used",
+      "intake": "omit: no future month inferred; exact framework key now used"
+    },
+    {
+      "programmeSlug": "b-e-electrical-and-electronics-engineering",
+      "eligibilitySource": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "admissionsSource": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceLocator": "sources/tnea-2026.txt: PDF pages 2–3 scope/nativity/OCI/refugee/academic requirements, 12–15 registration and certificates; sources/be-admission.txt confirms the TCE single-window route; sources/programs.txt confirms the exact award. Vocational rules are separate.",
+      "feeDecisionSource": "https://www.tce.edu/admission/be-btech",
+      "feeDecisionScope": "sources/be-admission.txt and sources/mandatory-disclosure.txt reviewed; fee-research.json records rejected secondary ranges/old totals. Verified means the source review supports an unresolved annual-fee status, not that TCE publishes a specific on-request tariff. Grade C discovery notes are retained outside executable evidence.",
+      "medium": "omit: unchanged empty language fields; exact framework key now used",
+      "intake": "omit: no future month inferred; exact framework key now used"
+    },
+    {
+      "programmeSlug": "b-e-electronics-and-communication-engineering",
+      "eligibilitySource": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "admissionsSource": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceLocator": "sources/tnea-2026.txt: PDF pages 2–3 scope/nativity/OCI/refugee/academic requirements, 12–15 registration and certificates; sources/be-admission.txt confirms the TCE single-window route; sources/programs.txt confirms the exact award. Vocational rules are separate.",
+      "feeDecisionSource": "https://www.tce.edu/admission/be-btech",
+      "feeDecisionScope": "sources/be-admission.txt and sources/mandatory-disclosure.txt reviewed; fee-research.json records rejected secondary ranges/old totals. Verified means the source review supports an unresolved annual-fee status, not that TCE publishes a specific on-request tariff. Grade C discovery notes are retained outside executable evidence.",
+      "medium": "omit: unchanged empty language fields; exact framework key now used",
+      "intake": "omit: no future month inferred; exact framework key now used"
+    },
+    {
+      "programmeSlug": "b-e-mechanical-engineering",
+      "eligibilitySource": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "admissionsSource": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceLocator": "sources/tnea-2026.txt: PDF pages 2–3 scope/nativity/OCI/refugee/academic requirements, 12–15 registration and certificates; sources/be-admission.txt confirms the TCE single-window route; sources/programs.txt confirms the exact award. Vocational rules are separate.",
+      "feeDecisionSource": "https://www.tce.edu/admission/be-btech",
+      "feeDecisionScope": "sources/be-admission.txt and sources/mandatory-disclosure.txt reviewed; fee-research.json records rejected secondary ranges/old totals. Verified means the source review supports an unresolved annual-fee status, not that TCE publishes a specific on-request tariff. Grade C discovery notes are retained outside executable evidence.",
+      "medium": "omit: unchanged empty language fields; exact framework key now used",
+      "intake": "omit: no future month inferred; exact framework key now used"
+    },
+    {
+      "programmeSlug": "b-e-mechatronics",
+      "eligibilitySource": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "admissionsSource": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceLocator": "sources/tnea-2026.txt: PDF pages 2–3 scope/nativity/OCI/refugee/academic requirements, 12–15 registration and certificates; sources/be-admission.txt confirms the TCE single-window route; sources/programs.txt confirms the exact award. Vocational rules are separate.",
+      "feeDecisionSource": "https://www.tce.edu/admission/be-btech",
+      "feeDecisionScope": "sources/be-admission.txt and sources/mandatory-disclosure.txt reviewed; fee-research.json records rejected secondary ranges/old totals. Verified means the source review supports an unresolved annual-fee status, not that TCE publishes a specific on-request tariff. Grade C discovery notes are retained outside executable evidence.",
+      "medium": "omit: unchanged empty language fields; exact framework key now used",
+      "intake": "omit: no future month inferred; exact framework key now used"
+    },
+    {
+      "programmeSlug": "b-tech-computer-science-and-business-systems",
+      "eligibilitySource": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "admissionsSource": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceLocator": "sources/tnea-2026.txt: PDF pages 2–3 scope/nativity/OCI/refugee/academic requirements, 12–15 registration and certificates; sources/be-admission.txt confirms the TCE single-window route; sources/programs.txt confirms the exact award. Vocational rules are separate.",
+      "feeDecisionSource": "https://www.tce.edu/admission/be-btech",
+      "feeDecisionScope": "sources/be-admission.txt and sources/mandatory-disclosure.txt reviewed; fee-research.json records rejected secondary ranges/old totals. Verified means the source review supports an unresolved annual-fee status, not that TCE publishes a specific on-request tariff. Grade C discovery notes are retained outside executable evidence.",
+      "medium": "omit: unchanged empty language fields; exact framework key now used",
+      "intake": "omit: no future month inferred; exact framework key now used"
+    },
+    {
+      "programmeSlug": "b-tech-information-technology",
+      "eligibilitySource": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "admissionsSource": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceLocator": "sources/tnea-2026.txt: PDF pages 2–3 scope/nativity/OCI/refugee/academic requirements, 12–15 registration and certificates; sources/be-admission.txt confirms the TCE single-window route; sources/programs.txt confirms the exact award. Vocational rules are separate.",
+      "feeDecisionSource": "https://www.tce.edu/admission/be-btech",
+      "feeDecisionScope": "sources/be-admission.txt and sources/mandatory-disclosure.txt reviewed; fee-research.json records rejected secondary ranges/old totals. Verified means the source review supports an unresolved annual-fee status, not that TCE publishes a specific on-request tariff. Grade C discovery notes are retained outside executable evidence.",
+      "medium": "omit: unchanged empty language fields; exact framework key now used",
+      "intake": "omit: no future month inferred; exact framework key now used"
+    },
+    {
+      "programmeSlug": "b-e-electrical-and-computer-engineering",
+      "eligibilitySource": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "admissionsSource": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceLocator": "sources/tnea-2026.txt: PDF pages 2–3 scope/nativity/OCI/refugee/academic requirements, 12–15 registration and certificates; sources/be-admission.txt confirms the TCE single-window route; sources/programs.txt confirms the exact award. Vocational rules are separate.",
+      "feeDecisionSource": "https://www.tce.edu/admission/be-btech",
+      "feeDecisionScope": "sources/be-admission.txt and sources/mandatory-disclosure.txt reviewed; fee-research.json records rejected secondary ranges/old totals. Verified means the source review supports an unresolved annual-fee status, not that TCE publishes a specific on-request tariff. Grade C discovery notes are retained outside executable evidence.",
+      "medium": "omit: unchanged empty language fields; exact framework key now used",
+      "intake": "omit: no future month inferred; exact framework key now used"
+    },
+    {
+      "programmeSlug": "b-tech-fashion-technology",
+      "eligibilitySource": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "admissionsSource": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceLocator": "sources/tnea-2026.txt: PDF pages 2–3 scope/nativity/OCI/refugee/academic requirements, 12–15 registration and certificates; sources/be-admission.txt confirms the TCE single-window route; sources/programs.txt confirms the exact award. Vocational rules are separate.",
+      "feeDecisionSource": "https://www.tce.edu/admission/be-btech",
+      "feeDecisionScope": "sources/be-admission.txt and sources/mandatory-disclosure.txt reviewed; fee-research.json records rejected secondary ranges/old totals. Verified means the source review supports an unresolved annual-fee status, not that TCE publishes a specific on-request tariff. Grade C discovery notes are retained outside executable evidence.",
+      "medium": "omit: unchanged empty language fields; exact framework key now used",
+      "intake": "omit: no future month inferred; exact framework key now used"
+    },
+    {
+      "programmeSlug": "b-tech-electronics-engineering-vlsi-design-technology",
+      "eligibilitySource": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "admissionsSource": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceLocator": "sources/tnea-2026.txt: PDF pages 2–3 scope/nativity/OCI/refugee/academic requirements, 12–15 registration and certificates; sources/be-admission.txt confirms the TCE single-window route; sources/programs.txt confirms the exact award. Vocational rules are separate.",
+      "feeDecisionSource": "https://www.tce.edu/admission/be-btech",
+      "feeDecisionScope": "sources/be-admission.txt and sources/mandatory-disclosure.txt reviewed; fee-research.json records rejected secondary ranges/old totals. Verified means the source review supports an unresolved annual-fee status, not that TCE publishes a specific on-request tariff. Grade C discovery notes are retained outside executable evidence.",
+      "medium": "omit: unchanged empty language fields; exact framework key now used",
+      "intake": "omit: no future month inferred; exact framework key now used"
+    }
+  ],
+  "discoveryEvidenceRecordsOutsideExecutablePayload": 24,
+  "publicationReady": false,
+  "frameworkResult": "PASS",
+  "frameworkReport": "framework-validation.json"
+}

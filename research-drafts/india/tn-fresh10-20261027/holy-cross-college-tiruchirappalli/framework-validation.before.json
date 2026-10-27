@@ -1,0 +1,253 @@
+{
+  "checkedAt": "2026-10-27T00:00:00.000Z",
+  "validator": "scripts/lib/content-migrations.ts::readContentMigrations",
+  "command": "node --import tsx research-drafts/india/tn-fresh10-20261027/holy-cross-college-tiruchirappalli/validate-framework.cjs",
+  "isolatedResearchFixture": true,
+  "actualContentMigrationsDirectoryTouched": false,
+  "fullSpecimen": {
+    "passed": false,
+    "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-botany-aided-shift-i."
+  },
+  "totalProgrammeFragments": 47,
+  "programmePassCount": 0,
+  "programmeFailCount": 47,
+  "programmes": [
+    {
+      "slug": "b-sc-botany-aided-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-botany-aided-shift-i."
+    },
+    {
+      "slug": "b-sc-chemistry-aided-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-chemistry-aided-shift-i."
+    },
+    {
+      "slug": "b-sc-mathematics-aided-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-mathematics-aided-shift-i."
+    },
+    {
+      "slug": "b-sc-physics-aided-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-physics-aided-shift-i."
+    },
+    {
+      "slug": "b-sc-zoology-specialization-in-biotechnology-aided-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-zoology-specialization-in-biotechnology-aided-shift-i."
+    },
+    {
+      "slug": "b-a-economics-aided-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-a-economics-aided-shift-i."
+    },
+    {
+      "slug": "b-a-english-aided-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-a-english-aided-shift-i."
+    },
+    {
+      "slug": "b-a-history-aided-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-a-history-aided-shift-i."
+    },
+    {
+      "slug": "b-com-aided-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-com-aided-shift-i."
+    },
+    {
+      "slug": "b-a-tamil-self-financed-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-a-tamil-self-financed-shift-i."
+    },
+    {
+      "slug": "b-sc-biochemistry-self-financed-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-biochemistry-self-financed-shift-i."
+    },
+    {
+      "slug": "b-sc-biotechnology-self-financed-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-biotechnology-self-financed-shift-i."
+    },
+    {
+      "slug": "b-sc-visual-communication-self-financed-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-visual-communication-self-financed-shift-i."
+    },
+    {
+      "slug": "b-sc-fashion-and-costume-designing-self-financed-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-fashion-and-costume-designing-self-financed-shift-i."
+    },
+    {
+      "slug": "b-sc-mathematics-self-financed-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-mathematics-self-financed-shift-i."
+    },
+    {
+      "slug": "b-c-a-computer-applications-self-financed-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-c-a-computer-applications-self-financed-shift-i."
+    },
+    {
+      "slug": "b-b-a-business-administration-self-financed-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-b-a-business-administration-self-financed-shift-i."
+    },
+    {
+      "slug": "b-voc-software-development-self-financed-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-voc-software-development-self-financed-shift-i."
+    },
+    {
+      "slug": "b-voc-banking-financial-services-and-insurance-self-financed-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-voc-banking-financial-services-and-insurance-self-financed-shift-i."
+    },
+    {
+      "slug": "b-com-business-process-outsourcing-self-financed-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-com-business-process-outsourcing-self-financed-shift-i."
+    },
+    {
+      "slug": "b-s-w-social-work-self-financed-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-s-w-social-work-self-financed-shift-i."
+    },
+    {
+      "slug": "m-sc-bioinformatics-5-year-integrated-self-financed-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for m-sc-bioinformatics-5-year-integrated-self-financed-shift-i."
+    },
+    {
+      "slug": "b-sc-artificial-intelligence-and-machine-learning-self-financed-shift-ii",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-artificial-intelligence-and-machine-learning-self-financed-shift-ii."
+    },
+    {
+      "slug": "b-sc-chemistry-self-financed-shift-ii",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-chemistry-self-financed-shift-ii."
+    },
+    {
+      "slug": "b-sc-computer-science-self-financed-shift-ii",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-computer-science-self-financed-shift-ii."
+    },
+    {
+      "slug": "b-sc-mathematics-self-financed-shift-ii",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-mathematics-self-financed-shift-ii."
+    },
+    {
+      "slug": "b-sc-physics-self-financed-shift-ii",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-physics-self-financed-shift-ii."
+    },
+    {
+      "slug": "b-sc-psychology-self-financed-shift-ii",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-sc-psychology-self-financed-shift-ii."
+    },
+    {
+      "slug": "b-a-english-self-financed-shift-ii",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-a-english-self-financed-shift-ii."
+    },
+    {
+      "slug": "b-com-self-financed-shift-ii",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-com-self-financed-shift-ii."
+    },
+    {
+      "slug": "b-com-computer-applications-self-financed-shift-ii",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for b-com-computer-applications-self-financed-shift-ii."
+    },
+    {
+      "slug": "m-a-economics-aided-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for m-a-economics-aided-shift-i."
+    },
+    {
+      "slug": "m-a-english-aided-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for m-a-english-aided-shift-i."
+    },
+    {
+      "slug": "m-sc-botany-aided-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for m-sc-botany-aided-shift-i."
+    },
+    {
+      "slug": "m-sc-zoology-aided-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for m-sc-zoology-aided-shift-i."
+    },
+    {
+      "slug": "m-a-history-self-financed-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for m-a-history-self-financed-shift-i."
+    },
+    {
+      "slug": "m-a-tamil-self-financed-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for m-a-tamil-self-financed-shift-i."
+    },
+    {
+      "slug": "m-s-w-social-work-self-financed-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for m-s-w-social-work-self-financed-shift-i."
+    },
+    {
+      "slug": "m-com-self-financed-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for m-com-self-financed-shift-i."
+    },
+    {
+      "slug": "m-sc-biochemistry-self-financed-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for m-sc-biochemistry-self-financed-shift-i."
+    },
+    {
+      "slug": "m-sc-biotechnology-self-financed-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for m-sc-biotechnology-self-financed-shift-i."
+    },
+    {
+      "slug": "m-sc-chemistry-self-financed-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for m-sc-chemistry-self-financed-shift-i."
+    },
+    {
+      "slug": "m-sc-mathematics-self-financed-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for m-sc-mathematics-self-financed-shift-i."
+    },
+    {
+      "slug": "m-sc-physics-self-financed-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for m-sc-physics-self-financed-shift-i."
+    },
+    {
+      "slug": "m-sc-psychology-self-financed-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for m-sc-psychology-self-financed-shift-i."
+    },
+    {
+      "slug": "m-sc-data-science-self-financed-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for m-sc-data-science-self-financed-shift-i."
+    },
+    {
+      "slug": "m-lib-i-sc-library-and-information-science-self-financed-shift-i",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified admissions or intake evidence for m-lib-i-sc-library-and-information-science-self-financed-shift-i."
+    }
+  ],
+  "publishReady": false,
+  "warning": "Reader success checks source-link structure, not editorial truth or audience/media readiness. Existing row holds remain binding."
+}

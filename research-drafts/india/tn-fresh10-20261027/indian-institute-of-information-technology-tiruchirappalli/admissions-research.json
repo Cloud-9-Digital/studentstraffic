@@ -1,0 +1,83 @@
+{
+  "checkedAt": "2026-10-27",
+  "status": "completion reviewed; normalized supported fields in proposed-payload.json; precise missing fields in schema-validation.json",
+  "routes": {
+    "btech": {
+      "sourceUrls": [
+        "https://iiitt.ac.in/json/admission/ug.json",
+        "https://store.iiitt.ac.in/downloads/admission/DASA%20-%20First%20yearr%20Reporting%20details%202026-27%20-1.pdf",
+        "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+        "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/07/20260730113349078.pdf"
+      ],
+      "confirmed": [
+        "Four named B.Tech. programmes, each four years.",
+        "Institution published DASA 2026–27 physical reporting instructions and category-specific fees.",
+        "2026 reporting was 20–21 August; that past date is not a future deadline or intake promise.",
+        "Revised DASA 2026 matrix verifies all four branches. The current 2026 brochure supplies category eligibility, school subjects/marks, JEE Main and document requirements."
+      ],
+      "held": [
+        "2026 dates are historical. Do not infer the next cycle or transfer DASA rules to domestic JoSAA applicants."
+      ],
+      "documentsFromDasaReporting": "Use the captured DASA reporting PDF as the exact category-specific checklist; do not apply passport/citizenship documents to every domestic applicant."
+    },
+    "mtech_self_support": {
+      "sourceUrls": [
+        "https://store.iiitt.ac.in/downloads/admission/MTECH%20self%20support%20Brochure_%20July%202026_self.pdf",
+        "https://iiitt.ac.in/json/admission/pg.json"
+      ],
+      "applicableProgrammes": [
+        "M.Tech. Computer Science and Engineering",
+        "M.Tech. VLSI Systems"
+      ],
+      "academicYear": "2026–27",
+      "qualification": "Relevant B.E./B.Tech. degree: CSE or relevant discipline for CSE; ECE or relevant discipline for VLSI Systems.",
+      "thresholds": {
+        "general_EWS_OBC": "60% aggregate or CGPA 6.5/10",
+        "SC_ST_PwD": "55% aggregate or CGPA 6.0/10"
+      },
+      "assessment": "Valid GATE 2024, 2025 or 2026 is preferred and exempts the written test; non-GATE applicants take a written examination under the prospectus.",
+      "funding": "No institute stipend for the self-support category.",
+      "deadline": "Prospectus deadline 31 July 2026; official admission JSON records extension to 7 August 2026. Both are closed dates as of this check.",
+      "documentsAcademic": [
+        "Class X and XII certificates",
+        "Undergraduate consolidated mark sheet",
+        "Degree/provisional degree or course-completion certificate as applicable",
+        "Transfer/migration certificate where applicable"
+      ],
+      "documentsApplication": [
+        "Photograph and photo identity proof",
+        "GATE score card where applicable",
+        "Category / disability certificates only where claiming the category"
+      ],
+      "held": [
+        "Do not transfer self-support rules uncritically to CCMT seats.",
+        "International eligibility still unverified."
+      ]
+    },
+    "mtech_ccmt": {
+      "sourceUrls": [
+        "https://iiitt.ac.in/json/admission/pg.json",
+        "https://ccmt.admissions.nic.in/"
+      ],
+      "confirmed": "Institution participates in CCMT; current programme-mapping matrix and special eligibility need a separate counselling-source capture.",
+      "held": "No CCMT thresholds or documents copied from another university."
+    },
+    "phd": {
+      "sourceUrls": [
+        "https://store.iiitt.ac.in/downloads/programs/Ph.D_regulations_IIITT_final_2020.pdf",
+        "https://store.iiitt.ac.in/downloads/programs/PhD_Amendment2023.pdf",
+        "https://iiitt.ac.in/programs"
+      ],
+      "vintage": "2020 regulations, linked 2023 comprehensive-exam amendment",
+      "engineeringRoute": "Relevant engineering/technology masters or M.S. by research: 60% or CGPA 6.5 in UG or PG for OC/OBC; 55% or CGPA 6.0 for SC/ST. Bachelor-plus-GATE and long-experience routes have additional conditions; consult the full source.",
+      "scienceHumanitiesRoute": "Linked regulations specify relevant bachelor/master qualification, marks and valid fellowship/test conditions. Exact current disciplinary eligibility must be checked against an admission call.",
+      "duration": "Minimum 24 months full-time or 36 months part-time before synopsis/thesis submission; maximum six years. These are registration limits, not a promised standard course duration.",
+      "amendment": "December 2023 amendment concerns written/oral comprehensive examinations, not a new intake.",
+      "held": [
+        "Current call, supervisor seats, full current fee, international eligibility, award-specific standard duration."
+      ]
+    }
+  },
+  "completionAddendum": "2026 DASA brochure and exact branch matrix captured; 2013 establishment verified by Lok Sabha answer.",
+  "currentNormalizedAdmissionsFile": "proposed-payload.json"
+}

@@ -1,0 +1,198 @@
+{
+  "checkedAt": "2026-10-27T00:00:00.000Z",
+  "validator": "scripts/lib/content-migrations.ts::readContentMigrations",
+  "command": "node --import tsx research-drafts/india/tn-fresh10-20261027/bishop-heber-college-tiruchirappalli/validate-framework.cjs",
+  "isolatedResearchFixture": true,
+  "actualContentMigrationsDirectoryTouched": false,
+  "fullSpecimen": {
+    "passed": false,
+    "error": "9999-research-fixture-only is missing verified eligibility evidence for b-a-economics-aided."
+  },
+  "totalProgrammeFragments": 36,
+  "programmePassCount": 0,
+  "programmeFailCount": 36,
+  "programmes": [
+    {
+      "slug": "b-a-economics-aided",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-a-economics-aided."
+    },
+    {
+      "slug": "b-a-english-aided",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-a-english-aided."
+    },
+    {
+      "slug": "b-a-history-aided",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-a-history-aided."
+    },
+    {
+      "slug": "b-com-aided",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-com-aided."
+    },
+    {
+      "slug": "b-sc-botany-aided",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-sc-botany-aided."
+    },
+    {
+      "slug": "b-sc-chemistry-aided",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-sc-chemistry-aided."
+    },
+    {
+      "slug": "b-sc-computer-science-aided",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-sc-computer-science-aided."
+    },
+    {
+      "slug": "b-sc-mathematics-aided",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-sc-mathematics-aided."
+    },
+    {
+      "slug": "b-sc-physics-aided",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-sc-physics-aided."
+    },
+    {
+      "slug": "b-sc-zoology-aided",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-sc-zoology-aided."
+    },
+    {
+      "slug": "b-a-english-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-a-english-self-financed."
+    },
+    {
+      "slug": "b-a-tamil-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-a-tamil-self-financed."
+    },
+    {
+      "slug": "b-b-a-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-b-a-self-financed."
+    },
+    {
+      "slug": "b-b-a-aviation-and-ground-handling-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-b-a-aviation-and-ground-handling-self-financed."
+    },
+    {
+      "slug": "b-com-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-com-self-financed."
+    },
+    {
+      "slug": "b-com-business-analytics-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-com-business-analytics-self-financed."
+    },
+    {
+      "slug": "b-com-business-process-management-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-com-business-process-management-self-financed."
+    },
+    {
+      "slug": "b-com-computer-applications-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-com-computer-applications-self-financed."
+    },
+    {
+      "slug": "b-com-financial-technology-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-com-financial-technology-self-financed."
+    },
+    {
+      "slug": "b-com-international-accounting-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-com-international-accounting-self-financed."
+    },
+    {
+      "slug": "b-com-professional-accounting-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-com-professional-accounting-self-financed."
+    },
+    {
+      "slug": "b-com-strategic-finance-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-com-strategic-finance-self-financed."
+    },
+    {
+      "slug": "b-s-w-social-work-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-s-w-social-work-self-financed."
+    },
+    {
+      "slug": "b-c-a-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-c-a-self-financed."
+    },
+    {
+      "slug": "b-sc-actuarial-mathematical-science-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-sc-actuarial-mathematical-science-self-financed."
+    },
+    {
+      "slug": "b-sc-aviation-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-sc-aviation-self-financed."
+    },
+    {
+      "slug": "b-sc-biotechnology-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-sc-biotechnology-self-financed."
+    },
+    {
+      "slug": "b-sc-chemistry-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-sc-chemistry-self-financed."
+    },
+    {
+      "slug": "b-sc-computer-science-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-sc-computer-science-self-financed."
+    },
+    {
+      "slug": "b-sc-environmental-sciences-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-sc-environmental-sciences-self-financed."
+    },
+    {
+      "slug": "b-sc-mathematics-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-sc-mathematics-self-financed."
+    },
+    {
+      "slug": "b-sc-nutrition-and-dietetics-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-sc-nutrition-and-dietetics-self-financed."
+    },
+    {
+      "slug": "b-sc-physics-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-sc-physics-self-financed."
+    },
+    {
+      "slug": "b-sc-information-technology-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-sc-information-technology-self-financed."
+    },
+    {
+      "slug": "b-sc-visual-communication-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for b-sc-visual-communication-self-financed."
+    },
+    {
+      "slug": "m-sc-bioinformatics-5-years-integrated-self-financed",
+      "passed": false,
+      "error": "9999-research-fixture-only is missing verified eligibility evidence for m-sc-bioinformatics-5-years-integrated-self-financed."
+    }
+  ],
+  "publishReady": false,
+  "warning": "Reader success checks source-link structure, not editorial truth or audience/media readiness. Existing row holds remain binding."
+}

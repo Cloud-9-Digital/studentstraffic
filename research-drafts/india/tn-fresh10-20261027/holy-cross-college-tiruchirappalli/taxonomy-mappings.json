@@ -1,0 +1,530 @@
+[
+  {
+    "offeringSlug": "b-sc-botany-aided-shift-i",
+    "officialTitle": "B.Sc. Botany",
+    "canonicalCourseSlug": "bsc-biological-sciences",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-chemistry-aided-shift-i",
+    "officialTitle": "B.Sc. Chemistry",
+    "canonicalCourseSlug": "bsc-chemistry",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-mathematics-aided-shift-i",
+    "officialTitle": "B.Sc. Mathematics",
+    "canonicalCourseSlug": "bsc-mathematics",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-physics-aided-shift-i",
+    "officialTitle": "B.Sc. Physics",
+    "canonicalCourseSlug": "bsc-physics",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-zoology-specialization-in-biotechnology-aided-shift-i",
+    "officialTitle": "B.Sc. Zoology (Specialization in Biotechnology)",
+    "canonicalCourseSlug": "bsc-biological-sciences",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-rehabilitation-science-aided-shift-i",
+    "officialTitle": "B.Sc. Rehabilitation Science",
+    "canonicalCourseSlug": "GAP:b-sc-rehabilitation-science",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "b-a-economics-aided-shift-i",
+    "officialTitle": "B.A. Economics",
+    "canonicalCourseSlug": "bachelor-economics",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-a-economics-specialisation-in-rural-management-aided-shift-i",
+    "officialTitle": "B.A. Economics (Specialisation in Rural Management)",
+    "canonicalCourseSlug": "bachelor-economics",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-a-english-aided-shift-i",
+    "officialTitle": "B.A. English",
+    "canonicalCourseSlug": "ba-english-literature",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-a-history-aided-shift-i",
+    "officialTitle": "B.A. History",
+    "canonicalCourseSlug": "ba-history",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-com-aided-shift-i",
+    "officialTitle": "B.Com.",
+    "canonicalCourseSlug": "bcom",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-a-tamil-self-financed-shift-i",
+    "officialTitle": "B.A. Tamil",
+    "canonicalCourseSlug": "ba-languages-linguistics",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-biochemistry-self-financed-shift-i",
+    "officialTitle": "B.Sc. Biochemistry",
+    "canonicalCourseSlug": "bsc-biological-sciences",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-biotechnology-self-financed-shift-i",
+    "officialTitle": "B.Sc. Biotechnology",
+    "canonicalCourseSlug": "bsc-biotechnology",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-visual-communication-self-financed-shift-i",
+    "officialTitle": "B.Sc. Visual Communication",
+    "canonicalCourseSlug": "bachelor-media-communication",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-fashion-and-costume-designing-self-financed-shift-i",
+    "officialTitle": "B.Sc. Fashion and Costume Designing",
+    "canonicalCourseSlug": "bachelor-fashion-design",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-mathematics-self-financed-shift-i",
+    "officialTitle": "B.Sc. Mathematics",
+    "canonicalCourseSlug": "bsc-mathematics",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-c-a-computer-applications-self-financed-shift-i",
+    "officialTitle": "B.C.A. Computer Applications",
+    "canonicalCourseSlug": "bca",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-b-a-business-administration-self-financed-shift-i",
+    "officialTitle": "B.B.A. Business Administration",
+    "canonicalCourseSlug": "bba",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-voc-software-development-self-financed-shift-i",
+    "officialTitle": "B.Voc. Software Development",
+    "canonicalCourseSlug": "bachelor-vocational-studies",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-voc-banking-financial-services-and-insurance-self-financed-shift-i",
+    "officialTitle": "B.Voc. Banking Financial Services and Insurance",
+    "canonicalCourseSlug": "bachelor-vocational-studies",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-com-business-process-outsourcing-self-financed-shift-i",
+    "officialTitle": "B.Com. Business Process Outsourcing",
+    "canonicalCourseSlug": "bcom",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-com-business-analytics-self-financed-shift-i",
+    "officialTitle": "B.Com. Business Analytics",
+    "canonicalCourseSlug": "bcom",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-com-us-cma-self-financed-shift-i",
+    "officialTitle": "B.Com. (US CMA)",
+    "canonicalCourseSlug": "bcom",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-com-self-financed-shift-i",
+    "officialTitle": "B.Com.",
+    "canonicalCourseSlug": "bcom",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-s-w-social-work-self-financed-shift-i",
+    "officialTitle": "B.S.W. Social Work",
+    "canonicalCourseSlug": "bachelor-social-work",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-sc-bioinformatics-5-year-integrated-self-financed-shift-i",
+    "officialTitle": "M.Sc. Bioinformatics (5 Year Integrated)",
+    "canonicalCourseSlug": "integrated-msc-bioinformatics",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-aslp-audiology-and-speech-language-pathology-self-financed-shift-i",
+    "officialTitle": "B.ASLP. Audiology and Speech Language Pathology",
+    "canonicalCourseSlug": "GAP:b-aslp-audiology-and-speech-language-pathology",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "b-sc-artificial-intelligence-and-machine-learning-self-financed-shift-ii",
+    "officialTitle": "B.Sc. Artificial Intelligence and Machine Learning",
+    "canonicalCourseSlug": "bsc-artificial-intelligence-machine-learning",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-chemistry-self-financed-shift-ii",
+    "officialTitle": "B.Sc. Chemistry",
+    "canonicalCourseSlug": "bsc-chemistry",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-computer-science-self-financed-shift-ii",
+    "officialTitle": "B.Sc. Computer Science",
+    "canonicalCourseSlug": "bsc-computer-science",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-mathematics-self-financed-shift-ii",
+    "officialTitle": "B.Sc. Mathematics",
+    "canonicalCourseSlug": "bsc-mathematics",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-physics-self-financed-shift-ii",
+    "officialTitle": "B.Sc. Physics",
+    "canonicalCourseSlug": "bsc-physics",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-sc-psychology-self-financed-shift-ii",
+    "officialTitle": "B.Sc. Psychology",
+    "canonicalCourseSlug": "bachelor-psychology",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-a-english-self-financed-shift-ii",
+    "officialTitle": "B.A. English",
+    "canonicalCourseSlug": "ba-english-literature",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-com-self-financed-shift-ii",
+    "officialTitle": "B.Com.",
+    "canonicalCourseSlug": "bcom",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-com-computer-applications-self-financed-shift-ii",
+    "officialTitle": "B.Com. Computer Applications",
+    "canonicalCourseSlug": "bcom",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "b-com-computer-applications-self-financed-shift-i-older-list",
+    "officialTitle": "B.Com. Computer Applications",
+    "canonicalCourseSlug": "bcom",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-a-economics-aided-shift-i",
+    "officialTitle": "M.A. Economics",
+    "canonicalCourseSlug": "master-economics",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-a-english-aided-shift-i",
+    "officialTitle": "M.A. English",
+    "canonicalCourseSlug": "ma-english-literature",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-sc-botany-aided-shift-i",
+    "officialTitle": "M.Sc. Botany",
+    "canonicalCourseSlug": "msc-biological-sciences",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-sc-zoology-aided-shift-i",
+    "officialTitle": "M.Sc. Zoology",
+    "canonicalCourseSlug": "msc-biological-sciences",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-sc-rehabilitation-science-aided-shift-i",
+    "officialTitle": "M.Sc. Rehabilitation Science",
+    "canonicalCourseSlug": "GAP:m-sc-rehabilitation-science",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "m-a-history-self-financed-shift-i",
+    "officialTitle": "M.A. History",
+    "canonicalCourseSlug": "ma-history",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-a-tamil-self-financed-shift-i",
+    "officialTitle": "M.A. Tamil",
+    "canonicalCourseSlug": "ma-languages-linguistics",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-s-w-social-work-self-financed-shift-i",
+    "officialTitle": "M.S.W. Social Work",
+    "canonicalCourseSlug": "master-social-work",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-com-self-financed-shift-i",
+    "officialTitle": "M.Com.",
+    "canonicalCourseSlug": "mcom",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-c-a-computer-applications-self-financed-shift-i",
+    "officialTitle": "M.C.A. Computer Applications",
+    "canonicalCourseSlug": "mca",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-sc-biochemistry-self-financed-shift-i",
+    "officialTitle": "M.Sc. Biochemistry",
+    "canonicalCourseSlug": "msc-biological-sciences",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-sc-biotechnology-self-financed-shift-i",
+    "officialTitle": "M.Sc. Biotechnology",
+    "canonicalCourseSlug": "msc-biotechnology",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-sc-chemistry-self-financed-shift-i",
+    "officialTitle": "M.Sc. Chemistry",
+    "canonicalCourseSlug": "msc-chemistry",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-sc-mathematics-self-financed-shift-i",
+    "officialTitle": "M.Sc. Mathematics",
+    "canonicalCourseSlug": "msc-mathematics",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-sc-visual-communication-self-financed-shift-i",
+    "officialTitle": "M.Sc. Visual Communication",
+    "canonicalCourseSlug": "master-media-communication",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-sc-physics-self-financed-shift-i",
+    "officialTitle": "M.Sc. Physics",
+    "canonicalCourseSlug": "msc-physics",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-sc-psychology-self-financed-shift-i",
+    "officialTitle": "M.Sc. Psychology",
+    "canonicalCourseSlug": "master-psychology",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-sc-data-science-self-financed-shift-i",
+    "officialTitle": "M.Sc. Data Science",
+    "canonicalCourseSlug": "msc-data-science",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-lib-i-sc-library-and-information-science-self-financed-shift-i",
+    "officialTitle": "M.Lib.I.Sc. Library and Information Science",
+    "canonicalCourseSlug": "master-library-information-science",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-sc-environmental-science-self-financed-shift-i",
+    "officialTitle": "M.Sc. Environmental Science",
+    "canonicalCourseSlug": "msc-environmental-science",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-sc-fashion-technology-and-costume-designing-self-financed-shift-i",
+    "officialTitle": "M.Sc. Fashion Technology and Costume Designing",
+    "canonicalCourseSlug": "master-fashion-design",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-sc-computer-science-self-financed-shift-ii",
+    "officialTitle": "M.Sc. Computer Science",
+    "canonicalCourseSlug": "msc-computer-science",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "m-sc-bioinformatics-lateral-entry-integrated-lateral-entry-route",
+    "officialTitle": "M.Sc. Bioinformatics (Lateral Entry)",
+    "canonicalCourseSlug": "msc-bioinformatics",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "ph-d-biotechnology-full-time-part-time",
+    "officialTitle": "Ph.D. Biotechnology",
+    "canonicalCourseSlug": "phd-natural-sciences",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "ph-d-botany-full-time-part-time",
+    "officialTitle": "Ph.D. Botany",
+    "canonicalCourseSlug": "phd-natural-sciences",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "ph-d-chemistry-full-time-part-time",
+    "officialTitle": "Ph.D. Chemistry",
+    "canonicalCourseSlug": "phd-natural-sciences",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "ph-d-commerce-full-time-part-time",
+    "officialTitle": "Ph.D. Commerce",
+    "canonicalCourseSlug": "phd-business-management",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "ph-d-computer-science-full-time-part-time",
+    "officialTitle": "Ph.D. Computer Science",
+    "canonicalCourseSlug": "phd-computer-science",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "ph-d-economics-full-time-part-time",
+    "officialTitle": "Ph.D. Economics",
+    "canonicalCourseSlug": "GAP:ph-d-economics",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "ph-d-physics-full-time-part-time",
+    "officialTitle": "Ph.D. Physics",
+    "canonicalCourseSlug": "phd-natural-sciences",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "ph-d-english-full-time-part-time",
+    "officialTitle": "Ph.D. English",
+    "canonicalCourseSlug": "phd-arts-humanities",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "ph-d-history-full-time-part-time",
+    "officialTitle": "Ph.D. History",
+    "canonicalCourseSlug": "phd-arts-humanities",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "ph-d-mathematics-full-time-part-time",
+    "officialTitle": "Ph.D. Mathematics",
+    "canonicalCourseSlug": "phd-natural-sciences",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "ph-d-tamil-full-time-part-time",
+    "officialTitle": "Ph.D. Tamil",
+    "canonicalCourseSlug": "phd-arts-humanities",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "ph-d-rehabilitation-science-full-time-part-time",
+    "officialTitle": "Ph.D. Rehabilitation Science",
+    "canonicalCourseSlug": "GAP:ph-d-rehabilitation-science",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "ph-d-visual-communication-full-time-part-time",
+    "officialTitle": "Ph.D. Visual Communication",
+    "canonicalCourseSlug": "GAP:ph-d-visual-communication",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "ph-d-zoology-full-time-part-time",
+    "officialTitle": "Ph.D. Zoology",
+    "canonicalCourseSlug": "phd-natural-sciences",
+    "reason": "Existing neutral canonical degree family; official specialization and institutional variant retained in officialTitle and offering slug."
+  },
+  {
+    "offeringSlug": "diploma-in-medical-laboratory-technology-self-financed-shift-i",
+    "officialTitle": "Diploma in Medical Laboratory Technology",
+    "canonicalCourseSlug": "GAP:diploma-in-medical-laboratory-technology",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "diploma-in-physician-assistant-self-financed-shift-ii",
+    "officialTitle": "Diploma in Physician Assistant",
+    "canonicalCourseSlug": "GAP:diploma-in-physician-assistant",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "diploma-in-special-education-intellectual-developmental-disabilities-prospectus-diploma-list",
+    "officialTitle": "Diploma in Special Education (Intellectual Developmental Disabilities)",
+    "canonicalCourseSlug": "GAP:diploma-in-special-education-intellectual-developmental-disabilities",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "pg-diploma-in-medical-laboratory-technology-self-financed-shift-i",
+    "officialTitle": "PG Diploma in Medical Laboratory Technology",
+    "canonicalCourseSlug": "GAP:pg-diploma-in-medical-laboratory-technology",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "pg-diploma-in-computer-applications-self-financed-shift-ii",
+    "officialTitle": "PG Diploma in Computer Applications",
+    "canonicalCourseSlug": "GAP:pg-diploma-in-computer-applications",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "pg-diploma-in-bioinformatics-shift-conflict",
+    "officialTitle": "PG Diploma in Bioinformatics",
+    "canonicalCourseSlug": "GAP:pg-diploma-in-bioinformatics",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "pg-diploma-in-personnel-management-shift-conflict",
+    "officialTitle": "PG Diploma in Personnel Management",
+    "canonicalCourseSlug": "GAP:pg-diploma-in-personnel-management",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "pg-diploma-in-medical-equipment-technology-older-shift-page-only",
+    "officialTitle": "PG Diploma in Medical Equipment Technology",
+    "canonicalCourseSlug": "GAP:pg-diploma-in-medical-equipment-technology",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "certificate-in-french-self-financed-shift-i",
+    "officialTitle": "Certificate in French",
+    "canonicalCourseSlug": "GAP:certificate-in-french",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "value-added-language-course-ielts-international-language-lab",
+    "officialTitle": "Value-added language course: IELTS",
+    "canonicalCourseSlug": "GAP:value-added-language-course-ielts",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "value-added-language-course-korean-international-language-lab",
+    "officialTitle": "Value-added language course: Korean",
+    "canonicalCourseSlug": "GAP:value-added-language-course-korean",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "value-added-language-course-french-international-language-lab",
+    "officialTitle": "Value-added language course: French",
+    "canonicalCourseSlug": "GAP:value-added-language-course-french",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  },
+  {
+    "offeringSlug": "value-added-language-course-german-international-language-lab",
+    "officialTitle": "Value-added language course: German",
+    "canonicalCourseSlug": "GAP:value-added-language-course-german",
+    "reason": "No exact safe canonical award family found; proposal only, never silently coerce into another qualification."
+  }
+]

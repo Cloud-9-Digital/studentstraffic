@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-10-27",
+  "status": "held-unuploaded",
+  "candidates": [
+    {
+      "sourceUrl": "https://www.tce.edu/sites/default/files/Homepage-Slider-1.webp",
+      "checkedAt": "2026-10-27",
+      "rights": "Official institutional source; no explicit reuse licence established. Editorial/logo identification and photographic reuse need integrator rights review.",
+      "uploaded": false,
+      "visualReview": "Viewed original 1280x499 campus-building photograph from TCE official home slider; composition suitable as cover candidate.",
+      "httpStatus": 200,
+      "contentType": "image/webp",
+      "sha256": "ac7eaf09b16a48ef6ff7f60f07958d68c4ad431a41f10af685731843b26d8dc8",
+      "localPath": "research-drafts/india/tn-fresh10-20261027/thiagarajar-college-of-engineering/media-candidates/cover.webp",
+      "rightsApproved": false
+    },
+    {
+      "sourceUrl": "https://www.tce.edu/sites/default/files/2025-02/logo.png",
+      "checkedAt": "2026-10-27",
+      "rights": "Official institutional source; no explicit reuse licence established. Editorial/logo identification and photographic reuse need integrator rights review.",
+      "uploaded": false,
+      "visualReview": "Viewed original image: institutional emblem visible; white-background presentation still to be checked in final page.",
+      "httpStatus": 200,
+      "contentType": "image/png",
+      "sha256": "838b5febb0757fb0a06eb75470200ec2468ad45c86d2bf61db8023f706ad0134",
+      "localPath": "research-drafts/india/tn-fresh10-20261027/thiagarajar-college-of-engineering/media-candidates/logo.png",
+      "rightsApproved": false
+    }
+  ],
+  "missingRoles": [],
+  "publicCloudinaryURLs": [],
+  "requirements": [
+    "Review actual image and appropriate rights.",
+    "Confirm identity and white-background logo legibility.",
+    "Upload only through authorized integrator after credentials/approval.",
+    "No public source hotlinks inserted."
+  ]
+}

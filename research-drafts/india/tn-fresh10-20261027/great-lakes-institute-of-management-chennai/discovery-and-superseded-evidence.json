@@ -1,0 +1,34 @@
+{
+  "executable": false,
+  "reason": "Grade C discovery/rejected fee data and superseded fee-status evidence are retained for audit, not used as verified executable facts. The current fee decisions are bounded official-source review conclusions.",
+  "records": [
+    {
+      "entity": "programme",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "fee",
+      "claimText": "The one-year PGPM table lists domestic INR 1,243,000 tuition and INR 2,350,000 combined total; international tuition USD 21,050 and total USD 41,450. Retain category-specific quotes. A FAQ academic-total typo and stale page title are documented.",
+      "status": "indicative",
+      "sourceLabel": "Official institutional / regulator evidence",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgpm/fees",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "",
+      "programmeSlug": "post-graduate-program-in-management-pgpm-award-post-graduate-certificate-in-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "fee",
+      "claimText": "The source is the 2026–28 whole-course schedule, not annual tuition and not the current 2027–29 admissions tariff. Tuition is INR 1,025,000 and combined total INR 2,250,000; applicant category requires confirmation.",
+      "status": "indicative",
+      "sourceLabel": "Official institutional / regulator evidence",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgdm/fees",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "",
+      "programmeSlug": "post-graduate-diploma-in-management-pgdm"
+    }
+  ]
+}

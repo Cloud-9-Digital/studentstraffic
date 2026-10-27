@@ -1,0 +1,36 @@
+[
+  {
+    "role": "logo",
+    "source": {
+      "url": "https://www.ladydoakcollege.edu.in/ldc_newsite/img/logo_blue.webp",
+      "status": 200,
+      "sha256": "a6d7faf48677dd29b2592c61504a85169ba659f9275e8964487a1c48f81c0884",
+      "checkedAt": "2026-10-27"
+    },
+    "localFile": "sources/logo-candidate.webp",
+    "visuallyReviewed": true,
+    "visualNotes": "Official horizontal college header lockup, visibly containing shield and wordmark; square-logo adaptation needs separate review.",
+    "rightsStatus": "Official first-party source identified; reuse authorization/terms not independently established.",
+    "uploaded": false,
+    "cloudinaryUrl": null,
+    "gate": "pending authorized upload and public verification"
+  },
+  {
+    "role": "cover",
+    "source": {
+      "url": "https://www.ladydoakcollege.edu.in/web_css/img/banner_1.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 415049,
+      "sha256": "acb4a27addcf9f94af6c060758feec94806a11583aaad74de64dc08c9f55f2b9",
+      "checkedAt": "2026-10-27"
+    },
+    "localFile": "sources/cover-candidate.jpg",
+    "visuallyReviewed": true,
+    "visualNotes": "Official campus photograph showing an arched college facade, garden and trees.",
+    "rightsStatus": "Official first-party source identified; reuse authorization/terms not independently established.",
+    "uploaded": false,
+    "cloudinaryUrl": null,
+    "gate": "pending authorized upload and public verification"
+  }
+]

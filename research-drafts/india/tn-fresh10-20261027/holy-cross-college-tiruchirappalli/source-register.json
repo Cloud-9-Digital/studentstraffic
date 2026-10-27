@@ -1,0 +1,204 @@
+{
+  "checkedAt": "2026-10-27",
+  "files": [
+    {
+      "file": "sources/affiliation-and-counselling.web.json",
+      "bytes": 984,
+      "sha256": "6dc27502691c1b5f2db8682fb79f8f75fcb2056dde833b8a666430a3b370a230",
+      "notes": "Web-tool retrieval, potentially cached; inspect captured text and error markers."
+    },
+    {
+      "file": "sources/affiliation.source.json",
+      "bytes": 147,
+      "sha256": "3af1b15c31c003ffb98704b9dab13308e807bd5be30a14afc3662301089fcb8e",
+      "notes": "HTTP/source status is in matching .source.json where available; failed downloads are evidence of attempts only."
+    },
+    {
+      "file": "sources/courselist.html",
+      "bytes": 49895,
+      "sha256": "af37312faf98f0acdd6dfce582d8ee5735624a491958bed12897cb2f96f909b1",
+      "notes": "HTTP/source status is in matching .source.json where available; failed downloads are evidence of attempts only."
+    },
+    {
+      "file": "sources/courselist.source.json",
+      "bytes": 197,
+      "sha256": "a2ef6becbb2e8ecec249dcf46f4fede9747dbd32f0473506af7f82593499e569",
+      "notes": "HTTP/source status is in matching .source.json where available; failed downloads are evidence of attempts only."
+    },
+    {
+      "file": "sources/cover-candidate.source.json",
+      "bytes": 145,
+      "sha256": "28acbd0ef4b5e5330442c8027a58ceed8e98238f0354ac28a667ad6499062eb6",
+      "notes": "HTTP/source status is in matching .source.json where available; failed downloads are evidence of attempts only."
+    },
+    {
+      "file": "sources/eligibility.pdf",
+      "bytes": 224793,
+      "sha256": "d0047e92f27ba7753f91006fb9d070bdbf17834fa5d3d0ef8085b2d94e838a4a",
+      "notes": "HTTP/source status is in matching .source.json where available; failed downloads are evidence of attempts only."
+    },
+    {
+      "file": "sources/eligibility.web.json",
+      "bytes": 8691,
+      "sha256": "4b7c9bfb354d061885d03cc141ca53df1f70f1a0075523e9e5428e9b65257e45",
+      "notes": "Web-tool retrieval, potentially cached; inspect captured text and error markers."
+    },
+    {
+      "file": "sources/eligibility.web.txt",
+      "bytes": 8514,
+      "sha256": "540f3d1f628c4a86cde8ef5e11b310270ac2ce5804d4da9eadb7c153b7e11078",
+      "notes": "Web-tool retrieval, potentially cached; inspect captured text and error markers."
+    },
+    {
+      "file": "sources/fee-secondary.web.json",
+      "bytes": 26830,
+      "sha256": "c28f2e17de134ba41acca297f52bc9b3d1bb4412fb7082cfe0ef1fdde60c763f",
+      "notes": "Web-tool retrieval, potentially cached; inspect captured text and error markers."
+    },
+    {
+      "file": "sources/home.html",
+      "bytes": 241807,
+      "sha256": "51170e9343bb733f246f169417b6d8dfcf1fae7334648fef42aad4e40cf8aab6",
+      "notes": "HTTP/source status is in matching .source.json where available; failed downloads are evidence of attempts only."
+    },
+    {
+      "file": "sources/home.source.json",
+      "bytes": 292,
+      "sha256": "caecae9d10f269e8973ad093a0f1a2eca3462bbeb84da87870cb7a0dca690ca9",
+      "notes": "HTTP/source status is in matching .source.json where available; failed downloads are evidence of attempts only."
+    },
+    {
+      "file": "sources/home.txt",
+      "bytes": 34244,
+      "sha256": "66ad471a30ea8fa5cc7aadaef85740b2ffc0282334ad83042068d009b05f275c",
+      "notes": "HTTP/source status is in matching .source.json where available; failed downloads are evidence of attempts only."
+    },
+    {
+      "file": "sources/instructions.html",
+      "bytes": 12128,
+      "sha256": "6b931182b3d2142d63f36a521f5b07649e3c46c3e5b65fa4bee1ca9d3a300e0b",
+      "notes": "HTTP/source status is in matching .source.json where available; failed downloads are evidence of attempts only."
+    },
+    {
+      "file": "sources/instructions.source.json",
+      "bytes": 199,
+      "sha256": "3f9213c47c2fb8569f3d0559078e8689d39ab91a255a3009ca0ad3093e388159",
+      "notes": "HTTP/source status is in matching .source.json where available; failed downloads are evidence of attempts only."
+    },
+    {
+      "file": "sources/logo-candidate.png",
+      "bytes": 39580,
+      "sha256": "289e55ecb49072e2a3bebf3bef20a280a9fea46a2599fae1c9955aa27cc9ab0a",
+      "notes": "HTTP/source status is in matching .source.json where available; failed downloads are evidence of attempts only."
+    },
+    {
+      "file": "sources/logo-candidate.source.json",
+      "bytes": 229,
+      "sha256": "4a71ce5842bc160bfc032b5ac1d45414d56d6c14c2650ee086652255ce27ae8b",
+      "notes": "HTTP/source status is in matching .source.json where available; failed downloads are evidence of attempts only."
+    },
+    {
+      "file": "sources/nirf-page.html",
+      "bytes": 87621,
+      "sha256": "b6a41faeb3eb4bd9351bf191080aa9eb0be95dc60c739d097a954651045b7471",
+      "notes": "HTTP/source status is in matching .source.json where available; failed downloads are evidence of attempts only."
+    },
+    {
+      "file": "sources/nirf-page.source.json",
+      "bytes": 197,
+      "sha256": "ff9817543ec45596bf0e57dcc3a21bde35f8b61f49cc6e2fe0e45ff302ff91af",
+      "notes": "HTTP/source status is in matching .source.json where available; failed downloads are evidence of attempts only."
+    },
+    {
+      "file": "sources/nirf2026.pdf",
+      "bytes": 109642,
+      "sha256": "1fedd09c9887b1268a381766d428f646ffd99c3e687d7a969732b6fc119dfd3e",
+      "notes": "HTTP/source status is in matching .source.json where available; failed downloads are evidence of attempts only."
+    },
+    {
+      "file": "sources/nirf2026.source.json",
+      "bytes": 274,
+      "sha256": "44d3c288fdd81b2fc453e08d7919e4dfac8f617c1bd292ca277d272467a260cb",
+      "notes": "HTTP/source status is in matching .source.json where available; failed downloads are evidence of attempts only."
+    },
+    {
+      "file": "sources/prospectus-2026.pdf",
+      "bytes": 23859361,
+      "sha256": "b71e8d1099ed432ae7165560c8681358622f199601510227f5336c8ad5b2679f",
+      "notes": "HTTP/source status is in matching .source.json where available; failed downloads are evidence of attempts only."
+    },
+    {
+      "file": "sources/prospectus-2026.source.json",
+      "bytes": 236,
+      "sha256": "903613180667da4122ae7466b3f0aa6e5077bd953996b279fd912f5f9bb90e44",
+      "notes": "HTTP/source status is in matching .source.json where available; failed downloads are evidence of attempts only."
+    },
+    {
+      "file": "sources/prospectus-2026.txt",
+      "bytes": 28,
+      "sha256": "98c3689f37aa605365100f6c2597bfd2e83f4bd296667130b844228fd68bcfba",
+      "notes": "HTTP/source status is in matching .source.json where available; failed downloads are evidence of attempts only."
+    },
+    {
+      "file": "sources/prospectus-page.html",
+      "bytes": 72003,
+      "sha256": "285995c09c51201e1392c1b929bb31f7401d001aa08258b9802ccde09c9e26b6",
+      "notes": "HTTP/source status is in matching .source.json where available; failed downloads are evidence of attempts only."
+    },
+    {
+      "file": "sources/prospectus-page.web.json",
+      "bytes": 3821,
+      "sha256": "bf67611b552fe650be6cee0e7833d5ce1943609b0c205c7b11f695d2995a5c12",
+      "notes": "Web-tool retrieval, potentially cached; inspect captured text and error markers."
+    },
+    {
+      "file": "sources/prospectus-page.web.txt",
+      "bytes": 3741,
+      "sha256": "25d5c434af45eeafb8157457076e9f541143a4aa9e76a4867fd8eacb816eb3ed",
+      "notes": "Web-tool retrieval, potentially cached; inspect captured text and error markers."
+    },
+    {
+      "file": "sources/prospectus.source.json",
+      "bytes": 155,
+      "sha256": "9136cf2c45bf5eeec1c803e36367f77a4f59189b0c7e9b0a1c0101253aaaf9c8",
+      "notes": "HTTP/source status is in matching .source.json where available; failed downloads are evidence of attempts only."
+    },
+    {
+      "file": "sources/shifttime.html",
+      "bytes": 22659,
+      "sha256": "e1d42a349b046d118b0044c5902332ea24b0a17d56eba85f35379dcb9a8e1f96",
+      "notes": "HTTP/source status is in matching .source.json where available; failed downloads are evidence of attempts only."
+    },
+    {
+      "file": "sources/shifttime.source.json",
+      "bytes": 197,
+      "sha256": "c0d9e98d69460a7c27ddbc3879aabf54dd2ce4ddbccdf10b907a25ce82107230",
+      "notes": "HTTP/source status is in matching .source.json where available; failed downloads are evidence of attempts only."
+    },
+    {
+      "file": "sources/ugc.web.json",
+      "bytes": 20956,
+      "sha256": "b822b0c44edb4d21864dba24933168cf31538be462ea3cab87107e3b16ec30c4",
+      "notes": "Web-tool retrieval, potentially cached; inspect captured text and error markers."
+    },
+    {
+      "file": "sources/ugc.web.txt",
+      "bytes": 20778,
+      "sha256": "310102e5db1d3b738909c1b56d7e125b4ab08e82dd00ce0f0319a605c2cf8a26",
+      "notes": "Web-tool retrieval, potentially cached; inspect captured text and error markers."
+    }
+  ],
+  "supersededSources": [],
+  "visualChecks": {
+    "holyCrossProspectusPages": [
+      17,
+      18,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "ladyDoakHandbookFeePages": []
+  }
+}

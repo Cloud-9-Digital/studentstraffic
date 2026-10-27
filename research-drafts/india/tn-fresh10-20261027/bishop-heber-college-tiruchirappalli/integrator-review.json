@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-10-27",
+  "status": "accepted_for_research_delivery_only",
+  "programmeInventoryRows": 121,
+  "completeExecutableMigration": false,
+  "actualFrameworkIndependentlyRerun": true,
+  "framework": {
+    "validator": "scripts/lib/content-migrations.ts::readContentMigrations",
+    "fullSpecimenPassed": false,
+    "programmePassCount": 0,
+    "programmeFailCount": 36,
+    "expiredEvidenceCount": null,
+    "report": "framework-validation.json"
+  },
+  "offlineResearchInvariantsPassed": true,
+  "schemaShapePassed": true,
+  "editorialAndMediaGates": [
+    {
+      "status": "pending",
+      "gate": "Programme-specific UG subject criteria; general current 10+2 eligibility is not enough to clear the 36 review fragments."
+    },
+    {
+      "status": "pending",
+      "gate": "All 26 PG entries need exact current entry requirements and independently confirmed duration; library award labels conflict."
+    },
+    {
+      "status": "uncertain",
+      "gate": "Self-financed Botany/Zoology appear in directory but not current portal/fee table; proposed BBA Tourism and Hotel Management remains subject to approval."
+    },
+    {
+      "status": "blocked_http_403",
+      "gate": "Direct official-site PDF/media downloads returned HTTP 403; readable official web retrieval retained. This is a website response, not permission approval."
+    },
+    {
+      "status": "pending",
+      "gate": "Serial editorial review, field evidence review and current original68/ledger/API freshness recheck before reservation."
+    },
+    {
+      "status": "pending",
+      "gate": "Media rights, logo/cover final suitability, authorized Cloudinary upload and public asset verification."
+    },
+    {
+      "status": "pending",
+      "gate": "Serial editorial/inventory completeness, audience and media review remain required; research-only framework success is not publish approval."
+    }
+  ],
+  "rawSourceDelivery": "Full captured pages, PDFs and image binaries remain local and are excluded from Git. Source register and admissions-provenance preserve official URLs, receipts and exact locators.",
+  "queue": "Integrator claim is local only, not a shared remote reservation.",
+  "published": false
+}

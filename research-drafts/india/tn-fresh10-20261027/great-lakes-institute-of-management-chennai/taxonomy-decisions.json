@@ -1,0 +1,234 @@
+{
+  "checkedAt": "2026-10-27",
+  "registry": "lib/data/program-taxonomy.ts",
+  "registrySha256": "0491f115d50e8cffa69d4322553c1aa00d2783e6fa73f472c9fdbd7b32a742fd",
+  "decisions": [
+    {
+      "officialTitle": "Post Graduate Program in Management (PGPM; award: Post Graduate Certificate in Management)",
+      "canonicalCourseMatch": "GAP:pg-certificate-business-management",
+      "rowKind": "standalone_award",
+      "decision": "gap-held",
+      "rationale": "Official FAQ specifies PGCM award. MBA is a marketing comparison, not awarded degree. Intl price exists but EOA international-approval column requires interpretation before global eligibility."
+    },
+    {
+      "officialTitle": "Post Graduate Diploma in Management (PGDM)",
+      "canonicalCourseMatch": "pg-diploma-business-management",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Specializations are within one PGDM. Non-Indian TOEFL/IELTS rule exists; reconcile EOA approval category before global eligibility."
+    },
+    {
+      "officialTitle": "PGPM – Family Business and Entrepreneurship",
+      "canonicalCourseMatch": "pg-certificate-business-management",
+      "rowKind": "standalone_award",
+      "decision": "gap-held",
+      "rationale": "Official FBE FAQ confirms PGCM award. Map to proposed PG certificate family, not MBA; Indian-registered business criterion and unknown international eligibility remain explicit."
+    },
+    {
+      "officialTitle": "Post Graduate Executive Program in Management (PGXPM)",
+      "canonicalCourseMatch": "GAP:executive-management-credential",
+      "rowKind": "standalone_award",
+      "decision": "gap-held",
+      "rationale": "Do not relabel as Executive MBA or PGDM without explicit award evidence."
+    },
+    {
+      "officialTitle": "Fellow Programme in Management (FPM)",
+      "canonicalCourseMatch": "GAP:fellow-programme-business-management",
+      "rowKind": "standalone_award",
+      "decision": "gap-held",
+      "rationale": "FPM is a named fellowship, not silently PhD. Marketing and Finance & Accounting are research areas."
+    },
+    {
+      "officialTitle": "Online Post Graduate Diploma in Management (Online PGDM)",
+      "canonicalCourseMatch": "pg-diploma-business-management",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Shared Great Lakes online site includes Chennai and Gurgaon faculty. Chennai contact lists online helpdesk and Chennai EOA approves online PGDM, but enrolment variant linkage needs final review. Immersion is not a separate award."
+    },
+    {
+      "officialTitle": "PGPM: Consulting",
+      "canonicalCourseMatch": "",
+      "rowKind": "major_within_parent",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Not a separate award or offering; preserve as parent programme specialization/research area."
+    },
+    {
+      "officialTitle": "PGPM: Product Management",
+      "canonicalCourseMatch": "",
+      "rowKind": "major_within_parent",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Not a separate award or offering; preserve as parent programme specialization/research area."
+    },
+    {
+      "officialTitle": "PGPM: Data Science",
+      "canonicalCourseMatch": "",
+      "rowKind": "major_within_parent",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Not a separate award or offering; preserve as parent programme specialization/research area."
+    },
+    {
+      "officialTitle": "PGPM: Operations",
+      "canonicalCourseMatch": "",
+      "rowKind": "major_within_parent",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Not a separate award or offering; preserve as parent programme specialization/research area."
+    },
+    {
+      "officialTitle": "PGPM: Analytics",
+      "canonicalCourseMatch": "",
+      "rowKind": "major_within_parent",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Not a separate award or offering; preserve as parent programme specialization/research area."
+    },
+    {
+      "officialTitle": "PGPM: Marketing",
+      "canonicalCourseMatch": "",
+      "rowKind": "major_within_parent",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Not a separate award or offering; preserve as parent programme specialization/research area."
+    },
+    {
+      "officialTitle": "PGPM: Finance",
+      "canonicalCourseMatch": "",
+      "rowKind": "major_within_parent",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Not a separate award or offering; preserve as parent programme specialization/research area."
+    },
+    {
+      "officialTitle": "PGDM: Marketing",
+      "canonicalCourseMatch": "",
+      "rowKind": "major_within_parent",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Not a separate award or offering; preserve as parent programme specialization/research area."
+    },
+    {
+      "officialTitle": "PGDM: Finance",
+      "canonicalCourseMatch": "",
+      "rowKind": "major_within_parent",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Not a separate award or offering; preserve as parent programme specialization/research area."
+    },
+    {
+      "officialTitle": "PGDM: Operations",
+      "canonicalCourseMatch": "",
+      "rowKind": "major_within_parent",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Not a separate award or offering; preserve as parent programme specialization/research area."
+    },
+    {
+      "officialTitle": "PGDM: Organizational Behaviour / Human Resources / Strategy",
+      "canonicalCourseMatch": "",
+      "rowKind": "major_within_parent",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Not a separate award or offering; preserve as parent programme specialization/research area."
+    },
+    {
+      "officialTitle": "PGDM: Artificial Intelligence, Machine Learning and Analytics",
+      "canonicalCourseMatch": "",
+      "rowKind": "major_within_parent",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Not a separate award or offering; preserve as parent programme specialization/research area."
+    },
+    {
+      "officialTitle": "Online PGDM: AI and Business Analytics",
+      "canonicalCourseMatch": "",
+      "rowKind": "major_within_parent",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Not a separate award or offering; preserve as parent programme specialization/research area."
+    },
+    {
+      "officialTitle": "Online PGDM: Marketing",
+      "canonicalCourseMatch": "",
+      "rowKind": "major_within_parent",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Not a separate award or offering; preserve as parent programme specialization/research area."
+    },
+    {
+      "officialTitle": "Online PGDM: Operations",
+      "canonicalCourseMatch": "",
+      "rowKind": "major_within_parent",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Not a separate award or offering; preserve as parent programme specialization/research area."
+    },
+    {
+      "officialTitle": "Online PGDM: Finance",
+      "canonicalCourseMatch": "",
+      "rowKind": "major_within_parent",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Not a separate award or offering; preserve as parent programme specialization/research area."
+    },
+    {
+      "officialTitle": "FPM: Marketing",
+      "canonicalCourseMatch": "",
+      "rowKind": "major_within_parent",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Not a separate award or offering; preserve as parent programme specialization/research area."
+    },
+    {
+      "officialTitle": "FPM: Finance and Accounting",
+      "canonicalCourseMatch": "",
+      "rowKind": "major_within_parent",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Not a separate award or offering; preserve as parent programme specialization/research area."
+    },
+    {
+      "officialTitle": "PGPM Flex",
+      "canonicalCourseMatch": "",
+      "rowKind": "historical",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Historical references only; not in current admissions portfolio. Do not import as current award."
+    },
+    {
+      "officialTitle": "EOA: PGCM (Retail Management)",
+      "canonicalCourseMatch": "",
+      "rowKind": "regulatory_label",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "EOA regulatory nomenclature; not independently marketed as a current admissions award. Do not create separate offering."
+    },
+    {
+      "officialTitle": "EOA: PGDM (Financial Management) under certificate level",
+      "canonicalCourseMatch": "",
+      "rowKind": "regulatory_label",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "EOA level/title mismatch; hold alias pending institutional explanation, do not infer a masters degree."
+    },
+    {
+      "officialTitle": "EOA: PGDM (Marketing) under certificate level",
+      "canonicalCourseMatch": "",
+      "rowKind": "regulatory_label",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "EOA level/title mismatch; hold alias pending institutional explanation."
+    },
+    {
+      "officialTitle": "EOA: second Post Graduate Diploma in Management line",
+      "canonicalCourseMatch": "",
+      "rowKind": "regulatory_label",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Second approved line is not sufficient to establish another marketed award."
+    },
+    {
+      "officialTitle": "FPM optional UTA dual-track PhD",
+      "canonicalCourseMatch": "",
+      "rowKind": "optional_partner_track",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Optional foreign partner selection and extra cost; not a guaranteed Indian institutional award. Partner-side verification pending."
+    },
+    {
+      "officialTitle": "PGXPM optional Bordeaux dual-degree opportunity",
+      "canonicalCourseMatch": "",
+      "rowKind": "optional_partner_track",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Optional partner qualification; do not create a second current Chennai award without partner-side programme and award verification."
+    },
+    {
+      "officialTitle": "Corporate Learning and Development",
+      "canonicalCourseMatch": "",
+      "rowKind": "non_degree",
+      "decision": "nonstandalone-or-historical",
+      "rationale": "Customized executive learning umbrella; no fully specified award course captured. Exclude from degree offering count."
+    }
+  ],
+  "sharedRegistryChanged": false,
+  "completionNotes": "PGCM is now confirmed for PGPM and FBE. Proposed generic course definitions are provided locally only; FPM is not relabeled PhD. Existing parent mappings unchanged.",
+  "metadataIntegrationInstruction": "Existing canonical course objects are schema-complete draft proposals, not authority to overwrite richer published global course metadata. Reuse the current canonical records where available; review new definitions separately."
+}

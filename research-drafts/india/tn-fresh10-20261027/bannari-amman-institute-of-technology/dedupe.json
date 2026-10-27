@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-10-27",
+  "localLedger": "Initial duplicate scan found no pre-existing canonical identity. The integrator subsequently claimed this slug under research_tn_batch_b; read-only completion-pass observation confirms the local ledger status is now held.",
+  "localMigrations": "No canonical institution match across content-migrations payloads.",
+  "original68": "Not an original-68 identity. St Joseph University Villupuram is explicitly separate.",
+  "liveApi": "Integrator checked canonical slugs and relevant aliases: all returned HTTP 404; see ../discovery-live-checks.json.",
+  "remoteLedger": "Research packet GitHub delivery was reported by the integrator. This worker has not verified remote-ledger synchronization or made a remote reservation. Final latest-remote identity/ledger check remains integrator work before publication.",
+  "claimStatus": "integrator_local_claim_held",
+  "migrationId": null,
+  "queueNote": "Researcher did not mutate the queue; the integrator local claim exists under research_tn_batch_b and is held. Remote-ledger synchronization is unverified in this completion pass.",
+  "localClaimOwner": "research_tn_batch_b",
+  "localLedgerStatusObserved": "held"
+}

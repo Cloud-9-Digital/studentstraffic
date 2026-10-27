@@ -1,0 +1,100 @@
+{
+  "delivery": "Reviewed research only; user owns live publication",
+  "readyToApply": false,
+  "original68": "Untouched",
+  "claims": "Shared ledger is deliberately excluded; fresh claims remain local only. Reconcile latest remote before reservation/publication.",
+  "institutions": [
+    {
+      "slug": "indian-institute-of-management-tiruchirappalli",
+      "status": "held_full_framework_subset_pass",
+      "inventoryRows": 17,
+      "draftProgrammes": 2,
+      "frameworkPassingSubsetProgrammes": 2,
+      "frameworkIndependentlyRerun": true,
+      "completeExecutableMigration": false,
+      "remainingGates": "Domestic-route qualification/documents crosswalk; 15 inventory rows held; rights-cleared hosted media; user-owned live publication."
+    },
+    {
+      "slug": "bannari-amman-institute-of-technology",
+      "status": "held_full_framework_subset_pass",
+      "inventoryRows": 43,
+      "taughtFragments": 14,
+      "doctoralAreaHolds": 13,
+      "catalogueSchemaValidated": true,
+      "frameworkPassingSubsetProgrammes": 10,
+      "frameworkIndependentlyRerun": true,
+      "completeExecutableMigration": false,
+      "remainingGates": "Current AICTE approval, full audience assessment, 4 PG exact admissions, 13 doctoral holds and rights-cleared hosted media."
+    },
+    {
+      "slug": "sona-college-of-technology",
+      "status": "held_research_fragments",
+      "inventoryRows": 46,
+      "taughtFragments": 28,
+      "catalogueSchemaValidated": false,
+      "sourceGates": "Primary programme sources403; complete doctoral discovery unresolved"
+    },
+    {
+      "slug": "st-josephs-college-tiruchirappalli",
+      "status": "held_research_fragments",
+      "inventoryRows": 97,
+      "taughtFragments": 56,
+      "catalogueSchemaValidated": false,
+      "sourceGates": "Main college source503; regulator and programme-specific evidence gaps; JIM MBA component fees retained"
+    },
+    {
+      "slug": "indian-institute-of-information-technology-tiruchirappalli",
+      "status": "held_full_framework_subset_pass",
+      "inventoryRows": 15,
+      "frameworkPassingSubsetProgrammes": 4,
+      "frameworkIndependentlyRerun": true,
+      "completeExecutableMigration": false,
+      "remainingGates": "Complete-portfolio unknowns, precise applicant/cycle conditions, taxonomy where proposed, rights-cleared hosted media and user-owned publication."
+    },
+    {
+      "slug": "great-lakes-institute-of-management-chennai",
+      "status": "held_full_framework_subset_pass",
+      "inventoryRows": 32,
+      "frameworkPassingSubsetProgrammes": 2,
+      "frameworkIndependentlyRerun": true,
+      "completeExecutableMigration": false,
+      "remainingGates": "Complete-portfolio unknowns, precise applicant/cycle conditions, taxonomy where proposed, rights-cleared hosted media and user-owned publication."
+    },
+    {
+      "slug": "thiagarajar-college-of-engineering",
+      "status": "held_full_framework_subset_pass",
+      "inventoryRows": 38,
+      "frameworkPassingSubsetProgrammes": 12,
+      "frameworkIndependentlyRerun": true,
+      "completeExecutableMigration": false,
+      "remainingGates": "Complete-portfolio unknowns, precise applicant/cycle conditions, taxonomy where proposed, rights-cleared hosted media and user-owned publication."
+    },
+    {
+      "slug": "lady-doak-college-madurai",
+      "status": "held_full_framework_subset_pass",
+      "inventoryRows": 75,
+      "frameworkPassingSubsetProgrammes": 26,
+      "frameworkIndependentlyRerun": true,
+      "completeExecutableMigration": false,
+      "remainingGates": "49 remaining programme holds; audience/cycle review; rights-cleared hosted media."
+    },
+    {
+      "slug": "bishop-heber-college-tiruchirappalli",
+      "status": "held_research_framework_failures",
+      "inventoryRows": 121,
+      "frameworkPassingSubsetProgrammes": 0,
+      "frameworkIndependentlyRerun": true,
+      "completeExecutableMigration": false,
+      "remainingGates": "Exact programme subject eligibility remains unsupported; all inventory rows held; rights-cleared hosted media."
+    },
+    {
+      "slug": "holy-cross-college-tiruchirappalli",
+      "status": "held_research_framework_failures",
+      "inventoryRows": 88,
+      "frameworkPassingSubsetProgrammes": 0,
+      "frameworkIndependentlyRerun": true,
+      "completeExecutableMigration": false,
+      "remainingGates": "Named required documents unsupported for all 47 specimens; current PG procedure missing for 16; international audience unknown; all rows held."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "registryChangesMade": false,
+  "proposals": [
+    {
+      "slug": "pg-certificate-business-management",
+      "name": "Postgraduate Certificate in Business Management",
+      "shortName": "PG Certificate Management",
+      "stream": "business",
+      "level": "postgraduate-certificate",
+      "discipline": "business-management",
+      "aliases": [
+        "Post Graduate Certificate in Management",
+        "PGCM"
+      ]
+    },
+    {
+      "slug": "fellow-programme-business-management",
+      "name": "Fellow Programme in Business Management",
+      "shortName": "Fellow Programme Management",
+      "stream": "business",
+      "level": "doctorate",
+      "discipline": "business-management",
+      "aliases": [
+        "Fellow Programme in Management",
+        "FPM"
+      ]
+    }
+  ],
+  "notes": "New taxonomy definitions require integrator approval. Doctoral/FPM standard duration is not invented from a minimum or variable period; those offering candidates remain held."
+}

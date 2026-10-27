@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-10-27",
+  "integratorReview": "accepted_for_research_delivery_only",
+  "cataloguePayloadReady": false,
+  "executableMigration": false,
+  "workerValidatorRerun": "PASS",
+  "reviewCorrections": [
+    "Local integrator claims correctly distinguished from researcher queue mutations and remote reservations",
+    "Current doctoral areas individually held rather than blanket excluded",
+    "Bannari summary source claims narrowed to what each source supports"
+  ],
+  "independentPrimarySpotChecks": [
+    "https://www.jim.ac.in/page.php?id=64"
+  ],
+  "canonicalInventoryCopiedTo": "research/india-programme-inventory/st-josephs-college-tiruchirappalli.csv",
+  "inventorySha256": "695c6e77dcfaf7735f5d781b0f7ae64c6528248821b6ba594d92459713967383",
+  "scopeCaution": "Research checks do not validate completeness of inaccessible sources. Preserve every exact hold; do not run content apply on these fragments."
+}

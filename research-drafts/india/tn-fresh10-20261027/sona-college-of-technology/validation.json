@@ -1,0 +1,34 @@
+{
+  "validationKind": "offline_research_inventory_taxonomy_evidence_checks",
+  "checkedAt": "2026-10-27",
+  "passed": true,
+  "errors": [],
+  "inventoryRows": 46,
+  "programmeDraftFragments": 28,
+  "heldGapRows": 15,
+  "publiclyPublishable": false,
+  "catalogPayloadSchemaValidation": "not_applicable: content-draft is deliberately incomplete research shape, not a catalog payload",
+  "contentMigrationValidation": "not_run: no numbered migration or manifest; required programme approval and media gates held",
+  "ledgerStatus": "integrator_local_claim_pending_hold",
+  "researchDeliveryBlockedByCredentials": false,
+  "doctoralResearchAreaDrafts": 0,
+  "doctoralInventoryDiscoveryPlaceholders": 1,
+  "rowStates": {
+    "taught_discovery_held": 28,
+    "mode_variant_discovery_held": 2,
+    "continuing_education_discovery_held": 12,
+    "historical_discovery_held": 3,
+    "doctoral_inventory_discovery_held": 1
+  },
+  "files": {
+    "README.md": "4600f06dc59dd2f2cf2c88c898687161eca2168d0e23342a87fb45a146178dfb",
+    "evidence.json": "ce3142522da49bad09aa352ea22341aa946231d29a14f50e77fd03f796fc8f32",
+    "programme-inventory.md": "bed9a6f8dc4e9c23c828428c63cac71b896e891ce1f4b4c5b14c9845c4cc6e4e",
+    "sources.json": "abf202ef9f520daa26b1c0319ae53344ff5b3f79253763488f85f15741bf890b",
+    "media-status.json": "f6c54433d84f602ba37f023339883fc8890c338da2e33433cd4d7d4a055f8f78",
+    "integrator-review.json": "b8e3bf91324c257cb873a1904efd145f6b506348a40ea628d396a5838ea3ed9a",
+    "dedupe.json": "4dae71be54fb0222f7f1b6b49110014460c8d50bd47c44d11af8865331e2282d",
+    "programme-inventory.csv": "05905ffe11cdd6961a2255d524cc61a46f86dd20a4263006aa26daf6361b2c53",
+    "content-draft.json": "bec3bb8643cf38b4ada936bcdfb330ada238ece72aa921316d3931a91285095f"
+  }
+}

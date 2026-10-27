@@ -1,0 +1,685 @@
+{
+  "status": "held_research_draft_not_publishable",
+  "checkedAt": "2026-10-27",
+  "university": {
+    "countrySlug": "india",
+    "slug": "st-josephs-college-tiruchirappalli",
+    "name": "St. Joseph’s College (Autonomous), Tiruchirappalli",
+    "city": "Tiruchirappalli",
+    "officialWebsite": "https://www.sjctni.edu/",
+    "summary": "St. Joseph’s College in Tiruchirappalli is distinct from St Joseph University in Villupuram and similarly named institutions in other cities. Its St. Joseph’s Institute of Management uses a separate MBA application process for the 2026–2028 cohort, with entrance-test scores and further selection stages.",
+    "recognitionBadges": [],
+    "recognitionLinks": [],
+    "admissionsContent": {
+      "contentState": "held_primary_access_and_regulator",
+      "identityNote": "Official JIM page establishes St Joseph’s College(Autonomous),Tiruchirappalli 620002. Main college and regulator read failures prevent stronger publish-ready affiliation/ownership claims."
+    },
+    "programmeVariantPolicy": "Preserve ShiftI and ShiftII; do not collapse or transfer fees, gender restrictions or entry qualifications between variants."
+  },
+  "programmeDrafts": [
+    {
+      "officialTitle": "B.Sc. Botany (Shift I)",
+      "canonicalCourseSlug": "bsc-biological-sciences",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.Sc. Chemistry (Shift I)",
+      "canonicalCourseSlug": "bsc-chemistry",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.Com. (Shift I)",
+      "canonicalCourseSlug": "bcom",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.Sc. Computer Science (Shift I)",
+      "canonicalCourseSlug": "bsc-computer-science",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.A. Economics (Shift I)",
+      "canonicalCourseSlug": "bachelor-economics",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.A. English Literature (Shift I)",
+      "canonicalCourseSlug": "ba-english-literature",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.A. History (Shift I)",
+      "canonicalCourseSlug": "ba-history",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.Sc. Mathematics (Shift I)",
+      "canonicalCourseSlug": "bsc-mathematics",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.Sc. Physics (Shift I)",
+      "canonicalCourseSlug": "bsc-physics",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.Voc. Software Development & System Administration (Shift I)",
+      "canonicalCourseSlug": "bachelor-vocational-studies",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.Sc. Statistics (Shift I)",
+      "canonicalCourseSlug": "bsc-statistics",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.A. Tamil Literature (Shift I)",
+      "canonicalCourseSlug": "ba-languages-linguistics",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.Voc. Viscom Technology (Shift I)",
+      "canonicalCourseSlug": "bachelor-vocational-studies",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.Sc. Artificial Intelligence and Machine Learning (Shift II)",
+      "canonicalCourseSlug": "bsc-artificial-intelligence-machine-learning",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.C.A. (Shift II)",
+      "canonicalCourseSlug": "bca",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.Sc. Biotechnology (Shift II)",
+      "canonicalCourseSlug": "bsc-biotechnology",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.B.A. (Shift II)",
+      "canonicalCourseSlug": "bba",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.Com. Business Analytics (Shift II)",
+      "canonicalCourseSlug": "bcom",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.Com. Computer Application (Shift II)",
+      "canonicalCourseSlug": "bcom",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.Com. Strategic Finance (Shift II)",
+      "canonicalCourseSlug": "bcom",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.Com. (Shift II)",
+      "canonicalCourseSlug": "bcom",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.Com. Honours (Shift II)",
+      "canonicalCourseSlug": "bcom",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.Sc. Computer Science (Shift II)",
+      "canonicalCourseSlug": "bsc-computer-science",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.Sc. Electronics (Shift II)",
+      "canonicalCourseSlug": "bsc-electronics",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.A. English Literature (Shift II)",
+      "canonicalCourseSlug": "ba-english-literature",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.Sc. Mathematics (Shift II)",
+      "canonicalCourseSlug": "bsc-mathematics",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.Sc. Physical Education, Health Education and Sports (Shift II)",
+      "canonicalCourseSlug": "bachelor-physical-education-sports",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.Sc. Physics (Shift II)",
+      "canonicalCourseSlug": "bsc-physics",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.Sc. Statistics (Shift II)",
+      "canonicalCourseSlug": "bsc-statistics",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "B.Sc. Visual Communication (Shift II)",
+      "canonicalCourseSlug": "bachelor-media-communication",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "M.Sc. Botany (Shift I)",
+      "canonicalCourseSlug": "msc-biological-sciences",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "M.C.A. Master of Computer Applications (Shift I)",
+      "canonicalCourseSlug": "mca",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "M.Sc. Chemistry (Shift I)",
+      "canonicalCourseSlug": "msc-chemistry",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "M.Com. Commerce (Shift I)",
+      "canonicalCourseSlug": "mcom",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "M.A. Economics (Shift I)",
+      "canonicalCourseSlug": "master-economics",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "M.A. English Literature (Shift I)",
+      "canonicalCourseSlug": "ma-english-literature",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "M.A. Human Resource Management (Shift I)",
+      "canonicalCourseSlug": "master-human-resource-management",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "M.Sc. Mathematics (Shift I)",
+      "canonicalCourseSlug": "msc-mathematics",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "M.Sc. Physics (Shift I)",
+      "canonicalCourseSlug": "msc-physics",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "M.Sc. Artificial Intelligence (Shift II)",
+      "canonicalCourseSlug": "msc-artificial-intelligence",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "M.Sc. Biochemistry (Shift II)",
+      "canonicalCourseSlug": "msc-biological-sciences",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "M.Sc. Biotechnology (Shift II)",
+      "canonicalCourseSlug": "msc-biotechnology",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "M.Com. Commerce (Computer Applications) (Shift II)",
+      "canonicalCourseSlug": "mcom",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "M.Sc. Chemistry (Shift II)",
+      "canonicalCourseSlug": "msc-chemistry",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "M.Sc. Counselling Psychology (Shift II)",
+      "canonicalCourseSlug": "master-psychology",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "M.Sc. Computer Science (Shift II)",
+      "canonicalCourseSlug": "msc-computer-science",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "M.Sc. Data Science (Shift II)",
+      "canonicalCourseSlug": "msc-data-science",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "M.Sc. Electronics (Shift II)",
+      "canonicalCourseSlug": "msc-electronics-instrumentation",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "M.A. English Literature (Shift II)",
+      "canonicalCourseSlug": "ma-english-literature",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "M.A. Human Resource Management (Shift II)",
+      "canonicalCourseSlug": "master-human-resource-management",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "M.A. History (Shift II)",
+      "canonicalCourseSlug": "ma-history",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "M.Sc. Mathematics (Shift II)",
+      "canonicalCourseSlug": "msc-mathematics",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "M.Sc. Physics (Shift II)",
+      "canonicalCourseSlug": "msc-physics",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "M.A. Tamil Literature (Shift II)",
+      "canonicalCourseSlug": "ma-languages-linguistics",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "M.Sc. Visual Communication (Shift II)",
+      "canonicalCourseSlug": "master-media-communication",
+      "officialProgramUrl": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+      "status": "discovery_only_do_not_publish"
+    },
+    {
+      "officialTitle": "Master of Business Administration (JIM)",
+      "canonicalCourseSlug": "mba",
+      "officialProgramUrl": "https://www.jim.ac.in/page.php?id=64",
+      "status": "held_professional_approval",
+      "admissionsContent": {
+        "overview": "MBA admissions 2026–2028 are administered by St. Joseph’s Institute of Management.",
+        "eligibility": {
+          "intro": "Applicants must meet the current JIM graduate-entry and selection requirements.",
+          "items": [
+            "Recognised undergraduate degree with at least 50%.",
+            "One of XAT,CAT,CMAT,ATMA,TANCET or MAT; preference stated for high XAT scores.",
+            "Awaiting-final-result applicants may apply with V/VII-semester marks, but all papers must be cleared by 31 July 2026 for that cohort."
+          ]
+        },
+        "applicationSteps": [
+          "Apply online through the JIM admissions portal and upload the specified records.",
+          "Shortlisted applicants attend the written test, group discussion, presentation and personal interview; a handwritten statement of purpose is required."
+        ],
+        "documentsRequired": {
+          "academic": [
+            "SSLC and HSC mark statements",
+            "UG degree and consolidated marks, or eligible interim semester statements"
+          ],
+          "application": [
+            "Passport photograph",
+            "Entrance-test hall ticket/scorecard",
+            "Community certificate",
+            "Work-experience certificate if applicable",
+            "Parish-priest attestation for Catholic applicants only"
+          ]
+        }
+      },
+      "fee": {
+        "status": "on_request",
+        "verifiedAt": "2026-10-27",
+        "notes": "Official page reports academic fee plus student activity, mess and hostel components, not isolated tuition. Preserve the 2026–2028 component table separately; no combined total promoted to annual tuition."
+      },
+      "medium": "",
+      "instructionLanguages": [],
+      "intakeMonths": [],
+      "intakeCodes": []
+    }
+  ],
+  "blockingGaps": [
+    "Main college, admissions and 2026 eligibility PDFs return 503/internal errors. Cached tables are discovery only; cannot certify complete current programme portfolio or publish eligibility/gender rules from snippets.",
+    "Bharathidasan University register and autonomous-directory direct reads failed; recognition badge held despite matching cached identity.",
+    "Current MBA(JIM), MCA, BBA/BCA applicable AICTE programme approvals require regulator-owned verification. No regulated approval inferred from an institution claim.",
+    "SJC ShiftII Statistics appears in programme directory but not 2026 UG application list. ShiftII MScMathematics does appear in 2026 eligibility despite no selection-list entry. Reconcile before packaging.",
+    "Independent eligibility and exact duration of UG/PG, PG diploma and certificates unverified. No honours-duration or certificate-to-degree substitutions.",
+    "PG diploma and certificate exact taxonomy gaps remain held. Historical MPhil entries are not current admissions. Each listed doctoral area/centre is individually retained and held for exact award, duration/mode, audience, entry route and current awarding-university authorization; Rapinat Herbarium may be a centre rather than a distinct award.",
+    "Mandatory media source/rights/HTTP/image/visual QA and hosting are not completed.",
+    "Latest remote duplicate/ledger recheck and any executable payload assembly, mandatory media validation and actual scoped catalogue/migration validation remain integrator work before publication; they do not prevent research-bundle delivery."
+  ],
+  "doctoralResearchAreaDrafts": [
+    {
+      "researchListingLabel": "Ph.D. Biotechnology",
+      "canonicalCourseCandidate": "phd-natural-sciences",
+      "officialSourceUrl": "https://www.sjctni.edu/Courses/PhdCourses.jsp",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "C",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Botany",
+      "canonicalCourseCandidate": "phd-natural-sciences",
+      "officialSourceUrl": "https://www.sjctni.edu/Courses/PhdCourses.jsp",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "C",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Chemistry",
+      "canonicalCourseCandidate": "phd-natural-sciences",
+      "officialSourceUrl": "https://www.sjctni.edu/Courses/PhdCourses.jsp",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "C",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Commerce",
+      "canonicalCourseCandidate": "phd-business-management",
+      "officialSourceUrl": "https://www.sjctni.edu/Courses/PhdCourses.jsp",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "C",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Computer Science",
+      "canonicalCourseCandidate": "phd-computer-science",
+      "officialSourceUrl": "https://www.sjctni.edu/Courses/PhdCourses.jsp",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "C",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Economics",
+      "canonicalCourseCandidate": "phd-arts-humanities",
+      "officialSourceUrl": "https://www.sjctni.edu/Courses/PhdCourses.jsp",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "C",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. English",
+      "canonicalCourseCandidate": "phd-arts-humanities",
+      "officialSourceUrl": "https://www.sjctni.edu/Courses/PhdCourses.jsp",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "C",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. History",
+      "canonicalCourseCandidate": "phd-arts-humanities",
+      "officialSourceUrl": "https://www.sjctni.edu/Courses/PhdCourses.jsp",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "C",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Human Resource Management",
+      "canonicalCourseCandidate": "phd-business-management",
+      "officialSourceUrl": "https://www.sjctni.edu/Courses/PhdCourses.jsp",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "C",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Mathematics",
+      "canonicalCourseCandidate": "phd-natural-sciences",
+      "officialSourceUrl": "https://www.sjctni.edu/Courses/PhdCourses.jsp",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "C",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Physics",
+      "canonicalCourseCandidate": "phd-natural-sciences",
+      "officialSourceUrl": "https://www.sjctni.edu/Courses/PhdCourses.jsp",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "C",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Statistics",
+      "canonicalCourseCandidate": "phd-natural-sciences",
+      "officialSourceUrl": "https://www.sjctni.edu/Courses/PhdCourses.jsp",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "C",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Tamil",
+      "canonicalCourseCandidate": "phd-arts-humanities",
+      "officialSourceUrl": "https://www.sjctni.edu/Courses/PhdCourses.jsp",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "C",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Management Studies",
+      "canonicalCourseCandidate": "phd-business-management",
+      "officialSourceUrl": "https://www.sjctni.edu/Courses/PhdCourses.jsp",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "C",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Rapinat Herbarium",
+      "canonicalCourseCandidate": "phd-natural-sciences",
+      "officialSourceUrl": "https://www.sjctni.edu/Courses/PhdCourses.jsp",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "C",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Whether Rapinat Herbarium is a centre rather than a separate doctoral award",
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    }
+  ],
+  "researchInventoryDiscoveryGaps": [],
+  "deliveryStatus": {
+    "target": "github_local_bundle",
+    "livePublishingOwner": "user",
+    "researchDeliveryBlockedByCredentials": false,
+    "queueNote": "Researcher did not mutate the queue; integrator local claim exists under research_tn_batch_b, not remotely synced.",
+    "notes": "Research delivery target is GitHub/local bundle; the user owns live publishing. Missing live-publishing credentials do not block saving or handing off this research. Evidence, media and actual catalogue/migration validation remain separate publication gates."
+  }
+}

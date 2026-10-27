@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-10-27",
+  "researchDeliveryBlocked": false,
+  "userOwnsLocalApply": true,
+  "publicationAttempted": false,
+  "remainingEvidenceAndEditorialGates": [
+    "PGXPM exact credential/canonical family remains unverified; do not equate its marketing description to an MBA award.",
+    "FBE, PGXPM, FPM and online PGDM international eligibility remains unverified; PGPM and PGDM explicit foreign-applicant evidence is captured.",
+    "FPM variable 4–5-year description does not establish a single standard durationYears; generic fellowship taxonomy proposal needs integrator review.",
+    "PGCM taxonomy proposal for PGPM/FBE requires registry integration, not relabeling as MBA. FBE certificate award is now confirmed.",
+    "FBE fee immersion component conflict remains; PGDM quote retains 2026–28 vintage.",
+    "Chennai online helpdesk and EOA support online linkage, but exact shared-site enrollment variant remains to be confirmed.",
+    "Brand-resource ZIP requests returned HTTP 403; visual/rights review and media upload remain incomplete; no bypass attempted."
+  ],
+  "finishedDrafting": [
+    "All required university narratives",
+    "Canonical course payload metadata where duration is established",
+    "Native fee quote normalization for supported schedules",
+    "Route-specific admissions content to the extent evidenced",
+    "Teaching format fields without assumed instruction language"
+  ],
+  "requiredFieldOmissions": {
+    "audienceEligibility": 4,
+    "canonicalCourseSlug": 1,
+    "durationYears": 1
+  },
+  "structurallyCompleteSubset": {
+    "schemaResult": "PASS",
+    "issueCount": 0,
+    "programmeCount": 2,
+    "courseCount": 2,
+    "publicationReady": false
+  },
+  "publicationGate": "Not cleared: required media and institution/programme-specific editorial review remain.",
+  "localApplyAuthority": "User owns local apply. No DB, deployment or media operation was attempted. Credential availability is not a research-delivery blocker."
+}
