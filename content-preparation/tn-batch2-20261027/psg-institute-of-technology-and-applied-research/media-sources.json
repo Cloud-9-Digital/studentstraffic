@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "universitySlug": "psg-institute-of-technology-and-applied-research",
+  "universityName": "PSG Institute of Technology and Applied Research",
+  "batch": "tn-batch2-20261027",
+  "checkedAt": "2026-10-27",
+  "purpose": "User-authorized source-links local publication preparation; not direct apply.",
+  "payload": "payload.source.json",
+  "approvedSourceAssets": [
+    {
+      "kind": "logo",
+      "sourceUrl": "https://psgitech.ac.in/design/assets/images/PSG_logo.png",
+      "sourceType": "official-university",
+      "sourcePageUrl": "https://psgitech.ac.in/design/",
+      "rightsBasis": "Official PSG iTech identifying crest supplied on its own institutional website. Used intact for factual institutional identification. No open licence, ownership transfer or endorsement is claimed.",
+      "checkedAt": "2026-10-27",
+      "status": "reviewed-source-ready-for-local-upload",
+      "sha256": "3b04ff6ec8eebe7a894acd201f0947851d3bb0c3eeac491ac9fd8ecde7d53464",
+      "bytes": 75499,
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 600,
+        "height": 731
+      },
+      "proposedPublicId": "studentstraffic/universities/psg-institute-of-technology-and-applied-research/logo-3b04ff6ec8ee",
+      "visualReview": "Distinctive PSG iTech crest, not another PSG institution or a favicon; blue/red design and lettering legible on white.",
+      "altText": "PSG iTech blue-and-red institutional crest",
+      "licenseUrl": null,
+      "licenseSourceUrl": null
+    },
+    {
+      "kind": "cover",
+      "sourceUrl": "https://psgitech.ac.in/uploads/main_website/image_slider/active/11.webp",
+      "sourceType": "official-university",
+      "sourcePageUrl": "https://psgitech.ac.in/",
+      "rightsBasis": "Official PSG iTech Neelambur campus courtyard photograph supplied on its own homepage, used intact for factual campus identification and context. No open licence, ownership transfer or endorsement is claimed.",
+      "checkedAt": "2026-10-27",
+      "status": "reviewed-source-ready-for-local-upload",
+      "sha256": "b38b0b57bc2ad2f00c1fdd2d371e891bb9b9f8f5a755bf36a9a4674535d58e98",
+      "bytes": 168040,
+      "contentType": "image/webp",
+      "dimensions": {
+        "width": 1774,
+        "height": 900
+      },
+      "proposedPublicId": "studentstraffic/universities/psg-institute-of-technology-and-applied-research/cover-b38b0b57bc2a",
+      "visualReview": "Genuine Neelambur academic courtyard photograph from the official homepage carousel; clear campus architecture and institutional plaque; not a ranking badge, poster or generated scene.",
+      "altText": "Courtyard between academic buildings at PSG Institute of Technology and Applied Research, Neelambur, Coimbatore",
+      "licenseUrl": null,
+      "licenseSourceUrl": null
+    }
+  ],
+  "readyForLocalMediaPreparation": true,
+  "readyForDirectApply": false,
+  "prohibitedActions": [
+    "No direct source hotlinks in logoUrl/coverImageUrl",
+    "No fabricated Cloudinary URLs",
+    "No DB access or live apply by this preparation tool"
+  ],
+  "remainingLocalSteps": [
+    "Upload the two reviewed original assets or supply verified existing Cloudinary mappings",
+    "Generate the hosted-media payload and run actual scoped reader",
+    "Reserve/claim through locked canonical workflow, run scoped/full validation, commit final immutable migration before user-owned apply"
+  ]
+}
