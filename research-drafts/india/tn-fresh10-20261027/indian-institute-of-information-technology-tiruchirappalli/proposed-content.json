@@ -1,0 +1,1067 @@
+{
+  "status": "completed_research_draft_with_explicit_review_gates",
+  "checkedAt": "2026-10-27",
+  "publicationAttempted": false,
+  "profile": {
+    "countrySlug": "india",
+    "slug": "indian-institute-of-information-technology-tiruchirappalli",
+    "name": "Indian Institute of Information Technology Tiruchirappalli",
+    "city": "Tiruchirappalli",
+    "type": "Public",
+    "officialWebsite": "https://iiitt.ac.in/",
+    "summary": "IIIT Tiruchirappalli is a public-private-partnership technology institute at Sethurapatti in Tamil Nadu. Its current admissions pages list four B.Tech. routes and two M.Tech. programmes, alongside doctoral research areas. Applicants need to distinguish central counselling, DASA and institute-run self-support admissions.",
+    "campusLifestyle": "The institute has operated from its permanent Sethurapatti campus since June 2021. Its hostel page lists residence halls, a mess hall and a gym. The campus is on the Trichy–Madurai highway rather than at the former NIT or Oxford Engineering College locations.",
+    "hostelOverview": "The institute publishes a hostel accommodation form and separate hostel-and-mess charges for the 2026–27 first semester. Residence rules set permissions and return-time requirements. Confirm room allocation and the latest rules with the hostel office before arranging accommodation.",
+    "dietarySupport": "A campus mess is listed, and the first-semester schedules include mess advance charges. The reviewed sources do not establish allergy handling or specific dietary accommodation; students should check those needs with the hostel office.",
+    "safetyOverview": "Published hostel regulations prohibit ragging and direct residents to report incidents. They also provide for emergency contact information at room allotment. These policies are not a guarantee of safety or a substitute for checking current reporting contacts.",
+    "studentSupport": "The admission pages provide reporting instructions, cancellation forms and hostel forms. The undergraduate page also links the National Scholarship Portal notice; eligibility and an award are not guaranteed by admission.",
+    "whyChoose": [
+      "A focused current portfolio in computing and electronics.",
+      "Distinct central-counselling and self-support postgraduate routes.",
+      "A permanent campus with published residence and mess information."
+    ],
+    "thingsToConsider": [
+      "Choose the correct B.Tech. counselling route: DASA and domestic central counselling have different eligibility rules.",
+      "First-semester fees must not be read as annual tuition.",
+      "Doctoral research areas do not confirm an open supervisor position."
+    ],
+    "bestFitFor": [
+      "Applicants seeking a computing or electronics engineering route.",
+      "Students prepared to follow the relevant central counselling process.",
+      "Research applicants able to verify a suitable supervisor and admission call."
+    ],
+    "industryPartners": [
+      "Tata Consultancy Services",
+      "Cognizant Technology Solutions",
+      "Infosys",
+      "Ramco Systems",
+      "ELCOT",
+      "Navitas (TAKE Solutions)"
+    ],
+    "recognitionBadges": [
+      "Established under the IIIT Public-Private Partnership statutory framework"
+    ],
+    "recognitionLinks": [
+      {
+        "label": "Government Gazette: IIIT Tiruchirappalli statutes",
+        "url": "https://upload.indiacode.nic.in/showfile?actid=AC_CEN_9_30_00033_201723_1517807328002&filename=191586-59-88.pdf&type=statute"
+      }
+    ],
+    "admissionsContent": {
+      "cta": "Compare your qualifications with the relevant official admission route before applying.",
+      "routeDistinctions": [
+        "B.Tech.: JoSAA/CSAB and DASA routes must be checked separately.",
+        "M.Tech.: CCMT and institute self-support routes are distinct funding/admission categories.",
+        "Ph.D.: verify the current call, supervisor availability and applicable regulations."
+      ]
+    },
+    "faq": [
+      {
+        "question": "Where is the current campus?",
+        "answer": "The permanent campus is at Sethurapatti on the Trichy–Madurai highway, Tiruchirappalli, Tamil Nadu 620012. The institute says it moved there in June 2021."
+      },
+      {
+        "question": "Which B.Tech. programmes are listed?",
+        "answer": "The current official admission data lists Computer Science and Engineering, CSE with Artificial Intelligence and Data Science, Electronics and Communication Engineering, and ECE with VLSI Design. Each is listed as four years."
+      },
+      {
+        "question": "Which M.Tech. programmes are listed?",
+        "answer": "The institute lists two-year M.Tech. programmes in Computer Science and Engineering and VLSI Systems. Self-support admission is a route into these programmes, not a separate degree."
+      },
+      {
+        "question": "Is a DASA admission route available?",
+        "answer": "The revised DASA 2026 seat matrix lists all four B.Tech. branches at IIIT Tiruchirappalli. Its nationality, overseas-schooling, subject, marks and JEE Main requirements apply. The 2026 dates have passed; future applicants need the next published rules."
+      },
+      {
+        "question": "Are the published B.Tech. fees annual?",
+        "answer": "No. The captured 2026–27 schedule is explicitly for the first, odd semester. It separates tuition, one-time charges, other institute charges and hostel-and-mess payments."
+      },
+      {
+        "question": "How are DASA fees distinguished?",
+        "answer": "The DASA schedule identifies CIWG, non-SAARC and SAARC categories with different tuition amounts and currencies. Category qualification must be checked rather than assuming one fee applies to every international applicant."
+      },
+      {
+        "question": "What is the self-support M.Tech. route?",
+        "answer": "The 2026 self-support prospectus accepts relevant engineering qualifications subject to its academic thresholds. GATE holders have a different assessment route from non-GATE applicants, and institute stipend support is not provided for this category."
+      },
+      {
+        "question": "Does the institute provide hostels?",
+        "answer": "The official hostel page lists residence and mess facilities, and admission pages provide an accommodation form. A room allocation or particular room type should not be assumed before confirmation."
+      },
+      {
+        "question": "Are doctoral places currently open?",
+        "answer": "The institute lists doctoral fields and links its regulations. Those listings alone do not establish that a current intake or a particular supervisor position is open; check a current admission notice."
+      },
+      {
+        "question": "Is teaching language confirmed here?",
+        "answer": "Programme-specific instruction-language evidence was not established from the reviewed current sources. Ask the department about lectures, assessment and any language requirements before accepting an offer."
+      }
+    ],
+    "researchSources": [
+      {
+        "label": "Official research source",
+        "url": "https://iiitt.ac.in/about",
+        "kind": "official-university",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official research source",
+        "url": "https://upload.indiacode.nic.in/showfile?actid=AC_CEN_9_30_00033_201723_1517807328002&filename=191586-59-88.pdf&type=statute",
+        "kind": "recognition",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official research source",
+        "url": "https://iiitt.ac.in/hostel",
+        "kind": "official-university",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official research source",
+        "url": "https://store.iiitt.ac.in/downloads/admission/B.Tech.%20Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%201%20sem.pdf",
+        "kind": "official-university",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official research source",
+        "url": "https://store.iiitt.ac.in/downloads/hostel/Hostel%20Residents%20Rules%20and%20Regulation_IIITT-2024-2025.pdf",
+        "kind": "official-university",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official research source",
+        "url": "https://iiitt.ac.in/json/admission/ug.json",
+        "kind": "official-university",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official research source",
+        "url": "https://store.iiitt.ac.in/downloads/admission/DASA%20-%20First%20yearr%20Reporting%20details%202026-27%20-1.pdf",
+        "kind": "official-university",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official research source",
+        "url": "https://iiitt.ac.in/json/admission/pg.json",
+        "kind": "official-university",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official research source",
+        "url": "https://iiitt.ac.in/programs",
+        "kind": "official-university",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official institutional / regulator evidence",
+        "url": "https://sansad.in/getFile/loksabhaquestions/annex/10/AU1873.pdf?source=pqals",
+        "kind": "government",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official institutional / regulator evidence",
+        "url": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/07/20260730113349078.pdf",
+        "kind": "government",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official institutional / regulator evidence",
+        "url": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+        "kind": "government",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official institutional / regulator evidence",
+        "url": "https://store.iiitt.ac.in/downloads/admission/IIITT-Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%20DASA.pdf",
+        "kind": "official-university",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official institutional / regulator evidence",
+        "url": "https://store.iiitt.ac.in/downloads/admission/MTECH%20self%20support%20Brochure_%20July%202026_self.pdf",
+        "kind": "official-university",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official institutional / regulator evidence",
+        "url": "https://store.iiitt.ac.in/downloads/admission/M.Tech%20Fee%20Structure_July_2026.pdf",
+        "kind": "official-university",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Official institutional / regulator evidence",
+        "url": "https://store.iiitt.ac.in/downloads/programs/Ph.D_regulations_IIITT_final_2020.pdf",
+        "kind": "official-university",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "Secondary fee research (not programme existence evidence)",
+        "url": "https://www.shiksha.com/college/iiit-trichy-indian-institute-of-information-technology-tiruchirappalli-53872/fees",
+        "kind": "other",
+        "checkedAt": "2026-10-27"
+      }
+    ],
+    "establishedYear": 2013,
+    "cityProfile": "The permanent campus is at Sethurapatti on the Tiruchirappalli–Madurai highway in Tamil Nadu. The institute’s 2026 reporting guide places it about 20 kilometres from Tiruchirappalli Junction and the central bus stand. Travel planning should use this campus, not its former NIT or Oxford Engineering College locations.",
+    "practicalExposure": "IIIT Tiruchirappalli describes an agreement with SVNIT Surat covering joint research, academic activities and innovation. Its stated scope includes internship opportunities for B.Tech. and M.Tech. students and collaborative projects. These are opportunities within the collaboration, not a guarantee of an internship, placement or supervisor allocation for every student."
+  },
+  "programmeDrafts": [
+    {
+      "candidatePayloadFields": {
+        "slug": "b-tech-computer-science-and-engineering",
+        "officialTitle": "B.Tech. Computer Science and Engineering",
+        "officialProgramUrl": "https://iiitt.ac.in/admission_ug",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "be-btech-computer-science-engineering",
+        "durationYears": 4,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "The DASA first-semester tariff has CIWG INR 115,200, non-SAARC USD 4,000 and SAARC USD 2,000 tuition categories, plus INR 92,000 of separate charges. The quote is not annual tuition; applicable category must be confirmed.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "The DASA first-semester tariff has CIWG INR 115,200, non-SAARC USD 4,000 and SAARC USD 2,000 tuition categories, plus INR 92,000 of separate charges. The quote is not annual tuition; applicable category must be confirmed."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "4 years; full-time on-campus."
+          }
+        ],
+        "audienceEligibility": {
+          "availability": "restricted",
+          "eligibleAudiences": [
+            "Foreign nationals eligible under DASA",
+            "OCI/PIO applicants meeting DASA rules",
+            "Non-resident Indian applicants meeting DASA rules"
+          ],
+          "restrictions": [
+            "The 2026 route requires qualifying nationality/residency, school subjects and marks, JEE Main rank and the relevant branch/category seat allocation.",
+            "Indian nationals and OCI/PIO(I) applicants require the prescribed overseas Class XI–XII education history."
+          ],
+          "notes": "DASA route specifically evidenced; it does not describe every domestic admission route or promise a future-cycle seat.",
+          "verifiedAt": "2026-10-27",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf"
+        },
+        "admissionsContent": {
+          "overview": "For this four-year B.Tech., the 2026 DASA matrix confirms international-category seats. Admission requires central registration, document verification, choices and allotment; the separate domestic counselling route is not substituted by DASA.",
+          "eligibility": {
+            "intro": "The following requirements describe the completed 2026 DASA cycle; use the next published brochure for future applications.",
+            "items": [
+              "Valid JEE Main 2026 Paper 1 score and rank.",
+              "Class XII/equivalent: Mathematics, Physics and one of Chemistry, Biotechnology, Computer Science or Biology; 75% aggregate across five subjects or CGPA 7.5/10 under the brochure.",
+              "Date of birth on or after 1 October 2001 for the 2026 cycle.",
+              "Foreign nationals may study in India or abroad; Indian nationals and OCI/PIO(I) need the prescribed two years of overseas education including Classes XI and XII."
+            ]
+          },
+          "applicationSteps": [
+            "Register directly through the official DASA/CSAB portal and pay the applicable registration charges.",
+            "Upload category-specific documents and answer verification queries before filling and locking programme choices.",
+            "If allotted, follow acceptance/payment requirements and the institute’s physical-reporting instructions."
+          ],
+          "documentsRequired": {
+            "academic": [
+              "Class X, XI and XII/equivalent mark sheets",
+              "School certificate confirming Classes XI and XII",
+              "Grade/CGPA equivalence evidence where needed",
+              "Overseas schooling proof for the applicable NRI/OCI category"
+            ],
+            "application": [
+              "Passport or permitted nationality document",
+              "Date-of-birth proof and medical certificate in the prescribed format",
+              "OCI/PIO documents where applicable; parent employment/visa/work evidence for CIWG claims"
+            ]
+          },
+          "deadlinesNote": "The 2026 counselling and reporting dates have passed. No 2027 date is inferred from them.",
+          "reportedFeeQuote": {
+            "currency": "USD",
+            "minAmount": 4000,
+            "status": "confirmed",
+            "period": "semester",
+            "componentBasis": "Non-SAARC DASA first-semester tuition only. The schedule separately requires INR 92,000 of other institute, one-time, hostel and mess charges; other DASA categories differ.",
+            "academicYear": "2026–27 odd semester",
+            "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/IIITT-Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%20DASA.pdf",
+            "sourceLabel": "Official published fee schedule",
+            "verifiedAt": "2026-10-27",
+            "audience": "international",
+            "category": "DASA Non-SAARC"
+          }
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "open_to_international",
+      "durationSourceText": "4 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "DASA 2026 revised matrix explicitly lists this branch under CIWG and non-CIWG. All 2026 deadlines have passed; future rules require recheck. Domestic JoSAA route is separate.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "b-tech-computer-science-and-engineering-artificial-intelligence-and-data-science",
+        "officialTitle": "B.Tech. Computer Science and Engineering (Artificial Intelligence and Data Science)",
+        "officialProgramUrl": "https://iiitt.ac.in/admission_ug",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "be-btech-artificial-intelligence-machine-learning",
+        "durationYears": 4,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "The DASA first-semester tariff has CIWG INR 115,200, non-SAARC USD 4,000 and SAARC USD 2,000 tuition categories, plus INR 92,000 of separate charges. The quote is not annual tuition; applicable category must be confirmed.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "The DASA first-semester tariff has CIWG INR 115,200, non-SAARC USD 4,000 and SAARC USD 2,000 tuition categories, plus INR 92,000 of separate charges. The quote is not annual tuition; applicable category must be confirmed."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "4 years; full-time on-campus."
+          }
+        ],
+        "audienceEligibility": {
+          "availability": "restricted",
+          "eligibleAudiences": [
+            "Foreign nationals eligible under DASA",
+            "OCI/PIO applicants meeting DASA rules",
+            "Non-resident Indian applicants meeting DASA rules"
+          ],
+          "restrictions": [
+            "The 2026 route requires qualifying nationality/residency, school subjects and marks, JEE Main rank and the relevant branch/category seat allocation.",
+            "Indian nationals and OCI/PIO(I) applicants require the prescribed overseas Class XI–XII education history."
+          ],
+          "notes": "DASA route specifically evidenced; it does not describe every domestic admission route or promise a future-cycle seat.",
+          "verifiedAt": "2026-10-27",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf"
+        },
+        "admissionsContent": {
+          "overview": "For this four-year B.Tech., the 2026 DASA matrix confirms international-category seats. Admission requires central registration, document verification, choices and allotment; the separate domestic counselling route is not substituted by DASA.",
+          "eligibility": {
+            "intro": "The following requirements describe the completed 2026 DASA cycle; use the next published brochure for future applications.",
+            "items": [
+              "Valid JEE Main 2026 Paper 1 score and rank.",
+              "Class XII/equivalent: Mathematics, Physics and one of Chemistry, Biotechnology, Computer Science or Biology; 75% aggregate across five subjects or CGPA 7.5/10 under the brochure.",
+              "Date of birth on or after 1 October 2001 for the 2026 cycle.",
+              "Foreign nationals may study in India or abroad; Indian nationals and OCI/PIO(I) need the prescribed two years of overseas education including Classes XI and XII."
+            ]
+          },
+          "applicationSteps": [
+            "Register directly through the official DASA/CSAB portal and pay the applicable registration charges.",
+            "Upload category-specific documents and answer verification queries before filling and locking programme choices.",
+            "If allotted, follow acceptance/payment requirements and the institute’s physical-reporting instructions."
+          ],
+          "documentsRequired": {
+            "academic": [
+              "Class X, XI and XII/equivalent mark sheets",
+              "School certificate confirming Classes XI and XII",
+              "Grade/CGPA equivalence evidence where needed",
+              "Overseas schooling proof for the applicable NRI/OCI category"
+            ],
+            "application": [
+              "Passport or permitted nationality document",
+              "Date-of-birth proof and medical certificate in the prescribed format",
+              "OCI/PIO documents where applicable; parent employment/visa/work evidence for CIWG claims"
+            ]
+          },
+          "deadlinesNote": "The 2026 counselling and reporting dates have passed. No 2027 date is inferred from them.",
+          "reportedFeeQuote": {
+            "currency": "USD",
+            "minAmount": 4000,
+            "status": "confirmed",
+            "period": "semester",
+            "componentBasis": "Non-SAARC DASA first-semester tuition only. The schedule separately requires INR 92,000 of other institute, one-time, hostel and mess charges; other DASA categories differ.",
+            "academicYear": "2026–27 odd semester",
+            "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/IIITT-Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%20DASA.pdf",
+            "sourceLabel": "Official published fee schedule",
+            "verifiedAt": "2026-10-27",
+            "audience": "international",
+            "category": "DASA Non-SAARC"
+          }
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "open_to_international",
+      "durationSourceText": "4 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "DASA 2026 revised matrix explicitly lists this branch under CIWG and non-CIWG. All 2026 deadlines have passed; future rules require recheck. Domestic JoSAA route is separate.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "b-tech-electronics-and-communication-engineering",
+        "officialTitle": "B.Tech. Electronics and Communication Engineering",
+        "officialProgramUrl": "https://iiitt.ac.in/admission_ug",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+        "durationYears": 4,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "The DASA first-semester tariff has CIWG INR 115,200, non-SAARC USD 4,000 and SAARC USD 2,000 tuition categories, plus INR 92,000 of separate charges. The quote is not annual tuition; applicable category must be confirmed.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "The DASA first-semester tariff has CIWG INR 115,200, non-SAARC USD 4,000 and SAARC USD 2,000 tuition categories, plus INR 92,000 of separate charges. The quote is not annual tuition; applicable category must be confirmed."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "4 years; full-time on-campus."
+          }
+        ],
+        "audienceEligibility": {
+          "availability": "restricted",
+          "eligibleAudiences": [
+            "Foreign nationals eligible under DASA",
+            "OCI/PIO applicants meeting DASA rules",
+            "Non-resident Indian applicants meeting DASA rules"
+          ],
+          "restrictions": [
+            "The 2026 route requires qualifying nationality/residency, school subjects and marks, JEE Main rank and the relevant branch/category seat allocation.",
+            "Indian nationals and OCI/PIO(I) applicants require the prescribed overseas Class XI–XII education history."
+          ],
+          "notes": "DASA route specifically evidenced; it does not describe every domestic admission route or promise a future-cycle seat.",
+          "verifiedAt": "2026-10-27",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf"
+        },
+        "admissionsContent": {
+          "overview": "For this four-year B.Tech., the 2026 DASA matrix confirms international-category seats. Admission requires central registration, document verification, choices and allotment; the separate domestic counselling route is not substituted by DASA.",
+          "eligibility": {
+            "intro": "The following requirements describe the completed 2026 DASA cycle; use the next published brochure for future applications.",
+            "items": [
+              "Valid JEE Main 2026 Paper 1 score and rank.",
+              "Class XII/equivalent: Mathematics, Physics and one of Chemistry, Biotechnology, Computer Science or Biology; 75% aggregate across five subjects or CGPA 7.5/10 under the brochure.",
+              "Date of birth on or after 1 October 2001 for the 2026 cycle.",
+              "Foreign nationals may study in India or abroad; Indian nationals and OCI/PIO(I) need the prescribed two years of overseas education including Classes XI and XII."
+            ]
+          },
+          "applicationSteps": [
+            "Register directly through the official DASA/CSAB portal and pay the applicable registration charges.",
+            "Upload category-specific documents and answer verification queries before filling and locking programme choices.",
+            "If allotted, follow acceptance/payment requirements and the institute’s physical-reporting instructions."
+          ],
+          "documentsRequired": {
+            "academic": [
+              "Class X, XI and XII/equivalent mark sheets",
+              "School certificate confirming Classes XI and XII",
+              "Grade/CGPA equivalence evidence where needed",
+              "Overseas schooling proof for the applicable NRI/OCI category"
+            ],
+            "application": [
+              "Passport or permitted nationality document",
+              "Date-of-birth proof and medical certificate in the prescribed format",
+              "OCI/PIO documents where applicable; parent employment/visa/work evidence for CIWG claims"
+            ]
+          },
+          "deadlinesNote": "The 2026 counselling and reporting dates have passed. No 2027 date is inferred from them.",
+          "reportedFeeQuote": {
+            "currency": "USD",
+            "minAmount": 4000,
+            "status": "confirmed",
+            "period": "semester",
+            "componentBasis": "Non-SAARC DASA first-semester tuition only. The schedule separately requires INR 92,000 of other institute, one-time, hostel and mess charges; other DASA categories differ.",
+            "academicYear": "2026–27 odd semester",
+            "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/IIITT-Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%20DASA.pdf",
+            "sourceLabel": "Official published fee schedule",
+            "verifiedAt": "2026-10-27",
+            "audience": "international",
+            "category": "DASA Non-SAARC"
+          }
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "open_to_international",
+      "durationSourceText": "4 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "DASA 2026 revised matrix explicitly lists this branch under CIWG and non-CIWG. All 2026 deadlines have passed; future rules require recheck. Domestic JoSAA route is separate.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "b-tech-electronics-and-communication-engineering-vlsi-design",
+        "officialTitle": "B.Tech. Electronics and Communication Engineering (VLSI Design)",
+        "officialProgramUrl": "https://iiitt.ac.in/admission_ug",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+        "durationYears": 4,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "The DASA first-semester tariff has CIWG INR 115,200, non-SAARC USD 4,000 and SAARC USD 2,000 tuition categories, plus INR 92,000 of separate charges. The quote is not annual tuition; applicable category must be confirmed.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "The DASA first-semester tariff has CIWG INR 115,200, non-SAARC USD 4,000 and SAARC USD 2,000 tuition categories, plus INR 92,000 of separate charges. The quote is not annual tuition; applicable category must be confirmed."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "4 years; full-time on-campus."
+          }
+        ],
+        "audienceEligibility": {
+          "availability": "restricted",
+          "eligibleAudiences": [
+            "Foreign nationals eligible under DASA",
+            "OCI/PIO applicants meeting DASA rules",
+            "Non-resident Indian applicants meeting DASA rules"
+          ],
+          "restrictions": [
+            "The 2026 route requires qualifying nationality/residency, school subjects and marks, JEE Main rank and the relevant branch/category seat allocation.",
+            "Indian nationals and OCI/PIO(I) applicants require the prescribed overseas Class XI–XII education history."
+          ],
+          "notes": "DASA route specifically evidenced; it does not describe every domestic admission route or promise a future-cycle seat.",
+          "verifiedAt": "2026-10-27",
+          "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf"
+        },
+        "admissionsContent": {
+          "overview": "For this four-year B.Tech., the 2026 DASA matrix confirms international-category seats. Admission requires central registration, document verification, choices and allotment; the separate domestic counselling route is not substituted by DASA.",
+          "eligibility": {
+            "intro": "The following requirements describe the completed 2026 DASA cycle; use the next published brochure for future applications.",
+            "items": [
+              "Valid JEE Main 2026 Paper 1 score and rank.",
+              "Class XII/equivalent: Mathematics, Physics and one of Chemistry, Biotechnology, Computer Science or Biology; 75% aggregate across five subjects or CGPA 7.5/10 under the brochure.",
+              "Date of birth on or after 1 October 2001 for the 2026 cycle.",
+              "Foreign nationals may study in India or abroad; Indian nationals and OCI/PIO(I) need the prescribed two years of overseas education including Classes XI and XII."
+            ]
+          },
+          "applicationSteps": [
+            "Register directly through the official DASA/CSAB portal and pay the applicable registration charges.",
+            "Upload category-specific documents and answer verification queries before filling and locking programme choices.",
+            "If allotted, follow acceptance/payment requirements and the institute’s physical-reporting instructions."
+          ],
+          "documentsRequired": {
+            "academic": [
+              "Class X, XI and XII/equivalent mark sheets",
+              "School certificate confirming Classes XI and XII",
+              "Grade/CGPA equivalence evidence where needed",
+              "Overseas schooling proof for the applicable NRI/OCI category"
+            ],
+            "application": [
+              "Passport or permitted nationality document",
+              "Date-of-birth proof and medical certificate in the prescribed format",
+              "OCI/PIO documents where applicable; parent employment/visa/work evidence for CIWG claims"
+            ]
+          },
+          "deadlinesNote": "The 2026 counselling and reporting dates have passed. No 2027 date is inferred from them.",
+          "reportedFeeQuote": {
+            "currency": "USD",
+            "minAmount": 4000,
+            "status": "confirmed",
+            "period": "semester",
+            "componentBasis": "Non-SAARC DASA first-semester tuition only. The schedule separately requires INR 92,000 of other institute, one-time, hostel and mess charges; other DASA categories differ.",
+            "academicYear": "2026–27 odd semester",
+            "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/IIITT-Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%20DASA.pdf",
+            "sourceLabel": "Official published fee schedule",
+            "verifiedAt": "2026-10-27",
+            "audience": "international",
+            "category": "DASA Non-SAARC"
+          }
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "open_to_international",
+      "durationSourceText": "4 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "DASA 2026 revised matrix explicitly lists this branch under CIWG and non-CIWG. All 2026 deadlines have passed; future rules require recheck. Domestic JoSAA route is separate.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "m-tech-computer-science-and-engineering",
+        "officialTitle": "M.Tech. Computer Science and Engineering",
+        "officialProgramUrl": "https://iiitt.ac.in/admission_pg",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "me-mtech-computer-science-engineering",
+        "durationYears": 2,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official and secondary fee sources were reviewed. No defensible current annual tuition for this exact programme/category was verified; request the applicable schedule. Native semester or whole-course charges are not converted into annual tuition.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official and secondary fee sources were reviewed. No defensible current annual tuition for this exact programme/category was verified; request the applicable schedule. Native semester or whole-course charges are not converted into annual tuition."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "2 years; full-time on-campus."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "The institute lists this two-year M.Tech. through CCMT and a separate self-support route. The criteria below are specific to the captured 2026 self-support prospectus and must not replace CCMT’s programme-mapping rules.",
+          "eligibility": {
+            "intro": "Self-support applicants need the relevant engineering qualification and must satisfy the academic and assessment conditions in the prospectus.",
+            "items": [
+              "B.E./B.Tech. in Computer Science and Engineering or a relevant discipline specified by the institute.",
+              "General/EWS/OBC: at least 60% aggregate or CGPA 6.5/10; SC/ST/PwD: 55% or CGPA 6.0/10.",
+              "Valid GATE 2024/2025/2026 holders follow the GATE route; non-GATE applicants must take the stated written examination.",
+              "Self-support admission does not carry an institute stipend."
+            ]
+          },
+          "applicationSteps": [
+            "Complete the institute’s self-support application for the relevant programme and provide the requested records.",
+            "Follow the written-test or GATE-based selection instructions and complete reporting only after selection."
+          ],
+          "documentsRequired": {
+            "academic": [
+              "Class X and XII certificates",
+              "Undergraduate consolidated marks and degree/provisional/course-completion evidence",
+              "Transfer/migration certificate where applicable"
+            ],
+            "application": [
+              "Photograph and photo identity proof",
+              "GATE scorecard where applicable",
+              "Category/disability certificates only for claimed concessions"
+            ]
+          },
+          "deadlinesNote": "The official page extended the 2026 application deadline to 7 August 2026; it is not a current or future deadline.",
+          "reportedFeeQuote": {
+            "currency": "INR",
+            "minAmount": 42000,
+            "status": "confirmed",
+            "period": "semester",
+            "componentBasis": "M.Tech. tuition only for the first semester; one-time, additional institute and hostel/mess charges are separate. Total first-semester payment in the source is INR 135,600.",
+            "academicYear": "July 2026 first semester",
+            "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/M.Tech%20Fee%20Structure_July_2026.pdf",
+            "sourceLabel": "Official published fee schedule",
+            "verifiedAt": "2026-10-27"
+          }
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "unknown",
+      "durationSourceText": "2 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "CCMT and self-support are admission/funding variants, not separate awards. Self-support 2026 prospectus captured; international route unconfirmed.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "m-tech-vlsi-systems",
+        "officialTitle": "M.Tech. VLSI Systems",
+        "officialProgramUrl": "https://iiitt.ac.in/admission_pg",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "me-mtech-electronics-communication-engineering",
+        "durationYears": 2,
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "Official and secondary fee sources were reviewed. No defensible current annual tuition for this exact programme/category was verified; request the applicable schedule. Native semester or whole-course charges are not converted into annual tuition.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "Official and secondary fee sources were reviewed. No defensible current annual tuition for this exact programme/category was verified; request the applicable schedule. Native semester or whole-course charges are not converted into annual tuition."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "2 years; full-time on-campus."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "The institute lists this two-year M.Tech. through CCMT and a separate self-support route. The criteria below are specific to the captured 2026 self-support prospectus and must not replace CCMT’s programme-mapping rules.",
+          "eligibility": {
+            "intro": "Self-support applicants need the relevant engineering qualification and must satisfy the academic and assessment conditions in the prospectus.",
+            "items": [
+              "B.E./B.Tech. in Electronics and Communication Engineering or a relevant discipline specified by the institute.",
+              "General/EWS/OBC: at least 60% aggregate or CGPA 6.5/10; SC/ST/PwD: 55% or CGPA 6.0/10.",
+              "Valid GATE 2024/2025/2026 holders follow the GATE route; non-GATE applicants must take the stated written examination.",
+              "Self-support admission does not carry an institute stipend."
+            ]
+          },
+          "applicationSteps": [
+            "Complete the institute’s self-support application for the relevant programme and provide the requested records.",
+            "Follow the written-test or GATE-based selection instructions and complete reporting only after selection."
+          ],
+          "documentsRequired": {
+            "academic": [
+              "Class X and XII certificates",
+              "Undergraduate consolidated marks and degree/provisional/course-completion evidence",
+              "Transfer/migration certificate where applicable"
+            ],
+            "application": [
+              "Photograph and photo identity proof",
+              "GATE scorecard where applicable",
+              "Category/disability certificates only for claimed concessions"
+            ]
+          },
+          "deadlinesNote": "The official page extended the 2026 application deadline to 7 August 2026; it is not a current or future deadline.",
+          "reportedFeeQuote": {
+            "currency": "INR",
+            "minAmount": 42000,
+            "status": "confirmed",
+            "period": "semester",
+            "componentBasis": "M.Tech. tuition only for the first semester; one-time, additional institute and hostel/mess charges are separate. Total first-semester payment in the source is INR 135,600.",
+            "academicYear": "July 2026 first semester",
+            "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/M.Tech%20Fee%20Structure_July_2026.pdf",
+            "sourceLabel": "Official published fee schedule",
+            "verifiedAt": "2026-10-27"
+          }
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "unknown",
+      "durationSourceText": "2 years",
+      "deliveryModeSourceText": "full-time on-campus",
+      "notes": "CCMT and self-support are admission/funding variants, not separate awards. Self-support 2026 prospectus captured; international route unconfirmed.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "ph-d-computer-science-and-engineering",
+        "officialTitle": "Ph.D. Computer Science and Engineering",
+        "officialProgramUrl": "https://iiitt.ac.in/programs",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "phd-computer-science",
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "No current discipline/category-specific doctoral fee was verified. The official admission-instructions PDF returned HTTP 503. A secondary page estimates INR 60,000 tuition over three years for a two-course PhD grouping; its scope does not establish this discipline’s tariff.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "No current discipline/category-specific doctoral fee was verified. The official admission-instructions PDF returned HTTP 503. A secondary page estimates INR 60,000 tuition over three years for a two-course PhD grouping; its scope does not establish this discipline’s tariff."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "minimum 2 years full-time / 3 years part-time; maximum 6 years under linked 2020 regulations; full-time / part-time."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "This doctoral discipline is named in the institute’s linked regulations. Full-time and part-time categories exist, but a listed field is not proof of a currently open supervisor position.",
+          "eligibility": {
+            "intro": "The linked 2020 regulations set baseline qualification routes; a current admission call may add discipline-specific conditions.",
+            "items": [
+              "Engineering/technology masters or M.S. by research: 60%/CGPA 6.5 in UG or PG for OC/OBC; 55%/CGPA 6.0 for SC/ST.",
+              "Alternative bachelor-plus-GATE and 15-year industry-experience routes have separate conditions in the regulations."
+            ]
+          },
+          "applicationSteps": [
+            "Identify the applicable current research call and full-time or part-time category before submitting an application.",
+            "Shortlisted candidates follow the department’s test/interview process; admission follows institutional approval and prescribed fee payment."
+          ],
+          "deadlinesNote": "No current intake deadline is asserted. The 2023 linked amendment addresses the comprehensive examination, not a new admission opening."
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "unknown",
+      "durationSourceText": "minimum 2 years full-time / 3 years part-time; maximum 6 years under linked 2020 regulations",
+      "deliveryModeSourceText": "full-time / part-time",
+      "notes": "Research area listed. Current admission call, supervisor availability, fee and international eligibility not verified. Linked 2023 amendment concerns comprehensive examination, not duration. Do not use minimum registration period as standard durationYears.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "ph-d-electronics-and-communication-engineering",
+        "officialTitle": "Ph.D. Electronics and Communication Engineering",
+        "officialProgramUrl": "https://iiitt.ac.in/programs",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "phd-engineering",
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "No current discipline/category-specific doctoral fee was verified. The official admission-instructions PDF returned HTTP 503. A secondary page estimates INR 60,000 tuition over three years for a two-course PhD grouping; its scope does not establish this discipline’s tariff.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "No current discipline/category-specific doctoral fee was verified. The official admission-instructions PDF returned HTTP 503. A secondary page estimates INR 60,000 tuition over three years for a two-course PhD grouping; its scope does not establish this discipline’s tariff."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "minimum 2 years full-time / 3 years part-time; maximum 6 years under linked 2020 regulations; full-time / part-time."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "This doctoral discipline is named in the institute’s linked regulations. Full-time and part-time categories exist, but a listed field is not proof of a currently open supervisor position.",
+          "eligibility": {
+            "intro": "The linked 2020 regulations set baseline qualification routes; a current admission call may add discipline-specific conditions.",
+            "items": [
+              "Engineering/technology masters or M.S. by research: 60%/CGPA 6.5 in UG or PG for OC/OBC; 55%/CGPA 6.0 for SC/ST.",
+              "Alternative bachelor-plus-GATE and 15-year industry-experience routes have separate conditions in the regulations."
+            ]
+          },
+          "applicationSteps": [
+            "Identify the applicable current research call and full-time or part-time category before submitting an application.",
+            "Shortlisted candidates follow the department’s test/interview process; admission follows institutional approval and prescribed fee payment."
+          ],
+          "deadlinesNote": "No current intake deadline is asserted. The 2023 linked amendment addresses the comprehensive examination, not a new admission opening."
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "unknown",
+      "durationSourceText": "minimum 2 years full-time / 3 years part-time; maximum 6 years under linked 2020 regulations",
+      "deliveryModeSourceText": "full-time / part-time",
+      "notes": "Research area listed. Current admission call, supervisor availability, fee and international eligibility not verified. Linked 2023 amendment concerns comprehensive examination, not duration. Do not use minimum registration period as standard durationYears.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "ph-d-mechanical-engineering",
+        "officialTitle": "Ph.D. Mechanical Engineering",
+        "officialProgramUrl": "https://iiitt.ac.in/programs",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "phd-engineering",
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "No current discipline/category-specific doctoral fee was verified. The official admission-instructions PDF returned HTTP 503. A secondary page estimates INR 60,000 tuition over three years for a two-course PhD grouping; its scope does not establish this discipline’s tariff.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "No current discipline/category-specific doctoral fee was verified. The official admission-instructions PDF returned HTTP 503. A secondary page estimates INR 60,000 tuition over three years for a two-course PhD grouping; its scope does not establish this discipline’s tariff."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "minimum 2 years full-time / 3 years part-time; maximum 6 years under linked 2020 regulations; full-time / part-time."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "This doctoral discipline is named in the institute’s linked regulations. Full-time and part-time categories exist, but a listed field is not proof of a currently open supervisor position.",
+          "eligibility": {
+            "intro": "The linked 2020 regulations set baseline qualification routes; a current admission call may add discipline-specific conditions.",
+            "items": [
+              "Engineering/technology masters or M.S. by research: 60%/CGPA 6.5 in UG or PG for OC/OBC; 55%/CGPA 6.0 for SC/ST.",
+              "Alternative bachelor-plus-GATE and 15-year industry-experience routes have separate conditions in the regulations."
+            ]
+          },
+          "applicationSteps": [
+            "Identify the applicable current research call and full-time or part-time category before submitting an application.",
+            "Shortlisted candidates follow the department’s test/interview process; admission follows institutional approval and prescribed fee payment."
+          ],
+          "deadlinesNote": "No current intake deadline is asserted. The 2023 linked amendment addresses the comprehensive examination, not a new admission opening."
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "unknown",
+      "durationSourceText": "minimum 2 years full-time / 3 years part-time; maximum 6 years under linked 2020 regulations",
+      "deliveryModeSourceText": "full-time / part-time",
+      "notes": "Research area listed. Current admission call, supervisor availability, fee and international eligibility not verified. Linked 2023 amendment concerns comprehensive examination, not duration. Do not use minimum registration period as standard durationYears.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "ph-d-physics",
+        "officialTitle": "Ph.D. Physics",
+        "officialProgramUrl": "https://iiitt.ac.in/programs",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "phd-natural-sciences",
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "No current discipline/category-specific doctoral fee was verified. The official admission-instructions PDF returned HTTP 503. A secondary page estimates INR 60,000 tuition over three years for a two-course PhD grouping; its scope does not establish this discipline’s tariff.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "No current discipline/category-specific doctoral fee was verified. The official admission-instructions PDF returned HTTP 503. A secondary page estimates INR 60,000 tuition over three years for a two-course PhD grouping; its scope does not establish this discipline’s tariff."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "minimum 2 years full-time / 3 years part-time; maximum 6 years under linked 2020 regulations; full-time / part-time."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "This doctoral discipline is named in the institute’s linked regulations. Full-time and part-time categories exist, but a listed field is not proof of a currently open supervisor position.",
+          "eligibility": {
+            "intro": "The linked 2020 regulations set baseline qualification routes; a current admission call may add discipline-specific conditions.",
+            "items": [
+              "Relevant first-class bachelor or masters in science/humanities; 60%/CGPA 6.5 in UG or PG for OC/OBC; 55%/CGPA 6.0 for SC/ST.",
+              "A valid UGC/CSIR/NET score is required for full-time candidates seeking the specified fellowship."
+            ]
+          },
+          "applicationSteps": [
+            "Identify the applicable current research call and full-time or part-time category before submitting an application.",
+            "Shortlisted candidates follow the department’s test/interview process; admission follows institutional approval and prescribed fee payment."
+          ],
+          "deadlinesNote": "No current intake deadline is asserted. The 2023 linked amendment addresses the comprehensive examination, not a new admission opening."
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "unknown",
+      "durationSourceText": "minimum 2 years full-time / 3 years part-time; maximum 6 years under linked 2020 regulations",
+      "deliveryModeSourceText": "full-time / part-time",
+      "notes": "Research area listed. Current admission call, supervisor availability, fee and international eligibility not verified. Linked 2023 amendment concerns comprehensive examination, not duration. Do not use minimum registration period as standard durationYears.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "ph-d-mathematics",
+        "officialTitle": "Ph.D. Mathematics",
+        "officialProgramUrl": "https://iiitt.ac.in/programs",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "No current discipline/category-specific doctoral fee was verified. The official admission-instructions PDF returned HTTP 503. A secondary page estimates INR 60,000 tuition over three years for a two-course PhD grouping; its scope does not establish this discipline’s tariff.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "No current discipline/category-specific doctoral fee was verified. The official admission-instructions PDF returned HTTP 503. A secondary page estimates INR 60,000 tuition over three years for a two-course PhD grouping; its scope does not establish this discipline’s tariff."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "minimum 2 years full-time / 3 years part-time; maximum 6 years under linked 2020 regulations; full-time / part-time."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "This doctoral discipline is named in the institute’s linked regulations. Full-time and part-time categories exist, but a listed field is not proof of a currently open supervisor position.",
+          "eligibility": {
+            "intro": "The linked 2020 regulations set baseline qualification routes; a current admission call may add discipline-specific conditions.",
+            "items": [
+              "Relevant first-class bachelor or masters in science/humanities; 60%/CGPA 6.5 in UG or PG for OC/OBC; 55%/CGPA 6.0 for SC/ST.",
+              "A valid UGC/CSIR/NET score is required for full-time candidates seeking the specified fellowship."
+            ]
+          },
+          "applicationSteps": [
+            "Identify the applicable current research call and full-time or part-time category before submitting an application.",
+            "Shortlisted candidates follow the department’s test/interview process; admission follows institutional approval and prescribed fee payment."
+          ],
+          "deadlinesNote": "No current intake deadline is asserted. The 2023 linked amendment addresses the comprehensive examination, not a new admission opening."
+        },
+        "canonicalCourseSlug": "phd-mathematics"
+      },
+      "editorialState": "held",
+      "internationalStatus": "unknown",
+      "durationSourceText": "minimum 2 years full-time / 3 years part-time; maximum 6 years under linked 2020 regulations",
+      "deliveryModeSourceText": "full-time / part-time",
+      "notes": "Research area listed. Current admission call, supervisor availability, fee and international eligibility not verified. Linked 2023 amendment concerns comprehensive examination, not duration. Do not use minimum registration period as standard durationYears.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "ph-d-economics",
+        "officialTitle": "Ph.D. Economics",
+        "officialProgramUrl": "https://iiitt.ac.in/programs",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "No current discipline/category-specific doctoral fee was verified. The official admission-instructions PDF returned HTTP 503. A secondary page estimates INR 60,000 tuition over three years for a two-course PhD grouping; its scope does not establish this discipline’s tariff.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "No current discipline/category-specific doctoral fee was verified. The official admission-instructions PDF returned HTTP 503. A secondary page estimates INR 60,000 tuition over three years for a two-course PhD grouping; its scope does not establish this discipline’s tariff."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "minimum 2 years full-time / 3 years part-time; maximum 6 years under linked 2020 regulations; full-time / part-time."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "This doctoral discipline is named in the institute’s linked regulations. Full-time and part-time categories exist, but a listed field is not proof of a currently open supervisor position.",
+          "eligibility": {
+            "intro": "The linked 2020 regulations set baseline qualification routes; a current admission call may add discipline-specific conditions.",
+            "items": [
+              "Relevant first-class bachelor or masters in science/humanities; 60%/CGPA 6.5 in UG or PG for OC/OBC; 55%/CGPA 6.0 for SC/ST.",
+              "A valid UGC/CSIR/NET score is required for full-time candidates seeking the specified fellowship."
+            ]
+          },
+          "applicationSteps": [
+            "Identify the applicable current research call and full-time or part-time category before submitting an application.",
+            "Shortlisted candidates follow the department’s test/interview process; admission follows institutional approval and prescribed fee payment."
+          ],
+          "deadlinesNote": "No current intake deadline is asserted. The 2023 linked amendment addresses the comprehensive examination, not a new admission opening."
+        },
+        "canonicalCourseSlug": "phd-economics"
+      },
+      "editorialState": "held",
+      "internationalStatus": "unknown",
+      "durationSourceText": "minimum 2 years full-time / 3 years part-time; maximum 6 years under linked 2020 regulations",
+      "deliveryModeSourceText": "full-time / part-time",
+      "notes": "Research area listed. Current admission call, supervisor availability, fee and international eligibility not verified. Linked 2023 amendment concerns comprehensive examination, not duration. Do not use minimum registration period as standard durationYears.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    },
+    {
+      "candidatePayloadFields": {
+        "slug": "ph-d-english",
+        "officialTitle": "Ph.D. English",
+        "officialProgramUrl": "https://iiitt.ac.in/programs",
+        "medium": "",
+        "instructionLanguages": [],
+        "intakeMonths": [],
+        "intakeCodes": [],
+        "canonicalCourseSlug": "phd-arts-humanities",
+        "feeVerifiedAt": "2026-10-27",
+        "feeNotes": "No current discipline/category-specific doctoral fee was verified. The official admission-instructions PDF returned HTTP 503. A secondary page estimates INR 60,000 tuition over three years for a two-course PhD grouping; its scope does not establish this discipline’s tariff.",
+        "fee": {
+          "status": "on_request",
+          "verifiedAt": "2026-10-27",
+          "notes": "No current discipline/category-specific doctoral fee was verified. The official admission-instructions PDF returned HTTP 503. A secondary page estimates INR 60,000 tuition over three years for a two-course PhD grouping; its scope does not establish this discipline’s tariff."
+        },
+        "teachingPhases": [
+          {
+            "phase": "Programme format",
+            "language": "",
+            "details": "minimum 2 years full-time / 3 years part-time; maximum 6 years under linked 2020 regulations; full-time / part-time."
+          }
+        ],
+        "admissionsContent": {
+          "overview": "This doctoral discipline is named in the institute’s linked regulations. Full-time and part-time categories exist, but a listed field is not proof of a currently open supervisor position.",
+          "eligibility": {
+            "intro": "The linked 2020 regulations set baseline qualification routes; a current admission call may add discipline-specific conditions.",
+            "items": [
+              "Relevant first-class bachelor or masters in science/humanities; 60%/CGPA 6.5 in UG or PG for OC/OBC; 55%/CGPA 6.0 for SC/ST.",
+              "A valid UGC/CSIR/NET score is required for full-time candidates seeking the specified fellowship."
+            ]
+          },
+          "applicationSteps": [
+            "Identify the applicable current research call and full-time or part-time category before submitting an application.",
+            "Shortlisted candidates follow the department’s test/interview process; admission follows institutional approval and prescribed fee payment."
+          ],
+          "deadlinesNote": "No current intake deadline is asserted. The 2023 linked amendment addresses the comprehensive examination, not a new admission opening."
+        }
+      },
+      "editorialState": "held",
+      "internationalStatus": "unknown",
+      "durationSourceText": "minimum 2 years full-time / 3 years part-time; maximum 6 years under linked 2020 regulations",
+      "deliveryModeSourceText": "full-time / part-time",
+      "notes": "Research area listed. Current admission call, supervisor availability, fee and international eligibility not verified. Linked 2023 amendment concerns comprehensive examination, not duration. Do not use minimum registration period as standard durationYears.",
+      "requiredResolution": "See the exact per-programme omissions in subset-schema-validation.json and review-gates.json; schema completeness does not establish publication readiness."
+    }
+  ],
+  "feeResearchFile": "fee-research.json",
+  "holds": [
+    "M.Tech. and PhD international eligibility remains unverified; four B.Tech. DASA branches are now verified.",
+    "PhD standard duration, current admission document checklist and current call/supervisor availability remain unverified; minimum registration periods are not standard duration.",
+    "Two MSc awards found only on a secondary site are excluded pending official confirmation.",
+    "Proposed PhD Mathematics/Economics canonical definitions require integrator approval and course metadata; no shared registry changed.",
+    "Logo candidate is inspected; cover source and final media rights/upload/page rendering remain incomplete.",
+    "The binary Public classification should be reviewed against the documented central/state/industry PPP governance; it is not an ownership claim about a conventional state university."
+  ],
+  "omittedUnsupportedFields": [
+    "See actual schema-validation.json for precise field paths; all required university narrative fields are now authored."
+  ],
+  "publicURL": null,
+  "publicationOwnership": "User owns local apply; no deployment credentials are needed for this research delivery. Integrator must clear evidence, taxonomy, media and rendering gates first."
+}

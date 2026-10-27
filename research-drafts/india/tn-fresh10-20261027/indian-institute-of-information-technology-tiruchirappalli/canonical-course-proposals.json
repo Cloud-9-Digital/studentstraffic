@@ -1,0 +1,28 @@
+{
+  "registryChangesMade": false,
+  "proposals": [
+    {
+      "slug": "phd-mathematics",
+      "name": "PhD in Mathematics",
+      "shortName": "PhD Mathematics",
+      "stream": "mathematics-statistics",
+      "level": "doctorate",
+      "discipline": "mathematics",
+      "aliases": [
+        "Doctor of Philosophy in Mathematics"
+      ]
+    },
+    {
+      "slug": "phd-economics",
+      "name": "PhD in Economics",
+      "shortName": "PhD Economics",
+      "stream": "economics-commerce",
+      "level": "doctorate",
+      "discipline": "economics",
+      "aliases": [
+        "Doctor of Philosophy in Economics"
+      ]
+    }
+  ],
+  "notes": "New taxonomy definitions require integrator approval. Doctoral/FPM standard duration is not invented from a minimum or variable period; those offering candidates remain held."
+}

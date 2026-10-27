@@ -1,0 +1,4760 @@
+[
+  {
+    "slug": "bsc-applied-science",
+    "name": "B.Sc. in Applied Science",
+    "shortName": "B.Sc. Applied Science",
+    "stream": "natural-sciences",
+    "level": "bachelors",
+    "discipline": "applied-science",
+    "aliases": [
+      "Bachelor of Science in Applied Science",
+      "BSc Applied Sciences"
+    ]
+  },
+  {
+    "slug": "integrated-msc-computer-science",
+    "name": "Integrated M.Sc. in Computer Science",
+    "shortName": "Integrated M.Sc. Computer Science",
+    "stream": "computing-information-systems",
+    "level": "integrated-masters",
+    "discipline": "computer-science",
+    "aliases": [
+      "Five-year Integrated Master of Science in Computer Science",
+      "Integrated MSc Theoretical Computer Science"
+    ]
+  },
+  {
+    "slug": "integrated-msc-cyber-security",
+    "name": "Integrated M.Sc. in Cyber Security",
+    "shortName": "Integrated M.Sc. Cyber Security",
+    "stream": "computing-information-systems",
+    "level": "integrated-masters",
+    "discipline": "cyber-security",
+    "aliases": [
+      "Five-year Integrated Master of Science in Cyber Security"
+    ]
+  },
+  {
+    "slug": "integrated-master-fashion-design",
+    "name": "Integrated Master's in Fashion Design",
+    "shortName": "Integrated Master's Fashion Design",
+    "stream": "design-creative-arts",
+    "level": "integrated-masters",
+    "discipline": "fashion-design",
+    "aliases": [
+      "Five-year Integrated MSc Fashion Design and Merchandising"
+    ]
+  },
+  {
+    "slug": "integrated-ma-economics",
+    "name": "Integrated M.A. in Economics",
+    "shortName": "Integrated M.A. Economics",
+    "stream": "economics-commerce",
+    "level": "integrated-masters",
+    "discipline": "economics",
+    "aliases": [
+      "Five-year Integrated Master of Arts in Economics"
+    ]
+  },
+  {
+    "slug": "integrated-ma-political-science",
+    "name": "Integrated M.A. in Political Science",
+    "shortName": "Integrated M.A. Political Science",
+    "stream": "social-sciences",
+    "level": "integrated-masters",
+    "discipline": "political-science",
+    "aliases": [
+      "Five-year Integrated Master of Arts in Political Science"
+    ]
+  },
+  {
+    "slug": "integrated-ma-philosophy",
+    "name": "Integrated M.A. in Philosophy",
+    "shortName": "Integrated M.A. Philosophy",
+    "stream": "arts-humanities",
+    "level": "integrated-masters",
+    "discipline": "philosophy",
+    "aliases": [
+      "Five-year Integrated Master of Arts in Philosophy"
+    ]
+  },
+  {
+    "slug": "integrated-ma-population-studies",
+    "name": "Integrated M.A. in Population Studies",
+    "shortName": "Integrated M.A. Population Studies",
+    "stream": "social-sciences",
+    "level": "integrated-masters",
+    "discipline": "population-studies",
+    "aliases": [
+      "Five-year Integrated Master of Arts in Population Studies"
+    ]
+  },
+  {
+    "slug": "integrated-ma-rural-development",
+    "name": "Integrated M.A. in Rural Development",
+    "shortName": "Integrated M.A. Rural Development",
+    "stream": "social-sciences",
+    "level": "integrated-masters",
+    "discipline": "rural-development",
+    "aliases": [
+      "Five-year Integrated Master of Arts in Rural Development"
+    ]
+  },
+  {
+    "slug": "integrated-master-library-information-science",
+    "name": "Integrated Master's in Library and Information Science",
+    "shortName": "Integrated Master's Library and Information Science",
+    "stream": "social-sciences",
+    "level": "integrated-masters",
+    "discipline": "library-information-science",
+    "aliases": [
+      "Five-year Integrated Master of Library and Information Science"
+    ]
+  },
+  {
+    "slug": "integrated-msc-information-technology",
+    "name": "Integrated M.Sc. in Information Technology",
+    "shortName": "Integrated M.Sc. Information Technology",
+    "stream": "computing-information-systems",
+    "level": "integrated-masters",
+    "discipline": "information-technology",
+    "aliases": [
+      "Five-year Integrated Master of Science in Information Technology"
+    ]
+  },
+  {
+    "slug": "master-population-studies",
+    "name": "Master's in Population Studies",
+    "shortName": "Master's Population Studies",
+    "stream": "social-sciences",
+    "level": "masters",
+    "discipline": "population-studies",
+    "aliases": [
+      "MA Population Studies",
+      "Master of Arts in Population Studies"
+    ]
+  },
+  {
+    "slug": "me-mtech-information-technology",
+    "name": "M.E./M.Tech in Information Technology",
+    "shortName": "M.E./M.Tech IT",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "information-technology",
+    "aliases": [
+      "Master of Technology in Information Technology",
+      "Master of Engineering in Information Technology",
+      "MTech Information Technology"
+    ]
+  },
+  {
+    "slug": "md-geriatrics",
+    "name": "MD in Geriatrics",
+    "shortName": "MD Geriatrics",
+    "stream": "medicine",
+    "level": "residency",
+    "discipline": "geriatrics",
+    "aliases": [
+      "Doctor of Medicine in Geriatrics",
+      "Geriatric Medicine Residency"
+    ]
+  },
+  {
+    "slug": "md-laboratory-medicine",
+    "name": "MD in Laboratory Medicine",
+    "shortName": "MD Laboratory Medicine",
+    "stream": "medicine",
+    "level": "residency",
+    "discipline": "laboratory-medicine",
+    "aliases": [
+      "Doctor of Medicine in Laboratory Medicine",
+      "Laboratory Medicine Residency"
+    ]
+  },
+  {
+    "slug": "md-radiation-oncology",
+    "name": "MD in Radiation Oncology",
+    "shortName": "MD Radiation Oncology",
+    "stream": "medicine",
+    "level": "residency",
+    "discipline": "radiation-oncology",
+    "aliases": [
+      "Doctor of Medicine in Radiation Oncology",
+      "MD Radiotherapy",
+      "Radiation Oncology Residency"
+    ]
+  },
+  {
+    "slug": "bsc-bioinformatics",
+    "name": "B.Sc. in Bioinformatics",
+    "shortName": "B.Sc. Bioinformatics",
+    "stream": "natural-sciences",
+    "level": "bachelors",
+    "discipline": "bioinformatics",
+    "aliases": [
+      "Bachelor of Science in Bioinformatics",
+      "BSc Bioinformatics Honours"
+    ]
+  },
+  {
+    "slug": "md-physiology",
+    "name": "MD in Physiology",
+    "shortName": "MD Physiology",
+    "stream": "medicine",
+    "level": "residency",
+    "discipline": "physiology",
+    "aliases": [
+      "Doctor of Medicine in Physiology",
+      "Medical Physiology Residency"
+    ]
+  },
+  {
+    "slug": "md-sports-medicine",
+    "name": "MD in Sports Medicine",
+    "shortName": "MD Sports Medicine",
+    "stream": "medicine",
+    "level": "residency",
+    "discipline": "sports-medicine",
+    "aliases": [
+      "Doctor of Medicine in Sports Medicine",
+      "Sports Medicine Residency"
+    ]
+  },
+  {
+    "slug": "md-forensic-medicine",
+    "name": "MD in Forensic Medicine and Toxicology",
+    "shortName": "MD Forensic Medicine",
+    "stream": "medicine",
+    "level": "residency",
+    "discipline": "forensic-medicine",
+    "aliases": [
+      "Doctor of Medicine in Forensic Medicine",
+      "MD Forensic Medicine and Toxicology",
+      "Forensic Medicine Residency"
+    ]
+  },
+  {
+    "slug": "md-immunohaematology-transfusion-medicine",
+    "name": "MD in Immunohaematology and Transfusion Medicine",
+    "shortName": "MD Transfusion Medicine",
+    "stream": "medicine",
+    "level": "residency",
+    "discipline": "immunohaematology-transfusion-medicine",
+    "aliases": [
+      "MD Immuno Haematology and Blood Transfusion",
+      "Doctor of Medicine in Immunohaematology and Transfusion Medicine"
+    ]
+  },
+  {
+    "slug": "be-btech-fire-safety-engineering",
+    "name": "B.E./B.Tech in Fire and Safety Engineering",
+    "shortName": "B.E./B.Tech Fire & Safety",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "fire-safety-engineering",
+    "aliases": [
+      "Bachelor of Fire and Safety Engineering",
+      "B.Tech Fire Technology and Safety Engineering"
+    ]
+  },
+  {
+    "slug": "be-btech-nanotechnology",
+    "name": "B.E./B.Tech in Nanotechnology",
+    "shortName": "B.E./B.Tech Nanotechnology",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "nanotechnology",
+    "aliases": [
+      "Bachelor of Nanotechnology",
+      "B.Tech Nanotechnology"
+    ]
+  },
+  {
+    "slug": "integrated-ma-history",
+    "name": "Integrated M.A. in History",
+    "shortName": "Integrated M.A. History",
+    "stream": "arts-humanities",
+    "level": "integrated-masters",
+    "discipline": "history",
+    "aliases": [
+      "Integrated Master of Arts in History",
+      "Five-year MA History"
+    ]
+  },
+  {
+    "slug": "integrated-ma-languages-linguistics",
+    "name": "Integrated M.A. in Languages and Linguistics",
+    "shortName": "Integrated M.A. Languages",
+    "stream": "arts-humanities",
+    "level": "integrated-masters",
+    "discipline": "languages-linguistics",
+    "aliases": [
+      "Integrated Master of Arts in Languages",
+      "Integrated MA Linguistics",
+      "Integrated MA Tamil"
+    ]
+  },
+  {
+    "slug": "bachelor-vocational-studies",
+    "name": "Bachelor of Vocational Studies",
+    "shortName": "B.Voc.",
+    "stream": "vocational",
+    "level": "bachelors",
+    "discipline": "vocational-studies",
+    "aliases": [
+      "Bachelor of Vocation",
+      "B.Voc",
+      "BVoc"
+    ]
+  },
+  {
+    "slug": "integrated-bsc-bed",
+    "name": "Integrated B.Sc. B.Ed.",
+    "shortName": "B.Sc. B.Ed.",
+    "stream": "education",
+    "level": "bachelors",
+    "discipline": "science-teacher-education",
+    "aliases": [
+      "Bachelor of Science and Bachelor of Education",
+      "Integrated Bachelor of Science and Education"
+    ]
+  },
+  {
+    "slug": "integrated-mtech-aerospace-engineering",
+    "name": "Integrated M.Tech in Aerospace Engineering",
+    "shortName": "Integrated M.Tech Aerospace",
+    "stream": "engineering",
+    "level": "integrated-masters",
+    "discipline": "aerospace-engineering",
+    "aliases": [
+      "B.Tech and M.Tech in Aerospace Engineering"
+    ]
+  },
+  {
+    "slug": "integrated-mtech-design-engineering",
+    "name": "Integrated M.Tech in Design Engineering",
+    "shortName": "Integrated M.Tech Design Engineering",
+    "stream": "engineering",
+    "level": "integrated-masters",
+    "discipline": "design-engineering",
+    "aliases": [
+      "B.Tech and M.Tech in Engineering Design"
+    ]
+  },
+  {
+    "slug": "bsc-medical-sciences-engineering",
+    "name": "B.Sc. in Medical Sciences and Engineering",
+    "shortName": "B.Sc. Medical Sciences and Engineering",
+    "stream": "public-health-allied-health",
+    "level": "bachelors",
+    "discipline": "medical-sciences-engineering",
+    "aliases": [
+      "Bachelor of Science in Medical Sciences and Engineering"
+    ]
+  },
+  {
+    "slug": "bachelor-cybersecurity",
+    "name": "Bachelor’s in Cybersecurity",
+    "shortName": "Bachelor’s Cybersecurity",
+    "stream": "computing-information-systems",
+    "level": "bachelors",
+    "discipline": "cybersecurity",
+    "aliases": [
+      "Bachelor of Cybersecurity",
+      "B.Cyber."
+    ]
+  },
+  {
+    "slug": "me-mtech-applied-mathematics",
+    "name": "M.E./M.Tech in Applied Mathematics",
+    "shortName": "M.E./M.Tech Applied Mathematics",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "applied-mathematics",
+    "aliases": [
+      "M.Tech in Industrial Mathematics and Scientific Computing"
+    ]
+  },
+  {
+    "slug": "master-development-studies",
+    "name": "Master’s in Development Studies",
+    "shortName": "Master’s Development Studies",
+    "stream": "social-sciences",
+    "level": "masters",
+    "discipline": "development-studies",
+    "aliases": [
+      "MA Development Studies",
+      "Master of Arts in Development Studies"
+    ]
+  },
+  {
+    "slug": "bsc-electronics",
+    "name": "B.Sc. in Electronics",
+    "shortName": "B.Sc. Electronics",
+    "stream": "natural-sciences",
+    "level": "bachelors",
+    "discipline": "electronics",
+    "aliases": [
+      "Bachelor of Science in Electronics",
+      "BS in Electronic Systems"
+    ]
+  },
+  {
+    "slug": "bsc-aerospace-science",
+    "name": "B.Sc. in Aerospace Science",
+    "shortName": "B.Sc. Aerospace Science",
+    "stream": "natural-sciences",
+    "level": "bachelors",
+    "discipline": "aerospace-science",
+    "aliases": [
+      "Bachelor of Science in Aeronautics and Space Technology"
+    ]
+  },
+  {
+    "slug": "me-mtech-complex-systems",
+    "name": "M.E./M.Tech in Complex Systems",
+    "shortName": "M.E./M.Tech Complex Systems",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "complex-systems",
+    "aliases": [
+      "M.Tech in Complex Systems and Dynamics"
+    ]
+  },
+  {
+    "slug": "me-mtech-computational-engineering",
+    "name": "M.E./M.Tech in Computational Engineering",
+    "shortName": "M.E./M.Tech Computational Engineering",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "computational-engineering",
+    "aliases": [
+      "Master of Technology in Computational Engineering"
+    ]
+  },
+  {
+    "slug": "me-mtech-quantum-technology",
+    "name": "M.E./M.Tech in Quantum Technology",
+    "shortName": "M.E./M.Tech Quantum Technology",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "quantum-technology",
+    "aliases": [
+      "M.Tech in Quantum Science and Technology"
+    ]
+  },
+  {
+    "slug": "barch",
+    "name": "Bachelor of Architecture",
+    "shortName": "B.Arch",
+    "stream": "architecture",
+    "level": "bachelors",
+    "discipline": "architecture",
+    "aliases": [
+      "BArch",
+      "Bachelor of Science in Architecture"
+    ]
+  },
+  {
+    "slug": "march",
+    "name": "Master of Architecture",
+    "shortName": "M.Arch",
+    "stream": "architecture",
+    "level": "masters",
+    "discipline": "architecture",
+    "aliases": [
+      "MArch",
+      "Master of Science in Architecture"
+    ]
+  },
+  {
+    "slug": "bachelor-urban-regional-planning",
+    "name": "Bachelor's in Urban and Regional Planning",
+    "shortName": "Bachelor's Urban Planning",
+    "stream": "architecture",
+    "level": "bachelors",
+    "discipline": "urban-regional-planning",
+    "aliases": [
+      "Bachelor of Urban Planning",
+      "BSc Urban and Regional Planning"
+    ]
+  },
+  {
+    "slug": "master-urban-regional-planning",
+    "name": "Master's in Urban and Regional Planning",
+    "shortName": "Master's Urban Planning",
+    "stream": "architecture",
+    "level": "masters",
+    "discipline": "urban-regional-planning",
+    "aliases": [
+      "Master of Urban Planning",
+      "MSc Urban and Regional Planning"
+    ]
+  },
+  {
+    "slug": "bachelor-landscape-architecture",
+    "name": "Bachelor's in Landscape Architecture",
+    "shortName": "Bachelor's Landscape Architecture",
+    "stream": "architecture",
+    "level": "bachelors",
+    "discipline": "landscape-architecture",
+    "aliases": [
+      "Bachelor of Landscape Architecture",
+      "BLA"
+    ]
+  },
+  {
+    "slug": "master-landscape-architecture",
+    "name": "Master's in Landscape Architecture",
+    "shortName": "Master's Landscape Architecture",
+    "stream": "architecture",
+    "level": "masters",
+    "discipline": "landscape-architecture",
+    "aliases": [
+      "Master of Landscape Architecture",
+      "MLA"
+    ]
+  },
+  {
+    "slug": "llb",
+    "name": "Bachelor of Laws",
+    "shortName": "LLB",
+    "stream": "law",
+    "level": "bachelors",
+    "discipline": "law",
+    "aliases": [
+      "LL.B.",
+      "Bachelor of Law"
+    ]
+  },
+  {
+    "slug": "jd",
+    "name": "Juris Doctor",
+    "shortName": "JD",
+    "stream": "law",
+    "level": "professional",
+    "discipline": "law",
+    "aliases": [
+      "J.D.",
+      "Doctor of Jurisprudence"
+    ]
+  },
+  {
+    "slug": "pg-diploma-law-policy",
+    "name": "Postgraduate Diploma in Law and Policy",
+    "shortName": "PG Diploma Law & Policy",
+    "stream": "law",
+    "level": "postgraduate-diploma",
+    "discipline": "law-policy",
+    "aliases": [
+      "PG Diploma in Law and Policy",
+      "Postgraduate Diploma in Fisheries Law and Policy"
+    ]
+  },
+  {
+    "slug": "llm",
+    "name": "Master of Laws",
+    "shortName": "LLM",
+    "stream": "law",
+    "level": "masters",
+    "discipline": "law",
+    "aliases": [
+      "LL.M.",
+      "Master of Law"
+    ]
+  },
+  {
+    "slug": "ba-english-literature",
+    "name": "B.A. in English and Literature",
+    "shortName": "B.A. English",
+    "stream": "arts-humanities",
+    "level": "bachelors",
+    "discipline": "english-literature",
+    "aliases": [
+      "BA English",
+      "Bachelor of Arts in English Literature"
+    ]
+  },
+  {
+    "slug": "ma-english-literature",
+    "name": "M.A. in English and Literature",
+    "shortName": "M.A. English",
+    "stream": "arts-humanities",
+    "level": "masters",
+    "discipline": "english-literature",
+    "aliases": [
+      "MA English",
+      "Master of Arts in English Literature"
+    ]
+  },
+  {
+    "slug": "ba-history",
+    "name": "B.A. in History",
+    "shortName": "B.A. History",
+    "stream": "arts-humanities",
+    "level": "bachelors",
+    "discipline": "history",
+    "aliases": [
+      "BA History",
+      "Bachelor of Arts in History"
+    ]
+  },
+  {
+    "slug": "ma-history",
+    "name": "M.A. in History",
+    "shortName": "M.A. History",
+    "stream": "arts-humanities",
+    "level": "masters",
+    "discipline": "history",
+    "aliases": [
+      "MA History",
+      "Master of Arts in History"
+    ]
+  },
+  {
+    "slug": "ba-philosophy",
+    "name": "B.A. in Philosophy",
+    "shortName": "B.A. Philosophy",
+    "stream": "arts-humanities",
+    "level": "bachelors",
+    "discipline": "philosophy",
+    "aliases": [
+      "BA Philosophy",
+      "Bachelor of Arts in Philosophy"
+    ]
+  },
+  {
+    "slug": "ma-philosophy",
+    "name": "M.A. in Philosophy",
+    "shortName": "M.A. Philosophy",
+    "stream": "arts-humanities",
+    "level": "masters",
+    "discipline": "philosophy",
+    "aliases": [
+      "MA Philosophy",
+      "Master of Arts in Philosophy"
+    ]
+  },
+  {
+    "slug": "ba-languages-linguistics",
+    "name": "B.A. in Languages and Linguistics",
+    "shortName": "B.A. Languages",
+    "stream": "arts-humanities",
+    "level": "bachelors",
+    "discipline": "languages-linguistics",
+    "aliases": [
+      "BA Linguistics",
+      "Bachelor of Arts in Modern Languages"
+    ]
+  },
+  {
+    "slug": "ma-languages-linguistics",
+    "name": "M.A. in Languages and Linguistics",
+    "shortName": "M.A. Linguistics",
+    "stream": "arts-humanities",
+    "level": "masters",
+    "discipline": "languages-linguistics",
+    "aliases": [
+      "MA Linguistics",
+      "Master of Arts in Modern Languages"
+    ]
+  },
+  {
+    "slug": "bachelor-liberal-arts",
+    "name": "Bachelor of Liberal Arts",
+    "shortName": "Liberal Arts",
+    "stream": "arts-humanities",
+    "level": "bachelors",
+    "discipline": "liberal-arts",
+    "aliases": [
+      "Bachelor of Arts in Liberal Arts",
+      "BA Liberal Arts"
+    ]
+  },
+  {
+    "slug": "ba-sociology",
+    "name": "B.A. in Sociology",
+    "shortName": "B.A. Sociology",
+    "stream": "social-sciences",
+    "level": "bachelors",
+    "discipline": "sociology",
+    "aliases": [
+      "BA Sociology",
+      "Bachelor of Arts in Sociology"
+    ]
+  },
+  {
+    "slug": "ma-sociology",
+    "name": "M.A. in Sociology",
+    "shortName": "M.A. Sociology",
+    "stream": "social-sciences",
+    "level": "masters",
+    "discipline": "sociology",
+    "aliases": [
+      "MA Sociology",
+      "Master of Arts in Sociology"
+    ]
+  },
+  {
+    "slug": "ba-anthropology",
+    "name": "B.A. in Anthropology",
+    "shortName": "B.A. Anthropology",
+    "stream": "social-sciences",
+    "level": "bachelors",
+    "discipline": "anthropology",
+    "aliases": [
+      "BA Anthropology",
+      "Bachelor of Arts in Anthropology"
+    ]
+  },
+  {
+    "slug": "ma-anthropology",
+    "name": "M.A. in Anthropology",
+    "shortName": "M.A. Anthropology",
+    "stream": "social-sciences",
+    "level": "masters",
+    "discipline": "anthropology",
+    "aliases": [
+      "MA Anthropology",
+      "Master of Arts in Anthropology"
+    ]
+  },
+  {
+    "slug": "bachelor-geography",
+    "name": "Bachelor's in Geography",
+    "shortName": "Bachelor's Geography",
+    "stream": "social-sciences",
+    "level": "bachelors",
+    "discipline": "geography",
+    "aliases": [
+      "BA Geography",
+      "BSc Geography"
+    ]
+  },
+  {
+    "slug": "master-geography",
+    "name": "Master's in Geography",
+    "shortName": "Master's Geography",
+    "stream": "social-sciences",
+    "level": "masters",
+    "discipline": "geography",
+    "aliases": [
+      "MA Geography",
+      "MSc Geography"
+    ]
+  },
+  {
+    "slug": "bsc-physics",
+    "name": "B.Sc. in Physics",
+    "shortName": "B.Sc. Physics",
+    "stream": "natural-sciences",
+    "level": "bachelors",
+    "discipline": "physics",
+    "aliases": [
+      "Bachelor of Science in Physics",
+      "BSc Physics"
+    ]
+  },
+  {
+    "slug": "msc-physics",
+    "name": "M.Sc. in Physics",
+    "shortName": "M.Sc. Physics",
+    "stream": "natural-sciences",
+    "level": "masters",
+    "discipline": "physics",
+    "aliases": [
+      "Master of Science in Physics",
+      "MSc Physics"
+    ]
+  },
+  {
+    "slug": "bsc-chemistry",
+    "name": "B.Sc. in Chemistry",
+    "shortName": "B.Sc. Chemistry",
+    "stream": "natural-sciences",
+    "level": "bachelors",
+    "discipline": "chemistry",
+    "aliases": [
+      "Bachelor of Science in Chemistry",
+      "BSc Chemistry"
+    ]
+  },
+  {
+    "slug": "msc-chemistry",
+    "name": "M.Sc. in Chemistry",
+    "shortName": "M.Sc. Chemistry",
+    "stream": "natural-sciences",
+    "level": "masters",
+    "discipline": "chemistry",
+    "aliases": [
+      "Master of Science in Chemistry",
+      "MSc Chemistry"
+    ]
+  },
+  {
+    "slug": "bsc-biological-sciences",
+    "name": "B.Sc. in Biological Sciences",
+    "shortName": "B.Sc. Biological Sciences",
+    "stream": "natural-sciences",
+    "level": "bachelors",
+    "discipline": "biological-sciences",
+    "aliases": [
+      "Bachelor of Science in Biology",
+      "BSc Biological Sciences"
+    ]
+  },
+  {
+    "slug": "msc-biological-sciences",
+    "name": "M.Sc. in Biological Sciences",
+    "shortName": "M.Sc. Biological Sciences",
+    "stream": "natural-sciences",
+    "level": "masters",
+    "discipline": "biological-sciences",
+    "aliases": [
+      "Master of Science in Biology",
+      "MSc Biological Sciences"
+    ]
+  },
+  {
+    "slug": "bsc-earth-geological-sciences",
+    "name": "B.Sc. in Earth and Geological Sciences",
+    "shortName": "B.Sc. Earth Sciences",
+    "stream": "natural-sciences",
+    "level": "bachelors",
+    "discipline": "earth-geological-sciences",
+    "aliases": [
+      "BSc Earth Sciences",
+      "Bachelor of Science in Geology"
+    ]
+  },
+  {
+    "slug": "msc-earth-geological-sciences",
+    "name": "M.Sc. in Earth and Geological Sciences",
+    "shortName": "M.Sc. Earth Sciences",
+    "stream": "natural-sciences",
+    "level": "masters",
+    "discipline": "earth-geological-sciences",
+    "aliases": [
+      "MSc Earth Sciences",
+      "Master of Science in Geology"
+    ]
+  },
+  {
+    "slug": "bsc-mathematics",
+    "name": "B.Sc. in Mathematics",
+    "shortName": "B.Sc. Mathematics",
+    "stream": "mathematics-statistics",
+    "level": "bachelors",
+    "discipline": "mathematics",
+    "aliases": [
+      "Bachelor of Science in Mathematics",
+      "BSc Mathematics"
+    ]
+  },
+  {
+    "slug": "msc-mathematics",
+    "name": "M.Sc. in Mathematics",
+    "shortName": "M.Sc. Mathematics",
+    "stream": "mathematics-statistics",
+    "level": "masters",
+    "discipline": "mathematics",
+    "aliases": [
+      "Master of Science in Mathematics",
+      "MSc Mathematics"
+    ]
+  },
+  {
+    "slug": "bsc-statistics",
+    "name": "B.Sc. in Statistics",
+    "shortName": "B.Sc. Statistics",
+    "stream": "mathematics-statistics",
+    "level": "bachelors",
+    "discipline": "statistics",
+    "aliases": [
+      "Bachelor of Science in Statistics",
+      "BSc Statistics"
+    ]
+  },
+  {
+    "slug": "msc-statistics",
+    "name": "M.Sc. in Statistics",
+    "shortName": "M.Sc. Statistics",
+    "stream": "mathematics-statistics",
+    "level": "masters",
+    "discipline": "statistics",
+    "aliases": [
+      "Master of Science in Statistics",
+      "MSc Statistics"
+    ]
+  },
+  {
+    "slug": "master-statistics",
+    "name": "Master of Statistics",
+    "shortName": "M.Stat",
+    "stream": "mathematics-statistics",
+    "level": "masters",
+    "discipline": "statistics",
+    "aliases": [
+      "MStat",
+      "M.Stat.",
+      "M. Statistics"
+    ]
+  },
+  {
+    "slug": "bsc-actuarial-science",
+    "name": "B.Sc. in Actuarial Science",
+    "shortName": "B.Sc. Actuarial Science",
+    "stream": "mathematics-statistics",
+    "level": "bachelors",
+    "discipline": "actuarial-science",
+    "aliases": [
+      "Bachelor of Actuarial Science",
+      "BSc Actuarial Science"
+    ]
+  },
+  {
+    "slug": "msc-actuarial-science",
+    "name": "M.Sc. in Actuarial Science",
+    "shortName": "M.Sc. Actuarial Science",
+    "stream": "mathematics-statistics",
+    "level": "masters",
+    "discipline": "actuarial-science",
+    "aliases": [
+      "Master of Actuarial Science",
+      "MSc Actuarial Science"
+    ]
+  },
+  {
+    "slug": "bachelor-economics",
+    "name": "Bachelor's in Economics",
+    "shortName": "Bachelor's Economics",
+    "stream": "economics-commerce",
+    "level": "bachelors",
+    "discipline": "economics",
+    "aliases": [
+      "BA Economics",
+      "BSc Economics"
+    ]
+  },
+  {
+    "slug": "master-economics",
+    "name": "Master's in Economics",
+    "shortName": "Master's Economics",
+    "stream": "economics-commerce",
+    "level": "masters",
+    "discipline": "economics",
+    "aliases": [
+      "MA Economics",
+      "MSc Economics"
+    ]
+  },
+  {
+    "slug": "bcom",
+    "name": "Bachelor of Commerce",
+    "shortName": "B.Com",
+    "stream": "economics-commerce",
+    "level": "bachelors",
+    "discipline": "commerce",
+    "aliases": [
+      "BCom",
+      "Bachelor in Commerce"
+    ]
+  },
+  {
+    "slug": "mcom",
+    "name": "Master of Commerce",
+    "shortName": "M.Com",
+    "stream": "economics-commerce",
+    "level": "masters",
+    "discipline": "commerce",
+    "aliases": [
+      "MCom",
+      "Master in Commerce"
+    ]
+  },
+  {
+    "slug": "bachelor-accounting",
+    "name": "Bachelor's in Accounting",
+    "shortName": "Bachelor's Accounting",
+    "stream": "economics-commerce",
+    "level": "bachelors",
+    "discipline": "accounting",
+    "aliases": [
+      "Bachelor of Accounting",
+      "BSc Accounting"
+    ]
+  },
+  {
+    "slug": "master-accounting",
+    "name": "Master's in Accounting",
+    "shortName": "Master's Accounting",
+    "stream": "economics-commerce",
+    "level": "masters",
+    "discipline": "accounting",
+    "aliases": [
+      "Master of Accounting",
+      "MSc Accounting"
+    ]
+  },
+  {
+    "slug": "bdes",
+    "name": "Bachelor of Design",
+    "shortName": "B.Des",
+    "stream": "design-creative-arts",
+    "level": "bachelors",
+    "discipline": "design",
+    "aliases": [
+      "BDes",
+      "Bachelor in Design"
+    ]
+  },
+  {
+    "slug": "mdes",
+    "name": "Master of Design",
+    "shortName": "M.Des",
+    "stream": "design-creative-arts",
+    "level": "masters",
+    "discipline": "design",
+    "aliases": [
+      "MDes",
+      "Master in Design"
+    ]
+  },
+  {
+    "slug": "bfa",
+    "name": "Bachelor of Fine Arts",
+    "shortName": "BFA",
+    "stream": "design-creative-arts",
+    "level": "bachelors",
+    "discipline": "fine-arts",
+    "aliases": [
+      "B.F.A.",
+      "Bachelor in Fine Arts"
+    ]
+  },
+  {
+    "slug": "mfa",
+    "name": "Master of Fine Arts",
+    "shortName": "MFA",
+    "stream": "design-creative-arts",
+    "level": "masters",
+    "discipline": "fine-arts",
+    "aliases": [
+      "M.F.A.",
+      "Master in Fine Arts"
+    ]
+  },
+  {
+    "slug": "bachelor-fashion-design",
+    "name": "Bachelor's in Fashion Design",
+    "shortName": "Bachelor's Fashion Design",
+    "stream": "design-creative-arts",
+    "level": "bachelors",
+    "discipline": "fashion-design",
+    "aliases": [
+      "Bachelor of Fashion Design",
+      "BA Fashion Design"
+    ]
+  },
+  {
+    "slug": "master-fashion-design",
+    "name": "Master's in Fashion Design",
+    "shortName": "Master's Fashion Design",
+    "stream": "design-creative-arts",
+    "level": "masters",
+    "discipline": "fashion-design",
+    "aliases": [
+      "Master of Fashion Design",
+      "MA Fashion Design"
+    ]
+  },
+  {
+    "slug": "bachelor-animation-game-design",
+    "name": "Bachelor's in Animation and Game Design",
+    "shortName": "Bachelor's Animation & Games",
+    "stream": "design-creative-arts",
+    "level": "bachelors",
+    "discipline": "animation-game-design",
+    "aliases": [
+      "Bachelor of Animation",
+      "BA Game Design"
+    ]
+  },
+  {
+    "slug": "master-animation-game-design",
+    "name": "Master's in Animation and Game Design",
+    "shortName": "Master's Animation & Games",
+    "stream": "design-creative-arts",
+    "level": "masters",
+    "discipline": "animation-game-design",
+    "aliases": [
+      "Master of Animation",
+      "MA Game Design"
+    ]
+  },
+  {
+    "slug": "bachelor-psychology",
+    "name": "Bachelor's in Psychology",
+    "shortName": "Bachelor's Psychology",
+    "stream": "psychology",
+    "level": "bachelors",
+    "discipline": "psychology",
+    "aliases": [
+      "BA Psychology",
+      "BSc Psychology"
+    ]
+  },
+  {
+    "slug": "master-psychology",
+    "name": "Master's in Psychology",
+    "shortName": "Master's Psychology",
+    "stream": "psychology",
+    "level": "masters",
+    "discipline": "psychology",
+    "aliases": [
+      "MA Psychology",
+      "MSc Psychology"
+    ]
+  },
+  {
+    "slug": "master-clinical-psychology",
+    "name": "Master's in Clinical Psychology",
+    "shortName": "Master's Clinical Psychology",
+    "stream": "psychology",
+    "level": "masters",
+    "discipline": "clinical-psychology",
+    "aliases": [
+      "MA Clinical Psychology",
+      "MSc Clinical Psychology"
+    ]
+  },
+  {
+    "slug": "bachelor-public-health",
+    "name": "Bachelor's in Public Health",
+    "shortName": "Bachelor's Public Health",
+    "stream": "public-health-allied-health",
+    "level": "bachelors",
+    "discipline": "public-health",
+    "aliases": [
+      "Bachelor of Public Health",
+      "BSc Public Health"
+    ]
+  },
+  {
+    "slug": "mph",
+    "name": "Master of Public Health",
+    "shortName": "MPH",
+    "stream": "public-health-allied-health",
+    "level": "masters",
+    "discipline": "public-health",
+    "aliases": [
+      "M.P.H.",
+      "MSc Public Health"
+    ]
+  },
+  {
+    "slug": "bpt",
+    "name": "Bachelor of Physiotherapy",
+    "shortName": "BPT",
+    "stream": "physiotherapy",
+    "level": "bachelors",
+    "discipline": "physiotherapy",
+    "aliases": [
+      "Bachelor of Physical Therapy",
+      "BSc Physiotherapy"
+    ]
+  },
+  {
+    "slug": "mpt",
+    "name": "Master of Physiotherapy",
+    "shortName": "MPT",
+    "stream": "physiotherapy",
+    "level": "masters",
+    "discipline": "physiotherapy",
+    "aliases": [
+      "Master of Physical Therapy",
+      "MSc Physiotherapy"
+    ]
+  },
+  {
+    "slug": "bachelor-occupational-therapy",
+    "name": "Bachelor's in Occupational Therapy",
+    "shortName": "Bachelor's Occupational Therapy",
+    "stream": "public-health-allied-health",
+    "level": "bachelors",
+    "discipline": "occupational-therapy",
+    "aliases": [
+      "Bachelor of Occupational Therapy",
+      "BSc Occupational Therapy"
+    ]
+  },
+  {
+    "slug": "master-occupational-therapy",
+    "name": "Master's in Occupational Therapy",
+    "shortName": "Master's Occupational Therapy",
+    "stream": "public-health-allied-health",
+    "level": "masters",
+    "discipline": "occupational-therapy",
+    "aliases": [
+      "Master of Occupational Therapy",
+      "MSc Occupational Therapy"
+    ]
+  },
+  {
+    "slug": "bsc-medical-laboratory-science",
+    "name": "B.Sc. in Medical Laboratory Science",
+    "shortName": "B.Sc. Medical Laboratory Science",
+    "stream": "public-health-allied-health",
+    "level": "bachelors",
+    "discipline": "medical-laboratory-science",
+    "aliases": [
+      "Bachelor of Medical Laboratory Science",
+      "BSc Biomedical Laboratory Science"
+    ]
+  },
+  {
+    "slug": "bachelor-nutrition-dietetics",
+    "name": "Bachelor's in Nutrition and Dietetics",
+    "shortName": "Bachelor's Nutrition",
+    "stream": "public-health-allied-health",
+    "level": "bachelors",
+    "discipline": "nutrition-dietetics",
+    "aliases": [
+      "BSc Nutrition and Dietetics",
+      "Bachelor of Nutrition"
+    ]
+  },
+  {
+    "slug": "master-nutrition-dietetics",
+    "name": "Master's in Nutrition and Dietetics",
+    "shortName": "Master's Nutrition",
+    "stream": "public-health-allied-health",
+    "level": "masters",
+    "discipline": "nutrition-dietetics",
+    "aliases": [
+      "MSc Nutrition and Dietetics",
+      "Master of Nutrition"
+    ]
+  },
+  {
+    "slug": "bachelor-media-communication",
+    "name": "Bachelor's in Media and Communication",
+    "shortName": "Bachelor's Media",
+    "stream": "media-communication",
+    "level": "bachelors",
+    "discipline": "media-communication",
+    "aliases": [
+      "BA Media and Communication",
+      "Bachelor of Communication"
+    ]
+  },
+  {
+    "slug": "master-media-communication",
+    "name": "Master's in Media and Communication",
+    "shortName": "Master's Media",
+    "stream": "media-communication",
+    "level": "masters",
+    "discipline": "media-communication",
+    "aliases": [
+      "MA Media and Communication",
+      "Master of Communication"
+    ]
+  },
+  {
+    "slug": "bachelor-journalism",
+    "name": "Bachelor's in Journalism",
+    "shortName": "Bachelor's Journalism",
+    "stream": "media-communication",
+    "level": "bachelors",
+    "discipline": "journalism",
+    "aliases": [
+      "BA Journalism",
+      "Bachelor of Journalism"
+    ]
+  },
+  {
+    "slug": "master-journalism",
+    "name": "Master's in Journalism",
+    "shortName": "Master's Journalism",
+    "stream": "media-communication",
+    "level": "masters",
+    "discipline": "journalism",
+    "aliases": [
+      "MA Journalism",
+      "Master of Journalism"
+    ]
+  },
+  {
+    "slug": "bachelor-film-television",
+    "name": "Bachelor's in Film and Television",
+    "shortName": "Bachelor's Film & TV",
+    "stream": "media-communication",
+    "level": "bachelors",
+    "discipline": "film-television",
+    "aliases": [
+      "BA Film and Television",
+      "Bachelor of Film"
+    ]
+  },
+  {
+    "slug": "master-film-television",
+    "name": "Master's in Film and Television",
+    "shortName": "Master's Film & TV",
+    "stream": "media-communication",
+    "level": "masters",
+    "discipline": "film-television",
+    "aliases": [
+      "MA Film and Television",
+      "Master of Film"
+    ]
+  },
+  {
+    "slug": "bsc-environmental-science",
+    "name": "B.Sc. in Environmental Science",
+    "shortName": "B.Sc. Environmental Science",
+    "stream": "environment-sustainability",
+    "level": "bachelors",
+    "discipline": "environmental-science",
+    "aliases": [
+      "Bachelor of Environmental Science",
+      "BSc Environmental Sciences"
+    ]
+  },
+  {
+    "slug": "msc-environmental-science",
+    "name": "M.Sc. in Environmental Science",
+    "shortName": "M.Sc. Environmental Science",
+    "stream": "environment-sustainability",
+    "level": "masters",
+    "discipline": "environmental-science",
+    "aliases": [
+      "Master of Environmental Science",
+      "MSc Environmental Sciences"
+    ]
+  },
+  {
+    "slug": "master-sustainability",
+    "name": "Master's in Sustainability",
+    "shortName": "Master's Sustainability",
+    "stream": "environment-sustainability",
+    "level": "masters",
+    "discipline": "sustainability",
+    "aliases": [
+      "MSc Sustainability",
+      "Master of Sustainability"
+    ]
+  },
+  {
+    "slug": "bsc-agriculture",
+    "name": "B.Sc. in Agriculture",
+    "shortName": "B.Sc. Agriculture",
+    "stream": "agriculture",
+    "level": "bachelors",
+    "discipline": "agriculture",
+    "aliases": [
+      "Bachelor of Agriculture",
+      "BSc Agricultural Science"
+    ]
+  },
+  {
+    "slug": "bsc-horticulture",
+    "name": "B.Sc. in Horticulture",
+    "shortName": "B.Sc. Horticulture",
+    "stream": "agriculture",
+    "level": "bachelors",
+    "discipline": "horticulture",
+    "aliases": [
+      "B.Sc. (Hons.) Horticulture",
+      "Bachelor of Horticulture",
+      "BSc Horticulture"
+    ]
+  },
+  {
+    "slug": "msc-horticulture",
+    "name": "M.Sc. in Horticulture",
+    "shortName": "M.Sc. Horticulture",
+    "stream": "agriculture",
+    "level": "masters",
+    "discipline": "horticulture",
+    "aliases": [
+      "M.Sc. (Horticulture)",
+      "Master of Horticulture",
+      "MSc Horticulture"
+    ]
+  },
+  {
+    "slug": "msc-agriculture",
+    "name": "M.Sc. in Agriculture",
+    "shortName": "M.Sc. Agriculture",
+    "stream": "agriculture",
+    "level": "masters",
+    "discipline": "agriculture",
+    "aliases": [
+      "Master of Agriculture",
+      "MSc Agricultural Science"
+    ]
+  },
+  {
+    "slug": "bachelor-forestry",
+    "name": "Bachelor's in Forestry",
+    "shortName": "Bachelor's Forestry",
+    "stream": "agriculture",
+    "level": "bachelors",
+    "discipline": "forestry",
+    "aliases": [
+      "Bachelor of Forestry",
+      "BSc Forestry"
+    ]
+  },
+  {
+    "slug": "master-forestry",
+    "name": "Master's in Forestry",
+    "shortName": "Master's Forestry",
+    "stream": "agriculture",
+    "level": "masters",
+    "discipline": "forestry",
+    "aliases": [
+      "Master of Forestry",
+      "MSc Forestry"
+    ]
+  },
+  {
+    "slug": "bachelor-food-science-technology",
+    "name": "Bachelor's in Food Science and Technology",
+    "shortName": "Bachelor's Food Science",
+    "stream": "agriculture",
+    "level": "bachelors",
+    "discipline": "food-science-technology",
+    "aliases": [
+      "BSc Food Science",
+      "Bachelor of Food Technology"
+    ]
+  },
+  {
+    "slug": "master-food-science-technology",
+    "name": "Master's in Food Science and Technology",
+    "shortName": "Master's Food Science",
+    "stream": "agriculture",
+    "level": "masters",
+    "discipline": "food-science-technology",
+    "aliases": [
+      "MSc Food Science",
+      "Master of Food Technology"
+    ]
+  },
+  {
+    "slug": "bvet",
+    "name": "Bachelor of Veterinary Science",
+    "shortName": "BVSc",
+    "stream": "veterinary",
+    "level": "professional",
+    "discipline": "veterinary-medicine",
+    "aliases": [
+      "Bachelor of Veterinary Medicine",
+      "Doctor of Veterinary Medicine"
+    ]
+  },
+  {
+    "slug": "master-veterinary-science",
+    "name": "Master of Veterinary Science",
+    "shortName": "MVSc",
+    "stream": "veterinary",
+    "level": "masters",
+    "discipline": "veterinary-science",
+    "aliases": [
+      "MSc Veterinary Science",
+      "Master in Veterinary Medicine"
+    ]
+  },
+  {
+    "slug": "bed",
+    "name": "Bachelor of Education",
+    "shortName": "B.Ed",
+    "stream": "education",
+    "level": "bachelors",
+    "discipline": "education",
+    "aliases": [
+      "BEd",
+      "Bachelor in Education"
+    ]
+  },
+  {
+    "slug": "med-education",
+    "name": "Master of Education",
+    "shortName": "M.Ed",
+    "stream": "education",
+    "level": "masters",
+    "discipline": "education",
+    "aliases": [
+      "MEd",
+      "Master in Education"
+    ]
+  },
+  {
+    "slug": "master-tesol",
+    "name": "Master's in TESOL",
+    "shortName": "Master's TESOL",
+    "stream": "education",
+    "level": "masters",
+    "discipline": "tesol",
+    "aliases": [
+      "MA TESOL",
+      "Master of Teaching English to Speakers of Other Languages"
+    ]
+  },
+  {
+    "slug": "bachelor-hospitality-management",
+    "name": "Bachelor's in Hospitality Management",
+    "shortName": "Bachelor's Hospitality",
+    "stream": "hospitality",
+    "level": "bachelors",
+    "discipline": "hospitality-management",
+    "aliases": [
+      "Bachelor of Hotel Management",
+      "BSc Hospitality Management"
+    ]
+  },
+  {
+    "slug": "master-hospitality-management",
+    "name": "Master's in Hospitality Management",
+    "shortName": "Master's Hospitality",
+    "stream": "hospitality",
+    "level": "masters",
+    "discipline": "hospitality-management",
+    "aliases": [
+      "Master of Hotel Management",
+      "MSc Hospitality Management"
+    ]
+  },
+  {
+    "slug": "bachelor-tourism-management",
+    "name": "Bachelor's in Tourism Management",
+    "shortName": "Bachelor's Tourism",
+    "stream": "hospitality",
+    "level": "bachelors",
+    "discipline": "tourism-management",
+    "aliases": [
+      "Bachelor of Tourism Management",
+      "BSc Tourism"
+    ]
+  },
+  {
+    "slug": "master-tourism-management",
+    "name": "Master's in Tourism Management",
+    "shortName": "Master's Tourism",
+    "stream": "hospitality",
+    "level": "masters",
+    "discipline": "tourism-management",
+    "aliases": [
+      "Master of Tourism Management",
+      "MSc Tourism"
+    ]
+  },
+  {
+    "slug": "bachelor-culinary-arts",
+    "name": "Bachelor's in Culinary Arts",
+    "shortName": "Bachelor's Culinary Arts",
+    "stream": "hospitality",
+    "level": "bachelors",
+    "discipline": "culinary-arts",
+    "aliases": [
+      "Bachelor of Culinary Arts",
+      "BA Culinary Arts"
+    ]
+  },
+  {
+    "slug": "bachelor-aviation-management",
+    "name": "Bachelor's in Aviation Management",
+    "shortName": "Bachelor's Aviation Management",
+    "stream": "aviation-maritime-logistics",
+    "level": "bachelors",
+    "discipline": "aviation-management",
+    "aliases": [
+      "BSc Aviation Management",
+      "Bachelor of Aviation"
+    ]
+  },
+  {
+    "slug": "master-aviation-management",
+    "name": "Master's in Aviation Management",
+    "shortName": "Master's Aviation Management",
+    "stream": "aviation-maritime-logistics",
+    "level": "masters",
+    "discipline": "aviation-management",
+    "aliases": [
+      "MSc Aviation Management",
+      "Master of Aviation"
+    ]
+  },
+  {
+    "slug": "diploma-nautical-science",
+    "name": "Diploma in Nautical Science",
+    "shortName": "Diploma Nautical Science",
+    "stream": "aviation-maritime-logistics",
+    "level": "diploma",
+    "discipline": "nautical-science",
+    "aliases": [
+      "DNS",
+      "Pre-Sea Diploma in Nautical Science"
+    ]
+  },
+  {
+    "slug": "postgraduate-diploma-marine-engineering",
+    "name": "Postgraduate Diploma in Marine Engineering",
+    "shortName": "PG Diploma Marine Engineering",
+    "stream": "engineering",
+    "level": "postgraduate-diploma",
+    "discipline": "marine-engineering",
+    "aliases": [
+      "PGDME",
+      "Graduate Marine Engineering",
+      "GME"
+    ]
+  },
+  {
+    "slug": "me-mtech-dredging-harbour-engineering",
+    "name": "M.E./M.Tech in Dredging and Harbour Engineering",
+    "shortName": "M.E./M.Tech Dredging and Harbour",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "dredging-harbour-engineering",
+    "aliases": [
+      "MTech Dredging and Harbor Engineering",
+      "Master of Dredging and Harbour Engineering"
+    ]
+  },
+  {
+    "slug": "bachelor-nautical-science",
+    "name": "Bachelor's in Nautical Science",
+    "shortName": "Bachelor's Nautical Science",
+    "stream": "aviation-maritime-logistics",
+    "level": "bachelors",
+    "discipline": "nautical-science",
+    "aliases": [
+      "BSc Nautical Science",
+      "Bachelor of Maritime Studies"
+    ]
+  },
+  {
+    "slug": "me-mtech-marine-engineering",
+    "name": "M.E./M.Tech in Marine Engineering",
+    "shortName": "M.E./M.Tech Marine",
+    "stream": "aviation-maritime-logistics",
+    "level": "masters",
+    "discipline": "marine-engineering",
+    "aliases": [
+      "Master of Marine Engineering",
+      "MSc Marine Engineering"
+    ]
+  },
+  {
+    "slug": "bachelor-logistics-supply-chain",
+    "name": "Bachelor's in Logistics and Supply Chain Management",
+    "shortName": "Bachelor's Logistics",
+    "stream": "aviation-maritime-logistics",
+    "level": "bachelors",
+    "discipline": "logistics-supply-chain",
+    "aliases": [
+      "BSc Logistics",
+      "Bachelor of Supply Chain Management"
+    ]
+  },
+  {
+    "slug": "master-public-policy",
+    "name": "Master of Public Policy",
+    "shortName": "MPP",
+    "stream": "public-policy-international-relations",
+    "level": "masters",
+    "discipline": "public-policy",
+    "aliases": [
+      "M.P.P.",
+      "MSc Public Policy"
+    ]
+  },
+  {
+    "slug": "master-public-administration",
+    "name": "Master of Public Administration",
+    "shortName": "MPA",
+    "stream": "public-policy-international-relations",
+    "level": "masters",
+    "discipline": "public-administration",
+    "aliases": [
+      "M.P.A.",
+      "Master in Public Administration"
+    ]
+  },
+  {
+    "slug": "bachelor-political-science",
+    "name": "Bachelor's in Political Science",
+    "shortName": "Bachelor's Political Science",
+    "stream": "public-policy-international-relations",
+    "level": "bachelors",
+    "discipline": "political-science",
+    "aliases": [
+      "BA Political Science",
+      "BSc Political Science"
+    ]
+  },
+  {
+    "slug": "master-political-science",
+    "name": "Master's in Political Science",
+    "shortName": "Master's Political Science",
+    "stream": "public-policy-international-relations",
+    "level": "masters",
+    "discipline": "political-science",
+    "aliases": [
+      "MA Political Science",
+      "MSc Political Science"
+    ]
+  },
+  {
+    "slug": "bachelor-international-relations",
+    "name": "Bachelor's in International Relations",
+    "shortName": "Bachelor's International Relations",
+    "stream": "public-policy-international-relations",
+    "level": "bachelors",
+    "discipline": "international-relations",
+    "aliases": [
+      "BA International Relations",
+      "Bachelor of International Studies"
+    ]
+  },
+  {
+    "slug": "master-international-relations",
+    "name": "Master's in International Relations",
+    "shortName": "Master's International Relations",
+    "stream": "public-policy-international-relations",
+    "level": "masters",
+    "discipline": "international-relations",
+    "aliases": [
+      "MA International Relations",
+      "Master of International Studies"
+    ]
+  },
+  {
+    "slug": "bachelor-defence-strategic-studies",
+    "name": "Bachelor's in Defence and Strategic Studies",
+    "shortName": "Bachelor's Defence Studies",
+    "stream": "public-policy-international-relations",
+    "level": "bachelors",
+    "discipline": "defence-strategic-studies",
+    "aliases": [
+      "BA Defence and Strategic Studies",
+      "Bachelor of Arts in Defence and Strategic Studies",
+      "BA Defense and Strategic Studies"
+    ]
+  },
+  {
+    "slug": "bachelor-information-systems",
+    "name": "Bachelor's in Information Systems",
+    "shortName": "Bachelor's Information Systems",
+    "stream": "computing-information-systems",
+    "level": "bachelors",
+    "discipline": "information-systems",
+    "aliases": [
+      "Bachelor of Information Systems",
+      "BSc Information Systems"
+    ]
+  },
+  {
+    "slug": "master-information-systems",
+    "name": "Master's in Information Systems",
+    "shortName": "Master's Information Systems",
+    "stream": "computing-information-systems",
+    "level": "masters",
+    "discipline": "information-systems",
+    "aliases": [
+      "Master of Information Systems",
+      "MSc Information Systems"
+    ]
+  },
+  {
+    "slug": "phd-computer-science",
+    "name": "PhD in Computer Science",
+    "shortName": "PhD Computer Science",
+    "stream": "computing-information-systems",
+    "level": "doctorate",
+    "discipline": "computer-science",
+    "aliases": [
+      "Doctor of Philosophy in Computer Science"
+    ]
+  },
+  {
+    "slug": "phd-engineering",
+    "name": "PhD in Engineering",
+    "shortName": "PhD Engineering",
+    "stream": "engineering",
+    "level": "doctorate",
+    "discipline": "engineering",
+    "aliases": [
+      "Doctor of Philosophy in Engineering",
+      "Doctorate in Engineering"
+    ]
+  },
+  {
+    "slug": "phd-business-management",
+    "name": "PhD in Business and Management",
+    "shortName": "PhD Business",
+    "stream": "business",
+    "level": "doctorate",
+    "discipline": "business-management",
+    "aliases": [
+      "Doctor of Philosophy in Business Administration",
+      "PhD Management"
+    ]
+  },
+  {
+    "slug": "dba",
+    "name": "Doctor of Business Administration",
+    "shortName": "DBA",
+    "stream": "business",
+    "level": "doctorate",
+    "discipline": "business-administration",
+    "aliases": [
+      "D.B.A.",
+      "Professional Doctorate in Business Administration"
+    ]
+  },
+  {
+    "slug": "phd-natural-sciences",
+    "name": "PhD in Natural Sciences",
+    "shortName": "PhD Natural Sciences",
+    "stream": "natural-sciences",
+    "level": "doctorate",
+    "discipline": "natural-sciences",
+    "aliases": [
+      "Doctor of Philosophy in Natural Sciences",
+      "Doctorate in Science"
+    ]
+  },
+  {
+    "slug": "phd-arts-humanities",
+    "name": "PhD in Arts and Humanities",
+    "shortName": "PhD Arts & Humanities",
+    "stream": "arts-humanities",
+    "level": "doctorate",
+    "discipline": "arts-humanities",
+    "aliases": [
+      "Doctor of Philosophy in Humanities",
+      "Doctorate in Arts and Humanities"
+    ]
+  },
+  {
+    "slug": "phd-law",
+    "name": "PhD in Law",
+    "shortName": "PhD Law",
+    "stream": "law",
+    "level": "doctorate",
+    "discipline": "law",
+    "aliases": [
+      "Doctor of Philosophy in Law",
+      "Doctorate in Law"
+    ]
+  },
+  {
+    "slug": "bba",
+    "name": "Bachelor of Business Administration",
+    "shortName": "BBA",
+    "stream": "business",
+    "level": "bachelors",
+    "discipline": "business-administration",
+    "aliases": [
+      "B.B.A.",
+      "Bachelor's in Business Administration",
+      "Bachelor of Management Studies",
+      "BMS",
+      "Bachelor of Business Management"
+    ]
+  },
+  {
+    "slug": "bca",
+    "name": "Bachelor of Computer Applications",
+    "shortName": "BCA",
+    "stream": "computing-information-systems",
+    "level": "bachelors",
+    "discipline": "computer-applications",
+    "aliases": [
+      "B.C.A.",
+      "BCA (Honours)",
+      "Bachelor in Computer Applications"
+    ]
+  },
+  {
+    "slug": "mca",
+    "name": "Master of Computer Applications",
+    "shortName": "MCA",
+    "stream": "computing-information-systems",
+    "level": "masters",
+    "discipline": "computer-applications",
+    "aliases": [
+      "M.C.A.",
+      "Master in Computer Applications"
+    ]
+  },
+  {
+    "slug": "bsc-computer-science",
+    "name": "B.Sc. in Computer Science",
+    "shortName": "B.Sc. Computer Science",
+    "stream": "computing-information-systems",
+    "level": "bachelors",
+    "discipline": "computer-science",
+    "aliases": [
+      "Bachelor of Science in Computer Science",
+      "BSc (Hons) Computer Science"
+    ]
+  },
+  {
+    "slug": "bsc-data-science",
+    "name": "B.Sc. in Data Science",
+    "shortName": "B.Sc. Data Science",
+    "stream": "computing-information-systems",
+    "level": "bachelors",
+    "discipline": "data-science",
+    "aliases": [
+      "Bachelor of Science in Data Science",
+      "BSc Data Science",
+      "BSc (Hons) Data Science"
+    ]
+  },
+  {
+    "slug": "bsc-general-sciences",
+    "name": "B.Sc. in General Sciences",
+    "shortName": "B.Sc. General Sciences",
+    "stream": "natural-sciences",
+    "level": "bachelors",
+    "discipline": "general-sciences",
+    "aliases": [
+      "B.Sc. (General)",
+      "B.Sc. Combined Sciences",
+      "Bachelor of Science (Multidisciplinary)",
+      "B.Sc. PCM"
+    ]
+  },
+  {
+    "slug": "ba-general-arts",
+    "name": "B.A. in General Arts",
+    "shortName": "B.A. General Arts",
+    "stream": "arts-humanities",
+    "level": "bachelors",
+    "discipline": "general-arts",
+    "aliases": [
+      "B.A. (General)",
+      "B.A. Combined Subjects",
+      "Bachelor of Arts (Multidisciplinary)",
+      "B.A. Programme"
+    ]
+  },
+  {
+    "slug": "me-mtech-computer-science-engineering",
+    "name": "M.E./M.Tech in Computer Science and Engineering",
+    "shortName": "M.E./M.Tech CSE",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "computer-science-engineering",
+    "aliases": [
+      "Master of Technology in Computer Science and Engineering",
+      "Master of Engineering in Computer Science",
+      "M.Tech Computer Engineering",
+      "M.Tech Artificial Intelligence"
+    ]
+  },
+  {
+    "slug": "be-btech-biotechnology",
+    "name": "B.E./B.Tech in Biotechnology",
+    "shortName": "B.E./B.Tech Biotechnology",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "biotechnology-engineering",
+    "aliases": [
+      "Bachelor of Technology in Biotechnology",
+      "Bachelor of Engineering in Biotechnology",
+      "BEng Biotechnology",
+      "B.Tech Bioinformatics"
+    ]
+  },
+  {
+    "slug": "me-mtech-biotechnology",
+    "name": "M.E./M.Tech in Biotechnology",
+    "shortName": "M.E./M.Tech Biotechnology",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "biotechnology-engineering",
+    "aliases": [
+      "Master of Technology in Biotechnology",
+      "M.Tech Bioinformatics",
+      "M.Tech Computational Biology"
+    ]
+  },
+  {
+    "slug": "be-btech-environmental-engineering",
+    "name": "B.E./B.Tech in Environmental Engineering",
+    "shortName": "B.E./B.Tech Environmental",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "environmental-engineering",
+    "aliases": [
+      "Bachelor of Technology in Environmental Engineering",
+      "BEng Environmental Engineering",
+      "Environmental and Sustainability Engineering"
+    ]
+  },
+  {
+    "slug": "me-mtech-environmental-engineering",
+    "name": "M.E./M.Tech in Environmental Engineering",
+    "shortName": "M.E./M.Tech Environmental",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "environmental-engineering",
+    "aliases": [
+      "Master of Technology in Environmental Engineering",
+      "M.Tech Environmental Science and Engineering",
+      "MSc Environmental Engineering"
+    ]
+  },
+  {
+    "slug": "me-mtech-materials-engineering",
+    "name": "M.E./M.Tech in Materials Engineering",
+    "shortName": "M.E./M.Tech Materials",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "materials-engineering",
+    "aliases": [
+      "Master of Technology in Materials Science and Engineering",
+      "M.Tech Nanotechnology",
+      "M.Tech Material Science and Technology",
+      "MSc Materials Engineering"
+    ]
+  },
+  {
+    "slug": "me-mtech-energy-engineering",
+    "name": "M.E./M.Tech in Energy Engineering",
+    "shortName": "M.E./M.Tech Energy",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "energy-engineering",
+    "aliases": [
+      "Master of Technology in Energy Science and Technology",
+      "M.Tech Renewable Energy",
+      "MSc Energy Engineering"
+    ]
+  },
+  {
+    "slug": "be-btech-geoinformatics-engineering",
+    "name": "B.E./B.Tech in Geoinformatics Engineering",
+    "shortName": "B.E./B.Tech Geoinformatics",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "geoinformatics",
+    "aliases": [
+      "Bachelor of Engineering in Geo-Informatics",
+      "B.Tech Geoinformatics"
+    ]
+  },
+  {
+    "slug": "be-btech-design-engineering",
+    "name": "B.E./B.Tech in Design Engineering",
+    "shortName": "B.E./B.Tech Design",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "design-engineering",
+    "aliases": [
+      "Bachelor of Technology in Design Engineering",
+      "BEng Design Engineering"
+    ]
+  },
+  {
+    "slug": "be-btech-engineering-physics",
+    "name": "B.E./B.Tech in Engineering Physics",
+    "shortName": "B.E./B.Tech Engineering Physics",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "engineering-physics",
+    "aliases": [
+      "Bachelor of Technology in Engineering Physics",
+      "BEng Engineering Physics"
+    ]
+  },
+  {
+    "slug": "integrated-mtech-electronics-communication-engineering",
+    "name": "Integrated M.Tech in Electronics and Communication Engineering",
+    "shortName": "Integrated M.Tech ECE",
+    "stream": "engineering",
+    "level": "integrated-masters",
+    "discipline": "electronics-communication-engineering",
+    "aliases": [
+      "Integrated Master of Technology in Electronics and Communication Engineering",
+      "B.Tech and M.Tech in Electronics and Communication Engineering"
+    ]
+  },
+  {
+    "slug": "integrated-mtech-mechanical-engineering",
+    "name": "Integrated M.Tech in Mechanical Engineering",
+    "shortName": "Integrated M.Tech Mechanical",
+    "stream": "engineering",
+    "level": "integrated-masters",
+    "discipline": "mechanical-engineering",
+    "aliases": [
+      "Integrated Master of Technology in Mechanical Engineering",
+      "B.Tech Mechanical Engineering and M.Tech AI and Robotics"
+    ]
+  },
+  {
+    "slug": "integrated-mtech-biotechnology",
+    "name": "Integrated M.Tech in Biotechnology",
+    "shortName": "Integrated M.Tech Biotechnology",
+    "stream": "engineering",
+    "level": "integrated-masters",
+    "discipline": "biotechnology-engineering",
+    "aliases": [
+      "Integrated Master of Technology in Biotechnology",
+      "Six-year Integrated M.Tech Biotechnology"
+    ]
+  },
+  {
+    "slug": "integrated-mtech-computer-science-engineering",
+    "name": "Integrated M.Tech in Computer Science and Engineering",
+    "shortName": "Integrated M.Tech CSE",
+    "stream": "engineering",
+    "level": "integrated-masters",
+    "discipline": "computer-science-engineering",
+    "aliases": [
+      "Integrated Master of Technology in Computer Science and Engineering",
+      "Six-year Integrated M.Tech CSE"
+    ]
+  },
+  {
+    "slug": "integrated-mtech-geoinformatics",
+    "name": "Integrated M.Tech in Geoinformatics",
+    "shortName": "Integrated M.Tech Geoinformatics",
+    "stream": "engineering",
+    "level": "integrated-masters",
+    "discipline": "geoinformatics",
+    "aliases": [
+      "Integrated Master of Technology in Geoinformatics",
+      "Integrated M.Tech Geological Technology and Geoinformatics"
+    ]
+  },
+  {
+    "slug": "be-btech-mining-engineering",
+    "name": "B.E./B.Tech in Mining Engineering",
+    "shortName": "B.E./B.Tech Mining",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "mining-engineering",
+    "aliases": [
+      "Bachelor of Mining Engineering",
+      "BEng Mining Engineering"
+    ]
+  },
+  {
+    "slug": "be-btech-printing-packaging-technology",
+    "name": "B.E./B.Tech in Printing and Packaging Technology",
+    "shortName": "B.E./B.Tech Printing & Packaging",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "printing-packaging-technology",
+    "aliases": [
+      "B.Tech Printing Technology",
+      "Bachelor of Packaging Technology"
+    ]
+  },
+  {
+    "slug": "be-btech-materials-science-engineering",
+    "name": "B.E./B.Tech in Materials Science and Engineering",
+    "shortName": "B.E./B.Tech Materials Science",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "materials-engineering",
+    "aliases": [
+      "Bachelor of Materials Engineering",
+      "BEng Materials Science and Engineering"
+    ]
+  },
+  {
+    "slug": "be-btech-textile-technology",
+    "name": "B.E./B.Tech in Textile Technology",
+    "shortName": "B.E./B.Tech Textile Technology",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "textile-technology",
+    "aliases": [
+      "Bachelor of Textile Engineering",
+      "B.Tech Textile Engineering"
+    ]
+  },
+  {
+    "slug": "be-btech-fashion-technology",
+    "name": "B.E./B.Tech in Fashion Technology",
+    "shortName": "B.E./B.Tech Fashion Technology",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "fashion-technology",
+    "aliases": [
+      "Bachelor of Technology in Fashion Technology",
+      "B.Tech Fashion Technology"
+    ]
+  },
+  {
+    "slug": "be-btech-apparel-technology",
+    "name": "B.E./B.Tech in Apparel Technology",
+    "shortName": "B.E./B.Tech Apparel Technology",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "apparel-technology",
+    "aliases": [
+      "B.Tech Apparel Production",
+      "Bachelor of Apparel Technology"
+    ]
+  },
+  {
+    "slug": "be-btech-ceramic-technology",
+    "name": "B.E./B.Tech in Ceramic Technology",
+    "shortName": "B.E./B.Tech Ceramic Technology",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "ceramic-technology",
+    "aliases": [
+      "B.Tech Ceramic Engineering",
+      "Bachelor of Ceramic Technology"
+    ]
+  },
+  {
+    "slug": "be-btech-leather-technology",
+    "name": "B.E./B.Tech in Leather Technology",
+    "shortName": "B.E./B.Tech Leather Technology",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "leather-technology",
+    "aliases": [
+      "B.Tech Leather Engineering",
+      "Bachelor of Leather Technology"
+    ]
+  },
+  {
+    "slug": "be-btech-pharmaceutical-technology",
+    "name": "B.E./B.Tech in Pharmaceutical Technology",
+    "shortName": "B.E./B.Tech Pharmaceutical Technology",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "pharmaceutical-technology",
+    "aliases": [
+      "B.Tech Pharmaceutical Engineering",
+      "Bachelor of Pharmaceutical Technology"
+    ]
+  },
+  {
+    "slug": "be-btech-petroleum-engineering",
+    "name": "B.E./B.Tech in Petroleum Engineering",
+    "shortName": "B.E./B.Tech Petroleum",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "petroleum-engineering",
+    "aliases": [
+      "B.Tech Petroleum Engineering and Technology",
+      "Bachelor of Petroleum Engineering"
+    ]
+  },
+  {
+    "slug": "be-btech-rubber-plastics-technology",
+    "name": "B.E./B.Tech in Rubber and Plastics Technology",
+    "shortName": "B.E./B.Tech Rubber & Plastics",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "polymer-technology",
+    "aliases": [
+      "B.Tech Polymer Technology",
+      "B.Tech Plastics Technology"
+    ]
+  },
+  {
+    "slug": "be-btech-computer-communication-engineering",
+    "name": "B.E./B.Tech in Computer and Communication Engineering",
+    "shortName": "B.E./B.Tech Computer and Communication",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "computer-communication-engineering",
+    "aliases": [
+      "Bachelor of Computer and Communication Engineering",
+      "BEng Computer and Communication Engineering"
+    ]
+  },
+  {
+    "slug": "be-btech-instrumentation-engineering",
+    "name": "B.E./B.Tech in Electronics and Instrumentation Engineering",
+    "shortName": "B.E./B.Tech Instrumentation",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "instrumentation-engineering",
+    "aliases": [
+      "Bachelor of Instrumentation Engineering",
+      "B.E. Instrumentation and Control Engineering"
+    ]
+  },
+  {
+    "slug": "be-btech-marine-engineering",
+    "name": "B.E./B.Tech in Marine Engineering",
+    "shortName": "B.E./B.Tech Marine",
+    "stream": "aviation-maritime-logistics",
+    "level": "bachelors",
+    "discipline": "marine-engineering",
+    "aliases": [
+      "Bachelor of Marine Engineering",
+      "BEng Marine Engineering"
+    ]
+  },
+  {
+    "slug": "be-btech-naval-architecture-offshore-engineering",
+    "name": "B.E./B.Tech in Naval Architecture and Offshore Engineering",
+    "shortName": "B.E./B.Tech Naval Architecture",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "naval-architecture-offshore-engineering",
+    "aliases": [
+      "Bachelor of Naval Architecture and Offshore Engineering",
+      "BEng Naval Architecture"
+    ]
+  },
+  {
+    "slug": "me-mtech-naval-architecture-offshore-engineering",
+    "name": "M.E./M.Tech in Naval Architecture and Offshore Engineering",
+    "shortName": "M.E./M.Tech Naval Architecture",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "naval-architecture-offshore-engineering",
+    "aliases": [
+      "Master of Naval Architecture and Offshore Engineering",
+      "MEng Naval Architecture"
+    ]
+  },
+  {
+    "slug": "me-mtech-petroleum-engineering",
+    "name": "M.E./M.Tech in Petroleum Engineering",
+    "shortName": "M.E./M.Tech Petroleum",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "petroleum-engineering",
+    "aliases": [
+      "Master of Petroleum Engineering",
+      "MEng Petroleum Engineering"
+    ]
+  },
+  {
+    "slug": "be-btech-food-technology",
+    "name": "B.E./B.Tech in Food Technology",
+    "shortName": "B.E./B.Tech Food Technology",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "food-technology",
+    "aliases": [
+      "Bachelor of Technology in Food Processing Technology",
+      "BEng Food Technology"
+    ]
+  },
+  {
+    "slug": "bsc-aviation",
+    "name": "B.Sc. in Aviation",
+    "shortName": "B.Sc. Aviation",
+    "stream": "aviation-maritime-logistics",
+    "level": "bachelors",
+    "discipline": "aviation-science",
+    "aliases": [
+      "Bachelor of Science in Aviation",
+      "BSc Aviation Science",
+      "BSc Aviation"
+    ]
+  },
+  {
+    "slug": "bsc-artificial-intelligence-machine-learning",
+    "name": "B.Sc. in Artificial Intelligence and Machine Learning",
+    "shortName": "B.Sc. AI & ML",
+    "stream": "computing-information-systems",
+    "level": "bachelors",
+    "discipline": "artificial-intelligence-machine-learning",
+    "aliases": [
+      "Bachelor of Science in Artificial Intelligence and Machine Learning",
+      "BSc AI and ML"
+    ]
+  },
+  {
+    "slug": "bsc-robotics-artificial-intelligence",
+    "name": "B.Sc. in Robotics and Artificial Intelligence",
+    "shortName": "B.Sc. Robotics & AI",
+    "stream": "computing-information-systems",
+    "level": "bachelors",
+    "discipline": "robotics-artificial-intelligence",
+    "aliases": [
+      "Bachelor of Science in Robotics and Artificial Intelligence",
+      "BSc Robotics and AI"
+    ]
+  },
+  {
+    "slug": "be-btech-electrical-computer-engineering",
+    "name": "B.E./B.Tech in Electrical and Computer Engineering",
+    "shortName": "B.E./B.Tech Electrical & Computer",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "electrical-computer-engineering",
+    "aliases": [
+      "Bachelor of Electrical and Computer Engineering",
+      "BEng Electrical and Computer Engineering"
+    ]
+  },
+  {
+    "slug": "be-btech-electronics-computer-engineering",
+    "name": "B.E./B.Tech in Electronics and Computer Engineering",
+    "shortName": "B.E./B.Tech Electronics & Computer",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "electronics-computer-engineering",
+    "aliases": [
+      "BEng Electronics and Computer Engineering",
+      "B.Tech Electronics and Computer Science"
+    ]
+  },
+  {
+    "slug": "me-mtech-printing-packaging-technology",
+    "name": "M.E./M.Tech in Printing and Packaging Technology",
+    "shortName": "M.E./M.Tech Printing & Packaging",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "printing-packaging-technology",
+    "aliases": [
+      "M.Tech Printing Technology",
+      "M.Tech Packaging Technology"
+    ]
+  },
+  {
+    "slug": "me-mtech-textile-technology",
+    "name": "M.E./M.Tech in Textile Technology",
+    "shortName": "M.E./M.Tech Textile Technology",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "textile-technology",
+    "aliases": [
+      "Master of Textile Engineering",
+      "M.Tech Textile Engineering"
+    ]
+  },
+  {
+    "slug": "me-mtech-leather-technology",
+    "name": "M.E./M.Tech in Leather Technology",
+    "shortName": "M.E./M.Tech Leather Technology",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "leather-technology",
+    "aliases": [
+      "M.Tech Leather and Footwear Technology",
+      "M.Tech Footwear Technology"
+    ]
+  },
+  {
+    "slug": "me-mtech-industrial-safety-engineering",
+    "name": "M.E./M.Tech in Industrial Safety Engineering",
+    "shortName": "M.E./M.Tech Industrial Safety",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "industrial-safety-engineering",
+    "aliases": [
+      "M.Tech Industrial Safety and Hazard Management",
+      "M.E. Industrial Safety Engineering"
+    ]
+  },
+  {
+    "slug": "me-mtech-instrumentation-control-engineering",
+    "name": "M.E./M.Tech in Instrumentation and Control Engineering",
+    "shortName": "M.E./M.Tech Instrumentation & Control",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "instrumentation-engineering",
+    "aliases": [
+      "M.E. Control and Instrumentation Engineering",
+      "M.Tech Instrumentation Engineering"
+    ]
+  },
+  {
+    "slug": "msc-materials-science",
+    "name": "M.Sc. in Materials Science",
+    "shortName": "M.Sc. Materials Science",
+    "stream": "natural-sciences",
+    "level": "masters",
+    "discipline": "materials-science",
+    "aliases": [
+      "Master of Science in Materials Science",
+      "MSc Materials Science"
+    ]
+  },
+  {
+    "slug": "diploma-civil-engineering",
+    "name": "Diploma in Civil Engineering",
+    "shortName": "Diploma Civil Engineering",
+    "stream": "engineering",
+    "level": "diploma",
+    "discipline": "civil-engineering",
+    "aliases": [
+      "Polytechnic Diploma in Civil Engineering",
+      "Civil Engineering Diploma"
+    ]
+  },
+  {
+    "slug": "diploma-mechanical-engineering",
+    "name": "Diploma in Mechanical Engineering",
+    "shortName": "Diploma Mechanical Engineering",
+    "stream": "engineering",
+    "level": "diploma",
+    "discipline": "mechanical-engineering",
+    "aliases": [
+      "Polytechnic Diploma in Mechanical Engineering",
+      "Diploma in Production Engineering",
+      "Mechanical Engineering Diploma"
+    ]
+  },
+  {
+    "slug": "diploma-electrical-electronics-engineering",
+    "name": "Diploma in Electrical and Electronics Engineering",
+    "shortName": "Diploma Electrical & Electronics",
+    "stream": "engineering",
+    "level": "diploma",
+    "discipline": "electrical-electronics-engineering",
+    "aliases": [
+      "Diploma in Electrical Engineering",
+      "Diploma in Electronics Engineering",
+      "Polytechnic Diploma in Electrical Engineering"
+    ]
+  },
+  {
+    "slug": "diploma-computer-engineering",
+    "name": "Diploma in Computer Engineering",
+    "shortName": "Diploma Computer Engineering",
+    "stream": "engineering",
+    "level": "diploma",
+    "discipline": "computer-engineering",
+    "aliases": [
+      "Polytechnic Diploma in Computer Engineering",
+      "Diploma in Information Technology",
+      "Diploma in Information and Communication Technology"
+    ]
+  },
+  {
+    "slug": "diploma-chemical-engineering",
+    "name": "Diploma in Chemical Engineering",
+    "shortName": "Diploma Chemical Engineering",
+    "stream": "engineering",
+    "level": "diploma",
+    "discipline": "chemical-engineering",
+    "aliases": [
+      "Polytechnic Diploma in Chemical Engineering",
+      "Chemical Engineering Diploma"
+    ]
+  },
+  {
+    "slug": "mpharm",
+    "name": "Master of Pharmacy",
+    "shortName": "M.Pharm",
+    "stream": "pharmacy",
+    "level": "masters",
+    "discipline": "pharmacy",
+    "aliases": [
+      "M. Pharm.",
+      "MPharm (postgraduate)",
+      "Master of Pharmacy (Postgraduate)"
+    ]
+  },
+  {
+    "slug": "dpharm",
+    "name": "Diploma in Pharmacy",
+    "shortName": "D.Pharm",
+    "stream": "pharmacy",
+    "level": "diploma",
+    "discipline": "pharmacy",
+    "aliases": [
+      "D. Pharm",
+      "Pharmacy Diploma",
+      "Diploma in Unani Pharmacy"
+    ]
+  },
+  {
+    "slug": "bums",
+    "name": "Bachelor of Unani Medicine and Surgery",
+    "shortName": "BUMS",
+    "stream": "medicine",
+    "level": "bachelors",
+    "discipline": "unani-medicine",
+    "aliases": [
+      "B.U.M.S.",
+      "Kamil-e-Tib-o-Jarahat",
+      "Unani Medicine degree"
+    ]
+  },
+  {
+    "slug": "md-unani",
+    "name": "M.D. in Unani Medicine",
+    "shortName": "MD Unani",
+    "stream": "medicine",
+    "level": "masters",
+    "discipline": "unani-medicine",
+    "aliases": [
+      "MD (Unani)",
+      "Mahir-e-Tib",
+      "Postgraduate Unani Medicine"
+    ]
+  },
+  {
+    "slug": "diploma-general-nursing-midwifery",
+    "name": "Diploma in General Nursing and Midwifery",
+    "shortName": "GNM",
+    "stream": "nursing",
+    "level": "diploma",
+    "discipline": "nursing",
+    "aliases": [
+      "G.N.M.",
+      "DGNM",
+      "General Nursing and Midwifery"
+    ]
+  },
+  {
+    "slug": "msc-nursing",
+    "name": "M.Sc. Nursing",
+    "shortName": "M.Sc. Nursing",
+    "stream": "nursing",
+    "level": "masters",
+    "discipline": "nursing",
+    "aliases": [
+      "Master of Science in Nursing",
+      "MSN",
+      "Master of Nursing"
+    ]
+  },
+  {
+    "slug": "bsc-allied-health-sciences",
+    "name": "Bachelor's in Allied Health Sciences",
+    "shortName": "Bachelor's Allied Health",
+    "stream": "public-health-allied-health",
+    "level": "bachelors",
+    "discipline": "allied-health-sciences",
+    "aliases": [
+      "Bachelor of Allied Health Sciences",
+      "B.Sc. Anaesthesia and Operation Theatre Technology",
+      "B.Sc. Medical Imaging Technology",
+      "B.Sc. Dialysis Technology",
+      "B.Sc. Cardiac Care Technology",
+      "B.Sc. Clinical Research",
+      "Bachelor of Anaesthesia and Operation Theatre Technology",
+      "Bachelor of Medical Radiology and Imaging Technology",
+      "Bachelor of Dialysis Therapy Technology",
+      "Bachelor of Physician Associates",
+      "Bachelor of Emergency Medical Technologist (Paramedics)",
+      "Bachelor of Respiratory Technology"
+    ]
+  },
+  {
+    "slug": "msc-allied-health-sciences",
+    "name": "Master's in Allied Health Sciences",
+    "shortName": "Master's Allied Health",
+    "stream": "public-health-allied-health",
+    "level": "masters",
+    "discipline": "allied-health-sciences",
+    "aliases": [
+      "Master of Allied Health Sciences",
+      "M.Sc. Medical Laboratory Technology",
+      "M.Sc. Medical Radiology and Imaging Technology",
+      "M.Sc. Clinical Research",
+      "Master of Advance Care Paramedic",
+      "Master of Dialysis Therapy",
+      "Master of Medical Radiology and Imaging Technology",
+      "Master of Medical Laboratory Science",
+      "Master of Anaesthesia and Operation Theatre Technology",
+      "Master of Physician Associates"
+    ]
+  },
+  {
+    "slug": "bachelor-optometry",
+    "name": "Bachelor's in Optometry",
+    "shortName": "Bachelor's Optometry",
+    "stream": "public-health-allied-health",
+    "level": "bachelors",
+    "discipline": "optometry",
+    "aliases": [
+      "Bachelor of Optometry",
+      "B.Optom",
+      "BSc Optometry"
+    ]
+  },
+  {
+    "slug": "master-optometry",
+    "name": "Master's in Optometry",
+    "shortName": "Master's Optometry",
+    "stream": "public-health-allied-health",
+    "level": "masters",
+    "discipline": "optometry",
+    "aliases": [
+      "Master of Optometry",
+      "M.Optom",
+      "MSc Optometry"
+    ]
+  },
+  {
+    "slug": "bachelor-social-work",
+    "name": "Bachelor's in Social Work",
+    "shortName": "Bachelor's Social Work",
+    "stream": "social-sciences",
+    "level": "bachelors",
+    "discipline": "social-work",
+    "aliases": [
+      "Bachelor of Social Work",
+      "BSW",
+      "BA Social Work"
+    ]
+  },
+  {
+    "slug": "master-social-work",
+    "name": "Master's in Social Work",
+    "shortName": "Master's Social Work",
+    "stream": "social-sciences",
+    "level": "masters",
+    "discipline": "social-work",
+    "aliases": [
+      "Master of Social Work",
+      "MSW",
+      "MA Social Work"
+    ]
+  },
+  {
+    "slug": "ba-religious-studies",
+    "name": "B.A. in Religious Studies",
+    "shortName": "B.A. Religious Studies",
+    "stream": "arts-humanities",
+    "level": "bachelors",
+    "discipline": "religious-studies",
+    "aliases": [
+      "BA Islamic Studies",
+      "BA Theology and Religious Studies",
+      "Bachelor of Arts in Religious Studies"
+    ]
+  },
+  {
+    "slug": "ma-religious-studies",
+    "name": "M.A. in Religious Studies",
+    "shortName": "M.A. Religious Studies",
+    "stream": "arts-humanities",
+    "level": "masters",
+    "discipline": "religious-studies",
+    "aliases": [
+      "MA Islamic Studies",
+      "MA Comparative Religion",
+      "MA Theology",
+      "Master of Arts in Religious Studies"
+    ]
+  },
+  {
+    "slug": "bachelor-library-information-science",
+    "name": "Bachelor's in Library and Information Science",
+    "shortName": "Bachelor's Library Science",
+    "stream": "social-sciences",
+    "level": "bachelors",
+    "discipline": "library-information-science",
+    "aliases": [
+      "Bachelor of Library and Information Science",
+      "BLISc",
+      "B.Lib.I.Sc."
+    ]
+  },
+  {
+    "slug": "master-library-information-science",
+    "name": "Master's in Library and Information Science",
+    "shortName": "Master's Library Science",
+    "stream": "social-sciences",
+    "level": "masters",
+    "discipline": "library-information-science",
+    "aliases": [
+      "Master of Library and Information Science",
+      "MLISc",
+      "MLIS",
+      "Master of Information Studies"
+    ]
+  },
+  {
+    "slug": "bachelor-physical-education-sports",
+    "name": "Bachelor's in Physical Education and Sports",
+    "shortName": "Bachelor's Physical Education",
+    "stream": "education",
+    "level": "bachelors",
+    "discipline": "physical-education-sports",
+    "aliases": [
+      "Bachelor of Physical Education and Sports",
+      "BPES",
+      "BSc Sports Science"
+    ]
+  },
+  {
+    "slug": "msc-forensic-science",
+    "name": "M.Sc. in Forensic Science",
+    "shortName": "M.Sc. Forensic Science",
+    "stream": "natural-sciences",
+    "level": "masters",
+    "discipline": "forensic-science",
+    "aliases": [
+      "Master of Science in Forensic Science",
+      "MSc Forensic Sciences"
+    ]
+  },
+  {
+    "slug": "bsc-forensic-science",
+    "name": "B.Sc. in Forensic Science",
+    "shortName": "B.Sc. Forensic Science",
+    "stream": "natural-sciences",
+    "level": "bachelors",
+    "discipline": "forensic-science",
+    "aliases": [
+      "Bachelor of Science in Forensic Science",
+      "BSc Forensic Sciences"
+    ]
+  },
+  {
+    "slug": "bsc-biotechnology",
+    "name": "B.Sc. in Biotechnology",
+    "shortName": "B.Sc. Biotechnology",
+    "stream": "natural-sciences",
+    "level": "bachelors",
+    "discipline": "biotechnology",
+    "aliases": [
+      "Bachelor of Science in Biotechnology",
+      "BSc Biotechnology"
+    ]
+  },
+  {
+    "slug": "msc-biotechnology",
+    "name": "M.Sc. in Biotechnology",
+    "shortName": "M.Sc. Biotechnology",
+    "stream": "natural-sciences",
+    "level": "masters",
+    "discipline": "biotechnology",
+    "aliases": [
+      "Master of Science in Biotechnology",
+      "MSc Biotechnology"
+    ]
+  },
+  {
+    "slug": "bsc-renewable-energy",
+    "name": "B.Sc. in Renewable Energy",
+    "shortName": "B.Sc. Renewable Energy",
+    "stream": "environment-sustainability",
+    "level": "bachelors",
+    "discipline": "renewable-energy",
+    "aliases": [
+      "Bachelor of Science in Renewable Energy",
+      "BSc Renewable Energy"
+    ]
+  },
+  {
+    "slug": "bachelor-criminology",
+    "name": "Bachelor's in Criminology",
+    "shortName": "Bachelor's Criminology",
+    "stream": "social-sciences",
+    "level": "bachelors",
+    "discipline": "criminology",
+    "aliases": [
+      "BA Criminology",
+      "B.A. Criminology and Police Administration",
+      "BSc Criminology"
+    ]
+  },
+  {
+    "slug": "msc-electronics-instrumentation",
+    "name": "M.Sc. in Electronics and Instrumentation",
+    "shortName": "M.Sc. Electronics",
+    "stream": "natural-sciences",
+    "level": "masters",
+    "discipline": "electronics-instrumentation",
+    "aliases": [
+      "MSc Electronics and Instrumentation"
+    ]
+  },
+  {
+    "slug": "master-educational-technology",
+    "name": "Master's in Educational Technology",
+    "shortName": "Master's Educational Technology",
+    "stream": "education",
+    "level": "masters",
+    "discipline": "educational-technology",
+    "aliases": [
+      "MSc E-Learning Technology",
+      "Master of Educational Technology"
+    ]
+  },
+  {
+    "slug": "master-career-guidance",
+    "name": "Master's in Career Guidance",
+    "shortName": "Master's Career Guidance",
+    "stream": "education",
+    "level": "masters",
+    "discipline": "career-guidance",
+    "aliases": [
+      "MA Career Guidance",
+      "Master of Career Guidance"
+    ]
+  },
+  {
+    "slug": "msc-information-technology",
+    "name": "M.Sc. in Information Technology",
+    "shortName": "M.Sc. Information Technology",
+    "stream": "computing-information-systems",
+    "level": "masters",
+    "discipline": "information-technology",
+    "aliases": [
+      "MSc Information Technology",
+      "M.Sc. IT"
+    ]
+  },
+  {
+    "slug": "bsc-information-technology",
+    "name": "B.Sc. in Information Technology",
+    "shortName": "B.Sc. Information Technology",
+    "stream": "computing-information-systems",
+    "level": "bachelors",
+    "discipline": "information-technology",
+    "aliases": [
+      "Bachelor of Science in Information Technology",
+      "BSc Information Technology",
+      "B.Sc. IT"
+    ]
+  },
+  {
+    "slug": "msc-hospital-administration",
+    "name": "Master's in Hospital Administration",
+    "shortName": "Master's Hospital Administration",
+    "stream": "public-health-allied-health",
+    "level": "masters",
+    "discipline": "hospital-administration",
+    "aliases": [
+      "Master of Science in Hospital Administration",
+      "MSc Hospital Administration",
+      "Master of Hospital Administration",
+      "MHA"
+    ]
+  },
+  {
+    "slug": "pg-diploma-human-resource-management",
+    "name": "Postgraduate Diploma in Human Resource Management",
+    "shortName": "PG Diploma HRM",
+    "stream": "business",
+    "level": "postgraduate-diploma",
+    "discipline": "human-resource-management",
+    "aliases": [
+      "PG Diploma in Human Resource Management",
+      "PGDHRM"
+    ]
+  },
+  {
+    "slug": "pg-diploma-business-management",
+    "name": "Postgraduate Diploma in Business Management",
+    "shortName": "PG Diploma Business Management",
+    "stream": "business",
+    "level": "postgraduate-diploma",
+    "discipline": "business-management",
+    "aliases": [
+      "PG Diploma in Business Management",
+      "PGDBM"
+    ]
+  },
+  {
+    "slug": "integrated-msc-software-systems",
+    "name": "Integrated M.Sc. in Software Systems",
+    "shortName": "Integrated M.Sc. Software Systems",
+    "stream": "computing-information-systems",
+    "level": "integrated-masters",
+    "discipline": "software-systems",
+    "aliases": [
+      "Five-year Integrated MSc Software Systems",
+      "Integrated Master of Science in Software Systems"
+    ]
+  },
+  {
+    "slug": "msc-nanoscience-technology",
+    "name": "M.Sc. in Nanoscience and Technology",
+    "shortName": "M.Sc. Nanoscience",
+    "stream": "natural-sciences",
+    "level": "masters",
+    "discipline": "nanoscience-technology",
+    "aliases": [
+      "MSc Nanoscience and Technology",
+      "MSc Nanotechnology"
+    ]
+  },
+  {
+    "slug": "master-gender-studies",
+    "name": "Master's in Gender Studies",
+    "shortName": "Master's Gender Studies",
+    "stream": "social-sciences",
+    "level": "masters",
+    "discipline": "gender-studies",
+    "aliases": [
+      "MA Gender Studies",
+      "MA Women's Studies"
+    ]
+  },
+  {
+    "slug": "bachelor-fisheries-science",
+    "name": "Bachelor of Fisheries Science",
+    "shortName": "B.F.Sc.",
+    "stream": "agriculture",
+    "level": "bachelors",
+    "discipline": "fisheries-science",
+    "aliases": [
+      "BFSc",
+      "Bachelor of Fisheries Sciences"
+    ]
+  },
+  {
+    "slug": "master-fisheries-science",
+    "name": "Master of Fisheries Science",
+    "shortName": "M.F.Sc.",
+    "stream": "agriculture",
+    "level": "masters",
+    "discipline": "fisheries-science",
+    "aliases": [
+      "MFSc",
+      "Master of Fisheries Sciences"
+    ]
+  },
+  {
+    "slug": "be-btech-fisheries-engineering",
+    "name": "B.E./B.Tech in Fisheries Engineering",
+    "shortName": "B.E./B.Tech Fisheries",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "fisheries-engineering",
+    "aliases": [
+      "Bachelor of Fisheries Engineering",
+      "B.Tech Fisheries Engineering"
+    ]
+  },
+  {
+    "slug": "me-mtech-fisheries-engineering",
+    "name": "M.E./M.Tech in Fisheries Engineering",
+    "shortName": "M.E./M.Tech Fisheries",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "fisheries-engineering",
+    "aliases": [
+      "M.Tech Aquacultural Engineering",
+      "M.Tech Fish Process Engineering"
+    ]
+  },
+  {
+    "slug": "bachelor-physical-education",
+    "name": "Bachelor of Physical Education",
+    "shortName": "B.P.Ed.",
+    "stream": "education",
+    "level": "bachelors",
+    "discipline": "physical-education",
+    "aliases": [
+      "BPEd",
+      "Bachelor of Physical Education (graduate entry)"
+    ]
+  },
+  {
+    "slug": "bsc-yoga",
+    "name": "B.Sc. in Yoga",
+    "shortName": "B.Sc. Yoga",
+    "stream": "public-health-allied-health",
+    "level": "bachelors",
+    "discipline": "yoga",
+    "aliases": [
+      "Bachelor of Science in Yoga",
+      "BSc Yoga"
+    ]
+  },
+  {
+    "slug": "msc-yoga",
+    "name": "M.Sc. in Yoga",
+    "shortName": "M.Sc. Yoga",
+    "stream": "public-health-allied-health",
+    "level": "masters",
+    "discipline": "yoga",
+    "aliases": [
+      "Master of Science in Yoga",
+      "MSc Yoga"
+    ]
+  },
+  {
+    "slug": "bachelor-sports-coaching",
+    "name": "Bachelor's in Sports Coaching",
+    "shortName": "Bachelor's Sports Coaching",
+    "stream": "education",
+    "level": "bachelors",
+    "discipline": "sports-coaching",
+    "aliases": [
+      "Bachelor of Science in Sports Coaching",
+      "BSc Sports Coaching"
+    ]
+  },
+  {
+    "slug": "bachelor-music",
+    "name": "Bachelor's in Music",
+    "shortName": "Bachelor's Music",
+    "stream": "design-creative-arts",
+    "level": "bachelors",
+    "discipline": "music",
+    "aliases": [
+      "BA Music",
+      "Bachelor of Music",
+      "BA Western Classical Music"
+    ]
+  },
+  {
+    "slug": "master-performing-arts",
+    "name": "Master's in Performing Arts",
+    "shortName": "Master's Performing Arts",
+    "stream": "design-creative-arts",
+    "level": "masters",
+    "discipline": "performing-arts",
+    "aliases": [
+      "MA Performing Arts",
+      "MA Bharatanatyam",
+      "Master of Dance"
+    ]
+  },
+  {
+    "slug": "master-astrology",
+    "name": "Master's in Astrology",
+    "shortName": "Master's Astrology",
+    "stream": "arts-humanities",
+    "level": "masters",
+    "discipline": "astrology",
+    "aliases": [
+      "MA Astrology",
+      "Master of Arts in Astrology"
+    ]
+  },
+  {
+    "slug": "bachelor-visual-arts",
+    "name": "Bachelor's in Visual Arts",
+    "shortName": "Bachelor's Visual Arts",
+    "stream": "design-creative-arts",
+    "level": "bachelors",
+    "discipline": "visual-arts",
+    "aliases": [
+      "Bachelor of Visual Arts",
+      "BVA",
+      "B.V.A."
+    ]
+  },
+  {
+    "slug": "master-art-history",
+    "name": "Master's in Art History",
+    "shortName": "Master's Art History",
+    "stream": "arts-humanities",
+    "level": "masters",
+    "discipline": "art-history",
+    "aliases": [
+      "MA Art History",
+      "MA History of Fine Arts",
+      "Master of Arts in Art History"
+    ]
+  },
+  {
+    "slug": "master-human-resource-management",
+    "name": "Master's in Human Resource Management",
+    "shortName": "Master's HRM",
+    "stream": "business",
+    "level": "masters",
+    "discipline": "human-resource-management",
+    "aliases": [
+      "MA Human Resource Management",
+      "Master of Arts in Human Resource Management",
+      "MHRM"
+    ]
+  },
+  {
+    "slug": "master-social-entrepreneurship",
+    "name": "Master's in Social Entrepreneurship",
+    "shortName": "Master's Social Entrepreneurship",
+    "stream": "social-sciences",
+    "level": "masters",
+    "discipline": "social-entrepreneurship",
+    "aliases": [
+      "MA Social Entrepreneurship",
+      "Master of Arts in Social Entrepreneurship"
+    ]
+  },
+  {
+    "slug": "bachelor-home-science",
+    "name": "Bachelor's in Home Science",
+    "shortName": "Bachelor's Home Science",
+    "stream": "natural-sciences",
+    "level": "bachelors",
+    "discipline": "home-science",
+    "aliases": [
+      "BSc Home Science",
+      "Bachelor of Science in Home Science",
+      "Bachelor of Community Science"
+    ]
+  },
+  {
+    "slug": "master-home-science",
+    "name": "Master's in Home Science",
+    "shortName": "Master's Home Science",
+    "stream": "natural-sciences",
+    "level": "masters",
+    "discipline": "home-science",
+    "aliases": [
+      "MSc Home Science",
+      "Master of Science in Home Science",
+      "Master of Community Science"
+    ]
+  },
+  {
+    "slug": "master-music",
+    "name": "Master's in Music",
+    "shortName": "Master's Music",
+    "stream": "design-creative-arts",
+    "level": "masters",
+    "discipline": "music",
+    "aliases": [
+      "MA Music",
+      "Master of Arts in Music",
+      "Master of Music"
+    ]
+  },
+  {
+    "slug": "me-mtech-food-technology",
+    "name": "M.E./M.Tech in Food Technology",
+    "shortName": "M.E./M.Tech Food Technology",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "food-technology",
+    "aliases": [
+      "Master of Engineering in Food Technology",
+      "Master of Technology in Food Technology",
+      "MTech Food Technology"
+    ]
+  },
+  {
+    "slug": "integrated-msc-biological-sciences",
+    "name": "Integrated M.Sc. in Biological Sciences",
+    "shortName": "Integrated M.Sc. Biological Sciences",
+    "stream": "natural-sciences",
+    "level": "integrated-masters",
+    "discipline": "biological-sciences",
+    "aliases": [
+      "Integrated Master of Science in Biological Sciences"
+    ]
+  },
+  {
+    "slug": "integrated-msc-chemistry",
+    "name": "Integrated M.Sc. in Chemistry",
+    "shortName": "Integrated M.Sc. Chemistry",
+    "stream": "natural-sciences",
+    "level": "integrated-masters",
+    "discipline": "chemistry",
+    "aliases": [
+      "Integrated Master of Science in Chemistry"
+    ]
+  },
+  {
+    "slug": "integrated-msc-mathematics",
+    "name": "Integrated M.Sc. in Mathematics",
+    "shortName": "Integrated M.Sc. Mathematics",
+    "stream": "mathematics-statistics",
+    "level": "integrated-masters",
+    "discipline": "mathematics",
+    "aliases": [
+      "Integrated Master of Science in Mathematics"
+    ]
+  },
+  {
+    "slug": "integrated-msc-physics",
+    "name": "Integrated M.Sc. in Physics",
+    "shortName": "Integrated M.Sc. Physics",
+    "stream": "natural-sciences",
+    "level": "integrated-masters",
+    "discipline": "physics",
+    "aliases": [
+      "Integrated Master of Science in Physics"
+    ]
+  },
+  {
+    "slug": "integrated-msc-environmental-science",
+    "name": "Integrated M.Sc. in Environmental Science",
+    "shortName": "Integrated M.Sc. Environmental Science",
+    "stream": "environment-sustainability",
+    "level": "integrated-masters",
+    "discipline": "environmental-science",
+    "aliases": [
+      "Integrated Master of Science in Environmental Science"
+    ]
+  },
+  {
+    "slug": "integrated-msc-marine-science",
+    "name": "Integrated M.Sc. in Marine Science",
+    "shortName": "Integrated M.Sc. Marine Science",
+    "stream": "natural-sciences",
+    "level": "integrated-masters",
+    "discipline": "marine-science",
+    "aliases": [
+      "Integrated Master of Science in Marine Science"
+    ]
+  },
+  {
+    "slug": "integrated-msc-renal-dialysis-technology",
+    "name": "Integrated M.Sc. in Renal Dialysis Technology",
+    "shortName": "Integrated M.Sc. Renal Dialysis Technology",
+    "stream": "public-health-allied-health",
+    "level": "integrated-masters",
+    "discipline": "renal-dialysis-technology",
+    "aliases": [
+      "Five-year Integrated MSc Renal Dialysis Technology"
+    ]
+  },
+  {
+    "slug": "integrated-msc-cardiac-technology",
+    "name": "Integrated M.Sc. in Cardiac Technology",
+    "shortName": "Integrated M.Sc. Cardiac Technology",
+    "stream": "public-health-allied-health",
+    "level": "integrated-masters",
+    "discipline": "cardiac-technology",
+    "aliases": [
+      "Five-year Integrated MSc Cardiac Technology"
+    ]
+  },
+  {
+    "slug": "master-adult-continuing-education",
+    "name": "Master's in Adult and Continuing Education",
+    "shortName": "Master's Adult Education",
+    "stream": "education",
+    "level": "masters",
+    "discipline": "adult-continuing-education",
+    "aliases": [
+      "MA Lifelong Learning",
+      "MA Adult and Continuing Education",
+      "Master of Arts in Lifelong Learning"
+    ]
+  },
+  {
+    "slug": "master-defence-strategic-studies",
+    "name": "Master's in Defence and Strategic Studies",
+    "shortName": "Master's Defence Studies",
+    "stream": "public-policy-international-relations",
+    "level": "masters",
+    "discipline": "defence-strategic-studies",
+    "aliases": [
+      "MA Defence and Strategic Studies",
+      "MA Defense and Strategic Studies"
+    ]
+  },
+  {
+    "slug": "master-yoga-studies",
+    "name": "Master's in Yoga Studies",
+    "shortName": "Master's Yoga Studies",
+    "stream": "arts-humanities",
+    "level": "masters",
+    "discipline": "yoga-studies",
+    "aliases": [
+      "MA Yoga Theory and Practice",
+      "Master of Arts in Yoga"
+    ]
+  },
+  {
+    "slug": "integrated-ma-sociology",
+    "name": "Integrated M.A. in Sociology",
+    "shortName": "Integrated M.A. Sociology",
+    "stream": "social-sciences",
+    "level": "integrated-masters",
+    "discipline": "sociology",
+    "aliases": [
+      "Five-year Integrated Master of Arts in Sociology"
+    ]
+  },
+  {
+    "slug": "integrated-msc-bioinformatics",
+    "name": "Integrated M.Sc. in Bioinformatics",
+    "shortName": "Integrated M.Sc. Bioinformatics",
+    "stream": "natural-sciences",
+    "level": "integrated-masters",
+    "discipline": "bioinformatics",
+    "aliases": [
+      "Five-year Integrated Master of Science in Bioinformatics"
+    ]
+  },
+  {
+    "slug": "integrated-msc-geography",
+    "name": "Integrated M.Sc. in Geography",
+    "shortName": "Integrated M.Sc. Geography",
+    "stream": "natural-sciences",
+    "level": "integrated-masters",
+    "discipline": "geography",
+    "aliases": [
+      "Five-year Integrated Master of Science in Geography"
+    ]
+  },
+  {
+    "slug": "integrated-msc-geology",
+    "name": "Integrated M.Sc. in Geology",
+    "shortName": "Integrated M.Sc. Geology",
+    "stream": "natural-sciences",
+    "level": "integrated-masters",
+    "discipline": "geology",
+    "aliases": [
+      "Five-year Integrated Master of Science in Geology"
+    ]
+  },
+  {
+    "slug": "integrated-msc-media-communication",
+    "name": "Integrated M.Sc. in Media and Communication",
+    "shortName": "Integrated M.Sc. Media and Communication",
+    "stream": "media-communication",
+    "level": "integrated-masters",
+    "discipline": "media-communication",
+    "aliases": [
+      "Five-year Integrated Master of Science in Media and Communication"
+    ]
+  },
+  {
+    "slug": "msc-marine-science",
+    "name": "M.Sc. in Marine Science",
+    "shortName": "M.Sc. Marine Science",
+    "stream": "natural-sciences",
+    "level": "masters",
+    "discipline": "marine-science",
+    "aliases": [
+      "Master of Science in Marine Science",
+      "MSc Marine Sciences"
+    ]
+  },
+  {
+    "slug": "integrated-mcom",
+    "name": "Integrated Master of Commerce",
+    "shortName": "Integrated M.Com.",
+    "stream": "economics-commerce",
+    "level": "integrated-masters",
+    "discipline": "commerce",
+    "aliases": [
+      "Five-year Integrated MCom",
+      "Integrated M.Com."
+    ]
+  },
+  {
+    "slug": "master-criminology",
+    "name": "Master's in Criminology",
+    "shortName": "Master's Criminology",
+    "stream": "social-sciences",
+    "level": "masters",
+    "discipline": "criminology",
+    "aliases": [
+      "MSc Criminology and Criminal Justice Sciences",
+      "Master of Criminology"
+    ]
+  },
+  {
+    "slug": "master-archaeology",
+    "name": "Master's in Archaeology",
+    "shortName": "Master's Archaeology",
+    "stream": "arts-humanities",
+    "level": "masters",
+    "discipline": "archaeology",
+    "aliases": [
+      "MA Archaeology",
+      "Master of Arts in Archaeology"
+    ]
+  },
+  {
+    "slug": "bachelor-industrial-safety",
+    "name": "Bachelor's in Industrial Safety",
+    "shortName": "Bachelor's Industrial Safety",
+    "stream": "environment-sustainability",
+    "level": "bachelors",
+    "discipline": "industrial-safety",
+    "aliases": [
+      "BSc Industrial Safety",
+      "Bachelor of Science in Industrial Safety"
+    ]
+  },
+  {
+    "slug": "bachelor-surveying-spatial-science",
+    "name": "Bachelor's in Surveying and Spatial Science",
+    "shortName": "Bachelor's Surveying and Spatial Science",
+    "stream": "natural-sciences",
+    "level": "bachelors",
+    "discipline": "surveying-spatial-science",
+    "aliases": [
+      "BSc Surveying and Spatial Science",
+      "Bachelor of Science in Surveying and Spatial Sciences"
+    ]
+  },
+  {
+    "slug": "master-real-estate-valuation",
+    "name": "Master's in Real Estate Valuation",
+    "shortName": "Master's Real Estate Valuation",
+    "stream": "business",
+    "level": "masters",
+    "discipline": "real-estate-valuation",
+    "aliases": [
+      "MSc Real Estate Valuation",
+      "Master of Science in Real Estate Valuation"
+    ]
+  },
+  {
+    "slug": "bachelor-human-resource-management",
+    "name": "Bachelor's in Human Resource Management",
+    "shortName": "Bachelor's HRM",
+    "stream": "business",
+    "level": "bachelors",
+    "discipline": "human-resource-management",
+    "aliases": [
+      "BA Human Resource Management",
+      "Bachelor of Arts in Human Resource Management"
+    ]
+  },
+  {
+    "slug": "master-folklore",
+    "name": "Master's in Folklore",
+    "shortName": "Master's Folklore",
+    "stream": "arts-humanities",
+    "level": "masters",
+    "discipline": "folklore",
+    "aliases": [
+      "MA Folklore",
+      "Master of Arts in Folklore"
+    ]
+  },
+  {
+    "slug": "msc-geospatial-science",
+    "name": "M.Sc. in Geospatial Science",
+    "shortName": "M.Sc. Geospatial Science",
+    "stream": "natural-sciences",
+    "level": "masters",
+    "discipline": "geospatial-science",
+    "aliases": [
+      "MSc Geospatial Science",
+      "Master of Science in Geoinformatics",
+      "MSc Remote Sensing and Geoinformation Technology"
+    ]
+  },
+  {
+    "slug": "bachelor-public-administration",
+    "name": "Bachelor's in Public Administration",
+    "shortName": "Bachelor's Public Administration",
+    "stream": "public-policy-international-relations",
+    "level": "bachelors",
+    "discipline": "public-administration",
+    "aliases": [
+      "BA Public Administration",
+      "Bachelor of Arts in Public Administration"
+    ]
+  },
+  {
+    "slug": "master-engineering-education",
+    "name": "Master's in Engineering Education",
+    "shortName": "Master's Engineering Education",
+    "stream": "education",
+    "level": "masters",
+    "discipline": "engineering-education",
+    "aliases": [
+      "MTech Engineering Education",
+      "Master of Technology in Engineering Education"
+    ]
+  },
+  {
+    "slug": "msc-epidemiology",
+    "name": "M.Sc. in Epidemiology",
+    "shortName": "M.Sc. Epidemiology",
+    "stream": "public-health-allied-health",
+    "level": "masters",
+    "discipline": "epidemiology",
+    "aliases": [
+      "Master of Science in Epidemiology",
+      "MSc Epidemiology"
+    ]
+  },
+  {
+    "slug": "pg-diploma-journalism",
+    "name": "Postgraduate Diploma in Journalism",
+    "shortName": "PG Diploma Journalism",
+    "stream": "media-communication",
+    "level": "postgraduate-diploma",
+    "discipline": "journalism",
+    "aliases": [
+      "Post Graduate Diploma in Journalism",
+      "PG Diploma in Medical Journalism",
+      "PG Diploma in Public Health Journalism"
+    ]
+  },
+  {
+    "slug": "bachelor-performing-arts",
+    "name": "Bachelor's in Performing Arts",
+    "shortName": "Bachelor's Performing Arts",
+    "stream": "design-creative-arts",
+    "level": "bachelors",
+    "discipline": "performing-arts",
+    "aliases": [
+      "BA Performing Arts",
+      "BA Performing Arts (Hons)",
+      "Bachelor of Performing Arts"
+    ]
+  },
+  {
+    "slug": "bachelor-indology",
+    "name": "Bachelor's in Indology",
+    "shortName": "Bachelor's Indology",
+    "stream": "arts-humanities",
+    "level": "bachelors",
+    "discipline": "indology",
+    "aliases": [
+      "BSc Indology",
+      "BSc Indology (Hons)",
+      "Bachelor of Science in Indology"
+    ]
+  },
+  {
+    "slug": "msc-bioinformatics",
+    "name": "M.Sc. in Bioinformatics",
+    "shortName": "M.Sc. Bioinformatics",
+    "stream": "natural-sciences",
+    "level": "masters",
+    "discipline": "bioinformatics",
+    "aliases": [
+      "Master of Science in Bioinformatics",
+      "MSc Bioinformatics and Data Science"
+    ]
+  },
+  {
+    "slug": "integrated-msc-food-science-technology",
+    "name": "Integrated M.Sc. in Food Science and Technology",
+    "shortName": "Integrated M.Sc. Food Science",
+    "stream": "agriculture",
+    "level": "integrated-masters",
+    "discipline": "food-science-technology",
+    "aliases": [
+      "Five-year Integrated Master of Science in Food Science and Technology"
+    ]
+  },
+  {
+    "slug": "integrated-msc-data-science",
+    "name": "Integrated M.Sc. in Data Science",
+    "shortName": "Integrated M.Sc. Data Science",
+    "stream": "computing-information-systems",
+    "level": "integrated-masters",
+    "discipline": "data-science",
+    "aliases": [
+      "Five-year Integrated Master of Science in Data Science"
+    ]
+  },
+  {
+    "slug": "bachelor-sport-exercise-science",
+    "name": "Bachelor's in Sport and Exercise Science",
+    "shortName": "Bachelor's Sport and Exercise Science",
+    "stream": "public-health-allied-health",
+    "level": "bachelors",
+    "discipline": "sport-exercise-science",
+    "aliases": [
+      "BSc Sports and Exercise Science",
+      "Bachelor of Science in Sport and Exercise Science"
+    ]
+  },
+  {
+    "slug": "master-clinical-research",
+    "name": "Master's in Clinical Research",
+    "shortName": "Master's Clinical Research",
+    "stream": "public-health-allied-health",
+    "level": "masters",
+    "discipline": "clinical-research",
+    "aliases": [
+      "MSc Clinical Research and Experimental Medicine",
+      "Master of Science in Clinical Research"
+    ]
+  },
+  {
+    "slug": "bachelor-financial-technology",
+    "name": "Bachelor's in Financial Technology",
+    "shortName": "Bachelor's Financial Technology",
+    "stream": "economics-commerce",
+    "level": "bachelors",
+    "discipline": "financial-technology",
+    "aliases": [
+      "BS Fintech",
+      "Bachelor of Science in Financial Technology"
+    ]
+  },
+  {
+    "slug": "master-disaster-management",
+    "name": "Master's in Disaster Management",
+    "shortName": "Master's Disaster Management",
+    "stream": "environment-sustainability",
+    "level": "masters",
+    "discipline": "disaster-management",
+    "aliases": [
+      "MSc Disaster Management",
+      "Master of Science in Disaster Management"
+    ]
+  },
+  {
+    "slug": "diploma-financial-management",
+    "name": "Diploma in Financial Management",
+    "shortName": "Diploma Financial Management",
+    "stream": "business",
+    "level": "diploma",
+    "discipline": "financial-management",
+    "aliases": [
+      "Diploma Certified Financial Management"
+    ]
+  },
+  {
+    "slug": "diploma-yoga",
+    "name": "Diploma in Yoga",
+    "shortName": "Diploma Yoga",
+    "stream": "public-health-allied-health",
+    "level": "diploma",
+    "discipline": "yoga",
+    "aliases": [
+      "Yoga Diploma"
+    ]
+  },
+  {
+    "slug": "master-sport-exercise-science",
+    "name": "Master's in Sport and Exercise Science",
+    "shortName": "Master's Sport and Exercise Science",
+    "stream": "public-health-allied-health",
+    "level": "masters",
+    "discipline": "sport-exercise-science",
+    "aliases": [
+      "MSc Sport and Exercise Science",
+      "MSc Exercise Physiology and Nutrition",
+      "MSc Sports Biomechanics and Kinesiology"
+    ]
+  },
+  {
+    "slug": "master-sports-coaching",
+    "name": "Master's in Sports Coaching",
+    "shortName": "Master's Sports Coaching",
+    "stream": "education",
+    "level": "masters",
+    "discipline": "sports-coaching",
+    "aliases": [
+      "Master of Science in Sports Coaching",
+      "MSc Sports Coaching"
+    ]
+  },
+  {
+    "slug": "mbbs",
+    "name": "MBBS",
+    "shortName": "MBBS",
+    "stream": "medicine",
+    "level": "bachelors",
+    "discipline": "general-medicine",
+    "aliases": [
+      "Bachelor of Medicine and Bachelor of Surgery",
+      "Doctor of Medicine",
+      "General Medicine",
+      "Medicine and Surgery",
+      "Single-Cycle Degree in Medicine and Surgery"
+    ]
+  },
+  {
+    "slug": "bds",
+    "name": "Bachelor of Dental Surgery",
+    "shortName": "BDS",
+    "stream": "dental",
+    "level": "bachelors",
+    "discipline": "dentistry",
+    "aliases": [
+      "Dentistry",
+      "Bachelor's Degree in Dentistry",
+      "Doctor of Dental Medicine"
+    ]
+  },
+  {
+    "slug": "md-general-medicine",
+    "name": "MD in General Medicine",
+    "shortName": "MD General Medicine",
+    "stream": "medicine",
+    "level": "masters",
+    "discipline": "general-medicine",
+    "aliases": [
+      "Residency in Internal Medicine",
+      "Internal Medicine Residency"
+    ]
+  },
+  {
+    "slug": "md-paediatrics",
+    "name": "MD in Paediatrics",
+    "shortName": "MD Paediatrics",
+    "stream": "medicine",
+    "level": "masters",
+    "discipline": "paediatrics",
+    "aliases": [
+      "Residency in Paediatrics",
+      "Pediatrics Residency"
+    ]
+  },
+  {
+    "slug": "md-anaesthesiology",
+    "name": "MD in Anaesthesiology",
+    "shortName": "MD Anaesthesiology",
+    "stream": "medicine",
+    "level": "masters",
+    "discipline": "anaesthesiology",
+    "aliases": [
+      "Residency in Anaesthesiology",
+      "Anesthesiology Residency"
+    ]
+  },
+  {
+    "slug": "md-radiodiagnosis",
+    "name": "MD in Radiodiagnosis",
+    "shortName": "MD Radiodiagnosis",
+    "stream": "medicine",
+    "level": "masters",
+    "discipline": "radiodiagnosis",
+    "aliases": [
+      "Residency in Diagnostic Radiology",
+      "Diagnostic Radiology Residency"
+    ]
+  },
+  {
+    "slug": "md-dermatology-venereology-leprosy",
+    "name": "MD in Dermatology, Venereology and Leprosy",
+    "shortName": "MD Dermatology",
+    "stream": "medicine",
+    "level": "masters",
+    "discipline": "dermatology",
+    "aliases": [
+      "Residency in Dermatology",
+      "Dermatology Residency"
+    ]
+  },
+  {
+    "slug": "md-psychiatry",
+    "name": "MD in Psychiatry",
+    "shortName": "MD Psychiatry",
+    "stream": "medicine",
+    "level": "masters",
+    "discipline": "psychiatry",
+    "aliases": [
+      "Residency in Psychiatry",
+      "Psychiatry Residency"
+    ]
+  },
+  {
+    "slug": "md-respiratory-medicine",
+    "name": "MD in Respiratory Medicine",
+    "shortName": "MD Respiratory Medicine",
+    "stream": "medicine",
+    "level": "masters",
+    "discipline": "respiratory-medicine",
+    "aliases": [
+      "Residency in Pulmonology",
+      "Pulmonary Medicine Residency"
+    ]
+  },
+  {
+    "slug": "md-emergency-medicine",
+    "name": "MD in Emergency Medicine",
+    "shortName": "MD Emergency Medicine",
+    "stream": "medicine",
+    "level": "masters",
+    "discipline": "emergency-medicine",
+    "aliases": [
+      "Residency in Emergency Medicine",
+      "Emergency Medicine Residency"
+    ]
+  },
+  {
+    "slug": "md-pathology",
+    "name": "MD in Pathology",
+    "shortName": "MD Pathology",
+    "stream": "medicine",
+    "level": "masters",
+    "discipline": "pathology",
+    "aliases": [
+      "Residency in Pathology",
+      "Pathology Residency"
+    ]
+  },
+  {
+    "slug": "md-community-medicine",
+    "name": "MD in Community Medicine",
+    "shortName": "MD Community Medicine",
+    "stream": "medicine",
+    "level": "masters",
+    "discipline": "community-medicine",
+    "aliases": [
+      "MD in Preventive and Social Medicine",
+      "Public Health Residency"
+    ]
+  },
+  {
+    "slug": "md-microbiology",
+    "name": "MD in Microbiology",
+    "shortName": "MD Microbiology",
+    "stream": "medicine",
+    "level": "masters",
+    "discipline": "microbiology",
+    "aliases": [
+      "Medical Microbiology Residency"
+    ]
+  },
+  {
+    "slug": "md-pharmacology",
+    "name": "MD in Pharmacology",
+    "shortName": "MD Pharmacology",
+    "stream": "medicine",
+    "level": "masters",
+    "discipline": "pharmacology",
+    "aliases": [
+      "Clinical Pharmacology Residency"
+    ]
+  },
+  {
+    "slug": "md-biochemistry",
+    "name": "MD in Biochemistry",
+    "shortName": "MD Biochemistry",
+    "stream": "medicine",
+    "level": "masters",
+    "discipline": "biochemistry",
+    "aliases": [
+      "Medical Biochemistry Residency"
+    ]
+  },
+  {
+    "slug": "md-anatomy",
+    "name": "MD in Anatomy",
+    "shortName": "MD Anatomy",
+    "stream": "medicine",
+    "level": "masters",
+    "discipline": "anatomy",
+    "aliases": [
+      "Medical Anatomy Residency"
+    ]
+  },
+  {
+    "slug": "ms-general-surgery",
+    "name": "MS in General Surgery",
+    "shortName": "MS General Surgery",
+    "stream": "medicine",
+    "level": "masters",
+    "discipline": "general-surgery",
+    "aliases": [
+      "Residency in General Surgery",
+      "General Surgery Residency"
+    ]
+  },
+  {
+    "slug": "ms-orthopaedics",
+    "name": "MS in Orthopaedics",
+    "shortName": "MS Orthopaedics",
+    "stream": "medicine",
+    "level": "masters",
+    "discipline": "orthopaedics",
+    "aliases": [
+      "Residency in Orthopaedic Surgery",
+      "Orthopedic Surgery Residency"
+    ]
+  },
+  {
+    "slug": "ms-obstetrics-gynaecology",
+    "name": "MS in Obstetrics and Gynaecology",
+    "shortName": "MS Obstetrics & Gynaecology",
+    "stream": "medicine",
+    "level": "masters",
+    "discipline": "obstetrics-gynaecology",
+    "aliases": [
+      "Residency in Obstetrics and Gynaecology",
+      "Obstetrics and Gynecology Residency"
+    ]
+  },
+  {
+    "slug": "ms-ophthalmology",
+    "name": "MS in Ophthalmology",
+    "shortName": "MS Ophthalmology",
+    "stream": "medicine",
+    "level": "masters",
+    "discipline": "ophthalmology",
+    "aliases": [
+      "Residency in Ophthalmology",
+      "Ophthalmology Residency"
+    ]
+  },
+  {
+    "slug": "ms-otorhinolaryngology",
+    "name": "MS in Otorhinolaryngology (ENT)",
+    "shortName": "MS ENT",
+    "stream": "medicine",
+    "level": "masters",
+    "discipline": "otorhinolaryngology",
+    "aliases": [
+      "MS in ENT",
+      "Residency in Otorhinolaryngology",
+      "Otolaryngology Residency"
+    ]
+  },
+  {
+    "slug": "bsc-nursing",
+    "name": "B.Sc. Nursing",
+    "shortName": "B.Sc. Nursing",
+    "stream": "nursing",
+    "level": "bachelors",
+    "discipline": "nursing",
+    "aliases": [
+      "Bachelor of Science in Nursing",
+      "Bachelor of Nursing",
+      "General Practice Nursing",
+      "Professional Bachelor of Health Sciences in General Nursing"
+    ]
+  },
+  {
+    "slug": "bpharm",
+    "name": "Bachelor of Pharmacy",
+    "shortName": "B.Pharm",
+    "stream": "pharmacy",
+    "level": "bachelors",
+    "discipline": "pharmacy",
+    "aliases": [
+      "BPharm",
+      "Bachelor's Degree in Pharmacy"
+    ]
+  },
+  {
+    "slug": "integrated-mpharm",
+    "name": "Integrated Master of Pharmacy",
+    "shortName": "Integrated M.Pharm",
+    "stream": "pharmacy",
+    "level": "masters",
+    "discipline": "pharmacy",
+    "aliases": [
+      "Integrated Master of Science in Pharmacy",
+      "Single-Cycle Master's Degree in Pharmacy",
+      "Integrated MPharm"
+    ]
+  },
+  {
+    "slug": "be-btech-computer-science-engineering",
+    "name": "B.E./B.Tech in Computer Science and Engineering",
+    "shortName": "B.E./B.Tech CSE",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "computer-science-engineering",
+    "aliases": [
+      "Bachelor of Engineering in Computer Science",
+      "Bachelor of Engineering in Computer Science and Engineering",
+      "Bachelor of Technology in Computer Science and Engineering",
+      "BEng Computer Science"
+    ]
+  },
+  {
+    "slug": "be-btech-artificial-intelligence-machine-learning",
+    "name": "B.E./B.Tech in Artificial Intelligence and Machine Learning",
+    "shortName": "B.E./B.Tech AI & ML",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "artificial-intelligence-machine-learning",
+    "aliases": [
+      "Bachelor of Engineering in Artificial Intelligence",
+      "Artificial Intelligence and Machine Learning"
+    ]
+  },
+  {
+    "slug": "be-btech-data-science",
+    "name": "B.E./B.Tech in Data Science",
+    "shortName": "B.E./B.Tech Data Science",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "data-science",
+    "aliases": [
+      "Bachelor of Technology in Data Science",
+      "BEng Data Science"
+    ]
+  },
+  {
+    "slug": "be-btech-information-technology",
+    "name": "B.E./B.Tech in Information Technology",
+    "shortName": "B.E./B.Tech IT",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "information-technology",
+    "aliases": [
+      "Bachelor of Engineering in Information Technology",
+      "Bachelor of Information Technology"
+    ]
+  },
+  {
+    "slug": "be-btech-software-engineering",
+    "name": "B.E./B.Tech in Software Engineering",
+    "shortName": "B.E./B.Tech Software Engineering",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "software-engineering",
+    "aliases": [
+      "Bachelor of Software Engineering",
+      "BEng Software Engineering"
+    ]
+  },
+  {
+    "slug": "be-btech-cyber-security",
+    "name": "B.E./B.Tech in Cyber Security",
+    "shortName": "B.E./B.Tech Cyber Security",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "cyber-security",
+    "aliases": [
+      "Bachelor of Cyber Security"
+    ]
+  },
+  {
+    "slug": "be-btech-mechanical-engineering",
+    "name": "B.E./B.Tech in Mechanical Engineering",
+    "shortName": "B.E./B.Tech Mechanical",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "mechanical-engineering",
+    "aliases": [
+      "Bachelor of Mechanical Engineering",
+      "BEng Mechanical Engineering"
+    ]
+  },
+  {
+    "slug": "be-btech-civil-engineering",
+    "name": "B.E./B.Tech in Civil Engineering",
+    "shortName": "B.E./B.Tech Civil",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "civil-engineering",
+    "aliases": [
+      "Bachelor of Civil Engineering",
+      "BEng Civil Engineering"
+    ]
+  },
+  {
+    "slug": "be-btech-electrical-engineering",
+    "name": "B.E./B.Tech in Electrical Engineering",
+    "shortName": "B.E./B.Tech Electrical",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "electrical-engineering",
+    "aliases": [
+      "Bachelor of Electrical Engineering",
+      "BEng Electrical Engineering"
+    ]
+  },
+  {
+    "slug": "be-btech-electronics-communication-engineering",
+    "name": "B.E./B.Tech in Electronics and Communication Engineering",
+    "shortName": "B.E./B.Tech ECE",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "electronics-communication-engineering",
+    "aliases": [
+      "Bachelor of Electronics and Communication Engineering",
+      "BEng Electronic and Communications Engineering",
+      "Electronics and Telecommunications Engineering"
+    ]
+  },
+  {
+    "slug": "be-btech-electrical-electronics-engineering",
+    "name": "B.E./B.Tech in Electrical and Electronics Engineering",
+    "shortName": "B.E./B.Tech EEE",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "electrical-electronics-engineering",
+    "aliases": [
+      "Bachelor of Electrical and Electronic Engineering",
+      "BEng Electrical and Electronic Engineering"
+    ]
+  },
+  {
+    "slug": "be-btech-mechatronics-engineering",
+    "name": "B.E./B.Tech in Mechatronics Engineering",
+    "shortName": "B.E./B.Tech Mechatronics",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "mechatronics-engineering",
+    "aliases": [
+      "Bachelor of Mechatronics Engineering",
+      "BEng Mechatronics"
+    ]
+  },
+  {
+    "slug": "be-btech-robotics-automation-engineering",
+    "name": "B.E./B.Tech in Robotics and Automation Engineering",
+    "shortName": "B.E./B.Tech Robotics",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "robotics-automation-engineering",
+    "aliases": [
+      "Bachelor of Robotics Engineering",
+      "Robotics and Automation Engineering"
+    ]
+  },
+  {
+    "slug": "be-btech-chemical-engineering",
+    "name": "B.E./B.Tech in Chemical Engineering",
+    "shortName": "B.E./B.Tech Chemical",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "chemical-engineering",
+    "aliases": [
+      "Bachelor of Chemical Engineering",
+      "BEng Chemical Engineering"
+    ]
+  },
+  {
+    "slug": "be-btech-aerospace-engineering",
+    "name": "B.E./B.Tech in Aerospace Engineering",
+    "shortName": "B.E./B.Tech Aerospace",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "aerospace-engineering",
+    "aliases": [
+      "Bachelor of Aerospace Engineering",
+      "BEng Aerospace Engineering"
+    ]
+  },
+  {
+    "slug": "be-btech-automobile-engineering",
+    "name": "B.E./B.Tech in Automobile Engineering",
+    "shortName": "B.E./B.Tech Automobile",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "automobile-engineering",
+    "aliases": [
+      "Bachelor of Automotive Engineering",
+      "BEng Automotive Engineering"
+    ]
+  },
+  {
+    "slug": "be-btech-biomedical-engineering",
+    "name": "B.E./B.Tech in Biomedical Engineering",
+    "shortName": "B.E./B.Tech Biomedical",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "biomedical-engineering",
+    "aliases": [
+      "Bachelor of Biomedical Engineering",
+      "BEng Biomedical Engineering"
+    ]
+  },
+  {
+    "slug": "be-btech-agricultural-engineering",
+    "name": "B.E./B.Tech in Agricultural Engineering",
+    "shortName": "B.E./B.Tech Agricultural",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "agricultural-engineering",
+    "aliases": [
+      "B.Tech Agricultural Engineering",
+      "Bachelor of Agricultural Engineering",
+      "BEng Agricultural Engineering"
+    ]
+  },
+  {
+    "slug": "be-btech-industrial-production-engineering",
+    "name": "B.E./B.Tech in Industrial and Production Engineering",
+    "shortName": "B.E./B.Tech Industrial",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "industrial-production-engineering",
+    "aliases": [
+      "Bachelor of Industrial Engineering",
+      "BEng Industrial Engineering",
+      "Production Engineering"
+    ]
+  },
+  {
+    "slug": "be-btech-industrial-engineering-management",
+    "name": "B.E./B.Tech in Industrial Engineering and Management",
+    "shortName": "B.E./B.Tech Industrial Engineering",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "industrial-engineering-management",
+    "aliases": [
+      "Bachelor of Industrial Engineering and Management",
+      "BSc Industrial Engineering and Management",
+      "Industrial Engineering and Management"
+    ]
+  },
+  {
+    "slug": "msc-computer-science",
+    "name": "M.Sc. in Computer Science",
+    "shortName": "M.Sc. Computer Science",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "computer-science",
+    "aliases": [
+      "Master of Science in Computer Science",
+      "MSc Computer Science"
+    ]
+  },
+  {
+    "slug": "msc-artificial-intelligence",
+    "name": "M.Sc. in Artificial Intelligence",
+    "shortName": "M.Sc. Artificial Intelligence",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "artificial-intelligence",
+    "aliases": [
+      "Master of Science in Artificial Intelligence",
+      "MSc Artificial Intelligence"
+    ]
+  },
+  {
+    "slug": "msc-data-science",
+    "name": "M.Sc. in Data Science",
+    "shortName": "M.Sc. Data Science",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "data-science",
+    "aliases": [
+      "Master of Science in Data Science",
+      "MSc Data Science"
+    ]
+  },
+  {
+    "slug": "msc-software-engineering",
+    "name": "M.Sc. in Software Engineering",
+    "shortName": "M.Sc. Software Engineering",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "software-engineering",
+    "aliases": [
+      "Master of Science in Software Engineering",
+      "MSc Software Engineering"
+    ]
+  },
+  {
+    "slug": "msc-cyber-security",
+    "name": "M.Sc. in Cyber Security",
+    "shortName": "M.Sc. Cyber Security",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "cyber-security",
+    "aliases": [
+      "Master of Science in Cyber Security",
+      "MSc Cyber Security",
+      "Cybersecurity MSc"
+    ]
+  },
+  {
+    "slug": "me-mtech-mechanical-engineering",
+    "name": "M.E./M.Tech in Mechanical Engineering",
+    "shortName": "M.E./M.Tech Mechanical",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "mechanical-engineering",
+    "aliases": [
+      "Master of Mechanical Engineering",
+      "MSc Mechanical Engineering"
+    ]
+  },
+  {
+    "slug": "me-mtech-civil-engineering",
+    "name": "M.E./M.Tech in Civil Engineering",
+    "shortName": "M.E./M.Tech Civil",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "civil-engineering",
+    "aliases": [
+      "Master of Civil Engineering",
+      "MSc Civil Engineering"
+    ]
+  },
+  {
+    "slug": "me-mtech-electrical-engineering",
+    "name": "M.E./M.Tech in Electrical Engineering",
+    "shortName": "M.E./M.Tech Electrical",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "electrical-engineering",
+    "aliases": [
+      "Master of Electrical Engineering",
+      "MSc Electrical Engineering"
+    ]
+  },
+  {
+    "slug": "me-mtech-electronics-communication-engineering",
+    "name": "M.E./M.Tech in Electronics and Communication Engineering",
+    "shortName": "M.E./M.Tech ECE",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "electronics-communication-engineering",
+    "aliases": [
+      "Master of Electronics and Communication Engineering",
+      "MSc Communications Engineering"
+    ]
+  },
+  {
+    "slug": "me-mtech-mechatronics-engineering",
+    "name": "M.E./M.Tech in Mechatronics Engineering",
+    "shortName": "M.E./M.Tech Mechatronics",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "mechatronics-engineering",
+    "aliases": [
+      "Master of Mechatronics Engineering",
+      "MSc Mechatronics"
+    ]
+  },
+  {
+    "slug": "me-mtech-robotics-automation-engineering",
+    "name": "M.E./M.Tech in Robotics and Automation Engineering",
+    "shortName": "M.E./M.Tech Robotics",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "robotics-automation-engineering",
+    "aliases": [
+      "Master of Robotics and Automation",
+      "MSc Robotics",
+      "MSc Automation"
+    ]
+  },
+  {
+    "slug": "me-mtech-chemical-engineering",
+    "name": "M.E./M.Tech in Chemical Engineering",
+    "shortName": "M.E./M.Tech Chemical",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "chemical-engineering",
+    "aliases": [
+      "Master of Chemical Engineering",
+      "MSc Chemical Engineering"
+    ]
+  },
+  {
+    "slug": "me-mtech-aerospace-engineering",
+    "name": "M.E./M.Tech in Aerospace Engineering",
+    "shortName": "M.E./M.Tech Aerospace",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "aerospace-engineering",
+    "aliases": [
+      "Master of Aerospace Engineering",
+      "MSc Aerospace Engineering"
+    ]
+  },
+  {
+    "slug": "me-mtech-biomedical-engineering",
+    "name": "M.E./M.Tech in Biomedical Engineering",
+    "shortName": "M.E./M.Tech Biomedical",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "biomedical-engineering",
+    "aliases": [
+      "Master of Biomedical Engineering",
+      "MSc Biomedical Engineering"
+    ]
+  },
+  {
+    "slug": "me-mtech-industrial-engineering",
+    "name": "M.E./M.Tech in Industrial Engineering",
+    "shortName": "M.E./M.Tech Industrial",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "industrial-engineering",
+    "aliases": [
+      "Master of Industrial Engineering",
+      "MSc Industrial Engineering"
+    ]
+  },
+  {
+    "slug": "msc-engineering-management",
+    "name": "M.Sc. in Engineering Management",
+    "shortName": "M.Sc. Engineering Management",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "engineering-management",
+    "aliases": [
+      "Master of Engineering Management",
+      "MSc Engineering Management"
+    ]
+  },
+  {
+    "slug": "msc-management",
+    "name": "M.Sc. in Management",
+    "shortName": "M.Sc. Management",
+    "stream": "business",
+    "level": "masters",
+    "discipline": "management",
+    "aliases": [
+      "Master of Science in Management",
+      "MSc Management"
+    ]
+  },
+  {
+    "slug": "msc-finance",
+    "name": "M.Sc. in Finance",
+    "shortName": "M.Sc. Finance",
+    "stream": "business",
+    "level": "masters",
+    "discipline": "finance",
+    "aliases": [
+      "Master of Science in Finance",
+      "MSc Finance"
+    ]
+  },
+  {
+    "slug": "msc-business-analytics",
+    "name": "M.Sc. in Business Analytics",
+    "shortName": "M.Sc. Business Analytics",
+    "stream": "business",
+    "level": "masters",
+    "discipline": "business-analytics",
+    "aliases": [
+      "Master of Science in Business Analytics",
+      "MSc Business Analytics"
+    ]
+  },
+  {
+    "slug": "msc-international-business",
+    "name": "M.Sc. in International Business",
+    "shortName": "M.Sc. International Business",
+    "stream": "business",
+    "level": "masters",
+    "discipline": "international-business",
+    "aliases": [
+      "Master of Science in International Business",
+      "MSc International Business"
+    ]
+  },
+  {
+    "slug": "msc-supply-chain-management",
+    "name": "M.Sc. in Supply Chain Management",
+    "shortName": "M.Sc. Supply Chain",
+    "stream": "business",
+    "level": "masters",
+    "discipline": "supply-chain-management",
+    "aliases": [
+      "Master of Science in Supply Chain Management",
+      "MSc Supply Chain Management",
+      "MSc Logistics and Supply Chain Management"
+    ]
+  },
+  {
+    "slug": "mba",
+    "name": "Master of Business Administration",
+    "shortName": "MBA",
+    "stream": "business",
+    "level": "masters",
+    "discipline": "business-administration",
+    "aliases": [
+      "General MBA",
+      "Full-time MBA",
+      "International MBA"
+    ]
+  },
+  {
+    "slug": "mba-finance",
+    "name": "MBA in Finance",
+    "shortName": "MBA Finance",
+    "stream": "business",
+    "level": "masters",
+    "discipline": "finance",
+    "aliases": [
+      "Master of Business Administration in Finance"
+    ]
+  },
+  {
+    "slug": "mba-marketing",
+    "name": "MBA in Marketing",
+    "shortName": "MBA Marketing",
+    "stream": "business",
+    "level": "masters",
+    "discipline": "marketing",
+    "aliases": [
+      "Master of Business Administration in Marketing"
+    ]
+  },
+  {
+    "slug": "mba-human-resource-management",
+    "name": "MBA in Human Resource Management",
+    "shortName": "MBA HR",
+    "stream": "business",
+    "level": "masters",
+    "discipline": "human-resource-management",
+    "aliases": [
+      "MBA in Human Resources",
+      "Master of Business Administration in Human Resources"
+    ]
+  },
+  {
+    "slug": "mba-international-business",
+    "name": "MBA in International Business",
+    "shortName": "MBA International Business",
+    "stream": "business",
+    "level": "masters",
+    "discipline": "international-business",
+    "aliases": [
+      "Master of Business Administration in International Business"
+    ]
+  },
+  {
+    "slug": "mba-business-analytics",
+    "name": "MBA in Business Analytics",
+    "shortName": "MBA Business Analytics",
+    "stream": "business",
+    "level": "masters",
+    "discipline": "business-analytics",
+    "aliases": [
+      "Master of Business Administration in Business Analytics"
+    ]
+  },
+  {
+    "slug": "mba-operations-supply-chain-management",
+    "name": "MBA in Operations and Supply Chain Management",
+    "shortName": "MBA Operations & Supply Chain",
+    "stream": "business",
+    "level": "masters",
+    "discipline": "operations-supply-chain-management",
+    "aliases": [
+      "MBA in Operations Management",
+      "MBA in Supply Chain Management",
+      "MBA in Logistics and Supply Chain Management"
+    ]
+  },
+  {
+    "slug": "mba-entrepreneurship",
+    "name": "MBA in Entrepreneurship",
+    "shortName": "MBA Entrepreneurship",
+    "stream": "business",
+    "level": "masters",
+    "discipline": "entrepreneurship",
+    "aliases": [
+      "Master of Business Administration in Entrepreneurship"
+    ]
+  },
+  {
+    "slug": "mba-healthcare-management",
+    "name": "MBA in Healthcare Management",
+    "shortName": "MBA Healthcare Management",
+    "stream": "business",
+    "level": "masters",
+    "discipline": "healthcare-management",
+    "aliases": [
+      "MBA in Healthcare Administration",
+      "MBA in Hospital Management"
+    ]
+  },
+  {
+    "slug": "bsc-sericulture",
+    "name": "B.Sc. in Sericulture",
+    "shortName": "B.Sc. Sericulture",
+    "stream": "agriculture",
+    "level": "bachelors",
+    "discipline": "sericulture",
+    "aliases": [
+      "Bachelor of Science in Sericulture",
+      "B.Sc. (Hons.) Sericulture"
+    ]
+  },
+  {
+    "slug": "bsc-agribusiness-management",
+    "name": "B.Sc. in Agribusiness Management",
+    "shortName": "B.Sc. Agribusiness",
+    "stream": "agriculture",
+    "level": "bachelors",
+    "discipline": "agribusiness-management",
+    "aliases": [
+      "Bachelor of Science in Agribusiness Management",
+      "B.Sc. (Hons.) Agri Business Management",
+      "B.Sc. (Hons.) Agribusiness Management"
+    ]
+  },
+  {
+    "slug": "me-mtech-agricultural-engineering",
+    "name": "M.E./M.Tech in Agricultural Engineering",
+    "shortName": "M.E./M.Tech Agricultural",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "agricultural-engineering",
+    "aliases": [
+      "Master of Technology in Agricultural Engineering",
+      "Master of Engineering in Agricultural Engineering",
+      "M.Tech. (Agricultural Engineering)"
+    ]
+  },
+  {
+    "slug": "phd-agriculture-allied-sciences",
+    "name": "PhD in Agriculture and Allied Sciences",
+    "shortName": "PhD Agriculture",
+    "stream": "agriculture",
+    "level": "doctorate",
+    "discipline": "agriculture-allied-sciences",
+    "aliases": [
+      "Doctor of Philosophy in Agriculture",
+      "PhD Agricultural Sciences",
+      "Doctorate in Agriculture and Allied Sciences"
+    ]
+  },
+  {
+    "slug": "be-btech-poultry-technology",
+    "name": "B.E./B.Tech in Poultry Technology",
+    "shortName": "B.E./B.Tech Poultry Technology",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "poultry-technology",
+    "aliases": [
+      "Bachelor of Technology in Poultry Technology",
+      "B.Tech Poultry Production Technology"
+    ]
+  },
+  {
+    "slug": "be-btech-dairy-technology",
+    "name": "B.E./B.Tech in Dairy Technology",
+    "shortName": "B.E./B.Tech Dairy Technology",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "dairy-technology",
+    "aliases": [
+      "Bachelor of Technology in Dairy Technology",
+      "B.Tech Dairy Technology"
+    ]
+  },
+  {
+    "slug": "msc-dairy-science",
+    "name": "M.Sc. in Dairy Science",
+    "shortName": "M.Sc. Dairy Science",
+    "stream": "natural-sciences",
+    "level": "masters",
+    "discipline": "dairy-science",
+    "aliases": [
+      "Master of Science in Dairy Science",
+      "MSc Dairy Science"
+    ]
+  },
+  {
+    "slug": "bsc-neuroscience",
+    "name": "B.Sc. in Neuroscience",
+    "shortName": "B.Sc. Neuroscience",
+    "stream": "natural-sciences",
+    "level": "bachelors",
+    "discipline": "neuroscience",
+    "aliases": [
+      "Bachelor of Science in Neuroscience",
+      "B.Sc. (Hons.) Neuroscience",
+      "BSc Cognitive Neuroscience"
+    ]
+  },
+  {
+    "slug": "bachelor-ppe",
+    "name": "Bachelor's in Politics, Philosophy and Economics",
+    "shortName": "Bachelor's PPE",
+    "stream": "social-sciences",
+    "level": "bachelors",
+    "discipline": "politics-philosophy-economics",
+    "aliases": [
+      "B.A. (Hons.) Politics, Philosophy and Economics",
+      "PPE degree",
+      "BA PPE"
+    ]
+  },
+  {
+    "slug": "pg-diploma-artificial-intelligence",
+    "name": "Postgraduate Diploma in Artificial Intelligence",
+    "shortName": "PG Diploma AI",
+    "stream": "computing-information-systems",
+    "level": "postgraduate-diploma",
+    "discipline": "artificial-intelligence",
+    "aliases": [
+      "PG Diploma in AI",
+      "Postgraduate Diploma in Applied Artificial Intelligence",
+      "PG Diploma in Generative AI"
+    ]
+  }
+]

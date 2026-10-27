@@ -1,0 +1,470 @@
+{
+  "checkedAt": "2026-10-27",
+  "files": [
+    {
+      "path": "sources/about-images.json",
+      "bytes": 2204,
+      "sha256": "8b16092ddde079c538028cc074f7e788baf13cbb90906c6a4d6869999f2961bc"
+    },
+    {
+      "path": "sources/about-links.json",
+      "bytes": 2299,
+      "sha256": "30a457219cbb65871514cb50d883f384a861228f4495acffe40188a3c28be89c"
+    },
+    {
+      "path": "sources/about-receipt.json",
+      "bytes": 300,
+      "sha256": "db21db35cb543bd82ad0e50aa4f8d82f8d4a501dd8a3b6f596cd7d08effd36a2"
+    },
+    {
+      "path": "sources/about.html",
+      "bytes": 65222,
+      "sha256": "e21bc7579d65dcf2ebe96e8486f3203ec53a6309444608dbfe59e2deaf8681b0"
+    },
+    {
+      "path": "sources/about.txt",
+      "bytes": 3667,
+      "sha256": "3fb1c1deb11871440092a95b13cc7bf8ee894fdf80652d2635bd098d55d9d227"
+    },
+    {
+      "path": "sources/admission-images.json",
+      "bytes": 2257,
+      "sha256": "e022918f89cc790bb70bd962e65c6f9a90eb39bf4bce19cc81abc066a5735bd1"
+    },
+    {
+      "path": "sources/admission-links.json",
+      "bytes": 2350,
+      "sha256": "2ad7b7520cdfd3bf32bac1aa0a1a55e0e550a3d5e2d52611122495871e5e9686"
+    },
+    {
+      "path": "sources/admission-receipt.json",
+      "bytes": 308,
+      "sha256": "b1146d6f8ef4abd6065a598dfbbf4b24f626837329ef99b806d777dc01469c5b"
+    },
+    {
+      "path": "sources/admission.html",
+      "bytes": 55578,
+      "sha256": "c30ab8edc72d6eca3852a7e090b6632cd299bc6a2842e5c2830999d4edfde21a"
+    },
+    {
+      "path": "sources/admission.txt",
+      "bytes": 1046,
+      "sha256": "4daa6bacfd62a64420110bacb90517b84307d27e2494ee7619375686870e7b4c"
+    },
+    {
+      "path": "sources/admission_pg-images.json",
+      "bytes": 1681,
+      "sha256": "20cfd7e479b6e93f4e21d2a53282823961084917bf2dd76a0b80e8b800406622"
+    },
+    {
+      "path": "sources/admission_pg-links.json",
+      "bytes": 1471,
+      "sha256": "b2a487ff29dbc8789aa56a59124783133793645bbf377c2ad0c7377a9163f1af"
+    },
+    {
+      "path": "sources/admission_pg-receipt.json",
+      "bytes": 314,
+      "sha256": "bb72d574d349e067c499da7700030b997c6536884f9889bc23aabe45ad9a7c8e"
+    },
+    {
+      "path": "sources/admission_pg.html",
+      "bytes": 47956,
+      "sha256": "09d68fe635fdfc693308bf002bc2ca1a4936a5ee355cad5198da887b4458e7de"
+    },
+    {
+      "path": "sources/admission_pg.txt",
+      "bytes": 375,
+      "sha256": "db301f63079dc81f79df0c764254189b344655dacdb9186b6791750377227c7a"
+    },
+    {
+      "path": "sources/admission_ug-images.json",
+      "bytes": 1681,
+      "sha256": "20cfd7e479b6e93f4e21d2a53282823961084917bf2dd76a0b80e8b800406622"
+    },
+    {
+      "path": "sources/admission_ug-links.json",
+      "bytes": 1471,
+      "sha256": "40c370d917ea56c3d6cdf42f2f29fba71c94573d3211a78a5fa8ac498b977059"
+    },
+    {
+      "path": "sources/admission_ug-receipt.json",
+      "bytes": 314,
+      "sha256": "55294cd10444dab31def52bd9568fe6f27756cf0056aef152b4e57e80a369c35"
+    },
+    {
+      "path": "sources/admission_ug.html",
+      "bytes": 48087,
+      "sha256": "8b7f30317f7f33c26dee139bc62271e8c79e469f4cfb3fea3947540bd9f7b82c"
+    },
+    {
+      "path": "sources/admission_ug.txt",
+      "bytes": 375,
+      "sha256": "db301f63079dc81f79df0c764254189b344655dacdb9186b6791750377227c7a"
+    },
+    {
+      "path": "sources/btech-fees-receipt.json",
+      "bytes": 495,
+      "sha256": "b666ccd4b2f7e17335e068526ab48ebf403bc986bbea365ffb2e6d094dbd30cb"
+    },
+    {
+      "path": "sources/btech-fees.pdf",
+      "bytes": 396215,
+      "sha256": "c4d8c7743fde05ee465897023d5809f0911ea34b1ac1f2569b3c3f268d669117"
+    },
+    {
+      "path": "sources/btech-fees.txt",
+      "bytes": 5820,
+      "sha256": "00b46be3c87746d769eaa90ef908caa7726153809167cd19443bffd7c5b86138"
+    },
+    {
+      "path": "sources/completion-msc-discovery.json",
+      "bytes": 14873,
+      "sha256": "f33cdb27cb0514112afc3b173a4d31068a6c559f5ae7773ecaa64a2d7f2db224"
+    },
+    {
+      "path": "sources/completion-research-1.json",
+      "bytes": 33063,
+      "sha256": "63d5529dd66b73fc461c557cc43d2c3244efae4a63245ea9fa1c6daafa1ff1dc"
+    },
+    {
+      "path": "sources/completion-research-2.json",
+      "bytes": 29048,
+      "sha256": "e55a4cba46fce8bc01ba371d7d9f042982712a56a046403c026925dc55e3d195"
+    },
+    {
+      "path": "sources/completion-research-3.json",
+      "bytes": 27530,
+      "sha256": "8a1e43f78630a197432f78e68d173cac776041e4050360f43d3aab780ed3d9a4"
+    },
+    {
+      "path": "sources/completion-research-4.json",
+      "bytes": 26512,
+      "sha256": "39cc1adc1073cb7d1ff6d92e35e31261e4bd74127a8afb5b2fefd02018e4baf5"
+    },
+    {
+      "path": "sources/completion-research-5.json",
+      "bytes": 31611,
+      "sha256": "6459df313805ff95b40cdb297c1b4ea703fd77fa24165c129275164ca9494e80"
+    },
+    {
+      "path": "sources/completion-research-6.json",
+      "bytes": 27548,
+      "sha256": "04e40c118554e60d37746ed1574ec1d2495283c899b4860a4cb025fca39c7b9c"
+    },
+    {
+      "path": "sources/completion-secondary-details.json",
+      "bytes": 27359,
+      "sha256": "7141a8261bb2c0d3e4a735c9e942263cc0fc4bceaa4d3f11fe2d07cd082d7b6f"
+    },
+    {
+      "path": "sources/completion-secondary-full.json",
+      "bytes": 13954,
+      "sha256": "db9874984dea2a87801590570d0fd3dbfe832122e05feff382b4e5e882cbb4c4"
+    },
+    {
+      "path": "sources/dasa-brochure-2026-receipt.json",
+      "bytes": 447,
+      "sha256": "dffc1bb5f67d9c7aeb38ab3ee9b743d6798283271f1a023c3f4b9f3df86e63f8"
+    },
+    {
+      "path": "sources/dasa-brochure-2026.pdf",
+      "bytes": 831843,
+      "sha256": "7b62c5556b47aa5f26eb48a18b6c9da2798269e1e30b473eab9eff892436b518"
+    },
+    {
+      "path": "sources/dasa-brochure-2026.txt",
+      "bytes": 106391,
+      "sha256": "6a4f6593a0d3d463236399c0c883847b5b5d1fc6e10c98b6810a2c339c0d750b"
+    },
+    {
+      "path": "sources/dasa-fees-receipt.json",
+      "bytes": 481,
+      "sha256": "ba1c116587273f7c3aee116eaa0393ec87d8e9e93bd79e92e979fee52e1ef891"
+    },
+    {
+      "path": "sources/dasa-fees.pdf",
+      "bytes": 463371,
+      "sha256": "0288d5315a24e763b47962f3a0b6035ee4525d77ebc05b4a041a5418ee4aeada"
+    },
+    {
+      "path": "sources/dasa-fees.txt",
+      "bytes": 5343,
+      "sha256": "63c6f5e7c4c2763a478a28cc9549c7a535efff56b89a276957b384cd3b469d32"
+    },
+    {
+      "path": "sources/dasa-matrix-2026-receipt.json",
+      "bytes": 445,
+      "sha256": "a68eaeb6196e5a9702b1a8b1e722d15056bc95547813cd8fddd5487bdaaf7e93"
+    },
+    {
+      "path": "sources/dasa-matrix-2026.pdf",
+      "bytes": 967526,
+      "sha256": "42c51b45b60733a38c51573200eed40011acadd720877e0cfa27e1350b8db82e"
+    },
+    {
+      "path": "sources/dasa-matrix-2026.txt",
+      "bytes": 379223,
+      "sha256": "5d7acc8f53f3205a0ded835e1fe3a47374a958fbba4a3e752d99f961b7ae55c2"
+    },
+    {
+      "path": "sources/dasa-reporting-receipt.json",
+      "bytes": 463,
+      "sha256": "9bd744ad329d3e93060f8f4946378b01d9da50688093ee66eced276c8d2b69b5"
+    },
+    {
+      "path": "sources/dasa-reporting.pdf",
+      "bytes": 1340617,
+      "sha256": "5a2d18380f779fae5765f52f45c213e5474cd93b0317ba7bee65c0a7ab984efe"
+    },
+    {
+      "path": "sources/dasa-reporting.txt",
+      "bytes": 22905,
+      "sha256": "6edc26f59809848aab0e0a3b127353019577a5dfb75a927869c4bd3d1de2bb97"
+    },
+    {
+      "path": "sources/doctorate-data.json",
+      "bytes": 2856,
+      "sha256": "6908c1e19eaa37087bc48429b7d682293ea9c49b91165edcf6c4125aecd4796b"
+    },
+    {
+      "path": "sources/doctorate-images.json",
+      "bytes": 1681,
+      "sha256": "20cfd7e479b6e93f4e21d2a53282823961084917bf2dd76a0b80e8b800406622"
+    },
+    {
+      "path": "sources/doctorate-links.json",
+      "bytes": 1468,
+      "sha256": "cc14a534aa650684a50ea97e4d62e312ef06a0bda97b5975c0148f572342f338"
+    },
+    {
+      "path": "sources/doctorate-receipt.json",
+      "bytes": 308,
+      "sha256": "e46e6248dc5db6ce62f2866defff43e5a5c6d6865f86ab1f807061c31ff36baf"
+    },
+    {
+      "path": "sources/doctorate.html",
+      "bytes": 50395,
+      "sha256": "20783e529ee8001e5a77e7a8c9cef7e40156df47127e2cdfbc1d2b5e69b4add3"
+    },
+    {
+      "path": "sources/doctorate.txt",
+      "bytes": 385,
+      "sha256": "dbd042abf6d8110c9b11cade2bd1eae68d8a29d581af034278b86b822ea95c33"
+    },
+    {
+      "path": "sources/faq-images.json",
+      "bytes": 1681,
+      "sha256": "20cfd7e479b6e93f4e21d2a53282823961084917bf2dd76a0b80e8b800406622"
+    },
+    {
+      "path": "sources/faq-links.json",
+      "bytes": 1462,
+      "sha256": "c1480dfeb397d57597df77df66c28ce0203466624050d4872139cc034a36ac53"
+    },
+    {
+      "path": "sources/faq-receipt.json",
+      "bytes": 296,
+      "sha256": "43668fe6ebf979954c38ed2da1beb3f73c5df4808974491322c80cfd90f7144c"
+    },
+    {
+      "path": "sources/faq.html",
+      "bytes": 50386,
+      "sha256": "719fa46a7b3460978865bc5d69583b126b209e214648719172c6b9dc159bd8df"
+    },
+    {
+      "path": "sources/faq.txt",
+      "bytes": 369,
+      "sha256": "b5277b08780e9df3485affc6cfee1372f2e3c8b8d2b6732e0496859e89fa9a27"
+    },
+    {
+      "path": "sources/final-discovery-web.json",
+      "bytes": 33880,
+      "sha256": "24e65dbb5cf1e625838bde2d2b354316a646a283b52b324ab8011cf8fef5a49e"
+    },
+    {
+      "path": "sources/home-links.json",
+      "bytes": 21062,
+      "sha256": "34e934a01c1c39cac4f9d90c6d75b6eb78fd1c9ea81d859a894e13ac233d6d96"
+    },
+    {
+      "path": "sources/home.html",
+      "bytes": 97868,
+      "sha256": "3dcdd497aeb070c787ba3ea0e8ea39c1e8d35adb03908c69b94aea7ed8d5c1fa"
+    },
+    {
+      "path": "sources/home.txt",
+      "bytes": 69096,
+      "sha256": "6d030d3b7ec227e984789b317c647e4688b986f01eab920e9be9aa4d9119519c"
+    },
+    {
+      "path": "sources/hostel-images.json",
+      "bytes": 1681,
+      "sha256": "20cfd7e479b6e93f4e21d2a53282823961084917bf2dd76a0b80e8b800406622"
+    },
+    {
+      "path": "sources/hostel-links.json",
+      "bytes": 1465,
+      "sha256": "3cdd2eaf394dcc385d8b66067750b900996cc966ae31fe10da3a997db04ac580"
+    },
+    {
+      "path": "sources/hostel-receipt.json",
+      "bytes": 302,
+      "sha256": "fc006d30f62a6110bc87991c573b3c6164d2e5650ef8d0364f1036931a66a561"
+    },
+    {
+      "path": "sources/hostel-rules-receipt.json",
+      "bytes": 457,
+      "sha256": "a162ac95652437c0faf1f884fbe90b9e96ddeb4cd7384346d4f1b1be7c76dc0c"
+    },
+    {
+      "path": "sources/hostel-rules.pdf",
+      "bytes": 782964,
+      "sha256": "7e8855764da6f784ad5659a3e464558127db3afd1d30ff78182b910ae103cb1a"
+    },
+    {
+      "path": "sources/hostel-rules.txt",
+      "bytes": 14695,
+      "sha256": "8bbed02d7f8afb3c93f7c479f65c5d2acfa4ba085b1bf355c785cde52f1d81b1"
+    },
+    {
+      "path": "sources/hostel.html",
+      "bytes": 55710,
+      "sha256": "3eb6965ad2d09f184d4486ce631d29321db1d4a692758ee1f0dbe7c8b459863d"
+    },
+    {
+      "path": "sources/hostel.txt",
+      "bytes": 406,
+      "sha256": "1fdb100c70122e15a6ed355a7dabf01ee28a53be1553a334f66c2c002ce1d002"
+    },
+    {
+      "path": "sources/msc-exact-titles.json",
+      "bytes": 10913,
+      "sha256": "1ccc0d82d9d5da3b30cd8aa1e3efbb627cc2ea7fcd10c1144f47a7348644144f"
+    },
+    {
+      "path": "sources/mtech-fees-receipt.json",
+      "bytes": 409,
+      "sha256": "3f6d2e5be7c2ea3a4b0fec582ad508faf6fca375f515ac99016054de2cdcf878"
+    },
+    {
+      "path": "sources/mtech-fees.pdf",
+      "bytes": 389127,
+      "sha256": "de99eb2b64f339fc04084d42171d887b1a7176104807c8741c601e1809bd5615"
+    },
+    {
+      "path": "sources/mtech-fees.txt",
+      "bytes": 5196,
+      "sha256": "2706c2686005f1c515544844faaf88f8ba8f0bae124e24515d717c5fe49fa229"
+    },
+    {
+      "path": "sources/mtech-self-support-receipt.json",
+      "bytes": 447,
+      "sha256": "4cdf012f0dcfd9d18e5b9025492d19eddf8996b5e416c6af5de94ddbd55ef7ba"
+    },
+    {
+      "path": "sources/mtech-self-support.pdf",
+      "bytes": 470221,
+      "sha256": "351bd592ea3adcbcf2e01604c59d6c71084f9eaf2b2f3f819e69207e3ca33f67"
+    },
+    {
+      "path": "sources/mtech-self-support.txt",
+      "bytes": 6979,
+      "sha256": "005b852585169ca96f0b98a20253895e9eef799da10ad23459970ffe8e16e1a9"
+    },
+    {
+      "path": "sources/old-site-receipt.json",
+      "bytes": 181,
+      "sha256": "71d5c113e6d1665c9e53397a0489cef419eb461efee0921731f89d21b083a34a"
+    },
+    {
+      "path": "sources/parliament-establishment-receipt.json",
+      "bytes": 393,
+      "sha256": "145809d2d225ea5ad6a28a77d05e727acba9cadce5cbe94c23516f095ea251e4"
+    },
+    {
+      "path": "sources/parliament-establishment.pdf",
+      "bytes": 75166,
+      "sha256": "9a183dbb23a185ec54adcc6c6e5d353ad88ece005ff6657a3970c1a2f58b33a0"
+    },
+    {
+      "path": "sources/parliament-establishment.txt",
+      "bytes": 3589,
+      "sha256": "8474788d87b5c91a929c2a302a2ab70c6cf53106b96bf65dc685fd03dd9d42ab"
+    },
+    {
+      "path": "sources/pg-data.json",
+      "bytes": 1812,
+      "sha256": "42f50c409371786f0d1ff764784727886af6b9988c1313dec7495bf3f197cdc0"
+    },
+    {
+      "path": "sources/phd-amendment-receipt.json",
+      "bytes": 373,
+      "sha256": "93ffdea237826a14b138fec864f75a754ee1e3fa5aa771680c48944b31419186"
+    },
+    {
+      "path": "sources/phd-amendment.pdf",
+      "bytes": 857428,
+      "sha256": "4c652131342e27fee879fc8f7643e8855c7fdec7d1555e8fbd1c46e64d863950"
+    },
+    {
+      "path": "sources/phd-amendment.txt",
+      "bytes": 3633,
+      "sha256": "8978878fbc7859fbb46b89237bd9c78d4c362b6d607b9e821b4a282b29659ba7"
+    },
+    {
+      "path": "sources/phd-current-instructions-receipt.json",
+      "bytes": 217,
+      "sha256": "94cfdfea69250fc03ab74c530f9dd4aaf671ee112f98e11b46538295c51904df"
+    },
+    {
+      "path": "sources/phd-regulations-receipt.json",
+      "bytes": 405,
+      "sha256": "d4f63711b0bbc4bc381f79854f9fd8c1381b7367db5c11e494a0e4e1330a14af"
+    },
+    {
+      "path": "sources/phd-regulations.pdf",
+      "bytes": 736062,
+      "sha256": "ad5cbedd5050e7cdfaef12191d39fc6c04556caa1aa084c7b2c9a529c27ab5c6"
+    },
+    {
+      "path": "sources/phd-regulations.txt",
+      "bytes": 31837,
+      "sha256": "84b249927eb459e96b1091397f374ab423179626010f1f6e6c2956a4bd8fd13e"
+    },
+    {
+      "path": "sources/programs-images.json",
+      "bytes": 1681,
+      "sha256": "20cfd7e479b6e93f4e21d2a53282823961084917bf2dd76a0b80e8b800406622"
+    },
+    {
+      "path": "sources/programs-links.json",
+      "bytes": 1467,
+      "sha256": "4133925e05aab0f3105136a66d10e1c6d5ada00096066daf2ada35d0d17645c2"
+    },
+    {
+      "path": "sources/programs-receipt.json",
+      "bytes": 306,
+      "sha256": "92412951facc279f179f81804c73bbb192dd48d1d6ae9153b85523d20ae527cd"
+    },
+    {
+      "path": "sources/programs.html",
+      "bytes": 58832,
+      "sha256": "8991b4d9b20586244e341d4e4f23f013811d2371ee0438bfef5ad858f3c57942"
+    },
+    {
+      "path": "sources/programs.txt",
+      "bytes": 1611,
+      "sha256": "e698fc7e2abe4ca66add12f00a98360b813d47aa95a9c4b7675893584f3aea2b"
+    },
+    {
+      "path": "sources/regulator-web-evidence.json",
+      "bytes": 15507,
+      "sha256": "85a434f79cec333b8e7cafada017ad23920b70f7beb34deb28ce3221c08db2c2"
+    },
+    {
+      "path": "sources/ug-data.json",
+      "bytes": 2882,
+      "sha256": "0bbe9c44034da81735a747cbd410c26151cbf4254f7b4f1a57cdea403b77ac1d"
+    }
+  ]
+}

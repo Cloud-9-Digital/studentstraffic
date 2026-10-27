@@ -1,0 +1,101 @@
+{
+  "checkedAt": "2026-10-27",
+  "registry": "lib/data/program-taxonomy.ts",
+  "registrySha256": "0491f115d50e8cffa69d4322553c1aa00d2783e6fa73f472c9fdbd7b32a742fd",
+  "decisions": [
+    {
+      "officialTitle": "B.Tech. Computer Science and Engineering",
+      "canonicalCourseMatch": "be-btech-computer-science-engineering",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "DASA 2026 revised matrix explicitly lists this branch under CIWG and non-CIWG. All 2026 deadlines have passed; future rules require recheck. Domestic JoSAA route is separate."
+    },
+    {
+      "officialTitle": "B.Tech. Computer Science and Engineering (Artificial Intelligence and Data Science)",
+      "canonicalCourseMatch": "be-btech-artificial-intelligence-machine-learning",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "DASA 2026 revised matrix explicitly lists this branch under CIWG and non-CIWG. All 2026 deadlines have passed; future rules require recheck. Domestic JoSAA route is separate."
+    },
+    {
+      "officialTitle": "B.Tech. Electronics and Communication Engineering",
+      "canonicalCourseMatch": "be-btech-electronics-communication-engineering",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "DASA 2026 revised matrix explicitly lists this branch under CIWG and non-CIWG. All 2026 deadlines have passed; future rules require recheck. Domestic JoSAA route is separate."
+    },
+    {
+      "officialTitle": "B.Tech. Electronics and Communication Engineering (VLSI Design)",
+      "canonicalCourseMatch": "be-btech-electronics-communication-engineering",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "DASA 2026 revised matrix explicitly lists this branch under CIWG and non-CIWG. All 2026 deadlines have passed; future rules require recheck. Domestic JoSAA route is separate."
+    },
+    {
+      "officialTitle": "M.Tech. Computer Science and Engineering",
+      "canonicalCourseMatch": "me-mtech-computer-science-engineering",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "CCMT and self-support are admission/funding variants, not separate awards. Self-support 2026 prospectus captured; international route unconfirmed."
+    },
+    {
+      "officialTitle": "M.Tech. VLSI Systems",
+      "canonicalCourseMatch": "me-mtech-electronics-communication-engineering",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "CCMT and self-support are admission/funding variants, not separate awards. Self-support 2026 prospectus captured; international route unconfirmed."
+    },
+    {
+      "officialTitle": "Ph.D. Computer Science and Engineering",
+      "canonicalCourseMatch": "phd-computer-science",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Research area listed. Current admission call, supervisor availability, fee and international eligibility not verified. Linked 2023 amendment concerns comprehensive examination, not duration. Do not use minimum registration period as standard durationYears."
+    },
+    {
+      "officialTitle": "Ph.D. Electronics and Communication Engineering",
+      "canonicalCourseMatch": "phd-engineering",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Research area listed. Current admission call, supervisor availability, fee and international eligibility not verified. Linked 2023 amendment concerns comprehensive examination, not duration. Do not use minimum registration period as standard durationYears."
+    },
+    {
+      "officialTitle": "Ph.D. Mechanical Engineering",
+      "canonicalCourseMatch": "phd-engineering",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Research area listed. Current admission call, supervisor availability, fee and international eligibility not verified. Linked 2023 amendment concerns comprehensive examination, not duration. Do not use minimum registration period as standard durationYears."
+    },
+    {
+      "officialTitle": "Ph.D. Physics",
+      "canonicalCourseMatch": "phd-natural-sciences",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Research area listed. Current admission call, supervisor availability, fee and international eligibility not verified. Linked 2023 amendment concerns comprehensive examination, not duration. Do not use minimum registration period as standard durationYears."
+    },
+    {
+      "officialTitle": "Ph.D. Mathematics",
+      "canonicalCourseMatch": "GAP:phd-mathematics",
+      "rowKind": "standalone_award",
+      "decision": "gap-held",
+      "rationale": "Research area listed. Current admission call, supervisor availability, fee and international eligibility not verified. Linked 2023 amendment concerns comprehensive examination, not duration. Do not use minimum registration period as standard durationYears."
+    },
+    {
+      "officialTitle": "Ph.D. Economics",
+      "canonicalCourseMatch": "GAP:phd-economics",
+      "rowKind": "standalone_award",
+      "decision": "gap-held",
+      "rationale": "Research area listed. Current admission call, supervisor availability, fee and international eligibility not verified. Linked 2023 amendment concerns comprehensive examination, not duration. Do not use minimum registration period as standard durationYears."
+    },
+    {
+      "officialTitle": "Ph.D. English",
+      "canonicalCourseMatch": "phd-arts-humanities",
+      "rowKind": "standalone_award",
+      "decision": "existing-parent-match",
+      "rationale": "Research area listed. Current admission call, supervisor availability, fee and international eligibility not verified. Linked 2023 amendment concerns comprehensive examination, not duration. Do not use minimum registration period as standard durationYears."
+    }
+  ],
+  "sharedRegistryChanged": false,
+  "completionNotes": "Mathematics/Economics PhD definitions proposed locally; no current MSc confirmed from the secondary discovery.",
+  "metadataIntegrationInstruction": "Existing canonical course objects are schema-complete draft proposals, not authority to overwrite richer published global course metadata. Reuse the current canonical records where available; review new definitions separately."
+}

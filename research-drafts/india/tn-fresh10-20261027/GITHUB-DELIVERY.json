@@ -33,6 +33,15 @@
       "taughtFragments": 56,
       "catalogueSchemaValidated": false,
       "sourceGates": "Main college source503; regulator and programme-specific evidence gaps; JIM MBA component fees retained"
+    },
+    {
+      "slug": "indian-institute-of-information-technology-tiruchirappalli",
+      "status": "held_full_framework_subset_pass",
+      "inventoryRows": 15,
+      "frameworkPassingSubsetProgrammes": 4,
+      "frameworkIndependentlyRerun": true,
+      "completeExecutableMigration": false,
+      "remainingGates": "Complete-portfolio unknowns, precise applicant/cycle conditions, taxonomy where proposed, rights-cleared hosted media and user-owned publication."
     }
   ]
 }

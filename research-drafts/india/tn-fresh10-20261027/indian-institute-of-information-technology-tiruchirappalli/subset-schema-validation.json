@@ -1,0 +1,89 @@
+{
+  "checkedAt": "2026-10-27T10:52:45.879Z",
+  "schema": "scripts/lib/catalog-payload-schema.ts:catalogPayloadSchema",
+  "validationMode": "local strict-schema safeParse only; no migration/DB access",
+  "success": true,
+  "issueCount": 0,
+  "issues": [],
+  "programmeCount": 4,
+  "courseCount": 3,
+  "includedProgrammeSlugs": [
+    "b-tech-computer-science-and-engineering",
+    "b-tech-computer-science-and-engineering-artificial-intelligence-and-data-science",
+    "b-tech-electronics-and-communication-engineering",
+    "b-tech-electronics-and-communication-engineering-vlsi-design"
+  ],
+  "excludedProgrammes": [
+    {
+      "slug": "m-tech-computer-science-and-engineering",
+      "missingFields": [
+        "audienceEligibility"
+      ]
+    },
+    {
+      "slug": "m-tech-vlsi-systems",
+      "missingFields": [
+        "audienceEligibility"
+      ]
+    },
+    {
+      "slug": "ph-d-computer-science-and-engineering",
+      "missingFields": [
+        "durationYears",
+        "audienceEligibility",
+        "admissionsContent.documentsRequired"
+      ]
+    },
+    {
+      "slug": "ph-d-electronics-and-communication-engineering",
+      "missingFields": [
+        "durationYears",
+        "audienceEligibility",
+        "admissionsContent.documentsRequired"
+      ]
+    },
+    {
+      "slug": "ph-d-mechanical-engineering",
+      "missingFields": [
+        "durationYears",
+        "audienceEligibility",
+        "admissionsContent.documentsRequired"
+      ]
+    },
+    {
+      "slug": "ph-d-physics",
+      "missingFields": [
+        "durationYears",
+        "audienceEligibility",
+        "admissionsContent.documentsRequired"
+      ]
+    },
+    {
+      "slug": "ph-d-mathematics",
+      "missingFields": [
+        "durationYears",
+        "audienceEligibility",
+        "admissionsContent.documentsRequired"
+      ]
+    },
+    {
+      "slug": "ph-d-economics",
+      "missingFields": [
+        "durationYears",
+        "audienceEligibility",
+        "admissionsContent.documentsRequired"
+      ]
+    },
+    {
+      "slug": "ph-d-english",
+      "missingFields": [
+        "durationYears",
+        "audienceEligibility",
+        "admissionsContent.documentsRequired"
+      ]
+    }
+  ],
+  "publicationReady": false,
+  "editorialApproval": false,
+  "interpretation": "Actual schema validation of the authored, structurally complete subset. Not a publication or migration-validation pass: mandatory media, current-cycle applicability, restricted audience interpretation and any proposed taxonomy still require integrator review. All excluded awards remain in the complete inventory and full draft."
+}

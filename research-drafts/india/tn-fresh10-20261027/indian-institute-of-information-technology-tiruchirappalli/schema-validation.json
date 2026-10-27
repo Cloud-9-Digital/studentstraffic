@@ -1,0 +1,294 @@
+{
+  "checkedAt": "2026-10-27T10:52:45.867Z",
+  "schema": "scripts/lib/catalog-payload-schema.ts:catalogPayloadSchema",
+  "validationMode": "local strict-schema safeParse only; no migration/DB access",
+  "success": false,
+  "publicationReady": false,
+  "issueCount": 23,
+  "issues": [
+    {
+      "expected": "object",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        4,
+        "audienceEligibility"
+      ],
+      "message": "Invalid input: expected object, received undefined"
+    },
+    {
+      "expected": "object",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        5,
+        "audienceEligibility"
+      ],
+      "message": "Invalid input: expected object, received undefined"
+    },
+    {
+      "expected": "number",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        6,
+        "durationYears"
+      ],
+      "message": "Invalid input: expected number, received undefined"
+    },
+    {
+      "expected": "object",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        6,
+        "audienceEligibility"
+      ],
+      "message": "Invalid input: expected object, received undefined"
+    },
+    {
+      "expected": "object",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        6,
+        "admissionsContent",
+        "documentsRequired"
+      ],
+      "message": "Invalid input: expected object, received undefined"
+    },
+    {
+      "expected": "number",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        7,
+        "durationYears"
+      ],
+      "message": "Invalid input: expected number, received undefined"
+    },
+    {
+      "expected": "object",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        7,
+        "audienceEligibility"
+      ],
+      "message": "Invalid input: expected object, received undefined"
+    },
+    {
+      "expected": "object",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        7,
+        "admissionsContent",
+        "documentsRequired"
+      ],
+      "message": "Invalid input: expected object, received undefined"
+    },
+    {
+      "expected": "number",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        8,
+        "durationYears"
+      ],
+      "message": "Invalid input: expected number, received undefined"
+    },
+    {
+      "expected": "object",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        8,
+        "audienceEligibility"
+      ],
+      "message": "Invalid input: expected object, received undefined"
+    },
+    {
+      "expected": "object",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        8,
+        "admissionsContent",
+        "documentsRequired"
+      ],
+      "message": "Invalid input: expected object, received undefined"
+    },
+    {
+      "expected": "number",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        9,
+        "durationYears"
+      ],
+      "message": "Invalid input: expected number, received undefined"
+    },
+    {
+      "expected": "object",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        9,
+        "audienceEligibility"
+      ],
+      "message": "Invalid input: expected object, received undefined"
+    },
+    {
+      "expected": "object",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        9,
+        "admissionsContent",
+        "documentsRequired"
+      ],
+      "message": "Invalid input: expected object, received undefined"
+    },
+    {
+      "expected": "number",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        10,
+        "durationYears"
+      ],
+      "message": "Invalid input: expected number, received undefined"
+    },
+    {
+      "expected": "object",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        10,
+        "audienceEligibility"
+      ],
+      "message": "Invalid input: expected object, received undefined"
+    },
+    {
+      "expected": "object",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        10,
+        "admissionsContent",
+        "documentsRequired"
+      ],
+      "message": "Invalid input: expected object, received undefined"
+    },
+    {
+      "expected": "number",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        11,
+        "durationYears"
+      ],
+      "message": "Invalid input: expected number, received undefined"
+    },
+    {
+      "expected": "object",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        11,
+        "audienceEligibility"
+      ],
+      "message": "Invalid input: expected object, received undefined"
+    },
+    {
+      "expected": "object",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        11,
+        "admissionsContent",
+        "documentsRequired"
+      ],
+      "message": "Invalid input: expected object, received undefined"
+    },
+    {
+      "expected": "number",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        12,
+        "durationYears"
+      ],
+      "message": "Invalid input: expected number, received undefined"
+    },
+    {
+      "expected": "object",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        12,
+        "audienceEligibility"
+      ],
+      "message": "Invalid input: expected object, received undefined"
+    },
+    {
+      "expected": "object",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        12,
+        "admissionsContent",
+        "documentsRequired"
+      ],
+      "message": "Invalid input: expected object, received undefined"
+    }
+  ],
+  "interpretation": "All required university narratives are authored. The full inventory candidate still fails on explicitly unresolved programme facts. No missing eligibility, credential or standard duration was invented. See structurally-complete-subset.json for the separately validated subset; neither schema result is publication approval."
+}

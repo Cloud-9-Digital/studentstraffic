@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-10-27",
+  "researchDeliveryBlocked": false,
+  "userOwnsLocalApply": true,
+  "publicationAttempted": false,
+  "remainingEvidenceAndEditorialGates": [
+    "M.Tech. and PhD international eligibility remains unverified; four B.Tech. DASA branches are now verified.",
+    "PhD standard duration, current admission document checklist and current call/supervisor availability remain unverified; minimum registration periods are not standard duration.",
+    "Two MSc awards found only on a secondary site are excluded pending official confirmation.",
+    "Proposed PhD Mathematics/Economics canonical definitions require integrator approval and course metadata; no shared registry changed.",
+    "Logo candidate is inspected; cover source and final media rights/upload/page rendering remain incomplete.",
+    "The binary Public classification should be reviewed against the documented central/state/industry PPP governance; it is not an ownership claim about a conventional state university."
+  ],
+  "finishedDrafting": [
+    "All required university narratives",
+    "Canonical course payload metadata where duration is established",
+    "Native fee quote normalization for supported schedules",
+    "Route-specific admissions content to the extent evidenced",
+    "Teaching format fields without assumed instruction language"
+  ],
+  "requiredFieldOmissions": {
+    "audienceEligibility": 9,
+    "durationYears": 7,
+    "admissionsContent.documentsRequired": 7
+  },
+  "structurallyCompleteSubset": {
+    "schemaResult": "PASS",
+    "issueCount": 0,
+    "programmeCount": 4,
+    "courseCount": 3,
+    "publicationReady": false
+  },
+  "publicationGate": "Not cleared: required media and institution/programme-specific editorial review remain.",
+  "localApplyAuthority": "User owns local apply. No DB, deployment or media operation was attempted. Credential availability is not a research-delivery blocker."
+}

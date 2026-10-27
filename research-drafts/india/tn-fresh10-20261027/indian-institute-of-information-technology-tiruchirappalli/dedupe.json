@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-27",
+  "status": "fresh-offline-research-with-parent-assigned-claim",
+  "aliases": [
+    "indian-institute-of-information-technology-tiruchirappalli",
+    "iiit-tiruchirappalli",
+    "iiit-trichy"
+  ],
+  "liveApiChecks": [
+    {
+      "url": "https://www.studentstraffic.com/api/mobile/v1/universities/indian-institute-of-information-technology-tiruchirappalli",
+      "status": 404,
+      "body": "{\"error\":{\"code\":\"not_found\",\"message\":\"University not found.\"}}"
+    },
+    {
+      "url": "https://www.studentstraffic.com/api/mobile/v1/universities/iiit-tiruchirappalli",
+      "status": 404,
+      "body": "{\"error\":{\"code\":\"not_found\",\"message\":\"University not found.\"}}"
+    },
+    {
+      "url": "https://www.studentstraffic.com/api/mobile/v1/universities/iiit-trichy",
+      "status": 404,
+      "body": "{\"error\":{\"code\":\"not_found\",\"message\":\"University not found.\"}}"
+    }
+  ],
+  "localIdentityMatches": {
+    "research/university-publishing-ledger.csv": [
+      "indian-institute-of-information-technology-tiruchirappalli,Indian Institute of Information Technology Tiruchirappalli,india,researching,research_tn_batch_a,2026-10-27T09:52:24.730Z,,,,,Parallel offline research authorized 2026-10-27. Local checkout claim only; fresh identity checked against remote main and live public API. Original 68 excluded. Publication remains credential-blocked.,tn-fresh10-20261027,high,"
+    ],
+    "research/tamil-nadu-universities-scope.csv": [],
+    "research/tamil-nadu-scope-reconciliation-20261025.csv": []
+  },
+  "latestCheckoutCommit": "d541a55c38e4fc68c3d1c221b6dad4807e3abfdf",
+  "original68File": "research/tamil-nadu-universities-scope.csv",
+  "note": "Research only; integrator must repeat live identity and current ledger before claim/publish. Thiagarajar arts at tcarts.in is distinct.",
+  "finalLocalMigrationIdentityMatches": [],
+  "finalLedgerLines": [
+    "indian-institute-of-information-technology-tiruchirappalli,Indian Institute of Information Technology Tiruchirappalli,india,researching,research_tn_batch_a,2026-10-27T09:52:24.730Z,,,,,Parallel offline research authorized 2026-10-27. Local checkout claim only; fresh identity checked against remote main and live public API. Original 68 excluded. Publication remains credential-blocked.,tn-fresh10-20261027,high,"
+  ],
+  "checkedAtFinalLocal": "2026-10-27T10:15:14.092673+00:00",
+  "claimExplanation": "Existing researching line is parent-assigned to this worker, not an earlier unrelated claim; worker made no shared queue writes.",
+  "finalCanonicalLiveApiCheck": {
+    "url": "https://www.studentstraffic.com/api/mobile/v1/universities/indian-institute-of-information-technology-tiruchirappalli",
+    "checkedAt": "2026-10-27T10:16:18.959523+00:00",
+    "status": 404,
+    "body": "{\"error\":{\"code\":\"not_found\",\"message\":\"University not found.\"}}"
+  }
+}
