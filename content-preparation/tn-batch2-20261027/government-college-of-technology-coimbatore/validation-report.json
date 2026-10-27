@@ -1,0 +1,39 @@
+{
+  "schemaPass": true,
+  "actualReaderPass": true,
+  "expiredEvidenceCount": 0,
+  "programmes": 10,
+  "evidenceRows": 138,
+  "readyForLocalMediaPreparation": true,
+  "readyForDirectApply": false,
+  "uploads": 0,
+  "databaseAccess": false,
+  "note": "Source links are reviewed. Explicit local upload or verified existing mappings are still required before a real migration.",
+  "checkedAt": "2026-10-27",
+  "preparationSafetyTests": {
+    "passed": 12,
+    "failed": 0,
+    "command": "node --import tsx --test content-preparation/tn-batch2-20261027/government-college-of-technology-coimbatore/prepare-local.test.mjs"
+  },
+  "sourceMediaHTTPImageAndVisualReview": [
+    {
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/update_0.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 775634,
+      "sha256": "2370a8a8eeaa73db7a51a452c395da30193fe36fff5221394713fe29c4cc09fc"
+    },
+    {
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/home%20gallery/block.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 3171578,
+      "sha256": "77127589f59640a9579e62275412871432f19c6370384e7704c98a98f5a2811c"
+    }
+  ],
+  "cloudinaryUpload": "not_run: explicit user local stage",
+  "numberedMigrationValidation": "not_run: intentionally outside content-migrations until hosted media is verified",
+  "sharedRemoteLedgerEdited": false,
+  "livePublished": false,
+  "payloadSha256": "a7eaed17b34ee5e4c5f0dee2c565bd3a8b866f455bcc4967f6a675f9f4882356"
+}
