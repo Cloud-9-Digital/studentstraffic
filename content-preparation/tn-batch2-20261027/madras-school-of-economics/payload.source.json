@@ -1,0 +1,2389 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "master-quantitative-finance",
+      "name": "Master's in Quantitative Finance",
+      "shortName": "Master's Quantitative Finance",
+      "stream": "economics-commerce",
+      "level": "masters",
+      "discipline": "quantitative-finance",
+      "aliases": [
+        "MA Applied Quantitative Finance",
+        "Master of Arts in Applied Quantitative Finance"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "A postgraduate quantitative-finance category focused on mathematical and statistical approaches to financial markets, valuation, risk and empirical analysis. Official award titles and institutional entry qualifications vary; it is not automatically an MBA or a general finance degree.",
+      "metaTitle": "Master's Quantitative Finance Programmes and Admissions",
+      "metaDescription": "Compare Master's Quantitative Finance programmes by official award, entry qualifications, duration, applicant category, language and tuition fees."
+    },
+    {
+      "slug": "integrated-ma-economics",
+      "name": "Integrated M.A. in Economics",
+      "shortName": "Integrated M.A. Economics",
+      "stream": "economics-commerce",
+      "level": "integrated-masters",
+      "discipline": "economics",
+      "aliases": [
+        "Five-year Integrated Master of Arts in Economics"
+      ],
+      "displayOrder": 0,
+      "durationYears": 5,
+      "summary": "An integrated economics degree category spanning undergraduate and postgraduate study, with mathematical, statistical and economic analysis. Institutions define their own entry requirements, exit awards, curriculum stages, research work and progression rules.",
+      "metaTitle": "Integrated M.A. Economics Programmes and Admissions",
+      "metaDescription": "Compare Integrated M.A. Economics programmes by official award, entry qualifications, duration, applicant category, language and tuition fees."
+    },
+    {
+      "slug": "master-economics",
+      "name": "Master's in Economics",
+      "shortName": "Master's Economics",
+      "stream": "economics-commerce",
+      "level": "masters",
+      "discipline": "economics",
+      "aliases": [
+        "MA Economics",
+        "MSc Economics"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "A postgraduate economics category covering theoretical and applied economic analysis, quantitative methods and research. Institutions may offer different specialisations; admissions qualifications, mathematical prerequisites, language, curriculum and fees remain programme-specific.",
+      "metaTitle": "Master's Economics Programmes and Admissions",
+      "metaDescription": "Compare Master's Economics programmes by official award, entry qualifications, duration, applicant category, language and tuition fees."
+    },
+    {
+      "slug": "msc-data-science",
+      "name": "M.Sc. in Data Science",
+      "shortName": "M.Sc. Data Science",
+      "stream": "engineering",
+      "level": "masters",
+      "discipline": "data-science",
+      "aliases": [
+        "Master of Science in Data Science",
+        "MSc Data Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "A postgraduate science degree category in data science, combining quantitative analysis, computing and methods for working with data. Each institution sets its own academic prerequisites, selection routes, curriculum, practical projects and dissertation requirements.",
+      "metaTitle": "M.Sc. Data Science Programmes and Admissions",
+      "metaDescription": "Compare M.Sc. Data Science programmes by official award, entry qualifications, duration, applicant category, language and tuition fees."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "madras-school-of-economics",
+      "name": "Madras School of Economics",
+      "city": "Chennai",
+      "type": "Private",
+      "establishedYear": 1993,
+      "officialWebsite": "https://mse.ac.in/",
+      "mediaAttribution": {
+        "logo": {
+          "sourceUrl": "https://mse.ac.in/wp-content/uploads/2021/11/BLUE-1-.png",
+          "rights": "Official Madras School of Economics identity asset supplied on its own public website, used intact for factual institutional identification. No open licence, ownership transfer or endorsement is claimed.",
+          "checkedAt": "2026-10-27"
+        },
+        "cover": {
+          "sourceUrl": "https://mse.ac.in/wp-content/uploads/2021/09/final-image.jpg",
+          "rights": "Official Madras School of Economics campus photograph supplied on its public website, used intact for factual campus identification and context. No open licence, ownership transfer or endorsement is claimed.",
+          "checkedAt": "2026-10-27",
+          "altText": "Madras School of Economics campus building and gardens, Chennai"
+        }
+      },
+      "summary": "Madras School of Economics is a specialist institution founded in Chennai in 1993. Its current taught portfolio includes integrated economics, five MA specialisations, data science and two MBAs. The economics and data-science routes combine quantitative study with applied work, while entry requirements differ by programme and applicant category.",
+      "campusLifestyle": "The Kotturpuram campus has air-conditioned classrooms, a library with computer and reading facilities, hostels, a mess and a cafeteria. Outdoor and indoor sports include football, cricket, basketball, volleyball, table tennis, chess and carrom.",
+      "cityProfile": "MSE is on Gandhi Mandapam Road in Kotturpuram, Chennai, behind the Government Data Centre and Anna Centenary Library. It is a single specialist campus for this profile, not the Central University of Tamil Nadu. Historical university partnerships should not be confused with the location or awarding arrangements for new MSE cohorts.",
+      "practicalExposure": "The economics portfolio includes quantitative methods, econometrics and specialised applications. The MA programmes include a summer internship after the second semester, while the Data Science programme requires a summer internship and a second-year dissertation. The integrated route adds programming and analytical study. A BA exit within the integrated programme is not an additional admissions route, and applied work does not guarantee employment.",
+      "hostelOverview": "MSE has separate accommodation for men and women; its integrated-programme brochure describes three girls’ hostels and one boys’ hostel. Hostel rooms remain subject to availability. The hostel page describes dining, common reading facilities, television and internet access.",
+      "dietarySupport": "The campus mess serves vegetarian and non-vegetarian food, and the cafeteria provides snacks, tea and coffee. Applicants with allergies or other dietary needs should confirm the arrangements directly rather than assume a dedicated service.",
+      "safetyOverview": "MSE identifies grievance and sexual-harassment prevention, anti-ragging and SC/ST committees. These provide institutional reporting channels; the presence of a committee is not a guarantee against incidents.",
+      "studentSupport": "The programme brochures identify separate student offices for admissions, including a direct route for foreign self-financing applicants. The campus library and reading rooms support academic work, and the grievance committees provide additional points of contact. Students Traffic can help organise a programme-specific application and full-cost plan.",
+      "whyChoose": [
+        "Study economics through five distinct postgraduate specialisations rather than a single undifferentiated MA.",
+        "The integrated route provides staged exit awards within a continuous five-year economics curriculum.",
+        "Data Science includes both a summer internship and dissertation alongside quantitative and computing study."
+      ],
+      "thingsToConsider": [
+        "The 2026 brochures impose programme-specific age, mathematics and academic-score conditions.",
+        "Published semester charges include category-specific components; they are not isolated annual tuition totals.",
+        "The two MBA sources disagree on important eligibility conditions, which require clarification before applying."
+      ],
+      "bestFitFor": [
+        "Applicants comfortable with mathematics and quantitative approaches to economics.",
+        "Graduates comparing a specialised MA with an applied data-science master’s degree.",
+        "Applicants able to meet the exact academic and age rules of the selected Indian or foreign self-financing route."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "UGC — institution established under State Legislature Act"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC Annual Report 2022–23, pp 95 and 142",
+          "url": "https://www.ugc.gov.in/oldpdf/annualreport/AR.2022-23.English_WEB.pdf"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Which taught programmes are currently advertised?",
+          "answer": "MSE advertises an integrated MA in Economics, five two-year MA specialisations, MSc Data Science and MBAs in Finance and Business Analytics. Doctoral routes are separate research degrees."
+        },
+        {
+          "question": "Are BA exit awards separate new-entry degrees?",
+          "answer": "The current integrated economics route has a three-year BA Honours exit and a four-year BA Honours with Research exit. These exits should not be represented as independently advertised new-entry programmes."
+        },
+        {
+          "question": "Can foreign students apply to the economics and data-science programmes?",
+          "answer": "The 2026 brochures provide a self-financing direct-application route for foreign nationals. The designated MSE office receives the application, bio-data and academic qualifications; programme academic conditions still apply."
+        },
+        {
+          "question": "Is mathematics required?",
+          "answer": "The integrated route requires Standard, Applied or Business Mathematics at 10+2. The MA and MSc routes require mathematics at 10+2 or equivalent, or qualifying undergraduate mathematical-economics study."
+        },
+        {
+          "question": "Do the fee figures represent annual tuition?",
+          "answer": "No. The reviewed MSE brochures principally quote semester charges, with separate infrastructure and one-time admission charges. Indian, NRI and foreign-national tariffs differ."
+        },
+        {
+          "question": "Is accommodation available?",
+          "answer": "MSE has separate men’s and women’s hostels, but availability must be confirmed. Its mess serves vegetarian and non-vegetarian food, with a separate cafeteria for snacks and drinks."
+        },
+        {
+          "question": "Are the cited dates upcoming admissions deadlines?",
+          "answer": "No. The MA, integrated MA and MSc brochures concern the 2026 cohort. Their closed dates do not establish a future application window."
+        },
+        {
+          "question": "What independent recognition is documented?",
+          "answer": "The UGC Annual Report 2022–23 lists MSE among institutions established under a State Legislature Act, with recognition from 1 April 2021. This is statutory institutional recognition, not an accreditation of every programme or a new 2026 order."
+        },
+        {
+          "question": "Is an English language test required for foreign admission?",
+          "answer": "The currently linked MA and MSc ordinances require foreign applicants to demonstrate English proficiency. When English was not their first language or prior secondary/tertiary medium, the stated IELTS or TOEFL thresholds apply to scores no more than two years old. That rule is not automatically transferred to the integrated MA."
+        },
+        {
+          "question": "Are the age limits the same for every route?",
+          "answer": "The 2026 integrated-MA brochure requires applicants to be under 22 on 1 July 2026. The MA and MSc brochures use under 25 on that date. These cycle-specific limits are not a prediction of the next admissions policy."
+        },
+        {
+          "question": "Are financial-assurance documents the same as tuition fees?",
+          "answer": "No. Foreign-route MA documents permit the stated government fee-payment undertaking or a USD 5,000 bank balance; the MSc ordinance uses USD 10,000. These are financial-assurance requirements, not tuition quotations."
+        },
+        {
+          "question": "How do fees change within the integrated degree?",
+          "answer": "The 2026–27 integrated handbook labels its first three years as the BA fee stage and says MA fees apply in years four and five. Foreign and NRI semester tariffs differ. Do not multiply one stage’s semester quote into a fixed five-year tuition total."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Institution background",
+          "url": "https://mse.ac.in/about/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Integrated MA admissions 2026",
+          "url": "https://mse.ac.in/wp-content/uploads/2026/04/IMA-2026-Broucher.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "MA admissions 2026",
+          "url": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "MSc admissions 2026",
+          "url": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-M.Sc_.-Degree-in-Data-Science-Brochure-2026-v2.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Hostel facilities",
+          "url": "https://mse.ac.in/hostel-facilities/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Grievance and safety committees",
+          "url": "https://mse.ac.in/wp-content/uploads/2026/09/Grievance-and-Prevention-of-Sexual-Harassment-Committee.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "UGC statutory-institution listing and degree-awarding category",
+          "url": "https://www.ugc.gov.in/oldpdf/annualreport/AR.2022-23.English_WEB.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "UGC official annual-reports index",
+          "url": "https://www.ugc.gov.in/publication/Annual_Reports",
+          "kind": "government",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "MSE current MA admissions and NRI/foreign entry point",
+          "url": "https://mse.ac.in/m-a-programmes-mse/",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "MSE current MSc admissions, NRI/foreign and GATE entry points",
+          "url": "https://mse.ac.in/m-sc-ds-admission/",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "MSE current integrated-MA admissions",
+          "url": "https://mse.ac.in/5-year-integrated-ma/",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "MSE currently linked MA foreign-admissions ordinance",
+          "url": "https://mse.ac.in/wp-content/uploads/2025/04/MA-Program-Ordinance-April2025.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "MSE MSc foreign-admissions ordinance referenced by current brochure",
+          "url": "https://www.mse.ac.in/wp-content/uploads/2025/03/M.Sc_.-Data-Science-Ordinance-2025.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "MSE current MA academic page linking its ordinance",
+          "url": "https://mse.ac.in/ma-programmes/",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Integrated-MA current handbook, native stage-specific fees",
+          "url": "https://mse.ac.in/wp-content/uploads/2026/08/IMA-Student-Handbook-2026.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-10-27"
+        }
+      ],
+      "admissionsContent": {
+        "overview": "Economics and data-science applicants use programme-specific academic, age and applicant-category rules. The 2026 Indian, NRI and foreign-national procedures are distinct; foreign qualification equivalence and documentation remain mandatory. Students Traffic can help prepare the appropriate application and full-cost plan."
+      },
+      "programmes": [
+        {
+          "slug": "integrated-ma-economics",
+          "canonicalCourseSlug": "integrated-ma-economics",
+          "officialTitle": "Integrated Master of Arts in Economics",
+          "durationYears": 5,
+          "officialProgramUrl": "https://mse.ac.in/wp-content/uploads/2026/04/IMA-2026-Broucher.pdf",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Indian applicants meeting the 2026 integrated-MA qualification and age rules",
+              "Foreign nationals meeting the equivalent qualification rules through self-financing direct admission"
+            ],
+            "restrictions": [
+              "The academic, mathematics and age rules below concern the 2026 admission cycle, not an announced future intake.",
+              "Foreign self-financing applicants require an equivalent qualifying examination and the same minimum academic qualifications. Indian reserved-category concessions are not automatically extended to foreign applicants.",
+              "For foreign qualifications, MSE checks correspondence against the AIU list; an unlisted university or board requires an AIU equivalence certificate.",
+              "Foreign applicants submit attested English translations of transcripts. Overseas records also require the stated authorised-government-agency attestation and Indian Embassy or Consulate certification.",
+              "Foreign self-financing applicants do not take the entrance test. This foreign-national exemption is not automatically an exemption for every Indian-passport NRI applicant."
+            ],
+            "notes": "The integrated-MA 2026 brochure itself establishes the foreign route and equivalence documents. No MA/MSc English-test threshold is imported into this integrated programme.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/IMA-2026-Broucher.pdf"
+          },
+          "admissionsContent": {
+            "overview": "This five-year integrated economics degree has three- and four-year exit awards. Indian applicants take the MSE entrance test; eligible foreign nationals have a separate self-financing route.",
+            "eligibility": {
+              "intro": "Use the correct Indian, NRI or foreign self-financing route; nationality alone does not waive academic or documentation conditions.",
+              "items": [
+                "For 2026 entry, pass 10+2 on the first attempt in the final 2026 academic-year cohort; candidates appearing in May 2026 could also apply.",
+                "Indian-route marks: 65% General, 60% eligible OBC-NCL, or 50% eligible SC/ST/PwD; equivalent grades or credits are accepted.",
+                "Study Standard, Applied or Business Mathematics at 10+2.",
+                "Be under 22 on 1 July 2026.",
+                "Foreign self-financing applicants need equivalent qualifying examinations and the same minimum qualifications; a foreign passport does not establish an Indian reservation concession."
+              ]
+            },
+            "applicationSteps": [
+              "Check the 2026 qualification, mathematics, age and applicant-category conditions before selecting the admission route.",
+              "Indian-route applicants complete the MSE online application and take the designated entrance test; qualifying marks and age break entrance-score ties.",
+              "Foreign self-financing applicants send the prescribed application, bio-data and academic qualifications to the designated BA Students Office; no entrance test applies to this route.",
+              "Submit the required equivalence, translated and authenticated qualification records for review before completing admission and category-specific fee payment."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "10+2 marksheet and qualifying-examination certificate",
+                "Records showing Standard, Applied or Business Mathematics at 10+2",
+                "Foreign route: AIU equivalence certificate if the university or board is not in the AIU list",
+                "Foreign route: duly attested English translations of all transcripts",
+                "Overseas records: authorised-government-agency attestation and Indian Embassy or Consulate certification"
+              ],
+              "application": [
+                "Prescribed programme application",
+                "Foreign self-financing route: bio-data and academic qualification details"
+              ]
+            },
+            "deadlinesNote": "These requirements describe the 2026 admission cycle. Its application windows are not a promise of a current opening or a future intake; confirm the next published cycle before applying.",
+            "reportedFeeQuote": {
+              "currency": "USD",
+              "minAmount": 3025,
+              "status": "confirmed",
+              "period": "semester",
+              "componentBasis": "Foreign-national BA-stage tuition only, first three years; excludes USD 750 semester infrastructure and USD 500 one-time admission/processing. Years four/five use MA fees.",
+              "audience": "international",
+              "category": "Foreign national — BA stage, not NRI",
+              "academicYear": "2026–27",
+              "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/08/IMA-Student-Handbook-2026.pdf",
+              "sourceLabel": "MSE integrated-MA student handbook 2026–27, p14",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "",
+          "mediumNote": null,
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "The 2026–27 integrated handbook quotes BA-stage tuition for the first three years at USD 3,025 per semester for foreign nationals or USD 1,815 for NRI students, plus USD 750 semester infrastructure and USD 500 one-time admission/processing. Years four and five use MA fees; rates are subject to revision. No annual or five-year tuition total is inferred. Request a complete category-specific cost plan."
+          },
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "The 2026–27 integrated handbook quotes BA-stage tuition for the first three years at USD 3,025 per semester for foreign nationals or USD 1,815 for NRI students, plus USD 750 semester infrastructure and USD 500 one-time admission/processing. Years four and five use MA fees; rates are subject to revision. No annual or five-year tuition total is inferred. Request a complete category-specific cost plan.",
+          "teachingPhases": [
+            {
+              "phase": "Campus study",
+              "language": "",
+              "details": "A five-year integrated economics programme with a three-year BA Honours exit and a four-year BA Honours with Research exit. Indian and foreign self-financing applicants follow different admission procedures."
+            }
+          ]
+        },
+        {
+          "slug": "ma-general-economics",
+          "canonicalCourseSlug": "master-economics",
+          "officialTitle": "Master of Arts in General Economics",
+          "durationYears": 2,
+          "officialProgramUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Indian applicants meeting the 2026 programme qualification and age rules",
+              "NRI applicants through the separately labelled 2026 application route",
+              "Foreign nationals meeting equivalent qualification rules through self-financing admission"
+            ],
+            "restrictions": [
+              "The academic, mathematics and age rules below concern the 2026 admission cycle, not an announced future intake.",
+              "Foreign self-financing applicants require an equivalent qualifying examination and the same minimum academic qualifications. Indian reserved-category concessions are not automatically extended to foreign applicants.",
+              "For foreign qualifications, MSE checks correspondence against the AIU list; an unlisted university or board requires an AIU equivalence certificate.",
+              "Foreign applicants submit attested English translations of transcripts. Overseas records also require the stated authorised-government-agency attestation and Indian Embassy or Consulate certification.",
+              "The dedicated NRI/foreign form does not make every applicant eligible. Foreign-national entrance-test exemption is not automatically extended to Indian-passport NRI applicants.",
+              "Foreign applicants must document English proficiency. Where English is not the first language or the medium during secondary and tertiary education, the ordinance requires a qualifying English test no more than two years old."
+            ],
+            "notes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "This two-year general economics degree uses the MSE entrance test for the regular Indian route. NRI and foreign applicants use the separately labelled application route; eligible foreign nationals may apply through self-financing admission.",
+            "eligibility": {
+              "intro": "Use the correct Indian, NRI or foreign self-financing route; nationality alone does not waive academic or documentation conditions.",
+              "items": [
+                "An undergraduate degree in social sciences, including commerce/management, sciences or engineering; final-year candidates in AY 2026 could also apply.",
+                "Indian-route undergraduate marks: 55% General, 50% eligible OBC-NCL or 45% eligible SC/ST/PwD. Foreign applicants require equivalent qualifications; these concessions are not automatic.",
+                "Be under 25 on 1 July 2026.",
+                "Mathematics at 10+2 or equivalent, including NIOS Senior Secondary mathematics, or undergraduate mathematical-economics coursework.",
+                "Regular Indian-route selection uses the MSE entrance test; qualifying marks and age break entrance-score ties.",
+                "Foreign self-financing applicants need an equivalent qualifying examination. Obtain AIU equivalence if the university or board is not on the AIU list.",
+                "When the foreign-route English-test rule applies: IELTS 6.5 overall and 6 in each section, or TOEFL iBT 95 overall and at least 20 in writing; scores must be no more than two years old."
+              ]
+            },
+            "applicationSteps": [
+              "Check the programme qualification, mathematics, age and applicant-category conditions for the 2026 cycle.",
+              "Regular entrance-route applicants complete the MSE online form and take the designated test; qualifying marks and age break entrance-score ties.",
+              "NRI and foreign applicants use the separately labelled form linked from the official admissions page and prepare the prescribed application, bio-data and qualifications for the designated programme office.",
+              "Foreign self-financing applicants complete equivalence, authenticated-document and applicable English-proficiency review before admission and category-specific payment."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying undergraduate transcripts and degree records",
+                "Records establishing the required mathematics study",
+                "Foreign route: grade transcripts with grading explanation and secondary-school, diploma and degree certificates; do not post originals",
+                "Foreign route: attested qualifying-degree syllabi and curricula",
+                "Foreign route: AIU equivalence certificate if the university or board is unlisted",
+                "Foreign route: duly attested English translations of transcripts",
+                "Overseas records: authorised-government-agency attestation and Indian Embassy or Consulate certification"
+              ],
+              "application": [
+                "Prescribed programme application",
+                "Foreign self-financing route: bio-data and academic qualification details",
+                "Foreign route: passport copy showing nationality and personal details",
+                "Foreign route: government fee-payment undertaking or bank statement showing USD 5,000",
+                "Foreign route: English-proficiency evidence, with a qualifying test where required"
+              ]
+            },
+            "deadlinesNote": "These requirements describe the 2026 admission cycle. Its application windows are not a promise of a current opening or a future intake; confirm the next published cycle before applying.",
+            "reportedFeeQuote": {
+              "currency": "USD",
+              "minAmount": 4333,
+              "status": "confirmed",
+              "period": "semester",
+              "componentBasis": "Foreign-national tuition per semester only; excludes USD 750 semester infrastructure and USD 500 one-time admission.",
+              "audience": "international",
+              "category": "Foreign national — not NRI",
+              "academicYear": "2026–27",
+              "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+              "sourceLabel": "MSE MA brochure 2026",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "",
+          "mediumNote": null,
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "The foreign-national 2026–27 tuition is USD 4,333 per semester, plus USD 750 infrastructure and a one-time USD 500 admission charge. NRI and Indian tariffs are different. The brochure does not state an isolated annual tuition amount; semester charges are not multiplied into an annual claim."
+          },
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "The foreign-national 2026–27 tuition is USD 4,333 per semester, plus USD 750 infrastructure and a one-time USD 500 admission charge. NRI and Indian tariffs are different. The brochure does not state an isolated annual tuition amount; semester charges are not multiplied into an annual claim.",
+          "teachingPhases": [
+            {
+              "phase": "Campus study",
+              "language": "",
+              "details": "A two-year postgraduate programme in general economics with core quantitative economics and specialised study. Indian and foreign self-financing applicants follow different admission procedures."
+            }
+          ]
+        },
+        {
+          "slug": "ma-financial-economics",
+          "canonicalCourseSlug": "master-economics",
+          "officialTitle": "Master of Arts in Financial Economics",
+          "durationYears": 2,
+          "officialProgramUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Indian applicants meeting the 2026 programme qualification and age rules",
+              "NRI applicants through the separately labelled 2026 application route",
+              "Foreign nationals meeting equivalent qualification rules through self-financing admission"
+            ],
+            "restrictions": [
+              "The academic, mathematics and age rules below concern the 2026 admission cycle, not an announced future intake.",
+              "Foreign self-financing applicants require an equivalent qualifying examination and the same minimum academic qualifications. Indian reserved-category concessions are not automatically extended to foreign applicants.",
+              "For foreign qualifications, MSE checks correspondence against the AIU list; an unlisted university or board requires an AIU equivalence certificate.",
+              "Foreign applicants submit attested English translations of transcripts. Overseas records also require the stated authorised-government-agency attestation and Indian Embassy or Consulate certification.",
+              "The dedicated NRI/foreign form does not make every applicant eligible. Foreign-national entrance-test exemption is not automatically extended to Indian-passport NRI applicants.",
+              "Foreign applicants must document English proficiency. Where English is not the first language or the medium during secondary and tertiary education, the ordinance requires a qualifying English test no more than two years old."
+            ],
+            "notes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "This two-year financial economics degree uses the MSE entrance test for the regular Indian route. NRI and foreign applicants use the separately labelled application route; eligible foreign nationals may apply through self-financing admission.",
+            "eligibility": {
+              "intro": "Use the correct Indian, NRI or foreign self-financing route; nationality alone does not waive academic or documentation conditions.",
+              "items": [
+                "An undergraduate degree in social sciences, including commerce/management, sciences or engineering; final-year candidates in AY 2026 could also apply.",
+                "Indian-route undergraduate marks: 55% General, 50% eligible OBC-NCL or 45% eligible SC/ST/PwD. Foreign applicants require equivalent qualifications; these concessions are not automatic.",
+                "Be under 25 on 1 July 2026.",
+                "Mathematics at 10+2 or equivalent, including NIOS Senior Secondary mathematics, or undergraduate mathematical-economics coursework.",
+                "Regular Indian-route selection uses the MSE entrance test; qualifying marks and age break entrance-score ties.",
+                "Foreign self-financing applicants need an equivalent qualifying examination. Obtain AIU equivalence if the university or board is not on the AIU list.",
+                "When the foreign-route English-test rule applies: IELTS 6.5 overall and 6 in each section, or TOEFL iBT 95 overall and at least 20 in writing; scores must be no more than two years old."
+              ]
+            },
+            "applicationSteps": [
+              "Check the programme qualification, mathematics, age and applicant-category conditions for the 2026 cycle.",
+              "Regular entrance-route applicants complete the MSE online form and take the designated test; qualifying marks and age break entrance-score ties.",
+              "NRI and foreign applicants use the separately labelled form linked from the official admissions page and prepare the prescribed application, bio-data and qualifications for the designated programme office.",
+              "Foreign self-financing applicants complete equivalence, authenticated-document and applicable English-proficiency review before admission and category-specific payment."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying undergraduate transcripts and degree records",
+                "Records establishing the required mathematics study",
+                "Foreign route: grade transcripts with grading explanation and secondary-school, diploma and degree certificates; do not post originals",
+                "Foreign route: attested qualifying-degree syllabi and curricula",
+                "Foreign route: AIU equivalence certificate if the university or board is unlisted",
+                "Foreign route: duly attested English translations of transcripts",
+                "Overseas records: authorised-government-agency attestation and Indian Embassy or Consulate certification"
+              ],
+              "application": [
+                "Prescribed programme application",
+                "Foreign self-financing route: bio-data and academic qualification details",
+                "Foreign route: passport copy showing nationality and personal details",
+                "Foreign route: government fee-payment undertaking or bank statement showing USD 5,000",
+                "Foreign route: English-proficiency evidence, with a qualifying test where required"
+              ]
+            },
+            "deadlinesNote": "These requirements describe the 2026 admission cycle. Its application windows are not a promise of a current opening or a future intake; confirm the next published cycle before applying.",
+            "reportedFeeQuote": {
+              "currency": "USD",
+              "minAmount": 4333,
+              "status": "confirmed",
+              "period": "semester",
+              "componentBasis": "Foreign-national tuition per semester only; excludes USD 750 semester infrastructure and USD 500 one-time admission.",
+              "audience": "international",
+              "category": "Foreign national — not NRI",
+              "academicYear": "2026–27",
+              "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+              "sourceLabel": "MSE MA brochure 2026",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "",
+          "mediumNote": null,
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "The foreign-national 2026–27 tuition is USD 4,333 per semester, plus USD 750 infrastructure and a one-time USD 500 admission charge. NRI and Indian tariffs are different. The brochure does not state an isolated annual tuition amount; semester charges are not multiplied into an annual claim."
+          },
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "The foreign-national 2026–27 tuition is USD 4,333 per semester, plus USD 750 infrastructure and a one-time USD 500 admission charge. NRI and Indian tariffs are different. The brochure does not state an isolated annual tuition amount; semester charges are not multiplied into an annual claim.",
+          "teachingPhases": [
+            {
+              "phase": "Campus study",
+              "language": "",
+              "details": "A two-year postgraduate programme in financial economics with core quantitative economics and specialised study. Indian and foreign self-financing applicants follow different admission procedures."
+            }
+          ]
+        },
+        {
+          "slug": "ma-applied-quantitative-finance",
+          "canonicalCourseSlug": "master-quantitative-finance",
+          "officialTitle": "Master of Arts in Applied Quantitative Finance",
+          "durationYears": 2,
+          "officialProgramUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Indian applicants meeting the 2026 programme qualification and age rules",
+              "NRI applicants through the separately labelled 2026 application route",
+              "Foreign nationals meeting equivalent qualification rules through self-financing admission"
+            ],
+            "restrictions": [
+              "The academic, mathematics and age rules below concern the 2026 admission cycle, not an announced future intake.",
+              "Foreign self-financing applicants require an equivalent qualifying examination and the same minimum academic qualifications. Indian reserved-category concessions are not automatically extended to foreign applicants.",
+              "For foreign qualifications, MSE checks correspondence against the AIU list; an unlisted university or board requires an AIU equivalence certificate.",
+              "Foreign applicants submit attested English translations of transcripts. Overseas records also require the stated authorised-government-agency attestation and Indian Embassy or Consulate certification.",
+              "The dedicated NRI/foreign form does not make every applicant eligible. Foreign-national entrance-test exemption is not automatically extended to Indian-passport NRI applicants.",
+              "Foreign applicants must document English proficiency. Where English is not the first language or the medium during secondary and tertiary education, the ordinance requires a qualifying English test no more than two years old."
+            ],
+            "notes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "This two-year applied quantitative finance degree uses the MSE entrance test for the regular Indian route. NRI and foreign applicants use the separately labelled application route; eligible foreign nationals may apply through self-financing admission.",
+            "eligibility": {
+              "intro": "Use the correct Indian, NRI or foreign self-financing route; nationality alone does not waive academic or documentation conditions.",
+              "items": [
+                "An undergraduate degree in social sciences, including commerce/management, sciences or engineering; final-year candidates in AY 2026 could also apply.",
+                "Indian-route undergraduate marks: 55% General, 50% eligible OBC-NCL or 45% eligible SC/ST/PwD. Foreign applicants require equivalent qualifications; these concessions are not automatic.",
+                "Be under 25 on 1 July 2026.",
+                "Mathematics at 10+2 or equivalent, including NIOS Senior Secondary mathematics, or undergraduate mathematical-economics coursework.",
+                "Regular Indian-route selection uses the MSE entrance test; qualifying marks and age break entrance-score ties.",
+                "Foreign self-financing applicants need an equivalent qualifying examination. Obtain AIU equivalence if the university or board is not on the AIU list.",
+                "When the foreign-route English-test rule applies: IELTS 6.5 overall and 6 in each section, or TOEFL iBT 95 overall and at least 20 in writing; scores must be no more than two years old."
+              ]
+            },
+            "applicationSteps": [
+              "Check the programme qualification, mathematics, age and applicant-category conditions for the 2026 cycle.",
+              "Regular entrance-route applicants complete the MSE online form and take the designated test; qualifying marks and age break entrance-score ties.",
+              "NRI and foreign applicants use the separately labelled form linked from the official admissions page and prepare the prescribed application, bio-data and qualifications for the designated programme office.",
+              "Foreign self-financing applicants complete equivalence, authenticated-document and applicable English-proficiency review before admission and category-specific payment."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying undergraduate transcripts and degree records",
+                "Records establishing the required mathematics study",
+                "Foreign route: grade transcripts with grading explanation and secondary-school, diploma and degree certificates; do not post originals",
+                "Foreign route: attested qualifying-degree syllabi and curricula",
+                "Foreign route: AIU equivalence certificate if the university or board is unlisted",
+                "Foreign route: duly attested English translations of transcripts",
+                "Overseas records: authorised-government-agency attestation and Indian Embassy or Consulate certification"
+              ],
+              "application": [
+                "Prescribed programme application",
+                "Foreign self-financing route: bio-data and academic qualification details",
+                "Foreign route: passport copy showing nationality and personal details",
+                "Foreign route: government fee-payment undertaking or bank statement showing USD 5,000",
+                "Foreign route: English-proficiency evidence, with a qualifying test where required"
+              ]
+            },
+            "deadlinesNote": "These requirements describe the 2026 admission cycle. Its application windows are not a promise of a current opening or a future intake; confirm the next published cycle before applying.",
+            "reportedFeeQuote": {
+              "currency": "USD",
+              "minAmount": 4333,
+              "status": "confirmed",
+              "period": "semester",
+              "componentBasis": "Foreign-national tuition per semester only; excludes USD 750 semester infrastructure and USD 500 one-time admission.",
+              "audience": "international",
+              "category": "Foreign national — not NRI",
+              "academicYear": "2026–27",
+              "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+              "sourceLabel": "MSE MA brochure 2026",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "",
+          "mediumNote": null,
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "The foreign-national 2026–27 tuition is USD 4,333 per semester, plus USD 750 infrastructure and a one-time USD 500 admission charge. NRI and Indian tariffs are different. The brochure does not state an isolated annual tuition amount; semester charges are not multiplied into an annual claim."
+          },
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "The foreign-national 2026–27 tuition is USD 4,333 per semester, plus USD 750 infrastructure and a one-time USD 500 admission charge. NRI and Indian tariffs are different. The brochure does not state an isolated annual tuition amount; semester charges are not multiplied into an annual claim.",
+          "teachingPhases": [
+            {
+              "phase": "Campus study",
+              "language": "",
+              "details": "A two-year postgraduate programme in applied quantitative finance with core quantitative economics and specialised study. Indian and foreign self-financing applicants follow different admission procedures."
+            }
+          ]
+        },
+        {
+          "slug": "ma-actuarial-economics",
+          "canonicalCourseSlug": "master-economics",
+          "officialTitle": "Master of Arts in Actuarial Economics",
+          "durationYears": 2,
+          "officialProgramUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Indian applicants meeting the 2026 programme qualification and age rules",
+              "NRI applicants through the separately labelled 2026 application route",
+              "Foreign nationals meeting equivalent qualification rules through self-financing admission"
+            ],
+            "restrictions": [
+              "The academic, mathematics and age rules below concern the 2026 admission cycle, not an announced future intake.",
+              "Foreign self-financing applicants require an equivalent qualifying examination and the same minimum academic qualifications. Indian reserved-category concessions are not automatically extended to foreign applicants.",
+              "For foreign qualifications, MSE checks correspondence against the AIU list; an unlisted university or board requires an AIU equivalence certificate.",
+              "Foreign applicants submit attested English translations of transcripts. Overseas records also require the stated authorised-government-agency attestation and Indian Embassy or Consulate certification.",
+              "The dedicated NRI/foreign form does not make every applicant eligible. Foreign-national entrance-test exemption is not automatically extended to Indian-passport NRI applicants.",
+              "Foreign applicants must document English proficiency. Where English is not the first language or the medium during secondary and tertiary education, the ordinance requires a qualifying English test no more than two years old."
+            ],
+            "notes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "This two-year actuarial economics degree uses the MSE entrance test for the regular Indian route. NRI and foreign applicants use the separately labelled application route; eligible foreign nationals may apply through self-financing admission.",
+            "eligibility": {
+              "intro": "Use the correct Indian, NRI or foreign self-financing route; nationality alone does not waive academic or documentation conditions.",
+              "items": [
+                "An undergraduate degree in social sciences, including commerce/management, sciences or engineering; final-year candidates in AY 2026 could also apply.",
+                "Indian-route undergraduate marks: 55% General, 50% eligible OBC-NCL or 45% eligible SC/ST/PwD. Foreign applicants require equivalent qualifications; these concessions are not automatic.",
+                "Be under 25 on 1 July 2026.",
+                "Mathematics at 10+2 or equivalent, including NIOS Senior Secondary mathematics, or undergraduate mathematical-economics coursework.",
+                "Regular Indian-route selection uses the MSE entrance test; qualifying marks and age break entrance-score ties.",
+                "Foreign self-financing applicants need an equivalent qualifying examination. Obtain AIU equivalence if the university or board is not on the AIU list.",
+                "When the foreign-route English-test rule applies: IELTS 6.5 overall and 6 in each section, or TOEFL iBT 95 overall and at least 20 in writing; scores must be no more than two years old."
+              ]
+            },
+            "applicationSteps": [
+              "Check the programme qualification, mathematics, age and applicant-category conditions for the 2026 cycle.",
+              "Regular entrance-route applicants complete the MSE online form and take the designated test; qualifying marks and age break entrance-score ties.",
+              "NRI and foreign applicants use the separately labelled form linked from the official admissions page and prepare the prescribed application, bio-data and qualifications for the designated programme office.",
+              "Foreign self-financing applicants complete equivalence, authenticated-document and applicable English-proficiency review before admission and category-specific payment."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying undergraduate transcripts and degree records",
+                "Records establishing the required mathematics study",
+                "Foreign route: grade transcripts with grading explanation and secondary-school, diploma and degree certificates; do not post originals",
+                "Foreign route: attested qualifying-degree syllabi and curricula",
+                "Foreign route: AIU equivalence certificate if the university or board is unlisted",
+                "Foreign route: duly attested English translations of transcripts",
+                "Overseas records: authorised-government-agency attestation and Indian Embassy or Consulate certification"
+              ],
+              "application": [
+                "Prescribed programme application",
+                "Foreign self-financing route: bio-data and academic qualification details",
+                "Foreign route: passport copy showing nationality and personal details",
+                "Foreign route: government fee-payment undertaking or bank statement showing USD 5,000",
+                "Foreign route: English-proficiency evidence, with a qualifying test where required"
+              ]
+            },
+            "deadlinesNote": "These requirements describe the 2026 admission cycle. Its application windows are not a promise of a current opening or a future intake; confirm the next published cycle before applying.",
+            "reportedFeeQuote": {
+              "currency": "USD",
+              "minAmount": 4333,
+              "status": "confirmed",
+              "period": "semester",
+              "componentBasis": "Foreign-national tuition per semester only; excludes USD 750 semester infrastructure and USD 500 one-time admission.",
+              "audience": "international",
+              "category": "Foreign national — not NRI",
+              "academicYear": "2026–27",
+              "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+              "sourceLabel": "MSE MA brochure 2026",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "",
+          "mediumNote": null,
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "The foreign-national 2026–27 tuition is USD 4,333 per semester, plus USD 750 infrastructure and a one-time USD 500 admission charge. NRI and Indian tariffs are different. The brochure does not state an isolated annual tuition amount; semester charges are not multiplied into an annual claim."
+          },
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "The foreign-national 2026–27 tuition is USD 4,333 per semester, plus USD 750 infrastructure and a one-time USD 500 admission charge. NRI and Indian tariffs are different. The brochure does not state an isolated annual tuition amount; semester charges are not multiplied into an annual claim.",
+          "teachingPhases": [
+            {
+              "phase": "Campus study",
+              "language": "",
+              "details": "A two-year postgraduate programme in actuarial economics with core quantitative economics and specialised study. Indian and foreign self-financing applicants follow different admission procedures."
+            }
+          ]
+        },
+        {
+          "slug": "ma-environmental-economics",
+          "canonicalCourseSlug": "master-economics",
+          "officialTitle": "Master of Arts in Environmental Economics",
+          "durationYears": 2,
+          "officialProgramUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Indian applicants meeting the 2026 programme qualification and age rules",
+              "NRI applicants through the separately labelled 2026 application route",
+              "Foreign nationals meeting equivalent qualification rules through self-financing admission"
+            ],
+            "restrictions": [
+              "The academic, mathematics and age rules below concern the 2026 admission cycle, not an announced future intake.",
+              "Foreign self-financing applicants require an equivalent qualifying examination and the same minimum academic qualifications. Indian reserved-category concessions are not automatically extended to foreign applicants.",
+              "For foreign qualifications, MSE checks correspondence against the AIU list; an unlisted university or board requires an AIU equivalence certificate.",
+              "Foreign applicants submit attested English translations of transcripts. Overseas records also require the stated authorised-government-agency attestation and Indian Embassy or Consulate certification.",
+              "The dedicated NRI/foreign form does not make every applicant eligible. Foreign-national entrance-test exemption is not automatically extended to Indian-passport NRI applicants.",
+              "Foreign applicants must document English proficiency. Where English is not the first language or the medium during secondary and tertiary education, the ordinance requires a qualifying English test no more than two years old."
+            ],
+            "notes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "This two-year environmental economics degree uses the MSE entrance test for the regular Indian route. NRI and foreign applicants use the separately labelled application route; eligible foreign nationals may apply through self-financing admission.",
+            "eligibility": {
+              "intro": "Use the correct Indian, NRI or foreign self-financing route; nationality alone does not waive academic or documentation conditions.",
+              "items": [
+                "An undergraduate degree in social sciences, including commerce/management, sciences or engineering; final-year candidates in AY 2026 could also apply.",
+                "Indian-route undergraduate marks: 55% General, 50% eligible OBC-NCL or 45% eligible SC/ST/PwD. Foreign applicants require equivalent qualifications; these concessions are not automatic.",
+                "Be under 25 on 1 July 2026.",
+                "Mathematics at 10+2 or equivalent, including NIOS Senior Secondary mathematics, or undergraduate mathematical-economics coursework.",
+                "Regular Indian-route selection uses the MSE entrance test; qualifying marks and age break entrance-score ties.",
+                "Foreign self-financing applicants need an equivalent qualifying examination. Obtain AIU equivalence if the university or board is not on the AIU list.",
+                "When the foreign-route English-test rule applies: IELTS 6.5 overall and 6 in each section, or TOEFL iBT 95 overall and at least 20 in writing; scores must be no more than two years old."
+              ]
+            },
+            "applicationSteps": [
+              "Check the programme qualification, mathematics, age and applicant-category conditions for the 2026 cycle.",
+              "Regular entrance-route applicants complete the MSE online form and take the designated test; qualifying marks and age break entrance-score ties.",
+              "NRI and foreign applicants use the separately labelled form linked from the official admissions page and prepare the prescribed application, bio-data and qualifications for the designated programme office.",
+              "Foreign self-financing applicants complete equivalence, authenticated-document and applicable English-proficiency review before admission and category-specific payment."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying undergraduate transcripts and degree records",
+                "Records establishing the required mathematics study",
+                "Foreign route: grade transcripts with grading explanation and secondary-school, diploma and degree certificates; do not post originals",
+                "Foreign route: attested qualifying-degree syllabi and curricula",
+                "Foreign route: AIU equivalence certificate if the university or board is unlisted",
+                "Foreign route: duly attested English translations of transcripts",
+                "Overseas records: authorised-government-agency attestation and Indian Embassy or Consulate certification"
+              ],
+              "application": [
+                "Prescribed programme application",
+                "Foreign self-financing route: bio-data and academic qualification details",
+                "Foreign route: passport copy showing nationality and personal details",
+                "Foreign route: government fee-payment undertaking or bank statement showing USD 5,000",
+                "Foreign route: English-proficiency evidence, with a qualifying test where required"
+              ]
+            },
+            "deadlinesNote": "These requirements describe the 2026 admission cycle. Its application windows are not a promise of a current opening or a future intake; confirm the next published cycle before applying.",
+            "reportedFeeQuote": {
+              "currency": "USD",
+              "minAmount": 4333,
+              "status": "confirmed",
+              "period": "semester",
+              "componentBasis": "Foreign-national tuition per semester only; excludes USD 750 semester infrastructure and USD 500 one-time admission.",
+              "audience": "international",
+              "category": "Foreign national — not NRI",
+              "academicYear": "2026–27",
+              "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+              "sourceLabel": "MSE MA brochure 2026",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "",
+          "mediumNote": null,
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "The foreign-national 2026–27 tuition is USD 4,333 per semester, plus USD 750 infrastructure and a one-time USD 500 admission charge. NRI and Indian tariffs are different. The brochure does not state an isolated annual tuition amount; semester charges are not multiplied into an annual claim."
+          },
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "The foreign-national 2026–27 tuition is USD 4,333 per semester, plus USD 750 infrastructure and a one-time USD 500 admission charge. NRI and Indian tariffs are different. The brochure does not state an isolated annual tuition amount; semester charges are not multiplied into an annual claim.",
+          "teachingPhases": [
+            {
+              "phase": "Campus study",
+              "language": "",
+              "details": "A two-year postgraduate programme in environmental economics with core quantitative economics and specialised study. Indian and foreign self-financing applicants follow different admission procedures."
+            }
+          ]
+        },
+        {
+          "slug": "msc-data-science",
+          "canonicalCourseSlug": "msc-data-science",
+          "officialTitle": "Master of Science in Data Science",
+          "durationYears": 2,
+          "officialProgramUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-M.Sc_.-Degree-in-Data-Science-Brochure-2026-v2.pdf",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Indian applicants meeting the 2026 programme qualification and age rules",
+              "NRI applicants through the separately labelled 2026 application route",
+              "Foreign nationals meeting equivalent qualification rules through self-financing admission"
+            ],
+            "restrictions": [
+              "The academic, mathematics and age rules below concern the 2026 admission cycle, not an announced future intake.",
+              "Foreign self-financing applicants require an equivalent qualifying examination and the same minimum academic qualifications. Indian reserved-category concessions are not automatically extended to foreign applicants.",
+              "For foreign qualifications, MSE checks correspondence against the AIU list; an unlisted university or board requires an AIU equivalence certificate.",
+              "Foreign applicants submit attested English translations of transcripts. Overseas records also require the stated authorised-government-agency attestation and Indian Embassy or Consulate certification.",
+              "The dedicated NRI/foreign form does not make every applicant eligible. Foreign-national entrance-test exemption is not automatically extended to Indian-passport NRI applicants.",
+              "Foreign applicants must document English proficiency. Where English is not the first language or the medium during secondary and tertiary education, the ordinance requires a qualifying English test no more than two years old."
+            ],
+            "notes": "The 2026 brochure and live admissions page establish the current route. Foreign equivalence/documents are taken from the programme-specific ordinance effective 2025–26, referenced generically by the 2026 brochure; old dates, seat counts, fees and contact details are not reused.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-M.Sc_.-Degree-in-Data-Science-Brochure-2026-v2.pdf"
+          },
+          "admissionsContent": {
+            "overview": "This two-year data-science degree offers MSE entrance-test and specified GATE-score routes. NRI and foreign applicants use the separately labelled application route; foreign self-financing applications require qualification review.",
+            "eligibility": {
+              "intro": "Use the correct Indian, NRI or foreign self-financing route; nationality alone does not waive academic or documentation conditions.",
+              "items": [
+                "Entrance-test route: an undergraduate degree in social sciences, commerce/management, sciences, engineering, mathematics or statistics; final-year candidates in AY 2026 could also apply.",
+                "Indian-route undergraduate marks: 55% General, 50% eligible OBC-NCL or 45% eligible SC/ST/PwD. Foreign applicants require equivalent qualifications; these concessions are not automatic.",
+                "Be under 25 on 1 July 2026.",
+                "Entrance-test route: mathematics at 10+2 or equivalent, or undergraduate mathematical-economics coursework.",
+                "Alternatively, valid GATE CS, DA, MA, ST or PH scores can be used for up to 50% of seats without the MSE entrance test; GATE is not compulsory for every route.",
+                "Foreign self-financing applicants need an equivalent qualifying examination. Obtain AIU equivalence if the university or board is not on the AIU list.",
+                "When the foreign-route English-test rule applies: IELTS 6.5 overall and 6 in each section, or TOEFL iBT 95 overall and at least 20 in writing; scores must be no more than two years old."
+              ]
+            },
+            "applicationSteps": [
+              "Check the programme qualification, mathematics, age and applicant-category conditions for the 2026 cycle.",
+              "Regular entrance-route applicants complete the MSE online form and take the designated test; qualifying marks and age break entrance-score ties.",
+              "Eligible GATE-score applicants use the separate GATE application route rather than assuming the MSE entrance test is compulsory.",
+              "NRI and foreign applicants use the separately labelled form linked from the official admissions page and prepare the prescribed application, bio-data and qualifications for the designated programme office.",
+              "Foreign self-financing applicants complete equivalence, authenticated-document and applicable English-proficiency review before admission and category-specific payment."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying undergraduate transcripts and degree records",
+                "Records establishing the required mathematics study",
+                "Foreign route: grade transcripts with grading explanation and secondary-school, diploma and degree certificates; do not post originals",
+                "Foreign route: attested qualifying-degree syllabi and curricula",
+                "Foreign route: AIU equivalence certificate if the university or board is unlisted",
+                "Foreign route: duly attested English translations of transcripts",
+                "Overseas records: authorised-government-agency attestation and Indian Embassy or Consulate certification"
+              ],
+              "application": [
+                "Prescribed programme application",
+                "Foreign self-financing route: bio-data and academic qualification details",
+                "Foreign route: passport copy showing nationality and personal details",
+                "Foreign route: government fee-payment undertaking or bank statement showing USD 10,000",
+                "Foreign route: English-proficiency evidence, with a qualifying test where required",
+                "Valid score record when applying through the specified GATE route"
+              ]
+            },
+            "deadlinesNote": "These requirements describe the 2026 admission cycle. Its application windows are not a promise of a current opening or a future intake; confirm the next published cycle before applying.",
+            "reportedFeeQuote": {
+              "currency": "USD",
+              "minAmount": 6934,
+              "status": "confirmed",
+              "period": "semester",
+              "componentBasis": "Foreign-national tuition per semester only; excludes USD 750 semester infrastructure and USD 500 one-time admission.",
+              "audience": "international",
+              "category": "Foreign national — not NRI",
+              "academicYear": "2026–27",
+              "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-M.Sc_.-Degree-in-Data-Science-Brochure-2026-v2.pdf",
+              "sourceLabel": "MSE Data Science brochure 2026",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "",
+          "mediumNote": null,
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "The foreign-national 2026–27 tuition is USD 6,934 per semester, plus USD 750 infrastructure and a one-time USD 500 admission charge. NRI and Indian tariffs are different. The brochure does not state an isolated annual tuition amount; semester charges are not multiplied into an annual claim."
+          },
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "The foreign-national 2026–27 tuition is USD 6,934 per semester, plus USD 750 infrastructure and a one-time USD 500 admission charge. NRI and Indian tariffs are different. The brochure does not state an isolated annual tuition amount; semester charges are not multiplied into an annual claim.",
+          "teachingPhases": [
+            {
+              "phase": "Campus study",
+              "language": "",
+              "details": "A two-year data-science programme with quantitative coursework, a mandatory summer internship and a second-year dissertation. Indian and foreign self-financing applicants follow different admission procedures."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "integrated-ma-economics",
+      "publicField": "admissions",
+      "claimText": "Indian applicants follow the MSE entrance route. Foreign self-financing applicants submit prescribed applications, bio-data and qualifications to MSE directly.",
+      "status": "verified",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/IMA-2026-Broucher.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "integrated-ma-economics",
+      "publicField": "medium",
+      "claimText": "Reviewed programme sources do not explicitly establish the teaching language. English-language web text or an English subject is not treated as proof.",
+      "status": "omit",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/IMA-2026-Broucher.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "integrated-ma-economics",
+      "publicField": "intake",
+      "claimText": "The 2026 admissions dates are past. No future recurring intake is inferred from a previous cohort commencement.",
+      "status": "omit",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/IMA-2026-Broucher.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-general-economics",
+      "publicField": "eligibility",
+      "claimText": "An undergraduate degree in social sciences, including commerce/management, sciences or engineering.; Minimum undergraduate marks: 55% General, 50% OBC-NCL and 45% SC/ST/PwD.; Applicants must be under 25 on 1 July 2026.; Mathematics at 10+2 or equivalent, or undergraduate mathematical-economics coursework, is required.",
+      "status": "verified",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-general-economics",
+      "publicField": "admissions",
+      "claimText": "Indian applicants follow the MSE entrance route. Foreign self-financing applicants submit prescribed applications, bio-data and qualifications to MSE directly.",
+      "status": "verified",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-general-economics",
+      "publicField": "fee",
+      "claimText": "The foreign-national 2026–27 tuition is USD 4,333 per semester, plus USD 750 infrastructure and a one-time USD 500 admission charge. NRI and Indian tariffs are different. The brochure does not state an isolated annual tuition amount; semester charges are not multiplied into an annual claim.",
+      "status": "verified",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-general-economics",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Foreign-national tuition per semester only; excludes USD 750 semester infrastructure and USD 500 one-time admission. Amount 4333 USD per semester.",
+      "status": "verified",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-general-economics",
+      "publicField": "medium",
+      "claimText": "Reviewed programme sources do not explicitly establish the teaching language. English-language web text or an English subject is not treated as proof.",
+      "status": "omit",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-general-economics",
+      "publicField": "intake",
+      "claimText": "The 2026 admissions dates are past. No future recurring intake is inferred from a previous cohort commencement.",
+      "status": "omit",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-financial-economics",
+      "publicField": "eligibility",
+      "claimText": "An undergraduate degree in social sciences, including commerce/management, sciences or engineering.; Minimum undergraduate marks: 55% General, 50% OBC-NCL and 45% SC/ST/PwD.; Applicants must be under 25 on 1 July 2026.; Mathematics at 10+2 or equivalent, or undergraduate mathematical-economics coursework, is required.",
+      "status": "verified",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-financial-economics",
+      "publicField": "admissions",
+      "claimText": "Indian applicants follow the MSE entrance route. Foreign self-financing applicants submit prescribed applications, bio-data and qualifications to MSE directly.",
+      "status": "verified",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-financial-economics",
+      "publicField": "fee",
+      "claimText": "The foreign-national 2026–27 tuition is USD 4,333 per semester, plus USD 750 infrastructure and a one-time USD 500 admission charge. NRI and Indian tariffs are different. The brochure does not state an isolated annual tuition amount; semester charges are not multiplied into an annual claim.",
+      "status": "verified",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-financial-economics",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Foreign-national tuition per semester only; excludes USD 750 semester infrastructure and USD 500 one-time admission. Amount 4333 USD per semester.",
+      "status": "verified",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-financial-economics",
+      "publicField": "medium",
+      "claimText": "Reviewed programme sources do not explicitly establish the teaching language. English-language web text or an English subject is not treated as proof.",
+      "status": "omit",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-financial-economics",
+      "publicField": "intake",
+      "claimText": "The 2026 admissions dates are past. No future recurring intake is inferred from a previous cohort commencement.",
+      "status": "omit",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-applied-quantitative-finance",
+      "publicField": "eligibility",
+      "claimText": "An undergraduate degree in social sciences, including commerce/management, sciences or engineering.; Minimum undergraduate marks: 55% General, 50% OBC-NCL and 45% SC/ST/PwD.; Applicants must be under 25 on 1 July 2026.; Mathematics at 10+2 or equivalent, or undergraduate mathematical-economics coursework, is required.",
+      "status": "verified",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-applied-quantitative-finance",
+      "publicField": "admissions",
+      "claimText": "Indian applicants follow the MSE entrance route. Foreign self-financing applicants submit prescribed applications, bio-data and qualifications to MSE directly.",
+      "status": "verified",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-applied-quantitative-finance",
+      "publicField": "fee",
+      "claimText": "The foreign-national 2026–27 tuition is USD 4,333 per semester, plus USD 750 infrastructure and a one-time USD 500 admission charge. NRI and Indian tariffs are different. The brochure does not state an isolated annual tuition amount; semester charges are not multiplied into an annual claim.",
+      "status": "verified",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-applied-quantitative-finance",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Foreign-national tuition per semester only; excludes USD 750 semester infrastructure and USD 500 one-time admission. Amount 4333 USD per semester.",
+      "status": "verified",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-applied-quantitative-finance",
+      "publicField": "medium",
+      "claimText": "Reviewed programme sources do not explicitly establish the teaching language. English-language web text or an English subject is not treated as proof.",
+      "status": "omit",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-applied-quantitative-finance",
+      "publicField": "intake",
+      "claimText": "The 2026 admissions dates are past. No future recurring intake is inferred from a previous cohort commencement.",
+      "status": "omit",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-actuarial-economics",
+      "publicField": "eligibility",
+      "claimText": "An undergraduate degree in social sciences, including commerce/management, sciences or engineering.; Minimum undergraduate marks: 55% General, 50% OBC-NCL and 45% SC/ST/PwD.; Applicants must be under 25 on 1 July 2026.; Mathematics at 10+2 or equivalent, or undergraduate mathematical-economics coursework, is required.",
+      "status": "verified",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-actuarial-economics",
+      "publicField": "admissions",
+      "claimText": "Indian applicants follow the MSE entrance route. Foreign self-financing applicants submit prescribed applications, bio-data and qualifications to MSE directly.",
+      "status": "verified",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-actuarial-economics",
+      "publicField": "fee",
+      "claimText": "The foreign-national 2026–27 tuition is USD 4,333 per semester, plus USD 750 infrastructure and a one-time USD 500 admission charge. NRI and Indian tariffs are different. The brochure does not state an isolated annual tuition amount; semester charges are not multiplied into an annual claim.",
+      "status": "verified",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-actuarial-economics",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Foreign-national tuition per semester only; excludes USD 750 semester infrastructure and USD 500 one-time admission. Amount 4333 USD per semester.",
+      "status": "verified",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-actuarial-economics",
+      "publicField": "medium",
+      "claimText": "Reviewed programme sources do not explicitly establish the teaching language. English-language web text or an English subject is not treated as proof.",
+      "status": "omit",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-actuarial-economics",
+      "publicField": "intake",
+      "claimText": "The 2026 admissions dates are past. No future recurring intake is inferred from a previous cohort commencement.",
+      "status": "omit",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-environmental-economics",
+      "publicField": "eligibility",
+      "claimText": "An undergraduate degree in social sciences, including commerce/management, sciences or engineering.; Minimum undergraduate marks: 55% General, 50% OBC-NCL and 45% SC/ST/PwD.; Applicants must be under 25 on 1 July 2026.; Mathematics at 10+2 or equivalent, or undergraduate mathematical-economics coursework, is required.",
+      "status": "verified",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-environmental-economics",
+      "publicField": "admissions",
+      "claimText": "Indian applicants follow the MSE entrance route. Foreign self-financing applicants submit prescribed applications, bio-data and qualifications to MSE directly.",
+      "status": "verified",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-environmental-economics",
+      "publicField": "fee",
+      "claimText": "The foreign-national 2026–27 tuition is USD 4,333 per semester, plus USD 750 infrastructure and a one-time USD 500 admission charge. NRI and Indian tariffs are different. The brochure does not state an isolated annual tuition amount; semester charges are not multiplied into an annual claim.",
+      "status": "verified",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-environmental-economics",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Foreign-national tuition per semester only; excludes USD 750 semester infrastructure and USD 500 one-time admission. Amount 4333 USD per semester.",
+      "status": "verified",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-environmental-economics",
+      "publicField": "medium",
+      "claimText": "Reviewed programme sources do not explicitly establish the teaching language. English-language web text or an English subject is not treated as proof.",
+      "status": "omit",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-environmental-economics",
+      "publicField": "intake",
+      "claimText": "The 2026 admissions dates are past. No future recurring intake is inferred from a previous cohort commencement.",
+      "status": "omit",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "msc-data-science",
+      "publicField": "eligibility",
+      "claimText": "An undergraduate degree in social sciences, including commerce/management, sciences or engineering, or mathematics/statistics.; Minimum undergraduate marks: 55% General, 50% OBC-NCL and 45% SC/ST/PwD.; Applicants must be under 25 on 1 July 2026.; Mathematics at 10+2 or equivalent, or undergraduate mathematical-economics coursework, is required.; For the GATE route, accepted papers are CS, DA, MA, ST or PH; MSE also runs its own entrance route.",
+      "status": "verified",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-M.Sc_.-Degree-in-Data-Science-Brochure-2026-v2.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "msc-data-science",
+      "publicField": "admissions",
+      "claimText": "Indian applicants follow the MSE entrance route or specified GATE papers. Foreign self-financing applicants submit prescribed applications, bio-data and qualifications to MSE directly.",
+      "status": "verified",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-M.Sc_.-Degree-in-Data-Science-Brochure-2026-v2.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "msc-data-science",
+      "publicField": "fee",
+      "claimText": "The foreign-national 2026–27 tuition is USD 6,934 per semester, plus USD 750 infrastructure and a one-time USD 500 admission charge. NRI and Indian tariffs are different. The brochure does not state an isolated annual tuition amount; semester charges are not multiplied into an annual claim.",
+      "status": "verified",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-M.Sc_.-Degree-in-Data-Science-Brochure-2026-v2.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "msc-data-science",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Foreign-national tuition per semester only; excludes USD 750 semester infrastructure and USD 500 one-time admission. Amount 6934 USD per semester.",
+      "status": "verified",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-M.Sc_.-Degree-in-Data-Science-Brochure-2026-v2.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "msc-data-science",
+      "publicField": "medium",
+      "claimText": "Reviewed programme sources do not explicitly establish the teaching language. English-language web text or an English subject is not treated as proof.",
+      "status": "omit",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-M.Sc_.-Degree-in-Data-Science-Brochure-2026-v2.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "msc-data-science",
+      "publicField": "intake",
+      "claimText": "The 2026 admissions dates are past. No future recurring intake is inferred from a previous cohort commencement.",
+      "status": "omit",
+      "sourceLabel": "MSE 2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-M.Sc_.-Degree-in-Data-Science-Brochure-2026-v2.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "publicField": "summary",
+      "claimText": "Madras School of Economics is a specialist institution founded in Chennai in 1993. Its current taught portfolio includes integrated economics, five MA specialisations, data science and two MBAs. The economics and data-science routes combine quantitative study with applied work, while entry requirements differ by programme and applicant category.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://mse.ac.in/about/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "publicField": "campusLifestyle",
+      "claimText": "The Kotturpuram campus has air-conditioned classrooms, a library with computer and reading facilities, hostels, a mess and a cafeteria. Outdoor and indoor sports include football, cricket, basketball, volleyball, table tennis, chess and carrom.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/IMA-2026-Broucher.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "publicField": "cityProfile",
+      "claimText": "MSE is on Gandhi Mandapam Road in Kotturpuram, Chennai, behind the Government Data Centre and Anna Centenary Library. It is a single specialist campus for this profile, not the Central University of Tamil Nadu. Historical university partnerships should not be confused with the location or awarding arrangements for new MSE cohorts.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://mse.ac.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "publicField": "practicalExposure",
+      "claimText": "The economics portfolio includes quantitative methods, econometrics and specialised applications. The MA programmes include a summer internship after the second semester, while the Data Science programme requires a summer internship and a second-year dissertation. The integrated route adds programming and analytical study. A BA exit within the integrated programme is not an additional admissions route, and applied work does not guarantee employment.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "publicField": "hostelOverview",
+      "claimText": "MSE has separate accommodation for men and women; its integrated-programme brochure describes three girls’ hostels and one boys’ hostel. Hostel rooms remain subject to availability. The hostel page describes dining, common reading facilities, television and internet access.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://mse.ac.in/hostel-facilities/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "publicField": "dietarySupport",
+      "claimText": "The campus mess serves vegetarian and non-vegetarian food, and the cafeteria provides snacks, tea and coffee. Applicants with allergies or other dietary needs should confirm the arrangements directly rather than assume a dedicated service.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/IMA-2026-Broucher.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "publicField": "safetyOverview",
+      "claimText": "MSE identifies grievance and sexual-harassment prevention, anti-ragging and SC/ST committees. These provide institutional reporting channels; the presence of a committee is not a guarantee against incidents.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/09/Grievance-and-Prevention-of-Sexual-Harassment-Committee.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "publicField": "studentSupport",
+      "claimText": "The programme brochures identify separate student offices for admissions, including a direct route for foreign self-financing applicants. The campus library and reading rooms support academic work, and the grievance committees provide additional points of contact.",
+      "status": "verified",
+      "sourceLabel": "Official source",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/IMA-2026-Broucher.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "publicField": "practicalExposure",
+      "claimText": "MSc Data Science requires a summer internship after the first year and a second-year dissertation.",
+      "status": "verified",
+      "sourceLabel": "Official programme source",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-M.Sc_.-Degree-in-Data-Science-Brochure-2026-v2.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "publicField": "recognition",
+      "claimText": "UGC Annual Report 2022–23, printed p 142 table 2.2(i)(b)(v), names Madras School of Economics at its Chennai address under Institutions Established under State Legislature Act, with recognition date 1 April 2021. Printed p 95 describes this category among institutions empowered to award degrees under legislation.",
+      "status": "verified",
+      "sourceLabel": "UGC Annual Report 2022–23, pp 95 and 142",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/annualreport/AR.2022-23.English_WEB.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "Original regulator-hosted PDF downloaded HTTP 200 and visually checked at PDF pages 107 and 154. As-of date of named table 31 March 2023 is retained; no NAAC grade, all-programme accreditation, public ownership or Section 12 B funding eligibility is inferred."
+    },
+    {
+      "entity": "university",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "publicField": "degreeAuthority",
+      "claimText": "The same UGC report identifies institutions established under state legislature among degree-awarding university-level institutions. Its named statutory-institutions table includes MSE with recognition 1 April 2021.",
+      "status": "verified",
+      "sourceLabel": "UGC Annual Report 2022–23, sections 2.2(i) and 2.2(i)(b)(v)",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/annualreport/AR.2022-23.English_WEB.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "integrated-ma-economics",
+      "publicField": "eligibility",
+      "claimText": "For integrated-MA 2026 entry: first-attempt AY 2026 10+2, 65% General/60% eligible OBC-NCL/50% eligible SC-ST-PwD or equivalent grades, required Standard/Applied/Business Mathematics and age below 22 on 1 July 2026.",
+      "status": "verified",
+      "sourceLabel": "MSE programme-specific 2026 admissions brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/IMA-2026-Broucher.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "integrated-ma-economics",
+      "publicField": "audienceEligibility",
+      "claimText": "The programme permits foreign-national self-financing applications with equivalent qualifying examinations; this route is distinct from regular Indian entrance-test admission. Minimum academic requirements remain applicable and Indian reserved-category concessions are not assumed for foreign nationals.",
+      "status": "verified",
+      "sourceLabel": "MSE programme-specific foreign-admissions policy",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/IMA-2026-Broucher.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The integrated-MA 2026 brochure itself establishes the foreign route and equivalence documents. No MA/MSc English-test threshold is imported into this integrated programme."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "integrated-ma-economics",
+      "publicField": "documents",
+      "claimText": "Foreign qualifications are checked against AIU correspondence; an unlisted board or university needs an AIU equivalence certificate. Attested English translations and the specified overseas government-agency/Indian Embassy or Consulate authentication are required.",
+      "status": "verified",
+      "sourceLabel": "MSE programme-specific foreign qualification and documents section",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/IMA-2026-Broucher.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The integrated-MA 2026 brochure itself establishes the foreign route and equivalence documents. No MA/MSc English-test threshold is imported into this integrated programme."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "integrated-ma-economics",
+      "publicField": "admissions",
+      "claimText": "The integrated-MA brochure requires the prescribed foreign self-financing application, bio-data and qualifications to the BA Students Office and exempts foreign nationals from the entrance test.",
+      "status": "verified",
+      "sourceLabel": "MSE official 2026 applicant-route instructions",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/IMA-2026-Broucher.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-general-economics",
+      "publicField": "eligibility",
+      "claimText": "The 2026 brochure specifies undergraduate qualification, Indian-route category marks of 55%/50%/45%, age below 25 on 1 July 2026 and the programme mathematics condition. Reservation concessions are category-specific, not automatically foreign-applicant concessions.",
+      "status": "verified",
+      "sourceLabel": "MSE programme-specific 2026 admissions brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-general-economics",
+      "publicField": "audienceEligibility",
+      "claimText": "The programme permits foreign-national self-financing applications with equivalent qualifying examinations; this route is distinct from regular Indian entrance-test admission. Minimum academic requirements remain applicable and Indian reserved-category concessions are not assumed for foreign nationals.",
+      "status": "verified",
+      "sourceLabel": "MSE programme-specific foreign-admissions policy",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2025/04/MA-Program-Ordinance-April2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-general-economics",
+      "publicField": "documents",
+      "claimText": "Foreign qualifications are checked against AIU correspondence; an unlisted board or university needs an AIU equivalence certificate. Attested English translations and the specified overseas government-agency/Indian Embassy or Consulate authentication are required.",
+      "status": "verified",
+      "sourceLabel": "MSE programme-specific foreign qualification and documents section",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2025/04/MA-Program-Ordinance-April2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-general-economics",
+      "publicField": "admissions",
+      "claimText": "The current official admissions page explicitly provides a separately labelled NRI and Foreign Nationals — Admissions 2026 application route. This establishes the current entry point, not the internal fields of its Google form.",
+      "status": "verified",
+      "sourceLabel": "MSE official 2026 applicant-route instructions",
+      "sourceUrl": "https://mse.ac.in/m-a-programmes-mse/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-general-economics",
+      "publicField": "documents",
+      "claimText": "The foreign-route ordinance requires grade explanations and certificates, attested curricula, passport copy and financial assurance: a government fee-payment undertaking or bank statement showing USD 5,000. It also requires English-proficiency evidence and a qualifying test where English is not the first language or secondary/tertiary medium.",
+      "status": "verified",
+      "sourceLabel": "MSE foreign applicant documentation section",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2025/04/MA-Program-Ordinance-April2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-general-economics",
+      "publicField": "eligibility",
+      "claimText": "For the conditional foreign-route English test, the ordinance accepts IELTS 6.5 overall with 6 in each section or TOEFL iBT 95 overall with at least 20 writing; scores more than two years old are not accepted. These are admission-proficiency conditions, not proof of teaching medium.",
+      "status": "verified",
+      "sourceLabel": "MSE foreign applicant English-proficiency section",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2025/04/MA-Program-Ordinance-April2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-financial-economics",
+      "publicField": "eligibility",
+      "claimText": "The 2026 brochure specifies undergraduate qualification, Indian-route category marks of 55%/50%/45%, age below 25 on 1 July 2026 and the programme mathematics condition. Reservation concessions are category-specific, not automatically foreign-applicant concessions.",
+      "status": "verified",
+      "sourceLabel": "MSE programme-specific 2026 admissions brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-financial-economics",
+      "publicField": "audienceEligibility",
+      "claimText": "The programme permits foreign-national self-financing applications with equivalent qualifying examinations; this route is distinct from regular Indian entrance-test admission. Minimum academic requirements remain applicable and Indian reserved-category concessions are not assumed for foreign nationals.",
+      "status": "verified",
+      "sourceLabel": "MSE programme-specific foreign-admissions policy",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2025/04/MA-Program-Ordinance-April2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-financial-economics",
+      "publicField": "documents",
+      "claimText": "Foreign qualifications are checked against AIU correspondence; an unlisted board or university needs an AIU equivalence certificate. Attested English translations and the specified overseas government-agency/Indian Embassy or Consulate authentication are required.",
+      "status": "verified",
+      "sourceLabel": "MSE programme-specific foreign qualification and documents section",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2025/04/MA-Program-Ordinance-April2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-financial-economics",
+      "publicField": "admissions",
+      "claimText": "The current official admissions page explicitly provides a separately labelled NRI and Foreign Nationals — Admissions 2026 application route. This establishes the current entry point, not the internal fields of its Google form.",
+      "status": "verified",
+      "sourceLabel": "MSE official 2026 applicant-route instructions",
+      "sourceUrl": "https://mse.ac.in/m-a-programmes-mse/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-financial-economics",
+      "publicField": "documents",
+      "claimText": "The foreign-route ordinance requires grade explanations and certificates, attested curricula, passport copy and financial assurance: a government fee-payment undertaking or bank statement showing USD 5,000. It also requires English-proficiency evidence and a qualifying test where English is not the first language or secondary/tertiary medium.",
+      "status": "verified",
+      "sourceLabel": "MSE foreign applicant documentation section",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2025/04/MA-Program-Ordinance-April2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-financial-economics",
+      "publicField": "eligibility",
+      "claimText": "For the conditional foreign-route English test, the ordinance accepts IELTS 6.5 overall with 6 in each section or TOEFL iBT 95 overall with at least 20 writing; scores more than two years old are not accepted. These are admission-proficiency conditions, not proof of teaching medium.",
+      "status": "verified",
+      "sourceLabel": "MSE foreign applicant English-proficiency section",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2025/04/MA-Program-Ordinance-April2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-applied-quantitative-finance",
+      "publicField": "eligibility",
+      "claimText": "The 2026 brochure specifies undergraduate qualification, Indian-route category marks of 55%/50%/45%, age below 25 on 1 July 2026 and the programme mathematics condition. Reservation concessions are category-specific, not automatically foreign-applicant concessions.",
+      "status": "verified",
+      "sourceLabel": "MSE programme-specific 2026 admissions brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-applied-quantitative-finance",
+      "publicField": "audienceEligibility",
+      "claimText": "The programme permits foreign-national self-financing applications with equivalent qualifying examinations; this route is distinct from regular Indian entrance-test admission. Minimum academic requirements remain applicable and Indian reserved-category concessions are not assumed for foreign nationals.",
+      "status": "verified",
+      "sourceLabel": "MSE programme-specific foreign-admissions policy",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2025/04/MA-Program-Ordinance-April2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-applied-quantitative-finance",
+      "publicField": "documents",
+      "claimText": "Foreign qualifications are checked against AIU correspondence; an unlisted board or university needs an AIU equivalence certificate. Attested English translations and the specified overseas government-agency/Indian Embassy or Consulate authentication are required.",
+      "status": "verified",
+      "sourceLabel": "MSE programme-specific foreign qualification and documents section",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2025/04/MA-Program-Ordinance-April2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-applied-quantitative-finance",
+      "publicField": "admissions",
+      "claimText": "The current official admissions page explicitly provides a separately labelled NRI and Foreign Nationals — Admissions 2026 application route. This establishes the current entry point, not the internal fields of its Google form.",
+      "status": "verified",
+      "sourceLabel": "MSE official 2026 applicant-route instructions",
+      "sourceUrl": "https://mse.ac.in/m-a-programmes-mse/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-applied-quantitative-finance",
+      "publicField": "documents",
+      "claimText": "The foreign-route ordinance requires grade explanations and certificates, attested curricula, passport copy and financial assurance: a government fee-payment undertaking or bank statement showing USD 5,000. It also requires English-proficiency evidence and a qualifying test where English is not the first language or secondary/tertiary medium.",
+      "status": "verified",
+      "sourceLabel": "MSE foreign applicant documentation section",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2025/04/MA-Program-Ordinance-April2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-applied-quantitative-finance",
+      "publicField": "eligibility",
+      "claimText": "For the conditional foreign-route English test, the ordinance accepts IELTS 6.5 overall with 6 in each section or TOEFL iBT 95 overall with at least 20 writing; scores more than two years old are not accepted. These are admission-proficiency conditions, not proof of teaching medium.",
+      "status": "verified",
+      "sourceLabel": "MSE foreign applicant English-proficiency section",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2025/04/MA-Program-Ordinance-April2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-actuarial-economics",
+      "publicField": "eligibility",
+      "claimText": "The 2026 brochure specifies undergraduate qualification, Indian-route category marks of 55%/50%/45%, age below 25 on 1 July 2026 and the programme mathematics condition. Reservation concessions are category-specific, not automatically foreign-applicant concessions.",
+      "status": "verified",
+      "sourceLabel": "MSE programme-specific 2026 admissions brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-actuarial-economics",
+      "publicField": "audienceEligibility",
+      "claimText": "The programme permits foreign-national self-financing applications with equivalent qualifying examinations; this route is distinct from regular Indian entrance-test admission. Minimum academic requirements remain applicable and Indian reserved-category concessions are not assumed for foreign nationals.",
+      "status": "verified",
+      "sourceLabel": "MSE programme-specific foreign-admissions policy",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2025/04/MA-Program-Ordinance-April2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-actuarial-economics",
+      "publicField": "documents",
+      "claimText": "Foreign qualifications are checked against AIU correspondence; an unlisted board or university needs an AIU equivalence certificate. Attested English translations and the specified overseas government-agency/Indian Embassy or Consulate authentication are required.",
+      "status": "verified",
+      "sourceLabel": "MSE programme-specific foreign qualification and documents section",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2025/04/MA-Program-Ordinance-April2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-actuarial-economics",
+      "publicField": "admissions",
+      "claimText": "The current official admissions page explicitly provides a separately labelled NRI and Foreign Nationals — Admissions 2026 application route. This establishes the current entry point, not the internal fields of its Google form.",
+      "status": "verified",
+      "sourceLabel": "MSE official 2026 applicant-route instructions",
+      "sourceUrl": "https://mse.ac.in/m-a-programmes-mse/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-actuarial-economics",
+      "publicField": "documents",
+      "claimText": "The foreign-route ordinance requires grade explanations and certificates, attested curricula, passport copy and financial assurance: a government fee-payment undertaking or bank statement showing USD 5,000. It also requires English-proficiency evidence and a qualifying test where English is not the first language or secondary/tertiary medium.",
+      "status": "verified",
+      "sourceLabel": "MSE foreign applicant documentation section",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2025/04/MA-Program-Ordinance-April2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-actuarial-economics",
+      "publicField": "eligibility",
+      "claimText": "For the conditional foreign-route English test, the ordinance accepts IELTS 6.5 overall with 6 in each section or TOEFL iBT 95 overall with at least 20 writing; scores more than two years old are not accepted. These are admission-proficiency conditions, not proof of teaching medium.",
+      "status": "verified",
+      "sourceLabel": "MSE foreign applicant English-proficiency section",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2025/04/MA-Program-Ordinance-April2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-environmental-economics",
+      "publicField": "eligibility",
+      "claimText": "The 2026 brochure specifies undergraduate qualification, Indian-route category marks of 55%/50%/45%, age below 25 on 1 July 2026 and the programme mathematics condition. Reservation concessions are category-specific, not automatically foreign-applicant concessions.",
+      "status": "verified",
+      "sourceLabel": "MSE programme-specific 2026 admissions brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-environmental-economics",
+      "publicField": "audienceEligibility",
+      "claimText": "The programme permits foreign-national self-financing applications with equivalent qualifying examinations; this route is distinct from regular Indian entrance-test admission. Minimum academic requirements remain applicable and Indian reserved-category concessions are not assumed for foreign nationals.",
+      "status": "verified",
+      "sourceLabel": "MSE programme-specific foreign-admissions policy",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2025/04/MA-Program-Ordinance-April2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-environmental-economics",
+      "publicField": "documents",
+      "claimText": "Foreign qualifications are checked against AIU correspondence; an unlisted board or university needs an AIU equivalence certificate. Attested English translations and the specified overseas government-agency/Indian Embassy or Consulate authentication are required.",
+      "status": "verified",
+      "sourceLabel": "MSE programme-specific foreign qualification and documents section",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2025/04/MA-Program-Ordinance-April2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-environmental-economics",
+      "publicField": "admissions",
+      "claimText": "The current official admissions page explicitly provides a separately labelled NRI and Foreign Nationals — Admissions 2026 application route. This establishes the current entry point, not the internal fields of its Google form.",
+      "status": "verified",
+      "sourceLabel": "MSE official 2026 applicant-route instructions",
+      "sourceUrl": "https://mse.ac.in/m-a-programmes-mse/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-environmental-economics",
+      "publicField": "documents",
+      "claimText": "The foreign-route ordinance requires grade explanations and certificates, attested curricula, passport copy and financial assurance: a government fee-payment undertaking or bank statement showing USD 5,000. It also requires English-proficiency evidence and a qualifying test where English is not the first language or secondary/tertiary medium.",
+      "status": "verified",
+      "sourceLabel": "MSE foreign applicant documentation section",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2025/04/MA-Program-Ordinance-April2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "ma-environmental-economics",
+      "publicField": "eligibility",
+      "claimText": "For the conditional foreign-route English test, the ordinance accepts IELTS 6.5 overall with 6 in each section or TOEFL iBT 95 overall with at least 20 writing; scores more than two years old are not accepted. These are admission-proficiency conditions, not proof of teaching medium.",
+      "status": "verified",
+      "sourceLabel": "MSE foreign applicant English-proficiency section",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2025/04/MA-Program-Ordinance-April2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The 2026 brochure and live admissions page establish the current route. The current MA academic page continues to link the April 2025 ordinance for foreign equivalence, documents and conditional English proficiency; 2026 brochure dates and fees take precedence."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "msc-data-science",
+      "publicField": "eligibility",
+      "claimText": "The 2026 brochure specifies undergraduate qualification, Indian-route category marks of 55%/50%/45%, age below 25 on 1 July 2026 and the programme mathematics condition. Reservation concessions are category-specific, not automatically foreign-applicant concessions.",
+      "status": "verified",
+      "sourceLabel": "MSE programme-specific 2026 admissions brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-M.Sc_.-Degree-in-Data-Science-Brochure-2026-v2.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "msc-data-science",
+      "publicField": "audienceEligibility",
+      "claimText": "The programme permits foreign-national self-financing applications with equivalent qualifying examinations; this route is distinct from regular Indian entrance-test admission. Minimum academic requirements remain applicable and Indian reserved-category concessions are not assumed for foreign nationals.",
+      "status": "verified",
+      "sourceLabel": "MSE programme-specific foreign-admissions policy",
+      "sourceUrl": "https://www.mse.ac.in/wp-content/uploads/2025/03/M.Sc_.-Data-Science-Ordinance-2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The 2026 brochure and live admissions page establish the current route. Foreign equivalence/documents are taken from the programme-specific ordinance effective 2025–26, referenced generically by the 2026 brochure; old dates, seat counts, fees and contact details are not reused."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "msc-data-science",
+      "publicField": "documents",
+      "claimText": "Foreign qualifications are checked against AIU correspondence; an unlisted board or university needs an AIU equivalence certificate. Attested English translations and the specified overseas government-agency/Indian Embassy or Consulate authentication are required.",
+      "status": "verified",
+      "sourceLabel": "MSE programme-specific foreign qualification and documents section",
+      "sourceUrl": "https://www.mse.ac.in/wp-content/uploads/2025/03/M.Sc_.-Data-Science-Ordinance-2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The 2026 brochure and live admissions page establish the current route. Foreign equivalence/documents are taken from the programme-specific ordinance effective 2025–26, referenced generically by the 2026 brochure; old dates, seat counts, fees and contact details are not reused."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "msc-data-science",
+      "publicField": "admissions",
+      "claimText": "The current official admissions page explicitly provides a separately labelled NRI and Foreign Nationals — Admissions 2026 application route. This establishes the current entry point, not the internal fields of its Google form.",
+      "status": "verified",
+      "sourceLabel": "MSE official 2026 applicant-route instructions",
+      "sourceUrl": "https://mse.ac.in/m-sc-ds-admission/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "No claim that the form was submitted or internally inspected. MSc form fetch returned HTTP 401; no further access was attempted."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "msc-data-science",
+      "publicField": "documents",
+      "claimText": "The foreign-route ordinance requires grade explanations and certificates, attested curricula, passport copy and financial assurance: a government fee-payment undertaking or bank statement showing USD 10,000. It also requires English-proficiency evidence and a qualifying test where English is not the first language or secondary/tertiary medium.",
+      "status": "verified",
+      "sourceLabel": "MSE foreign applicant documentation section",
+      "sourceUrl": "https://www.mse.ac.in/wp-content/uploads/2025/03/M.Sc_.-Data-Science-Ordinance-2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The 2026 brochure and live admissions page establish the current route. Foreign equivalence/documents are taken from the programme-specific ordinance effective 2025–26, referenced generically by the 2026 brochure; old dates, seat counts, fees and contact details are not reused."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "msc-data-science",
+      "publicField": "eligibility",
+      "claimText": "For the conditional foreign-route English test, the ordinance accepts IELTS 6.5 overall with 6 in each section or TOEFL iBT 95 overall with at least 20 writing; scores more than two years old are not accepted. These are admission-proficiency conditions, not proof of teaching medium.",
+      "status": "verified",
+      "sourceLabel": "MSE foreign applicant English-proficiency section",
+      "sourceUrl": "https://www.mse.ac.in/wp-content/uploads/2025/03/M.Sc_.-Data-Science-Ordinance-2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "The 2026 brochure and live admissions page establish the current route. Foreign equivalence/documents are taken from the programme-specific ordinance effective 2025–26, referenced generically by the 2026 brochure; old dates, seat counts, fees and contact details are not reused."
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "msc-data-science",
+      "publicField": "admissions",
+      "claimText": "The 2026 v 2 brochure separates entrance-test and valid GATE CS/DA/MA/ST/PH routes, allocating a maximum 50% of seats via GATE without entrance test. The live admissions page provides a separate GATE application link.",
+      "status": "verified",
+      "sourceLabel": "MSE MSc Data Science 2026 v 2 brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-M.Sc_.-Degree-in-Data-Science-Brochure-2026-v2.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "publicField": "fee",
+      "claimText": "Current integrated-MA handbook 2026–27 p14 explicitly labels BA fees for first three years/six semesters and MA fees in years4–5. Foreign-national tuition is USD3025 per semester; NRI tuition USD1815; infrastructure USD750 per semester and admission/processing USD500 one-time. Annual tuition remains on_request because the source gives semester amounts and stage-specific rates, not a native annual total. No annualisation or fixed five-year sum.",
+      "status": "verified",
+      "sourceLabel": "MSE integrated-MA handbook 2026–27, p14",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/08/IMA-Student-Handbook-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "programmeSlug": "integrated-ma-economics"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Current integrated-MA handbook 2026–27 p14 explicitly labels BA fees for first three years/six semesters and MA fees in years4–5. Foreign-national tuition is USD3025 per semester; NRI tuition USD1815; infrastructure USD750 per semester and admission/processing USD500 one-time. Annual tuition remains on_request because the source gives semester amounts and stage-specific rates, not a native annual total. No annualisation or fixed five-year sum.",
+      "status": "verified",
+      "sourceLabel": "MSE integrated-MA handbook 2026–27, p14",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/08/IMA-Student-Handbook-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "programmeSlug": "integrated-ma-economics"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "publicField": "identity",
+      "claimText": "Integrated Master of Arts in Economics is a current 5-year campus degree in the programme-specific2026 brochure; the foreign self-financing route is separately defined. No unrelated MBA or research entry is inferred.",
+      "status": "verified",
+      "sourceLabel": "MSE current2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/IMA-2026-Broucher.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "programmeSlug": "integrated-ma-economics"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "publicField": "identity",
+      "claimText": "Master of Arts in General Economics is a current 2-year campus degree in the programme-specific2026 brochure; the foreign self-financing route is separately defined. No unrelated MBA or research entry is inferred.",
+      "status": "verified",
+      "sourceLabel": "MSE current2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "programmeSlug": "ma-general-economics"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "publicField": "identity",
+      "claimText": "Master of Arts in Financial Economics is a current 2-year campus degree in the programme-specific2026 brochure; the foreign self-financing route is separately defined. No unrelated MBA or research entry is inferred.",
+      "status": "verified",
+      "sourceLabel": "MSE current2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "programmeSlug": "ma-financial-economics"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "publicField": "identity",
+      "claimText": "Master of Arts in Applied Quantitative Finance is a current 2-year campus degree in the programme-specific2026 brochure; the foreign self-financing route is separately defined. No unrelated MBA or research entry is inferred.",
+      "status": "verified",
+      "sourceLabel": "MSE current2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "programmeSlug": "ma-applied-quantitative-finance"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "publicField": "identity",
+      "claimText": "Master of Arts in Actuarial Economics is a current 2-year campus degree in the programme-specific2026 brochure; the foreign self-financing route is separately defined. No unrelated MBA or research entry is inferred.",
+      "status": "verified",
+      "sourceLabel": "MSE current2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "programmeSlug": "ma-actuarial-economics"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "publicField": "identity",
+      "claimText": "Master of Arts in Environmental Economics is a current 2-year campus degree in the programme-specific2026 brochure; the foreign self-financing route is separately defined. No unrelated MBA or research entry is inferred.",
+      "status": "verified",
+      "sourceLabel": "MSE current2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "programmeSlug": "ma-environmental-economics"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "publicField": "identity",
+      "claimText": "Master of Science in Data Science is a current 2-year campus degree in the programme-specific2026 brochure; the foreign self-financing route is separately defined. No unrelated MBA or research entry is inferred.",
+      "status": "verified",
+      "sourceLabel": "MSE current2026 programme brochure",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-M.Sc_.-Degree-in-Data-Science-Brochure-2026-v2.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "programmeSlug": "msc-data-science"
+    },
+    {
+      "entity": "programme",
+      "countrySlug": "india",
+      "universitySlug": "madras-school-of-economics",
+      "programmeSlug": "msc-data-science",
+      "publicField": "eligibility",
+      "claimText": "The current admissions webpage still contains an AY2025 parenthesis for final-year applicants. The specifically dated2026 v2 brochure, p3, expressly includes final-year candidates in AY2026 and controls this cohort-specific statement. Other page links affirm the2026 NRI/foreign and GATE routes; no future cycle is inferred.",
+      "status": "verified",
+      "sourceLabel": "MSE MSc Data Science brochure2026 v2, p3; current admissions-page comparison",
+      "sourceUrl": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-M.Sc_.-Degree-in-Data-Science-Brochure-2026-v2.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-27",
+      "internalNotes": "Specific current programme brochure supersedes an older pasted date in page body; no unresolved academic-threshold conflict."
+    }
+  ]
+}

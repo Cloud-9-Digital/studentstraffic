@@ -72,6 +72,7 @@ function defineProgrammes<const T extends readonly CanonicalProgramme[]>(program
 }
 
 const globalProgrammeFamilies = defineProgrammes([
+  {"slug":"master-quantitative-finance","name":"Master's in Quantitative Finance","shortName":"Master's Quantitative Finance","stream":"economics-commerce","level":"masters","discipline":"quantitative-finance","aliases":["MA Applied Quantitative Finance","Master of Arts in Applied Quantitative Finance"]},
   {"slug":"master-fashion-management","name":"Master of Fashion Management","shortName":"M.F.M.","stream":"business","level":"masters","discipline":"fashion-management","aliases":["MFM","Masters of Fashion Management"]},
   {"slug":"bachelor-fashion-technology","name":"Bachelor of Fashion Technology","shortName":"B.F.Tech","stream":"design-creative-arts","level":"bachelors","discipline":"fashion-technology","aliases":["BFTech","Bachelor of Fashion Technology in Apparel Production"]},
   {"slug":"bsc-applied-science","name":"B.Sc. in Applied Science","shortName":"B.Sc. Applied Science","stream":"natural-sciences","level":"bachelors","discipline":"applied-science","aliases":["Bachelor of Science in Applied Science","BSc Applied Sciences"]},
