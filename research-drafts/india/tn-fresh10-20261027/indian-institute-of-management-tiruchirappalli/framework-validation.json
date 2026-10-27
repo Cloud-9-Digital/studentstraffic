@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-10-27T00:00:00.000Z",
+  "validator": "scripts/lib/content-migrations.ts::readContentMigrations",
+  "command": "node --import tsx research-drafts/india/tn-fresh10-20261027/indian-institute-of-management-tiruchirappalli/validate-framework.cjs",
+  "isolatedResearchFixture": true,
+  "actualContentMigrationsDirectoryTouched": false,
+  "fullSpecimen": {
+    "passed": true,
+    "readMigrations": 1,
+    "expiredEvidenceCount": 0
+  },
+  "totalProgrammeFragments": 2,
+  "programmePassCount": 2,
+  "programmeFailCount": 0,
+  "programmes": [
+    {
+      "slug": "iim-trichy-pgpm-mba",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    },
+    {
+      "slug": "iim-trichy-pgpm-hr-mba",
+      "passed": true,
+      "readMigrations": 1,
+      "expiredEvidenceCount": 0
+    }
+  ],
+  "publishReady": false,
+  "warning": "Reader success checks source-link structure, not editorial truth or audience/media readiness. Existing row holds remain binding."
+}

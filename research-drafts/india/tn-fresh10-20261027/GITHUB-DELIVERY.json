@@ -6,9 +6,13 @@
   "institutions": [
     {
       "slug": "indian-institute-of-management-tiruchirappalli",
-      "status": "held_schema_valid_draft",
+      "status": "held_full_framework_subset_pass",
       "inventoryRows": 17,
-      "draftProgrammes": 2
+      "draftProgrammes": 2,
+      "frameworkPassingSubsetProgrammes": 2,
+      "frameworkIndependentlyRerun": true,
+      "completeExecutableMigration": false,
+      "remainingGates": "Domestic-route qualification/documents crosswalk; 15 inventory rows held; rights-cleared hosted media; user-owned live publication."
     },
     {
       "slug": "bannari-amman-institute-of-technology",

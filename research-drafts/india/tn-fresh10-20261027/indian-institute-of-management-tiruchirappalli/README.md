@@ -57,3 +57,7 @@ node --import tsx scripts/university-queue.ts validate
 ```
 
 The first command tests this generated draft only and rewrites its validation report. It does not run `content:validate`, connect to production or clear editorial/media holds.
+
+## Actual framework reader verification
+
+The final two-offering draft also passes the real `readContentMigrations` reader in an isolated disposable research fixture, with zero expired evidence. Run `node --import tsx research-drafts/india/tn-fresh10-20261027/indian-institute-of-management-tiruchirappalli/validate-framework.cjs` from the repository root. This is distinct from the existing 23 regression tests and the selected checks in `validate-draft.mjs`. It does not clear domestic-route editorial completion, the 15 held inventory rows, media rights/hosting or local publication gates. User-owned live publication is outside this GitHub research delivery.
