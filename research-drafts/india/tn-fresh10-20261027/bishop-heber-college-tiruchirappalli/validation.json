@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-10-27",
+  "command": "node --import tsx research-drafts/india/tn-fresh10-20261027/bishop-heber-college-tiruchirappalli/validate-offline.cjs",
+  "offlineResearchChecksPassed": true,
+  "schemaShapePassed": true,
+  "issues": [],
+  "counts": {
+    "namedInventoryRows": 121,
+    "degreeAndResearchRows": 82,
+    "shortCourseAndAddonRows": 39,
+    "doctoralRows": 17,
+    "schemaFragmentRows": 36,
+    "programmeDraftEligibleRows": 0,
+    "programmeHeldRows": 121,
+    "publishReadyRows": 0,
+    "taxonomyGapRows": 43,
+    "levels": {
+      "bachelors": 38,
+      "integrated-masters": 1,
+      "masters": 26,
+      "doctoral": 17,
+      "diploma": 12,
+      "pg-diploma": 8,
+      "certificate": 14,
+      "addon": 5
+    }
+  },
+  "scopedMigrationValidation": "not_run: no numbered migration or publishable payload",
+  "actualFrameworkReader": {
+    "passed": 0,
+    "failed": 36,
+    "total": 36,
+    "fullSpecimenPassed": false
+  },
+  "publicationReadiness": "blocked: per-row and university gates in handoff.json",
+  "networkCalls": 0,
+  "databaseCalls": 0
+}

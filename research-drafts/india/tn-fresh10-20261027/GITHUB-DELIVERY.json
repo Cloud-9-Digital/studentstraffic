@@ -69,6 +69,15 @@
       "frameworkIndependentlyRerun": true,
       "completeExecutableMigration": false,
       "remainingGates": "49 remaining programme holds; audience/cycle review; rights-cleared hosted media."
+    },
+    {
+      "slug": "bishop-heber-college-tiruchirappalli",
+      "status": "held_research_framework_failures",
+      "inventoryRows": 121,
+      "frameworkPassingSubsetProgrammes": 0,
+      "frameworkIndependentlyRerun": true,
+      "completeExecutableMigration": false,
+      "remainingGates": "Exact programme subject eligibility remains unsupported; all inventory rows held; rights-cleared hosted media."
     }
   ]
 }
