@@ -1,0 +1,128 @@
+[
+  {
+    "id": "ug-directory",
+    "url": "https://www.sjctni.edu/Courses/UGCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+Under+Graduate",
+    "label": "SJC UG programme directory",
+    "checkedAt": "2026-10-27",
+    "accessStatus": "search_only",
+    "sourceGrade": "C",
+    "notes": "13 ShiftI+17 ShiftII=30 variants; source read not achieved while main site returned 503. ShiftII Statistics absent 2026 application list; reconcile, do not silently omit."
+  },
+  {
+    "id": "ug-application",
+    "url": "https://admission.sjctni.edu/ug/instructions.php",
+    "label": "SJC 2026-27 UG application instructions",
+    "checkedAt": "2026-10-27",
+    "accessStatus": "internal_error",
+    "sourceGrade": "C",
+    "notes": "Cached list 29 variant courses, excludes ShiftII Statistics. Application fees 100/200, not tuition. Domestic community discount not transferable to foreign applicants."
+  },
+  {
+    "id": "ug-eligibility",
+    "url": "https://admission.sjctni.edu/ug/pdf/Programmesoffered_Eligibility.pdf",
+    "label": "SJC 2026-27 UG eligibility",
+    "checkedAt": "2026-10-27",
+    "accessStatus": "503",
+    "sourceGrade": "C",
+    "notes": "Cached table reveals gender restrictions; direct PDF 503. Do not infer entire college male-only or all programmes co-ed from institution-wide label."
+  },
+  {
+    "id": "pg-directory",
+    "url": "https://www.sjctni.edu/Courses/PGCourses.jsp",
+    "label": "SJC PG programme directory",
+    "checkedAt": "2026-10-27",
+    "accessStatus": "search_only",
+    "sourceGrade": "C",
+    "notes": "9 ShiftI+16 ShiftII=25 variants; includes ShiftII Maths absent selection list but present 2026 eligibility. Shift variants separate offerings, not duplicates."
+  },
+  {
+    "id": "pg-eligibility",
+    "url": "https://admission.sjctni.edu/pg/pdf/SJCPG_ELIGIBILITY.pdf",
+    "label": "SJC 2026-27 PG eligibility",
+    "checkedAt": "2026-10-27",
+    "accessStatus": "503",
+    "sourceGrade": "C",
+    "notes": "Full cached tabular text discovered but direct 503. MA English ShiftI BAEnglish, ShiftII anyUG wording; do not transfer one shift qualification to another. MCA TANCET and mathematics, exact AICTE own approval unverified."
+  },
+  {
+    "id": "homepage",
+    "url": "https://www.sjctni.edu/",
+    "label": "SJC homepage",
+    "checkedAt": "2026-10-27",
+    "accessStatus": "503",
+    "sourceGrade": "C",
+    "notes": "No direct content read; old counters not portfolio-completeness evidence."
+  },
+  {
+    "id": "bdu-register",
+    "url": "https://www.bdu.ac.in/affiliation/affiliated-colleges.php",
+    "label": "Bharathidasan University affiliated-college register",
+    "checkedAt": "2026-10-27",
+    "accessStatus": "internal_error",
+    "sourceGrade": "C",
+    "notes": "Cached row 138/college 32 identifies autonomous, government-aided, co-education, Tiruchirappalli 620002. Direct read failed; affiliation badge withheld pending primary read."
+  },
+  {
+    "id": "bdu-autonomous",
+    "url": "https://www.bdu.ac.in/affiliation/autonomous.php",
+    "label": "Bharathidasan University autonomous-college directory",
+    "checkedAt": "2026-10-27",
+    "accessStatus": "internal_error",
+    "sourceGrade": "C",
+    "notes": "Cached aided-college list agrees identity; cannot count cache as an independently read recognition source."
+  },
+  {
+    "id": "pg-diploma",
+    "url": "https://sjctni.edu/Courses/DipCourses.jsp?bredcom=Home+%7C+Diploma+%7C+Diploma",
+    "label": "SJC PG diploma directory",
+    "checkedAt": "2026-10-27",
+    "accessStatus": "search_only",
+    "sourceGrade": "C",
+    "notes": "Only PG Diploma Computer Science Applications listed. Older calendar lists further diplomas; do not imply they are all current admitting awards."
+  },
+  {
+    "id": "certificates",
+    "url": "https://sjctni.edu/Courses/certCourses.jsp?bredcom=+Home+%7C+Certificate+%7C+Certificate",
+    "label": "SJC certificate directory",
+    "checkedAt": "2026-10-27",
+    "accessStatus": "search_only",
+    "sourceGrade": "C",
+    "notes": "12 short courses listed. No duration/independent entry/current cycle established; internal add-ons possible."
+  },
+  {
+    "id": "phd",
+    "url": "https://www.sjctni.edu/Courses/PhdCourses.jsp",
+    "label": "SJC PhD directory",
+    "checkedAt": "2026-10-27",
+    "accessStatus": "search_only",
+    "sourceGrade": "C",
+    "notes": "15 subjects/centres discovered; each retained as an individually held doctoral research-area candidate within catalogue scope. Rapinat Herbarium may be a centre rather than an independent award. Main source unread; current award, duration, audience and authorization not verified."
+  },
+  {
+    "id": "mphil",
+    "url": "https://www.sjctni.edu/Courses/MphilCourses.jsp?bredcom=Home+%7C+Academics+%7C+Programmes+%7C+M.Phil.+Programmes",
+    "label": "SJC legacy MPhil directory",
+    "checkedAt": "2026-10-27",
+    "accessStatus": "search_only",
+    "sourceGrade": "C",
+    "notes": "13 legacy research entries; no current admission asserted. Historical directory existence not current eligibility."
+  },
+  {
+    "id": "jim-admission",
+    "url": "https://www.jim.ac.in/page.php?id=64",
+    "label": "JIM MBA admissions 2026-2028",
+    "checkedAt": "2026-10-27",
+    "accessStatus": "read",
+    "sourceGrade": "A",
+    "notes": "Full page read; expressly St Joseph’s College Autonomous,Tiruchirappalli. Degree 50%, accepted tests, selection stages, mandatory documents and category-specific combined fees. MBA is a constituent institute programme, not an unexplained duplicate university."
+  },
+  {
+    "id": "jim-flyer",
+    "url": "https://jim.ac.in/pdf/ADM26.pdf",
+    "label": "JIM MBA admissions 2026 flyer",
+    "checkedAt": "2026-10-27",
+    "accessStatus": "internal_error",
+    "sourceGrade": "C",
+    "notes": "Indexed institutional link, direct PDF internal error. No AICTE own approval checked."
+  }
+]

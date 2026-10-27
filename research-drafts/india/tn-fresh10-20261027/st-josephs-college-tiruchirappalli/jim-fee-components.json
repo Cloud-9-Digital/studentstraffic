@@ -1,0 +1,56 @@
+{
+  "status": "verified_component_quote_not_tuition",
+  "sourceUrl": "https://www.jim.ac.in/page.php?id=64",
+  "checkedAt": "2026-10-27",
+  "academicCycle": "MBA admissions 2026-2028 page",
+  "currency": "INR",
+  "components": {
+    "academic_fee": [
+      275214,
+      247844
+    ],
+    "student_activity_fee": [
+      100302,
+      44571
+    ],
+    "mess_day_scholar": [
+      64172,
+      64172
+    ],
+    "mess_hosteller": [
+      93220,
+      93220
+    ],
+    "hostel_girls": [
+      35000,
+      35000
+    ],
+    "hostel_boys": [
+      60000,
+      60000
+    ]
+  },
+  "reportedTotals": {
+    "day_scholar": [
+      439688,
+      356587,
+      796275
+    ],
+    "hosteller_girls": [
+      503736,
+      420635,
+      924371
+    ],
+    "hosteller_boys": [
+      528736,
+      445635,
+      974371
+    ]
+  },
+  "notes": "Columns are firstyear,secondyear and totalcourse where threevalues. Academic fee is not established as tuition alone. Refund sentence on source is not legal guidance and is not reproduced in public copy. Do not transfer MBA rates to any other SJC programme.",
+  "arithmeticChecks": {
+    "day_scholar": true,
+    "hosteller_girls": true,
+    "hosteller_boys": true
+  }
+}

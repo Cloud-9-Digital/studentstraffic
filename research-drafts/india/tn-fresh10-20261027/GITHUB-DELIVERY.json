@@ -25,6 +25,14 @@
       "taughtFragments": 28,
       "catalogueSchemaValidated": false,
       "sourceGates": "Primary programme sources403; complete doctoral discovery unresolved"
+    },
+    {
+      "slug": "st-josephs-college-tiruchirappalli",
+      "status": "held_research_fragments",
+      "inventoryRows": 97,
+      "taughtFragments": 56,
+      "catalogueSchemaValidated": false,
+      "sourceGates": "Main college source503; regulator and programme-specific evidence gaps; JIM MBA component fees retained"
     }
   ]
 }
