@@ -1,0 +1,994 @@
+{
+  "status": "held_research_draft_not_publishable",
+  "checkedAt": "2026-10-27",
+  "university": {
+    "countrySlug": "india",
+    "slug": "bannari-amman-institute-of-technology",
+    "name": "Bannari Amman Institute of Technology",
+    "city": "Sathyamangalam",
+    "officialWebsite": "https://www.bitsathy.ac.in/",
+    "type": "Private",
+    "establishedYear": 1996,
+    "summary": "Bannari Amman Institute of Technology is a private autonomous engineering college in Sathyamangalam, Tamil Nadu. Its taught portfolio covers engineering and technology at undergraduate and postgraduate levels, alongside an MBA. The campus provides laboratories, a learning centre, residential accommodation and medical services, with Anna University affiliation.",
+    "campusLifestyle": "The campus includes academic buildings, a learning centre, laboratories, Wi-Fi, a cafeteria and a cooperative store. Laundry, ATMs and reverse-osmosis water facilities support day-to-day campus living.",
+    "cityProfile": "The teaching campus is on the Sathy–Bhavani State Highway at Alathukombai, Sathyamangalam, in Erode district, Tamil Nadu 638401. Sathyamangalam is the canonical town; Erode is the district rather than a substitute campus city. TNEA counselling identifies the college with code 2702.",
+    "practicalExposure": "Undergraduate Regulations 2026 include laboratory work, projects, employability-enhancement activities and industry-oriented courses. The MBA curriculum includes a four-week summer internship and a final-semester project. The ME curriculum includes dissertation phases in the third and fourth semesters. These academic components do not guarantee an internship placement or employment.",
+    "hostelOverview": "Separate men’s and women’s hostels provide single, double and four-person room options. Hostel dining halls, kitchens and storage facilities are available. Room allocation and current hostel and mess charges require a separate accommodation budget.",
+    "dietarySupport": "Hostel dining halls and a campus cafeteria provide meal facilities. The verified information does not specify allergy provision or every dietary option; these requirements should be discussed before accepting accommodation.",
+    "safetyOverview": "The campus medical centre has resident medical officers, nursing staff and a round-the-clock emergency ambulance service for access to hospitals in Sathyamangalam, Coimbatore or Erode.",
+    "studentSupport": "Undergraduate students are assigned a faculty mentor for course registration, academic progression and career objectives. Students Traffic can help compare the admission route, branch and full-cost plan.",
+    "whyChoose": [
+      "Engineering and technology branches with a separate MBA pathway.",
+      "Laboratory and project components across the taught curricula.",
+      "Residential accommodation and a campus medical centre."
+    ],
+    "thingsToConsider": [
+      "Government-quota and management-quota documentation differs.",
+      "Historical programmes do not establish current admitting branches.",
+      "Hostel, mess and tuition need a category-specific full-cost budget."
+    ],
+    "bestFitFor": [
+      "Applicants comparing regular undergraduate engineering branches in Tamil Nadu.",
+      "Graduates assessing specialised ME study or an MBA.",
+      "Students considering residential study in Sathyamangalam."
+    ],
+    "industryPartners": [],
+    "recognitionBadges": [
+      "Anna University — affiliated autonomous college, TNEA 2702"
+    ],
+    "recognitionLinks": [
+      {
+        "label": "Anna University affiliated-college register",
+        "url": "https://www.annauniv.edu/cai/Affiliated%20Colleges%20list%20by%20Alphabetical/B.html"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is Bannari Amman Institute of Technology a university?",
+        "answer": "It is an autonomous engineering college affiliated to Anna University. Its UGC-DTBU webpage contains documents submitted for a deemed-to-be-university application; that is not proof that deemed status has been awarded."
+      },
+      {
+        "question": "Where is Bannari Amman Institute of Technology?",
+        "answer": "The campus is at Alathukombai on the Sathy–Bhavani State Highway, Sathyamangalam 638401, in Erode district of Tamil Nadu."
+      },
+      {
+        "question": "How long are the regular undergraduate degrees?",
+        "answer": "The 2026 regulations specify four academic years across eight semesters for regular B.E./B.Tech. entry. Lateral entry has a separate three-year structure and eligibility conditions."
+      },
+      {
+        "question": "What is the undergraduate teaching language?",
+        "answer": "The 2026 regulations use English for instruction, examinations and other academic activities, except courses specifically approved in Tamil. This does not establish the teaching language of every postgraduate programme."
+      },
+      {
+        "question": "What is the TNEA counselling code?",
+        "answer": "Bannari Amman Institute of Technology appears in Anna University’s affiliated-college directory with TNEA code 2702 and examination code 7376."
+      },
+      {
+        "question": "What documents are needed after government-quota allotment?",
+        "answer": "The college lists the provisional allotment order, school mark statements, transfer/conduct certificate, photograph and applicable category and first-graduate records. Medical fitness and an Aadhaar copy appear in its domestic joining checklist."
+      },
+      {
+        "question": "Are campus hostels available?",
+        "answer": "Separate men’s and women’s hostels offer different room occupancies and dining facilities. Hostel charges and room allocation are separate decisions from an academic offer."
+      },
+      {
+        "question": "Does the MBA include practical work?",
+        "answer": "The MBA regulations specify a four-week summer internship between the second and third semesters and project work in the fourth semester. Participation does not guarantee an employer placement."
+      },
+      {
+        "question": "Are fees the same for every applicant?",
+        "answer": "A current full-cost plan should distinguish admission category, tuition, compulsory charges and accommodation. No annual tuition amount is stated here because the fee evidence does not establish one reliable category-specific annual rate."
+      },
+      {
+        "question": "Are honours and minor pathways separate admissions?",
+        "answer": "The 2026 undergraduate rules provide honours and minor study within the curriculum. They are not separate first-entry programme offers."
+      }
+    ],
+    "admissionsContent": {
+      "contentState": "held_research_draft",
+      "ctas": [
+        {
+          "trigger": "eligibility",
+          "label": "Check my BIT admission route"
+        },
+        {
+          "trigger": "fees",
+          "label": "Get a current fee and full-cost plan"
+        }
+      ]
+    }
+  },
+  "programmeDrafts": [
+    {
+      "officialTitle": "B.Tech. Agricultural Engineering",
+      "canonicalCourseSlug": "be-btech-agricultural-engineering",
+      "durationYears": 4,
+      "officialProgramUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "medium": "English",
+      "mediumNote": "English instruction and academic activities except specifically approved Tamil courses under UG Regulations 2026.",
+      "instructionLanguages": [
+        "english"
+      ],
+      "intakeMonths": [],
+      "intakeCodes": [],
+      "fee": {
+        "status": "on_request",
+        "verifiedAt": "2026-10-27",
+        "notes": "Current category-specific annual tuition is unverified. Secondary full-course figures conflict and are not converted into annual tuition."
+      },
+      "admissionsContent": {
+        "overview": "B.Tech. Agricultural Engineering follows the regular four-year, eight-semester undergraduate structure.",
+        "eligibility": {
+          "intro": "Academic-stream TNEA government-quota entry is distinct from management, overseas and lateral-entry routes.",
+          "items": [
+            "Pass HSC Academic(+1 and+2) or accepted equivalent with Mathematics, Physics and Chemistry.",
+            "Minimum PCM average is 45% for General and 40% for the specified Tamil Nadu reserved categories under TNEA 2026.",
+            "Applicable TNEA schooling, nativity and category conditions must be satisfied; minimum eligibility does not guarantee allotment."
+          ]
+        },
+        "applicationSteps": [
+          "Register for the notified TNEA cycle and submit academic and route-specific records.",
+          "Follow rank, branch-choice and allotment instructions for college code 2702; complete the college’s joining checklist after allotment."
+        ],
+        "documentsRequired": {
+          "academic": [
+            "Class 10,11 and 12/equivalent mark statements",
+            "Transfer/conduct certificate"
+          ],
+          "application": [
+            "Provisional allotment order and passport photograph",
+            "Applicable community, first-graduate and government-school proof",
+            "Physical-fitness certificate and Aadhaar copy for the documented domestic route"
+          ]
+        }
+      },
+      "slug": "bit-b-tech-agricultural-engineering",
+      "audienceEligibility": {
+        "availability": "restricted",
+        "eligibleAudiences": [
+          "Applicants meeting TNEA 2026 academic-stream government-quota conditions"
+        ],
+        "restrictions": [
+          "This fragment covers the documented regular first-year government-quota route, not management, foreign/NRI or lateral entry.",
+          "The relevant schooling, nativity, community and other applicant-category rules apply."
+        ],
+        "verifiedAt": "2026-10-27",
+        "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+      }
+    },
+    {
+      "officialTitle": "B.Tech. Artificial Intelligence and Data Science",
+      "canonicalCourseSlug": "be-btech-data-science",
+      "durationYears": 4,
+      "officialProgramUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "medium": "English",
+      "mediumNote": "English instruction and academic activities except specifically approved Tamil courses under UG Regulations 2026.",
+      "instructionLanguages": [
+        "english"
+      ],
+      "intakeMonths": [],
+      "intakeCodes": [],
+      "fee": {
+        "status": "on_request",
+        "verifiedAt": "2026-10-27",
+        "notes": "Current category-specific annual tuition is unverified. Secondary full-course figures conflict and are not converted into annual tuition."
+      },
+      "admissionsContent": {
+        "overview": "B.Tech. Artificial Intelligence and Data Science follows the regular four-year, eight-semester undergraduate structure.",
+        "eligibility": {
+          "intro": "Academic-stream TNEA government-quota entry is distinct from management, overseas and lateral-entry routes.",
+          "items": [
+            "Pass HSC Academic(+1 and+2) or accepted equivalent with Mathematics, Physics and Chemistry.",
+            "Minimum PCM average is 45% for General and 40% for the specified Tamil Nadu reserved categories under TNEA 2026.",
+            "Applicable TNEA schooling, nativity and category conditions must be satisfied; minimum eligibility does not guarantee allotment."
+          ]
+        },
+        "applicationSteps": [
+          "Register for the notified TNEA cycle and submit academic and route-specific records.",
+          "Follow rank, branch-choice and allotment instructions for college code 2702; complete the college’s joining checklist after allotment."
+        ],
+        "documentsRequired": {
+          "academic": [
+            "Class 10,11 and 12/equivalent mark statements",
+            "Transfer/conduct certificate"
+          ],
+          "application": [
+            "Provisional allotment order and passport photograph",
+            "Applicable community, first-graduate and government-school proof",
+            "Physical-fitness certificate and Aadhaar copy for the documented domestic route"
+          ]
+        }
+      },
+      "slug": "bit-b-tech-artificial-intelligence-and-data-science",
+      "audienceEligibility": {
+        "availability": "restricted",
+        "eligibleAudiences": [
+          "Applicants meeting TNEA 2026 academic-stream government-quota conditions"
+        ],
+        "restrictions": [
+          "This fragment covers the documented regular first-year government-quota route, not management, foreign/NRI or lateral entry.",
+          "The relevant schooling, nativity, community and other applicant-category rules apply."
+        ],
+        "verifiedAt": "2026-10-27",
+        "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+      }
+    },
+    {
+      "officialTitle": "B.Tech. Biotechnology",
+      "canonicalCourseSlug": "be-btech-biotechnology",
+      "durationYears": 4,
+      "officialProgramUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "medium": "English",
+      "mediumNote": "English instruction and academic activities except specifically approved Tamil courses under UG Regulations 2026.",
+      "instructionLanguages": [
+        "english"
+      ],
+      "intakeMonths": [],
+      "intakeCodes": [],
+      "fee": {
+        "status": "on_request",
+        "verifiedAt": "2026-10-27",
+        "notes": "Current category-specific annual tuition is unverified. Secondary full-course figures conflict and are not converted into annual tuition."
+      },
+      "admissionsContent": {
+        "overview": "B.Tech. Biotechnology follows the regular four-year, eight-semester undergraduate structure.",
+        "eligibility": {
+          "intro": "Academic-stream TNEA government-quota entry is distinct from management, overseas and lateral-entry routes.",
+          "items": [
+            "Pass HSC Academic(+1 and+2) or accepted equivalent with Mathematics, Physics and Chemistry.",
+            "Minimum PCM average is 45% for General and 40% for the specified Tamil Nadu reserved categories under TNEA 2026.",
+            "Applicable TNEA schooling, nativity and category conditions must be satisfied; minimum eligibility does not guarantee allotment."
+          ]
+        },
+        "applicationSteps": [
+          "Register for the notified TNEA cycle and submit academic and route-specific records.",
+          "Follow rank, branch-choice and allotment instructions for college code 2702; complete the college’s joining checklist after allotment."
+        ],
+        "documentsRequired": {
+          "academic": [
+            "Class 10,11 and 12/equivalent mark statements",
+            "Transfer/conduct certificate"
+          ],
+          "application": [
+            "Provisional allotment order and passport photograph",
+            "Applicable community, first-graduate and government-school proof",
+            "Physical-fitness certificate and Aadhaar copy for the documented domestic route"
+          ]
+        }
+      },
+      "slug": "bit-b-tech-biotechnology",
+      "audienceEligibility": {
+        "availability": "restricted",
+        "eligibleAudiences": [
+          "Applicants meeting TNEA 2026 academic-stream government-quota conditions"
+        ],
+        "restrictions": [
+          "This fragment covers the documented regular first-year government-quota route, not management, foreign/NRI or lateral entry.",
+          "The relevant schooling, nativity, community and other applicant-category rules apply."
+        ],
+        "verifiedAt": "2026-10-27",
+        "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+      }
+    },
+    {
+      "officialTitle": "B.E. Computer Science and Engineering",
+      "canonicalCourseSlug": "be-btech-computer-science-engineering",
+      "durationYears": 4,
+      "officialProgramUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "medium": "English",
+      "mediumNote": "English instruction and academic activities except specifically approved Tamil courses under UG Regulations 2026.",
+      "instructionLanguages": [
+        "english"
+      ],
+      "intakeMonths": [],
+      "intakeCodes": [],
+      "fee": {
+        "status": "on_request",
+        "verifiedAt": "2026-10-27",
+        "notes": "Current category-specific annual tuition is unverified. Secondary full-course figures conflict and are not converted into annual tuition."
+      },
+      "admissionsContent": {
+        "overview": "B.E. Computer Science and Engineering follows the regular four-year, eight-semester undergraduate structure.",
+        "eligibility": {
+          "intro": "Academic-stream TNEA government-quota entry is distinct from management, overseas and lateral-entry routes.",
+          "items": [
+            "Pass HSC Academic(+1 and+2) or accepted equivalent with Mathematics, Physics and Chemistry.",
+            "Minimum PCM average is 45% for General and 40% for the specified Tamil Nadu reserved categories under TNEA 2026.",
+            "Applicable TNEA schooling, nativity and category conditions must be satisfied; minimum eligibility does not guarantee allotment."
+          ]
+        },
+        "applicationSteps": [
+          "Register for the notified TNEA cycle and submit academic and route-specific records.",
+          "Follow rank, branch-choice and allotment instructions for college code 2702; complete the college’s joining checklist after allotment."
+        ],
+        "documentsRequired": {
+          "academic": [
+            "Class 10,11 and 12/equivalent mark statements",
+            "Transfer/conduct certificate"
+          ],
+          "application": [
+            "Provisional allotment order and passport photograph",
+            "Applicable community, first-graduate and government-school proof",
+            "Physical-fitness certificate and Aadhaar copy for the documented domestic route"
+          ]
+        }
+      },
+      "slug": "bit-b-e-computer-science-and-engineering",
+      "audienceEligibility": {
+        "availability": "restricted",
+        "eligibleAudiences": [
+          "Applicants meeting TNEA 2026 academic-stream government-quota conditions"
+        ],
+        "restrictions": [
+          "This fragment covers the documented regular first-year government-quota route, not management, foreign/NRI or lateral entry.",
+          "The relevant schooling, nativity, community and other applicant-category rules apply."
+        ],
+        "verifiedAt": "2026-10-27",
+        "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+      }
+    },
+    {
+      "officialTitle": "B.E. Electrical and Electronics Engineering",
+      "canonicalCourseSlug": "be-btech-electrical-electronics-engineering",
+      "durationYears": 4,
+      "officialProgramUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "medium": "English",
+      "mediumNote": "English instruction and academic activities except specifically approved Tamil courses under UG Regulations 2026.",
+      "instructionLanguages": [
+        "english"
+      ],
+      "intakeMonths": [],
+      "intakeCodes": [],
+      "fee": {
+        "status": "on_request",
+        "verifiedAt": "2026-10-27",
+        "notes": "Current category-specific annual tuition is unverified. Secondary full-course figures conflict and are not converted into annual tuition."
+      },
+      "admissionsContent": {
+        "overview": "B.E. Electrical and Electronics Engineering follows the regular four-year, eight-semester undergraduate structure.",
+        "eligibility": {
+          "intro": "Academic-stream TNEA government-quota entry is distinct from management, overseas and lateral-entry routes.",
+          "items": [
+            "Pass HSC Academic(+1 and+2) or accepted equivalent with Mathematics, Physics and Chemistry.",
+            "Minimum PCM average is 45% for General and 40% for the specified Tamil Nadu reserved categories under TNEA 2026.",
+            "Applicable TNEA schooling, nativity and category conditions must be satisfied; minimum eligibility does not guarantee allotment."
+          ]
+        },
+        "applicationSteps": [
+          "Register for the notified TNEA cycle and submit academic and route-specific records.",
+          "Follow rank, branch-choice and allotment instructions for college code 2702; complete the college’s joining checklist after allotment."
+        ],
+        "documentsRequired": {
+          "academic": [
+            "Class 10,11 and 12/equivalent mark statements",
+            "Transfer/conduct certificate"
+          ],
+          "application": [
+            "Provisional allotment order and passport photograph",
+            "Applicable community, first-graduate and government-school proof",
+            "Physical-fitness certificate and Aadhaar copy for the documented domestic route"
+          ]
+        }
+      },
+      "slug": "bit-b-e-electrical-and-electronics-engineering",
+      "audienceEligibility": {
+        "availability": "restricted",
+        "eligibleAudiences": [
+          "Applicants meeting TNEA 2026 academic-stream government-quota conditions"
+        ],
+        "restrictions": [
+          "This fragment covers the documented regular first-year government-quota route, not management, foreign/NRI or lateral entry.",
+          "The relevant schooling, nativity, community and other applicant-category rules apply."
+        ],
+        "verifiedAt": "2026-10-27",
+        "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+      }
+    },
+    {
+      "officialTitle": "B.E. Electronics and Communication Engineering",
+      "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+      "durationYears": 4,
+      "officialProgramUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "medium": "English",
+      "mediumNote": "English instruction and academic activities except specifically approved Tamil courses under UG Regulations 2026.",
+      "instructionLanguages": [
+        "english"
+      ],
+      "intakeMonths": [],
+      "intakeCodes": [],
+      "fee": {
+        "status": "on_request",
+        "verifiedAt": "2026-10-27",
+        "notes": "Current category-specific annual tuition is unverified. Secondary full-course figures conflict and are not converted into annual tuition."
+      },
+      "admissionsContent": {
+        "overview": "B.E. Electronics and Communication Engineering follows the regular four-year, eight-semester undergraduate structure.",
+        "eligibility": {
+          "intro": "Academic-stream TNEA government-quota entry is distinct from management, overseas and lateral-entry routes.",
+          "items": [
+            "Pass HSC Academic(+1 and+2) or accepted equivalent with Mathematics, Physics and Chemistry.",
+            "Minimum PCM average is 45% for General and 40% for the specified Tamil Nadu reserved categories under TNEA 2026.",
+            "Applicable TNEA schooling, nativity and category conditions must be satisfied; minimum eligibility does not guarantee allotment."
+          ]
+        },
+        "applicationSteps": [
+          "Register for the notified TNEA cycle and submit academic and route-specific records.",
+          "Follow rank, branch-choice and allotment instructions for college code 2702; complete the college’s joining checklist after allotment."
+        ],
+        "documentsRequired": {
+          "academic": [
+            "Class 10,11 and 12/equivalent mark statements",
+            "Transfer/conduct certificate"
+          ],
+          "application": [
+            "Provisional allotment order and passport photograph",
+            "Applicable community, first-graduate and government-school proof",
+            "Physical-fitness certificate and Aadhaar copy for the documented domestic route"
+          ]
+        }
+      },
+      "slug": "bit-b-e-electronics-and-communication-engineering",
+      "audienceEligibility": {
+        "availability": "restricted",
+        "eligibleAudiences": [
+          "Applicants meeting TNEA 2026 academic-stream government-quota conditions"
+        ],
+        "restrictions": [
+          "This fragment covers the documented regular first-year government-quota route, not management, foreign/NRI or lateral entry.",
+          "The relevant schooling, nativity, community and other applicant-category rules apply."
+        ],
+        "verifiedAt": "2026-10-27",
+        "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+      }
+    },
+    {
+      "officialTitle": "B.E. Electronics and Instrumentation Engineering",
+      "canonicalCourseSlug": "be-btech-instrumentation-engineering",
+      "durationYears": 4,
+      "officialProgramUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "medium": "English",
+      "mediumNote": "English instruction and academic activities except specifically approved Tamil courses under UG Regulations 2026.",
+      "instructionLanguages": [
+        "english"
+      ],
+      "intakeMonths": [],
+      "intakeCodes": [],
+      "fee": {
+        "status": "on_request",
+        "verifiedAt": "2026-10-27",
+        "notes": "Current category-specific annual tuition is unverified. Secondary full-course figures conflict and are not converted into annual tuition."
+      },
+      "admissionsContent": {
+        "overview": "B.E. Electronics and Instrumentation Engineering follows the regular four-year, eight-semester undergraduate structure.",
+        "eligibility": {
+          "intro": "Academic-stream TNEA government-quota entry is distinct from management, overseas and lateral-entry routes.",
+          "items": [
+            "Pass HSC Academic(+1 and+2) or accepted equivalent with Mathematics, Physics and Chemistry.",
+            "Minimum PCM average is 45% for General and 40% for the specified Tamil Nadu reserved categories under TNEA 2026.",
+            "Applicable TNEA schooling, nativity and category conditions must be satisfied; minimum eligibility does not guarantee allotment."
+          ]
+        },
+        "applicationSteps": [
+          "Register for the notified TNEA cycle and submit academic and route-specific records.",
+          "Follow rank, branch-choice and allotment instructions for college code 2702; complete the college’s joining checklist after allotment."
+        ],
+        "documentsRequired": {
+          "academic": [
+            "Class 10,11 and 12/equivalent mark statements",
+            "Transfer/conduct certificate"
+          ],
+          "application": [
+            "Provisional allotment order and passport photograph",
+            "Applicable community, first-graduate and government-school proof",
+            "Physical-fitness certificate and Aadhaar copy for the documented domestic route"
+          ]
+        }
+      },
+      "slug": "bit-b-e-electronics-and-instrumentation-engineering",
+      "audienceEligibility": {
+        "availability": "restricted",
+        "eligibleAudiences": [
+          "Applicants meeting TNEA 2026 academic-stream government-quota conditions"
+        ],
+        "restrictions": [
+          "This fragment covers the documented regular first-year government-quota route, not management, foreign/NRI or lateral entry.",
+          "The relevant schooling, nativity, community and other applicant-category rules apply."
+        ],
+        "verifiedAt": "2026-10-27",
+        "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+      }
+    },
+    {
+      "officialTitle": "B.Tech. Information Technology",
+      "canonicalCourseSlug": "be-btech-information-technology",
+      "durationYears": 4,
+      "officialProgramUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "medium": "English",
+      "mediumNote": "English instruction and academic activities except specifically approved Tamil courses under UG Regulations 2026.",
+      "instructionLanguages": [
+        "english"
+      ],
+      "intakeMonths": [],
+      "intakeCodes": [],
+      "fee": {
+        "status": "on_request",
+        "verifiedAt": "2026-10-27",
+        "notes": "Current category-specific annual tuition is unverified. Secondary full-course figures conflict and are not converted into annual tuition."
+      },
+      "admissionsContent": {
+        "overview": "B.Tech. Information Technology follows the regular four-year, eight-semester undergraduate structure.",
+        "eligibility": {
+          "intro": "Academic-stream TNEA government-quota entry is distinct from management, overseas and lateral-entry routes.",
+          "items": [
+            "Pass HSC Academic(+1 and+2) or accepted equivalent with Mathematics, Physics and Chemistry.",
+            "Minimum PCM average is 45% for General and 40% for the specified Tamil Nadu reserved categories under TNEA 2026.",
+            "Applicable TNEA schooling, nativity and category conditions must be satisfied; minimum eligibility does not guarantee allotment."
+          ]
+        },
+        "applicationSteps": [
+          "Register for the notified TNEA cycle and submit academic and route-specific records.",
+          "Follow rank, branch-choice and allotment instructions for college code 2702; complete the college’s joining checklist after allotment."
+        ],
+        "documentsRequired": {
+          "academic": [
+            "Class 10,11 and 12/equivalent mark statements",
+            "Transfer/conduct certificate"
+          ],
+          "application": [
+            "Provisional allotment order and passport photograph",
+            "Applicable community, first-graduate and government-school proof",
+            "Physical-fitness certificate and Aadhaar copy for the documented domestic route"
+          ]
+        }
+      },
+      "slug": "bit-b-tech-information-technology",
+      "audienceEligibility": {
+        "availability": "restricted",
+        "eligibleAudiences": [
+          "Applicants meeting TNEA 2026 academic-stream government-quota conditions"
+        ],
+        "restrictions": [
+          "This fragment covers the documented regular first-year government-quota route, not management, foreign/NRI or lateral entry.",
+          "The relevant schooling, nativity, community and other applicant-category rules apply."
+        ],
+        "verifiedAt": "2026-10-27",
+        "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+      }
+    },
+    {
+      "officialTitle": "B.E. Mechanical Engineering",
+      "canonicalCourseSlug": "be-btech-mechanical-engineering",
+      "durationYears": 4,
+      "officialProgramUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "medium": "English",
+      "mediumNote": "English instruction and academic activities except specifically approved Tamil courses under UG Regulations 2026.",
+      "instructionLanguages": [
+        "english"
+      ],
+      "intakeMonths": [],
+      "intakeCodes": [],
+      "fee": {
+        "status": "on_request",
+        "verifiedAt": "2026-10-27",
+        "notes": "Current category-specific annual tuition is unverified. Secondary full-course figures conflict and are not converted into annual tuition."
+      },
+      "admissionsContent": {
+        "overview": "B.E. Mechanical Engineering follows the regular four-year, eight-semester undergraduate structure.",
+        "eligibility": {
+          "intro": "Academic-stream TNEA government-quota entry is distinct from management, overseas and lateral-entry routes.",
+          "items": [
+            "Pass HSC Academic(+1 and+2) or accepted equivalent with Mathematics, Physics and Chemistry.",
+            "Minimum PCM average is 45% for General and 40% for the specified Tamil Nadu reserved categories under TNEA 2026.",
+            "Applicable TNEA schooling, nativity and category conditions must be satisfied; minimum eligibility does not guarantee allotment."
+          ]
+        },
+        "applicationSteps": [
+          "Register for the notified TNEA cycle and submit academic and route-specific records.",
+          "Follow rank, branch-choice and allotment instructions for college code 2702; complete the college’s joining checklist after allotment."
+        ],
+        "documentsRequired": {
+          "academic": [
+            "Class 10,11 and 12/equivalent mark statements",
+            "Transfer/conduct certificate"
+          ],
+          "application": [
+            "Provisional allotment order and passport photograph",
+            "Applicable community, first-graduate and government-school proof",
+            "Physical-fitness certificate and Aadhaar copy for the documented domestic route"
+          ]
+        }
+      },
+      "slug": "bit-b-e-mechanical-engineering",
+      "audienceEligibility": {
+        "availability": "restricted",
+        "eligibleAudiences": [
+          "Applicants meeting TNEA 2026 academic-stream government-quota conditions"
+        ],
+        "restrictions": [
+          "This fragment covers the documented regular first-year government-quota route, not management, foreign/NRI or lateral entry.",
+          "The relevant schooling, nativity, community and other applicant-category rules apply."
+        ],
+        "verifiedAt": "2026-10-27",
+        "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+      }
+    },
+    {
+      "officialTitle": "B.E. Mechatronics Engineering",
+      "canonicalCourseSlug": "be-btech-mechatronics-engineering",
+      "durationYears": 4,
+      "officialProgramUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "medium": "English",
+      "mediumNote": "English instruction and academic activities except specifically approved Tamil courses under UG Regulations 2026.",
+      "instructionLanguages": [
+        "english"
+      ],
+      "intakeMonths": [],
+      "intakeCodes": [],
+      "fee": {
+        "status": "on_request",
+        "verifiedAt": "2026-10-27",
+        "notes": "Current category-specific annual tuition is unverified. Secondary full-course figures conflict and are not converted into annual tuition."
+      },
+      "admissionsContent": {
+        "overview": "B.E. Mechatronics Engineering follows the regular four-year, eight-semester undergraduate structure.",
+        "eligibility": {
+          "intro": "Academic-stream TNEA government-quota entry is distinct from management, overseas and lateral-entry routes.",
+          "items": [
+            "Pass HSC Academic(+1 and+2) or accepted equivalent with Mathematics, Physics and Chemistry.",
+            "Minimum PCM average is 45% for General and 40% for the specified Tamil Nadu reserved categories under TNEA 2026.",
+            "Applicable TNEA schooling, nativity and category conditions must be satisfied; minimum eligibility does not guarantee allotment."
+          ]
+        },
+        "applicationSteps": [
+          "Register for the notified TNEA cycle and submit academic and route-specific records.",
+          "Follow rank, branch-choice and allotment instructions for college code 2702; complete the college’s joining checklist after allotment."
+        ],
+        "documentsRequired": {
+          "academic": [
+            "Class 10,11 and 12/equivalent mark statements",
+            "Transfer/conduct certificate"
+          ],
+          "application": [
+            "Provisional allotment order and passport photograph",
+            "Applicable community, first-graduate and government-school proof",
+            "Physical-fitness certificate and Aadhaar copy for the documented domestic route"
+          ]
+        }
+      },
+      "slug": "bit-b-e-mechatronics-engineering",
+      "audienceEligibility": {
+        "availability": "restricted",
+        "eligibleAudiences": [
+          "Applicants meeting TNEA 2026 academic-stream government-quota conditions"
+        ],
+        "restrictions": [
+          "This fragment covers the documented regular first-year government-quota route, not management, foreign/NRI or lateral entry.",
+          "The relevant schooling, nativity, community and other applicant-category rules apply."
+        ],
+        "verifiedAt": "2026-10-27",
+        "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+      }
+    },
+    {
+      "officialTitle": "M.E. Computer Science and Engineering",
+      "canonicalCourseSlug": "me-mtech-computer-science-engineering",
+      "durationYears": 2,
+      "officialProgramUrl": "https://www.bitsathy.ac.in/department/computer-science-and-engineering/",
+      "medium": "",
+      "instructionLanguages": [],
+      "intakeMonths": [],
+      "intakeCodes": [],
+      "status": "held_specific_admission_approval_evidence",
+      "missing": [
+        "Current AICTE own listing",
+        "Exact qualifying degree and entrance-route eligibility",
+        "International route assessment"
+      ],
+      "slug": "bit-m-e-computer-science-and-engineering"
+    },
+    {
+      "officialTitle": "M.E. Industrial Safety Engineering",
+      "canonicalCourseSlug": "me-mtech-industrial-safety-engineering",
+      "durationYears": 2,
+      "officialProgramUrl": "https://www.bitsathy.ac.in/department/mechanical-engineering/",
+      "medium": "",
+      "instructionLanguages": [],
+      "intakeMonths": [],
+      "intakeCodes": [],
+      "status": "held_specific_admission_approval_evidence",
+      "missing": [
+        "Current AICTE own listing",
+        "Exact qualifying degree and entrance-route eligibility",
+        "International route assessment"
+      ],
+      "slug": "bit-m-e-industrial-safety-engineering"
+    },
+    {
+      "officialTitle": "M.E. VLSI Design",
+      "canonicalCourseSlug": "me-mtech-electronics-communication-engineering",
+      "durationYears": 2,
+      "officialProgramUrl": "https://www.bitsathy.ac.in/department/electronics-and-communication-engineering/",
+      "medium": "",
+      "instructionLanguages": [],
+      "intakeMonths": [],
+      "intakeCodes": [],
+      "status": "held_specific_admission_approval_evidence",
+      "missing": [
+        "Current AICTE own listing",
+        "Exact qualifying degree and entrance-route eligibility",
+        "International route assessment"
+      ],
+      "slug": "bit-m-e-vlsi-design"
+    },
+    {
+      "officialTitle": "M.B.A. Master of Business Administration",
+      "canonicalCourseSlug": "mba",
+      "durationYears": 2,
+      "officialProgramUrl": "https://www.bitsathy.ac.in/wp-content/uploads/MBA-Regulations-2024.V5.pdf",
+      "medium": "",
+      "instructionLanguages": [],
+      "intakeMonths": [],
+      "intakeCodes": [],
+      "status": "held_specific_admission_approval_evidence",
+      "missing": [
+        "Current AICTE own listing",
+        "Exact qualifying degree and entrance-route eligibility",
+        "International route assessment"
+      ],
+      "slug": "bit-m-b-a-master-of-business-administration"
+    }
+  ],
+  "blockingGaps": [
+    "Current AICTE regulator-owned programme list/EoA for 2026-27 not read; institute disclosure reference is not substitute. No professional programme publication until this gate is cleared.",
+    "ME/MBA precise qualifying-degree combinations and applicable entrance/counselling routes need current programme-specific authority; no generic engineering admission copied.",
+    "AI/ML old/new conflict and obsolete programmes must remain excluded; ME VLSI current 2026 source supersedes stale Communications Systems intro, but approval remains held.",
+    "Mandatory logo and real-campus-cover HTTP 200/image content-type, white-tile visual QA, rights record and Cloudinary hosting not completed.",
+    "No confirmed category-specific annual tuition. Two credible full-course secondary sources conflict; do not divide totals into annual fees.",
+    "Each of the 13 listed doctoral research areas is retained within catalogue scope and individually held for exact award, duration/mode, current admission/audience rules and awarding-university authorization.",
+    "Latest remote duplicate/ledger recheck and any executable payload assembly, mandatory media validation and actual scoped catalogue/migration validation remain integrator work before publication; they do not prevent research-bundle delivery."
+  ],
+  "doctoralResearchAreaDrafts": [
+    {
+      "researchListingLabel": "Ph.D. Biotechnology",
+      "canonicalCourseCandidate": "phd-natural-sciences",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Chemistry",
+      "canonicalCourseCandidate": "phd-natural-sciences",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Civil Engineering",
+      "canonicalCourseCandidate": "phd-engineering",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Computer Science and Engineering",
+      "canonicalCourseCandidate": "phd-computer-science",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Electrical and Electronics Engineering",
+      "canonicalCourseCandidate": "phd-engineering",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Electronics and Communication Engineering",
+      "canonicalCourseCandidate": "phd-engineering",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Electronics and Instrumentation Engineering",
+      "canonicalCourseCandidate": "phd-engineering",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Information Technology",
+      "canonicalCourseCandidate": "phd-computer-science",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Mathematics",
+      "canonicalCourseCandidate": "phd-natural-sciences",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Mechanical Engineering",
+      "canonicalCourseCandidate": "phd-engineering",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Mechatronics",
+      "canonicalCourseCandidate": "phd-engineering",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Physics",
+      "canonicalCourseCandidate": "phd-natural-sciences",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    },
+    {
+      "researchListingLabel": "Ph.D. Management Studies",
+      "canonicalCourseCandidate": "phd-business-management",
+      "officialSourceUrl": "https://www.bitsathy.ac.in/programmes-offered/",
+      "level": "doctorate",
+      "status": "held_doctoral_research_area",
+      "sourceGrade": "A",
+      "currentAdmittingAwardVerified": false,
+      "durationYears": null,
+      "applicantCategoryStatus": "unknown",
+      "missing": [
+        "Exact current admitting doctoral award and awarding body",
+        "Duration and full-time/part-time mode",
+        "Current entry qualification and selection route",
+        "Applicant-category and international eligibility",
+        "Current awarding-university subject/research-centre authorization"
+      ]
+    }
+  ],
+  "researchInventoryDiscoveryGaps": [],
+  "deliveryStatus": {
+    "target": "github_local_bundle",
+    "livePublishingOwner": "user",
+    "researchDeliveryBlockedByCredentials": false,
+    "queueNote": "Researcher did not mutate the queue; integrator local claim exists under research_tn_batch_b, not remotely synced.",
+    "notes": "Research delivery target is GitHub/local bundle; the user owns live publishing. Missing live-publishing credentials do not block saving or handing off this research. Evidence, media and actual catalogue/migration validation remain separate publication gates."
+  }
+}

@@ -1,12 +1,22 @@
 {
-  "delivery": "Reviewed pilot research only; not live published",
-  "pilot": "indian-institute-of-management-tiruchirappalli",
-  "status": "held_research_draft",
-  "draftProgrammes": 2,
-  "inventoryRows": 17,
-  "evidenceRows": 32,
-  "claims": "All new batch claims remain local only; shared ledger deliberately excluded from this small remote commit. Reconcile latest remote before any reservation or publication.",
+  "delivery": "Reviewed research only; user owns live publication",
   "readyToApply": false,
   "original68": "Untouched",
-  "noProductionActions": true
+  "claims": "Shared ledger is deliberately excluded; fresh claims remain local only. Reconcile latest remote before reservation/publication.",
+  "institutions": [
+    {
+      "slug": "indian-institute-of-management-tiruchirappalli",
+      "status": "held_schema_valid_draft",
+      "inventoryRows": 17,
+      "draftProgrammes": 2
+    },
+    {
+      "slug": "bannari-amman-institute-of-technology",
+      "status": "held_research_fragments",
+      "inventoryRows": 43,
+      "taughtFragments": 14,
+      "doctoralAreaHolds": 13,
+      "catalogueSchemaValidated": false
+    }
+  ]
 }

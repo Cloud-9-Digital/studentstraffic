@@ -1,0 +1,20 @@
+{
+  "status": "held_not_uploaded",
+  "checkedAt": "2026-10-27",
+  "logo": {
+    "sourceUrl": "https://www.bitsathy.ac.in/wp-content/themes/baiotsathycollege/assets/images/logo2.png",
+    "status": "official_page_link_discovered_not_visual_or_header_verified"
+  },
+  "cover": {
+    "sourceUrl": null,
+    "status": "not_verified",
+    "discoveryPage": "https://www.bitsathy.ac.in/campus-facilities/nggallery/campus/birds-eye-view"
+  },
+  "missing": [
+    "HTTP 200 and image content type",
+    "Visual verification including legible logo on white",
+    "Accepted rights/provenance basis",
+    "Mandatory Students Traffic Cloudinary hosting"
+  ],
+  "notes": "No external-image hotlink fields added and no upload attempted."
+}

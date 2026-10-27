@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-10-27",
+  "integratorReview": "accepted_for_research_delivery_only",
+  "cataloguePayloadReady": false,
+  "executableMigration": false,
+  "workerValidatorRerun": "PASS",
+  "reviewCorrections": [
+    "Local integrator claims correctly distinguished from researcher queue mutations and remote reservations",
+    "Current doctoral areas individually held rather than blanket excluded",
+    "Bannari summary source claims narrowed to what each source supports"
+  ],
+  "independentPrimarySpotChecks": [
+    "https://www.bitsathy.ac.in/programmes-offered/",
+    "https://www.annauniv.edu/cai/Affiliated%20Colleges%20list%20by%20Alphabetical/B.html"
+  ],
+  "canonicalInventoryCopiedTo": "research/india-programme-inventory/bannari-amman-institute-of-technology.csv",
+  "inventorySha256": "cba7e0faa2cce8b4a85f5cbaeecfcd1c9124c3269d870d4a1cfc7cc39dc81ab8",
+  "scopeCaution": "Research checks do not validate completeness of inaccessible sources. Preserve every exact hold; do not run content apply on these fragments."
+}
