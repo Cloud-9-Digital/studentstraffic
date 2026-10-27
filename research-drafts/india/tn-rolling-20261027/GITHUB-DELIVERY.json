@@ -57,6 +57,15 @@
       "status": "held_research_no_catalogue_pass",
       "completeExecutableMigration": false,
       "remainingHolds": "See holds.json or publication-scope.json and integrator-review.json; mandatory media, exact programme/audience/cycle, source conflicts and proposed taxonomy gates remain binding."
+    },
+    {
+      "slug": "easwari-engineering-college",
+      "inventoryRows": 31,
+      "actualFrameworkPassingProgrammes": 0,
+      "actualFrameworkIndependentlyRerun": false,
+      "status": "held_research_no_catalogue_pass",
+      "completeExecutableMigration": false,
+      "remainingHolds": "See holds.json or publication-scope.json and integrator-review.json; mandatory media, exact programme/audience/cycle, source conflicts and proposed taxonomy gates remain binding."
     }
   ]
 }

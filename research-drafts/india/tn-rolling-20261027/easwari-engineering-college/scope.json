@@ -1,0 +1,41 @@
+{
+  "countrySlug": "india",
+  "universitySlug": "easwari-engineering-college",
+  "name": "Easwari Engineering College",
+  "targetLevels": [
+    "bachelors",
+    "masters",
+    "doctorate"
+  ],
+  "checkedAt": "2026-10-27",
+  "owner": "research_tn_rolling_batch_e",
+  "status": "held_research_only",
+  "identity": "Distinct from SRM Institute of Science and Technology and SRM Easwari School of Liberal Arts; Anna University examination code 3106, TNEA 1304.",
+  "canonicalCourseSlugs": [
+    "be-btech-artificial-intelligence-machine-learning",
+    "be-btech-automobile-engineering",
+    "be-btech-biomedical-engineering",
+    "be-btech-biotechnology",
+    "be-btech-civil-engineering",
+    "be-btech-computer-science-engineering",
+    "be-btech-cyber-security",
+    "be-btech-data-science",
+    "be-btech-electrical-electronics-engineering",
+    "be-btech-electronics-communication-engineering",
+    "be-btech-information-technology",
+    "be-btech-mechanical-engineering",
+    "be-btech-robotics-automation-engineering",
+    "mba",
+    "mca",
+    "me-mtech-civil-engineering",
+    "me-mtech-computer-science-engineering",
+    "me-mtech-electrical-engineering",
+    "me-mtech-electronics-communication-engineering",
+    "me-mtech-mechanical-engineering",
+    "phd-computer-science",
+    "phd-engineering",
+    "phd-natural-sciences"
+  ],
+  "publishingBatch": "tn-rolling-ten2-20261027",
+  "publicationBoundary": "Second ten-institution PR only; never PR3. Integrator owns GitHub/local publication."
+}

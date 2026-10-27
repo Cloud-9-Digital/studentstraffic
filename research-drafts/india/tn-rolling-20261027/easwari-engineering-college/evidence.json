@@ -1,0 +1,42 @@
+[
+  {
+    "entity": "university",
+    "universitySlug": "easwari-engineering-college",
+    "publicField": "recognition",
+    "claimText": "Anna University Thiruvallur district affiliated-college list includes Easwari Engineering College (Autonomous), examination code 3106 and TNEA code 1304.",
+    "status": "verified",
+    "sourceUrl": "https://www.annauniv.edu/cai/District%20wise/district/Thiruvallur.php",
+    "sourceGrade": "A",
+    "checkedAt": "2026-10-27"
+  },
+  {
+    "entity": "university",
+    "universitySlug": "easwari-engineering-college",
+    "publicField": "currentUndergraduateBranches",
+    "claimText": "Official TNEA 2026 directory PDF page 101 / printed page 60 lists 15 current UG branch codes: CB, CD, BT, BM, CE, RM, ME, SC, IT, AU, AD, CS, EC, EE, AM.",
+    "status": "verified",
+    "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+    "sourceGrade": "A",
+    "checkedAt": "2026-10-27"
+  },
+  {
+    "entity": "university",
+    "universitySlug": "easwari-engineering-college",
+    "publicField": "housingCosts",
+    "claimText": "Same official table: UG boys/girls permanent hostels; veg/non-veg mess. Annual mess INR 90,000 each, annual room INR 80,000 boys / 89,000 girls, annual electricity INR 6,000 each. Caution INR 5,000 and establishment INR 9,000 appear in merged/non-period-labelled rows; do not assign an annual period.",
+    "status": "verified",
+    "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+    "sourceGrade": "A",
+    "checkedAt": "2026-10-27"
+  },
+  {
+    "entity": "university",
+    "universitySlug": "easwari-engineering-college",
+    "publicField": "sourceAccess",
+    "claimText": "Official homepage and curriculum PDF URL return firewall HTML, not usable programme content. The discovered 2025 brochure full open returns Access Denied. No bypass attempted.",
+    "status": "omit",
+    "sourceUrl": "https://srmeaswari.ac.in/",
+    "sourceGrade": "A",
+    "checkedAt": "2026-10-27"
+  }
+]

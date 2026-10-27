@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-10-27",
+  "candidateName": "Easwari Engineering College",
+  "aliases": [
+    "Easwari Engineering",
+    "SRM Easwari",
+    "srmeaswari.ac.in"
+  ],
+  "localImmutableMatches": [],
+  "live": [
+    {
+      "url": "https://www.studentstraffic.com/api/mobile/v1/universities/easwari-engineering-college",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.studentstraffic.com/api/search/suggestions?q=Easwari%20Engineering",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "original68": "No exact identity match in research/tamil-nadu-universities-scope.csv or reconciliation CSV.",
+  "remoteMain": "d541a55c38e4fc68c3d1c221b6dad4807e3abfdf",
+  "remoteLedger": "Direct GitHub fetch 2026-10-27: no candidate identity row. Incidental LICET and MEASI references in Loyola College/New College notes are distinct institutions.",
+  "remoteSearch": "GitHub default-branch code search returned zero for licet/measiarch/easwari.",
+  "liveSuggestions": {
+    "url": "https://www.studentstraffic.com/api/suggestions?q=Easwari",
+    "status": 200,
+    "result": []
+  },
+  "localClaims": "Confirmed by publish_tamil_nadu_pilot on 2026-10-27: local serial claim completed, owner research_tn_rolling_batch_e, batch tn-rolling-ten2-20261027, status researching. Queue validated959rows/0errors/4pre-existingwarnings. Worker did not modify ledger.",
+  "incorrectEndpointNote": "Earlier /api/search/suggestions 404 was a route error, not evidence of absence; correct /api/suggestions endpoint returned HTTP200 and empty result."
+}
