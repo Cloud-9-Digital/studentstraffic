@@ -1,0 +1,59 @@
+{
+  "note": "Local source originals retained outside GitHub handoff to avoid committing large third-party PDF binaries. Extracted text/OCR, URL receipts and hashes remain under sources/. Re-download from receipt URLs if local archive expires.",
+  "files": [
+    {
+      "file": "mba-counselling.pdf",
+      "localArchivePath": "/tmp/tn-f-source-archive/sri-krishna-college-of-engineering-and-technology/mba-counselling.pdf",
+      "bytes": 172113,
+      "sha256": "864a8bcbfc43f0ababeb684debde0c21edf19af20e20abd0bbb60d5c026a3b97"
+    },
+    {
+      "file": "disclosure.pdf",
+      "localArchivePath": "/tmp/tn-f-source-archive/sri-krishna-college-of-engineering-and-technology/disclosure.pdf",
+      "bytes": 9914252,
+      "sha256": "72524c3262ca81ff50f7a3beb6f340b4e56830b6c637b48e823cd594a2311a0b"
+    },
+    {
+      "file": "ug-reg2022.pdf",
+      "localArchivePath": "/tmp/tn-f-source-archive/sri-krishna-college-of-engineering-and-technology/ug-reg2022.pdf",
+      "bytes": 16511798,
+      "sha256": "2723d4b7abc08c5150002a73ab3cabc97ab07391fcdb8e1d392c23755897a99d"
+    },
+    {
+      "file": "eoa2026.pdf",
+      "localArchivePath": "/tmp/tn-f-source-archive/sri-krishna-college-of-engineering-and-technology/eoa2026.pdf",
+      "bytes": 226835,
+      "sha256": "b7595f0747eaadce96afee292bf7cd0e5a1e20b867f56e39a3ef34628e8d5817"
+    },
+    {
+      "file": "pg-reg2022.pdf",
+      "localArchivePath": "/tmp/tn-f-source-archive/sri-krishna-college-of-engineering-and-technology/pg-reg2022.pdf",
+      "bytes": 771523,
+      "sha256": "cb1f6cb2720f6cba627d093b9a50b35883306237f167fdb9bf277ab4ca7f37ae"
+    },
+    {
+      "file": "ug-reg2025.pdf",
+      "localArchivePath": "/tmp/tn-f-source-archive/sri-krishna-college-of-engineering-and-technology/ug-reg2025.pdf",
+      "bytes": 1326252,
+      "sha256": "7945452fb2231c32377643c56172ba94ffb3e1517a65d703b518b151efdd350f"
+    },
+    {
+      "file": "pg-admission2026.pdf",
+      "localArchivePath": "/tmp/tn-f-source-archive/sri-krishna-college-of-engineering-and-technology/pg-admission2026.pdf",
+      "bytes": 347128,
+      "sha256": "3e738ed339ee70115f55f197f9918f615be7b559e1485d6f8a555eaef9f12005"
+    },
+    {
+      "file": "ug-admission2026.pdf",
+      "localArchivePath": "/tmp/tn-f-source-archive/sri-krishna-college-of-engineering-and-technology/ug-admission2026.pdf",
+      "bytes": 204413,
+      "sha256": "889e9eaa6fd5404573c12f3d4020c2ebe32c0cf3e04adc41fb0554f591313029"
+    },
+    {
+      "file": "mba-eoa2026.pdf",
+      "localArchivePath": "/tmp/tn-f-source-archive/sri-krishna-college-of-engineering-and-technology/mba-eoa2026.pdf",
+      "bytes": 220636,
+      "sha256": "0ff300c38537180c65c47dc133bcbf76461f6a1c677f8dee739e42fb1faf1c6b"
+    }
+  ]
+}

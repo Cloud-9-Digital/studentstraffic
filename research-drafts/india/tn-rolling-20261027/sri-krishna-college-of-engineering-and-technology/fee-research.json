@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-10-27",
+  "primary": {
+    "sourceUrl": "https://skcet.ac.in/wp-content/uploads/2025/07/AICTE-Mandatory-Disclosure.pdf",
+    "sourceType": "official-university fee disclosure",
+    "status": "read in full relevant fee section",
+    "currency": "INR",
+    "annualTuitionConfirmed": false,
+    "year": "Fee table undated; document URL has2025/07 upload path, not an academic-year guarantee",
+    "observations": [
+      "UG government quota50000\u201355000 per annum by accreditation; management140000\u2013145000.",
+      "Integrated five-yearCSE listed separately with the same accreditation-dependent rates.",
+      "PG55000 per annum; MBA35000 per annum; components and quota not isolated.",
+      "Native indicative quotes retained in candidate with undated academicYear label; not confirmed tuition."
+    ]
+  },
+  "secondary": {
+    "sourceUrl": "https://www.careers360.com/colleges/sri-krishna-college-of-engineering-and-technology-coimbatore/courses",
+    "sourceType": "credible third-party course-fee page; GradeC only for indicative reportedFeeQuote",
+    "readMethod": "Complete HTML downloaded and full fee-card content inspected, not only a search result",
+    "publishedOrUpdated": "19August2026",
+    "currency": "INR",
+    "period": "full_course",
+    "scopeLimit": "Fee cards say Total Fees, not annual tuition; applicant quota and precise component breakdown unspecified. Stale/closed programme entries remain in source, so never use it for current programme existence.",
+    "observations": [
+      "SeveralBE/BTech fee cards220000 total; AIDataScience/Cyber/CSBS200000; integratedCSE275000; MECSE110000; MBA70000.",
+      "Secondary narrative and cards vary, and legacyclosed awards persist.",
+      "Prefer the explicit annual-period official quote with its actual category, not an inferred annualisation of totals."
+    ]
+  },
+  "conversion": "NoUSDconversion performed; no foreign exchange rate guessed.",
+  "conclusion": "The evidence supports scoped native reported charges where exact, not a confirmed current universal annual tuition."
+}
