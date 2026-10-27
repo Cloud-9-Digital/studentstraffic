@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-27",
+  "annualTuition": "on_request for6offerings",
+  "primary": {
+    "url": "https://licet.ac.in/wp-content/uploads/2025/07/Mandatory-Disclosure_2024-2025_Final.pdf",
+    "finding": "2024\u201325 disclosure quota table includes INR55000 government accredited,97000management accredited plus5000development; period not explicit and year not current, so not published as annual2026\u201327."
+  },
+  "indicativeQuotes": {
+    "url": "https://www.careers360.com/colleges/loyola-icam-college-of-engineering-and-technology-chennai/fees",
+    "publicationDate": "2025-07-05",
+    "academicYear": "Unstated; changing header2027 does not establish tariff year.",
+    "programmes": [
+      "BE CSE",
+      "BE ECE",
+      "BE EEE",
+      "BE Mechanical",
+      "BTech IT"
+    ],
+    "amountINR": 220000,
+    "period": "full_course",
+    "basis": "tuition; totalfee240000 separately labelled",
+    "category": "General category, quota unstated",
+    "status": "indicative",
+    "forbiddenInference": "No annualization, hostel-inclusive total, AI&DS propagation or current confirmed claim."
+  },
+  "aiDataScience": "No named exact secondary row; on_request remains."
+}

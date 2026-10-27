@@ -12,6 +12,15 @@
       "status": "held_framework_candidate",
       "completeExecutableMigration": false,
       "remainingHolds": "See holds.json or publication-scope.json and integrator-review.json; mandatory media, exact programme/audience/cycle, source conflicts and proposed taxonomy gates remain binding."
+    },
+    {
+      "slug": "loyola-icam-college-of-engineering-and-technology",
+      "inventoryRows": 15,
+      "actualFrameworkPassingProgrammes": 6,
+      "actualFrameworkIndependentlyRerun": true,
+      "status": "held_framework_candidate",
+      "completeExecutableMigration": false,
+      "remainingHolds": "See holds.json or publication-scope.json and integrator-review.json; mandatory media, exact programme/audience/cycle, source conflicts and proposed taxonomy gates remain binding."
     }
   ]
 }

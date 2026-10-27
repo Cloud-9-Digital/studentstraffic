@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-10-27",
+  "status": "accepted_for_research_delivery_only",
+  "inventoryRows": 15,
+  "inventoryIdentityAndDispositionChecksPassed": true,
+  "errors": [],
+  "actualReader": {
+    "checkedAt": "2026-10-27T11:14:42.635Z",
+    "payloadSha256": "eb590ad5de1f8dd7c0e58c1493a9179f75e5a322b7e62888ccf2f8d122eece7c",
+    "actualFrameworkIndependentlyRerun": true,
+    "schemaPass": true,
+    "reader": {
+      "passed": true,
+      "expiredEvidence": []
+    },
+    "programmes": 6,
+    "evidenceRows": 71,
+    "publishReady": false,
+    "scope": "Isolated readContentMigrations only; holds, taxonomy proposals, audience/cycle review and mandatory media remain binding. No DB, remote publication or numbered migration."
+  },
+  "publishReady": false,
+  "completeExecutableMigration": false,
+  "claims": "Serial integrator local-only claim; shared remote ledger unchanged. Recheck remote before publication.",
+  "holds": "All precise holds in holds.json remain binding. Actual reader checks are not editorial, media or publication approval.",
+  "delivery": "Second fixed batch of ten only; separate PR from first ten. No raw source/media binaries, credentials, real migrations or application code changes."
+}
