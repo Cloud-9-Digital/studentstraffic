@@ -1,0 +1,97 @@
+{
+  "scope": "Ready first-year TNEA academic-stream UG subset, not full-institution publication",
+  "packaged": 15,
+  "heldRows": [
+    {
+      "title": "M.E. Communication Systems",
+      "level": "masters",
+      "reason": "HELD: current existence is now confirmed by the official admissions portal. Exact award-specific qualifying degrees, entrance/selection mechanism, duration, documents and applicant-route eligibility are not established by its generic AICTE/Anna norms statement. Do not reuse TNEA UG requirements."
+    },
+    {
+      "title": "M.E. Computer Science and Engineering",
+      "level": "masters",
+      "reason": "HELD: current existence is now confirmed by the official admissions portal. Exact award-specific qualifying degrees, entrance/selection mechanism, duration, documents and applicant-route eligibility are not established by its generic AICTE/Anna norms statement. Do not reuse TNEA UG requirements."
+    },
+    {
+      "title": "M.E. Embedded System Technologies",
+      "level": "masters",
+      "reason": "HELD: current existence is now confirmed by the official admissions portal. Exact award-specific qualifying degrees, entrance/selection mechanism, duration, documents and applicant-route eligibility are not established by its generic AICTE/Anna norms statement. Do not reuse TNEA UG requirements."
+    },
+    {
+      "title": "M.E. Engineering Design",
+      "level": "masters",
+      "reason": "HELD: current existence is now confirmed by the official admissions portal. Exact award-specific qualifying degrees, entrance/selection mechanism, duration, documents and applicant-route eligibility are not established by its generic AICTE/Anna norms statement. Do not reuse TNEA UG requirements."
+    },
+    {
+      "title": "M.E. Structural Engineering",
+      "level": "masters",
+      "reason": "HELD: current existence is now confirmed by the official admissions portal. Exact award-specific qualifying degrees, entrance/selection mechanism, duration, documents and applicant-route eligibility are not established by its generic AICTE/Anna norms statement. Do not reuse TNEA UG requirements."
+    },
+    {
+      "title": "MBA – Master of Business Administration",
+      "level": "masters",
+      "reason": "HELD: current existence is now confirmed by the official admissions portal. Exact award-specific qualifying degrees, entrance/selection mechanism, duration, documents and applicant-route eligibility are not established by its generic AICTE/Anna norms statement. Do not reuse TNEA UG requirements."
+    },
+    {
+      "title": "MCA – Master of Computer Application",
+      "level": "masters",
+      "reason": "HELD: current existence is now confirmed by the official admissions portal. Exact award-specific qualifying degrees, entrance/selection mechanism, duration, documents and applicant-route eligibility are not established by its generic AICTE/Anna norms statement. Do not reuse TNEA UG requirements."
+    },
+    {
+      "title": "Ph.D. Civil Engineering",
+      "level": "doctorate",
+      "reason": "HELD: aggregator_only_unconfirmed_current. Need current Anna University centre/supervisor route, degree-specific eligibility, vacancies and domestic/international rules; no award inferred from generic research activity. The admissions portal mentions Ph.D. generally but does not verify each specialty, duration or current application requirements; historical programmes are not reclassified as current."
+    },
+    {
+      "title": "Ph.D. Chemistry",
+      "level": "doctorate",
+      "reason": "HELD: aggregator_only_unconfirmed_current. Need current Anna University centre/supervisor route, degree-specific eligibility, vacancies and domestic/international rules; no award inferred from generic research activity. The admissions portal mentions Ph.D. generally but does not verify each specialty, duration or current application requirements; historical programmes are not reclassified as current."
+    },
+    {
+      "title": "Ph.D. Electronics and Communication Engineering",
+      "level": "doctorate",
+      "reason": "HELD: aggregator_only_unconfirmed_current. Need current Anna University centre/supervisor route, degree-specific eligibility, vacancies and domestic/international rules; no award inferred from generic research activity. The admissions portal mentions Ph.D. generally but does not verify each specialty, duration or current application requirements; historical programmes are not reclassified as current."
+    },
+    {
+      "title": "Ph.D. Electrical and Electronics Engineering",
+      "level": "doctorate",
+      "reason": "HELD: aggregator_only_unconfirmed_current. Need current Anna University centre/supervisor route, degree-specific eligibility, vacancies and domestic/international rules; no award inferred from generic research activity. The admissions portal mentions Ph.D. generally but does not verify each specialty, duration or current application requirements; historical programmes are not reclassified as current."
+    },
+    {
+      "title": "Ph.D. Automobile Engineering",
+      "level": "doctorate",
+      "reason": "HELD: aggregator_only_unconfirmed_current. Need current Anna University centre/supervisor route, degree-specific eligibility, vacancies and domestic/international rules; no award inferred from generic research activity. The admissions portal mentions Ph.D. generally but does not verify each specialty, duration or current application requirements; historical programmes are not reclassified as current."
+    },
+    {
+      "title": "Ph.D. Computer Science and Engineering",
+      "level": "doctorate",
+      "reason": "HELD: aggregator_only_unconfirmed_current. Need current Anna University centre/supervisor route, degree-specific eligibility, vacancies and domestic/international rules; no award inferred from generic research activity. The admissions portal mentions Ph.D. generally but does not verify each specialty, duration or current application requirements; historical programmes are not reclassified as current."
+    },
+    {
+      "title": "Ph.D. Mechanical Engineering",
+      "level": "doctorate",
+      "reason": "HELD: aggregator_only_unconfirmed_current. Need current Anna University centre/supervisor route, degree-specific eligibility, vacancies and domestic/international rules; no award inferred from generic research activity. The admissions portal mentions Ph.D. generally but does not verify each specialty, duration or current application requirements; historical programmes are not reclassified as current."
+    },
+    {
+      "title": "Ph.D. Physics",
+      "level": "doctorate",
+      "reason": "HELD: aggregator_only_unconfirmed_current. Need current Anna University centre/supervisor route, degree-specific eligibility, vacancies and domestic/international rules; no award inferred from generic research activity. The admissions portal mentions Ph.D. generally but does not verify each specialty, duration or current application requirements; historical programmes are not reclassified as current."
+    },
+    {
+      "title": "M.E. Power Electronics and Drives",
+      "level": "masters",
+      "reason": "HELD: historical secondary lead; absent from the current-discovery five-ME brochure list. Do not count as current programme without primary confirmation. The admissions portal mentions Ph.D. generally but does not verify each specialty, duration or current application requirements; historical programmes are not reclassified as current."
+    }
+  ],
+  "nonBlockingOmissions": {
+    "medium": "Unknown; empty controlled fields plus explicit omit evidence for every UG programme.",
+    "intake": "No verified future month/open window; empty arrays plus explicit omit evidence.",
+    "tuition": "on_request INR; official exact category tuition unavailable, ambiguous secondary full-course quote not converted to annual tuition.",
+    "additionalAccreditation": "Only Anna University affiliated autonomous-college status retained; no expired NBA/NAAC claim."
+  },
+  "remainingPublicationSteps": [
+    "Integrator acceptance of complete supported subset and honest official-editorial media rights basis.",
+    "Normal local media preparation/upload if the chosen application flow requires owned Cloudinary URLs.",
+    "Final executable bundle, grouped validation and UI/publication checks by the integrator; none claimed here."
+  ]
+}

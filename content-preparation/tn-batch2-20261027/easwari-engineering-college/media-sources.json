@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "universitySlug": "easwari-engineering-college",
+  "universityName": "Easwari Engineering College",
+  "batch": "tn-batch2-20261027",
+  "checkedAt": "2026-10-27",
+  "purpose": "User-authorized source-links local publication preparation; not direct apply.",
+  "payload": "payload.source.json",
+  "approvedSourceAssets": [
+    {
+      "kind": "logo",
+      "sourceUrl": "https://cdn.npfs.co/uploads/template/468/5084/publish/images/EEC-LOGO.png?1733490597",
+      "sourceType": "official-university",
+      "sourcePageUrl": "https://registration.srmeaswari.ac.in/",
+      "rightsBasis": "Original Easwari institutional admissions-portal asset, retained intact for factual institutional identification and campus-context editorial illustration. The portal embeds this exact public CDN source. No open licence, ownership transfer, express permission or endorsement is claimed.",
+      "checkedAt": "2026-10-27",
+      "status": "reviewed-source-ready-for-local-upload",
+      "sha256": "84b8e7a1d0efa5205cbfdd030dcaf20021dea4cbde2e9babaa345f06f6710e0f",
+      "bytes": 23699,
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 301,
+        "height": 119
+      },
+      "proposedPublicId": "studentstraffic/universities/easwari-engineering-college/logo-84b8e7a1d0ef",
+      "visualReview": "Legible official EEC crest and wordmark on light background; no promotional badge substituted for identity.",
+      "altText": "Easwari Engineering College autonomous institutional logo, Ramapuram Chennai",
+      "licenseUrl": null,
+      "licenseSourceUrl": null
+    },
+    {
+      "kind": "cover",
+      "sourceUrl": "https://cdn.npfs.co/uploads/template/468/5084/publish/images/why/City%20Green%20Campus.jpg?1764582201",
+      "sourceType": "official-university",
+      "sourcePageUrl": "https://registration.srmeaswari.ac.in/",
+      "rightsBasis": "Original Easwari institutional admissions-portal asset, retained intact for factual institutional identification and campus-context editorial illustration. The portal embeds this exact public CDN source. No open licence, ownership transfer, express permission or endorsement is claimed.",
+      "checkedAt": "2026-10-27",
+      "status": "reviewed-source-ready-for-local-upload",
+      "sha256": "368422c657fc045aa84bcadf3429c638e9dd00bec557be7d5f2d154d1f3bcba9",
+      "bytes": 299627,
+      "contentType": "image/jpeg",
+      "dimensions": {
+        "width": 500,
+        "height": 500
+      },
+      "proposedPublicId": "studentstraffic/universities/easwari-engineering-college/cover-368422c657fc",
+      "visualReview": "Real campus building with visible GALILEO BLOCK sign and trees; no people, watermarks or unrelated stock subject. Square source; preserve aspect ratio and do not claim a wide high-resolution asset.",
+      "altText": "Tree-lined entrance to Galileo Block at Easwari Engineering College, Ramapuram, Chennai",
+      "licenseUrl": null,
+      "licenseSourceUrl": null
+    }
+  ],
+  "readyForLocalMediaPreparation": true,
+  "readyForDirectApply": false,
+  "prohibitedActions": [
+    "No direct source hotlinks in logoUrl/coverImageUrl",
+    "No fabricated Cloudinary URLs",
+    "No DB access or live apply by this preparation tool"
+  ],
+  "remainingLocalSteps": [
+    "Upload the two reviewed original assets or supply verified existing Cloudinary mappings",
+    "Generate the hosted-media payload and run actual scoped reader",
+    "Reserve/claim through locked canonical workflow, run scoped/full validation, commit final immutable migration before user-owned apply"
+  ]
+}
