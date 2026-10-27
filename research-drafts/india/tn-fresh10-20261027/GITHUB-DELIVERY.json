@@ -42,6 +42,15 @@
       "frameworkIndependentlyRerun": true,
       "completeExecutableMigration": false,
       "remainingGates": "Complete-portfolio unknowns, precise applicant/cycle conditions, taxonomy where proposed, rights-cleared hosted media and user-owned publication."
+    },
+    {
+      "slug": "great-lakes-institute-of-management-chennai",
+      "status": "held_full_framework_subset_pass",
+      "inventoryRows": 32,
+      "frameworkPassingSubsetProgrammes": 2,
+      "frameworkIndependentlyRerun": true,
+      "completeExecutableMigration": false,
+      "remainingGates": "Complete-portfolio unknowns, precise applicant/cycle conditions, taxonomy where proposed, rights-cleared hosted media and user-owned publication."
     }
   ]
 }

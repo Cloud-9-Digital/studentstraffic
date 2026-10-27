@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-10-27",
+  "baselineSnapshotCommit": "514e4651ac1b278469eaee9e694bbeca438fa392",
+  "baselineEvidenceSha256": "ef370adb7ded14a38b51016e9c9d4f3e1040d4cc251d5e457964f26eb6712138",
+  "claimScope": "Only the already-authored structurally complete subset; held programme eligibility/award/duration fields are not promoted. Recognition and language/intake omissions normalize existing supported evidence keys.",
+  "recognition": {
+    "field": "recognition",
+    "source": "https://www.aacsb.edu/accredited/g/great-lakes-institute-of-management-chennai",
+    "status": "verified",
+    "grade": "A"
+  },
+  "programmes": [
+    {
+      "programmeSlug": "post-graduate-program-in-management-pgpm-award-post-graduate-certificate-in-management",
+      "eligibilitySource": "https://www.greatlakes.edu.in/chennai/pgpm/admissions",
+      "admissionsSource": "https://www.greatlakes.edu.in/chennai/pgpm/admissions",
+      "sourceLocator": "sources/web-evidence-2.json and web-evidence-3.json: official PGPM admissions eligibility/application sections; sources/completion-research-2.json: official PGPM FAQ foreign applicants, essays and recommendation sections. Eligibility does not equate the PGCM award to an MBA.",
+      "feeDecisionSource": "https://www.greatlakes.edu.in/chennai/pgpm/fees",
+      "feeDecisionScope": "Captured official fee-table pages in sources/web-evidence-1.json (PGDM) and sources/web-evidence-2.json / web-evidence-3.json (PGPM), with detailed arithmetic/vintage reconciliation in fee-research.json. Verified concerns the editorial on_request decision from official period/category evidence; it does not certify a current annual tariff.",
+      "medium": "omit: unchanged empty language fields; exact framework key now used",
+      "intake": "omit: no future month inferred; exact framework key now used"
+    },
+    {
+      "programmeSlug": "post-graduate-diploma-in-management-pgdm",
+      "eligibilitySource": "https://www.greatlakes.edu.in/chennai/pgdm/admissions",
+      "admissionsSource": "https://www.greatlakes.edu.in/chennai/pgdm/admissions",
+      "sourceLocator": "sources/web-evidence-1.json: official PGDM admissions eligibility/application sections; sources/web-evidence-4.json: official PGDM FAQ. The route is not an assertion that every Great Lakes programme accepts foreign applicants.",
+      "feeDecisionSource": "https://www.greatlakes.edu.in/chennai/pgdm/fees",
+      "feeDecisionScope": "Captured official fee-table pages in sources/web-evidence-1.json (PGDM) and sources/web-evidence-2.json / web-evidence-3.json (PGPM), with detailed arithmetic/vintage reconciliation in fee-research.json. Verified concerns the editorial on_request decision from official period/category evidence; it does not certify a current annual tariff.",
+      "medium": "omit: unchanged empty language fields; exact framework key now used",
+      "intake": "omit: no future month inferred; exact framework key now used"
+    }
+  ],
+  "discoveryEvidenceRecordsOutsideExecutablePayload": 2,
+  "publicationReady": false,
+  "frameworkResult": "PASS",
+  "frameworkReport": "framework-validation.json"
+}

@@ -1,0 +1,95 @@
+{
+  "pgpm": {
+    "status": "reported_native_quotes",
+    "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgpm/fees",
+    "academicPeriod": "2027–28, body heading (page title is stale)",
+    "basis": "entire one-year programme",
+    "domestic": {
+      "currency": "INR",
+      "tuition": 1243000,
+      "programmeFee": 696000,
+      "academicTotal": 1939000,
+      "accommodation": 396000,
+      "refundableDeposit": 10000,
+      "alumni": 5000,
+      "grandTotal": 2350000
+    },
+    "international": {
+      "currency": "USD",
+      "tuition": 21050,
+      "programmeFee": 12300,
+      "academicTotal": 33350,
+      "accommodation": 7700,
+      "refundableDeposit": 300,
+      "alumni": 100,
+      "grandTotal": 41450
+    },
+    "conflict": "FAQ contains an academic-total typo; component table is internally consistent. Preserve current body heading and dated captured page."
+  },
+  "pgdm": {
+    "status": "historical_reported_quote",
+    "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgdm/fees",
+    "academicPeriod": "2026–28",
+    "basis": "whole two-year programme",
+    "currency": "INR",
+    "tuition": 1025000,
+    "programmeFee": 578000,
+    "academicTotal": 1603000,
+    "accommodation": 632000,
+    "refundableDeposit": 10000,
+    "alumni": 5000,
+    "grandTotal": 2250000,
+    "annualAmount": null,
+    "audience": "not explicitly established",
+    "notes": "Do not label current 2027–29 or divide by two."
+  },
+  "fbe": {
+    "status": "conflict_hold",
+    "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgpm-fbe-fees",
+    "academicPeriod": "2026–27",
+    "currency": "INR",
+    "tableTuition": 1196000,
+    "tableProgrammeFee": 630000,
+    "tableImmersion": 165000,
+    "faqImmersion": 185000,
+    "accommodation": 344000,
+    "refundableDeposit": 10000,
+    "alumni": 5000,
+    "advertisedGrandTotal": 2350000,
+    "notes": "Table adds to stated total; FAQ uses a different immersion amount. Obtain clarification; do not silently choose."
+  },
+  "pgxpm": {
+    "status": "indicative_native_quotes",
+    "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgxpm/fees",
+    "academicPeriod": "2026–28, subject to revision",
+    "currency": "INR",
+    "basis": "whole programme",
+    "upfront": 1340000,
+    "twoInstalmentsTotal": 1378000,
+    "fourInstalmentsTotal": 1423000,
+    "notes": "Includes study materials, tax and alumni fees; boarding/lodging extra. No annual conversion."
+  },
+  "online": {
+    "status": "reported_native_quote",
+    "sourceUrl": "https://www.greatlakes.edu.in/online/online-pgdm",
+    "currency": "INR",
+    "basis": "whole programme",
+    "standard": 370000,
+    "withCampusImmersion": 650000,
+    "academicPeriod": "not stated",
+    "notes": "Fees subject to revision; no annual conversion. Variant is not a separate award."
+  },
+  "fpm": {
+    "status": "annual_on_request_after_review",
+    "reason": "Official stipend wording and full secondary FPM fee page reviewed. Tuition waiver/historical wording does not support a current zero-tuition promise; no reliable annual amount entered."
+  },
+  "completionReview": {
+    "checkedAt": "2026-10-27",
+    "annualOnRequestDecision": "Current annual tuition is left on request where only semester/full-course combined amounts, ambiguous categories or unsound secondary estimates exist; supported native quotes are now in proposed-payload admissionsContent.reportedFeeQuote.",
+    "secondarySources": [
+      "https://www.shiksha.com/college/great-lakes-institute-of-management-chennai-kanchipuram-2933/fees",
+      "https://www.shiksha.com/college/great-lakes-institute-of-management-chennai-kanchipuram-2933/courses/fpm-bc"
+    ],
+    "rejectedInferences": "No annualization, no unsupported zero tuition, no aggregate fee range applied to an individual programme."
+  }
+}

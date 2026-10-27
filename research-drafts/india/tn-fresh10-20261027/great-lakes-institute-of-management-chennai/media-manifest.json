@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-10-27",
+  "status": "held-unuploaded",
+  "candidates": [
+    {
+      "role": "logo",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/assets/greatlakes/images/main-logos.zip",
+      "sourcePage": "https://www.greatlakes.edu.in/chennai/about-us/brand-resources",
+      "fetchStatus": "ordinary HTTP fetch returned 403; web tool cannot inspect ZIP",
+      "uploaded": false,
+      "rights": "Official brand-resource source, reuse conditions not verified",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "role": "cover",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/assets/greatlakes/images/images.zip",
+      "sourcePage": "https://www.greatlakes.edu.in/chennai/about-us/brand-resources",
+      "fetchStatus": "ordinary HTTP fetch returned 403; no bypass attempted",
+      "uploaded": false,
+      "rights": "Photo rights and exact campus subject must be reviewed",
+      "checkedAt": "2026-10-27"
+    }
+  ],
+  "missingRoles": [],
+  "publicCloudinaryURLs": [],
+  "requirements": [
+    "Review actual image and appropriate rights.",
+    "Confirm identity and white-background logo legibility.",
+    "Upload only through authorized integrator after credentials/approval.",
+    "No public source hotlinks inserted."
+  ]
+}

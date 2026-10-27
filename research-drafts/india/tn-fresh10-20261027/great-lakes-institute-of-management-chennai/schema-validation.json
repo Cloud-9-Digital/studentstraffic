@@ -1,0 +1,83 @@
+{
+  "checkedAt": "2026-10-27T10:52:45.890Z",
+  "schema": "scripts/lib/catalog-payload-schema.ts:catalogPayloadSchema",
+  "validationMode": "local strict-schema safeParse only; no migration/DB access",
+  "success": false,
+  "publicationReady": false,
+  "issueCount": 6,
+  "issues": [
+    {
+      "expected": "object",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        2,
+        "audienceEligibility"
+      ],
+      "message": "Invalid input: expected object, received undefined"
+    },
+    {
+      "expected": "string",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        3,
+        "canonicalCourseSlug"
+      ],
+      "message": "Invalid input: expected string, received undefined"
+    },
+    {
+      "expected": "object",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        3,
+        "audienceEligibility"
+      ],
+      "message": "Invalid input: expected object, received undefined"
+    },
+    {
+      "expected": "number",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        4,
+        "durationYears"
+      ],
+      "message": "Invalid input: expected number, received undefined"
+    },
+    {
+      "expected": "object",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        4,
+        "audienceEligibility"
+      ],
+      "message": "Invalid input: expected object, received undefined"
+    },
+    {
+      "expected": "object",
+      "code": "invalid_type",
+      "path": [
+        "universities",
+        0,
+        "programmes",
+        5,
+        "audienceEligibility"
+      ],
+      "message": "Invalid input: expected object, received undefined"
+    }
+  ],
+  "interpretation": "All required university narratives are authored. The full inventory candidate still fails on explicitly unresolved programme facts. No missing eligibility, credential or standard duration was invented. See structurally-complete-subset.json for the separately validated subset; neither schema result is publication approval."
+}

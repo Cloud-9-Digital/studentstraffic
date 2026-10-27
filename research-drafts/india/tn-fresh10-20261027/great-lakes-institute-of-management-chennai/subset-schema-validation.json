@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-10-27T10:52:45.894Z",
+  "schema": "scripts/lib/catalog-payload-schema.ts:catalogPayloadSchema",
+  "validationMode": "local strict-schema safeParse only; no migration/DB access",
+  "success": true,
+  "issueCount": 0,
+  "issues": [],
+  "programmeCount": 2,
+  "courseCount": 2,
+  "includedProgrammeSlugs": [
+    "post-graduate-program-in-management-pgpm-award-post-graduate-certificate-in-management",
+    "post-graduate-diploma-in-management-pgdm"
+  ],
+  "excludedProgrammes": [
+    {
+      "slug": "pgpm-family-business-and-entrepreneurship",
+      "missingFields": [
+        "audienceEligibility"
+      ]
+    },
+    {
+      "slug": "post-graduate-executive-program-in-management-pgxpm",
+      "missingFields": [
+        "canonicalCourseSlug",
+        "audienceEligibility"
+      ]
+    },
+    {
+      "slug": "fellow-programme-in-management-fpm",
+      "missingFields": [
+        "durationYears",
+        "audienceEligibility"
+      ]
+    },
+    {
+      "slug": "online-post-graduate-diploma-in-management-online-pgdm",
+      "missingFields": [
+        "audienceEligibility"
+      ]
+    }
+  ],
+  "publicationReady": false,
+  "editorialApproval": false,
+  "interpretation": "Actual schema validation of the authored, structurally complete subset. Not a publication or migration-validation pass: mandatory media, current-cycle applicability, restricted audience interpretation and any proposed taxonomy still require integrator review. All excluded awards remain in the complete inventory and full draft."
+}
