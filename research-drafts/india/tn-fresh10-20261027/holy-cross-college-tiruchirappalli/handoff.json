@@ -1,0 +1,101 @@
+{
+  "institution": "Holy Cross College",
+  "slug": "holy-cross-college-tiruchirappalli",
+  "checkedAt": "2026-10-27",
+  "status": "research-packet-held-for-integration",
+  "counts": {
+    "namedInventoryRows": 88,
+    "degreeAndResearchRows": 75,
+    "shortCourseAndAddonRows": 13,
+    "doctoralRows": 14,
+    "schemaFragmentRows": 47,
+    "programmeDraftEligibleRows": 0,
+    "programmeHeldRows": 88,
+    "publishReadyRows": 0,
+    "taxonomyGapRows": 19,
+    "levels": {
+      "bachelors": 37,
+      "integrated-masters": 1,
+      "masters": 23,
+      "doctoral": 14,
+      "diploma": 3,
+      "pg-diploma": 5,
+      "certificate": 1,
+      "addon": 4
+    }
+  },
+  "inventoryCoverage": "All named awards in reviewed current official catalogue/prospectus union, including individual PhD routes, funding/shift variants and source-conflict rows. Unenumerated aggregate claims are reported separately, never invented as courses.",
+  "schemaSpecimenWarning": "DO-NOT-PUBLISH review artifact. Lady Doak now passes the actual framework reader for 26 UG fragments; Bishop Heber retains eligibility failures and Holy Cross retains deliberate missing-document/schema failures. This is neither an executable migration nor publication approval.",
+  "publishReady": false,
+  "ledger": "Parent owns and has made local claims; this researcher did not edit shared ledger. No pre-existing duplicate found.",
+  "gates": [
+    {
+      "status": "pending",
+      "gate": "International-audience eligibility remains unknown outside the limited foreign-equivalence wording for BASLP; every row carries a publication hold."
+    },
+    {
+      "status": "pending",
+      "gate": "Current regulator sources for audiology, rehabilitation and special education; professional scope for Physician Assistant; exact ambiguous PG and shift criteria."
+    },
+    {
+      "status": "unavailable",
+      "gate": "No usable current programme-specific tuition schedule. Official and secondary fee checks do not support annual tuition values."
+    },
+    {
+      "status": "uncertain",
+      "gate": "MSc Visual/Media Communication titles, MSc Computer Science qualification variants, PGDBI/PGDPM shifts and older-only PGDMET/BCom CA Shift I need reconciliation."
+    },
+    {
+      "status": "pending",
+      "gate": "Serial editorial review, field evidence review and current original68/ledger/API freshness recheck before reservation."
+    },
+    {
+      "status": "pending",
+      "gate": "Media rights, logo/cover final suitability, authorized Cloudinary upload and public asset verification."
+    },
+    {
+      "status": "pending",
+      "gate": "Serial editorial/inventory completeness, audience and media review remain required; research-only framework success is not publish approval."
+    },
+    {
+      "status": "missing-evidence",
+      "gate": "Named required-document checklist absent for all 47 review fragments. Current captured procedure is UG-only; 16 PG fragments also lack an exact current application procedure. Unsupported document/PG-process arrays have been emptied, intentionally failing schema completeness."
+    }
+  ],
+  "artifacts": [
+    "programme-inventory.csv",
+    "programme-records.json",
+    "held-programmes.json",
+    "taxonomy-mappings.json",
+    "taxonomy-proposals.json",
+    "proposed-content.json",
+    "schema-review-specimen.DO-NOT-PUBLISH.json",
+    "evidence.json",
+    "freshness.json",
+    "media-candidates.json",
+    "source-register.json",
+    "validate-offline.cjs",
+    "validation.json",
+    "schema-validation.json",
+    "admissions-provenance.json",
+    "framework-validation.before.json",
+    "framework-validation.json",
+    "validate-framework.cjs"
+  ],
+  "inventoryExclusions": [
+    "Repeated integrated-programme listing under UG and PG is deduplicated as one full award; lateral entry is a separately held admission route.",
+    "General student clubs, workshops, exam-preparation modules, curriculum components and unenumerated value-added-course totals are not invented as standalone admitting qualifications. Named supplementary courses are included where sufficiently identifiable."
+  ],
+  "actualFrameworkValidation": {
+    "validator": "scripts/lib/content-migrations.ts::readContentMigrations",
+    "passed": 0,
+    "failed": 47,
+    "total": 47,
+    "fullSpecimenPassed": false,
+    "beforePassed": 0,
+    "beforeFailed": 47,
+    "report": "framework-validation.json",
+    "scope": "Actual readContentMigrations reader against an isolated disposable research fixture; no content-migrations reservation or production action."
+  },
+  "operationalContext": "GitHub-only serial integration is the requested delivery path. Credential availability is not a research-packet blocker. No Vercel environment, production DB or media-upload operation was attempted."
+}

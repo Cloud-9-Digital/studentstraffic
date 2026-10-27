@@ -78,6 +78,15 @@
       "frameworkIndependentlyRerun": true,
       "completeExecutableMigration": false,
       "remainingGates": "Exact programme subject eligibility remains unsupported; all inventory rows held; rights-cleared hosted media."
+    },
+    {
+      "slug": "holy-cross-college-tiruchirappalli",
+      "status": "held_research_framework_failures",
+      "inventoryRows": 88,
+      "frameworkPassingSubsetProgrammes": 0,
+      "frameworkIndependentlyRerun": true,
+      "completeExecutableMigration": false,
+      "remainingGates": "Named required documents unsupported for all 47 specimens; current PG procedure missing for 16; international audience unknown; all rows held."
     }
   ]
 }

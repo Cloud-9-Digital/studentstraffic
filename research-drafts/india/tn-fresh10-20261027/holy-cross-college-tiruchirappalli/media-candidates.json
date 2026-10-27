@@ -1,0 +1,35 @@
+[
+  {
+    "role": "logo",
+    "source": {
+      "url": "https://hcctrichy.ac.in/img/logo_hcc.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 39580,
+      "sha256": "289e55ecb49072e2a3bebf3bef20a280a9fea46a2599fae1c9955aa27cc9ab0a",
+      "checkedAt": "2026-10-27"
+    },
+    "localFile": "sources/logo-candidate.png",
+    "visuallyReviewed": true,
+    "visualNotes": "Official horizontal header lockup with shield, text and accreditation panel; full lockup not a clean square emblem; suitability/rights review needed.",
+    "rightsStatus": "Official first-party source identified; reuse authorization/terms not independently established.",
+    "uploaded": false,
+    "cloudinaryUrl": null,
+    "gate": "pending authorized upload and public verification"
+  },
+  {
+    "role": "cover",
+    "source": {
+      "url": "https://facultyerp.hcctrichy.ac.in/hcc/DSC_0380.JPG",
+      "error": "HTTP Error 503: Service Unavailable",
+      "checkedAt": "2026-10-27"
+    },
+    "localFile": null,
+    "visuallyReviewed": false,
+    "visualNotes": "No local image successfully downloaded; no visual-review claim.",
+    "rightsStatus": "Official first-party source identified; reuse authorization/terms not independently established.",
+    "uploaded": false,
+    "cloudinaryUrl": null,
+    "gate": "source retrieval unresolved"
+  }
+]
