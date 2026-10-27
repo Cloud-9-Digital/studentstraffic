@@ -1,0 +1,65 @@
+[
+  {
+    "proposedSlug": "be-btech-manufacturing-engineering",
+    "officialAwardBasis": "Bachelor of Engineering in Manufacturing Engineering",
+    "level": "bachelors",
+    "discipline": "manufacturing-engineering",
+    "durationYears": 4,
+    "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+    "status": "proposal only; registry unchanged; programme itself remains held"
+  },
+  {
+    "proposedSlug": "me-mtech-plastics-technology",
+    "officialAwardBasis": "Master of Technology in Plastics Technology",
+    "level": "masters",
+    "discipline": "polymer-technology",
+    "durationYears": 2,
+    "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+    "status": "proposal only; registry unchanged; programme itself remains held"
+  },
+  {
+    "proposedSlug": "msc-polymer-science",
+    "officialAwardBasis": "Master of Science in Applied Polymer Science",
+    "level": "masters",
+    "discipline": "polymer-science",
+    "durationYears": 2,
+    "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+    "status": "proposal only; registry unchanged; programme itself remains held"
+  },
+  {
+    "proposedSlug": "diploma-plastics-mould-technology",
+    "officialAwardBasis": "Diploma in Plastics Mould Technology",
+    "level": "diploma",
+    "discipline": "polymer-technology",
+    "durationYears": 3,
+    "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/12-05-2026-001/CSTS_ADMISSION_2026-27.pdf",
+    "status": "proposal only; registry unchanged; programme itself remains held"
+  },
+  {
+    "proposedSlug": "diploma-plastics-technology",
+    "officialAwardBasis": "Diploma in Plastics Technology",
+    "level": "diploma",
+    "discipline": "polymer-technology",
+    "durationYears": 3,
+    "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/12-05-2026-001/CSTS_ADMISSION_2026-27.pdf",
+    "status": "proposal only; registry unchanged; programme itself remains held"
+  },
+  {
+    "proposedSlug": "post-diploma-plastics-mould-design-cad-cam",
+    "officialAwardBasis": "Post Diploma in Plastics Mould Design with CAD/CAM",
+    "level": "diploma",
+    "discipline": "mould-design",
+    "durationYears": 1.5,
+    "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/12-05-2026-001/CSTS_ADMISSION_2026-27.pdf",
+    "status": "proposal only; registry unchanged; programme itself remains held"
+  },
+  {
+    "proposedSlug": "pg-diploma-plastics-processing-testing",
+    "officialAwardBasis": "Post Graduate Diploma in Plastics Processing & Testing",
+    "level": "postgraduate-diploma",
+    "discipline": "polymer-technology",
+    "durationYears": 2,
+    "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/12-05-2026-001/CSTS_ADMISSION_2026-27.pdf",
+    "status": "proposal only; registry unchanged; programme itself remains held"
+  }
+]
