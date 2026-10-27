@@ -1,0 +1,43 @@
+{
+  "schemaPass": true,
+  "actualReaderPass": true,
+  "expiredEvidenceCount": 0,
+  "programmes": 1,
+  "evidenceRows": 21,
+  "readyForLocalMediaPreparation": true,
+  "readyForDirectApply": false,
+  "uploads": 0,
+  "databaseAccess": false,
+  "note": "Source links are reviewed. Explicit local upload or verified existing mappings are still required before a real migration.",
+  "checkedAt": "2026-10-27",
+  "preparationSafetyTests": {
+    "passed": 12,
+    "failed": 0,
+    "command": "node --import tsx --test content-preparation/tn-batch2-20261027/measi-academy-of-architecture/prepare-local.test.mjs"
+  },
+  "sourceMediaHTTPImageAndVisualReview": [
+    {
+      "kind": "logo",
+      "url": "https://measiarch.edu.in/wp-content/uploads/2026/10/MAA-Logo-FP.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 20615,
+      "sha256": "64bba618d1e9b16662ccebf77683c640a8890bc479dac8141c9f72e09ea3976f",
+      "unchanged": true
+    },
+    {
+      "kind": "cover",
+      "url": "https://measiarch.edu.in/wp-content/uploads/2026/09/MEASIPHOTO.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 348567,
+      "sha256": "6702cd0d9828bf2e459736c7bac1d8af8588f71c2df675da4538243935b9613e",
+      "unchanged": true
+    }
+  ],
+  "cloudinaryUpload": "not_run: explicit user local stage",
+  "numberedMigrationValidation": "not_run: intentionally outside content-migrations until hosted media is verified",
+  "sharedRemoteLedgerEdited": false,
+  "livePublished": false,
+  "payloadSha256": "6712399eecf91c10166fb095a0a99e97f321cfd98fec0e573003fa13dc9dab7e"
+}
