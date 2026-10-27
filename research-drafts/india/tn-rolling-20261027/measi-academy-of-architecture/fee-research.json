@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-10-27",
+  "annualTuition": "on_request",
+  "primary": {
+    "url": "https://measiarch.edu.in/fees-payment/",
+    "finding": "Applicant-directed payment instructions, no course tariff."
+  },
+  "conflict": [
+    {
+      "url": "https://www.shiksha.com/college/measi-academy-of-architecture-royapettah-chennai-20632/fees",
+      "observed": "BArch fullcourse tuition250000; MArch fullcourse50000; components/category unestablished."
+    },
+    {
+      "url": "https://collegedunia.com/college/5631-measi-academy-of-architecture-chennai/courses-fees",
+      "observed": "Web-read dated9Aug2026: BArch740050; bothMArch246120. Origin direct fetch403. Eligibility/test and programme labels conflict with current primary sources."
+    }
+  ],
+  "decision": "No averaging, no cheapest selection, no tuition/total equivalence. Hold numericquote until category/components reconcile."
+}
