@@ -1,0 +1,119 @@
+{
+  "countrySlug": "india",
+  "slug": "lady-doak-college-madurai",
+  "name": "Lady Doak College",
+  "city": "Madurai",
+  "type": "Private",
+  "officialWebsite": "https://www.ladydoakcollege.edu.in/",
+  "mediaAttribution": {},
+  "establishedYear": 1948,
+  "summary": "Lady Doak College is an autonomous women’s college in Madurai, Tamil Nadu, affiliated to Madurai Kamaraj University. Its current catalogue separates aided and self-financed programmes across arts, sciences, commerce and management, alongside postgraduate, research and supplementary qualifications.",
+  "campusLifestyle": "The current handbook describes classrooms, laboratories, multimedia theatres, a library, indoor stadium-cum-auditorium, open-air theatre, hostels, clinic and canteens. Student associations and co-curricular activities complement the academic programme; availability of specific facilities should be checked with the relevant department.",
+  "cityProfile": "Lady Doak College is in Madurai, Tamil Nadu. The college’s own material and its affiliating university identify this Madurai campus, distinct from other women’s colleges in the city. Hostel applicants should plan for a separate application and an uncertain allocation, while day scholars should compare their commute against the actual department timetable.",
+  "practicalExposure": "The handbook describes the Centre for Life Frontier Engagement, a Career Guidance and Placement Centre and opportunities such as service-learning and summer internship activity. These are channels for practical engagement, not a placement guarantee. Course requirements vary: applicants should ask their department which fieldwork, project or internship components belong to their specific award before budgeting for travel or external training.",
+  "hostelOverview": "Hostels are part of the campus facilities. The current admission instructions require a separate hostel application after submitting a course application and expressly state that applying does not guarantee admission to a hostel. Hostel and mess charges should be confirmed separately from the academic fee tables.",
+  "dietarySupport": "The handbook identifies canteens and refreshment corners. It does not establish a current special-diet or allergy-accommodation commitment; applicants should check menus, mess arrangements and any individual requirements with the college before moving in.",
+  "safetyOverview": "A clinic, counselling services and student-welfare arrangements are documented. The counselling centre describes individual support and wellbeing activities; these services should not be presented as a guarantee of personal safety or specialist treatment.",
+  "studentSupport": "The official material describes counselling, a Career Guidance and Placement Centre and student-support structures. Applicants with non-standard or overseas qualifications must obtain the required eligibility decision rather than assuming automatic equivalence.",
+  "whyChoose": [
+    "Aided and self-financed options with a current itemised fee handbook.",
+    "An autonomous women’s college affiliated to Madurai Kamaraj University.",
+    "Service-learning, counselling and career-guidance structures are documented."
+  ],
+  "thingsToConsider": [
+    "Annual tuition and the combined first-year payment are different figures.",
+    "Hostel application is separate and does not guarantee accommodation.",
+    "Some short-course counts differ between the handbook and programme directory."
+  ],
+  "bestFitFor": [
+    "Women comparing arts, science and commerce programmes in Madurai.",
+    "Applicants who value transparent separation of tuition and other charges.",
+    "Students interested in academic study alongside service-learning activities."
+  ],
+  "recognitionBadges": [
+    "UGC — Autonomous college, 2022–23 to 2026–27"
+  ],
+  "industryPartners": [],
+  "recognitionLinks": [
+    {
+      "label": "UGC autonomous college list",
+      "url": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list"
+    },
+    {
+      "label": "Affiliating university college list",
+      "url": "https://mkuniversity.ac.in/new/acollege/aac"
+    }
+  ],
+  "researchSources": [
+    {
+      "label": "Official programme catalogue",
+      "url": "https://www.ladydoakcollege.edu.in/courses_offered.html",
+      "kind": "official-program",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "label": "Current prospectus or handbook",
+      "url": "https://www.ladydoakcollege.edu.in/website/hand_book/Handbook%202026-2027.pdf",
+      "kind": "official-fee",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "label": "Official admission eligibility",
+      "url": "https://www.ladydoakcollege.edu.in/admission/index.html",
+      "kind": "official-program",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "label": "UGC autonomous college list",
+      "url": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list",
+      "kind": "recognition",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "label": "Affiliating university list",
+      "url": "https://mkuniversity.ac.in/new/acollege/aac",
+      "kind": "recognition",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "label": "College official website",
+      "url": "https://www.ladydoakcollege.edu.in/",
+      "kind": "official-university",
+      "checkedAt": "2026-10-27"
+    }
+  ],
+  "admissionsContent": {
+    "researchStatus": "Evidence-linked research draft. Actual framework reader results are in framework-validation.json; editorial/media/audience holds remain separate.",
+    "applicationUrl": "https://www.ladydoakcollege.edu.in/admission/index.html"
+  },
+  "faq": [
+    {
+      "question": "Is this a university or an affiliated college?",
+      "answer": "Lady Doak College is an autonomous affiliated college. Its affiliating university is Madurai Kamaraj University. Autonomous status does not mean it is a separate university."
+    },
+    {
+      "question": "Who can apply to the college?",
+      "answer": "This is a women’s college. Applicants must satisfy the qualification and subject requirements for their selected programme; admission should not be assumed from a general college-level description."
+    },
+    {
+      "question": "How should I compare the published fees?",
+      "answer": "The 2026–27 handbook separates annual tuition from combined first-year academic totals. The latter include other fees and, for degree programmes, a caution deposit; they are not all tuition."
+    },
+    {
+      "question": "Does an admission offer include a hostel room?",
+      "answer": "Hostels are part of the campus facilities. The current admission instructions require a separate hostel application after submitting a course application and expressly state that applying does not guarantee admission to a hostel. Hostel and mess charges should be confirmed separately from the academic fee tables."
+    },
+    {
+      "question": "Are all courses taught in the same language?",
+      "answer": "Lady Doak explicitly lists separate Tamil-medium and English-medium B.A. Economics routes. Language should be confirmed for other programmes rather than inferred from the language of the website."
+    },
+    {
+      "question": "Are scholarships guaranteed to applicants?",
+      "answer": "Scholarship availability must be checked against the current scheme, category and application conditions. Do not deduct an unconfirmed scholarship from the published academic charges or assume that admission itself confers an award."
+    },
+    {
+      "question": "What should an overseas applicant verify?",
+      "answer": "The admission material requires applicants with non-standard qualifications to obtain the university eligibility decision and provide the relevant records. Confirm passport, visa and academic-equivalence requirements before travelling."
+    }
+  ]
+}

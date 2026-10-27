@@ -1,0 +1,1303 @@
+{
+  "courses": [
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "Bachelor of Technology in Computer Science and Engineering",
+        "BEng Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in computer science and engineering, usually four years after an upper-secondary qualification with mathematics. Typical curricula run from programming, data structures, operating systems, databases and computer networks to algorithms, software engineering and electives in artificial intelligence, machine learning, cloud and security, with project and internship components.",
+      "metaTitle": "B.E./B.Tech CSE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech CSE degrees for international applicants: duration, teaching language, intake months, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-data-science",
+      "name": "B.E./B.Tech in Data Science",
+      "shortName": "B.E./B.Tech Data Science",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "data-science",
+      "aliases": [
+        "Bachelor of Data Science",
+        "BSc Data Science"
+      ],
+      "displayOrder": 33,
+      "durationYears": 3,
+      "summary": "Compare undergraduate Data Science degrees abroad by statistics, machine learning, data engineering, applied projects, tuition and admissions. Each university offering keeps its official award title, artificial-intelligence specialisation depth and entry requirements visible before applying.",
+      "metaTitle": "B.E./B.Tech Data Science Abroad | Fees",
+      "metaDescription": "Compare B.E./B.Tech Data Science programmes abroad by curriculum, tuition fees, admissions and practical training."
+    },
+    {
+      "slug": "be-btech-electronics-communication-engineering",
+      "name": "B.E./B.Tech in Electronics and Communication Engineering",
+      "shortName": "B.E./B.Tech ECE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electronics-communication-engineering",
+      "aliases": [
+        "Bachelor of Electronics and Communication Engineering",
+        "BEng Electronic and Communications Engineering",
+        "Electronics and Telecommunications Engineering"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in electronics and communication engineering, usually four years after upper-secondary physics, chemistry and mathematics. Curricula typically span circuit and network theory, analog and digital electronics, signals and systems, digital signal processing, communication systems and embedded or VLSI design, with laboratory and project work.",
+      "metaTitle": "B.E./B.Tech ECE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech ECE degrees for international applicants: duration, teaching language, intakes, tuition and each university's admission route."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "indian-institute-of-information-technology-tiruchirappalli",
+      "name": "Indian Institute of Information Technology Tiruchirappalli",
+      "city": "Tiruchirappalli",
+      "type": "Public",
+      "establishedYear": 2013,
+      "officialWebsite": "https://iiitt.ac.in/",
+      "mediaAttribution": {},
+      "summary": "IIIT Tiruchirappalli is a not-for-profit public-private-partnership institute at Sethurapatti in Tamil Nadu, started in 2013 and an Institute of National Importance under the IIIT (Public-Private Partnership) Act, 2017. It offers B.Tech. programmes in computing and electronics, M.Tech. programmes and doctoral research.",
+      "campusLifestyle": "The institute has worked from its permanent Sethurapatti campus on the Trichy-Madurai highway since June 2021. Its hostel page lists a residence hall, a mess hall and a gym. Before that it ran from temporary premises at NIT Tiruchirappalli from 2016 and at Oxford Engineering College from 2020, so older references to those addresses are out of date.",
+      "cityProfile": "The permanent campus is at Sethurapatti on the Tiruchirappalli-Madurai highway, Tamil Nadu 620012. The institute's 2026 reporting guide puts it about 20 km from Tiruchirappalli Junction and the Central bus stand, with buses to most of Tamil Nadu, southern Karnataka and Kerala.",
+      "practicalExposure": "IIIT Tiruchirappalli describes an agreement with SVNIT Surat covering joint research, academic activities and innovation, with internship opportunities for B.Tech. and M.Tech. students among its stated scope. These are opportunities within the collaboration, not a guarantee of an internship or placement. Industry partners named by the institute are TCS, Cognizant, Infosys, Ramco Systems, ELCOT and Navitas.",
+      "hostelOverview": "First-semester hostel payments for 2026-27 are INR 45,600: hostel admission fee INR 1,200, establishment charges INR 7,200, licence, electricity and water INR 13,200 and a mess advance of INR 24,000. A refundable hostel deposit of INR 4,800 is charged once. Rooms are allotted by the warden, and residents sign in and out; the 2024-25 rules prohibit cooking and heaters, kettles and air conditioners in rooms.",
+      "dietarySupport": "The mess serves breakfast 7:00 to 9:00 am, lunch noon to 2:00 pm, snacks 4:45 to 6:00 pm and dinner 7:00 to 9:00 pm, under the 2024-25 hostel rules, which allow no relaxation of timings. Complaints go to the warden. The institute publishes no menu or provision for specific regional, religious or medical diets.",
+      "safetyOverview": "The hostel rules treat ragging as a cognizable offence and encourage residents to report it immediately; admitted students also file an anti-ragging declaration. Boys' hostel residents must be back by 10:00 pm, visitors sign the book at the entrance, and emergency contact numbers are given at room allotment.",
+      "studentSupport": "The admissions pages give reporting instructions, a hostel accommodation form and a cancellation form, and link to the National Scholarship Portal notice for 2026-27. Admission does not guarantee a scholarship. Students Traffic counselling can help you compare routes and prepare documents.",
+      "whyChoose": [
+        "A focused B.Tech. portfolio in computer science, AI and data science, and electronics with VLSI, taught at a statutory Institute of National Importance.",
+        "DASA seats are set aside for foreign nationals, OCI/PIO candidates, NRIs and CIWG children, with published tuition by category.",
+        "A permanent campus about 20 km from Tiruchirappalli Junction, with hostel and mess charges published."
+      ],
+      "thingsToConsider": [
+        "DASA admission needs a valid JEE (Main) score, 75 per cent in Class 12 and, for Indian nationals and OCI/PIO(I), two years of schooling abroad.",
+        "The DASA matrix offers only 6 to 9 Non-CIWG and 2 to 5 CIWG seats per branch, so places are few.",
+        "Published fees are for the first semester only and exclude a further INR 92,000 of other charges, so they are not annual tuition."
+      ],
+      "bestFitFor": [
+        "NRIs, OCI/PIO candidates and foreign nationals with a JEE (Main) score who want a computing or electronics B.Tech. in Tamil Nadu.",
+        "Children of Indian workers in the Gulf who qualify for CIWG seats and can document a parent's employment.",
+        "Students comfortable with a residential campus outside the city centre."
+      ],
+      "industryPartners": [
+        "Tata Consultancy Services",
+        "Cognizant Technology Solutions",
+        "Infosys",
+        "Ramco Systems",
+        "ELCOT",
+        "Navitas (TAKE Solutions)"
+      ],
+      "recognitionBadges": [
+        "Government of India - Institute of National Importance (IIIT Public-Private Partnership Act, 2017)"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Indian Institutes of Information Technology (Public-Private Partnership) Act, 2017 (India Code)",
+          "url": "https://www.indiacode.nic.in/handle/123456789/2245"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is IIIT Tiruchirappalli a government institute?",
+          "answer": "It is a not-for-profit public-private-partnership institute funded by the Government of India, the Tamil Nadu government and industry partners in a 50:35:15 ratio. The IIIT (Public-Private Partnership) Act, 2017 lists it in its Schedule and declares it an institution of national importance."
+        },
+        {
+          "question": "Where is the IIIT Tiruchirappalli campus?",
+          "answer": "At Sethurapatti on the Trichy-Madurai highway, Tiruchirappalli, Tamil Nadu 620012, about 20 km from Tiruchirappalli Junction. The institute moved there in June 2021 from earlier temporary premises."
+        },
+        {
+          "question": "Which B.Tech. programmes does IIIT Tiruchirappalli offer?",
+          "answer": "Four, each of four years: Computer Science and Engineering; CSE (Artificial Intelligence and Data Science); Electronics and Communication Engineering; and ECE (VLSI Design). All four have DASA 2026 seats."
+        },
+        {
+          "question": "Can international students join IIIT Tiruchirappalli?",
+          "answer": "Foreign nationals, OCI/PIO candidates and NRIs can enter the B.Tech. through DASA with a valid JEE (Main) score and 75 per cent in Class 12. Indian nationals and OCI/PIO(I) candidates also need two years of schooling abroad."
+        },
+        {
+          "question": "How many DASA seats does IIIT Tiruchirappalli have?",
+          "answer": "The 2026 matrix lists 9 Non-CIWG and 5 CIWG seats each in CSE and CSE (AI and DS), and 6 Non-CIWG seats each in ECE and ECE (VLSI Design), with 3 and 2 CIWG seats respectively. Seat numbers change each cycle."
+        },
+        {
+          "question": "What are the DASA tuition fees at IIIT Tiruchirappalli?",
+          "answer": "For the 2026-27 first semester, tuition was USD 4,000 for Non-SAARC and USD 2,000 for SAARC students, and INR 1,15,200 for CIWG students. A further INR 92,000 covered one-time, institute, hostel and mess charges."
+        },
+        {
+          "question": "Are the published B.Tech. fees annual?",
+          "answer": "No. The fee sheet is for the first, odd semester of 2026-27 and includes refundable deposits, so it should not be doubled to estimate a year."
+        },
+        {
+          "question": "What documents are needed to report for the DASA B.Tech.?",
+          "answer": "Class 10, 11 and 12 mark sheets, the DASA school certificate, passport, JEE (Main) cards, the DASA admission letter, a medical certificate and, for NRI or OCI/PIO(I) candidates, proof of two years of schooling abroad. CIWG candidates add parent employment documents."
+        },
+        {
+          "question": "Does IIIT Tiruchirappalli have hostels?",
+          "answer": "Yes, a residence hall and mess hall are listed. First-semester hostel charges for 2026-27 were INR 45,600 including a INR 24,000 mess advance, plus a refundable INR 4,800 deposit. Room allotment is by the warden."
+        },
+        {
+          "question": "Is the teaching language confirmed?",
+          "answer": "The programme pages checked do not state it. Ask the department about lectures, assessment and any language requirement before accepting an offer."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "IIIT Tiruchirappalli - About",
+          "url": "https://iiitt.ac.in/about",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "IIIT Tiruchirappalli - Hostel",
+          "url": "https://iiitt.ac.in/hostel",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "IIIT Tiruchirappalli - Undergraduate admission",
+          "url": "https://iiitt.ac.in/admission_ug",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "IIIT Tiruchirappalli - Undergraduate admission data",
+          "url": "https://iiitt.ac.in/json/admission/ug.json",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "IIIT Tiruchirappalli - Programmes",
+          "url": "https://iiitt.ac.in/programs",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "DASA 2026 information brochure",
+          "url": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "DASA 2026 seat matrix (revised)",
+          "url": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/07/20260730113349078.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "IIIT Tiruchirappalli - DASA fee structure 2026-27",
+          "url": "https://store.iiitt.ac.in/downloads/admission/IIITT-Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%20DASA.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "IIIT Tiruchirappalli - DASA reporting details 2026-27",
+          "url": "https://store.iiitt.ac.in/downloads/admission/DASA%20-%20First%20yearr%20Reporting%20details%202026-27%20-1.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "IIIT Tiruchirappalli - Hostel rules 2024-25",
+          "url": "https://store.iiitt.ac.in/downloads/hostel/Hostel%20Residents%20Rules%20and%20Regulation_IIITT-2024-2025.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Lok Sabha unstarred question 1873 (28 Nov 2016), IIIT list",
+          "url": "https://sansad.in/getFile/loksabhaquestions/annex/10/AU1873.pdf?source=pqals",
+          "kind": "government",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Indian Institutes of Information Technology (Public-Private Partnership) Act, 2017 (India Code)",
+          "url": "https://www.indiacode.nic.in/handle/123456789/2245",
+          "kind": "government",
+          "checkedAt": "2026-10-27"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "This record covers four B.Tech. programmes on the DASA route. Domestic B.Tech. counselling, M.Tech. and doctoral programmes are outside this record.",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my DASA eligibility for IIIT Tiruchirappalli",
+            "capture": [
+              "nationality and OCI/PIO status",
+              "years of schooling abroad",
+              "JEE (Main) rank",
+              "Class 12 aggregate"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my DASA choices",
+            "capture": [
+              "preferred branches",
+              "CIWG eligibility",
+              "document readiness"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "iiitt-btech-computer-science-engineering",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "B.Tech. Computer Science and Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "The 2026-27 DASA fee sheet prices first-semester tuition by category: INR 1,15,200 for CIWG, USD 4,000 for Non-SAARC and USD 2,000 for SAARC students. A further INR 92,000 is due in the first semester for one-time charges (INR 32,400, including refundable deposits), additional institute fees (INR 14,000) and hostel and mess advance (INR 45,600). These are first-semester amounts, not annual tuition, so annual tuition is on request. The category is set by the DASA candidate tag."
+          },
+          "officialProgramUrl": "https://iiitt.ac.in/admission_ug",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals admitted through DASA 2026",
+              "OCI and PIO candidates admitted through DASA 2026",
+              "Non-resident Indians admitted through DASA 2026, with the prescribed two years of schooling abroad",
+              "Children of Indian Workers in Gulf (CIWG) admitted against the CIWG seats"
+            ],
+            "restrictions": [
+              "This record covers the DASA route only; seats reach you through DASA seat allocation, with a valid JEE (Main) 2026 Paper 1 score and rank.",
+              "Indian nationals and OCI/PIO(I) candidates need at least two years of education, including Classes 11 and 12, in a foreign country during the last eight years.",
+              "Candidates must have been born on or after 1 October 2001 for the 2026 cycle, with 75 per cent (CGPA 7.5/10) in Class 12 across five subjects.",
+              "The 2026 cycle is complete; the next cycle's rules and seats are not yet published."
+            ],
+            "notes": "The 2026 DASA seat matrix lists 9 Non-CIWG and 5 CIWG seats for this branch. Admission through other central counselling routes is not described in this record.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.Tech. Computer Science and Engineering is a four-year degree. The 2026 DASA matrix lists seats in it for Non-CIWG and CIWG candidates. Admission follows DASA registration, document verification, choice filling and seat allocation, then physical reporting at the institute.",
+            "eligibility": {
+              "intro": "These conditions come from the DASA 2026 brochure, which governed the completed 2026-27 admission cycle.",
+              "items": [
+                "Valid JEE (Main) 2026 score card and rank for Paper 1 (B.E./B.Tech.)",
+                "Class 12 or equivalent with Mathematics, Physics and one of Chemistry, Biotechnology, Computer Science or Biology",
+                "At least 75 per cent (CGPA 7.5 out of 10) in aggregate across five Class 12 subjects",
+                "Born on or after 1 October 2001",
+                "Foreign nationals may have studied in any country; Indian nationals and OCI/PIO(I) need two years of schooling abroad, including Classes 11 and 12"
+              ]
+            },
+            "applicationSteps": [
+              "Register on the DASA 2026 portal (csab.nic.in) with your JEE (Main) 2026 application details and pay the registration fee",
+              "Upload category-specific documents, answer verification queries, then fill and lock your branch choices",
+              "Accept the allotted seat in the DASA rounds and pay the institute and hostel fees by NEFT or UPI as the institute's reporting guide directs",
+              "Report in person with original documents; 2026 reporting was on 20 and 21 August 2026, with classes from 24 August 2026"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10, Class 11 and Class 12 mark sheets",
+                "School certificate confirming completion of Classes 11 and 12 in the DASA format",
+                "Percentage or CGPA equivalence from the examining authority where grades or another scale apply",
+                "Proof of two years of education abroad for NRI and OCI/PIO(I) candidates"
+              ],
+              "application": [
+                "JEE (Main) admit card and score card, and the DASA provisional admission letter",
+                "Passport, date-of-birth proof, medical certificate in the DASA format and OCI card or visa where applicable",
+                "For CIWG: the parent's passport, visa, work permit and employer certificate for Gulf employment"
+              ]
+            },
+            "deadlinesNote": "The 2026 DASA cycle is complete: online document submission ran 18 to 21 August 2026 and classes began on 24 August 2026. No later cycle dates are inferred from these.",
+            "reportedFeeQuote": {
+              "currency": "USD",
+              "minAmount": 2000,
+              "maxAmount": 4000,
+              "status": "confirmed",
+              "period": "semester",
+              "componentBasis": "First-semester tuition only: USD 2,000 for SAARC and USD 4,000 for Non-SAARC DASA students; CIWG students pay INR 1,15,200. A further INR 92,000 of one-time, institute, hostel and mess charges is due separately.",
+              "audience": "international",
+              "category": "DASA SAARC and Non-SAARC",
+              "academicYear": "2026-27 odd semester",
+              "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/IIITT-Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%20DASA.pdf",
+              "sourceLabel": "IIIT Tiruchirappalli DASA fee structure 2026-27 (first semester)",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "The 2026-27 DASA fee sheet prices first-semester tuition by category: INR 1,15,200 for CIWG, USD 4,000 for Non-SAARC and USD 2,000 for SAARC students. A further INR 92,000 is due in the first semester for one-time charges (INR 32,400, including refundable deposits), additional institute fees (INR 14,000) and hostel and mess advance (INR 45,600). These are first-semester amounts, not annual tuition, so annual tuition is on request. The category is set by the DASA candidate tag.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year full-time programme",
+              "language": "",
+              "details": "Eight semesters of full-time study on the Sethurapatti campus; the first-year cohort of 2026 reported on 20 and 21 August 2026."
+            }
+          ]
+        },
+        {
+          "slug": "iiitt-btech-computer-science-engineering-ai-data-science",
+          "canonicalCourseSlug": "be-btech-data-science",
+          "officialTitle": "B.Tech. Computer Science and Engineering (Artificial Intelligence and Data Science)",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "The 2026-27 DASA fee sheet prices first-semester tuition by category: INR 1,15,200 for CIWG, USD 4,000 for Non-SAARC and USD 2,000 for SAARC students. A further INR 92,000 is due in the first semester for one-time charges (INR 32,400, including refundable deposits), additional institute fees (INR 14,000) and hostel and mess advance (INR 45,600). These are first-semester amounts, not annual tuition, so annual tuition is on request. The category is set by the DASA candidate tag."
+          },
+          "officialProgramUrl": "https://iiitt.ac.in/admission_ug",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals admitted through DASA 2026",
+              "OCI and PIO candidates admitted through DASA 2026",
+              "Non-resident Indians admitted through DASA 2026, with the prescribed two years of schooling abroad",
+              "Children of Indian Workers in Gulf (CIWG) admitted against the CIWG seats"
+            ],
+            "restrictions": [
+              "This record covers the DASA route only; seats reach you through DASA seat allocation, with a valid JEE (Main) 2026 Paper 1 score and rank.",
+              "Indian nationals and OCI/PIO(I) candidates need at least two years of education, including Classes 11 and 12, in a foreign country during the last eight years.",
+              "Candidates must have been born on or after 1 October 2001 for the 2026 cycle, with 75 per cent (CGPA 7.5/10) in Class 12 across five subjects.",
+              "The 2026 cycle is complete; the next cycle's rules and seats are not yet published."
+            ],
+            "notes": "The 2026 DASA seat matrix lists 9 Non-CIWG and 5 CIWG seats for this branch. Admission through other central counselling routes is not described in this record.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.Tech. Computer Science and Engineering (Artificial Intelligence and Data Science) is a four-year degree. The 2026 DASA matrix lists seats in it for Non-CIWG and CIWG candidates. Admission follows DASA registration, document verification, choice filling and seat allocation, then physical reporting at the institute.",
+            "eligibility": {
+              "intro": "These conditions come from the DASA 2026 brochure, which governed the completed 2026-27 admission cycle.",
+              "items": [
+                "Valid JEE (Main) 2026 score card and rank for Paper 1 (B.E./B.Tech.)",
+                "Class 12 or equivalent with Mathematics, Physics and one of Chemistry, Biotechnology, Computer Science or Biology",
+                "At least 75 per cent (CGPA 7.5 out of 10) in aggregate across five Class 12 subjects",
+                "Born on or after 1 October 2001",
+                "Foreign nationals may have studied in any country; Indian nationals and OCI/PIO(I) need two years of schooling abroad, including Classes 11 and 12"
+              ]
+            },
+            "applicationSteps": [
+              "Register on the DASA 2026 portal (csab.nic.in) with your JEE (Main) 2026 application details and pay the registration fee",
+              "Upload category-specific documents, answer verification queries, then fill and lock your branch choices",
+              "Accept the allotted seat in the DASA rounds and pay the institute and hostel fees by NEFT or UPI as the institute's reporting guide directs",
+              "Report in person with original documents; 2026 reporting was on 20 and 21 August 2026, with classes from 24 August 2026"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10, Class 11 and Class 12 mark sheets",
+                "School certificate confirming completion of Classes 11 and 12 in the DASA format",
+                "Percentage or CGPA equivalence from the examining authority where grades or another scale apply",
+                "Proof of two years of education abroad for NRI and OCI/PIO(I) candidates"
+              ],
+              "application": [
+                "JEE (Main) admit card and score card, and the DASA provisional admission letter",
+                "Passport, date-of-birth proof, medical certificate in the DASA format and OCI card or visa where applicable",
+                "For CIWG: the parent's passport, visa, work permit and employer certificate for Gulf employment"
+              ]
+            },
+            "deadlinesNote": "The 2026 DASA cycle is complete: online document submission ran 18 to 21 August 2026 and classes began on 24 August 2026. No later cycle dates are inferred from these.",
+            "reportedFeeQuote": {
+              "currency": "USD",
+              "minAmount": 2000,
+              "maxAmount": 4000,
+              "status": "confirmed",
+              "period": "semester",
+              "componentBasis": "First-semester tuition only: USD 2,000 for SAARC and USD 4,000 for Non-SAARC DASA students; CIWG students pay INR 1,15,200. A further INR 92,000 of one-time, institute, hostel and mess charges is due separately.",
+              "audience": "international",
+              "category": "DASA SAARC and Non-SAARC",
+              "academicYear": "2026-27 odd semester",
+              "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/IIITT-Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%20DASA.pdf",
+              "sourceLabel": "IIIT Tiruchirappalli DASA fee structure 2026-27 (first semester)",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "The 2026-27 DASA fee sheet prices first-semester tuition by category: INR 1,15,200 for CIWG, USD 4,000 for Non-SAARC and USD 2,000 for SAARC students. A further INR 92,000 is due in the first semester for one-time charges (INR 32,400, including refundable deposits), additional institute fees (INR 14,000) and hostel and mess advance (INR 45,600). These are first-semester amounts, not annual tuition, so annual tuition is on request. The category is set by the DASA candidate tag.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year full-time programme",
+              "language": "",
+              "details": "Eight semesters of full-time study on the Sethurapatti campus; the first-year cohort of 2026 reported on 20 and 21 August 2026."
+            }
+          ]
+        },
+        {
+          "slug": "iiitt-btech-electronics-communication-engineering",
+          "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+          "officialTitle": "B.Tech. Electronics and Communication Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "The 2026-27 DASA fee sheet prices first-semester tuition by category: INR 1,15,200 for CIWG, USD 4,000 for Non-SAARC and USD 2,000 for SAARC students. A further INR 92,000 is due in the first semester for one-time charges (INR 32,400, including refundable deposits), additional institute fees (INR 14,000) and hostel and mess advance (INR 45,600). These are first-semester amounts, not annual tuition, so annual tuition is on request. The category is set by the DASA candidate tag."
+          },
+          "officialProgramUrl": "https://iiitt.ac.in/admission_ug",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals admitted through DASA 2026",
+              "OCI and PIO candidates admitted through DASA 2026",
+              "Non-resident Indians admitted through DASA 2026, with the prescribed two years of schooling abroad",
+              "Children of Indian Workers in Gulf (CIWG) admitted against the CIWG seats"
+            ],
+            "restrictions": [
+              "This record covers the DASA route only; seats reach you through DASA seat allocation, with a valid JEE (Main) 2026 Paper 1 score and rank.",
+              "Indian nationals and OCI/PIO(I) candidates need at least two years of education, including Classes 11 and 12, in a foreign country during the last eight years.",
+              "Candidates must have been born on or after 1 October 2001 for the 2026 cycle, with 75 per cent (CGPA 7.5/10) in Class 12 across five subjects.",
+              "The 2026 cycle is complete; the next cycle's rules and seats are not yet published."
+            ],
+            "notes": "The 2026 DASA seat matrix lists 6 Non-CIWG and 3 CIWG seats for this branch. Admission through other central counselling routes is not described in this record.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.Tech. Electronics and Communication Engineering is a four-year degree. The 2026 DASA matrix lists seats in it for Non-CIWG and CIWG candidates. Admission follows DASA registration, document verification, choice filling and seat allocation, then physical reporting at the institute.",
+            "eligibility": {
+              "intro": "These conditions come from the DASA 2026 brochure, which governed the completed 2026-27 admission cycle.",
+              "items": [
+                "Valid JEE (Main) 2026 score card and rank for Paper 1 (B.E./B.Tech.)",
+                "Class 12 or equivalent with Mathematics, Physics and one of Chemistry, Biotechnology, Computer Science or Biology",
+                "At least 75 per cent (CGPA 7.5 out of 10) in aggregate across five Class 12 subjects",
+                "Born on or after 1 October 2001",
+                "Foreign nationals may have studied in any country; Indian nationals and OCI/PIO(I) need two years of schooling abroad, including Classes 11 and 12"
+              ]
+            },
+            "applicationSteps": [
+              "Register on the DASA 2026 portal (csab.nic.in) with your JEE (Main) 2026 application details and pay the registration fee",
+              "Upload category-specific documents, answer verification queries, then fill and lock your branch choices",
+              "Accept the allotted seat in the DASA rounds and pay the institute and hostel fees by NEFT or UPI as the institute's reporting guide directs",
+              "Report in person with original documents; 2026 reporting was on 20 and 21 August 2026, with classes from 24 August 2026"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10, Class 11 and Class 12 mark sheets",
+                "School certificate confirming completion of Classes 11 and 12 in the DASA format",
+                "Percentage or CGPA equivalence from the examining authority where grades or another scale apply",
+                "Proof of two years of education abroad for NRI and OCI/PIO(I) candidates"
+              ],
+              "application": [
+                "JEE (Main) admit card and score card, and the DASA provisional admission letter",
+                "Passport, date-of-birth proof, medical certificate in the DASA format and OCI card or visa where applicable",
+                "For CIWG: the parent's passport, visa, work permit and employer certificate for Gulf employment"
+              ]
+            },
+            "deadlinesNote": "The 2026 DASA cycle is complete: online document submission ran 18 to 21 August 2026 and classes began on 24 August 2026. No later cycle dates are inferred from these.",
+            "reportedFeeQuote": {
+              "currency": "USD",
+              "minAmount": 2000,
+              "maxAmount": 4000,
+              "status": "confirmed",
+              "period": "semester",
+              "componentBasis": "First-semester tuition only: USD 2,000 for SAARC and USD 4,000 for Non-SAARC DASA students; CIWG students pay INR 1,15,200. A further INR 92,000 of one-time, institute, hostel and mess charges is due separately.",
+              "audience": "international",
+              "category": "DASA SAARC and Non-SAARC",
+              "academicYear": "2026-27 odd semester",
+              "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/IIITT-Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%20DASA.pdf",
+              "sourceLabel": "IIIT Tiruchirappalli DASA fee structure 2026-27 (first semester)",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "The 2026-27 DASA fee sheet prices first-semester tuition by category: INR 1,15,200 for CIWG, USD 4,000 for Non-SAARC and USD 2,000 for SAARC students. A further INR 92,000 is due in the first semester for one-time charges (INR 32,400, including refundable deposits), additional institute fees (INR 14,000) and hostel and mess advance (INR 45,600). These are first-semester amounts, not annual tuition, so annual tuition is on request. The category is set by the DASA candidate tag.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year full-time programme",
+              "language": "",
+              "details": "Eight semesters of full-time study on the Sethurapatti campus; the first-year cohort of 2026 reported on 20 and 21 August 2026."
+            }
+          ]
+        },
+        {
+          "slug": "iiitt-btech-electronics-communication-engineering-vlsi-design",
+          "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+          "officialTitle": "B.Tech. Electronics and Communication Engineering (VLSI Design)",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "The 2026-27 DASA fee sheet prices first-semester tuition by category: INR 1,15,200 for CIWG, USD 4,000 for Non-SAARC and USD 2,000 for SAARC students. A further INR 92,000 is due in the first semester for one-time charges (INR 32,400, including refundable deposits), additional institute fees (INR 14,000) and hostel and mess advance (INR 45,600). These are first-semester amounts, not annual tuition, so annual tuition is on request. The category is set by the DASA candidate tag."
+          },
+          "officialProgramUrl": "https://iiitt.ac.in/admission_ug",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals admitted through DASA 2026",
+              "OCI and PIO candidates admitted through DASA 2026",
+              "Non-resident Indians admitted through DASA 2026, with the prescribed two years of schooling abroad",
+              "Children of Indian Workers in Gulf (CIWG) admitted against the CIWG seats"
+            ],
+            "restrictions": [
+              "This record covers the DASA route only; seats reach you through DASA seat allocation, with a valid JEE (Main) 2026 Paper 1 score and rank.",
+              "Indian nationals and OCI/PIO(I) candidates need at least two years of education, including Classes 11 and 12, in a foreign country during the last eight years.",
+              "Candidates must have been born on or after 1 October 2001 for the 2026 cycle, with 75 per cent (CGPA 7.5/10) in Class 12 across five subjects.",
+              "The 2026 cycle is complete; the next cycle's rules and seats are not yet published."
+            ],
+            "notes": "The 2026 DASA seat matrix lists 6 Non-CIWG and 2 CIWG seats for this branch. Admission through other central counselling routes is not described in this record.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.Tech. Electronics and Communication Engineering (VLSI Design) is a four-year degree. The 2026 DASA matrix lists seats in it for Non-CIWG and CIWG candidates. Admission follows DASA registration, document verification, choice filling and seat allocation, then physical reporting at the institute.",
+            "eligibility": {
+              "intro": "These conditions come from the DASA 2026 brochure, which governed the completed 2026-27 admission cycle.",
+              "items": [
+                "Valid JEE (Main) 2026 score card and rank for Paper 1 (B.E./B.Tech.)",
+                "Class 12 or equivalent with Mathematics, Physics and one of Chemistry, Biotechnology, Computer Science or Biology",
+                "At least 75 per cent (CGPA 7.5 out of 10) in aggregate across five Class 12 subjects",
+                "Born on or after 1 October 2001",
+                "Foreign nationals may have studied in any country; Indian nationals and OCI/PIO(I) need two years of schooling abroad, including Classes 11 and 12"
+              ]
+            },
+            "applicationSteps": [
+              "Register on the DASA 2026 portal (csab.nic.in) with your JEE (Main) 2026 application details and pay the registration fee",
+              "Upload category-specific documents, answer verification queries, then fill and lock your branch choices",
+              "Accept the allotted seat in the DASA rounds and pay the institute and hostel fees by NEFT or UPI as the institute's reporting guide directs",
+              "Report in person with original documents; 2026 reporting was on 20 and 21 August 2026, with classes from 24 August 2026"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10, Class 11 and Class 12 mark sheets",
+                "School certificate confirming completion of Classes 11 and 12 in the DASA format",
+                "Percentage or CGPA equivalence from the examining authority where grades or another scale apply",
+                "Proof of two years of education abroad for NRI and OCI/PIO(I) candidates"
+              ],
+              "application": [
+                "JEE (Main) admit card and score card, and the DASA provisional admission letter",
+                "Passport, date-of-birth proof, medical certificate in the DASA format and OCI card or visa where applicable",
+                "For CIWG: the parent's passport, visa, work permit and employer certificate for Gulf employment"
+              ]
+            },
+            "deadlinesNote": "The 2026 DASA cycle is complete: online document submission ran 18 to 21 August 2026 and classes began on 24 August 2026. No later cycle dates are inferred from these.",
+            "reportedFeeQuote": {
+              "currency": "USD",
+              "minAmount": 2000,
+              "maxAmount": 4000,
+              "status": "confirmed",
+              "period": "semester",
+              "componentBasis": "First-semester tuition only: USD 2,000 for SAARC and USD 4,000 for Non-SAARC DASA students; CIWG students pay INR 1,15,200. A further INR 92,000 of one-time, institute, hostel and mess charges is due separately.",
+              "audience": "international",
+              "category": "DASA SAARC and Non-SAARC",
+              "academicYear": "2026-27 odd semester",
+              "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/IIITT-Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%20DASA.pdf",
+              "sourceLabel": "IIIT Tiruchirappalli DASA fee structure 2026-27 (first semester)",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "The 2026-27 DASA fee sheet prices first-semester tuition by category: INR 1,15,200 for CIWG, USD 4,000 for Non-SAARC and USD 2,000 for SAARC students. A further INR 92,000 is due in the first semester for one-time charges (INR 32,400, including refundable deposits), additional institute fees (INR 14,000) and hostel and mess advance (INR 45,600). These are first-semester amounts, not annual tuition, so annual tuition is on request. The category is set by the DASA candidate tag.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year full-time programme",
+              "language": "",
+              "details": "Eight semesters of full-time study on the Sethurapatti campus; the first-year cohort of 2026 reported on 20 and 21 August 2026."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "publicField": "identity",
+      "claimText": "Institute at Sethurapatti, Trichy-Madurai Highway, Tiruchirappalli 620012; described as an Institute of National Importance and one of the IIITs set up in non-profit public-private-partnership mode; funded by Government of India, Government of Tamil Nadu and industry in a 50:35:15 ratio.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - About",
+      "sourceUrl": "https://iiitt.ac.in/about",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "publicField": "establishedYear",
+      "claimText": "Lok Sabha answer lists IIIT Tiruchirappalli among the IIITs approved 30.10.2012 with first academic year 2013-14; the Union Cabinet approved the 20-IIIT PPP scheme on 7.12.2010.",
+      "status": "verified",
+      "sourceLabel": "Lok Sabha unstarred question 1873 (28 Nov 2016), IIIT list",
+      "sourceUrl": "https://sansad.in/getFile/loksabhaquestions/annex/10/AU1873.pdf?source=pqals",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "publicField": "recognition",
+      "claimText": "Indian Institutes of Information Technology (Public-Private Partnership) Act, 2017 (No. 23 of 2017, assent 9 Aug 2017): s.2 declares each Institute in the Schedule an institution of national importance; the Schedule lists Tamil Nadu - Indian Institute of Information Technology, Tiruchirapalli, a society registered under the Societies Registration Act, 1860. DASA fee sheet header also states 'An Institute of National Importance under MoE, Govt. of India'.",
+      "status": "verified",
+      "sourceLabel": "Indian Institutes of Information Technology (Public-Private Partnership) Act, 2017 (India Code)",
+      "sourceUrl": "https://www.indiacode.nic.in/handle/123456789/2245",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "India Code is not reachable by the fetch tool (earlier host refused the connection); the Act text was read from a copy of the same Act hosted by IIIT Bhopal and extracted to research/india-source-bundles/indian-institute-of-information-technology-tiruchirappalli/iiit-ppp-act-2017-extract.txt."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "publicField": "summary",
+      "claimText": "About page: PPP-mode IIIT, Institute of National Importance, 50:35:15 funding; Lok Sabha answer: first academic year 2013-14; admission pages list four B.Tech. programmes and M.Tech./doctoral programmes.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - About",
+      "sourceUrl": "https://iiitt.ac.in/about",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "Programmes: https://iiitt.ac.in/programs"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "publicField": "campusLifestyle",
+      "claimText": "Permanent Sethurapatti campus operating as of 14 June 2021; temporary campus at Oxford Engineering College from mid-July 2020 and on NIT Tiruchirappalli premises from March 2016; hostel page lists Residence Hall, Mess Hall and Gym.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - About",
+      "sourceUrl": "https://iiitt.ac.in/about",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "Hostel page labels: https://iiitt.ac.in/hostel"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "publicField": "cityProfile",
+      "claimText": "Reporting guide: campus about 20 km from Tiruchirappalli Junction/Central Bus stand on the Tiruchirappalli-Madurai Highway; buses to most of Tamil Nadu, southern Karnataka and Kerala.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - DASA reporting details 2026-27",
+      "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/DASA%20-%20First%20yearr%20Reporting%20details%202026-27%20-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "publicField": "practicalExposure",
+      "claimText": "About page: MoU with SVNIT Surat for research and academic collaboration; industry partners TCS, Cognizant, Infosys, Ramco Systems, ELCOT, Navitas (TAKE Solutions).",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - About",
+      "sourceUrl": "https://iiitt.ac.in/about",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "Internship scope as summarised in the research packet from the SVNIT MoU; no placement figures published."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "publicField": "hostelOverview",
+      "claimText": "DASA fee sheet 2026-27 hostel fees and mess advance: admission 1,200; establishment charges 7,200; licence, electricity and water 13,200; mess advance 24,000 (total 45,600); hostel deposit (refundable) 4,800 in one-time fees. Hostel rules 2024-25: warden allots rooms; heaters, kettles, air conditioners, cooking prohibited; entry/exit register.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - DASA fee structure 2026-27",
+      "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/IIITT-Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%20DASA.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "Rules: https://store.iiitt.ac.in/downloads/hostel/Hostel%20Residents%20Rules%20and%20Regulation_IIITT-2024-2025.pdf (2024-25 vintage)."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "publicField": "dietarySupport",
+      "claimText": "Hostel rules 2024-25: breakfast 7:00-9:00, lunch 12:00-14:00, snacks 16:45-18:00, dinner 19:00-21:00; no relaxation of timings; mess complaints to Warden.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - Hostel rules 2024-25",
+      "sourceUrl": "https://store.iiitt.ac.in/downloads/hostel/Hostel%20Residents%20Rules%20and%20Regulation_IIITT-2024-2025.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "publicField": "safetyOverview",
+      "claimText": "Hostel rules 2024-25: ragging prohibited and cognizable; report immediately; boys' hostel return by 10:00 pm; visitors sign visitor book; emergency contact numbers provided at room allotment. Reporting guide requires an anti-ragging declaration.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - Hostel rules 2024-25",
+      "sourceUrl": "https://store.iiitt.ac.in/downloads/hostel/Hostel%20Residents%20Rules%20and%20Regulation_IIITT-2024-2025.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "Anti-ragging declaration: https://store.iiitt.ac.in/downloads/admission/DASA%20-%20First%20yearr%20Reporting%20details%202026-27%20-1.pdf"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "publicField": "studentSupport",
+      "claimText": "Undergraduate admission data lists reporting process, hostel accommodation form, admission cancellation form and the National Scholarship Portal notice for 2026-27.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - Undergraduate admission data",
+      "sourceUrl": "https://iiitt.ac.in/json/admission/ug.json",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "publicField": "whyChoose",
+      "claimText": "Four B.Tech. branches in the admission data; DASA matrix lists all four; DASA fee categories.",
+      "status": "verified",
+      "sourceLabel": "DASA 2026 seat matrix (revised)",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/07/20260730113349078.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "publicField": "thingsToConsider",
+      "claimText": "DASA eligibility from the 2026 brochure; seat matrix numbers (Non-CIWG 9/9/6/6, CIWG 5/5/3/2); fee sheet is first-semester only with INR 92,000 additional.",
+      "status": "verified",
+      "sourceLabel": "DASA 2026 information brochure",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "Matrix: https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/07/20260730113349078.pdf"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "publicField": "bestFitFor",
+      "claimText": "DASA categories and CIWG documentation per the brochure and reporting guide.",
+      "status": "verified",
+      "sourceLabel": "DASA 2026 information brochure",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "publicField": "industryPartners",
+      "claimText": "About page names TCS, Cognizant, Infosys, Ramco Systems, ELCOT and Navitas (TAKE Solutions) as industry partners.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - About",
+      "sourceUrl": "https://iiitt.ac.in/about",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "publicField": "faq",
+      "claimText": "Fee sheet categories and amounts; seat matrix; reporting guide documents and dates; hostel charges.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - DASA fee structure 2026-27",
+      "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/IIITT-Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%20DASA.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "Matrix: https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/07/20260730113349078.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-computer-science-engineering",
+      "publicField": "identity",
+      "claimText": "B.Tech. Computer Science and Engineering, four years, listed on the undergraduate admission data and the DASA 2026 seat matrix (institute code 314).",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - Undergraduate admission data",
+      "sourceUrl": "https://iiitt.ac.in/json/admission/ug.json",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "Matrix: https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/07/20260730113349078.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-computer-science-engineering",
+      "publicField": "eligibility",
+      "claimText": "DASA 2026: foreign nationals, OCI/PIO, NRI; valid JEE (Main) 2026 Paper 1; Class 12 Maths, Physics and one of Chemistry/Biotechnology/Computer Science/Biology with 75% (CGPA 7.5) across five subjects; born on or after 1 Oct 2001; Indian nationals and OCI/PIO(I) need two years of education including Classes 11-12 abroad in the last eight years.",
+      "status": "verified",
+      "sourceLabel": "DASA 2026 information brochure",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "DASA portal csab.nic.in registration, document upload, choice filling and locking, seat allotment, payment by NEFT/UPI and physical reporting 20-21 August 2026; classes from 24 August 2026; document checklist including CIWG additions.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - DASA reporting details 2026-27",
+      "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/DASA%20-%20First%20yearr%20Reporting%20details%202026-27%20-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "Brochure: https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-computer-science-engineering",
+      "publicField": "audienceEligibility",
+      "claimText": "DASA route: seats for foreign nationals, OCI/PIO, NRIs; one-third of DASA seats are CIWG; category tags DASA SAARC and Non-SAARC decide tuition.",
+      "status": "verified",
+      "sourceLabel": "DASA 2026 information brochure",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-computer-science-engineering",
+      "publicField": "fee",
+      "claimText": "DASA fee sheet 2026-27 first semester: tuition CIWG INR 1,15,200 / Non-SAARC USD 4,000 / SAARC USD 2,000; one-time INR 32,400; additional institute INR 14,000; hostel and mess advance INR 45,600; grand total INR 92,000 plus applicable tuition. Not annual.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - DASA fee structure 2026-27",
+      "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/IIITT-Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%20DASA.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-computer-science-engineering",
+      "publicField": "reportedFeeQuote",
+      "claimText": "First-semester tuition USD 2,000 (SAARC) to USD 4,000 (Non-SAARC) for DASA 2026-27; CIWG INR 1,15,200 noted in the basis.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli DASA fee structure 2026-27 (first semester)",
+      "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/IIITT-Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%20DASA.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-computer-science-engineering",
+      "publicField": "medium",
+      "claimText": "Reviewed programme and admission sources do not state the language of instruction; no English is inferred from the DASA brochure or location. Field omitted.",
+      "status": "omit",
+      "sourceLabel": "IIIT Tiruchirappalli - Undergraduate admission",
+      "sourceUrl": "https://iiitt.ac.in/admission_ug",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-computer-science-engineering",
+      "publicField": "intake",
+      "claimText": "2026 cohort reported 20-21 August 2026 and began classes 24 August 2026, but no recurring intake month is published; none asserted.",
+      "status": "omit",
+      "sourceLabel": "IIIT Tiruchirappalli - DASA reporting details 2026-27",
+      "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/DASA%20-%20First%20yearr%20Reporting%20details%202026-27%20-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-computer-science-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "Four-year B.Tech. on the Sethurapatti campus; first-year reporting 20-21 August 2026.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - DASA reporting details 2026-27",
+      "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/DASA%20-%20First%20yearr%20Reporting%20details%202026-27%20-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-computer-science-engineering-ai-data-science",
+      "publicField": "identity",
+      "claimText": "B.Tech. Computer Science and Engineering (Artificial Intelligence and Data Science), four years, listed on the undergraduate admission data and the DASA 2026 seat matrix (institute code 314).",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - Undergraduate admission data",
+      "sourceUrl": "https://iiitt.ac.in/json/admission/ug.json",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "Matrix: https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/07/20260730113349078.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-computer-science-engineering-ai-data-science",
+      "publicField": "eligibility",
+      "claimText": "DASA 2026: foreign nationals, OCI/PIO, NRI; valid JEE (Main) 2026 Paper 1; Class 12 Maths, Physics and one of Chemistry/Biotechnology/Computer Science/Biology with 75% (CGPA 7.5) across five subjects; born on or after 1 Oct 2001; Indian nationals and OCI/PIO(I) need two years of education including Classes 11-12 abroad in the last eight years.",
+      "status": "verified",
+      "sourceLabel": "DASA 2026 information brochure",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-computer-science-engineering-ai-data-science",
+      "publicField": "admissions",
+      "claimText": "DASA portal csab.nic.in registration, document upload, choice filling and locking, seat allotment, payment by NEFT/UPI and physical reporting 20-21 August 2026; classes from 24 August 2026; document checklist including CIWG additions.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - DASA reporting details 2026-27",
+      "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/DASA%20-%20First%20yearr%20Reporting%20details%202026-27%20-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "Brochure: https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-computer-science-engineering-ai-data-science",
+      "publicField": "audienceEligibility",
+      "claimText": "DASA route: seats for foreign nationals, OCI/PIO, NRIs; one-third of DASA seats are CIWG; category tags DASA SAARC and Non-SAARC decide tuition.",
+      "status": "verified",
+      "sourceLabel": "DASA 2026 information brochure",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-computer-science-engineering-ai-data-science",
+      "publicField": "fee",
+      "claimText": "DASA fee sheet 2026-27 first semester: tuition CIWG INR 1,15,200 / Non-SAARC USD 4,000 / SAARC USD 2,000; one-time INR 32,400; additional institute INR 14,000; hostel and mess advance INR 45,600; grand total INR 92,000 plus applicable tuition. Not annual.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - DASA fee structure 2026-27",
+      "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/IIITT-Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%20DASA.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-computer-science-engineering-ai-data-science",
+      "publicField": "reportedFeeQuote",
+      "claimText": "First-semester tuition USD 2,000 (SAARC) to USD 4,000 (Non-SAARC) for DASA 2026-27; CIWG INR 1,15,200 noted in the basis.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli DASA fee structure 2026-27 (first semester)",
+      "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/IIITT-Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%20DASA.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-computer-science-engineering-ai-data-science",
+      "publicField": "medium",
+      "claimText": "Reviewed programme and admission sources do not state the language of instruction; no English is inferred from the DASA brochure or location. Field omitted.",
+      "status": "omit",
+      "sourceLabel": "IIIT Tiruchirappalli - Undergraduate admission",
+      "sourceUrl": "https://iiitt.ac.in/admission_ug",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-computer-science-engineering-ai-data-science",
+      "publicField": "intake",
+      "claimText": "2026 cohort reported 20-21 August 2026 and began classes 24 August 2026, but no recurring intake month is published; none asserted.",
+      "status": "omit",
+      "sourceLabel": "IIIT Tiruchirappalli - DASA reporting details 2026-27",
+      "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/DASA%20-%20First%20yearr%20Reporting%20details%202026-27%20-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-computer-science-engineering-ai-data-science",
+      "publicField": "teachingPhases",
+      "claimText": "Four-year B.Tech. on the Sethurapatti campus; first-year reporting 20-21 August 2026.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - DASA reporting details 2026-27",
+      "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/DASA%20-%20First%20yearr%20Reporting%20details%202026-27%20-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-electronics-communication-engineering",
+      "publicField": "identity",
+      "claimText": "B.Tech. Electronics and Communication Engineering, four years, listed on the undergraduate admission data and the DASA 2026 seat matrix (institute code 314).",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - Undergraduate admission data",
+      "sourceUrl": "https://iiitt.ac.in/json/admission/ug.json",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "Matrix: https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/07/20260730113349078.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-electronics-communication-engineering",
+      "publicField": "eligibility",
+      "claimText": "DASA 2026: foreign nationals, OCI/PIO, NRI; valid JEE (Main) 2026 Paper 1; Class 12 Maths, Physics and one of Chemistry/Biotechnology/Computer Science/Biology with 75% (CGPA 7.5) across five subjects; born on or after 1 Oct 2001; Indian nationals and OCI/PIO(I) need two years of education including Classes 11-12 abroad in the last eight years.",
+      "status": "verified",
+      "sourceLabel": "DASA 2026 information brochure",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-electronics-communication-engineering",
+      "publicField": "admissions",
+      "claimText": "DASA portal csab.nic.in registration, document upload, choice filling and locking, seat allotment, payment by NEFT/UPI and physical reporting 20-21 August 2026; classes from 24 August 2026; document checklist including CIWG additions.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - DASA reporting details 2026-27",
+      "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/DASA%20-%20First%20yearr%20Reporting%20details%202026-27%20-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "Brochure: https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-electronics-communication-engineering",
+      "publicField": "audienceEligibility",
+      "claimText": "DASA route: seats for foreign nationals, OCI/PIO, NRIs; one-third of DASA seats are CIWG; category tags DASA SAARC and Non-SAARC decide tuition.",
+      "status": "verified",
+      "sourceLabel": "DASA 2026 information brochure",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-electronics-communication-engineering",
+      "publicField": "fee",
+      "claimText": "DASA fee sheet 2026-27 first semester: tuition CIWG INR 1,15,200 / Non-SAARC USD 4,000 / SAARC USD 2,000; one-time INR 32,400; additional institute INR 14,000; hostel and mess advance INR 45,600; grand total INR 92,000 plus applicable tuition. Not annual.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - DASA fee structure 2026-27",
+      "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/IIITT-Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%20DASA.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-electronics-communication-engineering",
+      "publicField": "reportedFeeQuote",
+      "claimText": "First-semester tuition USD 2,000 (SAARC) to USD 4,000 (Non-SAARC) for DASA 2026-27; CIWG INR 1,15,200 noted in the basis.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli DASA fee structure 2026-27 (first semester)",
+      "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/IIITT-Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%20DASA.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-electronics-communication-engineering",
+      "publicField": "medium",
+      "claimText": "Reviewed programme and admission sources do not state the language of instruction; no English is inferred from the DASA brochure or location. Field omitted.",
+      "status": "omit",
+      "sourceLabel": "IIIT Tiruchirappalli - Undergraduate admission",
+      "sourceUrl": "https://iiitt.ac.in/admission_ug",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-electronics-communication-engineering",
+      "publicField": "intake",
+      "claimText": "2026 cohort reported 20-21 August 2026 and began classes 24 August 2026, but no recurring intake month is published; none asserted.",
+      "status": "omit",
+      "sourceLabel": "IIIT Tiruchirappalli - DASA reporting details 2026-27",
+      "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/DASA%20-%20First%20yearr%20Reporting%20details%202026-27%20-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-electronics-communication-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "Four-year B.Tech. on the Sethurapatti campus; first-year reporting 20-21 August 2026.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - DASA reporting details 2026-27",
+      "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/DASA%20-%20First%20yearr%20Reporting%20details%202026-27%20-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-electronics-communication-engineering-vlsi-design",
+      "publicField": "identity",
+      "claimText": "B.Tech. Electronics and Communication Engineering (VLSI Design), four years, listed on the undergraduate admission data and the DASA 2026 seat matrix (institute code 314).",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - Undergraduate admission data",
+      "sourceUrl": "https://iiitt.ac.in/json/admission/ug.json",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "Matrix: https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/07/20260730113349078.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-electronics-communication-engineering-vlsi-design",
+      "publicField": "eligibility",
+      "claimText": "DASA 2026: foreign nationals, OCI/PIO, NRI; valid JEE (Main) 2026 Paper 1; Class 12 Maths, Physics and one of Chemistry/Biotechnology/Computer Science/Biology with 75% (CGPA 7.5) across five subjects; born on or after 1 Oct 2001; Indian nationals and OCI/PIO(I) need two years of education including Classes 11-12 abroad in the last eight years.",
+      "status": "verified",
+      "sourceLabel": "DASA 2026 information brochure",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-electronics-communication-engineering-vlsi-design",
+      "publicField": "admissions",
+      "claimText": "DASA portal csab.nic.in registration, document upload, choice filling and locking, seat allotment, payment by NEFT/UPI and physical reporting 20-21 August 2026; classes from 24 August 2026; document checklist including CIWG additions.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - DASA reporting details 2026-27",
+      "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/DASA%20-%20First%20yearr%20Reporting%20details%202026-27%20-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "Brochure: https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-electronics-communication-engineering-vlsi-design",
+      "publicField": "audienceEligibility",
+      "claimText": "DASA route: seats for foreign nationals, OCI/PIO, NRIs; one-third of DASA seats are CIWG; category tags DASA SAARC and Non-SAARC decide tuition.",
+      "status": "verified",
+      "sourceLabel": "DASA 2026 information brochure",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-electronics-communication-engineering-vlsi-design",
+      "publicField": "fee",
+      "claimText": "DASA fee sheet 2026-27 first semester: tuition CIWG INR 1,15,200 / Non-SAARC USD 4,000 / SAARC USD 2,000; one-time INR 32,400; additional institute INR 14,000; hostel and mess advance INR 45,600; grand total INR 92,000 plus applicable tuition. Not annual.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - DASA fee structure 2026-27",
+      "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/IIITT-Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%20DASA.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-electronics-communication-engineering-vlsi-design",
+      "publicField": "reportedFeeQuote",
+      "claimText": "First-semester tuition USD 2,000 (SAARC) to USD 4,000 (Non-SAARC) for DASA 2026-27; CIWG INR 1,15,200 noted in the basis.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli DASA fee structure 2026-27 (first semester)",
+      "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/IIITT-Fee%20Structure%20for%20the%20AY-202627%20ODD%20Semester_%20DASA.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-electronics-communication-engineering-vlsi-design",
+      "publicField": "medium",
+      "claimText": "Reviewed programme and admission sources do not state the language of instruction; no English is inferred from the DASA brochure or location. Field omitted.",
+      "status": "omit",
+      "sourceLabel": "IIIT Tiruchirappalli - Undergraduate admission",
+      "sourceUrl": "https://iiitt.ac.in/admission_ug",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-electronics-communication-engineering-vlsi-design",
+      "publicField": "intake",
+      "claimText": "2026 cohort reported 20-21 August 2026 and began classes 24 August 2026, but no recurring intake month is published; none asserted.",
+      "status": "omit",
+      "sourceLabel": "IIIT Tiruchirappalli - DASA reporting details 2026-27",
+      "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/DASA%20-%20First%20yearr%20Reporting%20details%202026-27%20-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-information-technology-tiruchirappalli",
+      "programmeSlug": "iiitt-btech-electronics-communication-engineering-vlsi-design",
+      "publicField": "teachingPhases",
+      "claimText": "Four-year B.Tech. on the Sethurapatti campus; first-year reporting 20-21 August 2026.",
+      "status": "verified",
+      "sourceLabel": "IIIT Tiruchirappalli - DASA reporting details 2026-27",
+      "sourceUrl": "https://store.iiitt.ac.in/downloads/admission/DASA%20-%20First%20yearr%20Reporting%20details%202026-27%20-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    }
+  ]
+}

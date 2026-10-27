@@ -1,0 +1,159 @@
+{
+  "checkedAt": "2026-10-27",
+  "status": "completion reviewed; normalized supported fields in proposed-payload.json; precise missing fields in schema-validation.json",
+  "routes": {
+    "pgpm": {
+      "sourceUrls": [
+        "https://www.greatlakes.edu.in/chennai/pgpm/admissions",
+        "https://www.greatlakes.edu.in/chennai/pgpm/faq"
+      ],
+      "academicYear": "2027–28",
+      "eligibility": [
+        "Recognized bachelor degree.",
+        "Minimum 50% in Class X, Class XII and undergraduate degree.",
+        "At least 24 months full-time post-graduation work experience by 30 April 2027."
+      ],
+      "tests": [
+        "CAT 2025/2026",
+        "XAT 2026/2027",
+        "GMAT after 1 January 2024 (FAQ says on/after: confirm boundary)",
+        "NMAT 2025 onwards in admissions page; FAQ lists 2025/2026: confirm applicable version"
+      ],
+      "applicationFee": {
+        "currency": "INR",
+        "amount": 2200
+      },
+      "documents": [
+        "Academic records",
+        "Valid test scores",
+        "Work-experience details",
+        "Application essays",
+        "Recommender contact details"
+      ],
+      "noCutoffPromise": "No universal admission cutoff inferred from indicative score discussions.",
+      "internationalEvidence": "Programme FAQ explicitly addresses foreign applicants and the conditional TOEFL/IELTS requirement; restricted audience encoded."
+    },
+    "pgdm": {
+      "sourceUrls": [
+        "https://www.greatlakes.edu.in/chennai/pgdm/admissions",
+        "https://www.greatlakes.edu.in/chennai/pgdm/faqs"
+      ],
+      "academicYear": "2027–29",
+      "eligibility": [
+        "Recognized bachelor degree.",
+        "Minimum 50% in Class X, Class XII and undergraduate degree.",
+        "Fresh graduates or fewer than 36 months work experience by 30 May 2027."
+      ],
+      "tests": [
+        "CAT 2025/2026",
+        "XAT 2026/2027",
+        "GMAT on/after 1 January 2024"
+      ],
+      "languageTestRule": "FAQ requires TOEFL/IELTS for non-Indian candidates whose undergraduate primary instruction language was not English. This is not evidence that all programme teaching is English.",
+      "held": "Foreign applicants are explicitly supported by the programme FAQ. Restricted eligibility is encoded; no global or supernumerary-quota assumption is made."
+    },
+    "fbe": {
+      "sourceUrls": [
+        "https://www.greatlakes.edu.in/chennai/pgpm-fbe",
+        "https://www.greatlakes.edu.in/chennai/pgpm-fbe-admissions",
+        "https://www.greatlakes.edu.in/chennai/pgpm-fbe-faqs"
+      ],
+      "eligibility": [
+        "Recognized undergraduate degree with at least 50%.",
+        "Family-business / entrepreneur route; admissions page requires the business to be registered under Indian law."
+      ],
+      "tests": [
+        "CAT",
+        "XAT",
+        "GMAT",
+        "NMAT",
+        "Great Lakes Aptitude Test (GREAT) alternative"
+      ],
+      "documents": [
+        "Academic records",
+        "Two essays",
+        "Recommendation",
+        "Business / entrepreneur details"
+      ],
+      "held": [
+        "Do not carry over PGPM 24-month employment requirement.",
+        "International eligibility remains unverified."
+      ],
+      "award": "Official FAQ confirms Post Graduate Certificate in Management, the same awarded credential as PGPM."
+    },
+    "pgxpm": {
+      "sourceUrls": [
+        "https://www.greatlakes.edu.in/chennai/pgxpm/admissions",
+        "https://www.greatlakes.edu.in/chennai/pgxpm"
+      ],
+      "eligibility": [
+        "Bachelor degree or equivalent with 50% throughout as stated by the admission source.",
+        "Minimum eight years full-time work experience by 31 October 2026."
+      ],
+      "documents": [
+        "Statement of purpose",
+        "Two recommendations",
+        "Academic and employment records"
+      ],
+      "applicationFee": {
+        "currency": "INR",
+        "amount": 1500
+      },
+      "delivery": "18 months, seven intensive on-campus modules plus online engagement.",
+      "held": [
+        "Exact qualification awarded not established; no Executive MBA mapping based only on marketing label."
+      ]
+    },
+    "fpm": {
+      "sourceUrls": [
+        "https://www.greatlakes.edu.in/chennai/fpm",
+        "https://www.greatlakes.edu.in/chennai/fpm-admissions"
+      ],
+      "eligibility": [
+        "Masters, two-year postgraduate diploma or five-year integrated masters with at least 60%.",
+        "Valid JRF (NET), CAT, GMAT, GRE or XAT score.",
+        "Final-year masters candidates may apply subject to completion conditions."
+      ],
+      "documents": [
+        "UG and PG transcripts",
+        "Statement of research purpose and goals",
+        "Three recommendation letters, including at least one academic reference"
+      ],
+      "applicationFee": {
+        "currency": "INR",
+        "amount": 2000
+      },
+      "fundingHold": "Stipend wording is not evidence of zero tuition; payment period and conditions require clarification.",
+      "optionalPartnerTrack": "UTA dual-track PhD is optional, additionally selected and separately costed; not a guaranteed Great Lakes PhD award."
+    },
+    "online_pgdm": {
+      "sourceUrls": [
+        "https://www.greatlakes.edu.in/online/online-pgdm",
+        "https://www.greatlakes.edu.in/chennai/contact",
+        "https://www.greatlakes.edu.in/chennai/assets/greatlakes/pdf/EOA_Report_2026-2027.pdf"
+      ],
+      "eligibility": [
+        "Recognized bachelor/equivalent with 50%; 45% for SC/ST/OBC categories as published.",
+        "Work experience is not mandatory."
+      ],
+      "process": [
+        "Submit official application for screening.",
+        "Participate in screening discussion and supply the requested documents if offered admission."
+      ],
+      "held": [
+        "Confirm Chennai enrollment agreement/variant because the shared marketing page includes Gurgaon faculty.",
+        "International eligibility not established."
+      ]
+    },
+    "applicationAuthority": {
+      "sourceUrls": [
+        "https://www.greatlakes.edu.in/chennai/pgpm/admissions",
+        "https://www.greatlakes.edu.in/chennai/pgdm/admissions",
+        "https://www.greatlakes.edu.in/chennai/pgpm-fbe-admissions"
+      ],
+      "restriction": "Great Lakes does not authorize third parties to initiate applications on applicants’ behalf. StudentsTraffic may support fit comparison, not claim authorized submission or management-quota access."
+    }
+  },
+  "completionAddendum": "FBE PGCM award explicitly confirmed in official FAQ; PGPM/PGDM foreign-applicant and language-test statements captured.",
+  "currentNormalizedAdmissionsFile": "proposed-payload.json"
+}

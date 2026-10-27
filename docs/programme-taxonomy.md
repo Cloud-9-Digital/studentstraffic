@@ -461,3 +461,7 @@ M.Sc. Epidemiology (`msc-epidemiology`) is a public-health master's family for p
 ### Applied science and integrated computing/fashion degrees —25October2026
 
 `bsc-applied-science` covers interdisciplinary science study with institution-specific mathematical, physical, chemical and practical components; it is distinct from an engineering qualification. `integrated-msc-computer-science` and `integrated-msc-cyber-security` represent complete school-entry science master's awards, with the exact theoretical or security specialisation retained on each offering. `integrated-master-fashion-design` covers school-entry advanced fashion, apparel and merchandising study, separately from graduate-entry design master's degrees. Preserve exact award, five-year structure, qualifying school subjects and selection. These families do not create separately admitting intermediate exits or professional practice rights.
+
+### Postgraduate certificate in business management — 27 October 2026
+
+`pg-certificate-business-management` covers one-year management programmes whose awarded credential is a Post Graduate Certificate in Management (AICTE course code PGCM), for example Great Lakes Chennai's PGPM. It is distinct from an MBA degree and from a two-year PGDM (`pg-diploma-business-management`); the institution's marketing title is retained on each offering.

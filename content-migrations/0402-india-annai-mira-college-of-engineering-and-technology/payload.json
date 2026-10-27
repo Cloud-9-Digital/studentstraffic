@@ -1,0 +1,2332 @@
+{
+  "courses": [
+    {
+      "slug": "be-btech-civil-engineering",
+      "name": "B.E./B.Tech in Civil Engineering",
+      "shortName": "B.E./B.Tech Civil",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "civil-engineering",
+      "aliases": [
+        "Bachelor of Civil Engineering",
+        "BEng Civil Engineering"
+      ],
+      "displayOrder": 3,
+      "durationYears": 4,
+      "summary": "A four-year undergraduate engineering degree covering structural analysis and design, geotechnical engineering, transportation engineering, water resources, environmental engineering, surveying and construction management. Programmes pair lecture teaching with materials, hydraulics and surveying laboratories, site visits and a final-year design project. Graduates work in construction, infrastructure, consultancy and public works, or continue to a master's specialisation.",
+      "metaTitle": "B.E./B.Tech Civil: Course, Fees and Admission",
+      "metaDescription": "What a four-year B.E./B.Tech Civil degree covers, the entry requirements it carries, how admission is decided and what tuition to plan for."
+    },
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "Bachelor of Technology in Computer Science and Engineering",
+        "BEng Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in computer science and engineering, usually four years after an upper-secondary qualification with mathematics. Typical curricula run from programming, data structures, operating systems, databases and computer networks to algorithms, software engineering and electives in artificial intelligence, machine learning, cloud and security, with project and internship components.",
+      "metaTitle": "B.E./B.Tech CSE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech CSE degrees for international applicants: duration, teaching language, intake months, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-artificial-intelligence-machine-learning",
+      "name": "B.E./B.Tech in Artificial Intelligence and Machine Learning",
+      "shortName": "B.E./B.Tech AI & ML",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "artificial-intelligence-machine-learning",
+      "aliases": [
+        "Bachelor of Engineering in Artificial Intelligence",
+        "Bachelor of Science in Artificial Intelligence",
+        "Artificial Intelligence and Machine Learning"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "Artificial intelligence and machine learning bachelor's programmes combine core computing and mathematics with statistical learning, data handling and applied model building. Award titles, specialisation depth, admission thresholds and fees differ significantly by university, so the programme record rather than the category should drive a shortlist decision.",
+      "metaTitle": "B.E./B.Tech AI & ML Degree Programmes Abroad",
+      "metaDescription": "Compare B.E./B.Tech AI & ML programmes by curriculum focus, entry thresholds, teaching language, intake, fee state and application route for international applicants."
+    },
+    {
+      "slug": "be-btech-electrical-electronics-engineering",
+      "name": "B.E./B.Tech in Electrical and Electronics Engineering",
+      "shortName": "B.E./B.Tech EEE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electrical-electronics-engineering",
+      "aliases": [
+        "Bachelor of Electrical and Electronic Engineering",
+        "BEng Electrical and Electronic Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "This catalogue category covers four-year undergraduate degrees in electrical and electronics engineering taken after an upper-secondary qualification with physics and mathematics. Programmes typically cover circuit theory, electrical machines, power systems, power electronics, control systems and embedded electronics, with laboratory work and electives in renewable energy or electric mobility.",
+      "metaTitle": "B.E./B.Tech EEE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech EEE degrees for international applicants: programme length, teaching language, intake months, tuition and admission routes."
+    },
+    {
+      "slug": "be-btech-electronics-communication-engineering",
+      "name": "B.E./B.Tech in Electronics and Communication Engineering",
+      "shortName": "B.E./B.Tech ECE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electronics-communication-engineering",
+      "aliases": [
+        "Bachelor of Electronics and Communication Engineering",
+        "BEng Electronic and Communications Engineering",
+        "Electronics and Telecommunications Engineering"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in electronics and communication engineering, usually four years after upper-secondary physics, chemistry and mathematics. Curricula typically span circuit and network theory, analog and digital electronics, signals and systems, digital signal processing, communication systems and embedded or VLSI design, with laboratory and project work.",
+      "metaTitle": "B.E./B.Tech ECE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech ECE degrees for international applicants: duration, teaching language, intakes, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-mechanical-engineering",
+      "name": "B.E./B.Tech in Mechanical Engineering",
+      "shortName": "B.E./B.Tech Mechanical",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "mechanical-engineering",
+      "aliases": [
+        "Bachelor of Mechanical Engineering",
+        "BEng Mechanical Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "A four-year undergraduate engineering degree covering engineering mechanics, thermodynamics, fluid mechanics, heat transfer, machine design, manufacturing processes and control systems. Teaching is built around workshop practice, thermal and materials laboratories, computer-aided design and a final-year project. Graduates move into manufacturing, automotive, energy, thermal and design roles, or continue to a master's specialisation such as thermal engineering or machine design.",
+      "metaTitle": "B.E./B.Tech Mechanical: Course, Fees and Admission",
+      "metaDescription": "What a four-year B.E./B.Tech Mechanical degree covers, its entry requirements, how admission is decided and what tuition and duration to plan for."
+    },
+    {
+      "slug": "be-btech-data-science",
+      "name": "B.E./B.Tech in Data Science",
+      "shortName": "B.E./B.Tech Data Science",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "data-science",
+      "aliases": [
+        "Bachelor of Data Science",
+        "BSc Data Science"
+      ],
+      "displayOrder": 33,
+      "durationYears": 3,
+      "summary": "Compare undergraduate Data Science degrees abroad by statistics, machine learning, data engineering, applied projects, tuition and admissions. Each university offering keeps its official award title, artificial-intelligence specialisation depth and entry requirements visible before applying.",
+      "metaTitle": "B.E./B.Tech Data Science Abroad | Fees",
+      "metaDescription": "Compare B.E./B.Tech Data Science programmes abroad by curriculum, tuition fees, admissions and practical training."
+    },
+    {
+      "slug": "be-btech-information-technology",
+      "name": "B.E./B.Tech in Information Technology",
+      "shortName": "B.E./B.Tech IT",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "information-technology",
+      "aliases": [
+        "Bachelor of Engineering in Information Technology",
+        "Computer Science major"
+      ],
+      "displayOrder": 180,
+      "durationYears": 4,
+      "summary": "An approved Engineering catalogue category for four-year undergraduate information technology degrees, including university programmes that publish Computer Science as a major within an Information Technology award. The exact university title and major structure remain visible on each offering.",
+      "metaTitle": "B.E./B.Tech IT Programmes",
+      "metaDescription": "Compare B.E./B.Tech IT programmes, official titles, fees, duration and admissions routes for international students."
+    },
+    {
+      "slug": "mba",
+      "name": "Master of Business Administration",
+      "shortName": "MBA",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "business-administration",
+      "aliases": [
+        "General MBA",
+        "Full-time MBA",
+        "International MBA"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "A postgraduate category for general-management degrees taken after a bachelor qualification. Study commonly combines finance, marketing, organisational behaviour, operations and strategy with applied management work. Programme delivery, selection tests, curriculum and fees vary by university.",
+      "metaTitle": "MBA Programmes and Admissions",
+      "metaDescription": "Compare MBA programmes by official award, academic eligibility, teaching language, duration, university and tuition fees."
+    },
+    {
+      "slug": "mca",
+      "name": "Master of Computer Applications",
+      "shortName": "MCA",
+      "stream": "computing-information-systems",
+      "level": "masters",
+      "discipline": "computer-applications",
+      "aliases": [
+        "M.C.A.",
+        "Master in Computer Applications"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "The Master of Computer Applications is a two-year postgraduate degree in applied computing, open to graduates who have studied computing or mathematics at undergraduate level. Study covers advanced programming, algorithms, database management, software engineering, computer networks and web technologies, with electives such as machine learning, cloud computing, data analytics and cyber security, and usually a major project or industry internship. Graduates typically work as software developers, systems analysts or IT consultants, and some continue to doctoral research in computer applications.",
+      "metaTitle": "MCA (Master of Computer Applications) Programmes",
+      "metaDescription": "Compare MCA programmes open to international students: eligibility, specialisations, project work, duration, tuition and intake timing."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "annai-mira-college-of-engineering-and-technology",
+      "name": "Annai Mira College of Engineering and Technology",
+      "city": "Arappakkam, Ranipet",
+      "type": "Private",
+      "establishedYear": 2012,
+      "officialWebsite": "https://amcet.in/",
+      "mediaAttribution": {},
+      "summary": "Annai Mira College of Engineering and Technology (AMCET) is a private, self-financing engineering college founded in 2012 at Arappakkam on the Chennai-Bengaluru highway near Vellore, Tamil Nadu, run by the R.T. Educational Trust. It is not a university: it is a non-autonomous college affiliated to Anna University, Chennai, which awards its degrees. AICTE approves eight B.E./B.Tech branches, an MBA and an MCA for 2026-27.",
+      "campusLifestyle": "AMCET's campus covers about 25 acres at Arappakkam on NH-46, with three academic blocks and a 500-seat auditorium. Its central library covers 866 sq m with the Koha library system, DELNET, NPTEL and National Digital Library access, and subscribes to 89 national and 73 international journals. Laboratories are listed for ECE, EEE, Mechanical, CSE, AI and Data Science and Civil. Sports include an indoor stadium, a gym and outdoor cricket, football, volleyball and basketball.",
+      "cityProfile": "AMCET is on NH-46, the Chennai-Bengaluru highway, at Arappakkam in Walaja taluk, Ranipet district, Tamil Nadu 632517. AICTE lists the address under Vellore district, from which Ranipet was carved out. DoTE's TNEA 2026 booklet gives Katpadi as the nearest railway station, 10 to 12 km away, and Ranipet as the district headquarters, 12 km away. Anna University's college code is 5135.",
+      "practicalExposure": "AMCET is not autonomous, so it follows Anna University's curricula and regulations: the university sets the syllabus, conducts the end-semester exams and awards the degree, and the college runs internal assessment. AICTE makes an internship mandatory for every admitted student. The college's Centre for Training and Placement runs campus drives and records 27 recruiters on its 2024 placement table, among them HCL, Infosys, TCS and Sundaram Fasteners. Offer counts and packages are self-reported.",
+      "hostelOverview": "AMCET has separate boys' and girls' hostels on campus with four-occupancy rooms, a mess serving vegetarian and non-vegetarian food, Wi-Fi, a common room and computer room, laundry, RO drinking water and a 24-hour security desk. DoTE's TNEA 2026 booklet lists room rent and mess together at about INR 1.08 lakh a year, electricity of INR 2,000 and a caution deposit of INR 5,000. Parents must accompany the student to the warden to take a room.",
+      "dietarySupport": "AMCET's hostel messes serve vegetarian and non-vegetarian food. Fixed timings are breakfast 7:15 to 8:25 am, lunch 12:30 to 2:00 pm, tea and snacks 4:30 to 5:30 pm and dinner 7:30 to 8:30 pm, followed by a study hour from 8:30 to 10:00 pm. The college also runs a cafeteria. It publishes no menu or provision for specific regional or religious diets, so ask the warden before joining.",
+      "safetyOverview": "AMCET's AICTE disclosure lists an anti-ragging committee and squad, an internal complaints committee for sexual-harassment complaints, a women grievance cell and an SC/ST committee. The hostels have a 24-hour security desk. TNEA 2026 publishes an anti-ragging phone number for the college (+91 94433 04963).",
+      "studentSupport": "AMCET runs a Centre for Training and Placement, a higher-education centre, a personality development centre and an entrepreneurship cell with a startup club and Institution's Innovation Council. Grievances go to a students grievance and redressal committee. The college gives annual Academic Excellence awards, branded Mira Merit Scholarship, to students with high Anna University results; amounts are not published.",
+      "whyChoose": [
+        "AMCET is a TNEA-listed Anna University college (code 1137) on NH-46 that is 10 to 12 km from Katpadi railway station, so students from Vellore, Ranipet and Tiruvannamalai can reach it by road or bus.",
+        "AICTE's 2026-27 approval covers eight B.E./B.Tech branches, an MBA and an MCA, including new AI and Machine Learning and MCA courses.",
+        "AMCET has hostels for men and women on campus and runs college buses, with published TNEA charges for both."
+      ],
+      "thingsToConsider": [
+        "AMCET is an affiliated, non-autonomous college, not a university: Anna University sets its syllabus and exams and awards its degrees, and there are no seats for international students because AICTE shows no NRI or international approval.",
+        "AMCET publishes no tuition fee and DoTE's TNEA 2026 booklet shows no NBA-accredited branch. The mandatory disclosure cites a NAAC B++ grade without a certificate or validity date, so ask the college for the certificate.",
+        "The B.E. Civil, EEE and Mechanical branches have small intakes of 30, 30 and 60. AI and Machine Learning and the MCA are new for 2026-27 with no graduating batch."
+      ],
+      "bestFitFor": [
+        "Tamil Nadu TNEA applicants from Vellore, Ranipet and Tiruvannamalai who want an Anna University B.E. or B.Tech close to home.",
+        "Students interested in computing: CSE, AI and Data Science, IT and AI and Machine Learning make up 360 of AMCET's 480 first-year B.E./B.Tech places.",
+        "Graduates with a TANCET 2026 score who want an MBA or MCA near Vellore."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "AICTE - Approved institution, Permanent ID 1-404537421 (Private-Self Financing); Extension of Approval 2026-27",
+        "Anna University, Chennai - Affiliated non-autonomous college, college code 5135",
+        "DoTE Tamil Nadu - TNEA 2026 participating college, counselling code 1137"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "AICTE - Approved institutes dashboard",
+          "url": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved"
+        },
+        {
+          "label": "Anna University CAI - Affiliated colleges, Ranipet district",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Ranipet.php"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+          "url": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Annai Mira College of Engineering and Technology autonomous or affiliated to Anna University?",
+          "answer": "Annai Mira College of Engineering and Technology (AMCET) is a non-autonomous college affiliated to Anna University, Chennai, which sets its syllabus and exams and awards its degrees. Anna University lists it in Ranipet district with college code 5135, and DoTE's TNEA 2026 booklet gives its autonomous status as No."
+        },
+        {
+          "question": "What is the TNEA code for Annai Mira College of Engineering and Technology?",
+          "answer": "The TNEA counselling code for Annai Mira College of Engineering and Technology (AMCET) is 1137. TNEA 2026 lists eight branches under it: Civil (CE), Computer Science (CS), AI and Machine Learning (AM), EEE (EE), ECE (EC), Mechanical (ME), AI and Data Science (AD) and Information Technology (IT)."
+        },
+        {
+          "question": "Is Annai Mira College of Engineering and Technology AICTE approved?",
+          "answer": "Yes, AMCET is AICTE approved as a private self-financing institution, permanent ID 1-404537421. Its Extension of Approval for 2026-27, dated 10 April 2026, covers eight B.E./B.Tech branches, an MBA and an MCA, all affiliated to Anna University, Chennai."
+        },
+        {
+          "question": "Is Annai Mira College of Engineering and Technology in Vellore or Ranipet?",
+          "answer": "AMCET is at Arappakkam on NH-46, in Walaja taluk. It was in Vellore district until Ranipet district was formed, so AICTE still prints Vellore while DoTE and the college itself print Ranipet. Katpadi railway station near Vellore is 10 to 12 km away."
+        },
+        {
+          "question": "What is the B.E. fee at Annai Mira College of Engineering and Technology?",
+          "answer": "AMCET does not publish its tuition; a management-quota seat is confirmed by paying 50 per cent of the fee prescribed by AICTE and Anna University, so ask the college. Tamil Nadu's fee committee fixes tuition for self-financing colleges. TNEA 2026 lists an admission fee of INR 1,500, a caution deposit of INR 5,000 and transport at INR 16,000 to 30,000 a year."
+        },
+        {
+          "question": "Does Annai Mira College of Engineering and Technology admit international or NRI students?",
+          "answer": "No, AMCET has no NRI or international-student approval: AICTE's 2026-27 approval marks both as No for every course. TNEA is for Indian nationals; OCI/PIO card holders who are natives of Tamil Nadu may apply unless born abroad after 4 March 2021."
+        },
+        {
+          "question": "How do I get admission to Annai Mira College of Engineering and Technology?",
+          "answer": "Most B.E./B.Tech seats are filled through TNEA: register at tneaonline.org, get a rank from Mathematics (100), Physics (50) and Chemistry (50), and choose code 1137. Management-quota seats (35 per cent) are filled directly by the college on a first-come basis. MBA and MCA seats use TANCET and Tamil Nadu MBA/MCA counselling."
+        },
+        {
+          "question": "Does Annai Mira College of Engineering and Technology offer MBA and MCA?",
+          "answer": "Yes. AICTE approves an MBA with 60 seats, started in 2023, and an MCA with 60 seats, approved as a new course for 2026-27. Admission needs a TANCET 2026 mark sheet and at least 50 per cent in the qualifying degree (45 per cent for Tamil Nadu reserved categories)."
+        },
+        {
+          "question": "Does Annai Mira College of Engineering and Technology have hostels?",
+          "answer": "Yes, AMCET has separate boys' and girls' hostels on campus with four-occupancy rooms and a mess serving vegetarian and non-vegetarian food. TNEA 2026 lists room rent and mess together at about INR 1.08 lakh a year, plus INR 2,000 electricity and a INR 5,000 caution deposit."
+        },
+        {
+          "question": "Is Annai Mira College of Engineering and Technology NBA accredited?",
+          "answer": "No branch is NBA accredited according to DoTE's TNEA 2026 booklet. The college's mandatory disclosure cites a NAAC B++ grade but gives no certificate or validity date, so ask the college for the NAAC certificate before relying on it."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "AMCET - Mandatory Disclosure 2025-26",
+          "url": "https://amcet.in/wp-content/uploads/2026/03/mandatory-disclosure-2026.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "AICTE - Extension of Approval 2026-27 (AMCET)",
+          "url": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "AICTE - Approved institutes dashboard",
+          "url": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+          "kind": "recognition",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Anna University CAI - Ranipet district affiliated colleges",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Ranipet.php",
+          "kind": "recognition",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+          "url": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+          "url": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+          "url": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "DTE Tamil Nadu - TN MBA/MCA 2026-27 engineering colleges booklet",
+          "url": "https://static.tn-mbamca.com/docs/TNMBAMCA-ENGINEERING-COLLEGES-BOOKLET-2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "DTE Tamil Nadu - MCA 2026-27 information and instructions",
+          "url": "https://static.tn-mbamca.com/docs/MCA_Instructions.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "DTE Tamil Nadu - MBA 2026-27 information and instructions",
+          "url": "https://static.tn-mbamca.com/docs/MBA_Instructions.pdf?t=1781654400022",
+          "kind": "government",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Anna University - Affiliated colleges academic calendar Sep-Dec 2026",
+          "url": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+          "url": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "AMCET - Admissions",
+          "url": "https://amcet.in/admissions/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "AMCET - Courses offered",
+          "url": "https://amcet.in/academics/courses-offered/",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "AMCET - Hostel",
+          "url": "https://amcet.in/infrastructure/hostel/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "AMCET - Central library",
+          "url": "https://amcet.in/infrastructure/central-library/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "AMCET - Official website",
+          "url": "https://amcet.in/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "This record covers Annai Mira College of Engineering and Technology at Arappakkam only. The R.T. Educational Trust's other institutions are outside this record.",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "research_ready",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my AMCET eligibility",
+            "capture": [
+              "nationality and Tamil Nadu nativity or schooling",
+              "Class 12 board and MPC marks",
+              "community category",
+              "intended branch"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Get the AMCET fee for my branch",
+            "capture": [
+              "intended branch",
+              "TNEA or management quota",
+              "hostel and transport needs",
+              "concession eligibility"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my TNEA choices for AMCET",
+            "capture": [
+              "TNEA rank or expected cut-off",
+              "preferred branches",
+              "document readiness"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "amcet-be-civil-engineering",
+          "canonicalCourseSlug": "be-btech-civil-engineering",
+          "officialTitle": "B.E. Civil Engineering, Annai Mira College of Engineering and Technology",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "Annai Mira College of Engineering and Technology (AMCET) publishes no tuition figure (checked 27 October 2026): its admissions page says only that a management-quota seat is confirmed by paying 50 per cent of the fee prescribed by AICTE and Anna University, and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists AMCET's other charges: admission fee INR 1,500, caution deposit INR 5,000, hostel room rent and mess together about INR 1.08 lakh a year, hostel electricity INR 2,000 a year and college transport INR 16,000 to 30,000 a year."
+          },
+          "officialProgramUrl": "https://amcet.in/academics/courses-offered/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for every AMCET course, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1137, branch code CE) or the management quota. AICTE approves an intake of 30 for 2026-27; the course started in 2012; TNEA 2026 lists it as not NBA accredited.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Civil Engineering at Annai Mira College of Engineering and Technology (AMCET) is a four-year, eight-semester English-medium degree at Arappakkam near Vellore, awarded by Anna University. TNEA counselling on Class 12 marks fills 65 per cent of seats and the management quota 35 per cent; there is no entrance test.",
+            "eligibility": {
+              "intro": "AMCET's admissions page and the TNEA 2026 brochure set these conditions for B.E./B.Tech admission.",
+              "items": [
+                "Pass in HSC (academic or vocational stream) or an equivalent exam recognised by Anna University, with Mathematics, Physics and Chemistry",
+                "Minimum marks: 45 per cent for the OC category and 40 per cent for BC, BCM, MBC/DNC, SC/SCA and ST",
+                "TNEA nativity rules apply to government-quota seats: Tamil Nadu schooling for Classes 8 to 12, a Tamil Nadu nativity certificate, or another listed category",
+                "Tamil Nadu State Board diploma holders in engineering or technology may apply for direct second-year (lateral entry) admission"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1137 with branch CE, then confirm the tentative allotment",
+              "Download the allotment order, report to AMCET within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, submit the admission form and documents to the AMCET admission cell (hotline +91 99523 87017); seats go first come, first served after an eligibility check, and 50 per cent of the prescribed fee confirms the seat"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University's calendar for non-autonomous affiliated colleges starts first-semester classes on 2 September 2026, with end-semester exams from 22 December 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes, and AMCET is a non-autonomous affiliated college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "Annai Mira College of Engineering and Technology (AMCET) publishes no tuition figure (checked 27 October 2026): its admissions page says only that a management-quota seat is confirmed by paying 50 per cent of the fee prescribed by AICTE and Anna University, and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists AMCET's other charges: admission fee INR 1,500, caution deposit INR 5,000, hostel room rent and mess together about INR 1.08 lakh a year, hostel electricity INR 2,000 a year and college transport INR 16,000 to 30,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's Civil Engineering curriculum covering structural analysis, surveying, soil mechanics, concrete technology and transportation engineering. Anna University sets the syllabus and end-semester exams; the college runs internal assessment and internship is mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "amcet-be-computer-science-engineering",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "B.E. Computer Science and Engineering, Annai Mira College of Engineering and Technology",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "Annai Mira College of Engineering and Technology (AMCET) publishes no tuition figure (checked 27 October 2026): its admissions page says only that a management-quota seat is confirmed by paying 50 per cent of the fee prescribed by AICTE and Anna University, and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists AMCET's other charges: admission fee INR 1,500, caution deposit INR 5,000, hostel room rent and mess together about INR 1.08 lakh a year, hostel electricity INR 2,000 a year and college transport INR 16,000 to 30,000 a year."
+          },
+          "officialProgramUrl": "https://amcet.in/academics/courses-offered/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for every AMCET course, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1137, branch code CS) or the management quota. AICTE approves an intake of 120 for 2026-27; the course started in 2012; TNEA 2026 lists it as not NBA accredited.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Computer Science and Engineering at Annai Mira College of Engineering and Technology (AMCET) is a four-year, eight-semester English-medium degree at Arappakkam near Vellore, awarded by Anna University. TNEA counselling on Class 12 marks fills 65 per cent of seats and the management quota 35 per cent; there is no entrance test.",
+            "eligibility": {
+              "intro": "AMCET's admissions page and the TNEA 2026 brochure set these conditions for B.E./B.Tech admission.",
+              "items": [
+                "Pass in HSC (academic or vocational stream) or an equivalent exam recognised by Anna University, with Mathematics, Physics and Chemistry",
+                "Minimum marks: 45 per cent for the OC category and 40 per cent for BC, BCM, MBC/DNC, SC/SCA and ST",
+                "TNEA nativity rules apply to government-quota seats: Tamil Nadu schooling for Classes 8 to 12, a Tamil Nadu nativity certificate, or another listed category",
+                "Tamil Nadu State Board diploma holders in engineering or technology may apply for direct second-year (lateral entry) admission"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1137 with branch CS, then confirm the tentative allotment",
+              "Download the allotment order, report to AMCET within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, submit the admission form and documents to the AMCET admission cell (hotline +91 99523 87017); seats go first come, first served after an eligibility check, and 50 per cent of the prescribed fee confirms the seat"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University's calendar for non-autonomous affiliated colleges starts first-semester classes on 2 September 2026, with end-semester exams from 22 December 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes, and AMCET is a non-autonomous affiliated college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "Annai Mira College of Engineering and Technology (AMCET) publishes no tuition figure (checked 27 October 2026): its admissions page says only that a management-quota seat is confirmed by paying 50 per cent of the fee prescribed by AICTE and Anna University, and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists AMCET's other charges: admission fee INR 1,500, caution deposit INR 5,000, hostel room rent and mess together about INR 1.08 lakh a year, hostel electricity INR 2,000 a year and college transport INR 16,000 to 30,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's Computer Science and Engineering curriculum covering programming, data structures, operating systems, database management, computer networks and software engineering. Anna University sets the syllabus and end-semester exams; the college runs internal assessment and internship is mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "amcet-be-computer-science-engineering-ai-ml",
+          "canonicalCourseSlug": "be-btech-artificial-intelligence-machine-learning",
+          "officialTitle": "B.E. Computer Science and Engineering (Artificial Intelligence and Machine Learning), Annai Mira College of Engineering and Technology",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "Annai Mira College of Engineering and Technology (AMCET) publishes no tuition figure (checked 27 October 2026): its admissions page says only that a management-quota seat is confirmed by paying 50 per cent of the fee prescribed by AICTE and Anna University, and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists AMCET's other charges: admission fee INR 1,500, caution deposit INR 5,000, hostel room rent and mess together about INR 1.08 lakh a year, hostel electricity INR 2,000 a year and college transport INR 16,000 to 30,000 a year."
+          },
+          "officialProgramUrl": "https://amcet.in/academics/courses-offered/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for every AMCET course, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1137, branch code AM) or the management quota. AICTE approves an intake of 60 for 2026-27; the course started in 2026; TNEA 2026 lists it as not NBA accredited.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Computer Science and Engineering (Artificial Intelligence and Machine Learning) at Annai Mira College of Engineering and Technology (AMCET) is a four-year, eight-semester English-medium degree at Arappakkam near Vellore, awarded by Anna University. TNEA counselling on Class 12 marks fills 65 per cent of seats and the management quota 35 per cent; there is no entrance test. 2026 is its first intake.",
+            "eligibility": {
+              "intro": "AMCET's admissions page and the TNEA 2026 brochure set these conditions for B.E./B.Tech admission.",
+              "items": [
+                "Pass in HSC (academic or vocational stream) or an equivalent exam recognised by Anna University, with Mathematics, Physics and Chemistry",
+                "Minimum marks: 45 per cent for the OC category and 40 per cent for BC, BCM, MBC/DNC, SC/SCA and ST",
+                "TNEA nativity rules apply to government-quota seats: Tamil Nadu schooling for Classes 8 to 12, a Tamil Nadu nativity certificate, or another listed category",
+                "Tamil Nadu State Board diploma holders in engineering or technology may apply for direct second-year (lateral entry) admission"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1137 with branch AM, then confirm the tentative allotment",
+              "Download the allotment order, report to AMCET within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, submit the admission form and documents to the AMCET admission cell (hotline +91 99523 87017); seats go first come, first served after an eligibility check, and 50 per cent of the prescribed fee confirms the seat"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University's calendar for non-autonomous affiliated colleges starts first-semester classes on 2 September 2026, with end-semester exams from 22 December 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes, and AMCET is a non-autonomous affiliated college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "Annai Mira College of Engineering and Technology (AMCET) publishes no tuition figure (checked 27 October 2026): its admissions page says only that a management-quota seat is confirmed by paying 50 per cent of the fee prescribed by AICTE and Anna University, and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists AMCET's other charges: admission fee INR 1,500, caution deposit INR 5,000, hostel room rent and mess together about INR 1.08 lakh a year, hostel electricity INR 2,000 a year and college transport INR 16,000 to 30,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's curriculum in computer science with artificial intelligence and machine learning, covering Python, data structures, machine learning, deep learning and data analytics. Anna University sets the syllabus and end-semester exams; the college runs internal assessment and internship is mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "amcet-be-electrical-electronics-engineering",
+          "canonicalCourseSlug": "be-btech-electrical-electronics-engineering",
+          "officialTitle": "B.E. Electrical and Electronics Engineering, Annai Mira College of Engineering and Technology",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "Annai Mira College of Engineering and Technology (AMCET) publishes no tuition figure (checked 27 October 2026): its admissions page says only that a management-quota seat is confirmed by paying 50 per cent of the fee prescribed by AICTE and Anna University, and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists AMCET's other charges: admission fee INR 1,500, caution deposit INR 5,000, hostel room rent and mess together about INR 1.08 lakh a year, hostel electricity INR 2,000 a year and college transport INR 16,000 to 30,000 a year."
+          },
+          "officialProgramUrl": "https://amcet.in/academics/courses-offered/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for every AMCET course, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1137, branch code EE) or the management quota. AICTE approves an intake of 30 for 2026-27; the course started in 2012; TNEA 2026 lists it as not NBA accredited.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Electrical and Electronics Engineering at Annai Mira College of Engineering and Technology (AMCET) is a four-year, eight-semester English-medium degree at Arappakkam near Vellore, awarded by Anna University. TNEA counselling on Class 12 marks fills 65 per cent of seats and the management quota 35 per cent; there is no entrance test.",
+            "eligibility": {
+              "intro": "AMCET's admissions page and the TNEA 2026 brochure set these conditions for B.E./B.Tech admission.",
+              "items": [
+                "Pass in HSC (academic or vocational stream) or an equivalent exam recognised by Anna University, with Mathematics, Physics and Chemistry",
+                "Minimum marks: 45 per cent for the OC category and 40 per cent for BC, BCM, MBC/DNC, SC/SCA and ST",
+                "TNEA nativity rules apply to government-quota seats: Tamil Nadu schooling for Classes 8 to 12, a Tamil Nadu nativity certificate, or another listed category",
+                "Tamil Nadu State Board diploma holders in engineering or technology may apply for direct second-year (lateral entry) admission"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1137 with branch EE, then confirm the tentative allotment",
+              "Download the allotment order, report to AMCET within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, submit the admission form and documents to the AMCET admission cell (hotline +91 99523 87017); seats go first come, first served after an eligibility check, and 50 per cent of the prescribed fee confirms the seat"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University's calendar for non-autonomous affiliated colleges starts first-semester classes on 2 September 2026, with end-semester exams from 22 December 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes, and AMCET is a non-autonomous affiliated college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "Annai Mira College of Engineering and Technology (AMCET) publishes no tuition figure (checked 27 October 2026): its admissions page says only that a management-quota seat is confirmed by paying 50 per cent of the fee prescribed by AICTE and Anna University, and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists AMCET's other charges: admission fee INR 1,500, caution deposit INR 5,000, hostel room rent and mess together about INR 1.08 lakh a year, hostel electricity INR 2,000 a year and college transport INR 16,000 to 30,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's Electrical and Electronics Engineering curriculum covering circuits, electrical machines, power systems, power electronics and control systems. Anna University sets the syllabus and end-semester exams; the college runs internal assessment and internship is mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "amcet-be-electronics-communication-engineering",
+          "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+          "officialTitle": "B.E. Electronics and Communication Engineering, Annai Mira College of Engineering and Technology",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "Annai Mira College of Engineering and Technology (AMCET) publishes no tuition figure (checked 27 October 2026): its admissions page says only that a management-quota seat is confirmed by paying 50 per cent of the fee prescribed by AICTE and Anna University, and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists AMCET's other charges: admission fee INR 1,500, caution deposit INR 5,000, hostel room rent and mess together about INR 1.08 lakh a year, hostel electricity INR 2,000 a year and college transport INR 16,000 to 30,000 a year."
+          },
+          "officialProgramUrl": "https://amcet.in/academics/courses-offered/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for every AMCET course, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1137, branch code EC) or the management quota. AICTE approves an intake of 60 for 2026-27; the course started in 2012; TNEA 2026 lists it as not NBA accredited.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Electronics and Communication Engineering at Annai Mira College of Engineering and Technology (AMCET) is a four-year, eight-semester English-medium degree at Arappakkam near Vellore, awarded by Anna University. TNEA counselling on Class 12 marks fills 65 per cent of seats and the management quota 35 per cent; there is no entrance test.",
+            "eligibility": {
+              "intro": "AMCET's admissions page and the TNEA 2026 brochure set these conditions for B.E./B.Tech admission.",
+              "items": [
+                "Pass in HSC (academic or vocational stream) or an equivalent exam recognised by Anna University, with Mathematics, Physics and Chemistry",
+                "Minimum marks: 45 per cent for the OC category and 40 per cent for BC, BCM, MBC/DNC, SC/SCA and ST",
+                "TNEA nativity rules apply to government-quota seats: Tamil Nadu schooling for Classes 8 to 12, a Tamil Nadu nativity certificate, or another listed category",
+                "Tamil Nadu State Board diploma holders in engineering or technology may apply for direct second-year (lateral entry) admission"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1137 with branch EC, then confirm the tentative allotment",
+              "Download the allotment order, report to AMCET within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, submit the admission form and documents to the AMCET admission cell (hotline +91 99523 87017); seats go first come, first served after an eligibility check, and 50 per cent of the prescribed fee confirms the seat"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University's calendar for non-autonomous affiliated colleges starts first-semester classes on 2 September 2026, with end-semester exams from 22 December 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes, and AMCET is a non-autonomous affiliated college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "Annai Mira College of Engineering and Technology (AMCET) publishes no tuition figure (checked 27 October 2026): its admissions page says only that a management-quota seat is confirmed by paying 50 per cent of the fee prescribed by AICTE and Anna University, and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists AMCET's other charges: admission fee INR 1,500, caution deposit INR 5,000, hostel room rent and mess together about INR 1.08 lakh a year, hostel electricity INR 2,000 a year and college transport INR 16,000 to 30,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's Electronics and Communication Engineering curriculum covering circuits, signals and systems, digital electronics, communication systems and VLSI. Anna University sets the syllabus and end-semester exams; the college runs internal assessment and internship is mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "amcet-be-mechanical-engineering",
+          "canonicalCourseSlug": "be-btech-mechanical-engineering",
+          "officialTitle": "B.E. Mechanical Engineering, Annai Mira College of Engineering and Technology",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "Annai Mira College of Engineering and Technology (AMCET) publishes no tuition figure (checked 27 October 2026): its admissions page says only that a management-quota seat is confirmed by paying 50 per cent of the fee prescribed by AICTE and Anna University, and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists AMCET's other charges: admission fee INR 1,500, caution deposit INR 5,000, hostel room rent and mess together about INR 1.08 lakh a year, hostel electricity INR 2,000 a year and college transport INR 16,000 to 30,000 a year."
+          },
+          "officialProgramUrl": "https://amcet.in/academics/courses-offered/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for every AMCET course, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1137, branch code ME) or the management quota. AICTE approves an intake of 60 for 2026-27; the course started in 2012; TNEA 2026 lists it as not NBA accredited.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Mechanical Engineering at Annai Mira College of Engineering and Technology (AMCET) is a four-year, eight-semester English-medium degree at Arappakkam near Vellore, awarded by Anna University. TNEA counselling on Class 12 marks fills 65 per cent of seats and the management quota 35 per cent; there is no entrance test.",
+            "eligibility": {
+              "intro": "AMCET's admissions page and the TNEA 2026 brochure set these conditions for B.E./B.Tech admission.",
+              "items": [
+                "Pass in HSC (academic or vocational stream) or an equivalent exam recognised by Anna University, with Mathematics, Physics and Chemistry",
+                "Minimum marks: 45 per cent for the OC category and 40 per cent for BC, BCM, MBC/DNC, SC/SCA and ST",
+                "TNEA nativity rules apply to government-quota seats: Tamil Nadu schooling for Classes 8 to 12, a Tamil Nadu nativity certificate, or another listed category",
+                "Tamil Nadu State Board diploma holders in engineering or technology may apply for direct second-year (lateral entry) admission"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1137 with branch ME, then confirm the tentative allotment",
+              "Download the allotment order, report to AMCET within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, submit the admission form and documents to the AMCET admission cell (hotline +91 99523 87017); seats go first come, first served after an eligibility check, and 50 per cent of the prescribed fee confirms the seat"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University's calendar for non-autonomous affiliated colleges starts first-semester classes on 2 September 2026, with end-semester exams from 22 December 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes, and AMCET is a non-autonomous affiliated college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "Annai Mira College of Engineering and Technology (AMCET) publishes no tuition figure (checked 27 October 2026): its admissions page says only that a management-quota seat is confirmed by paying 50 per cent of the fee prescribed by AICTE and Anna University, and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists AMCET's other charges: admission fee INR 1,500, caution deposit INR 5,000, hostel room rent and mess together about INR 1.08 lakh a year, hostel electricity INR 2,000 a year and college transport INR 16,000 to 30,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's Mechanical Engineering curriculum covering thermodynamics, fluid mechanics, manufacturing processes, machine design and CAD/CAM. Anna University sets the syllabus and end-semester exams; the college runs internal assessment and internship is mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "amcet-btech-artificial-intelligence-data-science",
+          "canonicalCourseSlug": "be-btech-data-science",
+          "officialTitle": "B.Tech. Artificial Intelligence and Data Science, Annai Mira College of Engineering and Technology",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "Annai Mira College of Engineering and Technology (AMCET) publishes no tuition figure (checked 27 October 2026): its admissions page says only that a management-quota seat is confirmed by paying 50 per cent of the fee prescribed by AICTE and Anna University, and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists AMCET's other charges: admission fee INR 1,500, caution deposit INR 5,000, hostel room rent and mess together about INR 1.08 lakh a year, hostel electricity INR 2,000 a year and college transport INR 16,000 to 30,000 a year."
+          },
+          "officialProgramUrl": "https://amcet.in/academics/courses-offered/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for every AMCET course, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1137, branch code AD) or the management quota. AICTE approves an intake of 120 for 2026-27; the course started in 2021; TNEA 2026 lists it as not NBA accredited.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.Tech. Artificial Intelligence and Data Science at Annai Mira College of Engineering and Technology (AMCET) is a four-year, eight-semester English-medium degree at Arappakkam near Vellore, awarded by Anna University. TNEA counselling on Class 12 marks fills 65 per cent of seats and the management quota 35 per cent; there is no entrance test.",
+            "eligibility": {
+              "intro": "AMCET's admissions page and the TNEA 2026 brochure set these conditions for B.E./B.Tech admission.",
+              "items": [
+                "Pass in HSC (academic or vocational stream) or an equivalent exam recognised by Anna University, with Mathematics, Physics and Chemistry",
+                "Minimum marks: 45 per cent for the OC category and 40 per cent for BC, BCM, MBC/DNC, SC/SCA and ST",
+                "TNEA nativity rules apply to government-quota seats: Tamil Nadu schooling for Classes 8 to 12, a Tamil Nadu nativity certificate, or another listed category",
+                "Tamil Nadu State Board diploma holders in engineering or technology may apply for direct second-year (lateral entry) admission"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1137 with branch AD, then confirm the tentative allotment",
+              "Download the allotment order, report to AMCET within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, submit the admission form and documents to the AMCET admission cell (hotline +91 99523 87017); seats go first come, first served after an eligibility check, and 50 per cent of the prescribed fee confirms the seat"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University's calendar for non-autonomous affiliated colleges starts first-semester classes on 2 September 2026, with end-semester exams from 22 December 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes, and AMCET is a non-autonomous affiliated college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "Annai Mira College of Engineering and Technology (AMCET) publishes no tuition figure (checked 27 October 2026): its admissions page says only that a management-quota seat is confirmed by paying 50 per cent of the fee prescribed by AICTE and Anna University, and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists AMCET's other charges: admission fee INR 1,500, caution deposit INR 5,000, hostel room rent and mess together about INR 1.08 lakh a year, hostel electricity INR 2,000 a year and college transport INR 16,000 to 30,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's Artificial Intelligence and Data Science curriculum covering programming, statistics, machine learning, big data analytics and deep learning. Anna University sets the syllabus and end-semester exams; the college runs internal assessment and internship is mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "amcet-btech-information-technology",
+          "canonicalCourseSlug": "be-btech-information-technology",
+          "officialTitle": "B.Tech. Information Technology, Annai Mira College of Engineering and Technology",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "Annai Mira College of Engineering and Technology (AMCET) publishes no tuition figure (checked 27 October 2026): its admissions page says only that a management-quota seat is confirmed by paying 50 per cent of the fee prescribed by AICTE and Anna University, and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists AMCET's other charges: admission fee INR 1,500, caution deposit INR 5,000, hostel room rent and mess together about INR 1.08 lakh a year, hostel electricity INR 2,000 a year and college transport INR 16,000 to 30,000 a year."
+          },
+          "officialProgramUrl": "https://amcet.in/academics/courses-offered/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for every AMCET course, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 1137, branch code IT) or the management quota. AICTE approves an intake of 60 for 2026-27; the course started in 2023; TNEA 2026 lists it as not NBA accredited.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.Tech. Information Technology at Annai Mira College of Engineering and Technology (AMCET) is a four-year, eight-semester English-medium degree at Arappakkam near Vellore, awarded by Anna University. TNEA counselling on Class 12 marks fills 65 per cent of seats and the management quota 35 per cent; there is no entrance test.",
+            "eligibility": {
+              "intro": "AMCET's admissions page and the TNEA 2026 brochure set these conditions for B.E./B.Tech admission.",
+              "items": [
+                "Pass in HSC (academic or vocational stream) or an equivalent exam recognised by Anna University, with Mathematics, Physics and Chemistry",
+                "Minimum marks: 45 per cent for the OC category and 40 per cent for BC, BCM, MBC/DNC, SC/SCA and ST",
+                "TNEA nativity rules apply to government-quota seats: Tamil Nadu schooling for Classes 8 to 12, a Tamil Nadu nativity certificate, or another listed category",
+                "Tamil Nadu State Board diploma holders in engineering or technology may apply for direct second-year (lateral entry) admission"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 1137 with branch IT, then confirm the tentative allotment",
+              "Download the allotment order, report to AMCET within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, submit the admission form and documents to the AMCET admission cell (hotline +91 99523 87017); seats go first come, first served after an eligibility check, and 50 per cent of the prescribed fee confirms the seat"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University's calendar for non-autonomous affiliated colleges starts first-semester classes on 2 September 2026, with end-semester exams from 22 December 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes, and AMCET is a non-autonomous affiliated college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "Annai Mira College of Engineering and Technology (AMCET) publishes no tuition figure (checked 27 October 2026): its admissions page says only that a management-quota seat is confirmed by paying 50 per cent of the fee prescribed by AICTE and Anna University, and the TNEA 2026 college booklet prints no college-wise tuition, so tuition is on request from the college. Tamil Nadu's fee committee fixes tuition for self-financing engineering colleges. TNEA 2026 lists AMCET's other charges: admission fee INR 1,500, caution deposit INR 5,000, hostel room rent and mess together about INR 1.08 lakh a year, hostel electricity INR 2,000 a year and college transport INR 16,000 to 30,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's Information Technology curriculum covering programming, data structures, database systems, web technologies, networks and cloud computing. Anna University sets the syllabus and end-semester exams; the college runs internal assessment and internship is mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "amcet-mba",
+          "canonicalCourseSlug": "mba",
+          "officialTitle": "Master of Business Administration (MBA), Annai Mira College of Engineering and Technology",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "Annai Mira College of Engineering and Technology (AMCET) publishes no tuition figure for its postgraduate programmes (checked 27 October 2026); the 2026-27 Tamil Nadu MBA/MCA booklet states that tuition is collected as per Government norms without printing an amount, so tuition is on request. The same booklet lists an admission fee of INR 1,500, a caution deposit of INR 5,000, hostel room rent and mess together about INR 1.08 lakh a year and hostel electricity of INR 2,000 a year."
+          },
+          "officialProgramUrl": "https://amcet.in/academics/courses-offered/mba/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian graduates who meet the Tamil Nadu MBA 2026-27 counselling rules and took TANCET 2026 (MBA)",
+              "OCI/PIO card holders who are natives of Tamil Nadu (open category in state MBA/MCA counselling)",
+              "Indian graduates applying to the college for management-quota seats"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for the MBA, so foreign nationals cannot be admitted on a student visa.",
+              "State counselling seats need a TANCET 2026 (MBA) mark sheet; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Communal reservation applies only to Tamil Nadu native candidates."
+            ],
+            "notes": "AICTE approves an intake of 60 for 2026-27 and the Tamil Nadu MBA/MCA 2026-27 booklet lists AMCET (college code 1137) with MBA started in 2023.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The MBA at Annai Mira College of Engineering and Technology (AMCET) is a two-year, four-semester English-medium degree at Arappakkam near Vellore, awarded by Anna University. Seats are filled through Tamil Nadu's MBA counselling on TANCET scores and by the college.",
+            "eligibility": {
+              "intro": "The Tamil Nadu MBA 2026-27 counselling instructions set these conditions for state-quota seats at AMCET.",
+              "items": [
+                "A recognised bachelor's degree of at least three years",
+                "At least 50 per cent in the qualifying degree (45 per cent for Tamil Nadu BC, BCM, MBC/DNC, SC, SCA and ST candidates)",
+                "10+2+3/4/5, 10 + 3-year diploma + degree, lateral-entry diploma + degree and AMIE with two years' experience are accepted patterns",
+                "TANCET 2026 (MBA) mark sheet issued by Anna University",
+                "Degrees taken by distance or weekend B.E./B.Tech study, or without Class 10 and 12 or a diploma, are not eligible"
+              ]
+            },
+            "applicationSteps": [
+              "Take TANCET 2026 (MBA), conducted by Anna University, and download the mark sheet",
+              "Register online for Tamil Nadu MBA 2026-27 counselling and upload degree, school and community documents",
+              "Choose college code 1137 (AMCET) in counselling and confirm the allotment",
+              "Report to the college with the allotment order and pay the fees; for a management-quota seat, apply to the college directly through its online PG application"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Bachelor's degree certificate and mark sheets for all semesters",
+                "Class 10 and Class 12 (or diploma) mark sheets",
+                "Transfer certificate"
+              ],
+              "application": [
+                "TANCET 2026 (MBA) mark sheet",
+                "Community certificate where claiming reservation",
+                "Nativity certificate where applicable"
+              ]
+            },
+            "deadlinesNote": "Anna University's calendar for affiliated colleges starts first-semester MBA classes on 2 September 2026, with end-semester exams from 22 December 2026."
+          },
+          "medium": "English",
+          "mediumNote": "AMCET is an affiliated college; Anna University's MBA curriculum is taught in English.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "Annai Mira College of Engineering and Technology (AMCET) publishes no tuition figure for its postgraduate programmes (checked 27 October 2026); the 2026-27 Tamil Nadu MBA/MCA booklet states that tuition is collected as per Government norms without printing an amount, so tuition is on request. The same booklet lists an admission fee of INR 1,500, a caution deposit of INR 5,000, hostel room rent and mess together about INR 1.08 lakh a year and hostel electricity of INR 2,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-2 (4 semesters)",
+              "language": "English",
+              "details": "AMCET's MBA runs Anna University's four-semester curriculum: statistics, managerial economics, accounting, financial and human resource management, marketing, business analytics and strategic management, with professional electives, a summer internship and a project in the final semester."
+            }
+          ]
+        },
+        {
+          "slug": "amcet-mca",
+          "canonicalCourseSlug": "mca",
+          "officialTitle": "Master of Computer Applications (MCA), Annai Mira College of Engineering and Technology",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "Annai Mira College of Engineering and Technology (AMCET) publishes no tuition figure for its postgraduate programmes (checked 27 October 2026); the 2026-27 Tamil Nadu MBA/MCA booklet states that tuition is collected as per Government norms without printing an amount, so tuition is on request. The same booklet lists an admission fee of INR 1,500, a caution deposit of INR 5,000, hostel room rent and mess together about INR 1.08 lakh a year and hostel electricity of INR 2,000 a year."
+          },
+          "officialProgramUrl": "https://amcet.in/academics/courses-offered/mca-master-of-computer-applications/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian graduates who meet the Tamil Nadu MCA 2026-27 counselling rules and took TANCET 2026 (MCA)",
+              "OCI/PIO card holders who are natives of Tamil Nadu (open category in state MBA/MCA counselling)",
+              "Indian graduates applying to the college for management-quota seats"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows NRI and international-student approval as No for the MCA, so foreign nationals cannot be admitted on a student visa.",
+              "State counselling seats need a TANCET 2026 (MCA) mark sheet; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Communal reservation applies only to Tamil Nadu native candidates."
+            ],
+            "notes": "AICTE approves an intake of 60 for 2026-27 and the Tamil Nadu MBA/MCA 2026-27 booklet lists AMCET (college code 1137) with MCA started in 2026.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The MCA at Annai Mira College of Engineering and Technology (AMCET) is a two-year, four-semester English-medium degree at Arappakkam near Vellore, awarded by Anna University. 2026 is its first intake. Seats are filled through Tamil Nadu's MCA counselling on TANCET scores and by the college.",
+            "eligibility": {
+              "intro": "The Tamil Nadu MCA 2026-27 counselling instructions set these conditions for state-quota seats at AMCET.",
+              "items": [
+                "A pass in B.C.A., B.Sc. (Computer Science), B.Sc. (IT), B.E. (CSE), B.Tech. (IT) or an equivalent degree, or any graduation degree with Mathematics at Class 12 or degree level",
+                "At least 50 per cent in the qualifying degree (45 per cent for Tamil Nadu BC, BCM, MBC/DNC, SC, SCA and ST candidates)",
+                "10+2+3/4/5, 10 + 3-year diploma + degree, lateral-entry diploma + degree and AMIE with two years' experience are accepted patterns",
+                "TANCET 2026 (MCA) mark sheet issued by Anna University",
+                "Degrees taken by distance or weekend B.E./B.Tech study, or without Class 10 and 12 or a diploma, are not eligible"
+              ]
+            },
+            "applicationSteps": [
+              "Take TANCET 2026 (MCA), conducted by Anna University, and download the mark sheet",
+              "Register online for Tamil Nadu MCA 2026-27 counselling and upload degree, school and community documents",
+              "Choose college code 1137 (AMCET) in counselling and confirm the allotment",
+              "Report to the college with the allotment order and pay the fees; for a management-quota seat, apply to the college directly through its online PG application"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Bachelor's degree certificate and mark sheets for all semesters",
+                "Class 10 and Class 12 (or diploma) mark sheets",
+                "Transfer certificate"
+              ],
+              "application": [
+                "TANCET 2026 (MCA) mark sheet",
+                "Community certificate where claiming reservation",
+                "Nativity certificate where applicable"
+              ]
+            },
+            "deadlinesNote": "Tamil Nadu's 2026-27 MCA counselling and Anna University's first-semester start of 2 September 2026 have passed; later seats depend on the college's own admission cell."
+          },
+          "medium": "English",
+          "mediumNote": "AMCET is an affiliated college; Anna University's MCA curriculum is taught in English.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "Annai Mira College of Engineering and Technology (AMCET) publishes no tuition figure for its postgraduate programmes (checked 27 October 2026); the 2026-27 Tamil Nadu MBA/MCA booklet states that tuition is collected as per Government norms without printing an amount, so tuition is on request. The same booklet lists an admission fee of INR 1,500, a caution deposit of INR 5,000, hostel room rent and mess together about INR 1.08 lakh a year and hostel electricity of INR 2,000 a year.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-2 (4 semesters)",
+              "language": "English",
+              "details": "AMCET's MCA runs Anna University's four-semester curriculum: advanced data structures, object-oriented software engineering, Python, full-stack web development, advanced databases, machine learning, IoT, cloud computing and cyber security, with a summer internship and a project."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "publicField": "identity",
+      "claimText": "AICTE EoA 2026-27: Annai Mira College of Engineering and Technology, Arappakkam Village, Arcot Road, Walaja Taluk, Vellore Dist., Tamil Nadu 632517; trust R.T. Educational Trust, 12/A R.T. Complex, Arni Road, Sankaranpalayam, Vellore; permanent ID 1-404537421; Private-Self Financing; established 2012; affiliating body Anna University, Chennai; NRI and international-student approval No for every course.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (AMCET)",
+      "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AICTE dashboard facilities.aicte-india.org not queried; the 2026-27 Extension of Approval letter (F.No. Southern/1-46216547477/2026/EOA, 10-Apr-2026, printed 1 June 2026) is the primary AICTE record, saved in research/india-source-bundles/annai-mira-college-of-engineering-and-technology/eoa-26-27.pdf."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "publicField": "identity",
+      "claimText": "Anna University CAI Ranipet district list: Annai Mira College of Engineering and Technology, examination code 5135, TNEA code 1137.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - Ranipet district affiliated colleges",
+      "sourceUrl": "https://www.annauniv.edu/cai/District%20wise/district/Ranipet.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "The listing's college PDF (AnnaiMiraCollegeofEng&Tech.pdf) returned 404 on 2026-10-27. Ledger alias check 2026-10-27: no row for AMCET, Annai Mira, Arappakkam or AICTE 1-404537421."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "publicField": "identity",
+      "claimText": "Not autonomous: TNEA 2026 booklet (1137) autonomous status No, minority status No; TN MBA/MCA 2026-27 booklet autonomous status No.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "Excerpt: research/india-source-bundles/annai-mira-college-of-engineering-and-technology/tnea-colleges-2026-excerpt-1137.txt"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "publicField": "establishedYear",
+      "claimText": "Year of establishment 2012 (AICTE EoA 2026-27; mandatory disclosure; TN MBA/MCA booklet; TNEA 2026 CE, EC, EE, CS, ME start year 2012).",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (AMCET)",
+      "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "publicField": "recognitionBadges",
+      "claimText": "AICTE EoA 2026-27 intake: AI&DS 120, Civil 30, CSE 120, CSE (AI&ML) 60 (new course), EEE 30, ECE 60, IT 60, Mechanical 60, MBA 60, MCA 60 (new course); all under Anna University, Chennai; NRI No.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (AMCET)",
+      "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AICTE dashboard facilities.aicte-india.org not queried; the 2026-27 Extension of Approval letter (F.No. Southern/1-46216547477/2026/EOA, 10-Apr-2026, printed 1 June 2026) is the primary AICTE record, saved in research/india-source-bundles/annai-mira-college-of-engineering-and-technology/eoa-26-27.pdf."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "publicField": "recognitionBadges",
+      "claimText": "TNEA 2026 booklet p.30 college 1137: Annai Mira College of Engineering and Technology, Arcot Road, Arappakkam Village, Walaja Taluk, Ranipet District 632517; principal Dr T K Gopinathan; branches EC 60, EE 30, IT 60, CE 30, AD 120, CS 120, ME 60, AM 60 (2026); all NBA No.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "publicField": "summary",
+      "claimText": "Mandatory disclosure 2025-26: R.T. Educational Trust, self-financing, non-minority, established 2012, affiliated to Anna University; programmes B.E. Civil, CSE, EEE, ECE, Mechanical, B.Tech AI&DS, IT, MBA. Website about page: 25 acres, 3 academic blocks, 500-seat auditorium.",
+      "status": "verified",
+      "sourceLabel": "AMCET - Mandatory Disclosure 2025-26",
+      "sourceUrl": "https://amcet.in/wp-content/uploads/2026/03/mandatory-disclosure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "About page: https://amcet.in/about-amcet/"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "publicField": "campusLifestyle",
+      "claimText": "Library page: 866 sq m, Koha-based automation, DELNET, NPTEL and NDL memberships, 89 national and 73 international journals. Laboratory page lists labs for ECE, EEE, Mechanical, CSE, AI&DS and Civil. Sports page: indoor stadium, outdoor cricket, football, volleyball, basketball; Mira Advanced Gym.",
+      "status": "verified",
+      "sourceLabel": "AMCET - Central library",
+      "sourceUrl": "https://amcet.in/infrastructure/central-library/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "Book totals on the library page do not reconcile with its department table and are not published. Labs: https://amcet.in/infrastructure/laboratories/. Acreage 25 comes from the About page https://amcet.in/about-amcet/."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "publicField": "cityProfile",
+      "claimText": "TNEA 2026 booklet (1137): NH 46 Chennai Bengaluru National Highways, Arappakkam; taluk Walaja; district Ranipet; 12 km from district HQ; nearest railway station Katpadi, 10 km. TN MBA/MCA booklet gives 12 km to Katpadi.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AICTE prints Vellore district; TNEA and the college print Ranipet."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "publicField": "practicalExposure",
+      "claimText": "Placement records page lists 27 recruiters in a 2024 table including HCL 48 offers, Infosys 25, Sundaram Fasteners 44; AICTE EoA instructions: internship mandatory.",
+      "status": "verified",
+      "sourceLabel": "AMCET - Placement records",
+      "sourceUrl": "https://amcet.in/placements/placement-records/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "Self-reported; offer count and package units not independently verifiable and not published as figures. The site also claims about 80 per cent placement; not published."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "publicField": "hostelOverview",
+      "claimText": "Hostel page: separate boys' and girls' hostels, four-occupancy rooms, Wi-Fi, laundry, RO water, 24-hour security desk. TNEA 2026 booklet (1137): hostel boys and girls, permanent; mess 72,000 and room rent 36,000, electricity 2,000, caution deposit 5,000, admission fee 1,500, transport 16,000-30,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "TN MBA/MCA 2026-27 booklet prints room rent 72,000 and mess 36,000 (columns reversed against TNEA); the total of INR 1.08 lakh agrees, so only the combined figure is published. Hostel page: https://amcet.in/infrastructure/hostel/"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "publicField": "dietarySupport",
+      "claimText": "Hostel page: mess serves vegetarian and non-vegetarian food; breakfast 7:15-8:25, lunch 12:30-2:00, tea 4:30-5:30, dinner 7:30-8:30, study hour 8:30-10:00. TNEA 2026: type of mess both.",
+      "status": "verified",
+      "sourceLabel": "AMCET - Hostel",
+      "sourceUrl": "https://amcet.in/infrastructure/hostel/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "publicField": "safetyOverview",
+      "claimText": "Website lists anti-ragging committee and squad, women grievance, SC/ST and internal complaints committees; hostel page: 24-hour security desk; TNEA 2026 anti-ragging phone 9443304963.",
+      "status": "verified",
+      "sourceLabel": "AMCET - Hostel",
+      "sourceUrl": "https://amcet.in/infrastructure/hostel/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "Committees: https://amcet.in/wp-content/uploads/2026/03/mandatory-disclosure-2026.pdf"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "publicField": "studentSupport",
+      "claimText": "Website about page: Centre for Training and Placement, higher education centre, personality development centre, entrepreneurship development cell (startup club, Institution's Innovation Council), students grievance and redressal committee; Mira Merit Scholarship page: annual Academic Excellence awards since 2016, amounts not stated.",
+      "status": "verified",
+      "sourceLabel": "AMCET - About AMCET",
+      "sourceUrl": "https://amcet.in/about-amcet/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "Scholarship page: https://amcet.in/beyond-classroom/mira-merit-scholarship/"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "publicField": "whyChoose",
+      "claimText": "TNEA 2026 booklet: college 1137, Katpadi railway station 10 km; AICTE EoA 2026-27: eight B.E./B.Tech branches, MBA, MCA. Transport facility Yes (16,000-30,000).",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (AMCET)",
+      "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "publicField": "thingsToConsider",
+      "claimText": "Mandatory disclosure 2025-26 states 'NAAC B++' without certificate, cycle or validity date; the NAAC page on amcet.in gives no grade; TNEA 2026 marks all AMCET branches NBA No. Fee: admissions page gives no tuition amount.",
+      "status": "verified",
+      "sourceLabel": "AMCET - Mandatory Disclosure 2025-26",
+      "sourceUrl": "https://amcet.in/wp-content/uploads/2026/03/mandatory-disclosure-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "NAAC grade not verified on NAAC's list. Not published as a recognition badge."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "publicField": "thingsToConsider",
+      "claimText": "AICTE EoA 2026-27 intakes: Civil 30, EEE 30, Mechanical 60; CSE (AI&ML) and MCA marked as approved new courses (2025-26 intake 0).",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (AMCET)",
+      "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "publicField": "bestFitFor",
+      "claimText": "AICTE EoA 2026-27 intakes: AI&DS 120, CSE 120, IT 60, CSE (AI&ML) 60 (total 360) of 480 B.E./B.Tech places (adding Civil 30, EEE 30, ECE 60, Mechanical 60).",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (AMCET)",
+      "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "publicField": "faq",
+      "claimText": "TNEA 2026 schedule: registration 03.05.2026 to 05.06.2026; general counselling 20.07.2026 to 30.08.2026. Brochure: registration fee INR 500 (INR 250 SC/SCA/ST); report to college within 5 days; OCI/PIO natives of Tamil Nadu eligible except those born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "Brochure: https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "publicField": "faq",
+      "claimText": "Anna University calendar for non-autonomous affiliated colleges, I semester Sep-Dec 2026 (B.E./B.Tech/B.Arch, MBA (FT), MCA): classes commence 2 September 2026; end-semester examinations begin 22 December 2026.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Affiliated colleges academic calendar Sep-Dec 2026",
+      "sourceUrl": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "Read from the copy saved for bundle 0359 at research/india-source-bundles/tagore-engineering-college/au-cal.txt."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "publicField": "faq",
+      "claimText": "AMCET admissions page: government quota 65% (39 of 60 seats) through DOTE single-window counselling; management quota 35% direct admission, first-come first-served after eligibility check, 50% of the AICTE/Anna University prescribed fee confirms the seat; TNEA code 1137.",
+      "status": "verified",
+      "sourceLabel": "AMCET - Admissions",
+      "sourceUrl": "https://amcet.in/admissions/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "The page states 60 seats for each branch, older than AICTE EoA 2026-27, which is used for intake."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-civil-engineering",
+      "publicField": "intake",
+      "claimText": "AICTE EoA 2026-27 approves Civil Engineering (Anna University, Chennai) with intake 30 for 2026-27; TNEA 2026 college booklet, college 1137, branch CE: year of starting 2012; NBA accredited No.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (AMCET)",
+      "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AICTE dashboard facilities.aicte-india.org not queried; the 2026-27 Extension of Approval letter (F.No. Southern/1-46216547477/2026/EOA, 10-Apr-2026, printed 1 June 2026) is the primary AICTE record, saved in research/india-source-bundles/annai-mira-college-of-engineering-and-technology/eoa-26-27.pdf. TNEA: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-civil-engineering",
+      "publicField": "fee",
+      "claimText": "AMCET admissions page: management quota seat confirmed by paying 50% of the fee prescribed by AICTE and Anna University, no amount. TNEA 2026 booklet prints no tuition but lists admission fee 1,500, caution deposit 5,000, room rent 36,000, electricity 2,000, mess 72,000 and transport 16,000-30,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AMCET admissions page (https://amcet.in/admissions/) gives the 50% rule. Course pages quote a generic 'INR 50,000-1,50,000 yearly' with no basis (template copy) and aggregators quote conflicting totals; none used. No tuition on any DoTE or AICTE document."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-civil-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum 45 per cent (OC) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding those born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AMCET admissions page states the same 40/45 per cent minimums."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-civil-engineering",
+      "publicField": "admissions",
+      "claimText": "AMCET admissions page: 65% government quota through DOTE counselling, 35% management quota direct; lateral entry for State Board diploma holders. Admission hotline +91 99523 87017.",
+      "status": "verified",
+      "sourceLabel": "AMCET - Admissions",
+      "sourceUrl": "https://amcet.in/admissions/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-civil-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction English.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-civil-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "AMCET courses page lists Civil Engineering as a 4-year programme under Anna University, Chennai; labs and subjects per the department page.",
+      "status": "verified",
+      "sourceLabel": "AMCET - Courses offered",
+      "sourceUrl": "https://amcet.in/academics/courses-offered/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-computer-science-engineering",
+      "publicField": "intake",
+      "claimText": "AICTE EoA 2026-27 approves Computer Science and Engineering (Anna University, Chennai) with intake 120 for 2026-27; TNEA 2026 college booklet, college 1137, branch CS: year of starting 2012; NBA accredited No.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (AMCET)",
+      "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AICTE dashboard facilities.aicte-india.org not queried; the 2026-27 Extension of Approval letter (F.No. Southern/1-46216547477/2026/EOA, 10-Apr-2026, printed 1 June 2026) is the primary AICTE record, saved in research/india-source-bundles/annai-mira-college-of-engineering-and-technology/eoa-26-27.pdf. TNEA: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-computer-science-engineering",
+      "publicField": "fee",
+      "claimText": "AMCET admissions page: management quota seat confirmed by paying 50% of the fee prescribed by AICTE and Anna University, no amount. TNEA 2026 booklet prints no tuition but lists admission fee 1,500, caution deposit 5,000, room rent 36,000, electricity 2,000, mess 72,000 and transport 16,000-30,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AMCET admissions page (https://amcet.in/admissions/) gives the 50% rule. Course pages quote a generic 'INR 50,000-1,50,000 yearly' with no basis (template copy) and aggregators quote conflicting totals; none used. No tuition on any DoTE or AICTE document."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-computer-science-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum 45 per cent (OC) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding those born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AMCET admissions page states the same 40/45 per cent minimums."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "AMCET admissions page: 65% government quota through DOTE counselling, 35% management quota direct; lateral entry for State Board diploma holders. Admission hotline +91 99523 87017.",
+      "status": "verified",
+      "sourceLabel": "AMCET - Admissions",
+      "sourceUrl": "https://amcet.in/admissions/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-computer-science-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction English.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-computer-science-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "AMCET courses page lists Computer Science and Engineering as a 4-year programme under Anna University, Chennai; labs and subjects per the department page.",
+      "status": "verified",
+      "sourceLabel": "AMCET - Courses offered",
+      "sourceUrl": "https://amcet.in/academics/courses-offered/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-computer-science-engineering-ai-ml",
+      "publicField": "intake",
+      "claimText": "AICTE EoA 2026-27 approves Artificial Intelligence and Machine Learning (Anna University, Chennai) with intake 60 for 2026-27; TNEA 2026 college booklet, college 1137, branch AM: year of starting 2026; NBA accredited No.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (AMCET)",
+      "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AICTE dashboard facilities.aicte-india.org not queried; the 2026-27 Extension of Approval letter (F.No. Southern/1-46216547477/2026/EOA, 10-Apr-2026, printed 1 June 2026) is the primary AICTE record, saved in research/india-source-bundles/annai-mira-college-of-engineering-and-technology/eoa-26-27.pdf. TNEA: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-computer-science-engineering-ai-ml",
+      "publicField": "fee",
+      "claimText": "AMCET admissions page: management quota seat confirmed by paying 50% of the fee prescribed by AICTE and Anna University, no amount. TNEA 2026 booklet prints no tuition but lists admission fee 1,500, caution deposit 5,000, room rent 36,000, electricity 2,000, mess 72,000 and transport 16,000-30,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AMCET admissions page (https://amcet.in/admissions/) gives the 50% rule. Course pages quote a generic 'INR 50,000-1,50,000 yearly' with no basis (template copy) and aggregators quote conflicting totals; none used. No tuition on any DoTE or AICTE document."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-computer-science-engineering-ai-ml",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum 45 per cent (OC) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding those born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AMCET admissions page states the same 40/45 per cent minimums."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-computer-science-engineering-ai-ml",
+      "publicField": "admissions",
+      "claimText": "AMCET admissions page: 65% government quota through DOTE counselling, 35% management quota direct; lateral entry for State Board diploma holders. Admission hotline +91 99523 87017.",
+      "status": "verified",
+      "sourceLabel": "AMCET - Admissions",
+      "sourceUrl": "https://amcet.in/admissions/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-computer-science-engineering-ai-ml",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction English.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-computer-science-engineering-ai-ml",
+      "publicField": "teachingPhases",
+      "claimText": "AMCET courses page lists Artificial Intelligence and Machine Learning as a 4-year programme under Anna University, Chennai; labs and subjects per the department page.",
+      "status": "verified",
+      "sourceLabel": "AMCET - Courses offered",
+      "sourceUrl": "https://amcet.in/academics/courses-offered/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-electrical-electronics-engineering",
+      "publicField": "intake",
+      "claimText": "AICTE EoA 2026-27 approves Electrical and Electronics Engineering (Anna University, Chennai) with intake 30 for 2026-27; TNEA 2026 college booklet, college 1137, branch EE: year of starting 2012; NBA accredited No.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (AMCET)",
+      "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AICTE dashboard facilities.aicte-india.org not queried; the 2026-27 Extension of Approval letter (F.No. Southern/1-46216547477/2026/EOA, 10-Apr-2026, printed 1 June 2026) is the primary AICTE record, saved in research/india-source-bundles/annai-mira-college-of-engineering-and-technology/eoa-26-27.pdf. TNEA: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-electrical-electronics-engineering",
+      "publicField": "fee",
+      "claimText": "AMCET admissions page: management quota seat confirmed by paying 50% of the fee prescribed by AICTE and Anna University, no amount. TNEA 2026 booklet prints no tuition but lists admission fee 1,500, caution deposit 5,000, room rent 36,000, electricity 2,000, mess 72,000 and transport 16,000-30,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AMCET admissions page (https://amcet.in/admissions/) gives the 50% rule. Course pages quote a generic 'INR 50,000-1,50,000 yearly' with no basis (template copy) and aggregators quote conflicting totals; none used. No tuition on any DoTE or AICTE document."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-electrical-electronics-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum 45 per cent (OC) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding those born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AMCET admissions page states the same 40/45 per cent minimums."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-electrical-electronics-engineering",
+      "publicField": "admissions",
+      "claimText": "AMCET admissions page: 65% government quota through DOTE counselling, 35% management quota direct; lateral entry for State Board diploma holders. Admission hotline +91 99523 87017.",
+      "status": "verified",
+      "sourceLabel": "AMCET - Admissions",
+      "sourceUrl": "https://amcet.in/admissions/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-electrical-electronics-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction English.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-electrical-electronics-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "AMCET courses page lists Electrical and Electronics Engineering as a 4-year programme under Anna University, Chennai; labs and subjects per the department page.",
+      "status": "verified",
+      "sourceLabel": "AMCET - Courses offered",
+      "sourceUrl": "https://amcet.in/academics/courses-offered/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-electronics-communication-engineering",
+      "publicField": "intake",
+      "claimText": "AICTE EoA 2026-27 approves Electronics and Communication Engineering (Anna University, Chennai) with intake 60 for 2026-27; TNEA 2026 college booklet, college 1137, branch EC: year of starting 2012; NBA accredited No.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (AMCET)",
+      "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AICTE dashboard facilities.aicte-india.org not queried; the 2026-27 Extension of Approval letter (F.No. Southern/1-46216547477/2026/EOA, 10-Apr-2026, printed 1 June 2026) is the primary AICTE record, saved in research/india-source-bundles/annai-mira-college-of-engineering-and-technology/eoa-26-27.pdf. TNEA: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-electronics-communication-engineering",
+      "publicField": "fee",
+      "claimText": "AMCET admissions page: management quota seat confirmed by paying 50% of the fee prescribed by AICTE and Anna University, no amount. TNEA 2026 booklet prints no tuition but lists admission fee 1,500, caution deposit 5,000, room rent 36,000, electricity 2,000, mess 72,000 and transport 16,000-30,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AMCET admissions page (https://amcet.in/admissions/) gives the 50% rule. Course pages quote a generic 'INR 50,000-1,50,000 yearly' with no basis (template copy) and aggregators quote conflicting totals; none used. No tuition on any DoTE or AICTE document."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-electronics-communication-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum 45 per cent (OC) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding those born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AMCET admissions page states the same 40/45 per cent minimums."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-electronics-communication-engineering",
+      "publicField": "admissions",
+      "claimText": "AMCET admissions page: 65% government quota through DOTE counselling, 35% management quota direct; lateral entry for State Board diploma holders. Admission hotline +91 99523 87017.",
+      "status": "verified",
+      "sourceLabel": "AMCET - Admissions",
+      "sourceUrl": "https://amcet.in/admissions/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-electronics-communication-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction English.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-electronics-communication-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "AMCET courses page lists Electronics and Communication Engineering as a 4-year programme under Anna University, Chennai; labs and subjects per the department page.",
+      "status": "verified",
+      "sourceLabel": "AMCET - Courses offered",
+      "sourceUrl": "https://amcet.in/academics/courses-offered/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-mechanical-engineering",
+      "publicField": "intake",
+      "claimText": "AICTE EoA 2026-27 approves Mechanical Engineering (Anna University, Chennai) with intake 60 for 2026-27; TNEA 2026 college booklet, college 1137, branch ME: year of starting 2012; NBA accredited No.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (AMCET)",
+      "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AICTE dashboard facilities.aicte-india.org not queried; the 2026-27 Extension of Approval letter (F.No. Southern/1-46216547477/2026/EOA, 10-Apr-2026, printed 1 June 2026) is the primary AICTE record, saved in research/india-source-bundles/annai-mira-college-of-engineering-and-technology/eoa-26-27.pdf. TNEA: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-mechanical-engineering",
+      "publicField": "fee",
+      "claimText": "AMCET admissions page: management quota seat confirmed by paying 50% of the fee prescribed by AICTE and Anna University, no amount. TNEA 2026 booklet prints no tuition but lists admission fee 1,500, caution deposit 5,000, room rent 36,000, electricity 2,000, mess 72,000 and transport 16,000-30,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AMCET admissions page (https://amcet.in/admissions/) gives the 50% rule. Course pages quote a generic 'INR 50,000-1,50,000 yearly' with no basis (template copy) and aggregators quote conflicting totals; none used. No tuition on any DoTE or AICTE document."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-mechanical-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum 45 per cent (OC) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding those born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AMCET admissions page states the same 40/45 per cent minimums."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-mechanical-engineering",
+      "publicField": "admissions",
+      "claimText": "AMCET admissions page: 65% government quota through DOTE counselling, 35% management quota direct; lateral entry for State Board diploma holders. Admission hotline +91 99523 87017.",
+      "status": "verified",
+      "sourceLabel": "AMCET - Admissions",
+      "sourceUrl": "https://amcet.in/admissions/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-mechanical-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction English.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-be-mechanical-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "AMCET courses page lists Mechanical Engineering as a 4-year programme under Anna University, Chennai; labs and subjects per the department page.",
+      "status": "verified",
+      "sourceLabel": "AMCET - Courses offered",
+      "sourceUrl": "https://amcet.in/academics/courses-offered/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-btech-artificial-intelligence-data-science",
+      "publicField": "intake",
+      "claimText": "AICTE EoA 2026-27 approves Artificial Intelligence and Data Science (Anna University, Chennai) with intake 120 for 2026-27; TNEA 2026 college booklet, college 1137, branch AD: year of starting 2021; NBA accredited No.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (AMCET)",
+      "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AICTE dashboard facilities.aicte-india.org not queried; the 2026-27 Extension of Approval letter (F.No. Southern/1-46216547477/2026/EOA, 10-Apr-2026, printed 1 June 2026) is the primary AICTE record, saved in research/india-source-bundles/annai-mira-college-of-engineering-and-technology/eoa-26-27.pdf. TNEA: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-btech-artificial-intelligence-data-science",
+      "publicField": "fee",
+      "claimText": "AMCET admissions page: management quota seat confirmed by paying 50% of the fee prescribed by AICTE and Anna University, no amount. TNEA 2026 booklet prints no tuition but lists admission fee 1,500, caution deposit 5,000, room rent 36,000, electricity 2,000, mess 72,000 and transport 16,000-30,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AMCET admissions page (https://amcet.in/admissions/) gives the 50% rule. Course pages quote a generic 'INR 50,000-1,50,000 yearly' with no basis (template copy) and aggregators quote conflicting totals; none used. No tuition on any DoTE or AICTE document."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-btech-artificial-intelligence-data-science",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum 45 per cent (OC) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding those born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AMCET admissions page states the same 40/45 per cent minimums."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-btech-artificial-intelligence-data-science",
+      "publicField": "admissions",
+      "claimText": "AMCET admissions page: 65% government quota through DOTE counselling, 35% management quota direct; lateral entry for State Board diploma holders. Admission hotline +91 99523 87017.",
+      "status": "verified",
+      "sourceLabel": "AMCET - Admissions",
+      "sourceUrl": "https://amcet.in/admissions/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-btech-artificial-intelligence-data-science",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction English.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-btech-artificial-intelligence-data-science",
+      "publicField": "teachingPhases",
+      "claimText": "AMCET courses page lists Artificial Intelligence and Data Science as a 4-year programme under Anna University, Chennai; labs and subjects per the department page.",
+      "status": "verified",
+      "sourceLabel": "AMCET - Courses offered",
+      "sourceUrl": "https://amcet.in/academics/courses-offered/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-btech-information-technology",
+      "publicField": "intake",
+      "claimText": "AICTE EoA 2026-27 approves Information Technology (Anna University, Chennai) with intake 60 for 2026-27; TNEA 2026 college booklet, college 1137, branch IT: year of starting 2023; NBA accredited No.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (AMCET)",
+      "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AICTE dashboard facilities.aicte-india.org not queried; the 2026-27 Extension of Approval letter (F.No. Southern/1-46216547477/2026/EOA, 10-Apr-2026, printed 1 June 2026) is the primary AICTE record, saved in research/india-source-bundles/annai-mira-college-of-engineering-and-technology/eoa-26-27.pdf. TNEA: https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-btech-information-technology",
+      "publicField": "fee",
+      "claimText": "AMCET admissions page: management quota seat confirmed by paying 50% of the fee prescribed by AICTE and Anna University, no amount. TNEA 2026 booklet prints no tuition but lists admission fee 1,500, caution deposit 5,000, room rent 36,000, electricity 2,000, mess 72,000 and transport 16,000-30,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information about colleges",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AMCET admissions page (https://amcet.in/admissions/) gives the 50% rule. Course pages quote a generic 'INR 50,000-1,50,000 yearly' with no basis (template copy) and aggregators quote conflicting totals; none used. No tuition on any DoTE or AICTE document."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-btech-information-technology",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: HSC with Mathematics, Physics and Chemistry, minimum 45 per cent (OC) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); nativity categories; Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding those born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AMCET admissions page states the same 40/45 per cent minimums."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-btech-information-technology",
+      "publicField": "admissions",
+      "claimText": "AMCET admissions page: 65% government quota through DOTE counselling, 35% management quota direct; lateral entry for State Board diploma holders. Admission hotline +91 99523 87017.",
+      "status": "verified",
+      "sourceLabel": "AMCET - Admissions",
+      "sourceUrl": "https://amcet.in/admissions/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-btech-information-technology",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (UG, affiliated colleges): medium of instruction English.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-btech-information-technology",
+      "publicField": "teachingPhases",
+      "claimText": "AMCET courses page lists Information Technology as a 4-year programme under Anna University, Chennai; labs and subjects per the department page.",
+      "status": "verified",
+      "sourceLabel": "AMCET - Courses offered",
+      "sourceUrl": "https://amcet.in/academics/courses-offered/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-mba",
+      "publicField": "intake",
+      "claimText": "AICTE EoA 2026-27 approves MBA (Anna University, Chennai) with intake 60 for 2026-27; TN MBA/MCA 2026-27 booklet p.41, college 1137: MBA approved intake 60, self-financing, started 2023, not accredited.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (AMCET)",
+      "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AICTE dashboard facilities.aicte-india.org not queried; the 2026-27 Extension of Approval letter (F.No. Southern/1-46216547477/2026/EOA, 10-Apr-2026, printed 1 June 2026) is the primary AICTE record, saved in research/india-source-bundles/annai-mira-college-of-engineering-and-technology/eoa-26-27.pdf. Booklet excerpt: research/india-source-bundles/annai-mira-college-of-engineering-and-technology/tn-mbamca-booklet-2026-excerpt-1137.txt (https://static.tn-mbamca.com/docs/TNMBAMCA-ENGINEERING-COLLEGES-BOOKLET-2026.pdf)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-mba",
+      "publicField": "fee",
+      "claimText": "TN MBA/MCA 2026-27 booklet p.41 college 1137: 'Tuition Fee to be collected as per Government Norms'; admission fees 1,500, deposit 5,000, room rent 72,000 and mess 36,000 (columns reversed against TNEA), electricity 2,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "DTE Tamil Nadu - TN MBA/MCA 2026-27 engineering colleges booklet",
+      "sourceUrl": "https://static.tn-mbamca.com/docs/TNMBAMCA-ENGINEERING-COLLEGES-BOOKLET-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "No tuition amount on amcet.in; its course page quotes a generic 'INR 50,000-1,50,000 yearly' (template copy), not used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-mba",
+      "publicField": "eligibility",
+      "claimText": "Tamil Nadu MBA 2026-27 instructions: qualifying degree of 3 years or more with 50 per cent (45 per cent Tamil Nadu BCM, BC, MBC/DNC, SC, SCA, ST); TANCET 2026 (MBA) mark sheet; Indian nationals only; OCI/PIO natives of Tamil Nadu in open category except those born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DTE Tamil Nadu - MBA 2026-27 information and instructions",
+      "sourceUrl": "https://static.tn-mbamca.com/docs/MBA_Instructions.pdf?t=1781654400022",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "Same conditions as bundle 0356 (MIET MBA)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-mba",
+      "publicField": "admissions",
+      "claimText": "AMCET website: online application for UG and PG courses; MBA seats via TN MBA counselling (college code 1137) and the college's own admission cell. Counselling instructions require TANCET 2026 (MBA).",
+      "status": "verified",
+      "sourceLabel": "AMCET - Admissions",
+      "sourceUrl": "https://amcet.in/admissions/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-mba",
+      "publicField": "medium",
+      "claimText": "AMCET is an affiliated college; Anna University's MBA curriculum and exams are in English (Anna University Regulations; AMCET course page).",
+      "status": "verified",
+      "sourceLabel": "AMCET - Courses offered",
+      "sourceUrl": "https://amcet.in/academics/courses-offered/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-mba",
+      "publicField": "teachingPhases",
+      "claimText": "AMCET MBA course page: 2 years, 4 semesters, Anna University curriculum with summer internship and project work.",
+      "status": "verified",
+      "sourceLabel": "AMCET - Courses offered",
+      "sourceUrl": "https://amcet.in/academics/courses-offered/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-mca",
+      "publicField": "intake",
+      "claimText": "AICTE EoA 2026-27 approves MCA (Anna University, Chennai) with intake 60 for 2026-27; TN MBA/MCA 2026-27 booklet p.41, college 1137: MCA approved intake 60, self-financing, started 2026, not accredited.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2026-27 (AMCET)",
+      "sourceUrl": "https://amcet.in/wp-content/uploads/2026/06/EOA-Report-26-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "AICTE dashboard facilities.aicte-india.org not queried; the 2026-27 Extension of Approval letter (F.No. Southern/1-46216547477/2026/EOA, 10-Apr-2026, printed 1 June 2026) is the primary AICTE record, saved in research/india-source-bundles/annai-mira-college-of-engineering-and-technology/eoa-26-27.pdf. Booklet excerpt: research/india-source-bundles/annai-mira-college-of-engineering-and-technology/tn-mbamca-booklet-2026-excerpt-1137.txt (https://static.tn-mbamca.com/docs/TNMBAMCA-ENGINEERING-COLLEGES-BOOKLET-2026.pdf)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-mca",
+      "publicField": "fee",
+      "claimText": "TN MBA/MCA 2026-27 booklet p.41 college 1137: 'Tuition Fee to be collected as per Government Norms'; admission fees 1,500, deposit 5,000, room rent 72,000 and mess 36,000 (columns reversed against TNEA), electricity 2,000 per annum.",
+      "status": "verified",
+      "sourceLabel": "DTE Tamil Nadu - TN MBA/MCA 2026-27 engineering colleges booklet",
+      "sourceUrl": "https://static.tn-mbamca.com/docs/TNMBAMCA-ENGINEERING-COLLEGES-BOOKLET-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "No tuition amount on amcet.in; its course page quotes a generic 'INR 50,000-1,50,000 yearly' (template copy), not used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-mca",
+      "publicField": "eligibility",
+      "claimText": "Tamil Nadu MCA 2026-27 instructions: qualifying degree of 3 years or more with 50 per cent (45 per cent Tamil Nadu BCM, BC, MBC/DNC, SC, SCA, ST); TANCET 2026 (MCA) mark sheet; Indian nationals only; OCI/PIO natives of Tamil Nadu in open category except those born abroad after 04.03.2021. MCA: B.C.A./B.Sc. CS/IT/B.E. CSE/B.Tech IT or equivalent, or any degree with Mathematics at Class 12 or degree level.",
+      "status": "verified",
+      "sourceLabel": "DTE Tamil Nadu - MCA 2026-27 information and instructions",
+      "sourceUrl": "https://static.tn-mbamca.com/docs/MCA_Instructions.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27",
+      "internalNotes": "MCA instructions read from the saved PDF text layer."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-mca",
+      "publicField": "admissions",
+      "claimText": "AMCET website: online application for UG and PG courses; MCA seats via TN MCA counselling (college code 1137) and the college's own admission cell. Counselling instructions require TANCET 2026 (MCA).",
+      "status": "verified",
+      "sourceLabel": "AMCET - Admissions",
+      "sourceUrl": "https://amcet.in/admissions/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-mca",
+      "publicField": "medium",
+      "claimText": "AMCET is an affiliated college; Anna University's MCA curriculum and exams are in English (Anna University Regulations; AMCET course page).",
+      "status": "verified",
+      "sourceLabel": "AMCET - Courses offered",
+      "sourceUrl": "https://amcet.in/academics/courses-offered/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annai-mira-college-of-engineering-and-technology",
+      "programmeSlug": "amcet-mca",
+      "publicField": "teachingPhases",
+      "claimText": "AMCET MCA course page: 2 years, 4 semesters, Anna University curriculum with summer internship and project work.",
+      "status": "verified",
+      "sourceLabel": "AMCET - Courses offered",
+      "sourceUrl": "https://amcet.in/academics/courses-offered/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-04-27"
+    }
+  ]
+}

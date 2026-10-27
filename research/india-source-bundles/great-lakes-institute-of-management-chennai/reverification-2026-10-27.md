@@ -1,0 +1,7 @@
+Re-verified 27 Oct 2026 by WebFetch (summaries of live pages):
+- greatlakes.edu.in/chennai/pgdm/faqs: "The PGDM program is approved by AICTE"; 2-year full-time residential; freshers or <36 months work experience by 30 May 2027; TOEFL/IELTS only for non-Indian students whose UG instruction was not primarily English; foreign and Indian applicants evaluated on the same basis; medium and intake month not stated; no AIU/MBA equivalence statement.
+- greatlakes.edu.in/chennai/pgpm/faq: PGPM awards Post Graduate Certificate in Management (PGCM) per AICTE norms; 1-year full-time residential; >=24 months full-time work experience by 30 April 2027; "approved by AICTE"; medium and intake not stated.
+- pgpm/fees: heading 2027-28; INR tuition 12,43,000 + programme fee 6,96,000 = 19,39,000; accommodation 3,96,000; deposit 10,000; alumni 5,000; total 23,50,000 (USD column 41,450 for international students). FAQ typo 9,39,000 ignored.
+- pgdm/fees: Class of 2026-28 whole programme INR 10,25,000 + 5,78,000 = 16,03,000; accommodation 6,32,000; deposit 10,000; alumni 5,000; total 22,50,000.
+- AICTE EoA 2026-27 (eoa-26-27.pdf/.txt): permanent ID 1-17358363, Private-Self Financing, year of establishment 2010 (AICTE record), PGCM intake 180 and PGDM intake 240 (PG Diploma level); NRI approval Yes, International Students Approval No for both.
+- aacsb.edu accredited page: Business accreditation; description states founded 2004; private.

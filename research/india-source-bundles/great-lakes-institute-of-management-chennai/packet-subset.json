@@ -1,0 +1,834 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "pg-certificate-business-management",
+      "name": "Postgraduate Certificate in Business Management",
+      "shortName": "PG Certificate Management",
+      "stream": "business",
+      "level": "postgraduate-certificate",
+      "discipline": "business-management",
+      "aliases": [
+        "Post Graduate Certificate in Management",
+        "PGCM"
+      ],
+      "displayOrder": 0,
+      "durationYears": 1,
+      "summary": "Postgraduate Certificate in Business Management programmes can differ in their official award title, specialization and study format. Compare the relevant institution’s qualifying subjects, selection process, duration, teaching arrangements, current fee category and practical-learning requirements before choosing a programme.",
+      "metaTitle": "PG Certificate Management: Study and Admissions",
+      "metaDescription": "Compare PG Certificate Management programmes by entry requirements, duration, teaching format, location, practical learning and published fees."
+    },
+    {
+      "slug": "pg-diploma-business-management",
+      "name": "Postgraduate Diploma in Business Management",
+      "shortName": "PG Diploma Business Management",
+      "stream": "business",
+      "level": "postgraduate-diploma",
+      "discipline": "business-management",
+      "aliases": [
+        "PG Diploma in Business Management",
+        "PGDBM"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "Postgraduate Diploma in Business Management programmes can differ in their official award title, specialization and study format. Compare the relevant institution’s qualifying subjects, selection process, duration, teaching arrangements, current fee category and practical-learning requirements before choosing a programme.",
+      "metaTitle": "PG Diploma Business Management: Study and Admissions",
+      "metaDescription": "Compare PG Diploma Business Management programmes by entry requirements, duration, teaching format, location, practical learning and published fees."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "great-lakes-institute-of-management-chennai",
+      "name": "Great Lakes Institute of Management, Chennai",
+      "city": "Chennai (Manamai, Chengalpattu district)",
+      "type": "Private",
+      "establishedYear": 2004,
+      "officialWebsite": "https://www.greatlakes.edu.in/chennai",
+      "summary": "Great Lakes Institute of Management, Chennai is a private business school with a residential campus at Manamai in Tamil Nadu. Its portfolio serves graduates, experienced professionals, family-business applicants and researchers. Applicants should compare each programme’s awarded credential, experience requirement and delivery format rather than treating every route as an MBA.",
+      "campusLifestyle": "The residential campus is at Manamai on the East Coast Road in Chengalpattu district. It is distinct from both the Chennai city office and Great Lakes Gurgaon. Full-time residential programmes, executive modules and online study have different attendance expectations.",
+      "hostelOverview": "PGPM and PGDM are residential programmes. The PGPM fee page includes accommodation and states that single air-conditioned rooms are subject to availability, with an adjustment for twin sharing. Executive-programme boarding and lodging are separately charged.",
+      "dietarySupport": "The PGPM fee page includes vegetarian meals in its accommodation charges and states that non-vegetarian meals cost extra. Do not assume that this arrangement covers every programme or any particular allergy or medical diet.",
+      "whyChoose": [
+        "AACSB Business accreditation is confirmed in the accreditor’s own Chennai listing.",
+        "Different formats serve graduates, experienced professionals and research applicants.",
+        "Official fee pages distinguish programme charges from accommodation and deposits."
+      ],
+      "thingsToConsider": [
+        "PGPM awards a certificate, not an MBA degree.",
+        "The Chennai residential campus is in Manamai, not the central city office or Gurgaon.",
+        "Applications must be initiated directly by the applicant; Great Lakes does not authorize intermediaries to do this."
+      ],
+      "bestFitFor": [
+        "Graduates comparing a two-year PGDM with the experience-led PGPM route.",
+        "Experienced professionals able to meet executive module attendance requirements.",
+        "Family-business applicants who meet the programme’s business-registration criteria."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "AACSB Business accreditation"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "AACSB accredited institution: Great Lakes Chennai",
+          "url": "https://www.aacsb.edu/accredited/g/great-lakes-institute-of-management-chennai"
+        }
+      ],
+      "admissionsContent": {
+        "cta": "Get help comparing programme fit, then submit your application directly to Great Lakes.",
+        "thirdPartyRestriction": "Do not initiate or submit applications on behalf of applicants. Official admissions pages say no third party is authorized to initiate applications and no management quota exists."
+      },
+      "faq": [
+        {
+          "question": "Is this the Chennai or Gurgaon institution?",
+          "answer": "This profile concerns Great Lakes Chennai. Its residential campus is in Manamai, Chengalpattu district, Tamil Nadu; the official contact page separately identifies its city office."
+        },
+        {
+          "question": "Does the PGPM award an MBA?",
+          "answer": "The official PGPM FAQ identifies the awarded credential as a Post Graduate Certificate in Management. A comparison with a one-year MBA does not change the award title."
+        },
+        {
+          "question": "Who is the PGPM intended for?",
+          "answer": "The 2027–28 admissions criteria require at least 24 months of full-time post-graduation work experience by 30 April 2027, alongside the stated academic and test requirements."
+        },
+        {
+          "question": "Can fresh graduates consider PGDM?",
+          "answer": "Yes. The 2027–29 PGDM admissions route covers fresh graduates and applicants with fewer than 36 months of work experience by 30 May 2027, subject to its academic and test criteria."
+        },
+        {
+          "question": "Which tests are accepted for PGPM?",
+          "answer": "The current admissions page lists GMAT, CAT, XAT and NMAT with cycle-specific validity rules. Applicants should check the exact test dates and year accepted for their application cycle."
+        },
+        {
+          "question": "Are international applicants charged differently for PGPM?",
+          "answer": "The PGPM FAQ accepts foreign applicants subject to programme criteria and a conditional English-language test requirement. Its 2027–28 fee table distinguishes domestic INR and international USD schedules; confirm your fee category with admissions."
+        },
+        {
+          "question": "Are PGDM fees annual?",
+          "answer": "The reviewed PGDM fee table is for the complete 2026–28 programme. Its whole-course tuition and residential charges should not be presented as an annual quote or as a confirmed 2027–29 tariff."
+        },
+        {
+          "question": "What distinguishes the family-business programme?",
+          "answer": "This one-year residential family-business and entrepreneurship route awards a Post Graduate Certificate in Management. The admission criteria reference a business registered under Indian law. The published immersion-charge discrepancy should be clarified before payment."
+        },
+        {
+          "question": "Can StudentsTraffic submit the application for me?",
+          "answer": "Great Lakes states that it does not authorize third parties to initiate applications on applicants’ behalf. Counselling can help compare fit, but applicants should complete the official application directly."
+        },
+        {
+          "question": "Is online PGDM the same delivery format as residential PGDM?",
+          "answer": "No. The online PGDM page describes a two-year online programme with an optional campus-immersion version. Confirm the enrolling institution and the selected variant before paying."
+        },
+        {
+          "question": "What does AACSB confirm?",
+          "answer": "AACSB’s own directory lists Great Lakes Institute of Management Chennai with Business accreditation. That listing is institution-specific and should not be used to claim that an unrelated campus or every certificate holds a separate programme accreditation."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Official research source",
+          "url": "https://www.greatlakes.edu.in/chennai/contact",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Official research source",
+          "url": "https://www.aacsb.edu/accredited/g/great-lakes-institute-of-management-chennai",
+          "kind": "recognition",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Official research source",
+          "url": "https://www.greatlakes.edu.in/chennai/pgpm/fees",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Official research source",
+          "url": "https://www.greatlakes.edu.in/chennai/pgpm/admissions",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Official research source",
+          "url": "https://www.greatlakes.edu.in/chennai/pgpm/faq",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Official research source",
+          "url": "https://www.greatlakes.edu.in/chennai/pgdm/faqs",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Official research source",
+          "url": "https://www.greatlakes.edu.in/chennai/pgpm-fbe",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Official research source",
+          "url": "https://www.greatlakes.edu.in/chennai/pgxpm",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Official research source",
+          "url": "https://www.greatlakes.edu.in/chennai/fpm",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Official research source",
+          "url": "https://www.greatlakes.edu.in/online/online-pgdm",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Official institutional / regulator evidence",
+          "url": "https://www.greatlakes.edu.in/chennai/about-us/mandatory-disclosure",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Official institutional / regulator evidence",
+          "url": "https://www.greatlakes.edu.in/chennai/about-us/grievance-redressal-system",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Official institutional / regulator evidence",
+          "url": "https://www.greatlakes.edu.in/chennai/pgdm/admissions",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Official institutional / regulator evidence",
+          "url": "https://www.greatlakes.edu.in/chennai/pgdm/fees",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Official institutional / regulator evidence",
+          "url": "https://www.greatlakes.edu.in/chennai/pgpm-fbe-fees",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Official institutional / regulator evidence",
+          "url": "https://www.greatlakes.edu.in/chennai/pgxpm/admissions",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Official institutional / regulator evidence",
+          "url": "https://www.greatlakes.edu.in/chennai/pgxpm/fees",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        }
+      ],
+      "programmes": [
+        {
+          "slug": "post-graduate-program-in-management-pgpm-award-post-graduate-certificate-in-management",
+          "officialTitle": "Post Graduate Program in Management (PGPM; award: Post Graduate Certificate in Management)",
+          "officialProgramUrl": "https://www.greatlakes.edu.in/chennai/pgpm/faq",
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "durationYears": 1,
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "The one-year PGPM table lists domestic INR 1,243,000 tuition and INR 2,350,000 combined total; international tuition USD 21,050 and total USD 41,450. Retain category-specific quotes. A FAQ academic-total typo and stale page title are documented.",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "The one-year PGPM table lists domestic INR 1,243,000 tuition and INR 2,350,000 combined total; international tuition USD 21,050 and total USD 41,450. Retain category-specific quotes. A FAQ academic-total typo and stale page title are documented."
+          },
+          "teachingPhases": [
+            {
+              "phase": "Programme format",
+              "language": "",
+              "details": "1 year; full-time residential."
+            }
+          ],
+          "canonicalCourseSlug": "pg-certificate-business-management",
+          "admissionsContent": {
+            "overview": "Post Graduate Program in Management has its own academic, experience and selection requirements. Apply directly through the official programme route; do not treat another Great Lakes credential as interchangeable.",
+            "eligibility": {
+              "intro": "Use the programme-specific academic and professional requirements below; accepted score windows and the applicable admission cycle must also be checked.",
+              "items": [
+                "Recognized bachelor degree.",
+                "Minimum 50% in Class X, Class XII and undergraduate degree.",
+                "At least 24 months full-time post-graduation work experience by 30 April 2027.",
+                "Accepted tests include CAT 2025/2026, XAT 2026/2027, GMAT and NMAT with cycle-specific validity rules."
+              ]
+            },
+            "applicationSteps": [
+              "Complete the programme’s official online application yourself and supply its requested academic, test and professional information.",
+              "Follow the programme’s selection/interview and document-verification instructions; accept and pay only against an official offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Academic records for the qualifying degree and earlier qualifications requested in the application"
+              ],
+              "application": [
+                "Application essays",
+                "Employment/work-experience record",
+                "Accepted test score",
+                "Professional recommender details"
+              ]
+            },
+            "deadlinesNote": "Cycle-specific dates must be checked on the official page; this draft does not infer a new intake from a past deadline.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 2350000,
+              "status": "confirmed",
+              "period": "full_course",
+              "componentBasis": "Published total for Indian students over the one-year programme: tuition/programme charges, accommodation, refundable caution deposit and alumni subscription.",
+              "academicYear": "2027–28",
+              "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgpm/fees",
+              "sourceLabel": "Official published fee schedule",
+              "verifiedAt": "2026-10-27",
+              "audience": "domestic"
+            }
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants",
+              "International applicants meeting the programme criteria"
+            ],
+            "restrictions": [
+              "Recognized degree, programme-specific academic thresholds, accepted test and work-experience conditions apply.",
+              "TOEFL/IELTS is required for non-Indian applicants whose prior primary instruction language was not English, under the programme FAQ."
+            ],
+            "notes": "Explicit programme FAQ evidence supports foreign applicants; this does not assert a separate supernumerary quota or override regulator approval requirements.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgpm/faq"
+          }
+        },
+        {
+          "slug": "post-graduate-diploma-in-management-pgdm",
+          "officialTitle": "Post Graduate Diploma in Management (PGDM)",
+          "officialProgramUrl": "https://www.greatlakes.edu.in/chennai/pgdm/faqs",
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "canonicalCourseSlug": "pg-diploma-business-management",
+          "durationYears": 2,
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "The source is the 2026–28 whole-course schedule, not annual tuition and not the current 2027–29 admissions tariff. Tuition is INR 1,025,000 and combined total INR 2,250,000; applicant category requires confirmation.",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "The source is the 2026–28 whole-course schedule, not annual tuition and not the current 2027–29 admissions tariff. Tuition is INR 1,025,000 and combined total INR 2,250,000; applicant category requires confirmation."
+          },
+          "teachingPhases": [
+            {
+              "phase": "Programme format",
+              "language": "",
+              "details": "2 years; full-time residential."
+            }
+          ],
+          "admissionsContent": {
+            "overview": "Post Graduate Diploma in Management has its own academic, experience and selection requirements. Apply directly through the official programme route; do not treat another Great Lakes credential as interchangeable.",
+            "eligibility": {
+              "intro": "Use the programme-specific academic and professional requirements below; accepted score windows and the applicable admission cycle must also be checked.",
+              "items": [
+                "Recognized bachelor degree.",
+                "Minimum 50% in Class X, Class XII and undergraduate degree.",
+                "Fresh graduates or fewer than 36 months work experience by 30 May 2027.",
+                "Accepted tests: CAT 2025/2026, XAT 2026/2027 or a qualifying GMAT score."
+              ]
+            },
+            "applicationSteps": [
+              "Complete the programme’s official online application yourself and supply its requested academic, test and professional information.",
+              "Follow the programme’s selection/interview and document-verification instructions; accept and pay only against an official offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Academic records for the qualifying degree and earlier qualifications requested in the application"
+              ],
+              "application": [
+                "Accepted test score",
+                "Completed official application and requested essays"
+              ]
+            },
+            "deadlinesNote": "Cycle-specific dates must be checked on the official page; this draft does not infer a new intake from a past deadline.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 2250000,
+              "status": "confirmed",
+              "period": "full_course",
+              "componentBasis": "Published whole two-year programme total including academic charges, accommodation, refundable caution deposit and alumni subscription. Not a confirmed 2027–29 tariff.",
+              "academicYear": "2026–28",
+              "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgdm/fees",
+              "sourceLabel": "Official published fee schedule",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants",
+              "International applicants meeting the programme criteria"
+            ],
+            "restrictions": [
+              "Recognized degree, programme-specific academic thresholds, accepted test and work-experience conditions apply.",
+              "TOEFL/IELTS is required for non-Indian applicants whose prior primary instruction language was not English, under the programme FAQ."
+            ],
+            "notes": "Explicit programme FAQ evidence supports foreign applicants; this does not assert a separate supernumerary quota or override regulator approval requirements.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgdm/faqs"
+          }
+        }
+      ],
+      "cityProfile": "The Chennai institution’s residential campus is at Manamai on the East Coast Road in Chengalpattu district, Tamil Nadu. Its official contact page separately lists a Chennai city office. Students planning residence or campus-module travel should use the Manamai campus address and distinguish it from the Gurgaon institution.",
+      "practicalExposure": "The PGXPM describes a faculty-guided capstone based on a business problem from the participant’s organization, alongside executive coaching and on-campus modules. The FPM describes research mentorship and an optional, separately selected international doctoral track. These programme-specific opportunities should not be presented as a guaranteed internship or job for every student.",
+      "safetyOverview": "The Chennai mandatory-disclosure page publishes an anti-ragging committee and a policy against sexual harassment. A separate grievance page explains how students can raise a service request through the CAMU learning platform. These are reporting mechanisms, not guarantees about incident prevention or response times.",
+      "studentSupport": "The Chennai grievance system provides a CAMU helpdesk route for students to select a problem category and raise a service request. PGPM applicants can also seek a prior appointment for a campus visit through the admissions team; access and arrangements should be confirmed before travel."
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "identity",
+      "claimText": "Great Lakes Chennai campus is Dr. Bala V. Balachandar Campus, ECR, Manamai Village, Thirukazhukundram Taluk, Chengalpattu District, Tamil Nadu 603102.",
+      "status": "verified",
+      "sourceLabel": "Official university source",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/contact",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": ""
+    },
+    {
+      "entity": "university",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "recognition",
+      "claimText": "AACSB directory confirms Business accreditation for Great Lakes Institute of Management Chennai.",
+      "status": "verified",
+      "sourceLabel": "Independent regulator / accreditor source",
+      "sourceUrl": "https://www.aacsb.edu/accredited/g/great-lakes-institute-of-management-chennai",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Same independently verified recognition claim and exact recognition URL; normalized to the current framework evidence key, not a new accreditation assertion."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "establishedYear",
+      "claimText": "AACSB directory lists Great Lakes Chennai as a private institution established in 2004.",
+      "status": "verified",
+      "sourceLabel": "Independent regulator / accreditor source",
+      "sourceUrl": "https://www.aacsb.edu/accredited/g/great-lakes-institute-of-management-chennai",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": ""
+    },
+    {
+      "entity": "university",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "hostelOverview",
+      "claimText": "PGPM and PGDM are residential programmes. The PGPM fee page includes accommodation and states that single air-conditioned rooms are subject to availability, with an adjustment for twin sharing. Executive-programme boarding and lodging are separately charged.",
+      "status": "verified",
+      "sourceLabel": "Official university source",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgpm/fees",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": ""
+    },
+    {
+      "entity": "university",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "dietarySupport",
+      "claimText": "The PGPM fee page includes vegetarian meals in its accommodation charges and states that non-vegetarian meals cost extra. Do not assume that this arrangement covers every programme or any particular allergy or medical diet.",
+      "status": "verified",
+      "sourceLabel": "Official university source",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgpm/fees",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": ""
+    },
+    {
+      "entity": "university",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "admissionsContent.thirdPartyRestriction",
+      "claimText": "Do not initiate or submit applications on behalf of applicants. Official admissions pages say no third party is authorized to initiate applications and no management quota exists.",
+      "status": "verified",
+      "sourceLabel": "Official university source",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgpm/admissions",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": ""
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "officialTitle",
+      "claimText": "Official inventory identifies Post Graduate Program in Management (PGPM; award: Post Graduate Certificate in Management).",
+      "status": "verified",
+      "sourceLabel": "Official university source",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgpm/faq",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "",
+      "programmeSlug": "post-graduate-program-in-management-pgpm-award-post-graduate-certificate-in-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "durationYears",
+      "claimText": "Source duration: 1 year; delivery: full-time residential.",
+      "status": "verified",
+      "sourceLabel": "Official university source",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgpm/faq",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "",
+      "programmeSlug": "post-graduate-program-in-management-pgpm-award-post-graduate-certificate-in-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "medium",
+      "claimText": "No programme-specific teaching-language statement has been verified; language facets deliberately omitted.",
+      "status": "omit",
+      "sourceLabel": "Official university source",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgpm/faq",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "",
+      "programmeSlug": "post-graduate-program-in-management-pgpm-award-post-graduate-certificate-in-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "intake",
+      "claimText": "Future intake months are not inferred from a past reporting date; no future intake facet asserted.",
+      "status": "omit",
+      "sourceLabel": "Official university source",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgpm/faq",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "",
+      "programmeSlug": "post-graduate-program-in-management-pgpm-award-post-graduate-certificate-in-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "officialTitle",
+      "claimText": "Official inventory identifies Post Graduate Diploma in Management (PGDM).",
+      "status": "verified",
+      "sourceLabel": "Official university source",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgdm/faqs",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "",
+      "programmeSlug": "post-graduate-diploma-in-management-pgdm"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "durationYears",
+      "claimText": "Source duration: 2 years; delivery: full-time residential.",
+      "status": "verified",
+      "sourceLabel": "Official university source",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgdm/faqs",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "",
+      "programmeSlug": "post-graduate-diploma-in-management-pgdm"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "medium",
+      "claimText": "No programme-specific teaching-language statement has been verified; language facets deliberately omitted.",
+      "status": "omit",
+      "sourceLabel": "Official university source",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgdm/faqs",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "",
+      "programmeSlug": "post-graduate-diploma-in-management-pgdm"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "intake",
+      "claimText": "Future intake months are not inferred from a past reporting date; no future intake facet asserted.",
+      "status": "omit",
+      "sourceLabel": "Official university source",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgdm/faqs",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "",
+      "programmeSlug": "post-graduate-diploma-in-management-pgdm"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "cityProfile",
+      "claimText": "The Chennai institution’s residential campus is at Manamai on the East Coast Road in Chengalpattu district, Tamil Nadu. Its official contact page separately lists a Chennai city office. Students planning residence or campus-module travel should use the Manamai campus address and distinguish it from the Gurgaon institution.",
+      "status": "verified",
+      "sourceLabel": "Official institutional / regulator evidence",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/contact",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": ""
+    },
+    {
+      "entity": "university",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "practicalExposure",
+      "claimText": "The PGXPM describes a faculty-guided capstone based on a business problem from the participant’s organization, alongside executive coaching and on-campus modules. The FPM describes research mentorship and an optional, separately selected international doctoral track. These programme-specific opportunities should not be presented as a guaranteed internship or job for every student.",
+      "status": "verified",
+      "sourceLabel": "Official institutional / regulator evidence",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgxpm",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": ""
+    },
+    {
+      "entity": "university",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "safetyOverview",
+      "claimText": "The Chennai mandatory-disclosure page publishes an anti-ragging committee and a policy against sexual harassment. A separate grievance page explains how students can raise a service request through the CAMU learning platform. These are reporting mechanisms, not guarantees about incident prevention or response times.",
+      "status": "verified",
+      "sourceLabel": "Official institutional / regulator evidence",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/about-us/mandatory-disclosure",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": ""
+    },
+    {
+      "entity": "university",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "studentSupport",
+      "claimText": "The Chennai grievance system provides a CAMU helpdesk route for students to select a problem category and raise a service request. PGPM applicants can also seek a prior appointment for a campus visit through the admissions team; access and arrangements should be confirmed before travel.",
+      "status": "verified",
+      "sourceLabel": "Official institutional / regulator evidence",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/about-us/grievance-redressal-system",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": ""
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "audienceEligibility",
+      "claimText": "Programme FAQ explicitly addresses non-Indian applicants and English-test conditions; the PGPM FAQ says Indian and foreign applicants are evaluated on the same basis.",
+      "status": "verified",
+      "sourceLabel": "Official institutional / regulator evidence",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgpm/faq",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "",
+      "programmeSlug": "post-graduate-program-in-management-pgpm-award-post-graduate-certificate-in-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "admissionsContent",
+      "claimText": "Programme-specific official admissions sources support the academic and professional criteria and selection route summarized here.",
+      "status": "verified",
+      "sourceLabel": "Official institutional / regulator evidence",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgpm/admissions",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "",
+      "programmeSlug": "post-graduate-program-in-management-pgpm-award-post-graduate-certificate-in-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "reportedFeeQuote",
+      "claimText": "INR 2,350,000; full_course; 2027–28; Published total for Indian students over the one-year programme: tuition/programme charges, accommodation, refundable caution deposit and alumni subscription.",
+      "status": "verified",
+      "sourceLabel": "Official institutional / regulator evidence",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgpm/fees",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "",
+      "programmeSlug": "post-graduate-program-in-management-pgpm-award-post-graduate-certificate-in-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "teachingPhases",
+      "claimText": "1 year; full-time residential. Teaching language is not inferred from the website language.",
+      "status": "verified",
+      "sourceLabel": "Official institutional / regulator evidence",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgpm/faq",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "",
+      "programmeSlug": "post-graduate-program-in-management-pgpm-award-post-graduate-certificate-in-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "audienceEligibility",
+      "claimText": "Programme FAQ explicitly addresses non-Indian applicants and English-test conditions; the PGPM FAQ says Indian and foreign applicants are evaluated on the same basis.",
+      "status": "verified",
+      "sourceLabel": "Official institutional / regulator evidence",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgdm/faqs",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "",
+      "programmeSlug": "post-graduate-diploma-in-management-pgdm"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "admissionsContent",
+      "claimText": "Programme-specific official admissions sources support the academic and professional criteria and selection route summarized here.",
+      "status": "verified",
+      "sourceLabel": "Official institutional / regulator evidence",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgdm/admissions",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "",
+      "programmeSlug": "post-graduate-diploma-in-management-pgdm"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "reportedFeeQuote",
+      "claimText": "INR 2,250,000; full_course; 2026–28; Published whole two-year programme total including academic charges, accommodation, refundable caution deposit and alumni subscription. Not a confirmed 2027–29 tariff.",
+      "status": "verified",
+      "sourceLabel": "Official institutional / regulator evidence",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgdm/fees",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "",
+      "programmeSlug": "post-graduate-diploma-in-management-pgdm"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "publicField": "teachingPhases",
+      "claimText": "2 years; full-time residential. Teaching language is not inferred from the website language.",
+      "status": "verified",
+      "sourceLabel": "Official institutional / regulator evidence",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgdm/faqs",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "",
+      "programmeSlug": "post-graduate-diploma-in-management-pgdm"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "programmeSlug": "post-graduate-program-in-management-pgpm-award-post-graduate-certificate-in-management",
+      "publicField": "eligibility",
+      "claimText": "For PGPM 2027–28, the official criteria require a recognized bachelor degree, at least 50% in Class X, XII and the degree, and two or more years of full-time post-graduation work experience. The April 2027 experience reference and cycle-specific CAT/XAT/GMAT/NMAT windows are retained. The FAQ separately supports foreign applicants and its conditional language-test requirement.",
+      "status": "verified",
+      "sourceLabel": "Official source supporting the specific route or editorial omission",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgpm/admissions",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "sources/web-evidence-2.json and web-evidence-3.json: official PGPM admissions eligibility/application sections; sources/completion-research-2.json: official PGPM FAQ foreign applicants, essays and recommendation sections. Eligibility does not equate the PGCM award to an MBA."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "programmeSlug": "post-graduate-program-in-management-pgpm-award-post-graduate-certificate-in-management",
+      "publicField": "admissions",
+      "claimText": "The programme admissions page requires the applicant to complete the official online application, provide academic/test/professional information and the requested essays or recommendations, and undergo the programme selection process. Applicants must submit directly; Great Lakes disclaims authorization for third parties to initiate applications.",
+      "status": "verified",
+      "sourceLabel": "Official source supporting the specific route or editorial omission",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgpm/admissions",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "sources/web-evidence-2.json and web-evidence-3.json: official PGPM admissions eligibility/application sections; sources/completion-research-2.json: official PGPM FAQ foreign applicants, essays and recommendation sections. Eligibility does not equate the PGCM award to an MBA."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "programmeSlug": "post-graduate-program-in-management-pgpm-award-post-graduate-certificate-in-management",
+      "publicField": "fee",
+      "claimText": "The official PGPM fee table reports a 2027–28 one-year combined tariff with separate domestic and international schedules. Its stale title and FAQ academic-total discrepancy are documented. The combined total is preserved as a native full-course quote, not converted into an annual tuition figure.",
+      "status": "verified",
+      "sourceLabel": "Official source supporting the specific route or editorial omission",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgpm/fees",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Captured official fee-table pages in sources/web-evidence-1.json (PGDM) and sources/web-evidence-2.json / web-evidence-3.json (PGPM), with detailed arithmetic/vintage reconciliation in fee-research.json. Verified concerns the editorial on_request decision from official period/category evidence; it does not certify a current annual tariff."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "programmeSlug": "post-graduate-diploma-in-management-pgdm",
+      "publicField": "eligibility",
+      "claimText": "For PGDM 2027–29, the official criteria require a recognized bachelor degree and at least 50% in Class X, XII and the degree. Fresh graduates or applicants with strictly fewer than 36 months of work experience by 30 May 2027 may apply, subject to the published CAT/XAT/GMAT score windows. The programme FAQ supplies the conditional language-test rule for non-Indian applicants.",
+      "status": "verified",
+      "sourceLabel": "Official source supporting the specific route or editorial omission",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgdm/admissions",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "sources/web-evidence-1.json: official PGDM admissions eligibility/application sections; sources/web-evidence-4.json: official PGDM FAQ. The route is not an assertion that every Great Lakes programme accepts foreign applicants."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "programmeSlug": "post-graduate-diploma-in-management-pgdm",
+      "publicField": "admissions",
+      "claimText": "The programme admissions page requires the applicant to complete the official online application, provide academic/test/professional information and the requested essays or recommendations, and undergo the programme selection process. Applicants must submit directly; Great Lakes disclaims authorization for third parties to initiate applications.",
+      "status": "verified",
+      "sourceLabel": "Official source supporting the specific route or editorial omission",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgdm/admissions",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "sources/web-evidence-1.json: official PGDM admissions eligibility/application sections; sources/web-evidence-4.json: official PGDM FAQ. The route is not an assertion that every Great Lakes programme accepts foreign applicants."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "great-lakes-institute-of-management-chennai",
+      "programmeSlug": "post-graduate-diploma-in-management-pgdm",
+      "publicField": "fee",
+      "claimText": "The official PGDM fee table reports the complete 2026–28 programme with separate tuition, programme, residence and other charges. It is neither an annual figure nor a confirmed 2027–29 tariff. The historical full-course total is reported separately; current annual tuition remains on_request.",
+      "status": "verified",
+      "sourceLabel": "Official source supporting the specific route or editorial omission",
+      "sourceUrl": "https://www.greatlakes.edu.in/chennai/pgdm/fees",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-25",
+      "internalNotes": "Captured official fee-table pages in sources/web-evidence-1.json (PGDM) and sources/web-evidence-2.json / web-evidence-3.json (PGPM), with detailed arithmetic/vintage reconciliation in fee-research.json. Verified concerns the editorial on_request decision from official period/category evidence; it does not certify a current annual tariff."
+    }
+  ]
+}

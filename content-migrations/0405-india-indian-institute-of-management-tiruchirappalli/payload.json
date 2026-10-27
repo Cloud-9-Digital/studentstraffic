@@ -1,0 +1,877 @@
+{
+  "courses": [
+    {
+      "slug": "mba",
+      "name": "Master of Business Administration",
+      "shortName": "MBA",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "business-administration",
+      "aliases": [
+        "General MBA",
+        "Full-time MBA",
+        "International MBA"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "A postgraduate category for general-management degrees taken after a bachelor qualification. Study commonly combines finance, marketing, organisational behaviour, operations and strategy with applied management work. Programme delivery, selection tests, curriculum and fees vary by university.",
+      "metaTitle": "MBA Programmes and Admissions",
+      "metaDescription": "Compare MBA programmes by official award, academic eligibility, teaching language, duration, university and tuition fees."
+    },
+    {
+      "slug": "mba-human-resource-management",
+      "name": "MBA in Human Resource Management",
+      "shortName": "MBA HR",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "human-resource-management",
+      "aliases": [
+        "MBA in Human Resources",
+        "Master of Business Administration in Human Resources"
+      ],
+      "displayOrder": 340,
+      "durationYears": 2,
+      "summary": "An MBA specialisation in human resource management combining core business administration modules with recruitment, employment law, organisational development, reward and professional HR practice. Each university offering keeps its own official award, professional-body accreditation, tuition and admissions conditions visible before applying.",
+      "metaTitle": "MBA in Human Resource Management Abroad",
+      "metaDescription": "Compare MBA in Human Resource Management programmes abroad by curriculum, professional accreditation, tuition fees and admissions."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "indian-institute-of-management-tiruchirappalli",
+      "name": "Indian Institute of Management Tiruchirappalli",
+      "city": "Tiruchirappalli",
+      "type": "Public",
+      "establishedYear": 2011,
+      "officialWebsite": "https://www.iimtrichy.ac.in/",
+      "mediaAttribution": {},
+      "summary": "IIM Tiruchirappalli is a public management institute in Tiruchirappalli, Tamil Nadu, established in 2011 and an Institute of National Importance under the Indian Institutes of Management Act, 2017. It offers residential MBAs in general management and human resources, a weekend MBA in Chennai, and doctoral programmes.",
+      "campusLifestyle": "Residential MBA students study at the Tiruchirappalli campus, whose listed facilities include a Learning Resource Centre, computing resources, a finance lab, a behavioural lab and sports facilities. The weekend MBA for working executives meets at the separate Chennai campus in K K Nagar and is non-residential, so it should not be confused with a residential place.",
+      "cityProfile": "The main institute is on the Tiruchirappalli-Pudukkottai road in Tamil Nadu. Residential MBA students study there, while the 21-month weekend MBA meets in person at the Chennai campus in K K Nagar. These are different study locations, so a Chennai weekend place should not be confused with a residential place in Tiruchirappalli.",
+      "practicalExposure": "The general-management MBA uses the case method, group evaluations, computer-based simulations, live projects with company professionals and guest lectures. The HR MBA, launched in 2020, is the institute's first domain-specific programme. The institute lists these learning activities as curriculum features; they do not promise employment or a salary.",
+      "hostelOverview": "Hostels have eight blocks: seven of three floors, and one of eight floors with 328 air-conditioned rooms. Rooms have desks, whiteboards and balconies over an artificial canal, Wi-Fi in every hostel and LAN in every room. Dedicated blocks house women, and ground-floor rooms with attached bathrooms suit students with disabilities. An 11-storey building with over 400 rooms is under construction. Hostel charges are not published as a separate figure.",
+      "dietarySupport": "A mess and canteen block a short walk from the hostels includes a night canteen, a sandwich bar and departmental stores. Students pay a mess advance of INR 24,000 each term, and mess rates can be revised. The institute publishes no menu, meal timings or provision for specific dietary needs.",
+      "safetyOverview": "The institute lists an anti-ragging committee and an Internal Complaints Committee as its formal channels for concerns. Their existence is not a guarantee against incidents, and the pages checked publish no campus security arrangements.",
+      "studentSupport": "Students use the Learning Resource Centre and computing resources. The institute lists public grievance redressal, the Internal Complaints Committee and an SC/ST Cell among its committees, and the hostels reserve ground-floor rooms for residents with disabilities. Students Traffic counselling can help compare routes and prepare an application.",
+      "whyChoose": [
+        "Choose between a general-management MBA and an MBA focused on human resources, the only IIM-offered HR-focused MBA according to the institute.",
+        "AMBA lists the PGPM, PGPM-HR and the weekend PGPBM as accredited MBA programmes.",
+        "IIM Tiruchirappalli is a statutory Institute of National Importance under the IIM Act, 2017, and the programmes are residential."
+      ],
+      "thingsToConsider": [
+        "The 2026-28 batch is closed and no 2027-29 PGPM or PGPM-HR dates are published, so check the admissions portal before planning around a deadline.",
+        "The overseas category needs a precise residence history in 2025; a foreign passport alone did not qualify, and anyone in India on the CAT 2025 date was excluded.",
+        "The INR 19.5 lakh programme fee covers six terms and excludes the caution deposit and a mess advance of INR 24,000 a term; it is not annual tuition."
+      ],
+      "bestFitFor": [
+        "Graduates comparing a full-time residential MBA in general management.",
+        "Graduates who want a residential MBA focused on human resources.",
+        "Applicants with a CAT score near the published cut-offs, or a GMAT score of 640 and a verifiable record of living abroad in 2025."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "Government of India - Institute of National Importance (Indian Institutes of Management Act, 2017)",
+        "AMBA - PGPM, PGPM-HR and PGPBM accredited"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Indian Institutes of Management Act, 2017 (India Code)",
+          "url": "https://www.indiacode.nic.in/handle/123456789/2248?view_type=browse"
+        },
+        {
+          "label": "AMBA accredited school profile",
+          "url": "https://www.amba-bga.com/schools/indian-institute-of-management-tiruchirappalli"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is IIM Tiruchirappalli a government institute?",
+          "answer": "Yes. The Indian Institutes of Management Act, 2017 lists it in its Schedule and declares each listed institute an institution of national importance. It was established in 2011 and is registered as a society in Tamil Nadu."
+        },
+        {
+          "question": "Which degree routes does IIM Tiruchirappalli offer?",
+          "answer": "Three MBA routes: the residential PGPM and PGPM-HR at Tiruchirappalli and the weekend PGPBM for working executives in Chennai. It also runs full-time and executive doctoral programmes. This record covers the two residential MBAs."
+        },
+        {
+          "question": "How were students admitted to the 2026-28 PGPM and PGPM-HR?",
+          "answer": "Domestic candidates were shortlisted on CAT 2025 percentile and then interviewed. Final merit gave CAT 52 per cent, the interview 20 per cent and work experience 10 per cent, with small weights for school and degree marks and diversity."
+        },
+        {
+          "question": "What are the CAT cut-offs for IIM Tiruchirappalli?",
+          "answer": "For 2026-28 the total percentile cut-offs were 95.25 for General, 89 for EWS, 88.5 for NC-OBC, 75 for SC, 44 for ST and 30 for PwD candidates, with sectional cut-offs too. Meeting them was necessary but not sufficient for shortlisting."
+        },
+        {
+          "question": "Who qualified for the overseas category?",
+          "answer": "Indian and foreign nationals living, working or studying outside India from 1 January to 31 December 2025. A candidate expected to be in India on the CAT 2025 date, 30 November 2025, was excluded. They needed a 50 per cent bachelor's degree and a GMAT score of at least 640."
+        },
+        {
+          "question": "What is the fee for the IIM Tiruchirappalli MBA?",
+          "answer": "The 2026-28 programme fee for CAT-route students is INR 19.5 lakh over six terms, excluding a INR 30,000 refundable caution deposit and a INR 24,000 mess advance each term. Overseas-category students paid USD 32,000 for two years, including hostel accommodation."
+        },
+        {
+          "question": "Are IIM Tiruchirappalli applications open now?",
+          "answer": "No. The portal shows PGPM and PGPM-HR admissions for 2026-28 as closed, with the merit list announced on 7 May 2026. No 2027-29 dates were published when checked on 27 October 2026."
+        },
+        {
+          "question": "How does the weekend MBA in Chennai differ?",
+          "answer": "The PGPBM is a 21-month, non-residential programme taught in person at weekends at the Chennai campus. It has its own admissions route and requires work experience, so it is not covered by the residential MBA details here."
+        },
+        {
+          "question": "What accommodation does IIM Tiruchirappalli have?",
+          "answer": "Eight hostel blocks with air-conditioned rooms, Wi-Fi and LAN, dedicated blocks for women and accessible ground-floor rooms. The mess and canteen block has a night canteen and sandwich bar. A mess advance of INR 24,000 each term applies."
+        },
+        {
+          "question": "Is IIM Tiruchirappalli AMBA accredited?",
+          "answer": "AMBA's own school profile lists three accredited MBA programmes: PGPM, PGPM-HR and PGPBM. The profile shows no end date, and the accreditation is not presented as covering the doctoral programmes."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "IIM Tiruchirappalli - PGPM programme",
+          "url": "https://www.iimtrichy.ac.in/en/pgpm",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "IIM Tiruchirappalli - PGPM-HR programme",
+          "url": "https://www.iimtrichy.ac.in/en/pgpm-hr",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "IIM Tiruchirappalli - PGPM admission criteria and fees 2026-28",
+          "url": "https://www.iimtrichy.ac.in/en/pgpm-admin-criteria",
+          "kind": "official-fee",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "IIM Tiruchirappalli - PGPM-HR admission criteria and fees 2026-28",
+          "url": "https://www.iimtrichy.ac.in/en/Admission%20Criteria-pgpm-hr",
+          "kind": "official-fee",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "IIM Tiruchirappalli - PGPM overseas admission policy 2026-28",
+          "url": "https://www.iimtrichy.ac.in/sites/default/files/upload/23Jan2026132141_AdmissionPolicy-Overseas-PGPM-2026-28_Final_23Jan2026.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "IIM Tiruchirappalli - PGPM-HR overseas admission policy 2026-28",
+          "url": "https://www.iimtrichy.ac.in/sites/default/files/upload/23Jan2026132735_AdmissionPolicy-Overseas-PGPM-HR-2026-28_Final_23Jan2026.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "IIM Tiruchirappalli - Admissions portal status",
+          "url": "https://admissions.iimtrichy.ac.in/index.php",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "IIM Tiruchirappalli - Genesis",
+          "url": "https://www.iimtrichy.ac.in/en/genesis",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "IIM Tiruchirappalli - Programme directory",
+          "url": "https://www.iimtrichy.ac.in/en/acd_programmes",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "IIM Tiruchirappalli - Hostels",
+          "url": "https://www.iimtrichy.ac.in/en/hostels",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "IIM Tiruchirappalli - Campus facilities",
+          "url": "https://www.iimtrichy.ac.in/en/campus-facilities",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "IIM Tiruchirappalli - Anti-ragging committee",
+          "url": "https://www.iimtrichy.ac.in/en/anti_ragging",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "IIM Tiruchirappalli - Internal committees",
+          "url": "https://www.iimtrichy.ac.in/en/Internal_Committees",
+          "kind": "official-university",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "IIM Tiruchirappalli - PGPBM admissions",
+          "url": "https://www.iimtrichy.ac.in/en/pgpbm-admission-criteria",
+          "kind": "official-program",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "Indian Institutes of Management Act, 2017 (India Code)",
+          "url": "https://www.indiacode.nic.in/handle/123456789/2248?view_type=browse",
+          "kind": "government",
+          "checkedAt": "2026-10-27"
+        },
+        {
+          "label": "AMBA accredited school profile",
+          "url": "https://www.amba-bga.com/schools/indian-institute-of-management-tiruchirappalli",
+          "kind": "recognition",
+          "checkedAt": "2026-10-27"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "This record covers the two residential MBAs at Tiruchirappalli. The weekend PGPBM in Chennai and the doctoral programmes are outside this record.",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my IIM Tiruchirappalli route",
+            "capture": [
+              "CAT or GMAT score",
+              "residence history in 2025",
+              "graduation percentage",
+              "work experience in months"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my MBA application",
+            "capture": [
+              "target intake year",
+              "CAT or GMAT status",
+              "document readiness"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "iim-trichy-pgpm-mba",
+          "canonicalCourseSlug": "mba",
+          "officialTitle": "Post Graduate Programme in Management (MBA)",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "Published 2026-28 programme fee for students admitted through CAT and the interview process: INR 19.5 lakh over six terms, made up of a INR 1,00,000 acceptance fee, INR 2,25,000 tuition in term I and INR 3,25,000 tuition in each of terms II to VI. It excludes a refundable INR 30,000 caution deposit and a mess advance of INR 24,000 a term. This is a whole-course charge, not annual tuition, so annual tuition is on request. Overseas-category students of the 2026-28 batch paid a combined USD 16,000 a year (USD 32,000 for two years) covering tuition, institutional services and hostel accommodation, plus boarding, caution deposit and any taxes."
+          },
+          "officialProgramUrl": "https://www.iimtrichy.ac.in/en/pgpm",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants admitted through CAT 2025 and the JAP 2026 interview process (domestic route)",
+              "Indian and foreign nationals who lived, worked or studied outside India throughout 2025 (overseas category, GMAT route)"
+            ],
+            "restrictions": [
+              "Overseas category only: applicants must have lived, worked or studied outside India from 1 January to 31 December 2025; foreign nationality alone does not qualify.",
+              "Overseas category only: a candidate expected to be present or residing in India on the CAT 2025 date, 30 November 2025, was excluded from that category.",
+              "Both routes belong to the 2026-28 batch, which is closed; no 2027-29 PGPM or PGPM-HR dates or rules were published on the admissions pages checked."
+            ],
+            "notes": "Two routes exist: domestic selection by CAT percentile and interview, and the overseas route by GMAT and virtual interview. The institute's domestic pages state no nationality or minimum degree-mark rule, so none is asserted here.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://www.iimtrichy.ac.in/sites/default/files/upload/23Jan2026132141_AdmissionPolicy-Overseas-PGPM-2026-28_Final_23Jan2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The Post Graduate Programme in Management (PGPM) is a two-year full-time residential MBA at Tiruchirappalli with general management. The 2026-28 batch was filled through CAT with an interview, or by an overseas route using GMAT; both are closed.",
+            "eligibility": {
+              "intro": "The 2026-28 domestic route shortlisted on CAT 2025 percentile; the overseas route set a degree and GMAT threshold.",
+              "items": [
+                "Domestic route: CAT 2025 total percentile cut-offs of 95.25 (General), 89 (EWS), 88.5 (NC-OBC), 75 (SC), 44 (ST) and 30 (PwD) for shortlisting",
+                "Meeting the CAT cut-off was necessary but not sufficient; the interview, work experience and academic record also counted",
+                "Overseas route: bachelor's degree with at least 50 per cent or equivalent CGPA; foreign degrees need equivalence certified by the AIU",
+                "Overseas route: GMAT score of at least 640 out of 800, not older than two years on 30 April 2026",
+                "Final-year bachelor's students could apply and join provisionally, with all degree results due by 31 December 2026"
+              ]
+            },
+            "applicationSteps": [
+              "Domestic route: take CAT 2025 and register for the institute's JAP 2026 process; shortlisted candidates attended a personal interview at one of ten venues",
+              "Overseas route: take the GMAT and send the prescribed form, score, records, passport pages, two recommendations and the USD 200 fee by bank draft by 30 April 2026",
+              "Shortlisted overseas candidates were interviewed virtually in the first or second week of May 2026",
+              "Final merit weighted CAT or GMAT 52 per cent, interview 20 per cent, work experience 10 per cent, and school, degree and diversity components"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class X and XII mark sheets and certificates",
+                "Graduation records, and postgraduate records where applicable",
+                "CAT scorecard (domestic) or GMAT score certificate (overseas)"
+              ],
+              "application": [
+                "Prescribed overseas application form with the USD 200 bank draft (overseas route only)",
+                "Passport pages with authorised entries and stamps (overseas route only)",
+                "Two recommendation letters under the policy's referee rules (overseas route only)"
+              ]
+            },
+            "deadlinesNote": "The 2026-28 admissions portal is closed; the merit list was announced on 7 May 2026. No 2027-29 PGPM or PGPM-HR dates were published when checked on 27 October 2026.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 1950000,
+              "status": "confirmed",
+              "period": "full_course",
+              "componentBasis": "Six-term programme fee made up of a INR 1,00,000 acceptance fee and tuition of INR 2,25,000 in term I and INR 3,25,000 in each of terms II to VI; excludes a refundable INR 30,000 caution deposit and a mess advance of INR 24,000 a term.",
+              "audience": "domestic",
+              "category": "Students admitted through CAT and the JAP interview process",
+              "academicYear": "2026-28",
+              "sourceUrl": "https://www.iimtrichy.ac.in/en/pgpm-admin-criteria",
+              "sourceLabel": "IIM Tiruchirappalli PGPM admission criteria and fees 2026-28",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "Published 2026-28 programme fee for students admitted through CAT and the interview process: INR 19.5 lakh over six terms, made up of a INR 1,00,000 acceptance fee, INR 2,25,000 tuition in term I and INR 3,25,000 tuition in each of terms II to VI. It excludes a refundable INR 30,000 caution deposit and a mess advance of INR 24,000 a term. This is a whole-course charge, not annual tuition, so annual tuition is on request. Overseas-category students of the 2026-28 batch paid a combined USD 16,000 a year (USD 32,000 for two years) covering tuition, institutional services and hostel accommodation, plus boarding, caution deposit and any taxes.",
+          "teachingPhases": [
+            {
+              "phase": "Two-year full-time residential programme",
+              "language": "",
+              "details": "Study is at the Tiruchirappalli campus. Teaching combines case discussions, group evaluation, computer-based simulations, live projects and guest lectures."
+            }
+          ]
+        },
+        {
+          "slug": "iim-trichy-pgpm-hr-mba",
+          "canonicalCourseSlug": "mba-human-resource-management",
+          "officialTitle": "Post Graduate Programme in Management - Human Resources (MBA-HR)",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-27",
+            "notes": "Published 2026-28 programme fee for students admitted through CAT and the interview process: INR 19.5 lakh over six terms, made up of a INR 1,00,000 acceptance fee, INR 2,25,000 tuition in term I and INR 3,25,000 tuition in each of terms II to VI. It excludes a refundable INR 30,000 caution deposit and a mess advance of INR 24,000 a term. This is a whole-course charge, not annual tuition, so annual tuition is on request. Overseas-category students of the 2026-28 batch paid a combined USD 16,000 a year (USD 32,000 for two years) covering tuition, institutional services and hostel accommodation, plus boarding, caution deposit and any taxes."
+          },
+          "officialProgramUrl": "https://www.iimtrichy.ac.in/en/pgpm-hr",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants admitted through CAT 2025 and the JAP 2026 interview process (domestic route)",
+              "Indian and foreign nationals who lived, worked or studied outside India throughout 2025 (overseas category, GMAT route)"
+            ],
+            "restrictions": [
+              "Overseas category only: applicants must have lived, worked or studied outside India from 1 January to 31 December 2025; foreign nationality alone does not qualify.",
+              "Overseas category only: a candidate expected to be present or residing in India on the CAT 2025 date, 30 November 2025, was excluded from that category.",
+              "Both routes belong to the 2026-28 batch, which is closed; no 2027-29 PGPM or PGPM-HR dates or rules were published on the admissions pages checked."
+            ],
+            "notes": "Two routes exist: domestic selection by CAT percentile and interview, and the overseas route by GMAT and virtual interview. The institute's domestic pages state no nationality or minimum degree-mark rule, so none is asserted here.",
+            "verifiedAt": "2026-10-27",
+            "sourceUrl": "https://www.iimtrichy.ac.in/sites/default/files/upload/23Jan2026132735_AdmissionPolicy-Overseas-PGPM-HR-2026-28_Final_23Jan2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The Post Graduate Programme in Management - Human Resources (PGPM-HR) is a two-year full-time residential MBA at Tiruchirappalli with a human-resources focus within a management degree. The 2026-28 batch was filled through CAT with an interview, or by an overseas route using GMAT; both are closed.",
+            "eligibility": {
+              "intro": "The 2026-28 domestic route shortlisted on CAT 2025 percentile; the overseas route set a degree and GMAT threshold.",
+              "items": [
+                "Domestic route: CAT 2025 total percentile cut-offs of 95.25 (General), 89 (EWS), 88.5 (NC-OBC), 75 (SC), 44 (ST) and 30 (PwD) for shortlisting",
+                "Meeting the CAT cut-off was necessary but not sufficient; the interview, work experience and academic record also counted",
+                "Overseas route: bachelor's degree with at least 50 per cent or equivalent CGPA; foreign degrees need equivalence certified by the AIU",
+                "Overseas route: GMAT score of at least 640 out of 800, not older than two years on 30 April 2026",
+                "Final-year bachelor's students could apply and join provisionally, with all degree results due by 31 December 2026"
+              ]
+            },
+            "applicationSteps": [
+              "Domestic route: take CAT 2025 and register for the institute's JAP 2026 process; shortlisted candidates attended a personal interview at one of ten venues",
+              "Overseas route: take the GMAT and send the prescribed form, score, records, passport pages, two recommendations and the USD 200 fee by bank draft by 30 April 2026",
+              "Shortlisted overseas candidates were interviewed virtually in the first or second week of May 2026",
+              "Final merit weighted CAT or GMAT 52 per cent, interview 20 per cent, work experience 10 per cent, and school, degree and diversity components"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class X and XII mark sheets and certificates",
+                "Graduation records, and postgraduate records where applicable",
+                "CAT scorecard (domestic) or GMAT score certificate (overseas)"
+              ],
+              "application": [
+                "Prescribed overseas application form with the USD 200 bank draft (overseas route only)",
+                "Passport pages with authorised entries and stamps (overseas route only)",
+                "Two recommendation letters under the policy's referee rules (overseas route only)"
+              ]
+            },
+            "deadlinesNote": "The 2026-28 admissions portal is closed; the merit list was announced on 7 May 2026. No 2027-29 PGPM or PGPM-HR dates were published when checked on 27 October 2026.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 1950000,
+              "status": "confirmed",
+              "period": "full_course",
+              "componentBasis": "Six-term programme fee made up of a INR 1,00,000 acceptance fee and tuition of INR 2,25,000 in term I and INR 3,25,000 in each of terms II to VI; excludes a refundable INR 30,000 caution deposit and a mess advance of INR 24,000 a term.",
+              "audience": "domestic",
+              "category": "Students admitted through CAT and the JAP interview process",
+              "academicYear": "2026-28",
+              "sourceUrl": "https://www.iimtrichy.ac.in/en/Admission%20Criteria-pgpm-hr",
+              "sourceLabel": "IIM Tiruchirappalli PGPM-HR admission criteria and fees 2026-28",
+              "verifiedAt": "2026-10-27"
+            }
+          },
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-27",
+          "feeNotes": "Published 2026-28 programme fee for students admitted through CAT and the interview process: INR 19.5 lakh over six terms, made up of a INR 1,00,000 acceptance fee, INR 2,25,000 tuition in term I and INR 3,25,000 tuition in each of terms II to VI. It excludes a refundable INR 30,000 caution deposit and a mess advance of INR 24,000 a term. This is a whole-course charge, not annual tuition, so annual tuition is on request. Overseas-category students of the 2026-28 batch paid a combined USD 16,000 a year (USD 32,000 for two years) covering tuition, institutional services and hostel accommodation, plus boarding, caution deposit and any taxes.",
+          "teachingPhases": [
+            {
+              "phase": "Two-year full-time residential programme",
+              "language": "",
+              "details": "Study is at the Tiruchirappalli campus. The HR MBA is the institute's first domain-specific programme, launched in 2020, with case study, simulation and live-project teaching shared with the general MBA."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "publicField": "identity",
+      "claimText": "Public management institute established in 2011 at Tiruchirappalli, Tamil Nadu; an Institute of National Importance governed by the IIM Act, 2017.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - Genesis",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/genesis",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "publicField": "establishedYear",
+      "claimText": "Established 2011.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - Genesis",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/genesis",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "publicField": "recognitionBadges",
+      "claimText": "Indian Institutes of Management Act, 2017 (No. 33 of 2017, assent 31 Dec 2017): s.2 declares each Institute in the Schedule an institution of national importance; the Schedule lists Tamil Nadu - Indian Institute of Management Tiruchirappalli, a society registered under the Tamil Nadu Societies Registration Act, 1975.",
+      "status": "verified",
+      "sourceLabel": "Indian Institutes of Management Act, 2017 (India Code)",
+      "sourceUrl": "https://www.indiacode.nic.in/handle/123456789/2248?view_type=browse",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "India Code returned HTTP 403 to the fetch tool; the Act text (Gazette of India copy) was read from a PDF of the same Act and the extract is saved in research/india-source-bundles/indian-institute-of-management-tiruchirappalli/iim-act-2017-extract.txt."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "publicField": "recognitionBadges",
+      "claimText": "AMBA school profile lists IIM Tiruchirappalli as AMBA Accredited with 3 MBA programmes: PGPBM (part time), PGPM and PGPM-HR (full time). No end date shown.",
+      "status": "verified",
+      "sourceLabel": "AMBA accredited school profile",
+      "sourceUrl": "https://www.amba-bga.com/schools/indian-institute-of-management-tiruchirappalli",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "publicField": "summary",
+      "claimText": "Institute portfolio of PGPM, PGPM-HR, PGPBM, full-time and executive doctoral programmes; PGPBM taught at the Chennai campus.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - Programme directory",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/acd_programmes",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "publicField": "campusLifestyle",
+      "claimText": "Listed campus facilities: Learning Resource Centre, Computing Resources, Hostels, Sustainability, Finance Lab, Behavioural Lab, Sports Facility, Virtual Tour. PGPBM runs at the Chennai K K Nagar campus on weekends.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - Campus facilities",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/campus-facilities",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "Campus acreage omitted: sources differ (Genesis page states 175 acres; other pages differ)."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "publicField": "cityProfile",
+      "claimText": "Main institute at Tiruchirappalli; PGPBM is a 21-month in-person weekend programme at the Chennai K K Nagar campus.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - PGPBM admissions",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/pgpbm-admission-criteria",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "publicField": "practicalExposure",
+      "claimText": "PGPM pedagogy: case method, group evaluations, computer-based simulations, live projects, guest lectures. PGPM-HR launched 2020 as the first domain-specific programme and the only IIM-offered HR-focused MBA (institute statement).",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - PGPM-HR programme",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/pgpm-hr",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "publicField": "hostelOverview",
+      "claimText": "Eight hostel blocks (seven of three floors, one of eight floors with 328 air-conditioned rooms); 11-storey 400+ room building under construction; desks, whiteboards, balconies; Wi-Fi in every hostel and LAN in every room; dedicated women's blocks; accessible ground-floor rooms with attached bathrooms.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - Hostels",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/hostels",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "publicField": "dietarySupport",
+      "claimText": "Mess and Canteen Block with night canteen, sandwich bar and departmental stores. Mess advance INR 24,000 per term; mess rates may be revised (fee table). No menu, timings or dietary provision published.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - Hostels",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/hostels",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "Mess advance from https://www.iimtrichy.ac.in/en/pgpm-admin-criteria"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "publicField": "safetyOverview",
+      "claimText": "Anti-ragging committee and Internal Complaints Committee listed; no campus security arrangements published on pages checked.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - Anti-ragging committee",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/anti_ragging",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "Committees: https://www.iimtrichy.ac.in/en/Internal_Committees"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "publicField": "studentSupport",
+      "claimText": "Committees listed include public grievances, Internal Complaints Committee and SC/ST Cell; hostels reserve accessible ground-floor rooms.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - Internal committees",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/Internal_Committees",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "publicField": "whyChoose",
+      "claimText": "PGPM-HR described as the only IIM-offered MBA focused on HRM (institute statement); AMBA lists three accredited programmes; IIM Act 2017 status.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - PGPM-HR programme",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/pgpm-hr",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "publicField": "thingsToConsider",
+      "claimText": "Admissions portal shows MBA Batch 2026-2028 closed; merit list 7 May 2026; no 2027-29 PGPM/PGPM-HR rules on the pages checked. Overseas definition excludes anyone in India on 30 Nov 2025. Fee table excludes caution deposit and mess advance.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - Admissions portal status",
+      "sourceUrl": "https://admissions.iimtrichy.ac.in/index.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "publicField": "bestFitFor",
+      "claimText": "CAT cut-offs and overseas GMAT 640 threshold from the 2026-28 criteria and policy.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - PGPM admission criteria and fees 2026-28",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/pgpm-admin-criteria",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "publicField": "faq",
+      "claimText": "Admissions portal: PGPM and PGPM-HR 2026-28 closed; merit list 7 May 2026. PGPBM is a 21-month weekend programme in Chennai with prior work experience required; no formal placement assistance.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - PGPBM admissions",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/pgpbm-admission-criteria",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "Status: https://admissions.iimtrichy.ac.in/index.php"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "programmeSlug": "iim-trichy-pgpm-mba",
+      "publicField": "identity",
+      "claimText": "Two-year full-time residential PGPM (MBA) at IIM Tiruchirappalli.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - PGPM programme",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/pgpm",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "programmeSlug": "iim-trichy-pgpm-mba",
+      "publicField": "eligibility",
+      "claimText": "Domestic 2026-28: CAT 2025 total percentile cut-offs GEN 95.25, EWS 89, NC-OBC 88.5, SC 75, ST 44, DAP 30 for shortlisting (necessary, not sufficient). Overseas 2026-28: bachelor's 50% or equivalent CGPA, AIU equivalence for foreign degrees, GMAT 640/800 not older than 2 years on 30 April 2026.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - PGPM admission criteria and fees 2026-28",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/pgpm-admin-criteria",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "Domestic pages state no minimum degree marks or nationality rule; none published. Overseas details: https://www.iimtrichy.ac.in/sites/default/files/upload/23Jan2026132141_AdmissionPolicy-Overseas-PGPM-2026-28_Final_23Jan2026.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "programmeSlug": "iim-trichy-pgpm-mba",
+      "publicField": "admissions",
+      "claimText": "Domestic: CAT 2025 then JAP 2026 interview (ten venues); weights CAT 52%, PI 20%, work experience 10%, 12th 3%, UG 5%, 10th 2%, academic diversity 2%, female gender diversity 6%. Overseas: GMAT, form by 30 April 2026 with records, passport pages, two recommendations, USD 200 bank draft; virtual interview in first or second week of May 2026.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - PGPM admission criteria and fees 2026-28",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/pgpm-admin-criteria",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "Overseas policy: https://www.iimtrichy.ac.in/sites/default/files/upload/23Jan2026132141_AdmissionPolicy-Overseas-PGPM-2026-28_Final_23Jan2026.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "programmeSlug": "iim-trichy-pgpm-mba",
+      "publicField": "audienceEligibility",
+      "claimText": "Overseas category: Indian and foreign nationals living, working or studying outside India 1 Jan - 31 Dec 2025; a candidate expected in India on CAT 2025 (30 Nov 2025) is not eligible for that category. Separate CAT/JAP domestic route.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - PGPM overseas admission policy 2026-28",
+      "sourceUrl": "https://www.iimtrichy.ac.in/sites/default/files/upload/23Jan2026132141_AdmissionPolicy-Overseas-PGPM-2026-28_Final_23Jan2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "programmeSlug": "iim-trichy-pgpm-mba",
+      "publicField": "fee",
+      "claimText": "Domestic 2026-28 programme fee INR 19.5 lakh (acceptance 1,00,000; tuition 2,25,000 term I and 3,25,000 terms II-VI) excluding caution deposit INR 30,000 and mess advance INR 24,000 per term. Overseas 2026-28: USD 16,000 per annum, USD 32,000 for two years, combined fee including hostel. Annual tuition alone not isolated.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - PGPM admission criteria and fees 2026-28",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/pgpm-admin-criteria",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "Overseas: https://www.iimtrichy.ac.in/sites/default/files/upload/23Jan2026132141_AdmissionPolicy-Overseas-PGPM-2026-28_Final_23Jan2026.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "programmeSlug": "iim-trichy-pgpm-mba",
+      "publicField": "reportedFeeQuote",
+      "claimText": "INR 19.5 lakh whole-course programme fee for 2026-28 students admitted through CAT/JAP (acceptance fee plus tuition over six terms), excluding caution deposit and mess advance.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - PGPM admission criteria and fees 2026-28",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/pgpm-admin-criteria",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "programmeSlug": "iim-trichy-pgpm-mba",
+      "publicField": "medium",
+      "claimText": "Programme and admissions pages checked do not state the language of instruction; the website's Hindi option concerns the site language only. Field omitted.",
+      "status": "omit",
+      "sourceLabel": "IIM Tiruchirappalli - PGPM programme",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/pgpm",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "programmeSlug": "iim-trichy-pgpm-mba",
+      "publicField": "intake",
+      "claimText": "2026-28 admissions are closed and no next-cycle start month is published; none inferred.",
+      "status": "omit",
+      "sourceLabel": "IIM Tiruchirappalli - Admissions portal status",
+      "sourceUrl": "https://admissions.iimtrichy.ac.in/index.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "programmeSlug": "iim-trichy-pgpm-mba",
+      "publicField": "teachingPhases",
+      "claimText": "PGPM: two-year full-time programme at Tiruchirappalli; case method, simulations, live projects and guest lectures described on the programme pages.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - PGPM programme",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/pgpm",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "programmeSlug": "iim-trichy-pgpm-hr-mba",
+      "publicField": "identity",
+      "claimText": "Two-year full-time residential PGPM-HR (MBA) at IIM Tiruchirappalli.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - PGPM-HR programme",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/pgpm-hr",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "programmeSlug": "iim-trichy-pgpm-hr-mba",
+      "publicField": "eligibility",
+      "claimText": "Domestic 2026-28: CAT 2025 total percentile cut-offs GEN 95.25, EWS 89, NC-OBC 88.5, SC 75, ST 44, DAP 30 for shortlisting (necessary, not sufficient). Overseas 2026-28: bachelor's 50% or equivalent CGPA, AIU equivalence for foreign degrees, GMAT 640/800 not older than 2 years on 30 April 2026.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - PGPM-HR admission criteria and fees 2026-28",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/Admission%20Criteria-pgpm-hr",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "Domestic pages state no minimum degree marks or nationality rule; none published. Overseas details: https://www.iimtrichy.ac.in/sites/default/files/upload/23Jan2026132735_AdmissionPolicy-Overseas-PGPM-HR-2026-28_Final_23Jan2026.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "programmeSlug": "iim-trichy-pgpm-hr-mba",
+      "publicField": "admissions",
+      "claimText": "Domestic: CAT 2025 then JAP 2026 interview (ten venues); weights CAT 52%, PI 20%, work experience 10%, 12th 3%, UG 5%, 10th 2%, academic diversity 2%, female gender diversity 6%. Overseas: GMAT, form by 30 April 2026 with records, passport pages, two recommendations, USD 200 bank draft; virtual interview in first or second week of May 2026.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - PGPM-HR admission criteria and fees 2026-28",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/Admission%20Criteria-pgpm-hr",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "Overseas policy: https://www.iimtrichy.ac.in/sites/default/files/upload/23Jan2026132735_AdmissionPolicy-Overseas-PGPM-HR-2026-28_Final_23Jan2026.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "programmeSlug": "iim-trichy-pgpm-hr-mba",
+      "publicField": "audienceEligibility",
+      "claimText": "Overseas category: Indian and foreign nationals living, working or studying outside India 1 Jan - 31 Dec 2025; a candidate expected in India on CAT 2025 (30 Nov 2025) is not eligible for that category. Separate CAT/JAP domestic route.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - PGPM-HR overseas admission policy 2026-28",
+      "sourceUrl": "https://www.iimtrichy.ac.in/sites/default/files/upload/23Jan2026132735_AdmissionPolicy-Overseas-PGPM-HR-2026-28_Final_23Jan2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "programmeSlug": "iim-trichy-pgpm-hr-mba",
+      "publicField": "fee",
+      "claimText": "Domestic 2026-28 programme fee INR 19.5 lakh (acceptance 1,00,000; tuition 2,25,000 term I and 3,25,000 terms II-VI) excluding caution deposit INR 30,000 and mess advance INR 24,000 per term. Overseas 2026-28: USD 16,000 per annum, USD 32,000 for two years, combined fee including hostel. Annual tuition alone not isolated.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - PGPM-HR admission criteria and fees 2026-28",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/Admission%20Criteria-pgpm-hr",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31",
+      "internalNotes": "Overseas: https://www.iimtrichy.ac.in/sites/default/files/upload/23Jan2026132735_AdmissionPolicy-Overseas-PGPM-HR-2026-28_Final_23Jan2026.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "programmeSlug": "iim-trichy-pgpm-hr-mba",
+      "publicField": "reportedFeeQuote",
+      "claimText": "INR 19.5 lakh whole-course programme fee for 2026-28 students admitted through CAT/JAP (acceptance fee plus tuition over six terms), excluding caution deposit and mess advance.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - PGPM-HR admission criteria and fees 2026-28",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/Admission%20Criteria-pgpm-hr",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "programmeSlug": "iim-trichy-pgpm-hr-mba",
+      "publicField": "medium",
+      "claimText": "Programme and admissions pages checked do not state the language of instruction; the website's Hindi option concerns the site language only. Field omitted.",
+      "status": "omit",
+      "sourceLabel": "IIM Tiruchirappalli - PGPM-HR programme",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/pgpm-hr",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "programmeSlug": "iim-trichy-pgpm-hr-mba",
+      "publicField": "intake",
+      "claimText": "2026-28 admissions are closed and no next-cycle start month is published; none inferred.",
+      "status": "omit",
+      "sourceLabel": "IIM Tiruchirappalli - Admissions portal status",
+      "sourceUrl": "https://admissions.iimtrichy.ac.in/index.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "indian-institute-of-management-tiruchirappalli",
+      "programmeSlug": "iim-trichy-pgpm-hr-mba",
+      "publicField": "teachingPhases",
+      "claimText": "PGPM-HR: two-year full-time programme at Tiruchirappalli; case method, simulations, live projects and guest lectures described on the programme pages.",
+      "status": "verified",
+      "sourceLabel": "IIM Tiruchirappalli - PGPM-HR programme",
+      "sourceUrl": "https://www.iimtrichy.ac.in/en/pgpm-hr",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-27",
+      "reviewBy": "2027-01-31"
+    }
+  ]
+}
