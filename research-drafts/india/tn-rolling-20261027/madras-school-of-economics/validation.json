@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-27",
+  "status": "research-fragment JSON and inventory validation only; intentionally not catalogue-schema-valid",
+  "inventoryRows": 16,
+  "programmeFragments": 7,
+  "evidenceRows": 51,
+  "blockedReason": "No verified independent recognition badge; fragment has empty recognition arrays to fail closed.",
+  "schemaReader": "Not run as an executable bundle: institutional recognition hold must be resolved first.",
+  "notPerformed": [
+    "Migration reservation",
+    "Ledger edit",
+    "DB apply",
+    "Media upload",
+    "Commit or push"
+  ],
+  "programmeFragmentSchema": "PASS7 using the strict catalogue programme-array subschema; not a university/catalogue pass"
+}

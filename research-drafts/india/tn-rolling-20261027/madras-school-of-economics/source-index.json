@@ -1,0 +1,222 @@
+{
+  "checkedAt": "2026-10-27",
+  "receipts": [
+    {
+      "receipt": "sources/about.html.receipt.json",
+      "url": "https://mse.ac.in/about/",
+      "status": 200,
+      "error": null,
+      "sha256": "d28e57d59e6f2cd98cf574bbb136e184a537406315b65cbb85d58480d88e17d3",
+      "bytes": 173774,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "receipt": "sources/act-final.pdf.receipt.json",
+      "url": "https://www.stationeryprinting.tn.gov.in/extraordinary/2020/417_Ex_IV_2.pdf",
+      "status": null,
+      "error": "HTTP Error 503: Service Unavailable",
+      "sha256": null,
+      "bytes": null,
+      "contentType": null
+    },
+    {
+      "receipt": "sources/act2020.pdf.receipt.json",
+      "url": "https://www.stationeryprinting.tn.gov.in/extraordinary/2020/379_Ex_IV_1_E.pdf",
+      "status": null,
+      "error": "HTTP Error 503: Service Unavailable",
+      "sha256": null,
+      "bytes": null,
+      "contentType": null
+    },
+    {
+      "receipt": "sources/cover.jpg.receipt.json",
+      "url": "https://mse.ac.in/wp-content/uploads/2021/09/final-image.jpg",
+      "status": 200,
+      "error": null,
+      "sha256": "18805180b86417020fe96307d1b0cfafb233c1868f0fe002d64257f25ae14063",
+      "bytes": 256535,
+      "contentType": "image/jpeg"
+    },
+    {
+      "receipt": "sources/gazette-index.html.receipt.json",
+      "url": "https://www.stationeryprinting.tn.gov.in/extra_ordinary_lists.php?id=MjAyMA%3D%3D",
+      "status": null,
+      "error": "HTTP Error 503: Service Unavailable",
+      "sha256": null,
+      "bytes": null,
+      "contentType": null
+    },
+    {
+      "receipt": "sources/grievance.pdf.receipt.json",
+      "url": "https://mse.ac.in/wp-content/uploads/2026/09/Grievance-and-Prevention-of-Sexual-Harassment-Committee.pdf",
+      "status": 200,
+      "error": null,
+      "sha256": "d65ed0525a6c0e822fe1be9a6908cf3e832994bf5fe5a49e7c0c4f8dbcecd134",
+      "bytes": 15350,
+      "contentType": "application/pdf"
+    },
+    {
+      "receipt": "sources/home.html.receipt.json",
+      "url": "https://mse.ac.in/",
+      "status": 200,
+      "error": null,
+      "sha256": "5dd718f8209406d6f066ba4e0a92947405a4656a455f9f3d58666fff08f3a262",
+      "bytes": 251315,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "receipt": "sources/hostel.html.receipt.json",
+      "url": "https://mse.ac.in/hostel-facilities/",
+      "status": 200,
+      "error": null,
+      "sha256": "812ad132ae54fb366920023c40b2a1e671e4a58838a54d7e126694c4ca1f74e8",
+      "bytes": 165823,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "receipt": "sources/ima.html.receipt.json",
+      "url": "https://mse.ac.in/5-year-integrated-ma/",
+      "status": 200,
+      "error": null,
+      "sha256": "f593fd821d8a34c32cadc02fc8efbd8695e489c402b43448e1169e5fa82526cf",
+      "bytes": 178987,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "receipt": "sources/ima2026.pdf.receipt.json",
+      "url": "https://mse.ac.in/wp-content/uploads/2026/04/IMA-2026-Broucher.pdf",
+      "status": 200,
+      "error": null,
+      "sha256": "e21ad8f31427dae15763936e785279821054babe080c39413dd669547fffe7fd",
+      "bytes": 2469491,
+      "contentType": "application/pdf"
+    },
+    {
+      "receipt": "sources/live-Madras-School-of-Economics.json.receipt.json",
+      "url": "https://www.studentstraffic.com/api/suggestions?q=Madras%20School%20of%20Economics",
+      "status": 200,
+      "error": null,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2,
+      "contentType": "application/json"
+    },
+    {
+      "receipt": "sources/logo.png.receipt.json",
+      "url": "https://mse.ac.in/wp-content/uploads/2021/11/BLUE-1-.png",
+      "status": 200,
+      "error": null,
+      "sha256": "896054972d63fcb8647d0403052ffd2c9a88ebd9bbd0774e42162c3436ead694",
+      "bytes": 12819,
+      "contentType": "image/png"
+    },
+    {
+      "receipt": "sources/ma.html.receipt.json",
+      "url": "https://mse.ac.in/m-a-programmes-mse/",
+      "status": 200,
+      "error": null,
+      "sha256": "421a8d6b511fc4421ea56ed00c0a2d07d119ea23478ebb22d29803d1cbd524de",
+      "bytes": 200633,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "receipt": "sources/ma2026.pdf.receipt.json",
+      "url": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-MA-Programs-Brochure-2026.pdf",
+      "status": 200,
+      "error": null,
+      "sha256": "1b3d53b2957ba9f23e5de93f8d8a9c920922df6c5fb4c9ffb3815fac2d69be7a",
+      "bytes": 720701,
+      "contentType": "application/pdf"
+    },
+    {
+      "receipt": "sources/mba.html.receipt.json",
+      "url": "https://mse.ac.in/mba-admission/",
+      "status": 200,
+      "error": null,
+      "sha256": "487395c07c03d3a255aadd743a13a44d812783d8dbf25b824b98152e166d1896",
+      "bytes": 184829,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "receipt": "sources/mba2026.pdf.receipt.json",
+      "url": "https://mse.ac.in/wp-content/uploads/2026/06/MBA-Admissions-Brochure_2026-28_Updated.pdf",
+      "status": 200,
+      "error": null,
+      "sha256": "df3cc13d05585e4422214a7ecddfa3479529dcaab36ae53da5000c38c7c9473f",
+      "bytes": 5779528,
+      "contentType": "application/pdf"
+    },
+    {
+      "receipt": "sources/msc.html.receipt.json",
+      "url": "https://mse.ac.in/m-sc-ds-admission/",
+      "status": 200,
+      "error": null,
+      "sha256": "458f75d3ca18cb5b60fb734e55d998b8069349f274a4b3a129bd768bbaaa33c1",
+      "bytes": 194436,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "receipt": "sources/msc2026.pdf.receipt.json",
+      "url": "https://mse.ac.in/wp-content/uploads/2026/04/MSE-M.Sc_.-Degree-in-Data-Science-Brochure-2026-v2.pdf",
+      "status": 200,
+      "error": null,
+      "sha256": "9284d8b1c42239b5ef130d2233bd96c14884a1be91bfa1f5a026bb2235c83fae",
+      "bytes": 824287,
+      "contentType": "application/pdf"
+    },
+    {
+      "receipt": "sources/phd.html.receipt.json",
+      "url": "https://mse.ac.in/ph-d-programmes/",
+      "status": 200,
+      "error": null,
+      "sha256": "e27fe8716c2c8dfcfd000b607d722e4f307c0d02a08b96a0c7ea2eb4bef05280",
+      "bytes": 173637,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "receipt": "sources/ugc-data.json.receipt.json",
+      "url": "https://www.ugc.gov.in/universitydetails/Getuniversity_details?unitypeID=0",
+      "status": 200,
+      "error": null,
+      "sha256": "fffc1afb6ed91a80619cc38bef11f3de10bd5a323879f9b903fa08a0180b76be",
+      "bytes": 1214155,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "receipt": "sources/ugc-list.html.receipt.json",
+      "url": "https://www.ugc.gov.in/universitydetails/university?type=MuOh4z0uqRaY2k8Ag10I0g==",
+      "status": 200,
+      "error": null,
+      "sha256": "d07ab1c034968bf427aa38d36e6d4dc9092b3d0b01bedbc87b5c7c3065f6558f",
+      "bytes": 46255,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "receipt": "sources/ugc-other.html.receipt.json",
+      "url": "https://www.ugc.gov.in/universitydetails/universityother?type=MuOh4z0uqRaY2k8Ag10I0g==",
+      "status": 200,
+      "error": null,
+      "sha256": "6098e9d11ebc8ae6a686fec7be9a8cc4e8d1137ae10d6845afdf4d2a61861388",
+      "bytes": 57084,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "receipt": "sources/ugc-unijs.js.receipt.json",
+      "url": "https://www.ugc.gov.in/Scripts/Pages/unijs.js",
+      "status": 200,
+      "error": null,
+      "sha256": "53640c1fba0b36ce86abbc825b20794a76bb16dd2e2acf51ab37dac33960d4d5",
+      "bytes": 10874,
+      "contentType": "application/javascript"
+    },
+    {
+      "receipt": "sources/ugc.html.receipt.json",
+      "url": "https://www.ugc.gov.in/",
+      "status": 200,
+      "error": null,
+      "sha256": "a425b1b539b616ac1b9916b31aedd4fff020d3ba74e73537d5ce2dc7a78369e1",
+      "bytes": 170862,
+      "contentType": "text/html; charset=utf-8"
+    }
+  ],
+  "note": "Raw source downloads are research snapshots, not publication assets. Errors are retained and never treated as source content."
+}

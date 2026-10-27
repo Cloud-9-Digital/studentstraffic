@@ -1,0 +1,43 @@
+{
+  "status": "research complete with blocking holds; NOT a catalogue payload",
+  "candidateProgrammeFragments": 7,
+  "heldMBA": 2,
+  "institutionGate": {
+    "code": "independent-recognition-unresolved",
+    "detail": "MSE claims Act25of2020 Institution of Special Importance and UGC state-legislature listing. Government 2020 gazette index confirms issue417/Act25, but final Act PDF could not be retrieved (503 locally; web cache miss). UGC general university API lacked MSE, but that directory may exclude the relevant institutional category; absence is not a negative finding. No invented badge is supplied.",
+    "governmentIndex": "https://www.stationeryprinting.tn.gov.in/extra_ordinary_lists.php?id=MjAyMA%3D%3D",
+    "targetPdf": "https://www.stationeryprinting.tn.gov.in/extraordinary/2020/417_Ex_IV_2.pdf",
+    "resolution": "Retrieve regulator/state-government record naming MSE and degree-authority scope; then add genuine badge with matching GradeA recognition evidence."
+  },
+  "programmeHolds": [
+    {
+      "programmes": [
+        "mba-finance",
+        "mba-business-analytics"
+      ],
+      "code": "contradictory-eligibility",
+      "detail": "June2026 updated brochure maths preferable vs admissions webpage mandatory; first-attempt and under25 rules not consistently stated; minimum marks main page55%UG+60%X/XII vs category FAQ. Obtain authoritative reconciliation and current programme approval; do not select whichever rule is easier."
+    },
+    {
+      "programmes": [
+        "ma-applied-quantitative-finance"
+      ],
+      "code": "taxonomy-proposal",
+      "detail": "No exact neutral MA quantitative-finance category found; do not map an MA to MSc Finance solely to pass schema."
+    }
+  ],
+  "nonBlockingOmissions": [
+    "Unknown teaching medium explicitly omitted",
+    "Future intake not inferred",
+    "Semester fees retained in native quote, no annualisation"
+  ],
+  "media": "Official logo and campus photograph HTTP200/visually verified; reuse rights and Cloudinary upload pending.",
+  "researchRouteInventoryCorrection": {
+    "status": "held_not_blanket_excluded",
+    "routes": [
+      "PhD in Economics, Management and allied subjects \u2014 Full-time",
+      "PhD in Economics, Management and allied subjects \u2014 Part-time"
+    ],
+    "rule": "Current research degrees are in scope. National navigation alone does not establish a campus admitting award. Exact missing fields remain individually held in the inventory."
+  }
+}

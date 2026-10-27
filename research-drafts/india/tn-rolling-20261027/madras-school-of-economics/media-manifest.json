@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-10-27",
+  "assets": {
+    "logo": {
+      "url": "https://mse.ac.in/wp-content/uploads/2021/11/BLUE-1-.png",
+      "checkedAt": "2026-10-27",
+      "status": 200,
+      "contentType": "image/png",
+      "finalUrl": "https://mse.ac.in/wp-content/uploads/2021/11/BLUE-1-.png",
+      "bytes": 12819,
+      "sha256": "896054972d63fcb8647d0403052ffd2c9a88ebd9bbd0774e42162c3436ead694",
+      "localFile": "sources/logo.png",
+      "visualCheck": "passed; genuine institution logo",
+      "cloudinaryUpload": "not attempted",
+      "reuseRights": "not independently established"
+    },
+    "cover": {
+      "url": "https://mse.ac.in/wp-content/uploads/2021/09/final-image.jpg",
+      "checkedAt": "2026-10-27",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "finalUrl": "https://mse.ac.in/wp-content/uploads/2021/09/final-image.jpg",
+      "bytes": 256535,
+      "sha256": "18805180b86417020fe96307d1b0cfafb233c1868f0fe002d64257f25ae14063",
+      "localFile": "sources/cover.jpg",
+      "visualCheck": "passed; real campus photograph with campus provenance",
+      "cloudinaryUpload": "not attempted",
+      "reuseRights": "not independently established"
+    }
+  },
+  "publishGate": "Integrator/user must clear rights and upload to authorized Cloudinary before publication. No media writes were performed."
+}
