@@ -1,0 +1,39 @@
+{
+  "logo": {
+    "sourceUrl": "https://measiarch.edu.in/wp-content/uploads/2026/10/MAA-Logo-FP.png",
+    "localPath": "sources/logo-full.png",
+    "httpStatus": 200,
+    "contentType": "image/png",
+    "dimensions": [
+      112,
+      112
+    ],
+    "sha256": "64bba618d1e9b16662ccebf77683c640a8890bc479dac8141c9f72e09ea3976f",
+    "visualInspection": "Verified institution-specific asset; no unrelated stock or generated imagery.",
+    "rights": "Official-host provenance verified; independent reuse license/permission not established. Integrator review required.",
+    "checkedAt": "2026-10-27",
+    "cloudinaryUpload": "Not attempted or authorized for this worker"
+  },
+  "cover": {
+    "sourceUrl": "https://measiarch.edu.in/wp-content/uploads/2026/09/MEASIPHOTO.jpg",
+    "localPath": "sources/cover-campus.jpg",
+    "httpStatus": 200,
+    "contentType": "image/jpeg",
+    "dimensions": [
+      1440,
+      960
+    ],
+    "sha256": "6702cd0d9828bf2e459736c7bac1d8af8588f71c2df675da4538243935b9613e",
+    "visualInspection": "Verified institution-specific asset; no unrelated stock or generated imagery.",
+    "rights": "Official-host provenance verified; independent reuse license/permission not established. Integrator review required.",
+    "checkedAt": "2026-10-27",
+    "cloudinaryUpload": "Not attempted or authorized for this worker",
+    "altText": "MEASI Academy of Architecture entrance and courtyard in Royapettah"
+  },
+  "rejectedCandidates": [
+    {
+      "file": "sources/cover.png",
+      "reason": "Seminar photograph, less suitable than the verified campus entrance photograph."
+    }
+  ]
+}

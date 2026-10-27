@@ -1,0 +1,50 @@
+{
+  "schemaPass": true,
+  "actualReaderPass": true,
+  "expiredEvidenceCount": 0,
+  "programmes": 7,
+  "evidenceRows": 101,
+  "readyForLocalMediaPreparation": true,
+  "readyForDirectApply": false,
+  "uploads": 0,
+  "databaseAccess": false,
+  "note": "Source links are reviewed. Explicit local upload or verified existing mappings are still required before a real migration.",
+  "checkedAt": "2026-10-27",
+  "preparationSafetyTests": {
+    "passed": 12,
+    "failed": 0,
+    "command": "node --import tsx --test content-preparation/tn-batch2-20261027/madras-school-of-economics/prepare-local.test.mjs"
+  },
+  "sourceMediaHTTPImageAndVisualReview": [
+    {
+      "kind": "logo",
+      "url": "https://mse.ac.in/wp-content/uploads/2021/11/BLUE-1-.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 12819,
+      "sha256": "896054972d63fcb8647d0403052ffd2c9a88ebd9bbd0774e42162c3436ead694",
+      "unchanged": true,
+      "checkedAt": "2026-10-27T12:47:11.756973+00:00"
+    },
+    {
+      "kind": "cover",
+      "url": "https://mse.ac.in/wp-content/uploads/2021/09/final-image.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 256535,
+      "sha256": "18805180b86417020fe96307d1b0cfafb233c1868f0fe002d64257f25ae14063",
+      "unchanged": true,
+      "checkedAt": "2026-10-27T12:47:15.392275+00:00"
+    }
+  ],
+  "existingRepositoryRegressionTests": {
+    "passed": 20,
+    "failed": 0,
+    "scope": "Separate taxonomy/content-migration regression tests, not a substitute for generated payload checks"
+  },
+  "cloudinaryUpload": "not_run: explicit user local stage",
+  "numberedMigrationValidation": "not_run: outside content-migrations until hosted media is verified",
+  "sharedRemoteLedgerEdited": false,
+  "livePublished": false,
+  "payloadSha256": "1f8dda833cd9f296405de8b3e32c82a6a10dbf7698f7350ce6a47ffd45688fc5"
+}

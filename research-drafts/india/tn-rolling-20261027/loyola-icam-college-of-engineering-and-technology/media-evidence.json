@@ -1,0 +1,43 @@
+{
+  "logo": {
+    "sourceUrl": "https://licet.ac.in/wp-content/uploads/2021/02/Artboard-%E2%80%93-3-1-150x150.png",
+    "localPath": "sources/logo-crest.png",
+    "httpStatus": 200,
+    "contentType": "image/png",
+    "dimensions": [
+      150,
+      150
+    ],
+    "sha256": "d1497bcc1f32d3060751ff92c27aa5bdfd3125e1f5b4be63a14cda415b219152",
+    "visualInspection": "Verified institution-specific asset; no unrelated stock or generated imagery.",
+    "rights": "Official-host provenance verified; independent reuse license/permission not established. Integrator review required.",
+    "checkedAt": "2026-10-27",
+    "cloudinaryUpload": "Not attempted or authorized for this worker"
+  },
+  "cover": {
+    "sourceUrl": "https://licet.ac.in/wp-content/uploads/2021/03/550-1024x683.jpg",
+    "localPath": "sources/cover-hostel.jpg",
+    "httpStatus": 200,
+    "contentType": "image/jpeg",
+    "dimensions": [
+      1024,
+      683
+    ],
+    "sha256": "72450d03b311cb2554902231e9916a12ef92f9e74eee6b0e60792ee469633d9d",
+    "visualInspection": "Verified institution-specific asset; no unrelated stock or generated imagery.",
+    "rights": "Official-host provenance verified; independent reuse license/permission not established. Integrator review required.",
+    "checkedAt": "2026-10-27",
+    "cloudinaryUpload": "Not attempted or authorized for this worker",
+    "altText": "LICET hostel building and courtyard within the Loyola campus"
+  },
+  "rejectedCandidates": [
+    {
+      "file": "sources/cover-candidate.png",
+      "reason": "World/partner collage, not a campus photograph; excluded."
+    },
+    {
+      "file": "sources/logo.png",
+      "reason": "Official text/crest combination has low-contrast gold lettering; crest-only asset is preferable."
+    }
+  ]
+}

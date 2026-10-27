@@ -1,0 +1,12 @@
+{
+  "registry": "lib/data/program-taxonomy.ts",
+  "allCandidateRowsMatchRegistry": true,
+  "mappingNotes": [
+    "Official awards are retained separately; no university-specific canonical course is created.",
+    "CSE specialisations use the existing appropriate computing parent; CSBS uses CSE.",
+    "VLSI and embedded systems map to postgraduate ECE; Structural to postgraduate Civil; Engineering Design to postgraduate Mechanical.",
+    "SREC M.Tech Nano Science and Technology maps to the existing postgraduate Materials family, whose aliases include M.Tech Nanotechnology.",
+    "Aeronautical maps to the existing aerospace parent; no doctorate gap is treated as a new undergraduate or masters course."
+  ],
+  "unresolved": []
+}

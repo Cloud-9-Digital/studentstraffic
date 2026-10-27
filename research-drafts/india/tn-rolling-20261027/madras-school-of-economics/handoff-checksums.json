@@ -1,0 +1,410 @@
+{
+  "checkedAt": "2026-10-27",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1658,
+      "sha256": "c278f62d6360ce6c7303e91f7016942c5ca394bc2bbcb5c2a53f8adeef4e7952"
+    },
+    {
+      "path": "deduplication.json",
+      "bytes": 1037,
+      "sha256": "14b0595fd056c946e61853d88d7099134c8909414572092141041be219912562"
+    },
+    {
+      "path": "evidence.json",
+      "bytes": 34716,
+      "sha256": "3cbac6c5b16c753320305b8370c5700883b94f2f04baa7f1e7a77adfd8aa0721"
+    },
+    {
+      "path": "holds.json",
+      "bytes": 2475,
+      "sha256": "be4fa20f3a005d8175999a0741f878ce7f1433b619d34be5c4ff59992e6330e3"
+    },
+    {
+      "path": "media-manifest.json",
+      "bytes": 1341,
+      "sha256": "217a89f31a735b8a455a52dceb0c863663e1f9242f3584afcd1ecb58d360ec5b"
+    },
+    {
+      "path": "programme-fragments.json",
+      "bytes": 32858,
+      "sha256": "4d93945adc398fe722cb062520ac538f7cd3e7bec846cfc908e259b52a9155a3"
+    },
+    {
+      "path": "programme-inventory.csv",
+      "bytes": 8143,
+      "sha256": "ac0144cb55912ba4f103924609ba4d7498b649154aa430423847422dfb7d68ad"
+    },
+    {
+      "path": "programme-inventory.md",
+      "bytes": 1546,
+      "sha256": "6b294aff927f30f058131fe0c178f880b8e533f11aeed7a004cda72a5cab2ee4"
+    },
+    {
+      "path": "source-index.json",
+      "bytes": 8118,
+      "sha256": "2fadef0ba640e445ad847a141afc95af2d6948b7e4f9db44f843edc210831d75"
+    },
+    {
+      "path": "sources/about.html",
+      "bytes": 173774,
+      "sha256": "d28e57d59e6f2cd98cf574bbb136e184a537406315b65cbb85d58480d88e17d3"
+    },
+    {
+      "path": "sources/about.html.receipt.json",
+      "bytes": 12446,
+      "sha256": "28d71ad08de0fc36da5a35a77c960b082e66e770493a821051295de824fbc235"
+    },
+    {
+      "path": "sources/about.txt",
+      "bytes": 7052,
+      "sha256": "6cf21ea2d92976e1b249aaffcce78e90ea6dc6d624db4975e4c2d64b971832f2"
+    },
+    {
+      "path": "sources/act-final.pdf.receipt.json",
+      "bytes": 169,
+      "sha256": "81d6d522d9e80825302d848ee7aafc24a91d86cad587eea91ab071c07f24bc5d"
+    },
+    {
+      "path": "sources/act2020.pdf.receipt.json",
+      "bytes": 171,
+      "sha256": "34c1d0b240ee7608d790bb48d297c4fc72fd53ac76423595bdd90c5e861f8a34"
+    },
+    {
+      "path": "sources/cover.jpg",
+      "bytes": 256535,
+      "sha256": "18805180b86417020fe96307d1b0cfafb233c1868f0fe002d64257f25ae14063"
+    },
+    {
+      "path": "sources/cover.jpg.receipt.json",
+      "bytes": 329,
+      "sha256": "21a58b877e25e1127f71ace695e623ed9021c9f8df612dee49e1f0db053460db"
+    },
+    {
+      "path": "sources/gazette-index.html.receipt.json",
+      "bytes": 175,
+      "sha256": "f5d472fba578a7cfc2d6ef83d75dbcd413b4c99efdf29b0f226929199ccf0d43"
+    },
+    {
+      "path": "sources/grievance.pdf",
+      "bytes": 15350,
+      "sha256": "d65ed0525a6c0e822fe1be9a6908cf3e832994bf5fe5a49e7c0c4f8dbcecd134"
+    },
+    {
+      "path": "sources/grievance.pdf.receipt.json",
+      "bytes": 421,
+      "sha256": "d99e289429a5bb014ac17cf302269592457b11c665ef37552bdc3023da833281"
+    },
+    {
+      "path": "sources/grievance.txt",
+      "bytes": 1208,
+      "sha256": "acf8acf4546c3ca401077ab20dd4280a1ee3c8ee1865e647c1283645d3c7c11f"
+    },
+    {
+      "path": "sources/home.html",
+      "bytes": 251315,
+      "sha256": "5dd718f8209406d6f066ba4e0a92947405a4656a455f9f3d58666fff08f3a262"
+    },
+    {
+      "path": "sources/home.html.receipt.json",
+      "bytes": 36824,
+      "sha256": "463cf4fdf06b4ffead481812987879ceee3f36ad73b4ce19d86bfcb161db5914"
+    },
+    {
+      "path": "sources/home.txt",
+      "bytes": 7436,
+      "sha256": "3b6eb60c660dc0d19f4a949cab6c34de32b5b870c6d4767142546d9ebcf73420"
+    },
+    {
+      "path": "sources/hostel.html",
+      "bytes": 165823,
+      "sha256": "812ad132ae54fb366920023c40b2a1e671e4a58838a54d7e126694c4ca1f74e8"
+    },
+    {
+      "path": "sources/hostel.html.receipt.json",
+      "bytes": 12466,
+      "sha256": "65adf3a4199c9953de2618a3f1b9f220ab53c023797613060455ff139afc6802"
+    },
+    {
+      "path": "sources/hostel.txt",
+      "bytes": 3539,
+      "sha256": "45ef14c2bbcbde4d95492972d2bbc979859cf96105f78cbaa910f05055259cf0"
+    },
+    {
+      "path": "sources/ima.html",
+      "bytes": 178987,
+      "sha256": "f593fd821d8a34c32cadc02fc8efbd8695e489c402b43448e1169e5fa82526cf"
+    },
+    {
+      "path": "sources/ima.html.receipt.json",
+      "bytes": 12948,
+      "sha256": "ab3da95d3bfd7bf948589ae3666f3bd705185d66ff93e2e07efc2a2025609879"
+    },
+    {
+      "path": "sources/ima.txt",
+      "bytes": 5845,
+      "sha256": "6274c7573ec928d1b0e2b8ea248cace60eb8cec26af57b6d51a95c6575c64d4c"
+    },
+    {
+      "path": "sources/ima2026.pdf",
+      "bytes": 2469491,
+      "sha256": "e21ad8f31427dae15763936e785279821054babe080c39413dd669547fffe7fd"
+    },
+    {
+      "path": "sources/ima2026.pdf.receipt.json",
+      "bytes": 347,
+      "sha256": "3b06de4182f39f68ef4dcbb64b1eedb075ba3335f71e2f28bc581ae408ccbc2d"
+    },
+    {
+      "path": "sources/ima2026.txt",
+      "bytes": 18069,
+      "sha256": "2c8908465377f924f5dbb2558f342ec084059fd8bb6d546f92c166215f0878a0"
+    },
+    {
+      "path": "sources/live-Madras-School-of-Economics.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "sources/live-Madras-School-of-Economics.json.receipt.json",
+      "bytes": 374,
+      "sha256": "8ec374669dddfc47efe77ef6917e9e02add41d06820ead30897206c5b18a548c"
+    },
+    {
+      "path": "sources/logo.png",
+      "bytes": 12819,
+      "sha256": "896054972d63fcb8647d0403052ffd2c9a88ebd9bbd0774e42162c3436ead694"
+    },
+    {
+      "path": "sources/logo.png.receipt.json",
+      "bytes": 319,
+      "sha256": "355367a8c5a3793787cc9997311618c10a1e82d91fe7d76d6434ed23cefae88a"
+    },
+    {
+      "path": "sources/ma.html",
+      "bytes": 200633,
+      "sha256": "421a8d6b511fc4421ea56ed00c0a2d07d119ea23478ebb22d29803d1cbd524de"
+    },
+    {
+      "path": "sources/ma.html.receipt.json",
+      "bytes": 13727,
+      "sha256": "d7c2008eaf13d01a9f5e9c42c21f6779c5bcba62abb8813a6588b9744358919d"
+    },
+    {
+      "path": "sources/ma.txt",
+      "bytes": 9104,
+      "sha256": "3b2d4287b39eddc27f2eb1691ba538a38f6b8984d20a785de64494104806f8b7"
+    },
+    {
+      "path": "sources/ma2026.pdf",
+      "bytes": 720701,
+      "sha256": "1b3d53b2957ba9f23e5de93f8d8a9c920922df6c5fb4c9ffb3815fac2d69be7a"
+    },
+    {
+      "path": "sources/ma2026.pdf.receipt.json",
+      "bytes": 370,
+      "sha256": "81f83887e77833b0af6353693c8a7c2b83ee74a81df8f6750cbae74471a22b31"
+    },
+    {
+      "path": "sources/ma2026.txt",
+      "bytes": 15400,
+      "sha256": "fbd077543cbf49acc7071f45576dc98fb44c9dbc62e50779752b05dcf5bdcc09"
+    },
+    {
+      "path": "sources/mba.html",
+      "bytes": 184829,
+      "sha256": "487395c07c03d3a255aadd743a13a44d812783d8dbf25b824b98152e166d1896"
+    },
+    {
+      "path": "sources/mba.html.receipt.json",
+      "bytes": 12996,
+      "sha256": "a3aedb62056816b70509e532b2a633420e82772439bcb1620d81fd041ff7f6b2"
+    },
+    {
+      "path": "sources/mba.txt",
+      "bytes": 6086,
+      "sha256": "d7773a1d24e1d4a9c2c7c59900f209f8ffd9cbb5b1bdd252de2ea4689c81fb9e"
+    },
+    {
+      "path": "sources/mba2026-page-16-ocr.txt",
+      "bytes": 141,
+      "sha256": "9250ef9160eff45d4691c3313f0801b234cfb2756a45415c334a0bcf7d84d0dc"
+    },
+    {
+      "path": "sources/mba2026-page-17-ocr.txt",
+      "bytes": 362,
+      "sha256": "064fb83e00ad78dac4ddd6e8345a09c5bcb633d67f675ade2af5883756a9ddae"
+    },
+    {
+      "path": "sources/mba2026-page-18-ocr.txt",
+      "bytes": 2626,
+      "sha256": "a0d93b0ed4bfbedb6b12b661d61d41bebc1a5f667d290a87d051e2cae9f4273c"
+    },
+    {
+      "path": "sources/mba2026-page-19-ocr.txt",
+      "bytes": 2183,
+      "sha256": "178ae682065949718cabd099e61061770802ed199bf06bb9a5e50faa42c4ff39"
+    },
+    {
+      "path": "sources/mba2026-page-20-ocr.txt",
+      "bytes": 728,
+      "sha256": "406bfdabd45742e94afcc28999477f0318051a414c3a569cb62d95af1feddcdc"
+    },
+    {
+      "path": "sources/mba2026-page-21-ocr.txt",
+      "bytes": 2545,
+      "sha256": "ab423fe4c2781f6bc7d8a837b9c6d98faae5076992c3cd95087a88aac1acaf49"
+    },
+    {
+      "path": "sources/mba2026-page-22-ocr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sources/mba2026.pdf",
+      "bytes": 5779528,
+      "sha256": "df3cc13d05585e4422214a7ecddfa3479529dcaab36ae53da5000c38c7c9473f"
+    },
+    {
+      "path": "sources/mba2026.pdf.receipt.json",
+      "bytes": 391,
+      "sha256": "c226d6f7e6436f2ffd06a0fc8c9d84af343c9925b8a72392b964eabc6cce7c74"
+    },
+    {
+      "path": "sources/mba2026.txt",
+      "bytes": 22,
+      "sha256": "ddaf6072011c8b22992fd52acc953b742c630bbc4af67f17b989640a3684a515"
+    },
+    {
+      "path": "sources/msc.html",
+      "bytes": 194436,
+      "sha256": "458f75d3ca18cb5b60fb734e55d998b8069349f274a4b3a129bd768bbaaa33c1"
+    },
+    {
+      "path": "sources/msc.html.receipt.json",
+      "bytes": 13386,
+      "sha256": "fbe1e9ae1bad7e64e832ffe17dfdd92659f6859753c8f7d9ac84c7cf66740300"
+    },
+    {
+      "path": "sources/msc.txt",
+      "bytes": 7615,
+      "sha256": "e9bbb31abf64edf92dc4ca74f46db1aae60a42016c02eb70daa686b4b18dbf1e"
+    },
+    {
+      "path": "sources/msc2026.pdf",
+      "bytes": 824287,
+      "sha256": "9284d8b1c42239b5ef130d2233bd96c14884a1be91bfa1f5a026bb2235c83fae"
+    },
+    {
+      "path": "sources/msc2026.pdf.receipt.json",
+      "bytes": 412,
+      "sha256": "db418682a17349fbd06eac9b39d42afda00eec556e0f504588c66a25b1df9f06"
+    },
+    {
+      "path": "sources/msc2026.txt",
+      "bytes": 11215,
+      "sha256": "be870334f6927d3c41ca42c619d1a4d4bc3aefa3a9dcb12d518266d19ae3a46d"
+    },
+    {
+      "path": "sources/phd.html",
+      "bytes": 173637,
+      "sha256": "e27fe8716c2c8dfcfd000b607d722e4f307c0d02a08b96a0c7ea2eb4bef05280"
+    },
+    {
+      "path": "sources/phd.html.receipt.json",
+      "bytes": 14075,
+      "sha256": "1235aac663d365257664a59986b3f0f17d67e02a073e645b6ad08ba1a69293e9"
+    },
+    {
+      "path": "sources/phd.txt",
+      "bytes": 4542,
+      "sha256": "e2e5dac1fab5d4940b4bc44a53db85f770b52f27d21b7425baff90f5e7cec470"
+    },
+    {
+      "path": "sources/ugc-data.json",
+      "bytes": 1214155,
+      "sha256": "fffc1afb6ed91a80619cc38bef11f3de10bd5a323879f9b903fa08a0180b76be"
+    },
+    {
+      "path": "sources/ugc-data.json.receipt.json",
+      "bytes": 379,
+      "sha256": "17d16becf09ae5463038ef25e7fea23b80698fe17e44d00d099a4af47e77f229"
+    },
+    {
+      "path": "sources/ugc-list.html",
+      "bytes": 46255,
+      "sha256": "d07ab1c034968bf427aa38d36e6d4dc9092b3d0b01bedbc87b5c7c3065f6558f"
+    },
+    {
+      "path": "sources/ugc-list.html.receipt.json",
+      "bytes": 7669,
+      "sha256": "87dc69866cd23713c238bfb2f6e37b83cb52862735f1b796b8197ad049445d26"
+    },
+    {
+      "path": "sources/ugc-list.txt",
+      "bytes": 5869,
+      "sha256": "023b74efb8d3e83bfe6e05e618789304dcaaa1991f647bc58b2ee26e8a5e2e0a"
+    },
+    {
+      "path": "sources/ugc-other.html",
+      "bytes": 57084,
+      "sha256": "6098e9d11ebc8ae6a686fec7be9a8cc4e8d1137ae10d6845afdf4d2a61861388"
+    },
+    {
+      "path": "sources/ugc-other.html.receipt.json",
+      "bytes": 8685,
+      "sha256": "6ec14db086e43e55780b406231d73d51c66ed5b4a961f5cc4e533f3dd3aa0400"
+    },
+    {
+      "path": "sources/ugc-other.txt",
+      "bytes": 12101,
+      "sha256": "a916180174cbf1583b789ce4e472a7cc51a499f0ecf028c7a0d9bb0eb038b4bc"
+    },
+    {
+      "path": "sources/ugc-unijs.js",
+      "bytes": 10874,
+      "sha256": "53640c1fba0b36ce86abbc825b20794a76bb16dd2e2acf51ab37dac33960d4d5"
+    },
+    {
+      "path": "sources/ugc-unijs.js.receipt.json",
+      "bytes": 310,
+      "sha256": "844569f1b6773cb45b377f7bb32b91a2dc4ab25d61bfb8d3698ae97ed5d6c426"
+    },
+    {
+      "path": "sources/ugc.html",
+      "bytes": 170862,
+      "sha256": "a425b1b539b616ac1b9916b31aedd4fff020d3ba74e73537d5ce2dc7a78369e1"
+    },
+    {
+      "path": "sources/ugc.html.receipt.json",
+      "bytes": 22224,
+      "sha256": "1fea7043ecc0725e70f5aba6c2dec8815e9dd8ecdf0b758d06ca99ce18037068"
+    },
+    {
+      "path": "sources/ugc.txt",
+      "bytes": 29646,
+      "sha256": "fdb182c0674a866ff63064f0fbb31595bfd5f561113db22a40fd1f2af0be85c1"
+    },
+    {
+      "path": "taxonomy-proposals.json",
+      "bytes": 375,
+      "sha256": "7c46d63cb03d19e215e1ebc6d6fe6b079ec5ac60426711756b37bec3e9a0bc53"
+    },
+    {
+      "path": "university-content.fragment.json",
+      "bytes": 42402,
+      "sha256": "4d7071ee14b79af12c500cb05457a7331ce645230edb5a48e86ab50ec1dfc023"
+    },
+    {
+      "path": "validation-programme-schema.txt",
+      "bytes": 54,
+      "sha256": "09595dc9665748fafbee2b4f5befadb0491a117913c8207d617f841765357334"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 696,
+      "sha256": "8adbf8964dedba440396fc1a239368b3b7a2cf7c2626852bbd9867e4627b3eec"
+    }
+  ]
+}

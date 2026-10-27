@@ -1,0 +1,135 @@
+{
+  "independentHttp": [
+    {
+      "kind": "logo",
+      "url": "https://cdn.npfs.co/uploads/template/468/5084/publish/images/EEC-LOGO.png?1733490597",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 23699,
+      "sha256": "84b8e7a1d0efa5205cbfdd030dcaf20021dea4cbde2e9babaa345f06f6710e0f",
+      "checkedAt": "2026-10-27T13:23:56.440957+00:00",
+      "finalUrl": "https://cdn.npfs.co/uploads/template/468/5084/publish/images/EEC-LOGO.png?1733490597",
+      "matchesReviewedOriginal": true
+    },
+    {
+      "kind": "cover",
+      "url": "https://cdn.npfs.co/uploads/template/468/5084/publish/images/why/City%20Green%20Campus.jpg?1764582201",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 299627,
+      "sha256": "368422c657fc045aa84bcadf3429c638e9dd00bec557be7d5f2d154d1f3bcba9",
+      "checkedAt": "2026-10-27T13:23:56.481113+00:00",
+      "finalUrl": "https://cdn.npfs.co/uploads/template/468/5084/publish/images/why/City%20Green%20Campus.jpg?1764582201",
+      "matchesReviewedOriginal": true
+    },
+    {
+      "kind": "live",
+      "url": "https://studentstraffic.com/api/mobile/v1/universities/easwari-engineering-college",
+      "status": 404,
+      "contentType": "application/json",
+      "bytes": 64,
+      "sha256": "066e8df2ff9a1893dac3c37646aa098252c90a72fc04f76aa123dcb9f8431b9c",
+      "checkedAt": "2026-10-27T13:24:06.687410+00:00",
+      "finalUrl": "https://www.studentstraffic.com/api/mobile/v1/universities/easwari-engineering-college",
+      "body": "{\"error\":{\"code\":\"not_found\",\"message\":\"University not found.\"}}"
+    },
+    {
+      "kind": "alias",
+      "url": "https://studentstraffic.com/api/mobile/v1/universities/easwari-engineering-college-chennai",
+      "status": 404,
+      "contentType": "application/json",
+      "bytes": 64,
+      "sha256": "066e8df2ff9a1893dac3c37646aa098252c90a72fc04f76aa123dcb9f8431b9c",
+      "checkedAt": "2026-10-27T13:24:07.109489+00:00",
+      "finalUrl": "https://www.studentstraffic.com/api/mobile/v1/universities/easwari-engineering-college-chennai",
+      "body": "{\"error\":{\"code\":\"not_found\",\"message\":\"University not found.\"}}"
+    },
+    {
+      "kind": "anna",
+      "url": "https://www.annauniv.edu/cai/District%20wise/district/Thiruvallur.php",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 30656,
+      "sha256": "46907aa60f126cb07b39aa6ccade60b3734c09d9c84e13dd31fdc2775c6bf1b1",
+      "checkedAt": "2026-10-27T13:24:04.139973+00:00",
+      "finalUrl": "https://www.annauniv.edu/cai/District%20wise/district/Thiruvallur.php"
+    }
+  ],
+  "workerBoundedReceipts": {
+    "checkedAt": "2026-10-27",
+    "contentPolicy": "Bounded URL/receipt/hash/scope metadata only; no full source pages, copied prospectus text, scripts, secrets or cookies.",
+    "sources": [
+      {
+        "label": "Easwari current admissions portal",
+        "url": "https://registration.srmeaswari.ac.in/",
+        "checkedAt": "2026-10-27T13:06:00.111914+00:00",
+        "status": 200,
+        "contentType": "text/html; charset=UTF-8",
+        "finalUrl": "https://registration.srmeaswari.ac.in/",
+        "bytes": 207239,
+        "sha256": "ac73eeab253556b28925b2eef17333904449ffda3e03ca229e71c774fae839fe"
+      },
+      {
+        "label": "Easwari cover image",
+        "url": "https://cdn.npfs.co/uploads/template/468/5084/publish/images/why/City%20Green%20Campus.jpg?1764582201",
+        "checkedAt": "2026-10-27T13:12:34.411702+00:00",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "finalUrl": "https://cdn.npfs.co/uploads/template/468/5084/publish/images/why/City%20Green%20Campus.jpg?1764582201",
+        "bytes": 299627,
+        "sha256": "368422c657fc045aa84bcadf3429c638e9dd00bec557be7d5f2d154d1f3bcba9"
+      },
+      {
+        "label": "Easwari logo",
+        "url": "https://cdn.npfs.co/uploads/template/468/5084/publish/images/EEC-LOGO.png?1733490597",
+        "checkedAt": "2026-10-27T13:07:28.669292+00:00",
+        "status": 200,
+        "contentType": "image/png",
+        "finalUrl": "https://cdn.npfs.co/uploads/template/468/5084/publish/images/EEC-LOGO.png?1733490597",
+        "bytes": 23699,
+        "sha256": "84b8e7a1d0efa5205cbfdd030dcaf20021dea4cbde2e9babaa345f06f6710e0f"
+      },
+      {
+        "label": "TNEA 2026 academic seat matrix",
+        "url": "https://static.tneaonline.org/docs/GENERAL_ACADEMIC_SEAT_MATRIX_BEFORE_SPECIAL_RESERVATION_COUNSELLING_2026.pdf",
+        "checkedAt": "2026-10-27",
+        "status": 200,
+        "contentType": "application/pdf",
+        "finalUrl": "https://static.tneaonline.org/docs/GENERAL_ACADEMIC_SEAT_MATRIX_BEFORE_SPECIAL_RESERVATION_COUNSELLING_2026.pdf",
+        "bytes": 1703779,
+        "sha256": "85dbb154b56822fef150054e4508787d53b9f438fdf5a5532da7b3d02e547743"
+      },
+      {
+        "label": "TNEA 2026 college directory",
+        "url": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+        "checkedAt": "2026-10-27",
+        "status": 200,
+        "contentType": "application/pdf",
+        "finalUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+        "bytes": 25147112,
+        "sha256": "035dd2604fa784c0ce57379783b50eca1a0972a08a6e7811ab2ca50562ce5373"
+      },
+      {
+        "label": "Anna University affiliated-college list",
+        "url": "https://www.annauniv.edu/cai/District%20wise/district/Thiruvallur.php",
+        "checkedAt": "2026-10-27",
+        "receipt": "../sources/anna-thiruvallur.html.receipt.json",
+        "acceptedScope": "Current institution recognition and identity only."
+      },
+      {
+        "label": "TNEA 2026 information brochure",
+        "url": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1777772121473",
+        "checkedAt": "2026-10-27",
+        "receipt": "../../loyola-icam-college-of-engineering-and-technology/sources/tnea2026.pdf.receipt.json",
+        "acceptedScope": "First-year B.E./B.Tech duration, academic-stream eligibility, applicant restrictions, documents and counselling."
+      },
+      {
+        "label": "Anna University historical establishment-year corroboration",
+        "url": "https://cfd.annauniv.edu/pdf/Winter%202016.pdf",
+        "checkedAt": "2026-10-27",
+        "webRead": "Full ten-page PDF available through web open; page 4 college heading identifies 1996. Ordinary local download returned HTTP 503; no downloaded PDF claimed.",
+        "acceptedScope": "Stable establishment year only; no current programme inference."
+      }
+    ]
+  }
+}

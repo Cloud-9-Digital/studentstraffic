@@ -1,0 +1,345 @@
+{
+  "checkedAt": "2026-10-27",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1706,
+      "sha256": "0a335c5960266d37a3e63faa6b689f3a9f27f33011517e4142e1306b1c6bdf62"
+    },
+    {
+      "path": "deduplication.json",
+      "bytes": 1120,
+      "sha256": "d2d26486483868270f7cae0ac9221381893a2d3d366fa630f903a872100346c2"
+    },
+    {
+      "path": "evidence.json",
+      "bytes": 40590,
+      "sha256": "dc40dc99881cee5a2929bdb46bafa37fc10dc59ee3b40f947fb6b7ad8624970b"
+    },
+    {
+      "path": "holds.json",
+      "bytes": 2350,
+      "sha256": "e4d0f0bf070a59cb2cf0e20323a00921ddb08b731ffded4b172add0b55e62875"
+    },
+    {
+      "path": "media-manifest.json",
+      "bytes": 1331,
+      "sha256": "f7023916ffa5a29ee47cd92ccd50926c92d0f80fd82233e21baf7927ccd04800"
+    },
+    {
+      "path": "programme-fragments.json",
+      "bytes": 20111,
+      "sha256": "076e92d4ba0788314186f9f018667fe69e1e99c7270c94b1cd5574a4a1954450"
+    },
+    {
+      "path": "programme-inventory.csv",
+      "bytes": 10277,
+      "sha256": "7971240be824bf78586ef172aa9cbcbe0c21a63828a2e8d969be0efece4d246c"
+    },
+    {
+      "path": "programme-inventory.md",
+      "bytes": 1859,
+      "sha256": "094928ef407daef3e7f3f4692edb03f72e3564310b7f4f3857300c9ad9a42bae"
+    },
+    {
+      "path": "source-index.json",
+      "bytes": 7736,
+      "sha256": "d92fe75949ffa381c9804a49cad213a0963a1dd128aaac09ac3f98900499f155"
+    },
+    {
+      "path": "sources/Affiliation_AY_2025-26.PDF",
+      "bytes": 164084,
+      "sha256": "c5c8e4e53b9f168d3df921145257984d0b7dd5bf56f592d18c21292fd7735ebd"
+    },
+    {
+      "path": "sources/Affiliation_AY_2025-26.PDF.receipt.json",
+      "bytes": 410,
+      "sha256": "258045d4dd6072726fde3e3528e49792c0a0d15ddcf503718689975d412e7b34"
+    },
+    {
+      "path": "sources/Affiliation_AY_2025-26.txt",
+      "bytes": 5239,
+      "sha256": "6a78b4a3a09fc919d96124d9196f1195d33d77a8f08af00ffb4290b3e07f67cc"
+    },
+    {
+      "path": "sources/EoA_Diploma_Programs_AY-2025-26.PDF",
+      "bytes": 218893,
+      "sha256": "a86f2e89da262977abd97766ab0c202543ed8a654e88a3f71d241315e17b68e4"
+    },
+    {
+      "path": "sources/EoA_Diploma_Programs_AY-2025-26.PDF.receipt.json",
+      "bytes": 432,
+      "sha256": "2dad04fe6d522435cf32ec9953bbda38e88c68816a45af7872caebc7fb0e46f0"
+    },
+    {
+      "path": "sources/EoA_Diploma_Programs_AY-2025-26.txt",
+      "bytes": 12324,
+      "sha256": "02c19bbd531d258eb8c534dca438f6ba9218b6591b8aedc74152911b61736222"
+    },
+    {
+      "path": "sources/EoA_from_AICTE.pdf",
+      "bytes": 2023894,
+      "sha256": "84cc23dc8270469c317c438ef2d70a6eccddc8890bd7b02b30ac283c78c17d3d"
+    },
+    {
+      "path": "sources/EoA_from_AICTE.pdf.receipt.json",
+      "bytes": 395,
+      "sha256": "995e0f4df52901a67af61026f8a756e5e47e0eea6347774d497c6dfce08a1301"
+    },
+    {
+      "path": "sources/EoA_from_AICTE.txt",
+      "bytes": 95012,
+      "sha256": "c7350807689b56a0700110e7fda45a84a351676bbf05ee4a981a38d94d4f4337"
+    },
+    {
+      "path": "sources/EoA_from_AICTE_for_UG_PG_Programs_AY_2025-26.pdf",
+      "bytes": 235734,
+      "sha256": "7453080d72846e35b24dafc1029d4fbd703e153c000af6bf3a6bd06f0a375d73"
+    },
+    {
+      "path": "sources/EoA_from_AICTE_for_UG_PG_Programs_AY_2025-26.pdf.receipt.json",
+      "bytes": 454,
+      "sha256": "6e2c3190f4d664ddc86bb1bea460a892428e5f73f78feeaba9fc77565db6da75"
+    },
+    {
+      "path": "sources/EoA_from_AICTE_for_UG_PG_Programs_AY_2025-26.txt",
+      "bytes": 14488,
+      "sha256": "a83d341146f29689738d8a2713602f4d2df670ef939765865e0c3c56ddebd933"
+    },
+    {
+      "path": "sources/UG-PG_Prospectus_2026-27.pdf",
+      "bytes": 11735217,
+      "sha256": "ab2fde9a1d7cd8d2f442091d12ead817f88041a6389030821edd4bbb4ef7d5de"
+    },
+    {
+      "path": "sources/UG-PG_Prospectus_2026-27.pdf.receipt.json",
+      "bytes": 416,
+      "sha256": "435fec274a8f3c51e265154dd0dd28d95a7719415dd109eaf7a9b9691fad14e9"
+    },
+    {
+      "path": "sources/UG-PG_Prospectus_2026-27.txt",
+      "bytes": 36320,
+      "sha256": "0d049c681c600c5d2ae05054db0a48d3f11f8f6d81e82313eb0fd10d3cd06216"
+    },
+    {
+      "path": "sources/academics.php",
+      "bytes": 88189,
+      "sha256": "ade517f631e8c7eb130a0d259afae34701e85770748db029bc41ea852a029f10"
+    },
+    {
+      "path": "sources/academics.php.receipt.json",
+      "bytes": 26212,
+      "sha256": "748f5c4d8bdccef2cf8aeaeb7342ab404cb4f116a9c76c01db044935a61dd099"
+    },
+    {
+      "path": "sources/academics.txt",
+      "bytes": 13098,
+      "sha256": "1bf07e23686e788fe2e14f4f8faf0479ec5a9a740affee309c618bee361616c5"
+    },
+    {
+      "path": "sources/aicte.html",
+      "bytes": 76831,
+      "sha256": "0b59d9b38ee7ae070f0136301415c0a97dd8a677fd8ba8b6ef9a6580f4e94b1e"
+    },
+    {
+      "path": "sources/aicte.html.receipt.json",
+      "bytes": 26931,
+      "sha256": "f6b9a25f03d0b9f5ec383cd3947f6309776a96c766c56bf3c529976a76403335"
+    },
+    {
+      "path": "sources/aicte.txt",
+      "bytes": 8798,
+      "sha256": "50153583adcc4dda5be8dfd359089bbc5fc36a8b1f1c6832f3c421ecfe8796d6"
+    },
+    {
+      "path": "sources/anna-affiliates.html",
+      "bytes": 11263,
+      "sha256": "7bb1c02ade24e1606bb34f2c67f41f3f6c664b84e870977ecdc006cc0ee15e03"
+    },
+    {
+      "path": "sources/anna-affiliates.html.receipt.json",
+      "bytes": 1997,
+      "sha256": "08b6e0454d8110d4d2505161adb69be52b0a71862f18037e7f728a9bc54cd345"
+    },
+    {
+      "path": "sources/anna-affiliates.txt",
+      "bytes": 657,
+      "sha256": "443c002839f236b544c771c9900cb8dc45c7d526ebbccef69e3158cf716f22a2"
+    },
+    {
+      "path": "sources/anna-cipet.pdf.receipt.json",
+      "bytes": 134,
+      "sha256": "65e039fc48ae6df6e6dd55aadbf3dad06ee21cb017fd5fc921995613ba70247e"
+    },
+    {
+      "path": "sources/cover.jpg",
+      "bytes": 224538,
+      "sha256": "9f8d038e34eeeb9c58493a5de8a402f5dad21b03b0d6d6029e0226e0d11b013f"
+    },
+    {
+      "path": "sources/cover.jpg.receipt.json",
+      "bytes": 335,
+      "sha256": "11d9a35265a8502fec20d7ae38c4149226cf45a43dd9057484939a7a8067fae0"
+    },
+    {
+      "path": "sources/dip2026.pdf",
+      "bytes": 537873,
+      "sha256": "41d063083d7f47a57341f416cfde2984625d76b0aa7af511d96ff21708f5582b"
+    },
+    {
+      "path": "sources/dip2026.pdf.receipt.json",
+      "bytes": 410,
+      "sha256": "0236424d087e7135985a7afad17ba3edae8eada9719c23b705224db0d02a4252"
+    },
+    {
+      "path": "sources/dip2026.txt",
+      "bytes": 3444,
+      "sha256": "b9ae439301c88d1b3ff4d199530c1bf3770e0a3f1b856a75f31a21d796ba4882"
+    },
+    {
+      "path": "sources/diploma_admission_2026-27.php",
+      "bytes": 75378,
+      "sha256": "786b812e06a94df81358406a4389e6e12f5625563f16e8cdac31cb353347c9ee"
+    },
+    {
+      "path": "sources/diploma_admission_2026-27.php.receipt.json",
+      "bytes": 26013,
+      "sha256": "cb1939b7d4ef8265dc28e36330fcfe019144e3d19e8264fa7bf26c1f80cacedd"
+    },
+    {
+      "path": "sources/diploma_admission_2026-27.txt",
+      "bytes": 8635,
+      "sha256": "51646939562ba9e5d3abec210d25034ad91bdc50ece15c0ab7082ae3fbfa863a"
+    },
+    {
+      "path": "sources/home.html",
+      "bytes": 78446,
+      "sha256": "54510e83ed39c33ffb9149d795a8c44f658522dee01d42a16761ada9e4028de6"
+    },
+    {
+      "path": "sources/home.html.receipt.json",
+      "bytes": 26283,
+      "sha256": "afb02a84b41eb6a2b033d3fdc7297719aeb8188dd8fd1161e75e00f9e6e53c13"
+    },
+    {
+      "path": "sources/home.txt",
+      "bytes": 9571,
+      "sha256": "e0b38e000da9299fc7cfec3ddb2d4a61dec6d39fd8054f7fc0f8a5ad931c4117"
+    },
+    {
+      "path": "sources/live-CIPET.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "sources/live-CIPET.json.receipt.json",
+      "bytes": 320,
+      "sha256": "197c8818c66fe074d360bffc4c1bfcaa8a03c63ea8859c4fbcb7ba319546ba45"
+    },
+    {
+      "path": "sources/live-Central-Institute-of-Plastics.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "sources/live-Central-Institute-of-Plastics.json.receipt.json",
+      "bytes": 380,
+      "sha256": "caa3e7b36298c83f157678772f05e3160d27831b8923412f273fb2d0c58cf96a"
+    },
+    {
+      "path": "sources/live-Petrochemicals.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "sources/live-Petrochemicals.json.receipt.json",
+      "bytes": 338,
+      "sha256": "0f59f08530eaebebd6a9d87cc09e80f298942e0850bf412a6b1fd0f919459c13"
+    },
+    {
+      "path": "sources/logo.jpg",
+      "bytes": 2931,
+      "sha256": "397b3ea7c247142c1a944ed7291367c941ba7de7516b526ac6b278ac4cbc8650"
+    },
+    {
+      "path": "sources/logo.jpg.receipt.json",
+      "bytes": 303,
+      "sha256": "9f9b70740b3f09f2d60e8c7b5749650ab2b5263b1f770b5635c8c5ca77ec8962"
+    },
+    {
+      "path": "sources/me2026.pdf",
+      "bytes": 240913,
+      "sha256": "24af2ba0ba172a8219a7d47a14db5459b59a6085690471321b0148c3736b3f2e"
+    },
+    {
+      "path": "sources/me2026.pdf.receipt.json",
+      "bytes": 420,
+      "sha256": "26a632c64c46bdc8ae7efb51716ddc7ac32cc06699347e0a1c5c17942249332a"
+    },
+    {
+      "path": "sources/me2026.txt",
+      "bytes": 3754,
+      "sha256": "446fcdf4bebf2a58e017d6be238735b2fd884807af43f677cf21884d601af298"
+    },
+    {
+      "path": "sources/me_mtech_admission_2026-27.php",
+      "bytes": 76011,
+      "sha256": "7d1647e1133e0c5564a8a7e8839a21d116ce5bcf2ff5e1856ba849d3486daadb"
+    },
+    {
+      "path": "sources/me_mtech_admission_2026-27.php.receipt.json",
+      "bytes": 26144,
+      "sha256": "28101552c6fbdaa309fe3dd24815f7cca11de936081b6b36423f0fcaec43e15c"
+    },
+    {
+      "path": "sources/me_mtech_admission_2026-27.txt",
+      "bytes": 8864,
+      "sha256": "9dc0ca648c0c4b1a039b34d37a4a445c51395c476942e10cfceaed1486ec88fd"
+    },
+    {
+      "path": "sources/msc2026.pdf",
+      "bytes": 869041,
+      "sha256": "a5c19157d4e0cb665ec5a6665ae8bcfb89b3244144b340166a556cf17de2f2fd"
+    },
+    {
+      "path": "sources/msc2026.pdf.receipt.json",
+      "bytes": 410,
+      "sha256": "8ebc7aab65064bc1eb57b3e65e0095b841c5368fbe54d531ca73bad76ae983c8"
+    },
+    {
+      "path": "sources/msc2026.txt",
+      "bytes": 5,
+      "sha256": "2e9faebbd47a57f8d00d2f73a2e412bbf5353a95a112f2278b24f69ee5d14b62"
+    },
+    {
+      "path": "sources/msc_admission_2026-27.php",
+      "bytes": 75786,
+      "sha256": "70acc188c8ae8c4cfc3aa42c6668887a7950dd12879646e02d0ce81518b685f0"
+    },
+    {
+      "path": "sources/msc_admission_2026-27.php.receipt.json",
+      "bytes": 26124,
+      "sha256": "db045f0569a06e640031106849c34ccb54d65a3a440a202260cbe846573316aa"
+    },
+    {
+      "path": "sources/msc_admission_2026-27.txt",
+      "bytes": 8739,
+      "sha256": "c389568ad8f5d9c41482e3a030281bb8770d89f2e25f881a639d1f31d855fa7f"
+    },
+    {
+      "path": "taxonomy-proposals.json",
+      "bytes": 3011,
+      "sha256": "400702feb87eb542731b17ad99b461efa1aba92ff6e6465c789d97d47a5cd75b"
+    },
+    {
+      "path": "university-content.fragment.json",
+      "bytes": 9249,
+      "sha256": "dd251c3d8aab84109053c2090b97726a6c8c1296050d0afd5f43b89b71a929cc"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 505,
+      "sha256": "0eb1fbc8fac32bf8bb3f00a30ed04958edd2cc02b053b53ab0295feaddcf2a58"
+    }
+  ]
+}

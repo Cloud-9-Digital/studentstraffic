@@ -1,0 +1,19 @@
+{
+  "institutionPublishHolds": [
+    "Media rights not independently established; Cloudinary upload and final hosted-asset checks pending.",
+    "Two canonical taxonomy proposals require integrator review and registry integration before a real numbered migration.",
+    "No real migration reservation, ledger validation or live apply performed."
+  ],
+  "excludedCourses": 12,
+  "excludedRoutes": 7,
+  "researchOnly": 1,
+  "nonAwardCurriculum": 1,
+  "feeScope": "Annual fee is specifically the NRI/international-category tariff; regular tuition remains a native semester quote.",
+  "researchRouteInventoryCorrection": {
+    "status": "held_not_blanket_excluded",
+    "routes": [
+      "PhD (national NIFT research route; Chennai supervision not established)"
+    ],
+    "rule": "Current research degrees are in scope. National navigation alone does not establish a campus admitting award. Exact missing fields remain individually held in the inventory."
+  }
+}

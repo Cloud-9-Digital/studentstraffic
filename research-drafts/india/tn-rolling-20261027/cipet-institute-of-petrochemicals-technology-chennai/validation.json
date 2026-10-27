@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-10-27",
+  "status": "research-fragment validation only",
+  "inventoryRows": 15,
+  "currentBaseAwards": 9,
+  "entryRoutes": 13,
+  "programmeFragments": 13,
+  "evidenceRows": 59,
+  "catalogueReady": 0,
+  "reader": "No catalogue reader pass claimed: required audience fields intentionally null and current approval unresolved.",
+  "jsonParsing": "pass",
+  "notPerformed": [
+    "Migration reservation",
+    "Ledger edit",
+    "DB apply",
+    "Media upload",
+    "Commit or push"
+  ]
+}

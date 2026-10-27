@@ -1,0 +1,15 @@
+{
+  "overall": "held; no payload drafted or validated",
+  "missing": [
+    "Complete current institution programme inventory cannot be certified: 15 UG branches regulator-confirmed, 7 PG/8 PhD secondary-only current leads, 1 extra historical PG conflict.",
+    "Official institution source access is blocked by an automated-traffic firewall; no bypass attempted.",
+    "Required programme-specific narratives, exact current PG/doctoral admissions/audience/documents and official media are unavailable in accessible primary sources.",
+    "Mandatory official logo and campus cover provenance/rights/Cloudinary hosting remain unestablished."
+  ],
+  "resolved": [
+    "Fresh identity dedup checks found no exact institution.",
+    "Anna University affiliation verified.",
+    "2026 TNEA directory confirms 15 UG branches and annual hostel/mess costs, replacing stale 2024 discovery data."
+  ],
+  "validation": "Not attempted: no valid publishable payload exists. Inventory/source packet is not a schema-pass claim."
+}

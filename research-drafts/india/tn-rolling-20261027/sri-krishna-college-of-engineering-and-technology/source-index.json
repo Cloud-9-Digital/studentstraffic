@@ -1,0 +1,248 @@
+[
+  {
+    "key": "admission2026",
+    "url": "https://skcet.ac.in/admissions/admission-2026/",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://skcet.ac.in/admissions/admission-2026/",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "e1210a8d4ca327f497bb48532da980af9ebdd07fa100adb98f612a0db7bc06f5"
+  },
+  {
+    "key": "admissions",
+    "url": "https://skcet.ac.in/admissions/admission-procedure/",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://skcet.ac.in/admissions/admission-procedure/",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "84e263d6e0c06237e03c55b2160055a01eee991da97a46d76ddfc2ccd2e21238"
+  },
+  {
+    "key": "aicte",
+    "url": "https://skcet.ac.in/quick-links/aicte-approval-letters/",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://skcet.ac.in/quick-links/aicte-approval-letters/",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "0043dbf7ac5d9ecc823532e06709f7831a1e4e4ea63829db9ff812b001119b42"
+  },
+  {
+    "key": "anna-affiliation",
+    "url": "https://annauniv.edu/cai/Affiliated%20Colleges%20list%20by%20Alphabetical/S3.html",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://annauniv.edu/cai/Affiliated%20Colleges%20list%20by%20Alphabetical/S3.html",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "d597821c010ddab3bd1912c934f36badc485a0af300307fc07ad36cd5720fb2f"
+  },
+  {
+    "key": "careers360-fees",
+    "url": "https://www.careers360.com/colleges/sri-krishna-college-of-engineering-and-technology-coimbatore/courses",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://www.careers360.com/colleges/sri-krishna-college-of-engineering-and-technology-coimbatore/courses",
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "a91a31f3916d9c683183d8491d4f0479c60cebcf913a926d6d210ffaa27186eb"
+  },
+  {
+    "key": "disclosure",
+    "url": "https://skcet.ac.in/wp-content/uploads/2025/07/AICTE-Mandatory-Disclosure.pdf",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://skcet.ac.in/wp-content/uploads/2025/07/AICTE-Mandatory-Disclosure.pdf",
+    "contentType": "application/pdf",
+    "sha256": "72524c3262ca81ff50f7a3beb6f340b4e56830b6c637b48e823cd594a2311a0b"
+  },
+  {
+    "key": "eoa2026",
+    "url": "https://skcet.ac.in/wp-content/uploads/2026/06/2026-2027.pdf",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://skcet.ac.in/wp-content/uploads/2026/06/2026-2027.pdf",
+    "contentType": "application/pdf",
+    "sha256": "b7595f0747eaadce96afee292bf7cd0e5a1e20b867f56e39a3ef34628e8d5817"
+  },
+  {
+    "key": "health",
+    "url": "https://skcet.ac.in/student-life/facilities/health-centre/",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://skcet.ac.in/student-life/facilities/health-centre/",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "09a96764506d6f125eeb32c49c9f0ae6df4013c99452775924beb3102abbad0d"
+  },
+  {
+    "key": "home",
+    "url": "https://skcet.ac.in/",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://skcet.ac.in/",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "5e8e134b0d380e90d00e13907c545d168c3aba158012bdb1a8d3ec8cb37fd275"
+  },
+  {
+    "key": "hostel",
+    "url": "https://skcet.ac.in/student-life/facilities/hostel/",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://skcet.ac.in/student-life/facilities/hostel/",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "a82bad9402e722397164a0d80ad32e307345800a59b59817b49feb150756c97d"
+  },
+  {
+    "key": "institution",
+    "url": "https://skcet.ac.in/about-us/institution/",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://skcet.ac.in/about-us/institution/",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "f63d9a9d6ac5cf51ef77f13d28c7ba67ef14a344b6040fa962f7a8cefa984557"
+  },
+  {
+    "key": "integrated",
+    "url": "https://skcet.ac.in/department/m-tech-computer-science-and-engineering-powered-by-virtusa/",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://skcet.ac.in/department/m-tech-computer-science-and-engineering-powered-by-virtusa/",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "24b16db8cfca4c880eea04b821436ea63f38d4b351423492d5cd94006fadba8c"
+  },
+  {
+    "key": "library",
+    "url": "https://skcet.ac.in/academics/library/",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://skcet.ac.in/academics/library/",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "538cb9f72746408e9f0adbf4200f8ddae11131293c225e06238331cefe943e0b"
+  },
+  {
+    "key": "mba-counselling",
+    "url": "https://static.tn-mbamca.com/docs/MBA_Instructions.pdf",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://static.tn-mbamca.com/docs/MBA_Instructions.pdf",
+    "contentType": "application/pdf",
+    "sha256": "864a8bcbfc43f0ababeb684debde0c21edf19af20e20abd0bbb60d5c026a3b97"
+  },
+  {
+    "key": "mba-eoa2026",
+    "url": "https://skcet.ac.in/wp-content/uploads/2026/06/MBA-2026-2027.pdf",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://skcet.ac.in/wp-content/uploads/2026/06/MBA-2026-2027.pdf",
+    "contentType": "application/pdf",
+    "sha256": "0ff300c38537180c65c47dc133bcbf76461f6a1c677f8dee739e42fb1faf1c6b"
+  },
+  {
+    "key": "online-payment",
+    "url": "https://skcet.ac.in/online-payment/",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://skcet.ac.in/online-payment/",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "aff911cfed701d6298942d047eae3205730c2f070fd32aa15a90d092d2ace21e"
+  },
+  {
+    "key": "pg-admission2026",
+    "url": "https://skcet.ac.in/wp-content/uploads/2026/07/PG-Admissions-2026.pdf",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://skcet.ac.in/wp-content/uploads/2026/07/PG-Admissions-2026.pdf",
+    "contentType": "application/pdf",
+    "sha256": "3e738ed339ee70115f55f197f9918f615be7b559e1485d6f8a555eaef9f12005"
+  },
+  {
+    "key": "pg-eligibility",
+    "url": "https://skcet.ac.in/pg-admission-eligibility/",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://skcet.ac.in/pg-admission-eligibility/",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "77e4be47c31164dc43ddcf7b98b7ba4e2010600e25c28f8f68dfe042961274ee"
+  },
+  {
+    "key": "pg-reg2022",
+    "url": "https://skcet.ac.in/wp-content/uploads/2024/07/PG-Regulation-R2022.pdf",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://skcet.ac.in/wp-content/uploads/2024/07/PG-Regulation-R2022.pdf",
+    "contentType": "application/pdf",
+    "sha256": "cb1f6cb2720f6cba627d093b9a50b35883306237f167fdb9bf277ab4ca7f37ae"
+  },
+  {
+    "key": "programmes",
+    "url": "https://skcet.ac.in/academics/ug-pg-doctorate/",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://skcet.ac.in/academics/ug-pg-doctorate/",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "f9a250f3688178fd950500e23283ddca6f6531ac4b14b25a3289dcf83f96c897"
+  },
+  {
+    "key": "regulations",
+    "url": "https://skcet.ac.in/exams/regulations/",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://skcet.ac.in/exams/regulations/",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "f51efe6e545bf3b0c7aa089ff48700a7430188cfa46b072ccaf359633e6b9c69"
+  },
+  {
+    "key": "tancet-home",
+    "url": "https://tancet.annauniv.edu/tancet/",
+    "checkedAt": "2026-10-27",
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "key": "tancet2026",
+    "url": "https://tancet.annauniv.edu/tancet/Information%20Brochure%202026.pdf",
+    "checkedAt": "2026-10-27",
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "key": "transport",
+    "url": "https://skcet.ac.in/student-life/facilities/transport/",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://skcet.ac.in/student-life/facilities/transport/",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "9671e572d7cead9562d08fcfe128431d26d3cd13348af1920d5400f815e6a336"
+  },
+  {
+    "key": "ug-admission2026",
+    "url": "https://skcet.ac.in/wp-content/uploads/2026/07/UG-Admissions-2026.pdf",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://skcet.ac.in/wp-content/uploads/2026/07/UG-Admissions-2026.pdf",
+    "contentType": "application/pdf",
+    "sha256": "889e9eaa6fd5404573c12f3d4020c2ebe32c0cf3e04adc41fb0554f591313029"
+  },
+  {
+    "key": "ug-reg2022",
+    "url": "https://skcet.ac.in/wp-content/uploads/2024/07/UG-Regulation-2022.pdf",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://skcet.ac.in/wp-content/uploads/2024/07/UG-Regulation-2022.pdf",
+    "contentType": "application/pdf",
+    "sha256": "2723d4b7abc08c5150002a73ab3cabc97ab07391fcdb8e1d392c23755897a99d"
+  },
+  {
+    "key": "ug-reg2025",
+    "url": "https://skcet.ac.in/wp-content/uploads/2026/03/R20252025-2029.pdf",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://skcet.ac.in/wp-content/uploads/2026/03/R20252025-2029.pdf",
+    "contentType": "application/pdf",
+    "sha256": "7945452fb2231c32377643c56172ba94ffb3e1517a65d703b518b151efdd350f"
+  },
+  {
+    "key": "ugc-autonomy",
+    "url": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list",
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "fddfb27e27bb5779b47a29eca7c2655a9c357d547f9e1f07f209ab95e34217d2"
+  }
+]

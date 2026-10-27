@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-10-27",
+  "validator": "scripts/lib/content-migrations.ts readContentMigrations",
+  "command": "node --import tsx /tmp/validate_tn_e.cjs",
+  "isolatedRoot": "/tmp/tn-e-validation",
+  "onlyId": "9998-measi-draft",
+  "result": "PASS",
+  "migrationCount": 1,
+  "universityCount": 1,
+  "programmeCount": 1,
+  "evidenceCount": 18,
+  "expiredEvidence": [],
+  "payloadSha256": "e4d90262b0d1ba434c81ad57b77f50ff80b072b9ad94e14f31e5225070bf888b",
+  "readerChecksum": "97bc6d81601ee7e257932a1b500bc76a6841d1ace108919df714456dbafe406d",
+  "scope": "Isolated actual reader; not a repository migration reservation, DB dry-run, media test, UI QA or publication.",
+  "publishReady": false,
+  "remainingGate": "Mandatory logo/cover rights review and Cloudinary hosting; serial integrator assignment and fresh scoped validation."
+}

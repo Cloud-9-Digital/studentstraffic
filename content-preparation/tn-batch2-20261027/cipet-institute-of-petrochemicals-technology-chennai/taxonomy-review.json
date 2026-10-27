@@ -1,0 +1,20 @@
+{
+  "status": "integrated neutral canonical category",
+  "categories": [
+    {
+      "slug": "be-btech-manufacturing-engineering",
+      "name": "B.E./B.Tech in Manufacturing Engineering",
+      "shortName": "B.E./B.Tech Manufacturing",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "manufacturing-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Manufacturing Engineering",
+        "BTech Manufacturing Engineering"
+      ]
+    }
+  ],
+  "reason": "Manufacturing Engineering is an exact degree discipline, not renamed Mechanical/Production Engineering. Plastics Technology uses existing rubber/plastics category.",
+  "registryPath": "lib/data/program-taxonomy.ts",
+  "existingCategoriesReclassified": false
+}

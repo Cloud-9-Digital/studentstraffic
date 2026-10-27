@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-10-27",
+  "shapeCandidateFile": "payload.candidate.json",
+  "shapeCandidateProgrammeCount": 16,
+  "shapePassIsNotPublicationApproval": true,
+  "publishInputRecommended": null,
+  "recommendedProgrammeCount": 0,
+  "status": "research_hold",
+  "allowedNextStep": "Integrator fact review, permitted serial packaging and media preparation only; no live publication by this research agent.",
+  "completeInventoryFile": "programme-inventory.csv",
+  "factsNotToInfer": [
+    "No/NA or a missing international column is not a blanket nationality prohibition.",
+    "A general fee is not a verified foreign-category price.",
+    "Prior-year admission dates are not the next intake."
+  ],
+  "hardHolds": [
+    "Establishment year 1998 versus engineering AICTE 1997 unresolved.",
+    "Official available wordmark fails white-surface contrast.",
+    "Positive international-seat approval for EEE/IT/Mechanical lacks a concrete verified foreign route; other rows do not prove blanket exclusion."
+  ]
+}

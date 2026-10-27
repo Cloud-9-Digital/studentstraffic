@@ -1,0 +1,267 @@
+{
+  "checkedAt": "2026-10-27",
+  "receipts": [
+    {
+      "receipt": "sources/DIPLOMA-AND-CE-PROGRAMME-COURSE-CONTENT-retry.docx.receipt.json",
+      "url": "https://nift.ac.in/chennai/sites/default/files/2026-09/DIPLOMA%20AND%20CE%20PROGRAMME%20COURSE%20CONTENT.docx",
+      "status": 200,
+      "error": null,
+      "sha256": "74eba677f6546e9926edfa404128975da15d7717e3be674b15df38b0faef6467",
+      "bytes": 19663,
+      "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    {
+      "receipt": "sources/DIPLOMA-AND-CE-PROGRAMME-COURSE-CONTENT.docx.receipt.json",
+      "url": "https://nift.ac.in/chennai/sites/default/files/2026-09/DIPLOMA%20AND%20CE%20PROGRAMME%20COURSE%20CONTENT.docx",
+      "status": null,
+      "error": "HTTP Error 503: Service Unavailable",
+      "sha256": null,
+      "bytes": null,
+      "contentType": null
+    },
+    {
+      "receipt": "sources/Diploma-and-CE-programmes-poster-2026.pdf.receipt.json",
+      "url": "https://nift.ac.in/chennai/sites/default/files/2026-09/Diploma%20and%20CE%20programmes%20poster%202026.pdf",
+      "status": null,
+      "error": "HTTP Error 503: Service Unavailable",
+      "sha256": null,
+      "bytes": null,
+      "contentType": null
+    },
+    {
+      "receipt": "sources/NIFT-Chennai-Diploma--CE-Programme--2026-Important-Instructions-updated-retry.docx.receipt.json",
+      "url": "https://nift.ac.in/chennai/sites/default/files/2026-09/NIFT%20Chennai%20Diploma%20%20CE%20Programme%20-2026%20Important%20Instructions%20updated.docx",
+      "status": 200,
+      "error": null,
+      "sha256": "600bc6bd77c31f3e63de1dd3017c76d5b5f547cd98b172a075b7917e436b33da",
+      "bytes": 16008,
+      "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    {
+      "receipt": "sources/NIFT-Chennai-Diploma--CE-Programme--2026-Important-Instructions-updated.docx.receipt.json",
+      "url": "https://nift.ac.in/chennai/sites/default/files/2026-09/NIFT%20Chennai%20Diploma%20%20CE%20Programme%20-2026%20Important%20Instructions%20updated.docx",
+      "status": null,
+      "error": "HTTP Error 503: Service Unavailable",
+      "sha256": null,
+      "bytes": null,
+      "contentType": null
+    },
+    {
+      "receipt": "sources/apparel-production.html.receipt.json",
+      "url": "https://nift.ac.in/chennai/academics/programmes/undergraduate/apparel-production",
+      "status": 200,
+      "error": null,
+      "sha256": "e1111eab415c3a84e9f18b455e76fba749fbd3e5557be0822f4595a5ecbedf8d",
+      "bytes": 100102,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "receipt": "sources/cover.jpg.receipt.json",
+      "url": "https://nift.ac.in/chennai/sites/default/files/2026-10/4_Chennai.jpg",
+      "status": 200,
+      "error": null,
+      "sha256": "86d92bcc9ed1d133c28d30863b6f6110ae66677eeafa50f05bf66c4f1d2c0b92",
+      "bytes": 187195,
+      "contentType": "image/jpeg"
+    },
+    {
+      "receipt": "sources/diploma-ce-poster2026-retry.pdf.receipt.json",
+      "url": "https://nift.ac.in/chennai/sites/default/files/2026-09/Diploma%20and%20CE%20programmes%20poster%202026.pdf",
+      "status": null,
+      "error": "HTTP Error 503: Service Unavailable",
+      "sha256": null,
+      "bytes": null,
+      "contentType": null
+    },
+    {
+      "receipt": "sources/faq2026-retry.pdf.receipt.json",
+      "url": "https://nift.ac.in/sites/default/files/2026-08/faq-2026.pdf",
+      "status": 200,
+      "error": null,
+      "sha256": "fce5765f02ece810dbc484ef75269ebfe271bcd631cc2d1e741114ca2fd3d099",
+      "bytes": 306559,
+      "contentType": "application/pdf"
+    },
+    {
+      "receipt": "sources/faq2026.pdf.receipt.json",
+      "url": "https://nift.ac.in/sites/default/files/2026-08/faq-2026.pdf",
+      "status": null,
+      "error": "HTTP Error 503: Service Unavailable",
+      "sha256": null,
+      "bytes": null,
+      "contentType": null
+    },
+    {
+      "receipt": "sources/fashion-and-lifestyle-accessory.html.receipt.json",
+      "url": "https://nift.ac.in/chennai/academics/programmes/undergraduate/fashion-and-lifestyle-accessory",
+      "status": 200,
+      "error": null,
+      "sha256": "575c443230885ed4ea9fdfab1dc02ec13e21363bb18f6d2b60586dded48d3de3",
+      "bytes": 100303,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "receipt": "sources/fashion-communication.html.receipt.json",
+      "url": "https://nift.ac.in/chennai/academics/programmes/undergraduate/fashion-communication",
+      "status": 200,
+      "error": null,
+      "sha256": "90e8d7c7a05adddad445da9db187ba0ecf103babdea902f4cacb18ef03a29eb6",
+      "bytes": 106955,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "receipt": "sources/fashion-design.html.receipt.json",
+      "url": "https://nift.ac.in/chennai/academics/programmes/undergraduate/fashion-design",
+      "status": 200,
+      "error": null,
+      "sha256": "1559990e69acd0f26e4583f1aa2ddf44d2f68cdbbf5e4d75fcd6c81b33092d91",
+      "bytes": 100047,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "receipt": "sources/foundation-programme-fp.html.receipt.json",
+      "url": "https://nift.ac.in/chennai/academics/programmes/undergraduate/foundation-programme-fp",
+      "status": 200,
+      "error": null,
+      "sha256": "9732b319f4f29e29c73d84daa64498c11a47e8547e93091ff4d632b921913580",
+      "bytes": 98388,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "receipt": "sources/guidelines2026.pdf.receipt.json",
+      "url": "https://nift.ac.in/sites/default/files/2026-08/Admission-Guidelines-2026.pdf",
+      "status": 200,
+      "error": null,
+      "sha256": "8e577b5ab87ad62b0ecd39425c9f2ec50fe3cf0336492d8ee3447b785ce64687",
+      "bytes": 1205564,
+      "contentType": "application/pdf"
+    },
+    {
+      "receipt": "sources/home.html.receipt.json",
+      "url": "https://nift.ac.in/chennai/",
+      "status": 200,
+      "error": null,
+      "sha256": "8e2a5427b65c4da32426b40f802d4c68d58cb20434ce7bc3c7dd81bea0ed65fe",
+      "bytes": 176356,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "receipt": "sources/internal-complaint-committee.html.receipt.json",
+      "url": "https://nift.ac.in/chennai/internal-complaint-committee",
+      "status": 200,
+      "error": null,
+      "sha256": "0c80f18d5e724d879b6f86547404565cc58e67786ce507289599e6dd38b72eaf",
+      "bytes": 93740,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "receipt": "sources/knitwear-design.html.receipt.json",
+      "url": "https://nift.ac.in/chennai/academics/programmes/undergraduate/knitwear-design",
+      "status": 200,
+      "error": null,
+      "sha256": "d891694f4e4c52ba8ea0bf4ddbaf793242085f12ea174c66375f25c8d57b99f2",
+      "bytes": 100215,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "receipt": "sources/leather-design.html.receipt.json",
+      "url": "https://nift.ac.in/chennai/academics/programmes/undergraduate/leather-design",
+      "status": 200,
+      "error": null,
+      "sha256": "51c72894c7c7613da252b63ddf23ff7d5f2a57f2ed1d51a2847fec681f9478d8",
+      "bytes": 100144,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "receipt": "sources/live-NIFT.json.receipt.json",
+      "url": "https://www.studentstraffic.com/api/suggestions?q=NIFT",
+      "status": 200,
+      "error": null,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2,
+      "contentType": "application/json"
+    },
+    {
+      "receipt": "sources/live-National-Institute-of-Fashion-Technology.json.receipt.json",
+      "url": "https://www.studentstraffic.com/api/suggestions?q=National%20Institute%20of%20Fashion%20Technology",
+      "status": 200,
+      "error": null,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2,
+      "contentType": "application/json"
+    },
+    {
+      "receipt": "sources/logo.png.receipt.json",
+      "url": "https://nift.ac.in/chennai/themes/nift/images/Microsite_logos/4_Chennai_Microsite_logo.png",
+      "status": 200,
+      "error": null,
+      "sha256": "d9bbe9e6382feb7ba39b81505014416e4ca8d83b05e519eeb04bc374aa45a151",
+      "bytes": 41570,
+      "contentType": "image/png"
+    },
+    {
+      "receipt": "sources/master-fashion-management.html.receipt.json",
+      "url": "https://nift.ac.in/chennai/academics/programmes/postgraduate/master-fashion-management",
+      "status": 200,
+      "error": null,
+      "sha256": "c1c6282c972938af970bca09bbfd47c402655d0b481a6e8bacd89030900ec474",
+      "bytes": 100183,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "receipt": "sources/ministry-nift.pdf.receipt.json",
+      "url": "https://www.texmin.gov.in/static/uploads/2026/05/5c48e80d2180ca3194b9e9b01340696d.pdf",
+      "status": 200,
+      "error": null,
+      "sha256": "175e7feebca7205c003e625a6352e013714d37b10750a72e3160e8f3c4ff5580",
+      "bytes": 20455420,
+      "contentType": "application/pdf"
+    },
+    {
+      "receipt": "sources/nift-act.pdf.receipt.json",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/2031/1/200628.pdf",
+      "status": null,
+      "error": "The read operation timed out",
+      "sha256": null,
+      "bytes": null,
+      "contentType": null
+    },
+    {
+      "receipt": "sources/pib-establishment.html.receipt.json",
+      "url": "https://www.pib.gov.in/newsite/PrintRelease.aspx?lang=2&reg=48&relid=103898",
+      "status": 200,
+      "error": null,
+      "sha256": "3b856423d3ca61e7ebcf99cecd150786e33e05767c305a73cef75811a23a6a9e",
+      "bytes": 123926,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "receipt": "sources/prospectus2026-retry.pdf.receipt.json",
+      "url": "https://nift.ac.in/sites/default/files/2026-08/Admission-Prospectus-2026.pdf",
+      "status": 200,
+      "error": null,
+      "sha256": "4351ec49c19fd8af397103c038c38cf6967d2a5085d71e274c405ac0f2b34ef2",
+      "bytes": 17111189,
+      "contentType": "application/pdf"
+    },
+    {
+      "receipt": "sources/prospectus2026.pdf.receipt.json",
+      "url": "https://nift.ac.in/sites/default/files/2026-08/Admission-Prospectus-2026.pdf",
+      "status": null,
+      "error": "HTTP Error 503: Service Unavailable",
+      "sha256": null,
+      "bytes": null,
+      "contentType": null
+    },
+    {
+      "receipt": "sources/textile-design.html.receipt.json",
+      "url": "https://nift.ac.in/chennai/academics/programmes/undergraduate/textile-design",
+      "status": 200,
+      "error": null,
+      "sha256": "73e66ca28d77613507b0e2c65e2368bd979378592a4a18dc846f62ebb9b326d9",
+      "bytes": 100205,
+      "contentType": "text/html; charset=UTF-8"
+    }
+  ],
+  "note": "Raw source downloads are research snapshots, not publication assets. Errors are retained and never treated as source content."
+}

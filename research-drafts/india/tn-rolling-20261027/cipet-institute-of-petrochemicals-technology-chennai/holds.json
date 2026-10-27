@@ -1,0 +1,29 @@
+{
+  "status": "research fragments only; zero catalogue-ready offerings",
+  "currentAwards": 9,
+  "entryRoutes": 13,
+  "inventoryRows": 15,
+  "approval": {
+    "degrees": "AICTE permanentID1-2610054, application1-44643541728, approval20March2025 covers2025\u201326 only. Current2026\u201327 own-regulator EoA not retrieved.",
+    "diplomas": "Centre2026\u201327 advertisement asserts AICTE and NBA status, but current regulator-owned documentary scope not retrieved. NBA programme result endpoint returned403; no bypass attempted.",
+    "msc": "CIPET claims University of Madras affiliation; current independent university record not retrieved.",
+    "anna": "Anna University own district list names centre and code1321. Its linked Cipet.pdf returns404; receipt saved. Do not broaden listing to current per-course approval."
+  },
+  "audience": "International/NRI/OCI eligibility unresolved in current campus material.2025\u201326 EoA says NRI/FN/Gulf/OCI approval No; this is historical and is not stretched into a blanket current exclusion. Other-state Indian eligibility is not foreign admission evidence.",
+  "fees": "Five degree annual tuition facts are explicit source-native amounts. Diploma prices and category applicability remain incomplete; no invented fee or annualised package.",
+  "taxonomy": "Seven base award categories are GAP proposals in inventory; do not force unlike qualifications into existing categories.",
+  "media": "Official source logo and real Chennai campus photograph HTTP200 and visually inspected; rights and Cloudinary pending.",
+  "resolution": [
+    "Retrieve current2026\u201327 regulator-owned approval for engineering and diploma courses.",
+    "Retrieve University of Madras current affiliation for MSc Applied Polymer Science.",
+    "Resolve exact applicant-category/nationality eligibility from official admissions/counselling policy.",
+    "Verify proposed taxonomy and full current diploma fee schedule before packaging."
+  ],
+  "researchRouteInventoryCorrection": {
+    "status": "held_not_blanket_excluded",
+    "routes": [
+      "CIPET national PhD navigation \u2014 no Chennai taught award established"
+    ],
+    "rule": "Current research degrees are in scope. National navigation alone does not establish a campus admitting award. Exact missing fields remain individually held in the inventory."
+  }
+}

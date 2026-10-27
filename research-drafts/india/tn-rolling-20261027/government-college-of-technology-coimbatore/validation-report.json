@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-27T11:08:14.996Z",
+  "payloadSha256": "7e586ff47e98b0985789f954343200a63275879f8c30c8b327b9a5673ffbc450",
+  "schema": "scripts/lib/catalog-payload-schema.ts",
+  "schemaPass": true,
+  "reader": "scripts/lib/content-migrations.ts readContentMigrations",
+  "readerPass": true,
+  "expiredEvidence": [],
+  "counts": {
+    "universities": 1,
+    "programmes": 10,
+    "courses": 10,
+    "evidence": 138
+  },
+  "isolation": "Temporary OS directory, removed after validation. No content-migration reservation, database access, uploads or publication.",
+  "editorialStatus": "Offline schema/reader validated; integrator editorial review and media delivery remain pending."
+}

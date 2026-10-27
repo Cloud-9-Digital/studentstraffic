@@ -1,0 +1,21 @@
+{
+  "countrySlug": "india",
+  "universitySlug": "measi-academy-of-architecture",
+  "name": "MEASI Academy of Architecture",
+  "targetLevels": [
+    "bachelors",
+    "masters"
+  ],
+  "canonicalCourseSlugs": [
+    "barch",
+    "march"
+  ],
+  "requiredOptionalSections": [
+    "field-specific-facilities"
+  ],
+  "owner": "research_tn_rolling_batch_e",
+  "checkedAt": "2026-10-27",
+  "outputScope": "Research drafts only; integrator owns ledger, migration assignment, media upload and GitHub publication.",
+  "publishingBatch": "tn-rolling-ten2-20261027",
+  "publicationBoundary": "Second ten-institution PR only; never PR3. Integrator owns GitHub/local publication."
+}

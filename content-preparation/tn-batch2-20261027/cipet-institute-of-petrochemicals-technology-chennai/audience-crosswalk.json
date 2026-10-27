@@ -1,0 +1,223 @@
+{
+  "checkedAt": "2026-10-27",
+  "recognitionReview": {
+    "universitySlug": "cipet-institute-of-petrochemicals-technology-chennai",
+    "replaceFields": {
+      "recognitionBadges": [
+        "Anna University — listed affiliated engineering college"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Anna University Chennai district affiliated-college roster",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Chennai%20-%20Copy.php"
+        }
+      ]
+    },
+    "appendResearchSources": [
+      {
+        "label": "Anna University current affiliated-college roster",
+        "url": "https://www.annauniv.edu/cai/District%20wise/district/Chennai%20-%20Copy.php",
+        "kind": "recognition",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "DTE 2026 approved UG intake at CIPET Chennai",
+        "url": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+        "kind": "government",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "DTE 2026 academic counselling branch matrix",
+        "url": "https://static.tneaonline.org/docs/GENERAL_ACADEMIC_SEAT_MATRIX_BEFORE_SPECIAL_RESERVATION_COUNSELLING_2026.pdf",
+        "kind": "government",
+        "checkedAt": "2026-10-27"
+      },
+      {
+        "label": "TNEA 2026 exact eligibility and document policy",
+        "url": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1778803200023",
+        "kind": "government",
+        "checkedAt": "2026-10-27"
+      }
+    ],
+    "scope": "DTE approved-intake/current counselling evidence supports the two first-year UG branches; no claim of a separately retrieved AICTE 2026–27 EoA or new MSc affiliation."
+  },
+  "programmeSpecificReplacements": [
+    {
+      "programmeSlug": "btech-plastics-technology",
+      "officialTitle": "Bachelor of Technology in Plastics Technology",
+      "replaceFields": {
+        "durationYears": 4,
+        "audienceEligibility": {
+          "availability": "restricted",
+          "eligibleAudiences": [
+            "Indian nationals meeting a specified TNEA 2026 nativity/schooling/parent-service category",
+            "Tamil Nadu-native OCI/PIO cardholders within the specific TNEA exception",
+            "Sri Lankan Tamil refugees who studied in Tamil Nadu and meet the stated documentation rule"
+          ],
+          "restrictions": [
+            "This listing covers only first-year academic-stream TNEA seats surrendered by CIPET Chennai, not an independently verified foreign/NRI quota or lateral-entry route.",
+            "Indian applicants must satisfy one of the six TNEA nativity, Tamil Nadu schooling or parent-service categories detailed below; an Indian passport alone is insufficient.",
+            "Tamil Nadu candidates who passed Classes VIII–XII in Tamil Nadu may apply without a nativity certificate. Tamil Nadu natives who studied any of those classes outside the state require a digitally signed nativity certificate.",
+            "Children of Central Government employees qualify irrespective of nativity if a parent—or guardian only where both parents are deceased—served continuously in Tamil Nadu for five years; employer evidence is required.",
+            "Children of permanent public-sector or government-recognised-institution employees qualify irrespective of domicile with five continuous years of Tamil Nadu employment and the specified employer/supporting records.",
+            "Children of All India Service Tamil Nadu-cadre officers require a parental declaration. Other-state candidates who studied Classes VIII–XII in Tamil Nadu may apply without a nativity certificate.",
+            "The parent-service and other-state schooling categories are considered under Open Competition; communal reservation requires Tamil Nadu nativity and the prescribed state community certificate.",
+            "Tamil Nadu-native OCI/PIO cardholders may participate under Open Category, except those born in a foreign country after 4 March 2021. Do not broaden this to every OCI/PIO or foreign applicant.",
+            "Sri Lankan Tamil refugees who studied in Tamil Nadu may participate under Open Competition with Headquarters Tahsildar identification; those outside refugee-camp registration also need original passport, visa and police-registration letter."
+          ],
+          "notes": "TNEA 2026 explicitly names CIPET Chennai among participating central-government institutions. This is a positive route definition, not a declaration that the institution excludes every other applicant. NRI residence alone neither creates a verified NRI quota nor negates eligibility as an Indian national under these rules.",
+          "verifiedAt": "2026-10-27",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1778803200023"
+        },
+        "admissionsContent": {
+          "overview": "This four-year plastics-technology degree listing covers the first-year academic-stream TNEA route at CIPET Chennai. Selection uses qualifying-subject marks and online counselling, subject to the exact nationality, nativity and documentation categories.",
+          "eligibility": {
+            "intro": "Academic-stream applicants must meet both the CIPET programme conditions and TNEA 2026 admission rules.",
+            "items": [
+              "Pass HSC Academic, both +1 and +2, or an accepted equivalent, with Mathematics, Physics and Chemistry.",
+              "The minimum raw +2 average across Mathematics, Physics and Chemistry is 45% for General and 40% for eligible BC/BCM, MBC/DNC, SC/SCA/ST categories.",
+              "CIPET’s 2026–27 prospectus states an age limit of 21 for first-year UG entry; it does not specify the age-calculation date.",
+              "Indian applicants must meet a TNEA nativity, Tamil Nadu schooling or eligible parent-service category; reserved-category claims need the prescribed Tamil Nadu documents.",
+              "Only the specified Tamil Nadu-native OCI/PIO and Sri Lankan Tamil refugee exceptions are established here; general foreign or NRI-quota admission is not asserted.",
+              "Vocational-stream and lateral-entry applicants are not covered by this narrow academic-route record."
+            ]
+          },
+          "applicationSteps": [
+            "Register one online TNEA application and select the correct applicant/reservation categories.",
+            "Upload the required original-certificate copies, including route-specific nativity, parent-service, OCI/PIO or refugee evidence where applicable.",
+            "Review the qualifying-marks rank and complete online choice filling for CIPET Chennai, college code 1321, branch PA.",
+            "Confirm the allotted college and branch, complete the required fee payment and report with original records within the published counselling deadlines."
+          ],
+          "documentsRequired": {
+            "academic": [
+              "Class 10 marksheet",
+              "HSC first-year (+1) marksheet",
+              "HSC second-year (+2) or accepted-equivalent marksheet",
+              "Transfer certificate"
+            ],
+            "application": [
+              "Digitally signed nativity certificate where the applicable TNEA category requires it",
+              "Employer service certificate and supporting permanent-employment records where applicable",
+              "Parental declaration for the All India Service Tamil Nadu-cadre category where applicable",
+              "Tamil Nadu community certificate for a communal-reservation claim",
+              "OCI/PIO status and Tamil Nadu nativity evidence where using that specified exception",
+              "Income/first-graduate/government-school or special-reservation certificates only when claiming the corresponding benefit",
+              "Sri Lankan Tamil refugees: Headquarters Tahsildar identification certificate",
+              "Refugees outside camp registration additionally need original passport, visa and police-station registration letter"
+            ]
+          },
+          "deadlinesNote": "These are the completed 2026 counselling-cycle rules. No upcoming application deadline or recurring intake month is inferred from them.",
+          "reportedFeeQuote": {
+            "currency": "INR",
+            "minAmount": 55000,
+            "status": "confirmed",
+            "period": "academic_year",
+            "componentBasis": "Explicit per-annum tuition in the first-year2026–27 UG table, not the combined A+B+C total. Applicant-category scope is not separately identified; not verified as an OCI/PIO/refugee/foreign tariff.",
+            "category": "Published first-year UG standard tariff; applicant scope unconfirmed",
+            "academicYear": "2026–27",
+            "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+            "sourceLabel": "CIPET Chennai2026–27 UG/PG prospectus, p5",
+            "verifiedAt": "2026-10-27"
+          }
+        }
+      },
+      "preserveFields": [
+        "Existing exact source-native tuition amount and currency; keep its applicant-category scope explicit",
+        "Unknown medium as empty and instructionLanguages as empty",
+        "No future intake months unless independently established"
+      ],
+      "scope": "First-year academic TNEA route only; no PG/MSc/diploma/lateral rescue."
+    },
+    {
+      "programmeSlug": "be-manufacturing-engineering",
+      "officialTitle": "Bachelor of Engineering in Manufacturing Engineering",
+      "replaceFields": {
+        "durationYears": 4,
+        "audienceEligibility": {
+          "availability": "restricted",
+          "eligibleAudiences": [
+            "Indian nationals meeting a specified TNEA 2026 nativity/schooling/parent-service category",
+            "Tamil Nadu-native OCI/PIO cardholders within the specific TNEA exception",
+            "Sri Lankan Tamil refugees who studied in Tamil Nadu and meet the stated documentation rule"
+          ],
+          "restrictions": [
+            "This listing covers only first-year academic-stream TNEA seats surrendered by CIPET Chennai, not an independently verified foreign/NRI quota or lateral-entry route.",
+            "Indian applicants must satisfy one of the six TNEA nativity, Tamil Nadu schooling or parent-service categories detailed below; an Indian passport alone is insufficient.",
+            "Tamil Nadu candidates who passed Classes VIII–XII in Tamil Nadu may apply without a nativity certificate. Tamil Nadu natives who studied any of those classes outside the state require a digitally signed nativity certificate.",
+            "Children of Central Government employees qualify irrespective of nativity if a parent—or guardian only where both parents are deceased—served continuously in Tamil Nadu for five years; employer evidence is required.",
+            "Children of permanent public-sector or government-recognised-institution employees qualify irrespective of domicile with five continuous years of Tamil Nadu employment and the specified employer/supporting records.",
+            "Children of All India Service Tamil Nadu-cadre officers require a parental declaration. Other-state candidates who studied Classes VIII–XII in Tamil Nadu may apply without a nativity certificate.",
+            "The parent-service and other-state schooling categories are considered under Open Competition; communal reservation requires Tamil Nadu nativity and the prescribed state community certificate.",
+            "Tamil Nadu-native OCI/PIO cardholders may participate under Open Category, except those born in a foreign country after 4 March 2021. Do not broaden this to every OCI/PIO or foreign applicant.",
+            "Sri Lankan Tamil refugees who studied in Tamil Nadu may participate under Open Competition with Headquarters Tahsildar identification; those outside refugee-camp registration also need original passport, visa and police-registration letter."
+          ],
+          "notes": "TNEA 2026 explicitly names CIPET Chennai among participating central-government institutions. This is a positive route definition, not a declaration that the institution excludes every other applicant. NRI residence alone neither creates a verified NRI quota nor negates eligibility as an Indian national under these rules.",
+          "verifiedAt": "2026-10-27",
+          "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf?t=1778803200023"
+        },
+        "admissionsContent": {
+          "overview": "This four-year manufacturing-engineering degree listing covers the first-year academic-stream TNEA route at CIPET Chennai. Selection uses qualifying-subject marks and online counselling, subject to the exact nationality, nativity and documentation categories.",
+          "eligibility": {
+            "intro": "Academic-stream applicants must meet both the CIPET programme conditions and TNEA 2026 admission rules.",
+            "items": [
+              "Pass HSC Academic, both +1 and +2, or an accepted equivalent, with Mathematics, Physics and Chemistry.",
+              "The minimum raw +2 average across Mathematics, Physics and Chemistry is 45% for General and 40% for eligible BC/BCM, MBC/DNC, SC/SCA/ST categories.",
+              "CIPET’s 2026–27 prospectus states an age limit of 21 for first-year UG entry; it does not specify the age-calculation date.",
+              "Indian applicants must meet a TNEA nativity, Tamil Nadu schooling or eligible parent-service category; reserved-category claims need the prescribed Tamil Nadu documents.",
+              "Only the specified Tamil Nadu-native OCI/PIO and Sri Lankan Tamil refugee exceptions are established here; general foreign or NRI-quota admission is not asserted.",
+              "Vocational-stream and lateral-entry applicants are not covered by this narrow academic-route record."
+            ]
+          },
+          "applicationSteps": [
+            "Register one online TNEA application and select the correct applicant/reservation categories.",
+            "Upload the required original-certificate copies, including route-specific nativity, parent-service, OCI/PIO or refugee evidence where applicable.",
+            "Review the qualifying-marks rank and complete online choice filling for CIPET Chennai, college code 1321, branch MN.",
+            "Confirm the allotted college and branch, complete the required fee payment and report with original records within the published counselling deadlines."
+          ],
+          "documentsRequired": {
+            "academic": [
+              "Class 10 marksheet",
+              "HSC first-year (+1) marksheet",
+              "HSC second-year (+2) or accepted-equivalent marksheet",
+              "Transfer certificate"
+            ],
+            "application": [
+              "Digitally signed nativity certificate where the applicable TNEA category requires it",
+              "Employer service certificate and supporting permanent-employment records where applicable",
+              "Parental declaration for the All India Service Tamil Nadu-cadre category where applicable",
+              "Tamil Nadu community certificate for a communal-reservation claim",
+              "OCI/PIO status and Tamil Nadu nativity evidence where using that specified exception",
+              "Income/first-graduate/government-school or special-reservation certificates only when claiming the corresponding benefit",
+              "Sri Lankan Tamil refugees: Headquarters Tahsildar identification certificate",
+              "Refugees outside camp registration additionally need original passport, visa and police-station registration letter"
+            ]
+          },
+          "deadlinesNote": "These are the completed 2026 counselling-cycle rules. No upcoming application deadline or recurring intake month is inferred from them.",
+          "reportedFeeQuote": {
+            "currency": "INR",
+            "minAmount": 50000,
+            "status": "confirmed",
+            "period": "academic_year",
+            "componentBasis": "Explicit per-annum tuition in the first-year2026–27 UG table, not the combined A+B+C total. Applicant-category scope is not separately identified; not verified as an OCI/PIO/refugee/foreign tariff.",
+            "category": "Published first-year UG standard tariff; applicant scope unconfirmed",
+            "academicYear": "2026–27",
+            "sourceUrl": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+            "sourceLabel": "CIPET Chennai2026–27 UG/PG prospectus, p5",
+            "verifiedAt": "2026-10-27"
+          }
+        }
+      },
+      "preserveFields": [
+        "Existing exact source-native tuition amount and currency; keep its applicant-category scope explicit",
+        "Unknown medium as empty and instructionLanguages as empty",
+        "No future intake months unless independently established"
+      ],
+      "scope": "First-year academic TNEA route only; no PG/MSc/diploma/lateral rescue."
+    }
+  ],
+  "independentCurrentAuthority": "DTE2026 college directory printed69/PDF110 records approved intake60 for MN/PA at1321; current general academic matrix PDF56 lists both branches. Anna-owned roster code3103/1321 supports affiliation. No separately retrieved currentAICTE EoA or year-specific affiliation-order claim.",
+  "scope": "Only two first-year academic TNEA routes; full six nativity/schooling/parent-service groups and narrow OCI/PIO/refugee exceptions. All other programme holds retained.",
+  "feeReview": "Prospectus2026–27 p5 explicitly PER ANNUM tuition INR55000/50000. Original standard tariff preserved as native quote with audience omitted/category unconfirmed, not silently relabelled international; exact applicant-specific amount on_request.",
+  "ageReview": "Prospectus p3 has a single shared first-year UG eligibility cell with age21; no calculation date is given or invented.",
+  "mediaReview": "Original official530×301 branding asset replaces66px icon. Original campus photo retained with publisher-identification caption, not cropped."
+}

@@ -1,0 +1,75 @@
+{
+  "checkedAt": "2026-10-27",
+  "institution": "government-college-of-technology-coimbatore",
+  "applicableOfferings": [
+    "government-college-of-technology-coimbatore-b-e-civil-engineering",
+    "government-college-of-technology-coimbatore-b-e-mechanical-engineering",
+    "government-college-of-technology-coimbatore-b-e-electrical-and-electronics-engineering",
+    "government-college-of-technology-coimbatore-b-e-electronics-and-communication-engineering",
+    "government-college-of-technology-coimbatore-b-e-production-engineering",
+    "government-college-of-technology-coimbatore-b-e-electronics-and-instrumentation-engineering",
+    "government-college-of-technology-coimbatore-b-e-computer-science-and-engineering",
+    "government-college-of-technology-coimbatore-b-tech-information-technology",
+    "government-college-of-technology-coimbatore-b-tech-industrial-biotechnology",
+    "government-college-of-technology-coimbatore-b-e-computer-science-and-engineering-artificial-intelligence-and-machine-learning"
+  ],
+  "officialSource": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+  "governmentPortfolio": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+  "scope": "All ten current full-time first-year UG degrees, government directory college2005, printed129/PDF170. No general foreign route inferred.",
+  "audience": {
+    "availability": "restricted",
+    "eligibleAudiences": [
+      "Indian nationals meeting TNEA 2026 rules",
+      "Eligible Tamil Nadu native OCI/PIO applicants",
+      "Eligible Sri Lankan Tamil refugees educated in Tamil Nadu"
+    ],
+    "restrictions": [
+      "This offering covers the TNEA first-year route, not unrestricted international admission.",
+      "Tamil Nadu candidates who completed Classes 8–12 in Tamil Nadu do not need a nativity certificate. Tamil Nadu natives who studied any of those classes outside the state need the prescribed electronic nativity certificate.",
+      "Children of Central Government employees serving continuously in Tamil Nadu for five years may apply with employer evidence; a guardian qualifies only when both parents are deceased.",
+      "Children of permanent employees of public-sector or government-recognised institutions serving continuously in Tamil Nadu for five years may apply with employer and employment evidence.",
+      "Children of All India Service officers of the Tamil Nadu cadre may apply with the required parental self-declaration. Other-state applicants who completed Classes 8–12 in Tamil Nadu may also apply.",
+      "The parental-service and other-state schooling categories compete in Open Competition, not Tamil Nadu communal reservation.",
+      "Tamil Nadu native OCI/PIO cardholders may compete in Open Category; the exception excludes those born abroad after 4 March 2021.",
+      "Sri Lankan Tamil refugees educated in Tamil Nadu may compete in Open Competition with the prescribed refugee documentation.",
+      "Communal reservation requires Tamil Nadu nativity and a valid Tamil Nadu community certificate; other eligible categories compete in Open Competition."
+    ],
+    "notes": "This is the verified counselling audience only. No general foreign-national admission pathway is represented.",
+    "verifiedAt": "2026-10-27",
+    "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+  },
+  "qualifications": {
+    "intro": "Entry to B.E. Civil Engineering follows the TNEA first-year academic or specified vocational qualification routes, together with the applicable nationality and Tamil Nadu connection rules.",
+    "items": [
+      "Pass HSC academic +1 and +2 or an accepted equivalent; the minimum +2 Mathematics, Physics and Chemistry average is 45% for General and 40% for BC/BCM, MBC/DNC and SC/SCA/ST.",
+      "An approved HSC vocational route is also available, using a related Mathematics, Physics or Chemistry subject plus vocational theory and practical marks at the same category thresholds.",
+      "TNEA accepts the specified mechanical, electrical, electronics, civil, automobile and textile vocational groups; eligibility depends on the actual qualifying subject combination.",
+      "Fulfil TNEA nationality, nativity or schooling rules. Tamil Nadu communal reservation is separate from Open Competition eligibility.",
+      "Selection uses the TNEA merit and counselling process; minimum qualifying marks do not assure a seat in this branch."
+    ]
+  },
+  "documents": {
+    "academic": [
+      "Class 10 marksheet",
+      "HSC first-year (+1) marksheet",
+      "HSC second-year (+2) or equivalent marksheet",
+      "Transfer certificate"
+    ],
+    "application": [
+      "Applicable nativity certificate or parent-employer documentation",
+      "Tamil Nadu community certificate for a claimed reserved category",
+      "Income certificate, when applicable",
+      "First-graduate certificate and joint declaration, when applicable",
+      "Applicable refugee, disability, sports or ex-serviceman supporting certificates",
+      "OCI/PIO card and Tamil Nadu nativity evidence, when that exception is claimed",
+      "Sri Lankan Tamil refugees: Headquarters Tahsildar identification certificate.",
+      "Refugee applicants not registered in a camp additionally need original passport, visa and police-station registration letter."
+    ]
+  },
+  "feeReview": {
+    "currentAmountSource": "https://gct.ac.in/sites/gct.ac.in/files/Fees%20Structure%20for%20loan%20%28NFG%2C%20BC%20%26MBC%29.pdf",
+    "annualPeriodSource": "https://gct.ac.in/sites/gct.ac.in/files/Full%20time%20UG%20and%20PG%20fee%20details%20and%20Part%20time%20B.E%20fee%20%20details.pdf",
+    "determination": "Current2026–27 NFG/BC/MBC certificate gives tuition INR2000 but an ambiguous whole-course introduction. Current-linked first-year B.E. fee table explicitly says FEE COLLECTION PER ANNUM with the same tuition2000. Amount and native annual period are separately corroborated; no division/multiplication/annualisation, and no other-category/foreign fee inference. Older combined12415 total is not used as current."
+  },
+  "excludedFromPayload": "37 current degree/mode rows held individually for exact admission/category/authority gaps; five historical/discovery/options excluded, details in52-row inventory."
+}

@@ -1,0 +1,415 @@
+{
+  "checkedAt": "2026-10-27",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1650,
+      "sha256": "b29a02c84e15bfa5a070028df8bb37ee139dee0a671ace3b0830c8ee3e15cf42"
+    },
+    {
+      "path": "deduplication.json",
+      "bytes": 1062,
+      "sha256": "45dae1adc98de8c97fadd5d76f51c6abb3240cf6f7b17ea745ae1734ec4a635d"
+    },
+    {
+      "path": "holds.json",
+      "bytes": 959,
+      "sha256": "cdfb5a201d6e8e878ae53a1c472c1e5d95dce0ced102985ecc5009485b2904a8"
+    },
+    {
+      "path": "media-manifest.json",
+      "bytes": 1425,
+      "sha256": "04bb4ec02db918ae8675ab68699214e2a9774b07b58da9348ba8913afd0594a0"
+    },
+    {
+      "path": "payload.draft.json",
+      "bytes": 108260,
+      "sha256": "ac2c3610f07ebf7d359469334e7aeae033efbca37a7675afd98938f9de13a89c"
+    },
+    {
+      "path": "programme-inventory.csv",
+      "bytes": 18542,
+      "sha256": "e6c546ae52aeff2ee43dd2d0ed7c8ae8bde5d8d7e1ef45dcdde40b30dcbcfca6"
+    },
+    {
+      "path": "programme-inventory.md",
+      "bytes": 1668,
+      "sha256": "b11e3fdb2540436c31ff2b6da756ca73b487fe9dd3ed1c819bb07511c3e08089"
+    },
+    {
+      "path": "source-index.json",
+      "bytes": 10854,
+      "sha256": "08c7227d8273c7f7ca62dd0946febbf1c5d9b220c17ca58dad691e38c7543d30"
+    },
+    {
+      "path": "sources/DIPLOMA-AND-CE-PROGRAMME-COURSE-CONTENT-retry.docx",
+      "bytes": 19663,
+      "sha256": "74eba677f6546e9926edfa404128975da15d7717e3be674b15df38b0faef6467"
+    },
+    {
+      "path": "sources/DIPLOMA-AND-CE-PROGRAMME-COURSE-CONTENT-retry.docx.receipt.json",
+      "bytes": 487,
+      "sha256": "b3c3ea50b2616e6dad8eb901f7aef876490794d88c1ab7f83924444372bbe758"
+    },
+    {
+      "path": "sources/DIPLOMA-AND-CE-PROGRAMME-COURSE-CONTENT-retry.txt",
+      "bytes": 7731,
+      "sha256": "3ab67ed7d91ad7001a76b1ba25cb5d020c60805b491c0163f2f256b16b7b2969"
+    },
+    {
+      "path": "sources/DIPLOMA-AND-CE-PROGRAMME-COURSE-CONTENT.docx.receipt.json",
+      "bytes": 203,
+      "sha256": "386d30fc9abfa5588ff9497b6165176268f7c0fd02f475be623b960a2236faca"
+    },
+    {
+      "path": "sources/Diploma-and-CE-programmes-poster-2026.pdf.receipt.json",
+      "bytes": 200,
+      "sha256": "ab27cbe0c4d405421e25a8cf0c36ca1fde12b8dd23ad9a3d84cc93a8f65ecf1c"
+    },
+    {
+      "path": "sources/NIFT-Chennai-Diploma--CE-Programme--2026-Important-Instructions-updated-retry.docx",
+      "bytes": 16008,
+      "sha256": "600bc6bd77c31f3e63de1dd3017c76d5b5f547cd98b172a075b7917e436b33da"
+    },
+    {
+      "path": "sources/NIFT-Chennai-Diploma--CE-Programme--2026-Important-Instructions-updated-retry.docx.receipt.json",
+      "bytes": 567,
+      "sha256": "c551b40c9f492576e6683e21cd39dddcd75b22a21c8126b3b3439ed4c8236af7"
+    },
+    {
+      "path": "sources/NIFT-Chennai-Diploma--CE-Programme--2026-Important-Instructions-updated-retry.txt",
+      "bytes": 2087,
+      "sha256": "8b2d369608cb8b6bf93c2d90d8a99936c189f62cb5cab0f58773ee6f39b9968b"
+    },
+    {
+      "path": "sources/NIFT-Chennai-Diploma--CE-Programme--2026-Important-Instructions-updated.docx.receipt.json",
+      "bytes": 243,
+      "sha256": "d2bcf2f5396fbb1e9156fe08d9a1b6ca864f25137e1a5442886c10a23869bd73"
+    },
+    {
+      "path": "sources/apparel-production.html",
+      "bytes": 100102,
+      "sha256": "e1111eab415c3a84e9f18b455e76fba749fbd3e5557be0822f4595a5ecbedf8d"
+    },
+    {
+      "path": "sources/apparel-production.html.receipt.json",
+      "bytes": 9598,
+      "sha256": "d11d59245fa7d969a2322582306aeafe439a82ab87e891b052ca76d68b18d8e2"
+    },
+    {
+      "path": "sources/apparel-production.txt",
+      "bytes": 13645,
+      "sha256": "a2066e1377d678fb35392a96a13adf017107a9304002865ffc66dc04b149ece1"
+    },
+    {
+      "path": "sources/cover.jpg",
+      "bytes": 187195,
+      "sha256": "86d92bcc9ed1d133c28d30863b6f6110ae66677eeafa50f05bf66c4f1d2c0b92"
+    },
+    {
+      "path": "sources/cover.jpg.receipt.json",
+      "bytes": 345,
+      "sha256": "87f34ddbc6a29b041cc25c88511b57cc55788784e11b36fce39a2096b55fbbc6"
+    },
+    {
+      "path": "sources/diploma-ce-poster2026-retry.pdf.receipt.json",
+      "bytes": 200,
+      "sha256": "ab27cbe0c4d405421e25a8cf0c36ca1fde12b8dd23ad9a3d84cc93a8f65ecf1c"
+    },
+    {
+      "path": "sources/faq2026-retry.pdf",
+      "bytes": 306559,
+      "sha256": "fce5765f02ece810dbc484ef75269ebfe271bcd631cc2d1e741114ca2fd3d099"
+    },
+    {
+      "path": "sources/faq2026-retry.pdf.receipt.json",
+      "bytes": 332,
+      "sha256": "40037c0fa5830d70c3e4d1964efdd806583e128887e45c5148606c896dc0dea7"
+    },
+    {
+      "path": "sources/faq2026-retry.txt",
+      "bytes": 68610,
+      "sha256": "4ef4621f4301716e72e874137eed94b923bc0d569e594498d9345040b1fe2519"
+    },
+    {
+      "path": "sources/faq2026.pdf.receipt.json",
+      "bytes": 153,
+      "sha256": "049831af31db601ca6c4bdd51a5fb6b9c806ca15888d0b9a7da7561b0fbf6b20"
+    },
+    {
+      "path": "sources/fashion-and-lifestyle-accessory.html",
+      "bytes": 100303,
+      "sha256": "575c443230885ed4ea9fdfab1dc02ec13e21363bb18f6d2b60586dded48d3de3"
+    },
+    {
+      "path": "sources/fashion-and-lifestyle-accessory.html.receipt.json",
+      "bytes": 9830,
+      "sha256": "8f565b5fa1bfa8a273c4caa96dc7bb24a367d177585557f22950c2dcceeaa1d0"
+    },
+    {
+      "path": "sources/fashion-and-lifestyle-accessory.txt",
+      "bytes": 13767,
+      "sha256": "6055d3c43d71fc24076ef9aae302279a07f910bfaf30bd2ae03279616691ba42"
+    },
+    {
+      "path": "sources/fashion-communication.html",
+      "bytes": 106955,
+      "sha256": "90e8d7c7a05adddad445da9db187ba0ecf103babdea902f4cacb18ef03a29eb6"
+    },
+    {
+      "path": "sources/fashion-communication.html.receipt.json",
+      "bytes": 10672,
+      "sha256": "a3407073b3059d08446d2be33f332d6dfc0dbe3701f1ba490d48d04842f8db65"
+    },
+    {
+      "path": "sources/fashion-communication.txt",
+      "bytes": 14280,
+      "sha256": "470f4be1fd5b47ef78fd61f63fce8dd18f53829786fc0d0ddabbf2b121ec86a9"
+    },
+    {
+      "path": "sources/fashion-design.html",
+      "bytes": 100047,
+      "sha256": "1559990e69acd0f26e4583f1aa2ddf44d2f68cdbbf5e4d75fcd6c81b33092d91"
+    },
+    {
+      "path": "sources/fashion-design.html.receipt.json",
+      "bytes": 9462,
+      "sha256": "b397068de8944b082c6ef5002f99d585ef80e47f74640962f8d2d5006a8faa0f"
+    },
+    {
+      "path": "sources/fashion-design.txt",
+      "bytes": 13519,
+      "sha256": "3e79dea46bfac920c89614f329b9e27f8590363f7979e05b5aff81fbff70eb16"
+    },
+    {
+      "path": "sources/foundation-programme-fp.html",
+      "bytes": 98388,
+      "sha256": "9732b319f4f29e29c73d84daa64498c11a47e8547e93091ff4d632b921913580"
+    },
+    {
+      "path": "sources/foundation-programme-fp.html.receipt.json",
+      "bytes": 9638,
+      "sha256": "f4c40e7555795b97884fa8c3b628e91f6c03bb77fffb6d79c2df0d5c547348a7"
+    },
+    {
+      "path": "sources/foundation-programme-fp.txt",
+      "bytes": 12751,
+      "sha256": "d1a0c5a818232cdd92aed7a5ce3ab41afc6890f60824719d92ff3ed3740f2376"
+    },
+    {
+      "path": "sources/guidelines2026.pdf",
+      "bytes": 1205564,
+      "sha256": "8e577b5ab87ad62b0ecd39425c9f2ec50fe3cf0336492d8ee3447b785ce64687"
+    },
+    {
+      "path": "sources/guidelines2026.pdf.receipt.json",
+      "bytes": 367,
+      "sha256": "84aa4c6553216151e9cfe790380de3a947dc0c73f1831d8a087e3fa1bdc43d9f"
+    },
+    {
+      "path": "sources/guidelines2026.txt",
+      "bytes": 199249,
+      "sha256": "7e9bb04857722ec2c1241bf296fd969e9f633c70b41ba68fb93643410d14e39f"
+    },
+    {
+      "path": "sources/home.html",
+      "bytes": 176356,
+      "sha256": "8e2a5427b65c4da32426b40f802d4c68d58cb20434ce7bc3c7dd81bea0ed65fe"
+    },
+    {
+      "path": "sources/home.html.receipt.json",
+      "bytes": 15263,
+      "sha256": "861018cd517cc22eae0b281aa883452febdfbd934fcc68d8d3a32633092cf882"
+    },
+    {
+      "path": "sources/home.txt",
+      "bytes": 28757,
+      "sha256": "a74e9d99f395c9ce6a25fcc4e26fbe8b2aa0026c89d4817b61494aa2f11adbdb"
+    },
+    {
+      "path": "sources/internal-complaint-committee.html",
+      "bytes": 93740,
+      "sha256": "0c80f18d5e724d879b6f86547404565cc58e67786ce507289599e6dd38b72eaf"
+    },
+    {
+      "path": "sources/internal-complaint-committee.html.receipt.json",
+      "bytes": 9008,
+      "sha256": "e005ad2656009ebbf8d0629f4c6cbd8800b8f2fb23d7fb9a9156a5f77527d097"
+    },
+    {
+      "path": "sources/internal-complaint-committee.txt",
+      "bytes": 11976,
+      "sha256": "b4549a0ab13918d48426302bf7e81b6546321b74eaf3b8e5158404ccaa6382ad"
+    },
+    {
+      "path": "sources/knitwear-design.html",
+      "bytes": 100215,
+      "sha256": "d891694f4e4c52ba8ea0bf4ddbaf793242085f12ea174c66375f25c8d57b99f2"
+    },
+    {
+      "path": "sources/knitwear-design.html.receipt.json",
+      "bytes": 9477,
+      "sha256": "1a93781b9dda99343eecb59d375056f533d35b9406d85878c0ffac8a5e965006"
+    },
+    {
+      "path": "sources/knitwear-design.txt",
+      "bytes": 13678,
+      "sha256": "cf45a32cf09005d037184e7e5a921bc33179a182dccac330def631aa0f0f8e62"
+    },
+    {
+      "path": "sources/leather-design.html",
+      "bytes": 100144,
+      "sha256": "51c72894c7c7613da252b63ddf23ff7d5f2a57f2ed1d51a2847fec681f9478d8"
+    },
+    {
+      "path": "sources/leather-design.html.receipt.json",
+      "bytes": 9457,
+      "sha256": "304a7de1d9f406900c627d82a1e32462c8942e282b9728bb86bb68b5d08da4de"
+    },
+    {
+      "path": "sources/leather-design.txt",
+      "bytes": 13684,
+      "sha256": "2d1e7ac87b00198645efa72a20999e3c3e0a8ab86f31024016cf140a1fd82c05"
+    },
+    {
+      "path": "sources/live-NIFT.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "sources/live-NIFT.json.receipt.json",
+      "bytes": 318,
+      "sha256": "77c39e132a26d1c62dd16144d7a142afff6a66aa50b41d913db72481892d4d27"
+    },
+    {
+      "path": "sources/live-National-Institute-of-Fashion-Technology.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "sources/live-National-Institute-of-Fashion-Technology.json.receipt.json",
+      "bytes": 406,
+      "sha256": "ac8ec4a570557ce1b29decb5e514dd7d97258d86b649e214d064a414335ed4f3"
+    },
+    {
+      "path": "sources/logo.png",
+      "bytes": 41570,
+      "sha256": "d9bbe9e6382feb7ba39b81505014416e4ca8d83b05e519eeb04bc374aa45a151"
+    },
+    {
+      "path": "sources/logo.png.receipt.json",
+      "bytes": 387,
+      "sha256": "8553dc61d09b07c3697b8d1b39b8365d305c73e3c6ace15a7115d601338c8c03"
+    },
+    {
+      "path": "sources/master-fashion-management.html",
+      "bytes": 100183,
+      "sha256": "c1c6282c972938af970bca09bbfd47c402655d0b481a6e8bacd89030900ec474"
+    },
+    {
+      "path": "sources/master-fashion-management.html.receipt.json",
+      "bytes": 9677,
+      "sha256": "14ed031330cc670b321e7c5674fa95029026592ca6c5b0b438a1a6c878da73ba"
+    },
+    {
+      "path": "sources/master-fashion-management.txt",
+      "bytes": 13661,
+      "sha256": "c8a991065648a147537ea86823ee4cc1a4364dc91366eaa5390204ea4312aaee"
+    },
+    {
+      "path": "sources/ministry-nift.pdf",
+      "bytes": 20455420,
+      "sha256": "175e7feebca7205c003e625a6352e013714d37b10750a72e3160e8f3c4ff5580"
+    },
+    {
+      "path": "sources/ministry-nift.pdf.receipt.json",
+      "bytes": 386,
+      "sha256": "d31648c22bed5cb3b149ed7b9e09504079dc0eebd46a7c959f8204b32d46e6c6"
+    },
+    {
+      "path": "sources/ministry-nift.txt",
+      "bytes": 626524,
+      "sha256": "1150c0f75487f8b5df5dabd0515eb4aed557d23b32f4873dc5144e9efa28cee1"
+    },
+    {
+      "path": "sources/nift-act.pdf.receipt.json",
+      "bytes": 153,
+      "sha256": "41348499d181656feb23f86bec41237f305e1cba67a83b823cee67dbba7c95d5"
+    },
+    {
+      "path": "sources/pib-establishment.html",
+      "bytes": 123926,
+      "sha256": "3b856423d3ca61e7ebcf99cecd150786e33e05767c305a73cef75811a23a6a9e"
+    },
+    {
+      "path": "sources/pib-establishment.html.receipt.json",
+      "bytes": 404,
+      "sha256": "3d137341c057866b92b936ff651ee6dff143a8e13af70c529f749b29c01f4402"
+    },
+    {
+      "path": "sources/pib-establishment.txt",
+      "bytes": 1317,
+      "sha256": "ef448d827cac12b1336dc3f73affd91d1cc1101a4b625beb85361a123286cf6c"
+    },
+    {
+      "path": "sources/poster-web-extraction.json",
+      "bytes": 867,
+      "sha256": "38ec8e22aea627d1f3549825521ac26dc27530ee09d52c58712d672b5a4ae127"
+    },
+    {
+      "path": "sources/prospectus2026-retry.pdf",
+      "bytes": 17111189,
+      "sha256": "4351ec49c19fd8af397103c038c38cf6967d2a5085d71e274c405ac0f2b34ef2"
+    },
+    {
+      "path": "sources/prospectus2026-retry.pdf.receipt.json",
+      "bytes": 368,
+      "sha256": "8cb23588acb0b0fee59a67d0257db307d1d72c5e316603d09ed8dd38b349f7ff"
+    },
+    {
+      "path": "sources/prospectus2026-retry.txt",
+      "bytes": 577752,
+      "sha256": "d6b240d80ca9d1e72916959b91180dfc3432bd87b88bb4927c8a6db49620b35b"
+    },
+    {
+      "path": "sources/prospectus2026.pdf.receipt.json",
+      "bytes": 170,
+      "sha256": "b326399b671e91f0a9e936e86ce97b0439ed8657804f26e72b3e6fd7605e7e0c"
+    },
+    {
+      "path": "sources/textile-design.html",
+      "bytes": 100205,
+      "sha256": "73e66ca28d77613507b0e2c65e2368bd979378592a4a18dc846f62ebb9b326d9"
+    },
+    {
+      "path": "sources/textile-design.html.receipt.json",
+      "bytes": 9467,
+      "sha256": "6d70e6d2602b356cd25b01d0662544c039f1ba909a74e36b756ed615a6053292"
+    },
+    {
+      "path": "sources/textile-design.txt",
+      "bytes": 13735,
+      "sha256": "82afb07a677c1c9926366cbc789e876b97e05766683325edb10fde7c888380b8"
+    },
+    {
+      "path": "taxonomy-proposals.json",
+      "bytes": 2124,
+      "sha256": "90bb3a0bd9e7c683f894129e990cdb0f2cc20fcc726fae6463a1d190da6f13e8"
+    },
+    {
+      "path": "validation-reader-node-import.txt",
+      "bytes": 101,
+      "sha256": "4e151baed4e9919639b1b40ca749c71ed2934683e4a26af59bc287c1b0206516"
+    },
+    {
+      "path": "validation-reader.txt",
+      "bytes": 833,
+      "sha256": "6549f2b1b2cb281ffba882c60313cb4b8d5d4b4a91ffbdb396327e2a1c1e4b0c"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 1089,
+      "sha256": "fec8d75b36c67572a55a8bf08936784cf23e675c6af2cadeadde17206d8eb32e"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-10-27",
+  "status": "accepted_for_research_delivery_only",
+  "inventoryRows": 15,
+  "inventoryIdentityAndDispositionChecksPassed": true,
+  "errors": [],
+  "actualReader": null,
+  "publishReady": false,
+  "completeExecutableMigration": false,
+  "claims": "Serial integrator local-only claim; shared remote ledger unchanged. Recheck remote before publication.",
+  "holds": "All precise holds in holds.json remain binding. Actual reader checks are not editorial, media or publication approval.",
+  "delivery": "Second fixed batch of ten only; separate PR from first ten. No raw source/media binaries, credentials, real migrations or application code changes."
+}

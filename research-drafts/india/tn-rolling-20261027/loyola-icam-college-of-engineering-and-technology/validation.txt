@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-10-27",
+  "validator": "scripts/lib/content-migrations.ts readContentMigrations",
+  "command": "node --import tsx /tmp/validate_tn_e.cjs",
+  "isolatedRoot": "/tmp/tn-e-validation",
+  "onlyId": "9999-licet-draft",
+  "result": "PASS",
+  "migrationCount": 1,
+  "universityCount": 1,
+  "programmeCount": 6,
+  "evidenceCount": 71,
+  "expiredEvidence": [],
+  "payloadSha256": "eb590ad5de1f8dd7c0e58c1493a9179f75e5a322b7e62888ccf2f8d122eece7c",
+  "readerChecksum": "46c60b48617dbb6e7ca9faa79e47e8a50a08adfebdc7fc6f52bba22d62b71ad4",
+  "scope": "Isolated actual reader; not a repository migration reservation, DB dry-run, media test, UI QA or publication.",
+  "publishReady": false,
+  "remainingGate": "Mandatory logo/cover rights review and Cloudinary hosting; serial integrator assignment and fresh scoped validation."
+}

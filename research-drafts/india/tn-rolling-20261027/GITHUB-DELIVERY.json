@@ -1,0 +1,89 @@
+{
+  "batch": "Tamil Nadu second fixed ten",
+  "readyToApply": false,
+  "published": 0,
+  "claims": "Local-only; canonical remote ledger unchanged",
+  "institutions": [
+    {
+      "slug": "national-institute-of-fashion-technology-chennai",
+      "inventoryRows": 29,
+      "actualFrameworkPassingProgrammes": 8,
+      "actualFrameworkIndependentlyRerun": true,
+      "status": "held_framework_candidate",
+      "completeExecutableMigration": false,
+      "remainingHolds": "See holds.json or publication-scope.json and integrator-review.json; mandatory media, exact programme/audience/cycle, source conflicts and proposed taxonomy gates remain binding."
+    },
+    {
+      "slug": "loyola-icam-college-of-engineering-and-technology",
+      "inventoryRows": 15,
+      "actualFrameworkPassingProgrammes": 6,
+      "actualFrameworkIndependentlyRerun": true,
+      "status": "held_framework_candidate",
+      "completeExecutableMigration": false,
+      "remainingHolds": "See holds.json or publication-scope.json and integrator-review.json; mandatory media, exact programme/audience/cycle, source conflicts and proposed taxonomy gates remain binding."
+    },
+    {
+      "slug": "measi-academy-of-architecture",
+      "inventoryRows": 3,
+      "actualFrameworkPassingProgrammes": 1,
+      "actualFrameworkIndependentlyRerun": true,
+      "status": "held_framework_candidate",
+      "completeExecutableMigration": false,
+      "remainingHolds": "See holds.json or publication-scope.json and integrator-review.json; mandatory media, exact programme/audience/cycle, source conflicts and proposed taxonomy gates remain binding."
+    },
+    {
+      "slug": "government-college-of-technology-coimbatore",
+      "inventoryRows": 52,
+      "actualFrameworkPassingProgrammes": 10,
+      "actualFrameworkIndependentlyRerun": true,
+      "status": "held_framework_candidate",
+      "completeExecutableMigration": false,
+      "remainingHolds": "See holds.json or publication-scope.json and integrator-review.json; mandatory media, exact programme/audience/cycle, source conflicts and proposed taxonomy gates remain binding."
+    },
+    {
+      "slug": "madras-school-of-economics",
+      "inventoryRows": 16,
+      "actualFrameworkPassingProgrammes": 0,
+      "actualFrameworkIndependentlyRerun": false,
+      "status": "held_research_no_catalogue_pass",
+      "completeExecutableMigration": false,
+      "remainingHolds": "See holds.json or publication-scope.json and integrator-review.json; mandatory media, exact programme/audience/cycle, source conflicts and proposed taxonomy gates remain binding."
+    },
+    {
+      "slug": "cipet-institute-of-petrochemicals-technology-chennai",
+      "inventoryRows": 15,
+      "actualFrameworkPassingProgrammes": 0,
+      "actualFrameworkIndependentlyRerun": false,
+      "status": "held_research_no_catalogue_pass",
+      "completeExecutableMigration": false,
+      "remainingHolds": "See holds.json or publication-scope.json and integrator-review.json; mandatory media, exact programme/audience/cycle, source conflicts and proposed taxonomy gates remain binding."
+    },
+    {
+      "slug": "easwari-engineering-college",
+      "inventoryRows": 31,
+      "actualFrameworkPassingProgrammes": 0,
+      "actualFrameworkIndependentlyRerun": false,
+      "status": "held_research_no_catalogue_pass",
+      "completeExecutableMigration": false,
+      "remainingHolds": "See holds.json or publication-scope.json and integrator-review.json; mandatory media, exact programme/audience/cycle, source conflicts and proposed taxonomy gates remain binding."
+    },
+    {
+      "slug": "psg-institute-of-technology-and-applied-research",
+      "inventoryRows": 23,
+      "actualFrameworkPassingProgrammes": 12,
+      "actualFrameworkIndependentlyRerun": true,
+      "status": "held_framework_candidate",
+      "completeExecutableMigration": false,
+      "remainingHolds": "See holds.json or publication-scope.json and integrator-review.json; mandatory media, exact programme/audience/cycle, source conflicts and proposed taxonomy gates remain binding."
+    },
+    {
+      "slug": "sri-krishna-college-of-engineering-and-technology",
+      "inventoryRows": 34,
+      "actualFrameworkPassingProgrammes": 16,
+      "actualFrameworkIndependentlyRerun": true,
+      "status": "held_framework_candidate",
+      "completeExecutableMigration": false,
+      "remainingHolds": "See holds.json or publication-scope.json and integrator-review.json; mandatory media, exact programme/audience/cycle, source conflicts and proposed taxonomy gates remain binding."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "universitySlug": "measi-academy-of-architecture",
+  "universityName": "MEASI Academy of Architecture",
+  "batch": "tn-batch2-20261027",
+  "checkedAt": "2026-10-27",
+  "purpose": "User-authorized source-links local publication preparation; not direct apply.",
+  "payload": "payload.source.json",
+  "approvedSourceAssets": [
+    {
+      "kind": "logo",
+      "sourceUrl": "https://measiarch.edu.in/wp-content/uploads/2026/10/MAA-Logo-FP.png",
+      "sourceType": "official-university",
+      "rightsBasis": "Official MEASI identifying crest supplied by the Academy of Architecture on its own public website. Used intact for factual institutional identification; the 1902 trust emblem is not evidence of the academy establishment year, which remains 1999. No open licence, ownership transfer or endorsement is claimed.",
+      "checkedAt": "2026-10-27",
+      "status": "reviewed-source-ready-for-local-upload",
+      "sha256": "64bba618d1e9b16662ccebf77683c640a8890bc479dac8141c9f72e09ea3976f",
+      "bytes": 20615,
+      "contentType": "image/png",
+      "dimensions": [
+        112,
+        112
+      ],
+      "proposedPublicId": "studentstraffic/universities/measi-academy-of-architecture/logo-64bba618d1e9",
+      "visualReview": "112×112 intact green/red trust crest with 1902 date and tower/book/crescent; identifying elements legible on white. Official Academy asset, not a fabricated mark or favicon substitute.",
+      "altText": null,
+      "licenseUrl": null,
+      "licenseSourceUrl": null
+    },
+    {
+      "kind": "cover",
+      "sourceUrl": "https://measiarch.edu.in/wp-content/uploads/2026/09/MEASIPHOTO.jpg",
+      "sourceType": "official-university",
+      "rightsBasis": "Official MEASI Academy of Architecture campus photograph supplied on its public website, used intact for factual campus identification/context. No open licence, ownership transfer or endorsement is claimed.",
+      "checkedAt": "2026-10-27",
+      "status": "reviewed-source-ready-for-local-upload",
+      "sha256": "6702cd0d9828bf2e459736c7bac1d8af8588f71c2df675da4538243935b9613e",
+      "bytes": 348567,
+      "contentType": "image/jpeg",
+      "dimensions": [
+        1440,
+        960
+      ],
+      "proposedPublicId": "studentstraffic/universities/measi-academy-of-architecture/cover-6702cd0d9828",
+      "visualReview": "1440×960 intact actual Royapettah entrance/courtyard; MEASI Academy of Architecture sign readable, no watermark or event overlay. Original unchanged.",
+      "altText": "MEASI Academy of Architecture entrance and courtyard in Royapettah",
+      "licenseUrl": null,
+      "licenseSourceUrl": null
+    }
+  ],
+  "readyForLocalMediaPreparation": true,
+  "readyForDirectApply": false,
+  "prohibitedActions": [
+    "No direct source hotlinks in logoUrl/coverImageUrl",
+    "No fabricated Cloudinary URLs",
+    "No DB access or live apply by this preparation tool"
+  ],
+  "remainingLocalSteps": [
+    "Upload the two reviewed original assets or supply verified existing Cloudinary mappings",
+    "Generate the hosted-media payload and run actual scoped reader",
+    "Reserve/claim through locked canonical workflow, run scoped/full validation, commit final immutable migration before user-owned apply"
+  ]
+}

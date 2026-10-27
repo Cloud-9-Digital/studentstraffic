@@ -1,0 +1,195 @@
+{
+  "checkedAt": "2026-10-27",
+  "receipts": [
+    {
+      "receipt": "sources/Affiliation_AY_2025-26.PDF.receipt.json",
+      "url": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/23-09-2025-001/Affiliation_AY_2025-26.PDF",
+      "status": 200,
+      "error": null,
+      "sha256": "c5c8e4e53b9f168d3df921145257984d0b7dd5bf56f592d18c21292fd7735ebd",
+      "bytes": 164084,
+      "contentType": "application/pdf"
+    },
+    {
+      "receipt": "sources/EoA_Diploma_Programs_AY-2025-26.PDF.receipt.json",
+      "url": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/07-05-2025-001/EoA_Diploma_Programs_AY%202025-26.PDF",
+      "status": 200,
+      "error": null,
+      "sha256": "a86f2e89da262977abd97766ab0c202543ed8a654e88a3f71d241315e17b68e4",
+      "bytes": 218893,
+      "contentType": "application/pdf"
+    },
+    {
+      "receipt": "sources/EoA_from_AICTE.pdf.receipt.json",
+      "url": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/07-05-2025-001/EoA_from_AICTE.pdf",
+      "status": 200,
+      "error": null,
+      "sha256": "84cc23dc8270469c317c438ef2d70a6eccddc8890bd7b02b30ac283c78c17d3d",
+      "bytes": 2023894,
+      "contentType": "application/pdf"
+    },
+    {
+      "receipt": "sources/EoA_from_AICTE_for_UG_PG_Programs_AY_2025-26.pdf.receipt.json",
+      "url": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/09-05-2025-001/EoA_from_AICTE_for_UG_PG_Programs_AY_2025-26.pdf",
+      "status": 200,
+      "error": null,
+      "sha256": "7453080d72846e35b24dafc1029d4fbd703e153c000af6bf3a6bd06f0a375d73",
+      "bytes": 235734,
+      "contentType": "application/pdf"
+    },
+    {
+      "receipt": "sources/UG-PG_Prospectus_2026-27.pdf.receipt.json",
+      "url": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-002/UG-PG_Prospectus_2026-27.pdf",
+      "status": 200,
+      "error": null,
+      "sha256": "ab2fde9a1d7cd8d2f442091d12ead817f88041a6389030821edd4bbb4ef7d5de",
+      "bytes": 11735217,
+      "contentType": "application/pdf"
+    },
+    {
+      "receipt": "sources/academics.php.receipt.json",
+      "url": "https://www.cipet.gov.in/centres/cipet-chennai/academics.php",
+      "status": 200,
+      "error": null,
+      "sha256": "ade517f631e8c7eb130a0d259afae34701e85770748db029bc41ea852a029f10",
+      "bytes": 88189,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "receipt": "sources/aicte.html.receipt.json",
+      "url": "https://www.cipet.gov.in/centres/cipet-chennai/aicte_approvals.php",
+      "status": 200,
+      "error": null,
+      "sha256": "0b59d9b38ee7ae070f0136301415c0a97dd8a677fd8ba8b6ef9a6580f4e94b1e",
+      "bytes": 76831,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "receipt": "sources/anna-affiliates.html.receipt.json",
+      "url": "https://www.annauniv.edu/cai/District%20wise/district/Chennai%20-%20Copy.php",
+      "status": 200,
+      "error": null,
+      "sha256": "7bb1c02ade24e1606bb34f2c67f41f3f6c664b84e870977ecdc006cc0ee15e03",
+      "bytes": 11263,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "receipt": "sources/anna-cipet.pdf.receipt.json",
+      "url": "https://www.annauniv.edu/cai/PDF/Chennai/Cipet.pdf",
+      "status": null,
+      "error": "HTTP Error 404: Not Found",
+      "sha256": null,
+      "bytes": null,
+      "contentType": null
+    },
+    {
+      "receipt": "sources/cover.jpg.receipt.json",
+      "url": "https://www.cipet.gov.in/centres/cipet-chennai/img/slides/6.jpg",
+      "status": 200,
+      "error": null,
+      "sha256": "9f8d038e34eeeb9c58493a5de8a402f5dad21b03b0d6d6029e0226e0d11b013f",
+      "bytes": 224538,
+      "contentType": "image/jpeg"
+    },
+    {
+      "receipt": "sources/dip2026.pdf.receipt.json",
+      "url": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/12-05-2026-001/CSTS_ADMISSION_2026-27.pdf",
+      "status": 200,
+      "error": null,
+      "sha256": "41d063083d7f47a57341f416cfde2984625d76b0aa7af511d96ff21708f5582b",
+      "bytes": 537873,
+      "contentType": "application/pdf"
+    },
+    {
+      "receipt": "sources/diploma_admission_2026-27.php.receipt.json",
+      "url": "https://www.cipet.gov.in/centres/cipet-chennai/diploma_admission_2026-27.php",
+      "status": 200,
+      "error": null,
+      "sha256": "786b812e06a94df81358406a4389e6e12f5625563f16e8cdac31cb353347c9ee",
+      "bytes": 75378,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "receipt": "sources/home.html.receipt.json",
+      "url": "https://www.cipet.gov.in/centres/cipet-chennai/introduction.php",
+      "status": 200,
+      "error": null,
+      "sha256": "54510e83ed39c33ffb9149d795a8c44f658522dee01d42a16761ada9e4028de6",
+      "bytes": 78446,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "receipt": "sources/live-CIPET.json.receipt.json",
+      "url": "https://www.studentstraffic.com/api/suggestions?q=CIPET",
+      "status": 200,
+      "error": null,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2,
+      "contentType": "application/json"
+    },
+    {
+      "receipt": "sources/live-Central-Institute-of-Plastics.json.receipt.json",
+      "url": "https://www.studentstraffic.com/api/suggestions?q=Central%20Institute%20of%20Plastics",
+      "status": 200,
+      "error": null,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2,
+      "contentType": "application/json"
+    },
+    {
+      "receipt": "sources/live-Petrochemicals.json.receipt.json",
+      "url": "https://www.studentstraffic.com/api/suggestions?q=Petrochemicals",
+      "status": 200,
+      "error": null,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2,
+      "contentType": "application/json"
+    },
+    {
+      "receipt": "sources/logo.jpg.receipt.json",
+      "url": "https://www.cipet.gov.in/images/cipet-logo-s.jpg",
+      "status": 200,
+      "error": null,
+      "sha256": "397b3ea7c247142c1a944ed7291367c941ba7de7516b526ac6b278ac4cbc8650",
+      "bytes": 2931,
+      "contentType": "image/jpeg"
+    },
+    {
+      "receipt": "sources/me2026.pdf.receipt.json",
+      "url": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/13-05-2026-001/MTech_ME_Admissions_2026-27.pdf",
+      "status": 200,
+      "error": null,
+      "sha256": "24af2ba0ba172a8219a7d47a14db5459b59a6085690471321b0148c3736b3f2e",
+      "bytes": 240913,
+      "contentType": "application/pdf"
+    },
+    {
+      "receipt": "sources/me_mtech_admission_2026-27.php.receipt.json",
+      "url": "https://www.cipet.gov.in/centres/cipet-chennai/me_mtech_admission_2026-27.php",
+      "status": 200,
+      "error": null,
+      "sha256": "7d1647e1133e0c5564a8a7e8839a21d116ce5bcf2ff5e1856ba849d3486daadb",
+      "bytes": 76011,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "receipt": "sources/msc2026.pdf.receipt.json",
+      "url": "https://www.cipet.gov.in/centres/cipet-chennai/downloads/09-04-2026-001/MSc_Admissions_2026-27.pdf",
+      "status": 200,
+      "error": null,
+      "sha256": "a5c19157d4e0cb665ec5a6665ae8bcfb89b3244144b340166a556cf17de2f2fd",
+      "bytes": 869041,
+      "contentType": "application/pdf"
+    },
+    {
+      "receipt": "sources/msc_admission_2026-27.php.receipt.json",
+      "url": "https://www.cipet.gov.in/centres/cipet-chennai/msc_admission_2026-27.php",
+      "status": 200,
+      "error": null,
+      "sha256": "70acc188c8ae8c4cfc3aa42c6668887a7950dd12879646e02d0ce81518b685f0",
+      "bytes": 75786,
+      "contentType": "text/html; charset=UTF-8"
+    }
+  ],
+  "note": "Raw source downloads are research snapshots, not publication assets. Errors are retained and never treated as source content."
+}

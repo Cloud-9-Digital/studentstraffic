@@ -1,0 +1,22 @@
+{
+  "overall": "Structurally validatable one-offering research draft; not media-complete or publication-ready.",
+  "currentTaughtDegrees": 3,
+  "packagedOfferings": 1,
+  "heldProgrammes": [
+    "M.Arch General",
+    "M.Arch Real Estate Development"
+  ],
+  "heldPGReason": "Current official pages/CoA verify existence and two-year duration; B.Arch prerequisite verified. Exact current selection/application/document pathway and applicant-country route are not established. A generic PGETA paragraph is not a verified institution entrance requirement.",
+  "fieldHolds": [
+    "Formal B.Arch teaching language omitted; website language does not establish medium.",
+    "Upcoming intake month omitted.",
+    "Annual tuition on request; third-party INR250000 vs740050 B.Arch and INR50000 vs246120 PG totals have unresolved scope/category/components.",
+    "Women hostel facility and current accommodation tariff not established; provisional disclosure capacity figures conflict, so omitted.",
+    "Mandatory media rights review and Cloudinary upload pending integrator."
+  ],
+  "excludedFalseMatches": [
+    "MEASI Institute of Management PhD is a different institution.",
+    "Aggregator Urban Design / Environmental Design and B.Arch Interior Design labels do not establish additional current degree awards."
+  ],
+  "release": "Integrator finishes media, then serial migration/scoped validation; PG holds stay excluded until evidence supports every required field."
+}

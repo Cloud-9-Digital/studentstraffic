@@ -1,0 +1,40 @@
+{
+  "status": "Proposals only; registry not changed",
+  "courses": [
+    {
+      "slug": "bachelor-fashion-technology",
+      "name": "Bachelor of Fashion Technology",
+      "shortName": "B.F.Tech",
+      "stream": "design-creative-arts",
+      "level": "bachelors",
+      "discipline": "fashion-technology",
+      "aliases": [
+        "BFTech",
+        "Bachelor of Fashion Technology in Apparel Production"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "A bachelor degree category for fashion technology and apparel production. Programmes can combine garment engineering, manufacturing systems, quality, merchandising and supply-chain study with laboratory and industry projects. Entry requirements and curriculum remain institution-specific.",
+      "metaTitle": "B.F.Tech Programmes and Admissions",
+      "metaDescription": "Compare B.F.Tech programmes by official award, academic eligibility, duration, teaching language, admissions route and tuition fees."
+    },
+    {
+      "slug": "master-fashion-management",
+      "name": "Master of Fashion Management",
+      "shortName": "M.F.M.",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "fashion-management",
+      "aliases": [
+        "MFM",
+        "Masters of Fashion Management"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "A postgraduate degree category focused on management in fashion and related consumer industries. Study may combine merchandising, marketing, retail, sourcing and business research with applied projects. Each university retains its own entry qualifications, selection process and academic requirements.",
+      "metaTitle": "M.F.M. Programmes and Admissions",
+      "metaDescription": "Compare M.F.M. programmes by official award, academic eligibility, duration, teaching language, admissions route and tuition fees."
+    }
+  ],
+  "rationale": "B.F.Tech is not B.E./B.Tech; M.F.M is not MBA or fashion design. Add neutral award categories only after serial integrator review. B.Des specialisations remain exact offering titles under existing bdes."
+}

@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-10-27",
+  "assets": {
+    "logo": {
+      "url": "https://www.cipet.gov.in/images/cipet-logo-s.jpg",
+      "checkedAt": "2026-10-27",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "finalUrl": "https://www.cipet.gov.in/images/cipet-logo-s.jpg",
+      "bytes": 2931,
+      "sha256": "397b3ea7c247142c1a944ed7291367c941ba7de7516b526ac6b278ac4cbc8650",
+      "localFile": "sources/logo.jpg",
+      "visualCheck": "passed; genuine institution logo",
+      "cloudinaryUpload": "not attempted",
+      "reuseRights": "not independently established"
+    },
+    "cover": {
+      "url": "https://www.cipet.gov.in/centres/cipet-chennai/img/slides/6.jpg",
+      "checkedAt": "2026-10-27",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "finalUrl": "https://www.cipet.gov.in/centres/cipet-chennai/img/slides/6.jpg",
+      "bytes": 224538,
+      "sha256": "9f8d038e34eeeb9c58493a5de8a402f5dad21b03b0d6d6029e0226e0d11b013f",
+      "localFile": "sources/cover.jpg",
+      "visualCheck": "passed; real campus photograph with campus provenance",
+      "cloudinaryUpload": "not attempted",
+      "reuseRights": "not independently established"
+    }
+  },
+  "publishGate": "Integrator/user must clear rights and upload to authorized Cloudinary before publication. No media writes were performed."
+}

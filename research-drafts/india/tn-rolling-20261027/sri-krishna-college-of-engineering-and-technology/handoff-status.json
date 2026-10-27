@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-10-27",
+  "stableHandoff": true,
+  "inventoryRows": 34,
+  "currentTaughtProgrammes": 16,
+  "payloadChecks": [
+    {
+      "checkedAt": "2026-10-27",
+      "file": "payload.candidate.json",
+      "payloadSha256": "4208f34a174bc8ab42fa2c16836dd9aeacd941b53717ab9d0d200e3ce5aaddab",
+      "schemaPass": true,
+      "frameworkPass": true,
+      "scope": "Offline actual schema/framework only. Not a migration reservation, queue validated state or publication approval.",
+      "issues": [],
+      "expiredEvidence": [],
+      "programmes": 16,
+      "evidence": 203
+    }
+  ],
+  "scopeDecisionFile": "publication-scope.json",
+  "deniedActions": [],
+  "pendingActions": [],
+  "uncertainMutatingOutcomes": [],
+  "databaseAccessed": false,
+  "mediaUploaded": false,
+  "migrationReserved": false,
+  "sharedQueueEditedByResearchAgent": false,
+  "committedOrPushedByResearchAgent": false,
+  "sourceArchive": "/tmp/tn-f-source-archive/sri-krishna-college-of-engineering-and-technology"
+}

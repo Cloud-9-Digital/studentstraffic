@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-10-27",
+  "latestLiveChecks": [
+    {
+      "url": "https://studentstraffic.com/api/mobile/v1/universities/madras-school-of-economics",
+      "status": 404,
+      "body": "{\"error\":{\"code\":\"not_found\",\"message\":\"University not found.\"}}",
+      "checkedAt": "2026-10-27T12:47:21.431208+00:00"
+    },
+    {
+      "url": "https://studentstraffic.com/api/mobile/v1/universities/mse-chennai",
+      "status": 404,
+      "body": "{\"error\":{\"code\":\"not_found\",\"message\":\"University not found.\"}}",
+      "checkedAt": "2026-10-27T12:47:28.256960+00:00"
+    }
+  ],
+  "originalDedupe": {
+    "checkedAt": "2026-10-27",
+    "original68": "No canonical/name/domain match in original 68 scope and reconciliation files.",
+    "immutableMigrations": "No matching university top-level identity in existing payloads at initial check.",
+    "ledger": "No existing institution at initial check. Integrator subsequently created one local researching claim under research_tn_rolling_batch_d; claim is not a remote publish result.",
+    "aliasesChecked": [
+      "Madras School of Economics",
+      "MSE",
+      "mse.ac.in",
+      "CUTN-linked legacy programmes distinguished"
+    ],
+    "liveSuggestions": "HTTP 200 empty results; raw responses and receipts in sources.",
+    "liveCanonical": "Integrator independently reported canonical API404 for all three; not a write.",
+    "remoteRepository": "GitHub search found no matching identity. Integrator reports remote main d541a55; local drafts/claims do not imply remote publication.",
+    "deniedActions": "GitHub connector write403 is respected. No retry, alternate write channel or remote push attempted."
+  },
+  "remoteMain": "d541a55c38e4fc68c3d1c221b6dad4807e3abfdf",
+  "claims": "Integrator-local held claim only, not a synchronized remote reservation. Recheck live/remote aliases and ledger before the user-local controlled reservation."
+}

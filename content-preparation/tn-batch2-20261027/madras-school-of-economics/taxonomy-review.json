@@ -1,0 +1,20 @@
+{
+  "status": "integrated neutral canonical category",
+  "categories": [
+    {
+      "slug": "master-quantitative-finance",
+      "name": "Master's in Quantitative Finance",
+      "shortName": "Master's Quantitative Finance",
+      "stream": "economics-commerce",
+      "level": "masters",
+      "discipline": "quantitative-finance",
+      "aliases": [
+        "MA Applied Quantitative Finance",
+        "Master of Arts in Applied Quantitative Finance"
+      ]
+    }
+  ],
+  "reason": "M.A. Applied Quantitative Finance is a quantitative-finance award, not an MSc Finance, MBA or general economics award. Other economics specialisations remain in existing master-economics; no existing category reclassification.",
+  "registryPath": "lib/data/program-taxonomy.ts",
+  "existingCategoriesReclassified": false
+}

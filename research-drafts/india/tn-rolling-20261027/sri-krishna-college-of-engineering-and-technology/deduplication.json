@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-10-27",
+  "result": "fresh_in_independently_checked_sources",
+  "canonicalSlug": "sri-krishna-college-of-engineering-and-technology",
+  "remoteRepository": "Cloud-9-Digital/studentstraffic",
+  "remoteLedgerPath": "research/university-publishing-ledger.csv",
+  "remoteLedgerBlobSha": "4db547c3d254bd7d50d726425bd9c0fa766399e8",
+  "remoteLedgerLines": 945,
+  "remoteExactNameCodeSearchResults": 0,
+  "localAndOriginMainSha": "d541a55c38e4fc68c3d1c221b6dad4807e3abfdf",
+  "scopesChecked": [
+    "remote default-branch publishing ledger",
+    "remote exact institutional-name code search",
+    "local ledger",
+    "local and origin/main content-migration filenames/content",
+    "original68 content scopes",
+    "exact public live API slug"
+  ],
+  "liveApi": {
+    "url": "https://www.studentstraffic.com/api/mobile/v1/universities/sri-krishna-college-of-engineering-and-technology",
+    "httpStatus": 404,
+    "access": "unauthenticated public HTTP read; no database query"
+  },
+  "distinctRelatedInstitutions": [
+    "Sri Krishna College of Technology (Kovaipudur)",
+    "Sri Krishna Arts and Science College / Sri Krishna Knowledge Foundation"
+  ],
+  "authority": "No queue claims, reservations, remote writes, database access or publication performed by this research agent."
+}

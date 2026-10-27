@@ -1,0 +1,641 @@
+{
+  "checkedAt": "2026-10-27",
+  "retrievalDoesNotImplyPublicationEvidence": true,
+  "records": [
+    {
+      "file": "Regulations ME.pdf",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/Regulations%20ME.pdf",
+      "status": 200,
+      "bytes": 823722,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads.json",
+      "sha256": "78c8d5a3c4ac911e13a9a2b6fe863d5e43e13fa41b48a6043251349c7db396c8",
+      "localPath": "sources/Regulations ME.pdf"
+    },
+    {
+      "file": "2012 Regulations.pdf",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/2012%20Regulations.pdf",
+      "status": 200,
+      "bytes": 2080925,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads.json",
+      "sha256": "d0f1a6cdfca6d86ee3f44f1fef1f66e384693dc06f03c6c5c326f1e0304c9730",
+      "localPath": "sources/2012 Regulations.pdf"
+    },
+    {
+      "file": "Regulation.pdf",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/Regulation.pdf",
+      "status": 200,
+      "bytes": 7831798,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads.json",
+      "sha256": "f57187a717109abf7f97a9a058524d45c0aed2f2bfb8add25d9ac956585159da",
+      "localPath": "sources/Regulation.pdf"
+    },
+    {
+      "file": "civil.pdf",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/civil.pdf",
+      "status": 200,
+      "bytes": 71036,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads.json",
+      "sha256": "ca561d588c912cea4fa67fecf5b917317fb4bcb8646a8cd4e4524672db6bc929",
+      "localPath": "sources/civil.pdf"
+    },
+    {
+      "file": "MECH.pdf",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/MECH.pdf",
+      "status": 200,
+      "bytes": 104275,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads.json",
+      "sha256": "a15527bf8ebee7913094e99cb1328569264d38698e6fc482ddb640902315894c",
+      "localPath": "sources/MECH.pdf"
+    },
+    {
+      "file": "EEE_1_0.pdf",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/EEE_1_0.pdf",
+      "status": 200,
+      "bytes": 795330,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads.json",
+      "sha256": "7ea6c16a9eaa86eb53a00fb757e683a40fd969f5e6d55ebd62a7843bd6b82b68",
+      "localPath": "sources/EEE_1_0.pdf"
+    },
+    {
+      "file": "ece.pdf",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/ece.pdf",
+      "status": 200,
+      "bytes": 782047,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads.json",
+      "sha256": "af39fea9d682a136fb4915cf87d22068586f27588f9fd7583fefdcf5f1f13034",
+      "localPath": "sources/ece.pdf"
+    },
+    {
+      "file": "2012 Regulations Amendments.pdf",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/2012%20Regulations%20Amendments.pdf",
+      "status": 200,
+      "bytes": 366465,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads.json",
+      "sha256": "572e0d209f0143cf84e314664a5c2e44fe36d9f2eac6d98cb33deea0cd59bf50",
+      "localPath": "sources/2012 Regulations Amendments.pdf"
+    },
+    {
+      "file": "FEES PAYMENT NOV-DEC 2026 (FIRST YEAR-UG).pdf",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/FEES%20PAYMENT%20NOV-DEC%202026%20%28FIRST%20YEAR-UG%29.pdf",
+      "status": 200,
+      "bytes": 814176,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads.json",
+      "sha256": "dc5dc1c11e70fdaec36295d8b2545e1af3c2feec949aba32eb9a197a14350db7",
+      "localPath": "sources/FEES PAYMENT NOV-DEC 2026 (FIRST YEAR-UG).pdf"
+    },
+    {
+      "file": "Ph.D-FEE NOTIFICATION NOV-DEC 2026.pdf",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/Ph.D-FEE%20NOTIFICATION%20NOV-DEC%202026.pdf",
+      "status": 200,
+      "bytes": 1219947,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads.json",
+      "sha256": "6ae72b881d75b75d3f85f13c9a009e6ae9beee664cff8997bba17eb5ef3ae54a",
+      "localPath": "sources/Ph.D-FEE NOTIFICATION NOV-DEC 2026.pdf"
+    },
+    {
+      "file": "UG & PG FEE NOTIFICATION NOV-DEC 2026.pdf",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/UG%20%26%20PG%20FEE%20NOTIFICATION%20NOV-DEC%202026.pdf",
+      "status": 200,
+      "bytes": 1833471,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads.json",
+      "sha256": "686d1de772a7f4aaecce50f4d963eed4c5771c5fc964610edf8e6399294ee027",
+      "localPath": "sources/UG & PG FEE NOTIFICATION NOV-DEC 2026.pdf"
+    },
+    {
+      "file": "2026-2027 Bonafide (2).pdf",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/2026-2027%20Bonafide%20%282%29.pdf",
+      "status": 200,
+      "bytes": 240564,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads.json",
+      "sha256": "8bff428e3099f350a52db45586d102f64ebbeab50efb964bf353cba0ace3161e",
+      "localPath": "sources/2026-2027 Bonafide (2).pdf"
+    },
+    {
+      "file": "Fees Structure for loan(FG,SC &ST).pdf",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/Fees%20Structure%20for%20loan%28FG%2CSC%20%26ST%29.pdf",
+      "status": 200,
+      "bytes": 139736,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads.json",
+      "sha256": "3b2d4b72d45555e79108854fc2824a8f13befef53211b40fc4b22c7a2c684248",
+      "localPath": "sources/Fees Structure for loan(FG,SC &ST).pdf"
+    },
+    {
+      "file": "Fees Structure for Scholarship(FG,SC & ST) .pdf",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/Fees%20Structure%20for%20Scholarship%28FG%2CSC%20%26%20ST%29%20.pdf",
+      "status": 200,
+      "bytes": 137305,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads.json",
+      "sha256": "7c782df4cb1ab04ddf79e5e945933df8111cca430867c20cdc42f9eb5386bb94",
+      "localPath": "sources/Fees Structure for Scholarship(FG,SC & ST) .pdf"
+    },
+    {
+      "file": "Fees Structure for loan (NFG, BC &MBC).pdf",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/Fees%20Structure%20for%20loan%20%28NFG%2C%20BC%20%26MBC%29.pdf",
+      "status": 200,
+      "bytes": 139702,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads.json",
+      "sha256": "09a8ed99ed6e411fc69bd9b2668702c0e58e626cc8945ee86832e7273011acad",
+      "localPath": "sources/Fees Structure for loan (NFG, BC &MBC).pdf"
+    },
+    {
+      "file": "Fees Structure for Scholarship(NFG,BC & MBC)  (1).pdf",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/Fees%20Structure%20for%20Scholarship%28NFG%2CBC%20%26%20MBC%29%20%20%281%29.pdf",
+      "status": 200,
+      "bytes": 137289,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads.json",
+      "sha256": "a8ab70d2e147b0b33a066531c797e0130223251d4d4eb73364ac2ae389406f33",
+      "localPath": "sources/Fees Structure for Scholarship(NFG,BC & MBC)  (1).pdf"
+    },
+    {
+      "file": "Mandatory Disclosure 2025- 2026_0.pdf",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/Mandatory%20Disclosure%202025-%202026_0.pdf",
+      "status": 200,
+      "bytes": 9132225,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads.json",
+      "sha256": "d51b183eefdfd898f49568592d8b4a02482ec57a5a711d6a071b3686ddc1d2df",
+      "localPath": "sources/Mandatory Disclosure 2025- 2026_0.pdf"
+    },
+    {
+      "file": "College Calender 2024-2025.pdf",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/College%20Calender%202024-2025.pdf",
+      "status": 200,
+      "bytes": 1550857,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads.json",
+      "sha256": "7b289bd8261a2716f88d51a4934dce2ef69b40081c31842ed33ed8dd2cc900e6",
+      "localPath": "sources/College Calender 2024-2025.pdf"
+    },
+    {
+      "file": "Full time UG and PG fee details and Part time B.E fee  details.pdf",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/Full%20time%20UG%20and%20PG%20fee%20details%20and%20Part%20time%20B.E%20fee%20%20details.pdf",
+      "status": 200,
+      "bytes": 171500,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads.json",
+      "sha256": "d2e1047158f736ff18ea11a4da26b1b71cbf1344ca30a99672e7816fd04271dd",
+      "localPath": "sources/Full time UG and PG fee details and Part time B.E fee  details.pdf"
+    },
+    {
+      "file": "Mandatory Disclosure 2025- 2026.pdf",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/Mandatory%20Disclosure%202025-%202026.pdf",
+      "status": 200,
+      "bytes": 9132225,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads.json",
+      "sha256": "d51b183eefdfd898f49568592d8b4a02482ec57a5a711d6a071b3686ddc1d2df",
+      "localPath": "sources/Mandatory Disclosure 2025- 2026.pdf"
+    },
+    {
+      "url": "https://admissions.annauniv.edu/ceapg26/appround/ChoiceApp/webpdf/ceeta-elg-2026.pdf",
+      "error": "HTTP Error 503: Service Unavailable",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads.json"
+    },
+    {
+      "url": "https://admissions.annauniv.edu/ceapg26/appround/ChoiceApp/webpdf/ceap-vac-2026.pdf",
+      "error": "HTTP Error 503: Service Unavailable",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads.json"
+    },
+    {
+      "file": "regulations-2025",
+      "url": "https://gct.ac.in/68/regulations-2025",
+      "status": 200,
+      "bytes": 80944,
+      "contentType": "text/html; charset=UTF-8",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads.json",
+      "sha256": "06531a76ede5582baedec6b216d8ec9ea5f7ca69b11b1653f869d0ade15b3a44",
+      "localPath": "sources/regulations-2025"
+    },
+    {
+      "url": "https://gct.ac.in/admission-procedure",
+      "error": "HTTP Error 404: Not Found",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads.json"
+    },
+    {
+      "file": "tnea-brochure-2026.pdf",
+      "url": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "status": 200,
+      "bytes": 2038373,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads2.json",
+      "sha256": "2242626455a14caf7613494626b4d8bcc903607c3e8dcdf209b5291ba6a2bb88",
+      "localPath": "sources/tnea-brochure-2026.pdf"
+    },
+    {
+      "file": "logo.webp",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/logo/logo-new.webp",
+      "status": 200,
+      "bytes": 14200,
+      "contentType": null,
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads2.json",
+      "sha256": "dad9fbe765a28d62f6a985e4bc1a0df3c9c55e54c98ef83083a266dbad03a8f3",
+      "localPath": "sources/logo.webp"
+    },
+    {
+      "file": "cover.webp",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/home%20gallery/home%20banner.webp",
+      "status": 200,
+      "bytes": 227228,
+      "contentType": null,
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads2.json",
+      "sha256": "2efbba71961f137e6fd17db6146a9f45ee4ab52aa86c08d3579682fc8901d905",
+      "localPath": "sources/cover.webp"
+    },
+    {
+      "file": "cover-block.png",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/home%20gallery/block.png",
+      "status": 200,
+      "bytes": 3171578,
+      "contentType": "image/png",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads2.json",
+      "sha256": "77127589f59640a9579e62275412871432f19c6370384e7704c98a98f5a2811c",
+      "localPath": "sources/cover-block.png"
+    },
+    {
+      "file": "2025-working-professional.pdf",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/2025%20REGULATIONS%20-%20WP%20.pdf",
+      "status": 200,
+      "bytes": 1002051,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads2.json",
+      "sha256": "81980e5506801fa1e36b5c95b31abfae6e381757ab5fe2c1f74eaaefaf3cf59a",
+      "localPath": "sources/2025-working-professional.pdf"
+    },
+    {
+      "file": "departments.html",
+      "url": "https://gct.ac.in/departments",
+      "status": 200,
+      "bytes": 98114,
+      "contentType": "text/html; charset=UTF-8",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads2.json",
+      "sha256": "2d0decb4e5a7f1792cce69b68a024f4ae2ac68b0eca4f3589b783fb495e41ca4",
+      "localPath": "sources/departments.html"
+    },
+    {
+      "url": "https://ceap.annauniv.edu/ceap26/CEAP_GATE_INSTRUCTIONS_2026.pdf",
+      "error": "HTTP Error 503: Service Unavailable",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads3.json"
+    },
+    {
+      "url": "https://cfa.annauniv.edu/cfa/ceap.html",
+      "error": "HTTP Error 503: Service Unavailable",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads3.json"
+    },
+    {
+      "file": "ugc-colleges.html",
+      "url": "https://www.ugc.gov.in/colleges",
+      "status": 200,
+      "bytes": 16369613,
+      "contentType": "text/html; charset=utf-8",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads3.json",
+      "sha256": "e8f7cb681b0679d420fba91539b6d5372e5ff5c32a238314d854aef5ee953d3f",
+      "localPath": "sources/ugc-colleges.html"
+    },
+    {
+      "url": "https://tancet.annauniv.edu/tancet/",
+      "error": "HTTP Error 503: Service Unavailable",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads3.json"
+    },
+    {
+      "url": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "bytes": 25147112,
+      "status": 200,
+      "contentType": "application/pdf",
+      "file": "tnea-colleges-2026.pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads4.json",
+      "sha256": "035dd2604fa784c0ce57379783b50eca1a0972a08a6e7811ab2ca50562ce5373",
+      "localPath": "sources/tnea-colleges-2026.pdf"
+    },
+    {
+      "file": "2022 R UG FullTime .pdf",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/2022%20R%20UG%20FullTime%20.pdf",
+      "status": 200,
+      "bytes": 1304407,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads5.json",
+      "sha256": "8d0dd874f561c8099f65117a3465c556a4113cbe0cca456a2703c1a1b3c3808f",
+      "localPath": "sources/2022 R UG FullTime .pdf"
+    },
+    {
+      "file": "2023 regulation PG_0.pdf",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/2023%20regulation%20PG_0.pdf",
+      "status": 200,
+      "bytes": 602231,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads5.json",
+      "sha256": "327fbce93610cb04881318abc7c4d527ca4fa52e0a28ceeaf485b9096d90f540",
+      "localPath": "sources/2023 regulation PG_0.pdf"
+    },
+    {
+      "file": "2026-BE FOR WP-CIVIL.pdf",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/2026-BE%20FOR%20WP-CIVIL.pdf",
+      "status": 200,
+      "bytes": 579687,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads5.json",
+      "sha256": "b60fef7db53e8b41f6f079b5969c46cca2bad89311c8e47cf191fcf0c4448225",
+      "localPath": "sources/2026-BE FOR WP-CIVIL.pdf"
+    },
+    {
+      "file": "2022R B.E.CSE(AI&ML).pdf",
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/2022R%20B.E.CSE%28AI%26ML%29.pdf",
+      "status": 200,
+      "bytes": 6691793,
+      "contentType": "application/pdf",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads5.json",
+      "sha256": "eff4ecf2517737e7d2182354a1fc31f2301d5e428b219a68f55164517edf1835",
+      "localPath": "sources/2022R B.E.CSE(AI&ML).pdf"
+    },
+    {
+      "file": "library.html",
+      "url": "https://gct.ac.in/78/library",
+      "status": 200,
+      "bytes": 346335,
+      "contentType": "text/html; charset=UTF-8",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads5.json",
+      "sha256": "da220347b3760f13bbf937e6d2852b01339bccc1cc6ef11bd23f12c600cf09c0",
+      "localPath": "sources/library.html"
+    },
+    {
+      "file": "department-civil-engineering-about-department.html",
+      "url": "https://gct.ac.in/24/department-civil-engineering-about-department",
+      "status": 200,
+      "bytes": 95657,
+      "contentType": "text/html; charset=UTF-8",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads5.json",
+      "sha256": "ce32b4489a7d105b9c521157df176b6e7ab2f42216d4c0545f2389eb42f07315",
+      "localPath": "sources/department-civil-engineering-about-department.html"
+    },
+    {
+      "file": "department-environmental-engineering-about-department.html",
+      "url": "https://gct.ac.in/56/department-environmental-engineering-about-department",
+      "status": 200,
+      "bytes": 91166,
+      "contentType": "text/html; charset=UTF-8",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads5.json",
+      "sha256": "3d494348d9211e990ec85b1a98b917b1e7b922479597974c2ec5ba97c8eadb3e",
+      "localPath": "sources/department-environmental-engineering-about-department.html"
+    },
+    {
+      "file": "me-geotechnical-engineering-0.html",
+      "url": "https://gct.ac.in/49/me-geotechnical-engineering-0",
+      "status": 200,
+      "bytes": 89065,
+      "contentType": "text/html; charset=UTF-8",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads5.json",
+      "sha256": "7d6ad63e88383b80fe9ccb3c07a16357f20dd26ba1100b8c71a3d53c41427a11",
+      "localPath": "sources/me-geotechnical-engineering-0.html"
+    },
+    {
+      "file": "me-structural-engineering-about-department.html",
+      "url": "https://gct.ac.in/48/me-structural-engineering-about-department",
+      "status": 200,
+      "bytes": 91401,
+      "contentType": "text/html; charset=UTF-8",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads5.json",
+      "sha256": "a5cf42dbef914bdf9b35b5ddaa6627b8778ae31002ad2fad4440524da5a75773",
+      "localPath": "sources/me-structural-engineering-about-department.html"
+    },
+    {
+      "file": "me-manufacturing-engineering-vision-and-mission.html",
+      "url": "https://gct.ac.in/57/me-manufacturing-engineering-vision-and-mission",
+      "status": 200,
+      "bytes": 90067,
+      "contentType": "text/html; charset=UTF-8",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads5.json",
+      "sha256": "ead3dbd0959a339738eba19d5385dc75010a36c0a81ae5f5e0c41960d4cc7352",
+      "localPath": "sources/me-manufacturing-engineering-vision-and-mission.html"
+    },
+    {
+      "file": "me-power-electronics-and-drives-about-department.html",
+      "url": "https://gct.ac.in/51/me-power-electronics-and-drives-about-department",
+      "status": 200,
+      "bytes": 85260,
+      "contentType": "text/html; charset=UTF-8",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads5.json",
+      "sha256": "bb3499354f2f275acdd91b5e68fbf5045905361ad01cb9e98473ae71184a6416",
+      "localPath": "sources/me-power-electronics-and-drives-about-department.html"
+    },
+    {
+      "file": "department-eie-engineering-about-department.html",
+      "url": "https://gct.ac.in/26/department-eie-engineering-about-department",
+      "status": 200,
+      "bytes": 103711,
+      "contentType": "text/html; charset=UTF-8",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads5.json",
+      "sha256": "f5ba8834ea78625a41346717f703861bfdcb679706c2cd992c22fa56385584b8",
+      "localPath": "sources/department-eie-engineering-about-department.html"
+    },
+    {
+      "file": "department-production-engineering-about-department.html",
+      "url": "https://gct.ac.in/22/department-production-engineering-about-department",
+      "status": 200,
+      "bytes": 94688,
+      "contentType": "text/html; charset=UTF-8",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads5.json",
+      "sha256": "2e4853f26e75046acb37d6faf7422771421930acef022d25aaf08e9defcaba90",
+      "localPath": "sources/department-production-engineering-about-department.html"
+    },
+    {
+      "file": "be-cse-about-department.html",
+      "url": "https://gct.ac.in/21/be-cse-about-department",
+      "status": 200,
+      "bytes": 97176,
+      "contentType": "text/html; charset=UTF-8",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads5.json",
+      "sha256": "9b402fa18469c16eb5cc9712efd0a6bfdef042c903e457720d652b0e783b074f",
+      "localPath": "sources/be-cse-about-department.html"
+    },
+    {
+      "file": "me-cse-vision-and-mission.html",
+      "url": "https://gct.ac.in/55/me-cse-vision-and-mission",
+      "status": 200,
+      "bytes": 95697,
+      "contentType": "text/html; charset=UTF-8",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads5.json",
+      "sha256": "ade36d0b0e7b2c6bc2e9429131d7992da78c5ac45bb84bf655914a79020fd0a3",
+      "localPath": "sources/me-cse-vision-and-mission.html"
+    },
+    {
+      "file": "department-it-about-department.html",
+      "url": "https://gct.ac.in/47/department-it-about-department",
+      "status": 200,
+      "bytes": 91415,
+      "contentType": "text/html; charset=UTF-8",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads5.json",
+      "sha256": "925a586960c837ad5c5d6dabb65196b7c86844104ce8d60241b1d637d365aa46",
+      "localPath": "sources/department-it-about-department.html"
+    },
+    {
+      "file": "department-bio-technology-about-department.html",
+      "url": "https://gct.ac.in/25/department-bio-technology-about-department",
+      "status": 200,
+      "bytes": 95002,
+      "contentType": "text/html; charset=UTF-8",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads5.json",
+      "sha256": "4d651a2686eed2e458353f908cdf1edd2c394ed6259905d95b2de0bdbb88fdb5",
+      "localPath": "sources/department-bio-technology-about-department.html"
+    },
+    {
+      "file": "aiml-about-department.html",
+      "url": "https://gct.ac.in/66/aiml-about-department",
+      "status": 200,
+      "bytes": 88758,
+      "contentType": "text/html; charset=UTF-8",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads5.json",
+      "sha256": "c3783ed3129fcd9df67957e1fbe9299fb5597ca1aa81ec8582c84d4a94c1cf31",
+      "localPath": "sources/aiml-about-department.html"
+    },
+    {
+      "file": "anti-ragging-committee-squad.html",
+      "url": "https://gct.ac.in/anti-ragging-committee-squad",
+      "status": 200,
+      "bytes": 77338,
+      "contentType": "text/html; charset=UTF-8",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads5.json",
+      "sha256": "91b97f2aa620a0695a70dd8edb1f2993a084db82a36c73f027b0bf3bf548f911",
+      "localPath": "sources/anti-ragging-committee-squad.html"
+    },
+    {
+      "file": "boarding-rules.html",
+      "url": "https://gct.ac.in/boarding-rules",
+      "status": 200,
+      "bytes": 79708,
+      "contentType": "text/html; charset=UTF-8",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads5.json",
+      "sha256": "c64c01b7c8535b59a5e3dee96503c0e990d686b5a8f0e01be0f746873ddd75fb",
+      "localPath": "sources/boarding-rules.html"
+    },
+    {
+      "file": "be-mechanical-engineering-about-department.html",
+      "url": "https://gct.ac.in/20/be-mechanical-engineering-about-department",
+      "status": 200,
+      "bytes": 93258,
+      "contentType": "text/html; charset=UTF-8",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads6.json",
+      "sha256": "ee3d72f454312789f1ec37b3a275e8fd09aed3f36b5655ffe1416d2eaa3fa244",
+      "localPath": "sources/be-mechanical-engineering-about-department.html"
+    },
+    {
+      "file": "department-eee-about-department.html",
+      "url": "https://gct.ac.in/19/department-eee-about-department",
+      "status": 200,
+      "bytes": 102618,
+      "contentType": "text/html; charset=UTF-8",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads6.json",
+      "sha256": "c79d8dd43e11bfeead282a216c6e7467b51eb2c28b32b90f3a75f1c0da955b27",
+      "localPath": "sources/department-eee-about-department.html"
+    },
+    {
+      "file": "be-ece-department-about-department.html",
+      "url": "https://gct.ac.in/23/be-ece-department-about-department",
+      "status": 200,
+      "bytes": 163984,
+      "contentType": "text/html; charset=UTF-8",
+      "checkedAt": "2026-10-27",
+      "receipt": "downloads6.json",
+      "sha256": "c28bae22db42f20ed39ae9913f881f72a6d2ef2218bd569d4831b80a4b03d5ef",
+      "localPath": "sources/be-ece-department-about-department.html"
+    }
+  ],
+  "additionalReviewedSources": [
+    {
+      "url": "https://gct.ac.in/",
+      "localPath": "sources/home.html",
+      "use": "identity, source discovery"
+    },
+    {
+      "url": "https://gct.ac.in/programme",
+      "localPath": "sources/programme.html",
+      "use": "legacy full programme directory; incomplete for AI&ML"
+    },
+    {
+      "url": "https://gct.ac.in/news_archive",
+      "localPath": "sources/news_archive.html",
+      "use": "current 2026–27 fee certificates and November/December 2026 examination notices"
+    },
+    {
+      "url": "https://www.annauniv.edu/cai/Affiliated%20Colleges%20list%20by%20Alphabetical/G.html",
+      "use": "Independently opened official affiliated-college list, row14, exam7177/TNEA2005; current Anna affiliation"
+    }
+  ],
+  "acceptanceRules": [
+    "Only primary sources support published programme and recognition claims.",
+    "Historical calendars and regulations are not re-labelled as 2026–27 admissions notices.",
+    "Indexed CEAP search snippets are discovery only, not a substitute for unread full eligibility PDFs.",
+    "Scanned fee table was rendered and visually read; annual tuition corroboration is separated from old combined totals."
+  ]
+}

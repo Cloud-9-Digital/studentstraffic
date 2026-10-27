@@ -1,0 +1,29 @@
+{
+  "schemaPass": true,
+  "actualReaderPass": true,
+  "expiredEvidenceCount": 0,
+  "programmes": 6,
+  "evidenceRows": 89,
+  "readyForLocalMediaPreparation": true,
+  "readyForDirectApply": false,
+  "uploads": 0,
+  "databaseAccess": false,
+  "note": "Source links are reviewed. Explicit local upload or verified existing mappings are still required before a real migration.",
+  "checkedAt": "2026-10-27",
+  "preparationSafetyTests": {
+    "passed": 11,
+    "failed": 0,
+    "command": "node --import tsx --test content-preparation/tn-batch2-20261027/loyola-icam-college-of-engineering-and-technology/prepare-local.test.mjs"
+  },
+  "existingPipelineRegressionTests": {
+    "passed": 23,
+    "failed": 0,
+    "scope": "Existing ledger and content-migrations suites, not a substitute for this payload reader test."
+  },
+  "sourceMediaHTTPImageAndVisualReview": "Both sources HTTP200 image bytes; intact original SHA256/dimensions and visual review recorded in media-sources.json.",
+  "cloudinaryUpload": "not_run: explicit user local stage",
+  "numberedMigrationValidation": "not_run: preparation is intentionally outside content-migrations until hosted media is verified",
+  "sharedRemoteLedgerEdited": false,
+  "livePublished": false,
+  "payloadSha256": "46cb3feb2bf8f8e271ad86b8071a0ae7634ab2d8c2574d05827356733bd53c4b"
+}
