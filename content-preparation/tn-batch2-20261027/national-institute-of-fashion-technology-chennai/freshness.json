@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-27",
+  "latestLiveChecks": [
+    {
+      "url": "https://studentstraffic.com/api/mobile/v1/universities/national-institute-of-fashion-technology-chennai",
+      "status": 404,
+      "body": "{\"error\":{\"code\":\"not_found\",\"message\":\"University not found.\"}}"
+    }
+  ],
+  "originalDedupe": {
+    "checkedAt": "2026-10-27",
+    "original68": "No canonical/name/domain match in original 68 scope and reconciliation files.",
+    "immutableMigrations": "No matching university top-level identity in existing payloads at initial check.",
+    "ledger": "No existing institution at initial check. Integrator subsequently created one local researching claim under research_tn_rolling_batch_d; claim is not a remote publish result.",
+    "aliasesChecked": [
+      "National Institute of Fashion Technology Chennai",
+      "NIFT Chennai",
+      "nift.ac.in/chennai",
+      "other NIFT campuses excluded"
+    ],
+    "liveSuggestions": "HTTP 200 empty results; raw responses and receipts in sources.",
+    "liveCanonical": "Integrator independently reported canonical API404 for all three; not a write.",
+    "remoteRepository": "GitHub search found no matching identity. Integrator reports remote main d541a55; local drafts/claims do not imply remote publication."
+  },
+  "remoteMain": "d541a55c38e4fc68c3d1c221b6dad4807e3abfdf",
+  "claims": "Existing integrator local researching claim only; no remote shared ledger mutation. Recheck latest remote ledger and aliases before local reservation."
+}

@@ -1,0 +1,46 @@
+{
+  "schemaPass": true,
+  "actualReaderPass": true,
+  "expiredEvidenceCount": 0,
+  "programmes": 8,
+  "evidenceRows": 68,
+  "readyForLocalMediaPreparation": true,
+  "readyForDirectApply": false,
+  "uploads": 0,
+  "databaseAccess": false,
+  "note": "Source links are reviewed. Explicit local upload or verified existing mappings are still required before a real migration.",
+  "checkedAt": "2026-10-27",
+  "preparationSafetyTests": {
+    "passed": 12,
+    "failed": 0,
+    "command": "node --import tsx --test content-preparation/tn-batch2-20261027/national-institute-of-fashion-technology-chennai/prepare-local.test.mjs"
+  },
+  "existingPipelineRegressionTests": {
+    "passed": 20,
+    "failed": 0,
+    "scope": "Existing taxonomy and content-migrations suites, separate from generated-payload validation."
+  },
+  "sourceMediaHTTPImageAndVisualReview": [
+    {
+      "kind": "logo",
+      "status": 200,
+      "contentType": "image/png",
+      "sha256": "d9bbe9e6382feb7ba39b81505014416e4ca8d83b05e519eeb04bc374aa45a151",
+      "bytes": 41570,
+      "unchanged": true
+    },
+    {
+      "kind": "cover",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "sha256": "86d92bcc9ed1d133c28d30863b6f6110ae66677eeafa50f05bf66c4f1d2c0b92",
+      "bytes": 187195,
+      "unchanged": true
+    }
+  ],
+  "cloudinaryUpload": "not_run: explicit user local stage",
+  "numberedMigrationValidation": "not_run: intentionally outside content-migrations until hosted media is verified",
+  "sharedRemoteLedgerEdited": false,
+  "livePublished": false,
+  "payloadSha256": "3842ba0a0587963e73100c26c4944f464b84fa8659a5067064b73f0e23f92ba3"
+}

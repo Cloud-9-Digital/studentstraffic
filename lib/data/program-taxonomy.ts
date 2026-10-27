@@ -72,6 +72,8 @@ function defineProgrammes<const T extends readonly CanonicalProgramme[]>(program
 }
 
 const globalProgrammeFamilies = defineProgrammes([
+  {"slug":"master-fashion-management","name":"Master of Fashion Management","shortName":"M.F.M.","stream":"business","level":"masters","discipline":"fashion-management","aliases":["MFM","Masters of Fashion Management"]},
+  {"slug":"bachelor-fashion-technology","name":"Bachelor of Fashion Technology","shortName":"B.F.Tech","stream":"design-creative-arts","level":"bachelors","discipline":"fashion-technology","aliases":["BFTech","Bachelor of Fashion Technology in Apparel Production"]},
   {"slug":"bsc-applied-science","name":"B.Sc. in Applied Science","shortName":"B.Sc. Applied Science","stream":"natural-sciences","level":"bachelors","discipline":"applied-science","aliases":["Bachelor of Science in Applied Science","BSc Applied Sciences"]},
   {"slug":"integrated-msc-computer-science","name":"Integrated M.Sc. in Computer Science","shortName":"Integrated M.Sc. Computer Science","stream":"computing-information-systems","level":"integrated-masters","discipline":"computer-science","aliases":["Five-year Integrated Master of Science in Computer Science","Integrated MSc Theoretical Computer Science"]},
   {"slug":"integrated-msc-cyber-security","name":"Integrated M.Sc. in Cyber Security","shortName":"Integrated M.Sc. Cyber Security","stream":"computing-information-systems","level":"integrated-masters","discipline":"cyber-security","aliases":["Five-year Integrated Master of Science in Cyber Security"]},
