@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-10-27",
+  "status": "HELD_NOT_UPLOAD_READY",
+  "universitySlug": "indian-institute-of-management-tiruchirappalli",
+  "assets": [
+    {
+      "kind": "logo",
+      "localPath": "research/india-source-bundles/iim-tiruchirappalli-20261027/logo-icon.png",
+      "sourceUrl": "https://www.iimtrichy.ac.in/themes/iimt_custom_theme/images/iimt_logo_icon.png",
+      "sourcePage": "https://www.iimtrichy.ac.in/",
+      "sourceType": "official-university",
+      "httpStatus": 200,
+      "contentType": "image/png",
+      "sha256": "1910e782ad5784ce45eeb4b720103f990824b8233b248b0a94696a1757ace608",
+      "visualCheck": "Viewed original pixels: coloured crest and IIM TRICHY lettering readable on a white tile.",
+      "rightsReview": "Official identifying logo; preserve provenance and obtain workflow acceptance of institutional identification use; no open licence claimed.",
+      "uploadStatus": "not_uploaded",
+      "approvedForUpload": false
+    },
+    {
+      "kind": "cover",
+      "localPath": "research/india-source-bundles/iim-tiruchirappalli-20261027/cover-home-poster.webp",
+      "sourceUrl": "https://www.iimtrichy.ac.in/themes/iimt_custom_theme/video/home-video-poster.webp",
+      "sourcePage": "https://www.iimtrichy.ac.in/",
+      "sourceType": "official-university",
+      "httpStatus": 200,
+      "contentType": "image/webp",
+      "sha256": "cd5d8a6f8e44f05e2db620fc3d3f295c1ab3adccfdb9ba26568a6fe6869f1e00",
+      "visualCheck": "Viewed original pixels: aerial campus photo, dark presentation and IIM Media watermark.",
+      "rightsReview": "Official public source does not establish reusable photographic rights; retain as candidate only, prefer a rights-cleared replacement.",
+      "uploadStatus": "not_uploaded",
+      "approvedForUpload": false
+    }
+  ]
+}
