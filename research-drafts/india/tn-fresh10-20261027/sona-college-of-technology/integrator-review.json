@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-10-27",
+  "integratorReview": "accepted_for_research_delivery_only",
+  "cataloguePayloadReady": false,
+  "executableMigration": false,
+  "workerValidatorRerun": "PASS",
+  "reviewCorrections": [
+    "Local integrator claims correctly distinguished from researcher queue mutations and remote reservations",
+    "Current doctoral areas individually held rather than blanket excluded",
+    "Bannari summary source claims narrowed to what each source supports"
+  ],
+  "independentPrimarySpotChecks": [],
+  "canonicalInventoryCopiedTo": "research/india-programme-inventory/sona-college-of-technology.csv",
+  "inventorySha256": "05905ffe11cdd6961a2255d524cc61a46f86dd20a4263006aa26daf6361b2c53",
+  "scopeCaution": "Research checks do not validate completeness of inaccessible sources. Preserve every exact hold; do not run content apply on these fragments."
+}

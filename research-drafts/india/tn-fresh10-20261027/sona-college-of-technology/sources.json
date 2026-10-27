@@ -1,0 +1,92 @@
+[
+  {
+    "id": "taught-directory",
+    "url": "https://www.sonatech.ac.in/admission/engineering-courses.php",
+    "label": "Sona courses offered",
+    "checkedAt": "2026-10-27",
+    "accessStatus": "403",
+    "sourceGrade": "C",
+    "notes": "Search-index discovery exposes full 18 UG+10 PG list. Direct open 403. Cached extracts are NOT GradeA programme verification; no retry/bypass."
+  },
+  {
+    "id": "anna-register",
+    "url": "https://annauniv.edu/cai/District%20wise/district/Salem.php",
+    "label": "Anna University Salem affiliated-college register",
+    "checkedAt": "2026-10-27",
+    "accessStatus": "read",
+    "sourceGrade": "A",
+    "notes": "Read actual source: Sona College of Technology(Autonomous), exam 6178, TNEA 2618, Salem."
+  },
+  {
+    "id": "anna-profile",
+    "url": "https://www.annauniv.edu/cai/PDF/Salem/Sona%20College%20of%20Technology.pdf",
+    "label": "Anna University Sona college profile",
+    "checkedAt": "2026-10-27",
+    "accessStatus": "internal_error",
+    "sourceGrade": "C",
+    "notes": "Search discovery: self-financing,1997, Suramangalam Salem 636005. Tables are 2022-24; not current programme approval."
+  },
+  {
+    "id": "homepage",
+    "url": "https://www.sonatech.ac.in/",
+    "label": "Sona homepage",
+    "checkedAt": "2026-10-27",
+    "accessStatus": "403",
+    "sourceGrade": "C",
+    "notes": "Indexed 2026 admission/foreign-admission and Salem address information; direct read 403."
+  },
+  {
+    "id": "cse",
+    "url": "https://www.sonatech.ac.in/cse/master-of-engineering-me-computer-science-and-engineering-cse.php",
+    "label": "Sona ME CSE department",
+    "checkedAt": "2026-10-27",
+    "accessStatus": "403",
+    "sourceGrade": "C",
+    "notes": "Indexed 2 year full-time and BE/BTech eligibility disciplines, entrance TANCET/CET/GATE. Currency of route not independently verified; do not copy to other ME programmes."
+  },
+  {
+    "id": "civil",
+    "url": "https://www.sonatech.ac.in/civil/civil-engineering-programs.php",
+    "label": "Sona civil PG department",
+    "checkedAt": "2026-10-27",
+    "accessStatus": "403",
+    "sourceGrade": "C",
+    "notes": "Search discovery includes 2 year full-time and 3 year part-time Structural/Construction; distinct mode variants need current approval and admitting evidence."
+  },
+  {
+    "id": "advanced-diplomas",
+    "url": "https://www.sonatech.ac.in/skills-programmes/advanced-diploma-courses.php",
+    "label": "Sona continuing-education advanced diplomas",
+    "checkedAt": "2026-10-27",
+    "accessStatus": "search_only",
+    "sourceGrade": "C",
+    "notes": "11 named themes; exact award, current eligibility/duration and standalone admission need primary verification."
+  },
+  {
+    "id": "wearable",
+    "url": "https://www.sonatech.ac.in/ece/advanced-diploma-courses-ece.php",
+    "label": "Sona wearable-technology advanced diploma / certificate",
+    "checkedAt": "2026-10-27",
+    "accessStatus": "search_only",
+    "sourceGrade": "C",
+    "notes": "Discovery:18 month advanced diploma,9 month certificate; blended; INR 18000/9000 inclusive taxes full programme. Not confirmed fees, year and current cycle not established."
+  },
+  {
+    "id": "embedded-historical",
+    "url": "https://www.sonatech.ac.in/skills-programmes/diploma-eee-embedded-control-industrial-automation-brochure.pdf",
+    "label": "Sona embedded-control/industrial-automation brochure",
+    "checkedAt": "2026-10-27",
+    "accessStatus": "search_only",
+    "sourceGrade": "C",
+    "notes": "Older indexed brochure:1 year diploma plus two certificate courses. Current admitting status unknown."
+  },
+  {
+    "id": "research-register",
+    "url": "https://cfr.annauniv.edu/research/academics/institution.php/index.php",
+    "label": "Anna University research institution listing",
+    "checkedAt": "2026-10-27",
+    "accessStatus": "search_only",
+    "sourceGrade": "C",
+    "notes": "Discovery: all departments, institution code 4261800, validity June 2027; full source not read. Doctoral research is in scope, but this does not enumerate individual current awards. Retain held inventory-discovery gap; verify exact research areas, awards, duration, audience and authorization before packaging."
+  }
+]

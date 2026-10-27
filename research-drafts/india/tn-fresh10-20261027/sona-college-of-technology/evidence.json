@@ -1,0 +1,41 @@
+[
+  {
+    "entity": "university",
+    "universitySlug": "sona-college-of-technology",
+    "publicField": "identity",
+    "claimText": "Anna University’s Salem affiliated-college register identifies Sona College of Technology(Autonomous), TNEA 2618 and examination code 6178.",
+    "status": "verified",
+    "sourceLabel": "Anna University Salem affiliated-college register",
+    "sourceUrl": "https://annauniv.edu/cai/District%20wise/district/Salem.php",
+    "sourceGrade": "A",
+    "checkedAt": "2026-10-27",
+    "reviewBy": "2027-01-27",
+    "internalNotes": ""
+  },
+  {
+    "entity": "university",
+    "universitySlug": "sona-college-of-technology",
+    "publicField": "recognition",
+    "claimText": "Sona College of Technology is listed as an affiliated autonomous college by Anna University.",
+    "status": "verified",
+    "sourceLabel": "Anna University Salem affiliated-college register",
+    "sourceUrl": "https://annauniv.edu/cai/District%20wise/district/Salem.php",
+    "sourceGrade": "A",
+    "checkedAt": "2026-10-27",
+    "reviewBy": "2027-01-27",
+    "internalNotes": ""
+  },
+  {
+    "entity": "university",
+    "universitySlug": "sona-college-of-technology",
+    "publicField": "programmes",
+    "claimText": "The current programme-directory discovery list cannot be promoted to verified public facts because the source fetch returned 403.",
+    "status": "omit",
+    "sourceLabel": "Sona courses offered",
+    "sourceUrl": "https://www.sonatech.ac.in/admission/engineering-courses.php",
+    "sourceGrade": "C",
+    "checkedAt": "2026-10-27",
+    "reviewBy": "2027-01-27",
+    "internalNotes": ""
+  }
+]

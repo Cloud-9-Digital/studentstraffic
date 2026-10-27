@@ -17,6 +17,14 @@
       "taughtFragments": 14,
       "doctoralAreaHolds": 13,
       "catalogueSchemaValidated": false
+    },
+    {
+      "slug": "sona-college-of-technology",
+      "status": "held_research_fragments",
+      "inventoryRows": 46,
+      "taughtFragments": 28,
+      "catalogueSchemaValidated": false,
+      "sourceGates": "Primary programme sources403; complete doctoral discovery unresolved"
     }
   ]
 }
