@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-10-27",
+  "status": "Research provenance manifest, NOT an executable approved upload manifest",
+  "entries": [
+    {
+      "universitySlug": "government-college-of-technology-coimbatore",
+      "universityName": "Government College of Technology, Coimbatore",
+      "sourceBatch": "tn-rolling-20261027-second10",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://gct.ac.in/sites/gct.ac.in/files/Mandatory%20Disclosure%202025-%202026.pdf",
+          "sourceType": "official-university-pdf-embedded-crest",
+          "rightsBasis": "Official institutional crest embedded in the college-published mandatory disclosure; faithful extraction for identifying the institution, no logo redesign.",
+          "checkedAt": "2026-10-27",
+          "proposedPublicId": "studentstraffic/universities/government-college-of-technology-coimbatore/logo",
+          "status": "hold",
+          "localPath": "research-drafts/india/tn-rolling-20261027/government-college-of-technology-coimbatore/sources/crest-original.png",
+          "sha256": "4bb7162f37791be42345f3863af0cc5fff45d34d9fa18b2b099f47cd6b28437e",
+          "bytes": 88396,
+          "dimensions": {
+            "width": 203,
+            "height": 264
+          },
+          "detectedMime": "image/png",
+          "sourceHttpStatus": 200,
+          "sourceContentType": "application/pdf",
+          "visualReview": "Faithful blue/gold crest, legible on white PDF page; not white-on-transparent.",
+          "altText": "Government College of Technology, Coimbatore crest.",
+          "holdReason": "PDF-embedded image was faithfully extracted, not an HTTP image endpoint. Needs integrator acceptance of provenance/extraction and a permitted media-source workflow or replacement with an approved official standalone image. This is not an intact browser-saved image original. Do not pass directly to uploader.",
+          "uploadFromReviewedLocalOriginal": false
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://gct.ac.in/sites/gct.ac.in/files/home%20gallery/block.png",
+          "sourceType": "official-university-campus-image",
+          "rightsBasis": "Official GCT homepage campus photograph, used to identify the institution and campus; no third-party stock asset.",
+          "checkedAt": "2026-10-27",
+          "proposedPublicId": "studentstraffic/universities/government-college-of-technology-coimbatore/cover",
+          "status": "source-ready-upload-pending",
+          "localPath": "research-drafts/india/tn-rolling-20261027/government-college-of-technology-coimbatore/sources/cover-block.png",
+          "sha256": "77127589f59640a9579e62275412871432f19c6370384e7704c98a98f5a2811c",
+          "bytes": 3171578,
+          "dimensions": {
+            "width": 1685,
+            "height": 933
+          },
+          "detectedMime": "image/png",
+          "sourceHttpStatus": 200,
+          "sourceContentType": "image/png",
+          "visualReview": "Tree-lined walkway beside a real academic building; no text overlay or fabricated imagery.",
+          "altText": "Tree-lined walkway beside an academic building at Government College of Technology, Coimbatore.",
+          "holdReason": "Cloudinary upload and public URL verification deliberately not executed; user publication occurs later.",
+          "uploadFromReviewedLocalOriginal": false
+        }
+      ]
+    }
+  ],
+  "rejectedCandidates": [
+    {
+      "url": "https://gct.ac.in/sites/gct.ac.in/files/logo/logo-new.webp",
+      "localPath": "sources/logo.webp",
+      "reason": "Official 503×78 composite masthead containing two crests and wordmark; individual crest is too small for a strong logo tile."
+    }
+  ],
+  "noExternalSideEffects": "No uploads, remote media writes, database writes, or fabricated hosted URLs."
+}

@@ -1,0 +1,36 @@
+{
+  "reviewedPublishCandidates": [
+    "payload.draft.json",
+    "evidence.json",
+    "programme-inventory.csv",
+    "programme-inventory.md",
+    "programme-records.json",
+    "held-programmes.json",
+    "taxonomy-mappings.json",
+    "taxonomy-proposals.json",
+    "scope.json",
+    "freshness-check.json",
+    "source-register.json",
+    "holds.json",
+    "media-manifest.json",
+    "validation-report.json",
+    "README.md"
+  ],
+  "reviewedMediaCandidates": [
+    "sources/cover-block.png",
+    "sources/crest-original.png"
+  ],
+  "reproducibility": [
+    "build-packet.py",
+    "finalize-packet.py",
+    "validate-offline.cjs"
+  ],
+  "largeSourcePolicy": "Raw official PDFs/HTML and derivative text/renderings remain local research evidence. Do not indiscriminately commit the entire sources directory; integrator chooses required original assets and bounded evidence excerpts.",
+  "counts": {
+    "inventoryRecords": 52,
+    "payloadProgrammes": 10,
+    "heldDegreeModeRecords": 37,
+    "excludedOrDiscoveryRecords": 5,
+    "evidenceRows": 138
+  }
+}

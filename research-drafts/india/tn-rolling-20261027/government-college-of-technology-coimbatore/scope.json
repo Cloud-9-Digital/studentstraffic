@@ -1,0 +1,21 @@
+{
+  "country": "india",
+  "state": "Tamil Nadu",
+  "institution": "Government College of Technology, Coimbatore",
+  "slug": "government-college-of-technology-coimbatore",
+  "researchOwner": "research_gct_coimbatore",
+  "batch": "tn-rolling-20261027-second10",
+  "reviewDate": "2026-10-27",
+  "targetLevels": [
+    "bachelors",
+    "masters",
+    "doctorate"
+  ],
+  "targetStream": "engineering and documented research disciplines",
+  "excludedIdentities": [
+    "Coimbatore Institute of Technology",
+    "PSG College of Technology",
+    "other Government Colleges of Engineering"
+  ],
+  "authority": "Disjoint offline research only. Integrator owns ledger claims/migration reservation. NoDB/uploads/commits/remote writes."
+}

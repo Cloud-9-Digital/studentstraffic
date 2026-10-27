@@ -1,0 +1,51 @@
+{
+  "institutionLevel": [
+    {
+      "field": "logo",
+      "status": "pending",
+      "reason": "Official PDF extraction reviewed; compliant standalone image source or explicit accepted provenance workflow is still required before public media application."
+    },
+    {
+      "field": "mediaHosting",
+      "status": "pending",
+      "reason": "User-stage Cloudinary upload/verification and same-session media apply are not authorised for this research agent."
+    },
+    {
+      "field": "integration",
+      "status": "pending",
+      "reason": "Serial integrator owns local migration reservation, final batch validation, ledger transition and GitHub packaging."
+    }
+  ],
+  "programmeHolds": {
+    "workingProfessional": 4,
+    "masters": 11,
+    "doctoralModeSpecific": 18,
+    "doctoralOtherSubjectsModeUnverified": 4
+  },
+  "excludedNotCurrentOfferings": {
+    "historicallySuspended": 2,
+    "unconfirmedAggregatorDiscovery": 1,
+    "majorWithinNotStandalone": 2
+  },
+  "sourceAccessBlockers": [
+    {
+      "url": "https://admissions.annauniv.edu/ceapg26/appround/ChoiceApp/webpdf/ceeta-elg-2026.pdf",
+      "outcome": "HTTP 503 Service Unavailable via normal request; web open also timed out. No full-document verification; no bypass or access escalation."
+    },
+    {
+      "url": "https://admissions.annauniv.edu/ceapg26/appround/ChoiceApp/webpdf/ceap-vac-2026.pdf",
+      "outcome": "HTTP 503 Service Unavailable via normal request; web open also timed out. No full-document verification; no bypass or access escalation."
+    },
+    {
+      "url": "https://ceap.annauniv.edu/ceap26/CEAP_GATE_INSTRUCTIONS_2026.pdf",
+      "outcome": "HTTP 503 Service Unavailable via normal request; web open also timed out. No full-document verification; no bypass or access escalation."
+    }
+  ],
+  "permissionDenials": [],
+  "uncertainActions": [],
+  "notBlockers": [
+    "Unknown future intake month: both facets omitted with evidence.",
+    "No second recognition badge: verified Grade A UGC listing satisfies single-badge rule.",
+    "No USD conversion or whole-course extrapolation."
+  ]
+}
