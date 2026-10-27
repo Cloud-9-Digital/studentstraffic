@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-10-27",
+  "uploadStatus": "not_uploaded_not_authorized",
+  "logo": {
+    "sourceUrl": "https://psgitech.ac.in/design/assets/images/PSG_logo.png",
+    "localPath": "media/plain-logo.png",
+    "status": "source_review_pass",
+    "review": "Official image downloaded HTTP200 and visually inspected. Institutional identity is legible on a light surface."
+  },
+  "cover": {
+    "sourceUrl": "https://psgitech.ac.in/uploads/main_website/image_slider/active/11.webp",
+    "localPath": "media/cover.webp",
+    "altText": "Courtyard and academic buildings at the PSG iTech Neelambur campus",
+    "status": "source_review_pass",
+    "review": "Official image downloaded HTTP200 and visually inspected as a genuine campus scene, not an unrelated promotional portrait."
+  },
+  "rights": "Official institutional identity and editorial campus illustration; no open licence asserted. Integrator/user must perform permitted Cloudinary publication and rendering checks."
+}

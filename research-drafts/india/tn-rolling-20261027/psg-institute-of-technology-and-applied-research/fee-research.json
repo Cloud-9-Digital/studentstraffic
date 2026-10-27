@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-10-27",
+  "primary": {
+    "sourceUrl": "https://psgitech.ac.in/assets/pdf/Mandatory_Disclosure_2025_26.pdf",
+    "sourceType": "official-university fee disclosure",
+    "status": "read in full relevant fee section",
+    "currency": "INR",
+    "annualTuitionConfirmed": false,
+    "year": "2025\u201326 document",
+    "observations": [
+      "Institution-level first-year tuition55000; special/other74600; university2400; deposits3000+5000; total140000.",
+      "Second year onwards tuition55000; special/other59850; university150; total115000.",
+      "Programme and applicant category not isolated. No per-programme annual tuition assigned from this table.",
+      "Hostel116000 estimate has no billing period in this table; not represented as annual."
+    ]
+  },
+  "secondary": {
+    "sourceUrl": "https://www.careers360.com/colleges/psg-institute-of-technology-and-applied-research-coimbatore/courses",
+    "sourceType": "credible third-party course-fee page; GradeC only for indicative reportedFeeQuote",
+    "readMethod": "Complete HTML downloaded and full fee-card content inspected, not only a search result",
+    "publishedOrUpdated": "11June2026",
+    "currency": "INR",
+    "period": "full_course",
+    "scopeLimit": "Fee cards say Total Fees, not annual tuition; applicant quota and precise component breakdown unspecified. Stale/closed programme entries remain in source, so never use it for current programme existence.",
+    "observations": [
+      "Exact Civil/CSE/EEE/ECE/Mechanical fee cards560000 for four-year award.",
+      "Exact Instrumentation and Control and AIDataScience fee cards540000.",
+      "These seven exact reported whole-course figures retained as indicative native quote; no division by four.",
+      "BTechElectronics540000 is ambiguous because source separately lists a VLSI-named entry withoutfee; not attached toVLSI.",
+      "New Robotics and M.E.CSE lack a corroborated exact fee; otherME cards have no price. BDes price absent."
+    ]
+  },
+  "conversion": "NoUSDconversion performed; no foreign exchange rate guessed.",
+  "conclusion": "The evidence supports scoped native reported charges where exact, not a confirmed current universal annual tuition."
+}

@@ -1,0 +1,272 @@
+[
+  {
+    "key": "admissions",
+    "url": "https://psgitech.ac.in/admission-details",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://psgitech.ac.in/admission-details",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "7d9620286e91508998c198e38d26cf41a638c492385125cdd98937e74516875b"
+  },
+  {
+    "key": "approvals",
+    "url": "https://psgitech.ac.in/approvals",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://psgitech.ac.in/approvals",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "e75e599195ccd6f2bbad826dfe69b85c85be0fe880ae7640a34d28a3a1a608ae"
+  },
+  {
+    "key": "bdes-curr2026",
+    "url": "https://psgitech.ac.in/assets/pdf/autonomous_syllabi/2026/REGULATION_SYLLABI/rev2/b.des-design-fourth-acm-07.10.2026.pdf",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://psgitech.ac.in/assets/pdf/autonomous_syllabi/2026/REGULATION_SYLLABI/rev2/b.des-design-fourth-acm-07.10.2026.pdf",
+    "contentType": "application/pdf",
+    "sha256": "c0c752a75a8b71d05c48155892eab98dc15eb32a4c0ae8a0a0d4a5418cd8d5aa"
+  },
+  {
+    "key": "brochure-2026",
+    "url": "https://psgitech.ac.in/assets/pdf/admission/PSG_iTech_Admission_Brochure_2026-27.pdf",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://psgitech.ac.in/assets/pdf/admission/PSG_iTech_Admission_Brochure_2026-27.pdf",
+    "contentType": "application/pdf",
+    "sha256": "8d293df13c7ceaf1185c64a1eff246ee17e624c662d6e4d47c125d3ef3210409"
+  },
+  {
+    "key": "careers360-fees",
+    "url": "https://www.careers360.com/colleges/psg-institute-of-technology-and-applied-research-coimbatore/courses",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://www.careers360.com/colleges/psg-institute-of-technology-and-applied-research-coimbatore/courses",
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "652b633eaabd0689a35083cccc85448024fa4395458f15ad732fc27164f43392"
+  },
+  {
+    "key": "ceeta-qualifications2025",
+    "url": "https://tancet.annauniv.edu/tancet/Ceetapg.pdf",
+    "checkedAt": "2026-10-27",
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "key": "consortium-members2026",
+    "url": "https://www.tnsfconsortium.org/uploads/Total-Members-2026.pdf",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://www.tnsfconsortium.org/uploads/Total-Members-2026.pdf",
+    "contentType": "application/pdf",
+    "sha256": "8242f8d412bded03c593be85d07733a01631ab4a6de7051391eb905c2ee219df"
+  },
+  {
+    "key": "consortium-pg2026",
+    "url": "https://www.tnsfconsortium.org/uploads/MBA-MCA-INFORMATION-BROCHURE-2026.pdf",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://www.tnsfconsortium.org/uploads/MBA-MCA-INFORMATION-BROCHURE-2026.pdf",
+    "contentType": "application/pdf",
+    "sha256": "d61e8666a0d03aca31c00b05100cc04d5574c92c23ceb604f2614b4381386ee4"
+  },
+  {
+    "key": "consortium2026",
+    "url": "https://www.tnsfconsortium.org/tnsfphp/info.php",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://www.tnsfconsortium.org/tnsfphp/info.php",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "2865a4be19027337953a438cc03ad77667b69aefcdf123af1607adad1825f4ac"
+  },
+  {
+    "key": "design",
+    "url": "https://psgitech.ac.in/design/",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://psgitech.ac.in/design/",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "efdfafbc9d4613ddd064da8e73587fcdcb77af155e3be46ca874c9b2f1a8fec8"
+  },
+  {
+    "key": "design-reg2026",
+    "url": "https://psgitech.ac.in/assets/pdf/autonomous_syllabi/2026/REGULATION_SYLLABI/rev1/2026%20Regulations%20B.Des.%20-%2018.09.2026.pdf",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://psgitech.ac.in/assets/pdf/autonomous_syllabi/2026/REGULATION_SYLLABI/rev1/2026%20Regulations%20B.Des.%20-%2018.09.2026.pdf",
+    "contentType": "application/pdf",
+    "sha256": "f6094a4eb7d56e81729289aaaec141d4630f9e40bbd14d69300d7557036ac280"
+  },
+  {
+    "key": "disclosure",
+    "url": "https://psgitech.ac.in/assets/pdf/Mandatory_Disclosure_2025_26.pdf",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://psgitech.ac.in/assets/pdf/Mandatory_Disclosure_2025_26.pdf",
+    "contentType": "application/pdf",
+    "sha256": "cff84f7f914e52e3dc3b1cc361f10a7aa4868f5bc85b0ebbcb9c8f685fd6b860"
+  },
+  {
+    "key": "eoa2026",
+    "url": "https://psgitech.ac.in/assets/pdf/download/AICTE/EOA%20Report%202026-27.pdf",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://psgitech.ac.in/assets/pdf/download/AICTE/EOA%20Report%202026-27.pdf",
+    "contentType": "application/pdf",
+    "sha256": "45743896521f73b1033a55611f84723401518a27087137ab95bbba6305d3920e"
+  },
+  {
+    "key": "health",
+    "url": "https://psgitech.ac.in/medical-centre",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://psgitech.ac.in/medical-centre",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "3e8410662acb3374ab57f88c49f9435dc1759ebc77df0527bb818faf15b61734"
+  },
+  {
+    "key": "home",
+    "url": "https://psgitech.ac.in/",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://psgitech.ac.in/",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "94f8515a019898eb84c7954c1a8113cf128e613292892d8cc5533673f7f371f7"
+  },
+  {
+    "key": "hostel",
+    "url": "https://psgitech.ac.in/hostel",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://psgitech.ac.in/hostel",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "28523b71a19c774b3b32817b38d5dad2ada79592359e901a1fddd7216edb4208"
+  },
+  {
+    "key": "industry-about",
+    "url": "https://psgitech.ac.in/iiabout",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://psgitech.ac.in/iiabout",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "88f5e7d2553ad19a6ed6646186efd05be03ee6da3eecd2ecd459cc4aadeeb818"
+  },
+  {
+    "key": "industry",
+    "url": "https://psgitech.ac.in/industry-interaction",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://psgitech.ac.in/",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "94f8515a019898eb84c7954c1a8113cf128e613292892d8cc5533673f7f371f7"
+  },
+  {
+    "key": "library",
+    "url": "https://psgitech.ac.in/library",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://psgitech.ac.in/library",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "c3fdc94524cb3cdb55b40ac29b37bc8df960bfe9a1a80b822724c2d999dbccc4"
+  },
+  {
+    "key": "pg-reg2025",
+    "url": "https://psgitech.ac.in/assets/pdf/autonomous_syllabi/2026/REGULATION_SYLLABI/rev1/2025%20Regulation_M.E._29.07.2026.pdf",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://psgitech.ac.in/assets/pdf/autonomous_syllabi/2026/REGULATION_SYLLABI/rev1/2025%20Regulation_M.E._29.07.2026.pdf",
+    "contentType": "application/pdf",
+    "sha256": "5e716c3936da3b737904ac6defae0d28e26277ea7092bdd7e1717cf174d57177"
+  },
+  {
+    "key": "policy",
+    "url": "https://cse.psgitech.ac.in/assets/pdf/careers/Institutional%20Policy%20Manual.pdf",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://cse.psgitech.ac.in/assets/pdf/careers/Institutional%20Policy%20Manual.pdf",
+    "contentType": "application/pdf",
+    "sha256": "41ab8ff5d084726270f688d43f61fa4331bceeba36f39f73ed3eafa24d0a9c5f"
+  },
+  {
+    "key": "programmes",
+    "url": "https://psgitech.ac.in/programmes-offered",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://psgitech.ac.in/programmes-offered",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "f52945c9d18356213d44f3564ffd7a78817611a9d7bc2a811043f39fdf4fd0ee"
+  },
+  {
+    "key": "regulations",
+    "url": "https://psgitech.ac.in/regulation-and-curriculum",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://psgitech.ac.in/regulation-and-curriculum",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "719ee7fafdc754d0c93176678b4b80435ae21cad103003308b63fd106ed1993d"
+  },
+  {
+    "key": "research-scholars",
+    "url": "https://psgitech.ac.in/research-scholars",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://psgitech.ac.in/research-scholars",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "d3a0cfdbea48974a3dec89a188f2ed41a1def08f60be6e43b3cce8ebc49fa9b4"
+  },
+  {
+    "key": "tancet2026-second-attempt",
+    "url": "https://tancet.annauniv.edu/tancet/Information%20Brochure%202026.pdf",
+    "checkedAt": "2026-10-27",
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "key": "tnea-circular2025",
+    "url": "https://psgitech.ac.in/assets/pdf/admission/PSG%20iTech_TNEA_CIRCULAR_2025.pdf",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://psgitech.ac.in/assets/pdf/admission/PSG%20iTech_TNEA_CIRCULAR_2025.pdf",
+    "contentType": "application/pdf",
+    "sha256": "0bfc5595689a23712a1708aae9eda733d8db3e7361f5efb310725a0d23b6e875"
+  },
+  {
+    "key": "tnea2026",
+    "url": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+    "contentType": "application/pdf",
+    "sha256": "2242626455a14caf7613494626b4d8bcc903607c3e8dcdf209b5291ba6a2bb88"
+  },
+  {
+    "key": "transport",
+    "url": "https://psgitech.ac.in/transport",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://psgitech.ac.in/transport",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "a92dc9147b380ea1cde1c1272e2254453acfca88baf976055581a7dfa3a57c95"
+  },
+  {
+    "key": "ug-reg2025",
+    "url": "https://psgitech.ac.in/assets/pdf/autonomous_syllabi/2026/REGULATION_SYLLABI/rev1/2025_Regulation_B.E._and_B.Tech_25.09.2026.pdf",
+    "checkedAt": "2026-10-27",
+    "error": "The read operation timed out"
+  },
+  {
+    "key": "ugc-autonomy",
+    "url": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list",
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "fddfb27e27bb5779b47a29eca7c2655a9c357d547f9e1f07f209ab95e34217d2"
+  },
+  {
+    "key": "wellness",
+    "url": "https://psgitech.ac.in/wellness-centre",
+    "checkedAt": "2026-10-27",
+    "status": 200,
+    "finalUrl": "https://psgitech.ac.in/wellness-centre",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "40762a9eaf57b65550a9a9702905d27689f61906340298ca3b1a2905dde4c152"
+  }
+]

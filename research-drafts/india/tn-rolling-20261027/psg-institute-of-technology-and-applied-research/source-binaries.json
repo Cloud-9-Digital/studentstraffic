@@ -1,0 +1,71 @@
+{
+  "note": "Local source originals retained outside GitHub handoff to avoid committing large third-party PDF binaries. Extracted text/OCR, URL receipts and hashes remain under sources/. Re-download from receipt URLs if local archive expires.",
+  "files": [
+    {
+      "file": "consortium-members2026.pdf",
+      "localArchivePath": "/tmp/tn-f-source-archive/psg-institute-of-technology-and-applied-research/consortium-members2026.pdf",
+      "bytes": 105921,
+      "sha256": "8242f8d412bded03c593be85d07733a01631ab4a6de7051391eb905c2ee219df"
+    },
+    {
+      "file": "brochure-2026.pdf",
+      "localArchivePath": "/tmp/tn-f-source-archive/psg-institute-of-technology-and-applied-research/brochure-2026.pdf",
+      "bytes": 3409897,
+      "sha256": "8d293df13c7ceaf1185c64a1eff246ee17e624c662d6e4d47c125d3ef3210409"
+    },
+    {
+      "file": "disclosure.pdf",
+      "localArchivePath": "/tmp/tn-f-source-archive/psg-institute-of-technology-and-applied-research/disclosure.pdf",
+      "bytes": 68880540,
+      "sha256": "cff84f7f914e52e3dc3b1cc361f10a7aa4868f5bc85b0ebbcb9c8f685fd6b860"
+    },
+    {
+      "file": "eoa2026.pdf",
+      "localArchivePath": "/tmp/tn-f-source-archive/psg-institute-of-technology-and-applied-research/eoa2026.pdf",
+      "bytes": 223865,
+      "sha256": "45743896521f73b1033a55611f84723401518a27087137ab95bbba6305d3920e"
+    },
+    {
+      "file": "tnea2026.pdf",
+      "localArchivePath": "/tmp/tn-f-source-archive/psg-institute-of-technology-and-applied-research/tnea2026.pdf",
+      "bytes": 2038373,
+      "sha256": "2242626455a14caf7613494626b4d8bcc903607c3e8dcdf209b5291ba6a2bb88"
+    },
+    {
+      "file": "tnea-circular2025.pdf",
+      "localArchivePath": "/tmp/tn-f-source-archive/psg-institute-of-technology-and-applied-research/tnea-circular2025.pdf",
+      "bytes": 526593,
+      "sha256": "0bfc5595689a23712a1708aae9eda733d8db3e7361f5efb310725a0d23b6e875"
+    },
+    {
+      "file": "consortium-pg2026.pdf",
+      "localArchivePath": "/tmp/tn-f-source-archive/psg-institute-of-technology-and-applied-research/consortium-pg2026.pdf",
+      "bytes": 5223422,
+      "sha256": "d61e8666a0d03aca31c00b05100cc04d5574c92c23ceb604f2614b4381386ee4"
+    },
+    {
+      "file": "policy.pdf",
+      "localArchivePath": "/tmp/tn-f-source-archive/psg-institute-of-technology-and-applied-research/policy.pdf",
+      "bytes": 1843306,
+      "sha256": "41ab8ff5d084726270f688d43f61fa4331bceeba36f39f73ed3eafa24d0a9c5f"
+    },
+    {
+      "file": "pg-reg2025.pdf",
+      "localArchivePath": "/tmp/tn-f-source-archive/psg-institute-of-technology-and-applied-research/pg-reg2025.pdf",
+      "bytes": 255133,
+      "sha256": "5e716c3936da3b737904ac6defae0d28e26277ea7092bdd7e1717cf174d57177"
+    },
+    {
+      "file": "design-reg2026.pdf",
+      "localArchivePath": "/tmp/tn-f-source-archive/psg-institute-of-technology-and-applied-research/design-reg2026.pdf",
+      "bytes": 297888,
+      "sha256": "f6094a4eb7d56e81729289aaaec141d4630f9e40bbd14d69300d7557036ac280"
+    },
+    {
+      "file": "bdes-curr2026.pdf",
+      "localArchivePath": "/tmp/tn-f-source-archive/psg-institute-of-technology-and-applied-research/bdes-curr2026.pdf",
+      "bytes": 640038,
+      "sha256": "c0c752a75a8b71d05c48155892eab98dc15eb32a4c0ae8a0a0d4a5418cd8d5aa"
+    }
+  ]
+}
