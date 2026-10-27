@@ -1,0 +1,17 @@
+{
+  "batch": "Tamil Nadu second fixed ten",
+  "readyToApply": false,
+  "published": 0,
+  "claims": "Local-only; canonical remote ledger unchanged",
+  "institutions": [
+    {
+      "slug": "national-institute-of-fashion-technology-chennai",
+      "inventoryRows": 29,
+      "actualFrameworkPassingProgrammes": 8,
+      "actualFrameworkIndependentlyRerun": true,
+      "status": "held_framework_candidate",
+      "completeExecutableMigration": false,
+      "remainingHolds": "See holds.json or publication-scope.json and integrator-review.json; mandatory media, exact programme/audience/cycle, source conflicts and proposed taxonomy gates remain binding."
+    }
+  ]
+}

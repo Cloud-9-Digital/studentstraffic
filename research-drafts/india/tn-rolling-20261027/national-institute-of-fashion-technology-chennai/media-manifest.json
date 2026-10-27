@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-10-27",
+  "assets": {
+    "logo": {
+      "url": "https://nift.ac.in/chennai/themes/nift/images/Microsite_logos/4_Chennai_Microsite_logo.png",
+      "checkedAt": "2026-10-27",
+      "status": 200,
+      "contentType": "image/png",
+      "finalUrl": "https://nift.ac.in/chennai/themes/nift/images/Microsite_logos/4_Chennai_Microsite_logo.png",
+      "bytes": 41570,
+      "sha256": "d9bbe9e6382feb7ba39b81505014416e4ca8d83b05e519eeb04bc374aa45a151",
+      "localFile": "sources/logo.png",
+      "visualCheck": "passed; genuine institution logo",
+      "cloudinaryUpload": "not attempted",
+      "reuseRights": "not independently established"
+    },
+    "cover": {
+      "url": "https://nift.ac.in/chennai/sites/default/files/2026-10/4_Chennai.jpg",
+      "checkedAt": "2026-10-27",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "finalUrl": "https://nift.ac.in/chennai/sites/default/files/2026-10/4_Chennai.jpg",
+      "bytes": 187195,
+      "sha256": "86d92bcc9ed1d133c28d30863b6f6110ae66677eeafa50f05bf66c4f1d2c0b92",
+      "localFile": "sources/cover.jpg",
+      "visualCheck": "passed; real campus photograph with campus provenance",
+      "cloudinaryUpload": "not attempted",
+      "reuseRights": "not independently established"
+    }
+  },
+  "publishGate": "Integrator/user must clear rights and upload to authorized Cloudinary before publication. No media writes were performed."
+}

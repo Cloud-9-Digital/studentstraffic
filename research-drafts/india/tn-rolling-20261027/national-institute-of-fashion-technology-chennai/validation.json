@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-27",
+  "status": "isolated strict schema and content-framework pass",
+  "payloadSha256": "ac2c3610f07ebf7d359469334e7aeae033efbca37a7675afd98938f9de13a89c",
+  "programmes": 8,
+  "inventoryRows": 29,
+  "evidenceRows": 68,
+  "command": "node --import tsx -e CommonJS require readContentMigrations against /tmp/tn-d-validation",
+  "temporaryManifest": "9999-nift-chennai-draft in /tmp only; not a reserved or repository migration",
+  "expiredEvidence": [],
+  "initialAttempt": "tsx CLI could not create a Unix IPC socket (EPERM); safe non-listening node --import tsx CommonJS invocation succeeded. First ESM invocation had module export mismatch.",
+  "notPerformed": [
+    "Real numbered migration validation",
+    "Canonical registry update",
+    "Ledger write",
+    "Media upload",
+    "Database connection/apply",
+    "Git commit or push"
+  ],
+  "remainingHolds": [
+    "Two new course taxonomy proposals need integrator review",
+    "Media rights and hosted Cloudinary assets pending",
+    "Serial integrator must perform real scoped migration validation"
+  ]
+}

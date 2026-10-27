@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-27T11:14:42.625Z",
+  "payloadSha256": "ac2c3610f07ebf7d359469334e7aeae033efbca37a7675afd98938f9de13a89c",
+  "actualFrameworkIndependentlyRerun": true,
+  "schemaPass": true,
+  "reader": {
+    "passed": true,
+    "expiredEvidence": []
+  },
+  "programmes": 8,
+  "evidenceRows": 68,
+  "publishReady": false,
+  "scope": "Isolated readContentMigrations only; holds, taxonomy proposals, audience/cycle review and mandatory media remain binding. No DB, remote publication or numbered migration."
+}
