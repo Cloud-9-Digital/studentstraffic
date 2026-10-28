@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { KeyboardAvoidingView, Platform, Pressable, ScrollView, StyleSheet, Text, TextInput, View, type NativeScrollEvent, type NativeSyntheticEvent } from "react-native";
+import { Keyboard, KeyboardAvoidingView, Platform, Pressable, ScrollView, StyleSheet, Text, TextInput, View, type NativeScrollEvent, type NativeSyntheticEvent } from "react-native";
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { useQuery } from "@tanstack/react-query";
@@ -39,6 +39,18 @@ function universityStarters(name: string) {
 export default function MiraScreen() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
+  // Edge-to-edge Android ignores adjustResize, so the keyboard has to be handled
+  // here: pad the screen by the keyboard height and drop the gesture-bar inset
+  // (the keyboard already covers it) while it is open.
+  const [keyboardOpen, setKeyboardOpen] = useState(false);
+  useEffect(() => {
+    const show = Keyboard.addListener(Platform.OS === "ios" ? "keyboardWillShow" : "keyboardDidShow", () => setKeyboardOpen(true));
+    const hide = Keyboard.addListener(Platform.OS === "ios" ? "keyboardWillHide" : "keyboardDidHide", () => setKeyboardOpen(false));
+    return () => {
+      show.remove();
+      hide.remove();
+    };
+  }, []);
   const params = useLocalSearchParams<{ university?: string; universityName?: string; prompt?: string }>();
   const context = useMemo<MiraContext>(
     () => (params.university ? { universitySlug: params.university, universityName: params.universityName || "this university" } : null),
@@ -106,7 +118,7 @@ export default function MiraScreen() {
         </Pressable>
       </LinearGradient>
 
-      <KeyboardAvoidingView style={s.flex} behavior={Platform.OS === "ios" ? "padding" : undefined}>
+      <KeyboardAvoidingView style={s.flex} behavior="padding">
         <ScrollView
           ref={scrollRef}
           style={s.flex}
@@ -146,7 +158,7 @@ export default function MiraScreen() {
           </Pressable>
         ) : null}
 
-        <View style={[s.composerWrap, { paddingBottom: Math.max(insets.bottom, 10) }]}>
+        <View style={[s.composerWrap, { paddingBottom: keyboardOpen ? 10 : Math.max(insets.bottom, 10) }]}>
           <View style={[s.composer, busy && s.composerBusy]}>
             <TextInput
               value={draft}

@@ -2,7 +2,7 @@
   "expo": {
     "name": "Students Traffic",
     "slug": "students-traffic",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "scheme": "studentstraffic",
@@ -11,7 +11,7 @@
     "splash": {
       "image": "./assets/splash-logo.png",
       "resizeMode": "contain",
-      "backgroundColor": "#0a4a3a"
+      "backgroundColor": "#FFFFFF"
     },
     "ios": {
       "supportsTablet": true,
@@ -31,7 +31,7 @@
       "googleServicesFile": "./google-services.json",
       "enableProguardInReleaseBuilds": true,
       "adaptiveIcon": {
-        "backgroundColor": "#0f3d37",
+        "backgroundColor": "#FFFFFF",
         "foregroundImage": "./assets/android-icon-foreground.png"
       },
       "predictiveBackGestureEnabled": false,
@@ -94,7 +94,7 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#0a4a3a",
+          "backgroundColor": "#FFFFFF",
           "image": "./assets/splash-logo.png",
           "imageWidth": 200
         }
