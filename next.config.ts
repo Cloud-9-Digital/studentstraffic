@@ -9,14 +9,14 @@ const mediaHostnames = (process.env.MEDIA_HOSTNAMES ?? "")
 const isDevelopment = process.env.NODE_ENV !== "production";
 const contentSecurityPolicy = [
   "default-src 'self'",
-  `script-src 'self' 'unsafe-inline' https://connect.facebook.net https://www.googletagmanager.com https://www.clarity.ms https://scripts.clarity.ms${
+  `script-src 'self' 'unsafe-inline' https://connect.facebook.net https://www.googletagmanager.com https://www.clarity.ms https://scripts.clarity.ms https://studentstraffic.marro.pro${
     isDevelopment ? " 'unsafe-eval'" : ""
   }`,
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "img-src 'self' data: blob: https:",
   "font-src 'self' data: https://fonts.gstatic.com",
   `connect-src 'self' https: wss:${isDevelopment ? " http: ws:" : ""}`,
-  "frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com",
+  "frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://studentstraffic.marro.pro",
   "object-src 'none'",
   "base-uri 'self'",
   "form-action 'self'",

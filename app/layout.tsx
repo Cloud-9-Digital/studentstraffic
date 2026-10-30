@@ -10,6 +10,7 @@ import { getNavCountries } from "@/lib/data/nav-countries";
 import { getNavCourses } from "@/lib/data/nav-courses";
 import { GoogleAnalytics } from "@/components/google-analytics";
 import { MetaPixel } from "@/components/meta-pixel";
+import { MarroChat } from "@/components/marro-chat";
 import { MicrosoftClarity } from "@/components/microsoft-clarity";
 import { AttributionTracking } from "@/components/site/attribution-tracking";
 import { JsonLd } from "@/components/shared/json-ld";
@@ -93,6 +94,7 @@ export default async function RootLayout({
             </NavCoursesClientProvider>
           </NavCountriesClientProvider>
         </Providers>
+        <MarroChat />
         <Toaster position="top-center" />
         <JsonLd
           data={getStructuredDataGraph([
