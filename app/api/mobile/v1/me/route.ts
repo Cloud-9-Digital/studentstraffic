@@ -51,17 +51,17 @@ export async function DELETE(request: Request) {
     .from(guideConversations)
     .where(or(eq(guideConversations.studentUserId, userId), eq(guideConversations.peerUserId, userId)));
 
-  await db.batch([
-    db
+  await db.transaction(async (tx) => {
+    await tx
       .delete(peerReports)
-      .where(or(eq(peerReports.reporterUserId, userId), inArray(peerReports.conversationId, conversationIds))),
-    db
+      .where(or(eq(peerReports.reporterUserId, userId), inArray(peerReports.conversationId, conversationIds)));
+    await tx
       .update(studentPeers)
       .set({ status: "inactive", acceptingRequests: false, updatedAt: new Date() })
-      .where(eq(studentPeers.peerUserId, userId)),
-    db.delete(chatbotConversations).where(eq(chatbotConversations.userId, userId)),
-    db.delete(users).where(eq(users.id, userId)),
-  ]);
+      .where(eq(studentPeers.peerUserId, userId));
+    await tx.delete(chatbotConversations).where(eq(chatbotConversations.userId, userId));
+    await tx.delete(users).where(eq(users.id, userId));
+  });
 
   return mobileJson({ success: true });
 }

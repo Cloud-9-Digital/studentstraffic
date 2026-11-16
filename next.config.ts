@@ -60,6 +60,7 @@ const securityHeaders = [
 ] satisfies Array<{ key: string; value: string }>;
 
 const nextConfig: NextConfig = {
+  ...(process.env.LIGHTSAIL_STANDALONE === "1" ? { output: "standalone" as const } : {}),
   // Keep Turbopack scoped to this app when other projects have lockfiles
   // higher in the Documents tree.
   turbopack: {
@@ -72,6 +73,8 @@ const nextConfig: NextConfig = {
     serverFunctions: false,
   },
   cacheComponents: true,
+  // Keep the existing prefetch behavior for other routes during this upgrade.
+  partialPrefetching: false,
   // Cache Components enables prerender source maps by default. Keeping them
   // disabled prevents static-generation workers from retaining source-map
   // data while rendering the production catalog.
@@ -136,36 +139,36 @@ const nextConfig: NextConfig = {
       // scripts/apply-media-enrichment.ts commit history / media-enrichment audit
       // for background. Each pair covers the university page (with its 4 section
       // suffixes) and the program page (with its 4 section suffixes).
-      {
-        source: "/university/seu-georgian-national-university:suffix(-student-life|-programs|-hostel|-faq)?",
-        destination: "/university/georgian-national-university-seu:suffix",
+      ...["", "-student-life", "-programs", "-hostel", "-faq"].map((suffix) => ({
+        source: `/university/seu-georgian-national-university${suffix}`,
+        destination: `/university/georgian-national-university-seu${suffix}`,
         permanent: true,
-      },
-      {
-        source: "/mbbs-in-seu-georgian-national-university:suffix(-eligibility|-recognition|-admissions|-fees)?",
-        destination: "/mbbs-in-georgian-national-university-seu:suffix",
+      })),
+      ...["", "-eligibility", "-recognition", "-admissions", "-fees"].map((suffix) => ({
+        source: `/mbbs-in-seu-georgian-national-university${suffix}`,
+        destination: `/mbbs-in-georgian-national-university-seu${suffix}`,
         permanent: true,
-      },
-      {
-        source: "/university/east-european-university-eeu:suffix(-student-life|-programs|-hostel|-faq)?",
-        destination: "/university/east-european-university:suffix",
+      })),
+      ...["", "-student-life", "-programs", "-hostel", "-faq"].map((suffix) => ({
+        source: `/university/east-european-university-eeu${suffix}`,
+        destination: `/university/east-european-university${suffix}`,
         permanent: true,
-      },
-      {
-        source: "/mbbs-in-east-european-university-eeu:suffix(-eligibility|-recognition|-admissions|-fees)?",
-        destination: "/mbbs-in-east-european-university:suffix",
+      })),
+      ...["", "-eligibility", "-recognition", "-admissions", "-fees"].map((suffix) => ({
+        source: `/mbbs-in-east-european-university-eeu${suffix}`,
+        destination: `/mbbs-in-east-european-university${suffix}`,
         permanent: true,
-      },
-      {
-        source: "/university/asian-international-university:suffix(-student-life|-programs|-hostel|-faq)?",
-        destination: "/university/asian-medical-institute:suffix",
+      })),
+      ...["", "-student-life", "-programs", "-hostel", "-faq"].map((suffix) => ({
+        source: `/university/asian-international-university${suffix}`,
+        destination: `/university/asian-medical-institute${suffix}`,
         permanent: true,
-      },
-      {
-        source: "/mbbs-in-asian-international-university:suffix(-eligibility|-recognition|-admissions|-fees)?",
-        destination: "/mbbs-in-asian-medical-institute:suffix",
+      })),
+      ...["", "-eligibility", "-recognition", "-admissions", "-fees"].map((suffix) => ({
+        source: `/mbbs-in-asian-international-university${suffix}`,
+        destination: `/mbbs-in-asian-medical-institute${suffix}`,
         permanent: true,
-      },
+      })),
     ];
   },
   async rewrites() {

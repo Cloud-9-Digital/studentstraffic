@@ -35,6 +35,8 @@ export type FinderFilterChangeOptions = {
 type FinderFilterFormProps = {
   countries: FinderCountryOption[];
   cities: FinderCityOption[];
+  cityOptionsState?: "ready" | "loading" | "error";
+  onRetryCities?: () => void;
   levels: string[];
   courses: FinderCourseOption[];
   mediums: string[];
@@ -190,6 +192,8 @@ function FeeRangePicker({
 function FilterFields({
   countries,
   cities,
+  cityOptionsState = "ready",
+  onRetryCities,
   levels,
   courses,
   mediums,
@@ -202,6 +206,8 @@ function FilterFields({
 }: {
   countries: FinderCountryOption[];
   cities: FinderCityOption[];
+  cityOptionsState?: "ready" | "loading" | "error";
+  onRetryCities?: () => void;
   levels: string[];
   courses: FinderCourseOption[];
   mediums: string[];
@@ -275,14 +281,17 @@ function FilterFields({
               id={`${idPrefix}-city`}
               name="city"
               value={filters.city ?? ""}
-              disabled={!filters.country}
+              disabled={!filters.country || cityOptionsState !== "ready"}
               onChange={(event) =>
                 navigate({ city: event.target.value || undefined })
               }
               className={selectClassName()}
             >
               <option value="">
-                {filters.country ? "All cities" : "Choose a country first"}
+                {!filters.country ? "Choose a country first"
+                  : cityOptionsState === "loading" ? "Loading cities…"
+                  : cityOptionsState === "error" ? "Cities unavailable"
+                  : "All cities"}
               </option>
               {availableCities.map((city) => (
                 <option key={city.name} value={city.name}>
@@ -291,6 +300,11 @@ function FilterFields({
               ))}
             </select>
           </SelectWrapper>
+          {cityOptionsState === "error" && (
+            <button type="button" onClick={onRetryCities} className="text-xs text-primary underline">
+              Retry loading cities
+            </button>
+          )}
         </div>
 
         <div className="space-y-1.5">
@@ -470,6 +484,8 @@ function SidebarSearch({
 export function FinderFilterForm({
   countries,
   cities,
+  cityOptionsState = "ready",
+  onRetryCities,
   levels,
   courses,
   mediums,
@@ -505,6 +521,8 @@ export function FinderFilterForm({
           <FilterFields
             countries={countries}
             cities={cities}
+            cityOptionsState={cityOptionsState}
+            onRetryCities={onRetryCities}
             levels={levels}
             courses={courses}
             mediums={mediums}
@@ -621,6 +639,8 @@ export function FinderFilterForm({
             <FilterFields
               countries={countries}
               cities={cities}
+              cityOptionsState={cityOptionsState}
+              onRetryCities={onRetryCities}
               levels={levels}
               courses={courses}
               mediums={mediums}

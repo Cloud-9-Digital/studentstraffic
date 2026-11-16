@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { cacheLife, cacheTag } from "next/cache";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { connection } from "next/server";
 import { cache } from "react";
 import {
   AlertTriangle,
@@ -17,7 +16,6 @@ import {
   ShieldPlus,
 } from "lucide-react";
 
-import { MissingPage } from "@/components/shared/missing-page";
 import { JsonLd } from "@/components/shared/json-ld";
 import { CountryFlag } from "@/components/site/country-flag";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
@@ -59,6 +57,7 @@ import { buildProgramMetadata } from "@/lib/university-metadata";
 import { formatProgramDisplayName, getProgramDisplayLabel } from "@/lib/program-variant";
 import {
   getLandingPageBySlug,
+  getLandingPageSlugs,
   getLandingPageContext,
   getProgramBySlug,
   getProgramSiblingVariants,
@@ -84,36 +83,27 @@ import { getUniversityAuthorSlug } from "@/lib/university-authors";
 import { parseProgramSlug } from "@/lib/university-sections";
 import { ProgramSectionShell } from "@/components/site/university/program-section-shell";
 
-const PLACEHOLDER_ROOT_SLUG = "__root-fallback__";
+// Next.js 16.4 waits for the complete render on a first visit to an unlisted
+// slug, then stores it in ISR. A missing slug can set HTTP 404 before streaming.
+export const ensureStatic = "navigation";
 
 export async function generateStaticParams() {
-  // Cache Components requires at least one build-time param. Keep the real
-  // root-level routes request-driven so programmes published after a build
-  // can be generated and cached on first request, just like blog detail pages.
-  return [{ slug: PLACEHOLDER_ROOT_SLUG }];
+  return (await getLandingPageSlugs()).map((slug) => ({ slug }));
 }
 
 async function getLandingPageRouteData(slug: string) {
-  "use cache";
+  // Only the finite set of editorial landing pages needs a context entry.
+  const page = await getLandingPageBySlug(slug);
+  if (!page) return { page: null, context: null };
 
+  return { page, context: await getCachedLandingPageContext(page) };
+}
+
+async function getCachedLandingPageContext(page: NonNullable<Awaited<ReturnType<typeof getLandingPageBySlug>>>) {
+  "use cache";
   cacheLife("hours");
   cacheTag("catalog");
-
-  const page = await getLandingPageBySlug(slug);
-
-  if (!page) {
-    return {
-      page: null,
-      context: null,
-    };
-  }
-
-  const context = await getLandingPageContext(page);
-
-  return {
-    page,
-    context,
-  };
+  return getLandingPageContext(page);
 }
 
 // Memoized with React's cache() so generateMetadata and the page body share
@@ -167,9 +157,7 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  await connection();
   const { slug } = await params;
-  if (slug === PLACEHOLDER_ROOT_SLUG) return {};
   const { page, context } = await getLandingPageRouteData(slug);
 
   if (!page) {
@@ -240,16 +228,7 @@ export default async function LandingPageRoute({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  // Programmes and guides are published continuously between deployments, and only a small
-  // subset is enumerated by generateStaticParams. Without a request boundary,
-  // every slug outside that subset is served the build-time fallback shell,
-  // which renders "not found" (this took the whole catalogue offline on
-  // 2026-09-09). connection() keeps the render per request while every
-  // database read below stays behind the long-lived "use cache" layer, so
-  // Neon is not queried per request.
-  await connection();
   const { slug } = await params;
-  if (slug === PLACEHOLDER_ROOT_SLUG) notFound();
   const { page, context } = await getLandingPageRouteData(slug);
 
   if (!page) {
@@ -273,10 +252,10 @@ export default async function LandingPageRoute({
       return <ProgramPageRoute {...programData} />;
     }
 
-    return <MissingPage />;
+    notFound();
   }
 
-  if (!context.country || !context.course) return <MissingPage />;
+  if (!context.country || !context.course) notFound();
 
   const country = context.country;
   const course = context.course;

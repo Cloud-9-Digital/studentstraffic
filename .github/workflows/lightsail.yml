@@ -1,0 +1,61 @@
+name: Lightsail CI and release
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main, codex/lightsail-ci-cd]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lightsail-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+jobs:
+  check-build-release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    env:
+      CI: 'true'
+      NEXT_TELEMETRY_DISABLED: '1'
+      NEXT_PUBLIC_SITE_URL: https://www.studentstraffic.com
+      NEXT_PUBLIC_AGORA_APP_ID: ${{ vars.LIGHTSAIL_PUBLIC_AGORA_APP_ID }}
+      # Compile the same public chat launcher as production without a usable API key.
+      ANTHROPIC_API_KEY: build-time-placeholder
+      LIGHTSAIL_STANDALONE: '1'
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: 22.23.1
+          cache: npm
+      - run: npm ci
+      - name: Run checks
+        run: |
+          npm run lint -- app components lib proxy.ts next.config.ts tests
+          npm run typecheck
+          npm test
+      - run: npm run build
+      - name: Package the exact commit
+        shell: bash
+        run: bash ops/lightsail/package.sh "$GITHUB_SHA" "$RUNNER_TEMP/studentstraffic.tar.gz"
+      - name: Deploy to the private rehearsal
+        if: github.event_name == 'push' && github.ref == 'refs/heads/codex/lightsail-ci-cd' && vars.LIGHTSAIL_REHEARSAL_ENABLED == '1'
+        env:
+          RELEASE_SSH_USER: st_ci_rehearsal
+          RELEASE_SSH_KEY: ${{ secrets.LIGHTSAIL_REHEARSAL_KEY }}
+          RELEASE_SSH_HOST: ${{ vars.LIGHTSAIL_HOST }}
+          RELEASE_KNOWN_HOSTS: ${{ vars.LIGHTSAIL_KNOWN_HOSTS }}
+        run: bash ops/lightsail/send.sh "$GITHUB_SHA" "$RUNNER_TEMP/studentstraffic.tar.gz"
+      - name: Deploy to production
+        if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main' && vars.LIGHTSAIL_PRODUCTION_ENABLED == '1'
+        env:
+          RELEASE_SSH_USER: st_ci_production
+          RELEASE_SSH_KEY: ${{ secrets.LIGHTSAIL_PRODUCTION_KEY }}
+          RELEASE_SSH_HOST: ${{ vars.LIGHTSAIL_HOST }}
+          RELEASE_KNOWN_HOSTS: ${{ vars.LIGHTSAIL_KNOWN_HOSTS }}
+        run: bash ops/lightsail/send.sh "$GITHUB_SHA" "$RUNNER_TEMP/studentstraffic.tar.gz"

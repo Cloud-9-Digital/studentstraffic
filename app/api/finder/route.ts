@@ -2,6 +2,7 @@ import { NextResponse, type NextRequest } from "next/server";
 
 import { finderPageSize } from "@/lib/constants";
 import { queryFinderCardProgramsPage } from "@/lib/data/catalog";
+import { toFinderWebResults } from "@/lib/finder-web-results";
 import { parseFinderFilters, parseFinderPage } from "@/lib/filters";
 import { logPublicRouteRequest } from "@/lib/route-observability";
 
@@ -21,7 +22,11 @@ export async function GET(request: NextRequest) {
   );
   const results = await queryFinderCardProgramsPage(filters, page, finderPageSize);
 
-  return NextResponse.json(results, {
+  const payload = request.nextUrl.searchParams.get("view") === "cards"
+    ? toFinderWebResults(results)
+    : results;
+
+  return NextResponse.json(payload, {
     headers: {
       "Cache-Control": finderApiCacheControl,
     },

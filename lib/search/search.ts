@@ -269,7 +269,7 @@ async function executeSearchCatalog(
     if (filters.q) {
       const query = filters.q.trim();
       const candidateLimit = Math.max(limit * 3, 48);
-      const bm25MatchPoolSize = 200;
+      const fullTextMatchPoolSize = 200;
       const analysis = analyzeSearchQuery(query);
       const countryHubName = resolveCountryAlias(analysis.coreTerms.join(" "));
       const canUseBm25 = await hasLakebaseBm25Index();
@@ -331,7 +331,10 @@ async function executeSearchCatalog(
         END
       `;
 
-      if (canUseBm25 && analysis.coreTerms.length) {
+      if (analysis.coreTerms.length) {
+        const textScore = canUseBm25
+          ? sql`-(search_tsv <@> to_bm25query(${buildLakebaseRankVector(analysis)}, 'search_documents_lakebase_bm25_idx'))`
+          : sql`ts_rank_cd(search_tsv, websearch_to_tsquery('english', ${analysis.normalized}), 32)`;
         // A single statement: BM25 matching with prefix support (see
         // buildLakebaseTextFilter), per-type candidate caps so long blog posts or
         // one university's programme catalogue cannot fill the candidate pool,
@@ -339,7 +342,7 @@ async function executeSearchCatalog(
         // the returned candidates. The matched pool is bounded with a top-N
         // sort first: partitioning every match for the window functions made
         // Postgres start parallel workers, which cost ~10ms per search.
-        const bm25Results = await db.execute<RankableSearchResult>(sql`
+        const fullTextResults = await db.execute<RankableSearchResult>(sql`
           WITH ${queryCountriesCte},
           matched AS (
             SELECT
@@ -349,12 +352,7 @@ async function executeSearchCatalog(
               featured,
               title,
               (
-                -(
-                  search_tsv <@> to_bm25query(
-                    ${buildLakebaseRankVector(analysis)},
-                    'search_documents_lakebase_bm25_idx'
-                  )
-                )
+                ${textScore}
                 + ${exactMatchBoost}
                 + ${businessBoost}
                 + ${countryIntentBoost}
@@ -365,7 +363,7 @@ async function executeSearchCatalog(
               sql` AND `
             )}
             ORDER BY score DESC, id
-            LIMIT ${bm25MatchPoolSize}
+            LIMIT ${fullTextMatchPoolSize}
           ),
           ranked AS (
             SELECT
@@ -424,9 +422,9 @@ async function executeSearchCatalog(
           ORDER BY candidates.score DESC, candidates.featured DESC, candidates.type_rank, candidates.title ASC
         `);
 
-        if (bm25Results.rows.length) {
-          return rerankSearchResults(bm25Results.rows, filters.q, limit, {
-            queryCountrySlugs: bm25Results.rows[0]?.queryCountrySlugs ?? [],
+        if (fullTextResults.rows.length) {
+          return rerankSearchResults(fullTextResults.rows, filters.q, limit, {
+            queryCountrySlugs: fullTextResults.rows[0]?.queryCountrySlugs ?? [],
           });
         }
       }

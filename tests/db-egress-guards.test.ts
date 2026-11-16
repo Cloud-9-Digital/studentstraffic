@@ -213,7 +213,6 @@ test("catalogue detail pages resolve slugs at request time behind cached data re
     readProjectFile("app/countries/[slug]/page.tsx"),
     readProjectFile("app/courses/[slug]/page.tsx"),
     readProjectFile("app/university/[slug]/page.tsx"),
-    readProjectFile("app/[slug]/page.tsx"),
     readProjectFile("app/cities/[slug]/page.tsx"),
     readProjectFile("app/blog/[slug]/page.tsx"),
   ]);
@@ -225,7 +224,7 @@ test("catalogue detail pages resolve slugs at request time behind cached data re
 
   // The boundary must not push database reads to per-request: every
   // catalogue detail page keeps its data behind "use cache".
-  for (const source of pages.slice(0, 4)) {
+  for (const source of pages.slice(0, 3)) {
     assert.match(source, /"use cache/);
   }
 });

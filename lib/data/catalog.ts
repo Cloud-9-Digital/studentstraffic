@@ -2012,6 +2012,43 @@ export async function queryFinderCardProgramsPage(
 }
 
 export async function getFinderOptions(): Promise<FinderOptions> {
+  return readFinderOptions(true);
+}
+
+export async function getWebFinderOptions(country?: string): Promise<FinderOptions> {
+  const options = await readFinderOptions(false);
+  const cities = country && options.countries.some(({ slug }) => slug === country)
+    ? await getFinderCities(country)
+    : [];
+  return { ...options, cities };
+}
+
+export async function getFinderCities(country: string): Promise<FinderCityOption[]> {
+  "use cache: remote";
+  cacheLife({ stale: 300, revalidate: 600, expire: 3600 });
+  cacheTag("finder");
+  cacheTag("catalog");
+
+  const db = getDb();
+  if (!db) {
+    const { cities } = await readFinderOptions(true);
+    return cities.filter(({ countrySlug }) => countrySlug === country);
+  }
+
+  const rows = await db.selectDistinct({ name: universitiesTable.city })
+    .from(programOfferingsTable)
+    .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
+    .innerJoin(countriesTable, eq(universitiesTable.countryId, countriesTable.id))
+    .where(and(
+      eq(countriesTable.slug, country),
+      eq(programOfferingsTable.published, true),
+      eq(universitiesTable.published, true),
+    ))
+    .orderBy(asc(universitiesTable.city));
+  return rows.map(({ name }) => ({ countrySlug: country, name }));
+}
+
+async function readFinderOptions(includeCities: boolean): Promise<FinderOptions> {
   "use cache: remote";
 
   cacheLife("catalog");
@@ -2029,7 +2066,7 @@ export async function getFinderOptions(): Promise<FinderOptions> {
         .innerJoin(countriesTable, eq(universitiesTable.countryId, countriesTable.id))
         .where(and(eq(programOfferingsTable.published, true), eq(universitiesTable.published, true)))
         .orderBy(asc(countriesTable.name)),
-      db
+      includeCities ? db
         .selectDistinct({
           countrySlug: countriesTable.slug,
           name: universitiesTable.city,
@@ -2038,7 +2075,7 @@ export async function getFinderOptions(): Promise<FinderOptions> {
         .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
         .innerJoin(countriesTable, eq(universitiesTable.countryId, countriesTable.id))
         .where(and(eq(programOfferingsTable.published, true), eq(universitiesTable.published, true)))
-        .orderBy(asc(countriesTable.slug), asc(universitiesTable.city)),
+        .orderBy(asc(countriesTable.slug), asc(universitiesTable.city)) : [],
       db
         .selectDistinct({ level: coursesTable.level })
         .from(programOfferingsTable)
@@ -2110,10 +2147,12 @@ export async function getFinderOptions(): Promise<FinderOptions> {
       slug: program.country.slug,
       name: program.country.name,
     });
-    citiesByKey.set(`${program.country.slug}:${program.university.city}`, {
-      countrySlug: program.country.slug,
-      name: program.university.city,
-    });
+    if (includeCities) {
+      citiesByKey.set(`${program.country.slug}:${program.university.city}`, {
+        countrySlug: program.country.slug,
+        name: program.university.city,
+      });
+    }
     coursesBySlug.set(program.course.slug, {
       slug: program.course.slug,
       shortName: program.course.shortName,

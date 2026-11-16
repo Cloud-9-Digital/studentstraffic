@@ -5,9 +5,10 @@ import { JsonLd } from "@/components/shared/json-ld";
 import { UniversitiesExplorer } from "@/components/site/universities-explorer";
 import { finderPageSize } from "@/lib/constants";
 import {
-  getFinderOptions,
+  getWebFinderOptions,
   queryFinderCardProgramsPage,
 } from "@/lib/data/catalog";
+import { toFinderWebResults } from "@/lib/finder-web-results";
 import { buildIndexableMetadata, buildNoIndexMetadata } from "@/lib/metadata";
 import {
   getBreadcrumbStructuredData,
@@ -83,14 +84,10 @@ async function UniversitiesExplorerSection({
   const pageParam = Array.isArray(raw.page) ? raw.page[0] : raw.page;
   const page = parseFinderPage(pageParam);
 
-  // Fetch options immediately (fast - typically <100ms)
-  const options = await getFinderOptions();
-
-  // Start fetching results but don't await (allows streaming)
-  const initialResultsPromise = queryFinderCardProgramsPage(filters, page, finderPageSize);
-
-  // Stream results as they come
-  const initialResults = await initialResultsPromise;
+  const [options, initialResults] = await Promise.all([
+    getWebFinderOptions(filters.country),
+    queryFinderCardProgramsPage(filters, page, finderPageSize),
+  ]);
 
   return (
     <UniversitiesExplorer
@@ -104,7 +101,7 @@ async function UniversitiesExplorerSection({
       key={`${JSON.stringify(filters)}::${page}`}
       options={options}
       initialFilters={filters}
-      initialResults={initialResults}
+      initialResults={toFinderWebResults(initialResults)}
     />
   );
 }

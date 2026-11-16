@@ -603,10 +603,12 @@ export async function sendGuideConversationMessage(
   if (!/^[a-zA-Z0-9_-]{1,128}$/.test(nonce)) return { ok: false as const, error: "Invalid message identifier." };
   const rateError = await consumePublicFormRateLimits([{ scope: "peer:messages", identifier: userId, limit: 30, windowMs: 60_000 }], "messages");
   if (rateError) return { ok: false as const, error: rateError };
-  const [, result] = await db.batch([
-    db.execute(peerLockQuery(conversation.peerId)),
-    db.execute<{ messageId: number | null; jobId: number | null; reused: boolean }>(sendPeerMessageQuery({ conversationId, userId, body: normalizedBody, nonce })),
-  ]);
+  const [, result] = await db.transaction(async (tx) => {
+    return [
+      await tx.execute(peerLockQuery(conversation.peerId)),
+      await tx.execute<{ messageId: number | null; jobId: number | null; reused: boolean }>(sendPeerMessageQuery({ conversationId, userId, body: normalizedBody, nonce })),
+    ] as const;
+  });
   const row = result.rows[0];
   if (!row?.messageId) return { ok: false as const, error: "This conversation is closed or blocked, or this message identifier was already used." };
   if (row.jobId) schedulePeerNotification(row.jobId);

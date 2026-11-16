@@ -4,7 +4,7 @@ import { Building2 } from "lucide-react";
 
 import { AddToCompareButton } from "@/components/site/add-to-compare-button";
 import { ShortlistButton } from "@/components/site/shortlist-button";
-import type { FinderCardProgram } from "@/lib/data/types";
+import type { FinderUniversityCard } from "@/lib/finder-web-results";
 import { universityImageBlurDataURL, universityLogoBlurDataURL } from "@/lib/image-placeholder";
 import { getUniversityHref } from "@/lib/routes";
 import { getCountryFlagCode, getUniversityCoverImage, getUniversityInitials } from "@/lib/university-media";
@@ -14,9 +14,11 @@ import { getUniversityDisplayName } from "@/lib/university-presentation";
 export function UniversityCard({
   program,
   imagePriority = false,
+  compact = false,
 }: {
-  program: FinderCardProgram;
+  program: FinderUniversityCard;
   imagePriority?: boolean;
+  compact?: boolean;
 }) {
   const { country } = program;
   const university = { ...program.university, name: getUniversityDisplayName(program.university.name) };
@@ -30,7 +32,7 @@ export function UniversityCard({
     <div className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md active:translate-y-0 active:shadow-sm">
 
       {/* Full-card link — sits above card content (z-[1]) but below compare button (z-10) */}
-      <Link href={href} className="absolute inset-0 z-[1]" aria-label={university.name} />
+      <Link href={href} prefetch={compact ? false : undefined} className="absolute inset-0 z-[1]" aria-label={university.name} />
 
       {/* Cover image ─────────────────────────────────────────────── */}
       <div
@@ -42,10 +44,10 @@ export function UniversityCard({
             src={coverImage.url}
             alt={coverImage.alt}
             fill
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            sizes={compact ? "(max-width: 1023px) 50vw, (max-width: 1279px) 25vw, 320px" : "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"}
             priority={imagePriority}
-            placeholder="blur"
-            blurDataURL={universityImageBlurDataURL}
+            placeholder={compact ? "empty" : "blur"}
+            blurDataURL={compact ? undefined : universityImageBlurDataURL}
             className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
           />
         ) : (
@@ -91,8 +93,8 @@ export function UniversityCard({
                   alt={`${university.name} logo`}
                   fill
                   sizes="40px"
-                  placeholder="blur"
-                  blurDataURL={universityLogoBlurDataURL}
+                  placeholder={compact ? "empty" : "blur"}
+                  blurDataURL={compact ? undefined : universityLogoBlurDataURL}
                   className="object-contain p-1.5"
                 />
               </span>
