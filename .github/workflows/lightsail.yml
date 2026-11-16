@@ -17,6 +17,7 @@ jobs:
   check-build-release:
     runs-on: ubuntu-latest
     timeout-minutes: 22
+    environment: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && 'lightsail-production' || github.event_name == 'push' && github.ref == 'refs/heads/codex/lightsail-ci-cd' && 'lightsail-rehearsal' || 'lightsail-checks' }}
     env:
       CI: 'true'
       NEXT_TELEMETRY_DISABLED: '1'
@@ -36,7 +37,8 @@ jobs:
       - run: npm ci
       - name: Run checks
         run: |
-          npm run lint -- app components lib proxy.ts next.config.ts tests
+          node ops/lightsail/lint.mjs
+          npm exec next typegen
           npm run typecheck
           npm test
       - run: npm run build
