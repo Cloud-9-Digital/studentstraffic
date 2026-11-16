@@ -17,6 +17,10 @@ cd "$dir"
     select_columns=$columns
     if [[ "$table" == universities ]]; then
       select_columns="${columns/%,brochure/,CASE WHEN brochure IS NOT NULL THEN jsonb_build_object() ELSE NULL END}"
+    elif [[ "$table" == program_offerings ]]; then
+      # The sitemap uses only the presence of two or more research sources.
+      # Preserve that signal without sending the private URLs to the runner.
+      select_columns="${columns/%,source_urls/,array_fill(chr(32), ARRAY[least(cardinality(source_urls), 2)])}"
     fi
     printf '%s\n' "\\copy (SELECT $select_columns FROM public.$table WHERE $filter) TO '$table.csv' WITH CSV"
   done < /usr/local/lib/studentstraffic/release-catalog.tsv
