@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   check-build-release:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 22
     environment: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && 'lightsail-production' || github.event_name == 'push' && github.ref == 'refs/heads/codex/lightsail-ci-cd' && 'lightsail-rehearsal' || 'lightsail-checks' }}
     env:
@@ -35,8 +35,19 @@ jobs:
           npm exec next typegen
           npm run typecheck
           npm test
+      - name: Prepare a temporary build database
+        run: |
+          pg_bin="$(pg_config --bindir)"
+          pg_data="$RUNNER_TEMP/studentstraffic-postgres"
+          "$pg_bin/initdb" -D "$pg_data" --auth=trust --username=st_build
+          "$pg_bin/pg_ctl" -D "$pg_data" -l "$RUNNER_TEMP/studentstraffic-postgres.log" \
+            -o "-h 127.0.0.1 -p 55481 -k $RUNNER_TEMP" -w start
+          export DATABASE_URL=postgresql://st_build@127.0.0.1:55481/postgres
+          psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -c 'CREATE EXTENSION IF NOT EXISTS pg_trgm'
+          npm exec drizzle-kit -- push --force
       - name: Build the release
         env:
+          DATABASE_URL: postgresql://st_build@127.0.0.1:55481/postgres
           NEXT_PUBLIC_SITE_URL: https://www.studentstraffic.com
           NEXT_PUBLIC_AGORA_APP_ID: ${{ vars.LIGHTSAIL_PUBLIC_AGORA_APP_ID }}
           # Compile the same public chat launcher as production without a usable API key.
