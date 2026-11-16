@@ -45,6 +45,19 @@ jobs:
           export DATABASE_URL=postgresql://st_build@127.0.0.1:55481/postgres
           psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -c 'CREATE EXTENSION IF NOT EXISTS pg_trgm'
           npm exec drizzle-kit -- push --force
+      - name: Load the published catalogue into the build database
+        if: (github.event_name == 'push' && github.ref == 'refs/heads/codex/lightsail-ci-cd' && vars.LIGHTSAIL_REHEARSAL_ENABLED == '1') || (github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && vars.LIGHTSAIL_PRODUCTION_ENABLED == '1')
+        env:
+          DATABASE_URL: postgresql://st_build@127.0.0.1:55481/postgres
+          RELEASE_SSH_USER: ${{ github.ref == 'refs/heads/main' && 'st_ci_production' || 'st_ci_rehearsal' }}
+          RELEASE_SSH_KEY: ${{ github.ref == 'refs/heads/main' && secrets.LIGHTSAIL_PRODUCTION_KEY || secrets.LIGHTSAIL_REHEARSAL_KEY }}
+          RELEASE_SSH_HOST: ${{ vars.LIGHTSAIL_HOST }}
+          RELEASE_KNOWN_HOSTS: ${{ vars.LIGHTSAIL_KNOWN_HOSTS }}
+        run: |
+          archive="$RUNNER_TEMP/public-catalogue.tar.gz"
+          trap 'rm -f -- "$archive"' EXIT
+          bash ops/lightsail/send.sh catalog "$archive"
+          bash ops/lightsail/import-catalog.sh "$archive"
       - name: Build the release
         env:
           DATABASE_URL: postgresql://st_build@127.0.0.1:55481/postgres
@@ -53,6 +66,7 @@ jobs:
           # Compile the same public chat launcher as production without a usable API key.
           ANTHROPIC_API_KEY: build-time-placeholder
           LIGHTSAIL_STANDALONE: '1'
+          LIGHTSAIL_DEPLOYMENT_ID: ${{ github.sha }}
         run: npm run build
       - name: Package the exact commit
         shell: bash

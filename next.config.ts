@@ -61,6 +61,7 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   ...(process.env.LIGHTSAIL_STANDALONE === "1" ? { output: "standalone" as const } : {}),
+  ...(process.env.LIGHTSAIL_DEPLOYMENT_ID ? { deploymentId: process.env.LIGHTSAIL_DEPLOYMENT_ID } : {}),
   // Keep Turbopack scoped to this app when other projects have lockfiles
   // higher in the Documents tree.
   turbopack: {

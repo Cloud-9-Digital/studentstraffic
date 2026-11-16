@@ -19,6 +19,8 @@ install -m 755 activate.sh "$dir/release-activate"
 install -m 755 ssh-gate.sh "$dir/release-gate"
 install -m 644 extract.py "$dir/release-extract.py"
 install -m 755 retire.sh "$dir/release-retire"
+install -m 755 export-catalog.sh "$dir/release-catalog"
+install -m 644 catalog-data.tsv "$dir/release-catalog.tsv"
 ssh-keygen -l -f "$scope.pub" >/dev/null
 test "$(wc -l < "$scope.pub")" -eq 1
 printf 'restrict,command="%s/release-gate %s" %s\n' "$dir" "$scope" "$(cat "$scope.pub")" > "$home/.ssh/authorized_keys"
@@ -26,6 +28,7 @@ chown "$login:$login" "$home/.ssh/authorized_keys"
 chmod 600 "$home/.ssh/authorized_keys"
 sudo_temp=$(mktemp)
 printf '%s ALL=(root) NOPASSWD: %s/release-activate %s *\n' "$login" "$dir" "$scope" > "$sudo_temp"
+printf '%s ALL=(postgres) NOPASSWD: %s/release-catalog %s\n' "$login" "$dir" "$scope" >> "$sudo_temp"
 visudo -c -f "$sudo_temp"
 install -m 440 "$sudo_temp" "/etc/sudoers.d/studentstraffic-ci-$scope"
 unlink "$sudo_temp"

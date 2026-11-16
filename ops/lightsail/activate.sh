@@ -96,6 +96,30 @@ if (( ready == 0 )); then
   echo 'Candidate never passed the private catalogue check. Existing traffic was not switched.' >&2
   exit 1
 fi
+request() {
+  local target=$1 path=$2
+  shift 2
+  curl -sS --max-time 12 -H 'Host: www.studentstraffic.com' -H 'X-Forwarded-Proto: https' "$@" \
+    "http://127.0.0.1:$target$path"
+}
+request "$port" / --fail | python3 -c 'import sys; x=sys.stdin.read(); assert "<h1" in x and "https://www.studentstraffic.com" in x'
+request "$port" '/api/finder?view=cards&country=georgia' --fail |
+  python3 -c 'import json,sys; assert json.load(sys.stdin)["programs"]'
+test "$(request "$port" /st-release-smoke-nonexistent-e65428 -o /dev/null -w '%{http_code}')" = 404
+sitemap_count() {
+  request "$1" "$2" --fail | python3 -c 'import sys,xml.etree.ElementTree as e; print(len(e.parse(sys.stdin).findall(".//{*}loc")))'
+}
+for sitemap in /sitemap.xml /universities/sitemap/0.xml /programs/sitemap/0.xml /compare/sitemap/0.xml; do
+  reference="$current"
+  if [[ "$scope" == rehearsal ]]; then reference=3917; fi
+  before=$(sitemap_count "$reference" "$sitemap")
+  after=$(sitemap_count "$port" "$sitemap")
+  printf '%s: previous=%s candidate=%s\n' "$sitemap" "$before" "$after"
+  if (( after == 0 || after * 100 < before * 95 )); then
+    echo 'Candidate lost sitemap coverage. Existing traffic was not switched.' >&2
+    exit 1
+  fi
+done
 systemctl enable "$candidate" >/dev/null
 if [[ "$scope" == production ]]; then
   # Reuse immutable chunks from old releases for browsers that still have their HTML open.
