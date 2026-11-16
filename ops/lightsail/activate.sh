@@ -59,6 +59,15 @@ trap 'exit 130' INT HUP TERM
 timeout 180 head -c 450000001 > "$upload"
 [[ "$(stat -c %s "$upload")" -le 450000000 ]]
 printf '%s  %s\n' "$digest" "$upload" | sha256sum --check --status
+if [[ "$(readlink "$base/a" || true)" == "$release_path" && "$current" == "$a" ]] ||
+   [[ "$(readlink "$base/b" || true)" == "$release_path" && "$current" == "$b" ]]; then
+  # Retrying a successful build may produce a different archive digest for
+  # the same commit. Keep the release already serving this exact SHA.
+  systemctl is-active --quiet "$unit@$([[ "$current" == "$a" ]] && printf a || printf b).service"
+  committed=1
+  echo "Release $sha is already active."
+  exit 0
+fi
 if [ -d "$release_path" ]; then
   test "$(cat "$base/versions/$sha.digest")" = "$digest"
 else
@@ -71,12 +80,6 @@ else
   printf '%s\n' "$digest" > "$base/versions/$sha.digest"
 fi
 
-if [[ "$(readlink "$base/a" || true)" == "$release_path" && "$current" == "$a" ]] ||
-   [[ "$(readlink "$base/b" || true)" == "$release_path" && "$current" == "$b" ]]; then
-  committed=1
-  echo "Release $sha is already active."
-  exit 0
-fi
 systemctl stop "$candidate"
 ln -sfn -- "$release_path" "$base/$slot"
 started=1
@@ -159,3 +162,25 @@ if [[ "$current" == "$a" || "$current" == "$b" ]]; then
   systemd-run --quiet --collect --unit="st-retire-$scope-$old-$(date +%s)" --on-active=30s \
     /usr/local/lib/studentstraffic/release-retire "$scope" "$current" "$unit@$old.service" || true
 fi
+# Leave both slot targets and the two newest other archives available. This
+# runs under the release lock; static assets still live in their shared path.
+python3 - "$base" <<'PY' || echo "Could not prune archived release directories." >&2
+from pathlib import Path
+import re
+import shutil
+import sys
+
+base = Path(sys.argv[1])
+protected = {p.resolve() for p in (base / "a", base / "b") if p.is_symlink()}
+archives = sorted(
+    (
+        p for p in (base / "versions").iterdir()
+        if re.fullmatch("[0-9a-f]{40}", p.name)
+        and not p.is_symlink() and p.is_dir() and p not in protected
+    ),
+    key=lambda p: p.stat().st_mtime, reverse=True,
+)
+for old in archives[2:]:
+    shutil.rmtree(old)
+    old.with_suffix(".digest").unlink(missing_ok=True)
+PY
