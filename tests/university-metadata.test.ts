@@ -388,7 +388,7 @@ test("an Indian university's NRI-only fee is never the headline fee in titles or
   assert.ok(!indiaMeta.title.includes("$3,600"));
   assert.ok(!indiaMeta.description.includes("$3,600"));
 
-  const withIndianFee = { ...nriOnly, offering: { ...nriOnly.offering, additionalFees: [{ audience: "domestic" as const, annualAmount: 25000, currency: "INR" }] } };
+  const withIndianFee = { ...nriOnly, offering: { ...nriOnly.offering, additionalFees: [{ audience: "domestic" as const, annualAmount: 25000, currency: "INR", academicYear: "2026-27", verifiedAt: "2026-10-30", notes: "Confirmed annual tuition for domestic applicants." }] } };
   const localMeta = buildProgramMetadata({ program: withIndianFee, university: kazan, country: { name: "India", slug: "india" }, section: "fees" });
   assert.ok(localMeta.description.includes("₹25,000"));
   assert.ok(!localMeta.description.includes("$3,600"));

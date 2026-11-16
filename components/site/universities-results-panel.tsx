@@ -17,10 +17,11 @@ import {
 import { getFinderSort } from "@/lib/filters";
 import { buildFinderUrl } from "@/lib/filters";
 import type {
-  FinderCardProgramsPage,
   FinderFilters,
   FinderSort,
 } from "@/lib/data/types";
+
+import type { FinderWebResults } from "@/lib/finder-web-results";
 
 const finderSortOptions: { value: FinderSort; label: string }[] = [
   { value: "recommended", label: "Recommended" },
@@ -51,7 +52,7 @@ function UniversitiesResultsLoadingState() {
 
 type UniversitiesResultsPanelProps = {
   filters: FinderFilters;
-  results: FinderCardProgramsPage;
+  results: FinderWebResults;
   isLoading: boolean;
   errorMessage?: string;
   currentSort?: FinderSort;
@@ -172,9 +173,10 @@ export function UniversitiesResultsPanel({
           <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
             {results.programs.map((program, index) => (
               <UniversityCard
-                key={program.offering.slug}
+                key={program.university.slug}
                 program={program}
-                imagePriority={index < 6}
+                imagePriority={index === 0}
+                compact
               />
             ))}
           </div>

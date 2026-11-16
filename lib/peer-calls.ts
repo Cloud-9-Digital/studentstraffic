@@ -35,15 +35,17 @@ export async function createOrReusePeerCallSession(input: CreatePeerCallInput) {
   const rateError = await consumePublicFormRateLimits([{ scope: "peer:calls", identifier: input.callerUserId, limit: 6, windowMs: 60_000 }], "call attempts");
   if (rateError) return { error: rateError };
   const participants = [input.callerUserId, input.recipientUserId].sort();
-  const [, , , result] = await db.batch([
-    db.execute(peerLockQuery(input.peerId)),
-    db.execute(sql`select pg_advisory_xact_lock(hashtext(${'peer-user:' + participants[0]}))`),
-    db.execute(sql`select pg_advisory_xact_lock(hashtext(${'peer-user:' + participants[1]}))`),
-    db.execute<{ callId: string | null; reused: boolean; jobId: number | null; error: string | null }>(createPeerCallQuery({
+  const [, , , result] = await db.transaction(async (tx) => {
+    return [
+      await tx.execute(peerLockQuery(input.peerId)),
+      await tx.execute(sql`select pg_advisory_xact_lock(hashtext(${'peer-user:' + participants[0]}))`),
+      await tx.execute(sql`select pg_advisory_xact_lock(hashtext(${'peer-user:' + participants[1]}))`),
+      await tx.execute<{ callId: string | null; reused: boolean; jobId: number | null; error: string | null }>(createPeerCallQuery({
       id: crypto.randomUUID(), peerId: input.peerId,
       callerUserId: input.callerUserId, recipientUserId: input.recipientUserId,
     })),
-  ]);
+    ] as const;
+  });
   const row = result.rows[0];
   if (!row?.callId) return { error: row?.error || "Unable to start this call." };
   if (row.jobId) schedulePeerNotification(row.jobId);
@@ -214,7 +216,7 @@ export async function cleanupExpiredPeerCallSessions(userId?: string) {
     await notifyPeerCallEnded([row.peerUserId, row.callerUserId], row.id);
   }
 
-  return expiredRingingCalls.rowCount + endedActiveCalls.rowCount;
+  return (expiredRingingCalls.rowCount ?? 0) + (endedActiveCalls.rowCount ?? 0);
 }
 
 export async function getAuthorizedPeerCallSession(
@@ -422,10 +424,12 @@ export async function preparePeerCallToken(callId: string, userId: string) {
   const call = await getAuthorizedPeerCallSession(callId, userId);
   const db = getDb();
   if (!call || !db) return null;
-  const [, result] = await db.batch([
-    db.execute(peerLockQuery(call.peerId)),
-    db.execute<{ status: PeerCallStatus }>(preparePeerCallQuery(callId, userId)),
-  ]);
+  const [, result] = await db.transaction(async (tx) => {
+    return [
+      await tx.execute(peerLockQuery(call.peerId)),
+      await tx.execute<{ status: PeerCallStatus }>(preparePeerCallQuery(callId, userId)),
+    ] as const;
+  });
   if (!result.rows[0]) return null;
   notifyPeerCallParticipants([call.callerUserId, call.peerUserId], result.rows[0].status);
   return { ...call, status: result.rows[0].status };

@@ -14,11 +14,12 @@ import {
 } from "@/components/site/finder-filter-form";
 import { UniversitiesResultsPanel } from "@/components/site/universities-results-panel";
 import type {
-  FinderCardProgramsPage,
+  FinderCityOption,
   FinderFilters,
   FinderOptions,
   FinderSort,
 } from "@/lib/data/types";
+import type { FinderWebResults } from "@/lib/finder-web-results";
 import {
   buildFinderUrl,
   createFinderSearchParams,
@@ -30,7 +31,7 @@ import {
 type UniversitiesExplorerProps = {
   options: FinderOptions;
   initialFilters: FinderFilters;
-  initialResults: FinderCardProgramsPage;
+  initialResults: FinderWebResults;
 };
 
 type LoadOptions = {
@@ -44,7 +45,7 @@ function getResultsCacheKey(filters: FinderFilters, page: number) {
 
 function getFinderApiUrl(filters: FinderFilters, page: number) {
   const query = createFinderSearchParams(filters, page).toString();
-  return `/api/finder${query ? `?${query}` : ""}`;
+  return `/api/finder?view=cards${query ? `&${query}` : ""}`;
 }
 
 export function UniversitiesExplorer({
@@ -54,13 +55,13 @@ export function UniversitiesExplorer({
 }: UniversitiesExplorerProps) {
   const normalizedInitialFilters = normalizeFinderFilters(initialFilters);
   const [filters, setFilters] = useState(normalizedInitialFilters);
-  const [results, setResults] = useState<FinderCardProgramsPage>(initialResults);
+  const [results, setResults] = useState<FinderWebResults>(initialResults);
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | undefined>();
   const abortRef = useRef<AbortController | null>(null);
   const resultsSectionRef = useRef<HTMLElement | null>(null);
   const cacheRef = useRef(
-    new Map<string, FinderCardProgramsPage>([
+    new Map<string, FinderWebResults>([
       [
         getResultsCacheKey(
           normalizedInitialFilters,
@@ -134,7 +135,7 @@ export function UniversitiesExplorer({
           throw new Error("The universities catalogue could not be refreshed.");
         }
 
-        const nextResults = (await response.json()) as FinderCardProgramsPage;
+        const nextResults = (await response.json()) as FinderWebResults;
 
         cacheRef.current.set(requestKey, nextResults);
         startTransition(() => {
@@ -232,42 +233,52 @@ export function UniversitiesExplorer({
     };
   }, [loadResults]);
 
-  useEffect(() => {
-    if (isLoading || errorMessage || !results.hasNextPage) {
-      return;
-    }
+  const country = filters.country;
+  const [citiesByCountry, setCitiesByCountry] = useState(
+    () => new Map<string, FinderCityOption[]>(initialFilters.country ? [[initialFilters.country, options.cities]] : []),
+  );
+  const knownCountry = country && options.countries.some(({ slug }) => slug === country)
+    ? country
+    : undefined;
+  const cities = knownCountry ? citiesByCountry.get(knownCountry) : undefined;
+  const [failedCityCountry, setFailedCityCountry] = useState<string>();
+  const [cityRetry, setCityRetry] = useState(0);
 
-    const nextPage = results.currentPage + 1;
-    const requestKey = getResultsCacheKey(filters, nextPage);
-    if (cacheRef.current.has(requestKey)) {
-      return;
-    }
+  useEffect(() => {
+    if (!knownCountry || cities !== undefined) return;
 
     const controller = new AbortController();
+    let active = true;
 
-    void fetch(getFinderApiUrl(filters, nextPage), {
-      signal: controller.signal,
-    })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Failed to prefetch finder results");
+    async function loadCities(countrySlug: string) {
+      try {
+        const response = await fetch(
+          `/api/finder/cities?country=${encodeURIComponent(countrySlug)}`,
+          { signal: controller.signal },
+        );
+        if (!response.ok) throw new Error("City options unavailable");
+        const data: FinderCityOption[] = await response.json();
+        if (active) {
+          setCitiesByCountry((previous) => new Map(previous).set(countrySlug, data));
         }
+      } catch {
+        if (active) setFailedCityCountry(countrySlug);
+      }
+    }
 
-        return response.json() as Promise<FinderCardProgramsPage>;
-      })
-      .then((nextResults) => {
-        cacheRef.current.set(requestKey, nextResults);
-      })
-      .catch(() => {});
+    void loadCities(knownCountry);
+    return () => {
+      active = false;
+      controller.abort();
+    };
+  }, [knownCountry, cities, cityRetry]);
 
-    return () => controller.abort();
-  }, [
-    errorMessage,
-    filters,
-    isLoading,
-    results.currentPage,
-    results.hasNextPage,
-  ]);
+  const cityOptionsState = !knownCountry || cities !== undefined ? "ready"
+    : failedCityCountry === country ? "error" : "loading";
+  const retryCities = () => {
+    setFailedCityCountry(undefined);
+    setCityRetry((attempt) => attempt + 1);
+  };
 
   return (
     <>
@@ -284,7 +295,9 @@ export function UniversitiesExplorer({
       <div className="container-shell py-3 lg:hidden">
         <FinderFilterForm
           countries={options.countries}
-          cities={options.cities}
+          cities={cities ?? []}
+          cityOptionsState={cityOptionsState}
+          onRetryCities={retryCities}
           levels={options.levels}
           courses={options.courses}
           mediums={options.mediums}
@@ -304,7 +317,9 @@ export function UniversitiesExplorer({
             <aside className="hidden lg:block lg:sticky lg:top-20">
               <FinderFilterForm
                 countries={options.countries}
-                cities={options.cities}
+                cities={cities ?? []}
+                cityOptionsState={cityOptionsState}
+                onRetryCities={retryCities}
                 levels={options.levels}
                 courses={options.courses}
                 mediums={options.mediums}

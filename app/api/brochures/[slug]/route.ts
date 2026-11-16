@@ -1,11 +1,11 @@
 import { v2 as cloudinary } from "cloudinary";
+import { and, eq } from "drizzle-orm";
 import { after, type NextRequest } from "next/server";
 
 import { BROCHURE_ACCESS_COOKIE } from "@/lib/brochure-access";
 import { handleBrochureDownload } from "@/lib/brochure-download";
-import { getUniversityBySlug } from "@/lib/data/catalog";
 import { getDb } from "@/lib/db/server";
-import { brochureDownloads } from "@/lib/db/schema";
+import { brochureDownloads, universities } from "@/lib/db/schema";
 import { env } from "@/lib/env";
 
 cloudinary.config({
@@ -29,7 +29,15 @@ export async function GET(
     {
       secret: env.nextAuthSecret,
       async getBrochure(universitySlug) {
-        const university = await getUniversityBySlug(universitySlug);
+        // The build catalogue contains an availability flag only. Read the
+        // actual asset identifier from the live database after authorization.
+        const db = getDb();
+        if (!db) return null;
+        const [university] = await db
+          .select({ name: universities.name, brochure: universities.brochure })
+          .from(universities)
+          .where(and(eq(universities.slug, universitySlug), eq(universities.published, true)))
+          .limit(1);
         return university?.brochure
           ? { universityName: university.name, brochure: university.brochure }
           : null;

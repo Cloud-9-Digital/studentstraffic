@@ -18,10 +18,12 @@ export async function requestPeerBooking(peerId: number, userId: string, message
   if (!db) return { error: "Service unavailable." };
   const rateError = await consumePublicFormRateLimits([{ scope: "peer:bookings", identifier: userId, limit: 5, windowMs: 60 * 60_000 }], "connection requests");
   if (rateError) return { error: rateError };
-  const [, result] = await db.batch([
-    db.execute(peerLockQuery(peerId)),
-    db.execute<{ bookingId: number | null; jobId: number | null }>(requestPeerBookingQuery(peerId, userId, text)),
-  ]);
+  const [, result] = await db.transaction(async (tx) => {
+    return [
+      await tx.execute(peerLockQuery(peerId)),
+      await tx.execute<{ bookingId: number | null; jobId: number | null }>(requestPeerBookingQuery(peerId, userId, text)),
+    ] as const;
+  });
   if (result.rows[0]?.bookingId) {
     if (result.rows[0].jobId) schedulePeerNotification(result.rows[0].jobId);
     return { success: true };
@@ -39,10 +41,12 @@ export async function changePeerConnection(bookingId: number, userId: string, op
   if (!db) return { error: "Service unavailable." };
   const [booking] = await db.select({ peerId: peerCallBookings.peerId }).from(peerCallBookings).where(eq(peerCallBookings.id, bookingId)).limit(1);
   if (!booking) return { error: "Connection not found." };
-  const [, result] = await db.batch([
-    db.execute(peerLockQuery(booking.peerId)),
-    db.execute<{ id: number; studentUserId: string; peerUserId: string; jobId: number | null; endedCalls: string[] }>(changePeerConnectionQuery(bookingId, userId, operation)),
-  ]);
+  const [, result] = await db.transaction(async (tx) => {
+    return [
+      await tx.execute(peerLockQuery(booking.peerId)),
+      await tx.execute<{ id: number; studentUserId: string; peerUserId: string; jobId: number | null; endedCalls: string[] }>(changePeerConnectionQuery(bookingId, userId, operation)),
+    ] as const;
+  });
   const row = result.rows[0];
   if (!row) return { error: "This connection changed or you cannot perform that action. Please refresh." };
   if (row.jobId) schedulePeerNotification(row.jobId);

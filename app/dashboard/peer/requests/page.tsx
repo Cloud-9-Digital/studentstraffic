@@ -88,8 +88,9 @@ export default async function PeerRequestsPage({
     closed: sql`(${peerCallBookings.status} not in ('pending','accepted') or ${blocked})`,
   };
 
-  const [[counts], rows] = await db.batch([
-    db
+  const [[counts], rows] = await db.transaction(async (tx) => {
+    return [
+      await tx
       .select({
         pending: sql<number>`count(*) filter (where ${bucket.pending})`.mapWith(Number),
         accepted: sql<number>`count(*) filter (where ${bucket.accepted})`.mapWith(Number),
@@ -97,7 +98,7 @@ export default async function PeerRequestsPage({
       })
       .from(peerCallBookings)
       .where(eq(peerCallBookings.peerId, peer.id)),
-    db
+      await tx
       .select({
         id: peerCallBookings.id,
         status: peerCallBookings.status,
@@ -121,7 +122,8 @@ export default async function PeerRequestsPage({
       .orderBy(tab === "pending" ? desc(peerCallBookings.createdAt) : desc(peerCallBookings.updatedAt))
       .limit(PER_PAGE)
       .offset((page - 1) * PER_PAGE),
-  ]);
+    ] as const;
+  });
 
   const tabCount = counts?.[tab] ?? 0;
   const totalPages = Math.max(1, Math.ceil(tabCount / PER_PAGE));

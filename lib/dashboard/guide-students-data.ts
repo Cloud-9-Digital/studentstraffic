@@ -43,8 +43,9 @@ export async function loadGuideStudents(
   const limit = GUIDE_STUDENT_SOURCE_LIMIT;
   const callStudentId = sql<string>`case when ${peerCallSessions.callerUserId} = ${peerUserId} then ${peerCallSessions.peerUserId} else ${peerCallSessions.callerUserId} end`;
 
-  const [bookings, conversations, calls, introductions] = await db.batch([
-    db
+  const [bookings, conversations, calls, introductions] = await db.transaction(async (tx) => {
+    return [
+      await tx
       .select({
         bookingId: peerCallBookings.id,
         studentUserId: peerCallBookings.studentUserId,
@@ -62,7 +63,7 @@ export async function loadGuideStudents(
       .where(eq(peerCallBookings.peerId, peerId))
       .orderBy(desc(peerCallBookings.updatedAt))
       .limit(limit),
-    db
+      await tx
       .select({
         conversationId: guideConversations.id,
         studentUserId: guideConversations.studentUserId,
@@ -81,7 +82,7 @@ export async function loadGuideStudents(
       .where(eq(guideConversations.peerId, peerId))
       .orderBy(sql`${guideConversations.lastMessageAt} desc nulls last`)
       .limit(limit),
-    db
+      await tx
       .select({
         studentUserId: users.id,
         studentName: users.name,
@@ -97,7 +98,7 @@ export async function loadGuideStudents(
       .groupBy(users.id)
       .orderBy(sql`max(${peerCallSessions.createdAt}) desc`)
       .limit(limit),
-    db
+      await tx
       .select({
         requestId: peerRequests.id,
         matchedUserId: users.id,
@@ -117,7 +118,8 @@ export async function loadGuideStudents(
       .where(eq(peerRequests.matchedPeerId, peerId))
       .orderBy(desc(peerRequests.createdAt))
       .limit(limit),
-  ]);
+    ] as const;
+  });
 
   const students = mergeGuideStudents(
     { bookings, conversations, calls, introductions },
