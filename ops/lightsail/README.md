@@ -1,0 +1,9 @@
+# Students Traffic Lightsail releases
+
+GitHub Actions runs on the standard `ubuntu-latest` runner. It generates Next route types, checks TypeScript and tests, and rejects new errors above the checked-in ESLint baseline. It builds and packages one standalone Linux release; the deploy step streams it directly over SSH and does not store a workflow artifact. PRs never deploy. The private rehearsal environment is allowed on the integration branch only. The production environment is allowed on `main` only.
+
+The archive must carry the checked-out commit SHA and its transfer digest is validated before extraction. Separate GitHub environment keys only permit deployment for their own scope, cannot open a shell, cannot forward ports, and are not the operator SSH key. Production database credentials remain on Lightsail. Builds do not have the production database URL; startup is checked against real runtime data.
+
+The rollout creates a versioned release, boots it on the inactive loopback port, and checks the mobile catalogue response before changing Nginx. A second health check confirms that Nginx is sending requests to that exact port; production additionally checks public HTTPS pages and the mobile catalogue. A deployment failure after switching restores the old Nginx upstream before stopping the failed candidate. Previously served static chunks are retained for browsers already using an older release. The existing production service is kept on the server as the initial fallback.
+
+Runbook: use the repository's Actions screen to read check/build logs. Keep `LIGHTSAIL_PRODUCTION_ENABLED` disabled until the rehearsal succeeds. If disabling deployment temporarily, set it to `0` so subsequent builds still run without switching production. The GitHub environment secret names and expected host-key variables are defined in the workflow. Never pass production application or database secrets to the build.

@@ -18,7 +18,7 @@ flock -w 120 9
 upload=$(mktemp "/run/studentstraffic-upload.XXXXXX")
 previous=$(mktemp "/run/studentstraffic-upstream.XXXXXX")
 cp -- "$config" "$previous"
-current=$(sed -n 's/.*default 127\.0\.0\.1:\([0-9]*\);.*/\1/p' "$previous")
+current=$(sed -n -e 's/.*default 127\.0\.0\.1:\([0-9]*\);.*/\1/p' -e 's/^    server 127\.0\.0\.1:\([0-9]*\) max_fails=.*/\1/p' "$previous")
 case "$current" in
   "$a") slot=b; port="$b";;
   "$b"|3937|3917) slot=a; port="$a";;
@@ -101,7 +101,12 @@ if [[ "$scope" == production ]]; then
   # Reuse immutable chunks from old releases for browsers that still have their HTML open.
   rsync -a --no-links --ignore-existing --chmod=D755,F644 "$release_path/.next/static/" /srv/studentstraffic/release-static/
 fi
-printf 'map $host $st_%s_backend { default 127.0.0.1:%s; }\n' "$scope" "$port" > "$config.next"
+{
+  printf 'upstream st_%s_release_nodes {\n' "$scope"
+  printf '    server 127.0.0.1:%s max_fails=1 fail_timeout=3s;\n' "$port"
+  printf '    server 127.0.0.1:%s backup;\n}\n' "$current"
+  printf 'map $host $st_%s_backend { default st_%s_release_nodes; }\n' "$scope" "$scope"
+} > "$config.next"
 chmod 644 "$config.next"
 mv -f -- "$config.next" "$config"
 switched=1
@@ -109,7 +114,7 @@ nginx -t
 systemctl reload nginx
 gateway_ok=0
 for _ in $(seq 1 12); do
-    if curl -sS --fail --max-time 4 -D - -o /dev/null "http://127.0.0.1:$gateway/api/mobile/v1/universities?country=georgia&pageSize=2" 2>/dev/null | grep -iFq "X-ST-Release-Port: 127.0.0.1:$port" &&
+    if curl -sS --fail --max-time 4 -D - -o /dev/null "http://127.0.0.1:$gateway/api/mobile/v1/universities?country=georgia&pageSize=2" 2>/dev/null | tr -d '\r' | grep -ixF "X-ST-Release-Port: 127.0.0.1:$port" >/dev/null &&
        healthy "$gateway" 2>/dev/null; then gateway_ok=1; break; fi
     sleep 1
 done

@@ -44,6 +44,8 @@ server {
         proxy_set_header X-Forwarded-Host www.studentstraffic.com;
         proxy_set_header X-Forwarded-Proto https;
         proxy_set_header X-ST-Release-Gateway 1;
+        proxy_next_upstream error timeout http_500 http_502 http_503 http_504;
+        proxy_next_upstream_tries 2;
         add_header X-ST-Release-Port \$upstream_addr always;
     }
 }
@@ -93,6 +95,9 @@ import pathlib,sys
 p=pathlib.Path(sys.argv[1]); s=p.read_text()
 key='    location = /_next/image {'
 assert s.count(key)==1
+s=s.replace('        proxy_pass http://$st_production_backend;', '''        proxy_pass http://$st_production_backend;
+        proxy_next_upstream error timeout http_500 http_502 http_503 http_504;
+        proxy_next_upstream_tries 2;''')
 p.write_text(s.replace(key,'''    location ^~ /_next/static/ {
         alias /srv/studentstraffic/release-static/;
         add_header Cache-Control "public, max-age=31536000, immutable";
