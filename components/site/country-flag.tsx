@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getLocalFlagUrl } from "@/lib/flag-media";
 
 import { cn } from "@/lib/utils";
 
@@ -21,7 +22,7 @@ export function CountryFlag({
       style={{ width, height }}
     >
       <Image
-        src={`https://flagcdn.com/${countryCode}.svg`}
+        src={getLocalFlagUrl(countryCode)}
         alt={alt}
         fill
         sizes={`${width}px`}

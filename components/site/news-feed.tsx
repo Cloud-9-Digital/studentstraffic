@@ -57,35 +57,23 @@ function accentFor(slug: string) {
 // ── Source / metadata line ───────────────────────────────────────────────
 
 function SourceLine({
-  domain,
   name,
   publishedAt,
   size = 16,
 }: {
-  domain: string | null;
   name: string;
   publishedAt: string;
   size?: number;
 }) {
   return (
     <div className="flex min-w-0 items-center gap-1.5">
-      {domain ? (
-        <Image
-          src={`https://www.google.com/s2/favicons?domain=${domain}&sz=64`}
-          alt=""
-          width={size}
-          height={size}
-          className="shrink-0 rounded object-contain"
-          unoptimized
-        />
-      ) : (
-        <span
-          style={{ width: size, height: size, fontSize: size * 0.45 }}
-          className="flex shrink-0 items-center justify-center rounded bg-muted font-bold uppercase text-muted-foreground"
-        >
-          {name.slice(0, 2)}
-        </span>
-      )}
+      <span
+        aria-hidden="true"
+        style={{ width: size, height: size, fontSize: size * 0.45 }}
+        className="flex shrink-0 items-center justify-center rounded bg-muted font-bold uppercase text-muted-foreground"
+      >
+        {name.slice(0, 2)}
+      </span>
       <span className="truncate text-[0.7rem] font-semibold text-foreground/70">{name}</span>
       <span aria-hidden className="shrink-0 text-muted-foreground/40">·</span>
       <span className="shrink-0 text-[0.7rem] text-muted-foreground">{timeAgo(publishedAt)}</span>
@@ -147,7 +135,6 @@ function LeadStory({ article, topicSlug }: { article: NewsArticle; topicSlug: st
         </p>
         <div className="mt-4">
           <SourceLine
-            domain={article.sourceDomain}
             name={article.source}
             publishedAt={article.publishedAt}
             size={18}
@@ -175,7 +162,6 @@ function NewsCard({ article, topicSlug }: { article: NewsArticle; topicSlug: str
       >
         <span className={cn("absolute inset-y-0 left-0 w-1", accent.bar)} aria-hidden />
         <SourceLine
-          domain={article.sourceDomain}
           name={article.source}
           publishedAt={article.publishedAt}
           size={14}
@@ -210,7 +196,6 @@ function NewsCard({ article, topicSlug }: { article: NewsArticle; topicSlug: str
       </div>
       <div className="flex flex-1 flex-col p-3.5">
         <SourceLine
-          domain={article.sourceDomain}
           name={article.source}
           publishedAt={article.publishedAt}
           size={14}
@@ -244,7 +229,6 @@ function SecondaryRow({ article, topicSlug, last }: { article: NewsArticle; topi
         </p>
         <div className="mt-1.5">
           <SourceLine
-            domain={article.sourceDomain}
             name={article.source}
             publishedAt={article.publishedAt}
             size={14}

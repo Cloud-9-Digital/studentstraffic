@@ -197,6 +197,7 @@ export function SiteFooter() {
                 { label: "About Us", href: "/about" },
                 { label: "How We Work", href: "/methodology" },
                 { label: "Editorial Policy", href: "/editorial-policy" },
+                { label: "Photo credits", href: "/images/location-media/credits.html" },
                 { label: "Corrections", href: "/corrections" },
                 { label: "AI Assistant Access", href: "/ai-access" },
                 { label: "Privacy Policy", href: "/privacy" },

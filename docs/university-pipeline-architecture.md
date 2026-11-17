@@ -575,8 +575,20 @@ international applicant as eligible.
 
 ## University media delivery (2026-07-12)
 
+Catalogue views should serve static image files from storage controlled by Students Traffic.
+Origin URLs document provenance and licensing; they must not become runtime fallbacks.
+Store reviewed, optimised city fallback photos under `public/images/location-media` and keep
+the public creator, source, licence and change notice in the photo credits files. Use the local
+country image when a city photo cannot be copied on verified terms. Follow the same rule for
+flags and other bundled decorative assets.
+
+Existing public catalogue and blog uploads require a coordinated migration from the current
+Cloudinary delivery paths. The independent Lightsail media store must be verified before
+the database or publishing tools point at it. Keep downloads that require authorization out
+of the public media store. See [owned media cutover](./owned-media-cutover.md).
+
 `universities.logo_url` and `universities.cover_image_url` accept Students Traffic Cloudinary URLs
-only. The validated catalogue publisher rejects non-Cloudinary public media. Original source and
+only in the current publisher, until that migration is deployed. Original source and
 rights information belong in `universities.media_attribution`; they must not be used as public image
 delivery URLs. Upload media before publication and verify the Cloudinary response. Never use an
 external hotlink or substitute a pixelated favicon for a proper university logo.

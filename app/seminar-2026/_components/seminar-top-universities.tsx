@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { CardCarousel, CarouselItem } from "@/components/site/card-carousel";
 import { getUniversityMediaBySlugs } from "@/lib/data/catalog";
+import { getLocalFlagUrl } from "@/lib/flag-media";
 import {
   getCountryFlagCode,
   getCountryPlaceholder,
@@ -62,51 +63,51 @@ const UNIVERSITY_GROUPS = [
 
 const SEMINAR_COVER_OVERRIDES: Record<string, { url: string; alt: string }> = {
   "samara-state-medical-university": {
-    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1776890210/studentstraffic/images/universities/samara-state-medical-university-campus.webp",
+    url: "/images/owned-static/samara-state-medical-university-campus.webp",
     alt: "Samara State Medical University campus overview",
   },
   "mordovia-state-university": {
-    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1776890213/studentstraffic/images/universities/mordovia-state-university-campus.jpg",
+    url: "/images/owned-static/mordovia-state-university-campus.webp",
     alt: "Mordovia State University campus overview",
   },
   "crimea-federal-university": {
-    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1776890257/studentstraffic/images/universities/crimea-federal-university-campus.jpg",
+    url: "/images/owned-static/crimea-federal-university-campus.webp",
     alt: "Crimea Federal University campus overview",
   },
   "izhevsk-state-medical-academy": {
-    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1776890323/studentstraffic/images/universities/izhevsk-state-medical-academy-campus.webp",
+    url: "/images/owned-static/izhevsk-state-medical-academy-campus.webp",
     alt: "Izhevsk State Medical Academy campus overview",
   },
   "georgian-national-university-seu": {
-    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1776890398/studentstraffic/images/universities/georgian-national-university-seu-campus.webp",
+    url: "/images/owned-static/georgian-national-university-seu-campus.webp",
     alt: "Georgian National University SEU campus overview",
   },
   "university-of-georgia": {
-    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1776890459/studentstraffic/images/universities/university-of-georgia-campus.jpg",
+    url: "/images/owned-static/university-of-georgia-campus.webp",
     alt: "University of Georgia campus overview",
   },
   "bau-international-university-batumi": {
-    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1776890474/studentstraffic/images/universities/bau-international-university-batumi-campus.jpg",
+    url: "/images/owned-static/bau-international-university-batumi-campus.webp",
     alt: "BAU International University campus overview",
   },
   "samarkand-state-medical-university": {
-    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1776890535/studentstraffic/images/universities/samarkand-state-medical-university-campus.jpg",
+    url: "/images/owned-static/samarkand-state-medical-university-campus.webp",
     alt: "Samarkand State Medical University campus overview",
   },
   "kyrgyz-uzbek-university": {
-    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1776891656/studentstraffic/images/universities/kyrgyz-uzbek-university-campus.jpg",
+    url: "/images/owned-static/kyrgyz-uzbek-university-campus.webp",
     alt: "Kyrgyz-Uzbek University Medical Faculty campus overview",
   },
   "jalal-abad-peoples-friendship-university": {
-    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1776891759/studentstraffic/images/universities/jalal-abad-peoples-friendship-university-campus.jpg",
+    url: "/images/owned-static/jalal-abad-peoples-friendship-university-campus.webp",
     alt: "Jalal-Abad State University Medical Faculty campus overview",
   },
   "jalal-abad-international-university": {
-    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1776891835/studentstraffic/images/universities/jalal-abad-international-university-campus.webp",
+    url: "/images/owned-static/jalal-abad-international-university-campus.webp",
     alt: "Jalal-Abad International University Medical Faculty campus overview",
   },
   "Tashkent State Medical University": {
-    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1776890509/studentstraffic/images/universities/tashkent-state-medical-university-campus.jpg",
+    url: "/images/owned-static/tashkent-state-medical-university-campus.webp",
     alt: "Tashkent State Medical University campus overview",
   },
 };
@@ -179,11 +180,12 @@ export async function SeminarTopUniversities() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/10 to-transparent" />
 
           <div className="absolute left-3 top-3 inline-flex items-center gap-2 rounded-full border border-white/20 bg-black/30 px-2.5 py-1 text-[11px] font-semibold text-white/90 backdrop-blur-sm">
-            <img
-              src={`https://flagcdn.com/w40/${getCountryFlagCode(item.countrySlug)}.png`}
+            <Image
+              src={getLocalFlagUrl(getCountryFlagCode(item.countrySlug))}
               alt={item.country}
               width={16}
               height={12}
+              unoptimized
               className="rounded-[2px]"
             />
             <span className="uppercase tracking-[0.18em]">{item.country}</span>

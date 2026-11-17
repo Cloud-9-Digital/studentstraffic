@@ -1,4 +1,4 @@
-const countryHeroImages: Record<string, { url: string; alt: string }> = {
+const countryHeroImages: Record<string, { url: `/images/${string}`; alt: string }> = {
   australia: {
     url: "/images/countries/australia-hero.webp",
     alt: "University-style campus building in Australia",
@@ -16,7 +16,7 @@ const countryHeroImages: Record<string, { url: string; alt: string }> = {
     alt: "Ho Chi Minh City skyline at sunset, Vietnam",
   },
   uzbekistan: {
-    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1774970469/studentstraffic/countries/qsqrsidyb7w77xr4jpzy.jpg",
+    url: "/images/countries/uzbekistan-hero.webp",
     alt: "Beautiful historical architecture in Samarkand, Uzbekistan at sunset",
   },
   italy: {
@@ -51,7 +51,7 @@ const countryHeroImages: Record<string, { url: string; alt: string }> = {
 const defaultHeroImage = {
   url: "/images/home/country-options.jpg",
   alt: "Counsellor and student reviewing study-abroad destinations on a world map",
-};
+} as const;
 
 export function getCountryHeroImage(slug: string) {
   return countryHeroImages[slug] ?? defaultHeroImage;

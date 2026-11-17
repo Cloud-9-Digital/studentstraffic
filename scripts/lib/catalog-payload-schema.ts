@@ -1,6 +1,7 @@
 import { parseReportedFeeQuote, type ReportedFeeQuote } from "../../lib/reported-fee-quote";
 import { z } from "zod";
 
+import { isR2PublicImageUrl } from "@/lib/public-media-url";
 import { programmeLevels, programmeStreams } from "@/lib/data/program-taxonomy";
 import {
   intakeMonthCodes,
@@ -114,9 +115,9 @@ export const legacyFreeTextMediumSchema = z.string().min(2);
 const optionalMediumSchema = z.union([z.literal(""), programmeMediumSchema]);
 type OfferingMediumSchema = typeof optionalMediumSchema | typeof programmeMediumSchema | typeof legacyFreeTextMediumSchema;
 
-const cloudinaryImageUrlSchema = z.string().url().refine(
-  (value) => new URL(value).hostname === "res.cloudinary.com",
-  "Public university images must be hosted on Cloudinary.",
+const ownedPublicImageUrlSchema = z.string().url().refine(
+  (value) => new URL(value).hostname === "res.cloudinary.com" || isR2PublicImageUrl(value),
+  "Public university images must be hosted on the Students Traffic media domain or Cloudinary during migration.",
 );
 
 // Match courses.duration_years numeric(4,1), preserving half-year awards without rounding.
@@ -186,16 +187,16 @@ const createUniversitySchema = (mediumSchema: OfferingMediumSchema) => z.object(
   type: z.enum(["Public", "Private"]),
   establishedYear: z.number().int().min(1000).max(new Date().getFullYear()),
   officialWebsite: z.string().url(),
-  logoUrl: cloudinaryImageUrlSchema.optional(),
-  coverImageUrl: cloudinaryImageUrlSchema.optional(),
+  logoUrl: ownedPublicImageUrlSchema.optional(),
+  coverImageUrl: ownedPublicImageUrlSchema.optional(),
   mediaAttribution: z.object({
     logo: z.object({ sourceUrl: z.string().url(), rights: z.string().min(5), checkedAt: z.string() }).optional(),
     cover: z.object({ sourceUrl: z.string().url(), rights: z.string().min(5), checkedAt: z.string(), altText: z.string().min(10) }).optional(),
     studentLife: z.object({
-      campusEnvironment: z.object({ url: cloudinaryImageUrlSchema, sourceUrl: z.string().url(), rights: z.string().min(5), checkedAt: z.string(), altText: z.string().min(10) }).optional(),
-      accommodation: z.object({ url: cloudinaryImageUrlSchema, sourceUrl: z.string().url(), rights: z.string().min(5), checkedAt: z.string(), altText: z.string().min(10) }).optional(),
-      dailyLiving: z.object({ url: cloudinaryImageUrlSchema, sourceUrl: z.string().url(), rights: z.string().min(5), checkedAt: z.string(), altText: z.string().min(10) }).optional(),
-      safetySupport: z.object({ url: cloudinaryImageUrlSchema, sourceUrl: z.string().url(), rights: z.string().min(5), checkedAt: z.string(), altText: z.string().min(10) }).optional(),
+      campusEnvironment: z.object({ url: ownedPublicImageUrlSchema, sourceUrl: z.string().url(), rights: z.string().min(5), checkedAt: z.string(), altText: z.string().min(10) }).optional(),
+      accommodation: z.object({ url: ownedPublicImageUrlSchema, sourceUrl: z.string().url(), rights: z.string().min(5), checkedAt: z.string(), altText: z.string().min(10) }).optional(),
+      dailyLiving: z.object({ url: ownedPublicImageUrlSchema, sourceUrl: z.string().url(), rights: z.string().min(5), checkedAt: z.string(), altText: z.string().min(10) }).optional(),
+      safetySupport: z.object({ url: ownedPublicImageUrlSchema, sourceUrl: z.string().url(), rights: z.string().min(5), checkedAt: z.string(), altText: z.string().min(10) }).optional(),
     }).optional(),
   }).default({}),
   summary: z.string().min(180).max(500),

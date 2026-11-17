@@ -189,14 +189,14 @@ export const FMGE_DOCTORS = [
     name: "Dr. Shilpa",
     country: "Moldova",
     countryCode: "md",
-    image: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1777108814/seminar/doctors/seminar/doctors/dr-shilpa-moldova.png",
+    image: "/images/owned-static/dr-shilpa-moldova.webp",
     credentials: "FMGE Cleared",
   },
   {
     name: "Dr. Hemanth Kumar",
     country: "Russia",
     countryCode: "ru",
-    image: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1777108819/seminar/doctors/seminar/doctors/dr-hemanth-kumar-russia.png",
+    image: "/images/owned-static/dr-hemanth-kumar-russia.webp",
     credentials: "FMGE Cleared",
   },
 ] as const;

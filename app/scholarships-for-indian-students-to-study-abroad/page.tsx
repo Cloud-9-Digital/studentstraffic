@@ -54,7 +54,7 @@ const heroCountryTiles = [
     flagCode: "de",
     highlight: "No tuition fees",
     image:
-      "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1779736142/studentstraffic/countries/germany-scholarship-hero.jpg",
+      "/images/owned-static/germany-scholarship-hero.webp",
     gradient: "from-[#1a2d4a]/80 to-[#0d1f35]/60",
   },
   {
@@ -69,7 +69,7 @@ const heroCountryTiles = [
     flagCode: "ru",
     highlight: "Govt. quota MBBS",
     image:
-      "https://images.unsplash.com/photo-1513326738677-b964603b136d?auto=format&fit=crop&w=600&q=80",
+      "/images/countries/russia-hero.jpg",
     gradient: "from-[#5c1a1a]/80 to-[#1a2d4a]/60",
   },
   {
@@ -127,7 +127,7 @@ const scholarshipGuides = [
     description:
       "DAAD grants, state-foundation funding, and the real monthly costs that remain after tuition is zero. Built for students seriously comparing Germany.",
     image:
-      "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1779736142/studentstraffic/countries/germany-scholarship-hero.jpg",
+      "/images/owned-static/germany-scholarship-hero.webp",
     imagePlaceholderGradient: "from-[#1a2d4a] to-[#0d1a2e]",
   },
   {
@@ -139,7 +139,7 @@ const scholarshipGuides = [
     description:
       "Official Russian government quota, university-level waivers, and what the consultant 'scholarship' usually turns out to be on the ground.",
     image:
-      "https://images.unsplash.com/photo-1513326738677-b964603b136d?auto=format&fit=crop&w=600&q=80",
+      "/images/countries/russia-hero.jpg",
     imagePlaceholderGradient: "from-[#5c1a1a] to-[#1a2d4a]",
   },
   {

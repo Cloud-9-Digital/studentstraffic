@@ -180,7 +180,8 @@ async function fetchGNews(query: string, apiKey: string): Promise<NewsArticle[]>
         url: a.url,
         source: a.source.name,
         sourceDomain,
-        imageUrl: a.image ?? null,
+        // Publisher hotlinks are not part of our owned media library.
+        imageUrl: null,
         publishedAt: a.publishedAt, // GNews returns ISO strings
       };
     });
