@@ -32,13 +32,15 @@ export async function proxy(request: NextRequest) {
 
   // Apply rate limiting to API routes
   if (pathname.startsWith("/api/")) {
+    const isAttachmentDownload = pathname.startsWith("/api/attachments/");
+    const isLeadRoute = !isAttachmentDownload && pathname.includes("/lead");
     const requiresDistributedLimit =
       pathname.startsWith("/api/auth/") ||
       pathname.startsWith("/api/mobile/v1/auth/") ||
       pathname.startsWith("/api/revalidate") ||
       pathname.startsWith("/api/cache/invalidate") ||
       pathname.startsWith("/api/jobs/process") ||
-      pathname.includes("/lead") ||
+      isLeadRoute ||
       pathname.startsWith("/api/wati/");
 
     if (process.env.NODE_ENV === "production" && requiresDistributedLimit && !hasDistributedRateLimiter()) {
@@ -64,7 +66,7 @@ export async function proxy(request: NextRequest) {
       pathname.startsWith("/api/jobs/process")
     ) {
       config = rateLimitConfigs.admin;
-    } else if (pathname.includes("/lead")) {
+    } else if (isLeadRoute) {
       config = rateLimitConfigs.leads;
     }
 
@@ -72,7 +74,9 @@ export async function proxy(request: NextRequest) {
     const identifier = getRateLimitIdentifier(request);
 
     // Apply rate limit
-    const result = await rateLimit(identifier, config);
+    // Document views should not spend the lead form submission allowance.
+    const rateLimitKey = isAttachmentDownload ? `attachment-download:${identifier}` : identifier;
+    const result = await rateLimit(rateLimitKey, config);
 
     if (!result.success) {
       return createRateLimitResponse(result);
