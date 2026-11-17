@@ -118,13 +118,15 @@ export type YearlyCostBreakdown = {
 };
 
 /**
- * A university's official brochure, stored as a private (authenticated)
- * Cloudinary raw asset and only ever streamed through /api/brochures/[slug]
+ * A university's official brochure, stored privately and only ever
+ * streamed through /api/brochures/[slug]
  * after the student has submitted the lead form.
  */
 export type UniversityBrochure = {
   /** Cloudinary public id of the authenticated raw asset (includes `.pdf`). */
   publicId: string;
+  /** Verified private R2 object key. Never used in a public media URL. */
+  r2Key?: string;
   /** Original file name of the downloaded PDF, kept for provenance. */
   fileName: string;
   /** Human title, e.g. "Undergraduate prospectus". */
