@@ -61,16 +61,24 @@ export default function HomePage() {
             </div>
           </div>
           <div className="mx-auto hidden w-full max-w-[24rem] lg:flex lg:h-full lg:min-h-0 lg:max-w-none lg:items-center lg:justify-center">
-            <Image
-              src="/images/home/study-abroad-hero-illustration-v3.png"
-              alt="An arriving student being welcomed by a peer on an international university campus"
-              width={864}
-              height={1821}
-              priority
-              sizes="(max-width: 1279px) 32vw, 31rem"
-              style={{ height: "100%", maxHeight: "42rem", width: "auto" }}
-              className="max-w-full object-contain"
-            />
+            <picture className="contents">
+              {/* The illustration is hidden below the lg breakpoint. Avoid requesting it there. */}
+              <source
+                media="not all and (min-width: 64rem)"
+                srcSet="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              />
+              <Image
+                src="/images/home/study-abroad-hero-illustration-v3.png"
+                alt="An arriving student being welcomed by a peer on an international university campus"
+                width={864}
+                height={1821}
+                loading="eager"
+                fetchPriority="high"
+                sizes="(max-width: 1279px) 32vw, 31rem"
+                style={{ height: "100%", maxHeight: "42rem", width: "auto" }}
+                className="max-w-full object-contain"
+              />
+            </picture>
           </div>
         </div>
       </section>

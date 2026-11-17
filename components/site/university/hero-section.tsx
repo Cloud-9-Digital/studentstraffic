@@ -207,6 +207,7 @@ function UniversityHeroMedia({
             height={1450}
             sizes="(max-width: 1024px) 100vw, (max-width: 1440px) 38vw, 580px"
             loading="eager"
+            fetchPriority="high"
             className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
           />
           <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(7,10,19,0.18),transparent_42%,rgba(7,10,19,0.08))]" />
