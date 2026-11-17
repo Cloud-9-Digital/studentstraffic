@@ -1,11 +1,12 @@
 "use server";
 
+import { uploadPrivateAttachment } from "@/lib/r2-storage";
 import { revalidateTag } from "next/cache";
 import { eq } from "drizzle-orm";
 import { z } from "zod";
 
 import { requireAdminSession } from "@/lib/auth";
-import { uploadFileToCloudinary, isAllowedPhotoType } from "@/lib/cloudinary-upload";
+import { isAllowedPhotoType } from "@/lib/cloudinary-upload";
 import { getDb } from "@/lib/db/server";
 import { studentPeers, universities } from "@/lib/db/schema";
 import { allPeersTag, getUniversityPeersTag } from "@/lib/university-community";
@@ -72,11 +73,11 @@ export async function createPeerAction(
     if (!isAllowedPhotoType(photoFile.type)) {
       return { error: "Photo must be a JPG, PNG, or WebP image." };
     }
-    const result = await uploadFileToCloudinary(photoFile, {
-      folder: "studentstraffic/peer-photos",
-      maxBytes: 5 * 1024 * 1024,
-    });
-    photoUrl = result.url;
+    try {
+      photoUrl = await uploadPrivateAttachment(photoFile, "guide-photo", 5 * 1024 * 1024);
+    } catch {
+      return { error: "Photo upload failed. Please try again." };
+    }
   }
 
   await db.insert(studentPeers).values({
@@ -144,11 +145,11 @@ export async function updatePeerAction(
     if (!isAllowedPhotoType(photoFile.type)) {
       return { error: "Photo must be a JPG, PNG, or WebP image." };
     }
-    const result = await uploadFileToCloudinary(photoFile, {
-      folder: "studentstraffic/peer-photos",
-      maxBytes: 5 * 1024 * 1024,
-    });
-    photoUrl = result.url;
+    try {
+      photoUrl = await uploadPrivateAttachment(photoFile, "guide-photo", 5 * 1024 * 1024);
+    } catch {
+      return { error: "Photo upload failed. Please try again." };
+    }
   }
 
   await db

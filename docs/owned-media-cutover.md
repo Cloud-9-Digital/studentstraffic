@@ -18,3 +18,8 @@ Serve public images, flags and decorative files from storage controlled by Stude
 DNS for the website and API stays unchanged. Only the new media hostname is attached to the public bucket.
 
 To upload a new public cover from a workstation with the bucket-scoped settings in its ignored local environment, use `node --conditions=react-server --import tsx scripts/upload-r2-public-image.ts /path/to/public-cover.png`. Use the verified URL returned by that command in the content transaction, then revalidate the exact published slug. The blog admin uses the same R2 writer when configured.
+
+
+Guide application photos and proof files use the private bucket and a staff session. Published guide portraits also live in the private bucket; the app serves the exact portrait of an active guide to website and mobile clients. Inactive portraits are only available to staff and the guide. These URLs are served directly with no shared caching, so the image optimiser cannot retain a portrait after it is taken down. An application portrait does not become public until it has been attached to an active guide through the approval flow.
+
+For a zero-downtime attachment cutover, release the new reader before replacing a stored URL. Compare each URL with the inventory at write time, keep the source and reverse mapping, and verify both authorized downloads and rejected anonymous requests. CRM links need a separate pass using the CRM's own lead permissions.

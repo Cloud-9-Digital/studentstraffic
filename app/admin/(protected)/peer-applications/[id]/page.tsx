@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { isHostedAttachment } from "@/lib/attachment-links";
 import { eq } from "drizzle-orm";
 import { ArrowLeft, ExternalLink, FileText } from "lucide-react";
 import { notFound } from "next/navigation";
@@ -92,6 +93,7 @@ export default async function PeerApplicationDetailPage({
             <div className="relative size-16 overflow-hidden rounded-xl border border-slate-200">
               <Image
                 src={application.photoUrl}
+                unoptimized={isHostedAttachment(application.photoUrl)}
                 alt={application.fullName}
                 fill
                 sizes="64px"
@@ -117,10 +119,11 @@ export default async function PeerApplicationDetailPage({
             Proof
           </span>
           <div className="space-y-2">
-            {application.proofUrl.match(/\.(jpg|jpeg|png|webp)(\?|$)/i) ? (
+            {application.proofUrl.match(/\.(jpg|jpeg|png|webp|gif)(\?|$)/i) ? (
               <div className="relative h-40 w-64 overflow-hidden rounded-xl border border-slate-200">
                 <Image
                   src={application.proofUrl}
+                  unoptimized={isHostedAttachment(application.proofUrl)}
                   alt="Proof of enrollment"
                   fill
                   sizes="256px"

@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useTransition } from "react";
 import Image from "next/image";
+import { isHostedAttachment } from "@/lib/attachment-links";
 import { useRouter } from "next/navigation";
 import {
   ArrowLeft,
@@ -53,6 +54,7 @@ function Avatar({
       >
         <Image
           src={peer.photoUrl}
+          unoptimized={isHostedAttachment(peer.photoUrl)}
           alt={peer.fullName}
           fill
           sizes={`${size}px`}

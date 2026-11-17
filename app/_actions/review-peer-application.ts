@@ -3,6 +3,8 @@
 import { revalidatePath, revalidateTag } from "next/cache";
 import { eq } from "drizzle-orm";
 
+import { guidePhotoFromApplication } from "@/lib/attachment-links";
+import { env } from "@/lib/env";
 import { requireAdminSession } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import {
@@ -48,7 +50,7 @@ export async function approvePeerApplicationAction(applicationId: number) {
     universityId: application.universityId,
     countryId: application.countryId ?? null,
     fullName: application.fullName,
-    photoUrl: application.photoUrl ?? null,
+    photoUrl: guidePhotoFromApplication(application.photoUrl, env.siteUrl),
     courseName: application.courseName,
     currentYearOrBatch: application.currentYearOrBatch,
     contactPhone: application.phone,

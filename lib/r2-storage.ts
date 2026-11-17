@@ -4,6 +4,9 @@ import { createHash } from "node:crypto";
 import { AwsClient } from "aws4fetch";
 import sharp from "sharp";
 
+import { attachmentKey, attachmentUrl, type AttachmentKind } from "@/lib/attachment-links";
+import { env } from "@/lib/env";
+
 import { publicMediaHostname } from "@/lib/public-media-url";
 
 function storage(scope: "PUBLIC" | "PRIVATE") {
@@ -50,4 +53,58 @@ export async function fetchR2Brochure(key: string): Promise<Response | undefined
   if (response.ok && response.headers.get("content-type")?.split(";")[0] === "application/pdf") return response;
   await response.body?.cancel();
   return undefined;
+}
+
+const attachmentTypes = {
+  jpg: "image/jpeg",
+  png: "image/png",
+  webp: "image/webp",
+  gif: "image/gif",
+  pdf: "application/pdf",
+} as const;
+
+export async function uploadPrivateAttachment(file: File, kind: AttachmentKind, maxBytes: number) {
+  const r2 = storage("PRIVATE");
+  if (!r2) throw new Error("Private file storage is unavailable. Please try again.");
+  if (file.size <= 0 || file.size > maxBytes) {
+    throw new Error(`File is too large. Maximum size is ${Math.round(maxBytes / 1024 / 1024)} MB.`);
+  }
+  const extension = Object.keys(attachmentTypes).find(
+    (ext) => attachmentTypes[ext as keyof typeof attachmentTypes] === file.type
+  );
+  if (!extension) throw new Error("Unsupported file type.");
+  const data = Buffer.from(await file.arrayBuffer());
+  if (extension === "pdf") {
+    if (data.subarray(0, 5).toString("ascii") !== "%PDF-") throw new Error("Invalid PDF.");
+  } else {
+    const { format } = await sharp(data, { limitInputPixels: 40_000_000 }).metadata();
+    if (format !== (extension === "jpg" ? "jpeg" : extension)) throw new Error("Invalid image.");
+  }
+  const filename = `${createHash("sha256").update(data).digest("hex")}.${extension}`;
+  const key = attachmentKey(kind, filename);
+  if (!key) throw new Error("Unsupported attachment type.");
+  const response = await r2.client.fetch(r2.endpoint + key, {
+    method: "PUT",
+    body: new Uint8Array(data),
+    headers: { "Content-Type": file.type, "Cache-Control": "private, no-store" },
+    signal: AbortSignal.timeout(25_000),
+  });
+  await response.body?.cancel();
+  if (!response.ok) throw new Error("File storage is unavailable. Please try again.");
+  return attachmentUrl(env.siteUrl, kind, filename);
+}
+
+export async function fetchPrivateAttachment(kind: string, file: string) {
+  const r2 = storage("PRIVATE");
+  const key = attachmentKey(kind, file);
+  if (!r2 || !key) return;
+  const response = await r2.client.fetch(r2.endpoint + key, {
+    cache: "no-store",
+    signal: AbortSignal.timeout(12_000),
+  });
+  const type = attachmentTypes[file.split(".").at(-1) as keyof typeof attachmentTypes];
+  if (response.ok && response.headers.get("content-type")?.split(";")[0] === type) {
+    return { response, type };
+  }
+  await response.body?.cancel();
 }

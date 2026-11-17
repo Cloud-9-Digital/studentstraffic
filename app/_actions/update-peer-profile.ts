@@ -1,5 +1,6 @@
 "use server";
 
+import { uploadPrivateAttachment } from "@/lib/r2-storage";
 import { revalidateTag } from "next/cache";
 import { allPeersTag, getUniversityPeersTag } from "@/lib/university-community";
 import { eq } from "drizzle-orm";
@@ -7,7 +8,7 @@ import { containsPeerContactDetails, PEER_CONTACT_POLICY_ERROR } from "@/lib/pee
 import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { studentPeers, universities } from "@/lib/db/schema";
-import { isAllowedPhotoType, uploadFileToCloudinary } from "@/lib/cloudinary-upload";
+import { isAllowedPhotoType } from "@/lib/cloudinary-upload";
 import { resolveDbUserId } from "@/lib/server-session";
 
 export type UpdatePeerProfileState = { status: "idle" | "success" | "error"; message?: string };
@@ -57,11 +58,7 @@ export async function updatePeerProfileAction(
       return { status: "error", message: "Photo must be under 5 MB." };
     }
     try {
-      const { url } = await uploadFileToCloudinary(photoFile, {
-        folder: "peer-photos",
-        resourceType: "image",
-      });
-      photoUrl = url;
+      photoUrl = await uploadPrivateAttachment(photoFile, "guide-photo", 5 * 1024 * 1024);
     } catch {
       return { status: "error", message: "Photo upload failed. Please try again." };
     }

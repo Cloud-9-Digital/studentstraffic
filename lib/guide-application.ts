@@ -1,3 +1,4 @@
+import { uploadPrivateAttachment } from "@/lib/r2-storage";
 import "server-only";
 
 import { and, eq, or } from "drizzle-orm";
@@ -9,7 +10,6 @@ import { studentPeerApplications, studentPeers, universities, users } from "@/li
 import {
   isAllowedPhotoType,
   isAllowedProofType,
-  uploadFileToCloudinary,
 } from "@/lib/cloudinary-upload";
 import { sendApplicationReceivedEmail } from "@/lib/email/templates/application-received";
 import { sendAdminNewApplicationEmail } from "@/lib/email/templates/admin-new-application";
@@ -162,19 +162,9 @@ export async function submitGuideApplication(formData: FormData, applicant: { id
 
   try {
     if (photoFile instanceof File && photoFile.size > 0) {
-      const result = await uploadFileToCloudinary(photoFile, {
-        folder: "studentstraffic/peer-applications/photos",
-        resourceType: "image",
-        maxBytes: 5 * 1024 * 1024,
-      });
-      photoUrl = result.url;
+      photoUrl = await uploadPrivateAttachment(photoFile, "application-photo", 5 * 1024 * 1024);
     }
-    const proofResult = await uploadFileToCloudinary(proofFile, {
-      folder: "studentstraffic/peer-applications/proofs",
-      resourceType: "auto",
-      maxBytes: 10 * 1024 * 1024,
-    });
-    proofUrl = proofResult.url;
+    proofUrl = await uploadPrivateAttachment(proofFile, "application-proof", 10 * 1024 * 1024);
   } catch (err) {
     return { error: err instanceof Error ? err.message : "File upload failed." };
   }

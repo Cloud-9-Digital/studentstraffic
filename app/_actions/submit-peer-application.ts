@@ -1,5 +1,6 @@
 "use server";
 
+import { uploadPrivateAttachment } from "@/lib/r2-storage";
 import { headers } from "next/headers";
 import { and, eq, or } from "drizzle-orm";
 import { z } from "zod";
@@ -14,7 +15,6 @@ import { studentPeerApplications, universities } from "@/lib/db/schema";
 import {
   isAllowedPhotoType,
   isAllowedProofType,
-  uploadFileToCloudinary,
 } from "@/lib/cloudinary-upload";
 import { sendApplicationReceivedEmail } from "@/lib/email/templates/application-received";
 import { sendAdminNewApplicationEmail } from "@/lib/email/templates/admin-new-application";
@@ -152,26 +152,16 @@ export async function submitPeerApplicationAction(
 
   if (!university) return { error: "University not found." };
 
-  // Upload files to Cloudinary
+  // Upload files to private storage
   let photoUrl: string | null = null;
   let proofUrl: string;
 
   try {
     if (photoFile instanceof File && photoFile.size > 0) {
-      const result = await uploadFileToCloudinary(photoFile, {
-        folder: "studentstraffic/peer-applications/photos",
-        resourceType: "image",
-        maxBytes: 5 * 1024 * 1024, // 5 MB
-      });
-      photoUrl = result.url;
+      photoUrl = await uploadPrivateAttachment(photoFile, "application-photo", 5 * 1024 * 1024);
     }
 
-    const proofResult = await uploadFileToCloudinary(proofFile, {
-      folder: "studentstraffic/peer-applications/proofs",
-      resourceType: "auto",
-      maxBytes: 10 * 1024 * 1024, // 10 MB
-    });
-    proofUrl = proofResult.url;
+    proofUrl = await uploadPrivateAttachment(proofFile, "application-proof", 10 * 1024 * 1024);
   } catch (err) {
     const message = err instanceof Error ? err.message : "File upload failed.";
     return { error: message };
