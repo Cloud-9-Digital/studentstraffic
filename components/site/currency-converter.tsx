@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { ArrowLeftRight } from "lucide-react";
+import { getLocalFlagUrl } from "@/lib/flag-media";
 
 function formatDisplay(value: number, currency: string): string {
   if (currency === "VND" || currency === "KGS") {
@@ -147,7 +148,7 @@ function CurrencyFlag({ code }: { code: string }) {
   return (
     <span className="relative inline-block size-5 shrink-0 overflow-hidden rounded-sm">
       <Image
-        src={`https://flagcdn.com/w40/${countryCode}.png`}
+        src={getLocalFlagUrl(countryCode)}
         alt={code}
         fill
         sizes="20px"

@@ -4,6 +4,7 @@ import { ArrowRight, Building2, GraduationCap } from "lucide-react";
 
 import { SectionHeading, SectionIntro, SectionKicker } from "@/components/site/country/shared";
 import { Button } from "@/components/ui/button";
+import { getLocalFlagUrl } from "@/lib/flag-media";
 import { getUniversityHref } from "@/lib/routes";
 import { getUniversityCoverImage, getUniversityInitials } from "@/lib/university-media";
 import { cn, formatCurrencyUsd } from "@/lib/utils";
@@ -148,11 +149,12 @@ function CountryUniversityCard({
             </div>
           ) : (
             <div className="flex size-10 items-center justify-center overflow-hidden rounded-xl border border-white/80 bg-white shadow-md">
-              <img
-                src={`https://flagcdn.com/w40/${flagCode}.png`}
+              <Image
+                src={getLocalFlagUrl(flagCode)}
                 alt=""
                 width={28}
                 height={20}
+                unoptimized
                 className="block rounded-sm"
               />
             </div>

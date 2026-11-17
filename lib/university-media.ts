@@ -62,6 +62,7 @@ export function getUniversityCoverImage(input: UniversityMediaInput) {
       alt: `${input.name} campus overview`,
       caption: "Campus overview",
       isFallback: false as const,
+      creditHref: undefined,
     };
   }
 
@@ -75,6 +76,7 @@ export function getUniversityCoverImage(input: UniversityMediaInput) {
         alt: city.alt,
         caption: `${input.city}, city view`,
         isFallback: true as const,
+        creditHref: city.creditHref,
       };
     }
 
@@ -85,6 +87,7 @@ export function getUniversityCoverImage(input: UniversityMediaInput) {
         alt: country.alt,
         caption: "Destination overview",
         isFallback: true as const,
+        creditHref: undefined,
       };
     }
   }
@@ -92,7 +95,7 @@ export function getUniversityCoverImage(input: UniversityMediaInput) {
   return null;
 }
 
-// ISO 3166-1 alpha-2 codes for flagcdn.com.
+// ISO 3166-1 alpha-2 codes for our locally served flags.
 // Keyed by the lowercase country slug used in the DB.
 // Any slug not found here falls back to a simple hash-based lookup below.
 const COUNTRY_FLAG_CODES: Record<string, string> = {
@@ -163,7 +166,7 @@ const COUNTRY_FLAG_CODES: Record<string, string> = {
 };
 
 // Derives the ISO alpha-2 flag code from a country slug.
-// Falls back to the slug itself (flagcdn.com ignores unknown codes gracefully).
+// The local flag resolver handles unknown codes with a neutral flag.
 export function getCountryFlagCode(countrySlug: string): string {
   return COUNTRY_FLAG_CODES[countrySlug] ?? countrySlug;
 }

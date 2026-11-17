@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { UniversityCardCover } from "@/components/site/university-card-cover";
+import { getLocalFlagUrl } from "@/lib/flag-media";
 import Link from "next/link";
 import { Building2 } from "lucide-react";
 
@@ -39,8 +41,14 @@ export function UniversityCard({
         className="relative h-36 w-full shrink-0 overflow-hidden"
         style={{ background: "linear-gradient(135deg, #0f3d37 0%, #1a4a43 45%, #7c2610 100%)" }}
       >
-        {coverImage ? (
-          <Image
+        <div aria-hidden className="absolute inset-0 flex items-end justify-end p-3">
+          <span className="select-none font-display text-7xl font-bold leading-none text-white opacity-20">
+            {initials}
+          </span>
+        </div>
+        {coverImage && (
+          <UniversityCardCover
+            key={coverImage.url}
             src={coverImage.url}
             alt={coverImage.alt}
             fill
@@ -50,16 +58,15 @@ export function UniversityCard({
             blurDataURL={compact ? undefined : universityImageBlurDataURL}
             className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
           />
-        ) : (
-          <div className="absolute inset-0 flex items-end justify-end p-3">
-            <span className="select-none font-display text-7xl font-bold leading-none opacity-20 text-white">
-              {initials}
-            </span>
-          </div>
         )}
 
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-black/5 to-transparent" />
+        {coverImage?.creditHref ? (
+          <a href={coverImage.creditHref} className="absolute bottom-2.5 right-2.5 z-[2] rounded bg-black/70 px-1.5 py-0.5 text-[0.65rem] text-white underline underline-offset-2">
+            Photo credit
+          </a>
+        ) : null}
 
         {/* University type — top-left */}
         <div className="absolute left-2.5 top-2.5">
@@ -101,11 +108,12 @@ export function UniversityCard({
             </div>
           ) : (
             <div className="flex size-10 items-center justify-center overflow-hidden rounded-xl border border-white/80 bg-white shadow-md">
-              <img
-                src={`https://flagcdn.com/w40/${getCountryFlagCode(country.slug)}.png`}
+              <Image
+                src={getLocalFlagUrl(getCountryFlagCode(country.slug))}
                 alt={country.name}
                 width={28}
                 height={20}
+                unoptimized
                 className="block rounded-sm"
               />
             </div>
