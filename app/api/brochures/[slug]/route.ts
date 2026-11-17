@@ -7,6 +7,7 @@ import { handleBrochureDownload } from "@/lib/brochure-download";
 import { getDb } from "@/lib/db/server";
 import { brochureDownloads, universities } from "@/lib/db/schema";
 import { env } from "@/lib/env";
+import { fetchR2Brochure } from "@/lib/r2-storage";
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
@@ -42,7 +43,11 @@ export async function GET(
           ? { universityName: university.name, brochure: university.brochure }
           : null;
       },
-      fetchAsset(brochure) {
+      async fetchAsset(brochure) {
+        if (brochure.r2Key) {
+          const asset = await fetchR2Brochure(brochure.r2Key).catch(() => undefined);
+          if (asset) return asset;
+        }
         const url = cloudinary.utils.private_download_url(brochure.publicId, "", {
           resource_type: "raw",
           type: "authenticated",

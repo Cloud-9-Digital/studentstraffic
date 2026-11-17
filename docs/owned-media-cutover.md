@@ -16,3 +16,5 @@ Serve public images, flags and decorative files from storage controlled by Stude
 6. Verify website and mobile clients using the new URLs. Leave existing Cloudinary assets available until old app responses, bookmarks and publishing clients no longer depend on them.
 
 DNS for the website and API stays unchanged. Only the new media hostname is attached to the public bucket.
+
+To upload a new public cover from a workstation with the bucket-scoped settings in its ignored local environment, use `node --conditions=react-server --import tsx scripts/upload-r2-public-image.ts /path/to/public-cover.png`. Use the verified URL returned by that command in the content transaction, then revalidate the exact published slug. The blog admin uses the same R2 writer when configured.

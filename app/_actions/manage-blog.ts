@@ -7,6 +7,7 @@ import { z } from "zod";
 import { requireAdminSession } from "@/lib/auth";
 import { uploadFileToCloudinary, isAllowedPhotoType } from "@/lib/cloudinary-upload";
 import { getDb } from "@/lib/db/server";
+import { uploadPublicCoverToR2 } from "@/lib/r2-storage";
 import { blogPosts } from "@/lib/db/schema";
 
 export type ManageBlogState = {
@@ -68,11 +69,10 @@ export async function createBlogPostAction(
     if (!isAllowedPhotoType(coverFile.type)) {
       return { error: "Cover image must be a JPG, PNG, or WebP." };
     }
-    const result = await uploadFileToCloudinary(coverFile, {
+    coverUrl = await uploadPublicCoverToR2(coverFile) ?? (await uploadFileToCloudinary(coverFile, {
       folder: "studentstraffic/blog-covers",
       maxBytes: 5 * 1024 * 1024,
-    });
-    coverUrl = result.url;
+    })).url;
   }
 
   const [inserted] = await db.insert(blogPosts).values({
@@ -143,11 +143,10 @@ export async function updateBlogPostAction(
     if (!isAllowedPhotoType(coverFile.type)) {
       return { error: "Cover image must be a JPG, PNG, or WebP." };
     }
-    const result = await uploadFileToCloudinary(coverFile, {
+    coverUrl = await uploadPublicCoverToR2(coverFile) ?? (await uploadFileToCloudinary(coverFile, {
       folder: "studentstraffic/blog-covers",
       maxBytes: 5 * 1024 * 1024,
-    });
-    coverUrl = result.url;
+    })).url;
   }
 
   const wasPublished = existing.status === "published";
