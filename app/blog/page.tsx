@@ -153,7 +153,7 @@ type PostRow = {
   publishedAt: Date | string | null;
 };
 
-function PostCard({ post }: { post: PostRow }) {
+function PostCard({ post, isLead }: { post: PostRow; isLead: boolean }) {
   const mins = post.readingTimeMinutes ?? 5;
   return (
     <div className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card hover:border-primary/25 hover:shadow-sm transition-all duration-200">
@@ -164,6 +164,8 @@ function PostCard({ post }: { post: PostRow }) {
             src={post.coverUrl}
             alt={post.title}
             fill
+            loading={isLead ? "eager" : "lazy"}
+            fetchPriority={isLead ? "high" : undefined}
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
           />
@@ -312,8 +314,8 @@ export default async function BlogPage({
         ) : (
           <div className="py-10 pb-20 md:pb-28">
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {posts.map((post) => (
-                <PostCard key={post.id} post={post} />
+              {posts.map((post, index) => (
+                <PostCard key={post.id} post={post} isLead={index === 0} />
               ))}
             </div>
 
